@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+                <!-- printable version of USEpi inscription ID: -->
+                <title>MD.Balt.JHU.L.27</title>
+            </titleStmt>
+         <publicationStmt>
+            <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_publicationStmt.xml">
+               <xi:fallback>
+                  <p>The Publications Statement should appear in this space. (c) Brown University</p>
+               </xi:fallback>
+            </xi:include>
+            <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.27">MD.Balt.JHU.L.27</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                        <!-- same info, parsed out: -->
+                        <!-- alternatively, we could just use <msName>, but that isn't as machine -->
+                        <!-- accessible (or human, for that matter). -->
+  
+                        <region>MD</region> 
+                        <settlement>Balt</settlement>
+                        <institution>JHU</institution>
+                        <repository/>
+                        <!--required.-->
+                        <!--  accession number, last part of USEP number -->
+                        <idno>L</idno>
+                        <!-- optionally some <altIdentifier>s or <msName>s here -->
+                    </msIdentifier>
+               <msContents>
+                  <textLang mainLang="lat"/><msItem class="funerary.epitaph">
+                     <p>Epitaph erected by [C]laudius Sabinus</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p/>
+                           <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                        </support>
+                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        </condition>
+                     </supportDesc>
+                     <layoutDesc>
+                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                                <layout columns="1" writtenLines="3">
+                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                                    <p/>
+                                </layout>                     
+                            </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote/>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote ana="blank">
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <summary>
+                            <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
+                            <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
+                            <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
+                            <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
+                            <note/>
+                        </summary>
+                  <origin>
+                     <date notBefore="0200" notAfter="0300">third century CE?</date>
+                     <placeName ref="europe.italy.rome">Porta Salaria, Rome, Italy</placeName>
+                  </origin>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+            </msDesc>
+            <listBibl>
+                    
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#AJP_Wilson7"/>
+                        <biblScope type="item">31 no. 27</biblScope>
+                    </bibl>
+                <bibl>
+                        <ptr type="rest-of-bibl" target="#AE_1910"/>
+                        <biblScope type="item">73</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope type="item">37778</biblScope>
+                    </bibl>
+                    <bibl>
+                       <ref type="external" target="http://www.rzuser.uni-heidelberg.de/bin/user/~f56/suchen.pl?hdnr=029670">EDH nr. HD029670</ref>
+                    </bibl>
+                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+                     
+                </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc/>
+      <revisionDesc>
+         <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when ="2012-06-29" who="SJD">objectdesc ana changed to slab</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+        <surface>
+            <!-- Caption in desc element -->
+        <desc/>
+            <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
+            <graphic url="MD.Balt.JHU.L.27.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+        <body>
+            <div type="edition">
+                <ab>
+                    <lb n="1"/>
+               <gap reason="lost" extent="3" unit="character"/> 
+               <unclear>a</unclear>udius Sabinus
+                    <lb n="2"/>
+               <gap reason="lost" extent="3" unit="character"/>t patri suo
+                    <lb n="3"/>
+               <gap reason="lost" extent="3" unit="character"/>armamintario
+                </ab>
+                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+                </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep/usepi_bib.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
