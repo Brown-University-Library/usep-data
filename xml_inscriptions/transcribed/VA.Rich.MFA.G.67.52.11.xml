@@ -1,0 +1,156 @@
+<?oxygen
+RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"
+?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- printable version of USEpi inscription ID: -->
+                <title>VA.Rich.MFA.G.67.52.11</title>
+            </titleStmt>
+            <publicationStmt>
+                <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_publicationStmt.xml">
+                    <xi:fallback>
+                        <p>
+                            The Publications Statement should appear in this space. (c) Brown University
+                        </p>
+                    </xi:fallback>
+                </xi:include>
+                <idno type="USEpigraphy" xml:id="VA.Rich.MFA.G.67.52.11">VA.Rich.MFA.G.67.52.11</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <region>VA</region>
+                        <settlement>Rich</settlement>
+                        <institution></institution>
+                        <repository>MFA</repository>
+                        <idno>67.52.11</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="grc"/>
+                        <msItem class="#text_other">
+                            <p></p>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc ana="#instrumentum.jewelry">
+                            <supportDesc ana="#metal.gold">
+                                <support>
+                                    <p>Gold horoscope ring</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>1.8</height>
+                                        <width>2.4</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p>
+                                        <!--
+free text here, don't forget the ana attribute on the condition element
+-->
+                                    </p>
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="3">
+                                    <!--
+use a <locus> to narrow down part of inscription being discussed, i.e. campus
+-->
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc ana="#text_other">
+                            <handNote></handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote ana="blank">
+                                <p>Asklepios is bearded with mustache and a serpent is coiled around his staff. The octagonal hoop has 24 facets which correspond to a personal horoscope with heavenly bodies, zodiac signs, and the position of the body with the sign.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <summary>
+                            <!--
+The following note element should be included, with the text "fake" as its content, if the inscription is a fake.
+-->
+                            <!--
+USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.
+-->
+                            <!--
+This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.
+-->
+                            <!--
+Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real
+-->
+                            <note/>
+                        </summary>
+                            <origin>
+                                <!--
+Should contain information about origin of inscription including place and date.
+-->
+                                <date notBefore="0340" notAfter="0399">5th century CE</date>
+                                <placeName ref="europe">Late Roman</placeName>
+                            </origin>
+                            <provenance><p>Adolph D. and Wilkins C. Williams Fund</p></provenance>
+                            <!--
+Add provenance element(s) to locations at later dates - same content as origin
+-->
+                    </history>
+                </msDesc>
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Gonosova_Kondoleon"/>
+                        <biblScope type="item">pp.40-43, no.5</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
+        </encodingDesc>
+        <profileDesc/>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <!-- Caption in desc element -->
+            <desc/>
+            <!--
+URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".
+-->
+            <graphic url="VA.Rich.MFA.G.67.52.11.jpg"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition">
+                <ab>
+                    <lb n="1"/>ΗΑΙ<g type="dot"/>CΕΛ<g type="dot"/>ΚΡΟ<g type="dot"/>ΖΕΥΑΡ<g type="dot"/>ΑΦΡ<g type="dot"/>ΕΡΜ<g type="dot"/>ωΡ
+                    <lb n="2"/>ΛΕ<g type="dot"/>ΑΙΓ<g type="dot"/>ΚΑΡ<g type="dot"/>ΤΑΥ<g type="dot"/>CΚΟ<g type="dot"/>ΚΑΡ<g type="dot"/>ΛΕΟ<g type="dot"/>ΚΑΡ
+                    <lb n="3"/>°MΚΓ<g type="dot"/>°MΚΖ<g type="dot"/>°MΚΖ<g type="dot"/>°MΑ<g type="dot"/>°MΚΑ<g type="dot"/>°MΗ<g type="dot"/>°MΗ<g type="dot"/>°MΙ
+                </ab>
+                <!--
+The marked up transcription goes here, surrounded by <ab> </ab> elements
+-->
+            </div>
+            <div type="apparatus">
+                <p></p>
+            </div>
+            <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep/usepi_bib.xml">
+                    <xi:fallback>
+                        <p>US Ep bibliography</p>
+                    </xi:fallback>
+                </xi:include>
+            </div>
+        </body>
+    </text>
+</TEI>
+
+
+

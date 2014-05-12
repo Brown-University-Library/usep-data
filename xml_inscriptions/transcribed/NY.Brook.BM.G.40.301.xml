@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+                <!-- printable version of USEpi inscription ID: -->
+                <title>NY.Brook.BM.G.40.301</title>
+            </titleStmt>
+         <publicationStmt>
+            <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_publicationStmt.xml">
+               <xi:fallback>
+                  <p>The Publications Statement should appear in this space. (c) Brown University</p>
+               </xi:fallback>
+            </xi:include>
+            <idno type="USEpigraphy" xml:id="NY.Brook.BM.G.40.301">NY.Brook.BM.G.40.301</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                        <!-- same info, parsed out: -->
+                        <!-- alternatively, we could just use <msName>, but that isn't as machine -->
+                        <!-- accessible (or human, for that matter). -->
+  
+                        <region>NY</region> 
+                        <settlement>Brook</settlement>
+                        <institution>BM</institution>
+                        <repository/>
+                        <!--required.-->
+                        <!--  accession number, last part of USEP number -->
+                        <idno>40.301</idno>
+                        <!-- optionally some <altIdentifier>s or <msName>s here -->
+                    </msIdentifier>
+               <msContents>
+                  <textLang mainLang="grc"/><msItem class="#funerary.epitaph">
+                     <p>Epitaph of Olympios</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc ana="#stele">
+                     <supportDesc ana="#stone.limestone">
+                        <support>
+<p>Limestone grave relief stele</p>
+<dimensions type="surface" unit="m">
+                                        <height>0.378</height>
+                                        <width>0.29</width>
+                                        <depth>0.087</depth>
+                                    </dimensions>
+                        </support>
+                        <condition><!--Add ana attribute with controlled value for condition--><p>minor chip on top left sima, remnants of rubrication</p>
+                        </condition>
+                     </supportDesc>
+                     <layoutDesc>
+                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                                <layout columns="1" writtenLines="1">
+                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                                    <p/>
+                                </layout>                     
+                            </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote/>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote ana="figured_scene Dec_other">
+                        <p>nude youth holding a luarel framed by an aedicula</p>
+                        <p>crux ansata</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <summary>
+                            <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
+                            <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
+                            <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
+                            <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
+                            
+                        </summary>
+                  <origin>
+                     <date notBefore="0500" notAfter="0600">sixth century CE</date>
+                     <placeName ref="africa.egypt">Egypt</placeName>
+                  </origin>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+            </msDesc>
+            <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#xx"/>
+                        <biblScope type="item"/>
+                    </bibl>
+                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+                     
+                </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc/>
+      <revisionDesc>
+         <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+        <surface>
+            <!-- Caption in desc element -->
+        <desc/>
+            <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
+            <graphic url="NY.Brook.BM.G.40.301.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+        <body>
+            <div type="edition">
+                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+                <ab>
+                    <lb n="1"/>Ὀλύμπι<choice>
+                  <sic>σο</sic>
+                  <corr>ος</corr>
+               </choice>. ἐτῶν κ<choice>
+                  <sic>ν</sic>
+                  <corr>η</corr>
+               </choice>.</ab>
+            </div>
+            <div type="apparatus">
+                <p/>
+            </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep/usepi_bib.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

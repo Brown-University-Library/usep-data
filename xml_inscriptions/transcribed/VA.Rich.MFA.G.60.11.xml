@@ -1,0 +1,150 @@
+<?oxygen
+RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"
+?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- printable version of USEpi inscription ID: -->
+                <title>VA.Rich.MFA.G.60.11</title>
+            </titleStmt>
+            <publicationStmt>
+                <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_publicationStmt.xml">
+                    <xi:fallback>
+                        <p>
+                            The Publications Statement should appear in this space. (c) Brown University
+                        </p>
+                    </xi:fallback>
+                </xi:include>
+                <idno type="USEpigraphy" xml:id="VA.Rich.MFA.G.60.11">VA.Rich.MFA.G.60.11</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <region>VA</region>
+                        <settlement>Rich</settlement>
+                        <institution></institution>
+                        <repository>MFA</repository>
+                        <idno>60.11</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <textLang mainLang="grc"/>
+                        <msItem class="#label">
+                            <p/>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc ana="#instrumentum.container">
+                            <supportDesc ana="#clay.ceramic">
+                                <support>
+                                    <p>Black-figured neck-amphora</p>
+                                    <dimensions type="surface" unit="in">
+                                        <height>8.25</height>
+                                        <width></width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p>
+                                        <!--
+free text here, don't forget the ana attribute on the condition element
+-->
+                                    </p>
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="2" writtenLines="2">
+                                    <!--
+use a <locus> to narrow down part of inscription being discussed, i.e. campus
+-->
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote></handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote ana="blank">
+                                <p>A. Herakles slaying Kyknos B. Ares and Athena parting in different directions, probably to help their proteges on side A</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <summary>
+                            <!--
+The following note element should be included, with the text "fake" as its content, if the inscription is a fake.
+-->
+                            <!--
+USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.
+-->
+                            <!--
+This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.
+-->
+                            <!--
+Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real
+-->
+                            <note/>
+                        </summary>
+                        <origin>
+                            <!--
+Should contain information about origin of inscription including place and date.
+-->
+                            <date notBefore="-0525" notAfter="-0475">ca.500 BCE</date>
+                            <placeName ref="europe.greece.attica">Attica</placeName>
+                        </origin>
+                        <provenance><p>The Williams Fund</p></provenance>
+                        <!--
+Add provenance element(s) to locations at later dates - same content as origin
+-->
+                    </history>
+                </msDesc>
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Beazley_ARVP"/>
+                        <biblScope type="item">p.250</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
+        </encodingDesc>
+        <profileDesc/>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <!-- Caption in desc element -->
+            <desc/>
+            <!--
+URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".
+-->
+            <graphic url="VA.Rich.MFA.G.60.11.jpg"/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition">
+                <ab>
+                </ab>
+                <!--
+The marked up transcription goes here, surrounded by <ab> </ab> elements
+-->
+            </div>
+            <div type="apparatus">
+                <p></p>
+            </div>
+            <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep/usepi_bib.xml">
+                    <xi:fallback>
+                        <p>US Ep bibliography</p>
+                    </xi:fallback>
+                </xi:include>
+            </div>
+        </body>
+    </text>
+</TEI>
