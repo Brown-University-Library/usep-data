@@ -3,7 +3,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.3059 (falsa)</title>
+            <title>MI.AA.UM.KM.L.949.v</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_publicationStmt.xml">
@@ -11,7 +11,7 @@
                   <p>The Publications Statement should appear in this space. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.3059_falsa">MI.AA.UM.KM.L.3059 (falsa)</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.949.v">MI.AA.UM.KM.L.949.v</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -20,32 +20,33 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>3059</idno>
+                  <idno>949</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem class="#dedicatory.ex-voto">
-                     <p>Mithraic votive</p>
+                  <msItem class="#funerary.epitaph">
+                     <p/>
                   </msItem>
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#sculpture">
-                     <supportDesc ana="#metal.bronze">
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="form">Fake bronze statuette</seg>
-                           <p>statuette of boy holding a stone</p>
-                           <dimensions type="surface" unit="m">
-                              <height>0.119</height>
-                              <width>0.068</width>
-                              <depth/>
+                           <p>Opisthographic marble slab</p>
+                           <seg type="form">Opisthographic slab</seg>
+                           <seg type="material">White marble</seg>
+                                            <dimensions type="surface" unit="m">
+                              <height>0.277</height>
+                              <width>0.228</width>
+                              <depth>0.02</depth>
                            </dimensions>
                         </support>
                         <condition><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="2">
+                        <layout columns="1" writtenLines="5">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -54,25 +55,29 @@
                      <handNote/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p/>
+                     <decoNote ana="hedera">
+                        <p>hedera</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history>
                   <summary>
-                     <rs>fake</rs>
+                     <note/>
                   </summary>
                   <origin>
-                     <date notBefore="1000" notAfter="2000">modern</date>
-                     <placeName ref="unknown">unknown</placeName>
+                     <date notBefore="0075" notAfter="0200">late first-second century CE</date>
+                     <placeName ref="europe.italy">Baiae, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_X"/>
+                  <biblScope type="item">2711</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
-                  <biblScope type="item">223 no. 395</biblScope>
+                  <biblScope type="item">54, no. 63</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -88,22 +93,46 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2014-05-27" who="SJD">Updated filename to match recto/verso conventions</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url=""/>
+         <graphic url="NoImage.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-            <ab>
-                <lb n="1"/>Deo Invi<supplied reason="omitted">c</supplied>to</ab>
-                
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+                <ab>
+                    <lb n="1"/>
+               <gap reason="lost" extent="1" unit="lines"/>
+                    <lb n="2"/>
+               <supplied reason="lost">
+                  <expan>
+                     <abbr>Cl</abbr>
+                     <ex>assis</ex>
+                  </expan> 
+                  <expan>
+                     <abbr>Pr</abbr>
+                     <ex>aetoriae</ex>
+                  </expan>
+               </supplied> 
+               <expan>
+                  <abbr>Misenat</abbr>
+                  <ex>ium</ex>
+               </expan>
+                    <lb n="3"/>
+               <gap reason="lost" extent="unknown" unit="character"/> qui
+                    <lb n="4"/>
+               <supplied reason="lost">vixit annis<gap reason="lost" extent="unknown" unit="character"/> mensi</supplied>bus X <g type="hedera"/>
+                    <lb n="5"/>
+               <gap reason="lost" extent="unknown" unit="character"/>o
+                    <lb n="6"/>
+               <gap reason="lost" extent="unknown" unit="character"/> 
+               <supplied reason="lost">fe</supplied>cit</ab>
             </div>
          <div type="apparatus">
             <p/>
