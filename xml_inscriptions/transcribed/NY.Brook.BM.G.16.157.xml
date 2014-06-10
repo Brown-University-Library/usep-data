@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
                 <!-- printable version of USEpi inscription ID: -->
-                <title>NY.Brook.BM.G.16.154</title>
+                <title>NY.Brook.BM.G.16.157</title>
             </titleStmt>
          <publicationStmt>
             <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear in this space. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="NY.Brook.BM.G.16.154">NY.Brook.BM.G.16.154</idno>
+            <idno type="USEpigraphy" xml:id="NY.Brook.BM.G.16.157">NY.Brook.BM.G.16.157</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -27,7 +27,7 @@
                         <repository/>
                         <!--required.-->
                         <!--  accession number, last part of USEP number -->
-                        <idno>16.154</idno>
+                        <idno>16.157</idno>
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
@@ -36,18 +36,17 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#Instr_Dom.ornament">
-                     <supportDesc ana="#stone">
+                  <objectDesc ana="#instrumentum.jewelry">
+                     <supportDesc ana="#stone.other">
                         <support>
 <p>Lapis lazuli amulet</p>
 <dimensions type="surface" unit="m">
                                         <height>0.017</height>
                                         <width>0.013</width>
-                                        <depth/>
+                                        <depth>0.002</depth>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>excellent condition</p>
-                        </condition>
+                        <condition ana="complete.intact"><!--Add ana attribute with controlled value for condition--><p>excellent condition</p></condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
@@ -62,7 +61,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="figured_scene">
-                        <p>standing Serapis</p>
+                        <p>Standing Serapis in Priapean garb with two serpents</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -76,14 +75,18 @@
                         </summary>
                   <origin>
                      <date notBefore="0100" notAfter="0300">second to third century CE</date>
-                     <placeName ref="unknown">unknown</placeName>
+                     <placeName ref="africa.egypt" cert="low">Egypt</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#xx"/>
-                        <biblScope type="item"/>
+                        <ptr type="rest-of-bibl" target="#bonner"/>
+                        <biblScope type="item">263, n. 62</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
+                        <biblScope type="item">51, no. 25 (pl. XVI)</biblScope>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
                      
@@ -100,6 +103,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+          <change when="2014-06-10" who="SJD">Corrected mistaken filename and xml ids, corrected image filepaths; updated bibl; updated metadata with some info from the BM website; edited transcription to reflect correct number of div types and obverse/reverse</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,38 +111,32 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-        <graphic url="NY.Brook.BM.G.16.154.r.jpg"/>
-            <graphic url="NY.Brook.BM.G.16.154.v.jpg"/>
+        <graphic url="NY.Brook.BM.G.16.157.r.jpg"/>
+        <graphic url="NY.Brook.BM.G.16.157.v.jpg"/>
       </surface>
    </facsimile>
    <text>
         <body>
-            <div type="edition">
+            <div type="edition" subtype="obverse">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>καθ᾽ἡμέραν εὐπορεῖμαι</ab>
-            </div>
-            <div type="edition">
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>εὐπορί</abbr>
-                  <ex>α</ex>
-               </expan> ιωαο</ab>
+                    <lb n="1"/><expan><abbr>εὐπορί</abbr><ex>α</ex></expan> ιωαο</ab>
             </div>
-            <div type="edition">
+            <div type="edition" subtype="reverse">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>αναχαβραχ
                     <lb n="2"/> αχχωθαχω
                     <lb n="3"/> τχαχαβαχ
-                    <lb n="4"/> ανα</ab>
+                    <lb n="4"/> ανα
+                </ab>
             </div>
             <div type="apparatus">
                 <p>Rim 1) εὐπόρει: Bonner</p>
-            </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep/usepi_bib.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+            </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep/usepi_bib.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include></div>
         </body>
     </text>
 </TEI>

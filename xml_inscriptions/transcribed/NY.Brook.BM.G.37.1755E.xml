@@ -36,8 +36,8 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#Instr_Dom.ornament">
-                     <supportDesc ana="#stone">
+                  <objectDesc ana="#instrumentum.jewelry">
+                     <supportDesc ana="#stone.other">
                         <support>
 <p>Oval red jasper amulet</p>
 <dimensions type="surface" unit="m">
@@ -46,7 +46,7 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>excellent condition</p>
+                        <condition ana="complete.intact"><!--Add ana attribute with controlled value for condition--><p>excellent condition</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -62,7 +62,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="figured_scene">
-                        <p>lion-headed god holding a staff and ankh</p>
+                        <p>Lion-headed god holding a staff and ankh on reverse</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -82,9 +82,14 @@
             </msDesc>
             <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#xx"/>
-                        <biblScope type="item"/>
+                       <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
+                       <biblScope type="item">49, no. 24 (pl. XV)</biblScope>
                     </bibl>
+                    <bibl>
+                       <ptr type="rest-of-bibl" target="#Bonner"/>
+                       <biblScope type="item">183-185, no. 283 (pl. XIII)</biblScope>
+                    </bibl>
+                   
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
                      
                 </listBibl>
@@ -100,6 +105,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2014-06-10" who="SJD">Updated genre, material, condition, bibl; marked sides in transcription under subtypes; made small changes to transcription (updating sic to surplus, etc.)</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,7 +113,7 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-        <graphic url="NY.Brook.BM.G.37.1755E.r.jpg"/>
+            <graphic url="NY.Brook.BM.G.37.1755E.r.jpg"/>
             <graphic url="NY.Brook.BM.G.37.1755E.r-Det.1.jpg"/>
             <graphic url="NY.Brook.BM.G.37.1755E.v.jpg"/>
             <graphic url="NY.Brook.BM.G.37.1755E.v-Det.1.jpg"/>
@@ -115,71 +121,38 @@
    </facsimile>
    <text>
         <body>
-            <div type="edition">
+            <div type="edition" subtype="obverse">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>κ<choice>
-                  <sic>α</sic>
-                  <corr>λ</corr>
-               </choice>ῦθι μοι,
-                    <lb n="2"/> ὁ ἐν Λεοντ<choice>
-                  <sic>ω</sic>
-                  <corr>ο</corr>
-               </choice>πό
-                    <lb n="3" break="no"/> 
-               <choice>
-                  <sic>δ</sic>
-                  <corr>λ</corr>
-               </choice>ι τὴν κατοικίαν κ
-                    <lb n="4" break="no"/> εκληρωμένος, ὁ ἐ
-                    <lb n="5" break="no"/> ν τῷ ἁγίῳ σηκῷ ἐνι
-                    <lb n="6" break="no"/> 
-               <choice>
-                  <sic>λ</sic>
-                  <corr>δ</corr>
-               </choice>ρυμένος, ὁ ἀστράπ
-                    <lb n="7" break="no"/> των καὶ βροντῶν κα<supplied reason="omitted">ὶ</supplied>
-                    <lb n="8"/> γνόφου καὶ ἀνέμω
-                    <lb n="9" break="no"/> ν <choice>
-                  <sic>χ</sic>
-                  <corr>κ</corr>
-               </choice>ύριος, ὁ τὴν ἐνο
-                    <lb n="10" break="no"/> υράνιον τῆς <choice>
-                  <sic>ε</sic>
-                  <corr>αἰ</corr>
-               </choice>ων
-                    <lb n="11" break="no"/> ίου φύσεως κεκλ
-                    <lb n="12" break="no"/> ηρωμένος ἀ
-                    <lb n="13" break="no"/> νά<choice>
-                  <sic>ν</sic>
-                  <corr>γ</corr>
-               </choice>κην.</ab>
+                    <lb n="1"/>κ<choice><corr>λ</corr><sic>α</sic></choice>ῦθι μοι,
+                    <lb n="2"/> ὁ ἐν Λεοντ<choice><corr>ο</corr><sic>ω</sic></choice>πό
+                    <lb n="3" break="no"/><choice><corr>λ</corr><sic>δ</sic></choice>ι τὴν κατοικίαν κ
+                    <lb n="4" break="no"/>εκληρωμένος, ὁ ἐ
+                    <lb n="5" break="no"/>ν τῷ ἁγίῳ σηκῷ ἐνι
+                    <lb n="6" break="no"/><choice><corr>δ</corr><sic>λ</sic></choice>ρυμένος, ὁ ἀστράπ
+                    <lb n="7" break="no"/>των καὶ βροντῶν κα<supplied reason="omitted">ὶ</supplied>
+                    <lb n="8"/>γνόφου καὶ ἀνέμω
+                    <lb n="9" break="no"/>ν <choice><corr>κ</corr><sic>χ</sic></choice>ύριος, ὁ τὴν ἐνο
+                    <lb n="10" break="no"/>υράνιον τῆς <choice><corr>αἰ</corr><sic>ε</sic></choice>ων
+                    <lb n="11" break="no"/>ίου φύσεως κεκλ
+                    <lb n="12" break="no"/>ηρωμένος ἀ
+                    <lb n="13" break="no"/>νά<choice><corr>γ</corr><sic>ν</sic></choice>κην.
+                </ab>
             </div>
-            <div type="edition">
+            <div type="edition" subtype="edge">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>Σὺ <supplied reason="omitted">ε</supplied>ἶ ὁ ταχυε<sic>ε</sic>
-               <supplied reason="lost">ρυ</supplied>
-               <sic>ε</sic>ός,
-                    <lb n="2"/> 
-               <choice>
-                  <sic>θ</sic>
-                  <corr>ὁ</corr>
-               </choice> ἐ<choice>
-                  <sic>ν</sic>
-                  <corr>π</corr>
-               </choice>ήκοος θεός, ὁ μεγαλόδοξος
-                    <lb n="3"/> λεοντόμο<choice>
-                  <sic>τ</sic>
-                  <corr>ρ</corr>
-               </choice>φος: ὄν<supplied reason="omitted">ο</supplied>μα σοι.</ab>
+                    <lb n="1"/>Σὺ <supplied reason="omitted">ε</supplied>ἶ ὁ ταχυε<surplus>ε</surplus><supplied reason="lost">ρυ</supplied><surplus>ε</surplus>ός,
+                    <lb n="2"/><choice><corr>ὁ</corr><sic>θ</sic></choice> ἐ<choice><corr>π</corr><sic>ν</sic></choice>ήκοος θεός, ὁ μεγαλόδοξος
+                    <lb n="3"/> λεοντόμο<choice><corr>ρ</corr><sic>τ</sic></choice>φος: ὄν<supplied reason="omitted">ο</supplied>μα σοι.
+                </ab>
             </div>
-            <div type="edition">
+            <div type="edition" subtype="reverse">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>Μίως, Μίωσι, Ἁρμίως, Οὐσιρμίως,
                     <lb n="2"/> Φρῆ, Σιμίεφε, Φνοῦτο, Φῶς, Πῦρ,
-                    <lb n="3"/> Φλόξ: <sic>ε</sic>ἵλεως Ἀμμωνίῳ.</ab>
+                    <lb n="3"/> Φλόξ: <surplus>ε</surplus>ἵλεως Ἀμμωνίῳ.</ab>
             </div>
             <div type="apparatus">
                 <p/>
