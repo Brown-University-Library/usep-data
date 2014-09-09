@@ -116,8 +116,10 @@
 
                 </div>
                 <!-- <p><a href="{concat('http://library.brown.edu/usep/xml/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p> -->
-                <p><a href="{concat('http://library.brown.edu/usep_data/inscriptions/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
-            </div>
+                <!-- <p><a href="{concat('http://library.brown.edu/usep_data/inscriptions/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p> -->
+                <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab">
+                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
+                </xsl:if></div>
         </xsl:result-document>
     </xsl:template>
 
