@@ -117,9 +117,30 @@
                 </div>
                 <!-- <p><a href="{concat('http://library.brown.edu/usep/xml/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p> -->
                 <!-- <p><a href="{concat('http://library.brown.edu/usep_data/inscriptions/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p> -->
-                <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab">
+                <!-- <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab">
+                    <!-- transcribed folder 
                     <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
-                </xsl:if></div>
+                </xsl:if> -->
+            
+            <xsl:choose>
+                <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab">
+                    <!-- transcribed folder -->
+                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
+                </xsl:when>
+                <xsl:when test="{not(//msItem/@class)"></xsl:when>
+                    <!-- bib only folder -->
+                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
+                <xsl:otherwise>
+                    <!-- only option left is metadata only -->
+                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
+                </xsl:otherwise>
+            </xsl:choose>
+                
+            
+            
+            
+            </div>
+            
         </xsl:result-document>
     </xsl:template>
 
