@@ -39,7 +39,7 @@
     <!-- ** line break in output file; improves human readability of xml output ** -->
 
      <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
-    <xsl:variable name="imageDir" select="'../../usep_images'"/>
+    <xsl:variable name="imageDir" select="'../../../../usep_images'"/>
 
      <xsl:include href="epidoc-xsl/start-edition.xsl"/>
 
