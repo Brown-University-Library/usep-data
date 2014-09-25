@@ -193,9 +193,9 @@
                     <xsl:value-of select="concat(': ', t:biblScope)"/>
                 </xsl:if>
 
-                <!--  <xsl:if test="id($myID)/t:author">
+                 <xsl:if test="id($myID)/t:author">
                     <xsl:value-of select="concat(' [', id($myID)/t:author, ']')"/>
-                </xsl:if>  -->
+                </xsl:if> 
 
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type='jstor']">
@@ -203,9 +203,9 @@
                     (<a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:value-of select="id($myID)/t:ref[@type='jstor']"/></a> (external link; access to JSTOR required))
                 </xsl:if>
 
-               <!-- <xsl:if test="t:ref">
+               <xsl:if test="t:ref">
                     <a href="{t:ref/@target}"><xsl:value-of select="t:ref"/></a> (external link)
-                </xsl:if>-->
+                </xsl:if>
 
             </p>
         </xsl:for-each>
