@@ -63,7 +63,7 @@
     <!-- check for existence of controlled and full text values here. -->
     <tr><td class="label">Layout</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout/@columns"/> columns, <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout/@writtenLines"/> lines</td></tr>
     <tr><td class="label">Writing</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote/@ana, '#'))/t:catDesc"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/></td></tr>
-    <tr><td class="label">Condition</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition/@ana, '#'))/t:catDesc"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition/t:p"/></td></tr>
+    <tr><td class="label">Condition</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition/@ana, '#'))/t:catDesc"/>, <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition/t:p"/></td></tr>
     <tr><td class="label inactive">Decoration</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote/@ana"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote"/></td></tr>
                         </table>
                         </div>
@@ -71,9 +71,6 @@
 
                 <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
-                        <xsl:if test="/t:TEI/t:facsimile">
-                          
-
                             <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
                                 <xsl:for-each select="t:graphic">
                                     <a class="highslide" href="{concat($imageDir, '/',@url)}" onclick="return hs.expand(this)">
@@ -81,9 +78,7 @@
                                     </a>
                                 </xsl:for-each>
                             </xsl:for-each>
-
-                        </xsl:if>
-                    </xsl:result-document>
+                   </xsl:result-document>
                 </div>
 
                 <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
@@ -130,14 +125,9 @@
 
         <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:listBibl/t:bibl">
             <xsl:variable name="myID" select="substring-after(t:ptr/@target, '#')"/>
-          <!--   <xsl:value-of select="$myID"/> -->
             <p>
                 <!-- Note: I'm not handling cases where articles are directly in the monograph. Only where they
                     are in a volume. We don't have any, so let's do it later.
-
-                    We also have to check for itemAuthors and notes.
-                    2005.10.18 EM broke bibl out into separate file, to include
-                    fixed output so unpublished inscriptions format correctly.
                 -->
                 <!-- Output the author, if there is one. Right now, assumption is that there is an
                     potentially an author on the bibl if it's an article, or on the outermost bibl if
@@ -193,7 +183,7 @@
                         <xsl:value-of select="concat(' (',id($myID)/t:date, ')')"/>
                     </xsl:when>
                     <xsl:when test="id($myID)/ancestor-or-self::t:bibl[@type='v' or type='m']/t:date">
-                        <xsl:value-of select="concat(' (',id($myID)/ancestor-or-self::bibl[@type='v' or type='m']/t:date, ')')"/>
+                        <xsl:value-of select="concat(' (',id($myID)/ancestor-or-self::t:bibl[@type='v' or type='m']/t:date, ')')"/>
                     </xsl:when>
                 </xsl:choose>
 
@@ -203,19 +193,19 @@
                     <xsl:value-of select="concat(': ', t:biblScope)"/>
                 </xsl:if>
 
-                <xsl:if test="t:itemAuthor">
+              <!--  <xsl:if test="t:itemAuthor">
                     <xsl:value-of select="concat(' [', t:itemAuthor, ']')"/>
-                </xsl:if>
+                </xsl:if>  -->
 
                 <!-- This prints the jstor link   -->
-                <xsl:if test="id($myID)/t:link">
+                <xsl:if test="id($myID)/t:ref[@type='jstor']">
                     <br />
-                    (<a href="{id($myID)/t:link/t:a/@href}" class="biblink"><xsl:value-of select="id($myID)/t:link/t:a"/></a> (external link; access to JSTOR required))
+                    (<a href="{id($myID)/t:ref[@type='jstor']}" class="biblink"><xsl:value-of select="id($myID)/t:ref[@type='jstor']"/></a> (external link; access to JSTOR required))
                 </xsl:if>
 
-                <xsl:if test="t:ref">
+               <!-- <xsl:if test="t:ref">
                     <a href="{t:ref/@target}"><xsl:value-of select="t:ref"/></a> (external link)
-                </xsl:if>
+                </xsl:if>-->
 
             </p>
         </xsl:for-each>
