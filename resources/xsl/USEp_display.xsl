@@ -17,38 +17,19 @@
         **Change Log
         2011-11-8 EM Begun
         2011-11-29 EM adding edition handling
+        2014-09-25 EM many changes including: 
 
         ******************************************************************************   -->
-    <!-- Work plan:
-
-    -->
-
-    <!-- The included files below are imported from the epidoc html conversion. We
-    want to use them for converting transcriptions.
-    -->
-
-    <!-- ******************** Start Epidoc Includes ******************** -->
-
-
-    <!-- ********************  End Epidoc Includes  ******************** -->
-
-
-    <!-- ********************  This handles the bibliography  ******************** -->
-            <!-- <xsl:include href="include_bibl.xsl"/> -->
-
-    <!-- ** line break in output file; improves human readability of xml output ** -->
-
-     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
+ 
+    <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
     <xsl:variable name="imageDir" select="'../../../../usep_images'"/>
 
      <xsl:include href="epidoc-xsl/start-edition.xsl"/>
 
-    <!-- Output is not complete HTML file, because in our case, the view.js script that David wrote handles
-        everything including <body> and the title of the page. We make a div to enclose the output of the metadata
-        the text, image(s) and bib. Each of those has its own div as well.
-        If a whole HTML page has to be output, the HTML enclosing tags and the <head> element can be put into
-        the first template below.
-    -->
+    <!-- Output is not complete HTML file, because in our case, most of the page, header and so on are handled by django.
+        This script takes care of anything beneath the title of the inscription (handled by django) down to the bibliographic
+        citations and the images. -->
+        
     <xsl:template match="/">
         <xsl:result-document href="#container">
             <div>
@@ -78,8 +59,8 @@
     <tr><td class="label">Date</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:date"/></td></tr>
                             <!-- check for existence of controlled and full text values here. -->
     <tr><td class="label">Layout</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout/@columns"/> columns, <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout/@writtenLines"/> lines</td></tr>
-    <tr><td class="label">Writing</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/@ana, '#'))/t:catDesc"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/></td></tr>
-    <tr><td class="label">Condition</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition/@ana, '#'))/catDesc"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/objectDesc/t:supportDesc/t:condition/t:p"/></td></tr>
+    <tr><td class="label">Writing</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handNote/@ana, '#'))/t:catDesc"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/></td></tr>
+    <tr><td class="label">Condition</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition/@ana, '#'))/t:catDesc"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition/t:p"/></td></tr>
     <tr><td class="label inactive">Decoration</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/@ana"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:decoNote"/></td></tr>
                         </table>
                         </div>
@@ -88,6 +69,7 @@
                 <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
                         <xsl:if test="/t:TEI/t:facsimile">
+                          
 
                             <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
                                 <xsl:for-each select="t:graphic">
@@ -115,25 +97,19 @@
                             it should also check that link is descendant of div type=bib -->
 
                 </div>
-                <!-- <p><a href="{concat('http://library.brown.edu/usep/xml/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p> -->
-                <!-- <p><a href="{concat('http://library.brown.edu/usep_data/inscriptions/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p> -->
-                <!-- <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab">
-                     transcribed folder 
-                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
-                </xsl:if> -->
-            
+             
             <xsl:choose>
                 <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab">
                     <!-- transcribed folder -->
-                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file (T)</a></p>
+                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
                 </xsl:when>
                 <xsl:when test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem[@class]">
                     <!-- bib only folder -->
-                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file (M)</a></p>
+                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
                 </xsl:when>
                 <xsl:otherwise>
                     <!-- only option left is metadata only -->
-                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file (B)</a></p>
+                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
                 </xsl:otherwise>
             </xsl:choose>
                 
@@ -220,11 +196,11 @@
 
                 <!-- everything has a reference except for unpub. but put a space before it. -->
 
-                <xsl:if test="biblScope">
+                <xsl:if test="t:biblScope">
                     <xsl:value-of select="concat(': ', t:biblScope)"/>
                 </xsl:if>
 
-                <xsl:if test="itemAuthor">
+                <xsl:if test="t:itemAuthor">
                     <xsl:value-of select="concat(' [', t:itemAuthor, ']')"/>
                 </xsl:if>
 
