@@ -33,24 +33,25 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble columbarium slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
+                              <height>15.2</height>
+                              <width>33.3</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.broken">
+                           <p>Chipped at upper right an lower left corners</p>
+                              <!--free text here, don't forget the ana attribute on the condition element-->
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="001" writtenLines="004">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote/>
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -71,12 +72,20 @@
                      <date notBefore="0001" notAfter="0200">first-second century CE</date>
                      <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                   </origin>
+                  <provenance>
+                     <date when="2002">2002</date>
+                     <p>Auctioned at Sotheby's, lot 193 on 12/11/2002</p>
+                  </provenance>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CIL_VI"/>
                   <biblScope type="item">21107</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Michaelis_1882"/>
+                  <biblScope type="item">p. 497, no. 61</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +101,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2015-07-07" who="SJD">Added transcription from photograph, updated metadata, provenance</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -111,6 +121,12 @@
    <text>
       <body>
          <div type="edition">
+            <ab>
+               <lb n="1"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Larcius">Larcius</name> <g type="Caiae"/> <expan><abbr>l</abbr><ex>libertus</ex></expan>
+               <lb n="2"/><name type="cognomen" key="Ianuarius">Ianuarius</name></persName>
+               <lb n="3"/>vixit <expan><abbr>ann</abbr><ex>is</ex></expan> <num type="la" value="14">XIIII</num>.
+               <lb n="4"/>Hic <expan><abbr>h</abbr><ex>umatus</ex></expan> <expan><abbr>e</abbr><ex>st</ex></expan>.
+            </ab>
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>

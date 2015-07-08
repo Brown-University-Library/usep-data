@@ -26,31 +26,31 @@
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Pussinica</p>
+                     <p>Epitaph of Pusinnica</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>23.2</height>
+                              <width>33</width>
+                              <depth>1.9</depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
-                              <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                        <layout columns="001" writtenLines="006">
+                           <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="unknownDec">
@@ -69,7 +69,7 @@
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
                      <date notBefore="0001" notAfter="0125">first-early second century CE</date>
-                     <placeName ref="africa">Susa, Tunisia</placeName>
+                     <placeName ref="africa.tunisia.susa">Susa, Tunisia</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
@@ -81,6 +81,14 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#CIL_VIII"/>
                   <biblScope type="item">11145</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#RA_Vercoutre"/>
+                  <biblScope type="pp">27</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="AntAfr_1884"/>
+                  <biblScope type="item">V. Reboud, p. 215 n. 492</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -96,6 +104,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2015-07-08" who="SJD">Expanded bibliography, made small changes to metadata, made transcription from image, moved to transcribed folder</change>
       </revisionDesc>
    </teiHeader>
    
@@ -104,6 +113,14 @@
    <text>
       <body>
          <div type="edition">
+            <ab>
+               <lb n="1"/>D<hi rend="tall">i</hi>s mani<hi rend="tall">b</hi>u<hi rend="tall">s</hi>. Hic
+               <lb n="2"/>sita est <persName><name type="cognomen">Pusinnica</name></persName>.
+               <lb n="3"/>Vixit annis <num value="3">tribus</num>,
+               <lb n="4"/>mensibus <num value="10">X</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="21">XXI</num>.
+               <lb n="5"/><persName><name type="cognomen">Donata</name></persName> mater filiae
+               <lb n="6"/>dulcissimae fecit.
+            </ab>
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
