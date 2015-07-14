@@ -73,12 +73,6 @@
                     <xsl:result-document href="#images">
                             <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
                                 <xsl:for-each select="t:graphic">
-                                    <xsl:if test="/t:TEI/t:facsimile/t:surface/t:graphic[@type='external']">
-                                        <a class="highslide" href="{t:graphic/@target}" onclick="return hs.expand(this)">
-                                            <xsl:value-of select="t:graphic"/>
-                                            <img src="@{t:graphic/@target}" alt="" width="200"/>
-                                        </a>
-                                    </xsl:if>
                                     <a class="highslide" href="{concat($imageDir, '/',@url)}" onclick="return hs.expand(this)">
                                         <img src="{concat($imageDir, '/',@url)}" alt="" width="200"/>
                                     </a>
