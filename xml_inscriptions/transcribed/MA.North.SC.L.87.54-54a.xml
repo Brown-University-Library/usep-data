@@ -20,7 +20,7 @@
                   <region>MA</region>
                   <settlement>North</settlement>
                   <institution>SC</institution>
-                  <repository>nl</repository>
+                  <repository>NL</repository>
                   <idno>54-54a</idno>
                </msIdentifier>
                <msContents>
@@ -32,14 +32,21 @@
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p></p><dimensions type="surface" unit="m">
-                                        <height>0.28.2</height>
-                                        <width>0.26</width>
-                                        <depth>0.4</depth>
-                                    </dimensions>
+                        <support>
+                           <p></p>
+                              <dimensions type="surface" unit="cm">
+                                  <height>28.2</height>
+                                  <width>26</width>
+                                  <depth>4</depth>
+                              </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>26</height>
+                              <width>23.8</width>
+                           </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragments.contig">
+                           <p>Top broken off and missing, bottom left corner broken but
+                              preserved<!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +57,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -67,12 +74,12 @@
                             <note/>
                         </summary>
                   <origin>
-                            <!-- Should contain information about origin of inscription including place and date.  -->
-                            <date notBefore="0200" notAfter="0300">third century CE</date>
-                            <!-- need to figure out how to indicate the place of origin as well as coordinates. -->
-                            <geogName/>
+                     <!-- Should contain information about origin of inscription including place and date.  -->
+                     <date notBefore="0200" notAfter="0300">Third century CE</date>
+                     <!-- need to figure out how to indicate the place of origin as well as coordinates. -->
+                     <geogName/>
                      <!-- geographical coordinates -->
-                        </origin>
+                  </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -84,6 +91,10 @@
                        <ptr type="rest-of-bibl" target="#NSA_1886"/>
                         <biblScope type="item">400, no. 422</biblScope>
                     </bibl>
+                    <bibl>
+                       <ref type="external" target="http://lunadb.smith.edu/luna/servlet/s/nt48g7">Smith College Web Catalogue</ref>
+                    </bibl>
+               
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
                      
                 </listBibl>
@@ -101,6 +112,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-05-20" who="SJD">Edited filename and IDs to reflect changed repository (removed ".NL"); edited image file names to match; added detail images not previously linked in xml)</change>
+         <change when="2015-05-20" who="SJD">Updated metadata, bibl, updated transcription encoding</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,66 +129,19 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>
-               <app type="previouslyread">
-                  <lem resp="previous">POLL</lem>
-                  <rdg resp="autopsy">
-                     <gap reason="lost" extent="4" unit="chars"/>
-                  </rdg>
-               </app>
-                <lb n="2"/>
-               <expan>
-                  <abbr>
-                     <app type="previouslyread">
-                        <lem resp="previous">Domi</lem>
-                        <rdg resp="autopsy">
-                           <gap reason="lost" extent="4" unit="chars"/>
-                        </rdg>
-                     </app>
-                  </abbr><ex>tianus</ex>
-               </expan>
-                <lb n="3"/>
-               <expan>
-                  <abbr>
-                     <app type="previouslyread">
-                        <lem resp="previous">mil</lem>
-                        <rdg resp="autopsy">
-                           <gap reason="lost" extent="3" unit="chars"/>
-                        </rdg>
-                     </app>
-                  </abbr><ex>es</ex>
-                  <abbr> coh</abbr><ex>ortis</ex>
-               </expan>
-                <lb n="4"/>
-               <app type="previouslyread">
-                  <lem resp="previous">Dulsi.</lem>
-                  <rdg resp="autopsy">
-                     <gap reason="lost" extent="4" unit="chars"/>
-                  </rdg>
-               </app> Mili<supplied reason="lost">t</supplied>
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-                  <abbr> 
-                     <num xml:lang="lat" value="6">VI</num> vixit an</abbr><ex>nis</ex>
-               </expan>
-               <num xml:lang="lat" value="22">XXII</num>.
-                <lb n="5"/>
-               <expan>
-                  <abbr>C</abbr><ex>aius</ex>
-                  <abbr> Vennonius Sabinus</abbr>
-               </expan>
-                <lb n="6"/>
-               <expan>
-                  <abbr>et L</abbr><ex>ucius</ex>
-                  <abbr> Abuxellius</abbr>
-               </expan>
-                <lb n="7"/>Severus amico
-                <lb n="8"/>Carissimo bene
-                <lb n="9"/>Merenti de se
-                <lb n="10"/>fecerunt.</ab>
-                
-                
-                
+               <lb/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><persName><name type="gentilicium" key="Pollio"><supplied reason="undefined" evidence="previouseditor">Poll</supplied><supplied reason="lost" cert="low">ioni</supplied></name>                
+               <lb n="2"/><name type="cognomen" key="Domitianus"><supplied reason="undefined" evidence="previouseditor">Do</supplied>mit<supplied reason="lost">iano</supplied></name></persName>
+               <lb n="3"/><supplied reason="undefined" evidence="previouseditor"><expan><abbr>mil</abbr><ex>iti</ex></expan></supplied> <expan><abbr>coh</abbr><ex>ortis</ex></expan> <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><g type="centuriae"/></supplied>
+               <lb n="4"/><supplied reason="undefined" evidence="previouseditor">D</supplied>ulsi. Mili<supplied reason="lost">tavit</supplied>
+               <lb n="5"/><expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="lat" value="6">VI</num>, vixit <expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="lat" value="22">XXII</num>.
+               <lb n="6"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Vennonius">Vennonius</name> <name type="cognomen" key="Sabinus">Sabinus</name></persName>
+               <lb n="7"/>et <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Abuxellius">Abuxellius</name>
+               <lb n="8"/><name type="cognomen" key="Severus">Severus</name></persName> amico
+               <lb n="9"/>carissimo bene
+               <lb n="10"/>merenti de se
+               <lb n="11"/>fecerunt.
+            </ab>       
             </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
