@@ -78,7 +78,7 @@
                     <msContents>
                         <textLang mainLang="lat"/> <!-- la, grc, ett ?? -->
                         <msItem class="#funerary.epitaph">
-                        <p>funerary epitaph of Eupraxia</p>
+                        <p>Funerary epitaph of Eupraxia</p>
                         </msItem>
                     </msContents>
 
@@ -127,11 +127,18 @@
                                         <width>20.3</width>
                                         <depth>1.9</depth>
                                      </dimensions>
+                                    <dimensions type="campus" unit="cm">
+                                        <height>16.2</height>
+                                        <width>16.5</width>
+                                    </dimensions>
+                                    <dimensions type="letter" unit="cm">
+                                        <height min="1.4" max="2.1">1.4-2.1</height>
+                                    </dimensions>
                                     
                                </support>
 
-                                <condition ana="#complete">
-                                    <p />
+                                <condition ana="#complete.intact">
+                                    <p>Stone well preserved aside from slight wear on top-left and bottom-right corners, and evidence of mineral deposits. Small hairline crack visible on reverse.</p>
                                 </condition>
 
                             </supportDesc>
@@ -143,7 +150,7 @@
                                 @columns and @writtenLines record the number of columns and number of lines.
                             -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="0">
+                                <layout columns="1" writtenLines="7">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -270,6 +277,7 @@
         -->
         <revisionDesc>
             <change when="2014-03-17" who="EB">initial encoding into xml</change>
+            <change when="2015-07-27" who="SJD">Updated metadata, added transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -294,7 +302,15 @@
     <text>
         <body>
             <div type="edition">
-                <!-- transcription goes here -->
+                <ab>
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                    <lb n="2"/><persName><name key="Eupraxia" type="cognomen">Eupraxiae</name></persName>,
+                    <lb n="3"/><expan><abbr>q</abbr><ex>uae</ex></expan> <expan><abbr>v</abbr><ex>ixit</ex></expan> <expan><abbr>an</abbr><ex>nis</ex></expan> <num value="3">III</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="5">V</num>,
+                    <lb n="4"/><expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="19">XIX</num>. <persName><name type="cognomen" key="Aspasia">Aspasi
+                    <lb n="5" break="no"/>a</name></persName> et <persName><name type="cognomen" key="Eupraxius">Euprasius</name></persName>
+                    <lb n="6"/><expan><abbr>fil</abbr><ex>iae</ex></expan> dulcissi
+                    <lb n="7" break="no"/>mae.
+                </ab>
             </div>
                         
             <!-- if there is commentary or notes, you can add a <div type="commentary"> after the edition. -->

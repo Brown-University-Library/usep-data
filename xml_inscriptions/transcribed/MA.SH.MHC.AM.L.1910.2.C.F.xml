@@ -78,7 +78,7 @@
                     <msContents>
                         <textLang mainLang="lat"/> <!-- la, grc, ett ?? -->
                         <msItem class="#funerary.epitaph">
-                        <p>epitaph of T. Calidius Castus, a soldier of the 4th praetorian cohort</p>
+                        <p>Epitaph of T. Calidius Castus, a soldier of the 4th praetorian cohort</p>
                         </msItem>
                     </msContents>
 
@@ -127,11 +127,14 @@
                                         <width>31.4</width>
                                         <depth>1.6</depth>
                                      </dimensions>
+                                    <dimensions type="letter" unit="cm">
+                                        <height min="1.7" max="1.8">1.7-1.8</height>
+                                    </dimensions>
                                     
                                </support>
 
                                 <condition ana="#complete">
-                                    <p />
+                                    <p>Slight damage to upper right corner, face is extensively weathered, traces on concrete on reverse</p>
                                 </condition>
 
                             </supportDesc>
@@ -143,7 +146,7 @@
                                 @columns and @writtenLines record the number of columns and number of lines.
                             -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="0">
+                                <layout columns="1" writtenLines="5">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -200,7 +203,7 @@
 
                         <origin>
                             <date notBefore="0050" notAfter="0200">second half of 1st century - 2nd century CE</date>
-                            <placeName ref="europe.italy.rome">Rome, Italy (?)</placeName>
+                            <placeName ref="europe.italy.rome" cert="low">Rome, Italy (?)</placeName>
                         </origin>
 
                       
@@ -271,6 +274,7 @@
         -->
         <revisionDesc>
             <change when="2014-03-17" who="EB">initial encoding into xml</change>
+            <change when="2015-07-27" who="SJD">Small metadata updates, added transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -295,7 +299,13 @@
     <text>
         <body>
             <div type="edition">
-                <!-- transcription goes here -->
+                <ab>
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                    <lb n="2"/><persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>beri</ex></expan></name> <name type="gentilicium" key="Calidus">Calidi</name> <name type="cognomen" key="Castus">Casti</name></persName>,
+                    <lb n="3"/><expan><abbr>mil</abbr><ex>itis</ex></expan> <expan><abbr>coh</abbr><ex>ortis</ex></expan> <num value="4" type="ordinal">IIII</num> <expan><abbr>pr</abbr><ex>aetoriae</ex></expan>,
+                    <lb n="4"/><g type="centuriae"/> Romuli, qui <expan><abbr>milit</abbr><ex>avit</ex></expan>
+                    <lb n="5"/><expan><abbr>ann</abbr><ex>is</ex></expan> <num value="2">II</num>. <expan><abbr>F</abbr><ex>ecit</ex></expan> <expan><abbr>h</abbr><ex>eres</ex></expan> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>.
+                </ab>
             </div>
                         
             <!-- if there is commentary or notes, you can add a <div type="commentary"> after the edition. -->
