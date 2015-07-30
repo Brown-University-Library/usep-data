@@ -193,9 +193,10 @@
                     <xsl:value-of select="concat(': ', t:biblScope)"/>
                 </xsl:if>
 
-                 <xsl:if test="id($myID)/t:author">
+            <!--  This puts the author at the end of a citation in quotes. seems odd, can't tell what or why.
+                <xsl:if test="id($myID)/t:author">
                     <xsl:value-of select="concat(' [', id($myID)/t:author, ']')"/>
-                </xsl:if> 
+                </xsl:if> -->
 
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type='jstor']">
