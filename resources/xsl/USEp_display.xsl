@@ -131,7 +131,7 @@
                 -->
                 <!-- Output the author, if there is one. Right now, assumption is that there is an
                     potentially an author on the bibl if it's an article, or on the outermost bibl if
-                    it's a corpus or monograph.
+                    it's a corpus or monograph. Assume that there is always a <persName type="sort"> and use that.
                 -->
                
                     <xsl:if test="id($myID)/t:author/t:persName[@type='sort']">
