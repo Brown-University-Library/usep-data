@@ -134,7 +134,7 @@
                     it's a corpus or monograph.
                 -->
 
-             <!--   <xsl:choose>
+               <xsl:choose>
                     <xsl:when test="id($myID)/t:author/t:persName[@type='sort']">
                         <xsl:value-of select="concat(id($myID)/t:author/t:persName[@type='sort'], ', ')"/>
                     </xsl:when>
@@ -142,7 +142,7 @@
                         <xsl:value-of select="concat(id($myID)/t:author/t:persName, ', ')"/>
                     </xsl:otherwise>
                 
-                </xsl:choose>  -->
+                </xsl:choose>  
 
                 <!-- output title or abbreviation. if it's a monograph, output the title. If  corpus or a journal
                     output the abbreviation if there is one. I am not outputting titles for volumes or articles, as
