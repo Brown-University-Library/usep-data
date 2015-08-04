@@ -40,12 +40,15 @@
                      <supportDesc ana="#stone.marble">
                         <support>
                            
-                           <p></p>
+                           <p>Rectangular marble slab</p>
                            <dimensions type="surface" unit="m">
                                         <height>0.68.5</height>
                                         <width>0.39.3</width>
                                         <depth/>
                                     </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="2.5" max="3.0">2.5-3.0</height>
+                           </dimensions>
                         </support>
                         <condition><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
@@ -68,12 +71,14 @@
                   </decoDesc>
                </physDesc>
                <history>
+                  
                   <summary>
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                     <rs>fake</rs>
+                     <note/>
                         </summary>
                   <origin>
                      <date notBefore="0050" notAfter="0200">mid first-second century CE</date>
@@ -101,6 +106,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2015-08-04" who="SJD">Updated transcription, whcih was for the original inscription rather than this forgery; updated the authenticity tag</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -115,25 +121,18 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="1"/> 
-               <expan>
-                  <abbr>M</abbr><ex>arco</ex>
-               </expan> 
-               <expan>
-                  <abbr>L</abbr><ex>icinio</ex>
-               </expan> Victori Attia Licinia
-                <lb n="1"/> coiugi bene mer
-                <lb break="no" n="1"/> enti et fili fecerunt</ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/><expan><abbr>Fil</abbr><ex>io</ex></expan> Victori
+               <lb n="3"/>Attia ITCINIACO
+               <lb n="4"/>IUEL bene merenti
+               <lb n="5"/>et <expan><abbr>fil</abbr><ex>ii</ex></expan> fecerunt.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
-            </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            </div>
+           <div type="commentary">
+              <p>The inscription appears to be a modern forgery based on CIL 6.28921.</p>
+           </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

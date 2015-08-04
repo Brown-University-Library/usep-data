@@ -49,7 +49,7 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -118,6 +118,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2011-11-27" who="CD">Replaced @fake type=object with @rs fake</change>
+         <change when="2015-08-04" who="SJD">Replaced the transcription, which was for CIL 6.886, with correct transcription for stone based on folder</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -132,25 +133,22 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>Ossa
-                <lb n="2"/> Agrippinae M. Agrippae <supplied reason="lost">
-                  <expan>
-                     <abbr>f</abbr><ex>iliae</ex>
-                  </expan>
-               </supplied>
-                <lb n="3"/> Divi <expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan> neptis uxoris
-                <lb n="4"/> Germanici Caesaris
-                <lb n="5"/> matris <expan>
-                  <abbr>C</abbr><ex>aius</ex>
-               </expan> Caesaris <expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan>
-                <lb n="6"/> Germanici principis</ab>
+               <lb n="1"/>Ossa
+               <lb n="2"/> Agrippa M. A
+               <lb n="3" break="no"/>grippa, Divi Agu
+               <lb n="4"/>nepotis, uxor
+               <lb n="5" break="no"/>is Germanici
+               <lb n="6"/>C<sic>ea</sic>sari, matris
+               <lb n="7"/><expan><abbr>G</abbr><ex>ai</ex></expan> <expan><abbr>Cea</abbr><ex>sa</ex><abbr>r</abbr><ex>is</ex></expan> <expan><abbr>Aug</abbr><ex>usti</ex></expan>
+               <lb n="8"/>Germanici
+               <lb n="9"/>principi.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
-            </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            </div>
+           <div type="commentary">
+              <p>Crude copy of CIL 6.886</p>
+           </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
