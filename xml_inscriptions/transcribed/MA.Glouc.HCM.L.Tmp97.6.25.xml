@@ -41,14 +41,16 @@
                         <support>
                            
                            
-                           <p/>
+                           <p>Rectangular plaster plaque</p>
                            <dimensions type="surface" unit="m">
                                         <height>0.26</height>
                                         <width>0.32</width>
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Sides somewhat uneven, probably from being immured</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,7 +61,7 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
+                  <handDesc hands="1">
                      <handNote/>
                   </handDesc>
                   <decoDesc>
@@ -79,8 +81,8 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date>modern</date>
-                     <placeName ref="unkown">unknown</placeName>
+                     <date>Modern</date>
+                     <placeName ref="unknown">Unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -106,6 +108,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2011-11-27" who="CD">Replaced @fake type=object with @rs fake</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-06" who="SJD">Updated metadata, transcription and name tagging</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -120,37 +123,14 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> 
-               <expan>
-                  <abbr>Severa</abbr><ex>e</ex>
-               </expan> 
-               <expan>
-                  <abbr>co</abbr><ex>n</ex>
-               </expan>
-                <lb break="no" n="3"/>iu<choice>
-                  <sic>c</sic>
-                  <corr>g</corr>
-               </choice>i Aerenius
-                <lb n="4"/> Nicita coniu
-                <lb break="no" n="5"/>
-               <choice>
-                  <sic>c</sic>
-                  <corr>g</corr>
-               </choice>i <expan>
-                  <abbr>be</abbr><ex>ne</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan>
-                <lb n="6"/> vixsit <note>!</note> annos X
-                <lb break="no" n="7"/> VI</ab>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/><persName><name type="gentilicium" key="Severa"><expan><abbr>Severa</abbr><ex>e</ex></expan></name></persName> <g type="hedera"/> <expan><abbr>co</abbr><ex>n</ex></expan>
+                <lb break="no" n="3"/>iu<choice><sic>c</sic><corr>g</corr></choice>i. <persName><name type="gentilicium" key="Aerenius">Aerenius</name>
+                <lb n="4"/><name type="cognomen" key="Niceta">Nicita</name></persName> coniu
+                <lb break="no" n="5"/><choice><sic>c</sic><corr>g</corr></choice>i <expan> <abbr>be</abbr><ex>ne</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>
+                <lb n="6"/> vixsit<note>!</note> annos <num value="16">X
+                <lb break="no" n="7"/>VI</num>.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>

@@ -32,7 +32,7 @@
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>Epitaph of Anniolae</p>
+                     <p>Epitaph of Anniola</p>
                   </msItem>
                </msContents>
                <physDesc>
@@ -41,14 +41,16 @@
                         <support>
                            
                            
-                           <p/>
+                           <p>Pentagonal marble slab</p>
                            <dimensions type="surface" unit="m">
                                         <height>0.24.5</height>
                                         <width>0.20.3</width>
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Broken at right, partial break at left that obscures no text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +61,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -77,8 +79,8 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date notBefore="0050" notAfter="0200">mid first-second century CE</date>
-                     <placeName ref="unknown">unkown</placeName>
+                     <date notBefore="0050" notAfter="0200">Mid-first to second century CE</date>
+                     <placeName ref="unknown">Unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -103,6 +105,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-06" who="SJD">Updated metadata, transcription and name tagging</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,22 +120,12 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> Thebe ma<supplied reason="lost">ter</supplied>
-                <lb n="3"/> Anniol<sic>i</sic>a<unclear>e</unclear>
-               <gap reason="lost" extent="3" unit="character"/>
-                <lb n="4"/> fecit <expan>
-                  <abbr>v</abbr><ex>ivae</ex>
-               </expan> 
-               <gap reason="lost" extent="3" unit="character"/>
-                <lb n="5"/> Liciniae <gap reason="lost" extent="3" unit="character"/>
-                <lb n="6"/> aes v<supplied reason="lost">ivae</supplied>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/><persName><name type="cognomen" key="Thebe">Thebe</name></persName> ma<supplied reason="lost">ter</supplied>
+                <lb n="3"/><persName><name type="cognomen" key="Anniola">Anniol<surplus>i</surplus>a<unclear>e</unclear></name></persName> <gap reason="lost" extent="3" unit="character"/>
+                <lb n="4"/>fecit <expan><abbr>v</abbr><ex>ivae</ex></expan> <gap reason="lost" extent="3" unit="character"/>
+                <lb n="5"/><persName><name type="gentilicium" key="Licinia">Liciniae</name></persName> <gap reason="lost" extent="3" unit="character"/>
+                <lb n="6"/>aes v<supplied reason="lost">ivae</supplied>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
