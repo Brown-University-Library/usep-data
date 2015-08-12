@@ -42,13 +42,20 @@
                            
                            
                            <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.62</height>
+                           <dimensions type="surface" unit="cm">
+                                        <height>62</height>
                                         <width>17.5</width>
                                         <depth>5.5</depth>
                                     </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>19.5</height>
+                              <width>17.5</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="1" max="3">1-3</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -64,13 +71,13 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
-                        <p>two parallel wavy lines</p>
+                        <p>Two parallel wavy lines framing campus</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history>
                   <summary>
-                     <rs>fake</rs>
+                     <rs>Fake</rs>
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
@@ -105,6 +112,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2011-11-27" who="CD">Replaced @fake type="object" with @rs fake</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -120,19 +128,16 @@
             <div type="edition">
             <ab>
                 <lb n="1"/>D<hi rend="tall">i</hi>s
-                <lb n="2"/> Manibus
-                <lb n="3"/> Marcia Coccei
-                <lb n="4"/> fecit Aufudio
-                <lb n="5"/> co<supplied reason="omitted">n</supplied>servo suo
-                <lb n="6"/> b<sic>a</sic>ene m<sic>a</sic>erenti
-                <lb n="7"/> vixit annis X IIII
-                <lb n="8"/> 
-               <expan>
-                  <abbr>me</abbr><ex>n</ex>
-                  <abbr>sibus</abbr>
-               </expan> X
-                <lb n="9"/> diebus X VIII
-                <lb n="10"/> me cum</ab>
+                <lb n="2"/>Manibus.
+                <lb n="3"/><persName><name type="gentilicium" key="Marcia">Marcia</name> <persName><name type="gentilicium" key="Cocceius">Coccei</name></persName></persName>
+                <lb n="4"/>fecit <persName><name type="gentilicium" key="Aufidius">Aufudio</name></persName>
+                <lb n="5"/>co<supplied reason="omitted">n</supplied>servo suo
+                <lb n="6"/>b<surplus>a</surplus>ene m<surplus>a</surplus>erenti.
+                <lb n="7"/>Vixit annis <num value="14">XIIII</num>
+                <lb n="8"/><expan><abbr>me</abbr><ex>n</ex><abbr>sibus</abbr></expan> <num value="10">X</num>,
+                <lb n="9"/>diebus <num value="18">XVIII</num>
+                <lb n="10"/>me cum.
+            </ab>
                 
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->

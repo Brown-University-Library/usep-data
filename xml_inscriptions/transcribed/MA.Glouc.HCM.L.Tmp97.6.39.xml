@@ -36,35 +36,43 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#altar">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           
-                           
                            <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.32</height>
-                                        <width>0.38</width>
-                                        <depth>0.27</depth>
-                                    </dimensions>
+                           <dimensions type="surface" unit="cm">
+                              <height>32</height>
+                              <width>38</width>
+                              <depth>27</depth>
+                           </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>23</height>
+                              <width>29</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="1.0" max="2.0">1.0-2.0</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Only the front of the altar, which bears the inscription, and the lid
+                              remain intact</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="7">
-                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                        <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="8">
+                           <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
-                        <p>figured pediment with molded cornice, acroteria; simple molding border around campus</p>
+                        <p>Figured pediment with molded cornice, acroteria; simple molding border around campus</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -77,7 +85,7 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date notBefore="0050" notAfter="0200">mid first-second century CE</date>
+                     <date notBefore="0050" notAfter="0150">Late first - early second century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -103,6 +111,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, rewrote transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,27 +126,15 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="1"/> Pontia Procilla
-                <lb n="1"/> 
-               <expan>
-                  <abbr>fec</abbr><ex>it</ex>
-               </expan> sibi et suis pos
-                <lb break="no" n="1"/> 
-               <expan>
-                  <abbr>teris</abbr><ex>que</ex>
-               </expan> eius et Pon
-                <lb break="no" n="1"/> peio Felici pose
-                <lb break="no" n="1"/> 
-               <expan>
-                  <abbr>ris</abbr><ex>que</ex>
-               </expan> eorum</ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/><persName><name type="gentilicium" key="Pontia">Pontia</name> <name type="cognomen" key="Procilla">Procilla</name></persName>
+               <lb n="3"/><expan><abbr>fec</abbr><ex>it</ex></expan> sibi et suis <expan><abbr>pos
+               <lb break="no" n="4"/>terisq</abbr><ex>ue</ex></expan> eius et <persName><name type="gentilicium" key="Pontia">Pon
+               <lb n="5" break="no"/>tiae</name> <name type="cognomen" key="Zosime">Zosime</name></persName> et
+               <lb n="6"/>coniugi eius <persName><name type="gentilicium" key="Pompeius">Pom
+               <lb n="7" break="no"/>peio</name> <name type="cognomen" key="Felix">Felici</name></persName> <expan><abbr>poste
+               <lb break="no" n="8"/>risq</abbr><ex>ue</ex></expan> eorum.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>

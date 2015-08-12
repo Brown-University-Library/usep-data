@@ -46,9 +46,18 @@
                                         <height>0.37</height>
                                         <width>0.33</width>
                                         <depth/>
-                                    </dimensions>
+                           </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>27</height>
+                              <width>28</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="2.0" max="3.5">2.0-3.5</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Broken at top right, currently immured in the HCM courtyard</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +68,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -111,6 +120,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Added apparatus based on hard copy files</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -125,23 +135,15 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> 
-               <expan>
-                  <abbr>C</abbr><ex>aius</ex>
-               </expan> Futio
-                <lb n="3"/> Chresimo
-                <lb n="4"/> vixit annis XXX
-                <lb n="5"/> Futia Nysa
-                <lb n="6"/> patrona bene
-                <lb n="7"/> merenti et
-                <lb n="8"/> Euphemus</ab>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Futius">Futio</name>
+                <lb n="3"/><name type="cognomen" key="Chresimus">Chresimo</name></persName>.
+                <lb n="4"/>Vixit annis <num value="30">XXX</num>.
+                <lb n="5"/><persName><name type="gentilicium" key="Futia">Futia</name> <name type="cognomen" key="Nysa">Nysa</name></persName>
+                <lb n="6"/>patrona bene
+                <lb n="7"/>merenti et
+                <lb n="8"/><persName><name type="cognomen" key="Euphemus">Euphemus</name></persName>.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>

@@ -31,8 +31,9 @@
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
-                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>Epitaph of G. Lepidus Eutichus</p>
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
+                     <p>Epitaph of C. Lepidus Eutichus</p>
                   </msItem>
                </msContents>
                <physDesc>
@@ -42,13 +43,16 @@
                            
                            
                            <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.43.2</height>
-                                        <width>0.33</width>
+                           <dimensions type="surface" unit="cm">
+                                        <height>43.2</height>
+                                        <width>33</width>
                                         <depth/>
                                     </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height>2.5</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="complete.broken"><!--Add ana attribute with controlled value for condition--><p>Broken around all edges, though campus remains intact</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +63,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -77,8 +81,8 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date notBefore="0050" notAfter="0200">mid first-second century CE</date>
-                     <placeName ref="unknown">unknown</placeName>
+                     <date notBefore="0050" notAfter="0200">Mid first-second century CE</date>
+                     <placeName ref="unknown">Unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -103,6 +107,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,24 +122,14 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> 
-               <expan>
-                  <abbr>C</abbr><ex>aius</ex>
-               </expan> Lepidus Eutichi
-                <lb n="3"/> fecit <expan>
-                  <abbr>C</abbr><ex>aius</ex>
-               </expan> Lepidus
-                <lb n="4"/> Hermeros filio
-                <lb n="5"/> suo, qui vixit an
-                <lb break="no" n="6"/> nis III mensibus
-                <lb n="7"/> X diebus XXVI</ab>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Lepidius">Lepidi</name> <name type="cognomen" key="Eutichus">Eutichi</name></persName>.
+                <lb n="3"/>Fecit <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Lepidius">Lepidius</name>
+                <lb n="4"/><name type="cognomen" key="Hermeros">Hermeros</name></persName> filio
+                <lb n="5"/>suo, qui vixit an
+                <lb break="no" n="6"/>nis <num value="3">III</num>, mensibus
+                <lb n="7"/><num value="10">X</num>, diebus <num value="26">XXVI</num>.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>

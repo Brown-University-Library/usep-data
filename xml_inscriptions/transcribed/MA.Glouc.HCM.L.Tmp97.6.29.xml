@@ -41,14 +41,23 @@
                         <support>
                            
                            
-                           <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.40.5</height>
-                                        <width>0.35.5</width>
+                           <p>White marble stele</p>
+                           <dimensions type="surface" unit="cm">
+                                        <height>40.5</height>
+                                        <width>35.5</width>
                                         <depth/>
                                     </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>40.5</height>
+                              <width>28.5</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="2.0" max="3.7">2.0-3.7</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Broken at top and bottom, campus is completely preserved</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +68,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="hedera">
@@ -103,6 +112,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="SJD">Metadata additions from file, added name tagging</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,43 +127,13 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan>
-               <g type="hedera"/> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> 
-               <expan>
-                  <abbr>L</abbr><ex>ucio</ex>
-               </expan> Calpur<hi rend="ligature">ni</hi>o
-                <lb n="3"/> Primitivo
-                <lb n="4"/> filio<g type="hedera"/> 
-               <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan>
-                <lb n="5"/> qui <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>ann</abbr><ex>os</ex>
-               </expan> IX
-                <lb n="6"/> 
-               <expan>
-                  <abbr>mens</abbr><ex>es</ex>
-               </expan> XI dies XV
-                <lb n="7"/> 
-               <expan>
-                  <abbr>fecer</abbr><ex>unt</ex>
-               </expan> 
-               <expan>
-                  <abbr>parent</abbr><ex>es</ex>
-               </expan>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="hedera"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> <name type="gentilicium" key="Calpurnius">Calpur<hi rend="ligature">ni</hi>o</name>
+               <lb n="3"/><name type="cognomen" key="Primitivus">Primitivo</name></persName>
+               <lb n="4"/>filio<g type="hedera"/> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>,
+               <lb n="5"/>qui <expan><abbr>vix</abbr><ex>it</ex></expan> <expan><abbr>ann</abbr><ex>os</ex></expan> IX
+               <lb n="6"/><expan><abbr>mens</abbr><ex>es</ex></expan> XI dies XV,
+               <lb n="7"/><expan><abbr>fecer</abbr><ex>unt</ex></expan> <expan><abbr>parent</abbr><ex>es</ex></expan>
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 

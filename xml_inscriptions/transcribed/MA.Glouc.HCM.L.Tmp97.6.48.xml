@@ -42,13 +42,20 @@
                            
                            
                            <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.85.41</height>
-                                        <width>0.34.9</width>
-                                        <depth/>
+                           <dimensions type="surface" unit="cm">
+                                        <height>85.41</height>
+                                        <width>34.9</width>
+                                        <depth>10.48</depth>
                                     </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>56.5</height>
+                              <width>27</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="2.2" max="3.8">2.2-3.8</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,12 +66,12 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
-                        <p>simple molding border</p>
+                        <p>Simple molding border</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -77,7 +84,7 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date notBefore="0050" notAfter="0100">second half of first century CE</date>
+                     <date notBefore="0050" notAfter="0100">Second half of first century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -103,6 +110,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,25 +125,16 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>Dis <expan>
-                  <abbr>Man</abbr><ex>ibus</ex>
-               </expan>
-                <lb n="2"/> Claudiae Aphro
-                <lb n="3"/> 
-               <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-               </expan> XXII <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> V
-                <lb n="4"/> Lathymus
-                <lb n="5"/> Medontis
-                <lb n="6"/> Coccei Nervae
-                <lb n="7"/> coniugi
-                <lb n="8"/> bene merenti
-                <lb n="9"/> fecit</ab>
+                <lb n="1"/>Dis <expan><abbr>Man</abbr><ex>ibus</ex></expan>.
+                <lb n="2"/><persName><name type="gentilicium" key="Claudia">Claudi<hi rend="ligature">ae</hi></name> <name type="cognomen" key="Aphro"></name>Ap<hi rend="ligature">hr</hi>o</persName>.
+                <lb n="3"/><expan><abbr>Vix</abbr><ex>it</ex></expan> <expan><abbr>an</abbr><ex>nis</ex></expan> <num value="22">XXII</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="5">V</num>.
+                <lb n="4"/><persName><name type="cognomen" key="Lathymus"></name>Lathymus</persName>
+                <lb n="5"/><persName><name type="cognomen" key="Medon">Medontis</name></persName>
+                <lb n="6"/> <persName><name type="gentilicium" key="Cocceius">Cocce<hi rend="tall">i</hi></name> <name type="cognomen" key="Nerva">Nervae</name></persName>
+                <lb n="7"/>coniugi
+                <lb n="8"/>bene merent<hi rend="tall">i</hi>
+                <lb n="9"/>fecit.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>

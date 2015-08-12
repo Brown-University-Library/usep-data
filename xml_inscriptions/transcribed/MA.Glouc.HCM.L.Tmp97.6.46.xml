@@ -20,8 +20,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -39,16 +39,20 @@
                   <objectDesc ana="#stele">
                      <supportDesc ana="#plaster">
                         <support>
-                           
-                           
-                           <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.52</height>
-                                        <width>0.29.5</width>
+
+
+                           <p>Rectangular plaster stele</p>
+                           <dimensions type="surface" unit="cm">
+                                        <height>52</height>
+                                        <width>29.5</width>
                                         <depth/>
                                     </dimensions>
+                            <dimensions type="letter" unit="cm">
+                              <height min="2.2" max="3.0">2.2-3.0</height>
+                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                          <p>Currently immured in an external retaining wall near the garden of the HCM</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -56,11 +60,11 @@
                                 <layout columns="1" writtenLines="10">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
-                                </layout>                     
+                                </layout>
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -89,8 +93,13 @@
                         <ptr type="rest-of-bibl" target="#AE_1974"/>
                         <biblScope type="item">190</biblScope>
                     </bibl>
+               
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Arctos_9_Solin"/>
+                  <biblScope type="item">649</biblScope>
+               </bibl>
+
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -105,6 +114,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2011-11-27" who="CD">Replaced @fake type=object with @rs fake</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -119,30 +129,20 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> Appaliae Felici
-                <lb break="no" n="3"/> tati filiae dul
-                <lb break="no" n="4"/> cissime bene
-                <lb n="5"/> merenti Appa
-                <lb break="no" n="6"/> lius Felicissi
-                <lb break="no" n="7"/> mus Appalia
-                <lb n="8"/> Nice fecerun
-                <lb break="no" n="9"/> t quae vixit
-                <lb n="10"/> 
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-               </expan> VI <expan>
-                  <abbr>di</abbr><ex>ebus</ex>
-               </expan> XXXX</ab>
-                
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/><persName><name type="gentilicium" key="Appalia">Appaliae</name> <name type="cognomen" key="Felicitas">Felici
+                <lb break="no" n="3"/>tati</name></persName> filiae dul
+                <lb break="no" n="4"/>cissime bene
+                <lb n="5"/>merenti <persName><name type="gentilicium" key="Appalius">Appa
+                <lb break="no" n="6"/>lius</name> <name type="cognomen" key="Felicissimus">Felicissi
+                <lb break="no" n="7"/>mus</name></persName> <persName><name type="gentilicium" key="Appalia">Appalia</name>
+                <lb n="8"/><name type="cognomen" key="Nice">Nice</name></persName> fecerun
+                <lb break="no" n="9"/>t. Quae vixit
+                <lb n="10"/><expan><abbr>an</abbr><ex>nis</ex></expan> <num value="6">VI</num>, <expan><abbr>di</abbr><ex>ebus</ex></expan> <num value="40">XXXX</num>.
+            </ab>
+
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>

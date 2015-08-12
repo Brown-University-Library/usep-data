@@ -42,13 +42,20 @@
                            
                            
                            <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.45.5</height>
-                                        <width>0.27.3</width>
+                              <dimensions type="surface" unit="cm">
+                                        <height>45.5</height>
+                                        <width>27.3</width>
                                         <depth/>
-                                    </dimensions>
+                              </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>38.0</height>
+                              <width>27.3</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="3.2" max="5.0">3.2-5.0</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p>Broken left and right, only center portion of inscription extant</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +66,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -77,7 +84,7 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date notBefore="0050" notAfter="0200">second half of first-second century CE</date>
+                     <date notBefore="0050" notAfter="0200">Second half of first-second century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -103,6 +110,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,49 +125,13 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <supplied reason="lost">D</supplied>is Mani<supplied reason="lost">bus</supplied>
-                <lb n="2"/>
-               <gap reason="lost" extent="3" unit="chars"/> abiae <expan>
-                  <abbr>L</abbr><ex>uci</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>iliae</ex>
-               </expan> Li<gap reason="lost" extent="5" unit="chars"/>
-                <lb n="3"/>
-               <supplied reason="lost">vi</supplied>
-               <expan>
-                  <abbr>x</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan> XIII m<supplied reason="lost">ensibus</supplied>
-               <gap reason="lost" extent="5" unit="chars"/>
-                <lb n="4"/> 
-               <gap reason="lost" extent="3" unit="chars"/>abius <expan>
-                  <abbr>L</abbr><ex>uci</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ilius</ex>
-               </expan> Pe<gap reason="lost" extent="5" unit="chars"/>
-                <lb n="5"/>
-               <gap reason="lost" extent="3" unit="chars"/> 
-               <gap reason="illegible" extent="1" unit="character"/>unae fierei iu<supplied reason="lost">ssit</supplied>
-               <gap reason="lost" extent="5" unit="chars"/>
-                <lb n="6"/> 
-               <gap reason="lost" extent="3" unit="chars"/>
-               <supplied reason="lost">li</supplied>ibertis libert<supplied reason="lost">
-                  <expan>
-                     <abbr>abusq</abbr><ex>ue</ex>
-                  </expan>
-               </supplied>
-                <lb n="7"/> 
-               <supplied reason="lost">suis</supplied> 
-               <expan>
-                  <abbr>posterisq</abbr><ex>ue</ex>
-               </expan> 
-               <unclear>e</unclear>
-               <supplied reason="lost">orum</supplied>
+                <lb n="1"/><supplied reason="lost">D</supplied>is Mani<supplied reason="lost">bus</supplied>
+                <lb n="2"/><gap reason="lost" extent="3" unit="character" precision="low"/><persName><name type="gentilicium">abiae</name> <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan> </name></persName> <expan><abbr>f</abbr><ex>iliae</ex></expan> <name type="cognomen">Li</name></persName><gap reason="lost" extent="5" unit="character" />
+                <lb n="3"/><supplied reason="lost">quae vi</supplied><expan><abbr>x</abbr><ex>it</ex></expan> <expan><abbr>ann</abbr><ex>is</ex></expan> <num value="13">XIII</num>, m<supplied reason="lost"><expan><abbr>ens</abbr><ex>ibus</ex></expan></supplied><gap reason="lost" extent="5" unit="character"/>
+                <lb n="4"/><gap reason="lost" extent="3" unit="character" precision="low"/><persName><name type="gentilicium">abius</name> <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>f</abbr><ex>ilius</ex></expan> <name type="cognomen">Pe</name></persName><gap reason="lost" extent="5" unit="character"/>
+                <lb n="5"/><gap reason="lost" extent="3" unit="character" precision="low"/><gap reason="illegible" extent="1" unit="character"/>unae fierei iu<supplied reason="lost">ssit</supplied><gap reason="lost" extent="5" unit="character"/>
+                <lb n="6"/><gap reason="lost" extent="3" unit="character"/><supplied reason="lost">li</supplied>ibertis libert<supplied reason="lost"><expan><abbr>abusq</abbr><ex>ue</ex></expan></supplied>
+                <lb n="7"/><supplied reason="lost">suis</supplied> <expan><abbr>posterisq</abbr><ex>ue</ex></expan> <unclear>e</unclear><supplied reason="lost">orum</supplied>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->

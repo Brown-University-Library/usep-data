@@ -36,31 +36,31 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#stele.cippus">
+                  <objectDesc ana="#cippus">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           
-                           
                            <p/>
                            <dimensions type="surface" unit="m">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
-                                    </dimensions>
+                              <height/>
+                              <width/>
+                              <depth/>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Top right corner broken off, not affecting the campus</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="7">
-                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                        <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="7">
+                           <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -77,7 +77,7 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date notBefore="0075" notAfter="0200">late first-second century CE</date>
+                     <date notBefore="0075" notAfter="0200">Late first-second century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -103,6 +103,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors, added short commentary</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -116,42 +117,20 @@
    <text>
         <body>
             <div type="edition">
-            <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> Hedone
-                <lb n="3"/> 
-               <expan>
-                  <abbr>v</abbr><ex>ixit</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> X <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> V <expan>
-                  <abbr>d</abbr><ex>iebus</ex>
-               </expan> VI
-                <lb n="4"/> 
-               <expan>
-                  <abbr>L</abbr><ex>ucius</ex>
-               </expan> Vivius Antiochus
-                <lb n="5"/> Vaernae suae <expan>
-                  <abbr>f</abbr><ex>ecit</ex>
-               </expan>
-                <lb n="6"/> ex permissum
-                <lb n="7"/> 
-               <expan>
-                  <abbr>M</abbr><ex>arci</ex>
-               </expan> Popidi Natalis</ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+               <ab>
+                  <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                  <lb n="2"/><persName><name type="cognomen" key="Hedone">Hedone</name></persName>
+                  <lb n="3"/><expan><abbr>v</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num value="10">X</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="5">V</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="6">VI</num>.
+                  <lb n="4"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Vivius">Vivius</name> <name type="cognomen" key="Antiochus">Antiochus</name></persName>
+                  <lb n="5"/>v<surplus>a</surplus>ernae suae <expan><abbr>f</abbr><ex>ecit</ex></expan>
+                  <lb n="6"/>ex permissum
+                  <lb n="7"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <name type="gentilicium" key="Popidius">Popidi</name> <name type="cognomen" key="Natalis">Natalis</name></persName>.
+               </ab>
+            </div>
+           <div type="commentary">
+              <p>5) Vaernae is an otherwise unattested form. 6) Ex permisso is a more common, though still rare, construction for patrons giving their permission for such monuments.</p>
+           </div>
+           <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

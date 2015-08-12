@@ -43,17 +43,23 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone">
-                        <support>
-                           
-                           
-                           <p/>
-                           <dimensions type="surface" unit="m">
-                              <height>0.170</height>
-                              <width>0.69</width>
+                        <support>                           
+                           <p>Gray stone stele</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>170.0</height>
+                              <width>69.0</width>
                               <depth/>
                            </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>59.0</height>
+                              <width>69.0</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="5.8" max="7.0">5.8-7.0</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>Broken in half and since mended, with abrading and weathering of the face</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -64,8 +70,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="figured_scene">
@@ -83,7 +89,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date notBefore="0200" notAfter="0225">early third century CE</date>
+                     <date notBefore="0200" notAfter="0225">Early third century CE (original)</date>
                      <date>modern</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
@@ -96,12 +102,20 @@
                   <biblScope type="item">plate 228, no. 528</biblScope>
                </bibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#Speidel_2"/>
+                  <biblScope type="pp">Plate 14</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#Epigraphica_13"/>
-                  <biblScope type="item">214-125, no. 106</biblScope>
+                  <biblScope type="item">124-125, no. 106</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#AE_1954"/>
                   <biblScope type="item">80</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CivCatt_94_Ferrua"/>
+                  <biblScope type="page">523-531, 654-661</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -116,6 +130,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors, updated bibl</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -130,69 +145,20 @@
       <body>
          <div type="edition">
             <ab>
-               <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan>
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-               <lb n="2"/> Flavio Mociano <lb n="3"/> equiti singulari <expan>
-                  <abbr>ca</abbr><ex>s</ex>
-                  <abbr>tr</abbr><ex>a</ex>
-                  <abbr>e</abbr>
-               </expan>
-               <lb n="4"/>
-               <expan>
-                  <abbr>prim</abbr><ex>a</ex>
-                  <abbr>e</abbr>
-               </expan>
-               <expan>
-                  <abbr>
-                     <choice>
-                        <sic>s</sic>
-                        <corr>t</corr>
-                     </choice>
-                  </abbr><ex>urma</ex>
-               </expan> Messioris; militavit <lb n="5"/>
-               <expan>
-                  <abbr>
-                     <am>
-                        <g type="symbol"/>
-                     </am>
-                  </abbr><ex>annos</ex>
-               </expan> XXII <expan>
-                  <abbr>m</abbr><ex>enses</ex>
-               </expan> IIII Aelia Festiva <lb n="6"/>
-               <expan>
-                  <abbr>con</abbr><ex>iunx</ex>
-               </expan>
-               <expan>
-                  <abbr>
-                     <am>
-                        <g type="symbol"/>
-                     </am>
-                  </abbr><ex>cum</ex>
-               </expan> fili<sic>l</sic>is suis <supplied reason="omitted">h</supplied>eredes <lb
-                  n="7"/>
-               <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan>
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan>
-               <expan>
-                  <abbr>
-                     <choice>
-                        <sic>e</sic>
-                        <corr>f</corr>
-                     </choice>
-                  </abbr><ex>ecerunt</ex>
-               </expan>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/><persName><name type="gentilicium" key="Flavius">Flavio</name> <name type="cognomen" key="Mocianus">Mociano</name></persName>
+               <lb n="3"/>equiti singulari <expan><abbr>ca</abbr><ex>s</ex><abbr>tr</abbr><ex>a</ex><abbr>e</abbr></expan>
+               <lb n="4"/><expan><abbr>prim</abbr><ex>a</ex><abbr>e</abbr></expan> <expan><abbr>t</abbr><ex>urma</ex></expan> <persName><name type="cognomen" key="Messor">Messioris</name></persName>. Militavit
+               <lb n="5"/><supplied reason="subaudible">annos</supplied> <num value="22">XXII</num>, <expan><abbr>m</abbr><ex>enses</ex></expan> <num value="4">IIII</num>. <persName><name type="gentilicium" key="Aelia">Aelia</name> <name type="cognomen" key="Festiva">Festiva</name></persName>
+               <lb n="6"/><expan><abbr>con</abbr><ex>iunx</ex></expan> <supplied reason="subaudible">cum</supplied> fili<sic>l</sic>is suis <supplied reason="omitted">h</supplied>eredes
+               <lb n="7"/><expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr><choice><sic>e</sic><corr>f</corr></choice></abbr><ex>ecerunt</ex></expan>.
             </ab>
 
             <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
 
+         </div>
+         <div type="commentary">
+            <p>This inscription is a copy of a monument housed in the Vatican Museo Gregoriano, Inv. Nr. 34175.</p>
          </div>
          <div type="bibliography">
             <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">

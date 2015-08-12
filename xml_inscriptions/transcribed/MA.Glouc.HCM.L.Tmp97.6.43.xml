@@ -42,18 +42,26 @@
                            
                            
                            <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.21.3</height>
-                                        <width>0.27.1</width>
+                           <dimensions type="surface" unit="cm">
+                              <height>54</height>
+                              <width>35.5</width>
+                              <depth/>
+                           </dimensions>
+                           <dimensions type="campus" unit="cm">
+                                        <height>21.3</height>
+                                        <width>27.1</width>
                                         <depth/>
                                     </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="1.1" max="2.2" precision="low">1.1-2.2</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>Broken in half and mended along second line of text; currently immured in the HCM</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="6">
+                                <layout columns="1" writtenLines="7">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
                                 </layout>                     
@@ -77,7 +85,7 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date notBefore="0200" notAfter="0300">second-third century CE</date>
+                     <date notBefore="0200" notAfter="0300">Second-third century CE</date>
                      <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -112,6 +120,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibliography</change>
+         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -126,27 +135,14 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan> 
-               <expan>
-                  <abbr>S</abbr><ex>acrum</ex>
-               </expan>
-                <lb n="2"/> Aponiae Lochiadi
-                <lb n="3"/> 
-               <expan>
-                  <abbr>v</abbr><ex>ixit</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> XXVI
-                <lb n="4"/> Fructus frater et
-                <lb n="5"/> Nicephor coniugi
-                <lb n="6"/> optimae et p<hi rend="tall"/>issimae</ab>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr>S</abbr><ex>acrum</ex></expan>.
+                <lb n="2"/><persName><name type="gentilicium" key="Aponia">Aponiae</name> <name type="cognomen" key="Lochias">Lochiadi</name></persName>.
+                <lb n="3"/><expan><abbr>V</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num value="26">XXVI</num>.
+                <lb n="4"/><persName><name type="cognomen" key="Fructus">Fructus</name></persName> frater e<hi rend="tall">t</hi>
+                <lb n="5"/><persName><name type="cognomen" key="Nicephor">Nicephor</name></persName> coniugi
+                <lb n="6"/>optimae et 
+                <lb n="7"/>p<hi rend="tall">i</hi>ssimae.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
