@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?> 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -9,7 +9,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>MA.SH.MHC.AM.G.1967.A(f).K.2</title>
+                <title>MA.Glouc.HCM.L.03.8.6</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -19,7 +19,7 @@
             <publicationStmt>
                
                 <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MA.SH.MHC.AM.G.1967.Af.K.2">MA.SH.MHC.AM.G.1967.A(f).K.2</idno>
+                <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.03.8.6">MA.Glouc.HCM.L.03.8.6</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
@@ -38,59 +38,63 @@
                 <msDesc>
                     <msIdentifier>
                         <region>MA</region>
-                        <settlement>SH</settlement>
-                        <institution>MHC</institution>
-                        <repository>AM</repository>
-                        <idno>1967.A(f).K.2</idno>
+                        <settlement>Glouc</settlement>
+                        <institution>HCM</institution>
+                        <repository/>
+                        <idno>03.8.6</idno>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc"/>
+                        <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+                        <msItem class="#text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p>Glass dish with inscription inside lip</p>
+                            <p>Fragment, possibly of an epitaph</p>
                         </msItem>
                     </msContents>
                     
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
+                    
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                        <objectDesc ana="#instrumentum.tableware">
-                            <supportDesc ana="#glass">
+                            
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Blown glass plate</p>
+                                    <p> Fragment of marble slab</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>7</height>
+                                        <height>19.5</height>
                                         <width/>
                                         <depth/>
-                                        <dim type="diameter">12.5</dim>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.broken">
-                                    <p>Broken at the lip and subsequently mended</p>
+                                <condition ana="#fragment.single">
+                                    <p>Fragment of the bottom-left corner, broken at the top and the
+                                        right</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
+                                <layout columns="1" writtenLines="2">
                                     <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
+                        
                         <!--  *************************************  <handDesc>  ********************************* -->
-                        <!--     Contains information about types of writing and means of inscription.  -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.etched"></handNote>
+                            <handNote ana="#impressed.inscribed.carved"> </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
+                        
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>Etched figure of a male head surrounded by an etched wreath</p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -109,8 +113,8 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0300" notAfter="0400">4th century CE</date>
-                            <placeName ref="asia.asia_minor">Said to originate from Asia Minor</placeName>
+                            <date notBefore="0100" notAfter="0200" cert="low">Second century CE</date>
+                            <placeName ref="unknown">Unknown findspot</placeName>
                         </origin>
                         
 
@@ -122,14 +126,9 @@
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#HolyokeHandbook"/>
-                        <biblScope type="pp">51</biblScope>
+                        <ptr type="rest-of-bibl" target="#unpub"/>
+                        
                     </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#ArchNews_14_Grose"/>
-                        <biblScope type="pp">pp. 24-28, figs.2-4</biblScope>
-                    </bibl>
-                    
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -139,8 +138,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -155,7 +153,7 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2015-07-27" who="SJD">Initial Encoding</change>
+            <change when="2015-08-03" who="SJD">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -166,19 +164,21 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="MA.Glouc.HCM.L.03.8.6.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition"><!-- transcription goes here -->
-            <ab>
-                <lb n="1" rend="counterclockwise"/>Εὐτυχῖ.
-            </ab></div>
-             
+                <ab>
+                    <lb n="1"/><g type="hedera" cert="low"/>Q<gap reason="illegible" extent="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><persName><name type="cognomen" key="Balbillus">Balbil<supplied reason="lost">lus</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+            </div>
             <div type="commentary"><!-- notes go here -->
-            <p>Use of V for Υ; apparently intended to be read from the outside of the plate based on orientation of epsilon.</p></div>
+                <p/>
+            </div>
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
