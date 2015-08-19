@@ -75,7 +75,7 @@
                                 <xsl:for-each select="t:graphic">
                                     <a class="highslide" href="{concat($imageDir, '/',@url)}" onclick="return hs.expand(this)">
                                         <img src="{concat($imageDir, '/',@url)}" alt="" width="200"/>
-                                    </a>                                      
+                                    </a>
                                 </xsl:for-each>
                             </xsl:for-each>
                    </xsl:result-document>
