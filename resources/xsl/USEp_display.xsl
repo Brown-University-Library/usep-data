@@ -73,9 +73,19 @@
                     <xsl:result-document href="#images">
                             <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
                                 <xsl:for-each select="t:graphic">
-                                    <a class="highslide" href="{concat($imageDir, '/',@url)}" onclick="return hs.expand(this)">
-                                        <img src="{concat($imageDir, '/',@url)}" alt="" width="200"/>
-                                    </a>
+                                    <xsl:choose>
+                                        <xsl:when test="contains(/t:TEI/t:facsimile/t:surface/t:graphic[@target], 'http')">
+                                            <a class="highslide" href="@url" onclick="return hs.expand(this)">
+                                                <img src="@url" alt="" width="200"/>
+                                            </a>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <a class="highslide" href="{concat($imageDir, '/',@url)}" onclick="return hs.expand(this)">
+                                                <img src="{concat($imageDir, '/',@url)}" alt="" width="200"/>
+                                            </a>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                    
                                 </xsl:for-each>
                             </xsl:for-each>
                    </xsl:result-document>
