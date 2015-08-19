@@ -74,7 +74,7 @@
                             <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
                                 <xsl:for-each select="t:graphic">
                                     <xsl:choose>
-                                        <xsl:when test="contains(/t:TEI/t:facsimile/t:surface/t:graphic/@url, regex-group(http))">
+                                        <xsl:when test="contains(/t:TEI/t:facsimile/t:surface/t:graphic/@url, 'http')">
                                             <a class="highslide" href="{t:graphic/@url}" onclick="return hs.expand(this)">
                                                 <img src="{t:graphic/@url}" alt="" width="200"/>
                                             </a>
