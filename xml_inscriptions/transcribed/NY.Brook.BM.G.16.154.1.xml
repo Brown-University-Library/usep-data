@@ -31,22 +31,26 @@
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
-                  <textLang mainLang="grc"/><msItem class="#label">
+                  <textLang mainLang="grc"/>
+                  <msItem class="#label">
                      <p>Two stamped Chi-Rho monograms</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#instrumentum.tableware">
-                     <supportDesc ana="#clay">
+                     <supportDesc ana="#clay.ceramic">
                         <support>
-<p>Fragment of red-glazed terra sigillata dish</p>
-<dimensions type="surface" unit="m">
-                                        <height>0.012</height>
-                                        <width>0.011</width>
-                                        <depth>0.006</depth>
-                                    </dimensions>
+                           <p>Fragment of red-glazed terra sigillata dish</p>
+                           <dimensions type="surface" unit="cm">
+                               <height></height>
+                               <width>14.8</width>
+                               <depth>0.6</depth>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height>2.9</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken edges</p>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p>broken edges</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,12 +61,14 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#stamped.impressed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
-                        <p>incised border with fishes</p>
+                        <p>Two chi-rho monograms in tondo, register of fishes within
+                           incised border. Stamped motifs typical of late Eastern
+                           tableware.</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -75,9 +81,15 @@
                             
                         </summary>
                   <origin>
-                     <date notBefore="0500" notAfter="0600">sixth century CE</date>
+                     <date notBefore="0500" notAfter="0600">Sixth century CE</date>
                      <placeName ref="africa.egypt">Egypt</placeName>
                   </origin>
+                  <acquisition>
+                     <!-- subsequent locations if inscription was moved -->
+                     <date when="0001">1914</date>
+                     <p>Among the initial pieces donated by the heirs of Charles Edwin
+                        Wilbour in 1914</p>
+                  </acquisition>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -85,6 +97,9 @@
                         <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
                         <biblScope type="item">39, p. 71</biblScope>
                     </bibl>
+               <bibl>
+                  <ref type="external" target="https://www.brooklynmuseum.org/opencollection/objects/9429/Fragment_of_Samian_Ware">Brooklyn Museum Web Catalog</ref>
+               </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
                      
                 </listBibl>
@@ -101,6 +116,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl</change>
+         <change when="2015-08-24" who="SJD">Updated metadata, provenance from William Jacobs' seminar edition; added link to BM website</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

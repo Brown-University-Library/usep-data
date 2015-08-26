@@ -31,8 +31,9 @@
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
-                  <textLang mainLang="grc"/><msItem class="#label">
-                     <p>two painted inscriptions</p>
+                  <textLang mainLang="grc"/>
+                   <msItem class="#label">
+                      <p>Attic Little Master drinking cup, with two inscriptions</p>
                   </msItem>
                </msContents>
                <physDesc>
@@ -40,13 +41,18 @@
                      <supportDesc ana="#clay">
                         <support>
                             <p>Attic black-figured lip cup</p>
-                            <dimensions type="surface" unit="m">
-                                        <height>0.091</height>
-                                        <width>0.197</width>
-                                        <depth/>
-                                    </dimensions>
+                            <dimensions type="surface" unit="cm">
+                                <height>9.1</height>
+                                <width min="5.8" max="19.7">19.7 cm (with handles); 5.8 cm (at foot)</width>
+                                <depth/>
+                            </dimensions>
+                            <dimensions type="letter" unit="cm">
+                                <height min="0.1" max="0.2">0.1-0.2</height>
+                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>one handle and attachment restored, foot and bowl broken and mended</p>
+                         <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>Originally broken (bowl, foot) in several pieces, but mended.
+                             One handle and a small part of the adjoining bowl restored.
+                             Rim slightly chipped.</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,12 +63,13 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#painted.brush"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="figured_scene">
-                        <p>panthers facing each other</p>
+                         <p>Palmettes adorning each handle on outside. Two confronting
+                             panthers on each side in upper field.</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -75,9 +82,14 @@
                             
                         </summary>
                   <origin>
-                     <date notBefore="-0550" notAfter="-0530">mid to late sixth century BCE</date>
-                     <placeName ref="unknown">unknown</placeName>
+                     <date notBefore="-0550" notAfter="-0530">Mid to late sixth century BCE</date>
+                     <placeName ref="europe.greece.attica">Attica, Greece</placeName>
                   </origin>
+                   <acquisition>
+                   <!-- subsequent locations if inscription was moved -->
+                   <date when="1903">January, 1903</date>
+                        <p>Acquired as part of Marquand Sale by gift of R. B. Woodward.</p>
+                   </acquisition>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -104,6 +116,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl, added link to BM website</change>
+         <change when="2015-08-24" who="SJD">Expanded metadata, edited transcription and added notes based on seminar edition of William Jacobs</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -120,15 +133,19 @@
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>χαῖρε καὶ πί᾽εἶτενδι</ab>
+                    <lb n="1"/>χαῖρε καὶ πίε τένδι.
+                </ab>
             </div>
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>χαῖρε καὶ πίε εἶτενδι</ab>  
+                    <lb n="1"/>χαῖρε καῖ πί<surplus>ε</surplus>εἰ τένδι.
+                </ab>  
             </div>
-            <div type="apparatus">
-                <p/>
+            <div type="commentary">
+                <p>Typical formula for Little Master cups is χαῖρε καὶ πίει τένδε or τένδι. Herbert
+                    transcribed the final word as εἰτένδι, describing it as Ionic.  This would be
+                    highly unusual, however. A similar inscrption is attested on <hi rend="italic">CAVI</hi> 7025.</p>
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>

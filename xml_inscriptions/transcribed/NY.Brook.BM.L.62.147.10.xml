@@ -40,13 +40,13 @@
                      <supportDesc ana="#stone.marble">
                         <support>
 <p>Marble slab</p>
-<dimensions type="surface" unit="m">
-                                        <height>0.46</height>
-                                        <width>0.262</width>
-                                        <depth>0.105</depth>
+<dimensions type="surface" unit="cm">
+                                        <height>46.0</height>
+                                        <width>26.2</width>
+                                        <depth>10.5</depth>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>mended</p>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>Originally broken into three pieces; now mended</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,13 +57,21 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved">Inconsistent letterforms in line 6:
+                        V: rounded angle where others do not; A: extended right stroke; E:
+                        top and middle bars oriented diagonally upwards; M: second stroke
+                        disproportionately long</handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other Dec_other">
-                        <p>niche framed by pilasters and arch</p>
-                        <p>incised designs on capitals</p>
+                        <p>Fluted pilasters supporting capitals with inscribed flowers;
+                           above, an arch decorated with two incised discs and two
+                           upward-facing crescents, also incised. Left disc has 12 spokes,
+                           right eight. Bottom of the aedicula consists of a series of
+                           tiered moldings, on which are inscribed two vertical lines, on
+                           either side of a rectangular area containing eight lines in the
+                           pattern II IIII II</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -86,6 +94,10 @@
                         <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
                         <biblScope type="item">44, pp. 77-79</biblScope>
                     </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope type="item">6931</biblScope>
+               </bibl>
                <bibl>
                   <ref type="external" target="https://www.brooklynmuseum.org/opencollection/objects/80842/Funerary_Monument_in_Form_of_a_Niche">Brooklyn Museum web entry</ref>
                </bibl>
@@ -110,6 +122,7 @@
          <change when="2015-05-31" who="SJD">Fixed image url error and corrected ids throughout.</change>
          <change when="2015-07-07" who="SJD">Updated bibl and added link to BM website</change>
          <change when="2015-08-17" who="SJD">Added EDR link</change>
+         <change when="2015-08-24" who="SJD">Updated transcription and metadata from William Jacobs' seminar edition</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -125,36 +138,15 @@
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
-                    <lb n="2"/> Potestat<hi rend="tall">i</hi>,
-                    <lb n="3"/> Flavia As
-                    <lb n="4" break="no"/> clepias
-                    <lb n="5"/> vernae
-                    <lb n="6"/> suae <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan>;
-                    <lb n="7"/> 
-               <expan>
-                  <abbr>v</abbr><ex>ixit</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> 
-               <num xml:lang="lat" value="11">XI</num>,
-                    <lb n="8"/> 
-               <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> 
-               <num xml:lang="lat" value="11">XI</num>.</ab>
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                    <lb n="2"/><persName><name type="cognomen" key="Potestas">Potestat<hi rend="tall">i</hi></name></persName>
+                    <lb n="3"/><persName><name type="gentilicium" key="Flavia">Flavia</name> <name type="cognomen" key="Asclepias"> As
+                    <lb n="4" break="no"/>clepias</name></persName>
+                    <lb n="5"/>vernae
+                    <lb n="6"/>suae <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>.
+                    <lb n="7"/><expan><abbr>v</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num xml:lang="lat" value="11">XI</num>,
+                    <lb n="8"/><expan><abbr>m</abbr><ex>ensibus</ex></expan> <num xml:lang="lat" value="11">XI</num>.
+                </ab>
             </div>
             <div type="apparatus">
                 <p/>

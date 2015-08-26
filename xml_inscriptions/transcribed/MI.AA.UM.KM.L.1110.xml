@@ -23,7 +23,7 @@
                   <idno>1110</idno>
                </msIdentifier>
                <msContents>
-                  <textLang mainLang="la-Grek" otherLangs=""/>
+                  <textLang mainLang="lat-Grek" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
                      <p>Latin epitaph transliterated into Greek letters for Iulia Dioscorus</p>
                   </msItem>
@@ -33,24 +33,25 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>fine-grained marble slab</p>
-                           <dimensions type="surface" unit="m">
-                              <height>0.405</height>
-                              <width>0.595</width>
-                              <depth>0.022</depth>
+                           <p>Gray-green, fine-grained marble slab</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>40.5</height>
+                              <width>59.5</width>
+                              <depth>2.2</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>Three fragments reconstitued into slab with no loss of text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" writtenLines="6">
-                           <p/>
+                           <p>First line outdented</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -106,12 +107,17 @@
          <change when="2014-05-20" who="SJD">Updated machine readable IDs and changed language to reflect the Greek script (la -> la-Grek); add commentary note indicating the script/language</change>
          <change when="2014-08-11" who="SJD">Added SEG 48 to bibl</change>
          <change when="2015-06-25" who="SJD">Added description of text, updated location, deleted duplicate file under G.1110.</change>
+         <change when="2015-08-24" who="SJD">Updated objectDesc and handDesc metadata, added images, proofed transcription based upon re-edition of Samantha Lash</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="NoImage.jpg"/>
+         <graphic url="MI.AA.UM.KM.L.1110.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MI.AA.UM.KM.L.1110.det.1.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -119,26 +125,12 @@
          <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <persName>
-                  <name type="gentilicium" key="Aurelius">Ἀορήλι<supplied reason="omitted">ο</supplied>ς</name> 
-                  <name type="cognomen" key="Hospitianus">Ὀσπιτιανος</name>
-               </persName>
-                    <lb n="2"/>
-               <persName>
-                  <name type="gentilicium" key="Iulius">Ἰολιος</name> 
-                  <name type="cognomen" key="Serenus">Σερῆνος</name>
-               </persName>
-                    <lb n="3"/>
-               <name type="gentilicium" key="Iulia">Ἰολίε</name> 
-               <name type="cognomen" key="Dioscorus">Ζοσκοροῦτι</name>
+                   <lb n="1"/><milestone rend="paragraphos" unit="undefined"/><persName><name type="gentilicium" key="Aurelius">Ἀορήλι<supplied reason="omitted">ο</supplied>ς</name> <name type="cognomen" key="Hospitianus">Ὀσπιτιανός</name></persName>
+                   <lb n="2"/><persName><name type="gentilicium" key="Iulius">Ἰόλιος</name> <name type="cognomen" key="Serenus">Σερῆνος</name></persName>
+                   <lb n="3"/><persName><name type="gentilicium" key="Iulia">Ἰολίε</name> <name type="cognomen" key="Dioscoris">Ζοσκοροῦτι</name></persName>
                     <lb n="4"/>κουε βειξιτ ἀννις
-                    <lb n="5"/>
-               <num xml:lang="lat" value="18">XVIII</num> διης <num xml:lang="lat" value="6">VI</num> βενεν
-                    <lb n="6"/>μερεντι <expan>
-                  <abbr>ποσουηρ<hi rend="supraline">ο</hi>
-                  </abbr><ex>ντ</ex>
-               </expan>
+                    <lb n="5"/><num xml:lang="lat" value="18">XVIII</num>, διης <num xml:lang="lat" value="6">VI</num> βενεν
+                    <lb n="6"/>μερεντι <expan><abbr>ποσουηρ<hi rend="supraline">ο</hi></abbr><ex>ντ</ex></expan>.
             </ab>
             </div>
          <div type="apparatus">

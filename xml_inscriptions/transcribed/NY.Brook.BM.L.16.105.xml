@@ -31,7 +31,8 @@
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
-                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
                      <p>Epitaph of C. Iulius Valerius</p>
                   </msItem>
                </msContents>
@@ -39,14 +40,22 @@
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.limestone">
                         <support>
-<p>Limestone stele with sculptured relief</p>
-<dimensions type="surface" unit="m">
-                                        <height>0.357</height>
-                                        <width>0.285</width>
-                                        <depth>0.046</depth>
-                                    </dimensions>
+                           <p>Limestone stele with sculptured relief</p>
+                           <dimensions type="surface" unit="cm">
+                               <height>35.7</height>
+                               <width>28.5</width>
+                               <depth>4.6</depth>
+                           </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>7.3</height>
+                              <width>28.5</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="0.5" max="1.0">0.5-1.0</height>
+                           </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>minor chipping</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>Minor chipping on all sides</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,13 +66,22 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#impressed.inscribed"> Approximately centered. No
+                        guidelines. Noteworthy letterforms: A's in lines 3-4 lack crossbars;
+                        A's, M's, N's feature extended diagonals; R's have unusual loops.
+                        Decoration probably done by one hand, inscripiton by a second, less
+                        skilled hand.</handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="figured_scene hedera">
-                        <p>a boy standing with sacrificial offerings</p>
-                        <p>hedera located at the end of the inscription</p>
+                        <p>Boy standing in belted tunic, facing forward, holding a patera
+                           (r.) and situla (l.) Small altar with offerings below patera.
+                           Hair in sidelock over right shoulder. Surrounded by various
+                           icons: at feet, a griffin facing l., with right front paw upon a
+                           wheel. On l. column bracket, a jackal facing r.; on r. column
+                           bracket, a falcon with double crown (Horus) facing l. Columns
+                           feature papyrus capitals.</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -76,16 +94,50 @@
                             
                         </summary>
                   <origin>
-                     <date notBefore="0225" notAfter="0250">early to mid-third century CE</date>
+                     <date notBefore="0225" notAfter="0250">Early to mid-third century CE</date>
                      <placeName ref="africa.egypt">Egypt</placeName>
                   </origin>
+                  <acquisition>
+                     <!-- subsequent locations if inscription was moved -->
+                     <date when="0001">Date to be displayed</date>
+                     <p>The stele was acquired by Charles Edwin Wilbour in 1881 in Cairo, and
+                        donated by his heirs to the Brooklyn Museum in 1914</p>
+                  </acquisition>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
-                        <biblScope type="item">22, pp. 45-47</biblScope>
-                    </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_III"/>
+                  <biblScope type="item">6604</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
+                  <biblScope type="item">22, pp. 45-47</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Cooney"/>
+                  <biblScope type="pp">22, no. 33</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Cooney_1943"/>
+                  <biblScope type="pp">17, pl. 11</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#OLZ_54_Parlasca"/>
+                  <biblScope type="pp">col. 476</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#BMB_17_Riefstahl"/>
+                  <biblScope type="pp">5-7, fig. 3</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CP_59_Peterson"/>
+                  <biblScope type="pp">161, 172 n. 100</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Parlasca"/>
+                  <biblScope type="pp">93 n. 16</biblScope>
+               </bibl>
                <bibl>
                   <ref type="external" target="https://www.brooklynmuseum.org/opencollection/objects/9362/Funerary_Stela_of_C._Julius_Valerius">Brooklyn Museum web entry</ref>
                </bibl>
@@ -105,6 +157,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-07" who="SJD">Updated bibl and added link to BM website</change>
+         <change when="2015-08-25" who="SJD">Updated metadata, bibl, transcription based on seminar edition of William Jacobs</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -120,29 +173,11 @@
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>C</abbr><ex>aius</ex>
-               </expan> 
-               <expan>
-                  <abbr>Iul</abbr><ex>ius</ex>
-               </expan> Valerius
-                    <lb n="2"/> 
-               <expan>
-                  <abbr>C</abbr><ex>ai</ex>
-               </expan> 
-               <expan>
-                  <abbr>Iul</abbr><ex>i</ex>
-               </expan> Severi filius
-                    <lb n="3"/> 
-               <expan>
-                  <abbr>m</abbr><ex>ilitis</ex>
-               </expan> 
-               <expan>
-                  <abbr>leg</abbr><ex>ionis</ex>
-               </expan> 
-               <num xml:lang="lat" value="2">II</num> Traianae.
-                    <lb n="4"/> vixit annos <num xml:lang="lat" value="3">III</num>.</ab>
+                   <lb n="1"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Iulius"><expan><abbr>Iul</abbr><ex>ius</ex></expan></name> <name type="cognomen" key="Valerius">Valerius</name></persName>
+                   <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Iulius"><expan><abbr>Iul</abbr><ex>i</ex></expan></name> <name type="cognomen" key="Severus">Severi</name></persName> filius
+                   <lb n="3"/><expan><abbr>m</abbr><ex>ilitis</ex></expan> <expan><abbr>leg</abbr><ex>ionis</ex></expan> <num xml:lang="lat" value="2">II</num> Traianae.
+                   <lb n="4"/>vixit annos <num xml:lang="lat" value="3">III</num>.
+                </ab>
             </div>
             <div type="apparatus">
                 <p/>

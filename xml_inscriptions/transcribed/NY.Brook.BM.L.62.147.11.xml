@@ -31,7 +31,8 @@
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
-                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
                      <p>Epitaph of a soldier T. Flavius Valerianus Oesco</p>
                   </msItem>
                </msContents>
@@ -39,14 +40,15 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-<p>Marble slab</p>
-<dimensions type="surface" unit="m">
-                                        <height>0.546</height>
-                                        <width>0.295</width>
-                                        <depth>0.053</depth>
+                           <p>Marble slab</p>
+                           <dimensions type="surface" unit="cm">
+                                        <height>54.6</height>
+                                        <width>29.5</width>
+                                        <depth>5.3</depth>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>rough back, remnants of rubrication</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>Back is rough, and there are traces of rubrication</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,13 +59,14 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"></handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border figured_scene">
                         <p/>
-                        <p>wreath with banners</p>
+                        <p>Half-palmettes in finials and streamers surrounding a wreath in
+                           pediment</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -76,25 +79,28 @@
                             
                         </summary>
                   <origin>
-                     <date notBefore="0100" notAfter="0150">first half of second century CE</date>
-                     <placeName ref="europe.italy.rome">Porta Latina, Rome, Italy</placeName>
+                     <date notBefore="0100" notAfter="0150">First half of the second century CE</date>
+                     <placeName ref="europe.italy.rome">Porta Latina, Rome, Italy (in the ancient
+                        vineyard of the Aquarii</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
-                        <biblScope type="item">43, pp. 76-77</biblScope>
-                    </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
+                  <biblScope type="item">43, pp. 76-77</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope type="item">3342</biblScope>
+               </bibl>
                <bibl>
                   <ref type="external" target="https://www.brooklynmuseum.org/opencollection/objects/80843/Tombstone_with_Ten_Lines_of_Latin_Incised_Inscription">Brooklyn Museum web entry</ref>
                </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR120603">EDR120603</ref>
-</bibl>
+                <bibl>
+                   <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR120603">EDR120603</ref>
+                </bibl>
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -108,8 +114,9 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
-         <change when="2015-05-31" who="SJD">Fixed image url error.</change>
+         <change when="2015-05-31" who="SJD">Fixed image url error</change>
          <change when="2015-07-07" who="SJD">Updated bibl and added link to BM website</change>
+         <change when="2015-08-24" who="SJD">Expanded metadata and bibliography, checked transcription from seminar edition of William Jacobs</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -125,79 +132,17 @@
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
-                    <lb n="2"/> 
-               <expan>
-                  <abbr>T</abbr><ex>itus</ex>
-               </expan> 
-               <expan>
-                  <abbr>Fl</abbr><ex>avius</ex>
-               </expan> 
-               <expan>
-                  <abbr>Pap</abbr><ex>iria </ex>
-               </expan>
-               <supplied reason="subaudible" cert="high">tribu</supplied>
-                    <lb n="3"/> Valerianus
-                    <lb n="4"/> Oesco
-                    <lb n="5"/> 
-               <expan>
-                  <abbr>mil</abbr><ex>es</ex>
-               </expan> 
-               <expan>
-                  <abbr>fr</abbr><ex>umentarius</ex>
-               </expan> 
-               <expan>
-                  <abbr>leg</abbr><ex>ionis</ex>
-               </expan> 
-               <num xml:lang="lat" value="5">
-                  <hi rend="supraline">V</hi>
-               </num> 
-               <expan>
-                  <abbr>Mac</abbr><ex>edonicae</ex>
-               </expan>.
-                    <lb n="6"/> 
-               <expan>
-                  <abbr>v<hi rend="tall">i</hi>x</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> 
-               <num xml:lang="lat" value="28">XXVIII</num>
-                    <lb n="7"/> 
-               <expan>
-                  <abbr>mil</abbr><ex>itavit</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> 
-               <num xml:lang="lat" value="8">VIII</num>.
-                    <lb n="8"/> 
-               <expan>
-                  <abbr>L</abbr><ex>ucius</ex>
-               </expan> Sallustius
-                    <lb n="9"/> Alexander
-                    <lb n="10"/> 
-               <expan>
-                  <abbr>h</abbr><ex>eres</ex>
-               </expan> 
-               <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>aciendum</ex>
-               </expan> 
-               <expan>
-                  <abbr>c</abbr><ex>uravit</ex>
-               </expan>.</ab>
+                   <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                   <lb n="2"/><persName><name type="praenomen" key="Titus"><expan><abbr>T</abbr><ex>itus</ex></expan></name> <name type="gentilicium" key="Flavius"><expan><abbr>Fl</abbr><ex>avius</ex></expan></name> <expan><abbr>Pap</abbr><ex>iria</ex></expan> <supplied reason="subaudible" cert="high">tribu</supplied>
+                   <lb n="3"/> <name type="cognomen" key="Valerianus">Valerianus</name>
+                   <lb n="4"/><name type="cognomen" key="Oesco">Oesco</name></persName>
+                   <lb n="5"/><expan><abbr>mil</abbr><ex>es</ex></expan> <expan><abbr>fr</abbr><ex>umentarius</ex></expan> <expan><abbr>leg</abbr><ex>ionis</ex></expan> <num xml:lang="lat" value="5" type="ordinal"><hi rend="supraline">V</hi></num> <expan><abbr>Mac</abbr><ex>edonicae</ex></expan>.
+                   <lb n="6"/><expan><abbr>V<hi rend="tall">i</hi>x</abbr><ex>it</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num xml:lang="lat" value="28">XXVIII</num>,
+                   <lb n="7"/><expan><abbr>mil</abbr><ex>itavit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num xml:lang="lat" value="8">VIII</num>.
+                   <lb n="8"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Sallustius">Sallustius</name>
+                    <lb n="9"/><name type="cognomen" key="Alexander">Alexander</name></persName>
+                    <lb n="10"/><expan><abbr>h</abbr><ex>eres</ex></expan> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>aciendum</ex></expan> <expan><abbr>c</abbr><ex>uravit</ex></expan>.
+                </ab>
             </div>
             <div type="apparatus">
                 <p/>

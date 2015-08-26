@@ -31,34 +31,38 @@
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
-                  <textLang mainLang="grc"/><msItem class="#label">
-                     <p>fake inscriptions</p>
+                  <textLang mainLang="grc"/>
+                   <msItem class="#label">
+                       <p>Potsherd of a black-glaze skyphos with fake inscriptions</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#instrumentum.container.other">
-                     <supportDesc ana="#clay">
+                     <supportDesc ana="#clay.ceramic">
                         <support>
-<p>Sherd from the foot of small black-glazed skyphos</p>
-<dimensions type="surface" unit="m">
-                                        <height>0.039</height>
-                                        <width>0.062</width>
-                                        <depth/>
-                                    </dimensions>
+                        <p>Sherd from the foot of small black-glazed skyphos</p>
+                            <dimensions type="surface" unit="cm">
+                                <height>3.9</height>
+                                <width>6.2</width>
+                                <depth/>
+                            </dimensions>
+                            <dimensions type="letter" unit="cm">
+                                <height min="0.2" max="0.4">0.2-0.4</height>
+                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>fragmentary</p>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p>fragmentary</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
                                 <layout columns="1" writtenLines="2">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
+                                    <p>One inscription around outer base, another on inner base</p>
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#painted.brush"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -68,15 +72,11 @@
                </physDesc>
                <history>
                   <summary>
-                            <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
-                            <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
-                            <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
-                            <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note>Inscriptions are fake</note>
+                          <rs>fake</rs>
                         </summary>
                   <origin>
-                     <date notBefore="-0450" notAfter="-0300">mid fifth to forth century BCE</date>
-                     <placeName ref="unknown">unknown</placeName>
+                     <date notBefore="-0450" notAfter="-0300">Mid-fifth to forth century BCE</date>
+                     <placeName ref="europe.greece.athens" cert="low">Acropolis, Athens (?)</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -104,6 +104,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
           <change when="2015-07-07" who="SJD">Updated bibl and added link to BM website</change>
+          <change when="2015-08-24" who="SJD">Updated metadata based on edition from William Jacobs</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
