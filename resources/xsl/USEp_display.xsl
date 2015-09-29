@@ -18,6 +18,7 @@
         2011-11-8 EM Begun
         2011-11-29 EM adding edition handling
         2014-09-25 EM many changes including: 
+        2015-09-29 SJD Added variables, added concat to remove excess commas
 
         ******************************************************************************   -->
  
@@ -50,16 +51,42 @@
                     <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/*">
                     <div class="metadata">
                         <h3>Attributes</h3>
+                        <!-- variables -->
+                        <xsl:variable name="placeOfOrigin"
+                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
+                        <xsl:variable name="dateOfOrigin">
+                            <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:date"/>
+                        </xsl:variable>
+                        <xsl:variable name="placeOfOrigin"
+                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
+                        <xsl:variable name="placeOfProvenance">
+                            <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:placeName"/>
+                        </xsl:variable>
+                        <xsl:variable name="dateOfProvenance"
+                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:history/t:provenance/t:date"/>
+                        <xsl:variable name="acquisitionDesc">
+                            <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p"/>
+                        </xsl:variable>
+                        <xsl:variable name="acquisitionDate"
+                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:history/t:acquisition/t:date"/>
+                        
+                        <!-- end variables -->
 
 <table>
     <tr><td class="label">Inscription Type</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem/@class, '#'))/t:catDesc"/></td></tr>
     <tr><td class="label">Object Type</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/@ana, '#'))/t:catDesc"/></td></tr>
     <tr><td class="label">Material</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/@ana, '#'))/t:catDesc"/></td></tr>
-    <tr><td class="label">Place of Origin</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>, <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:date"/></td></tr>
+    <tr><td class="label">Place of Origin</td>
+        <td class="value">
+            <xsl:value-of select="if ($placeOfOrigin) then concat($placeOfOrigin,',') else ''"/> <xsl:value-of select="$dateOfOrigin"/></td></tr>
     <xsl:for-each select="//t:provenance">
-        <tr><td class="label">Subsequent Location</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:placeName"/>, <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:date"/></td></tr>
+        <tr><td class="label">Subsequent Location</td>
+            <td class="value">
+                <xsl:value-of select="if ($placeOfProvenance) then concat($placeOfProvenance, ',') else ''"/> <xsl:value-of select="$dateOfProvenance"/></td></tr>
     </xsl:for-each>
-    <tr><td class="label">Acquired</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p"/>, <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:date"/></td></tr>
+    <tr><td class="label">Acquired</td>
+        <td class="value">
+            <xsl:value-of select="if ($acquisitionDesc) then concat($acquisitionDesc, ',') else ''"/>, <xsl:value-of select="$acquisitionDesc"/></td></tr>
     <!-- check for existence of controlled and full text values here. -->
     <tr><td class="label">Layout</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout/@columns"/> columns, <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout/@writtenLines"/> lines</td></tr>
     <tr><td class="label">Writing</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote/@ana, '#'))/t:catDesc"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/></td></tr>
