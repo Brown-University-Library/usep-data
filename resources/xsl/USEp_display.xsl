@@ -78,29 +78,15 @@
     <tr><td class="label">Material</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/@ana, '#'))/t:catDesc"/></td></tr>
     <tr><td class="label">Place of Origin</td>
         <td class="value">
-            <xsl:choose>
-                <xsl:when test="$placeOfOrigin"> <xsl:value-of select="$placeOfOrigin"/>, <xsl:value-of select="$dateOfOrigin"/></xsl:when>
-                <xsl:otherwise><xsl:value-of select="$dateOfOrigin"/></xsl:otherwise>
-            </xsl:choose>
-        </td></tr>
+            <xsl:value-of select="if ($placeOfOrigin) then concat($placeOfOrigin,',') else ''"/> <xsl:value-of select="$dateOfOrigin"/></td></tr>
     <xsl:for-each select="//t:provenance">
         <tr><td class="label">Subsequent Location</td>
             <td class="value">
-                <xsl:choose>
-                    <xsl:when test="$placeOfProvenance"><xsl:value-of select="$placeOfProvenance"/>, <xsl:value-of select="$dateOfProvenance"/></xsl:when>
-                    <xsl:otherwise><xsl:value-of select="$dateOfProvenance"/></xsl:otherwise>
-                </xsl:choose>
-            </td>
-        </tr>
+                <xsl:value-of select="if ($placeOfProvenance) then concat($placeOfProvenance, ',') else ''"/> <xsl:value-of select="$dateOfProvenance"/></td></tr>
     </xsl:for-each>
     <tr><td class="label">Acquired</td>
         <td class="value">
-            <xsl:choose>
-                <xsl:when test="$acquisitionDesc"><xsl:value-of select="$acquisitionDesc"/>, <xsl:value-of select="$acquisitionDate"/></xsl:when>
-                <xsl:otherwise><xsl:value-of select="$dateOfProvenance"/></xsl:otherwise>
-            </xsl:choose>
-        </td>
-    </tr>
+            <xsl:value-of select="if ($acquisitionDesc) then concat($acquisitionDesc, ',') else ''"/>, <xsl:value-of select="$acquisitionDesc"/></td></tr>
     <!-- check for existence of controlled and full text values here. -->
     <tr><td class="label">Layout</td><td class="value"><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout/@columns"/> columns, <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout/@writtenLines"/> lines</td></tr>
     <tr><td class="label">Writing</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote/@ana, '#'))/t:catDesc"/> <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/></td></tr>
