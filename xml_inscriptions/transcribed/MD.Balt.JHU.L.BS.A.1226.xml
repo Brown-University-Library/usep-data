@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>MD.Balt.JHU.L.BS.A.1226</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+               
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.BS.A.1226">MD.Balt.JHU.L.BS.A.1226</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MD</region>
+                        <settlement>Balt</settlement>
+                        <institution>JHU</institution>
+                        <repository></repository>
+                        <idno>BS.A.1226</idno>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#label">
+                        <!-- short summary of the content of an inscription -->
+                            <p>Brick stamp of Aristius Thallus</p>  
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                    
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                            
+                        <objectDesc ana="#instrumentum.brick">
+                            <supportDesc ana="#clay.brick">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p>Orbicular brick stamp</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>15</height>
+                                        <width>22</width>
+                                        <depth>4</depth>
+                                    </dimensions>
+                                    <dimensions type="letter" unit="cm">
+                                        <height>1.3</height>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragment.single">
+                                    <p>Stamp damaged obstructing part of the outer line of text</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="3">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#stamped.relief"> </handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>In the middle of the brick is written COS, spelled backwords,
+                                    with a palm or tree branch (pointing to the left) above it and
+                                    another one (pointing to the right) underneath it</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                    
+                        <summary>
+                            <rs/>  <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0137" notAfter="0138">138 CE</date>
+                            <placeName ref="unknown">Rome(?)</placeName>
+                        </origin>
+                        
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_XV"/>
+                        <biblScope type="item">732</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Helen1975"/>
+                        <biblScope type="pp">116</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#LSO"/>
+                        <biblScope type="item">628</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+            
+        <encodingDesc>
+                           
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2014-12-01" who="Gaia Gianni">Initial Encoding</change>
+            <change when="2015-09-14" who="SJD">Cleaned metadata and bibl, added LSO to bibl, proofed transcription, added translation div</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MD.Balt.JHU.L.BS.A.1226.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here -->
+                <ab>
+                    <lb n="1"/> <expan><abbr>O</abbr><ex>pus</ex></expan> <expan><abbr>d</abbr><ex>oliare</ex></expan>
+                        <persName><name type="gentilicium" key="Aristius"><expan><abbr>Aris</abbr><ex>ti</ex></expan></name> <name type="cognomen" key="Thallus"><expan><abbr>Tha</abbr><ex>lli</ex></expan></name></persName>, ex <expan><abbr>pr</abbr><ex>aedis</ex></expan>
+                        <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name type="gentilicium" key="Ceionius"><expan><abbr>Ceio</abbr><ex>ni</ex></expan></name>
+                        <name type="cognomen" key="Commodus"><expan><abbr><supplied reason="lost">Co</supplied>m</abbr><ex>modi</ex></expan></name></persName>
+                        <persName><name type="cognomen" key="Caesar"><expan><abbr>C</abbr><ex>aesaris</ex></expan></name></persName>
+                        <expan><abbr>f</abbr><ex>ilii</ex></expan>.
+                    <lb n="2"/> <persName><name type="cognomen" key="Niger">Nigro</name></persName> et <persName><name type="cognomen" key="Camerinus"><expan><abbr>Camerin</abbr><ex>o</ex></expan></name></persName>
+                    <lb n="3"/> <expan><hi rend="inverted"><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></hi></expan>.
+                </ab>
+            </div>
+            <div type="translation">
+                <p>“Brickwork of Aristius Thallus, from the estate of Lucius Ceionius Commodus, son of Caesar. In the consulship of Niger and Camerinus."</p>
+            </div>            
+            <div type="commentary"><!-- notes go here -->
+                <p>Line 1: A. Aristius Thallus was an officinator working in the workshop of Plaetorius Nepos (cf. CIL XV 1363, 1364, 1365) from 123 to 134 CE. 
+                   On 138 CE we know that he was working for L. Ceionius; therefore Ceionius must have acquired the property of Plaetorius Nepos sometime between 134 and 138 CE.</p>
+                <p>Line 1: In 136 CE Lucius Ceionius Commodus was adopted by the emperor Hadrian and afterwords was known as Lucius Aelius Caesar. 
+                   After L. Aelius Caesar died on the kalends of January 138 CE, Hadrian adopted another successor, Arrius Antoninus, on the condition that he would adopt Lucius, the son of Aelius Caesar, and Annius Verus, the nephew of his own wife. Hadrian died on July 10 of the same year.</p>
+                <p>Line 3: Niger and Camerinus were consuls in 138 CE.</p>
+            </div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>
