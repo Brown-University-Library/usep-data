@@ -1,158 +1,237 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader><!-- testing1 -->
-      <fileDesc>
-         <titleStmt>
-                <!-- printable version of USEpi inscription ID: -->
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
                 <title>MD.Balt.JHU.L.35</title>
             </titleStmt>
-         <publicationStmt>
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
-               <xi:fallback>
-                  <p>The Publications Statement should appear here. (c) Brown University</p>
-               </xi:fallback>
-            </xi:include>
-            <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.35">MD.Balt.JHU.L.35</idno>
-         </publicationStmt>
-         <sourceDesc>
-            <msDesc>
-               <msIdentifier>
-                        <!-- same info, parsed out: -->
-                        <!-- alternatively, we could just use <msName>, but that isn't as machine -->
-                        <!-- accessible (or human, for that matter). -->
-                        
-                        <region>MD</region> 
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.35">MD.Balt.JHU.L.35</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
                         <repository/>
-                        <!--required.-->
-                        <!--  accession number, last part of USEP number -->
                         <idno>35</idno>
-                        <!-- optionally some <altIdentifier>s or <msName>s here -->
+                        <altIdentifier>
+                            <idno>Acc. #43</idno>
+                        </altIdentifier>
                     </msIdentifier>
-               <msContents>
-                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>epitaph of an ointment dealer C. Popilius Anthus</p>
-                  </msItem>
-               </msContents>
-               <physDesc>
-                  <objectDesc ana="#slab">
-                     <supportDesc ana="#stone.marble">
-                        <support>
-                           <p/>
-                           <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary #funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Funerary epitaph to a Roman freedman, Gaius Popillius Anthus from
+                                his wife, Domitia Plecusa and from another freedman, Gaius Popillius
+                                Hermeros</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p>Rectangular slab of marble</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>44.3</height>
+                                        <width>41.2</width>
+                                        <depth>5.7</depth>
                                     </dimensions>
-                        </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
-                        </condition>
-                     </supportDesc>
-                     <layoutDesc>
-                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                                    <dimensions type="letter" unit="cm">
+                                        <height min="2.5" max="3.0">2.5-3.0</height>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p>Good condition; there are chips and some discoloration on the edges that do
+                                        not affect the text</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
                                 <layout columns="1" writtenLines="7">
-                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
-                                </layout>                     
+                                </layout>
                             </layoutDesc>
-                  </objectDesc>
-                  <handDesc>
-                     <handNote/>
-                  </handDesc>
-                  <decoDesc>
-                     <decoNote ana="simple_molding_border">
-                        <p/>
-                     </decoNote>
-                  </decoDesc>
-               </physDesc>
-               <history>
-                  <summary>
-                            <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
-                            <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
-                            <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
-                            <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                        <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved"> </handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+
+                        <summary>
+                            <rs/>
+                            <!-- content can be "fake" or blank -->
                         </summary>
-                  <origin>
-                     <date notBefore="0001" notAfter="0200">first-second century CE</date>
-                     <placeName ref="europe.italy.rome"> Porta Salaria, Rome, Italy</placeName>
-                  </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
-            </msDesc>
-            <listBibl>
+
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0001" notAfter="0100">First century CE</date>
+                            <placeName ref="europe.italy.rome">Porta Salaria, Rome,
+                                Italy</placeName>
+                        </origin>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope type="item">37830; cf. 10001, 10002</biblScope>
+                        <biblScope type="item">10002</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#AJP_Wilson7"/>
-                        <biblScope type="item">39-40 no. 35</biblScope>
+                        <biblScope type="pp">39-40, no. 35</biblScope>
                     </bibl>
-                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR145294">EDR145294</ref>
-</bibl>
-
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR118152">EDR118152</ref>
+                    </bibl>
                 </listBibl>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-            <xi:fallback>
-               <p>Taxonomies for US Epigraphy controlled values</p>
-            </xi:fallback>
-         </xi:include>
-      </encodingDesc>
-      <profileDesc/>
-      <revisionDesc>
-         <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
-         <change when-="2015-08-17" who="SJD">Corrected CIL no., removed duplicated EDR link</change>
-      </revisionDesc>
-   </teiHeader>
-   <facsimile>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+
+        <encodingDesc>
+
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc>
+            <!-- not used -->
+        </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+        <!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2014-10-01" who="JuliaLenzi">Initial Encoding</change>
+            <change when="2015-08-31" who="SJD">Added altIdentifier, cleaned metadata, corrected and expanded bibliography, proofed and cleaned transcription with JB's corrections</change>            
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+    <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
         <surface>
-            <!-- Caption in desc element -->
-        <desc/>
-            <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
+            <desc/>
             <graphic url="MD.Balt.JHU.L.35.jpg"/>
-      </surface>
-   </facsimile>
-   <text>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="MD.Balt.JHU.L.35-alt.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
         <body>
             <div type="edition">
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+                <!-- transcription goes here -->
                 <ab>
-                    <lb n="1"/>Domitia <g type="mulieris"/> 
-               <expan>
-                  <abbr>l</abbr><ex>iberta</ex>
-               </expan> Plecusa
-                    <lb n="2"/>monumentum fecit
-                    <lb n="3"/>
-               <expan>
-                  <abbr>C</abbr><ex>aio</ex>
-               </expan> Popillio Antho
-                    <lb n="4"/>unguentario viro suo
-                    <lb n="5"/>cum quo v<hi rend="tall">i</hi>xit annos <num xml:lang="lat" value="35">XXXV</num>
-                    <lb n="6"/>et <expan>
-                  <abbr>C</abbr><ex>aius</ex>
-               </expan> Popillius <expan>
-                  <abbr>C</abbr><ex>aii</ex>
-               </expan> 
-               <expan>
-                  <abbr>C</abbr><ex>aii</ex>
-               </expan> 
-               <expan>
-                  <abbr>l</abbr><ex>ibertus</ex>
-               </expan> 
-               <expan>
-                  <abbr>Hermer</abbr><ex>os</ex>
-               </expan>
-                    <lb n="7"/>libertus
+                    <lb n="1"/><persName><name type="gentilicium" key="Domitia">Domitia</name> <persName><g type="Gaiae"/></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Plecusa">Plecusa</name></persName>
+                    <lb n="2"/>monumentum fecit 
+                    <lb n="3"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Popillius">Popillio</name> <name type="cognomen" key="Anthus">Antho</name></persName>,
+                    <lb n="4"/>unguentario, viro suo, 
+                    <lb n="5"/>cum quo vix<hi rend="tall">i</hi>t annos <num value="35">XXX<hi rend="superscript">V</hi></num>,
+                    <lb n="6"/>et <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="genitilicum" key="Popillius">Popillius</name> <persName><name type="praenomen" key="Caius"><expan><abbr>C<am>C</am></abbr><ex>aiorum</ex></expan></name></persName>
+                       <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Hermeros"><expan><abbr>Hermer</abbr><ex>os</ex></expan></name></persName>, 
+                    <lb n="7"/> libertus.
                 </ab>
-            </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            </div>
+
+            <div type="commentary">
+                <!-- notes go here -->
+                <p> Remains of guiding lines evident. There are interpuncts after each word except after the last word in each line.
+                    The interpuncts in lines 2, 3 and 5 (with the exception of the mark between
+                    annos and XXXV) are shaped like ivy leaves. Wilson argues that the space under the inscription was meant for
+                    two-three more lines of text (Wilson, 1910, no. 35) and thus the inscription is
+                    unfinished. </p>
+            </div>
+
+            <div type="translation">
+                <!-- notes go here -->
+                <p>"Domitia Plecusa, the freedwoman of Gaia (a woman) makes this monument for Gaius
+                    Popillius Anthus, the oil-seller, her husband with whom she lived for thirty
+                    five years, and Gaius Popillius Hermeros, the freedman of Gaius and Gaius, the
+                    freedman."</p>
+            </div>
+
+            <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+                    <xi:fallback>
+                        <p>US Ep bibliography</p>
+                    </xi:fallback>
+                </xi:include>
+            </div>
 
         </body>
     </text>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>MD.Balt.WAG.G.47.55</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+               
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="MD.Balt.WAG.G.47.55">MD.Balt.WAG.G.47.55</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MD</region>
+                        <settlement>Balt</settlement>
+                        <institution>WAG</institution>
+                        <repository></repository>
+                        <idno>47.55</idno>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#text_other">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Glass drinking cup with mold-blown inscription</p>
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                    
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                            
+                        <objectDesc ana="#instrumentum.tableware">
+                            <supportDesc ana="#glass">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p> Molded drinking glass</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>6.8</height>
+                                        <width></width>
+                                        <depth></depth>
+                                        <dim type="diameter">6.9</dim>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>Cracked with small chip missing from lip</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="1">
+                                    <p>Wraps around glass</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#protruding.molded"></handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Wreaths</p>
+                            </decoNote>
+                            <decoNote>
+                                <p>Palm branches</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                    
+                        <summary>
+                            <rs/>
+                            <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0001" notAfter="0050">First half of the first century
+                                CE</date>
+                            <placeName ref="asia.syria">Possibly Sidon</placeName>
+                        </origin>
+                        <acquisition>
+                            <!-- subsequent locations if inscription was moved -->
+                            <date when="1925">1925</date>
+                            <p>Dikran Kelekian, Paris and New York; Henry Walters, Baltimore,
+                                1925, by purchase</p>
+                            <date when="1931">1931</date>
+                            <p>Walters Art Museum, 1931, by bequest</p>
+                        </acquisition>
+                        
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#YearsinGlass"/>
+                        <biblScope type="page">6, no. 8bd</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Matheson1980"/>
+                        <biblScope type="page">54</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#JRS_25_Harden"/>
+                        <biblScope type="pp">178-179</biblScope>
+                    </bibl>
+                    
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+            
+        <encodingDesc>
+                           
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2014-12-15" who="Luther Karper">Initial Encoding</change>
+            <change when="2015-08-31" who="SJD">Cleaned metadata, proofed transcription, added section for acquisition details, added image</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MD.Balt.WAG.G.47.55.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="MD.Balt.WAG.G.47.55-det1.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here -->
+                <ab><lb n="1"/>Λάβε τὴ<hi rend="reversed">ν</hi> νείκην.</ab></div>
+             
+            <div type="commentary"><!-- notes go here -->
+            <p>Type parallels: P. Perdrizet, “Verres de Sidon donnés en prix dans des concours,”
+                    MAntFr ser. 7, 65 (1904-5) 291ff; E. M. Stern, Roman Mold-blown Glass (Rome and
+                    Toledo 1995) 98-100, no. 2-4; D. B. Harden, “Romano-Syrian Glasses with
+                    Mould-Blown Inscriptions,” JRS 25 (1935) 178f; SEG 48:1001; SEG 47:2218; SEG
+                    32:1625; SEG 51:2237.  “Seize the victory.” The nu of “τὴν” is
+                    reversed, an easy enough mistake to make when carving letters into a mold, into
+                    which the glass would then have been blown. This backwards nu is rather common
+                    in glass cups of this sort, however, and it may be a sort of stylistic mirroring
+                    of ‘N’s, one at the end of “τὴν” and the other at the beginning of “νείκην,”
+                    separated by the palm fronds which conceal the marks where the two pieces of the
+                    mold came together. “νείκην” is not classical Attic Greek, but it is a common
+                    enough Koine spelling of “νίκην,” and most “Seize the victory cups” use this
+                    form (“νείκην”), although “νίκην” is also found. This phrase and a very similar
+                    iconography was evidently common on glass drinking cups, particularly in Syria,
+                    Cyprus, and the Black Sea area (see the works listed under “Type parallels” in
+                    the bibliography, of which there are several and the colors of the glass found
+                    range from greens and yellow to browns and purples), and it was in Syria,
+                    Palestine, and Phoenicia, in the first century CE, that mold-blown glass
+                    exploded in popularity (and, even if it was not discovered there, as is
+                    probable, the art certainly reached new heights of refinement along the coasts
+                    of Roman provinces in the area). This glass almost certainly has its origin in
+                    first half of first-century-CE Syria-Palestine or Cyprus, and may have been made
+                    in Sidon, near which three close parallels to this cup were found (Stern 98f,
+                    no. 2, pl. 2, no. 3, pl. 3, no. 4, pl. 4), two of which (no. 3 and 4) even
+                    contain the backwards nu in the word “τὴν,” as well as nearly identical
+                    decoration and lettering. A few cups from a series from Cyprus have also been
+                    found with a backwards nu in “τὴν.” There appear to be at least four distinct
+                    series of “Seize the victory” cups, and this example fits most closely in
+                    Harden’s group “K1iii,” although Harden’s 1935 list and Stern’s updated 1995
+                    catalogue do not include this particular cup. In addition to the argument that
+                    cups of this sort were given out as victory prizes—Perdrizet argues that they
+                    may have been filled first with money and then distributed to winners—Stern
+                    suggests that they may have been crafted for drinking contests, since some
+                    “Seize the victory” cups likewise contain the inscription “εἰσελθών” (LSJ II,
+                    “enter the lists, in a contest.”) Although it is, indeed, possible that the
+                    inscriptions on these cups refer to drinking contests, suggesting that the
+                    addition of the participle “εἰσελθών” strengthens this assertion makes little
+                    sense. Their popularity and level of distribution, however, do lend feasibility
+                    to Stern’s theory, and it is difficult to imagine that there were enough
+                    contests to give out so many glasses of this type (and similar types) as prizes,
+                    but one can imagine so many cups being produced and sold for drinking parties. </p></div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>

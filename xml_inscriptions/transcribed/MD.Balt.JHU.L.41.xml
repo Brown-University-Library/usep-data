@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>MD.Balt.JHU.L.41</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+                
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.41">MD.Balt.JHU.L.41</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MD</region>
+                        <settlement>Baltimore</settlement>
+                        <institution>JHU</institution>
+                        <repository></repository>
+                        <idno>41</idno>
+                        <altIdentifier>
+                            <idno>Acc. #1157 a,b</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of a slave Agrypnus from the household of L. Tarius Rufus</p>
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                        
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                        
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p>Very light grey or pale yellow marble columbarium slab</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>18.5</height>
+                                        <width>37.5</width>
+                                        <depth>3.23</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>Diagonal break on the lower left corner, about 10 cm in length. There are two metal remnants of nails the middle of both sides. The text is not
+                                        obscured</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="7">
+                                    <p>The First Line Begins from the Upper Left Corner and is
+                                        taller than the rest, all other Lines are Indented, and a
+                                        similar size roughly 80% that of the first line. The Final
+                                        Line (7) is further Indented and Centered, but of the same
+                                        size as lines 2-6. The lines are relatively straight and
+                                        even, and the letters evenly spaced, with the exception of
+                                        the extra large space between the last two letters of the
+                                        3rd Line. Although the lines are mostly evenly spaced, there
+                                        is a doublespace between lines 3 and 4, and the lines bend
+                                        sligtly up and to the right as they reach their ends.</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                        <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">                            
+                            <handNote ana="#impressed.inscribed.carved">Many of the letters are inelegantly formed.
+                                Wilson calls the 'style,' such that there is, 'vulgar.' </handNote>
+                        </handDesc>                                             
+                        
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                        
+                        <summary>
+                            <rs/>  <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="-0065" notAfter="0035">Late first century BCE</date>
+                            <placeName ref="europe.italy.rome">Columbiarum near Porta Salaria, Rome, Italy</placeName>
+                        </origin>
+                        
+                        
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope type="item">37805</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#AJP_Wilson3"/>
+                        <biblScope type="item">259-61, no. 41</biblScope>
+                    </bibl>                    
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR071784">EDR071784</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+        
+        <encodingDesc>
+            
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
+            
+        </encodingDesc>
+        
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+        <!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2014-12-15" who="Rebecca Ramsey">Initial Encoding</change>
+            <change when="2015-08-26" who="SJD">Cleaned metadata, added altIdentifier, expanded bibl, proofed and corrected transcription; moved translation to its own div</change>
+        </revisionDesc>
+        
+    </teiHeader>
+    
+    <!--  *************************************  <facsimile>  *********************************  -->
+    <!-- Used to record images of an inscription.   -->
+    
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MD.Balt.JHU.L.41.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url=""/>
+        </surface>
+    </facsimile>
+    
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here -->
+                <ab>
+                    <lb n="1"/>Decurionum decreto
+                    <lb n="2"/>ex domo <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name type="gentilicium" key="Tarius">Tari</name> <name type="cognomen" key="Rufus">Ruf<hi rend="tall">i</hi></name></persName>   <persName><name type="cognomen" key="Agrypnus">Agrypno</name></persName>
+                    <lb n="3"/>medico magistro, ex domo
+                    <lb n="4"/><persName><name type="cognomen" key="Quinta">Quintae</name></persName> matris. <persName><name type="cognomen" key="Agrypnus">Agrypnus</name></persName>
+                    <lb n="5"/><expan><abbr>ann</abbr><ex>is</ex></expan> natus <num value="26">XXVI</num> ob<hi rend="tall">i</hi>t septumo
+                    <lb n="6"/>vicensumo. Pos<hi rend="tall">i</hi>t mater
+                    <lb n="7"/>calimitosa de suo.
+                </ab>
+            </div>
+            
+            <div type="commentary"><!-- notes go here -->
+                <p>Line 1: Lucius Tarius Rufus, infamous Suffect Consul whom Wilson suggests is the L. Tari Rufi of the inscription, was a consul 16 BCE, giving the inscription a late 1st c. BCE or early 1st c. CE provenence.</p>              
+            </div>
+            <div type="translation">
+                <p>"By decree of the Decurions: For Agrypnus, doctor [and] teacher from the household of Lucius Tarius Rufus [and] from the household of Quinta, his
+                    mother. Agrypnus was born 26 years ago and died in the 27th. In her grief, his mother established this with her own money."</p>
+            </div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>
+

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>MD.Balt.WAG.G.26.2</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+               
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="MD.Balt.WAG.G.26.2">MD.Balt.WAG.G.26.2</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MD</region>
+                        <settlement>Balt</settlement>
+                        <institution>WAG</institution>
+                        <repository></repository>
+                        <idno>26.2</idno>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of Aurelia Artemis with portrait of reclining woman</p>
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                    
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                            
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p> </p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>34</height>
+                                        <width>41.2</width>
+                                        <depth/>
+                                    </dimensions>
+                                    <dimensions type="letter" unit="cm">
+                                        <height min="1.0" max="2.8">1.0-2.8</height>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="4">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved">Traces of faint red paint,
+                                possibly ancient, letter forms typical of later period, note the
+                                alphas, epsilons, upsilons, small omicron, psi, and omega</handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Woman reclining, facing outward, elaborately dressed, hands
+                                    grasping clothing, legs of couch frame inscription bellow</p>
+                            </decoNote>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                    
+                        <summary>
+                            <rs/>
+                            <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0212" notAfter="0400">212-400 CE</date>
+                            <placeName ref="africa.egypt">Akhmim, Egypt</placeName>
+                        </origin>
+                        <acquisition>
+                            <!-- subsequent locations if inscription was moved -->
+                            <date when="1923">1923</date>
+                            <p>Dikran Kelekian, New York and Paris, by purchase; Henry Walters,
+                                Baltimore, by purchase</p>
+                            <date when="1931">1931</date>
+                            <p>Walters Art Museum, by bequest</p>
+                        </acquisition>
+                        
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SEG_52"/>
+                        <biblScope type="item">1811</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Thomas_Friedman"/>
+                        <biblScope type="pp">253, no. 167</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Sichtermann"/>
+                        <biblScope type="pp">29, pl. 26</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Parlasca"/>
+                        <biblScope type="pp">102</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://art.thewalters.org/detail/11187/funerary-stele-of-aurelia-artemis/">WAG Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+            
+        <encodingDesc>
+                           
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2014-12-15" who="Luther Karper">Initial Encoding</change>
+            <change when="2015-08-31" who="SJD">Cleaned metadata, proofed transcription, added bibl, added image, added translation div</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MD.Balt.WAG.G.26.2.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here -->
+                <ab>
+                    <lb n="1"/><persName><name type="gentilicium" key="Aurelia">Αὐρηλίαν</name> <name type="cognomen" key="Artemis">Ἄρτεμειν</name></persName>
+                    <lb n="2"/>θυγατέρα <persName>Πασίωνος</persName>,
+                    <lb n="3"/>τὴν γλυκυτάτην ἀσύνκριτ<hi rend="small">ο</hi>ν
+                    <lb n="4"/>ἐν πᾶσι· εὐψύχι.
+                </ab>
+            </div>
+             
+            <div type="commentary"><!-- notes go here -->
+            <p> l. 4: “εὐψύχι” is a very common form of “εὐψύχει,”
+                    found throughout Egypt, Nubia, and Cyrenaica. Although both are attested, the
+                    former is roughly twice as common as the latter, based on my own review of the
+                    corpus. The lettering is typical of Hellenistic and Imperial Greek inscriptions.
+                   Interpuncts are employed somewhat irregularly.  Many of the carved lines of both the
+                    decoration and the lettering of this inscription are rather rough, and it is
+                    difficult to determine whether this is the result of wear over time or of the
+                    carver’s technique. It is unusual to find the name of the deceased in the
+                    accusative, with the imperative “εὐψύχι,” which is usually found in Egypt with
+                    the deceased’s name in the vocative or nominative, but it is not without
+                    parallel (E.g. “Τιβέριον Κλ|αύδιον Ἀγαθ|ὸν. εὐψ[ύ]χι.” (SB 1.5038 = Breccia,
+                    Alexandria Mus. 377); SEG 52:1811). Weir suggested that this stele belonged to
+                    Syrian Antioch, rather than Egypt, based on his own comparison of its
+                    similarities in size, material, iconography, style, and lettering with the
+                    stelai from Antioch which are now found in the Art Museum of Princeton, an
+                    interpretation which has been challenged and cast into much doubt by Tybout, who
+                    sees very little similarity beyond that which can be found throughout the
+                    inscriptions of the Greek world from the time of the Roman empire. (SEG 52:1811;
+                    for Weir’s analysis, see: SEG 52:1548; R.G.A.Weir in J.M.Padgett (ed.), Roman
+                    Sculpture in the Art Museum, Princeton University (Princeton 2001) 276, note 1.)
+                    The iconography, paleography, and style of the
+                    stele fully support this third century CE date, and it may even be from the
+                    fourth century. Her father’s lack of a Roman praenomen in this inscription is
+                    worth noting, and may suggest that he was not himself a Roman citizen, pushing
+                    the date of this inscription closer to 212 CE. This argument from silence is
+                    weak, however, and the inscription’s reference to Aurelia Artemis’ father as
+                    Pasion may be based in personal taste and fashion. </p></div>
+            <div type="translation">
+                <p>“Aurelia Artemis, daughter of Pasion, the sweetest, without comparison among all:
+                    farewell.”</p>
+            </div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>
