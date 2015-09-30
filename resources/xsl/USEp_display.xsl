@@ -19,6 +19,7 @@
         2011-11-29 EM adding edition handling
         2014-09-25 EM many changes including: 
         2015-09-29 SJD Added variables, added concat to remove excess commas
+        2015-09-30 EM testing the acquisition field with no variable. 
 
         ******************************************************************************   -->
  
@@ -32,7 +33,7 @@
         citations and the images. -->
         
     <xsl:template match="/">
-        <xsl:result-document href="#container">
+         <xsl:result-document href="#container"> 
             <div>
 
                 <!-- This outputs the full text description at the top of the page, after checking that there are descriptions to output. -->
@@ -57,6 +58,7 @@
                         <xsl:variable name="dateOfOrigin">
                             <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:date"/>
                         </xsl:variable>
+                        
                         <xsl:variable name="placeOfOrigin"
                             select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
                         <xsl:variable name="placeOfProvenance">
@@ -65,8 +67,8 @@
                         <xsl:variable name="dateOfProvenance"
                             select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:history/t:provenance/t:date"/>
                         <xsl:variable name="acquisitionDesc">
-                            <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p"/>
-                        </xsl:variable>
+                   <!--         <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p"/>
+                  -->      </xsl:variable>
                         <xsl:variable name="acquisitionDate"
                             select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:history/t:acquisition/t:date"/>
                         
@@ -96,7 +98,7 @@
     <tr><td class="label">Acquired</td>
         <td class="value">
             <xsl:choose>
-                <xsl:when test="$acquisitionDesc"><xsl:value-of select="$acquisitionDesc"/>, <xsl:value-of select="$acquisitionDate"/></xsl:when>
+                <xsl:when test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p"><xsl:value-of select="concat(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p, ',')"/> <xsl:value-of select="$acquisitionDate"/></xsl:when>
                 <xsl:otherwise><xsl:value-of select="$dateOfProvenance"/></xsl:otherwise>
             </xsl:choose>
         </td>
@@ -113,13 +115,16 @@
                 <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
                             <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
+                              
                                 <xsl:for-each select="t:graphic">
-                                    <a class="highslide" href="{concat($imageDir, '/',@url)}" onclick="return hs.expand(this)">
-                                        <img src="{concat($imageDir, '/',@url)}" alt="" width="200"/>
+                                    <xsl:if test="starts-with(@url, 'http')">
+                                        <a class="highslide" href="{@url}" onclick="return hs.expand(this)">
+                                        <img src="{@url}" alt="" width="200"/>
                                     </a>
+                                    </xsl:if>
                                 </xsl:for-each>
                             </xsl:for-each>
-                   </xsl:result-document>
+                   </xsl:result-document> 
                 </div>
 
                 <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
@@ -157,7 +162,7 @@
             
             </div>
             
-        </xsl:result-document>
+         </xsl:result-document> 
     </xsl:template>
 
     <!-- ****************** This outputs the bibliography ******************** -->
