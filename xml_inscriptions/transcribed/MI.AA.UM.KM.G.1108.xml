@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>MI.AA.UM.KM.G.1108</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+               
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.1108">MI.AA.UM.KM.G.1108</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MI</region>
+                        <settlement>AA</settlement>
+                        <institution>UM</institution>
+                        <repository>KM</repository>
+                        <idno>1108</idno>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                        <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of Proklos, son of Οnesicrates</p>
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                    
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                            
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p> Fine-grained marble slab that has seemingly been broken in
+                                        half vertically down the center of the text.</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>22.4</height>
+                                        <width>22.8</width>
+                                        <depth>1.8</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragments.contig">
+                                    <p>Remaining 2 fragments join and preserve left half of incsription</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="7">
+                                    <p>Concerted effort to center text on the stone</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved"> Shallowly carved lettering, neatly
+                                cut. Small serifs and slight shading. Lunate sigmas and rounded
+                                epsilons.</handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                    
+                        <summary>
+                            <rs/>  <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0100" notAfter="0200">Second century CE</date>
+                            <placeName ref="europe.italy.misenum">Misenum, Italy</placeName>
+                        </origin>
+                        
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#IG_XIV"/>
+                        <biblScope type="item">876b</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+            
+        <encodingDesc>
+                           
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2014-10-01" who="Samantha Lash">Initial Encoding</change>
+            <change when="2014-08-24" who="SJD">Cleaned metadata for conformity, proofed transcription, added image</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MI.AA.UM.KM.G.1108.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here -->
+                <ab><lb n="1"/>Θεοῖς Καταχθ<supplied reason="lost" cert="high">ονίοις</supplied>
+                    <lb n="2"/><persName><name type="cognomen" key="Proclus">Πρόκλου</name> τ<supplied reason="lost" cert="high">οῦ</supplied>
+                    <lb n="3"/><persName><name type="patronymic" key="Onesicrates">Ὀνησικρά>τ<supplied reason="lost" cert="high">ου</supplied></name>
+                    <lb n="4"/><name type="ethnonym">Νεικομηδέ<supplied reason="lost">ως</supplied>,</name></persName></persName> <supplied reason="lost">ζή</supplied>
+                    <lb n="5" break="no"/>σαντοc ἔτη <num value="10">ι</num>, <gap reason="lost" atLeast="2" atMost="7" unit="character" precision="medium"/>
+                    <lb n="6"/>τέκνῳ ἐπόη<supplied reason="lost" cert="high">σε <expan><abbr>μνή</abbr><ex></ex>μης</expan></supplied>
+                    <lb n="7"/>ἕνεκα <gap reason="lost" extent="unknown" unit="character"/>.
+                </ab>
+            </div>
+             
+            <div type="commentary"><!-- notes go here -->
+            <p>Line 3/4: ‘Ονησικράτ[ου] Νεικομηdέ[ως- : attested in his own epitaph IG 14.876a (=MI.AA.UM.KM.G.1109) also
+                    from Misenum and De Criscio’s collection (see below). Line 5: IG suggests πατήρ
+                    but it could also be an expansion of the age of the deceased: μηνας followed by
+                    a numeral.</p></div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>
