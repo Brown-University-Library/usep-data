@@ -260,6 +260,7 @@
         -->
         <revisionDesc>
             <change when="2014-08-11" who="SJD">Initial Encoding</change>
+            <change when="2015-10-06" who="SJD">Fixed path to bibl</change>
         </revisionDesc>
 
     </teiHeader>
@@ -274,10 +275,10 @@
      -->
 
     <facsimile>
-        <graphic url="NoImage.jpg"/>
+        
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="NoImage.jpg"/>
         </surface>
     </facsimile>
 
@@ -292,7 +293,7 @@
                         
             <!-- if there is commentary or notes, you can add a <div type="commentary"> after the edition. -->
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep/usepi_bib.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
         </body>
     </text>
