@@ -80,7 +80,7 @@
                                 <tr><td class="label">Place of Origin</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length($placeOfOrigin) !=0"> <xsl:value-of select="$placeOfOrigin"/>, <xsl:value-of select="$dateOfOrigin"/></xsl:when>
+                                            <xsl:when test="string-length($placeOfOrigin) !=0"> <xsl:value-of select="concat($placeOfOrigin,',',$dateOfOrigin)"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="$dateOfOrigin"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td></tr>
@@ -88,7 +88,7 @@
                                     <tr><td class="label">Subsequent Location</td>
                                         <td class="value">
                                             <xsl:choose>
-                                                <xsl:when test="string-length($placeOfProvenance) !=0"><xsl:value-of select="$placeOfProvenance"/>, <xsl:value-of select="$dateOfProvenance"/></xsl:when>
+                                                <xsl:when test="string-length($placeOfProvenance) !=0"><xsl:value-of select="concat($placeOfProvenance,',', $dateOfProvenance)"/></xsl:when>
                                                 <xsl:otherwise><xsl:value-of select="$dateOfProvenance"/></xsl:otherwise>
                                             </xsl:choose>
                                         </td>
