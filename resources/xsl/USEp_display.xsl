@@ -18,7 +18,8 @@
         2011-11-29 EM adding edition handling
         2014-09-25 EM many changes including: 
         2015-09-29 SJD Added variables, added concat to remove excess commas
-        2015-09-30 EM testing the acquisition field with no variable. 
+        2015-09-30 EM testing the acquisition field with no variable
+        2015-10-06 SJD Added string-length tests to remove commas
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -79,7 +80,7 @@
                                 <tr><td class="label">Place of Origin</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="$placeOfOrigin"> <xsl:value-of select="$placeOfOrigin"/>, <xsl:value-of select="$dateOfOrigin"/></xsl:when>
+                                            <xsl:when test="string-length($placeOfOrigin) !=0"> <xsl:value-of select="$placeOfOrigin"/>, <xsl:value-of select="$dateOfOrigin"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="$dateOfOrigin"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td></tr>
@@ -87,7 +88,7 @@
                                     <tr><td class="label">Subsequent Location</td>
                                         <td class="value">
                                             <xsl:choose>
-                                                <xsl:when test="$placeOfProvenance"><xsl:value-of select="$placeOfProvenance"/>, <xsl:value-of select="$dateOfProvenance"/></xsl:when>
+                                                <xsl:when test="string-length($placeOfProvenance) !=0"><xsl:value-of select="$placeOfProvenance"/>, <xsl:value-of select="$dateOfProvenance"/></xsl:when>
                                                 <xsl:otherwise><xsl:value-of select="$dateOfProvenance"/></xsl:otherwise>
                                             </xsl:choose>
                                         </td>
