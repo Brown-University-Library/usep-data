@@ -103,7 +103,7 @@
                                 <tr><td class="label">Acquired</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p) !=0"><xsl:value-of select="concat(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p, ',')"/> <xsl:value-of select="$acquisitionDate"/></xsl:when>
+                                            <xsl:when test="string-length(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p) !=0"><xsl:value-of select="concat(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p, ', ')"/> <xsl:value-of select="$acquisitionDate"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="$dateOfProvenance"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td>
