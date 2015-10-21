@@ -23,6 +23,8 @@
         2015-10-06 SJD Added string-length tests to remove commas
         2015-10-13 SJD added variables and tests for Layout, Writing, Condition
         2015-10-20 SJD fixing display xsl for writing, layout, condition; fixed path errors in dateOfProvenance and acquisitionDate variables
+        2015-10-21 SJD small fixes to display (removed all stray commas)
+        2015-10-21 SJD fixed display of transcribed texts with multiple divs
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -159,7 +161,7 @@
                 </div>
                 
                 <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
-                <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab">
+                <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
                     <xsl:apply-templates select="/t:TEI/t:text/t:body/t:div[@type='edition']"/>
                 </xsl:if>
                 
@@ -174,7 +176,7 @@
                 </div>
                 
                 <xsl:choose>
-                    <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab">
+                    <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
                         <!-- transcribed folder -->
                         <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
                     </xsl:when>
