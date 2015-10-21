@@ -117,7 +117,7 @@
                                     <td class="label">Writing</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length($writing/@ana) !=0 and string-length($writing) !=0"><xsl:value-of select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing)"/></xsl:when>
+                                            <xsl:when test="string-length($writing/@ana) !=0 and normalize-space($writing)"><xsl:value-of select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing)"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="id(substring-after($writing/@ana, '#'))/t:catDesc"/></xsl:otherwise>                                            
                                         </xsl:choose>
                                     </td>
@@ -126,7 +126,7 @@
                                     <td class="label">Condition</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length($condition/t:p) !=0 and string-length($condition/@ana) !=0"><xsl:value-of select="concat(id(substring-after($condition/@ana, '#'))/t:catDesc, ', ', $condition/t:p)"/></xsl:when>
+                                            <xsl:when test="normalize-space($condition/t:p) and string-length($condition/@ana) !=0"><xsl:value-of select="concat(id(substring-after($condition/@ana, '#'))/t:catDesc, ', ', $condition/t:p)"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="id(substring-after($condition/@ana, '#'))/t:catDesc"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td>
