@@ -127,7 +127,7 @@
                                     <td class="value">
                                         <xsl:choose>
                                             <xsl:when test="string-length($condition/t:p) !=0 and string-length($condition/@ana) !=0"><xsl:value-of select="concat(id(substring-after($condition/@ana, '#'))/t:catDesc, ', ', $condition/t:p)"/></xsl:when>
-                                            <xsl:otherwise><xsl:value-of select="$condition/@ana"/></xsl:otherwise>
+                                            <xsl:otherwise><xsl:value-of select="id(substring-after($condition/@ana, '#'))/t:catDesc"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td>
                                 </tr>
