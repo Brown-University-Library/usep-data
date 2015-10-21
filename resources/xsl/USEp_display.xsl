@@ -72,7 +72,7 @@
                             </xsl:variable>
                             <xsl:variable name="acquisitionDate"
                                 select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:date"/>
-                            <xsl:variable name="condition" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition/t:p"/>
+                            <xsl:variable name="condition" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition"/>
                             <xsl:variable name="layout" select="t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout"/>
                             <xsl:variable name="writing" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/>
                             
@@ -126,7 +126,7 @@
                                     <td class="label">Condition</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length($condition) !=0 and string-length($condition/@ana) !=0"><xsl:value-of select="concat(id(substring-after($condition/@ana, '#'))/t:catDesc, ', ', $condition)"/></xsl:when>
+                                            <xsl:when test="string-length($condition/t:p) !=0 and string-length($condition/@ana) !=0"><xsl:value-of select="concat(id(substring-after($condition/@ana, '#'))/t:catDesc, ', ', $condition/t:p)"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="$condition/@ana"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td>
