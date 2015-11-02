@@ -113,8 +113,11 @@
                                 <!-- check for existence of controlled and full text values here. -->
                                 <tr>
                                     <td class="label">Layout</td><td class="value">
-                                        <xsl:if test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:if>
-                                        <xsl:if test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columnes='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' lines')"/></xsl:if>
+                                       <xsl:choose>                              
+                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columnes='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' lines')"/></xsl:when>
+                                       </xsl:choose>
+                    
                                     </td>
                                 </tr>
                                 <tr>
