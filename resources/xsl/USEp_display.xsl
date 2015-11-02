@@ -25,6 +25,7 @@
         2015-10-20 SJD fixing display xsl for writing, layout, condition; fixed path errors in dateOfProvenance and acquisitionDate variables
         2015-10-21 SJD small fixes to display (removed all stray commas)
         2015-10-21 SJD fixed display of transcribed texts with multiple divs
+        2015-11-02 SJD made small change to columns display
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -113,6 +114,7 @@
                                 <tr>
                                     <td class="label">Layout</td><td class="value">
                                         <xsl:if test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:if>
+                                        <xsl:if test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columnes='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' lines')"/></xsl:if>
                                     </td>
                                 </tr>
                                 <tr>
