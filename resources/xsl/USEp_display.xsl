@@ -112,7 +112,7 @@
                                 <!-- check for existence of controlled and full text values here. -->
                                 <tr>
                                     <td class="label">Layout</td><td class="value">
-                                        <xsl:if test="string-length($layout/@columns) !=0 and string-length($layout/@lines) !=0"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@lines, ' lines')"/></xsl:if>
+                                        <xsl:if test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:if>
                                     </td>
                                 </tr>
                                 <tr>
