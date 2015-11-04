@@ -23,14 +23,15 @@
                         
                           
                         <region>MD</region> 
-                        <settlement>Balt</settlement>
-                        
+                        <settlement>Balt</settlement>                        
                         <institution>JHU</institution>
                         <repository/>
                         <!--required.-->
                         <!--  USEp. number as ID (machine readable) -->
                         <idno>5</idno>
-                        <!-- optionally some <altIdentifier>s or <msName>s here -->
+                        <altIdentifier>
+                           <idno>Acc. #62</idno>
+                  </altIdentifier><!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
@@ -48,7 +49,7 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>Broken roughly in two with large horizontal cut in middle of line 4</p>
+                        <condition ana="complete.broken"><!--Add ana attribute with controlled value for condition--><p>Broken roughly in two with large horizontal cut in middle of line 4</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -106,6 +107,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2015-11-02" who="SJD">Added name tagging to transcription, updated condition @ana, new accession number</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -121,14 +123,14 @@
             <div type="edition">
                 <ab>
                     <lb n="1"/>
-               <expan>
+               <persName><name type="praenomen" key="Caius"><expan>
                   <abbr>C</abbr><ex>aio</ex>
-               </expan> Ovio <expan>
-                  <abbr>Sp</abbr><ex>urii</ex>
-               </expan> 
+               </expan></name> <name type="gentilicium" key="Ovius">Ovio</name> 
+                  <persName><name type="praenomen" key="Spurius"><expan><abbr>Sp</abbr><ex>urii</ex>
+               </expan> </name></persName>
                <expan>
                   <abbr>f</abbr><ex>ilio</ex>
-               </expan> Sollemn<hi rend="tall">i</hi> 
+               </expan> <name type="cognomen" key="Sollemnis">Sollemn<hi rend="tall">i</hi></name></persName>
                <expan>
                   <abbr>d</abbr><ex>efuncto</ex>
                </expan>
@@ -144,9 +146,9 @@
                   <abbr>d</abbr><ex>iebus</ex>
                </expan> X
                     <lb n="3"/>
-               <expan>
+               <persName><name type="praenomen" key="Tiberius"><expan>
                   <abbr>
-                     <hi rend="tall">T</hi>i</abbr><ex/>berius</expan> Claudius <unclear>S</unclear>everus, <expan>
+                     <hi rend="tall">T</hi>i</abbr><ex/>berius</expan></name> <name type="gentilicium" key="Claudius">Claudius</name> <name type="cognomen" key="Severus"><unclear>S</unclear>everus</name></persName>, <expan>
                   <abbr>pr</abbr><ex>aefectus</ex>
                </expan> 
                <expan>
@@ -156,14 +158,14 @@
                   <abbr>d</abbr><ex>icundo</ex>
                </expan> pa<hi rend="tall">t</hi>er
                     <lb n="4"/>
-               <expan>
+               <persName><name type="praenomen" key="Tiberius"><expan>
                   <abbr>Ti</abbr><ex>berius</ex>
-               </expan> Claudius Honoratus
+               </expan></name> <name type="gentilicium" key="Claudius">Claudius</name> <name type="cognomen" key="Honoratus">Honoratus</name></persName>  
                     <lb n="5"/>
                <num xml:lang="lat" value="2">
                   <hi rend="supraline">II</hi>
                </num>vir patruus
-                    <lb n="6"/>Ovia Tyche mater
+                    <lb n="6"/><persName><name type="gentilicium" key="Ovia">Ovia</name> <name type="cognomen" key="Tyche">Tyche</name></persName> mater
                     <lb n="7"/>et suis
                     <lb n="8"/>
                <expan>
