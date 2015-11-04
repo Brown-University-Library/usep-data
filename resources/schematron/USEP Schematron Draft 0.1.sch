@@ -8,6 +8,7 @@
     **Change log:
     2015-11-02 SJD began; took transcription rules from sourceforge and adding rules for IDs and file names, image names, empty bibliography, image formatting
     2015-11-03 SJD added variable and put into schematron 1.7, working on simplifying the test for matching machine-readable id and itemized elements
+    2015-11-04 SJD added rules for empty genre, support type, material, condition, handNote, location, date, and change log
     -->
     
     <!-- Variable declaration -->
@@ -32,10 +33,60 @@
         </rule>        
     </pattern>
     
+    <!-- Test for empty genre -->
+    <pattern>
+        <rule context="//t:msContents">
+            <report test="//t:msItem[@class='#xx']">Every inscription must have a valid genre</report>
+        </rule>
+    </pattern>
+    
+    <!-- Test for empty support material -->
+    <pattern>
+        <rule context="//t:physDesc">
+            <report test="//t:supportDesc[@ana='#xx']">Every inscription must have a valid material</report>
+        </rule>
+    </pattern>
+    
+    <!-- Test for empty condition --><pattern>
+        <rule context="//t:physDesc/t:objectDesc/t:supportDesc/t:condition">
+            <report test="//t:condition[@ana='#xx']"></report>
+        </rule>
+    </pattern>
+    
     <!-- Test for multiple ps under supportDesc -->
     <pattern>
         <rule context="//t:physDesc">
-            <report test="//t:supportDesc/t:p[2]">Cannot have two p-elements contained under supportDesc</report>
+            <report test="//t:supportDesc/t:support/t:p[2]">Cannot have two p-elements contained under support</report>
+        </rule>
+    </pattern>
+    
+    <!-- Test for empty objectDesc -->
+    <pattern>
+        <rule context="//t:physDesc">
+            <report test="//t:objectDesc[@ana='#xx']">Every entry must contain a valid object type</report>
+        </rule>
+    </pattern>
+    
+    <!-- Test for empty handNote -->
+    <pattern>
+        <rule context="//t:physDesc/t:handDesc">
+            <report test="//t:handNote[@ana='#xx']">Every entry must contain a valid writing description; if unknown, mark as such</report>
+        </rule>
+    </pattern>
+    
+    <!-- Test for empty date fields -->
+    <pattern>
+        <rule context="//t:history/t:origin">
+            <report test="//t:date='Date to be displayed'">Enter a date for the inscription</report>
+            <report test="(//t:date[@notBefore='0001'] and //t:date[@notAfter='0002'])">Enter a range of dates for the inscription</report>
+        </rule>
+    </pattern>
+    
+    <!-- Test for empty place names -->
+    <pattern>
+        <rule context="//t:history/t:origin">
+            <report test="//t:placeName[@ref='xx']">Inscription must have a valid place ref (e.g. europe.italy.rome)</report>
+            <report test="//t:placeName='Detailed place name'">Inscription must have a location; if it is unknown, mark as such</report>
         </rule>
     </pattern>
     
@@ -43,7 +94,14 @@
     <pattern>
         <rule context="//t:listBibl">
             <assert test="normalize-space(.)">Every entry must include bibliography, even if it is unpublished</assert>
-            <report test="descendant::text() [id('#xx')]">Every entry must include bibliography; use "unpub" for unpublished inscriptions</report>           
+            <report test="//t:bibl/t:ptr[@target='#xx']">Every entry must include bibliography; use "unpub" for unpublished inscriptions</report>           
+        </rule>
+    </pattern>
+    
+    <!-- Test for change log attribution -->
+    <pattern>
+        <rule context="//t:revisionDesc">
+            <report test="//t:change[@who='xx']">Input your name in the change log</report>
         </rule>
     </pattern>
     
