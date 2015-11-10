@@ -181,7 +181,7 @@
                 </div>
                 
                 <xsl:choose>
-                    <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
+                    <xsl:when test="(/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab and not(normalize-space(/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab)))or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
                         <!-- transcribed folder -->
                         <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
                     </xsl:when>
