@@ -181,13 +181,9 @@
                 </div>
                 
                 <xsl:choose>
-                    <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab and not(string-length(/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab)=0)">
+                    <xsl:when test="(/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab and not(/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab='')) or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
                         <!-- transcribed folder -->
                         <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
-                    </xsl:when>
-                    <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
-                    <!-- transcribed folder -->
-                    <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
                     </xsl:when>
                     <xsl:when test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem[@class]">
                         <!-- bib only folder -->
