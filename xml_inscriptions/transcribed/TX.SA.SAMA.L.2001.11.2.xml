@@ -19,8 +19,8 @@
                     <msIdentifier>
                         <region>TX</region>
                         <settlement>SA</settlement>
-                        <institution></institution>
-                        <repository>SAMA</repository>
+                        <institution>SAMA</institution>
+                        <repository></repository>
                         <idno>2001.11.2</idno>
                     </msIdentifier>
                     <msContents>
@@ -35,24 +35,23 @@
                                 <support>
                                     <p>White marble relief</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height></height>
-                                        <width>63.4</width>
-                                        <depth></depth>
+                                        <height>63.4</height>
+                                        <width>139.2</width>
+                                        <depth>43.4</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#">
-                                </condition>
+                                <condition ana="#complete.intact"> </condition>
                             </supportDesc>
                             <layoutDesc>
-                                <layout columns="1" writtenLines="2"></layout>
+                                <layout columns="3" writtenLines="2"/>
                             </layoutDesc>    
                         </objectDesc>
-                        <handDesc>
-                            <handNote ana="#"/>
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved"/>
                         </handDesc>
                         <decoDesc>
-                            <decoNote type="blank">
-                                <p></p>
+                            <decoNote>
+                                <p>Portrait busts of the three commemorated individuals inset above the names</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -75,10 +74,12 @@
                         <ptr type="rest-of-bibl" target="#CIL_VI"/>
                         <biblScope type="item">18874</biblScope>
                     </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143233">EDR143233</ref>
-</bibl>
+                    <bibl>  
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143233">EDR143233</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.samuseum.org/collections/art-of-the-ancient-mediterranean-world/389-funerary-relief-for-three-former-slaves">San Antonio Museum of Art Web Entry</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -93,6 +94,7 @@
         <revisionDesc>
             <change when="2011-10-10" who="SB">Encoded</change>
             <change when="2012-05-31" who="CD">Proofread</change>
+            <change when="2015-11-11" who="SJD">Corrected transcription, added metadata from SAMA website, added weblink to SAMA website</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -105,13 +107,27 @@
     <text>
         <body>
             <div type="edition">
-                <ab>
-                    <lb n="1"/>L·GALLONIVS·L·GALLONIVS·GALLONIA
-                    <lb n="2"/>  L·L·ASCANTO L·L·PHILODAMVS L·L·LAAIS
-                </ab>
+                <div type="textpart" subtype="column" n="1">
+                    <ab>
+                        <lb n="1"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Gallonius">Gallonius</name>
+                        <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Ascanio">Ascanio</name></persName>.
+                    </ab>
+                </div>
+                <div type="textpart" subtype="column" n="2">
+                    <ab>
+                        <lb n="1"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Gallonius">Gallonius</name> 
+                            <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Philodamus">Philodamus</name></persName>.
+                    </ab>
+                </div>
+                <div type="textpart" subtype="column" n="3">
+                    <ab>   
+                        <lb n="1"/><persName><name type="gentilicium" key="Gallonia">Gallonia</name>
+                        <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Laais">Laais</name></persName>.
+                    </ab>
+                </div>
             </div>
-            <div type="apparatus">
-                <p>second line in smaller letters than the first</p>
+            <div type="commentary">
+                <p>Second line of each column in smaller letters than the first. Columns divided by an interpunct.</p>
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
     </text>

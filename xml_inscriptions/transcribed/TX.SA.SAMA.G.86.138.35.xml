@@ -19,14 +19,14 @@
                     <msIdentifier>
                         <region>TX</region>
                         <settlement>SA</settlement>
-                        <institution></institution>
-                        <repository>SAMA</repository>
+                        <institution>SAMA</institution>
+                        <repository></repository>
                         <idno>86.138.35</idno>
                     </msIdentifier>
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <msItem class="#label">
-                            <p></p>
+                            <p>Silver dish with inscription apparently indicating weight on bottom</p>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -41,7 +41,7 @@
                                         <depth></depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
@@ -49,12 +49,12 @@
                                 <layout columns="1" writtenLines="1"></layout>
                             </layoutDesc>    
                         </objectDesc>
-                        <handDesc>
-                            <handNote ana="#"/>
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.points"/>
                         </handDesc>
                         <decoDesc>
                             <decoNote type="blank">
-                                <p>blank</p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -63,13 +63,11 @@
                             <note>Scratched on back, very small, inside foot ring.</note>
                         </summary>
                         <origin>
-                            <date notBefore="0001" notAfter="0100">first century CE</date>
-                            <placeName ref="unknown"/>
-                            <p>Roman</p>
+                            <date notBefore="0200" notAfter="0500">Third to fifth century CE</date>
+                            <placeName ref="unknown">Roman</placeName>
                         </origin>
                         <provenance>
-                            <p>Stark-Willson Collection</p>
-                            <placeName>San Antonio Museum of Art</placeName>
+                            <placeName>Stark-Willson Collection, San Antonio Museum of Art</placeName>
                         </provenance>
                     </history>
                 </msDesc>
@@ -90,12 +88,16 @@
         <revisionDesc>
             <change when="2011-10-10" who="SB">Encoded</change>
             <change when="2012-05-31" who="CD">Proofread</change>
+            <change when="2015-11-16" who="SJD">Fixed and added control vocabulary labels, fixed formatting of metadata, fixed transcription and added explanatory note in commentary; changed date on basis of comparanda from around the empire</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
         <surface>
             <desc/>
             <graphic url="TX.SA.SAMA.G.86.138.35.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
             <graphic url="TX.SA.SAMA.G.86.138.35.Det.jpg"/>
         </surface>
     </facsimile>
@@ -103,11 +105,11 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/><app type="previouslyRead"><lem resp="previous">ΛΑΓ</lem><rdg resp="autopsy"><gap reason="lost" quantity="3" unit="character"/></rdg></app>οΓΙ<app type="previouslyRead"><lem resp="previous">Τ</lem><rdg resp="autopsy"><gap reason="lost" quantity="1" unit="character"/></rdg></app>Ζ
+                    <lb n="1"/><expan><abbr>Λ</abbr><ex>ίβρας</ex></expan> <num value="1">Α</num>, <expan><ex>συ</ex><abbr><hi rend="ligature">γ<am>o</am></hi></abbr><ex>ιῶν</ex></expan> <num value="3">Γ</num>, <expan><abbr><hi rend="ligature">γρ</hi></abbr><ex>αμμάτων</ex></expan> <num value="7">Ζ</num>.
                 </ab>
             </div>
-            <div type="apparatus">
-                <p></p>
+            <div type="commentary">
+                <p>The inscription uses Greek abbreviations for the Latin units of weight <hi rend="italic">libra</hi>, <hi rend="italic">uncia</hi>, and <hi rend="italic">scripulum</hi>; cf. the examples given in M. Mango and A. Bennett, <hi rend="italic">The Sevso Treasure: Part One</hi> (Ann Arbor, MI: 1994), 36-45.</p>
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
     </text>

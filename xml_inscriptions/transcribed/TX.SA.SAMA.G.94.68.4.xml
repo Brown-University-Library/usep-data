@@ -19,8 +19,8 @@
                     <msIdentifier>
                         <region>TX</region>
                         <settlement>SA</settlement>
-                        <institution></institution>
-                        <repository>SAMA</repository>
+                        <institution>SAMA</institution>
+                        <repository/>
                         <idno>94.68.4</idno>
                     </msIdentifier>
                     <msContents>
@@ -30,18 +30,19 @@
                         </msItem>
                     </msContents>
                     <physDesc>
-                        <objectDesc ana="#instrumentum.container">
-                            <supportDesc ana="#clay.terracotta">
+                        <objectDesc ana="#instrumentum.tableware">
+                            <supportDesc ana="#clay.ceramic">
                                 <support>
                                     <p>Black-glazed terracotta bowl fragment</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>5.1</height>
-                                        <width></width>
-                                        <depth></depth>
+                                        <width/>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#">
-                                    <p/>
+                                <condition ana="#fragment.single">
+                                    <p>Bowl broken; first name preserved intact, only a single
+                                        letter of second name is extant</p>
                                 </condition>
                             </supportDesc>
                             <layoutDesc>
@@ -50,8 +51,8 @@
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        <handDesc>
-                            <handNote ana="#"/>
+                        <handDesc hands="1">
+                            <handNote ana="#protruding"/>
                         </handDesc>
                         <decoDesc>
                             <decoNote type="blank">
@@ -84,6 +85,7 @@
         <revisionDesc>
             <change when="2011-10-10" who="SB">Encoded</change>
             <change when="2012-05-31" who="CD">Proofread</change>
+            <change when="2015-11-11" who="SJD">Rewrote transcription, added control vocabulary; conjected name of second figure based on mask fragments</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -97,12 +99,13 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/><name>ΚΑΛΛΙΟΠΗ</name> 
-                    <lb n="2"/>M<gap reason="lost" quantity="3" unit="character"/>
+                    <lb n="1"/><persName><name key="Kalliope">Καλλιόπη</name></persName>.
+                    <lb n="2"/><persName><name key="Melpomene">Μ<supplied reason="lost" cert="low">ελπομένη</supplied></name></persName>.
                 </ab>
             </div>
-            <div type="apparatus">
-                <p>1) The name is inscribed vertically to the right of a female figure (probably the muse Kalliope) leaning on a pillar. 2) Penannular tear drop shape after M. Another female figure (probably also a muse) appears to hold a mask next to a fragmentary inscription (probably her name).</p>
+            <div type="commentary">
+                <p>1) The name is inscribed vertically to the right of a female figure (probably the muse Kalliope) leaning on a pillar.</p> 
+                <p>2) Penannular tear drop shape after M. Another female figure (probably also a muse) appears to hold a mask next to a fragmentary inscription (probably her name).</p>
             </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
     </text>

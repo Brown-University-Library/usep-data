@@ -25,7 +25,7 @@
                     </msIdentifier>
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
-                        <msItem class="#funerary">
+                        <msItem class="#funerary.epitaph">
                             <p>Funerary stele of a man named Rufus</p>
                         </msItem>
                     </msContents>
@@ -40,7 +40,7 @@
                                         <depth></depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
@@ -50,12 +50,12 @@
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        <handDesc>
-                            <handNote ana="#"/>
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved"/>
                         </handDesc>
                         <decoDesc>
-                            <decoNote type="relief">
-                                <p>relief of a reclining man and a seated woman</p>
+                            <decoNote type="figured_scene">
+                                <p>A man reclines at right across from seated woman</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -65,11 +65,11 @@
                         </summary>
                         <origin>
                             <date notBefore="-0100" notAfter="0100">first century BCE to first century CE</date>
-                            <p>Hellenistic or Roman period</p>
+                            <placeName ref="unknown"></placeName>
                         </origin>
                         <provenance>
                             <p>Gift of Gilbert M. Denman, Jr.</p>
-                            <placeName>San Antonio Museum of Art</placeName>
+                            <placeName ref="TX.SA">San Antonio Museum of Art</placeName>
                         </provenance>
                     </history>
                 </msDesc>
@@ -88,6 +88,7 @@
             <change when="2011-10-10" who="SB">Encoded</change>
             <change when="2012-05-31" who="CD">Proofread</change>
             <change when="2015-07-08" who="SJD">Corrected transcription</change>
+            <change when="2015-11-16" who="SJD">Rewrote transcription from image, cleaned and reformatted history metadata, added missing control vocabulary labels</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -101,15 +102,16 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>CΑ<supplied reason="undefined" source="previous">T</supplied>ΡΟΝ<supplied reason="undefined" source="previouseditor">Ι</supplied><gap reason="illegible" quantity="1" unit="character"/>ΛΑ <persName>ΡΟΥΦΟΥ</persName>"
-                    <lb n="2"/>ZH· <persName>POYFOC</persName> <persName>POYFOY</persName>
-                   </ab>
+                    <lb n="1"/><persName><name key="Satroneila">Σατρον<unclear>ε</unclear>ίλα</name> <persName><name type="cognomen" key="Rufus">Ῥούφου</name></persName></persName>
+                    <lb n="2"/>ζῇ· <persName><name type="cognomen" key="Rufus"></name>Ῥοῦφος<persName><name type="cognomen" key="Rufus">Ῥούφου</name></persName></persName>.
+               </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
             <div type="apparatus">
-                <p>1) T or I; I or Γ or E</p>
-            </div><div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+                <p></p>
+            </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
     </text>
 </TEI>
