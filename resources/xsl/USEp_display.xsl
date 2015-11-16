@@ -166,7 +166,7 @@
                 </div>
                 
                 <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
-                <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
+                <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
                     <xsl:apply-templates select="/t:TEI/t:text/t:body/t:div[@type='edition']"/>
                 </xsl:if>
                 
