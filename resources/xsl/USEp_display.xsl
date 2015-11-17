@@ -114,7 +114,7 @@
                                 <tr>
                                     <td class="label">Layout</td><td class="value">
                                        <xsl:choose>                              
-                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns!='1'"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns &gt;'1'"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:when>
                                             <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' lines')"/></xsl:when>
                                        </xsl:choose>
                     
