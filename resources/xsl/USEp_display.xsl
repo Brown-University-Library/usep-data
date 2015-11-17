@@ -26,6 +26,7 @@
         2015-10-21 SJD small fixes to display (removed all stray commas)
         2015-10-21 SJD fixed display of transcribed texts with multiple divs
         2015-11-02 SJD made small change to columns display
+        2015-11-17 SJD added display for objects with no columns, and only one line of text
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -116,6 +117,10 @@
                                        <xsl:choose>                              
                                             <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns!='1'"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:when>
                                             <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' lines')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns='1' and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' line')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns!='1' and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' line')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns)=0 and string-length($layout/@writtenLines) !=0 and $layout/@writtenLines!='1'"><xsl:value-of select="concat($layout/@writtenLines, ' lines')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns)=0 and string-length($layout/@writtenLines) !=0 and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@writtenLines, ' line')"/></xsl:when>                                            
                                        </xsl:choose>
                     
                                     </td>
