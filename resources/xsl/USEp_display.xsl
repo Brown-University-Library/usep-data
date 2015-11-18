@@ -162,7 +162,7 @@
                                 </xsl:choose>
                             </xsl:for-each>
                             <xsl:for-each select="/t:TEI/t:facsimile/t:desc">
-                                <xsl:if test="not(normalize-space(.))"><xsl:value-of select="/t:TEI/t:facsimile/t:desc"/></xsl:if>
+                                <xsl:if test="text()"><xsl:value-of select="/t:TEI/t:facsimile/t:desc"/></xsl:if>
                             </xsl:for-each>
                         </xsl:for-each>
                     </xsl:result-document> 
