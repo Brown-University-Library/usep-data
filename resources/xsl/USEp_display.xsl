@@ -161,8 +161,8 @@
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:for-each>
-                            <xsl:for-each select="/t:TEI/t:facsimile/t:desc">
-                                <xsl:if test="text()"><xsl:value-of select="/t:TEI/t:facsimile/t:desc"/></xsl:if>
+                            <xsl:for-each select="t:desc">
+                                <xsl:if test="text()"><xsl:value-of select="/t:TEI/t:facsimile/t:surface/t:desc"/></xsl:if>
                             </xsl:for-each>
                         </xsl:for-each>
                     </xsl:result-document> 
