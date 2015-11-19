@@ -28,6 +28,7 @@
         2015-11-02 SJD made small change to columns display
         2015-11-17 SJD made expansions to columns and line display (added tests for wider ranger of situations)
         2015-11-18 SJD added captions to image display        
+        2015-11-19 SJD Fixed column displays, removed stray periods from title heading
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -48,7 +49,7 @@
                     <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/*">
                         <h3>Summary</h3>
                         <p><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem/t:p"/>.<br />
-                            <xsl:value-of select="normalize-space(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:p)"/>.
+                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:p=text()"><xsl:value-of select="concat(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:p, '.')"/></xsl:if>
                         </p>
                     </xsl:if>
                 </div>
