@@ -28,7 +28,7 @@
         2015-11-02 SJD made small change to columns display
         2015-11-17 SJD made expansions to columns and line display (added tests for wider ranger of situations)
         2015-11-18 SJD added captions to image display        
-        2015-11-19 SJD Fixed column displays, removed stray periods from title heading
+        2015-11-19 SJD Fixed column displays, removed stray periods from title heading; small tweaks to fix caption display
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
