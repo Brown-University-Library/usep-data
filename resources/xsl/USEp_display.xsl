@@ -26,6 +26,8 @@
         2015-10-21 SJD small fixes to display (removed all stray commas)
         2015-10-21 SJD fixed display of transcribed texts with multiple divs
         2015-11-02 SJD made small change to columns display
+        2015-11-17 SJD made expansions to columns and line display (added tests for wider ranger of situations)
+        2015-11-18 SJD added captions to image display        
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -116,6 +118,10 @@
                                        <xsl:choose>                              
                                             <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns &gt;'1'"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:when>
                                             <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' lines')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns='1' and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' line')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns &gt;'1' and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' line')"/></xsl:when>
+                                            <xsl:when test="$layout/@columns='0' and string-length($layout/@writtenLines) !=0 and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@writtenLines, ' line')"/></xsl:when>
+                                            <xsl:when test="$layout/@columns='0' and string-length($layout/@writtenLines) !=0 and $layout/@writtenLines!='1'"><xsl:value-of select="concat($layout/@writtenLines, ' lines')"/></xsl:when>
                                        </xsl:choose>
                     
                                     </td>
@@ -160,9 +166,7 @@
                                         </a>
                                     </xsl:otherwise>
                                 </xsl:choose>
-                            </xsl:for-each>
-                            <xsl:for-each select="t:desc">
-                                <xsl:if test="text()"><xsl:value-of select="/t:TEI/t:facsimile/t:surface/t:desc"/></xsl:if>
+                                <xsl:if test="//t:desc=text()"><xsl:value-of select="/t:TEI/t:facsimile/t:surface/t:desc"/></xsl:if>
                             </xsl:for-each>
                         </xsl:for-each>
                     </xsl:result-document> 
