@@ -160,13 +160,13 @@
                                         <a class="highslide" href="{@url}" onclick="return hs.expand(this)">
                                             <img src="{@url}" alt="" width="200"/>
                                         </a> 
-                                        <xsl:if test="//t:desc=text()"><xsl:value-of select="/t:TEI/t:facsimile/t:surface/t:desc"/></xsl:if>
+                                        <xsl:if test="preceding-sibling::t:desc=text()"><xsl:value-of select="/t:TEI/t:facsimile/t:surface/t:desc"/></xsl:if>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <a class="highslide" href="{concat($imageDir, '/',@url)}" onclick="return hs.expand(this)">
                                             <img src="{concat($imageDir, '/',@url)}" alt="" width="200"/>
                                         </a>
-                                        <xsl:if test="//t:desc=text()"><xsl:value-of select="/t:TEI/t:facsimile/t:surface/t:desc"/></xsl:if>
+                                        <xsl:if test="preceding-sibling::t:desc=text()"><xsl:value-of select="/t:TEI/t:facsimile/t:surface/t:desc"/></xsl:if>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:for-each>
