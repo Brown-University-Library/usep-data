@@ -29,6 +29,7 @@
         2015-11-17 SJD made expansions to columns and line display (added tests for wider ranger of situations)
         2015-11-18 SJD added captions to image display        
         2015-11-19 SJD Fixed column displays, removed stray periods from title heading; small tweaks to fix caption display
+        2015-11-24 SJD Added support for lg in displaying transcription
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -48,8 +49,8 @@
                 <div class="titleBlurb">
                     <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/*">
                         <h3>Summary</h3>
-                        <p><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem/t:p"/>.<br />
-                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:p=text()"><xsl:value-of select="concat(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:p, '.')"/></xsl:if>
+                        <p><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem/t:p"/>.<br/>
+                           <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:p=string(.)"><xsl:value-of select="concat(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:p, '.')"/></xsl:if>
                         </p>
                     </xsl:if>
                 </div>
@@ -175,7 +176,7 @@
                 </div>
                 
                 <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
-                <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
+                <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type='edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
                     <xsl:apply-templates select="/t:TEI/t:text/t:body/t:div[@type='edition']"/>
                 </xsl:if>
                 
@@ -190,7 +191,7 @@
                 </div>
                 
                 <xsl:choose>
-                    <xsl:when test="(/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab/t:lb) or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
+                    <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab/t:lb or/t:TEI/t:text/t:body/t:div[@type='edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
                         <!-- transcribed folder -->
                         <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">View XML source file</a></p>
                     </xsl:when>
