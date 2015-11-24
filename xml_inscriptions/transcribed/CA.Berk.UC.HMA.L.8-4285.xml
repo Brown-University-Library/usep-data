@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
             <!--printable version of USEpi inscription ID:-->
-            <title>CA.Berk.UC.HMA.L.8/4278</title>
+            <title>CA.Berk.UC.HMA.L.8/4285</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="CA.Berk.UC.HMA.L.8-4278">CA.Berk.UC.HMA.L.8/4278</idno>
+            <idno type="USEpigraphy" xml:id="CA.Berk.UC.HMA.L.8-4285">CA.Berk.UC.HMA.L.8/4285</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -21,41 +21,45 @@
                   <settlement>Berk</settlement>
                   <institution>UC</institution>
                   <repository>HMA</repository>
-                  <idno>8/4278</idno>
+                  <idno>8/4285</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Nisus (?), son of L. Tettius Nonius Rufus and Cecilia</p>
+                     <p>Epitaph of A. Messius Alexander</p>
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#sarcophagus">
+                  <objectDesc ana="#ash_urn">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Fragment of a marble sarcophagus face</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>White marble cinerarium <seg type="form">Urna quadrata</seg></p>
+                           <dimensions type="surface" unit="cm">
                               <height/>
                               <width/>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#fragment.single">
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="1">
+                        <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc ana="#impressed.inscribed">
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="erotes_mask_portrait_animal">
-                        <p>erotes carrying a clipeo
-            of the deceased with masks and animals</p>
+                     <decoNote ana="corona_plant_palm.simple_molding_border.linear">
+                        <p>lid
+            decorated with wreath in pediment and palmette acroteria;
+            inscription within simple molded border; urn decorated by flowers
+            and acathus; wavy lines on lid and body</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -69,26 +73,28 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="0300" notAfter="0325">early fourth century CE ?</date>
-                     <placeName ref="europe.italy">Marino (SE of Rome), Italy</placeName>
+                     <date notBefore="0025" notAfter="0100">mid-late first century CE</date>
+                     <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope type="item">22438</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Sinn"/>
+                  <biblScope type="item">no. 511, Taf. 76e</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#Smutny"/>
-                  <biblScope type="item">12-14, no. 7, Pl. 9</biblScope>
+                  <biblScope type="item">10-11, no. 5, Pl. 7</biblScope>
                </bibl>
-               <bibl>
-                  <ptr type="rest-of-bibl" target="#AE_1966"/>
-                  <biblScope type="item">66</biblScope>
-               </bibl>
-               <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015131?">EDH nr. HD015131</ref>
-               </bibl>
-               <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR074544">EDR074544</ref>
-               </bibl>
+
+<bibl>
+<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR130911">EDR130911</ref>
+</bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -103,8 +109,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2014-10-14" who="SJD">Updated EDH/EDR bibl tags</change>
-         <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2015-11-23" who="SJD">Fixed handNote and handDesc errors, added p under support, added transcription from images</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -112,19 +117,24 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="CA.Berk.UC.HMA.L.8-4278.jpg"/>
+         <graphic url="CA.Berk.UC.HMA.L.8-4285.jpg"/>
       </surface>
       <surface>
          <!--Caption in desc element-->
-         <desc>detail 1</desc>
+         <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="CA.Berk.UC.HMA.L.8-4278-Det.1.jpg"/>
+         <graphic url="CA.Berk.UC.HMA.L.8-4285-Det.1.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <lb n="2"/><persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>uli</ex></expan></name> <name type="gentilicium" key="Messus">Messi</name> <name type="cognomen" key="Alexander">Alexandri</name></persName>. <expan><abbr>V</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num value="31" xml:lang="lat">XXX<hi rend="tall">I</hi></num>.
+               <lb n="3"/><persName><name type="gentilicium" key="Marcia">Marcia</name> <name type="cognomen" key="Pnoe">Pnoe</name></persName> coniugi
+               <lb n="4"/>carissimo fecit.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

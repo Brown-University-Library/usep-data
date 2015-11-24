@@ -3,8 +3,8 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
-            <title>CA.Berk.UC.HMA.L.8/4298</title>
+            <!--printable version of USEpi inscription ID: test-->
+            <title>CA.Berk.UC.HMA.L.#97.3.3</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="CA.Berk.UC.HMA.L.8-4298">CA.Berk.UC.HMA.L.8/4298</idno>
+            <idno type="USEpigraphy" xml:id="CA.Berk.UC.HMA.L.Tmp97.3.3">CA.Berk.UC.HMA.L.#97.3.3</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -21,40 +21,41 @@
                   <settlement>Berk</settlement>
                   <institution>UC</institution>
                   <repository>HMA</repository>
-                  <idno>8/4298</idno>
+                  <idno>#97.3.3</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph? naming Optata?</p>
+                     <p>Epitaph of Pammenio, C. Turrani Chrysippi l.</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p></p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Broken white marble columbarium slab</p><dimensions type="surface" unit="cm">
                               <height/>
                               <width/>
                               <depth/>
                            </dimensions>
                         </support>
                         <condition ana="#fragment.single">
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                           <p>broken after the original excavation; the right portion, seen by Bang when he produced the CIL VI edition, is now lost</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="1">
+                        <layout columns="1" writtenLines="5">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc ana="#impressed.inscribed.carved">
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p>none</p>
+                     <decoNote ana="line_border.tabula_ansata">
+                        <p>line border surrounding text and incised tabula ansata</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -68,25 +69,22 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="0001" notAfter="0200">first-second century CE ?</date>
-                     <placeName ref="unknown"/>
+                     <date notBefore="0001" notAfter="0100">first century CE</date>
+                     <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#AE_1966"/>
-                  <biblScope type="item">43</biblScope>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope type="item">38714</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Smutny"/>
-                  <biblScope type="item">20, no. 16, Pl. 16</biblScope>
+                  <biblScope type="item">24-25, no. 21, Pl. 21</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015074?">EDH nr. HD015074</ref>
-               </bibl>
-               <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR074525">EDR074525</ref>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR130912">EDR130912</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -102,8 +100,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2014-10-14" who="SJD">Updated EDH/EDR bibl tags</change>
-         <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2015-11-24" who="SJD">Fixed handNote/handDesc, added EDR link, added comments under condition and support, tweaked writing control vocab, added transcription from image and Smutny</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -111,13 +108,19 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="CA.Berk.UC.HMA.L.8-4298.jpg"/>
+         <graphic url="CA.Berk.UC.HMA.L.Tmp97.3.3.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name type="slaveName">Pammeni<unclear>o</unclear></name></persName>
+               <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Turranius">Turrani</name>
+               <lb n="3"/><name type="cognomen" key="Chrysippus">Chrysippi</name></persName> <supplied reason="undefined" evidence="previouseditor"><expan><abbr>l</abbr><ex>ibertus</ex></expan></supplied>
+               <lb n="4"/><expan><abbr>vix</abbr><ex>it</ex></expan> <expan><abbr>an</abbr><ex>nis</ex></expan> <supplied reason="undefined" evidence="previouseditor"><num value="34" xml:lang="lat">XXXIV</num></supplied>,
+               <lb n="5"/>inlatus ius<supplied reason="undefined" evidence="previouseditor">su <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>n</abbr><ex>ostri</ex></expan></supplied>.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
