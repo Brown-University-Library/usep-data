@@ -30,6 +30,7 @@
         2015-11-18 SJD added captions to image display        
         2015-11-19 SJD Fixed column displays, removed stray periods from title heading; small tweaks to fix caption display
         2015-11-24 SJD Added support for lg in displaying transcription
+        2015-12-02 SJD Added variable for material
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -84,13 +85,20 @@
                             <xsl:variable name="condition" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition"/>
                             <xsl:variable name="layout" select="t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout"/>
                             <xsl:variable name="writing" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/>
+                            <xsl:variable name="material" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/@ana"/>
                             
                             <!-- end variables -->
                             
                             <table>
                                 <tr><td class="label">Inscription Type</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem/@class, '#'))/t:catDesc"/></td></tr>
                                 <tr><td class="label">Object Type</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/@ana, '#'))/t:catDesc"/></td></tr>
-                                <tr><td class="label">Material</td><td class="value"><xsl:value-of select="id(substring-after(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/@ana, '#'))/t:catDesc"/></td></tr>
+                                <tr><td class="label">Material</td><td class="value">
+                                    <xsl:for-each select="$material">
+                                        <xsl:value-of select="id(substring-after($material, '#'))/t:catDesc"/>
+                                        <xsl:if test="position() != last()">
+                                            <xsl:text>, </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each></td></tr>
                                 <tr><td class="label">Place of Origin</td>
                                     <td class="value">
                                         <xsl:choose>
@@ -291,7 +299,7 @@
                 
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type='jstor']">
-                    <br />
+                    <br/>
                     (<a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:value-of select="id($myID)/t:ref[@type='jstor']"/></a> (external link; access to JSTOR required)
                 </xsl:if>
                 
