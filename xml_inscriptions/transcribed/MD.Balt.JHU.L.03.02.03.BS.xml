@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>MD.Balt.JHU.L.03.02.03.BS</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+               
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.03.02.03.BS">MD.Balt.JHU.L.03.02.03.BS</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MD</region>
+                        <settlement>Balt</settlement>
+                        <institution>JHU</institution>
+                        <repository></repository>
+                        <idno>03.02.03.BS</idno>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#label">
+                        <!-- short summary of the content of an inscription -->
+                            <p>Brick stamp of Q. Servilius Pudens</p>  
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                    
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                            
+                        <objectDesc ana="#instrumentum.brick">
+                            <supportDesc ana="#clay.brick">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p>Orbicular brick stamp</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragment.single">
+                                    <p>bulk of stamp preserved, though some damage at beginning of
+                                        lines</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="3">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#stamped.relief"> </handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                    
+                        <summary>
+                            <rs/>  <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0127" notAfter="0129">128 CE</date>
+                            <placeName ref="europe.italy.rome">Rome, Italy</placeName>
+                        </origin>
+                        
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_XV"/>
+                        <biblScope type="item">1434</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Setala1977"/>
+                        <biblScope type="pp">183</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Steinby1974"/>
+                        <biblScope type="pp">67</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#LSO"/>
+                        <biblScope type="item">1052</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+            
+        <encodingDesc>
+                           
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2014-12-05" who="Gaia Gianni">Initial Encoding</change>
+            <change when="2015-09-15" who="SJD">Cleaned metadata, added prose descriptions, cleaned bibl, added LSO entry, proofed transcription with JB's edits, added translation div and GG's translation</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="NoImage.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here -->
+            <ab>
+                <lb n="1"/> <persName><name type="cognomen" key="Torquatus"><expan><abbr><supplied reason="lost">Tor</supplied>q</abbr><ex>uato</ex></expan></name></persName>
+                    <expan><ex>iterum</ex></expan> et <persName><name type="cognomen" key="Libo"><expan><abbr>Libon</abbr><ex>e</ex></expan></name></persName>
+                    <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>. Ex <expan><abbr>pr</abbr><ex>aedis</ex></expan>
+                    <persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uinti</ex></expan></name></persName> <name type="gentilicium" key="Servilius"><expan><abbr>Se
+                <lb n="2" break="no"/>r</abbr><ex>vili</ex></expan></name> <name type="cognomen" key="Pudens"><expan><abbr>Pundent</abbr><ex>is</ex></expan></name>,
+                    <expan><abbr>cur</abbr><ex>ante</ex></expan> <persName><name type="slaveName" key="Hedyne"><expan><abbr><choice><corr>II</corr><sic>H</sic></choice>ed
+                <lb n="3" break="no"/>yn</abbr><ex>e</ex></expan></name></persName> <expan><abbr>ser</abbr><ex>vo</ex></expan>.
+            </ab>
+            </div>
+            <div type="translation">
+                <p>"In the consulship of Torquatus, consul for the second time, and Libo. From the estate of Quintus Servilius Pudens, under the supervision of the slave Hedyne."</p>
+            </div>
+            <div type="commentary"><!-- notes go here -->
+                <p>Line 1: The consular date is 128 CE.</p>                
+                <p>Line 1-2: We do not know when Q. Servilius Pudens reached the consulship, but his son, who bore the same name, was consul in 166 CE and was married to Ceionia Plautia, daughter of L. Aelius Caesar and therefore sister of Lucius Verus.</p>
+                <p>Line 2: Dressel proposes to resolve the abbreviation CVR either with <hi rend="italic">curante</hi> or <hi rend="italic">curatore</hi>.</p>
+                <p>Line 2-3: The name of this <hi rend="italic">servus</hi> appears on other stamps produced by Q. Servilius Pudens (CIL XV 1435-1439).</p>
+                <p>There is one interpunct separating the praenomen Q(uintus) from his gentilicium. While there is no interpunct in line 2, in line three there are two, one marking the end of the <hi rend="italic">servus</hi>' name and the other one is placed inside the abbreviation SER, after the first letter. </p>
+            
+            </div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>
