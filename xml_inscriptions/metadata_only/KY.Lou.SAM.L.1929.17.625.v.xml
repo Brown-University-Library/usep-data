@@ -37,24 +37,27 @@
                               <width/>
                               <depth/>
                            </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height>1.3</height>
+                           </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>part of left edge</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p>none</p>
+                     <decoNote>
+                        <p>part of ivy tendril on left border</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -76,8 +79,8 @@
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#unpub"/>
-                  <biblScope unit="item"/>
+                  <ptr type="rest-of-bibl" target="#MAAR_GiganteHouston"/>
+                  <biblScope unit="pp">62</biblScope>
                </bibl>
 
 <bibl>
@@ -97,6 +100,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2015-12-16" who="SJD">Added missing control vocabulary, fixed lines/columns, added Gigante/Houston to bibl and added their letter measurement</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
