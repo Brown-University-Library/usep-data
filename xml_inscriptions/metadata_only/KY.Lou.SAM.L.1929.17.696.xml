@@ -32,25 +32,29 @@
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Broken marble columbarium slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>Broken marble columbarium slab</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>11.0</height>
+                              <width>10.0</width>
+                              <depth>3.0</depth>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="1.4" max="2.0">1.4-2.0</height>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>left portion of columbarium slab</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="2" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>first column consists of single line written vertically</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -76,13 +80,12 @@
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#unpub"/>
-                  <biblScope unit="item"/>
+                  <ptr type="rest-of-bibl" target="#MAAR_GiganteHouston"/>
+                  <biblScope unit="pp">43-44, no. 10</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR141216">EDR141216</ref>
-</bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR141216">EDR141216</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -97,6 +100,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-14" who="SJD">Added missing control vocab, fixed lines/columns, added Gigante/Houston to bibl, added their dimensions</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
