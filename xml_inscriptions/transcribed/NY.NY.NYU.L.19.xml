@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
             <!--printable version of USEpi inscription ID:-->
-            <title>NY.NY.NYU.L.12</title>
+            <title>NY.NY.NYU.L.19</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="NY.NY.NYU.L.12">NY.NY.NYU.L.12</idno>
+            <idno type="USEpigraphy" xml:id="NY.NY.NYU.L.19">NY.NY.NYU.L.19</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -21,12 +21,12 @@
                   <settlement>NY</settlement>
                   <institution>NYU</institution>
                   <repository/>
-                  <idno>12</idno>
+                  <idno>19</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Aelia Iulia Arte Midora and P. Aelius Porcianus</p>
+                     <p>Epitaph of T. Flavius Ianuarius Mus</p>
                   </msItem>
                </msContents>
                <physDesc>
@@ -38,19 +38,19 @@
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.broken">
+                           <p>portion of bottom right corner of stone broken off, with the loss of two letters</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="8">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -69,18 +69,27 @@
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
                      <date notBefore="0100" notAfter="0200">second century CE</date>
-                     <placeName ref="europe.italy.rome">Porta Salaria, Rome, Italy</placeName>
+                     <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                   </origin>
+                  <acquisition>
+                     <!-- subsequent locations if inscription was moved -->
+                     <date when="1909">After 1909</date>
+                     <p>Acquired by New York University from the Johns Hopkins University</p>
+                  </acquisition>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#AJA_Prakken"/>
-                  <biblScope unit="item">322, no. 4 ([ph])</biblScope>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">37091 (= 35285a)</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson2.1"/>
+                  <biblScope unit="item">66-67, no. 3</biblScope>
                </bibl>
 
 <bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000985">EDR000985</ref>
+<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR145113">EDR145113</ref>
 </bibl>
             </listBibl>
          </sourceDesc>
@@ -96,6 +105,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-18" who="SJD">Added missing control vocabulary, fixed lines/columns, added transcription off of image, added note on provenance</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -103,13 +113,22 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="NY.NY.NYU.L.12.jpg"/>
+         <graphic url="NY.NY.NYU.L.19.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <lb n="2"/><persName><name type="praenomen" key="Titus"><expan><abbr>T</abbr><ex>iti</ex></expan></name> <name type="gentilicium" key="Flavius">Fl<hi rend="apex">a</hi>vi</name> <name type="cognomen" key="Ianuarius">I<hi rend="apex">a</hi>nuari</name>]
+               <lb n="3"/><name type="cognomen" key="Mus">M<hi rend="apex">u</hi>ris</name></persName>.
+               <lb n="4"/><expan><abbr>V</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num value="4">IIII</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="19">XIX</num>.
+               <lb n="5"/><persName><name type="praenomen" key="Titus"><expan><abbr>T</abbr><ex>itus</ex></expan></name> <name type="gentilicium" key="Flavius"><expan><abbr>F</abbr><ex>lavius</ex></expan></name> <name type="cognomen" key="Ianuarius">I<hi rend="apex">a</hi>nu<hi rend="apex">a</hi>rius</name></persName> et <persName><name type="gentilicium" key="Acilia">Ac<hi rend="apex">i</hi>lia</name> <name type="cognomen" key="Nice">Nice</name></persName>
+               <lb n="6"/>parent<hi rend="apex">e</hi>s pientissimi
+               <lb n="7"/>sibi posterisque <expan><abbr>suor</abbr><ex>um</ex></expan>
+               <lb n="8"/>fecerunt.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

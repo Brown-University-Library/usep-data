@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
             <!--printable version of USEpi inscription ID:-->
-            <title>NY.NY.NYU.L.39</title>
+            <title>NY.NY.NYU.L.12</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="NY.NY.NYU.L.39">NY.NY.NYU.L.39</idno>
+            <idno type="USEpigraphy" xml:id="NY.NY.NYU.L.12">NY.NY.NYU.L.12</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -21,36 +21,39 @@
                   <settlement>NY</settlement>
                   <institution>NYU</institution>
                   <repository/>
-                  <idno>39</idno>
+                  <idno>12</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of M. Ulpius Galaesus</p>
+                     <p>Epitaph of Aelia Iulia Arte Midora and P. Aelius Porcianus</p>
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#stele.cippus">
+                  <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Cylindrical marble (?) cippus</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>Marble slab</p><dimensions type="surface" unit="cm">
+                              <height>29.5</height>
+                              <width>41.5</width>
+                              <depth>2.2</depth>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="1.2" max="1.5">1.2-1.5</height>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.intact">
+                           <p>diagonal crack from bottom left corner towards center but otherwise well-preserved</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="3" writtenLines="9">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -69,18 +72,18 @@
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
                      <date notBefore="0100" notAfter="0200">second century CE</date>
-                     <placeName ref="europe.italy.rome">Rome, Italy</placeName>
+                     <placeName ref="europe.italy.rome">Porta Salaria, Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#AJA_Prakken"/>
-                  <biblScope unit="item">322, no. 3</biblScope>
+                  <biblScope unit="item">322, no. 4 ([ph])</biblScope>
                </bibl>
 
 <bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR103200">EDR103200</ref>
+<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000985">EDR000985</ref>
 </bibl>
             </listBibl>
          </sourceDesc>
@@ -96,6 +99,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-18" who="SJD">Added missing control vocab, fixed lines/columns, added transcription from image; added most recent metadata from folder</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -103,13 +107,37 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="NY.NY.NYU.L.39.jpg"/>
+         <graphic url="NY.NY.NYU.L.12.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <div type="textpart" subtype="column" n="1">
+               <ab>
+                  <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               </ab>
+            </div>
+            <div type="textpart" subtype="column" n="2">
+               <ab>
+                  <lb n="2"/><persName><name type="gentilicium" key="Aelia">Aeliae</name> <name type="gentilicium" key="Iulia">Iuliae</name> 
+                  <lb n="3"/><name type="cognomen" key="Artemidora">Artemidore</name></persName>
+                  <lb n="4"/>sorori <expan><abbr>dulciss</abbr><ex>imae</ex></expan>.
+               </ab>
+            </div>
+            <div type="textpart" subtype="column" n="3">
+               <ab>
+                  <lb n="5"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublio</ex></expan></name> <name type="gentilicium" key="Aelius">Aelio</name> <name type="cognomen" key="Porcianus">Porcian<hi rend="stacked">o</hi></name></persName>
+                  <lb n="6"/>filio sororis.
+               </ab>
+            </div>
+            <div type="textpart" subtype="column" n="1">
+               <ab>
+                  <lb n="7"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Aelius">Aelius</name> <name type="cognomen" key="Marcianus">Marcianus</name></persName>
+                  <lb n="8"/>frater, avunculus
+                  <lb n="9"/>fecit.
+               </ab>
+            </div>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

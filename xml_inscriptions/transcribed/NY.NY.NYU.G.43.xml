@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
             <!--printable version of USEpi inscription ID:-->
-            <title>NY.NY.NYU.L.22</title>
+            <title>NY.NY.NYU.G.43</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="NY.NY.NYU.L.22">NY.NY.NYU.L.22</idno>
+            <idno type="USEpigraphy" xml:id="NY.NY.NYU.G.43">NY.NY.NYU.G.43</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -21,40 +21,43 @@
                   <settlement>NY</settlement>
                   <institution>NYU</institution>
                   <repository/>
-                  <idno>22</idno>
+                  <idno>43</idno>
                </msIdentifier>
                <msContents>
-                  <textLang mainLang="lat"/>
+                  <textLang mainLang="grc"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of L. Gellius Felix</p>
+                     <p>Gravestone for a man from Kyzikos</p>
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#slab">
-                     <supportDesc ana="#stone.marble">
-                        <support><p>Marble slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#stone.limestone">
+                        <support><p>Limestone (?) plaque</p><dimensions type="surface" unit="cm">
+                              <height>20.5</height>
+                              <width>35.2</width>
+                              <depth>4.5</depth>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="0.9" max="2.6">0.9-2.6</height>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragments.contig">
+                           <p>two joining fragments comprising bottom portion of tablet</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p> </p>
+                     <decoNote ana="decorated_molding">
+                        <p/>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -69,23 +72,23 @@
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
                      <date notBefore="0001" notAfter="0100">first century CE</date>
-                     <placeName ref="europe.italy.rome">Rome, Italy</placeName>
+                     <placeName ref="asia.asia_minor">Asia Minor</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                  <biblScope unit="item">38417a</biblScope>
+                  <ptr type="rest-of-bibl" target="#SEG_14"/>
+                  <biblScope unit="item">636</biblScope>
                </bibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#AJP_Wilson4"/>
-                  <biblScope unit="item">184, no. 80</biblScope>
+                  <ptr type="rest-of-bibl" target="#AJA_Prakken"/>
+                  <biblScope unit="item">322, no. 6</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR145111">EDR145111</ref>
-</bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#BE_1955"/>
+                  <biblScope unit="item">no. 290</biblScope>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -100,6 +103,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-18" who="SJD">Added missing control vocab, fixed columns/lines, added metadata from folder, added transcripion from image</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,19 +111,20 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="NY.NY.NYU.L.22.jpg"/>
-      </surface>
-      <surface>
-         <!--Caption in desc element-->
-         <desc/>
-         <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="NY.NY.NYU.L.22-Det.1.jpg"/>
+         <graphic url="NY.NY.NYU.G.43.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/><gap reason="lost" atLeast="6" atMost="8" unit="character"/><unclear>Ω Κυζικ</unclear><gap reason="illegible" quantity="2"/>ηνῷ ζή
+               <lb n="2" break="no"/>σαντι ἔτη <num value="38"><hi rend="supraline">ΛΗ</hi></num>· <persName><name key="Galenos">Γάληνος</name></persName>
+               <lb n="3"/>ἄδελφος ἐποίει.
+               <lb n="4"/>Χαίρετε.
+               
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
