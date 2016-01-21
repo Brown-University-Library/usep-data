@@ -33,28 +33,31 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support><p></p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
+                              <height>43.2</height>
+                              <width>77.5</width>
                               <depth/>
                            </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="4.7" max="5.9">4.7-5.9</height>
+                           </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>broken at left and possibly cut along top, chipped on edges</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="5">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
-                        <p>no photo</p>
+                     <decoNote>
+                        <p></p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -75,8 +78,11 @@
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#unpub"/>
-                  <biblScope unit="item"/>
+                  <ptr type="rest-of-bibl" target="#AE_1996"/>
+                  <biblScope unit="item">1699</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD050465">EDH nr. HD050465</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +98,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-20" who="SJD">Added missing control vocab, added metadata from folder, fixed lines/columns, added transcription from photograph, added missing bibliography</change>
       </revisionDesc>
    </teiHeader>
    
@@ -100,7 +107,14 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">Augusto</supplied><unclear>r</unclear>umque <expan><abbr>nostror</abbr><ex>um</ex></expan>
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">p</supplied>ropositum est <expan><abbr>ubiq</abbr><ex>ue</ex></expan>
+               <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost" cert="low">d</supplied><unclear>o</unclear>mum sumptu publico
+               <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><persName><name type="cognomen" key="Antiochus"><supplied reason="lost">An</supplied><unclear>t</unclear>iochus</name> <name type="cognomen" key="Eugenius">Eugenius</name></persName>
+               <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">provinciae Flavi</supplied>ae Bizacenae excolere ac
+               <lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
