@@ -33,24 +33,27 @@
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble grave stele</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>19.1</height>
+                              <width>39.3</width>
+                              <depth>8.0</depth>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="1.2" max="1.5">1.2-1.5</height>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>bottom portion of stele with most of inscription preserved and the figured scene above lost</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>last line extends beyond frame</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -101,6 +104,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-19" who="SJD">Added missing control vocab, added dimension metadata from folder, fixed lines/columns, added transcription from image</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -114,7 +118,12 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name key="Dionysodorus"><supplied reason="lost">Διο</supplied>νυσόδωρε</name> <persName><name type="patronymic" key="Dionysodoros">Διονυσοδ<unclear>ώ</unclear><supplied reason="lost">ρου</supplied></name></persName></persName>
+               <lb n="2"/>καὶ <persName><name key="Diphila">Διφίλα</name> <persName><name type="patronymic" key="Herakleitos">Ἡρακλείτου</name> τοῦ <unclear>ἐ</unclear><supplied reason="lost">πι</supplied></persName></persName> 
+               <lb n="3" break="no"/>καλουμένου <name key="Theodotos">Θεοδότου</name>
+               <lb n="4"/>ἄλυποι χαίρετε.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
