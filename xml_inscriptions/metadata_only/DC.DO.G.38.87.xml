@@ -26,35 +26,38 @@
                <msContents>
                   <textLang mainLang="grc"/>
                   <msItem class="#text_unknown">
-                     <p>Opisthographic inscription</p>
+                     <p>Two inscriptions referring to the cross</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Marble stele</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>Dark grey marble stele</p><dimensions type="surface" unit="cm">
+                              <height>19.6</height>
+                              <width>19.3</width>
+                              <depth>14.6</depth>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="2.0" max="5.0">2.0-5.0</height>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>broken and worn on right hand side, top roughly reworked</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="2" writtenLines="3">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>written on two faces of stone; an earlier text of one line, and a second text of two lines that is evidently later</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
-                        <p>no photo</p>
+                     <decoNote>
+                        <p></p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -69,14 +72,22 @@
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
                      <date>date unknown</date>
-                     <placeName ref="asia.asia_minor">Antioch, Syria</placeName>
+                     <placeName ref="asia.syria">Antioch, Syria; purchased in Seleucia</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#unpub"/>
-                  <biblScope unit="item"/>
+                  <ptr type="rest-of-bibl" target="#IGLS"/>
+                  <biblScope unit="item">1191</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Antioch_III"/>
+                  <biblScope unit="pp">103-104, no. 212</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Vikan_DO_Sculpture"/>
+                  <biblScope unit="pp">75-77, no. 31, pl. 31a-c</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -93,13 +104,24 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2012-07-02" who="SJD">Updated msItem class from unknown</change>
+         <change when="2016-01-21" who="SJD">Added missing control vocab, fixed lines/columns, added metadata from Vikan, wrote transcription based on images in Vikan and Stillwell</change>
       </revisionDesc>
    </teiHeader>
   <!-- Facsimile element goes here -->
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <div type="textpart" subtype="face" n="a">
+               <ab>
+                  <lb n="1"/><g type="crux"/> ὁ <hi rend="ligature">στ</hi>αυρὸς <unclear>ἀ</unclear><supplied reason="lost" cert="low">ναστάσεως</supplied><gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div type="textpart" subtype="face" n="b">
+               <ab>
+                  <lb n="1"/>ἔσω ἱερ<gap reason="lost" extent="unknown" unit="character"/>
+                  <lb n="2"/>ὁ <hi rend="ligature">στ</hi>αυρὼς <gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
