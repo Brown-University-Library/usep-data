@@ -33,24 +33,24 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support><p>Broken marble slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>34.2</height>
+                              <width>17.0</width>
+                              <depth>1.8</depth>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>broken obliquely on right</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="unknownDec">
@@ -78,6 +78,13 @@
                   <ptr type="rest-of-bibl" target="#Mnemosyne_Smutny"/>
                   <biblScope unit="item">191-92, no. 1</biblScope>
                </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#ICUR"/>
+                  <biblScope unit="item">IX, 23817</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edb.uniba.it/epigraph/icvr/23817">EDB entry no. 14395</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -92,6 +99,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-25" who="SJD">Added missing control vocab, fixed lines/columns values, added dimension metadata from Smutny, prepared transcription from image in article, added ICUR and EDB to bibl</change>
       </revisionDesc>
    </teiHeader>
    
@@ -100,7 +108,15 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name type="gentilicium" key="Aurelia">Aureliae</name> <name type="cognomen" key="Melitine">M<supplied reason="lost">eliti</supplied>
+               <lb n="2" break="no"/>neti</name></persName>, quae vixi<unclear>t</unclear> <supplied reason="lost">ann</supplied>
+               <lb n="3" break="no"/>os <num value="60">LX</num>. Matri b<unclear>e</unclear><supplied reason="lost">ne</supplied>
+               <lb n="4"/>merenti in pac<supplied reason="lost">e</supplied>.
+            </ab>
+         </div>
+         <div type="commentary">
+            <p>1-2) <hi rend="italic">Melitineti</hi>: Smutny offers Marciane and Mestr(i)ane as alternative names that would fit the space</p>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
