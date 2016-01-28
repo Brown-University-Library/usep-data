@@ -33,24 +33,24 @@
                   <objectDesc ana="#statue">
                      <supportDesc ana="#metal.bronze">
                         <support><p>Bronze tablet</p><dimensions type="surface" unit="cm">
-                              <height/>
+                              <height>76</height>
                               <width/>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="3">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="unknownDec">
@@ -82,6 +82,24 @@
                   <ptr type="rest-of-bibl" target="#PAF"/>
                   <biblScope unit="item">no. 166</biblScope>
                </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1994"/>
+                  <biblScope unit="item">1915</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1999"/>
+                  <biblScope unit="item">1173</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1999"/>
+                  <biblScope unit="item">1174</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29482/unknown-maker-statuette-of-mars-cobannus-gallo-roman-125-175/">Getty Museum Web Entry</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD048541">EDH no. HD048541</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -96,6 +114,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-25" who="SJD">Added missing control vocab, fixed line/column values, updated dimension metadata from folder, added link to JPGM website, added transcription from image there </change>
       </revisionDesc>
    </teiHeader>
    
@@ -104,7 +123,11 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><expan><abbr>Aug</abbr><ex>usto</ex></expan> <expan><abbr>sacr</abbr><ex>um</ex></expan> deo Cobanno
+               <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Maccius">Maccius</name> <name type="cognomen" key="Aeternus">Aeternus</name></persName>
+               <lb n="3"/>IIvir, ex voto.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

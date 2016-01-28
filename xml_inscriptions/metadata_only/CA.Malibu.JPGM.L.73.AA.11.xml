@@ -33,28 +33,28 @@
                   <objectDesc ana="#object_other">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble kline momument</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height min="26" max="38">26 (kline), 38 (top of figure's head)</height>
+                              <width>141</width>
+                              <depth>47</depth>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>much of the kline and sculpture remain intact, though a large portion of the right edge of the inscription are lost</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
-                        <p>no photo</p>
+                     <decoNote>
+                        <p></p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -82,6 +82,9 @@
                   <ptr type="rest-of-bibl" target="#Koch"/>
                   <biblScope unit="item">no. 4</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/7021/unknown-maker-kline-monument-with-a-reclining-girl-roman-120-140/">Getty Museum Web Entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -96,6 +99,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-28" who="SJD">Added missing control vocab and added available metadata, fixed line/column values, added JPGM to bibl, added transcription from photos in folder</change>
       </revisionDesc>
    </teiHeader>
    
@@ -104,7 +108,9 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><lg met="elegiac couplet"><l>Hic species et forma iacet misera<unclear>b</unclear><supplied reason="lost">ilis</supplied> <unclear>a</unclear>etas</l> <l>eff<unclear>i</unclear><supplied reason="lost">igiesque</supplied> <gap reason="lost" quantity="25" cert="low" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>IS.</l></lg>
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

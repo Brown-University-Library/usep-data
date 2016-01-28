@@ -34,23 +34,24 @@
                      <supportDesc ana="#metal.lead">
                         <support><p>Fragment of a lead fistula</p><dimensions type="surface" unit="cm">
                               <height/>
-                              <width/>
+                              <width>33</width>
                               <depth/>
+                              <dim type="diameter" min="4" max="6">4-6</dim>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>broken along left</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#protruding.molded"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="unknownDec">
@@ -69,7 +70,7 @@
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
                      <date notBefore="0100" notAfter="0125">early second century CE ?</date>
-                     <placeName ref="unknown">unknown</placeName>
+                     <placeName ref="unknown">unknown (possibly Rome or Ostia?)</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
@@ -82,6 +83,9 @@
 <bibl>
 <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148957">EDR148957</ref>
 </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/15208/unknown-maker-pipe-fragment-roman-late-1st-early-2nd-century/">Getty Museum Web Entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -96,6 +100,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-26" who="SJD">Updated metadata fields and control vocab, fixed line/column values, added Getty Museum link</change>
       </revisionDesc>
    </teiHeader>
    

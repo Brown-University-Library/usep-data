@@ -31,29 +31,31 @@
                </msContents>
                <physDesc>
                   <objectDesc ana="#object_other">
-                     <supportDesc ana="#stone">
-                        <support><p>Stone plaque</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                     <supportDesc ana="#stone.other">
+                        <support>
+                           <p>Alabster plaque</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>26.9</height>
+                              <width>23.3</width>
+                              <depth>2.1</depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="6">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>first two lines in Latin, the remainder a Greek translation of the first lines</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote>
                         <p> </p>
                      </decoNote>
                   </decoDesc>
@@ -69,7 +71,7 @@
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
                      <date notBefore="0050" notAfter="0050">c. 50 CE</date>
-                     <placeName ref="unknown"/>
+                     <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
@@ -81,6 +83,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#GettyMusJ_Treggiari"/>
                   <biblScope unit="item">185-86</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/9213/unknown-maker-bilingual-inscription-roman-late-1st-century-bc-1st-century-ad/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -97,6 +102,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2012-06-29" who="SJD">Corrected textlang from biling</change>
+         <change when="2016-01-26" who="SJD">Added missing control vocab, updated available metadata, fixed lines/columns, added JPGM to bibl, added transcription from images in folder</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -110,7 +116,14 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/>Divi <persName><name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> liberti
+               <lb n="2"/><persName><name type="cognomen" key="Calyx">Calycis</name></persName> <persName><name type="cognomen" key="Hygeia">Hygeiae</name></persName>.
+               <lb n="3"/><handShift/> Θεοῦ Σεβαστοῦ
+               <lb n="4"/>ἀπελευθέρου
+               <lb n="5"/><persName><name type="cognomen" key="Calyx">Καλύκος</name></persName> ἀπελευ
+               <lb n="6" break="no"/>θέρα <persName><name type="cognomen" key="Hygeia">Ὑγεῖα</name></persName>.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

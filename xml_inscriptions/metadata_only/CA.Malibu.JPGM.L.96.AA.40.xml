@@ -26,35 +26,35 @@
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of a silversmith, P. Curtilius P.l. Acatus</p>
+                     <p>Epitaph of a silversmith, P. Curtilius P.l. Agat[us]</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble relief with portrait bust</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>79.9</height>
+                              <width>58.5</width>
+                              <depth>31.7</depth>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.broken">
+                           <p>upper left corner of relief, figure's nose, and top of tool in right hand missing; small portion of right edge damaged</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
-                        <p>no photo</p>
+                     <decoNote>
+                        <p></p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -78,6 +78,12 @@
                   <ptr type="rest-of-bibl" target="#PAF"/>
                   <biblScope unit="item">no. 178</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29499/unknown-maker-grave-relief-of-a-silversmith-roman-first-quarter-of-the-first-century/">Getty Museum Web Entry</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000863">EDR000863</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -92,6 +98,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-25" who="SJD">Added missing control vocab, fixed line/column values, added dimensions metadata from folder, fixed name of commemorated, added EDR and JPGM website to bibl, added transcription from folder images,</change>
       </revisionDesc>
    </teiHeader>
    
@@ -100,7 +107,10 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Curtilius">Curtilius</name> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Agatus">Agat<supplied reason="lost">us</supplied></name></persName>,
+               <lb n="2"/>faber argentarius.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
