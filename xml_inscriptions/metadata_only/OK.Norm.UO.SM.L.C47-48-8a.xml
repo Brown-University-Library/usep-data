@@ -38,23 +38,23 @@
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="8">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
-                        <p>no photo</p>
+                     <decoNote>
+                        <p></p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -82,6 +82,10 @@
                   <ptr type="rest-of-bibl" target="#Claudia"/>
                   <biblScope unit="item">204-5, no. 158</biblScope>
                </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1984"/>
+                  <biblScope unit="item">147</biblScope>
+               </bibl>
 
 <bibl>
 <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR079254">EDR079254</ref>
@@ -100,6 +104,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-21" who="SJD">Added missing control vocab, fixed lines/columns, added transcription from image in Heisserer, added AE bibl</change>
       </revisionDesc>
    </teiHeader>
    
@@ -108,7 +113,16 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/><persName><name type="gentilicium" key="Mindius">Mindio</name>
+               <lb n="3"/><name type="cognomen" key="Philadelphus">Philadelfo</name></persName>,
+               <lb n="4"/>qui <choice><reg>v</reg><orig>b</orig></choice>ixit annis
+               <lb n="5"/><num value="55">LV</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="3">III</num>. <persName><name type="gentilicium" key="Caecilia">Caecilia</name>
+               <lb n="6"/><name type="cognomen" key="Prima">Prima</name></persName> coiugi
+               <lb n="7"/>inconparabi
+               <lb n="8" break="no"/>li <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> fecit.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
