@@ -289,7 +289,7 @@ bib_ids 		string multiValued
 	-->
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">writing</xsl:with-param>
-		<xsl:with-param name="value" select="tei:handDesc/@ana" />
+		<xsl:with-param name="value" select="tei:handDesc/tei:handNote/@ana" />
 	</xsl:call-template>
 </xsl:template>
 
