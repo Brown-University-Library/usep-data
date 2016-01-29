@@ -104,15 +104,22 @@ bib_ids 		string multiValued
 <xsl:template name="fieldval">
 	<xsl:param name="field" select="'default'" />
 	<xsl:param name="value" select="'default'" />
+	<xsl:param name="desc" select="'none'" />
 
 	<xsl:if test="$value!=''">
-	<xsl:element name="field">
-		<xsl:attribute name="name"><xsl:value-of select="$field"/></xsl:attribute>
-		<xsl:value-of select="$value" />
-	</xsl:element>
-	<xsl:text>
+		<xsl:element name="field">
+			<xsl:attribute name="name"><xsl:value-of select="$field"/></xsl:attribute>
+			<xsl:value-of select="$value" />
+		</xsl:element>
+			<xsl:text>
 </xsl:text>
-</xsl:if>
+	</xsl:if>
+	<xsl:if test="$desc != 'none'">
+		<xsl:element name="field">
+			<xsl:attribute name="name"><xsl:value-of select="$field"/>_desc</xsl:attribute>
+			<xsl:value-of select="$desc" />
+		</xsl:element>
+	</xsl:if>
 </xsl:template>
 
 <xsl:template name="fieldval_strip">
@@ -171,7 +178,7 @@ bib_ids 		string multiValued
 	-->
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">id</xsl:with-param>
-		<xsl:with-param name="value" select="tei:idno" />
+		<xsl:with-param name="value" select="tei:idno/@xml:id" />
 	</xsl:call-template>
 </xsl:template>
 
@@ -221,6 +228,7 @@ bib_ids 		string multiValued
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">text_genre</xsl:with-param>
 		<xsl:with-param name="value" select="tei:msContents/tei:msItem/@class"/>
+		<xsl:with-param name="desc" select="tei:msContents/tei:msItem/tei:p" />
 	</xsl:call-template>
 
 	<!-- notBefore, notAfter
@@ -300,6 +308,7 @@ bib_ids 		string multiValued
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">object_type</xsl:with-param>
 		<xsl:with-param name="value" select="./@ana"/>
+		<xsl:with-param name="desc" select="tei:support/tei:p" />
 	</xsl:call-template>
 
 	<!-- condition
@@ -308,6 +317,7 @@ bib_ids 		string multiValued
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">condition</xsl:with-param>
 		<xsl:with-param name="value" select="tei:supportDesc/tei:condition/@ana"/>
+		<xsl:with-param name="desc" select="tei:supportDesc/tei:condition/tei:p" />
 	</xsl:call-template>
 
 	<!-- material
@@ -320,6 +330,9 @@ bib_ids 		string multiValued
 </xsl:template>
 
 <xsl:template match="tei:listBibl">
+	<!-- bib_ids
+	/TEI/teiHeader/fileDesc/sourceDesc/msDesc/listBibl/bibl
+	-->
 	<xsl:for-each select="tei:bibl">
 		<xsl:call-template name="fieldval_strip">
 			<xsl:with-param name="field">bib_ids</xsl:with-param>
