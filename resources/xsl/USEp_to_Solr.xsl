@@ -282,7 +282,7 @@ bib_ids 		string multiValued
 		<xsl:with-param name="value" select="tei:decoDesc/tei:decoNote/@ana"/>
 	</xsl:call-template>
 
-	<xsl:apply-templates select="objectDesc" />
+	<xsl:apply-templates select="tei:objectDesc" />
 
 	<!-- writing
 	/TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc/handDesc
