@@ -119,6 +119,8 @@ bib_ids 		string multiValued
 			<xsl:attribute name="name"><xsl:value-of select="$field"/>_desc</xsl:attribute>
 			<xsl:value-of select="$desc" />
 		</xsl:element>
+		<xsl:text>
+</xsl:text>
 	</xsl:if>
 </xsl:template>
 
@@ -288,6 +290,7 @@ bib_ids 		string multiValued
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">decoration</xsl:with-param>
 		<xsl:with-param name="value" select="tei:decoDesc/tei:decoNote/@ana"/>
+		<xsl:with-param name="desc" select="tei:decoDesc/tei:decoNote/tei:p" />
 	</xsl:call-template>
 
 	<xsl:apply-templates select="tei:objectDesc" />
@@ -308,7 +311,6 @@ bib_ids 		string multiValued
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">object_type</xsl:with-param>
 		<xsl:with-param name="value" select="./@ana"/>
-		<xsl:with-param name="desc" select="tei:support/tei:p" />
 	</xsl:call-template>
 
 	<!-- condition
@@ -326,6 +328,7 @@ bib_ids 		string multiValued
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">material</xsl:with-param>
 		<xsl:with-param name="value" select="tei:supportDesc/@ana"/>
+		<xsl:with-param name="desc" select="tei:supportDesc/tei:support/tei:p" />
 	</xsl:call-template>
 </xsl:template>
 
@@ -374,12 +377,20 @@ bib_ids 		string multiValued
 			<xsl:with-param name="field">c_<xsl:value-of select="@type"/></xsl:with-param>
 			<xsl:with-param name="value">true</xsl:with-param>
 		</xsl:call-template>
+		<xsl:call-template name="fieldval">
+			<xsl:with-param name="field">char</xsl:with-param>
+			<xsl:with-param name="value"><xsl:value-of select="@type"/></xsl:with-param>
+		</xsl:call-template>
 	</xsl:for-each>
 
 	<xsl:for-each select=".//tei:hi">
 		<xsl:call-template name="fieldval">
 			<xsl:with-param name="field">c_<xsl:value-of select="@rend"/></xsl:with-param>
 			<xsl:with-param name="value">true</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name="fieldval">
+			<xsl:with-param name="field">char</xsl:with-param>
+			<xsl:with-param name="value"><xsl:value-of select="@rend"/></xsl:with-param>
 		</xsl:call-template>
 	</xsl:for-each>
 
