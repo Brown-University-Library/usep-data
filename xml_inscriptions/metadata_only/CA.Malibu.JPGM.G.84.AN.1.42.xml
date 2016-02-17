@@ -32,30 +32,30 @@
                <physDesc>
                   <objectDesc ana="#instrumentum.other">
                      <supportDesc ana="#stone.other">
-                        <support><p><seg type="material">Oval carnelian gemstone.</seg></p>
+                        <support><p><seg type="material">Oval carnelian gemstone</seg></p>
                            <dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>1.2</height>
+                              <width>0.9</width>
+                              <depth>0.3</depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="0" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>text written upwards to right of bust</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#protruding.relief"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
-                        <p>no photo</p>
+                     <decoNote>
+                        <p>bust of Helios</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -81,7 +81,10 @@
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_42"/>
-                  <biblScope unit="item">no. 1701</biblScope>
+                  <biblScope unit="item">1701</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="rest-of-bibl" target="http://www.getty.edu/art/collection/objects/17628/unknown-maker-engraved-gem-roman-1st-century/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -98,6 +101,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-06-16" who="SJD">Updated genre, material</change>
+         <change when="2016-02-10" who="SJD">Added missing control vocab and available dimensions metadata, fixed line/column, added link to JPGM website, added transcription from image</change>
       </revisionDesc>
    </teiHeader>
    
@@ -106,7 +110,7 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <lb n="1"/>ΣΚΥ.
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

@@ -33,27 +33,28 @@
                   <objectDesc ana="#instrumentum.container.other">
                      <supportDesc ana="#metal.silver">
                         <support><p>Silver fluted bowls</p><dimensions type="surface" unit="cm">
-                              <height/>
+                              <height>7.5</height>
                               <width/>
                               <depth/>
+                           <dim type="diameter">12.5</dim>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="0" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>inscriptions on outside of rim</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.points"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote>
                         <p> </p>
                      </decoNote>
                   </decoDesc>
@@ -78,6 +79,12 @@
                   <ptr type="rest-of-bibl" target="#PAF"/>
                   <biblScope unit="item">227-229, no. 115 A-B</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29641/unknown-maker-one-fluted-bowl-greek-175-75-bc/">Getty Museum Web Entry (bowl 1)</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29642/unknown-maker-one-fluted-bowl-greek-175-75-bc/">Getty Museum Web Entry (bowl 2)</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -92,6 +99,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-28" who="SJD">Added missing control vocab, updated available metadata, fixed lines/columns, added links to JPGM, added transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -111,7 +119,16 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <div type="textpart" subtype="Bowl" n="1">
+               <ab>
+                  <lb n="1"/><persName><name key="Κτησίμοτος">Κτασιμάτου</name></persName> <persName><name key="Μάμοτος">Μαμότου</name></persName> <g type="year"/> <num value="140">ΡΜ</num>.
+               </ab>
+            </div>
+            <div type="textpart" subtype="Bowl" n="2">
+               <ab>
+                  <lb n="2"/><persName><name key="Ἀρτειμας"/>Ἀρτειμου</persName> <g type="year"/> <num value="140">ΡΜ</num>. <persName><name key="Σαμυς">Σαμοτος</name></persName>.
+               </ab>
+            </div>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

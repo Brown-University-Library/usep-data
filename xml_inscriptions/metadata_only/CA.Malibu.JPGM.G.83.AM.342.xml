@@ -32,29 +32,30 @@
                <physDesc>
                   <objectDesc ana="#instrumentum.tableware">
                      <supportDesc ana="#metal.silver">
-                        <support><p>Silver plate with relief.</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
+                        <support><p>Silver plate with relief</p><dimensions type="surface" unit="cm">
+                              <height>45</height>
+                              <width>28</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#fragment.single">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="0" writtenLines="5">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>labels near the various figures, as well as on extant lip of plate; on bottom, characters punched likely representing weight</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote n="1" ana="#impressed.inscribed"></handNote>
+                     <handNote n="2" ana="#impressed.inscribed.points"/>/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p> </p>
+                     <decoNote>
+                        <p>philosophers seated debating beneath a partially preserved enthroned figure</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -75,12 +76,39 @@
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#SEG_34"/>
-                  <biblScope unit="item">no. 1667</biblScope>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_12_Acq"/>
+                  <biblScope unit="pp">258, no. 144</biblScope>
                </bibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#GettyMusJ_18"/>
-                  <biblScope unit="item">5-32</biblScope>
+                  <ptr type="rest-of-bibl" target="#SEG_34"/>
+                  <biblScope unit="item">1667</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_18_Cutler"/>
+                  <biblScope unit="pp">5-32, figs. 2-12, 14</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_18_Scott"/>
+                  <biblScope unit="pp">33-52, figs. 1-4, 7-8</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Walker_1996_Field"/>
+                  <biblScope unit="pp">112-113, fig. 36</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Markus"/>
+                  <biblScope unit="pp">126-127</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bethge_2002_Holzhausen"/>
+                  <biblScope unit="pp">291-303</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Dekker"/>
+                  <biblScope unit="pp">12, fig. 1.2</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/10598/unknown-maker-plate-with-relief-decoration-byzantine-500-600/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -97,6 +125,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-06-16" who="SJD">Updated specificity of object tag</change>
+         <change when="2016-02-11" who="SJD">Added missing control vocab, added dimensions, fixed lines/columns, added transcription from images, expanded bibl, added link to Getty Museum site</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -110,7 +139,23 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <div type="textpart" subtype="face">
+               <ab>
+                  <lb n="1"/><persName><name type="divinity" key="Skepsis Σκέψις">Σκέψις</name></persName>.
+                  <lb n="2"/><persName><name key="Ptolemaios Πτολεμαῖος">Πτολεμαῖος</name></persName>.
+                  <lb n="3"/><persName><name type="divinity" key="Hermes Ερμῆς">Ερμῆς</name></persName>.
+               </ab>
+            </div>
+            <div type="textpart" subtype="lip">
+               <ab>
+                  <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><unclear>Ρ</unclear>ΩΝ <persName><name type="divinity" key="Hermes Ερμῆς">Ερμ<unclear>ῆ</unclear><supplied reason="lost">ς</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
+            </div>
+            <div type="textpart" subtype="reverse">
+               <ab>
+                  <lb n="5"/><handShift/>ΛΙΗ<hi rend="stacked">ΓΟ</hi>Δ.
+               </ab>
+            </div>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

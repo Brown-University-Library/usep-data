@@ -33,28 +33,28 @@
                   <objectDesc ana="#instrumentum.armor">
                      <supportDesc ana="#metal.bronze">
                         <support><p>Bronze shield strap</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>16.2</height>
+                              <width>8</width>
+                              <depth>1.5</depth>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>broken at top and bottom; missing at least one panel from the top</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="0" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>label of Athena in top panel running vertically next to fugure; retrograde maker's signature in second panel along frame, in addition to labels wrapping around figures</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#protruding.points">written in Argive alphabet</handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p> </p>
+                     <decoNote>
+                        <p>in upper panel, Athena alongside Helen and Menalaos(?); in lower panel, abduction of Deianeira by Nessos</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -75,8 +75,27 @@
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_13_Acq"/>
+                  <biblScope unit="pp">1661-167, no. 12</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#Bol"/>
-                  <biblScope unit="item">62-63</biblScope>
+                  <biblScope unit="pp">62-63</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bol_1989"/>
+                  <biblScope unit="pp">52, 70, 76, 89, 100</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Markus"/>
+                  <biblScope unit="pp">30</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Mattusch_EnduringBronze"/>
+                  <biblScope unit="pp">60-61, fig. 37</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/10868/signed-by-aristodamos-of-argos-shield-strap-fragment-greek-argive-about-575-bc/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -93,6 +112,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-06-16" who="SJD">Updated specificity of object tag</change>
+         <change when="2016-02-10" who="SJD">Added missing control vocab and updated available dimensions, expanded bibl, fixed lines/columns, added link to JPGM website, added transcription from image</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -106,7 +126,18 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <div type="textpart" subtype="panel" n="upper">
+               <ab>
+                  <lb n="1"/><persName><name type="divinity" key="Athena"><unclear>Ἀθ</unclear>αναίια</name></persName>.
+               </ab>
+            </div>
+            <div type="textpart" subtype="panel" n="lower">
+               <ab>
+                  <lb n="2"/><persName><name key="Nessos Νέσσος"><hi rend="reversed">Νhέσος</hi></name></persName>.
+                  <lb n="3"/><persName><name key="Deianeira Δειάνειρα">Δαι<unclear>άν</unclear><supplied reason="lost">αιρα</supplied></name></persName>.
+                  <lb n="4" rend="right-to-left"/><persName><name key="Aristodamos Ἀριστόδαμος">Ἀριστοδαμος</name></persName> ἐποίϝεσε hαργ<unclear>εῖ</unclear>ος.
+               </ab>
+            </div>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

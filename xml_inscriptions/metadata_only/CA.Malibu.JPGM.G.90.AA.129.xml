@@ -32,28 +32,28 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Marble relief stele</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>Parian marble relief stele</p><dimensions type="surface" unit="cm">
+                              <height>153</height>
+                              <width>45.1</width>
+                              <depth>15.9</depth>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.broken">
+                           <p>upper portion broken and repaired at some point, and broken below the knees of the figure; some gouges in the stone and damage to the figure</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="3">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote>
                         <p> </p>
                      </decoNote>
                   </decoDesc>
@@ -76,11 +76,30 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_41"/>
-                  <biblScope unit="item">no. 413</biblScope>
+                  <biblScope unit="item">413</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_40"/>
-                  <biblScope unit="item">no. 404</biblScope>
+                  <biblScope unit="item">404</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_45"/>
+                  <biblScope unit="item">421</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#BE_1992"/>
+                  <biblScope unit="pp">441, no. 21</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#ZPE_109_Corcella"/>
+                  <biblScope unit="pp">47-48</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Markus"/>
+                  <biblScope unit="pp">44</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/13049/unknown-maker-grave-stele-of-pollis-greek-megarian-about-480-bc/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -96,6 +115,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-02-04" who="SJD">Updated missing control vocab, fixed lines/columns, updated available dimensions, expanded bibl, added transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,7 +129,11 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/>Λέγο, <persName><name key="Pollis Πόλλις">Πόλλις</name></persName> <persName><name key="Asopichos Ἀσόπιχος">Ἀσπίχο</name></persName> φίλος h
+               <lb n="2" break="no"/><unclear>υ</unclear>ιός· <lg met="hexameter"><l>ὀ κακὸς ἐὀν ἀπέθνασκον 
+               <lb n="3"/>hυπὸ στ<supplied reason="lost">ί</supplied>λταισιν ἐγόνε.</l></lg>
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

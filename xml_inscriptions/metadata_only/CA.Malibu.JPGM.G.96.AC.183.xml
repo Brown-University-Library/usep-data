@@ -26,35 +26,39 @@
                <msContents>
                   <textLang mainLang="grc"/>
                   <msItem class="#dedicatory.ex-voto">
-                     <p>Votive to Apollo</p>
+                     <p>Weight with votive inscription to Apollo</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#instrumentum.other">
                      <supportDesc ana="#metal.bronze">
-                        <support><p>Bronze weight</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support>
+                           <!-- short summary of the material and support of an inscription -->
+                           <p>Bronze weight with lead fill
+                           </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>5.8</height>
+                              <width>5.5</width>
+                              <depth>2.2</depth>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.intact">
+                           <p>even brownish patina</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
-                              <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                        <layout columns="0" writtenLines="1">
+                           <p>text begins on bottom and continues up right edge</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.points"> </handNote>
+                     <!-- <handNote> is a repeatable element -->
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p> </p>
+                     <decoNote>
+                        <p>frontal view of lion's head in high relief, with etched details in mane</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -67,9 +71,9 @@
                      <note/>
                   </summary>
                   <origin>
-                     <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="-0100" notAfter="0100">first century BCE-first century
-               CE</date>
+                     <!-- original place and dating of inscription -->
+                     <date notBefore="-0100" notAfter="0100">first century BCE - first
+                        century CE</date>
                      <placeName ref="asia.near_east">The Levant</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
@@ -78,6 +82,13 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#PAF"/>
                   <biblScope unit="item">278-279, no. 141</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Mattusch_EnduringBronze"/>
+                  <biblScope unit="pp">92, 112-113, 116 fig. 79</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29483/unknown-maker-weight-with-the-head-of-a-lion-roman-1st-century-bc-1st-century-ad/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -94,6 +105,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-06-16" who="SJD">Updated specificity of object tag</change>
+         <change when="2016-02-03" who="SJD">Added missing control vocab and metadata, added new bibl, fixed lines/columns, added transcription</change>
       </revisionDesc>
    </teiHeader>
    
@@ -102,7 +114,9 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name type="divinity" key="Apollo Ἀπόλλω">Ἀπόλλωνος</name></persName>.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

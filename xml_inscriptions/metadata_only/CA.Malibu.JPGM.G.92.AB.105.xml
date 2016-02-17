@@ -26,34 +26,37 @@
                <msContents>
                   <textLang mainLang="grc"/>
                   <msItem class="#label">
-                     <p>"Demosthenes"</p>
+                     <p>Portrait bust of Demosthenes with name inscribed</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#statue">
                      <supportDesc ana="#metal.bronze">
                         <support><p>Bronze portrait bust</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>7.9</height>
+                              <width>3.3</width>
+                              <depth>4</depth>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height>0.25</height>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.points"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote>
                         <p> </p>
                      </decoNote>
                   </decoDesc>
@@ -75,8 +78,19 @@
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#GettyMusJ_21"/>
-                  <biblScope unit="item">104, no. 3</biblScope>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_21_Acquisitions"/>
+                  <biblScope unit="pp">104, no. 3</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Markus"/>
+                  <biblScope unit="pp">103</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Mattusch_EnduringBronze"/>
+                  <biblScope unit="pp">41-42, no. 19</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/13082/unknown-maker-portrait-bust-of-demosthenes-roman-100-1-bc/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +106,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-02-04" who="SJD">Added missing control vocab, fixed lines/columns, added available dimensions data, expanded and updated bibl, added transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,7 +132,9 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name key="Demosthenes Δημοσθένης">Δημο<supplied reason="lost">σθ</supplied><unclear>ε</unclear>νη</name><supplied reason="lost">ς</supplied></persName>.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

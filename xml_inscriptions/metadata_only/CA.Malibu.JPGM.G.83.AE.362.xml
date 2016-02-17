@@ -78,9 +78,9 @@
                                    using one or more values from the genre taxonomy. The first character of the attribute value should be a #.
                 -->
                     <msContents>
-                        <textLang mainLang="grc"/> <!-- la, grc, ett ?? -->
+                        <textLang mainLang="grc" otherLangs="etr"/> <!-- la, grc, ett ?? -->
                         <msItem class="#label">
-                        <p>Label</p>
+                        <p>Iliupersis with character labels and potter Euphronios' signature; Etruscan graffito on bottom</p>
                         </msItem>
                     </msContents>
 
@@ -116,10 +116,10 @@
 
                         <objectDesc ana="#instrumentum.container.other"> 
 
-                            <supportDesc ana="#clay.ceramic">
+                            <supportDesc ana="#clay.terracotta">
 
                                 <support>
-                                <p>Ceramic terracotta Attic red-figure kylix. Additional Etruscan graffito.</p>
+                                <p>Terracotta Attic red-figure kylix</p>
                                      <dimensions type="surface" unit="cm">
                                         <height>19.0</height>
                                         <width>46.6</width>
@@ -127,8 +127,8 @@
                                      </dimensions>
                                </support>
 
-                                <condition ana="#complete">
-                                    <p >Complete</p>
+                                <condition ana="#fragments.contig">
+                                    <p>fragments reconstituted and repaired into original form of cup</p>
                                 </condition>
 
                             </supportDesc>
@@ -140,7 +140,7 @@
                                 @columns and @writtenLines record the number of columns and number of lines.
                             -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="0">
+                                <layout columns="0" writtenLines="12">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -155,8 +155,8 @@
                              add @hands (<handDesc hands="2">).
                         -->
                         
-                        <handDesc>
-                            <handNote>
+                        <handDesc hands="1">
+                            <handNote ana="#painted.brush">
                             </handNote>
                         </handDesc>
                         
@@ -169,7 +169,7 @@
 
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>Iliupersis in tondo and zone</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -197,8 +197,14 @@
 
                         <origin>
                             <date notBefore="-0450" notAfter="-0430">c. 440-435 BCE</date>
-                            <placeName ref="europe.greece.athens">Athens</placeName>
+                            <placeName ref="europe.greece.athens">Athens, Greece</placeName>
                         </origin>
+                        <provenance>
+                            <!-- subsequent locations if inscription was moved -->
+                            <date when="1999">1999</date>
+                            <placeName ref="europe.italy">Italy</placeName>
+                            <p>fragments repatriated</p>
+                        </provenance>
                     </history>
 
                 </msDesc>
@@ -218,27 +224,54 @@
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#GettyTB_Clark_Wilson"/>
-                        <biblScope unit="item">pp. 10-14</biblScope>
+                        <biblScope unit="pp">10-14</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#GettyMusJ_18"/>
-                        <biblScope unit="item">pp. 53-68; figs. 1, 3, 4</biblScope>
+                        <ptr type="rest-of-bibl" target="#Immerwahr"/>
+                        <biblScope unit="pp">166</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Elston_1990"/>
+                        <biblScope unit="pp">53-68; figs. 1, 3, 4</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#AJA_Shapiro"/>
-                        <biblScope unit="item">pp. 629-656; p. 643, no. 82</biblScope>
+                        <biblScope unit="pp">643 n. 82</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Antike_Kunst_Papadopoulos"/>
-                        <biblScope unit="item">pp. 89-105; p. 105, no. 110</biblScope>
+                        <biblScope unit="pp">105, no. 110</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Denoyelle_1992_Williams"/>
+                        <biblScope unit="pp">91</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Robertson"/>
-                        <biblScope unit="item">pp. 47-48; fig. 33</biblScope>
+                        <biblScope unit="pp">47-48; fig. 33</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#GettyMusJ_12"/>
-                        <biblScope unit="item">pp. 229-316; p. 246, no. 73</biblScope>
+                        <biblScope unit="pp">246, no. 73</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Connelly_1993"/>
+                        <biblScope unit="pp">102, 105, 113, 119; fig. 42</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Reeder1995"/>
+                        <biblScope unit="pp">82-83, fig. 8</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Morris_1995"/>
+                        <biblScope unit="pp">223, 228, fig. 15.9</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Rizzo_1997"/>
+                        <biblScope unit="pp">65-70</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://web.stanford.edu/group/chr/drupal/ref/museum-returns-to-italy-1999">Article about repatriation to Italy</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -284,6 +317,7 @@
         -->
         <revisionDesc>
             <change when="2013-07-11" who="Tori Lee">Created stub</change>
+            <change when="2016-02-11" who="SJD">Added missing control vocab, fixed lines/columns, added missing bibl, added note about subsequent repatriation</change>
         </revisionDesc>
 
     </teiHeader>

@@ -34,24 +34,24 @@
                      <supportDesc ana="#metal.lead">
                         <support>
                            <dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>10.8</height>
+                              <width>11.5</width>
+                              <depth></depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="3">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>text disposed around central figure of elephant</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#protruding.molded"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -79,6 +79,9 @@
                   <ptr type="rest-of-bibl" target="#PAF"/>
                   <biblScope unit="item">204-205, no. 98</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29651/unknown-maker-weight-with-elephant-greek-seleucid-2nd-1st-century-bc/">Getty Museum Web Entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -94,6 +97,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-06-16" who="SJD">Updated specificity of object tag</change>
+         <change when="2016-02-01" who="SJD">Added missing control vocab, added available dimensions metadata, fixed lines/columns, added Getty Museum website, added transcription from images</change>
       </revisionDesc>
    </teiHeader>
    
@@ -102,7 +106,11 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/>Ἀντιοχεία
+               <lb n="2"/>μνᾶ
+               <lb n="3"/>ἐπὶ <persName><name key="Zenophanes Ζηνοφάνης"><hi rend="reversed">Ζ</hi>ηνοφάν<surplus>υ</surplus>ου</name></persName>.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
