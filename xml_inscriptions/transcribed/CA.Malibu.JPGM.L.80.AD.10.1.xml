@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader><!-- testing1 -->
+      <fileDesc>
+         <titleStmt>
+            <!--printable version of USEpi inscription ID:-->
+            <title>CA.Malibu.JPGM.L.80.AD.10.1</title>
+         </titleStmt>
+         <publicationStmt>
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               <xi:fallback>
+                  <p>The Publications Statement should appear here. (c) Brown University</p>
+               </xi:fallback>
+            </xi:include>
+            <idno type="USEpigraphy" xml:id="CA.Malibu.JPGM.L.80.AD.10.1">CA.Malibu.JPGM.L.80.AD.10.1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <region>CA</region>
+                  <settlement>Malibu</settlement>
+                  <institution>JPGM</institution>
+                  <repository/>
+                  <idno>80.AD.10.1</idno>
+               </msIdentifier>
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <msItem class="#stamp">
+                     <p>Brickstamp of the two Augusti</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc ana="#instrumentum.brick">
+                     <supportDesc ana="#clay.brick">
+                        <support><p>Fragment of brick with orbicular stamp</p><dimensions type="surface" unit="cm">
+                              <height>7.5</height>
+                              <width>13</width>
+                              <depth min="2.8" max="3.7">2.8-3.7</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragment.single">
+                           <p>broken on all sides resulting in the loss of roughly half the stamp</p>
+                        </condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="2">
+                              <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
+                              <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="1">
+                     <handNote ana="#stamped.relief"/>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote>
+                        <p></p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <summary>
+                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
+                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
+                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
+                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
+                     <note/>
+                  </summary>
+                  <origin>
+                     <!--Should contain information about origin of inscription including place and date.-->
+                     <date notBefore="0190" notAfter="0210">190-210 CE</date>
+                     <placeName ref="unknown">unknown</placeName>
+                  </origin>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+            </msDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_XV"/>
+                  <biblScope unit="item">773</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_RodriguezAlmeida"/>
+                  <biblScope unit="item">188-89, no. 4, fig. 3</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#LSO"/>
+                  <biblScope unit="item">653</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/15186/unknown-maker-brick-fragment-roman-1st-2nd-century/">Getty Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc/>
+      <revisionDesc>
+         <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-26" who="SJD">Added missing control vocab, added dimension metadata from folder, added link to JPGM to bibl, added transcription</change>
+      </revisionDesc>
+   </teiHeader>
+   
+   <!--facsimile element goes here-->
+   
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/><expan><abbr><supplied reason="lost">Nostro</supplied>r</abbr><ex>um</ex></expan> <expan><abbr>Au<am>g</am>g</abbr><ex>ustorum</ex></expan>
+               <lb n="2"/><supplied reason="lost">ex praedis</supplied> <supplied reason="lost">do</supplied>minoru<supplied reason="lost">m</supplied>.
+            </ab>
+         </div>
+      <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
+   </text>
+</TEI>
