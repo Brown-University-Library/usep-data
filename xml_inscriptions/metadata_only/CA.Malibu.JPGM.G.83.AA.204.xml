@@ -33,27 +33,27 @@
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble relief stele</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>88.9</height>
+                              <width>66</width>
+                              <depth>7.8</depth>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.intact">
+                           <p>some chipping around edges</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="6">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>first two lines written to match contours of stone</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"></handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote>
                         <p> </p>
                      </decoNote>
                   </decoDesc>
@@ -75,8 +75,39 @@
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_12_Acq"/>
+                  <biblScope unit="pp">239, no. 34</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#Koch"/>
-                  <biblScope unit="item">97-99, no. 35</biblScope>
+                  <biblScope unit="pp">97-99, no. 35</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Epig_Anatolica_6_Koch"/>
+                  <biblScope unit="pp">91-96, fig. </biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Epig_Anatolica_7_Cremer"/>
+                  <biblScope unit="pp">22-25, fig. 1</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#True_Koch_1990_Koch"/>
+                  <biblScope unit="pp">127, no. VII, 2; fig. 1</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Cremer_1992"/>
+                  <biblScope unit="pp">38-39, 87; pl. 26</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Samellas_2002"/>
+                  <biblScope unit="pp">127-128, fig. 1</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MAMA_X_App"/>
+                  <biblScope unit="item">I 182.21</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/10412/unknown-maker-grave-relief-for-tation-and-tatianos-roman-phrygian-150-175/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +123,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-02-22" who="SJD">Updated missing control vocab and added available metadata, fixed lines/columns, greatly expanded bibl, added link to Getty museum site, added transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,7 +149,14 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name key="Theaitetos Θεαίτητος">Θεαίτ
+               <lb n="2" break="no"/>ητος</name></persName> <persName><name key="Tation Τατίω">Τατίῳ</name></persName> <hi rend="ligature">μη</hi>τρί.
+               <lb n="3"/><persName><name key="Demetrios Δημήτριος">Δη<hi rend="ligature">μή</hi>τριος</name></persName> <hi rend="ligature">κὲ</hi> <persName><name key="Tation Τάτιον">Τάτιον</name></persName> <persName><name key="Tatianos Τατιανάς">Τατιανῷ</name></persName> τέκν<hi rend="stacked">ῳ</hi>
+               <lb n="4"/>γλυκυτάτῳ <hi rend="ligature">μνή</hi><hi rend="ligature">μη</hi>ς χάριν. ὃς ἂν
+               <lb n="5"/>ποσά<hi rend="ligature">ξε</hi>ι χεῖρα τὴν βαρύχθονα τοιο<hi rend="stacked">ύ</hi>
+               <lb n="6" break="no"/>τῃ ἀώρῳ περπέσοιτο συνφορᾷ.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

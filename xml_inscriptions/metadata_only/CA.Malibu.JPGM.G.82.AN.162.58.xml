@@ -34,28 +34,28 @@
                      <supportDesc ana="#stone.other">
                         <support><p>Aphrodite on white chalcedony</p>
                            <dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>1.3</height>
+                              <width>1.1</width>
+                              <depth>0.7</depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="0" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                              <p>two lines, reading upwards from bottom, along each vertical edge of the gem</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#protruding.relief">written in reverse so impression is legible</handNote>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
-                        <p>no photo</p>
+                     <decoNote>
+                        <p>Aphrodite standing slightly turned to right, holding her hair in upraised hands</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -83,6 +83,9 @@
                   <ptr type="rest-of-bibl" target="#SEG_42"/>
                   <biblScope unit="item">no. 1704</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/16095/unknown-maker-engraved-gem-roman-2nd-3rd-century/">Getty Museum Web Entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -98,6 +101,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-06-16" who="SJD">Updated genre, material</change>
+         <change when="2016-02-22" who="SJD">Added missing control vocab, fixed lines/columns, added metadata, added link to Getty, added transcription</change>
       </revisionDesc>
    </teiHeader>
    
@@ -106,7 +110,10 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name type="divinity" key="Zeus Ζεύς">Ζεὺς</name></persName>
+               <lb n="2"/><persName><name type="divinity" key="Ouranos Οὐρανός">Οὐρανοῦ</name></persName>.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>

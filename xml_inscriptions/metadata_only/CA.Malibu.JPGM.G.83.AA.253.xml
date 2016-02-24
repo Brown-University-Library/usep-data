@@ -33,28 +33,28 @@
                   <objectDesc ana="#object_other">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble loutrophoros</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
+                              <height>74</height>
+                              <width>27.9</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.broken">
+                           <p>small crack diagonally from upper right to bottom left, missing the foot of the amphora but otherwise intact</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="0" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p> </p>
+                     <decoNote>
+                        <p>an older bearded man (Philytes) shakes hands with a younger man (Aristomachos), with a younger boy standing between them</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -82,6 +82,21 @@
                   <ptr type="rest-of-bibl" target="#CAT_2"/>
                   <biblScope unit="item">879</biblScope>
                </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Grossman_2001"/>
+                  <biblScope unit="pp">77-80, no. 27</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Grossman_2013"/>
+                  <biblScope unit="pp">25, fig. 8</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_12_Acq"/>
+                  <biblScope unit="pp">235, no. 9</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/10464/unknown-maker-funerary-loutrophoros-of-aristomachos-greek-attic-about-370-bc/">Getty Museum Web Entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -96,6 +111,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-02-22" who="SJD">Added missing control vocab and available dimension metadata, fixed line/columns, updated and expanded bibl, added transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,7 +125,10 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name key="Philytes Φιλύτης">Φιλύτης</name></persName>.
+               <lb n="2"/><persName><name key="Aristomachos Ἀριστόμαχος">Ἀριστόμαχος</name></persName>.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
