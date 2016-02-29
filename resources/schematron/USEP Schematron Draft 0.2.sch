@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
-    <ns uri="http://www.tei-c-org/ns/1.0" prefix="t"/>
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:sqf="http://www.schematron-quickfix.com/validator/process" xmlns:t="http://www.tei-c.org/ns/1.0">
+<ns uri="http://www.tei-c-org/ns/1.0" prefix="t"/>
+    
     
     <!--*******
     This provides validation for encoders while working on their transcriptions. The transcription-oriented are drawn from the sample schematron provided on the EpiDoc sourceforge,
@@ -21,8 +22,8 @@
     
     <!-- Test machine readable name -->
     <pattern>
-        <rule context="//t:publicationStmt/t:idno">
-            <assert test="//t:idno[@xml:id] != //t:idno">Machine- and Human-Readable IDs must match</assert>
+        <rule context="//t:publicationStmt">
+            <assert test="t:idno[@xml:id] = t:idno">Machine- and Human-Readable IDs must match</assert>
         </rule>
     </pattern>
     
@@ -86,8 +87,8 @@
     <!-- Test for empty place names -->
     <pattern>
         <rule context="//t:history/t:origin">
-            <report test="//t:placeName[@ref='xx']">Inscription must have a valid place ref (e.g. europe.italy.rome)</report>
-            <report test="//t:placeName='Detailed place name'">Inscription must have a location; if it is unknown, mark as such</report>
+            <report test="t:placeName[@ref='xx']">Inscription must have a valid place ref (e.g. europe.italy.rome)</report>
+            <report test="t:placeName='Detailed place name'">Inscription must have a location; if it is unknown, mark as such</report>
         </rule>
     </pattern>
     
@@ -95,14 +96,14 @@
     <pattern>
         <rule context="//t:listBibl">
             <assert test="normalize-space(.)">Every entry must include bibliography, even if it is unpublished</assert>
-            <report test="//t:bibl/t:ptr[@target='#xx']">Every entry must include bibliography; use "unpub" for unpublished inscriptions</report>           
+            <report test="t:bibl/t:ptr[@target='#xx']">Every entry must include bibliography; use "unpub" for unpublished inscriptions</report>           
         </rule>
     </pattern>
     
     <!-- Test for change log attribution -->
     <pattern>
         <rule context="//t:revisionDesc">
-            <report test="//t:change[@who='xx']">Input your name in the change log</report>
+            <report test="t:change[@who='xx']">Input your name in the change log</report>
         </rule>
     </pattern>
     
@@ -186,5 +187,5 @@
             <!--<report test="not(descendant::t:ex)"><name/> should contain ex</report><-->
             <report test="descendant::text()[not(translate(normalize-space(.),' ','')='')][not(ancestor::t:ex or ancestor::t:abbr)]">all text in expan should be in abbr or ex</report>
         </rule>        
-    </pattern>  
+    </pattern>
 </schema>
