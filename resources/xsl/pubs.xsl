@@ -79,25 +79,37 @@
     
     <xsl:template match="t:bibl[@type='v']" mode="parent">
         <li><a href="/../{concat($url, normalize-space(./@xml:id))}"> 
-            <!-- <xsl:choose>
-                <xsl:when test="t:abbr">
-                    <xsl:value-of select="t:abbr" />
-                </xsl:when>
-                <xsl:when test="t:date">
-                    <xsl:if test="t:biblScope">
-                        <xsl:value-of select="t:biblScope" />: 
-                    </xsl:if>
-                    <xsl:value-of select="t:date" />
+            <xsl:choose>
+                <xsl:when test="ancestor::t:bibl[@type='c']">
+                    <!-- corpus, display abbr -->
+                    <xsl:value-of select="ancestor::t:bibl[@type='c']/t:abbr[@type='primary']" />
+                    <xsl:text> </xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="t:biblScope" />
+                    <!-- not a corpus, display vol -->
+                    <xsl:text>vol. </xsl:text>
                 </xsl:otherwise>
              </xsl:choose> 
- -->             
-            abbr: <xsl:value-of select="t:abbr[@type='primary']" />
+             
+            <xsl:choose>
+                <xsl:when test="t:biblScope and t:date">
+                    <xsl:value-of select="t:biblScope" />
+                    (<xsl:value-of select="t:date" />)
+                </xsl:when>
+                <xsl:otherwise>
+                <xsl:if test="t:biblScope">
+                    <xsl:value-of select="t:biblScope" />
+                </xsl:if>
+                <xsl:if test="t:date">
+                    <xsl:value-of select="t:date" />
+                </xsl:if>
+                    
+                </xsl:otherwise>
+            </xsl:choose>
+            <!-- abbr: <xsl:value-of select="t:abbr[@type='primary']" />
             num: <xsl:value-of select="t:biblScope/t:num/@value" />
             date: <xsl:value-of select="t:date" /> @when: <xsl:value-of select="t:date/@when" />
-            biblScope: <xsl:value-of select="t:biblScope" />
+            biblScope: <xsl:value-of select="t:biblScope" /> -->
         </a></li>
     </xsl:template>
     <xsl:template match="t:bibl[@type='a']" mode="parent"/>
