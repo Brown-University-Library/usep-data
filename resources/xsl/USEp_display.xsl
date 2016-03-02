@@ -113,8 +113,8 @@
                                     <tr><td class="label">Subsequent Location</td>
                                         <td class="value">
                                             <xsl:choose>
-                                                <xsl:when test="string-length(preceding-sibling::t:placeName) !=0"><xsl:value-of select="concat(preceding-sibling::t:date,', ', preceding-sibling::t:placeName)"/></xsl:when>
-                                                <xsl:otherwise><xsl:value-of select="preceding-sibling::t:date"/></xsl:otherwise>
+                                                <xsl:when test="string-length($placeOfProvenance) !=0"><xsl:value-of select="(child::t:date,', ', $placeOfProvenance)"/></xsl:when>
+                                                <xsl:otherwise><xsl:value-of select="child::t:date"/></xsl:otherwise>
                                             </xsl:choose>
                                         </td>
                                     </tr>
