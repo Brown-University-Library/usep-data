@@ -33,6 +33,7 @@
         2015-12-02 SJD Added variable for material
         2016-01-19 SJD Small tweak to column display
         2016-01-21 SJD Fixed typo in provenance, added display of descriptions for provenance/acquisition
+        2016-03-02 SJD Made fixes to allow multiple provenance elements to display correctly
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -112,8 +113,8 @@
                                     <tr><td class="label">Subsequent Location</td>
                                         <td class="value">
                                             <xsl:choose>
-                                                <xsl:when test="string-length($placeOfProvenance) !=0"><xsl:value-of select="concat($dateOfProvenance,', ', $placeOfProvenance)"/></xsl:when>
-                                                <xsl:otherwise><xsl:value-of select="$dateOfProvenance"/></xsl:otherwise>
+                                                <xsl:when test="string-length(preceding-sibling::t:placeName) !=0"><xsl:value-of select="concat(preceding-sibling::t:date,', ', preceding-sibling::t:placeName)"/></xsl:when>
+                                                <xsl:otherwise><xsl:value-of select="preceding-sibling::t:date"/></xsl:otherwise>
                                             </xsl:choose>
                                         </td>
                                     </tr>
