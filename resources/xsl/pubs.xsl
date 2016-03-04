@@ -7,6 +7,7 @@
     version="2.0">
 
     <xsl:param name="url" />
+    <xsl:param name="new" />
 
     <xsl:output method="xhtml" encoding="UTF-8" />
     <xd:doc scope="stylesheet">
@@ -32,19 +33,86 @@
     </xsl:template>
     
     <xsl:template match="t:bibl[@type='c']" mode="corpus">
-        <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+        <xsl:choose>
+            <xsl:when test="$new">
+                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span>
+                    <ul>
+                        <xsl:apply-templates select="./t:bibl" mode="parent" />
+                    </ul>
+                </p>
+            </xsl:when>
+            <xsl:otherwise>
+                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="t:bibl[@type='j']" mode="journal">
-        <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+        <xsl:choose>
+            <xsl:when test="$new">
+                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span>
+                    <ul>
+                        <xsl:apply-templates select="./t:bibl" mode="parent" />
+                    </ul>
+                </p>
+            </xsl:when>
+            <xsl:otherwise>
+                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="t:bibl[@type='m']" mode="monograph">
-        <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+        <xsl:choose>
+            <xsl:when test="$new">
+                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span>
+                    <ul>
+                        <xsl:apply-templates select="./t:bibl" mode="parent" />
+                    </ul>
+                </p>
+            </xsl:when>
+            <xsl:otherwise>
+                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="t:bibl[@type='v']"/>
-    <xsl:template match="t:bibl[@type='a']"/>
+    <xsl:template match="t:bibl[@type='v']" mode="parent">
+        <li><a href="/../{concat($url, normalize-space(./@xml:id))}"> 
+            <xsl:choose>
+                <xsl:when test="ancestor::t:bibl[@type='c']">
+                    <!-- corpus, display abbr -->
+                    <xsl:value-of select="ancestor::t:bibl[@type='c']/t:abbr[@type='primary']" />
+                    <xsl:text> </xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <!-- not a corpus, display vol -->
+                    <xsl:text>vol. </xsl:text>
+                </xsl:otherwise>
+             </xsl:choose> 
+             
+            <xsl:choose>
+                <xsl:when test="t:biblScope and t:date">
+                    <xsl:value-of select="t:biblScope" />
+                    (<xsl:value-of select="t:date" />)
+                </xsl:when>
+                <xsl:otherwise>
+                <xsl:if test="t:biblScope">
+                    <xsl:value-of select="t:biblScope" />
+                </xsl:if>
+                <xsl:if test="t:date">
+                    <xsl:value-of select="t:date" />
+                </xsl:if>
+                    
+                </xsl:otherwise>
+            </xsl:choose>
+            <!-- abbr: <xsl:value-of select="t:abbr[@type='primary']" />
+            num: <xsl:value-of select="t:biblScope/t:num/@value" />
+            date: <xsl:value-of select="t:date" /> @when: <xsl:value-of select="t:date/@when" />
+            biblScope: <xsl:value-of select="t:biblScope" /> -->
+        </a></li>
+    </xsl:template>
+    <xsl:template match="t:bibl[@type='a']" mode="parent"/>
     
     
     <xsl:template match="t:title" mode="#all">
