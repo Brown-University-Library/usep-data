@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -33,13 +34,13 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble relief with Griffins</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>19</height>
+                              <width>24</width>
+                              <depth>6.6</depth>
                            </dimensions>
                         </support>
                         <condition ana="#fragment.single">
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                           <p>broken on left and right, bottom edge chipped and worn</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -101,6 +102,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-11-30" who="SJD">Added mising control vocab, fixed columns/lines, added link to Getty website</change>
+         <change when="2016-03-01" who="SJD">Added available dimensions, added transcription from images</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -120,7 +122,10 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> ΡΟΣ <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ΑΚΙΑ <persName><name type="divinity" key="Athena Ἀθηνᾶ">Ἀθ<supplied reason="lost">η</supplied>νᾶ</name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
          </div>
       <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
