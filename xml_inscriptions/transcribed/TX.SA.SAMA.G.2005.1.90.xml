@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader><!-- testing1 -->
         <fileDesc>
@@ -19,8 +19,8 @@
                     <msIdentifier>
                         <region>TX</region>
                         <settlement>SA</settlement>
-                        <institution></institution>
-                        <repository>SAMA</repository>
+                        <institution>SAMA</institution>
+                        <repository></repository>
                         <idno>2005.1.90</idno>
                     </msIdentifier>
                     <msContents>
@@ -40,16 +40,16 @@
                                         <depth></depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#">
-                                    <p/>
+                                <condition ana="#fragment.single">
+                                    <p>Preserves a segment of the text from the right hand side of the text, with losses at top and bottom</p>
                                 </condition>
                             </supportDesc>
                             <layoutDesc>
                                 <layout columns="1" writtenLines="6"></layout>
                             </layoutDesc>    
                         </objectDesc>
-                        <handDesc>
-                            <handNote ana="#"/>
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved"/>
                         </handDesc>
                         <decoDesc>
                             <decoNote type="blank">
@@ -74,7 +74,7 @@
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Ede_15"/>
-                        <biblScope type="item">no.28</biblScope>
+                        <biblScope unit="item">no.28</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -103,10 +103,11 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>ΟΥΑΠΟΛΛΩΝ<app type="previouslyRead"><lem resp="previous">I</lem><rdg resp="autopsy"><gap reason="lost" quantity="1" unit="character"/></rdg></app>ΟΣ
-                    <lb n="2"/>ΟΕΠ<app type="previouslyRead"><lem resp="previous">Π</lem><rdg resp="autopsy"><gap reason="lost" quantity="1" unit="character"/></rdg></app>ΑΣΔΙ<app type="previouslyRead"><lem resp="previous">Θ</lem><rdg resp="autopsy"><gap reason="lost" quantity="1" unit="character"/></rdg></app>Ι<app type="previouslyRead"><lem resp="previous">Λ</lem><rdg resp="autopsy"><gap reason="lost" quantity="1" unit="character"/></rdg></app>ΗΣΙΟ ΣΑΘ<app type="previouslyRead"><lem resp="previous">Α</lem><rdg resp="autopsy"><gap reason="lost" quantity="1" unit="character"/></rdg></app>
-                    <lb n="3"/>ΤΡΑΤΟΝΙ<app type="previouslyRead"><lem resp="previous">Κ</lem><rdg resp="autopsy"><gap reason="lost" quantity="1" unit="character"/></rdg></app>ΟΥΕ<app type="previouslyRead"><lem resp="previous">IΠ</lem><rdg resp="autopsy"><gap reason="lost" quantity="2" unit="character"/></rdg></app>A<gap reason="lost" quantity="1" unit="character"/>ΕΠ<gap reason="lost" quantity="2" unit="character"/>ΔΗ<gap reason="lost" quantity="1" unit="character"/>
-                    <lb n="4"/>ΛΙΟΣ<app type="previouslyRead"><lem resp="previous">Ο</lem><rdg resp="autopsy"><gap reason="lost" quantity="1" unit="character"/></rdg></app>
+                    <lb/><gap reason="lost" extent="unknown" unit="line"/>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>ου <persName><name key="Apollonios">Ἀπολλώνιος</name></persName>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ο ἐππασδιθιλησιοσαθα
+                    <lb n="3"/>τρατονικου ειπα<gap reason="lost" quantity="1" unit="character"/>ΕΠ<gap reason="lost" quantity="2" unit="character"/>ΔΗ<gap reason="lost" quantity="1" unit="character"/>
+                    <lb n="4"/>λιοςο
                     <lb n="5"/>ΑΞΙΟΣ
                     <lb n="6"/>ΡΕΣ
                 </ab>
