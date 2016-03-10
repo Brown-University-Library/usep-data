@@ -33,24 +33,24 @@
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble stele</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
+                              <height>75.5</height>
+                              <width>44.7</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.broken">
+                           <p>diagonally broken in two pieces from upper left to bottom right, chipping around the edges resulting in slight damage to the text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="46">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#impressed.inscribed.carved">corrections made by a second hand</handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -76,11 +76,18 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_31"/>
-                  <biblScope unit="item">no. 122</biblScope>
+                  <biblScope unit="item">122</biblScope>
                </bibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#GettyMusJ_9"/>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_9_Raubitschek"/>
                   <biblScope unit="item">93-98</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#NGSL"/>
+                  <biblScope unit="pp">177-190, fig. 12</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/8495/unknown-maker-attic-inscription-roman-early-2nd-century/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -96,6 +103,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-03-08" who="SJD">Updated control vocab and dimensions, fixed columns/lines, corrected and expanded bibl, added transcription from image</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,7 +117,54 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/>Ἀγαῇ τύχῃ. Ἐπὶ <persName><name type="praenomen" key="Titus Τίτος">Τίτου</name> <name type="gentilicium" key="Flavius Φλάβιος">Φλαβίου</name> <name type="cognomen" key="Conon Κόνων">Κόνωνος</name></persName> ἄρχοντο
+               <lb n="2" break="no"/>ς καὶ ἱερέως <persName><name type="cognomen" key="Drusus Δροῦσος">Δρούσου</name></persName> ὑπάτου, Μουνιχιῶνος ὀκτὼ
+               <lb n="3"/>καὶ δεκάτῃ· ἔδοξεν τῷ ἀρχερανιστῇ <persName><name type="praenomen" key="Marcus Μάρκος"><del rend="erasure"><handShift/>Μάρκῳ</del></name> <handShift/><name type="gentilicium" key="Aemilius Αἰμίλιος">Αἰμιλίῳ</name>
+               <lb n="4"/><name type="cognomen" key="Eucharistus Εὐχάριστος">Εὐχαρίστῳ</name> <name type="demotic" key="Paianieus Παιανιεύς">Παιαν<supplied reason="omitted">ι</supplied>εῖ</name></persName> συνόδου τῆς τῶν Ἡρακλιαστῶν τῶν
+               <lb n="5"/>ἐν Λιμναῖς )( τάδε δοκματίσαι· ἐάν τις ἐν τῇ συνόδῳ
+               <lb n="6"/>μάχην ποιήσῃ, τῇ ἐνεχομένῃ ἡμέρᾳ ἀποτινέτω προστείμ
+               <lb n="7" break="no"/>ου ὁ μὲν ἀρξάμενος δραχμὰς δέκα, )( ὁ δὲ ἐξακολουθ
+               <lb n="8" break="no"/><unclear>ή</unclear>σας δραχμὰς πέντε )( καῖ ἐξάνανκα πραττέσθω τῶν <unclear>σ</unclear>
+               <lb n="9" break="no"/><supplied reason="lost">υ</supplied>νερανιστῶν ψῆφον λαβόντων ἐκβιβάσαι· )( τῆς δὲ ἐνθήκ
+               <lb n="10" break="no"/><unclear>η</unclear>ς τῆς τεθείσης ὑπὸ τοῦ ἀρχερανιστοῦ καὶ ὅση ἂν ἄλλη ἐν
+               <lb n="11" break="no"/>θήκη ἐπὶσυναχθῇ, ταύτ<hi rend="ligature">ης</hi>  μηθεὶς καὶ κατὰ μηδένα τρόποον ἁπτ
+               <lb n="12" break="no"/><supplied reason="lost">έ</supplied>σθω <unclear>π</unclear>λείω τοῦ τόκου τοῦ πεσομένου, )( μὴ πλέω δὲ δαπανάτ
+               <lb n="13" break="no"/><supplied reason="lost">ω</supplied> ὁ ταμίας  δραχμῶν <del rend="erasure"><handShift/><num value="300">'τ</num>· ἔδοξε</del> <handShift/>ἐκ τοῦ τόκου· )( ἐᾶν δέ τι πλείων 
+               <lb n="14" break="no"/><supplied reason="lost">ο</supplied>ς ἅψηται ἢ ἐκ τῆς ἐνθήκῆς )( ἢ ἐκ τοῦ τόκου ἀποτεινέτω πρόσ
+               <lb n="15" break="no"/><supplied reason="lost">τ</supplied>είμου τὸ <unclear>τ</unclear>ριπλοῦν·  ὁμοίως δὲ καὶ ἂν ταμιεύσας τις ἐπιδειχθ<unclear>ῇ</unclear>
+               <lb n="16"/><supplied reason="lost">ν</supplied>ενοσφισμένος )( ἀποτινέτω τὸ τριπλοῦν· περὶ δὲ ἱερεωσυν
+               <lb n="17" break="no"/><supplied reason="lost">ῶ</supplied>ν ὧν ἄν τις ἀγοράσῃ παραχρῆμα κατατιθέστω )( ἐν τῷ ἐχ
+               <lb n="18" break="no"/><supplied reason="lost">ο</supplied>μένῳ ἐνιαυτῷ )( αὐτῷ  τῷ ἀρχερανιστῇ, καὶ λαμβανέτω πρόσ
+               <lb n="19" break="no"/><supplied reason="lost">γ</supplied>ραφον παρὰ τοῦ ἀρχερανιστοῦ, λανβάνων δὲ ἐξ ἔθους τὰ διπλᾶ
+               <lb n="20"/><supplied reason="lost">μ</supplied>έρη ἐκτὸς τοῦ ο<unclear>ἴ</unclear>νου· οἱ δὲ ἐργολαβήσαντες ὑϊκὸν ὴ οἰνικὸν μ
+               <lb n="21" break="no"/><unclear>ὴ</unclear> ἀποκαταστήσαντες ἐν ᾧ )( δειπν<del rend="erasure"><handShift/>οῦ</del><handShift/>σιν ἐνιαυτῷ ἀποτινέτω
+               <lb n="22" break="no"/>σαν τὸ διπλοῦν· οἱ δὲ ἐργολαβοῦντες ἐνγυητὰς εὐαρέστους
+               <lb n="23"/>παραντιθέτωσαν τῷ ταμίᾳ καὶ τῷ ἀρχερανιστῇ· καταστάνεσθαι δὲ <num value="3">γ'</num>
+               <lb n="24"/><del rend="erasure"><handShift/>παννυχιστὰς</del> <handShift/>τοὺς δυναμένους· ἐὰν δὲ μὴ θέλωσιν τότε ἐκ πάντ
+               <lb n="25" break="no"/>ων κληρούσθωσαν καὶ ὁ λαχὼν ὑπομενέτω· ἐὰν δὲ μὴ ὑπομένῃ ἢ
+               <lb n="26"/>μὲ θέλῃ παννυχιστὴς εἶναι λαχὼν ἀποτινέτω προστείμου δραχμὰς ἑκ
+               <lb n="27" break="no"/>ατόν· )( καταστάνεσθ<surplus>ωσαν</surplus>αι δὲ ἐπάνανκες ἐκ τῆς συνόδου πράκ
+               <lb n="28" break="no"/>τορες δέκα· )( ἐὰν δέ τινες μὴ θέλω<unclear>σι</unclear>ν πράκτορες ὑπομένειν κλερούσθω
+               <lb n="29" break="no"/>σαν ἐκ τοῦ πλήθους δέκα· )( ὁμοίως δὲ <unclear>κ</unclear>αὶ ἐὰν ὁ ταμίας ἀδοδιδοῖ λόγον ἀγ
+               <lb n="30" break="no"/>ορᾶς γενομένης καταστάνεσθαι ἐγλ<unclear>ο</unclear>ιστὰς τρεῖς καὶ τοὺς ἐγλογιστὰς ὀμ
+               <lb n="31" break="no"/>νύειν αὐτόν τε τὸν <persName><name type="divinity" key="Ἡρακλῆς Herakles">Ἡερακλῆν</name></persName> καὶ <persName><name type="divinity" key="Demeter Δημήτηρ">Δήμητρα</name></persName> κα<supplied reason="lost">ὶ</supplied> <persName><name type="divinity" key="Kore Κόρη">Κόρην</name></persName>· )( κληροῦσθαι δὲ τῆς ἡμέρ
+               <lb n="32" break="no"/>ας ἑκάστης ἐπὶ τὰ κρέα ἀνθρώπους δύω· )( ὁμοίως καὶ ἐπὶ τοὺς σ<del rend="erasure"><handShift/>τρε</del><handShift/>πτού
+               <lb n="33" break="no"/>ς ἀνθρώπους δύω· )( ἐὰν δέ τις τῶν πεπιστευμένων εὑρεθῇ ῥυπαρόν τ
+               <lb n="34" break="no"/><supplied reason="lost">ι</supplied> πεποιηκὼς ἀποτινέτω δραχμὰς εἴκοσι· )( αἱρείσθω δὲ ὁ ἀρχερανιστὴς
+               <lb n="35"/>οὓς ἂν βούληται ἐκ τῆς συνόδου <del rend="erasure"><handShift/>εἰς τὸ συνεγ</del><handShift/>δανίσαι τὴν ἐνθήκην μετ'αὐτοῦ
+               <lb n="36"/>ἀνθρώπους <num value="3">γ'</num>· διδότωσαν δὲ τὴν σιμίδαλιν πάντες τῇ <unclear>δ</unclear>ημοσὀᾳ χοίνικι <gap reason="lost" quantity="1" unit="character"/>
+               <lb n="37"/><handShift/>ἐγδίδοσθαι δὲ καθ' ἕκαστον ἐνιαυτὸν ὑπὸ τοῦ ταμ<supplied reason="lost">ίο</supplied>υ θῦμα τῷ θεῷ
+               <lb n="38"/>κἀρπον <expan><abbr>μ<hi rend="superscript ligature">ν</hi></abbr><ex>ῶν</ex></expan> <num value="20">κ'</num>· ἐὰν δέ τις τῶν ἐκ τοῦ ἐράνου τέκνον <gap reason="illegible" quantity="2" unit="character"/>ΣΙ θέλῃ ἰσάγιν
+               <lb n="39"/>διδότω ὑϊκοῦ <expan><abbr>μ<hi rend="superscript ligature">ν</hi></abbr><ex>ῶν</ex></expan> <num value="16.5">ις&#60;</num>, ἐὰν δέ τις ἐμβῆναι θέλῃ διδότω ὑϊκοῦ <expan><abbr>μ<hi rend="superscript ligature">ν</hi></abbr><ex>ῶν</ex></expan> <num value="33">λγ'</num>·
+               <lb n="40"/>καταβάλλεσθαι δὲ τὸν λόγον ὅταν οἱ ἐγλογισταὶ ὀμόσαντε<supplied reason="lost">ς</supplied>
+               <lb n="41"/>ἀποδῶσι τῷ ἀρχερανιστῇ τὸν λόγον καὶ ἐπιδίξωσι εἴ τι ὀφίλι ὁ τα
+               <lb n="42" break="no"/>μίας· ξύλα δὲ ἐγδίδοσθαι ὑπὸ τοῦ καθ' ἔτος ταμίου· &#60; τὰς δὲ φορὰς
+               <lb n="43"/>καταφέριν τῷ ταμίᾳ ἐπάναγκες ἰς τὰς ἐγδόσις· ὁ δὲ μὴ κατενένκας
+               <lb n="44"/>ἀποτινέτω τὸ διπλοῦν· &#60; ὁ δὲ μὲ δοὺς τὸ κάθολον ἐξέρανος
+               <lb n="45"/><unclear>ἔ</unclear>στω· / μὴ ἐξέστω δὲ τῶν ἐν τῷ ἄλσι ξύλων ἅπτεσθαι· &#60; στέφα
+               <lb n="46" break="no"/><supplied reason="lost">νο</supplied>ν δὲ φέριν τῷ θεῷ ἕκαστον. 
+            </ab>
          </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div></body>
    </text>
