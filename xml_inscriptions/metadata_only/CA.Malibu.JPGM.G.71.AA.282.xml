@@ -32,10 +32,11 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.limestone">
-                        <support><p><seg type="form">Stele with lunate portrait niche carved in high relief</seg></p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>Limestone stele with lunate portrait niche carved in high relief</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>79</height>
+                              <width>67.3</width>
+                              <depth>26</depth>
                            </dimensions>
                         </support>
                         <condition ana="#fragment.single">
@@ -43,13 +44,13 @@
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="2">
+                        <layout columns="2" writtenLines="3">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
+                  <handDesc hands="1">
                      <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
@@ -82,6 +83,9 @@
                   <ptr type="rest-of-bibl" target="#Koch"/>
                   <biblScope unit="item">106-107, no. 39</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/6737/unknown-maker-grave-stele-with-the-busts-of-a-father-and-son-roman-mid-2nd-century/">Getty Museum Web Entry, with further bibliography</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -96,6 +100,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-03-22" who="SJD">Added dimensions, added missing control data, added link to JPGM website, added transcription from image</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -115,7 +120,17 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <div type="textpart" subtype="column" n="1">
+               <ab>
+                  <lb n="1"/><persName><name key="Xanthion Ξανθίων">Ξανθίων</name></persName> χρ<hi rend="ligature">ησ</hi>
+                  <lb n="2" break="no"/>τὲ φιλοπατρὶ
+               </ab>
+            </div>
+            <div type="textpart" subtype="column" n="2">
+               <ab>
+                  <lb n="3"/><persName><name key="Xanthos Ξάνθος">Ξάνθε</name></persName>.
+               </ab>
+            </div>
          </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div> </body>
    </text>

@@ -32,10 +32,11 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p><seg type="form">Relief stele</seg></p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>Marble relief stele</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>77.5</height>
+                              <width>54.5</width>
+                              <depth>8</depth>
                            </dimensions>
                         </support>
                         <condition ana="#complete.intact">
@@ -49,11 +50,11 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc ana="#impressed.inscribed.carved">
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote>
                         <p> </p>
                      </decoNote>
                   </decoDesc>
@@ -76,15 +77,38 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_32"/>
-                  <biblScope unit="item">no. 1614</biblScope>
+                  <biblScope unit="item">1614</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CAAJPG"/>
                   <biblScope unit="item">85</biblScope>
                </bibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#IGUR"/>
+                  <biblScope unit="item">IV 1667</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#Koch"/>
                   <biblScope unit="item">82-84, no. 29</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Eikones_1980_Freyer"/>
+                  <biblScope unit="page">120-121, no. 14</biblScope>
+               </bibl> 
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_12_Frel"/>
+                  <biblScope unit="page">75, no. 7</biblScope>
+               </bibl>             
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Chamay_1982"/>
+                  <biblScope unit="page">167, pl. 35</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MDAIR_95_Koch"/>
+                  <biblScope unit="page">fig. 3</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/6899/unknown-maker-grave-relief-of-agrippina-roman-about-150/">Getty Museum Web Entry, with photo</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -100,6 +124,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-03-22" who="SJD">Updated control vocab, added dimensions, added much bibliography and link to JPGM website, added transcription from images</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -119,7 +144,13 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><expan><abbr>Θ</abbr><ex>εοῖς</ex></expan> <expan><abbr>Χ</abbr><ex>θονίοις</ex></expan>.
+               <lb n="2"/><persName><name type="cognomen" key="Agrippina Ἀγριππείνη">Ἀγριππείνῆ</name></persName> θυγατρὶ <g type="hedera"/>
+               <lb n="3"/>ζησάσῃ ἔτη <num value="3"><hi rend="supraline">γ'</hi></num>, <expan><abbr>μῆ</abbr><ex>ας</ex></expan> <num value="1"><hi rend="supraline">α'</hi></num>, <expan><abbr><hi rend="ligature">ἡμ</hi></abbr><ex>έρας</ex></expan> <num value="26"><hi rend="supraline">κζ'</hi></num>.
+               <lb n="4"/>Γονεῖς ἐπόησαν μνήμης
+               <lb n="5"/>χάριν.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div> </body>
    </text>

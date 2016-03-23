@@ -33,15 +33,15 @@
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">White marble</seg>
+                           <p>White marble stele</p>
                            <dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>112.4</height>
+                              <width>63.5</width>
+                              <depth>20</depth>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.intact">
+                           <p>some chipping on edges, small portion of upper right and lower left frame lost</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -51,8 +51,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote/>
@@ -69,14 +69,34 @@
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
                      <date notBefore="0100" notAfter="0100">c. 100 CE</date>
-                     <placeName ref="europe.greece.attica">Attica</placeName>
+                     <placeName ref="europe.greece.attica">Attica, Greece</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_40"/>
+                  <biblScope unit="item">229</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#GRSA"/>
                   <biblScope unit="item">no. 167</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Lymperopoulos_1985"/>
+                  <biblScope unit="page">90, 101, 132, 136; 391, no. G1</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Grossman_2001"/>
+                  <biblScope unit="page">95-97, cat. no. 35</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#True_Koch_1990_Spiliopoulou"/>
+                  <biblScope unit="page">5-14, figs. 1a-b</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Ridgway_2002"/>
+                  <biblScope unit="page">217, pl. 96a-b</biblScope>
                </bibl>
                <bibl>
                   <ref type="external" target="http://www.getty.edu/art/collection/objects/7142/unknown-maker-grave-naiskos-of-apollonia-greek-about-100-bc/">Getty Museum Web Entry, including image</ref>          
@@ -96,6 +116,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-11-30" who="SJD">Corrected line and column numbers, added link to Getty website</change>
+         <change when="2016-03-21" who="SJD">Added control vocab, added metadata from Getty, expanded bibl, added transcription from photo on Getty website</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,7 +130,9 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name key="Apollonia Ἀπολλωνία">Ἀπολλωνία</name></persName> <persName><name key="Aristandros Ἀριστάνδρος">Ἀριστάνδρου</name></persName> καὶ <persName><name key="Thebageneia Θηβαγένεια">Θηβαγενείας</name></persName>.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div> </body>
    </text>

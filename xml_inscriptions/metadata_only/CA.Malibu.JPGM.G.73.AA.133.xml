@@ -33,13 +33,13 @@
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support><p><seg type="form">Architectural stele in medium relief</seg></p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                              <height>19.5</height>
+                              <width>36.5</width>
+                              <depth>12.3</depth>
                            </dimensions>
                         </support>
                         <condition ana="#fragment.single">
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                           <p>broken at left, and large portion of relief below lost</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc ana="#impressed.inscribed">
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -76,11 +76,34 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_28"/>
-                  <biblScope unit="item">no. 440</biblScope>
+                  <biblScope unit="item">440</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CAT_3"/>
                   <biblScope unit="item">384</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Frel1979"/>
+                  <biblScope unit="page">17, no. 66</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_1_Breslin"/>
+                  <biblScope unit="page">25-26</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#ZPE_31_Peek"/>
+                  <biblScope unit="page">261-262</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bergemann_1997"/>
+                  <biblScope unit="page">171, no. 506; pl. 55.3</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Grossman_2001"/>
+                  <biblScope unit="page">35-36, cat. no. 11</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/7123/unknown-maker-fragment-of-a-grave-stele-greek-about-350-bc/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -96,6 +119,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-03-21" who="SJD">Added dimensions from Getty, added bibl, added missing control vocab, added transcription from image</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,7 +133,12 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lg met="hexameter">
+                  <l><lb n="1"/><gap reason="lost" quantity="15" cert="low" unit="character"/>ΑΙΕ <persName><name key="Agakleidas Ἀγακλείδας">Ἀγακλείδας</name></persName> μνήματι σὸς μα<unclear>ῖ</unclear><supplied reason="lost">ς</supplied>·</l>
+                  <l><lb n="2"/><gap reason="lost" quantity="15" cert="low" unit="character"/>ΟΝ καὶ <unclear>ἀδ</unclear>ελφὰν <persName><name key="Diaineta Διαίνετα">Δ<supplied reason="lost">ι</supplied>αινέταν</name></persName> αὐτ<supplied reason="lost">οῦ</supplied>.</l>
+               </lg>
+            </ab>
          </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div> </body>
    </text>

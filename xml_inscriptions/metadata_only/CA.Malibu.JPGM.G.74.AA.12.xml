@@ -25,7 +25,7 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc"/>
-                  <msItem class="#label">
+                  <msItem class="#dedicatory">
                      <p>"Elgin" throne</p>
                   </msItem>
                </msContents>
@@ -33,27 +33,26 @@
                   <objectDesc ana="#furniture">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="form">Ceremonial throne</seg>, 
-                           <seg type="material">Gray streaked marble</seg>
-                        <dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                           <p>Gray streaked marble ceremonial throne</p> 
+                           <dimensions type="surface" unit="cm">
+                              <height>81.5</height>
+                              <width>70</width>
+                              <depth>66</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.intact">
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#complete.broken">
+                           <p>surface damage to stone's edge results in loss of a significant portion of the dedicatory inscription</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="2">
+                        <layout columns="1" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc ana="#impressed.inscribed">
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -78,12 +77,35 @@
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#IG_II"/>
+                  <biblScope unit="item">1595</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#IG_II2"/>
+                  <biblScope unit="item">5167</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_28"/>
+                  <biblScope unit="item">239</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_32"/>
+                  <biblScope unit="item">273</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_26"/>
+                  <biblScope unit="item">272</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#JHS_67"/>
                   <biblScope unit="item">22-27</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#MDAIA_91"/>
                   <biblScope unit="item">185-188</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/7141/unknown-maker-throne-greek-4th-century-bc/"/>Getty Museum Web Entry
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -99,6 +121,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-03-21" who="SJD">Updated metadata, updated genre to dedicatory from label, added missing control vocab, added link to Getty website, added transcription from images</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -130,7 +153,9 @@
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name key="Boethos Βόηθος">Βόηθος</name></persName> ΔΙΟ<gap reason="lost" atLeast="18" atMost="20" unit="character"/>ΙΟΣ <gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
          </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div> </body>
    </text>
