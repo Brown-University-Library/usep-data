@@ -144,12 +144,10 @@
                                 <tr>
                                     <td class="label">Writing</td>
                                     <td class="value">
-                                        <xsl:for-each select="t:handNote[not(preceding-sibling::t:handNote)]">
                                             <xsl:choose>
                                                 <xsl:when test="string-length($writing/@ana) !=0 and normalize-space($writing)"><xsl:value-of select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing)"/></xsl:when>
-                                                <xsl:otherwise><xsl:value-of select="id(substring-after($writing/@ana, '#' ))/t:catDesc"/></xsl:otherwise>                                            
-                                        </xsl:choose>
-                                        </xsl:for-each>
+                                                <xsl:otherwise><xsl:value-of select="id(substring-after($writing/@ana, '#' ))/t:catDesc"/></xsl:otherwise>  
+                                            </xsl:choose>
                                     </td>
                                 </tr>
                                 <tr>
