@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader><!-- testing1 -->
+
+        <fileDesc>
+
+            <!-- *************************************  <titleStmt>  *********************************
+                Used to group  information about the title of a work and its creator. 
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+
+            <titleStmt>
+                <title>CA.Malibu.JPGM.G.79.AE.139</title>
+            </titleStmt>
+
+            <!-- *************************************  <publicationStmt>  *********************************
+                Used to group information about the publication and permissions of a work. All files will have a US Ep. copyright
+                statement, which is stored in an external file called include_publicationStmt.xml. In the future, if a collection has 
+                special copyright or permissions, we can add more information after the included file.
+                
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. This is the US Epigraphy number in the title
+                element above, with any illegal characters such as ? * # & +  [space] replaced with a set of predeterimined 
+                characters that are legal in XML names and viable URLs.  See the wiki for the list of substitutions.
+            -->
+
+            <publicationStmt>
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+                    <xi:fallback>
+                        <p>The Publications Statement should appear here.</p>
+                    </xi:fallback>
+                </xi:include>
+                <idno type="USEpigraphy" xml:id="CA.Malibu.JPGM.G.79.AE.139">CA.Malibu.JPGM.G.79.AE.139</idno>
+                
+            </publicationStmt>
+
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+
+            <sourceDesc>
+
+                <!--  *************************************  <msDesc>  ********************************* 
+                      <msIdentifier>** breaks out the information that is packed into the US Epigraphy number into its component parts, 
+                        and spells each part out.
+                              <region> corresponds to the first part of the number = state
+                              <settlement> corresponds to the second part = city
+                              <institution> is optional, but is used if there is a university or other entity to which the collection belongs
+                              <repository> is the third or fourth part of the number =  museum or collection where the inscription is housed
+                              <idno> is the last part of the number, and generally represents the accession number the inscription has been given by the collection that houses it. 
+                              It should correspond to the last component of <title>.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>CA</region>
+                        <settlement>Malibu</settlement>
+                        <institution>JPGM</institution>
+                        <repository/>
+                        <idno>79.AE.139</idno>
+                    </msIdentifier>
+
+                <!--  *************************************  <msContents>  ********************************* 
+
+                      <msContents>** is normally used to describe the contents of an inscription.
+                              
+                            <textLang> has two attributes: @mainLang which is used for the language in which the inscription is written
+                                   and @otherLangs which can have as its values one or more other languages found in the inscription. The 
+                                   values of both attributes must use the proper codes, so if you need a language for which there is no 
+                                   code listed, please ask. This element can have content if it is necessary to explain something.
+
+                             <msItem> contains a short summary of the content of the inscription. It can have other markup within
+                                   such as <persname>, <foreign> or <emph>. If there is more than one inscription or face, there
+                                   can be more than one <msItem>. The genre of the inscription is encoded in @class 
+                                   using one or more values from the genre taxonomy. The first character of the attribute value should be a #.
+                -->
+                    <msContents>
+                        <textLang mainLang="grc"/> <!-- la, grc, ett ?? -->
+                        <msItem class="#text_other">
+                        <p>Side A: "Aisimides is beautiful." Side B: "The boy is beautiful."</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.
+                            @ana contains one or more controlled values for the type of support, from the form section
+                                of the taxonomy. You may use more than one value, separating values with a 
+                                space. ex: ana="#ash_urn #base"
+                            
+                            <supportDesc> contains a range of information about the support.
+                            @ana contains one or more controlled value for the inscribed material from the material section 
+                                 of the taxonomy. 
+                                 
+                            <support> contains a <p> with free text about the material and the form of the support, and a structured 
+                                  component that records the dimensions of the support.
+                                  
+                                  <p> should have one or two short sentences that describe the form and material of the support. The <seg>s
+                                       may optionally be used to demarcate detailed information about each within the sentence.
+                                  
+                                  <dimensions>
+                                       @type indicates what the dimensions are measuring, for example, "surface"
+                                       @unit indicates the unit of measurement. 
+                                       Note that instead of <height>, <width> and <depth> it is possible to use  <dim type="xx">. 
+                                       This may be useful for round objects.  There can be more than one dimensions element.
+                                    
+                                    <condition> can contain free text that describes the condition of the inscription. [optional]
+                                       @ana contains a controlled value from the preservation category of the taxonomy. 
+                        -->
+
+                        <objectDesc ana="#instrumentum.container.amphora"> 
+
+
+                            <supportDesc ana="#clay.ceramic">
+
+                                <support>
+                                    <p>Ceramic terracotta amphora lid</p>
+                                     <dimensions type="surface" unit="cm">
+                                        <height>65</height>
+                                        <width/>
+                                        <depth/>
+                                     </dimensions>
+                               </support>
+
+                                <condition ana="#complete">
+                                    <p>Complete</p>
+                                </condition>
+
+                            </supportDesc>
+
+                            <!--  *************************************  <layoutDesc>  *********************************
+                                This is where information about the format of the text is encoded.
+                                Use <locus> to narrow down part of inscription being discussed if necessary.
+                                <layout> can have free text content inside the <p> that provides more detailed information. [optional]
+                                @columns and @writtenLines record the number of columns and number of lines.
+                            -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="3">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  *********************************
+                            Contains information about types of writing and means of inscription.
+                            <handNote> is a repeatable element, so that it can handle more than one type of writing. 
+                            @ana has one or more values from the writing taxonomy. 
+                            Any more specific information is contained inside <handNote>. If there is more than one type of writing, 
+                             add @hands (<handDesc hands="2">).
+                        -->
+                        
+                        <handDesc hands="1">
+                            <handNote ana="#painted.brush">
+                            </handNote>
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************
+                            US Epigraphy doesn't use this much yet, but this is where information about any decorations will go.
+                            <decoNote> is a repeatable element, so that it can handle more than one decoration. 
+                               @type has one  or more values from the decoration taxonomy, and any more specific information 
+                               is contained inside <decoNote>
+                        -->
+
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************
+                    
+                    This section is for the history of the inscription. 
+                       <summary>  currently used only if it is necessary to indicate if an inscription is genuine or fake. 
+                        If fake, put the text "fake" inside <rs>.  Ex: <rs>fake</s>
+                        [This is a USEp. convention for now, to indicate if an inscription is fake.]
+                     
+                     <origin> encodes the origin of inscription including place and date. 
+                     <provenance> can appear multiple times, and encodes any additional events in the history of the inscription. 
+                         Not currently in use. 
+                           <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date; there are only -0001 and 0001. 
+                           <placeName> contains a detailed place name as content. 
+                              @ref has a USEp controlled vocabulary. In the future we plan to use Pleiades information.
+                    -->
+
+                    <history>
+                        <summary>
+                            <rs/>
+                        </summary>
+
+                        <origin>
+                            <date notBefore="-0480" notAfter="-0470">c. 480-470 BCE</date>
+                            <placeName ref="europe.greece.athens">Athens</placeName>
+                        </origin>
+                        <provenance>
+                            <!-- subsequent locations if inscription was moved -->
+                            <date notBefore="2007" notAfter="2007">2007 CE</date>
+                            <placeName ref="europe.italy.rome">Repatriated from the Getty Museum to Italy. Now housed at the Museo Nazionale Etrusco di Villa Giulia</placeName>                                
+                        </provenance>
+</history>
+
+                </msDesc>
+
+                <!--  *************************************  <listBibl>  *********************************
+                    Encodes bibliographic entries. 
+                    <bibl> used to encode each reference. There can be multiple <bibl>s.
+                    @target points to the id of the publication, which is found in the title.xml file. 
+                    <biblScope> contains the reference in the publication, either page or item numbers.
+                       @type[item] contains the item number in a corpus or other publication
+                       @type[pp] contains page numbers. 
+                       Either or  both of these can be part of a reference.
+                    External links, for example to digital corpora. Encode this as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SEG_36"/>
+                        <biblScope unit="item">108</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Brommer_1985"/>
+                        <biblScope unit="pp">194-196; fig. 13</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.beazley.ox.ac.uk/record/AFDD3409-5DE7-4B06-A009-4D4E0FD63D4F">Beazley Archive 14731</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.getty.edu/news/press/center/italy_getty_joint_statement_080107.html">Notice of Repatriation in Getty Museum Press Release</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  *********************************
+            This section of the header contains the controlled vocabularies for the genre, form and material of
+            an inscription. The taxonomies are in external files, but as you work, Oxygen is reading them, and can 
+            validate ids so that you can be assured that you are using correct values.
+            
+            If you don't find the value you need, you should talk to the project manager or John Bodel, in order to see 
+            what value to use, or (rarely) whether the taxonomies need to be modified.
+            
+            Encoders do not edit the <encodingDesc>.
+        -->
+
+        <encodingDesc>
+           
+                <!-- Taxonomies with lists of controlled values go here.  Each controlled vocabulary is a single file stored at 
+                the URL given below. This allows all encoded inscriptions to use the same set of controlled vocabularies. 
+                The taxonomy files can be updated by US Epigraphy staff, but changes should be made only if approved.
+                -->
+                
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <!-- Ignore profileDesc for now -->
+        <profileDesc> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  *********************************
+             <change> Any change to the file should be recorded here, with most recent revisions listed at the top of the list. 
+             @when Dates should be in the format YYYYY-MM-DD.
+             @who Type in your name. 
+             The content of <change> can be a short description of what changes were made, for example:
+                initial encoding; update original US Ep. values to P5 values; corrected xx; etc.
+        -->
+        <revisionDesc>
+            <change when="2013-07-10" who="Tori Lee">Created stub</change>
+            <change when="2015-07-16" who="SJD">Updated bibl, added provenance notes about the object's return to Italy.</change>
+            <change when="2016-03-07" who="SJD">Corrected transcription, added missing control vocab</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************
+        Used to point to images of an inscription. 
+          <graphic> (directly within <facsimile>) Use this if there is only a single "main" image without a special caption.
+          <surface> Use <desc> and <graphic> within <surface> if there are mutiple images or if they have captions. <surface>
+          pairs one or more images with a single caption. Usually, in US Ep. captions are only indicated when the image is of a detail.
+          @url contains the name of the image file (no path or directory information, for now).
+        <facsimile> can have more than one <graphic> or <surface>.
+     -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="CA.Malibu.JPGM.G.79.AE.139.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <div type="textpart" subtype="side" n="A">
+                    <ab>
+                        <lb n="1"/><persName><name key="Aisimides Αἰσιμίδης">hαισιμίδες</name></persName> καλός.
+                    </ab>
+                </div>
+                <div type="textpart" subtype="side" n="B">
+                        <ab>    
+                            <lb n="2"/>hο παῖς 
+                            <lb n="3"/>καλός.
+                        </ab>
+                </div>
+            </div>
+                <div type="bibliography"> 
+                    <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> 
+                        <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> 
+                    </xi:include> 
+                </div>
+             
+         </body>
+    </text>
+</TEI>

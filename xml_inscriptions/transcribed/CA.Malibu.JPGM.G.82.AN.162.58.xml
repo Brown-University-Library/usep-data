@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader><!-- testing1 -->
+      <fileDesc>
+         <titleStmt>
+            <!--printable version of USEpi inscription ID:-->
+            <title>CA.Malibu.JPGM.G.82.AN.162.58</title>
+         </titleStmt>
+         <publicationStmt>
+            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               <xi:fallback>
+                  <p>The Publications Statement should appear here. (c) Brown University</p>
+               </xi:fallback>
+            </xi:include>
+            <idno type="USEpigraphy" xml:id="CA.Malibu.JPGM.G.82.AN.162.58">CA.Malibu.JPGM.G.82.AN.162.58</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <region>CA</region>
+                  <settlement>Malibu</settlement>
+                  <institution>JPGM</institution>
+                  <repository/>
+                  <idno>82.AN.162.58</idno>
+               </msIdentifier>
+               <msContents>
+                  <textLang mainLang="grc"/>
+                  <msItem class="#label">
+                     <p>"Zeus"</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc ana="#instrumentum.other">
+                     <supportDesc ana="#stone.other">
+                        <support><p>Aphrodite on white chalcedony</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>1.3</height>
+                              <width>1.1</width>
+                              <depth>0.7</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        </condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="2">
+                              <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
+                              <p>two lines, reading upwards from bottom, along each vertical edge of the gem</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="1">
+                     <handNote ana="#protruding.relief">written in reverse so impression is legible</handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote>
+                        <p>Aphrodite standing slightly turned to right, holding her hair in upraised hands</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <summary>
+                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
+                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
+                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
+                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
+                     <note/>
+                  </summary>
+                  <origin>
+                     <!--Should contain information about origin of inscription including place and date.-->
+                     <date notBefore="0100" notAfter="0300">second-third century CE</date>
+                     <placeName ref="unknown"/>
+                  </origin>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+            </msDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Spier"/>
+                  <biblScope unit="item">no. 359</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_42"/>
+                  <biblScope unit="item">no. 1704</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.getty.edu/art/collection/objects/16095/unknown-maker-engraved-gem-roman-2nd-3rd-century/">Getty Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc/>
+      <revisionDesc>
+         <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2014-06-16" who="SJD">Updated genre, material</change>
+         <change when="2016-02-22" who="SJD">Added missing control vocab, fixed lines/columns, added metadata, added link to Getty, added transcription</change>
+      </revisionDesc>
+   </teiHeader>
+   
+   <!--facsimile element goes here-->
+   
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/><persName><name type="divinity" key="Zeus Ζεύς">Ζεὺς</name></persName>
+               <lb n="2"/><persName><name type="divinity" key="Ouranos Οὐρανός">Οὐρανοῦ</name></persName>.
+            </ab>
+         </div>
+      <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div> </body>
+   </text>
+</TEI>
