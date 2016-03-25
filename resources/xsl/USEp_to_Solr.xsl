@@ -86,18 +86,19 @@ status			string
 notBefore		date
 notAfter		date
 
+char 			string
 c_*				boolean dynamic
 	(special characters)
-names_<type>     stringSplit dynamic
+name_<type>     stringSplit dynamic
 usually: name_gentilicum
 		 name_cognomen
 always:  name (created at index time by solr)
 
 bib_ids 		string multiValued
 -->
-
 	<xsl:apply-templates />
 	<xsl:call-template name="status" />
+
 </xsl:template>
 
 <!-- Generic field-value element -->
@@ -419,14 +420,12 @@ bib_only, metadata, or transcription depending on stuff
 <xsl:template name="status">
 	<xsl:choose>
 		<!-- presence of transcription ab elements -->
-		<xsl:when test="tei:text/tei:body/tei:div//tei:ab">
+		<xsl:when test="tei:text/tei:body/tei:div//tei:ab and normalize-space(tei:text/tei:body/tei:div//tei:ab)">
 			<!-- <xsl:for-each select="tei:text/tei:body/tei:div//tei:ab"> -->
-				<xsl:if test="normalize-space(tei:text/tei:body/tei:div//tei:ab)">
 					<xsl:call-template name="fieldval">
 						<xsl:with-param name="field">status</xsl:with-param>
 						<xsl:with-param name="value">transcription</xsl:with-param>
 					</xsl:call-template>
-				</xsl:if>
 			<!-- </xsl:for-each> -->
 		</xsl:when>
 		<xsl:when test="normalize-space(tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc)">
