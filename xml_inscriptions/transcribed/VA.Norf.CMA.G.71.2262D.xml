@@ -69,8 +69,8 @@
                     <msContents>
                         <textLang mainLang="grc"/>
                         <!-- la, grc, ett ?? -->
-                        <msItem class="label">
-                            <p>Mosaic with dedicatory inscription by a certain Beryllos.</p>
+                        <msItem class="#dedicatory">
+                            <p>Mosaic with dedicatory inscription by a certain Beryllos</p>
                         </msItem>
                     </msContents>
                     <!--  *************************************  <physDesc>  ********************************* -->
@@ -104,11 +104,10 @@
                                     <condition> can contain free text that describes the condition of the inscription. [optional]
                                        @ana contains a controlled value from the preservation category of the taxonomy. 
                         -->
-                        <objectDesc ana="object_other">
-                            <supportDesc ana="stone">
+                        <objectDesc ana="#object_other">
+                            <supportDesc ana="#stone.unknown">
                                 <support>
-                                    <p>Mosaic with dedicatory inscription.
-                                        <seg type="form"/>
+                                    <p>Medium stone mosaic <seg type="form"/>
                                         <!-- further detail about type of object here. No need to repeat the @ana value. -->
                                         <seg type="material"/>
                                         <!-- further detail about material here. No need to repeat the @ana value. -->
@@ -119,8 +118,8 @@
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="complete">
-                                    <p>Intact dedicatory mosaic</p>
+                                <condition ana="#complete.intact">
+                                    <p></p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  *********************************
@@ -143,7 +142,7 @@
                              add @hands (<handDesc hands="2">).
                         -->
                         <handDesc hands="1">
-                            <handNote ana="inset.mosaic"></handNote>
+                            <handNote ana="#inset.mosaic"></handNote>
                         </handDesc>
                         <!--  *************************************  <decoDesc>  *********************************
                             US Epigraphy doesn't use this much yet, but this is where information about any decorations will go.
@@ -152,7 +151,7 @@
                                is contained inside <decoNote>
                         -->
                         <decoDesc>
-                            <decoNote ana="#xx">
+                            <decoNote >
                                 <p/>
                             </decoNote>
                         </decoDesc>
@@ -177,13 +176,9 @@
                             <rs/>
                         </summary>
                         <origin>
-                            <date notBefore="0300" notAfter="0400">4th-5th c. CE</date>
-                            <placeName ref="xx">xx</placeName>
-                        </origin>
-                        <provenance>
-                            <date notBefore="0001" notAfter="0002">xx</date>
-                            <placeName ref="xx">xx</placeName>
-                        </provenance>
+                            <date notBefore="0300" notAfter="0500">fourth-fifth c. CE</date>
+                            <placeName ref="unknown">unknown</placeName>
+                        </origin>                        
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************
@@ -199,8 +194,8 @@
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#xx"/>
-                        <biblScope unit="item">reference here</biblScope>
+                        <ptr type="rest-of-bibl" target="#unpub"/>
+                        <biblScope unit="item"></biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -247,6 +242,7 @@
         <revisionDesc>
             <change when="2014-08-22" who="SJD">Initial Encoding</change>
             <change when="2015-07-13" who="EM">type in Bib include - still calling usepi file, not titles.xml</change>
+            <change when="2016-04-13" who="SJD">Fixed the issues with control vocab, throughout, added name tags to transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -261,10 +257,10 @@
      -->
 
     <facsimile>
-        <graphic url="http://collection.chrysler.org/emuseum/media/view/Objects/26766/38983?t:state:flow=7a9ab6e9-fa1a-46dc-9e77-f3d3f2c41017"/>
+        
         <surface>
-            <desc/>
-            <graphic url=""/>
+            <desc>Image at Chrysler Musesum website</desc>
+            <graphic url="http://collection.chrysler.org/emuseum/media/view/Objects/26766/38983?t:state:flow=7a9ab6e9-fa1a-46dc-9e77-f3d3f2c41017"/>
         </surface>
     </facsimile>
 
@@ -273,8 +269,8 @@
             <div type="edition">
                 <!-- transcription goes here -->
                 <ab>
-                    <lb n="1"/>Βήρυλλος Δομ
-                    <lb n="2" type="no"/>νίνου τῶν Σιάν
+                    <lb n="1"/><persName><name key="Beryllos Βήρυλλος">Βήρυλλος</name></persName> <persName><name key="Domninos Δομνῖνος">Δομ
+                    <lb n="2" type="no"/>νίνου</name></persName> τῶν Σιάν
                     <lb n="3" type="no"/>θα ἄμα συν βίῳ κ
                     <lb n="4" type="no"/>αὶ τέκνοις εὐξ
                     <lb n="5" type="no"/>άμενος ἐψήφω
