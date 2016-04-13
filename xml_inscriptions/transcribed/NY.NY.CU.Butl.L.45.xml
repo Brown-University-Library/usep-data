@@ -79,7 +79,7 @@
                 -->
                     <msContents>
                         <textLang mainLang="lat"/> <!-- la, grc, ett ?? -->
-                        <msItem class="#">
+                        <msItem class="#funerary.epitaph">
                         <p>Epitaph for ]naia and Marcus Clodius</p>
                         </msItem>
                     </msContents>
@@ -131,7 +131,7 @@
                                </support>
 
                                 <condition ana="#fragment.single">
-                                    <p>Cement, possibly ancient, can be found on all sides, save for the front and top. The right edge appears to have been resurfaced, which suggests postclassical cutting and refinishing of the fragment, perhaps to fit into a confined space on a wall.
+                                    <p>cement, possibly ancient, can be found on all sides, save for the front and top. The right edge appears to have been resurfaced, which suggests postclassical cutting and refinishing of the fragment, perhaps to fit into a confined space on a wall.
                                         Moreover one can find two drill holes on the top right corner. The first is a horizontal hole, with a slight upward angle from the front face to the back, with a width of ca. 0.5 cm; this hole is directly in line with the right most vertical trough in the moulding, ca. 2.5 cm from the right edge. The second is roughly vertical, and appears to have been drilled at an angle slanting from the back of the inscription to the front and appears ca. 8.5 cm from the right edge and 1 cm from the front face. It too has a width of ca. 0.5 cm.</p>
                                 </condition>
 
@@ -173,7 +173,7 @@
 
                         <decoDesc>
                             <decoNote ana="#simple_moulding_border #figured_scene">
-                                <p>A simple moulding around the campus extends approximately 2.5 cm from the edges. Additionally, there is a partial bas-relief in the lower left corner, measuring 7 by 9 cm, which depicts a charioteer and the rear flank of a horse.</p>
+                                <p>simple moulding around the campus extends approximately 2.5 cm from the edges. Additionally, there is a partial bas-relief in the lower left corner, measuring 7 by 9 cm, which depicts a charioteer and the rear flank of a horse.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -200,8 +200,8 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0001" notAfter="0101">First Century CE</date>
-                            <placeName ref="Europe.Italy.Rome">Rome</placeName>
+                            <date notBefore="0001" notAfter="0101">first Century CE</date>
+                            <placeName ref="europe.italy.rome">Rome</placeName>
                         </origin>
 
                         <provenance>
@@ -273,6 +273,7 @@
         <revisionDesc>
             <change when="2011-11-22" who="CG">Initial Encoding</change>
             <change when="2013-02-26" who="EB">Editing transcription from JB's edits</change>
+            <change when="2016-04-13" who="SJD">Added missing msItem/@class value, minor fixes throughout; added name and number tagging to transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -287,7 +288,6 @@
      -->
 
     <facsimile>
-        <graphic url=""/>
         <surface>
             <desc/>
             <graphic url="NY.NY.CU.Butl.L.45.jpg"/>
@@ -315,10 +315,11 @@
             <div type="edition">
                 <ab>
                     <lb n="1"/><supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-                    <lb n="2"/> ]naiae et <expan><abbr>M</abbr><ex>arci</ex></expan> Clo<lb break="no"/>
-                    <lb n="3"/> <supplied reason="lost">dii</supplied>. <expan><abbr>Vix</abbr><ex>it</ex></expan> <expan><abbr>ann</abbr><ex>is</ex></expan> XII
-                    <lb n="4"/> <expan><abbr>d</abbr><ex>iebus</ex></expan> XVIII
-                    <lb n="5"/> <unclear>A</unclear><unclear>D</unclear><unclear>V</unclear><unclear>I</unclear><unclear>A</unclear>E</ab>
+                    <lb n="2"/><persName><gap reason="lost" extent="unknown" unit="character"/>naiae</persName> et <persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <name type="gentilicium" key="Clodius">Clo
+                    <lb n="3" break="no"/><supplied reason="lost">dii</supplied></name></persName>. <expan><abbr>Vix</abbr><ex>it</ex></expan> <expan><abbr>ann</abbr><ex>is</ex></expan> <num value="12">XII</num>,
+                    <lb n="4"/><expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="18">XVIII</num>.
+                    <lb n="5"/><unclear>A</unclear><unclear>D</unclear><unclear>V</unclear><unclear>I</unclear><unclear>A</unclear>E.
+                </ab>
             </div>
             <div type="bibliography"> 
                 <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> 
