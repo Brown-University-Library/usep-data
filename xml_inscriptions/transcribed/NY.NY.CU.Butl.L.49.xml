@@ -127,7 +127,7 @@
                                      </dimensions>
                                </support>
 
-                                <condition ana="#complete">
+                                <condition ana="#complete.intact">
                                     <p />
                                 </condition>
 
@@ -169,7 +169,7 @@
 
                         <decoDesc>
                             <decoNote ana="#blank">
-                                <p>no decoration</p>
+                                <p></p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -196,8 +196,8 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0001" notAfter="0200">1st or 2nd c. CE</date>
-                            <placeName ref="europe.italy.rome">Rome</placeName>
+                            <date notBefore="0001" notAfter="0200">first or second c. CE</date>
+                            <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                         </origin>
 
                         </history>
@@ -274,6 +274,7 @@
         <revisionDesc>
             <change when="2011-11-22" who="BB">Initial Encoding</change>
             <change when="2013-10-28" who="EB">Editing transcription from JB's edits</change>
+            <change when="2016-04-15" who="SJD">Updated condition control vocab, made minor cosmetic changes to history metadata, added richer markup to transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -288,7 +289,6 @@
      -->
 
     <facsimile>
-        <graphic url=""/>
         <surface>
             <desc/>
             <graphic url="NY.NY.CU.Butl.L.49.jpg"/>
@@ -299,9 +299,10 @@
         <body>
             <div type="edition">
                     <ab>
-                    <lb n="1"/>Iunoni
-                    <lb n="2"/> Troliaes
-                    <lb n="3"/> Musaes.</ab>
+                    <lb n="1"/><persName><name type="divinity" key="Iuno">Iunoni</name></persName>
+                    <lb n="2"/><persName><name type="gentilicium" key="Trolia">Troliaes</name>
+                    <lb n="3"/><name type="cognomen" key="Musa">Musaes</name></persName>.
+                    </ab>
             </div>
             <div type="bibliography"> 
                 <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> 
