@@ -426,6 +426,11 @@ bib_only, metadata, or transcription depending on stuff
 						<xsl:with-param name="field">status</xsl:with-param>
 						<xsl:with-param name="value">transcription</xsl:with-param>
 					</xsl:call-template>
+
+					<xsl:call-template name="fieldval">
+						<xsl:with-param name="field">text_desc</xsl:with-param>
+						<xsl:with-param name="value" select="tei:text/tei:body/tei:div//tei:ab" />
+					</xsl:call-template>
 			<!-- </xsl:for-each> -->
 		</xsl:when>
 		<xsl:when test="normalize-space(tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc)">
