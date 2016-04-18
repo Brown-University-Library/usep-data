@@ -22,31 +22,34 @@
                   <institution>NYU</institution>
                   <repository/>
                   <idno>12</idno>
+                  <altIdentifier>
+                     <idno>formerly NY.NY.NYU.L.22</idno>
+                  </altIdentifier>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Aelia Iulia Arte Midora and P. Aelius Porcianus</p>
+                     <p>Epitaph of L. Gellius Felix</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support><p>Marble slab</p><dimensions type="surface" unit="cm">
-                              <height>29.5</height>
-                              <width>41.5</width>
-                              <depth>2.2</depth>
+                              <height>20</height>
+                              <width>32</width>
+                              <depth>2.8</depth>
                            </dimensions>
                            <dimensions type="letter" unit="cm">
-                              <height min="1.2" max="1.5">1.2-1.5</height>
+                              <height min="1.3" max="2.8">1.3-2.8</height>
                            </dimensions>
                         </support>
                         <condition ana="#complete.intact">
-                           <p>diagonal crack from bottom left corner towards center but otherwise well-preserved</p>
+                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="3" writtenLines="9">
+                        <layout columns="1" writtenLines="5">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
@@ -71,20 +74,40 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="0100" notAfter="0200">second century CE</date>
-                     <placeName ref="europe.italy.rome">Porta Salaria, Rome, Italy</placeName>
+                     <date notBefore="0001" notAfter="0100">first century CE</date>
+                     <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                   </origin>
+                  <acquisition>
+                     <!-- subsequent locations if inscription was moved -->
+                     <date when="1911">After 1911</date>
+                     <p>acquired by New York University from the Johns Hopkins University</p>
+                  </acquisition>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#AJA_Prakken"/>
-                  <biblScope unit="item">322, no. 4 ([ph])</biblScope>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">38417a</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000985">EDR000985</ref>
-</bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson4"/>
+                  <biblScope unit="item">184, no. 80</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR145111">EDR145111</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Peachin_2014_GLINYU"/>
+                  <biblScope unit="page">53-54, no. 12</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Carroll_2011_Carroll"/>
+                  <biblScope unit="page">80</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Flower_2006"/>
+                  <biblScope unit="page">10-11, 288 n. 17</biblScope>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -99,7 +122,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2016-01-18" who="SJD">Added missing control vocab, fixed lines/columns, added transcription from image; added most recent metadata from folder</change>
+         <change when="2016-01-18" who="SJD">Added missing control vocab, added metadata from folder, fixed lines/columns, added note about provenance, added transcription from image</change>
+         <change when="2016-03-25" who="SJD">Added Peachin to bibl, added extra items to bibl, updated USEP no., minor update (marked ligature) to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,35 +133,23 @@
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
          <graphic url="NY.NY.NYU.L.12.jpg"/>
       </surface>
+      <surface>
+         <!--Caption in desc element-->
+         <desc/>
+         <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
+         <graphic url="NY.NY.NYU.L.12-Det.1.jpg"/>
+      </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-            <div type="textpart" subtype="column" n="1">
-               <ab>
-                  <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-               </ab>
-            </div>
-            <div type="textpart" subtype="column" n="2">
-               <ab>
-                  <lb n="2"/><persName><name type="gentilicium" key="Aelia">Aeliae</name> <name type="gentilicium" key="Iulia">Iuliae</name> 
-                  <lb n="3"/><name type="cognomen" key="Artemidora">Artemidore</name></persName>
-                  <lb n="4"/>sorori <expan><abbr>dulciss</abbr><ex>imae</ex></expan>.
-               </ab>
-            </div>
-            <div type="textpart" subtype="column" n="3">
-               <ab>
-                  <lb n="5"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublio</ex></expan></name> <name type="gentilicium" key="Aelius">Aelio</name> <name type="cognomen" key="Porcianus">Porcian<hi rend="stacked">o</hi></name></persName>
-                  <lb n="6"/>filio sororis.
-               </ab>
-            </div>
-            <div type="textpart" subtype="column" n="1">
-               <ab>
-                  <lb n="7"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Aelius">Aelius</name> <name type="cognomen" key="Marcianus">Marcianus</name></persName>
-                  <lb n="8"/>frater, avunculus
-                  <lb n="9"/>fecit.
-               </ab>
-            </div>
+            <ab>
+               <lb n="1"/>D<hi rend="tall">i</hi>s Manibus
+               <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name type="gentilicium" key="Gellius">Gelli</name> <name type="cognomen" key="Felix">Felicis</name></persName>.
+               <lb n="3"/><del rend="erasure"><persName><name type="gentilicium" key="Valeria">Valeria</name> <name type="cognomen" key="Onomaste">Onomas<hi rend="ligature">te</hi></name></persName></del>
+               <lb n="4"/>viro suo et sibi
+               <lb n="5"/><expan><abbr>posterisq</abbr><ex>ue</ex></expan> suis fecit.
+            </ab>
          </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div> </body>
    </text>

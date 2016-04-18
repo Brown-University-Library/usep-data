@@ -128,7 +128,7 @@
                                      </dimensions>
                                </support>
 
-                                <condition ana="#complete">
+                                <condition ana="#complete.intact">
                                     <p />
                                 </condition>
 
@@ -170,7 +170,7 @@
 
                         <decoDesc>
                             <decoNote ana="#blank">
-                                <p>no decoration</p>
+                                <p></p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -197,8 +197,8 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0001" notAfter="0100">First century CE</date>
-                            <placeName ref="europe.italy.rome">Porta Salaria</placeName>
+                            <date notBefore="0001" notAfter="0100">first century CE</date>
+                            <placeName ref="europe.italy.rome">Porta Salaria, Rome</placeName>
                         </origin>
                        </history>
 
@@ -279,6 +279,7 @@
             <change when="2011-11-22" who="BB">Initial Encoding</change>
             <change when="2013-10-28" who="EB">Editing transcription from JB's edits</change>
             <change when="2014-05-27" who="SJD">Small edits of language, added prose desc of date</change>
+            <change when="2016-04-15" who="SJD">Updated condition control vocab, small cosmetic edits to metadata, added richer markup to transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -293,7 +294,6 @@
      -->
 
     <facsimile>
-        <graphic url=""/>
         <surface>
             <desc/>
             <graphic url="NY.NY.CU.Butl.L.443.jpg"/>
@@ -304,9 +304,10 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/><expan><abbr>M</abbr><ex>anius</ex></expan> Obellius
-                    <lb n="2"/> Acastus,
-                    <lb n="3"/><expan><abbr>auruf</abbr><ex>ex</ex></expan> de <expan><abbr>Aureli<hi rend="ligature">an</hi></abbr><ex>is</ex></expan>.</ab>
+                    <lb n="1"/><persName><name type="praenomen" key="Manius"><expan><abbr>M</abbr><ex>anius</ex></expan></name> <name type="gentilicium" key="Obellius">Obellius</name>
+                    <lb n="2"/><name type="cognomen" key="Acastus">Acastus</name></persName>,
+                    <lb n="3"/><expan><abbr>auruf</abbr><ex>ex</ex></expan> de <expan><abbr>Aureli<hi rend="ligature">an</hi></abbr><ex>is</ex></expan>.
+                </ab>
             </div>
             <div type="bibliography"> 
                 <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> 

@@ -79,7 +79,7 @@
                 -->
                     <msContents>
                         <textLang mainLang="lat"/> <!-- la, grc, ett ?? -->
-                        <msItem class="#">
+                        <msItem class="#funerary.epitaph">
                         <p>Epitaph by L. Catillius Felix for his wife, Catillia Protocte</p>
                         </msItem>
                     </msContents>
@@ -120,7 +120,7 @@
                             <supportDesc ana="#stone.marble">
 
                                 <support>
-                                    <p>gray marble with white veins</p>
+                                    <p>gray marble slab with white veins</p>
                                     
                                     
                                      <dimensions type="surface" unit="cm">
@@ -130,7 +130,7 @@
                                      </dimensions>
                                </support>
 
-                                <condition ana="#complete">
+                                <condition ana="#complete.intact">
                                     <p />
                                 </condition>
 
@@ -144,7 +144,7 @@
                             -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="9">
-                                    <p>The text appears to be roughly centered.</p>
+                                    <p>text appears to be roughly centered</p>
                                 </layout>
                             </layoutDesc>
 
@@ -199,8 +199,8 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0101" notAfter="0200">Second century CE</date>
-                            <placeName ref="Europe.Italy.Rome">Rome</placeName>
+                            <date notBefore="0101" notAfter="0200">second century CE</date>
+                            <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                         </origin>
 
                         <provenance>
@@ -276,6 +276,8 @@
             <change when="2011-11-22" who="CG">Initial Encoding</change>
             <change when="2013-02-26" who="EB">Editing transcription from JB's edits</change>
             <change when="2015-08-17" who="SJD">Updated EDR link</change>
+            <change when="2016-04-13" who="SJD">Added missing msItem/@class value</change>
+            <change when="2016-04-15" who="SJD">Updated condition control vocab, small cosmetic changes to metadata, added richer markup to transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -310,14 +312,15 @@
             <div type="edition">
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-                    <lb n="2"/> Catilliae
-                    <lb n="3"/> Protoctes.
-                    <lb n="4"/> <expan><abbr>L</abbr><ex>ucius</ex></expan> Catillius
-                    <lb n="5"/> Felix
+                    <lb n="2"/><persName><name type="gentilicium" key="Catillia">Catilliae</name>
+                    <lb n="3"/><name type="cognomen" key="Protocte">Protoctes</name></persName>.
+                    <lb n="4"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Catillius">Catillius</name>
+                    <lb n="5"/><name type="cognomen" key="Felix">Felix</name></persName>
                     <lb n="6"/> libertae
-                    <lb n="7"/> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> fecit.
-                    <lb n="8"/> Locus donatus
-                    <lb n="9"/> a Lucia Fotine.</ab>
+                    <lb n="7"/><expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> fecit.
+                    <lb n="8"/>Locus donatus
+                    <lb n="9"/>a <persName><name type="gentilicium" key="Lucia">Lucia</name> <name type="cognomen" key="Fotine">Fotine</name></persName>.
+                </ab>
             </div>
             <div type="bibliography"> 
                 <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> 
