@@ -21,14 +21,17 @@
     <xsl:template match="/t:listBibl">
         <xsl:result-document href="#container">
             <hr />
-            <h2 style="text-align:center;">Corpora</h2>
+            <h2 style="text-align:center;" id="corpus">Corpora</h2>
                 <xsl:apply-templates mode="corpus"/>
             <hr />
-            <h2 style="text-align:center;">Journals</h2>
+            <h2 style="text-align:center;" id="journal">Journals</h2>
                 <xsl:apply-templates mode="journal"/>
             <hr />
-            <h2 style="text-align:center;">Monographs</h2>
+            <h2 style="text-align:center;" id="monograph">Monographs</h2>
                 <xsl:apply-templates mode="monograph"/>
+
+            <h2 style="text-align:center;" id="unpub">Unpublished/Missing Citations</h2>
+                <xsl:apply-templates mode="unpub" />
         </xsl:result-document>
     </xsl:template>
     
@@ -75,6 +78,10 @@
                 <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="t:bibl[@type='u']" mode="unpub">
+        <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
     </xsl:template>
     
     <xsl:template match="t:bibl[@type='v']" mode="parent">
