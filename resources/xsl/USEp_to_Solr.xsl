@@ -240,6 +240,7 @@ bib_ids 		string multiValued
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">notBefore</xsl:with-param>
 		<xsl:with-param name="value" select="tei:history/tei:origin/tei:date/@notBefore"/>
+		<xsl:with-param name="desc" select="tei:history/tei:origin/tei:date" />
 	</xsl:call-template>
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">notAfter</xsl:with-param>
