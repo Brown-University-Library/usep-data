@@ -43,13 +43,14 @@
                            
                            
                            <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.53</height>
-                                        <width>0.33</width>
+                           <dimensions type="surface" unit="cm">
+                                        <height>53</height>
+                                        <width>33</width>
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>currently immured</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -60,8 +61,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -105,6 +106,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
          <change when="2015-08-17" who="SJD">Added image</change>
+         <change when="2016-05-10" who="SJD">Added writing and condition control vocab, changed dimension unit to cm, added name tagging to transcripition</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -126,9 +128,9 @@
                <expan>
                   <abbr>M</abbr><ex>anibus</ex>
                </expan>
-                <lb n="2"/> Claudiae Tifonesime
-                <lb n="3"/> <expan><abbr>C</abbr><ex>aius</ex></expan>Iulius Aprilis coniugi
-                <lb n="4"/> et Fundania Atticula
+                <lb n="2"/> <persName><name type="gentilicium" key="Claudia">Claudiae</name> <name type="cognomen" key="Tifonesime">Tifonesime</name></persName>
+                <lb n="3"/> <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Iulius">Iulius</name> <name type="cognomen" key="Aprilis">Aprilis</name></persName> coniugi
+                <lb n="4"/> et <persName><name type="gentilicium" key="Fundania">Fundania</name> <name type="cognomen" key="Atticula">Atticula</name></persName>
                 <lb n="5"/> filia<supplied reason="omitted">e</supplied>
                 <lb n="6"/> 
                <expan>

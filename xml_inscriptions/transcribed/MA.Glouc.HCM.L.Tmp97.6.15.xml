@@ -43,13 +43,14 @@
                            
                            
                            <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.595</height>
-                                        <width>0.24</width>
+                           <dimensions type="surface" unit="cm">
+                                        <height>59.5</height>
+                                        <width>24</width>
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>currently immured</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -60,8 +61,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -105,6 +106,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
          <change when="2015-08-17" who="SJD">Added images</change>
+         <change when="2016-05-10" who="SJD">Added control vocab for handnote and condition, changed dimension units to cm, added name and number tagging to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -130,17 +132,18 @@
                <expan>
                   <abbr>M</abbr><ex>anibus</ex>
                </expan>
-                <lb n="2"/> Iuliae
-                <lb n="3"/> Felicitas<note>!</note>
+                <lb n="2"/> <persName><name type="gentilicium" key="Iulia">Iuliae</name>
+                <lb n="3"/> <name type="cognomen" key="Felicitas">Felicitas</name></persName><note>!</note>
                 <lb n="4"/> 
                <expan>
                   <abbr>vix</abbr><ex>it</ex>
                </expan> 
                <expan>
                   <abbr>an</abbr><ex>nos</ex>
-               </expan> VI <expan>
+               </expan> <num value="6">VI</num>, <expan>
                   <abbr>m</abbr><ex>enses</ex>
-               </expan> II</ab>
+               </expan> <num value="2">II</num>.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

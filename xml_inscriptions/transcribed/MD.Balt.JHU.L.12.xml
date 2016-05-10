@@ -48,7 +48,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>both pieces have unfinished back, rounded top edge</p>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>broken vertically in middle of stone, chip missing from top right corner; both pieces have unfinished back, rounded top edge</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +60,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -109,6 +110,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2016-05-10" who="SJD">Added condition and writing control vocab, added name tags to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -127,11 +129,11 @@
                <expan>
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
-               <g type="hederadistinguens"/> 
+               <g type="hedera_distinguens"/> 
                <expan>
                   <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                    <lb n="2"/>Aelio Iulio
+               </expan>.
+                    <lb n="2"/><persName><name type="gentilicium" key="Aelius">Aelio</name> <name type="gentilicium" key="Iulius">Iulio</name></persName> 
                     <lb n="3"/>filio dulcissimo
                     <lb n="4"/>qui <expan>
                   <abbr>vix</abbr><ex>it</ex>
@@ -139,15 +141,15 @@
                <expan>
                   <abbr>ann</abbr><ex>is</ex>
                </expan> 
-               <num xml:lang="lat" value="7">VII</num>
+               <num xml:lang="lat" value="7">VII</num>,
                     <lb n="5"/>
                <expan>
                   <abbr>m</abbr><ex>ensibus</ex>
                </expan> 
-               <num xml:lang="lat" value="2">II</num> 
-               <expan>
-                  <abbr>Aur</abbr><ex>elius</ex>
-               </expan> Vitus
+               <num xml:lang="lat" value="2">II</num>.
+               <persName><name type="gentilicium" key="Aurelius"><expan><abbr>Aur</abbr><ex>elius</ex>
+               </expan></name>
+                   <name type="cognomen" key="Vitus">Vitus</name></persName>,
                     <lb n="6"/>
                <expan>
                   <abbr>mil</abbr><ex>es</ex>
@@ -160,7 +162,7 @@
                   <abbr>pr</abbr><ex>aetoriae</ex>
                </expan> 
                <g type="centuria"/> 
-                    <lb n="7"/> Iustiani fecit
+                    <lb n="7"/> <persName><name type="cognomen" key="Iustianus">Iustiani</name></persName> fecit.
                 </ab>
              </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
