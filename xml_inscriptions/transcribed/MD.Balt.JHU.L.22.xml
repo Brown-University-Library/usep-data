@@ -48,7 +48,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>unfinished back</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>unfinished back</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +60,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -111,6 +112,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2014-10-13" who="SJD">Fixed EDH/EDR links and bibl entries</change>
          <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2016-05-11" who="SJD">Added condition and writing control vocab, added name tagging to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -125,9 +127,9 @@
         <body>
             <div type="edition">
                <ab>
-               <lb n="1"/>Euhemerus
-                   <lb n="2"/>agitator
-                   <lb n="3"/>ollas <num xml:lang="lat" value="3">III</num>
+                  <lb n="1"/><persName><name type="slaveName" key="Euhemerus">Euhemerus</name></persName>
+                  <lb n="2"/>agitator,
+                  <lb n="3"/>ollas <num xml:lang="lat" value="3">III</num>.
                </ab>
             </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 

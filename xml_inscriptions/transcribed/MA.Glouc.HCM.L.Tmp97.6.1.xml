@@ -42,17 +42,16 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support>
-                           
-                           
+                        <support>                   
                            <p/>
                            <dimensions type="surface" unit="cm">
-                              <height>0.25.5</height>
-                              <width>0.38</width>
+                              <height>25.5</height>
+                              <width>38</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>broken diagonally from lower left corner to mid-right edge; currently immured</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -63,8 +62,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -92,6 +91,10 @@
                   <ptr type="rest-of-bibl" target="#CIL_XI"/>
                   <biblScope unit="item">3939</biblScope>
                </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#JIWE"/>
+                  <biblScope unit="item">I 204</biblScope>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -105,6 +108,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2016-05-11" who="SJD">Added condition, handDesc info; added JIWE to bibl; added name, number tagging, punctuation to transcription, added choice and hi in line 9,, expanded add in line 4</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -119,16 +123,16 @@
       <body>
          <div type="edition">
             <ab>
-               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="leaf"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-               <lb n="2"/><expan><abbr>L</abbr><ex>ucio</ex></expan> <g type="leaf"/>Valerio Maximo
-               <lb n="3"/>Aurelia Mariame m
-               <lb break="no" n="4"/>ater infe<add>li</add>cissima et Fl
-               <lb break="no" n="5"/> avia Marcellina coi
-               <lb n="6"/>ux pien<choice><sic>i</sic><corr>t</corr></choice>issima cu
-               <lb n="7" break="no"/>m quo vixit <expan><abbr>an</abbr><ex>nis</ex></expan> XX
-               <lb n="8"/><expan><abbr>m</abbr><ex>ensibus</ex></expan> VII <expan><abbr>d</abbr><ex>iebus</ex></expan> VII <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> fe
-               <lb break="no" n="9"/><expan><abbr>c</abbr><ex>erunt</ex></expan>. Trium cibitatiu<add>m</add>
-               <lb n="10"/><expan><abbr>om</abbr><ex>nibus</ex></expan> <expan><abbr>h</abbr><ex>onoribus</ex></expan> <expan><abbr>fu</abbr><ex>n</ex><abbr>ctum</abbr></expan>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="leaf"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> <g type="leaf"/> <name type="gentilicium" key="Valerius">Valerio</name> <name type="cognomen" key="Maximus">Maximo</name></persName>
+               <lb n="3"/><persName><name type="gentilicium" key="Aurelia">Aurelia</name> <name type="cognomen" key="Mariame">Mariame</name></persName> m
+               <lb break="no" n="4"/>ater infe<add place="above">li</add>cissima et <persName><name type="gentilicium" key="Flavia">Fl
+               <lb break="no" n="5"/>avia</name> <name type="cognomen" key="Marcellina">Marcellina</name></persName> coi
+               <lb n="6"/>ux pien<choice><sic>i</sic><corr>t</corr></choice>issima, cu
+               <lb n="7" break="no"/>m quo vixit <expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="la" value="20" type="cardinal">XX</num>,
+               <lb n="8"/><expan><abbr>m</abbr><ex>ensibus</ex></expan> <num xml:lang="la" type="cardinal" value="8">VIII</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num xml:lang="la" type="cardinal" value="7">VII</num>, <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>fe
+               <lb break="no" n="9"/>c</abbr><ex>erunt</ex></expan>. Trium ci<choice><sic>b</sic><reg>v</reg></choice>itatiu<hi rend="stacked">m</hi>
+               <lb n="10"/><expan><abbr>om</abbr><ex>nibus</ex></expan> <expan><ex>h</ex><abbr>onoribus</abbr></expan> <expan><abbr>fu</abbr><ex>n</ex><abbr>ctum</abbr></expan>.
             </ab>
 
             <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->

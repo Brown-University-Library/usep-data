@@ -48,7 +48,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>back finished; guidelines visible</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>back finished; guidelines visible; small portion of lower right corner missing below text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +60,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -109,6 +110,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2016-05-11" who="SJD">Added writing and condtion control vocab, added name tags and punctuation to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -123,72 +125,17 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/>
-               <expan>
-                  <abbr>L</abbr><ex>ucius</ex>
-               </expan> Racilius <expan>
-                  <abbr>L</abbr><ex>ucii</ex>
-               </expan> 
-               <expan>
-                  <abbr>
-                     <unclear>f</unclear>
-                  </abbr><ex>ilius</ex>
-               </expan>
-                <lb n="3"/>
-               <expan>
-                  <abbr>Vel</abbr><ex>ina tribu</ex>
-               </expan> Ampliatus
-                <lb n="4"/>
-               <expan>
-                  <abbr>Picen</abbr><ex>o</ex>
-               </expan> 
-               <expan>
-                  <abbr>mil</abbr><ex>es</ex>
-               </expan> 
-               <expan>
-                  <abbr>coh</abbr><ex>ortis</ex>
-               </expan> 
-               <num xml:lang="lat" value="3">
-                  <hi rend="supraline">III</hi>
-               </num>III
-                <lb n="5"/>
-               <expan>
-                  <abbr>vig</abbr><ex>ilum</ex>
-               </expan> 
-               <g type="centuria"/> Marci
-                <lb n="6"/>Masculi <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> 
-               <num xml:lang="lat" value="25">XXV</num>
-                <lb n="7"/>
-               <expan>
-                  <abbr>mil</abbr><ex>itavit</ex>
-               </expan> 
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-               </expan> 
-               <num xml:lang="lat" value="3">III</num> 
-               <expan>
-                  <abbr>d</abbr><ex>iebus</ex>
-               </expan> 
-               <num xml:lang="lat" value="25">XXV</num>
-                <lb n="8"/>Fulvius Augendus
-                <lb n="9"/>
-               <expan>
-                  <abbr>commanipul</abbr><ex>ari</ex>
-               </expan>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Racilius">Racilius</name> <persName><name type="praeomen" key="Lucius"><expan><abbr>L</abbr><ex>ucii</ex></expan></name></persName> <expan><abbr><unclear>f</unclear></abbr><ex>ilius</ex></expan>
+                <lb n="3"/><expan><abbr>Vel</abbr><ex>ina tribu</ex></expan> <name type="cognomen" key="Ampliatus">Ampliatus</name></persName>
+                <lb n="4"/><placeName key="Picenum" ref="http://pleiades.stoa.org/places/413253"><expan><abbr>Picen</abbr><ex>o</ex></expan></placeName>, <expan><abbr>mil</abbr><ex>es</ex></expan> <expan><abbr>coh</abbr><ex>ortis</ex></expan> <num xml:lang="lat" value="3" type="ordinal"><hi rend="supraline">III</hi></num>,
+                <lb n="5"/><expan><abbr>vig</abbr><ex>ilum</ex></expan> <g type="centuria"/> <persName><name type="praenomen" key="Marcus">Marci</name>
+                <lb n="6"/><name type="cognomen" key="Masculus">Masculi</name></persName>. <expan><abbr>Vix</abbr><ex>it</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num xml:lang="lat" value="25">XXV</num>,
+                <lb n="7"/><expan><abbr>mil</abbr><ex>itavit</ex></expan> <expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="lat" value="3">III</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num xml:lang="lat" value="25">XXV</num>.
+                <lb n="8"/><persName><name type="gentilicium" key="Fulvius">Fulvius</name> <name type="cognomen" key="Augendus">Augendus</name></persName>
+                <lb n="9"/><expan><abbr>commanipul</abbr><ex>ari</ex></expan>
                 <lb n="10"/>suo bene merenti
-                <lb n="11"/>posuit
+                <lb n="11"/>posuit.
             </ab>
             </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 

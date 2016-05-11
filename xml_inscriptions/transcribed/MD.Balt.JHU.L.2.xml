@@ -48,7 +48,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p> partially reconstituted from seventeen pieces (acc. to Wilson); stone is legible, though surface is defaced by numerous repaired break lines</p>
+                        <condition ana="#fragments.contig"><!--Add ana attribute with controlled value for condition-->
+                           <p> partially reconstituted from seventeen pieces (acc. to Wilson); stone is legible, though surface is defaced by numerous repaired break lines</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +60,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -77,7 +78,7 @@
                         </summary>
                   <origin>
                      <date notBefore="0100" notAfter="0150">early second century CE</date>
-                     <placeName ref="europe.italy.rome"/>
+                     <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -98,6 +99,9 @@
                         <ptr type="rest-of-bibl" target="#AJP_Wilson2.1"/>
                         <biblScope unit="item">64-66, no. 2</biblScope>
                     </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR108853">EDR108853</ref>
+               </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
                      
                 </listBibl>
@@ -114,6 +118,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when ="2012-06-29" who="SJD">ms item class corrected</change>
+         <change when="2016-05-11" who="SJD">Added control vocab for writing, condition; added EDR link to bibl; added free text for placeName; corrected transcription to reflect readings of previous editors, added name tagging</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -128,59 +133,14 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>M</abbr><ex>arcus</ex>
-               </expan> Ulpiu<unclear>s</unclear> 
-               <expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan> 
-               <expan>
-                  <abbr>li<unclear>b</unclear>
-                  </abbr><ex>ertus</ex>
-               </expan> Apo<app type="previouslyread">
-                  <lem resp="previous">laustus</lem>
-                  <rdg resp="autopsy">
-                     <gap reason="lost" quantity="7" unit="character"/>
-                  </rdg>
-               </app>
-                    <lb n="2"/>max<unclear>im</unclear>us pantom<supplied reason="lost">
-                  <app type="previouslyread">
-                     <lem resp="previous">imorum</lem>
-                     <rdg resp="autopsy">
-                        <gap reason="lost" quantity="6" unit="character"/>
-                     </rdg>
-                  </app>
-               </supplied>
-                    <lb n="3"/>coronatus adversus h<unclear>i</unclear>
-               <supplied reason="lost">
-                  <app type="previouslyread">
-                     <lem resp="previous">striones</lem>
-                     <rdg resp="autopsy">
-                        <gap reason="lost" quantity="8" unit="character"/>
-                     </rdg>
-                  </app>
-               </supplied>
-                    <lb n="4"/>et omnes scaen<supplied reason="lost">
-                  <app type="previouslyread">
-                     <lem resp="previous">icos</lem>
-                     <rdg resp="autopsy">
-                        <gap reason="lost" quantity="4" unit="character"/>
-                     </rdg>
-                  </app>
-               </supplied>
-                    <lb n="5"/>artifices<supplied reason="lost">
-                  <app type="previouslyread">
-                     <lem resp="previous">
-                        <num xml:lang="lat" value="12">XII</num>
-                     </lem>
-                     <rdg resp="autopsy">
-                        <gap reason="lost" quantity="3" unit="char"/>
-                     </rdg>
-                  </app>
-               </supplied>
+                   <lb n="1"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Ulpius">Ulpiu<unclear>s</unclear></name> <persName><name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> <expan><abbr>li<unclear>b</unclear></abbr><ex>ertus</ex></expan> <name type="cognomen" key="Apolaustus"><supplied reason="undefined" evidence="previouseditor">Apolaustus</supplied></name></persName>,
+                    <lb n="2"/>max<unclear>im</unclear>us pantom<supplied reason="undefined" evidence="previouseditor">imorum</supplied>,
+                    <lb n="3"/>coronatus adversus hi<supplied reason="undefined" evidence="previouseditor">striones</supplied>,
+                    <lb n="4"/>et omnes scaen<supplied reason="undefined" evidence="previouseditor">icos</supplied>
+                    <lb n="5"/>artifices<supplied reason="undefined" evidence="previouseditor"><num xml:lang="lat" value="12">XII</num></supplied>.
                 </ab>
-         </div>                              <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            </div>                              
+           <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
          </body>
     </text>
