@@ -46,7 +46,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragments.contig"><!--Add ana attribute with controlled value for condition-->
+                           <p>two reconstituted fragments, broken roughly diagonally in the middle; far left and right edges broken</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,8 +58,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -108,6 +109,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2016-05-12" who="SJD">Added writing and condition control vocab, added name tagging to transcription, added gap in line 1, changed case of vilicus in line 2</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -123,23 +125,11 @@
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>Prisci Caes<unclear>i</unclear>
-                    <lb n="2"/>
-               <expan>
-                  <abbr>vilic</abbr><ex>i</ex>
-               </expan> 
-               <expan>
-                  <abbr>v</abbr><ex>ixit</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> 
-               <num xml:lang="lat" value="32">XXXII</num>
-                    <lb n="3"/>
-               <supplied reason="lost">P</supplied>rimigenia
-                    <lb n="4"/>
-               <supplied reason="lost">co</supplied>ntubernali
-                    <lb n="5"/>suo
+                   <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><persName><name type="cognomen" key="Priscus">Prisci</name> <name type="gentilicium" key="Caesius">Caes<unclear>i</unclear></name></persName>
+                   <lb n="2"/><expan><abbr>vilic</abbr><ex>us</ex></expan> <expan><abbr>v</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num xml:lang="lat" value="32">XXXII</num>.
+                   <lb n="3"/><persName><name type="slaveName" key="Primigenia"><supplied reason="lost">P</supplied>rimigenia</name></persName> 
+                   <lb n="4"/><supplied reason="lost">co</supplied>ntubernali
+                    <lb n="5"/>suo.
                 </ab>
                 </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 

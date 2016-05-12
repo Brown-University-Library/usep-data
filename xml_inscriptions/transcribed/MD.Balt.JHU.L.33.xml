@@ -46,7 +46,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition-->
+                            <p>broken at right; some chipping in molding along top edge</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,8 +58,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -76,8 +77,7 @@
                         </summary>
                   <origin>
                      <date notBefore="0001" notAfter="0100">first century CE</date>
-                     <placeName ref="europe.italy.rome">   	Porta Salaria?, Rome, Italy
-                                </placeName>
+                     <placeName ref="europe.italy.rome">Porta Salaria(?), Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -92,11 +92,9 @@
                     </bibl>
                
                   <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144288">EDR144288</ref>
-</bibl>
+                     <bibl>
+                         <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144288">EDR144288</ref>
+                     </bibl>
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -110,6 +108,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+          <change when="2016-05-12" who="SJD">Added control vocab for writing and condition, added name tagging to transcription, added missing hi elements to lines 2 and 3, added gap in line 3</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -125,15 +124,10 @@
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>Sext</abbr><ex>us</ex>
-               </expan> 
-               <hi rend="tall">T</hi>e<hi rend="tall">i</hi>di<unclear>u</unclear>
-               <supplied reason="lost">s</supplied>
-                    <lb n="2"/>ante<gap reason="lost" quantity="3" unit="character" cert="low"/>
-                    <lb n="3"/>Teidia Sex<supplied reason="lost">ti</supplied>
-                    <lb n="4"/>opstetri<supplied reason="lost">x</supplied>
+                    <lb n="1"/><persName><name type="praenomen" key="Sextus"><expan><abbr>Sex</abbr><ex>tus</ex></expan></name> <name type="gentilicium" key="Teidius"><hi rend="tall">T</hi>e<hi rend="tall">i</hi>di<unclear>u</unclear><supplied reason="lost">s</supplied></name> <supplied reason="lost"><persName><name type="praenomen" key="Sextus"><expan><abbr>Sex</abbr><ex>ti</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan></supplied>
+                    <lb n="2"/><name type="cognomen" key="Anteros"><hi rend="apex">A</hi>nte<supplied reason="lost" cert="low">ros</supplied></name></persName>. 
+                    <lb n="3"/><persName><name type="gentilicium" key="Teidia"><hi rend="tall">T</hi>e<hi rend="tall">i</hi>di<hi rend="apex">a</hi></name></persName> <persName><name type="praenomen" key="Sextus"><expan><abbr>Sex</abbr><ex>ti</ex></expan></name></persName> <supplied reason="lost"><expan><abbr>l</abbr><ex>iberta</ex></expan></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/>opstetri<supplied reason="lost">x</supplied>.
                 </ab>
             </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
