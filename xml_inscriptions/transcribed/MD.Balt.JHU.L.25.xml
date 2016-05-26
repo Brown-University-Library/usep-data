@@ -46,7 +46,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>top-left corner of molding missing</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,8 +58,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -103,6 +104,9 @@
                     <bibl>
                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072361">EDR072361</ref>
                     </bibl>
+                  <bibl>
+                     <ref type="external" target="http://archaeologicalmuseum.jhu.edu/the-collection/object-stories/latin-funerary-inscriptions/epitaphs-for-men/tiberius-claudius/">Johns Hopkins Museum Website</ref>
+                  </bibl>
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -118,6 +122,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2014-10-13" who="SJD">Fixed EDH/EDR links and bibl entries</change>
          <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2016-05-11" who="SJD">Added writing and condition vocab, added name tagging to transcription and indicated handShift, added link to JHU website</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -132,65 +137,17 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>v</abbr><ex>ivo</ex>
-               </expan> 
-               <expan>
-                  <abbr>Ti</abbr><ex>berio</ex>
-               </expan> Claudio <expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan> 
-               <expan>
-                  <abbr>l</abbr><ex>iberto</ex>
-               </expan> Euno
-                    <lb n="2"/>Neronis <expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan> cunario
-                    <lb n="3"/>
-               <expan>
-                  <abbr>v</abbr><ex>ivo</ex>
-               </expan> 
-               <expan>
-                  <abbr>Ti</abbr><ex>berio</ex>
-               </expan> Iulio <expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan> 
-               <expan>
-                  <abbr>l</abbr><ex>iberto</ex>
-               </expan> Secundo
-                    <lb n="4"/>medico auriculario
-                    <lb n="5"/>
-               <expan>
-                  <abbr>v</abbr><ex>ivae</ex>
-               </expan> Claudiae <expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan> 
-               <expan>
-                  <abbr>l</abbr><ex>ibertae</ex>
-               </expan> Cedne mammae
-                    <lb n="6"/>Claudiae Hermione vernae suae
-                    <lb n="7"/>
-               <expan>
-                  <abbr>v</abbr><ex>ivus</ex>
-               </expan> 
-               <expan>
-                  <abbr>Ti</abbr><ex>berius</ex>
-               </expan> Iulius Eunus <expan>
-                  <abbr>Ti</abbr><ex>berius</ex>
-               </expan> Claudius
-                    <lb n="8"/>
-               <expan>
-                  <abbr>v</abbr><ex>ivus</ex>
-               </expan> Deuter fecerunt parentibus suis
-                    <lb n="9"/>
-               <expan>
-                  <abbr>v</abbr><ex>ivo</ex>
-               </expan> 
-               <expan>
-                  <abbr>Ti</abbr><ex>berio</ex>
-               </expan> Claudio Felici vernae suo
-                    <lb n="10"/>libertis libertabusque posteris <space extent="3" unit="character"/> suis
+                   <lb n="1"/><expan><abbr>V</abbr><ex>ivo</ex></expan> <persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berio</ex></expan></name> <name type="gentilicium" key="Claudius">Claudio</name> <persName><name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName>   <expan><abbr>l</abbr><ex>iberto</ex></expan> <name type="cognomen" key="Eunus">Euno</name></persName>,
+                   <lb n="2"/><persName><name type="cognomen" key="Nero">Neronis</name> <name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> cunario.
+                   <lb n="3"/> <expan><abbr>V</abbr><ex>ivo</ex></expan> <persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berio</ex></expan></name> <name type="gentilicium" key="Iulius">Iulio</name>  <persName><name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberto</ex></expan> <name type="cognomen" key="Secundus">Secundo</name></persName>,
+                   <lb n="4"/>medico auriculario.
+                   <lb n="5"/><expan><abbr>V</abbr><ex>ivae</ex></expan> <persName><name type="gentilicium" key="Claudia">Claudiae</name> <persName><name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName>  <expan><abbr>l</abbr><ex>ibertae</ex></expan> <name type="cognomen" key="Cedne">Cedne</name></persName> mammae.
+                   <lb n="6"/><persName><name type="gentilicium" key="Claudia">Claudiae</name> <name type="cognomen" key="Hermione">Hermione</name></persName>  vernae suae.
+                   <lb n="7"/><expan><abbr>V</abbr><ex>ivus</ex></expan> <persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berius</ex></expan></name> <name type="gentilicium" key="Iulius">Iulius</name> <name type="cognomen" key="Eunus">Eunus</name></persName>, <persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berius</ex></expan></name> <name type="gentilicium" key="Claudius">Claudius</name> 
+                   <lb n="8"/><expan><abbr>v</abbr><ex>ivus</ex></expan> <name type="cognomen" key="Deuter">Deuter</name></persName> fecerunt parentibus suis.
+                   <lb n="9"/><handShift/><expan><abbr>V</abbr><ex>ivo</ex></expan> <persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berio</ex></expan></name> <name type="gentilicium" key="Claudius">Claudio</name> <name type="cognomen" key="Felix">Felici</name></persName> vernae suo.
+                   <lb/><space unit="line" extent="4"/>
+                   <lb n="10"/>Libertis libertabusque posteris <space extent="3" unit="character"/> suis.
                 </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->

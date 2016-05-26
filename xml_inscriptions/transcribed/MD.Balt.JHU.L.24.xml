@@ -46,7 +46,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>roughly broken off laterally projecting corners at top right and bottom left</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>roughly broken off laterally projecting corners at top right and bottom left</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,8 +58,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -118,6 +119,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2014-10-13" who="SJD">Fixed EDH/EDR links and bibl entries</change>
          <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2016-05-11" who="SJD">Added control vocab for condition and writing, added name tagging to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -132,46 +134,15 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <g type="ascia"/> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                    <lb n="2"/>Attiae Epagatho filiae
-                    <lb n="3"/>dulcissimae quae vixit
-                    <lb n="4"/>
-               <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan> 
-               <num xml:lang="lat" value="3">III</num> 
-               <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> 
-               <num xml:lang="lat" value="8">VIII</num> 
-               <expan>
-                  <abbr>d</abbr><ex>iebus</ex>
-               </expan> 
-               <num xml:lang="lat" value="4">IIII</num> 
-               <expan>
-                  <abbr>fec</abbr><ex>it</ex>
-               </expan>
-                    <lb n="5"/>Epagathus servus <expan>
-                  <abbr>public</abbr><ex>us</ex>
-               </expan>
-                    <lb n="6"/>ad <supplied reason="subaudible">aedem</supplied>
-               <expan>
-                  <abbr>Iuturna</abbr><ex>e</ex>
-               </expan> et Attiae Feli
-                    <lb n="7" break="no"/>citati coniugi bene <expan>
-                  <abbr>meren</abbr><ex>ti</ex>
-               </expan>
-                    <lb n="8"/>et sibi et suis <expan>
-                  <abbr>posterisq</abbr><ex>ue</ex>
-               </expan>
-                    <lb n="9"/>eorum
+                   <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="ascia"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                   <lb n="2"/><persName><name type="gentilicium" key="Attia">Attiae</name> <name type="cognomen" key="Epagatho"><expan><abbr>Epagatho</abbr><ex>ni</ex></expan></name></persName> filiae
+                   <lb n="3"/>dulcissimae quae vixit
+                   <lb n="4"/><expan><abbr>ann</abbr><ex>is</ex></expan> <num xml:lang="lat" value="3">III</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num xml:lang="lat" value="8">VIII</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num xml:lang="lat" value="4">IIII</num> <expan><abbr>fec</abbr><ex>it</ex></expan>
+                   <lb n="5"/><persName><name type="slaveName" key="Epagathus">Epagathus</name></persName> servus <expan><abbr>public</abbr><ex>us</ex></expan>
+                   <lb n="6"/>ad <supplied reason="subaudible">aedem</supplied> <persName><name type="divinity" key="Iuturna"><expan><abbr>Iuturna</abbr><ex>e</ex></expan></name></persName>, et <persName><name type="gentilicium" key="Attia">Attiae</name> <name type="cognomen" key="Felicitas">Feli
+                   <lb n="7" break="no"/>citati</name></persName> coniugi bene <expan><abbr>meren</abbr><ex>ti</ex></expan>,
+                   <lb n="8"/>et sibi et suis <expan><abbr>posterisq</abbr><ex>ue</ex></expan>
+                   <lb n="9"/>eorum.
                 </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->

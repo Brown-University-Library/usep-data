@@ -46,7 +46,7 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,8 +57,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
@@ -118,6 +118,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2014-10-13" who="SJD">Fixed EDH/EDR links and bibl entries</change>
          <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2016-05-11" who="SJD">Added vocab for writing and condition, added name tagging to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -136,31 +137,15 @@
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <g type="hederadistinguens"/> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                    <lb n="2"/>
-               <expan>
-                  <abbr>C</abbr><ex>aio</ex>
-               </expan> Comisio Successo 
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="hederadistinguens"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                    <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Comisius">Comisio</name> <name type="cognomen" key="Successus">Successo</name></persName>,   
                     <lb n="3"/>negotianti porto
-                    <lb n="4"/>vinario lagonari 
-                    <lb n="5"/>Comisia Fecunda 
+                    <lb n="4"/>vinario lagonari.
+                    <lb n="5"/><persName><name type="gentilicium" key="Comisia">Comisia</name> <name type="cognomen" key="Fecunda">Fecunda</name></persName>  
                     <lb n="6"/>coniugi et conliber
-                    <lb n="7" break="no"/>to <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <g type="hederadistinguens"/> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> fecit
-                    <lb n="8"/> et sibi posterisque 
-                    <lb n="9"/>suorum
+                    <lb n="7" break="no"/>to <expan><abbr>b</abbr><ex>ene</ex></expan> <g type="hederadistinguens"/> <expan><abbr>m</abbr><ex>erenti</ex></expan> fecit
+                    <lb n="8"/>et sibi posterisque 
+                    <lb n="9"/>suorum.
                 </ab>
            </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 

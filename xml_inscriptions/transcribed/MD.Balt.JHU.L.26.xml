@@ -46,7 +46,7 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,8 +57,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -76,7 +76,7 @@
                         </summary>
                   <origin>
                      <date notBefore="0001" notAfter="0200">first-second century CE</date>
-                     <placeName ref="europe.italy.rome">orta Salaria, Rome, Italy</placeName>
+                     <placeName ref="europe.italy.rome">Porta Salaria, Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -119,8 +119,9 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
-          <change when="2014-10-13" who="SJD">Fixed EDH/EDR links and bibl entries</change>
-          <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2014-10-13" who="SJD">Fixed EDH/EDR links and bibl entries</change>
+         <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2016-05-11" who="SJD">Added vocab for condition and writing, added name tagging to transcription, fixed typo in placeName</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -136,18 +137,11 @@
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>Tigruti Caes<unclear>a</unclear>
-                    <lb n="2" break="no"/>ris unctori
-                    <lb n="3"/>
-               <expan>
-                  <abbr>v</abbr><ex>ixit</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr>a<ex>nnis</ex>
-               </expan> 
-               <num xml:lang="lat" value="30">XXX</num>
-                    <lb n="4"/>Claudia Soter<hi rend="tall">i</hi>s
-                    <lb n="5"/>bene merenti
+                    <lb n="1"/><persName><name type="slaveName" key="Tigrus">Tigruti</name></persName> <persName><name type="cognomen" key="Caesar">Caes<unclear>a</unclear>
+                    <lb n="2" break="no"/>ris</name></persName> unctori.
+                    <lb n="3"/><expan><abbr>V</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr>a<ex>nnis</ex></expan> <num xml:lang="lat" value="30">XXX</num>.
+                    <lb n="4"/><persName><name type="gentilicium" key="Claudia">Claudia</name> <name type="cognomen" evidence="Soteris">Soter<hi rend="tall">i</hi>s</name></persName> 
+                    <lb n="5"/>bene merenti.
                 </ab> 
             </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 

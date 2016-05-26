@@ -32,7 +32,7 @@
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                      <p>epitaph of two wardrobe attendants of Cestilius Pinus, Ephyre Cestiliae (serva) and Cestilia Chreste</p>
+                      <p>Epitaph of two wardrobe attendants of Cestilius Pinus, Ephyre Cestiliae (serva) and Cestilia Chreste</p>
                   </msItem>
                </msContents>
                <physDesc>
@@ -46,7 +46,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                            <p>three reconstituted fragments; some damage to margin on right edge</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -57,8 +58,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -119,6 +120,7 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
           <change when="2015-08-17" who="SJD">Updated EDR links</change>
+          <change when="2016-05-12" who="SJD">Added control vocab for condition, writing; added texts parts to transcription to reflect columns; added name tagging to transcription; changed lib(erta) to lib(erti) in line 2 and 9; added lg and l elements around verse portion of epitaph in col 1</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -133,31 +135,23 @@
         <body>
             <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>Ephyre Cestiliaes
-                    <lb n="2"/>vestispica Pini <expan>
-                  <abbr>lib</abbr><ex>erta</ex>
-               </expan> 
-                    <lb n="3"/>nondum bis denos annus compleverat annos 
-                    <lb n="4"/>tristia praetulerunt cum mihi fata necem 
-                    <lb n="5"/>discit<choice>
-                  <sic>i</sic>
-                  <corr>e</corr>
-               </choice> mortales in spem non vivere longam 
-                    <lb n="6"/>
-               <hi rend="apex">u</hi>ti quod volu<hi rend="tall"/>
-               <hi rend="ligature">it</hi> tempore tempus abet
-                    <lb n="7"/>Cestilia <g type="mulieris"/> 
-               <expan>
-                  <abbr>l</abbr><ex>iberta</ex>
-               </expan> Chreste 
-                    <lb n="8"/>vestispica Pini 
-                    <lb n="9"/>
-               <expan>
-                  <abbr>lib</abbr><ex>erta</ex>
-               </expan>
-                </ab>
-                
+                <div type="textpart" subtype="column" n="1">
+                    <ab>
+                        <lb n="1"/><persName><name type="slaveName" key="Ephyre">Ephyre</name></persName> <persName><name type="gentilicium" key="Cestilia">Cestiliaes</name></persName>,
+                        <lb n="2"/>vestispica <persName><name type="cognomen" key="Pinus">Pini</name></persName> <expan><abbr>lib</abbr><ex>erti</ex></expan>.
+                        <lg met="elegiac_couplets"><l><lb n="3"/>Nondum bis denos annus compleverat annos</l> 
+                        <l><lb n="4"/>tristia praetulerunt cum mihi fata necem.</l>
+                        <l><lb n="5"/>Discit<choice><sic>i</sic><corr>e</corr></choice> mortales in spem non vivere longam</l>                   
+                        <l><lb n="6"/><hi rend="apex">u</hi>ti quod volu<hi rend="tall"/><hi rend="ligature">it</hi> tempore tempus abet.</l></lg>
+                    </ab>
+                </div>
+                <div type="textpart" subtype="column" n="2">
+                    <ab>
+                        <lb n="7"/><persName><name type="gentilicium" key="Cestilia">Cestilia</name> <g type="mulieris"/> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Chreste">Chreste</name></persName>, 
+                        <lb n="8"/>vestispica <persName><name type="cognomen" key="Pinus">Pini</name></persName> 
+                        <lb n="9"/><expan><abbr><hi rend="tall">l</hi>ib</abbr><ex>i</ex></expan>.
+                    </ab>
+                </div>
             </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
          </body>

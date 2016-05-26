@@ -48,7 +48,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition-->
+                           <p>broken at right</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +60,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -123,6 +124,7 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2014-10-13" who="SJD">Fixed EDH/EDR links and bibl entries</change>
          <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2016-05-10" who="SJD">Added condition and writing vocab, added name tagging, added hi attributes to transcription; fixed punctuation and corrected supplied elements of transcription to undefined</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -168,14 +170,14 @@
             <div type="edition">
                     <ab>
                <lb n="1"/>
-               <expan>
+               <persName><name type="praenomen" key="Caius"><expan>
                   <abbr>C</abbr><ex>aius</ex>
-               </expan> Allius <expan>
+               </expan></name> <name type="gentilicium" key="Allius">Allius</name> <persName><name type="praenomen" key="Caius"><expan>
                   <abbr>C</abbr><ex>aii</ex>
-               </expan> 
+               </expan></name></persName>
                <expan>
                   <abbr>l</abbr><ex>ibertus</ex>
-               </expan> Niger <supplied reason="lost">
+               </expan> <name type="cognomen" key="Niger">Niger</name></persName>, <supplied reason="undefined" evidence="previouseditor">
                   <expan>
                      <abbr>scrib</abbr><ex>a</ex>
                   </expan> 
@@ -191,111 +193,111 @@
                </expan> 
                <expan>
                   <abbr>quaestor</abbr><ex>ius</ex>
-               </expan> 
+               </expan>,
                <expan>
                   <abbr>decur</abbr><ex>ialis</ex>
                </expan> 
-               <supplied reason="lost">
+               <supplied reason="undefined" evidence="previouseditor">
                   <num xml:lang="la" value="2">
                      <hi rend="supraline">II</hi>
-                  </num> honore usus sibi</supplied>
-                        <lb n="3"/>et Helviae <g type="mulieris"/> 
+                  </num>, honore usus, sibi</supplied>
+                        <lb n="3"/>e<hi rend="tall">t</hi> <persName><name type="gentilicium" key="Helvia">Helviae</name> <g type="mulieris"/> 
                <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
-               </expan> Asterioni uxori qu<unclear>a</unclear> 
-               <supplied reason="lost">ae secum vixsit</supplied>
-                        <lb n="4"/>annis <num xml:lang="la" value="42">XXXXII</num> suisque omnibus pos<unclear>t</unclear> 
-               <supplied reason="lost">erisque eorum</supplied>
-                        <lb n="5"/>Avidiae <expan>
+               </expan> <name type="cognomen" key="Asterio">As<hi rend="small">t</hi>erioni</name></persName> uxori qu<unclear>a</unclear> 
+               <supplied reason="undefined" evidence="previouseditor">ae secum v<hi rend="tall">i</hi>xit</supplied>
+                        <lb n="4"/>ann<hi rend="tall">i</hi>s <num xml:lang="la" value="42">XXXXII</num>, su<hi rend="tall">i</hi>sque omnibus pos<unclear>t</unclear> 
+               <supplied reason="undefined" evidence="previouseditor">er<hi rend="tall">i</hi>sque eorum</supplied>.
+                        <lb n="5"/><persName><name type="gentilicium" key="Avidia"><hi rend="apex">A</hi>vidiae</name> <persName><name type="praenomen" key="Sextus"><expan>
                   <abbr>Sex</abbr><ex>ti</ex>
-               </expan> 
+               </expan></name></persName> 
                <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
-               </expan> Primae uxori et <expan>
+               </expan> <name type="cognomen" key="Prima">Primae</name></persName> uxori, et <persName><name type="praenomen" key="Caius"><expan>
                   <abbr>C</abbr><ex>aio</ex>
-               </expan> Allio <expan>
+               </expan></name> <name type="gentilicium" key="Allius">Allio</name> <persName><name type="praenomen" key="Caius"><expan>
                   <abbr>C</abbr><ex>aii</ex>
-               </expan> 
+               </expan></name></persName>
                <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan> P<unclear>h</unclear>
-               <supplied reason="lost">ilonico patri</supplied>
-                        <lb n="6"/> Patrono et Alliae <expan>
+               </expan> <name type="cognomen" key="Philonicus">P<unclear>h</unclear>
+               <supplied reason="undefined" evidence="previouseditor">ilonico</supplied></name></persName> <supplied reason="undefined" evidence="previouseditor">patri</supplied>,
+                        <lb n="6"/><g type="theta_nigrum"/> patrono, et <persName><name type="gentilicium" key="Allia">Alliae</name> <persName><name type="praenomen" key="Caius"><expan>
                   <abbr>C</abbr><ex>aii</ex>
-               </expan> 
+               </expan></name></persName>
                <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
-               </expan> Nysae matri alli N<unclear>i</unclear>
-               <supplied reason="lost">igri</supplied>
-                        <lb n="7"/>Salvidiae <expan>
+               </expan> <name type="cognomen" key="Nysa">N<hi rend="tall">y</hi>sae</name></persName>, matri <persName><name type="gentilicium" key="Allius">Alli</name> <name type="cognomen" key="Niger">N<unclear>i</unclear>
+               <supplied reason="undefined" evidence="previouseditor">igri</supplied></name></persName>.
+                        <lb n="7"/><persName><name type="gentilicium" key="Salvidia">Salvidiae</name> <persName><name type="praenomen" key="Titus"><expan>
                   <abbr>T</abbr><ex>iti</ex>
-               </expan> 
+               </expan></name></persName>
                <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
-               </expan> Charmosynae socrui matri Helviae As<supplied reason="lost">terionis</supplied>
+               </expan> <name type="cognomen" key="Charmosyna">Charmos<hi rend="tall">y</hi>nae</name></persName> socrui matri <persName><name type="gentilicium" key="Helvia">Helviae</name> <name type="cognomen" key="Asterio">As<supplied reason="undefined" evidence="previouseditor">terionis</supplied></name></persName>,
                         <lb n="8"/>
-               <expan>
+               <persName><name type="praenomen" key="Caius"><expan>
                   <abbr>C</abbr><ex>aio</ex>
-               </expan> Allio <expan>
+               </expan></name> <name type="gentilicium" key="Allius">Allio</name> <persName><name type="praenomen" key="Caius"><expan>
                   <abbr>C</abbr><ex>aii</ex>
-               </expan> 
+               </expan></name></persName>  
                <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan> Hermogeni fratri <supplied reason="lost">Natali <expan>
+               </expan> <name type="cognomen" key="Hermogenes">Hermogeni</name></persName> fratri; <supplied reason="undefined" evidence="previouseditor"><g type="theta_nigrum"/> <persName><name type="cognomen" key="Natalis">Natali</name></persName> <expan>
                      <abbr>l</abbr><ex>iberto</ex>
                   </expan>
-               </supplied>s
+               </supplied>;
                         <lb n="9"/>
-               <expan>
+               <persName><name type="praenomen" key="Titus"><expan>
                   <abbr>T</abbr><ex>ito</ex>
-               </expan> Salvidio <expan>
+               </expan></name> <name type="gentilicium" key="Salvidius">Salvidio</name> <persName><name type="praenomen" key="Titus"><expan>
                   <abbr>T</abbr><ex>iti</ex>
-               </expan> 
+               </expan> </name></persName>
                <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan> Gallo fratri Helviae Asterionis <supplied reason="lost">Phyllidi <expan>
+               </expan> <name type="cognomen" key="Gallus">Gallo</name></persName>  fratri <persName><name type="gentilicium" key="Helvia">Helviae</name> <name type="cognomen" key="Asterio">Asterionis</name></persName>; <supplied reason="undefined" evidence="previouseditor"><g type="theta_nigrum"/> <persName><name type="cognomen" key="Phyllis">Phyllidi</name></persName> <expan>
                      <abbr>l</abbr><ex>ibertae</ex>
                   </expan>
-               </supplied>
-                        <lb n="10"/>Cinciae <expan>
+               </supplied>;
+                        <lb n="10"/><persName><name type="cognomen" key="Cincia">Cinciae</name></persName> <persName><name type="praenomen" key="Lucius"><expan>
                   <abbr>L</abbr><ex>ucii</ex>
-               </expan> 
+               </expan> </name></persName>
                <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
-               </expan> Calliopae uxori Galli bene meritae ab<supplied reason="lost">se</supplied>
-                        <lb n="11"/>Nicephoro <expan>
+               </expan>; <persName><name type="cognomen" key="Calliopa">Calliopae</name></persName> uxori <persName><name type="cognomen" key="Gallus">Galli</name></persName> bene meritae <hi rend="apex">a</hi>b <supplied reason="undefined" evidence="previouseditor">s<hi rend="apex">e</hi></supplied>.
+                        <lb n="11"/><persName><name type="cognomen" key="Nicephorus">Nicephoro</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan>
-                        <lb n="12"/>Leuceni <expan>
+               </expan>.
+                        <lb n="12"/><persName><name type="cognomen" key="Leuce">Leuceni</name></persName> <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
-               </expan>
-                        <lb n="13"/>Amiantho <expan>
+               </expan>.
+                        <lb n="13"/><persName><name type="cognomen" key="Amianthus">Amiantho</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
                </expan>
-                        <lb n="14"/>Tycheni <expan>
+                       <lb n="14"/><persName><name type="cognomen" key="Tyche">Tycheni</name></persName> <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
-               </expan>
-                        <lb n="15"/>Heroini <expan>
+               </expan>.
+                       <lb n="15"/><persName><name type="cognomen" key="Hero">Heroini</name></persName> <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
-               </expan>
-                        <lb n="16"/>Amphioni <expan>
+               </expan>.
+                       <lb n="16"/><persName><name type="cognomen" key="Amphio">Amphioni</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan>
-                        <lb n="17"/>Rufo <expan>
+               </expan>.
+                       <lb n="17"/><persName><name type="cognomen" key="Rufus">Rufo</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan>
-                        <lb n="18"/>Phileroti <expan>
+               </expan>.
+                       <lb n="18"/><persName><name type="cognomen" key="Phileros">Phileroti</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan>
-                        <lb n="19"/>Habili <expan>
+               </expan>.
+                       <lb n="19"/><persName><name type="cognomen" key="Habilis">Habili</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan>
-                        <lb n="20"/>Primo <expan>
+               </expan>.
+                       <lb n="20"/><persName><name type="cognomen" key="Primus">Primo</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan>
-                        <lb n="21"/>Thalasso <expan>
+               </expan>.
+                       <lb n="21"/><persName><name type="cognomen" key="Thalassus">Thalasso</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
-               </expan> 
+               </expan>.
             </ab>
         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 

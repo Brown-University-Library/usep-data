@@ -48,7 +48,8 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>lower right corner missing; faint horizontal guidelines visible; verticle guideline visible at left margin</p>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>lower right corner missing; faint horizontal guidelines visible; verticle guideline visible at left margin</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,8 +60,8 @@
                                 </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -101,6 +102,7 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2016-05-10" who="SJD">Added writing and condition control vocab, added name tagging to transcription, added punctuation and other small corrections to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -115,48 +117,12 @@
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                    <lb n="2"/>
-               <expan>
-                  <abbr>T</abbr><ex>iti</ex>
-               </expan> 
-               <expan>
-                  <abbr>Claudi</abbr><ex>i</ex>
-               </expan>
-                    <lb n="3"/>Arriani <expan>
-                  <abbr>veter</abbr><ex>ani</ex>
-               </expan>
-                    <lb n="4"/>
-               <expan>
-                  <abbr>
-                     <hi rend="ligature">cl</hi>
-                  </abbr><ex>assis</ex>
-               </expan> pr<supplied reason="omitted">a</supplied>
-               <expan>
-                  <abbr>et</abbr><ex>oriae</ex>
-               </expan> 
-               <expan>
-                  <abbr>Missen</abbr><ex>atium</ex>
-               </expan>
-                    <lb n="5"/>Cincia Eutyc<choice>
-                  <sic>h</sic>
-                  <corr>H</corr>
-               </choice>ia 
-                    <lb n="6"/>co<supplied reason="omitted">n</supplied>iugi <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ecit</ex>
-               </expan>
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                    <lb n="2"/><persName><name type="praenomen" key="Titus"><expan><abbr>T</abbr><ex>iti</ex></expan></name> <name type="gentilicium" key="Claudius">Claudi</name>
+                    <lb n="3"/><name type="cognomen" key="Arrianus">Arriani</name></persName>, <expan><abbr>veter</abbr><ex>ani</ex></expan>
+                    <lb n="4"/><expan><abbr><hi rend="ligature">cl</hi></abbr><ex>assis</ex></expan> <expan>pr<supplied reason="omitted">a</supplied><abbr>et</abbr><ex>oriae</ex></expan> <expan><abbr>Missen</abbr><ex>atium</ex></expan>.
+                    <lb n="5"/><persName><name type="gentilicium" key="Cincia">Cincia</name> <name type="cognomen" key="Eutychia">Eutychia</name></persName> 
+                    <lb n="6"/><expan><abbr>co</abbr><ex>n</ex><abbr>iugi</abbr></expan> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
                 </ab>
              </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
