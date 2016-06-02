@@ -33,19 +33,14 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Broken marble slab</p>
-                           
-                           <seg type="material">Gray marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="m">
+                           <p>Broken <seg type="material">gray marble</seg> slab</p>
+                           <dimensions type="surface" unit="m">
                               <height>0.23</height>
                               <width>0.275</width>
                               <depth>0.036</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>portion of stone missng from left edge, not affecting text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -54,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -82,6 +77,13 @@
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">154-155 no. 247</biblScope>
                </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#ANRW_II.29.2_Solin"/>
+                  <biblScope unit="page">728</biblScope>                     
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR128343">EDR128343</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -97,6 +99,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-05-23" who="SJD">Added hi element to line 1 of transcription</change>
+         <change when="2016-06-02" who="SJD">Added control vocab for condition, writing; added link to EDR; added Solin to bibl; tweaked formatting of transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,19 +112,10 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>
-               <persName>
-                  <name type="cognomen" key="Pannycis">Pannycis</name>
-               </persName> 
-               <persName>
-                  <name type="cognomen" key="Ascia">Ascl<hi rend="small">a</hi>e</name>
-               </persName>
-                <lb n="2"/>Syri <note>!</note> 
-               <expan>
-                  <abbr>Caesarie</abbr><ex>ni</ex>
-                  <abbr>s</abbr>
-               </expan>
-                <lb n="3"/>filia; vixit annos <num xml:lang="lat" value="12">XII</num>.</ab>
+                <lb n="1"/><persName><name type="cognomen" key="Pannycis">Pannycis</name></persName> <persName><name type="cognomen" key="Ascia">Ascl<hi rend="small">a</hi>e</name></persName>
+                <lb n="2"/>Syri <note>!</note> <expan><abbr>Caesarie</abbr><ex>ni</ex><abbr>s</abbr></expan>
+                <lb n="3"/>filia; vixit annos <num xml:lang="lat" value="12">XII</num>.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>

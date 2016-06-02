@@ -33,15 +33,15 @@
                   <objectDesc ana="#cippus">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Broken marble cippus</p>
-                           <seg type="material">Luna marble</seg>                  
-                                            <dimensions type="surface" unit="m">
+                           <p>Broken <seg type="material">Luna marble</seg> cippus</p>
+                           <dimensions type="surface" unit="m">
                               <height>0.385</height>
                               <width>0.192</width>
                               <depth>0.04</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>top left and bottom left corners missing and crack through lower left side, not affecting legibility of text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -65,7 +65,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0075" notAfter="0200">late first-second century CE</date>
-                     <placeName ref="europe.italy">Baiae, Italy</placeName>
+                     <placeName ref="europe.italy.baiae">Baiae, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -77,6 +77,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">145-146 no. 229</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR103387">EDR103387</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-02" who="SJD">Added control vocab for writing, condition; added link to EDR; tweaked format of transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,24 +108,12 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> 
-               <persName>
-                  <name type="gentilicium" key="Vibia">Vibiae</name>
-                  <lb n="3"/> 
-                  <name type="cognomen" key="Protes">Protenis</name>
-               </persName>.
-                <lb n="4"/> 
-               <persName>
-                  <name type="cognomen" key="Demetrius">Demetrius</name>
-               </persName>
-                <lb n="5"/> coniugi fecit.</ab>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <lb n="2"/><persName> <name type="gentilicium" key="Vibia">Vibiae</name>
+               <lb n="3"/><name type="cognomen" key="Protes">Protenis</name></persName>.
+               <lb n="4"/><persName><name type="cognomen" key="Demetrius">Demetrius</name></persName>
+               <lb n="5"/>coniugi fecit.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>

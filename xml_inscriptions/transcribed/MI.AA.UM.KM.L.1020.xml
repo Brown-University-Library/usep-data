@@ -28,29 +28,28 @@
                      <p>Epitaph of Tantilia Megale</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">Italian marble</seg>
-                                            <dimensions type="surface" unit="m">
+                           <p><seg type="material">Italian marble</seg> slab</p>
+                           <dimensions type="surface" unit="m">
                               <height>0.25</height>
                               <width>0.24</width>
                               <depth>0.025</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" writtenLines="8">
-                           <p/>
+                           <p>lines carved very unevenly</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -64,7 +63,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0150" notAfter="0200">mid-late second century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -103,6 +102,7 @@
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-10-14" who="SJD">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2016-06-02" who="SJD">Added control vocab for condition, writing; added note on text layout; tweaked formatting of transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -115,34 +115,15 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan> 
-               <expan>
-                  <abbr>S</abbr><ex>acrum</ex>
-               </expan>.
-                <lb n="2"/> 
-               <persName>
-                  <name type="gentilicium" key="Tantilia">Tantiliae</name>
-                  <lb n="3"/> 
-                  <name type="cogomen" key="Megale">Megaleni</name>
-               </persName>
-                <lb n="4"/> 
-               <expan>
-                  <abbr>co</abbr><ex>n</ex>
-                  <abbr>iugi</abbr>
-               </expan> in
-                <lb break="no" n="5"/> conparabi
-                <lb break="no" n="6"/> li <persName>
-                  <name type="gentilicium" key="Vinuleius">Vinuleius</name>
-                  <lb n="7"/> 
-                  <name type="cognomen" key="Fortunatus">Fortunatus</name>
-               </persName>
-                <lb n="8"/> fecit.</ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr>S</abbr><ex>acrum</ex></expan>.
+               <lb n="2"/><persName><name type="gentilicium" key="Tantilia">Tantiliae</name>
+               <lb n="3"/><name type="cogomen" key="Megale">Megaleni</name></persName>
+               <lb n="4"/><expan><abbr>co</abbr><ex>n</ex><abbr>iugi</abbr></expan> in
+               <lb break="no" n="5"/>conparabi
+               <lb break="no" n="6"/>li <persName><name type="gentilicium" key="Vinuleius">Vinuleius</name>
+               <lb n="7"/><name type="cognomen" key="Fortunatus">Fortunatus</name></persName>
+               <lb n="8"/>fecit.
+            </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 

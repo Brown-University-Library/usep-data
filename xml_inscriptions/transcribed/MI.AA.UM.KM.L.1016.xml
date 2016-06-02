@@ -32,16 +32,16 @@
                             <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support>
-                           <seg type="material">Luna marble</seg>
-                           <p>Marble slab</p>
+                        <support>                           
+                           <p><seg type="material">Luna marble</seg> slab</p>
                             <dimensions type="surface" unit="m">
                               <height>0.246</height>
                               <width>0.285</width>
                               <depth>0.04</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>small chip in bottom right corner</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,12 +50,12 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="hedera">
-                        <p>hedera</p>
+                        <p>hedera distinguens in first line</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -65,7 +65,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0100" notAfter="0200">second century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -77,6 +77,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">147-148 no. 233</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR129710">EDR129710</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-02" who="SJD">Added control vocab for writing, condition; added further detail to place ref; added link to EDR; tweaked formatting of transcription; added hedera to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,47 +108,13 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> 
-               <persName>
-                  <name type="cognomen" key="Benustus">Benusti</name>
-               </persName>. Vi
-                <lb break="no" n="3"/> xit an<hi rend="ligature">ni</hi>s <num xml:lang="lat" value="30">XXX</num>,
-                <lb n="4"/> 
-               <expan>
-                  <abbr>me</abbr><ex>n</ex>
-                  <abbr>sibus</abbr>
-               </expan> 
-               <num xml:lang="lat" value="3">III</num>,
-                <lb n="5"/> 
-               <expan>
-                  <abbr>die</abbr><ex>bu</ex>
-                  <abbr>s</abbr>
-               </expan> 
-               <num xml:lang="lat" value="7">VII</num> 
-               <persName>
-                  <name type="cognomen" key="Ampelis">Ampelis</name>
-               </persName>
-                <lb n="6"/> 
-               <expan>
-                  <abbr>co</abbr><ex>n</ex>
-                  <abbr>iugi</abbr>
-               </expan> 
-               <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ecit</ex>
-               </expan>.</ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="hedera"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <lb n="2"/><persName><name type="cognomen" key="Benustus">Benusti</name></persName>. Vi
+               <lb break="no" n="3"/>xit an<hi rend="ligature">ni</hi>s <num xml:lang="lat" value="30">XXX</num>,
+               <lb n="4"/><expan><abbr><hi rend="ligature">me</hi></abbr><ex>n</ex><abbr>sibus</abbr></expan> <num xml:lang="lat" value="3">III</num>,
+               <lb n="5"/><expan><abbr>die</abbr><ex>bu</ex><abbr>s</abbr></expan> <num xml:lang="lat" value="7">VII</num> <persName><name type="cognomen" key="Ampelis">Ampelis</name></persName>
+               <lb n="6"/><expan><abbr>co</abbr><ex>n</ex><abbr>iugi</abbr></expan> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
+            </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 

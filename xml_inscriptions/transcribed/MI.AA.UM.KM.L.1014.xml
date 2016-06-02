@@ -32,16 +32,16 @@
                             <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support>
-                           <seg type="material">Luna marble</seg>
-                           <p>Marble slab</p>
+                        <support>                           
+                           <p><seg type="material">Luna marble</seg> slab</p>
                             <dimensions type="surface" unit="m">
                               <height>0.20</height>
                               <width>0.28</width>
                               <depth>0.03</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>text complete; stone broken diagonally along top, lower left corner damaged</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -78,6 +78,9 @@
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">137-138 no. 214</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR138253">EDR138253</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-05-24" who="SJD">Added missing control vocab for condition and writing, added link to EDR, made corrections to case of name in key in line 2, changed punctuation in transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,26 +108,10 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>Dis <expan>
-                  <abbr>Manib</abbr><ex>us</ex>
-               </expan>.
-                <lb n="2"/> 
-               <persName>
-                  <name type="gentilicium" key="Truttedio">Truttedio</name> 
-                  <name type="cognomen" key="Zmaragdus"/>Zma
-                <lb break="no" n="3"/> ragdo</persName> 
-               <persName>
-                  <name type="cognomen" key="Reginus">Reginus</name>
-               </persName>,
-                <lb n="4"/> tatae, <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ecit</ex>
-               </expan>.<g type="hedera"/>
+                <lb n="1"/>Dis <expan><abbr>Manib</abbr><ex>us</ex></expan>.
+                <lb n="2"/><persName><name type="gentilicium" key="Truttedius">Truttedio</name> <name type="cognomen" key="Zmaragdus"/>Zma
+                <lb break="no" n="3"/>ragdo</persName>; <persName><name type="cognomen" key="Reginus">Reginus</name></persName>
+                <lb n="4"/>tatae <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>. <g type="hedera"/>
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 

@@ -33,15 +33,15 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">Luna marble</seg>
-                           <p>Partially reconstituted marble tablet</p>
+                           
+                           <p>Partially reconstituted <seg type="material">Luna marble</seg>tablet</p>
                                <dimensions type="surface" unit="m">
                               <height>0.40</height>
                               <width>0.497</width>
                               <depth>0.035</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>cut horizontal crack in center, left edge chipped</p>
+                        <condition ana="#fragments.contig"><!--Add ana attribute with controlled value for condition--><p>cut horizontal crack in center, left edge chipped, missing far right edge of text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,7 +50,7 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
+                  <handDesc hands="">
                      <handNote/>
                   </handDesc>
                   <decoDesc>
@@ -108,12 +108,21 @@
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-10-14" who="SJD">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="SJD">Updated EDR link</change>
+         <change when="2016-05-24" who="SJD">Fixed image paths, added missing control vocab for writing and condition</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.1002.jpg MI.AA.UM.KM.L.1002-Det.1.jpg MI.AA.UM.KM.L.1002-Det.2.jpg"/>
+         <graphic url="MI.AA.UM.KM.L.1002.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MI.AA.UM.KM.L.1002-Det.1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MI.AA.UM.KM.L.1002-Det.2.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -121,76 +130,16 @@
          <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <persName>
-                  <name type="gentilicium" key="Plotia">Plotia</name> 
-                  <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>uli</ex>
-                     </expan>
-                  </name> et <g type="Gaiae"/> 
-                  <expan>
-                     <abbr>l</abbr><ex>iberta</ex>
-                  </expan> 
-                  <name type="cognomen" key="Helena">Helen<supplied reason="lost">a</supplied>
-                  </name>
-               </persName>
-                    <lb n="2"/> sibi et,
-                    <lb n="3"/> 
-               <persName>
-                  <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>ulo</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Plotius">Plotio</name> 
-                  <name type="cognomen" key="Lucrionus">Lucrioni</name>
-               </persName> viro
-                    <lb n="4"/> merenti et,
-                    <lb n="5"/> 
-               <persName>
-                  <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aio</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Hostius">Hostio</name> 
-                  <name type="cognomen" key="Primigenius">
-                     <expan>
-                        <abbr>Primigeni</abbr><ex>to</ex>
-                     </expan>
-                  </name>
-               </persName>,
-                    <lb n="6"/> 
-               <persName>
-                  <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>ulo</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Plotius">Plotio</name> 
-                  <name type="cognomen" key="Felix">Felici</name>
-               </persName> 
-               <expan>
-                  <abbr>liber</abbr><ex>to</ex>
-               </expan>,
-                    <lb n="7"/> Plotiae Veneriae <expan>
-                  <abbr>l</abbr><ex>ibertae</ex>
-               </expan>,
-                    <lb n="8"/> 
-               <persName>
-                  <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>ulo</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Plotius">Plotio</name> 
-                  <name type="cognomen" key="Crescentus">Crescenti</name>
-               </persName> 
-               <expan>
-                  <abbr>lib</abbr><ex>erto</ex>
-               </expan>,
-                    <lb n="9"/> et posterisque eor<supplied reason="lost">um</supplied>.</ab>
+                   <lb n="1"/><persName><name type="gentilicium" key="Plotia">Plotia</name> <persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>uli</ex></expan></name></persName> et <g type="Gaiae"/> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Helena">Helen<supplied reason="lost">a</supplied></name></persName>
+                   <lb n="2"/> sibi et,
+                   <lb n="3"/><persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>ulo</ex></expan></name> <name type="gentilicium" key="Plotius">Plotio</name> <name type="cognomen" key="Lucrionus">Lucrioni</name></persName> viro
+                   <lb n="4"/> merenti et, 
+                   <lb n="5"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Hostius">Hostio</name> <name type="cognomen" key="Primigenius"><expan><abbr>Primigeni</abbr><ex>to</ex></expan></name></persName>,
+                   <lb n="6"/><persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>ulo</ex></expan></name> <name type="gentilicium" key="Plotius">Plotio</name> <name type="cognomen" key="Felix">Felici</name></persName> <expan><abbr>liber</abbr><ex>to</ex></expan>,
+                   <lb n="7"/> <persName><name type="gentilicium" key="Plotia">Plotiae</name> <name type="cognomen" key="Veneria">Veneriae</name></persName> <expan><abbr>l</abbr><ex>ibertae</ex></expan>,
+                   <lb n="8"/><persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>ulo</ex></expan></name> <name type="gentilicium" key="Plotius">Plotio</name> <name type="cognomen" key="Crescentus">Crescenti</name></persName> <expan><abbr>lib</abbr><ex>erto</ex></expan>,
+                   <lb n="9"/> et posterisque eor<supplied reason="lost">um</supplied>.
+                </ab>
             </div>
          <div type="apparatus">
             <p>3) a potio: Dennison

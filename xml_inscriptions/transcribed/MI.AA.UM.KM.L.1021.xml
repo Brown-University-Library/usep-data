@@ -33,15 +33,15 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                            <seg type="material">Grey marble</seg>
-                                                
-                                            <dimensions type="surface" unit="m">
+                           <p><seg type="material">Grey marble</seg> slab</p>
+                           <dimensions type="surface" unit="m">
                               <height>0.315</height>
                               <width>0.340</width>
                               <depth>0.049</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>some chipping along bottom edge</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -78,6 +78,9 @@
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">15 no. 209</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR113830">EDR113830</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-02" who="SJD">Added control vocab for writing, condition; added link to EDR; tweaked format of transcription; added name and number tagging</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,38 +108,15 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> Terentia Au
-                <lb break="no" n="3"/>gurina vixit
-                <lb n="4"/> 
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-               </expan> VI <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> XI <expan>
-                  <abbr>d</abbr><ex>iebus</ex>
-               </expan> XX;
-                <lb n="5"/> Terentinus Ca
-                <lb break="no" n="6"/> ecilianus <expan>
-                  <abbr>f</abbr><ex>iliae</ex>
-               </expan>
-                <lb n="7"/> dulcissimae
-                <lb n="8"/> 
-               <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ecit</ex>
-               </expan>.</ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/><persName><name type="gentilicium" key="Terentia">Terentia</name> <name type="cognomen" key="Augurina"> Au           
+               <lb break="no" n="3"/>gurina</name></persName> vixit
+               <lb n="4"/><expan><abbr>an</abbr><ex>nis</ex></expan> <num value="6" xml:lang="lat">VI</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="11" xml:lang="lat">XI</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="20" xml:lang="lat">XX</num>.
+               <lb n="5"/><persName><name type="gentilicium" key="Terentius">Terentinus</name> <name type="cognomen" key="Caecilianus">Ca
+               <lb break="no" n="6"/>ecilianus</name></persName><expan><abbr>f</abbr><ex>iliae</ex></expan>
+               <lb n="7"/>dulcissimae
+               <lb n="8"/><expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
