@@ -40,7 +40,7 @@
                               <depth>0.024</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>slight encrusting</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p>slight encrusting</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -64,7 +64,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0100" notAfter="0200">second century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -76,6 +76,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">121, no. 184</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR138177">EDR138177</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -91,6 +94,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-08" who="SJD">Added missing control vocab for condition and writing, added link to EDR; tweaked format of transcription, added hi elements throughout; added specificity to location ref</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,27 +108,12 @@
          <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>D<ex>is</ex></expan> 
-               <expan>M<ex>anibus</ex></expan>.
-                    <lb n="2"/> 
-               <persName>
-                  <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aio</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Oppius">Oppio</name> 
-                  <name type="cognomen" key="Eutyches">
-                     <expan>
-                        <abbr>Eutychet</abbr><ex>i</ex>
-                     </expan>
-                  </name>
-                    <lb n="3"/> 
-                  <name type="cognomen" key="Magonianus">Magoniano</name>
-               </persName> filio
-                    <lb n="4"/> dulcissimo; qui vixit
-                    <lb n="5"/> annis <num xml:lang="lat" value="10">X</num>, dies <num xml:lang="lat" value="3">III</num>.</ab>
+                   <lb n="1"/><expan>D<ex>is</ex></expan> <expan>M<ex>anibus</ex></expan>.
+                   <lb n="2"/><persName><name type="praenomen" key="Gaius"><expan><abbr><hi rend="tall">C</hi></abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Oppius"><hi rend="apex">O</hi>ppi<hi rend="apex">o</hi></name> <name type="cognomen" key="Eutyches"><expan><abbr>Eutychet</abbr><ex>i</ex></expan></name>
+                   <lb n="3"/><name type="cognomen" key="Magonianus">Mag<hi rend="apex">o</hi>nian<hi rend="apex">o</hi></name></persName>, filio
+                   <lb n="4"/>dulcissim<hi rend="apex">o</hi>, qui vixit
+                   <lb n="5"/>annis <num xml:lang="lat" value="10">X</num>, dies <num xml:lang="lat" value="3">III</num>.
+                </ab>
             </div>
          <div type="apparatus">
             <p/>

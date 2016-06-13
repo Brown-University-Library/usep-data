@@ -41,7 +41,7 @@
                               <depth>0.041</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -65,7 +65,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0075" notAfter="0200">late first-second century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -77,6 +77,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">138 no. 215</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114297">EDR114297</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-13" who="SJD">Added control vocab for condition and writing; added specificity to placename ref; added link to EDR; tweaked format and added name markup to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,15 +108,10 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>Turrania
-                <lb n="2"/> 
-               <expan>
-                  <abbr>L</abbr><ex>ucii</ex>
-               </expan> 
-               <expan>
-                  <abbr>liber</abbr><ex>ta</ex>
-               </expan>
-                <lb n="3"/> Lampas</ab>
+                <lb n="1"/><persName><name type="gentilicium" key="Turrania">Turrania</name>
+                <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucii</ex></expan></name></persName> <expan><abbr>liber</abbr><ex>ta</ex></expan>
+                <lb n="3"/><name type="cognomen" key="Lampas">Lampas</name></persName>.
+            </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 

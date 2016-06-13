@@ -33,17 +33,14 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">Gray marble</seg>
-                           <p>Reconstituted marble slab</p>
+                           <p>Reconstituted <seg type="material">gray marble</seg> slab</p>
                             <dimensions type="surface" unit="m">
                               <height>0.305</height>
                               <width>0.286</width>
                               <depth>0.03</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>
-                                        two mended fragments, bottom edge missing
-                                    </p>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>two mended fragments, bottom edge missing</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -52,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -67,7 +64,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0050" notAfter="0100">second half of first century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -79,6 +76,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">128-129, no. 198</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112590">EDR112590</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -94,6 +94,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-08" who="SJD">Added control vocab for condition and writing; increased specificity of placename ref; added link to EDR; tweaked format of transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,30 +108,12 @@
          <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
-                    <lb n="2"/> 
-               <persName>
-                  <name type="gentilicium" key="Seia">Seie</name> 
-                  <name type="cognomen" key="Afelada">Afeladi</name>
-               </persName>,
-                    <lb n="3"/> co<supplied reason="omitted">n</supplied>iugi merenti
-                    <lb n="4"/> 
-               <persName>
-                  <name type="praenomen" key="Marcus">
-                     <expan>
-                        <abbr>M</abbr><ex>arcus</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Caecilius">Caecilius</name> 
-                  <name type="cognomen" key="Urbanicus">Ur
-                    <lb n="5" break="no"/> bicus</name>
-               </persName>.</ab>
+                   <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                   <lb n="2"/><persName><name type="gentilicium" key="Seia">Seie</name> <name type="cognomen" key="Affias">Affiadi</name></persName>,
+                   <lb n="3"/> co<supplied reason="omitted">n</supplied>iugi merenti
+                   <lb n="4"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Caecilius">Caecilius</name> <name type="cognomen" key="Urbanicus">Ur
+                   <lb n="5" break="no"/>bicus</name></persName>.
+                </ab>
             </div>
          <div type="apparatus">
             <p>Aeeladi: CIL</p>

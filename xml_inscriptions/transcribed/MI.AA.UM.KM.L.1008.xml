@@ -33,15 +33,14 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">Luna marble</seg>
-                           <p>Fragmentary marble slab</p>
+                           <p>Fragmentary <seg type="material">Luna marble</seg> slab</p>
                             <dimensions type="surface" unit="m">
                               <height>0.275</height>
                               <width>0.19</width>
                               <depth>0.027</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -65,7 +64,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0075" notAfter="0200">late first-second century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -77,6 +76,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">156-157 no. 251</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143616">EDR143616</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +94,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-08" who="SJD">Added condition and writing control vocab, added specificity to placename ref; added link to EDR</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

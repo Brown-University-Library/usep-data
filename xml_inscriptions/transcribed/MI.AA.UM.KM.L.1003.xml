@@ -33,17 +33,14 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>broken marble slab </p>
-                           
-                           <seg type="material">Fine-grained white marble</seg>
-                                            <dimensions type="surface" unit="m">
+                           <p>Broken <seg type="material">fine-grained white marble</seg> slab</p>
+                           <dimensions type="surface" unit="m">
                               <height>0.29</height>
                               <width>0.241</width>
                               <depth>0.029</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>smoothly finished face with roughly chiseled edges and
-                                        reverse</p>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p>smoothly finished face with roughly chiseled edges and reverse</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -52,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -85,6 +82,9 @@
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">28, no. 27</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR113821">EDR113821</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -99,6 +99,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-08" who="SJD">Added missing control vocab for condition and writing, added link to EDR; proofed transcription, added punctuation, fixed case errorss, added hi element in line 3, changed app/lemm markup to supplied/evidence='previouseditor'</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -112,143 +113,14 @@
          <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <app type="previouslyread">
-                  <lem resp="Mommsen">
-                     <expan>
-                        <abbr>D</abbr><ex>is</ex>
-                     </expan>
-                  </lem>
-                  <rdg resp="autopsy">
-                     <gap reason="lost" quantity="1" unit="character"/>
-                  </rdg>
-               </app> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                    <lb n="2"/>
-               <persName>
-                  <name type="praenomen" key="Marcus">
-                     <app type="previouslyread">
-                        <lem resp="Mommsen">
-                           <expan>
-                              <abbr>M</abbr><ex>arcus</ex>
-                           </expan>
-                        </lem>
-                        <rdg resp="autopsy">
-                           <gap reason="lost" quantity="1" unit="character"/>
-                        </rdg>
-                     </app>
-                  </name> 
-                  <name type="gentilicium" key="Gargilius">
-                     <app type="previouslyread">
-                        <lem resp="Mommsen">Gar</lem>
-                        <rdg resp="autopsy">
-                           <gap reason="lost" quantity="3" unit="character"/>
-                        </rdg>
-                     </app>gili</name> 
-                  <name type="cognomen" key="Felix">Felicis</name>
-               </persName>
-                    <lb n="3"/>
-               <app type="previouslyread">
-                  <lem resp="Mommsen">armor</lem>
-                  <rdg resp="autopsy">
-                     <gap reason="lost" quantity="5" unit="character"/>
-                  </rdg>
-               </app>
-               <num xml:lang="lat" value="3">III</num> Saty<choice>
-                  <sic>b</sic>
-                  <corr>r</corr>
-               </choice>a 
-                    <lb n="4"/>
-               <app type="previouslyread">
-                  <lem resp="Mommsen">
-                     <expan>
-                        <abbr>N</abbr><ex>atio</ex>
-                     </expan> Afer</lem>
-                  <rdg resp="autopsy">
-                     <gap reason="lost" quantity="5" unit="character"/>
-                  </rdg>
-               </app> 
-               <expan>
-                  <abbr>stip</abbr><ex>endia</ex>
-               </expan> 
-               <num xml:lang="lat" value="28">XXVIII</num>
-                    <lb n="5"/>
-               <app type="previouslyread">
-                  <lem resp="Mommsen">
-                     <expan>
-                        <abbr>vix</abbr><ex>it</ex>
-                     </expan> 
-                     <expan>
-                        <abbr>ann</abbr><ex>is</ex>
-                     </expan>
-                  </lem>
-                  <rdg resp="autopsy">
-                     <gap reason="lost" quantity="5" unit="character"/>
-                  </rdg>
-               </app> 
-               <num xml:lang="lat" value="53">LIII</num> 
-               <expan>
-                  <abbr>me</abbr><ex>n</ex>
-                  <abbr>s</abbr><ex>ibus</ex>
-               </expan> 
-               <num xml:lang="lat" value="2">II</num>
-                    <lb n="6"/>
-               <persName>
-                  <name type="praenomen" key="Marcus">
-                     <app type="previouslyread">
-                        <lem resp="Mommsen">
-                           <expan>
-                              <abbr>M</abbr><ex>arcus</ex>
-                           </expan>
-                        </lem>
-                        <rdg resp="autopsy">
-                           <gap reason="lost" quantity="1" unit="character"/>
-                        </rdg>
-                     </app>
-                  </name> 
-                  <name type="gentilicium" key="Naerius">
-                     <app type="previouslyread">
-                        <lem resp="Mommsen">Na</lem>
-                        <rdg resp="autopsy">
-                           <gap reason="lost" quantity="2" unit="character"/>
-                        </rdg>
-                     </app>erius</name> 
-                  <name type="cognomen" key="Quadratus">
-                     <expan>
-                        <abbr>Quadrat</abbr><ex>us</ex>
-                     </expan>
-                  </name>
-               </persName>
-                    <lb n="7"/>
-               <app type="previouslyread">
-                  <lem resp="Mommsen">
-                     <expan>
-                        <abbr>opt</abbr><ex>io</ex>
-                     </expan> 
-                     <num xml:lang="lat" value="3">III</num>
-                  </lem>
-                  <rdg resp="autopsy">
-                     <gap reason="lost" quantity="6" unit="character"/>
-                  </rdg>
-               </app> 
-               <expan>
-                  <abbr>Tig</abbr><ex>ris</ex>
-               </expan>
-               <expan>
-                  <abbr> her</abbr><ex>es</ex>
-               </expan> 
-               <expan>
-                  <abbr> b</abbr><ex>ene</ex>
-               </expan>
-               <expan>
-                  <abbr> m</abbr><ex>erenti</ex>
-               </expan>
-               <expan>
-                  <abbr> f</abbr><ex>ecit</ex> 
-               </expan>
-            </ab>
+                   <lb n="1"/><supplied reason="undefined" evidence="previouseditor"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                   <lb n="2"/><persName><name type="praenomen" key="Marcus"><supplied reason="undefined" evidence="previouseditor"><expan><abbr>M</abbr><ex>arci</ex></expan></supplied></name> <name type="gentilicium" key="Gargilius"><supplied reason="undefined" evidence="previouseditor">Gar</supplied>>gili</name> <name type="cognomen" key="Felix">Felicis</name></persName>,
+                   <lb n="3"/><supplied reason="undefined" evidence="previouseditor"><expan><abbr>armor</abbr><ex>um</ex></expan></supplied> <num xml:lang="lat" value="3"><hi rend="supraline">III</hi></num> Saty<choice><sic>b</sic><corr>r</corr></choice>a, 
+                   <lb n="4"/><supplied reason="undefined" evidence="previouseditor"><expan><abbr>n</abbr><ex>atiome</ex></expan> Afer</supplied>, <expan><abbr>stip</abbr><ex>endiorum</ex></expan> <num xml:lang="lat" value="28">XXVIII</num>.
+                   <lb n="5"/><supplied reason="undefined" evidence="previouseditor"><expan><abbr>Vix</abbr><ex>it</ex></expan> <expan><abbr>ann</abbr><ex>is</ex></expan></supplied> <num xml:lang="lat" value="53">LIII</num>, <expan><abbr>me</abbr><ex>n</ex><abbr>s</abbr><ex>ibus</ex></expan> <num xml:lang="lat" value="2">II</num>.
+                   <lb n="6"/><persName><name type="praenomen" key="Marcus"><supplied reason="undefined" evidence="previouseditor"><expan><abbr>M</abbr><ex>arcus</ex></expan></supplied></name> <name type="gentilicium" key="Naerius"><supplied evidence="previouseditor" reason="undefined">Na</supplied>erius</name> <name type="cognomen" key="Quadratus"><expan><abbr>Quadrat</abbr><ex>us</ex></expan></name></persName>
+                   <lb n="7"/><supplied reason="undefined" evidence="previouseditor"><expan><abbr>opt</abbr><ex>io</ex></expan> <num xml:lang="lat" value="3">III</num></supplied> <expan><abbr>Tig</abbr><ex>ride</ex></expan> <expan><abbr>her</abbr><ex>es</ex></expan> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
+               </ab>
             </div>
          <div type="apparatus">
             <p>3) Satyra: Tuck</p>

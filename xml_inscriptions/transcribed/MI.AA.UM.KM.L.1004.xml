@@ -41,7 +41,7 @@
                               <depth>0.038</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>fragmented in four pieces, lower right corner missing</p>
+                        <condition ana="#fragments.contig"><!--Add ana attribute with controlled value for condition--><p>fragmented in four pieces, lower right corner missing</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -65,7 +65,7 @@
                   </summary>
                   <origin>
                      <date notBefore="-0050" notAfter="0050">mid first century BCE - mid first century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -77,6 +77,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">119, no. 181</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR130856">EDR130856</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-06" who="SJD">Added control vocab for writing and condition, added EDR link; added specificity for placename ref; tweaked formatting of transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -105,53 +109,16 @@
          <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <persName>
-                  <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aio</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Novius">Novio</name> 
-                  <name type="cognomen" key="Thallus">Thallo</name>
-               </persName>,
-                    <lb n="2"/> et <persName>
-                  <name type="gentilicium" key="Novia">Noviae</name> 
-                  <name type="cognomen" key="Euhodia">Euhodiae</name>
-               </persName>
-                    <lb n="3"/> coniugi eius, et
-                    <lb n="4"/> 
-               <persName>
-                  <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aio</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Novius">Novio</name> 
-                  <name type="cognomen" key="Sabinianus">Sabiniano</name>
-               </persName>,
-                    <lb n="5"/> 
-               <persName>
-                  <name type="gentilicium" key="Novia">Noviae</name> 
-                  <name type="cognomen" key="Iusta">Iustae</name>
-               </persName>,
-                    <lb n="6"/> fil<supplied reason="omitted">i</supplied>is eorum <expan>
-                  <abbr>merentib</abbr><ex>us</ex>
-               </expan>.
-                    <lb n="7"/> 
-               <persName>
-                  <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aius</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Novius">Novius</name> 
-                  <name type="cognomen" key="Onesimus">Onesimus</name>
-               </persName> feci<supplied reason="lost">t</supplied>
-                    <lb n="8"/> et sibi, et libertis, <expan>
-                  <abbr>libertabusq</abbr><ex>ue</ex>
-               </expan>
-                    <lb n="9"/> suis.</ab>
+                    <lb n="1"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Novius">Novio</name> <name type="cognomen" key="Thallus">Thallo</name></persName>,
+                    <lb n="2"/>et <persName><name type="gentilicium" key="Novia">Noviae</name> <name type="cognomen" key="Euhodia">Euhodiae</name></persName>
+                   <lb n="3"/>coniugi eius, et
+                   <lb n="4"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Novius">Novio</name> <name type="cognomen" key="Sabinianus">Sabiniano</name></persName>,
+                   <lb n="5"/><persName><name type="gentilicium" key="Novia">Noviae</name> <name type="cognomen" key="Iusta">Iustae</name></persName>,
+                   <lb n="6"/> fil<supplied reason="omitted">i</supplied>is eorum <expan><abbr>merentib</abbr><ex>us</ex></expan>.
+                   <lb n="7"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Novius">Novius</name> <name type="cognomen" key="Onesimus">Onesimus</name></persName> feci<supplied reason="lost">t</supplied>
+                   <lb n="8"/> et sibi, et libertis, <expan><abbr>libertabusq</abbr><ex>ue</ex></expan>
+                   <lb n="9"/>suis.
+                </ab>
             </div>
          <div type="apparatus">
             <p/>

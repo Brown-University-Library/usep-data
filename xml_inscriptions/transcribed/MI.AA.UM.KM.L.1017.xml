@@ -33,15 +33,15 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">fine-grained white marble</seg>
-                           <p>Reconstituted marble slab</p>
+                           
+                           <p>Reconstituted <seg type="material">fine-grained white marble</seg> slab</p>
                            <dimensions type="surface" unit="m">
                               <height>0.257</height>
                               <width>0.287</width>
                               <depth>0.035</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>vertical guideline visible in first line of text</p>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>vertical guideline visible in first line of text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -78,6 +78,9 @@
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">57, no. 68</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR128601">EDR128601</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-08" who="SJD">Added condition and writing control vocab, added link to EDR</change>         
       </revisionDesc>
    </teiHeader>
    <facsimile>

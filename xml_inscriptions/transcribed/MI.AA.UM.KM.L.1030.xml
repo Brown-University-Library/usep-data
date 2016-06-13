@@ -41,7 +41,7 @@
                               <depth>0.062</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -65,7 +65,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0001" notAfter="0050">early first century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -77,6 +77,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">143-144 no. 225</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR113942">EDR113942</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-13" who="SJD">Added control vocab for condition, writing; added specificity to placename ref; added link to EDR; added name markup to transcrpition</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,11 +108,10 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>Valeria <expan>
-                  <abbr>A</abbr><ex>uli</ex>
-               </expan> et <g type="Gaiae"/> liberta
-                <lb n="2"/> Callityche
-                <lb n="3"/> ornatrix</ab>
+                <lb n="1"/><persName><name type="gentilicium" key="Valeria">Valeria</name> <persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>uli</ex></expan></name></persName> et <persName><g type="Gaiae"/></persName> liberta
+                <lb n="2"/><name type="cognomen" key="Callityche">Callityche</name></persName>
+                <lb n="3"/>ornatrix.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
