@@ -40,7 +40,7 @@
                               <depth>0.031</depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete.intact">
                            <p>left edge smooth, reverse and other edges roughly dressed</p>
                         </condition>
                      </supportDesc>
@@ -50,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -78,6 +78,9 @@
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">158, no. 255</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116667">EDR116667</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -92,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-30" who="SJD">Added control vocab for writing and condition, added link to EDR, tweaked format of transcription and modified punctuation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -105,22 +109,11 @@
          <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                    <lb n="2"/>
-               <persName>
-                  <name type="cognomen" key="Symphorus">Symphorus</name>
-               </persName> paeda
-                    <lb n="3" break="no"/>gogus <persName>
-                  <name type="cognomen" key="Pinna">Pinnae</name>
-               </persName> be
-                    <lb n="4" break="no"/>ne merenti fecit
-                    <lb n="5"/>vixit annis <num xml:lang="lat" value="15">XV</num>
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                    <lb n="2"/><persName><name type="cognomen" key="Symphorus">Symphorus</name></persName> paeda
+                    <lb n="3" break="no"/>gogus <persName><name type="cognomen" key="Pinna">Pinnae</name></persName> be
+                    <lb n="4" break="no"/>ne merenti fecit.
+                    <lb n="5"/>Vixit annis <num xml:lang="lat" value="15">XV</num>.
             </ab>
             </div>
          <div type="apparatus">

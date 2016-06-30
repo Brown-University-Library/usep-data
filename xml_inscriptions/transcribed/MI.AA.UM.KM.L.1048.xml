@@ -33,17 +33,14 @@
                   <objectDesc ana="#cippus">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble cippus</p>
-                           
-                           <seg type="material">White marble</seg>
-                           
-                                            <dimensions type="surface" unit="m">
+                           <p><seg type="material">White marble</seg> cippus</p>
+                           <dimensions type="surface" unit="m">
                               <height>0.57</height>
                               <width>0.315</width>
                               <depth>0.033</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -52,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -67,7 +64,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0125" notAfter="0175">early-late second century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -79,6 +76,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">140 no. 219</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115749">EDR115749</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -94,6 +94,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-30" who="SJD">Added control vocab for condition, writing; added specificity to placeName ref; added link to EDR; tweaked formatting of transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -106,56 +107,14 @@
       <body>
          <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
-                <lb n="2"/> 
-               <persName>
-                  <name type="praenomen" key="Marcus">
-                     <expan>
-                        <abbr>M</abbr><ex>arci</ex>
-                     </expan>
-                  </name> Ulpi <expan>
-                     <abbr>M</abbr><ex>arci</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>f</abbr><ex>ilii</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>P</abbr><ex>ublii</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>
-                        <hi rend="supraline">n</hi>
-                     </abbr><ex>epotis</ex>
-                  </expan>
-                  <lb n="3"/> 
-                  <name type="cognomen" key="Tertullus">Tertulli</name>
-               </persName>;
-                <lb n="4"/> vixit <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan> 
-               <num xml:lang="lat" value="18">XVIII</num> 
-               <expan>
-                  <abbr>mens</abbr><ex>ibus</ex>
-               </expan> 
-               <num xml:lang="lat" value="1">I</num> 
-               <expan>
-                  <abbr>die</abbr><ex>bus</ex>
-               </expan> 
-               <num xml:lang="lat" value="15">XV</num>
-                <lb n="5"/> 
-               <persName>
-                  <name type="gentilicium" key="Ulpius">Ulpius</name> 
-                  <name type="cognomen" key="">Puteolanus</name>
-               </persName>
-                <lb n="6"/> filio dulcissimo.</ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <name type="gentilicium" key="Ulpius">Ulpi</name> <persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name></persName> <expan><abbr>f</abbr><ex>ilii</ex></expan> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublii</ex></expan></name></persName> <expan><abbr><hi rend="supraline">n</hi></abbr><ex>epotis</ex></expan>
+                <lb n="3"/><name type="cognomen" key="Tertullius">Tertulli</name></persName>;
+                <lb n="4"/>vixit <expan><abbr>ann</abbr><ex>is</ex></expan> <num xml:lang="lat" value="18">XVIII</num>, <expan><abbr>mens</abbr><ex>ibus</ex></expan> <num xml:lang="lat" value="1">I</num>, <expan><abbr>die</abbr><ex>bus</ex></expan> <num xml:lang="lat" value="15">XV</num>.
+                <lb n="5"/><persName><name type="gentilicium" key="Ulpius">Ulpius</name> <name type="cognomen" key="Puteolanus">Puteolanus</name></persName>
+                <lb n="6"/>filio dulcissimo.
+            </ab>
+                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->                
             </div>
          <div type="apparatus">
             <p/>

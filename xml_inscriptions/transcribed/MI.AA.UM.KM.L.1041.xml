@@ -33,16 +33,15 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Gray marble slab</p>
-                           
-                           <seg type="material">Coarse-grained gray marble</seg>
+                           <p><seg type="material">Coarse-grained gray marble</seg> slab</p>                         
                            <dimensions type="surface" unit="m">
                               <height>0.245</height>
                               <width>0.210</width>
                               <depth>0.021</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>surface is eroded and encrusted</p>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>surface is eroded and encrusted; top right corner broken off, though with no loss of text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -51,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -66,7 +65,7 @@
                   </summary>
                   <origin>
                      <date notBefore="0175" notAfter="0225">late second to early third century CE</date>
-                     <placeName ref="europe.italy">Puteoli, Italy</placeName>
+                     <placeName ref="europe.italy.puteoli">Puteoli, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -78,6 +77,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Tuck"/>
                   <biblScope unit="item">18-19, no. 16</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115400">EDR115400</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -93,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-06-30" who="SJD">Added control vocab for condition, writing; added link to EDR; added specificity to placeName ref; tweaked format of transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -106,49 +109,13 @@
          <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>M</abbr><ex>agno</ex>
-               </expan> 
-               <expan>
-                  <abbr>G</abbr><ex>enio</ex>
-               </expan> 
-               <expan>
-                  <abbr>Col</abbr><ex>oniae</ex>
-               </expan>
-                    <lb n="2"/>
-               <expan>
-                  <abbr>Puteolan</abbr><ex>orum</ex>
-               </expan>
-                    <lb n="3"/>
-               <persName>
-                  <name type="praenomen" key="Marcus">
-                     <expan>
-                        <abbr>M</abbr><ex>arcus</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Aurelius">Aurelius</name>
-                    <lb n="4"/>
-                  <name type="cognomen" key="Hilarius">Hilario</name> 
-                  <expan>
-                     <abbr>Aug</abbr><ex>usti</ex>
-                  </expan>
-                    <lb n="5"/>
-                  <expan>
-                     <abbr>lib</abbr><ex>ertus</ex>
-                  </expan>
-               </persName> numini huius
-                    <lb n="6"/>devotus
-                    <lb n="7"/>
-               <expan>
-                  <abbr>d</abbr><ex>eo</ex>
-               </expan> 
-               <expan>
-                  <abbr>d</abbr><ex>onum</ex>
-               </expan> 
-               <expan>
-                  <abbr>d</abbr><ex>edit</ex>
-               </expan>
+                 <lb n="1"/><expan><abbr>M</abbr><ex>agno</ex></expan> <expan><abbr>G</abbr><ex>enio</ex></expan> <expan><abbr>Col</abbr><ex>oniae</ex></expan>
+                 <lb n="2"/><expan><abbr>Puteolan</abbr><ex>orum</ex></expan>
+                 <lb n="3"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Aurelius">Aurelius</name>
+                 <lb n="4"/><name type="cognomen" key="Hilarius">Hilario</name> <expan><abbr>Aug</abbr><ex>usti</ex></expan>
+                 <lb n="5"/><expan><abbr>lib</abbr><ex>ertus</ex></expan></persName>, numini huius
+                 <lb n="6"/>devotus
+                 <lb n="7"/><expan><abbr>d</abbr><ex>eo</ex></expan> <expan><abbr>d</abbr><ex>onum</ex></expan> <expan><abbr>d</abbr><ex>edit</ex></expan>.
             </ab>
             </div>
          <div type="apparatus">
