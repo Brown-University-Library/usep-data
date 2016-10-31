@@ -38,14 +38,14 @@
     <xsl:template match="t:bibl[@type='c']" mode="corpus">
         <xsl:choose>
             <xsl:when test="$new">
-                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span>
+                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span class="bibID"><xsl:value-of select="@xml:id"/></span>
                     <ul>
                         <xsl:apply-templates select="./t:bibl" mode="parent" />
                     </ul>
                 </p>
             </xsl:when>
             <xsl:otherwise>
-                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span class="bibID"><xsl:value-of select="@xml:id"/></span></p>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -53,14 +53,14 @@
     <xsl:template match="t:bibl[@type='j']" mode="journal">
         <xsl:choose>
             <xsl:when test="$new">
-                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span>
+                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span class="bibID"><xsl:value-of select="@xml:id"/></span>
                     <ul>
                         <xsl:apply-templates select="./t:bibl" mode="parent" />
                     </ul>
                 </p>
             </xsl:when>
             <xsl:otherwise>
-                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span class="bibID"><xsl:value-of select="@xml:id"/></span></p>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -68,20 +68,20 @@
     <xsl:template match="t:bibl[@type='m']" mode="monograph">
         <xsl:choose>
             <xsl:when test="$new">
-                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span>
+                <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span  class="bibID"><xsl:value-of select="@xml:id"/></span>
                     <ul>
                         <xsl:apply-templates select="./t:bibl" mode="parent" />
                     </ul>
                 </p>
             </xsl:when>
             <xsl:otherwise>
-                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span  class="bibID"><xsl:value-of select="@xml:id"/></span></p>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 
     <xsl:template match="t:bibl[@type='u']" mode="unpub">
-        <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span style="color:grey"><xsl:value-of select="@xml:id"/></span></p>
+        <p><a href="/../{concat($url, normalize-space(./@xml:id))}"><xsl:apply-templates select="t:title"/></a> <span  class="bibID"><xsl:value-of select="@xml:id"/></span></p>
     </xsl:template>
     
     <xsl:template match="t:bibl[@type='v']" mode="parent">
