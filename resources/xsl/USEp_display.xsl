@@ -34,6 +34,7 @@
         2016-01-19 SJD Small tweak to column display
         2016-01-21 SJD Fixed typo in provenance, added display of descriptions for provenance/acquisition
         2016-03-02 SJD Made fixes to allow multiple provenance elements to display correctly
+        2016-11-10 EM change to display XML button to view source
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -206,15 +207,15 @@
                 <xsl:choose>
                     <xsl:when test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab/t:lb or/t:TEI/t:text/t:body/t:div[@type='edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
                         <!-- transcribed folder -->
-                        <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}"><img src="usep/images/XMLbutton.png"/></a></p>
+                        <pc class="XMLsource"><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}"><img src="usep/images/XMLbutton.png"/></a></pc>
                     </xsl:when>
                     <xsl:when test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem[@class]">
                         <!-- bib only folder -->
-                        <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}"><img src="usep/images/XMLbutton.png"/></a></p>
+                        <p  class="XMLsource"><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}"><img src="usep/images/XMLbutton.png"/></a></p>
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- only option left is metadata only -->
-                        <p><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}"><img src="usep/images/XMLbutton.png"/></a></p>
+                        <p  class="XMLsource"><a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}"><img src="usep/images/XMLbutton.png"/></a></p>
                     </xsl:otherwise>
                 </xsl:choose>
                 
