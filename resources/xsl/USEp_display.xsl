@@ -308,7 +308,7 @@
                 </xsl:if>
                 
                 <xsl:if test="t:ref">
-                    <a href="{t:ref/@target}"> <xsl:value-of select="t:ref"/></a> (external link)
+                    <a href="{t:ref/@target}"> <xsl:value-of select="concat(t:ref, ' ')"/></a> (external link)
                 </xsl:if>
                 
             </p>
