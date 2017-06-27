@@ -45,7 +45,7 @@
                 </p>
             </xsl:when>
             <xsl:otherwise>
-                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span class="bibID"><xsl:value-of select="@xml:id"/></span></p>
+                <p><a href="/../{concat($url, normalize-space(t:title))}"><xsl:apply-templates select="t:title"/></a> <span class="bibID"><xsl:value-of select="t:biblScope"/></span></p>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
