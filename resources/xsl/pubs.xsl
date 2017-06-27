@@ -86,30 +86,30 @@
     
     <xsl:template match="t:bibl[@type='v']" mode="parent">
         <li><a href="/../{concat($url, normalize-space(./@xml:id))}"> 
-            <xsl:choose>
+           <!-- <xsl:choose>
                 <xsl:when test="ancestor::t:bibl[@type='c']">
-                    <!-- corpus, display abbr -->
+                    <!-- corpus, display abbr 
                     <xsl:value-of select="ancestor::t:bibl[@type='c']/t:abbr[@type='primary']" />
                     <xsl:text> </xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
-                    <!-- not a corpus, display vol -->
+                    <!-- not a corpus, display vol 
                     <xsl:text>vol. </xsl:text>
                 </xsl:otherwise>
-             </xsl:choose> 
+             </xsl:choose> -->
              
             <xsl:choose>
-                <xsl:when test="t:biblScope and t:date">
+                <!-- <xsl:when test="t:biblScope and t:date">
                     <xsl:value-of select="t:biblScope" />
                     (<xsl:value-of select="t:date" />)
                 </xsl:when>
-                <xsl:otherwise>
+                <xsl:otherwise> -->
                 <xsl:if test="t:biblScope">
                     <xsl:value-of select="t:biblScope" />
                 </xsl:if>
-                <xsl:if test="t:date">
+                <!-- <xsl:if test="t:date">
                     <xsl:value-of select="t:date" />
-                </xsl:if>
+                </xsl:if> -->
                     
                 </xsl:otherwise>
             </xsl:choose>
