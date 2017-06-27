@@ -85,7 +85,7 @@
     </xsl:template>
     
     <xsl:template match="t:bibl[@type='v']" mode="parent">
-        <li><a href="/../{concat($url, normalize-space(./@xml:id))}"> 
+        <li><a href="/../{concat($url, normalize-space(./t:biblScope))}"> 
             <xsl:choose>
                 <xsl:when test="ancestor::t:bibl[@type='c']">
                     <!-- corpus, display abbr -->
