@@ -86,17 +86,18 @@
     
     <xsl:template match="t:bibl[@type='v']" mode="parent">
         <li><a href="/../{concat($url, normalize-space(./@xml:id))}"> 
-            <xsl:choose>
+          <!--  This outputs the abbrevations next to individual volume entries for corpora
+              <xsl:choose>
                 <xsl:when test="ancestor::t:bibl[@type='c']">
-                    <!-- corpus, display abbr -->
+                    corpus, display abbr
                     <xsl:value-of select="ancestor::t:bibl[@type='c']/t:abbr[@type='primary']" />
                     <xsl:text> </xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
-                    <!-- not a corpus, display vol -->
+                    not a corpus, display vol
                     <xsl:text>vol. </xsl:text>
                 </xsl:otherwise>
-             </xsl:choose> 
+             </xsl:choose>  -->
              
             <xsl:choose>
                 <xsl:when test="t:biblScope">
