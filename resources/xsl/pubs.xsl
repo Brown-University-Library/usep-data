@@ -123,9 +123,9 @@
         <i><xsl:value-of select="."/></i>.
     </xsl:template>
     
-   <!-- <xsl:template match="t:abbr[@type='primary']" mode="corpus journal">
+    <xsl:template match="t:abbr[@type='primary']" mode="corpus journal">
         <xsl:value-of select="concat('[',.,'] ')"/>
-    </xsl:template> -->
+    </xsl:template>
     
     <xsl:template match="t:title" mode="#all">
         <i><xsl:value-of select="."/></i>.
