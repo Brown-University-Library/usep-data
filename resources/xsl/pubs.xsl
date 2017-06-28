@@ -99,14 +99,10 @@
              </xsl:choose> 
              
             <xsl:choose>
-                <xsl:when test="t:biblScope and t:date">
+                <xsl:when test="t:biblScope">
                     <xsl:value-of select="t:biblScope" />
-                    (<xsl:value-of select="t:date" />)
                 </xsl:when>
-                <xsl:otherwise>
-                <xsl:if test="t:biblScope">
-                    <xsl:value-of select="t:biblScope" />
-                </xsl:if>
+                <xsl:otherwise>                
                 <xsl:if test="t:date">
                     <xsl:value-of select="t:date" />
                 </xsl:if>
