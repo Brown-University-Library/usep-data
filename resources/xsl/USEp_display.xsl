@@ -35,7 +35,6 @@
         2016-01-21 SJD Fixed typo in provenance, added display of descriptions for provenance/acquisition
         2016-03-02 SJD Made fixes to allow multiple provenance elements to display correctly
         2016-11-10 EM change to display XML button to view source
-        2017-06-29 SJD fixed mistake in provenance display
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -111,10 +110,9 @@
                                             <xsl:otherwise><xsl:value-of select="$dateOfOrigin"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td></tr>
-                             
+                                <xsl:for-each select="//t:provenance">
                                     <tr><td class="label">Subsequent Location</td>
-                                        <td class="value">   
-                                            <xsl:for-each select="//t:provenance">
+                                        <td class="value">
                                             <xsl:choose>
                                                 <xsl:when test="string-length(child::t:placeName) !=0"><xsl:value-of select="(normalize-space(child::t:date),', ', child::t:placeName)"/></xsl:when>
                                                 <xsl:otherwise><xsl:value-of select="normalize-space(child::t:date)"/></xsl:otherwise>
