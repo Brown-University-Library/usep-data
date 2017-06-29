@@ -105,11 +105,12 @@
                                     </xsl:for-each></td></tr>
                                 <tr><td class="label">Place of Origin</td>
                                     <td class="value">
-                                        <xsl:choose>
-                                            <xsl:when test="string-length($placeOfOrigin) !=0"> <xsl:value-of select="concat($placeOfOrigin,', ', $dateOfOrigin)"/></xsl:when>
-                                            <xsl:otherwise><xsl:value-of select="$dateOfOrigin"/></xsl:otherwise>
-                                        </xsl:choose>
+                                        <xsl:value-of select="$placeOfOrigin"/>
                                     </td></tr>
+                                <tr><td class="label">Date of Origin</td>
+                                <td class="value">
+                                    <xsl:value-of select="$dateOfOrigin"/>
+                                </td></tr>
                                 <xsl:for-each select="//t:provenance">
                                     <tr><td class="label">Subsequent Location</td>
                                         <td class="value">
