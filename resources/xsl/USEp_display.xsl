@@ -112,15 +112,15 @@
                                 <td class="value">
                                     <xsl:value-of select="$dateOfOrigin"/>
                                 </td></tr>
-                                
+                                <xsl:for-each select="//t:provenance">
                                     <tr><td class="label">Subsequent Location</td>
-                                        <td class="value">                                           
+                                        <td class="value">
                                             <xsl:choose>
-                                                <xsl:when test="string-length($placeOfProvenance) !=0">
-                                                    <xsl:value-of select="($dateOfProvenance,', ', $placeOfProvenance)"/>
+                                                <xsl:when test="string-length(child::t:placeName) !=0">
+                                                    <xsl:value-of select="(child::t:date,', ', child::t:placeName)"/>
                                                 </xsl:when>
                                                 <xsl:otherwise>
-                                                    <xsl:value-of select="$dateOfProvenance"/>
+                                                    <xsl:value-of select="child::t:date"/>
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </td>
@@ -129,7 +129,7 @@
                                 <tr><td class="label">Acquired</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length($acquisitionDesc) !=0"><xsl:value-of select="concat($acquisitionDate,', ', $acquisitionDesc)"/></xsl:when>
+                                            <xsl:when test="string-length($acquisitionDesc) !=0"><xsl:value-of select="concat($acquisitionDate, ', ', $acquisitionDesc)"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="$acquisitionDate"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td>
