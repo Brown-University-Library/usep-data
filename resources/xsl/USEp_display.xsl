@@ -119,7 +119,7 @@
                                                 <xsl:when test="string-length(child::t:placeName) !=0">
                                                     <xsl:value-of select="(child::t:date,', ', child::t:placeName)"/>
                                                 </xsl:when>
-                                                <xsl:value-of select="c"
+                                                <xsl:value-of select="c"/>
                                                 <xsl:otherwise>
                                                     <xsl:value-of select="child::t:date"/>
                                                 </xsl:otherwise>
