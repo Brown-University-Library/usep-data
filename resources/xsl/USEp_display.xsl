@@ -38,10 +38,10 @@
         2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
         ******************************************************************************   -->
     
-    <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
+    <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
     <xsl:variable name="imageDir" select="'../../../../usep_images'"/>
     
-    <xsl:include href="epidoc-xsl/start-edition.xsl"/>
+    <xsl:include href="epidoc-xsl-p5/start-edition.xsl"/>
     
     <!-- Output is not complete HTML file, because in our case, most of the page, header and so on are handled by django.
         This script takes care of anything beneath the title of the inscription (handled by django) down to the bibliographic
@@ -197,7 +197,19 @@
                 
                 <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
                 <xsl:if test="/t:TEI/t:text/t:body/t:div[@type='edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type='edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type='edition']/t:div[@type='textpart']">
-                    <xsl:apply-templates select="/t:TEI/t:text/t:body/t:div[@type='edition']"/>
+                    <style id="transcription_style">
+                        .linenumber {
+                            display: block;
+                            float: left;
+                            margin-left: -2em;
+                        }
+                    </style>
+                    <!-- <xsl:apply-templates select="/t:TEI/t:text/t:body/t:div[@type='edition']"/> -->
+                    <xsl:call-template name="default-structure">
+                        <xsl:with-param name="parm-leiden-style" tunnel="yes">panciera</xsl:with-param>
+                        <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double">5</xsl:with-param>
+                        <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
+                    </xsl:call-template>
                 </xsl:if>
                 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->
