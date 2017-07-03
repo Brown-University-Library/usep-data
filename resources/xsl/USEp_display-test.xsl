@@ -25,7 +25,6 @@
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
     <xsl:variable name="imageDir" select="'../../../../usep_images'"/>
 
-
     <!-- Output is not complete HTML file, because in our case, most of the page, header and so on are handled by django.
         This script takes care of anything beneath the title of the inscription (handled by django) down to the bibliographic
         citations and the images. -->
@@ -90,8 +89,7 @@
                             margin-left: -2em;
                         }
                     </style>
-                    <!-- <xsl:apply-templates select="/t:TEI/t:text/t:body/t:div[@type='edition']"/> -->
-                    <xsl:call-template name="default-structure">
+                    <xsl:call-template name="default-body-structure">
                         <xsl:with-param name="parm-leiden-style" tunnel="yes">panciera</xsl:with-param>
                         <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double">5</xsl:with-param>
                         <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
