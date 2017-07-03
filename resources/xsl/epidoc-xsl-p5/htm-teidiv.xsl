@@ -37,8 +37,10 @@
             </xsl:choose>
           </xsl:if>
 
+          <xsl:if test="not(@type='bibliography')">
           <!-- Body of the div -->
           <xsl:apply-templates/>
+          </xsl:if>
 
         </div>
 
