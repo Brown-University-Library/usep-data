@@ -35,6 +35,7 @@
         2016-01-21 SJD Fixed typo in provenance, added display of descriptions for provenance/acquisition
         2016-03-02 SJD Made fixes to allow multiple provenance elements to display correctly
         2016-11-10 EM change to display XML button to view source
+        2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="utf-8" method="xhtml"/>
@@ -105,17 +106,22 @@
                                     </xsl:for-each></td></tr>
                                 <tr><td class="label">Place of Origin</td>
                                     <td class="value">
-                                        <xsl:choose>
-                                            <xsl:when test="string-length($placeOfOrigin) !=0"> <xsl:value-of select="concat($placeOfOrigin,', ', $dateOfOrigin)"/></xsl:when>
-                                            <xsl:otherwise><xsl:value-of select="$dateOfOrigin"/></xsl:otherwise>
-                                        </xsl:choose>
+                                        <xsl:value-of select="$placeOfOrigin"/>
                                     </td></tr>
+                                <tr><td class="label">Date of Origin</td>
+                                <td class="value">
+                                    <xsl:value-of select="$dateOfOrigin"/>
+                                </td></tr>
                                 <xsl:for-each select="//t:provenance">
                                     <tr><td class="label">Subsequent Location</td>
                                         <td class="value">
                                             <xsl:choose>
-                                                <xsl:when test="string-length(child::t:placeName) !=0"><xsl:value-of select="(normalize-space(child::t:date),', ', child::t:placeName)"/></xsl:when>
-                                                <xsl:otherwise><xsl:value-of select="normalize-space(child::t:date)"/></xsl:otherwise>
+                                                <xsl:when test="string-length(child::t:placeName) !=0">
+                                                    <xsl:value-of select="(child::t:date,', ', child::t:placeName)"/>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:value-of select="child::t:date"/>
+                                                </xsl:otherwise>
                                             </xsl:choose>
                                         </td>
                                     </tr>
@@ -123,7 +129,7 @@
                                 <tr><td class="label">Acquired</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length($acquisitionDesc) !=0"><xsl:value-of select="concat($acquisitionDate, ', ', $acquisitionDesc)"/></xsl:when>
+                                            <xsl:when test="string-length($acquisitionDesc) !=0"><xsl:value-of select="concat($acquisitionDate,', ', $acquisitionDesc)"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="$acquisitionDate"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td>
@@ -135,7 +141,7 @@
                                             <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns &gt;'1'"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' lines')"/></xsl:when>                                            
                                             <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns='1' and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' line')"/></xsl:when>
                                             <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns &gt;'1' and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@columns, ' columns, ', $layout/@writtenLines, ' line')"/></xsl:when>
-                                           <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns='1' and $layout/@writtenLines &gt;'1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' lines')"/></xsl:when>
+                                            <xsl:when test="string-length($layout/@columns) !=0 and string-length($layout/@writtenLines) !=0 and $layout/@columns='1' and $layout/@writtenLines &gt;'1'"><xsl:value-of select="concat($layout/@columns, ' column, ', $layout/@writtenLines, ' lines')"/></xsl:when>
                                             <xsl:when test="$layout/@columns='0' and string-length($layout/@writtenLines) !=0 and $layout/@writtenLines='1'"><xsl:value-of select="concat($layout/@writtenLines, ' line')"/></xsl:when>
                                             <xsl:when test="$layout/@columns='0' and string-length($layout/@writtenLines) !=0 and $layout/@writtenLines!='1'"><xsl:value-of select="concat($layout/@writtenLines, ' lines')"/></xsl:when>
                                        </xsl:choose>
