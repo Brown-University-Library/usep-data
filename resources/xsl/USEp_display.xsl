@@ -204,7 +204,12 @@
                             margin-left: -2em;
                         }
                     </style>
-                    <xsl:apply-templates select="/t:TEI/t:text/t:body/t:div[@type='edition']"/>
+                    <!-- <xsl:apply-templates select="/t:TEI/t:text/t:body/t:div[@type='edition']"/> -->
+                    <xsl:call-template name="default-body-structure">
+                        <xsl:with-param name="parm-leiden-style" tunnel="yes">panciera</xsl:with-param>
+                        <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double">5</xsl:with-param>
+                        <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
+                    </xsl:call-template>
                 </xsl:if>
                 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->
