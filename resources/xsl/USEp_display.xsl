@@ -36,7 +36,6 @@
         2016-03-02 SJD Made fixes to allow multiple provenance elements to display correctly
         2016-11-10 EM change to display XML button to view source
         2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
-        2017-07-14 SJD tweaked handling of provenance and acquisition display
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -113,23 +112,24 @@
                                 <td class="value">
                                     <xsl:value-of select="$dateOfOrigin"/>
                                 </td></tr>
-                                <tr><td class="label">Subsequent Location</td>
+                                <xsl:for-each select="//t:provenance">
+                                    <tr><td class="label">Subsequent Location</td>
                                         <td class="value">
                                             <xsl:choose>
-                                                <xsl:when test="string-length($placeOfProvenance) !=0">
-                                                    <xsl:value-of select="($dateOfProvenance,', ',$placeOfProvenance"/>
+                                                <xsl:when test="string-length(child::t:placeName) !=0">
+                                                    <xsl:value-of select="(child::t:date,', ', child::t:placeName)"/>
                                                 </xsl:when>
                                                 <xsl:otherwise>
-                                                    <xsl:value-of select="$dateOfProvenance"/>
+                                                    <xsl:value-of select="child::t:date"/>
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </td>
                                     </tr>
-                                
+                                </xsl:for-each>
                                 <tr><td class="label">Acquired</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length($acquisitionDesc) !=0"><xsl:value-of select="concat($acquisitionDate,', ',$acquisitionDesc)"/></xsl:when>
+                                            <xsl:when test="string-length($acquisitionDesc) !=0"><xsl:value-of select="concat($acquisitionDate, ', ', $acquisitionDesc)"/></xsl:when>
                                             <xsl:otherwise><xsl:value-of select="$acquisitionDate"/></xsl:otherwise>
                                         </xsl:choose>
                                     </td>
