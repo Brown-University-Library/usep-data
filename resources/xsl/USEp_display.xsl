@@ -115,14 +115,16 @@
                                 </td></tr>
                                 <tr><td class="label">Subsequent Location</td>
                                         <td class="value">
-                                            <xsl:choose>
-                                                <xsl:when test="string-length($placeOfProvenance) !=0">
-                                                    <xsl:value-of select="($dateOfProvenance,', ',$placeOfProvenance"/>
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                    <xsl:value-of select="$dateOfProvenance"/>
-                                                </xsl:otherwise>
-                                            </xsl:choose>
+                                            <xsl:for-each select="t:provenance">
+                                                <xsl:choose>
+                                                    <xsl:when test="string-length($placeOfProvenance) !=0">
+                                                        <xsl:value-of select="($dateOfProvenance,', ',$placeOfProvenance"/>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:value-of select="$dateOfProvenance"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:for-each>
                                         </td>
                                     </tr>
                                 
