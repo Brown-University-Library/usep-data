@@ -36,6 +36,7 @@
         2016-03-02 SJD Made fixes to allow multiple provenance elements to display correctly
         2016-11-10 EM change to display XML button to view source
         2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
+        2017-07-14 SJD tweaked spacing of external links in bibl
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -321,11 +322,11 @@
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type='jstor']">
                     <br/>
-                    <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:value-of select="id($myID)/t:ref[@type='jstor']"/></a> (external link; access to JSTOR required)
+                    <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:value-of select="concat(id($myID)/t:ref[@type='jstor'], '(external link; access to JSTOR required)')"/></a> 
                 </xsl:if>
                 
                 <xsl:if test="t:ref">
-                    <a href="{t:ref/@target}"> <xsl:value-of select="concat(t:ref, ' ')"/></a> (external link)
+                    <a href="{t:ref/@target}"> <xsl:value-of select="concat(t:ref, ' (external link)')"/></a> 
                 </xsl:if>
                 
             </p>
