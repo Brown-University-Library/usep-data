@@ -36,7 +36,7 @@
         2016-03-02 SJD Made fixes to allow multiple provenance elements to display correctly
         2016-11-10 EM change to display XML button to view source
         2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
-        2017-07-14 SJD tweaked spacing of external links in bibl
+        2017-07-14 SJD tweaked spacing of external links in bibl; renamed Date of Origin to Date
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -109,7 +109,7 @@
                                     <td class="value">
                                         <xsl:value-of select="$placeOfOrigin"/>
                                     </td></tr>
-                                <tr><td class="label">Date of Origin</td>
+                                <tr><td class="label">Date</td>
                                 <td class="value">
                                     <xsl:value-of select="$dateOfOrigin"/>
                                 </td></tr>
