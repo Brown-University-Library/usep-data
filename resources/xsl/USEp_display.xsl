@@ -36,7 +36,7 @@
         2016-03-02 SJD Made fixes to allow multiple provenance elements to display correctly
         2016-11-10 EM change to display XML button to view source
         2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
-        2017-07-14 SJD tweaked handling of provenance and acquisition display; fixed issue in variables
+        2017-07-14 SJD tweaked handling of provenance and acquisition display
         ******************************************************************************   -->
     
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -73,12 +73,21 @@
                             <!-- variables -->
                             <xsl:variable name="placeOfOrigin"
                                 select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
-                            <xsl:variable name="dateOfOrigin" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:date"/>                        
-                            <xsl:variable name="placeOfOrigin" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
-                            <xsl:variable name="placeOfProvenance" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:placeName"/>                            
-                            <xsl:variable name="dateOfProvenance" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:date"/>
-                            <xsl:variable name="acquisitionDesc" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p"/>
-                            <xsl:variable name="acquisitionDate" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:date"/>
+                            <xsl:variable name="dateOfOrigin">
+                                <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:date"/>
+                            </xsl:variable>                            
+                            <xsl:variable name="placeOfOrigin"
+                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
+                            <xsl:variable name="placeOfProvenance">
+                                <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:placeName"/>
+                            </xsl:variable>
+                            <xsl:variable name="dateOfProvenance"
+                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:date"/>
+                            <xsl:variable name="acquisitionDesc">
+                                <xsl:sequence select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p"/>
+                            </xsl:variable>
+                            <xsl:variable name="acquisitionDate"
+                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:date"/>
                             <xsl:variable name="condition" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:condition"/>
                             <xsl:variable name="layout" select="t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:layoutDesc/t:layout"/>
                             <xsl:variable name="writing" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/>
