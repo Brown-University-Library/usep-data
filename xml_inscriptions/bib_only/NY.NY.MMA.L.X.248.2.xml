@@ -24,12 +24,63 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem>
+                  <msItem class="#funerary.epitaph">
                      <p/>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <physDesc>
+                  <objectDesc ana="#tablet">
+                            <supportDesc ana="#marble">
+                                <support>
+                        <!-- short summary of the material and support of an inscription -->
+                                    <p>Funerary inscription recording the death of Lollia Genialis.</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>23.5</height>
+                                        <width>32.4</width>
+                                        <depth>4.8</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout writtenLines="6" columns="1">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved"> </handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p></p>
+                            </decoNote>
+                        </decoDesc></physDesc>
+               <history>
+               <summary>
+                            <rs/>  <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0001" notAfter="0200">1st-2nd centuries CE</date>
+                            <placeName ref="europe">Unknown</placeName>
+                        </origin>
+                     
+                        <provenance>
+                           
+                            <placeName ref="northAmerica.unitedStates.newYork">Museum Accession</placeName>
+                        </provenance></history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -50,6 +101,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="EM">More tweaks for bib only inscriptions</change>
+         <change when="2017-08-08" who="A. Hong">Addition of Metadata</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
