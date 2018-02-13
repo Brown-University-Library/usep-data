@@ -33,16 +33,14 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>Marble slab</p>
-                           
-                           <seg type="material">White marble</seg>
-                                            <dimensions type="surface" unit="m">
-                              <height>0.189</height>
-                              <width>0.223</width>
-                              <depth>0.03</depth>
+                          <p>White marble slab</p>
+                                            <dimensions type="surface" unit="cm">
+                              <height>18.9</height>
+                              <width>22.3</width>
+                              <depth>3.0</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>chipped; crack bisecting stone between lines 2 and 3</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p>chipped; crack bisecting stone between lines 2 and 3</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -51,11 +49,11 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote ana="">
                         <p/>
                      </decoNote>
                   </decoDesc>
@@ -79,6 +77,9 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">189-190 no. 320</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book;amp&id_nr=EDR101353">EDR101353</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -93,6 +94,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
+         <change when="2017-10-07" who="SJD">Added control vocab for condition, hand; added likn to EDR; added missing persName tagging in transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -106,11 +108,11 @@
          <div type="edition">
             <ab>
                 <lb n="1"/>
-               <persName type="gentilicium" key="Lusia">Lusiae <name type="praenomen" key="Gaius">
+               <persName type="gentilicium" key="Lusia">Lusiae <persName><name type="praenomen" key="Gaius">
                      <expan>
                         <abbr>C</abbr><ex>aii</ex>
                      </expan>
-                  </name> 
+                  </name></persName>
                   <expan>
                      <abbr>l</abbr><ex>ibertae</ex>
                   </expan>
@@ -123,12 +125,12 @@
                         <abbr>M</abbr><ex>arci</ex>
                      </expan>
                   </name> 
-                  <name type="gentilicium" key="Cuvus">Cluvi</name> 
-                  <name type="praenomen" key="Marcus">
+                  <name type="gentilicium" key="Cluvus">Cluvi</name> 
+                  <persName><name type="praenomen" key="Marcus">
                      <expan>
                         <abbr>M</abbr><ex>arci</ex>
                      </expan>
-                  </name> 
+                  </name></persName> 
                   <expan>
                      <abbr>l</abbr><ex>iberti</ex>
                   </expan>
