@@ -10,22 +10,16 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>ITA.Rome.AAR.L.60</title>
+                <title>ITA.Rome.AAR.L.9331</title>
             </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
-                <idno>: Repeat the value that is in <title>.
-                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
-                characters that are legal in XML names and viable URLs. 
-            -->
             <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.60">ITA.Rome.AAR.L.60</idno>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9331">ITA.Rome.AAR.L.9331</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
                               <settlement>  = city
                               <institution> = library, museum, university or other institution
@@ -41,115 +35,117 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
-                        <idno>60</idno>
+                        <repository/>
+                        <idno>9331</idno>
                         <altIdentifier>
-                            <idno>9282</idno>
+                            <idno>111</idno>
                         </altIdentifier>
                     </msIdentifier>
-                    
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
-                        <!-- short summary of the content of an inscription -->
-                            <p>Early Christian inscription with large Chi Rho (epitaph of Maxima?)</p>  
+                            <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of M. Flovius Philocalus</p>
                         </msItem>
                     </msContents>
-                    
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-                    
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#slab">
+                        <objectDesc ana="#tablet">
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Marble slab</p>
+                                    <p>Pentelic(?) marble tablet</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>59.5</height>
-                                        <width>51</width>
-                                        <depth/>
+                                        <height>27</height>
+                                        <width>47.5</width>
+                                        <depth min="1.6" max="2.0">1.6-2</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>damaged at top and bottom left, with some loss of text</p>
+                                <condition ana="#complete.intact">
+                                    <p>The border is pock-marked, with heavy chipping</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="7">
-                                    <p/>
+                                <layout columns="1" writtenLines="8">
+                                    <p>The text is centered on the stone; some letters appear
+                                        crowded on the surface</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        
                         <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved"> 
-                                <dimensions type="letter" unit="cm">
-                                    <height min="3.2" max="4.5"/>
+                            <handNote ana="#impressed.inscribed.carved"> The text is marked by
+                                triangular interpuncts. The capitals tend to be broad (especially
+                                the letters a, m, and v). Serifs are present and consistently used
+                                across the letters. In line four, the initial "i" is tall.
+                                    <dimensions type="letter" unit="cm">
+                                    <height min="1.6" max="2">1.6-2.0</height>
                                 </dimensions>
                             </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
-                        
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
-                            <decoNote ana="Chi_Rho">
-                                <p>Large Chi Rho monogram  at right spanning lines 3-6</p>
+                            <decoNote>
+                                <p>Single border around the edges and a shallow molding
+                                </p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
-                    
                     <!--  *************************************  <history>  *********************************  -->
-                    
                     <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
                     <history>
-                    
                         <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
+                            <rs/>
+                            <!-- content can be "fake" or blank -->
                         </summary>
-                        
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0400" notAfter="0500">400-500 CE</date>
-                            <placeName ref="europe.italy.rome">Via Labicana, Rome, Italy</placeName>
+                            <date notBefore="0001" notAfter="0200">First to second century CE</date>
+                            <placeName ref="europe.italy.rome">Rome, Vigna Nari</placeName>
                         </origin>
-                        
-
+                        <provenance>
+                            <date></date>
+                            <placeName ref="europe.italy.rome">Rome, via Masina 5, American Academy,
+                                cortile</placeName>
+                        </provenance>
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Fabretti_1702"/>
-                        <biblScope unit="page">556-557, no. 26</biblScope>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">18502</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Allard_1890"/>
-                        <biblScope unit="page">5-6, 374, 378</biblScope>
+                        <ptr type="rest-of-bibl" target="#SuppPapers_Egbert"/>
+                        <biblScope unit="page">266, no. 10</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">107-110, no. 2</biblScope>
+                        <biblScope unit="page">123, no. 111</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Marucchi_1933"/>
-                        <biblScope unit="page">310-311</biblScope>
+                        <ptr type="rest-of-bibl" target="#Solin_1982"/>
+                        <biblScope unit="page">364, 443, 751</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1087&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
+                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1138&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR147493">EDR147493</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -176,8 +172,10 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2016-07-15" who="Rachel Catherine Patt">Initial Encoding</change>
-            <change when="2017-02-07" who="SJD">Cleaned and updated metadata, added altIdentifier, added full bibliography, added some descriptions in p elements, added genre, proofed transcription</change>
+            <change when="2016-07-23" who="Katelin McCullough">Initial Encoding</change>
+            <change when="2017-06-26" who="SJD">Proofed metadata; added altIdentifier; corrected provenance and location; added bibl beyond CIL; proofed transcription (small punctuation and capitalization changes; added tall feature in line 4)</change>
+            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
+           
         </revisionDesc>
 
     </teiHeader>
@@ -187,26 +185,46 @@
 
     <facsimile>
         <surface>
-            <desc/>
-            <graphic url=""/>
-        </surface>
+            <desc>2016.07.10</desc>
+            <graphic url="ITA.Rome.AAR.L.111.jpg"/>
+        </surface>       
     </facsimile>
 
     <text>
         <body>
             <div type="edition"><!-- transcription goes here -->
-            <ab>T
-            <lb n="1"/>quoro sun<supplied reason="omitted">t</supplied> nomi
-            <lb n="2" break="no"/>nae <persName><name type="cognomen" key= "Maxima">Ma<choice><reg>x</reg><orig>s</orig></choice>ime</name></persName>
-            <lb n="3"/>cat<choice><corr>a</corr><sic>i</sic></choice>baticu
-            <lb n="4"/><expan><abbr><am>I</am></abbr><ex>primo</ex></expan> secundu<supplied reason="omitted">m</supplied>
-            <lb n="5"/>marture
-            <lb n="6"/>dominu
-            <lb n="7"/><persName><name type="cognomen" key="Castulus">Castulu</name></persName> i<supplied reason="omitted">n</supplied> sca<supplied reason="omitted">l</supplied>"a
+            <ab>
+            <lb n="1"/>Dis Manibus.
+            <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="genticilium" key="Flovius">Flovio</name> <name type="cognomen" key="Philocalus">Philocalo</name></persName> et
+            <lb n="3"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="genticilium" key="Flovius">Flovio</name> <name type="cognomen" key="Telesphorus">Telesphoro</name></persName> filio,
+            <lb n="4"/><hi rend="tall">i</hi>tem <persName><name type="genticilium" key="Fluvia">Fluviae</name><name type="cognomen" key="Tyche">Tyche</name></persName> libertae
+            <lb n="5"/>et libertis libertabusque
+            <lb n="6"/>posterisque eorum. <expan><abbr>H</abbr><ex>oc</ex></expan> <expan><abbr>m</abbr><ex>monumentum</ex></expan> <expan><abbr>h</abbr><ex>eredem</ex></expan> <expan><abbr>n</abbr><ex>on</ex></expan> <expan><abbr>s</abbr><ex>equetur</ex></expan>.
+            <lb n="7"/>In fronte et in agro pedes 
+            <lb n="8"/>quadrati <num value="16" type="cardinal">sede<supplied reason="omitted">c</supplied>im</num>.
+                           
             </ab></div>
              
             <div type="commentary"><!-- notes go here -->
-            <p></p></div>
+            <p>Notes: Solin suggests a date in the first or second century CE and posits that the
+                    latter may be more likely. The opening phrase may help to narrow this down. "Dis
+                    Manibus" is not abbrieviated, therefore this inscription is more likely to be
+                    pre-Flavian dynasty in date. However, this is not a hard rule and how one
+                    interprets the spelling of the genticilia could push the suggested date into the
+                    Flavian dynasty. Egbert suggested that Fluviae in line four is an error for
+                    Floviae. Ohl then suggested that all the names may have been mistakenly written
+                    and "Flo" may be in error for "Fla." The spellings are unique in CIL VI. This
+                    interpretation could push the date of the sinscription into the latter part of
+                    the first century CE. This inscription also writes out the whole phrase "in
+                    fronte et in agro pedes" which is normally abbrieviated. The need to write out
+                    this whole phrase removes any room for including the name of a donor for the
+                    monument and, in fact, one is not named. In the last line, the specified
+                    measurement for the monument is written out "quadrati sedeim." This would
+                    normally be corrected to "sedecim," but may represent the way in which the word
+                    was actually pronounced. Hallbauer 1936 proposes that this could have occurred
+                    as the interior "c" was pronounced as a softer "g" sound over time. This soft
+                    "g" sound may have eventually been dropped out of the word entirely and the
+                    vowels elided together. </p></div>
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             

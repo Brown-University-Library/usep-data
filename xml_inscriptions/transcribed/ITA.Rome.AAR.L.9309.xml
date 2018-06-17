@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
-
         <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>ITA.Rome.AAR.L.52</title>
+                <title>ITA.Rome.AAR.L.9309</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -18,14 +16,13 @@
                 characters that are legal in XML names and viable URLs. 
             -->
             <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.52">ITA.Rome.AAR.L.52</idno>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9309">ITA.Rome.AAR.L.9309</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
                               <settlement>  = city
                               <institution> = library, museum, university or other institution
@@ -42,65 +39,56 @@
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
                         <repository/>
-                        <idno>52</idno>
+                        <idno>9309</idno>
                         <altIdentifier>
-                            <idno>9274</idno>
+                            <idno>89</idno>
                         </altIdentifier>
                     </msIdentifier>
-                    
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Marcus Ulpius Ionicus, an imperial freedman</p>
+                            <p>Epitaph of Antiochus Galbianus</p>
                         </msItem>
                     </msContents>
-                    
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-                    
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#tablet">
+                        <objectDesc ana="#stele">
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>White marble tablet</p>
+                                    <p>Marble stele</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>27.5</height>
-                                        <width>33.5</width>
+                                        <height>80</height>
+                                        <width>24</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>Diagonal break resulting in loss of bottom right hand corner</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="6">
-                                    <p>Guidelines visible, but not used by carver except line 1</p>
+                                <layout columns="1" writtenLines="10">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        
                         <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved"> Text not quite centered on
-                                the stone, leaving a gap on the left. Interpuncts between words
-                                except at the ends of lines. There is an angled dash at the end of
-                                line two.
+                            <handNote ana="#impressed.inscribed.carved">
                                 <dimensions type="letter" unit="cm">
-                                    <height min="2.5" max="3.8">2.5-3.8</height>
+                                    <height min="1.8" max="3.1">1.8-3.1</height>
                                 </dimensions>
                             </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
-                        
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
@@ -108,104 +96,111 @@
                             </decoNote>
                         </decoDesc>
                     </physDesc>
-                    
                     <!--  *************************************  <history>  *********************************  -->
-                    
                     <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
                     <history>
-                    
                         <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
+                            <rs/>
+                            <!-- content can be "fake" or blank -->
                         </summary>
-                        
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0150">early - mid 2nd century CE</date>
+                            <date notBefore="0050" notAfter="0200">Late first - second century CE</date>
                             <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                         </origin>
-                        
-
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">29223</biblScope>
+                        <biblScope unit="item">38003</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">118, no. 52</biblScope>
+                        <biblScope unit="page">121, no. 89</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR145886">EDR145886</ref>
+                        <ptr type="rest-of-bibl" target="#JRS_54_Weaver"/>
+                        <biblScope unit="page">125 n. 62</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1078&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
+                        <ptr type="rest-of-bibl" target="#Chantraine_1967"/>
+                        <biblScope unit="page">177, 314 n. 149, 352, 358, 361-62, 369-70</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Weaver_1972"/>
+                        <biblScope unit="page">216 n. 4</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR147030">EDR147030</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1116&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
-
         <!--  *************************************  <encodingDesc>  ********************************* -->
         <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
         <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
         </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
+        <profileDesc><!-- not used --></profileDesc>
         <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
+        <!-- Record all changes here -->
         <revisionDesc>
-            <change when="2016-07-04" who="Melissa Huber">Initial Encoding</change>
-            <change when="2017-01-31" who="SJD">Fixed file name; add altIdentifier; added msItem description; corrected objectDesc and added support description; added basic dimensions from AAR catalog; tweaked wording of condition; add letter dimensions from AAR; add Ohl, AAR, and EDR to bibl; add image filename; proofed transcription (changed supplied in last line to reflect the intact text appearing in CIL, added name tagging for Augustus)</change>
+            <change when="2016-07-29" who="Scott Weiss">Initial Encoding</change>
+            <change when="2017-02-07" who="SJD">Added altIdentifier, extensive metadata cleaning, added specificity to most fields, added letter dimensions, added date and provenance, added bibliography, added image filepath, proofed transcription</change>
+            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
         </revisionDesc>
-
     </teiHeader>
-
     <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
+    <!-- Used to record images of an inscription.   -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="ITA.Rome.AAR.L.52.jpg"/>
+            <graphic url="ITA.Rome.AAR.L.89.jpg"/>
         </surface>
     </facsimile>
-
     <text>
         <body>
-            <div type="edition"><!-- transcription goes here -->
-            <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-                <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="gentilicium" key="Ulpius">Ulpio</name> <persName type="imperial"><name type="cognomen" key="Augustus"><expan><abbr>A</abbr><ex>ugusti</ex></expan></name></persName> <expan><abbr>lib</abbr><ex>erto</ex></expan>
-                <lb n="3"/><name type="cognomen" key="Ionicus">Ionico</name></persName> <persName><name type="gentilicium" key="Claudia">Claudia</name>
-                <lb n="4"/><name type="cognomen" key="Iusta">Iusta</name></persName> marito
-                <lb n="5"/>optimo ben<unclear>e</unclear> <supplied reason="lost">me</supplied>
-                <lb n="6" break="no"/>rent<supplied reason="undefined" evidence="previouseditor">is fecit</supplied>.
-            </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
-            <p>The Julio-Claudian gentilicium of the dedicator, Claudia, and the Trajanic cognomen and gentilicium of the dedicatee suggests an early to mid 2nd century CE date, likely closer to the early 2nd century.  Guidelines are visible on the stone, but not used by the carver except on line 1.  Perhaps the stone had been originally prepared for another inscription or the carver erred when laying out the lines for the text.  Carver error is the most plausible expanation as the text is not even centered on the stone. CIL editors knew the entire text.</p></div>
-            
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
+            <div type="edition">
+                <!-- transcription goes here -->
+                <ab>
+                    <lb n="1"/>D<hi rend="tall">i</hi>s 
+                    <lb n="2"/>Manibus. 
+                    <lb n="3"/><persName><name type="cognomen" key="Antiochus">Antiochus</name>
+                    <lb n="4"/><name type="cognomen" key="Galbianus">Galbianus</name>
+                    <lb n="5"/><persName type="imperial"><name type="cognomen" key="Caesar">Caesaris</name></persName> servo<note>!</note></persName> 
+                    <lb n="6"/>fecit <persName><name type="gentilicium" key="Messia">Messia</name>
+                    <lb n="7"/><name type="cognomen" key="Tryphaena">Tryphaena</name></persName>
+                    <lb n="8"/>contubernali suo 
+                    <lb n="9"/>bene merenti 
+                    <lb n="10"/><add place="below"><expan><abbr>act</abbr><ex>ori</ex></expan> <expan><abbr>vic</abbr><ex>esimae</ex></expan></add>.
+                </ab>
+            </div>
+            <div type="commentary">
+                <!-- notes go here -->
+                <p></p>
+            </div>
+            <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+                    <xi:fallback>
+                        <p>US Ep bibliography</p>
+                    </xi:fallback>
+                </xi:include>
+            </div>
         </body>
     </text>
 </TEI>

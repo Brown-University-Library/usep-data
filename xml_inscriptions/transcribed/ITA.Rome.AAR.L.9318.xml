@@ -10,7 +10,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>ITA.Rome.AAR.L.17</title>
+                <title>ITA.Rome.AAR.L.9318</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -20,7 +20,7 @@
             <publicationStmt>
                
                 <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.17">ITA.Rome.AAR.L.17</idno>
+                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9318">ITA.Rome.AAR.L.9318</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
@@ -38,13 +38,13 @@
                 -->
                 <msDesc>
                     <msIdentifier>
-                        <region>Italy</region>
+                        <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
                         <repository></repository>
-                        <idno>17</idno>
+                        <idno>9318</idno>
                         <altIdentifier>
-                            <idno>9239</idno>
+                            <idno>98</idno>
                         </altIdentifier>
                     </msIdentifier>
                     
@@ -52,9 +52,10 @@
                     <msContents>
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+                        <msItem class="#building">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaphs of Amandus and Cornelia Libas</p>
+                            <p>Building inscription recording a restoration of a portico and perhaps
+                                also a shrine/temple to Sol by C. Iulius Anicetus</p>
                         </msItem>
                     </msContents>
                     
@@ -64,24 +65,25 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
-                        <objectDesc ana="#tablet">
+                        <objectDesc ana="#slab">
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>White marble tablet</p>
+                                    <p>White Luna marble slab</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>20.5</height>
-                                        <width>35.9</width>
-                                        <depth></depth>
+                                        <height>48</height>
+                                        <width>37</width>
+                                        <depth>8</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
+                                <condition ana="#fragment.single">
+                                    <p>Another fragment of this inscription (CIL 6.2185 = 6.31034b) is housed at
+                                        the Museo Nazionale Romano alle Terme</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="6">
+                                <layout columns="1" writtenLines="9">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -89,10 +91,12 @@
                         
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="2">
-                            <handNote ana="#impressed.inscribed.carved">
-                                <dimensions type="letter" unit="cm">
-                                    <height min="1.8" max="2.7">1.8-2.7</height>
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved"> The name of the dedicator, C.
+                                Iulius Anicetus on lines 1-2 is significantly larger than the rest
+                                of the text. Letter heights decrease in size from lines 3 to 9.
+                                Faint interpuncts between words.<dimensions type="letter" unit="cm">
+                                    <height min="2" max="8.5">2-8.5</height>
                                 </dimensions>
                             </handNote>
                             <!-- <handNote> is a repeatable element -->
@@ -120,8 +124,9 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0200">second century CE</date>
-                            <placeName ref="europe.italy.rome">Rome, Italy</placeName>
+                            <date notBefore="0101" notAfter="0103">102 CE</date>
+                            <placeName ref="europe.italy.rome">Rome, just outside the Porta
+                                Portuensis</placeName>
                         </origin>
                         
 
@@ -134,17 +139,19 @@
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">34380</biblScope>
+                        <biblScope unit="page">31034a</biblScope>
                     </bibl>
-                    <bibl xmlns="">
+                    <bibl>
                         <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope type="page">116, no. 17</biblScope>
+                        <biblScope unit="page">122, no. 98</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146010">EDR146010</ref>
+                        <ptr type="rest-of-bibl" target="#AE_1991"/>
+                        <biblScope unit="page">241-253</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1043&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
+                        <ptr type="rest-of-bibl" target="#Bonfante_Nagy_2015"/>
+                        <biblScope unit="page">94-95</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -171,8 +178,9 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2016-07-09" who="Brahm H. Kleinman">Initial Encoding</change>
-            <change when="2017-01-31" who="SJD">Added altIdentifier; general cleaning of metadata and vocab; added dimensions from AAR; cleaned bibl and added links to AAR and EDR; fixed image filepath; proofed transcription (removed spaces in line 4 since centered, added tall i in 7) </change>
+            <change when="2014-07-08" who="Melissa Huber">Initial Encoding</change>
+            <change when="2017-06-26" who="SJD">Cleaned metadata; added dimensions from Babcock's catalog; expanded bibl; proofed transcription</change>
+            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
         </revisionDesc>
 
     </teiHeader>
@@ -182,40 +190,31 @@
 
     <facsimile>
         <surface>
-            <desc>Epitaphs of Amandus and Cornelia Libas</desc>
-            <graphic url="ITA.Rome.AAR.L.17.jpg"/>
+            <desc/>
+            <graphic url="ITA.Rome.AAR.L.98.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
-            <div type="edition">
-                <div type="textpart" subtype="ansa" n="ansa sinistra">
-                <ab>
-                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan>
-                </ab>
-                </div>
-                <div type="textpart" subtype="ansa" n="ansa dextra">
-                    <ab>
-                        <lb n="1"/><expan><abbr>M</abbr><ex>anibus</ex></expan>.
-                     </ab>
-                </div>
-                <div type= "textpart" subtype= "campus">
-                   
+            <div type="edition"><!-- transcription goes here -->
             <ab>
-                <lb n="1"/><persName><name type="cognomen" key="Amandus">Amando</name></persName> <expan><abbr>fil</abbr><ex>io</ex></expan>
-                <lb n="2"/><persName><name type="cognomen" key="Comse">Comse</name></persName> fecit.
-                <lb n="3"/><handShift/><persName><name type="gentilicium" key="Cornelia">Corneliae</name>
-                <lb n="4"/><name type="cognomen" key= "Libas">Libadi</name></persName>
-                <lb n="5"/><persName><name type="praenomen" key= "Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Cornelius"><expan><abbr>Corn</abbr><ex>elius</ex></expan></name>
-                 <name type="cognomen" key="Symphorus"><expan><abbr>Symphor</abbr><ex>us</ex></expan></name></persName>
-                <lb n="6"/>uxsor<hi rend="tall">i</hi> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>.
-            </ab>
-                </div>
-                </div>
+                <lb n="1"/><persName><supplied reason="lost"><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name></supplied> <name type="gentilicium" key="Iulius"><supplied reason="lost">I</supplied>ulius</name>
+                <lb n="2"/><name type="cognomen" key="Anicetus"><supplied reason="lost">A</supplied>nicetus</name></persName>
+                <lb n="3"/><supplied reason="lost">vot</supplied>o suscepto
+                <lb n="4"/><gap reason="lost" quantity="4" unit="character" precision="low"/> primam portic<unclear>u</unclear><supplied reason="lost">m</supplied>
+                <lb n="5"/><supplied reason="lost">S</supplied>olis cum marmori<unclear>b</unclear><supplied reason="lost">us</supplied>
+                <lb n="6"/><gap reason="lost" quantity="6" unit="character" precision="low"/> opere novo amplia<supplied reason="lost">to</supplied>
+                <lb n="7"/><gap reason="lost" quantity="6" unit="character" precision="low"/>ntis in<unclear>c</unclear>hoatis su<supplied reason="lost">a</supplied>
+                <lb n="8"/><supplied reason="lost">pecuni</supplied><unclear>a</unclear> a solo <unclear>r</unclear>estituit
+                <lb n="9"/>ka<supplied reason="lost">l</supplied><supplied reason="undefined" evidence="previouseditor">atorum</supplied> <unclear>pontificu</unclear><supplied reason="lost">m</supplied>
+                <lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
+            </ab></div>
              
-            <div type="commentary">
-            <p>Found at the Villa Bertone in 1886, this marble tablet contains two funerary inscriptions. The first epitaph, for Amandus, encompasses the first two lines of the campus and both sides of the tabula ansata, and is carved in large, well defined capital letters. The second inscription, for Cornelia Libas, is carved in another hand, less finely, and uses interpuncts between words in lines 5-6. No relation is apparent between the two inscriptions. It is possible that the entirety of the campus was originally meant for the relatives of Comse and Amandus, but that Caius Cornelius Symphorus repurposed the tabula for an unrelated funary inscription upon the death of his wife.</p></div>
+            <div type="commentary"><!-- notes go here -->
+            <p>The date for this inscription, May 24th, 102 CE, and the ka[l] in line 9 comes from the second extant fragment of the inscription (CIL VI.2185 = VI.31034b).  The reconstruction of G(aius) as the praenomen in line 1 derives from other inscriptions found in the excavations outside the Porta Portuensis (CIL VI.52). 
+            Two suggestions for completing the beginning of line 7 are [pavime]ntis (L. Borsari) and orname[ntis].  Inchoatis in line 7 is incohatis, this switch is a common orthographical switch.
+            </p></div>
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
