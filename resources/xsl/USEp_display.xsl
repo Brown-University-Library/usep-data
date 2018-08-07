@@ -220,9 +220,8 @@
                         <h3>Authors/Editors</h3>
                         <xsl:variable name="author" select="/t:TEI/t:teiHeader/t:revisionDesc/t:change[@who]"/>
                         <xsl:variable name="changeDate" select="/t:TEI/t:teiHeader/t:revisionDesc/t:change[@when]"/>
-                        <tr>
-                            <td class="value">
-                                <xsl:choose>
+                        <xsl:for-each select="/t:TEI/t:teiHeader/t:revisionDesc/t:change">
+                            <xsl:choose>
                                 <xsl:when test="/t:TEI/t:teiHeader/t:revisionDesc/t:change[1]">
                                     <xsl:value-of select="concat('Created by:', $author, 'on: ', $changeDate)"/>
                                 </xsl:when>
@@ -230,8 +229,7 @@
                                     <xsl:value-of select="concat('Edited by:', $author, 'on: ', $changeDate)"/>
                                 </xsl:otherwise>
                             </xsl:choose>
-                            </td>
-                        </tr>                           
+                        </xsl:for-each>   
                     </div>
                 </xsl:if>
                 
