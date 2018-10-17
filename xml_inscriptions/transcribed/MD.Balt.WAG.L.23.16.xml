@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
-        
+
         <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>MD.Balt.JHU.L.48</title>
+                <title>MD.Balt.WAG.L.23.16</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -17,14 +17,14 @@
                 characters that are legal in XML names and viable URLs. 
             -->
             <publicationStmt>
-                
+               
                 <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.48">MD.Balt.JHU.L.48</idno>
+                <idno type="USEpigraphy" xml:id="MD.Balt.WAG.L.23.16">MD.Balt.WAG.L.23.16</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
                               <settlement>  = city
                               <institution> = library, museum, university or other institution
@@ -39,12 +39,9 @@
                     <msIdentifier>
                         <region>MD</region>
                         <settlement>Balt</settlement>
-                        <institution>JHU</institution>
-                        <repository></repository>
-                        <idno>48</idno>
-                        <altIdentifier>
-                            <idno>Acc. #1206 a, b, c</idno>
-                        </altIdentifier>
+                        <institution>WAG</institution>
+                        <repository/>
+                        <idno>23.16</idno>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -52,55 +49,48 @@
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
-                            <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Aelia Phoebe</p>
+                        <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of Marcus Ogulnius Iustus</p> 
                         </msItem>
                     </msContents>
                     
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-                        
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                        
-                        <objectDesc ana="#slab">
+                        <objectDesc ana="#stele">
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Dark grey marble slab</p>
+                                    <p> Marble stele, clamp holes on top of each end; base and top
+                                        not part of original inscription</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>55.2</height>
-                                        <width>30.6</width>
-                                        <depth>3.7</depth>
+                                        <height>113</height>
+                                        <width>66.5</width>
+                                        <depth>55.7</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragments.contig">
-                                    <p>three contiguous fragments, the largest the lower left, second largest the upper right, and smallest the upper left. Worn, evidencing water marks, as well as white marks, and dark discolorations. Hole for a nail at the bottom</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="9">
-                                    <p>letter spacing grows closer and more narrow towards the
-                                        bottom. Lines, evenly spaced, grow smaller towards the
-                                        bottom as well. A large space is empty beneath the last
-                                        line. The last line is smaller than the rest.</p>
+                                <layout columns="1" writtenLines="8">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        
                         <!--  *************************************  <handDesc>  ********************************* -->
                         <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved"> well formed letters, but the last
-                                lines begin to drift down and to the right.</handNote>
+                            <handNote ana="#impressed.inscribed.carved"> </handNote>
                             <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
+                           </handDesc>
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>Ring on right side, unfinished vase on left side</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -112,100 +102,125 @@
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
                     <history>
-                        
+                    
                         <summary>
                             <rs/>  <!-- content can be "fake" or blank -->
                         </summary>
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0199">second century CE</date>
-                            <placeName ref="europe.italy.rome">Via Salaria, 'in vinea
-                                Naria,' Rome, Italy</placeName>
+                            <date notBefore="0001" notAfter="0100">1st century CE</date>
+                            <placeName ref="europe.italy.rome">Vinea Brunona, Via Appia</placeName>
                         </origin>
-                        
-                        
+                        <provenance>
+                            <date notBefore="1850" notAfter="1902">before 1902
+                            </date>
+                            <placeName ref="europe.italy.rome"><persName>Don Marcello Massarenti</persName> Collection, Rome
+                            </placeName>
+                        </provenance>
+<provenance>
+    <date when="1902">1902
+    </date>
+    <placeName
+        ref="europe.italy.rome"><persName>Henry Walters</persName>, by purchase
+    </placeName>
+</provenance>
+                        <acquisition
+                            when="1931">1931
+                            <p>
+                                Walters Art Museum, by bequest
+                            </p>
+                           
+                        </acquisition>
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
-                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#AJP_Wilson4"/>
-                        <biblScope unit="pp">pp. 166-167, no. 48</biblScope>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope type="item">23414</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?visua=si&amp;id_nr=EDR000987">EDR000987</ref>
+                        <ptr type="rest-of-bibl" target="#vanEsbroeck"/>
+                        <biblScope type="vol">2</biblScope>
+                        <biblScope type="page">151</biblScope>
                     </bibl>
+                   <bibl>
+                       <ptr type="rest-of-bibl" target="#BaltM_1972" />
+                       <biblScope type="issue">1</biblScope>
+                       <biblScope type="page">1516</biblScope>
+                   </bibl>
+                  <bibl>
+                      <ref type="external" target="http://art.thewalters.org/detail/26468/funeral-stele/">Walters Art Museum Web Entry</ref>
+                  </bibl>
+                  <bibl>
+                      <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR133916">EDR133916</ref>
+                  </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
-        
+
         <!--  *************************************  <encodingDesc>  ********************************* -->
         <!-- information about the encoding and controlled vocabularies. Do not edit -->
-        
-        <encodingDesc>
             
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
+        <encodingDesc>
+                           
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
             
         </encodingDesc>
-        
+
         <profileDesc> <!-- not used --> </profileDesc>
         
         
         <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
+    	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2014-12-15" who="Rebecca Ramsey">Initial Encoding</change>
-            <change when="2015-08-26" who="SJD">Cleaned metadata, added altIdentifier, expanded bibl, proofed and corrected transcription; removed incorrect CIL tag from image; corrected translation and added to correct div</change>
-            
+            <change when="2017-07-05" who="Anya Hong">Initial Encoding</change>
+            <change when="2017-07-13" who="SJD">Added description of text, specificity to material; added links to WAM and EDR; proofed transcription</change>
+            <change when="2017-10-06" who="SJD">Added persName tagging to provenance</change>
         </revisionDesc>
-        
+
     </teiHeader>
-    
+
     <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
+        <!-- Used to record images of an inscription.   -->
+
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="MD.Balt.JHU.L.48.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.48-Det1.jpg"/>
+            <graphic url=""/>
         </surface>
     </facsimile>
-    
+
     <text>
         <body>
-            <div type="edition"><!-- transcription goes here -->
+            <div type="edition"><!-- transcription goes here; DONE -->
                 <ab>
-                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-                    <lb n="2"/><persName><name type="gentilicium" key="Aelia">Aeliae</name> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <expan><abbr>f</abbr><ex>iliae</ex></expan>
-                    <lb n="3"/><name type="cognomen" key="Phoebe">Phoebes</name></persName>,
-                    <lb n="4"/>quae <expan><abbr>vix</abbr><ex>it</ex></expan> <expan><abbr>ann</abbr><ex>is</ex></expan> <num value="10">X</num>,
-                    <lb n="5"/><expan><abbr>mens</abbr><ex>ibus</ex></expan> <num value="2">II</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="21">XXI</num>.
-                    <lb n="6"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Aelius">Aelius</name> <name type="cognomen" key="Phoebion">Phoebion</name></persName> et
-                    <lb n="7"/><persName><name type="gentilicium" key="Aelia">Aelia</name> <name type="cognomen" key="Ianuaria">Ianuaria</name></persName> paren
-                    <lb n="8" break="no"/>tes <expan><abbr>fecer</abbr><ex>unt</ex></expan> animulae <expan><abbr>dulc</abbr><ex>issimae</ex></expan>.
-                    <lb n="9"/>Hic anima dulcis terra tegitur.
-                </ab>
-            </div>            
-            <div type="translation"><!-- notes go here -->
-                <p>"To the Divine Shades of Aelia Phoebe, daughter of Publius, who lived ten years, 2 months, and 21 days. Publius Aelius Phoebion and Aelia Ianuaria, her parents, made this for her sweetest little soul. Here her sweet soul is covered by the earth."</p> 
-            </div>
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                    <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="gentilicium" key="Ogulnius">Ogulnio</name>
+                    <lb n="3"/><name type="cognomen" key="Iustus">Iusto</name></persName> filio
+                    <lb n="4"/>pientissimo.
+                    <lb n="5"/><expan><abbr>Vix</abbr><ex>it</ex></expan> <expan><abbr>ann</abbr><ex>is</ex></expan> <num value="15">XV</num>, <expan><abbr>mens</abbr><ex>ibus</ex></expan> <num value="2">II</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="22">XXII</num>.
+                    <lb n="6"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Ogulnius">Ogulnius</name>
+                    <lb n="7"/><name type="cognomen" key="Iustus">Iustis</name></persName> pater
+                    <lb n="8"/>et sibi fecit.                    
+                 </ab>
+               </div>
+             
+            <div type="commentary"><!-- notes go here -->
+            <p></p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
-         </body>
+        </body>
     </text>
 </TEI>
-

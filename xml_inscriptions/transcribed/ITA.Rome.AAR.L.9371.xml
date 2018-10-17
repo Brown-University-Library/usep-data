@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+    <teiHeader>
+
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>ITA.Rome.AAR.L.9371</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+               
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9371">ITA.Rome.AAR.L.9371</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>ITA</region>
+                        <settlement>Rome</settlement>
+                        <institution>AAR</institution>
+                        <repository></repository>
+                        <idno>9371</idno>
+                        <altIdentifier>
+                            <idno>152</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of Eucaerus</p>
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                    
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                            
+                        <objectDesc ana="#tablet">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p>Luna marble tablet</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>18.4</height>
+                                        <width>33</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragments.contig">
+                                    <p>three fragments; the text of lines 1-3 are complete, but the missing bottom, left piece leaves lacunae at the beginnings of lines 4 and 5. The
+                                        surviving text is in good condition.</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="5">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved">The text is written by a
+                                regular, practiced hand. Serifs are regularly used throughout and
+                                interpuncts are consistently present. Guidelines are visible. One
+                                "ae" ligature is present at the end one line 1, which may have been
+                                used to accommodate an unexpected lack of space, rather than having
+                                been planned in advance.
+                                <dimensions type="letter" unit="cm">
+                                    <height min="1.2" max="1.7">1.2-1.7</height>
+                                </dimensions>
+                            </handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>a rough, single-lined border
+                                    delineates the campus on all four sides</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                    
+                        <summary>
+                            <rs/>  <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0001" notAfter="0099">first century CE</date>
+                            <placeName ref="europe.italy.rome">Villa Bertone, Rome, Italy</placeName>
+                        </origin>
+                        <provenance>
+                            <date when="1904">1904</date>
+                            <placeName ref="europe.italy.rome">Rome, Via Masina 5, American Academy,
+                                cortile</placeName>
+                        </provenance>
+                        
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SuppPapers_Egbert"/>
+                        <biblScope unit="page">270-273, no. 6, fig. 28</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#AE_1909"/>
+                        <biblScope unit="item">75</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">39444</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#ILS"/>
+                        <biblScope unit="item">9346</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CLE"/>
+                        <biblScope unit="item">1961</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#AE_1996"/>
+                        <biblScope unit="item">105</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                        <biblScope unit="page">126, no. 152</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Eranos_35_Armini"/>
+                        <biblScope unit="page">112-113</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Solin_1982"/>
+                        <biblScope unit="page">905</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#ZPE_112_Bruun"/>
+                        <biblScope unit="page">219-223</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Epigrafia_2006_Caruso"/>
+                        <biblScope unit="page">1413-1414, no. 4</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072297">EDR072297</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1179&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+            
+        <encodingDesc>
+                           
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2016-07-10" who="Courtney Monahan">Initial Encoding</change>
+            <change when="2016-07-23" who="Courtney Monahan">Edited</change>
+            <change when="2017-06-26" who="SJD">Added altIdentifier; proofed metadata; fixed origin and provenance; expanded and cleaned bibl; fixed image filepath; proofed transcription</change>
+            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc></desc>
+            <graphic url="ITA.Rome.AAR.L.152.jpg"/>
+        </surface>       
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here -->
+            <ab>
+                <lb n="1"/>Delicius Matris Matut<hi rend="ligature">ae</hi>
+                <lb n="2"/><num value="6" type="ordinal"><hi rend="line">VI</hi></num> <expan><abbr>reg</abbr><ex>ionis</ex></expan>, <persName><name type="cognomen" key="Eucaerus">Euc<supplied reason="omitted">a</supplied>erus</name></persName> hic situs est,
+                <lb n="3"/>auletio, cantor ubique.
+                <lb n="4"/><supplied reason="lost" cert="low">Hunc ti</supplied><unclear>t</unclear>ulum fecit <persName><name type="praenomen" key="Iulius">Iulius</name>
+                <lb n="5"/><name type="gentilicium"><gap reason="lost" atLeast="2" atMost="4" unit="character"/><unclear>t</unclear>lius</name></persName> papati suo.
+            </ab></div>
+             
+            <div type="commentary"><!-- notes go here -->
+            <p> Ohl seems to have preempted the CIL by assigning a reference number (CIL iv, 39444); the inscription has not yet been included in the CIL.
+            
+            The "a" in Euc(a)erus is supplied based on the fact that while the name is not itself is not uncommon, the original spelling is not attested elsewhere. The corrected spelling also matches the name of another fluteplayer, who appears in Tacitus (Tac. Ann. 14,60).
+            
+            This is the first inscription to be found in Rome that explicitly refers to Mater Matuta. If the "reg(ionis) VI" in line 2 refers to the location of the cult center of Mater Matuta, it is the only reference to a cult in the sixth region; the only cult location that is otherwise attested in the city was in the Forum Boarium (Regio XI). Egbert and others have interpreted the mention of the sixth region as either referring to Eucaerus' birthplace or place of work in order to avoid having it refer to an otherwise unkown cult center. Brunn argues that while this does likely refer to Eucaerus' place of work, he was probably a fluteplayer at the sanctuary of Mater Matuta (explaining why he is "delicius Matris Matutae"), and that there was indeed a cult center in the sixth region.
+            
+            While "auletio" is otherwise unattested, it clearly refers to Eucaerus' profession as a fluteplayer. Egbert suggested a reconstruction of "auletio cantor(um)," but this reconstruction is not possible given the metrical nature of the rest of the line ("Euc(a)erus...ubique" is a hexameter line). Others have suggested the combination "auletiocantor." Brunn argues that "auletio" is in the dative case, and that the line should be interpreted as, "The signer (offers) to the fluteplayer (a greeting here and) everywhere." Another possibility is that "auletio" is in the nominative case and acts as an acquired cognoment (agnomen), describing Eucaerus' profession in the same line where his status as a signer is noted.
+   
+            </p></div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>

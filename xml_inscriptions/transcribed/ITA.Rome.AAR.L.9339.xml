@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -9,7 +10,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>MD.Balt.JHU.L.BS.135</title>
+                <title>ITA.Rome.AAR.L.9339</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -19,13 +20,13 @@
             <publicationStmt>
                
                 <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.BS.135">MD.Balt.JHU.L.BS.135</idno>
+                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9339">ITA.Rome.AAR.L.9339</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
-                              <region>  = state
+                              <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
                               <settlement>  = city
                               <institution> = library, museum, university or other institution
                               <repository> = collection within the institution if there is more than one. This element will not always be used.
@@ -37,20 +38,23 @@
                 -->
                 <msDesc>
                     <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>JHU</institution>
+                        <region>ITA</region>
+                        <settlement>Rome</settlement>
+                        <institution>AAR</institution>
                         <repository></repository>
-                        <idno>BS.135</idno>
+                        <idno>9339</idno>
+                        <altIdentifier>
+                            <idno>119</idno>
+                        </altIdentifier>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
-                        <!-- short summary of the content of an inscription -->
-                            <p>Brick stamp from figlinae Domitianae Maiores</p>  
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of Roscia Veneria</p>
                         </msItem>
                     </msContents>
                     
@@ -60,28 +64,27 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
-                        <objectDesc ana="#instrumentum.brick">
-                            <supportDesc ana="#clay.brick">
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Orbicular brick stamp</p>
+                                    <p>Luna marble slab</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>15</height>
-                                        <width>16</width>
-                                        <depth>3.8</depth>
-                                    </dimensions>
-                                    <dimensions type="letter" unit="cm">
-                                        <height>1.5</height>
+                                        <height>33.3</height>
+                                        <width>24</width>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>broken at one side, obscuring roughly a quarter of the stamp</p>
+                                <condition ana="#fragments.contig">
+                                    <p>mostly complete in two large, vertical fragments; the left acroterion, the lower right corner of the inscribed field, and the lower portion below the field of text are damaged</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
-                                    <p/>
+                                <layout columns="1" writtenLines="9">
+                                    <p>Text is centered on the stone; a guideline is visible for the
+                                        first line, but the lines all slope slightly to the right
+                                    </p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -89,15 +92,22 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#stamped.relief"> </handNote>
+                            <handNote ana="#impressed.inscribed.carved"> Triangular interpuncts are
+                                used throughout. The letters are serifed. There is some letter
+                                crowding towards the molding in lines 2 and 6.<dimensions
+                                    type="letter" unit="cm">
+                                    <height min="13" max="20"/>
+                                </dimensions>
+                            </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>Signum in  center represents a dolphin entwined around a
-                                    trident</p>
+                                <p>In the pediment, a filleted wreath is visible and flanked by
+                                    acroteria that are shaped with incised palm fronds. A molding
+                                    surrounds the field of text.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -116,9 +126,14 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0198" notAfter="0211">198-211 CE</date>
-                            <placeName ref="europe.italy.rome">Rome, Italy</placeName>
+                            <date notBefore="0100" notAfter="0299">Second to third century CE</date>
+                            <placeName ref="europe.italy.rome">Villa Bertone, Rome</placeName>
                         </origin>
+                        <provenance>
+                            <date notBefore="1903" notAfter="1904">1903-4, Tavazzi gift</date>
+                            <placeName ref="europe.italy.rome">Roma, via Masina 5, American Academy,
+                                cortile</placeName>
+                        </provenance>
                         
 
                     </history>
@@ -129,24 +144,22 @@
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_XV"/>
-                        <biblScope unit="item">165</biblScope>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">25491</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bloch_Bolli"/>
-                        <biblScope unit="pp">293, 297</biblScope>
+                        <ptr type="rest-of-bibl" target="#SuppPapers_Egbert"/>
+                        <biblScope unit="page">266, no. 15</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Steinby1974"/>
-                        <biblScope unit="pp">38</biblScope>
+                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                        <biblScope unit="page">125, no. 119</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#LSO"/>
-                        <biblScope unit="item">193</biblScope>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146046">EDR146046</ref>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Cozzo"/>
-                        <biblScope unit="item">Tav. LVIII, fig. 194</biblScope>
+                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1138&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -173,9 +186,9 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2014-10-01" who="Gaia Gianni">Initial Encoding</change>
-            <change when="2015-09-14" who="SJD">Cleaned metadata, cleaned bibl, added LSO and Cozzo, added prose descriptions of condition, material, proofed transcription, added translation div</change>
-            <change when="2017-10-06" who="SJD">Small typo correction</change>
+            <change when="2016-07-24" who="Katelin McCullough">Initial Encoding</change>
+            <change when="2017-06-26" who="SJD">Added altIdentifier; proofed metadata; tweaked condition; fixed origin and added provenance; expanded bibl; proofed transcription (small punctuation tweaks)</change>
+            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
         </revisionDesc>
 
     </teiHeader>
@@ -186,28 +199,37 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="MD.Balt.JHU.L.BS.135.jpg"/>
+            <graphic url="ITA.Rome.AAR.L.119.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/>Ex <expan><abbr>fig</abbr><ex>linis</ex></expan> <expan><abbr>Dom</abbr><ex>itianis</ex></expan> <expan><abbr>Maio</abbr><ex>ribus</ex></expan>
-                        <expan><abbr>domi<unclear>n</unclear><supplied reason="undefined" evidence="parallel">or</supplied></abbr><ex>um</ex></expan> <supplied reason="undefined" evidence="parallel"><expan><abbr>n<am>n</am></abbr><ex>ostrorum</ex></expan>.</supplied>
-                </ab>
-            </div>
-            <div type="translation">
-                <p>“(Sc. Brick) from the Domitianae Maiores estate, belonging to our rulers”.</p>
-            </div>
-            <div type="commentary"><!-- notes go here -->         
-                <p>Bloch believes that the domini nostri mentioned on the brick are the Emperors Caracalla and Geta. The word <hi rend="italic">nostrorum</hi> is abbreviated as <hi rend="supraline">NN</hi>.</p>
-                <p>The dolphin and the trident impressed in the center do not appear very often on bricks; Steinby belives it might be a distinctive signum of the <hi rend="italic">figlinae Domitianae</hi>.</p>
-            </div>
+            <ab>
+            <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>. 
+            <lb n="2"/><persName><name type="gentilicium" key="Roscia">Rosciae</name><name type="cognomen" key="Veneria">Veneriae</name></persName>
+            <lb n="3"/>matri, quae <expan><abbr>vix</abbr><ex>it</ex></expan>  
+            <lb n="4"/><expan><abbr>an</abbr><ex>nis</ex></expan> <num value="38" type="cardinal">XXXVIII</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="6" type="cardinal">VI</num>
+            <lb n="5"/><expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="12" type="cardinal">XII</num>. Fecit
+            <lb n="6"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name><name type="gentilicium" key="Roscius">Roscius</name> <name type="cognomen" key="Martialis"><expan><abbr>Martial</abbr><ex>is</ex></expan></name></persName>
+            <lb n="7"/>et <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Iulius">Iulius</name><name type="cognomen"><expan><abbr>Success</abbr><ex>us</ex></expan></name></persName>
+            <lb n="8"/>amicus <expan><abbr>ben</abbr><ex>e</ex></expan> <expan><abbr>me</abbr><ex>renti</ex></expan>.
+            <lb n="9"/>In <expan><abbr>f</abbr><ex>ronte</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="2" type="cardinal">II</num>, in <expan><abbr>ag</abbr><ex>ro</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="1" type="cardinal">I</num><gap reason="lost" extent="unknown" unit="character"/>
+            </ab></div>
+             
+            <div type="commentary"><!-- notes go here -->
+            <p>Notes: In line seven, the singular form of the verb "fecit" suggests a single
+                    dedicator. However, the way the writing was planned out does not suggest that
+                    the second dedicator was as afterthought. The initial CIL incorrectly printed
+                    line 9 and left out the "g" in "ag."  Henzen and Huelsen disagree on the value
+                    of the final numeral. Although "I" would be possible, there is space for "II".
+                    However, if the measurements for both sides were the same, the inscription may
+                    just as likely have been simplified to only display the number once. Therefore,
+                    it might be the case that this only a "I."</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
-         </body>
+        </body>
     </text>
 </TEI>
