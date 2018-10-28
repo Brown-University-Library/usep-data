@@ -13,6 +13,11 @@
     2015-11-03 SJD added variable and put into schematron 1.7, working on simplifying the test for matching machine-readable id and itemized elements
     2015-11-04 SJD added rules for empty genre, support type, material, condition, handNote, location, date, and change log
     2016-02-22 SJD 
+    2018-10-27 EM - Corrected spelling of "sourcDesc" in variable assignments.
+                    Changed idno[@xml:id] to idno/@xml:id 
+                    Changed id/name rule to check filename (see comment below)
+                    NOTE that in Oxygen, need to change Schematron rules to use XSLT2
+                    Added ns prefix for schematron. Seems to have helped. 
     -->
    
     <!-- Variable declaration -->
