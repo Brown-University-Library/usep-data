@@ -18,6 +18,7 @@
                     Changed id/name rule to check filename (see comment below)
                     NOTE that in Oxygen, need to change Schematron rules to use XSLT2
                     Added ns prefix for schematron. Seems to have helped. 
+                    Added diagnostics
     -->
    
     <!-- Variable declaration -->
@@ -41,8 +42,8 @@
     <!-- Test machine readable id against broken out version -->
     <sch:pattern>
         <sch:rule context="/">
-            <sch:assert diagnostics="foo" test="starts-with($xmlid, concat($region,'.', $settlement,'.', $institution,'.', $repository)) or starts-with($xmlid, concat($region, '.', $settlement, '.', $institution))">USEP ID must match the individual elements listed in the itemized section</sch:assert>
-            <!--<sch:assert diagnostics="bar" test="matches(substring-after($xmlid, 'L\.'), //t:msIdentifier/t:idno)">ID no. must match end of USEP ID</sch:assert> -->   
+            <sch:assert diagnostics="USEPID-start" test="starts-with($xmlid, concat($region,'.', $settlement,'.', $institution,'.', $repository)) or starts-with($xmlid, concat($region, '.', $settlement, '.', $institution))">USEP ID must match the individual elements listed in the itemized section</sch:assert>
+            <!--<sch:assert diagnostics="USEPID-accession" test="matches(substring-after($xmlid, 'L\.'), //t:msIdentifier/t:idno)">ID no. must match end of USEP ID</sch:assert> -->   
         </sch:rule>         
     </sch:pattern>
 
@@ -203,11 +204,11 @@
     </sch:pattern>
 
     <sch:diagnostics>
-        <sch:diagnostic id="foo">
+        <sch:diagnostic id="USEPID-start">
             - <sch:value-of select="$xmlid"/> - and
            - <sch:value-of select="concat($region, '.', $settlement, '.', $institution)"/> -
         </sch:diagnostic>
-        <sch:diagnostic id="bar">
+        <sch:diagnostic id="USEPID-accession">
             <sch:value-of select="substring-after($xmlid, 'L.')"/>
         </sch:diagnostic>
         <sch:diagnostic id="docTest">
