@@ -48,9 +48,9 @@
                     <msContents>
                         <textLang mainLang="grc"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#instrumentum.container">
+                        <msItem class="#label">
                         <!-- short summary of the content of an inscription -->
-                            <p>White ground lekythos</p>  
+                            <p>Three masculine names</p>  
                         </msItem>
                     </msContents>
                     
@@ -60,12 +60,11 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
-                        <objectDesc ana="#text_other">
+                        <objectDesc ana="#instrumentum.container">
                             <supportDesc ana="#clay">
                                 <support>
                         <!-- short summary of the material and support of an inscription -->
-                                    <p>Three masculine names
-                                    </p>
+                                    <p>White ground lekythos</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>24</height>
                                         <width>8</width>
@@ -73,7 +72,7 @@
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.broken">
-                                    <p>The mouth and handle of the jar were broken and reattached; original glaze is faded, and the surface is chipped. Calcium deposits are present on the exterior of the jar. </p>
+                                    <p>the mouth and handle of the jar were broken and reattached; original glaze is faded, and the surface is chipped; calcium deposits are present on the exterior of the jar</p>
                                 </condition>
                             </supportDesc>
                             
@@ -156,6 +155,7 @@
         
         <revisionDesc>
             <change when="2018-11-14" who="A. Hong">Initial Encoding</change>
+            <change when="2018-11-15" who="SJD">Added name tagging, tweaked extent of gap in transcription; corrected genre and object description locations; other small cleaning in metadata</change>
         </revisionDesc>
 
     </teiHeader>
@@ -173,9 +173,9 @@
     <text>
         <body>
             <div type="edition"><!-- transcription goes here -->
-            <ab><lb n="1"/><gap reason="lost"></gap><unclear>χ</unclear>ος
-                <lb n="2"/>Αριστιπός
-                <lb n="3"/>Δίφιλος
+            <ab><lb n="1"/><persName><name><gap reason="lost" extent="unknown"/><unclear>χ</unclear>ος</name></persName>.
+                <lb n="2"/><persName><name key="Aristipos Ἀριστιπός">Ἀριστιπός</name></persName>.
+                <lb n="3"/><persName><name key="Diphilos Δίφιλος">Δίφιλος</name></persName>.
             </ab></div>
              
             <div type="commentary"><!-- notes go here -->
