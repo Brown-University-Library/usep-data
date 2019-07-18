@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+    <teiHeader>
+
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>ITA.Rome.AAR.L.9298</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+               
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9298">ITA.Rome.AAR.L.9298</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>ITA</region>
+                        <settlement>Rome</settlement>
+                        <institution>AAR</institution>
+                        <repository></repository>
+                        <idno>9298</idno>
+                        <altIdentifier>
+                            <idno>76</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                        <!-- short summary of the content of an inscription -->
+                            <p>Christian funerary inscription with Christogram</p>  
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                    
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                            
+                        <objectDesc ana="#tablet">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                        <!-- short summary of the material and support of an inscription -->
+                                    <p>Columbarium tablet of white marble with grey veins 
+                                    </p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height min="43.2" max="45.8">43.2-45.8 </height>
+                                        <width min="43.4" max="47.2">43.4-47.2</width>
+                                        <depth min="1.7" max="2.5">1.7-2.5</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragments.contig">
+                                    <p>five contiguous fragments, clockwise from top: (a), (b), (c), (d), and (e); large claw-like gap between fragments (b) and (d) has been bridged in modern times with a metal fill</p>
+                                </condition>
+                            </supportDesc>
+                            
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="5">
+                                    <p></p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.chiseled">Narrow "C" and "E." U-like "V." Cross-bars of
+                                "A" appear as downward-pointing chevrons. Two different styles of "A": one with an elongated right-hand stroke in "Paschale," others with equal strokes. Interpuncts appears as
+                                shallow v's.<dimensions type="letter" unit="cm">
+                                    <height min="3.2" max="6">3.2-6.0</height>
+                                </dimensions>
+                            </handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Christogram with the chi crossing the rho at their centers; both letters contained within a circle 9 cm in diameter.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BC has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                    
+                        <summary>
+                            <rs/>  <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0375" notAfter="0554">ca. 375-554 CE</date>
+                            <placeName ref="europe.italy.rome">Unknown, likely Rome</placeName>
+                        </origin>
+                        <provenance>
+                            <placeName ref="europe.italy.rome">immured above eye-level near the World War I memorial bench in the cortile of the American Academy in Rome's McKim, Mead and White Building</placeName>
+                        </provenance>
+                        
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                        <biblScope unit="page">102</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1103&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Online Catalog</ref>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Brink_2008_Bodel"/>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Cagnat"/>
+                        <biblScope unit="page">11-12</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Carletti_2008"/>
+                        <biblScope unit="chapter">4</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+            
+        <encodingDesc>
+                           
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2018-06-25" who="Kevin S. Lee">Initial Encoding</change>
+            <change when="2019-07-17" who="SJD">Proofed and streamlined much of the commentary throughout metadata; made small corrections to transcription (redundant gaps/supplied, etc.); added image filepath</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="ITA.Rome.AAR.L.9298.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here -->
+                <ab>
+                    <lb n="1"/><persName><name type="praenomen"><gap reason="lost" atLeast="1" atMost="5" unit="character"/>orius</name></persName>
+                    <lb n="2"/><gap reason="lost" atLeast="1" atMost="5" unit="character"/> <supplied reason="lost" cert="low"><expan><abbr>vix</abbr><ex>it</ex></expan></supplied> <expan><abbr>an</abbr><ex>nos</ex></expan> <num type="cardinal" value="14">XIIII</num>
+                    <lb n="3"/>Di<supplied reason="lost">e Pa</supplied>schale
+                    <lb n="4"/><expan><abbr>No</abbr><ex>nis</ex></expan> <expan><abbr>A<unclear>p</unclear>r</abbr><ex>ilis</ex></expan> <expan><abbr>dep</abbr><ex>ositus</ex></expan> pa
+                   <lb n="5" break="no"/>ce. <g type="christogram"/>
+                </ab>
+            </div>
+             
+             <div type="translation">
+                 <ab>
+                     <p>"[---]orius, lived fourteen years, interred on Easter Day on the fifth of April, in peace."</p>
+                 </ab>
+             </div>
+            <div type="commentary"><!-- notes go here -->            
+            <p>The landing of Easter upon the nones of April allows for some specificity in dating.  In his 1931 study of the American Academy's epigraphic collection Raymond T. Ohl cited the fifth-century AD mathematician and writer 
+                Victorius of Aquitaine for eight possible dates the Paschal Day and the nones of April coincided between the fourth and sixth centuries A.D. To wit: 375, 386, 397, 459, 470, 481, 543, and 554.  
+                Ohl selected the fourth to sixth centuries based on the style of the letters and the terminus post quem furnished by the Constantinian Christogram. See Ohl, 1931: 102 for his treatment of the inscription, 
+                including a slightly different restoration of the second line and possibilities for the deceased's name. He identifies Gregorius, Honorius, Victorius as the most likely possibilities for the period.</p> 
+            <p>Two different styles of "A" are used. That in "an(nos)" and "pace," featuring equal left- and right-hand strokes and a chevron crossbar, appear in Christian epitaphs of the fourth and sixth centuries. See Carletti 2008, esp. chapter 4.
+            That in "Paschale," featuring an elongated right-hand stroke, is rare yet attested in late antique inscriptions. See that of Junia in Carletti 2008, ch. 4. See Cagnat 1914, 11-12 for a brief history of this letter form.</p>
+            <p>Charles Babcock, in his entry for this piece in the AAR catalogue, calls it a "Columbarium tablet" without
+               further comment. Columbaria ceased to be used c. A.D. 125. Given the late periodization, a tablet covering a loculus in a catacomb or affixed to an above-ground familial tomb is more likely. See Bodel in Brinker and Green 2008, esp. pp. 210-235.</p>
+            </div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>
