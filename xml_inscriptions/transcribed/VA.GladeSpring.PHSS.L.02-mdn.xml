@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
@@ -9,7 +9,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>MD.Balt.JHU.L.14.10.2</title>
+                <title>VA.GladeSpring.PHSS.L.02-mdn</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -19,7 +19,7 @@
             <publicationStmt>
                
                 <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.14.10.2">MD.Balt.JHU.L.14.10.2</idno>
+                <idno type="USEpigraphy" xml:id="VA.GladeSpring.PHSS.L.02-mdn">VA.GladeSpring.PHSS.L.02-mdn</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
@@ -37,24 +37,20 @@
                 -->
                 <msDesc>
                     <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>JHU</institution>
+                        <region>VA</region>
+                        <settlement>Glade Spring</settlement>
+                        <institution>PHHS</institution>
                         <repository></repository>
-                        <idno>14.10.2</idno>
-                        <altIdentifier>
-                            <idno>Acc. #839</idno>
-                        </altIdentifier>
+                        <idno>02-mdn</idno>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
-                            <!-- short summary of the content of an inscription -->
-                            <p>Stamped lead pipe recording the name of the procuator Gaius Iulius
-                                Rufus, who served under Antonius Pius</p>
+                        <msItem class="#dedicatory">
+                        <!-- short summary of the content of an inscription -->
+                            <p>Altar dedicated to Mithras by L. Antonius Proculus (reproduction of RIB 1544)</p>  
                         </msItem>
                     </msContents>
                     
@@ -64,29 +60,26 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
-                        <objectDesc ana="#instrumentum.other">
-                            <supportDesc ana="#metal.lead">
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <!-- short summary of the material and support of an inscription -->
-                                    <p>Lead fistula</p>
+                        <!-- short summary of the material and support of an inscription -->
+                                    <p>White plaster of Paris slab</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>8.7</height>
-                                        <width>37</width>
-                                        <depth>4.2</depth>
+                                        <height/>
+                                        <width/>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>Curved and especially twisted and damaged on the right side.
-                                        The right side has also been broken off with a portion of
-                                        the stamped inscription missing. The back of the right side
-                                        is extremely fragmented, possibly due to the contraction and
-                                        expansion of the pipe over time.</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
+                            
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="2">
-                                    <p>Text is centered.</p>
+                                <layout columns="1" writtenLines="6">
+                                    <p></p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -94,8 +87,7 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#stamped.relief"> Well-stamped with monumental
-                                lettering</handNote>
+                            <handNote ana="#impressed.other"></handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
@@ -116,15 +108,22 @@
                     <history>
                     
                         <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
+                            <rs>fake</rs>  <!-- content can be "fake" or blank -->
                         </summary>
                         
                         <origin>
-                            <!-- original place and dating of inscription -->
-                            <date notBefore="0138" notAfter="0145">Between 138 and 145 CE</date>
-                            <placeName ref="europe.italy.rome">Unknown</placeName>
+                        <!-- original place and dating of inscription -->
+                            <date notBefore="0213" notAfter="0222" resp="RIB">213-222 CE (original inscription)</date>
+                            <placeName ref="europe.england.carrawburgh">England, Carrawburgh (original inscription)</placeName>
                         </origin>
-                        
+                        <provenance>
+                            <date notBefore="1949">after 1949</date>
+                            <p>replica produced at some point in second half of the twentieth century</p>
+                        </provenance>
+                        <provenance>
+                            <date when="2006">2006</date>
+                            <p>purchased by Mr. <persName>John Walker</persName> at a curio shop near <placeName>West Jefferson, VA</placeName></p>
+                        </provenance>
 
                     </history>
                 </msDesc>
@@ -134,8 +133,28 @@
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#unpub"/>
-                        <biblScope unit="item"/>
+                        <ptr type="rest-of-bibl" target="#JRS_40_Wright"/>
+                        <biblScope unit="page">114, no. 1</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#AE_1951"/>
+                        <biblScope unit="item">125</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIMRM"/>
+                        <biblScope unit="item">845</biblScope>
+                    </bibl><bibl>
+                        <ptr type="rest-of-bibl" target="#CSIR_I"/>
+                        <biblScope unit="item">6.121</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.trismegistos.org/text/156037">Trismegistos no. TM 156037</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021154">EDH no. HD021154</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://db.edcs.eu/epigr/edcs_id.php?s_sprache=en&amp;p_edcs_id=EDCS-07900352">EDCS-07900352</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -162,8 +181,7 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2014-12-14" who="Kelly Nguyen">Initial Encoding</change>
-            <change when="2015-08-27" who="SJD">Added altIdentifier, changed msItem class to label from honorific, cleaned metadata and control vocab, added image, proofed and corrected transcription</change>
+            <change when="2019-07-28" who="SJD">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -174,23 +192,7 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="MD.Balt.JHU.L.14.10.2.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.14.10.2-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.14.10.2-det2.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.14.10.2-det3.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.14.10.2-rev.jpg"/>
+            <graphic url="VA.GladeSpring.PHSS.L.02-mdn.jpg"/>
         </surface>
     </facsimile>
 
@@ -198,15 +200,20 @@
         <body>
             <div type="edition"><!-- transcription goes here -->
             <ab>
-                <lb n="1"/><expan><abbr>Imp</abbr><ex>eratoris</ex></expan> <persName><name type="cognomen" key="Antoninus">Antonini</name> <expan><abbr>Aug</abbr><ex>usti</ex></expan> <name type="cognomen" key="Pius">Pii</name></persName> patr<supplied reason="lost">imonii</supplied>
-                <lb n="2"/><expan><abbr><unclear>p</unclear>roc</abbr><ex>urator</ex></expan> <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Iulius">Iulius</name> <name type="cognomen" key="Rufus">Rufu<supplied reason="lost">s</supplied></name></persName> <supplied reason="lost"><expan><abbr>f</abbr><ex>aciendum</ex></expan> <expan><abbr>c</abbr><ex>uravit</ex></expan></supplied>.
-           </ab></div>
+                <lb n="1"/>Deo <expan><abbr>Inv</abbr><ex>icto</ex></expan> <persName type="divine"><name key="Mithras"><expan><abbr>M</abbr><ex>ithrae</ex></expan></name></persName>.
+                <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Antonius">A<hi rend="ligature">nt</hi>o<hi rend="ligature">ni</hi><hi rend="ligature">us</hi></name>
+                <lb n="3"/><name type="cognomen" key="Proculus">Proculus</name></persName>,
+                <lb n="4"/><expan><abbr>p<hi rend="ligature">ra</hi><hi rend="ligature">ef</hi></abbr><ex>ctus</ex></expan> <expan><abbr>c<hi rend="intraline small">o</hi><hi rend="ligature">h<am>I</am></hi></abbr><ex>ortis</ex></expan> <num value="1" type="ordinal">I</num> <orgName type="ethnic"><expan><abbr>B<hi rend="ligature">at</hi></abbr><ex>avorum</ex></expan></orgName>
+                <lb n="5"/><hi rend="ligature">Ant</hi>i<hi rend="ligature">nini</hi><hi rend="ligature">an</hi><hi rend="ligature">ae</hi>,
+                <lb n="6"/><expan><abbr>v</abbr><ex>otum</ex></expan> <expan><abbr>s</abbr><ex>olvit</ex></expan> <expan><abbr>l</abbr><ex>ibens</ex></expan> <expan><abbr>m</abbr><ex>erito</ex></expan>.
+            </ab>
+            </div>
              
             <div type="commentary"><!-- notes go here -->
-                <p>This pipe bears a similar stamp to several other recorded pipes (cf. AE 1907, 120), but it is unlikely that it can be identified with any of them due to the differences in the breaks.</p></div>
+            <p/></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
-         </body>
+        </body>
     </text>
 </TEI>

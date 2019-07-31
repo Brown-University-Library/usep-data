@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
@@ -10,7 +9,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>ITA.Rome.AAR.L.9306 and 9315</title>
+                <title>VA.GladeSpring.PHSS.L.01-mdn</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -20,13 +19,13 @@
             <publicationStmt>
                
                 <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9306+9315">ITA.Rome.AAR.L.9306 and 9315</idno>
+                <idno type="USEpigraphy" xml:id="VA.GladeSpring.PHSS.L.01-mdn">VA.GladeSpring.PHSS.L.01-mdn</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
-                              <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
+                              <region>  = state
                               <settlement>  = city
                               <institution> = library, museum, university or other institution
                               <repository> = collection within the institution if there is more than one. This element will not always be used.
@@ -38,14 +37,11 @@
                 -->
                 <msDesc>
                     <msIdentifier>
-                        <region>ITA</region>
-                        <settlement>Rome</settlement>
-                        <institution>AAR</institution>
+                        <region>VA</region>
+                        <settlement>Glade Spring</settlement>
+                        <institution>PHHS</institution>
                         <repository></repository>
-                        <idno>9306 and 9315</idno>
-                        <altIdentifier>
-                            <idno>84 and 95</idno>
-                        </altIdentifier>
+                        <idno>01-mdn</idno>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -53,8 +49,8 @@
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
-                            <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Claudia Gemella</p>
+                        <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of Seia Helis (reproduction of CIL 6.26124)</p>  
                         </msItem>
                     </msContents>
                     
@@ -64,26 +60,26 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
-                        <objectDesc ana="#stele">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <!-- short summary of the material and support of an inscription -->
-                                    <p> </p>
+                        <!-- short summary of the material and support of an inscription -->
+                                    <p>White plaster of Paris slab</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>34.5 (84); 31 (95)</height>
-                                        <width>16 (84); 22.5 (95)</width>
+                                        <height/>
+                                        <width/>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragments.contig">
-                                    <p>Two fragments (a + b) immured in different sections of the
-                                        AAR cortile</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
+                            
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="7">
-                                    <p>Rectangular campus with a cymatium frame</p>
+                                    <p>regular triangular interpuncts throughout</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -91,22 +87,14 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved">Triangular interpuncts
-                                appear to follow words that are abbreviated, except at the end of
-                                lines. Line 1: between D(is) and M(anibus). Line 2: between
-                                Ti(berio) and Cl(audio), and Cl(audio) and Hermes.<dimensions
-                                    type="letter" unit="cm">
-                                    <height min="2.0" max="2.3"/>
-                                </dimensions>
-                            </handNote>
+                            <handNote ana="#impressed.other"></handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>Fillited wreath within a fragmentary pedement at the top of the
-                                    stele</p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -120,15 +108,21 @@
                     <history>
                     
                         <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
+                            <rs>fake</rs>  <!-- content can be "fake" or blank -->
                         </summary>
                         
                         <origin>
-                            <!-- original place and dating of inscription -->
-                            <date notBefore="0054" notAfter="0100">Flavian era</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                        <!-- original place and dating of inscription -->
+                            <date notBefore="-0100" notAfter="0300">first c. BCE to third c. CE? (original inscription)</date>
+                            <placeName ref="europe.italy.rome" resp="CIL">Italy, Rome (original inscription)</placeName>
                         </origin>
-                        
+                        <provenance>
+                            <p>Replica produced at some point in the twentieth century</p>
+                        </provenance>
+                        <provenance>
+                            <date when="2006">2006</date>
+                            <p>Purchased by Mr. <persName>John Walker</persName> at a curio shop near <placeName>West Jefferson, VA</placeName></p>
+                        </provenance>
 
                     </history>
                 </msDesc>
@@ -138,18 +132,11 @@
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">95, n. 9 (frag. a)</biblScope>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope type="item">26124</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">96, n. 17 (frag. b)</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR100914">EDR100914</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1111&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
+                        <ref type="external" target="https://www.trismegistos.org/text/588254">Trismegistos no. TM 588254</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -176,9 +163,7 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2016-07-06" who="Melissa Huber">Initial Encoding</change>
-            <change when="2017-02-07" who="SJD">Added altIdentifier and tweaked filename, cleaned metadata for control vocab, added dimensions from AAR, added links to EDR and AAR, proofed transcription (typo in Gemella, added n to supplement in line 5), added filepaths for images</change>
-            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
+            <change when="2019-07-28" who="SJD">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -189,30 +174,26 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="ITA.Rome.AAR.L.84.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="ITA.Rome.AAR.L.95.jpg"/>
+            <graphic url="VA.GladeSpring.PHSS.L.01-mdn.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition"><!-- transcription goes here -->
-                <ab>
-                   <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-                   <lb n="2"/><persName><name type="gentilicium" key="Claudia"><expan><abbr>Clau</abbr><ex>diae</ex></expan></name> <name type="cognomen" key="Gemella">Gemell<hi rend="ligature">ae</hi></name></persName>
-                   <lb n="3"/><persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berius</ex></expan></name> <name type="gentilicium" key="Claudius"><expan><abbr>Cl</abbr><ex>audius</ex></expan></name> <name type="cognomen" key="Hermes">Hermes></name></persName>
-                   <lb n="4"/>et <persName><name type="gentilicium" key="Livia">Liv<unclear>i</unclear>a</name> <name type="cognomen" key="Bononia"><expan><abbr>Bononi</abbr><ex>a</ex></expan></name></persName>
-                   <lb n="5"/>mater filiae p<unclear>i</unclear><supplied reason="lost">en</supplied>
-                   <lb n="6" break="no"/>tissimae f<unclear>ec</unclear><supplied reason="lost">erunt</supplied>,
-                   <lb n="7"/><expan><abbr>q</abbr><ex>uae</ex></expan> <expan><abbr><unclear>v</unclear></abbr><ex>ixit</ex></expan> <supplied reason="lost"><expan><abbr>a</abbr><ex>nnis</ex></expan></supplied> <gap reason="lost" extent="unknown" unit="character"><num type="cardinal" cert="unknown"/></gap>.
-                </ab></div>
+            <ab>
+                <lb n="1"/>Di<hi rend="tall">i</hi>s <g type="hedera"/> manibus.
+                <lb n="2"/><persName><name type="gentilicium" key="Seia">Seiae</name> <name type="cognomen" key="Helis">Helidi</name></persName> filiae
+                <lb n="3"/>su<surplus>e</surplus>ae, quae vixit <expan><abbr>an</abbr><ex>nis</ex></expan> <num type="cardinal" value="10">X</num>,
+                <lb n="4"/><expan><abbr>m</abbr><ex>ensibus</ex></expan> <num type="cardinal" value="5">V</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num type="cardinal" value="18">XVIII</num>; carissima suis.
+                <lb n="5"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Umidius">Umidius</name> <name type="cognomen" key="Pothus">Pothus</name></persName>
+                <lb n="6"/>et <persName><name type="gentilicium" key="Seia">Seia</name> <name type="cognomen" key="Hedia">Hedia</name></persName> feceru<hi rend="ligature">nt</hi>
+                <lb n="7"/>et sibi et suis.
+            </ab>
+            </div>
              
             <div type="commentary"><!-- notes go here -->
-            <p>The D M abbreviation for Dis Manibus dates the stele to post 50 CE.  The Julio-Claudian cognomen and gentilicia, Tiberius Claudius, Claudia, and Livia, suggest a date no later than the end of the 1st century CE.
-            The final line is fragmentary, but the most plausible restoration is q(uae) v(ixit) [a(nnis)] and a number.</p></div>
+            <p/></div>
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
