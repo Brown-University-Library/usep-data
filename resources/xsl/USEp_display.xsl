@@ -33,6 +33,7 @@
         2016-11-10 EM change to display XML button to view source
         2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
         2017-07-14 SJD tweaked spacing of external links in bibl; renamed Date of Origin to Date
+        2018-08-08 SJD fixes issues with provenance to display according to desired categories
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -82,11 +83,11 @@
                                 select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
                             <xsl:variable name="placeOfProvenance">
                                 <xsl:sequence
-                                    select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:placeName"
+                                    select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:p"
                                 />
                             </xsl:variable>
-                            <xsl:variable name="dateOfProvenance"
-                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:date"/>
+                           <!-- <xsl:variable name="dateOfProvenance"
+                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:date"/> -->
                             <xsl:variable name="acquisitionDesc">
                                 <xsl:sequence
                                     select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:acquisition/t:p"
@@ -152,17 +153,10 @@
                                         <td class="value">
                                             <xsl:choose>
                                                 <xsl:when
-                                                  test="string-length(child::t:placeName) != 0">
+                                                  test="string-length(child::t:p) != 0">
                                                   <xsl:value-of
-                                                  select="
-                                                            (child::t:date,
-                                                            ', ',
-                                                            child::t:placeName)"
-                                                  />
+                                                  select="(child::t:p)"/>
                                                 </xsl:when>
-                                                <xsl:otherwise>
-                                                  <xsl:value-of select="child::t:date"/>
-                                                </xsl:otherwise>
                                             </xsl:choose>
                                         </td>
                                     </tr>
