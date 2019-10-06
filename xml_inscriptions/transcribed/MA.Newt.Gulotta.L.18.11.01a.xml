@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
@@ -10,7 +9,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>ITA.Rome.AAR.L.9378</title>
+                <title>MA.Newt.Gulotta.L.18.11.01a</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -18,15 +17,14 @@
                 characters that are legal in XML names and viable URLs. 
             -->
             <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9378">ITA.Rome.AAR.L.9378</idno>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Newt.Gulotta.L.18.11.01a">MA.Newt.Gulotta.L.18.11.01a</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
-                              <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
+                              <region>  = state
                               <settlement>  = city
                               <institution> = library, museum, university or other institution
                               <repository> = collection within the institution if there is more than one. This element will not always be used.
@@ -38,14 +36,11 @@
                 -->
                 <msDesc>
                     <msIdentifier>
-                        <region>ITA</region>
-                        <settlement>Rome</settlement>
-                        <institution>AAR</institution>
-                        <repository></repository>
-                        <idno>9378</idno>
-                        <altIdentifier>
-                            <idno>87</idno>
-                        </altIdentifier>
+                        <region>MA</region>
+                        <settlement>Newt</settlement>
+                        <institution>Gulotta</institution>
+                        <repository/>
+                        <idno>18.11.01a</idno>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -53,8 +48,8 @@
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
-                            <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Lucius Postumius Salvius and Decumia Hilara</p>
+                        <!-- short summary of the content of an inscription -->
+                           <p>Funerary epitaph of Restuta</p>
                         </msItem>
                     </msContents>
                     
@@ -64,24 +59,26 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
-                        <objectDesc ana="#cippus">
-                            <supportDesc ana="#stone.travertine">
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#marble">
                                 <support>
-                                    <!-- short summary of the material and support of an inscription -->
-                                    <p>Lapis tiburtinus cippus</p>
+                        <!-- short summary of the material and support of an inscription -->
+                                    <p>Rectangular marble slab</p>
+                                    
                                     <dimensions type="surface" unit="cm">
-                                        <height>89</height>
-                                        <width>28</width>
-                                        <depth/>
+                                      <height>29</height>
+                                       <width>23.5</width> 
+                                        <depth>2.5</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
+                            
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="6">
+                                <layout columns="1" writtenLines="3">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -90,11 +87,7 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved">
-                                <dimensions type="letter" unit="cm">
-                                    <height min="3.0" max="5.0"/>
-                                </dimensions>
-                            </handNote>
+                            <handNote ana="#impressed.inscribed.carved"> </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
@@ -118,9 +111,10 @@
                             <rs/>  <!-- content can be "fake" or blank -->
                         </summary>
                         
-                        <origin><!-- original place and dating of inscription --><date
-                                notBefore="-0050" notAfter="-0001">Mid to late first century BCE</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                        <origin>
+                        <!-- original place and dating of inscription -->
+                            <date notBefore="0100" notAfter="0300">second to third century CE</date>
+                            <placeName ref="#europe.italy">Rome?</placeName>
                         </origin>
                         
 
@@ -132,18 +126,8 @@
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">99, no. 27</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Friggeri_Pelli_1980"/>
-                        <biblScope unit="page">157, no. 504</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102178">EDR102178</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1114&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
+                        <ptr type="rest-of-bibl" target="#ZPE_208_Bertolazzi"/>
+                        <biblScope unit="page">298-300</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -170,9 +154,8 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2016-07-09" who="Brahm H. Kleinman">Initial Encoding</change>
-            <change when="2017-02-07" who="SJD">Added altIdentifier, cleaned metadata, filled out bibliography and added links to EDR and AAR, fixed image filepath, proofed transcription (removed vacats in line 4, tweaked name tagging, tweaked genitive spellings)</change>
-            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
+            <change when="2019-10-03" who="Gaia Gianni">GG</change>
+            <change when="2019-10-05" who="SJD">minor edits to fix style; added name markup to transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -182,29 +165,23 @@
 
     <facsimile>
         <surface>
-            <desc>Epitaph of Lucius Postumius Salvius and Decumia Hilara</desc>
-            <graphic url="ITA.Rome.AAR.L.9378.jpg"/>
-        </surface>
-        <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="MA.Newt.Gulotta.L.19.07.01.a.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
-            <div type="edition">
+            <div type="edition"><!-- transcription goes here -->
             <ab>
-                <lb n="1"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Postumius">Postumius</name>
-                <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Salvius">Salvius</name></persName>,
-                <lb n="3"/><g type="theta_nigrum"/> <persName><name type="gentilicium" key="Decmia">Decmia</name> <persName><name type="praenomen" key= "Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan>
-                <lb n="4"/><name type="cognomen" key="Hilara">Hilara</name></persName>.
-                <lb n="5"/>In <expan><abbr>fr</abbr><ex>onte</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="12" type="cardinal">XII</num>,
-                <lb n="6"/>in <expan><abbr>agr</abbr><ex>o</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="18" type="cardinal">XIIX</num>.
-            </ab></div>
+                <lb n="1"/><persName><name key="Restuta">Restutae</name></persName>
+                <lb n="2"/><persName><name key="Faustina">Faustina</name></persName>
+                <lb n="3"/>et sibi.
+                </ab>
+                </div>
              
-            <div type="commentary">
-            <p>The lettering, stone type and use of the theta nigra suggest a date from the last half of the first century BCE. The inscription takes up less than half of the stone's height. Stone is broken at lower right. A round hole near the bottom of the stone cuts through the stone. It was likely intended for the insertion of a cross-bar underground to keep the stone upright. </p></div>
+            <div type="commentary"><!-- notes go here -->
+            <p>Funerary epitaph for a woman named Restuta, set up by another woman named Faustina. Both women only bear one name.</p></div>
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
