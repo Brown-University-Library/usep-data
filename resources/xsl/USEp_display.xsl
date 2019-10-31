@@ -331,7 +331,7 @@
                         <pc class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="usep/images/XMLbutton.png"/>
+                                <img src="https://github.com/Brown-University-Library/usep-data/blob/master/resources/Text-xml.png"/>
                             </a>
                         </pc>
                     </xsl:when>
@@ -341,7 +341,7 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="usep/images/XMLbutton.png"/>
+                                <img src="https://github.com/Brown-University-Library/usep-data/blob/master/resources/Text-xml.png"/>
                             </a>
                         </p>
                     </xsl:when>
@@ -350,7 +350,7 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="usep/images/XMLbutton.png"/>
+                                <img src="https://github.com/Brown-University-Library/usep-data/blob/master/resources/Text-xml.png"/>
                             </a>
                         </p>
                     </xsl:otherwise>
@@ -373,7 +373,7 @@
                 <tr>
                     <xsl:for-each select="//t:change">
                 <xsl:choose>
-                    <xsl:when test="//t:change[1]">
+                    <xsl:when test="//self::[1]">
                         <td type="label">Created by:</td>
                         <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>                        
                     </xsl:when>
