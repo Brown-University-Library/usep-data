@@ -373,7 +373,7 @@
                 <tr>
                     <xsl:for-each select="//t:change">
                 <xsl:choose>
-                    <xsl:when test="//t:change[1]">
+                    <xsl:when test="//self::[1]">
                         <td type="label">Created by:</td>
                         <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>                        
                     </xsl:when>
