@@ -329,8 +329,7 @@
                         test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
                         <!-- transcribed folder -->
                         <pc class="XMLsource">
-                            <a
-                                href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
+                            <a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
                                 <img src="https://github.com/Brown-University-Library/usep-data/blob/master/resources/Text-xml.png"/>
                             </a>
                         </pc>
@@ -373,10 +372,10 @@
                 <tr>
                     <xsl:for-each select="//t:change">
                 <xsl:choose>
-                    <xsl:when test="//self::[1]">
+                    <xsl:if test="position()=1">
                         <td type="label">Created by:</td>
                         <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>                        
-                    </xsl:when>
+                    </xsl:if>
                     <xsl:otherwise>
                         <td type="label">Edited by:</td>
                         <td type="value">
