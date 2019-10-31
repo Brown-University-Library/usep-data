@@ -372,10 +372,10 @@
                 <tr>
                     <xsl:for-each select="//t:change">
                 <xsl:choose>
-                    <xsl:if test="position()=1">
+                    <xsl:when test="position()=1">
                         <td type="label">Created by:</td>
                         <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>                        
-                    </xsl:if>
+                    </xsl:when>
                     <xsl:otherwise>
                         <td type="label">Edited by:</td>
                         <td type="value">
