@@ -330,7 +330,7 @@
                         <!-- transcribed folder -->
                         <pc class="XMLsource">
                             <a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="{concat($imageDir, '/',xmlIcon.png)}"/>
+                                <img src="{concat($imageDir, '/xmlIcon.png')}"/>
                             </a>
                         </pc>
                     </xsl:when>
@@ -340,7 +340,7 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="{concat($imageDir, '/',xmlIcon.png)}"/>
+                                <img src="{concat($imageDir, '/xmlIcon.png')}"/>
                             </a>
                         </p>
                     </xsl:when>
@@ -349,7 +349,7 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="{concat($imageDir, '/',xmlIcon.png)}"/>
+                                <img src="{concat($imageDir, '/xmlIcon.png')}"/>
                             </a>
                         </p>
                     </xsl:otherwise>
