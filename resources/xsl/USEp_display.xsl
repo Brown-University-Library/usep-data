@@ -330,7 +330,7 @@
                         <!-- transcribed folder -->
                         <pc class="XMLsource">
                             <a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="{concat($imageDir, '/xmlIcon.png')}"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
                             </a>
                         </pc>
                     </xsl:when>
