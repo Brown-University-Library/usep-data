@@ -361,7 +361,7 @@
             </div>
             <!-- ****** Author/Editor Information ****** -->
 
-            <xsl:template name="t:revisionDesc">
+
                 <div class="author">
                     <h3>Authors/Editors</h3>
                     <table>
@@ -383,7 +383,6 @@
                         </tr>
                     </table>
                 </div>
-            </xsl:template>
         </xsl:result-document>
     </xsl:template>
 
