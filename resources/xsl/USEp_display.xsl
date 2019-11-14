@@ -12,7 +12,7 @@
         **Change Log
         2011-11-8 EM Begun
         2011-11-29 EM adding edition handling
-        2014-09-25 EM many changes including: 
+        2014-09-25 EM many changes including:
         2015-9-15 SJD and EM rewrote image display to accomodate graphics from external webpages
         2015-09-29 SJD Added variables, added concat to remove excess commas
         2015-09-30 EM testing the acquisition field with no variable
@@ -23,7 +23,7 @@
         2015-10-21 SJD fixed display of transcribed texts with multiple divs
         2015-11-02 SJD made small change to columns display
         2015-11-17 SJD made expansions to columns and line display (added tests for wider ranger of situations)
-        2015-11-18 SJD added captions to image display        
+        2015-11-18 SJD added captions to image display
         2015-11-19 SJD Fixed column displays, removed stray periods from title heading; small tweaks to fix caption display
         2015-11-24 SJD Added support for lg in displaying transcription
         2015-12-02 SJD Added variable for material
@@ -359,35 +359,35 @@
 
 
             </div>
+            <!-- ****** Author/Editor Information ****** -->
 
+            <xsl:template name="t:revisionDesc">
+                <div class="author">
+                    <h3>Authors/Editors</h3>
+                    <table>
+                        <tr>
+                            <xsl:for-each select="//t:change">
+                        <xsl:choose>
+                            <xsl:when test="position()=1">
+                                <td type="label">Created by:</td>
+                                <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <td type="label">Edited by:</td>
+                                <td type="value">
+                                    <xsl:value-of select="concat('Edited by:', @who, 'on: ', @when)"/>
+                                </td>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
+                        </tr>
+                    </table>
+                </div>
+            </xsl:template>
         </xsl:result-document>
     </xsl:template>
 
-    <!-- ****** Author/Editor Information ****** -->
 
-    <xsl:template name="t:revisionDesc">
-        <div class="author">
-            <h3>Authors/Editors</h3>
-            <table>
-                <tr>
-                    <xsl:for-each select="//t:change">
-                <xsl:choose>
-                    <xsl:when test="position()=1">
-                        <td type="label">Created by:</td>
-                        <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>                        
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <td type="label">Edited by:</td>
-                        <td type="value">
-                            <xsl:value-of select="concat('Edited by:', @who, 'on: ', @when)"/>
-                        </td>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:for-each>
-                </tr>            
-            </table>
-        </div>
-    </xsl:template>
 
     <!-- ****************** This outputs the bibliography ******************** -->
 
