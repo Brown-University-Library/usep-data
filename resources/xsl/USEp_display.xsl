@@ -34,6 +34,7 @@
         2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
         2017-07-14 SJD tweaked spacing of external links in bibl; renamed Date of Origin to Date
         2018-08-08 SJD fixes issues with provenance to display according to desired categories; added table display for authorship
+        2019-11-14 SJD fixed main issue with authorship display, pushed alpha version to site
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -365,22 +366,23 @@
                 <div class="author">
                     <h3>Authors/Editors</h3>
                     <table>
+                      <xsl:for-each select="//t:change">
                         <tr>
-                            <xsl:for-each select="//t:change">
                         <xsl:choose>
                             <xsl:when test="position()=1">
-                                <td type="label">Created by:</td>
+                                <td type="label">Created by: </td>
                                 <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>
                             </xsl:when>
                             <xsl:otherwise>
-                                <td type="label">Edited by:</td>
+                                <td type="label">Edited by: </td>
                                 <td type="value">
                                     <xsl:value-of select="concat('Edited by:', @who, 'on: ', @when)"/>
                                 </td>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </xsl:for-each>
                         </tr>
+                    </xsl:for-each>
+
                     </table>
                 </div>
         </xsl:result-document>
