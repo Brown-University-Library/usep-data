@@ -371,12 +371,12 @@
                         <xsl:choose>
                             <xsl:when test="position()=1">
                                 <td type="label">Created by: </td>
-                                <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>
+                                <td type="value"><xsl:value-of select="concat(@who, ' on: ', @when)"/></td>
                             </xsl:when>
                             <xsl:otherwise>
                                 <td type="label">Edited by: </td>
                                 <td type="value">
-                                    <xsl:value-of select="concat('Edited by:', @who, 'on: ', @when)"/>
+                                    <xsl:value-of select="concat('Edited by:', @who, '  on: ', @when)"/>
                                 </td>
                             </xsl:otherwise>
                         </xsl:choose>
