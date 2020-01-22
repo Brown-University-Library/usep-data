@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:sqf="http://www.schematron-quickfix.com/validator/process" xmlns:t="http://www.tei-c.org/ns/1.0">
-<ns uri="http://www.tei-c-org/ns/1.0" prefix="t"/>
+<sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" 
+    xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+    xmlns:t="http://www.tei-c.org/ns/1.0">
+    <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="t"/>
     
     
     <!--*******
@@ -12,180 +14,199 @@
     2015-11-04 SJD added rules for empty genre, support type, material, condition, handNote, location, date, and change log
     2016-02-22 SJD 
     -->
-    
+   
     <!-- Variable declaration -->
-    <let name="region" value="/t:TEI/t:teiHeader/t:fileDesc/t:sourcDesc/t:msDesc/t:msIdentifier/t:region"/>
-    <let name="settlement" value="/t:TEI/t:teiHeader/t:fileDesc/t:sourcDesc/t:msDesc/t:msIdentifier/t:settlement"/>
-    <let name="institution" value="/t:TEI/t:teiHeader/t:fileDesc/t:sourcDesc/t:msDesc/t:msIdentifier/t:institution"/>
-    <let name="repository" value="/t:TEI/t:teiHeader/t:fileDesc/t:sourcDesc/t:msDesc/t:msIdentifier/t:repository"/>
-    <let name="xmlid" value="/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno[@xml:id]"/>
+    <sch:let name="region" value="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:region"/>
+    <sch:let name="settlement" value="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:settlement"/>
+    <sch:let name="institution" value="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:institution"/>
+    <sch:let name="repository" value="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:repository"/>
+    <sch:let name="xmlid" value="/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id"/>
     
     <!-- Test machine readable name -->
-    <pattern>
-        <rule context="//t:publicationStmt">
-            <assert test="t:idno[@xml:id] = t:idno">Machine- and Human-Readable IDs must match</assert>
-        </rule>
-    </pattern>
+    
+    <sch:pattern>
+        <sch:title>Test machine readable name</sch:title>
+        <sch:rule context="//t:publicationStmt">
+            <sch:assert diagnostics="docTest" test=" contains(document-uri(/), t:idno/@xml:id)">Machine-Readable ID must match filename</sch:assert>
+            <!-- I'm cheating here, just looking to see if the ID is in the fn. Usually people have 
+            completely wrong ID so this will catch most of those -->
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test machine readable id against broken out version -->
-    <pattern>
-        <rule context="//t:fileDesc">
-            <assert test="starts-with($xmlid, concat($region, '.', $settlement, '.', $institution, '.', $repository)) or starts-with($xmlid, concat($region, '.', $settlement, '.', $institution))">USEP ID must match the individual elements listed in the itemized section</assert>
-            <assert test="matches(substring-after($xmlid, '(L|G|GL|Etr|Raet)\.'), //t:msIdentifier/t:idno)">ID no. must match end of USEP ID</assert>
-        </rule>        
-    </pattern>
-    
+    <sch:pattern>
+        <sch:rule context="/">
+            <sch:assert diagnostics="foo" test="starts-with($xmlid, concat($region,'.', $settlement,'.', $institution,'.', $repository)) or starts-with($xmlid, concat($region, '.', $settlement, '.', $institution))">USEP ID must match the individual elements listed in the itemized section</sch:assert>
+            <!--<sch:assert diagnostics="bar" test="matches(substring-after($xmlid, 'L\.'), //t:msIdentifier/t:idno)">ID no. must match end of USEP ID</sch:assert> -->   
+        </sch:rule>         
+    </sch:pattern>
+
+
     <!-- Test for empty genre -->
-    <pattern>
-        <rule context="//t:msContents">
-            <report test="//t:msItem[@class='#xx']">Every inscription must have a valid genre</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:msContents">
+            <sch:report test="//t:msItem[@class='#xx']">Every inscription must have a valid genre</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for empty support material -->
-    <pattern>
-        <rule context="//t:physDesc">
-            <report test="//t:supportDesc[@ana='#xx']">Every inscription must have a valid material</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:physDesc">
+            <sch:report test="//t:supportDesc[@ana='#xx']">Every inscription must have a valid material</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
-    <!-- Test for empty condition --><pattern>
-        <rule context="//t:physDesc/t:objectDesc/t:supportDesc/t:condition">
-            <report test="//t:condition[@ana='#xx']"></report>
-        </rule>
-    </pattern>
+    <!-- Test for empty condition -->
+    <sch:pattern>
+        <sch:rule context="//t:physDesc/t:objectDesc/t:supportDesc/t:condition">
+            <sch:report test="//t:condition[@ana='#xx']"></sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for multiple ps under supportDesc -->
-    <pattern>
-        <rule context="//t:physDesc">
-            <report test="//t:supportDesc/t:support/t:p[2]">Cannot have two p-elements contained under support</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:physDesc">
+            <sch:report test="//t:supportDesc/t:support/t:p[2]">Cannot have two p-elements contained under support</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for empty objectDesc -->
-    <pattern>
-        <rule context="//t:physDesc">
-            <report test="//t:objectDesc[@ana='#xx']">Every entry must contain a valid object type</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:physDesc">
+            <sch:report test="//t:objectDesc[@ana='#xx']">Every entry must contain a valid object type</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for empty handNote -->
-    <pattern>
-        <rule context="//t:physDesc/t:handDesc">
-            <report test="//t:handNote[@ana='#xx']">Every entry must contain a valid writing description; if unknown, mark as such</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:physDesc/t:handDesc">
+            <sch:report test="//t:handNote[@ana='#xx']">Every entry must contain a valid writing description; if unknown, mark as such</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for empty date fields -->
-    <pattern>
-        <rule context="//t:history/t:origin">
-            <report test="//t:date='Date to be displayed'">Enter a date for the inscription</report>
-            <report test="(//t:date[@notBefore='0001'] and //t:date[@notAfter='0002'])">Enter a range of dates for the inscription</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:history/t:origin">
+            <sch:report test="//t:date='Date to be displayed'">Enter a date for the inscription</sch:report>
+            <sch:report test="(//t:date[@notBefore='0001'] and //t:date[@notAfter='0002'])">Enter a range of dates for the inscription</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for empty place names -->
-    <pattern>
-        <rule context="//t:history/t:origin">
-            <report test="t:placeName[@ref='xx']">Inscription must have a valid place ref (e.g. europe.italy.rome)</report>
-            <report test="t:placeName='Detailed place name'">Inscription must have a location; if it is unknown, mark as such</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:history/t:origin">
+            <sch:report test="t:placeName[@ref='xx']">Inscription must have a valid place ref (e.g. europe.italy.rome)</sch:report>
+            <sch:report test="t:placeName='Detailed place name'">Inscription must have a location; if it is unknown, mark as such</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for empty bibl -->
-    <pattern>
-        <rule context="//t:listBibl">
-            <assert test="normalize-space(.)">Every entry must include bibliography, even if it is unpublished</assert>
-            <report test="t:bibl/t:ptr[@target='#xx']">Every entry must include bibliography; use "unpub" for unpublished inscriptions</report>           
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:listBibl">
+            <sch:assert test="normalize-space(.)">Every entry must include bibliography, even if it is unpublished</sch:assert>
+            <sch:report test="t:bibl/t:ptr[@target='#xx']">Every entry must include bibliography; use "unpub" for unpublished inscriptions</sch:report>           
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for change log attribution -->
-    <pattern>
-        <rule context="//t:revisionDesc">
-            <report test="t:change[@who='xx']">Input your name in the change log</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:revisionDesc">
+            <sch:report test="t:change[@who='xx']">Input your name in the change log</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Image name test -->
-    <pattern>
-        <rule context="//t:facsimile">
-            <report test="starts-with(//t:graphic[@url], //t:publicationStmt/idno[@xml:id])">Image names should match the USEP ID (unless the image is a detail or alternate view, or the image is external)</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:facsimile">
+            <sch:report test="starts-with(//t:graphic[@url], //t:publicationStmt/idno[@xml:id])">Image names should match the USEP ID (unless the image is a detail or alternate view, or the image is external)</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test for image formatting -->
-    <pattern>
-        <rule context="//t:facsimile">
-            <report test="//t:surface/t:graphic[2]">Each image must have its own surface element; do not put multiple graphic elements under the same surface</report>            
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:facsimile">
+            <sch:report test="//t:surface/t:graphic[2]">Each image must have its own surface element; do not put multiple graphic elements under the same surface</sch:report>            
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test gap attributes -->
-    <pattern>
-        <rule context="//t:gap">
-            <report test="(@extent and @quantity)">Conflict: @quantity and @extent both present on <name/></report>
-            <report test="(@reason='lost' or @reason='omitted') and not(@extent or @quantity or (@atLeast and @atMost))"><name/> needs one of @extent, @quantity or both @atLeast and @atMost</report>
-            <report test="(@reason='lost' or @reason='omitted') and not(@unit)"><name/> lost or omitted needs @unit</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:gap">
+            <sch:report test="(@extent and @quantity)">Conflict: @quantity and @extent both present on <name/></sch:report>
+            <sch:report test="(@reason='lost' or @reason='omitted') and not(@extent or @quantity or (@atLeast and @atMost))"><name/> needs one of @extent, @quantity or both @atLeast and @atMost</sch:report>
+            <sch:report test="(@reason='lost' or @reason='omitted') and not(@unit)"><name/> lost or omitted needs @unit</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Test space attributes -->
-    <pattern>
-        <rule context="//t:space">
-            <report test="(@extent and @quantity)">conflict: @quantity and @extent both present on <name/></report>
-            <report test="(@reason='lost' or @reason='omitted') and not(@extent or @quantity or (@atleast and @atMost))"><name/> needs one of @extent, @quantity or both @atLeast and @atMost</report>
-            <report test="(@reason='lost' or @reason='omitted') and not(@unit)"><name/> lost or omitted needs @unit</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:space">
+            <sch:report test="(@extent and @quantity)">conflict: @quantity and @extent both present on <name/></sch:report>
+            <sch:report test="(@reason='lost' or @reason='omitted') and not(@extent or @quantity or (@atleast and @atMost))"><name/> needs one of @extent, @quantity or both @atLeast and @atMost</sch:report>
+            <sch:report test="(@reason='lost' or @reason='omitted') and not(@unit)"><name/> lost or omitted needs @unit</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Check for gaps in supplied -->
-    <pattern>
-        <rule context="//t:div[@type='edition']//t:gap[not(@reason='ellipsis')]">
-            <report test="ancestor::t:supplied[not(@reason='undefined')]">Supplied may not contain <name/></report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:div[@type='edition']//t:gap[not(@reason='ellipsis')]">
+            <sch:report test="ancestor::t:supplied[not(@reason='undefined')]">Supplied may not contain <name/></sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Checking for Leiden sigla -->
-    <pattern>
+    <sch:pattern>
         <!-- the regexes below will only work if you have Schematron set to XPATH version 2.0 in your local environment -->
         <!-- in Oxygen: Options > Preferences > XML > XML Parser > Schematron -->
-        <rule context="//t:div[@type='edition']">
-            <report test="descendant::text()[not(ancestor::t:desc or ancestor::t:note)][matches(.,'[\[\]\(\)]')]">Brackets and parentheses in epigraphic text</report>
-            <report test="descendant::text()[not(ancestor::t:desc or ancestor::t:note)][matches(.,'&#x0323;|&#xE1C0;')]">Underdots in epigraphic text</report>
-            <report test="descendant::text()[not(ancestor::t:desc or ancestor::t:note)][matches(.,'&lt;|&gt;')]">Angle brackets in epigraphic text</report>
-        </rule>
-    </pattern>
+        <sch:rule context="//t:div[@type='edition']">
+            <sch:report test="descendant::text()[not(ancestor::t:desc or ancestor::t:note)][matches(.,'[\[\]\(\)]')]">Brackets and parentheses in epigraphic text</sch:report>
+            <sch:report test="descendant::text()[not(ancestor::t:desc or ancestor::t:note)][matches(.,'&#x0323;|&#xE1C0;')]">Underdots in epigraphic text</sch:report>
+            <sch:report test="descendant::text()[not(ancestor::t:desc or ancestor::t:note)][matches(.,'&lt;|&gt;')]">Angle brackets in epigraphic text</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Check for untagged words -->
-    <pattern>
-        <rule context="//t:div[@type='edition']">
-            <report test="descendant::text()[not(ancestor::t:w or ancestor::t:name or ancestor::t:placeName or ancestor::t:geogName or ancestor::t:num or ancestor::t:surplus
-                or ancestor::t:orig or ancestor::t:desc or ancestor::t:note or ancestor::t:head or ancestor::t:g or ancestor::t:abbr[not(ancestor::t:expan)])][not(translate(normalize-space(translate(.,',.;··:','')),' ','')='')]">
+    <sch:pattern>
+        <sch:rule context="//t:div[@type='edition']">
+            <sch:report test="descendant::text()[not(ancestor::t:w or ancestor::t:name or ancestor::t:placeName or ancestor::t:geogName or ancestor::t:num or ancestor::t:surplus
+                or ancestor::t:orig or ancestor::t:desc or ancestor::t:note or ancestor::t:head or ancestor::t:g or ancestor::t:abbr[not(ancestor::t:expan)])][not(translate(normalize-space(translate(.,',.;··:','')),' ','')='')]">
                 Character content needs to be tagged as word or name or number or undefined etc.
-            </report>
-        </rule>
-    </pattern>
+            </sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Check for problems with names and persnames -->
-    <pattern>
-        <rule context="//t:div[@type='edition']//t:name">
-            <report test="not(ancestor::t:persName or ancestor::t:placeName)"><name/> needs to be inside persName or placeName</report>
-        </rule>
-        <rule context="//t:div[@type='edition']//t:persName">
-            <report test="not(@type=('divine','emperor','ruler','consul','attested','other'))"><name/> @type needs to be one of 'divine','emperor','ruler',consul','attested','other'</report>
-        </rule>
-    </pattern>
+    <sch:pattern>
+        <sch:rule context="//t:div[@type='edition']//t:name">
+            <sch:report test="not(ancestor::t:persName or ancestor::t:placeName)"><name/> needs to be inside persName or placeName</sch:report>
+        </sch:rule>
+        <sch:rule context="//t:div[@type='edition']//t:persName">
+            <sch:report test="not(@type=('divine','emperor','ruler','consul','attested','other'))"><name/> @type needs to be one of 'divine','emperor','ruler',consul','attested','other'</sch:report>
+        </sch:rule>
+    </sch:pattern>
     
     <!-- Problems with abbreviations/expansions -->
-    <pattern>
-        <rule context="//t:ex">
-            <report test="not(ancestor::t:expan)"><name/> should only appear inside expan</report>
-            <report test="parent::t:abbr"><name/> should not be a child of abbr</report>
-        </rule>
-        <rule context="//t:expan">
+    <sch:pattern>
+        <sch:rule context="//t:ex">
+            <sch:report test="not(ancestor::t:expan)"><name/> should only appear inside expan</sch:report>
+            <sch:report test="parent::t:abbr"><name/> should not be a child of abbr</sch:report>
+        </sch:rule>
+        <sch:rule context="//t:expan">
             <!--<report test="not(descendant::t:ex)"><name/> should contain ex</report><-->
-            <report test="descendant::text()[not(translate(normalize-space(.),' ','')='')][not(ancestor::t:ex or ancestor::t:abbr)]">all text in expan should be in abbr or ex</report>
-        </rule>        
-    </pattern>
-</schema>
+            <sch:report test="descendant::text()[not(translate(normalize-space(.),' ','')='')][not(ancestor::t:ex or ancestor::t:abbr)]">all text in expan should be in abbr or ex</sch:report>
+        </sch:rule>        
+    </sch:pattern>
+
+    <sch:diagnostics>
+        <sch:diagnostic id="foo">
+            - <sch:value-of select="$xmlid"/> - and
+           - <sch:value-of select="concat($region, '.', $settlement, '.', $institution)"/> -
+        </sch:diagnostic>
+        <sch:diagnostic id="bar">
+            <sch:value-of select="substring-after($xmlid, 'L.')"/>
+        </sch:diagnostic>
+        <sch:diagnostic id="docTest">
+            <sch:value-of select="substring-before(document-uri(/), '.xml')"/>
+        </sch:diagnostic>
+    </sch:diagnostics>
+</sch:schema>
