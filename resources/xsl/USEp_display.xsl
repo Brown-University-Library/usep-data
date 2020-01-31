@@ -97,13 +97,7 @@
                       test="/t:TEI/t:text/t:body/t:div[@type = 'translation']">
                       <div class="translation">
                         <h3>Translation</h3>
-                        <xsl:call-template name="default-body-structure">
-                            <xsl:with-param name="parm-leiden-style" tunnel="yes"
-                                >panciera</xsl:with-param>
-                            <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double"
-                                >5</xsl:with-param>
-                            <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
-                        </xsl:call-template>
+                        <xsl:apply-templates/>
                       </div>
                   </xsl:if>
 
@@ -414,13 +408,8 @@
                     test="/t:TEI/t:text/t:body/t:div[@type = 'commentary']">
                     <div class="commentary">
                       <h3>Commentary</h3>
-                      <xsl:call-template name="default-body-structure">
-                          <xsl:with-param name="parm-leiden-style" tunnel="yes"
-                              >panciera</xsl:with-param>
-                          <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double"
-                              >5</xsl:with-param>
-                          <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
-                      </xsl:call-template>
+                      <xsl:apply-templates/>
+
                     </div>
                 </xsl:if>
         </xsl:result-document>
