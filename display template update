@@ -1,0 +1,48 @@
+Fixing display issues of template for USEP entries. As agreed last fall, I think, a significant upgrade/overhaul is desirable. We identified a few issues that could much improve our display. I will suggest some others here.
+
+I use this entry as model to illustrate issues: https://usepigraphy.brown.edu/projects/usep/inscription/MD.Balt.WAG.G.47.55/
+
+Headed sections of USEP entry, in order:
+
+Thumbnail images: 2nd one is not loading. Broken or lost links to images throughout--this problem we are working on. Perhaps Sophia can do some useful reattaching? 
+
+Summary: This is our best section, I think: no fixes needed. Works well as is, but (with new configuration to be outlined below) maybe could/should include also a third line indicating (from metadata categories already demarcated) place of oirign and date. Some synthetic descriptions (line 1) need editing passim. No new xslt needed.
+
+Attributes: 2 main issues: 1) categories of metadata should be listed on 1 line, not 2 (as now with "Inscription / type" "Subsequent / location". The effect of these unneeded line breaks is to make the metadata list very long and narrow, hard to read on most horizontally oriented screens. Pushes most important data (notably text and translation) off the first screen.
+
+2) the order in which our categories are listed is not ideal, splitting up categories of information. A more useful listing might be: 
+Inscription Type	
+Object Type	
+Material	
+Writing	
+Layout
+Decoration
+Condition
+Place of Origin
+Object history  [this category to replace the two entries now existing for "Subsequent location" and "Acquired". In encoding the metadata we will still want to note all the same aspects -- acquired how, when, by whom, from whom, for whom --within the synthetic object history]
+Date
+Dating criteria  [this is a new category, to be populated by one or more of a short set of fixed terms chosen perhaps from a pull-down menu: I think we can follow the existing categories used by EDR nd EDH, as follows:
+
+archaeology = find context or object type or form (art histoprical aspects)
+formulae = textual formulae or modes of expression, including symbols (e.g. chi rho, "HS" for "sesterces" etc.)
+history = reference ot historically datable phenomena (e.g. reigns, territorial names)
+institutions = reference to historically datbe insitutions (e.g. ephebeia, Augustales)
+prosopography = the text mentions persons known and datable (magistrates, rulers)
+nomenclature = the text records onomastic features datable to a certain era
+language = the text exhibits linguistic features datable to a particular era (vocalic shifts, B for V)
+palaeography = scriptural features (3 bar sigmas, letter forms
+
+[In our current template the transcription appears without heading immediately under "Decoration" (why in grey font here instead of black I don't know), and we have no translations. This is the weakest part of our current display, I think: we do not make it easy to find or understand the information most readers will want to know most--what does it say. Following Elli's suggestion, I propose 2 fixes:
+
+1) Add formal section headings for "TRANSCRIPTION" and "TRANSLATION"
+2) Place both BEFORE the metadata categories immediately AFTER the (now three-line) synthetic descriptions at the top of the entry. This, I hope, would put at the top of every entry, visible at the first page, all the most important information. Metadata, Commentary, and Bibliography could then follow at length after, to be accessed by scrolling down, if necessary).]
+
+Commentary: the example chosen here shows that we need to articulate better to data entry contributors how to treat bibliography cited in commentary but not listed in "Bibliography" as citing this text/object particularly. Also, we need to insert paragraph breaks to make the text more readable
+
+Bibliography: entries listed in columns run together and make reading difficult. Better would be a single coimun list, horizontally across the template, same width as "Commentary". This can apply also for the metadata categories --a single line, for each, ideally, in display
+
+Authors/Editors: our current version is not very user friendly and shows information not helpful or comprhensible to most users. E.G. the distinction "Author / editor" is unclear, and sets of initials will not mean much to outsiders. 
+
+I suggest that we display ONLY one line of "Authors/ Editors" with as many names (spelled out) as are needed. Sometimes one, most times 2, occasionally 3 or more. I think this line should include both the person responsible for the intellectual content of the edition and analysis AND the main xml EpiDoc editor who produces the edition that we display. There will always be SOME editing needed in this process, and sometimes so much that the EpiDoc xml editor effectively becomes the main author also. There can be no hard and fast rules about where to draw the line, but we do not need every small adjustment (as recorded in GitHub) to be displayed. 
+
+I suggest that we then create a second category heading called "Edition history" or the like that can provide a link to the full record of updates by "insiders" (e.g. here the info: "Edited by: 	SJD on: 2015-08-31 Edited by: 	SJD on: 2017-07-14")
