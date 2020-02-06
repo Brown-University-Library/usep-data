@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
             <!--printable version of USEpi inscription ID:-->
-            <title>KY.Lou.SAM.L.1929.17.333</title>
+            <title>KY.Lou.SAM.L.1929.17.325</title>
          </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="KY.Lou.SAM.L.1929.17.333">KY.Lou.SAM.L.1929.17.333</idno>
+            <idno type="USEpigraphy" xml:id="KY.Lou.SAM.L.1929.17.325">KY.Lou.SAM.L.1929.17.325</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -21,29 +21,29 @@
                   <settlement>Lou</settlement>
                   <institution>SAM</institution>
                   <repository/>
-                  <idno>1929.17.333</idno>
+                  <idno>1929.17.325</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Titia ((Gaia)) l. Fausta</p>
+                     <p>Epitaph of Favonia</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Marble columbarium slab</p><dimensions type="surface" unit="cm">
+                        <support><p>Broken marble columbarium slab</p><dimensions type="surface" unit="cm">
                               <height/>
                               <width/>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.intact">
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>slab broken vertically in half, right side lost</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="2" writtenLines="7">
+                        <layout columns="1" writtenLines="3">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
@@ -53,7 +53,7 @@
                      <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote ana="Dec_other">
                         <p> </p>
                      </decoNote>
                   </decoDesc>
@@ -68,20 +68,20 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="0001" notAfter="0200">first-second century CE
-                  </date>
+                     <date notBefore="0001" notAfter="0200">c.
+                  first-second century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#MAAR_GiganteHouston"/>
-                  <biblScope unit="pp">41-42, no. 7</biblScope>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">33563</biblScope>
                </bibl>
 
 <bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR140841">EDR140841</ref>
+<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR136337">EDR136337</ref>
 </bibl>
             </listBibl>
          </sourceDesc>
@@ -97,7 +97,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2015-12-07" who="SJD">Added missing control vocab, fixed lines/columns, added Gigante/Houston to bibl</change>
+         <change when="2015-12-07" who="SJD">Added missing control vocab, fixed lines/columns</change>
+         <change when="2020-02-03" who="GG">Added transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -105,13 +106,17 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="KY.Lou.SAM.L.1929.17.333.jpg"/>
+         <graphic url="KY.Lou.SAM.L.1929.17.325.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+         <ab>
+            <lb n="1"/> <persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Favonius">Favon<supplied reason="lost">ius</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="2"/> <persName><name type="gentilicium">Favoniae</name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+            <lb n="3"/> <expan><abbr>vix</abbr><ex>it</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <gap reason="lost" extent="unknown" unit="character"/>
+         </ab>
          </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div> </body>
    </text>
