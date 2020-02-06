@@ -12,7 +12,7 @@
         **Change Log
         2011-11-8 EM Begun
         2011-11-29 EM adding edition handling
-        2014-09-25 EM many changes including: 
+        2014-09-25 EM many changes including:
         2015-9-15 SJD and EM rewrote image display to accomodate graphics from external webpages
         2015-09-29 SJD Added variables, added concat to remove excess commas
         2015-09-30 EM testing the acquisition field with no variable
@@ -23,7 +23,7 @@
         2015-10-21 SJD fixed display of transcribed texts with multiple divs
         2015-11-02 SJD made small change to columns display
         2015-11-17 SJD made expansions to columns and line display (added tests for wider ranger of situations)
-        2015-11-18 SJD added captions to image display        
+        2015-11-18 SJD added captions to image display
         2015-11-19 SJD Fixed column displays, removed stray periods from title heading; small tweaks to fix caption display
         2015-11-24 SJD Added support for lg in displaying transcription
         2015-12-02 SJD Added variable for material
@@ -34,6 +34,7 @@
         2017-06-29 SJD separated Date of Origin and Place of Origin into two distinct categories
         2017-07-14 SJD tweaked spacing of external links in bibl; renamed Date of Origin to Date
         2018-08-08 SJD fixes issues with provenance to display according to desired categories; added table display for authorship
+        2019-11-14 SJD fixed main issue with authorship display, pushed alpha version to site
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -330,7 +331,7 @@
                         <!-- transcribed folder -->
                         <pc class="XMLsource">
                             <a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="https://github.com/Brown-University-Library/usep-data/blob/master/resources/Text-xml.png"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
                             </a>
                         </pc>
                     </xsl:when>
@@ -340,7 +341,7 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="https://github.com/Brown-University-Library/usep-data/blob/master/resources/Text-xml.png"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
                             </a>
                         </p>
                     </xsl:when>
@@ -349,7 +350,7 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img src="https://github.com/Brown-University-Library/usep-data/blob/master/resources/Text-xml.png"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
                             </a>
                         </p>
                     </xsl:otherwise>
@@ -359,35 +360,35 @@
 
 
             </div>
+            <!-- ****** Author/Editor Information ****** -->
 
+
+                <div class="author">
+                    <h3>Authors/Editors</h3>
+                    <table>
+                      <xsl:for-each select="//t:change">
+                        <tr>
+                        <xsl:choose>
+                            <xsl:when test="position()=1">
+                                <td type="label">Created by: </td>
+                                <td type="value"><xsl:value-of select="concat(@who, ' on: ', @when)"/></td>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <td type="label">Edited by: </td>
+                                <td type="value">
+                                    <xsl:value-of select="concat(@who, ' on: ', @when)"/>
+                                </td>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        </tr>
+                    </xsl:for-each>
+
+                    </table>
+                </div>
         </xsl:result-document>
     </xsl:template>
 
-    <!-- ****** Author/Editor Information ****** -->
 
-    <xsl:template name="t:revisionDesc">
-        <div class="author">
-            <h3>Authors/Editors</h3>
-            <table>
-                <tr>
-                    <xsl:for-each select="//t:change">
-                <xsl:choose>
-                    <xsl:when test="position()=1">
-                        <td type="label">Created by:</td>
-                        <td type="value"><xsl:value-of select="concat(@who, 'on: ', @when)"/></td>                        
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <td type="label">Edited by:</td>
-                        <td type="value">
-                            <xsl:value-of select="concat('Edited by:', @who, 'on: ', @when)"/>
-                        </td>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:for-each>
-                </tr>            
-            </table>
-        </div>
-    </xsl:template>
 
     <!-- ****************** This outputs the bibliography ******************** -->
 
