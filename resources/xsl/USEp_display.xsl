@@ -35,6 +35,7 @@
         2017-07-14 SJD tweaked spacing of external links in bibl; renamed Date of Origin to Date
         2018-08-08 SJD fixes issues with provenance to display according to desired categories; added table display for authorship
         2019-11-14 SJD fixed main issue with authorship display, pushed alpha version to site
+        2020-01-30 SJD reordered major metadata categories, display orders of transcription per JB's design requests; commented out editor display privileging authorial creation
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -66,8 +67,30 @@
                     </xsl:if>
                 </div>
 
+
+
                 <!-- enclosing div so that metadata and images can be side by side -->
                 <div class="topDivs">
+                  <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
+                  <xsl:if
+                      test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
+                      <div class="transcription">
+                        <h3>Transcription</h3>
+                      <style id="transcription_style">
+                          .linenumber{
+                              display:block;
+                              float:left;
+                              margin-left:-2em;
+                          }</style>
+                      <xsl:call-template name="default-body-structure">
+                          <xsl:with-param name="parm-leiden-style" tunnel="yes"
+                              >panciera</xsl:with-param>
+                          <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double"
+                              >5</xsl:with-param>
+                          <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
+                      </xsl:call-template>
+                      </div>
+                  </xsl:if>
                     <!-- This outputs the inscription metadata, after checking that there is some. -->
                     <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/*">
                         <div class="metadata">
@@ -136,48 +159,25 @@
                                         </xsl:for-each>
                                     </td>
                                 </tr>
+                                <!-- check for existence of controlled and full text values here. -->
                                 <tr>
-                                    <td class="label">Place of Origin</td>
-                                    <td class="value">
-                                        <xsl:value-of select="$placeOfOrigin"/>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="label">Date</td>
-                                    <td class="value">
-                                        <xsl:value-of select="$dateOfOrigin"/>
-                                    </td>
-                                </tr>
-                                <xsl:for-each select="//t:provenance">
-                                    <tr>
-                                        <td class="label">Subsequent Location</td>
-                                        <td class="value">
-                                            <xsl:choose>
-                                                <xsl:when
-                                                  test="string-length(child::t:p) != 0">
-                                                  <xsl:value-of
-                                                  select="(child::t:p)"/>
-                                                </xsl:when>
-                                            </xsl:choose>
-                                        </td>
-                                    </tr>
-                                </xsl:for-each>
-                                <tr>
-                                    <td class="label">Acquired</td>
+                                    <td class="label">Writing</td>
                                     <td class="value">
                                         <xsl:choose>
-                                            <xsl:when test="string-length($acquisitionDesc) != 0">
+                                            <xsl:when
+                                                test="string-length($writing/@ana) != 0 and normalize-space($writing)">
                                                 <xsl:value-of
-                                                  select="concat($acquisitionDate, ', ', $acquisitionDesc)"
+                                                  select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing)"
                                                 />
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:value-of select="$acquisitionDate"/>
+                                                <xsl:value-of
+                                                  select="id(substring-after($writing/@ana, '#'))/t:catDesc"
+                                                />
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </td>
                                 </tr>
-                                <!-- check for existence of controlled and full text values here. -->
                                 <tr>
                                     <td class="label">Layout</td>
                                     <td class="value">
@@ -220,22 +220,15 @@
 
                                     </td>
                                 </tr>
+
                                 <tr>
-                                    <td class="label">Writing</td>
+                                    <td class="label">Decoration</td>
                                     <td class="value">
-                                        <xsl:choose>
-                                            <xsl:when
-                                                test="string-length($writing/@ana) != 0 and normalize-space($writing)">
-                                                <xsl:value-of
-                                                  select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing)"
-                                                />
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:value-of
-                                                  select="id(substring-after($writing/@ana, '#'))/t:catDesc"
-                                                />
-                                            </xsl:otherwise>
-                                        </xsl:choose>
+                                        <xsl:value-of
+                                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote/@ana"/>
+                                        <xsl:value-of
+                                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote"
+                                        />
                                     </td>
                                 </tr>
                                 <tr>
@@ -257,13 +250,45 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="label inactive">Decoration</td>
+                                    <td class="label">Place of Origin</td>
                                     <td class="value">
-                                        <xsl:value-of
-                                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote/@ana"/>
-                                        <xsl:value-of
-                                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote"
-                                        />
+                                        <xsl:value-of select="$placeOfOrigin"/>
+                                    </td>
+                                </tr>
+
+                                <xsl:for-each select="//t:provenance">
+                                    <tr>
+                                        <td class="label">Subsequent Location</td>
+                                        <td class="value">
+                                            <xsl:choose>
+                                                <xsl:when
+                                                  test="string-length(child::t:p) != 0">
+                                                  <xsl:value-of
+                                                  select="(child::t:p)"/>
+                                                </xsl:when>
+                                            </xsl:choose>
+                                        </td>
+                                    </tr>
+                                </xsl:for-each>
+                                <tr>
+                                    <td class="label">Acquired</td>
+                                    <td class="value">
+                                        <xsl:choose>
+                                            <xsl:when test="string-length($acquisitionDesc) != 0">
+                                                <xsl:value-of
+                                                  select="concat($acquisitionDate, ', ', $acquisitionDesc)"
+                                                />
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of select="$acquisitionDate"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Date</td>
+                                    <td class="value">
+                                        <xsl:value-of select="$dateOfOrigin"/>
                                     </td>
                                 </tr>
                             </table>
@@ -297,23 +322,6 @@
                     </xsl:result-document>
                 </div>
 
-                <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
-                <xsl:if
-                    test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
-                    <style id="transcription_style">
-                        .linenumber{
-                            display:block;
-                            float:left;
-                            margin-left:-2em;
-                        }</style>
-                    <xsl:call-template name="default-body-structure">
-                        <xsl:with-param name="parm-leiden-style" tunnel="yes"
-                            >panciera</xsl:with-param>
-                        <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double"
-                            >5</xsl:with-param>
-                        <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
-                    </xsl:call-template>
-                </xsl:if>
 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->
                 <div class="bibl">
@@ -364,21 +372,20 @@
 
 
                 <div class="author">
-                    <h3>Authors/Editors</h3>
                     <table>
                       <xsl:for-each select="//t:change">
                         <tr>
                         <xsl:choose>
                             <xsl:when test="position()=1">
-                                <td type="label">Created by: </td>
+                                <td type="label">Author: </td>
                                 <td type="value"><xsl:value-of select="concat(@who, ' on: ', @when)"/></td>
                             </xsl:when>
-                            <xsl:otherwise>
+                            <!--><xsl:otherwise>
                                 <td type="label">Edited by: </td>
                                 <td type="value">
                                     <xsl:value-of select="concat(@who, ' on: ', @when)"/>
                                 </td>
-                            </xsl:otherwise>
+                            </xsl:otherwise><-->
                         </xsl:choose>
                         </tr>
                     </xsl:for-each>
