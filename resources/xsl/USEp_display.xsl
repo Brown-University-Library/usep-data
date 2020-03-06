@@ -91,22 +91,6 @@
                       </xsl:call-template>
                       </div>
                   </xsl:if>
-                  <!-- ** This outputs translation *** -->
-
-                  <xsl:if
-                      test="/t:TEI/t:text/t:body/t:div[@type = 'translation']">
-                      <div class="translation">
-                        <h3>Translation</h3>
-                        <xsl:call-template name="default-body-structure">
-                            <xsl:with-param name="parm-leiden-style" tunnel="yes"
-                                >panciera</xsl:with-param>
-                            <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double"
-                                >5</xsl:with-param>
-                            <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
-                        </xsl:call-template>
-                      </div>
-                  </xsl:if>
-
                     <!-- This outputs the inscription metadata, after checking that there is some. -->
                     <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/*">
                         <div class="metadata">
@@ -411,21 +395,7 @@
         </xsl:result-document>
     </xsl:template>
 
-<!-- ** This outputs commentary *** -->
 
-<xsl:if
-    test="/t:TEI/t:text/t:body/t:div[@type = 'commentary']">
-    <div class="commentary">
-      <h3>Commentary</h3>
-      <xsl:call-template name="default-body-structure">
-          <xsl:with-param name="parm-leiden-style" tunnel="yes"
-              >panciera</xsl:with-param>
-          <xsl:with-param name="parm-line-inc" tunnel="yes" as="xs:double"
-              >5</xsl:with-param>
-          <xsl:with-param name="parm-bib" tunnel="yes">none</xsl:with-param>
-      </xsl:call-template> 
-    </div>
-</xsl:if>
 
     <!-- ****************** This outputs the bibliography ******************** -->
 
