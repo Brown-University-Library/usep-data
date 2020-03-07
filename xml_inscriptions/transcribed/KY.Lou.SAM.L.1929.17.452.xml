@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
             <!--printable version of USEpi inscription ID:-->
-            <title>KY.Lou.SAM.L.1929.17.470</title>
+            <title>KY.Lou.SAM.L.1929.17.452</title>
          </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="KY.Lou.SAM.L.1929.17.470">KY.Lou.SAM.L.1929.17.470</idno>
+            <idno type="USEpigraphy" xml:id="KY.Lou.SAM.L.1929.17.452">KY.Lou.SAM.L.1929.17.452</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -21,29 +21,29 @@
                   <settlement>Lou</settlement>
                   <institution>SAM</institution>
                   <repository/>
-                  <idno>1929.17.470</idno>
+                  <idno>1929.17.452</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of [M. N]inneius M.l. Sappaeus</p>
+                     <p>Epitaph of Malchius</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Broken marble columbarium slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
+                        <support><p>Broken marble slab</p><dimensions type="surface" unit="cm">
+                              <height>9</height>
+                              <width>9</width>
                               <depth/>
                            </dimensions>
                         </support>
                         <condition ana="#fragment.single">
-                           <p>missing upper left corner of slab, broken diagonally</p>
+                           <p>broken on all sides></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="3">
+                        <layout columns="1" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
@@ -54,7 +54,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
-                        <p> </p>
+                        <p>none</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -77,8 +77,12 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                  <biblScope unit="item">33610</biblScope>
+                  <biblScope unit="item">33604</biblScope>
                </bibl>
+
+<bibl>
+<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR135222">EDR135222</ref>
+</bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -94,6 +98,7 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-12-10" who="SJD">Added missing control vocab, fixed columns/lines</change>
+         <change when="2020-03-06" who="GG">Added dimensions and transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -101,14 +106,17 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="KY.Lou.SAM.L.1929.17.470.jpg"/>
+         <graphic url="KY.Lou.SAM.L.1929.17.452.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>
+               <lb n="1"/> <persName><name key="Malchio">Malchio</name></persName>
+               <lb n="2"/> <expan><abbr>an</abbr><ex>nis</ex></expan> <expan><abbr>v</abbr><ex>ixit</ex></expan> <num value="25">XXV</num>.
+            </ab>
+            </div>
       <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div> </body>
    </text>
 </TEI>
