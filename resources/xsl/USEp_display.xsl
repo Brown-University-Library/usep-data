@@ -36,6 +36,7 @@
         2018-08-08 SJD fixes issues with provenance to display according to desired categories; added table display for authorship
         2019-11-14 SJD fixed main issue with authorship display, pushed alpha version to site
         2020-01-30 SJD reordered major metadata categories, display orders of transcription per JB's design requests; commented out editor display privileging authorial creation
+        2020-03-11 SJD temporarily disabled authorship display, pending reconsideration of how to handleb
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -368,7 +369,7 @@
 
 
             </div>
-            <!-- ****** Author/Editor Information ****** -->
+            <!-- ****** Author/Editor Information ****** 
 
 
                 <div class="author">
@@ -380,18 +381,18 @@
                                 <td type="label">Author: </td>
                                 <td type="value"><xsl:value-of select="concat(@who, ' on: ', @when)"/></td>
                             </xsl:when>
-                            <!--><xsl:otherwise>
+                            <xsl:otherwise>
                                 <td type="label">Edited by: </td>
                                 <td type="value">
                                     <xsl:value-of select="concat(@who, ' on: ', @when)"/>
                                 </td>
-                            </xsl:otherwise><-->
+                            </xsl:otherwise>
                         </xsl:choose>
                         </tr>
                     </xsl:for-each>
 
                     </table>
-                </div>
+                </div> -->
         </xsl:result-document>
     </xsl:template>
 
