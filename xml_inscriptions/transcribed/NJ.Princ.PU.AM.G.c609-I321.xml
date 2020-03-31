@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- v. 20. 2019-10-04 EM  -->
 <!--<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+--><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
 
             <titleStmt>
-                <title>NJ.Princ.PU.AM.G.3775-I67</title>
+                <title>NJ.Princ.PU.AM.G.c609-I321</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NJ.Princ.PU.AM.G.3775-I67">NJ.Princ.PU.AM.G.3775-I67</idno>
+                <idno type="USEpigraphy" xml:id="NJ.Princ.PU.AM.G.c609-I321">NJ.Princ.PU.AM.G.c609-I321</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -23,16 +23,16 @@
                         <settlement>Princ</settlement>
                         <institution>PU</institution>
                         <repository>AM</repository>
-                        <idno>3775-I67</idno>
+                        <idno>c609-I321</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+                        <msItem class="#text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Aristeinos</p>
+                            <p>Fragmentary inscription</p>
                         </msItem>
                     </msContents>
 
@@ -41,14 +41,14 @@
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#stele">
+                        <objectDesc ana="#fragment">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> Broken marble stele</p>
+                                    <p> Single marble fragment</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>29.3</height>
-                                        <width>23.0</width>
-                                        <depth>36.0</depth>
+                                        <height>10.8</height>
+                                        <width>3.8</width>
+                                        <depth>2.1</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#fragment.single">
@@ -57,7 +57,7 @@
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="4">
+                                <layout columns="1" writtenLines="5">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -86,8 +86,8 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0301" notAfter="0600">fourth-sixth century CE</date>
-                            <placeName ref="asia.asia_minor">Turkey, Daphne (Harbiye)</placeName>
+                            <date notBefore="0001" notAfter="0200">first-second century CE</date>
+                            <placeName ref="asia.asia_minor">Turkey, Seleucia</placeName>
                         </origin>
                         <provenance type="transfer" subtype="given">
                             <!-- subsequent locations if inscription was moved -->
@@ -101,11 +101,11 @@
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Antioch_II"/>
-                        <biblScope unit="item">162, no. 98</biblScope>
+                        <ptr type="rest-of-bibl" target="#Antioch_III"/>
+                        <biblScope unit="item">99, no. 191</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="https://artmuseum.princeton.edu/collections/objects/41919">
+                        <ref type="external" target="https://artmuseum.princeton.edu/collections/objects/41921">
                             Princeton University Art Museum
                         </ref>
                     </bibl>
@@ -117,7 +117,8 @@
 
         <encodingDesc>
 
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -151,14 +152,16 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>Εὐψύ
-                <lb n="2" break="no"/>χι <persName><name key="Aristeinos Άριστεῖνος">Άρι
-                <lb n="3" break="no"/>στεῖ
-                <lb n="4" break="no"/>νε</name></persName>
-            </ab></div>
+                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>Μ<!-- might also be a Λ connected to another letter? unclear --><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ΙΜ<gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>ΕΛΕ<gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>ΤΟ<gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="5"/><gap reason="lost" quantity="1" unit="line"/>
+            </ab>
+            </div>
 
             <div type="commentary">
-            <p>Notes here, </p></div>
+            <p> <!-- notes --></p></div>
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
