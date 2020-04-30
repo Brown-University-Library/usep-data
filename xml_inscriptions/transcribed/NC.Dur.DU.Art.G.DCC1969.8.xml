@@ -3,7 +3,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>ME.Bruns.BC.G.1923.109</title>
+            <title>NC.Dur.DU.Art.G.DCC1969.8</title>
          </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,38 +11,42 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="ME.Bruns.BC.G.1923.109">ME.Bruns.BC.G.1923.109</idno>
+            <idno type="USEpigraphy" xml:id="NC.Dur.DU.Art.G.DCC1969.8">NC.Dur.DU.Art.G.DCC1969.8</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <region>ME</region>
-                  <settlement>Bruns</settlement>
-                  <institution>BC</institution>
-                  <repository/>
-                  <idno>1923.109</idno>
+                  <region>NC</region>
+                  <settlement>Dur</settlement>
+                  <institution>DU</institution>
+                  <repository>Art</repository>
+                  <idno>DCC1969.8</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem class="#label">
-                     <p>Inscribed statuette of a bull</p>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
+                     <!-- short summary of the content of an inscription -->
+                     <p>Funerary stele of Onesimos</p>
                   </msItem>
                </msContents>
+               
+               <!--  *************************************  <physDesc>  ********************************* -->
                <physDesc>
                   
                   <!--  *************************************  <objectDesc>  *********************************  -->
                   
-                  <objectDesc ana="#instrumentum">
-                     <supportDesc ana="#metal.bronze">
+                  <objectDesc ana="#stele">
+                     <supportDesc ana="#stone.marble">
                         <support>
                            <p> </p>
                            <dimensions type="surface" unit="cm">
-                              <height>3.5</height>
-                              <width>4.1</width>
-                              <depth/>
+                              <height>31</height>
+                              <width>21.5</width>
+                              <depth>10</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete">
+                        <condition ana="#fragment.single">
                            <p/>
                         </condition>
                      </supportDesc>
@@ -57,7 +61,7 @@
                   <!--  *************************************  <handDesc>  ********************************* -->
                   
                   <handDesc hands="1">
-                     <handNote ana="#impressed.inscribed.etched"> </handNote>
+                     <handNote ana="#impressed.inscribed"> </handNote>
                   </handDesc>
                   
                   <!--  *************************************  <decoDesc>  *********************************     -->
@@ -77,8 +81,8 @@
                   </summary>
                   
                   <origin>
-                     <date notBefore="-0500" notAfter="-0460">mid 5th century BC</date>
-                     <placeName ref="europe.greece">Greece</placeName>
+                     <date notAfter="-0350" notBefore="-0375">mid 4th century BC</date>
+                     <placeName ref="europe.greece.athens">Athens</placeName>
                   </origin>
                   
                   
@@ -86,16 +90,17 @@
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#AJA_Herbert2"/>
-                  <biblScope unit="item">381-82, Pl. 104 (fig.1)</biblScope>
+                  <ptr type="rest-of-bibl" target="#CAT_0"/>
+                  <biblScope unit="item">876</biblScope>
                </bibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#Herbert_AABC"/>
-                  <biblScope unit="item">118, no. 421</biblScope>
+                  <ptr type="rest-of-bibl" target="#Stanley"/>
+                  <biblScope unit="item">5</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://artmuseum.bowdoin.edu/objects-1/info/1778"
-                     >External Reference Bowdoin Museum of Art</ref>
+                  <ref type="external"
+                     target="https://emuseum.nasher.duke.edu/objects/14536/funerary-stele-of-onesimos?ctx=ecb4029c-23c8-45ce-8f66-bd67e1cf07cf&amp;idx=2"
+                     >External Reference</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -111,14 +116,25 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="EM">More tweaks for bib only inscriptions</change>
-         <change when="2020-04-22" who="GG">Added metadata and external reference</change>
+         <change when="2020-04-20" who="GG">Added metadata, external reference, image link and transcription</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here--><text>
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="https://emuseum.nasher.duke.edu/internal/media/dispatcher/13054/resize%3Aformat%3Dfull"/>
+      </surface>
+   </facsimile>
+   <text>
       <body>
+        
          <div type="edition">
+            <ab>
+               <lb n="1"/> <persName><name key="Ὀνέσιμος">Ὀνέσιμος</name></persName>
+            </ab></div>
+        
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>

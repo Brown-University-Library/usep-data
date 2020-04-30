@@ -3,7 +3,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>ME.Bruns.BC.G.1923.109</title>
+            <title>NC.Dur.DU.Art.G.DCC75.12</title>
          </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,44 +11,48 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="ME.Bruns.BC.G.1923.109">ME.Bruns.BC.G.1923.109</idno>
+            <idno type="USEpigraphy" xml:id="NC.Dur.DU.Art.G.DCC75.12">NC.Dur.DU.Art.G.DCC75.12</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <region>ME</region>
-                  <settlement>Bruns</settlement>
-                  <institution>BC</institution>
-                  <repository/>
-                  <idno>1923.109</idno>
+                  <region>NC</region>
+                  <settlement>Dur</settlement>
+                  <institution>DU</institution>
+                  <repository>Art</repository>
+                  <idno>DCC75.12</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem class="#label">
-                     <p>Inscribed statuette of a bull</p>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#honorific">
+                     <!-- short summary of the content of an inscription -->
+                     <p>Ephebic stele</p>
                   </msItem>
                </msContents>
+               
+               <!--  *************************************  <physDesc>  ********************************* -->
                <physDesc>
                   
                   <!--  *************************************  <objectDesc>  *********************************  -->
                   
-                  <objectDesc ana="#instrumentum">
-                     <supportDesc ana="#metal.bronze">
+                  <objectDesc ana="#stele">
+                     <supportDesc ana="#stone">
                         <support>
                            <p> </p>
                            <dimensions type="surface" unit="cm">
-                              <height>3.5</height>
-                              <width>4.1</width>
-                              <depth/>
+                              <height>48.2</height>
+                              <width>43</width>
+                              <depth>1.5</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete">
+                        <condition ana="#fragment.single">
                            <p/>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="1" writtenLines="1">
+                        <layout columns="1" writtenLines="18">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -57,7 +61,7 @@
                   <!--  *************************************  <handDesc>  ********************************* -->
                   
                   <handDesc hands="1">
-                     <handNote ana="#impressed.inscribed.etched"> </handNote>
+                     <handNote ana="#impressed.inscribed"> </handNote>
                   </handDesc>
                   
                   <!--  *************************************  <decoDesc>  *********************************     -->
@@ -77,8 +81,8 @@
                   </summary>
                   
                   <origin>
-                     <date notBefore="-0500" notAfter="-0460">mid 5th century BC</date>
-                     <placeName ref="europe.greece">Greece</placeName>
+                     <date notBefore="0162" notAfter="0163">162-163 CE</date>
+                     <placeName ref="africa.egypt">Antinoopolis</placeName>
                   </origin>
                   
                   
@@ -86,16 +90,17 @@
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#AJA_Herbert2"/>
-                  <biblScope unit="item">381-82, Pl. 104 (fig.1)</biblScope>
+                  <ptr type="rest-of-bibl" target="#GRBS_19"/>
+                  <biblScope unit="item">239-249</biblScope>
                </bibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#Herbert_AABC"/>
-                  <biblScope unit="item">118, no. 421</biblScope>
+                  <ptr type="rest-of-bibl" target="#SEG_28"/>
+                  <biblScope unit="item">no. 1458</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://artmuseum.bowdoin.edu/objects-1/info/1778"
-                     >External Reference Bowdoin Museum of Art</ref>
+                  <ref type="external"
+                     target="https://emuseum.nasher.duke.edu/objects/14608/ephebic-inscription?ctx=d87511a8-4586-4a95-972c-ef7ff52ba1a4&amp;idx=0"
+                     >External Reference</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -111,10 +116,13 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="EM">More tweaks for bib only inscriptions</change>
-         <change when="2020-04-22" who="GG">Added metadata and external reference</change>
+         <change when="2020-04-20" who="GG">Added metadata and external reference</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here--><text>
+
+
+   
+   <text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
