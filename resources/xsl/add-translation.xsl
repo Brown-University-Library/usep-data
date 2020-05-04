@@ -32,7 +32,6 @@
         
         <xsl:choose>
             <xsl:when test="t:div[@type='translation']">
-                
                 <xsl:apply-templates select="t:div[@type='translation']"/>
             </xsl:when>
             <xsl:otherwise>
@@ -44,7 +43,6 @@
         
         <xsl:choose>
             <xsl:when test="t:div[@type='commentary']">
-                
                 <xsl:apply-templates select="t:div[@type='commentary']"/>
             </xsl:when>
             <xsl:otherwise>
@@ -56,7 +54,6 @@
         
         <xsl:choose>
             <xsl:when test="t:div[@type='apparatus']">
-                
                 <xsl:apply-templates select="t:div[@type='apparatus']"/>
             </xsl:when>
             <xsl:otherwise>
