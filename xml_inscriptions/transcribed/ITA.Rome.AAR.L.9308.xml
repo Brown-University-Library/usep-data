@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -39,9 +36,9 @@
                 <msDesc>
                     <msIdentifier>
                         <region>ITA</region>
-                        <settlement></settlement>
+                        <settlement/>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9308</idno>
                         <altIdentifier>
                             <idno>86</idno>
@@ -153,8 +150,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -186,21 +182,37 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
             <ab><lb n="1"/><persName><name type="gentilicium" key="Nevia">Nevia</name> <name type="cognomen" key="Fortunata">Fortuna
                 <lb n="2" break="no"/>ta</name></persName>, <expan><abbr><hi rend="supraline">q</hi></abbr><ex>uae</ex></expan> <supplied reason="subaudible">vixit</supplied> <expan><abbr>ann</abbr><ex>is</ex></expan> <num type="cardinal" value="2"><hi rend="supraline">II</hi></num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan>
                 <lb n="3"/><num type="cardinal" value="3"><hi rend="supraline">III</hi></num>, <expan><abbr>dieb</abbr><ex>us</ex></expan> <num type="cardinal" value="14"><hi rend="supraline">XIIII</hi></num>;
                 <lb n="4"/><persName><name type="gentilicium" key="Nevia">Nevia</name> <name type="cognomen" key="Capitolina">Capitolina</name></persName>
                 <lb n="5"/>mater fecit.</ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The gentilicium Nevius is attested to beginning in the first century, on the island of Maiorca (CIL 05 (1), 07639; 07641; 07656), and as late as the fifth century (CIL 06, 22841a (1), Cfr. CIL 05, 00182 (2); CIL 14, 01942 (1)).
                 The Nevii seem to have settled primarily in southern and central Italy (CIL 06 (1), 22841a, 25780, 37683; CIL 14 (1), 01942, 02199, 04573).
             Fortunata is a circumstantial cognomen, statistically for a slave. Capitolina is a geographical cognomen referring to the Capitoline hill in Rome.</p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

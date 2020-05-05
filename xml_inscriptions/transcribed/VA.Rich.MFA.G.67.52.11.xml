@@ -1,7 +1,5 @@
-<?oxygen
-RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"
-?>
-<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"
+?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader><!-- testing1 -->
         <fileDesc>
             <titleStmt>
@@ -9,7 +7,7 @@ RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"
                 <title>VA.Rich.MFA.G.67.52.11</title>
             </titleStmt>
             <publicationStmt>
-                <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                     <xi:fallback>
                         <p>
                             The Publications Statement should appear here. (c) Brown University
@@ -23,14 +21,14 @@ RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"
                     <msIdentifier>
                         <region>VA</region>
                         <settlement>Rich</settlement>
-                        <institution></institution>
+                        <institution/>
                         <repository>MFA</repository>
                         <idno>67.52.11</idno>
                     </msIdentifier>
                     <msContents>
                         <textLang mainLang="grc"/>
                         <msItem class="#text_other">
-                            <p></p>
+                            <p/>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -62,7 +60,7 @@ use a <locus> to narrow down part of inscription being discussed, i.e. campus
                             </layoutDesc>
                         </objectDesc>
                         <handDesc ana="#text_other">
-                            <handNote></handNote>
+                            <handNote/>
                         </handDesc>
                         <decoDesc>
                             <decoNote ana="blank">
@@ -108,7 +106,7 @@ Add provenance element(s) to locations at later dates - same content as origin
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -127,8 +125,9 @@ URL will actually only have the file name, which is the machine readable USEP nu
         </surface>
     </facsimile>
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <ab>
                     <lb n="1"/>ΗΑΙ<g type="dot"/>CΕΛ<g type="dot"/>ΚΡΟ<g type="dot"/>ΖΕΥΑΡ<g type="dot"/>ΑΦΡ<g type="dot"/>ΕΡΜ<g type="dot"/>ωΡ
                     <lb n="2"/>ΛΕ<g type="dot"/>ΑΙΓ<g type="dot"/>ΚΑΡ<g type="dot"/>ΤΑΥ<g type="dot"/>CΚΟ<g type="dot"/>ΚΑΡ<g type="dot"/>ΛΕΟ<g type="dot"/>ΚΑΡ
@@ -138,19 +137,34 @@ URL will actually only have the file name, which is the machine readable USEP nu
 The marked up transcription goes here, surrounded by <ab> </ab> elements
 -->
             </div>
-            <div type="apparatus">
-                <p></p>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="apparatus">
+                <p/>
             </div>
-            <div type="bibliography">
-                <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml">
+            
+        
+        <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Epigraphybibliography</p>
                     </xi:fallback>
                 </xi:include>
             </div>
-         </body>
+        </body>
+        
+    
     </text>
 </TEI>
-
-
-

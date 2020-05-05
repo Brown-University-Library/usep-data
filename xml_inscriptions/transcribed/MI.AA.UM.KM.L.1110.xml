@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1110</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -94,7 +93,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -104,7 +103,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2014-05-20" who="SJD">Updated machine readable IDs and changed language to reflect the Greek script (la -> la-Grek); add commentary note indicating the script/language</change>
+         <change when="2014-05-20" who="SJD">Updated machine readable IDs and changed language to reflect the Greek script (la -&gt; la-Grek); add commentary note indicating the script/language</change>
          <change when="2014-08-11" who="SJD">Added SEG 48 to bibl</change>
          <change when="2015-06-25" who="SJD">Added description of text, updated location, deleted duplicate file under G.1110.</change>
          <change when="2015-08-24" who="SJD">Updated objectDesc and handDesc metadata, added images, proofed transcription based upon re-edition of Samantha Lash</change>
@@ -114,13 +113,14 @@
       <surface>
          <desc/>
 
-         <graphic url="MI.AA.UM.KM.G.1110.jpg"></graphic>
+         <graphic url="MI.AA.UM.KM.G.1110.jpg"/>
   
       </surface>
    </facsimile>
    <text>
-      <body>
-         <div type="edition">
+      
+        <body>
+        <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                    <lb n="1"/><milestone rend="paragraphos" unit="undefined"/><persName><name type="gentilicium" key="Aurelius">Ἀορήλι<supplied reason="omitted">ο</supplied>ς</name> <name type="cognomen" key="Hospitianus">Ὀσπιτιανός</name></persName>
@@ -131,14 +131,28 @@
                     <lb n="6"/>μερεντι <expan><abbr>ποσουηρ<hi rend="supraline">ο</hi></abbr><ex>ντ</ex></expan>.
             </ab>
             </div>
-         <div type="apparatus">
-            <p/>
-         </div>
-         <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
             <p>The inscription is in the Latin language, transcribed into the Greek alphabet.</p>
          </div>
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+            
+        
+        
+                <div type="apparatus">
+            <p/>
+         </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
    </text>
 </TEI>

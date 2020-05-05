@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>68</idno>
                         <altIdentifier>
                             <idno>Acc. #59</idno>
@@ -92,7 +90,7 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved"></handNote>
+                            <handNote ana="#impressed.inscribed.carved"/>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
@@ -154,8 +152,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -191,8 +188,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="slaveName" key="Daducus">Daducus</name></persName>,
                     <lb n="2"/><persName><name type="gentilicium" key="Lamilla">Lamillae</name></persName> <expan><abbr>ser</abbr><ex>vus</ex></expan>,
@@ -200,8 +198,16 @@
                     <lb n="4"/>carus sui<hi rend="tall">i</hi>s, 
                     <lb n="5"/><persName><name type="slaveName">Ma</name></persName> soror <expan><abbr>fec</abbr><ex>it</ex></expan>.
                 </ab>
-            </div>             
-            <div type="commentary"><!-- notes go here -->
+            </div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p>Line 1: The letters of the name Daducus are the largest in the inscription, at letter height of approximately 2 cm. The rest of the lettering varies between approximately 1 cm high in the bottom lines and 1.5 in lines 2-3. Solin provides three other comparanda for Daduchus, CIL VI 9340, Daduchi which Manutius originally read as Raduchi, though corrected in the transcription in CIL; CIL VI 16716; and CIL VI 19919 (though numbered incorrectly in Solin as 191919), a freedman of Tiberius. Bodel and Tracy provide one further example, from the collection at New York University, though this example arguably dates later than the others.</p>
                 <p>Line 2: As Wilson notes, this seems to be the only extant attestation of the name Lamilla, which Wilson nonetheless argues is a diminutive of the relatively common gentilicium Lamia.</p>
                 <p>Line 3: here the long I is denoted by the double vowel with heightened I.</p>
@@ -211,8 +217,16 @@
                     interpuncts.</p>
             </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

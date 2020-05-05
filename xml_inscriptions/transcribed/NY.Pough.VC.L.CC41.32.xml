@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>NY</region>
                         <settlement>Pough</settlement>
                         <institution>VC</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>CC41.32</idno>
                     </msIdentifier>
                     
@@ -152,8 +150,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -184,8 +181,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
                     <lb n="2"/><persName><name type="gentilicium" key="Annia">Anniae</name> <name type="cognomen" key="Urbica">Ur
@@ -193,15 +191,29 @@
                     <lb n="4"/><expan><abbr>ann</abbr><ex>is</ex></expan> <num value="2"><hi rend="supraline">II</hi></num>, <expan><abbr><hi rend="ligature">m<am>I</am></hi></abbr><ex>ensibus</ex></expan> <num value="4">IIII</num>,
                     <lb n="5"/><expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="14">XIIII</num>.
                 </ab>
-            </div>             
-            <div type="commentary"><!-- notes go here -->
-                <p>4) m(ensibus) IIII: The first I of the numeral is in ligature with the M of m(ensibus).</p>
-            </div>            
-            <div type="translation">
+            </div>
+        
+        
+                <div type="translation">
                 <p>"To the divine shades of Annia Urbica. She lived for two years, four months, fourteen days."</p>
             </div>
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
             
-         </body>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+                <p>4) m(ensibus) IIII: The first I of the numeral is in ligature with the M of m(ensibus).</p>
+            </div>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>
