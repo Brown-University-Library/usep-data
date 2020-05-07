@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9306 and 9315</idno>
                         <altIdentifier>
                             <idno>84 and 95</idno>
@@ -94,8 +91,7 @@
                             <handNote ana="#impressed.inscribed.carved">Triangular interpuncts
                                 appear to follow words that are abbreviated, except at the end of
                                 lines. Line 1: between D(is) and M(anibus). Line 2: between
-                                Ti(berio) and Cl(audio), and Cl(audio) and Hermes.<dimensions
-                                    type="letter" unit="cm">
+                                Ti(berio) and Cl(audio), and Cl(audio) and Hermes.<dimensions type="letter" unit="cm">
                                     <height min="2.0" max="2.3"/>
                                 </dimensions>
                             </handNote>
@@ -160,8 +156,7 @@
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -200,24 +195,40 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                    <lb n="2"/><persName><name type="gentilicium" key="Claudia"><expan><abbr>Clau</abbr><ex>diae</ex></expan></name> <name type="cognomen" key="Gemella">Gemell<hi rend="ligature">ae</hi></name></persName>
-                   <lb n="3"/><persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berius</ex></expan></name> <name type="gentilicium" key="Claudius"><expan><abbr>Cl</abbr><ex>audius</ex></expan></name> <name type="cognomen" key="Hermes">Hermes></name></persName>
+                   <lb n="3"/><persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berius</ex></expan></name> <name type="gentilicium" key="Claudius"><expan><abbr>Cl</abbr><ex>audius</ex></expan></name> <name type="cognomen" key="Hermes">Hermes&gt;</name></persName>
                    <lb n="4"/>et <persName><name type="gentilicium" key="Livia">Liv<unclear>i</unclear>a</name> <name type="cognomen" key="Bononia"><expan><abbr>Bononi</abbr><ex>a</ex></expan></name></persName>
                    <lb n="5"/>mater filiae p<unclear>i</unclear><supplied reason="lost">en</supplied>
                    <lb n="6" break="no"/>tissimae f<unclear>ec</unclear><supplied reason="lost">erunt</supplied>,
-                    <lb n="7"/><expan><abbr>q</abbr><ex>uae</ex></expan> <expan><abbr><unclear>v</unclear></abbr><ex>ixit</ex></expan> <supplied reason="lost"><expan><abbr>a</abbr><ex>nnis</ex></expan> <num type="cardinal" cert="low"/></supplied> <gap reason="lost" extent="unknown" unit="character"></gap>.
+                    <lb n="7"/><expan><abbr>q</abbr><ex>uae</ex></expan> <expan><abbr><unclear>v</unclear></abbr><ex>ixit</ex></expan> <supplied reason="lost"><expan><abbr>a</abbr><ex>nnis</ex></expan> <num type="cardinal" cert="low"/></supplied> <gap reason="lost" extent="unknown" unit="character"/>.
                 </ab></div>
-
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The D M abbreviation for Dis Manibus dates the stele to post 50 CE.  The Julio-Claudian cognomen and gentilicia, Tiberius Claudius, Claudia, and Livia, suggest a date no later than the end of the 1st century CE.
             The final line is fragmentary, but the most plausible restoration is q(uae) v(ixit) [a(nnis)] and a number.</p></div>
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

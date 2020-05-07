@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>Italy</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9239</idno>
                         <altIdentifier>
                             <idno>17</idno>
@@ -72,7 +69,7 @@
                                     <dimensions type="surface" unit="cm">
                                         <height>20.5</height>
                                         <width>35.9</width>
-                                        <depth></depth>
+                                        <depth/>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
@@ -155,8 +152,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -190,8 +186,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <div type="textpart" subtype="ansa" n="ansa sinistra">
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan>
@@ -202,25 +199,40 @@
                         <lb n="1"/><expan><abbr>M</abbr><ex>anibus</ex></expan>.
                      </ab>
                 </div>
-                <div type= "textpart" subtype= "campus">
+                <div type="textpart" subtype="campus">
                    
             <ab>
                 <lb n="1"/><persName><name type="cognomen" key="Amandus">Amando</name></persName> <expan><abbr>fil</abbr><ex>io</ex></expan>
                 <lb n="2"/><persName><name type="cognomen" key="Comse">Comse</name></persName> fecit.
                 <lb n="3"/><handShift/><persName><name type="gentilicium" key="Cornelia">Corneliae</name>
-                <lb n="4"/><name type="cognomen" key= "Libas">Libadi</name></persName>
-                <lb n="5"/><persName><name type="praenomen" key= "Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Cornelius"><expan><abbr>Corn</abbr><ex>elius</ex></expan></name>
+                <lb n="4"/><name type="cognomen" key="Libas">Libadi</name></persName>
+                <lb n="5"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Cornelius"><expan><abbr>Corn</abbr><ex>elius</ex></expan></name>
                  <name type="cognomen" key="Symphorus"><expan><abbr>Symphor</abbr><ex>us</ex></expan></name></persName>
                 <lb n="6"/>uxsor<hi rend="tall">i</hi> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>.
             </ab>
                 </div>
                 </div>
-             
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
             <p>Found at the Villa Bertone in 1886, this marble tablet contains two funerary inscriptions. The first epitaph, for Amandus, encompasses the first two lines of the campus and both sides of the tabula ansata, and is carved in large, well defined capital letters. The second inscription, for Cornelia Libas, is carved in another hand, less finely, and uses interpuncts between words in lines 5-6. No relation is apparent between the two inscriptions. It is possible that the entirety of the campus was originally meant for the relatives of Comse and Amandus, but that Caius Cornelius Symphorus repurposed the tabula for an unrelated funary inscription upon the death of his wife.</p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>VA</region>
                         <settlement>Glade Spring</settlement>
                         <institution>PHHS</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>02-mdn</idno>
                     </msIdentifier>
                     
@@ -79,7 +77,7 @@
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="6">
-                                    <p></p>
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -87,7 +85,7 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.other"></handNote>
+                            <handNote ana="#impressed.other"/>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
@@ -163,8 +161,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -195,8 +192,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/>Deo <expan><abbr>Inv</abbr><ex>icto</ex></expan> <persName type="divine"><name key="Mithras"><expan><abbr>M</abbr><ex>ithrae</ex></expan></name></persName>.
                 <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Antonius">A<hi rend="ligature">nt</hi>o<hi rend="ligature">ni</hi><hi rend="ligature">us</hi></name>
@@ -206,12 +204,27 @@
                 <lb n="6"/><expan><abbr>v</abbr><ex>otum</ex></expan> <expan><abbr>s</abbr><ex>olvit</ex></expan> <expan><abbr>l</abbr><ex>ibens</ex></expan> <expan><abbr>m</abbr><ex>erito</ex></expan>.
             </ab>
             </div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p/></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>
