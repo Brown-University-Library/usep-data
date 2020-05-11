@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -100,7 +98,7 @@
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p></p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -152,7 +150,7 @@
 
         <encodingDesc>
 
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -180,7 +178,7 @@
 
     <facsimile>
         <surface>
-            <desc></desc>
+            <desc/>
             <graphic url="MD.Balt.JHU.L.106.jpg"/>
         </surface>
         <surface>
@@ -194,15 +192,25 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Papssenna">Papssenna</name>
                     <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen">Rufio</name></persName>.
                 </ab>
             </div>
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                <!-- notes go here -->
+                <p>"Gaius Papsenna Rufio, the freedman of Gaius."</p>
+            </div>
+            
+        
+        
+                <div type="commentary">
                 <!-- notes go here -->
                 <p>The nomen Papssenna, as noted on this inscription, is not found on any other inscription
                     and thus the second “S” was most likely an error of the carver. There are clear scratch marks in even horizontal lines
@@ -210,19 +218,22 @@
                     planning on behalf of the carver.</p>
             </div>
             
-            <div type="translation">
-                <!-- notes go here -->
-                <p>"Gaius Papsenna Rufio, the freedman of Gaius."</p>
-            </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-            <div type="bibliography">
-                <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml">
+        
+        <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Epigraphybibliography</p>
                     </xi:fallback>
                 </xi:include>
             </div>
-
-         </body>
+        </body>
+        
+    
     </text>
 </TEI>

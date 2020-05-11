@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -176,7 +174,7 @@
                             <placeName ref="unknown">unknown</placeName>
                         </origin>
                         <provenance>
-                            <date notBefore="0001" notAfter="0002"></date>
+                            <date notBefore="0001" notAfter="0002"/>
                             <placeName ref="unknown">unknown</placeName>
                         </provenance>
                     </history>
@@ -219,8 +217,7 @@
                 The taxonomy files can be updated by US Epigraphy staff, but changes should be made only if approved.
                 -->
                 
-                <xi:include
-                    href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_taxonomies.xml">
+                <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -264,17 +261,32 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <ab><lb n="1"/><gap reason="lost" extent="unknown"/> <persName><name type="divinity" key="Athena">ἀθέναι</name></persName> : καλό : <gap reason="lost" extent="unknown"/>
                 </ab>
             </div>
-            <div type="commentary"><ab>This inscription may have been a dedication to the goddess Athena. This inscription may have originated at the sanctuary of Athena in the Acropolis, where several inscriptions of similar kind have been found.</ab></div>
-                        
-            <!-- if there is commentary or notes, you can add a <div type="commentary"> after the edition. -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><ab>This inscription may have been a dedication to the goddess Athena. This inscription may have originated at the sanctuary of Athena in the Acropolis, where several inscriptions of similar kind have been found.</ab></div>
             
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

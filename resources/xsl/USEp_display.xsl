@@ -36,7 +36,7 @@
         2018-08-08 SJD fixes issues with provenance to display according to desired categories; added table display for authorship
         2019-11-14 SJD fixed main issue with authorship display, pushed alpha version to site
         2020-01-30 SJD reordered major metadata categories, display orders of transcription per JB's design requests; commented out editor display privileging authorial creation
-        2020-03-11 SJD temporarily disabled authorship display, pending reconsideration of how to handleb
+        2020-03-11 SJD temporarily disabled authorship display, pending reconsideration of how to handle
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>

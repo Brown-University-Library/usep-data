@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9318</idno>
                         <altIdentifier>
                             <idno>98</idno>
@@ -161,8 +158,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -196,8 +192,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><persName><supplied reason="lost"><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name></supplied> <name type="gentilicium" key="Iulius"><supplied reason="lost">I</supplied>ulius</name>
                 <lb n="2"/><name type="cognomen" key="Anicetus"><supplied reason="lost">A</supplied>nicetus</name></persName>
@@ -210,14 +207,29 @@
                 <lb n="9"/>ka<supplied reason="lost">l</supplied><supplied reason="undefined" evidence="previouseditor">atorum</supplied> <unclear>pontificu</unclear><supplied reason="lost">m</supplied>
                 <lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The date for this inscription, May 24th, 102 CE, and the ka[l] in line 9 comes from the second extant fragment of the inscription (CIL VI.2185 = VI.31034b).  The reconstruction of G(aius) as the praenomen in line 1 derives from other inscriptions found in the excavations outside the Porta Portuensis (CIL VI.52). 
             Two suggestions for completing the beginning of line 7 are [pavime]ntis (L. Borsari) and orname[ntis].  Inchoatis in line 7 is incohatis, this switch is a common orthographical switch.
             </p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

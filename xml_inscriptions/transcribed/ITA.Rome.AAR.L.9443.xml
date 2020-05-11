@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9443</idno>
                         <altIdentifier>
                             <idno>162</idno>
@@ -195,8 +192,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -225,8 +221,9 @@
     
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Humidius">Humidius</name> <name type="cognomen" key="Quetus">Que
                     <lb n="2" break="no"/><hi rend="ligature">tu</hi>s</name></persName> vet<supplied reason="omitted">e</supplied>rani
@@ -235,15 +232,20 @@
                     <lb n="5"/>ex <expan><abbr>c<supplied reason="omitted">o</supplied>ho</abbr><ex>rte</ex></expan><note>sic</note> <num type="ordinal" value="8">VIII</num> <expan><abbr>pr</abbr><ex>aetoria</ex></expan>
                     <lb n="6"/><g type="centuria"/> <persName><name type="gentilicium" key="Cesonius">Cesoni</name></persName> ab <persName type="emperor"><name key="Antoninus" type="cognomen">An
                     <lb n="7" break="no"/>tonino</name></persName> et <persName type="emperor"><name key="Verus" type="cognomen">Vero</name></persName>
-                    <lb n="8"/><expan><abbr>Imp</abbr><ex>eratoribus</ex></expan> <expan><abbr>Aug</abbr><ex>ustis</ex></expan> <persName><name  type="divine" key="Silvanus">Silva
+                    <lb n="8"/><expan><abbr>Imp</abbr><ex>eratoribus</ex></expan> <expan><abbr>Aug</abbr><ex>ustis</ex></expan> <persName><name type="divine" key="Silvanus">Silva
                     <lb n="9" break="no"/>no</name></persName> <expan><abbr>donu</abbr><ex>m</ex></expan> dedit.
                 </ab>
             </div>
-            <div type="translation">
+        
+        
+                <div type="translation">
                 <p>"Gaius Humidius Quetus, Veteran(?), discharged with an honorable discharge from the Eighth Praetorian Cohort, from the century of Cesonius
                     by Antoninus and Verus the Augustan Emperors, gave to Silvanus as a gift."</p>
             </div>
-            <div type="commentary"><!-- notes go here -->
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p>Humidius is a nomen attested in at least one other military context: a centurion of Legio I Italica named on an officer list of A.D. 196 from Novae. See AE 1993, 1364.</p>
                 <p>Two of the final three letters of line 1 are unclear. That restored as a Q is missing its tail due to damage. That restored as an E has a distinctly shorter bottom stroke, and
                    could be restored as an F or P. The ligature of T and U in the second line nonetheless makes Quetus the most likely restoration. Quetus is an infrequent but attested variation of the cognomen Quietus. 
@@ -257,8 +259,16 @@
                     Guard. In his 1992 study of the deity and his cult, Peter Dorcey observes that Silvanus is second only to Jupiter in numbers of inscriptions from the city of Rome.</p>
             </div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution>HCM</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>#97.6.51</idno>
                     </msIdentifier>
                     
@@ -131,7 +129,7 @@
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#unpub"/>
-                        <biblScope unit="page"></biblScope>
+                        <biblScope unit="page"/>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -142,8 +140,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -174,8 +171,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <supplied reason="lost"><expan><abbr>M</abbr><ex>anibus</ex></expan>.</supplied>
                     <lb n="2"/>fece<supplied reason="lost">runt</supplied>
@@ -186,7 +184,7 @@
                     <lb n="7"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium">Valen<supplied reason="lost">t</supplied><gap reason="lost" quantity="4" unit="character" precision="low"/></name>
                     <lb n="8"/><name type="cognomen" key="Encolpus">Encolpu<supplied reason="lost">s</supplied></name></persName><gap reason="lost" quantity="3" unit="character" precision="low"/>
                     <lb n="9"/><persName><name type="gentilicium" key="Iulius"><supplied reason="lost">I</supplied>ulius</name> <name type="cognomen" key="Carpus">Carp<supplied reason="lost" cert="low">us.</supplied></name></persName><gap reason="lost" quantity="3" unit="character" precision="low"/>
-                    <lb n="10"/>Locus datus ab <persName><name type="praenomen" key="Marcus"></name> <unclear>A</unclear><gap reason="lost" quantity="10" unit="character" precision="low"/></persName>
+                    <lb n="10"/>Locus datus ab <persName><name type="praenomen" key="Marcus"/> <unclear>A</unclear><gap reason="lost" quantity="10" unit="character" precision="low"/></persName>
                     <lb n="11"/>et <persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="gentilicium" key="Annius">Annio</name> <name type="cognomen">Dor<gap reason="lost" quantity="12" unit="character" precision="low"/></name></persName>
                     <lb n="12"/><persName><name type="gentilicium" key="Fundia"><supplied reason="lost">Fundi</supplied>a</name> <name type="cognomen">Frini</name><gap reason="lost" quantity="14" unit="character" precision="low"/></persName>
                     <lb n="13"/><supplied reason="lost">qui</supplied> concess<supplied reason="lost">erunt</supplied> <gap reason="lost" quantity="10" unit="character" precision="low"/>
@@ -198,12 +196,27 @@
                     <lb n="19"/>exciper<gap reason="lost" quantity="8" unit="character"/>
                     <lb n="20"/><gap reason="lost" quantity="2" unit="character"/> EA <gap reason="lost" quantity="14" unit="character" precision="low"/>
                 </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
-            <p></p></div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+            <p/></div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>
