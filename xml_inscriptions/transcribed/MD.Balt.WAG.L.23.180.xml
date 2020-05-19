@@ -127,15 +127,19 @@
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
                         <provenance>
-                            <date when="1925">1925</date>
-                            <placeName ref="MD.Balt"><persName>Joseph Brummer</persName>, New York; <persName>Henry Walters</persName>, Baltimore, by
-                                purchase</placeName>
+                            <p>In the possession of <persName>Joseph Brummer</persName>, <placeName>New York</placeName>, <date notAfter="1925">before 1925</date></p>
                         </provenance>
-                        <acquisition>
-                            <!-- subsequent locations if inscription was moved -->
-                            <date when="1931">1931</date>
-                            <p>Walters Art Museum, by bequest</p>
-                        </acquisition>
+                        <provenance type="transferred" subtype="purchased">
+                            
+                            <p>Purchased by <persName>Henry Walters</persName>, <placeName>Baltimore</placeName>, by
+                                in <date when="1925">1925</date></p>
+                        </provenance>
+                        <provenance type="transferred" subtype="given">
+                            <p>Donated to the 
+                                <orgName>Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest
+                            </p>
+                            
+                        </provenance>
                         
                         
 
@@ -186,7 +190,8 @@
         <revisionDesc>
             <change when="2014-12-15" who="Luther Karper">Initial Encoding</change>
             <change when="2015-08-31" who="Scott J. DiGiulio">Cleaned metadata, proofed transcription, added bibl, added image, added translation div</change>
-            <change when="2017-10-07" who="Scott J. DiGiulio">Fixed typo in date, added persName taGaia Gianniing to provenance</change>
+            <change when="2017-10-07" who="Scott J. DiGiulio">Fixed typo in date, added persName tagging to provenance</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
         </revisionDesc>
 
     </teiHeader>

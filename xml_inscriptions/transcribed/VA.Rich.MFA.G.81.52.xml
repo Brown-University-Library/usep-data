@@ -91,7 +91,9 @@ Should contain information about origin of inscription including place and date.
                                 <date evidence="unspecified" notBefore="-0325" notAfter="-0300">325-300 BCE</date>
                                 <placeName ref="europe.italy">Gnathia</placeName>
                             </origin>
-                            <provenance><p>Anonymous Donor</p></provenance>
+                            <provenance type="transferred" subtype="given">
+                                <p>Gift of an <persName>Anonymous Donor</persName></p>
+                            </provenance>
                             <!--
 Add provenance element(s) to locations at later dates - same content as origin
 -->
@@ -113,6 +115,9 @@ Add provenance element(s) to locations at later dates - same content as origin
             </xi:include>
         </encodingDesc>
         <profileDesc/>
+        <revisionDesc>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Added missing revisionDesc; fixed provenance markup</change>
+        </revisionDesc>
     </teiHeader>
     <facsimile>
         <surface>
