@@ -110,14 +110,15 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="-0241" notAfter="-0240">241 BCE</date>
+                            <date evidence="unspecified" notBefore="-0241" notAfter="-0240">241 BCE</date>
                             <placeName ref="unknown">unknown, possibly Rome or environs(?)</placeName>
                         </origin>
-                        <provenance>
+                        <provenance type="transferred" subtype="loaned">
                             <!-- subsequent locations if inscription was moved -->
-                            <date notBefore="1986" notAfter="1998">1986</date>
-                            <placeName ref="CA.Malibu.JPGM">formerly J. Paul Getty Museum, acc. no. L80.AC.37</placeName>
-                            <p>nothing known of provenance prior to 1986, and was on display at the Getty Museum, acc. no. L80.AC.3; as of 1998, the cuirass had been returned to its anonymous owner and its current location is unknown</p>
+                            <p>nothing known of provenance prior to <date notBefore="1986" notAfter="1998">1986</date>, when it was on display at the <placeName ref="CA.Malibu.JPGM">J. Paul Getty Museum</placeName>, acc. no. L80.AC.37</p>
+                        </provenance>
+                        <provenance type="transferred">
+                            <p>as of <date when="1998">1998</date>, the cuirass had been returned to its anonymous owner and its current location is unknown</p>
                         </provenance>
                         
 
@@ -170,6 +171,7 @@
         <revisionDesc>
             <change when="2015-12-09" who="Scott J. DiGiulio">Initial Encoding</change>
             <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
         </revisionDesc>
 
     </teiHeader>
