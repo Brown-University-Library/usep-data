@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -70,13 +71,14 @@
 					<placeName ref="europe.rome.italy" key="423052">necropolis of San Paolo fuori le Mura, Via Ostiense, Rome, Italy</placeName>
 					<date notBefore="0001" notAfter="0100">first century CE</date>
 				</origin>
-				<provenance type="found" subtype="first-recorded">
-					<date notAfter="1899-12-31">1899</date>
-					<placeName ref="NY.NY.CU">in the handwritten catalogue in Butler library, George N. Olcott mentions this inscription coming from the same provenance as those documented in an article published in 1899</placeName>
+                <provenance type="found" subtype="first-recorded">
+                	<p><persName>George N. Olcott</persName> mentions this inscription coming from the same provenance as those documented in an article published in <date notAfter="1899-12-31">1899</date> in the handwritten catalogue in <placeName ref="NY.NY.CU">Butler Library</placeName></p>
 				</provenance>
-				<provenance type="observed">
-					<date notAfter="2011-09-01">2011</date>
-					<placeName ref="NY.NY.CU">identified in the Butler library collection no later than 1st September 2011</placeName>
+                <provenance type="transferred" subtype="purchase">
+                	<p><p><persName>George N. Olcott</persName> records purchasing this inscription from the excavation of the <placeName>Via Ostiensis necropolis</placeName> near <placeName>San Paolo fuori le Mura</placeName> in <placeName>Rome</placeName>.</p></p>
+                </provenance>
+				<provenance type="observed" subtype="autopsy">
+					<p>Identified in the <placeName ref="NY.NY.CU">Butler library</placeName> collection no later than <date notAfter="2011-09-01">1st September 2011</date></p>
 				</provenance>
 			</history>
 			<additional>
@@ -105,6 +107,7 @@
 		<change when="2016-02-29" who="Scott J. DiGiulio">Proofed xml document for conformity to USEP standards and style; added commentary div; formatted translation; fixed origin elements, cleaned provenance</change>
 		<change when="2016-03-02" who="Scott J. DiGiulio">Corrected language code, corrected xi:include  directory, corrected provenance p to placeName</change>
 			<change when="2020-03-22" who="Gaia Gianni">Delete image filename</change>
+		<change when="2020-05-19" who="Scott J. DiGiulio">Changed provenance information to match new USEP standards; added missing bibl div</change>
 	</revisionDesc>
 </teiHeader>
 <facsimile>
@@ -132,8 +135,7 @@
             
         
         
-                <div type="commentary">
-			<p>George N. Olcott records purchasing this inscription from the excavation of the Via Ostiensis necropolis near San Paolo fuori le Mura in Rome.</p>
+                <div type="commentary">			
 			<p>The modules and spacing between letters are inconsistent, as though the inscriber ran out of space. In particular, the first and last characters of line 2, an 'L' and an 'I' are not equidistant to the border, suggesting that the lettering was inscribed after the border. Note also the uneven spacing of the word 'Manibus' on line 1.</p>
 		</div>
             
@@ -142,7 +144,8 @@
                 <div type="apparatus">
                     <p/>
                 </div>
-            
+        	<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        	
         
         
         </body>
