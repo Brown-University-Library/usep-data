@@ -29,7 +29,19 @@
             <xsl:apply-templates select="node()|@*"/>
         </xsl:copy>
     </xsl:template>
-    
+    <xsl:template match="t:revisionDesc">
+        <xsl:choose>                    
+        <xsl:when test="//t:dimensions[@type='letter']">
+            <xsl:copy>
+                <xsl:apply-templates/>
+                <change when="2020-06-18" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+            </xsl:copy>
+        </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="node()"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     <xsl:template match="t:dimensions[@type='letter']" />
     <xsl:template match="t:handNote">
         <xsl:copy>
@@ -90,10 +102,6 @@
     
    
     
-    <xsl:template match="t:revisionDesc">
-        <xsl:copy><xsl:apply-templates/>
-        <t:change when="2020-06-18" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</t:change>
-        </xsl:copy>
-    </xsl:template>
+    
    
 </xsl:stylesheet>
