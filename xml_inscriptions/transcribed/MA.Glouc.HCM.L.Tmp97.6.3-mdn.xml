@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
                 <!-- printable version of USEpi inscription ID: -->
-                <title>MA.Glouc.HCM.L.#97.6.45</title>
+            <title>MA.Glouc.HCM.L.#97.6.3-mdn</title>
             </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,8 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.45">MA.Glouc.HCM.L.#97.6.45</idno>
+            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.3-mdn"
+               >MA.Glouc.HCM.L.#97.6.3-mdn</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -20,52 +21,55 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-
-                        <region>MA</region>
+  
+                        <region>MA</region> 
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
                         <!--required.-->
                         <!--  accession number, last part of USEP number -->
-                        <idno>#97.6.45</idno>
+                        <idno>#97.6.3-mdn</idno>
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>Honorific inscription of Pope Pius V and Cerdinal Alphonsus Carapha</p>
+                     <p>Epitaph of Felix</p>
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#slab">
-                     <supportDesc ana="#stone.unknown">
+                  <objectDesc ana="#stele">
+                     <supportDesc ana="#plaster">
                         <support>
-                           <p>Slab of unknown stone</p>
-                           <dimensions type="surface" unit="cm">
-                                <height>66</height>
-                                <width>96.5</width>
-                                <depth/>
-                          </dimensions>
-                          <dimensions type="letter" unit="cm">
-                            <height min="2.4" max="3.2">2.4-3.2</height>
-                          </dimensions>
+                           
+                           
+                           <p>Plaster stele</p>
+                           <dimensions type="surface" unit="m">
+                                        <height>0.73.5</height>
+                                        <width>0.38.1</width>
+                                        <depth/>
+                                 </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="3.17" max="3.5">3.17-3.5</height>
+                           </dimensions>
                         </support>
-                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
-                          <p>letters worn on right side; large break through the bottom right corner of lines</p>
+                        <condition ana="#complete">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="14">
+                                <layout columns="1" writtenLines="6">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
-                                </layout>
+                                </layout>                     
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc hands="1">
-                     <handNote ana="#impressed.inscribed.carved"/>
+                  <handDesc>
+                     <handNote/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
+                     <decoNote>
                         <p/>
                      </decoNote>
                   </decoDesc>
@@ -77,22 +81,21 @@
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                            
                         </summary>
                   <origin>
                      <date>modern</date>
-                     <date notBefore="1581" notAfter="1581">1581</date>
-                     <placeName ref="unknown">unknown</placeName>
+                     <placeName ref="europe.rome.italy">Via Appia, Rome, Ital</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
-                <bibl>
-                  <ptr type="rest-of-bibl" target="#DeMaio_1981"/>
-                  <biblScope unit="pp">298-301, 332</biblScope>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">37610</biblScope>
                </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-
+                     
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -107,9 +110,8 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2011-11-27" who="CD">Replaced @fake type=object with @rs fake</change>
-         <change when="2015-07-06" who="SJD">Updated bibl based on hard copy files</change>
-         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors, added note in commentary about identification of the stone</change>
-         <change when="2016-04-12" who="SJD">Fixed bibl id for DeMaio</change>
+         <change when="2020-06-23" who="SPapandonatou">updated USEP id w/ -mdn, metadata revisions,
+            added name tags</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,35 +119,28 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-            <graphic url="MA.Glouc.HCM.L.Tmp97.6.45.jpg"/>
+            <graphic url="MA.Glouc.HCM.L.Temp97.6.3.jpg"/>
       </surface>
    </facsimile>
    <text>
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><persName><name>Marcus</name> <name>Antonius</name> <name>Florentius</name> <name>Peruginus</name></persName>
-                <lb n="2"/>sacellum assumptioni <expan><abbr>B</abbr><ex>eatae</ex></expan> Mari<hi rend="ligature">ae</hi> Virginis
-                <lb n="3"/>dicatum exornavit donavitque mille
-                <lb n="4"/>aureis in constructionem fabric<hi rend="ligature">ae</hi> huius
-                <lb n="5"/>impensis cum onere perpetuis futuris
-                <lb n="6"/>temporibus celebrandi a patribus
-                <lb n="7"/>anniversarium <expan><abbr>foel</abbr><ex>icis</ex></expan> <expan><abbr>rec</abbr><ex>toris</ex></expan> <persName><name>Pii</name> Pap<hi rend="ligature">ae</hi> Quinti</persName>
-                <lb n="8"/>Kalendis Maii cum octo cereis
-                <lb n="9"/>et bon<hi rend="ligature">ae</hi> memori<hi rend="ligature">ae</hi> <persName><name>Alphonsi</name> Cardinalis
-                <lb n="10"/><name>Caraph<hi rend="ligature">ae</hi></name></persName> Quarto <expan><abbr>Kalend</abbr><ex>is</ex></expan> Septembris
-                <lb n="11"/>cum sex ac pr<hi rend="ligature">ae</hi>terea necessaria
-                <lb n="12"/>ornamenta et qu<hi rend="ligature">ae</hi>cumque alia pro
-                <lb n="13"/>tempore ad dictum sacellum
-                <lb n="14"/>pertinentia suppeditandi.
-            </ab>
-
+                <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr><ex>is</ex>
+               </expan> 
+               <expan>
+                  <abbr>M</abbr><ex>anibus</ex>
+               </expan>.
+               <lb n="2"/><persName><name type="cognomen" key="Felix">Felici</name></persName> bene
+                <lb n="3"/>merenti. <persName><name type="cognomen" key="Athictus">Athi
+                   <lb break="no" n="4"/>ctus</name></persName> frater cum coniuge
+                <lb n="5"/>sua fecit.</ab>
+                
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-
-            </div>
-           <div type="commentary">
-              <p>This inscription bears some similarities to Forcella, <hi rend="italic">Iscrizioni delle Chiese IV</hi>, 50 no. 121, dedicated by the same Marco Antonio Florenzio (though note Perusinus instead of Peruginus) and containing several of the same formulae.</p>
-           </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+                
+            </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
          </body>
     </text>

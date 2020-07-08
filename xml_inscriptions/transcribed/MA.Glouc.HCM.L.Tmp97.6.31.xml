@@ -41,7 +41,7 @@
                      <supportDesc ana="#stone.marble">
                         <support>                     
                            
-                           <p/>
+                           <p>Marble slab</p>
                            <dimensions type="surface" unit="cm">
                                         <height>43.2</height>
                                         <width>33</width>
@@ -51,7 +51,9 @@
                               <height>2.5</height>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>Broken around all edges, though campus remains intact</p>
+                        <condition ana="#complete">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Broken around all edges, though campus remains intact</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -63,7 +65,7 @@
                             </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-                     <handNote ana="#impressed.inscribed.carved"/>
+                     <handNote ana="#impressed.inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -107,6 +109,8 @@
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
          <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
+         <change when="2020-06-29" who="SPapandonatou">minor metadata revision, corrected minor
+            transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -121,8 +125,8 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-                <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Lepidius">Lepidi</name> <name type="cognomen" key="Eutichus">Eutichi</name></persName>.
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Lepidius">Lepidi</name> <name type="cognomen" key="Eutychus">Eutychi</name></persName>.
                 <lb n="3"/>Fecit <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Lepidius">Lepidius</name>
                 <lb n="4"/><name type="cognomen" key="Hermeros">Hermeros</name></persName> filio
                 <lb n="5"/>suo, qui vixit an
@@ -130,7 +134,7 @@
                 <lb n="7"/><num value="10">X</num>, diebus <num value="26">XXVI</num>.
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+            <!-- unusual for the fecit to come first -->    
             </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
          </body>

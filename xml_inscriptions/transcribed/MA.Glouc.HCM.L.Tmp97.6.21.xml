@@ -33,37 +33,35 @@
                <msContents>
 <textLang mainLang="lat"/>                  
 <msItem class="#funerary.epitaph">
-                     <p/>
+                     <p>Epitaph of Chreste</p>
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           
-                           
-                           <p/>
+                           <p>Marble stele</p>
                            <dimensions type="surface" unit="m">
-                                        <height>0.27</height>
-                                        <width>0.14.6</width>
-                                        <depth/>
-                                    </dimensions>
+                              <height>0.27</height>
+                              <width>0.14.6</width>
+                              <depth/>
+                           </dimensions>
                         </support>
-                        <condition ana="#complete.intact">
+                        <condition ana="#complete">
                            <!--Add ana attribute with controlled value for condition-->
                            <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="7">
-                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                        <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="7">
+                           <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-                     <handNote ana="#impressed.inscribed.carved"/>
+                     <handNote ana="#impressed.inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
@@ -77,7 +75,7 @@
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                            <rs/>
                         </summary>
                   <origin>
                      <date notBefore="0075" notAfter="0200">late first-second century CE</date>
@@ -106,6 +104,8 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2020-06-26" who="SPapandonatou">minor revisions to metadata, added name
+            tags</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -125,12 +125,11 @@
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/> C<choice>
                   <sic>rh</sic>
                   <corr>hr</corr>
-               </choice>esteni
+               </choice>esteni,
                 <lb n="3"/> 
                <expan>
                   <abbr>q</abbr><ex>uae</ex>
@@ -142,11 +141,11 @@
                   <abbr>a</abbr><ex>nnis</ex>
                </expan> XXXV.
                 <lb n="4"/> 
-               <expan>
+               <persName><name type="praenomen" key="Lucius"><expan>
                   <abbr>L</abbr><ex>ucius</ex>
-               </expan> Iulius
-                <lb n="5"/> Threpti
-                <lb break="no" n="6"/> on amicae
+               </expan></name> <name type="gentilicium" key="Julius">Iulius</name>
+                <lb n="5"/> <name type="cognomen" key="Threption">Threpti
+                <lb break="no" n="6"/>on</name></persName> amicae
                 <lb n="7"/> 
                <expan>
                   <abbr>b</abbr><ex>ene</ex>
@@ -155,8 +154,7 @@
                   <abbr>m</abbr><ex>erenti</ex>
                </expan> 
                <expan>
-                  <abbr>f</abbr><ex>ecit</ex>
-               </expan>.
+                  <abbr>f</abbr><ex>ecit</ex></expan>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->

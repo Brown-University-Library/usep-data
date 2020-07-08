@@ -48,9 +48,9 @@
                     <msContents>
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Fragment, possibly of an epitaph</p>
+                            <p>Fragmentary epitaph (?)</p>
                         </msItem>
                     </msContents>
                     
@@ -60,11 +60,11 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
-                        <objectDesc ana="#slab">
+                        <objectDesc ana="#tablet #fragment">
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Fragment of marble slab</p>
+                                    <p> Fragment of a marble tablet</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>19.5</height>
                                         <width/>
@@ -87,7 +87,7 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved"> </handNote>
+                            <handNote ana="#impressed.inscribed"> </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
@@ -154,6 +154,7 @@
         
         <revisionDesc>
             <change when="2015-08-03" who="SJD">Initial Encoding</change>
+            <change when="2020-07-06" who="SPapandonatou">transcription revisions</change>
         </revisionDesc>
 
     </teiHeader>
@@ -172,8 +173,8 @@
         <body>
             <div type="edition"><!-- transcription goes here -->
                 <ab>
-                    <lb n="1"/><g type="hedera" cert="low"/>Q<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/><persName><name type="cognomen" key="Balbillus">Balbil<supplied reason="lost">lus</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/><persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><name type="cognomen" key="Balbillus">Balbil<supplied reason="lost">lus</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
             </div>
             <div type="commentary"><!-- notes go here -->

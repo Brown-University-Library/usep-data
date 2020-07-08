@@ -49,8 +49,8 @@
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
-                        <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of C. Iulius Doryporus</p>  
+                            <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of C. Iulius Doryporus</p>
                         </msItem>
                     </msContents>
                     
@@ -60,11 +60,11 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
-                        <objectDesc ana="#slab">
+                        <objectDesc ana="#stele">
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Marble slab rounded at top</p>
+                                    <p> Marble stele rounded at top</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>66</height>
                                         <width>39</width>
@@ -75,23 +75,24 @@
                                         <width>24</width>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.intact">
-                                    <p>Bottom corners show evidence of having been cut to fit into a slot</p>
+                                <condition ana="#complete"> <!-- do i need to keep the .intact? -->
+                                    <p>Bottom corners show evidence of having been cut</p>
                                 </condition>
                             </supportDesc>
                             
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="6">
-                                    <p>First line inscribed outside of molding for campus</p>
+                                <layout columns="1" writtenLines="6"> <!-- Not correct bc first "line" is not within the campus with the rest of the inscription. But keeping it until template changes. -->
+                                    <p>First line inscribed on lintel, outside of molding for campus. The rest is within the frame.</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved"> </handNote>
+                        <handDesc hands="2">
+                            <handNote ana="#impressed.inscribed"> line on lintel looks like it's
+                                been written by a differnt hand, possibly added later.</handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
@@ -116,8 +117,9 @@
                         </summary>
                         
                         <origin>
-                        <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0200" cert="low">Second century CE(?)</date>
+                            <!-- original place and dating of inscription -->
+                            <date notBefore="0001" notAfter="0100" cert="low">first century
+                                CE(?)</date>
                             <placeName ref="europe.rome.italy" cert="low">Italy, Rome</placeName>
                         </origin>
                         
@@ -159,6 +161,7 @@
         
         <revisionDesc>
             <change when="2015-08-04" who="SJD">Initial Encoding</change>
+            <change when="2020-06-22" who="SPapandonatou">Revisions</change>
         </revisionDesc>
 
     </teiHeader>
@@ -175,19 +178,31 @@
 
     <text>
         <body>
+            
             <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/><expan><ex>In</ex></expan> <expan><abbr>f</abbr><ex>ronte</ex></expan> <num value="4">IV</num>, <expan><abbr><unclear>p</unclear></abbr><ex>ede</ex></expan> <unclear>IIV</unclear>.
-                    <lb n="2"/><persName><name type="gentilicium" key="Iulia">Iulia</name> <name type="cognomen" key="Helpis">Helpi
-                    <lb n="3" break="no"/>s</name></persName> patron
-                    <lb n="4" break="no"/>o suo <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name>
-                    <lb n="5"/><name type="gentilicium" key="Iulius">Iulio</name>
-                    <lb n="6"/><name type="cognomen" key="Doryporus">Dorypor<hi rend="small">o</hi></name></persName>.
-                </ab>
+                <div type="textpart" subtype="section" n="a">
+                   <ab>
+                       <lb n="1"/><expan><ex>In</ex></expan> <expan><abbr>f</abbr><ex>ronte</ex></expan> <num value="4">IV</num>, <expan><abbr><unclear>p</unclear></abbr><ex>edes</ex></expan> <unclear>IIV</unclear>. 
+                   </ab> 
+                </div>
+                
+                <div type="textpart" subtype="section" n="b">
+                    <ab>
+                        <lb n="1"/><persName><name type="gentilicium" key="Iulia">Iulia</name> <name type="cognomen" key="Helpis">Helpi
+                        <lb n="2" break="no"/>s</name></persName> patron
+                        <lb n="3" break="no"/>o suo <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name>
+                        <lb n="4"/><name type="gentilicium" key="Iulius">Iulio</name>
+                        <lb n="5"/><name type="cognomen" key="Doryporus">Dorypor<hi rend="small">o</hi></name></persName>. 
+                    </ab>
+                </div>
+              
             </div>
              
-            <div type="commentary"><!-- notes go here -->
-            <p/></div>
+            <div type="commentary">
+            <p> Line 1 has "in fronte IV pedes" rather than the more usual "in fronte pedes IV." The
+                    unclear "IIV" could be a form of the typical continuation of the formula: "in
+                    agro pedes (IV)." This formula also typically occurs at the end of such
+                    inscriptions, rather than at the beginning, as it does here. </p></div>
             
             <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
             

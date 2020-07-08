@@ -32,21 +32,21 @@
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>Epitaph of Largennius Ouf(entia tribu) Dubius</p>
+                     <p>Epitaph of Largennius Ouf(entina tribu) Dubius</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#cippus">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p/>
+                           <p>Marble cippus</p>
                            <dimensions type="surface" unit="m">
                               <height>0.80</height>
                               <width>0.25</width>
                               <depth>0.22.5</depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#complete">
                            <!--Add ana attribute with controlled value for condition-->
                            <p/>
                         </condition>
@@ -74,7 +74,7 @@
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                            <rs/>
                         </summary>
                   <origin>
                      <date notBefore="0100" notAfter="0200">second century CE</date>
@@ -103,6 +103,8 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2020-06-24" who="SPapandonatou">changed note to rs, metadata revisions added
+            name tags</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,18 +119,9 @@
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>Largennius
-                <lb n="2"/> 
-               <expan>
-                  <abbr>Ouf</abbr><ex>entina</ex>
-               </expan> Dubius
-                <lb n="3"/> 
-               <expan>
-                  <abbr>Mediolan</abbr><ex>i</ex>
-               </expan> 
-               <expan>
-                  <abbr>mil</abbr><ex>es</ex>
-               </expan>.
+                <lb n="1"/><persName><name type="gentilicium" key="Largennius">Largennius</name>
+                <lb n="2"/><expan><abbr>Ouf</abbr><ex>entina</ex></expan> <name type="cognomen" key="Dubius">Dubius</name></persName>
+                <lb n="3"/><expan><abbr>Mediolan</abbr><ex>i</ex></expan> <expan><abbr>mil</abbr><ex>es</ex></expan>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->

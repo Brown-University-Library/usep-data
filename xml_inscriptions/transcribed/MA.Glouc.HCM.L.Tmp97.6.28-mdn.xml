@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
                 <!-- printable version of USEpi inscription ID: -->
-                <title>MA.Glouc.HCM.L.#97.6.13</title>
+                <title>MA.Glouc.HCM.L.#97.6.28-mdn</title>
             </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -12,7 +12,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.13">MA.Glouc.HCM.L.#97.6.13</idno>
+            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.28-mdn">MA.Glouc.HCM.L.#97.6.28-mdn</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -23,38 +23,37 @@
   
                         <region>MA</region> 
                         <settlement>Glouc</settlement>
-                        <institution/>
-                        <repository>HCM</repository>
+                        <institution>HCM</institution>
+                        <repository/>
                         <!--required.-->
                         <!--  accession number, last part of USEP number -->
-                        <idno>#97.6.13</idno>
+                        <idno>#97.6.28-mdn</idno>
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
-<textLang mainLang="lat"/>                  
-<msItem class="#funerary.epitaph">
-   <p>Epitaph of Valerius</p>
+                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
+                     <p>Epitaph of Pius Carinus</p>
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#stele">
-                     <supportDesc ana="#plaster">
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
                         <support>
                            
                            
-                           <p/>
-                           <dimensions type="surface" unit="m">
-                                        <height/>
-                                        <width/>
+                           <p>Broken marble slab</p>
+                           <dimensions type="surface" unit="cm">
+                                        <height>30</height>
+                                        <width>50</width>
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p>Broken at right</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="5">
+                                <layout columns="1" writtenLines="3">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
                                 </layout>                     
@@ -65,14 +64,13 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
-                        <p/>
+                        <p>blank</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history>
-                  <summary> 
+                  <summary>
                      <rs>fake</rs>
-                        
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
@@ -81,6 +79,7 @@
                         </summary>
                   <origin>
                      <date>modern</date>
+                     <date notBefore="0300" notAfter="0500">fourth-sixth century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -106,7 +105,10 @@
       <revisionDesc>
          <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2011-11-27" who="CD">Replaced @fake type=object with @rs fake</change>
+         <change when="2012-06-29" who="SJD">Updated objectDesc, and corrected errors in transcription</change>
          <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
+         <change when="2015-08-06" who="SJD">Updated metadata, transcription and name tagging</change>
+         <change when="2020-06-26" who="SPapandonatou">minor revisions to metadata, added -mdn</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -114,27 +116,16 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-            <graphic url="MA.Glouc.HCM.L.Tmp97.6.13.jpg"/>
+            <graphic url="MA.Glouc.HCM.L.Tmp97.6.28.jpg"/>
       </surface>
    </facsimile>
    <text>
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
-                <lb n="2"/> Valerio
-                <lb n="3"/> 
-               <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> anum VI
-                <lb n="4"/> bene merenti
-                <lb n="5"/> fecit.</ab>
+                <lb n="1"/>Pio <persName><name type="cognomen" key="Carinus">Carino</name></persName> bo<supplied reason="lost">nae me</supplied>
+               <lb n="2" break="no"/>morie. <persName><name type="cognomen" key="Aquila">Aqu<supplied reason="lost" cert="low">ila</supplied></name></persName> <gap reason="lost" quantity="3" unit="character"/>
+                <lb n="3"/>posuit.</ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
