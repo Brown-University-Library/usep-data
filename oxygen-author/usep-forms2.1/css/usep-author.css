@@ -184,13 +184,13 @@
    /* **************** Genre and Materials  **************** */
 
 msItem:before {
-        content: "Genre (Click blue text; check one or more boxes from list-TT.): "
+        content: "Genre (Click blue text; check one or more boxes from list.): "
         oxy_editor(
              type, popupSelection,
              edit, "@class",
              columns 20,
              editable, false,
-             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")// [@xml:id="USEp-genre"]//category/@xml:id, ",#")'))),
+             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//[@xml:id="USEp-genre"]//category/@xml:id, ",#")'))),
              labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-genre"]//category/catDesc, ",")' ))
 );}
 
