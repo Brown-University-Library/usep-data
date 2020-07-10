@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          ->
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
 --><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
@@ -84,11 +89,11 @@
                     <history>
 
                         <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
+                            <rs/>  <!-- content can be "modern" or blank -->
                         </summary>
 
                         <origin>
-                            <date notBefore="0001" notAfter="0002">Date to be displayed</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0002">Date to be displayed</date>
                             <placeName ref="xx">Detailed place name</placeName>
                         </origin>
 
@@ -144,9 +149,16 @@
         <body>
             <div type="edition">
             <ab>Transcription goes here</ab></div>
+            
+            <div type="translation">
+            <p></p></div>
 
             <div type="commentary">
-            <p>Notes here, </p></div>
+            <p></p></div>
+            
+            <div type="apparatus">
+            <p></p></div>
+            
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
