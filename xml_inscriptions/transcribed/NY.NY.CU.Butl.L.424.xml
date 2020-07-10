@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -65,15 +63,13 @@
                         <summary>This object had entered Columbia's holdings by March 1901, although its full provenance is unknown. The text is very similar but not identical to another inscription already published in the Corpus Inscriptionum Latinarum. It may have been purchased by George N. Olcott, perhaps from Rome.</summary>
                         <origin>
                             <placeName ref="unknown">unknown</placeName>
-                            <date notBefore="0070" notAfter="0100">late-1st century CE</date>
+                            <date evidence="unspecified" notBefore="0070" notAfter="0100">late-1st century CE</date>
                         </origin>
                         <provenance type="observed" subtype="recorded">
-                            <date notAfter="1901-03-31">1901</date>
-                            <placeName ref="NY.NY.CU">recorded as being in the possession of the Latin department in The Columbia University Quarterly, March 1901</placeName>
+                            <p>Recorded as being in the possession of the Latin department in The Columbia University Quarterly, <date notAfter="1901-03-31">March 1901</date></p>
                         </provenance>
                         <provenance type="observed">
-                            <date notAfter="2011-09-01">2011</date>
-                            <placeName ref="NY.NY.CU">identified in the Butler library collection not later than 1 September 2011</placeName>
+                            <p>Identified in the <placeName ref="NY.NY.CU">Butler library</placeName> collection not later than <date notAfter="2011-09-01">1 September 2011</date></p>
                         </provenance>
                     </history>
                     <additional>
@@ -89,7 +85,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -98,22 +94,25 @@
         <revisionDesc>
             <change when="2012-11-03T17:56:08.327-04:00" who="TRE">programmatically converted from inital spreadsheet</change>
             <change when="2013-05-22" who="Joe Sheppard">translated initial data to EpiDoc</change>
-            <change when="2014-09-19" who="Elizabeth Heintges">edited initial draft, with suggested comments</change>
+            <change when="2014-09-19" who="Elizabeth Heintges">edited initial draft, with suGaia Gianniested comments</change>
             <change when="2014-09-26" who="Joe Sheppard">proofread again mutatis mutandis</change>
             <change when="2014-02-06" who="Joe Sheppard">updated bibliography, summary, provenance</change>
-            <change when="2016-03-02" who="SJD">Corrected language code, corrected xi:include  directory, corrected provenance p to placeName</change>
+            <change when="2016-03-02" who="Scott J. DiGiulio">Corrected language code, corrected xi:include  directory, corrected provenance p to placeName</change>
+            <change when="2020-03-22" who="Gaia Gianni">Deleted image filename</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Changed provenance information to match new USEP standards; added missing bibl div</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
      <graphic url=""/>
         <surface>
             <desc/>
-                <graphic url="NY.NY.CU.Butl.L.424.jpg"/>
+                
         </surface>
     </facsimile>
     <text>
+        
         <body>
-            <div type="edition" xml:lang="la" xml:space="preserve">
+        <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
                   <gap reason="lost" extent="unknown" unit="line"/>
                   <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="undefined" evidence="parallel">tab</supplied>
@@ -131,12 +130,28 @@
                   <lb n="13"/><expan><abbr>M</abbr><ex>emoriam</ex></expan> <expan><abbr>p</abbr><ex>osuit</ex></expan>.
             </ab>
          </div>
-            <div type="translation" xml:lang="en">
+        
+        
+                <div type="translation" xml:lang="en">
                 <p>...(of the archives) for the inheritances' account of the emperor Vespasian, (with) whom his wife Flavia Nica lived for 17 years without any resentment. She set up this memorial.</p>
             </div>
-            <div type="commentary">
+            
+        
+        
+                <div type="commentary">
                 <p>Parts of the text of this lead tablet are very similar to the (now-lost) epitaph published as CIL 6.8438, although not quite verbatim ac litteratim. When combined with the unusual medium and production, i.e. a lead funeral tablet with letters in relief, this similarity suggests an unusual provenance for the object, perhaps as a counterfeit or a kind of draft model, cf. NY.NY.CU.Butl.L.444, which is produced with the same technique.</p>
             </div>
-         </body>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+        </body>
+        
+    
     </text>
 </TEI>

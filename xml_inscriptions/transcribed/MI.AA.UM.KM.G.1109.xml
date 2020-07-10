@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -97,7 +95,7 @@
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p></p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -116,9 +114,8 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0200">2nd century CE</date>
-                            <placeName ref="europe.italy.misenum"
-                            >Italy, Misenum</placeName><!-- subsequent locations if inscription was moved --></origin>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0200">2nd century CE</date>
+                            <placeName ref="europe.italy.misenum">Italy, Misenum</placeName><!-- subsequent locations if inscription was moved --></origin>
                         
 
                     </history>
@@ -142,8 +139,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -159,7 +155,7 @@
         
         <revisionDesc>
             <change when="2014-10-01" who="Samantha Lash">Initial Encoding</change>
-            <change when="2015-08-24" who="SJD">Cleaned metadata for conformity, updated control vocabularies, added image, proofed transcription</change>
+            <change when="2015-08-24" who="Scott J. DiGiulio">Cleaned metadata for conformity, updated control vocabularies, added image, proofed transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -175,8 +171,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/>Θεοῖς <expan><abbr>Καταχθ<hi rend="small">ον</hi></abbr><ex>ίοις</ex></expan>
                     <lb n="2"/><persName><name type="cognomen" key="Onesicrates">Ὀνησικράτου</name>
@@ -188,8 +185,15 @@
                     <lb n="8"/>ἔτη <num value="60">Ξ</num>. Χαίρετε.
                 </ab>
             </div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>Line 1: small and raised -ον- mark the only abbreviation which expands to complete
                     the plural masculine dative adjective of the common epitaph formula. Line 2/3:
                     ‘Ονησικράτου Νεικομηdέος is attested also in the epitaph in his son Proklos, IG
@@ -198,8 +202,16 @@
                     townsman of Nicomedia in Asia minor. Line 7: φίλου is marked by a dot over the
                     upsilon although no other accents or diacritics are indiciated. </p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

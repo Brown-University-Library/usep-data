@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -123,7 +120,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0150">early - mid 2nd century CE</date>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0150">early - mid 2nd century CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
                         
@@ -174,9 +171,9 @@
         
         <revisionDesc>
             <change when="2016-07-04" who="Melissa Huber">Initial Encoding</change>
-            <change when="2017-01-31" who="SJD">Fixed file name; add altIdentifier; added msItem description; corrected objectDesc and added support description; added basic dimensions from AAR catalog; tweaked wording of condition; add letter dimensions from AAR; add Ohl, AAR, and EDR to bibl; add image filename; proofed transcription (changed supplied in last line to reflect the intact text appearing in CIL, added name tagging for Augustus)</change>
-            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
-            <change when="2020-03-01" who="GG">Change image filename</change>
+            <change when="2017-01-31" who="Scott J. DiGiulio">Fixed file name; add altIdentifier; added msItem description; corrected objectDesc and added support description; added basic dimensions from AAR catalog; tweaked wording of condition; add letter dimensions from AAR; add Ohl, AAR, and EDR to bibl; add image filename; proofed transcription (changed supplied in last line to reflect the intact text appearing in CIL, added name taGaia Gianniing for Augustus)</change>
+            <change when="2018-06-17" who="Scott J. DiGiulio">Switched files from Babcock numbering to new AAR catalog</change>
+            <change when="2020-03-01" who="Gaia Gianni">Change image filename</change>
         </revisionDesc>
 
     </teiHeader>
@@ -192,8 +189,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="gentilicium" key="Ulpius">Ulpio</name> <persName type="imperial"><name type="cognomen" key="Augustus"><expan><abbr>A</abbr><ex>ugusti</ex></expan></name></persName> <expan><abbr>lib</abbr><ex>erto</ex></expan>
@@ -202,12 +200,27 @@
                 <lb n="5"/>optimo ben<unclear>e</unclear> <supplied reason="lost">me</supplied>
                 <lb n="6" break="no"/>rent<supplied reason="undefined" evidence="previouseditor">is fecit</supplied>.
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The Julio-Claudian gentilicium of the dedicator, Claudia, and the Trajanic cognomen and gentilicium of the dedicatee suggests an early to mid 2nd century CE date, likely closer to the early 2nd century.  Guidelines are visible on the stone, but not used by the carver except on line 1.  Perhaps the stone had been originally prepared for another inscription or the carver erred when laying out the lines for the text.  Carver error is the most plausible expanation as the text is not even centered on the stone. CIL editors knew the entire text.</p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

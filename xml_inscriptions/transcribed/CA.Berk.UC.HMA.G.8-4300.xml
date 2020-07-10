@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -7,7 +6,7 @@
             <title>CA.Berk.UC.HMA.G.8/4300</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -56,7 +55,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
-                        <p></p>
+                        <p/>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -70,7 +69,7 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
                      <placeName ref="asia.syria.antioch">Syria, Antioch</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
@@ -88,7 +87,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -96,9 +95,9 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2015-11-24" who="SJD">updated placeName, fixed handDesc/handNote, added note under condition, added transcription from image</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2015-11-24" who="Scott J. DiGiulio">updated placeName, fixed handDesc/handNote, added note under condition, added transcription from image</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -110,8 +109,9 @@
       </surface>
    </facsimile>
    <text>
-      <body>
-         <div type="edition">
+      
+        <body>
+        <div type="edition"> 
             <ab>
                <lg>               
                   <l n="1">
@@ -128,6 +128,28 @@
                </lg>
             </ab>
          </div>
-      <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div> </body>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
    </text>
 </TEI>

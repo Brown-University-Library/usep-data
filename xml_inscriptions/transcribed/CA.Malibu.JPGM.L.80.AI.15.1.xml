@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -7,7 +6,7 @@
             <title>CA.Malibu.JPGM.L.80.AI.15.1</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -56,7 +55,7 @@
                      <handNote ana="#protruding.molded"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
+                     <decoNote ana=" ">
                         <p>no photo</p>
                      </decoNote>
                   </decoDesc>
@@ -71,7 +70,7 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="0075" notAfter="0125">late first century-early second century CE ?</date>
+                     <date evidence="unspecified" notBefore="0075" notAfter="0125">late first century-early second century CE ?</date>
                      <placeName ref="unknown">unknown (possibly Ostia?)</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
@@ -92,7 +91,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -100,21 +99,44 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2016-01-26" who="SJD">Added metadata and missing control vocab fields, fixed line/column values, added link to Getty Museum, added transcription from image in GettyMusJ</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-26" who="Scott J. DiGiulio">Added metadata and missing control vocab fields, fixed line/column values, added link to Getty Museum, added transcription from image in GettyMusJ</change>
       </revisionDesc>
    </teiHeader>
    
    <!--facsimile element goes here-->
    
    <text>
-      <body>
-         <div type="edition">
+      
+        <body>
+        <div type="edition">
             <ab>
                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName><name type="cognomen" key="Parthenius"><supplied reason="lost">Part</supplied>henius</name></persName> <expan><abbr>fe<unclear>c</unclear></abbr><ex>it</ex></expan>.
             </ab>
          </div>
-      <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div> </body>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
    </text>
 </TEI>

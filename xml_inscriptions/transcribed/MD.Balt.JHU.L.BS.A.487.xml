@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>A.487</idno>
                     </msIdentifier>
                     
@@ -116,7 +114,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0130" notAfter="0140">130-140 CE</date>
+                            <date evidence="unspecified" notBefore="0130" notAfter="0140">130-140 CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
                         
@@ -153,8 +151,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -170,7 +167,7 @@
         
         <revisionDesc>
             <change when="2014-12-01" who="Gaia Gianni">Initial Encoding</change>
-            <change when="2015-09-14" who="SJD">Cleaned metadata, cleaned bibl, added LSO to bibl, added note about graffito, proofed transcription, added translation div</change>
+            <change when="2015-09-14" who="Scott J. DiGiulio">Cleaned metadata, cleaned bibl, added LSO to bibl, added note about graffito, proofed transcription, added translation div</change>
         </revisionDesc>
 
     </teiHeader>
@@ -186,22 +183,36 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/>De praedis <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name type="gentilicium" key="Bellicus"><expan><abbr>B</abbr><ex cert="low">ellici</ex></expan></name> 
                         <name type="cognomen" key="Sollers"><expan><abbr>S</abbr><ex cert="low">ollertis</ex></expan></name></persName>.
                 </ab>
             </div>
-            <div type="translation">
+        
+        
+                <div type="translation">
                 <p> "From the property of Lucius Bellicius Sollers". </p>                
             </div>
-            <div type="commentary"><!-- notes go here -->              
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->              
                 <p> The stamp can be dated in the last years of Hadrian's reigning period. Dressel believed the abbreviation LBS to stand for the name Lucius Bellicius Sollers, known from two other brick stamps (CIL XV 887a). Possibly he was the same Lucius Bellicius Sollers, who was <hi rend="italic">consul suffectus</hi> under Trajan, in 100 CE. His wife's name, Claudia Marcellina, appears on bricks (CIL XV 934-936) manufactured between 123 and 126 CE; she was probably the daughter or the sister of the Claudius Marcellinus Pliny mentions at Epist. 2.11.15.</p>
             </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

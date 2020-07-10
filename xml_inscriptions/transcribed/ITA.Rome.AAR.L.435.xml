@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>435</idno>
                         <altIdentifier>
                             <idno>H-491</idno>
@@ -120,7 +117,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0300" notAfter="0500" cert="low">fourth to fifth c. CE(?)</date>
+                            <date evidence="unspecified" notBefore="0300" notAfter="0500" cert="low">fourth to fifth c. CE(?)</date>
                             <placeName ref="unknown">unknown</placeName>
                         </origin>
                         
@@ -152,8 +149,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -169,7 +165,8 @@
         
         <revisionDesc>
             <change when="2018-06-22" who="Stacie Beach">Initial Encoding</change>
-            <change when="2019-07-16" who="SJD">Corrected metadata layout and categories for genre, object type, etc.; tweaked title, filename, accession number and added altIdentifier; added bibliographic entries; added link to AAR catalog; added filepath for image; added semanic markup to transcription</change>
+            <change when="2019-07-16" who="Scott J. DiGiulio">Corrected metadata layout and categories for genre, object type, etc.; tweaked title, filename, accession number and added altIdentifier; added bibliographic entries; added link to AAR catalog; added filepath for image; added semanic markup to transcription</change>
+            <change when="2020-03-27" who="Gaia Gianni">Deleted image filename</change>
         </revisionDesc>
 
     </teiHeader>
@@ -180,24 +177,40 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="ITA.Rome.AAR.L.435.jpg"/>
+
         </surface>
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1" style="text-direction:l-to-r"/><persName><name type="gentilicium" key="Pomponius">Pomponi</name></persName>
                     <lb n="2"/><g type="caduceus"/>
                     <lb n="3" style="text-direction:l-to-r"/><persName><name type="gentilicium" key="Pomponius"><supplied reason="lost">P</supplied>omponi</name></persName>.</ab>
             </div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>During the casting process, part of the mold covered an initial P in Pomponi, so that one P is missing </p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

@@ -1,7 +1,5 @@
-<?oxygen
-RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"
-?>
-<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"
+?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader><!-- testing1 -->
         <fileDesc>
             <titleStmt>
@@ -9,7 +7,7 @@ RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"
                 <title>VA.Rich.MFA.G.66.78.4</title>
             </titleStmt>
             <publicationStmt>
-                <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                     <xi:fallback>
                         <p>
                             The Publications Statement should appear here. (c) Brown University
@@ -23,14 +21,14 @@ RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"
                     <msIdentifier>
                         <region>VA</region>
                         <settlement>Rich</settlement>
-                        <institution></institution>
+                        <institution/>
                         <repository>MFA</repository>
                         <idno>66.78.4</idno>
                     </msIdentifier>
                     <msContents>
                         <textLang mainLang="grc"/>
                         <msItem class="#label">
-                            <p></p>
+                            <p/>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -62,7 +60,7 @@ use a <locus> to narrow down part of inscription being discussed, i.e. campus
                             </layoutDesc>
                         </objectDesc>
                         <handDesc ana="#label">
-                            <handNote></handNote>
+                            <handNote/>
                         </handDesc>
                         <decoDesc>
                             <decoNote ana="blank">
@@ -90,10 +88,12 @@ Please say whether the object is fake (and therfore the inscription also) or onl
                                 <!--
 Should contain information about origin of inscription including place and date.
 -->
-                                <date notBefore="0500" notAfter="0699">6th-7th century CE</date>
+                                <date evidence="unspecified" notBefore="0500" notAfter="0699">6th-7th century CE</date>
                                 <placeName ref="europe">Byzantine Empire</placeName>
                             </origin>
-                            <provenance><p>The Adolph D. and Wilkins C. Williams Fund</p></provenance>
+                        <provenance type="transferred" subtype="given">
+                            <p>The <persName>Adolph D.</persName> and <persName>Wilkins C. Williams</persName> Fund</p>
+                        </provenance>
                             <!--
 Add provenance element(s) to locations at later dates - same content as origin
 -->
@@ -110,13 +110,16 @@ Add provenance element(s) to locations at later dates - same content as origin
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
             </xi:include>
         </encodingDesc>
         <profileDesc/>
+        <revisionDesc>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Added missing revisionDesc; fixed provenance markup</change>
+        </revisionDesc>
     </teiHeader>
     <facsimile>
         <surface>
@@ -129,8 +132,9 @@ URL will actually only have the file name, which is the machine readable USEP nu
         </surface>
     </facsimile>
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <ab>
                     <lb n="1"/>Z
                     <lb n="2"/>H
@@ -141,16 +145,34 @@ URL will actually only have the file name, which is the machine readable USEP nu
 The marked up transcription goes here, surrounded by <ab> </ab> elements
 -->
             </div>
-            <div type="apparatus">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="apparatus">
                 <p>Acrostic of "ZOE PHOS", or "Life and Light", cf. John 8:12</p>
             </div>
-            <div type="bibliography">
-                <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml">
+            
+        
+        <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Epigraphybibliography</p>
                     </xi:fallback>
                 </xi:include>
             </div>
-         </body>
+        </body>
+        
+    
     </text>
 </TEI>

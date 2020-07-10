@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!--<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -51,7 +48,7 @@
                                         <depth>20.5</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.fragments">
+                                <condition ana="#complete.broken">
                                     <p>sides are broken off, but the inscription itself is
                                         complete.</p>
                                 </condition>
@@ -90,7 +87,7 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0001" notAfter="0200">first-second century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0200">first-second century CE</date>
                             <placeName ref="asia.asia_minor">Turkey, Seleucia</placeName>
                         </origin>
                         <provenance type="transfer" subtype="given">
@@ -113,8 +110,7 @@
                         <biblScope unit="item">vol. 3,2, no. 1242(21)</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="https://artmuseum.princeton.edu/collections/objects/41878">Princeton
+                        <ref type="external" target="https://artmuseum.princeton.edu/collections/objects/41878">Princeton
                             University Art Museum</ref>
                     </bibl>
                 </listBibl>
@@ -125,8 +121,7 @@
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -158,20 +153,36 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
             <ab>
                 <lb n="1"/>Καλλὼ
                 <lb n="2"/><persName><name key="Aristonos Ἀρίστωνος">Ἀρίστωνος</name></persName>
                 <lb n="3"/>φι<unclear>λ</unclear>όστοργε
                 <lb n="1"/><unclear>ἄλ</unclear>υπε χαῖρε
             </ab></div>
-
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
             <p><!-- notes --></p></div>
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

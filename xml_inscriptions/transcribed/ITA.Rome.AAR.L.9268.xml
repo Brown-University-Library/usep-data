@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9268</idno>
                         <altIdentifier>
                             <idno>46</idno>
@@ -121,7 +118,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0300">second to third century</date>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0300">second to third century</date>
                             <placeName ref="europe.italy.rome" cert="low">Italy, Rome</placeName>
                         </origin>
                         
@@ -156,8 +153,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -173,8 +169,8 @@
         
         <revisionDesc>
             <change when="2018-07-03" who="Roosa Kallunki">Initial Encoding</change>
-            <change when="2019-07-17" who="SJD">Cleaned metadata, with minor corrections; added links to bibliography; added image filepath; proofed transcription</change>
-            <change when="2020-03-01" who="GG">Change image filename </change>
+            <change when="2019-07-17" who="Scott J. DiGiulio">Cleaned metadata, with minor corrections; added links to bibliography; added image filepath; proofed transcription</change>
+            <change when="2020-03-01" who="Gaia Gianni">Change image filename </change>
         </revisionDesc>
 
     </teiHeader>
@@ -190,8 +186,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="hedera"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>. 
                 <lb n="2"/><persName><name type="gentilicium" key="Caecilia">Caecilia</name> <name type="cognomen" key="Philete">Philete</name></persName> fecit, se
@@ -203,12 +200,27 @@
                 <lb n="8"/>neque donare licet.
                
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The only abbreviations in the inscription are lib(ertis) libertabusq(ue) posterisq(ue) which are part of a commonly used formula. The misspelling of hunc monumentum instead of the correct hoc monumentum is not very common.</p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

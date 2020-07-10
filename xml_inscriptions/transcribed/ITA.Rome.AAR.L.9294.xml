@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9294</idno>
                         <altIdentifier>
                             <idno>72</idno>
@@ -130,7 +127,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0050" notAfter="0200">first-second century CE</date>
+                            <date evidence="unspecified" notBefore="0050" notAfter="0200">first-second century CE</date>
                             <placeName ref="unknown">unknown findspot</placeName>
                         </origin>
                         
@@ -169,8 +166,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -186,7 +182,7 @@
         
         <revisionDesc>
             <change when="2018-06-30" who="Kristin Harper">Initial Encoding</change>
-            <change when="2019-07-16" who="SJD">Proofed and cleaned metadata; minor corrections to transcription; added AAR and EDR links; corrected error in commentary on name Asellia; </change>
+            <change when="2019-07-16" who="Scott J. DiGiulio">Proofed and cleaned metadata; minor corrections to transcription; added AAR and EDR links; corrected error in commentary on name Asellia; </change>
         </revisionDesc>
 
     </teiHeader>
@@ -202,8 +198,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/><persName><name type="gentilicium" key="Asellia">Asellia</name> <name type="cognomen" key="Placida">Placida</name></persName> <g type="tree"/>
@@ -211,8 +208,15 @@
                 <lb n="4" break="no"/>ladioni</name></persName> coniuci 
                 <lb n="5"/><expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>e</abbr><ex>ecit</ex></expan> <expan><abbr>poster</abbr><ex>isque</ex></expan> eorum.
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>Asellia Placida dedicated this epitaph to her husband, Decimus Ammaeus Pyladion.
                     The male form of this name, Asellius is found in several places throughout the Roman world, most
                     commonly in Narbo (CIL XII 4356, CIL XII 4627, CIL XII 4627), Pompeii (CIL IV 4311, CIL IV
@@ -221,8 +225,16 @@
                     instead of the more common abbreviation, D. The nomen gentilicium Ammaeus is attested elsewhere
                     in Rome at CIL VI 33686, CIL VI 37974, and NSA 1917, p. 296.</p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

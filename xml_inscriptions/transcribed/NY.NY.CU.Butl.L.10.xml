@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -112,7 +110,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0099">First century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0099">First century CE</date>
                             <placeName ref="europe.italy.rome">East of S. Paolo fuori le Mura, just
                                 across the modern Via Ostiense, Rome, Italy</placeName>
                         </origin>
@@ -145,8 +143,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -162,7 +159,7 @@
         
         <revisionDesc>
             <change when="2014-10-01" who="Mahmoud Samori">Initial Encoding</change>
-            <change when="2015-09-07" who="SJD">Cleaned metadata, cleaned bibl, added EDR link, added image link, proofed transcription, added MS's translation</change>            
+            <change when="2015-09-07" who="Scott J. DiGiulio">Cleaned metadata, cleaned bibl, added EDR link, added image link, proofed transcription, added MS's translation</change>            
         </revisionDesc>
 
     </teiHeader>
@@ -182,12 +179,13 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <div type="textpart" subtype="column" n="1">
                     <ab>
                         <lb n="1"/><persName><name type="gentilicium" key="Ennia">Ennia</name> <g type="mulieris"/> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Secunda">Secunda</name></persName> vixit
-                        <lb n="2"/>annis <num value= "40">XXXX</num>. <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Ovius">Ovius</name> <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucii</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan>
+                        <lb n="2"/>annis <num value="40">XXXX</num>. <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Ovius">Ovius</name> <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucii</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan>
                         <lb n="3"/><name type="cognomen" key="Apollonius">Apollonius</name></persName> fecit contube<supplied reason="omitted">r</supplied>nali                    
                         <lb n="4"/>suae carissimae et sibi.
                     </ab>
@@ -196,23 +194,36 @@
                     <ab>
                         <lb n="5"/><persName><name type="gentilicium" key="Ovia">Ovia</name>
                         <lb n="6"/><name type="cognomen" key="Agile">Agile</name></persName>
-                        <lb n="7"/><expan><abbr>V</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num value= "26">XXVI</num>.
+                        <lb n="7"/><expan><abbr>V</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num value="26">XXVI</num>.
                     </ab>
                 </div>
             </div>
-             <div type="translation">
+        
+        
+                <div type="translation">
                  <p>Column 1: "Ennia Secunda, freedwoman of a woman, lived forty years. Lucius Ovius Apollonius, freedman of Lucius, made this for his dearest companion and for himself."</p>
                  <p>Column 2: "Ovia Agile lived twenty six years."</p>
              </div>
-            <div type="commentary"><!-- notes go here -->
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>Interpuncts regularly placed between words and after abbreviations though not at the
                     end of lines.  Brief epitaph of Ovia Agile appears above the third line of the
                     main text and the the right of the first two lines in smaller letters though
                     perhaps by the same hand.  Probably the stone was meant to be cut to 2 Roman
                     feet long (ca. 59.2 cm), and 1/2 Roman foot tall (ca. 14.8 cm).</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

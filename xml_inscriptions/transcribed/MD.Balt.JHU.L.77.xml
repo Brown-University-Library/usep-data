@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" ><!-- testing -->
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"><!-- testing -->
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>77</idno>
                         <altIdentifier>
                             <idno>Acc. #42</idno>
@@ -118,7 +116,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0150" notAfter="0300">late second or early third
+                            <date evidence="unspecified" notBefore="0150" notAfter="0300">late second or early third
                                 century</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
@@ -148,8 +146,7 @@
                         <biblScope unit="pp">374</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144223">EDR144223</ref>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144223">EDR144223</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -160,8 +157,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -177,7 +173,7 @@
         
         <revisionDesc>
             <change when="2014-12-14" who="Dominic Machado">Initial Encoding</change>
-            <change when="2015-09-09" who="SJD">Added altIdentifier, small cleaning of metadata and bibl, proofed transcription</change>
+            <change when="2015-09-09" who="Scott J. DiGiulio">Added altIdentifier, small cleaning of metadata and bibl, proofed transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -193,8 +189,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="hedera"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/><persName><name type="gentilicium" key="Flavia"><expan><abbr>Fl</abbr><ex>avia</ex></expan></name> <name type="cognomen" key="Primitiva">Primitiva</name></persName>  fec<supplied reason="lost">it</supplied>
@@ -204,8 +201,15 @@
                 <lb n="6" break="no"/>terisque aeorum.
                 <lb n="7"/><expan><abbr>H</abbr><ex>oc</ex></expan> <expan><abbr>m</abbr><ex>onumentum</ex></expan> <expan><abbr>h</abbr><ex>eredem</ex></expan> <expan><abbr><choice><corr>e</corr><sic>b</sic></choice></abbr><ex>xterum</ex></expan> <expan><abbr>n</abbr><ex>on</ex></expan> <expan><abbr>s</abbr><ex>equetur</ex></expan>.
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>It is unclear whether the fec (line 2) represents the common abbreviation for
                     fecit or if the last two letters were cut off by a break in the stone. It seems
                     to me that there is, in fact, room for both letters in the area that is broken
@@ -230,8 +234,16 @@
                     posterisque (line 5-6). The lettering is much bigger in the first four lines of
                     the inscription than in the last three lines of the inscription.</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

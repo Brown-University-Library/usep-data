@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Baltimore</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>41</idno>
                         <altIdentifier>
                             <idno>Acc. #1157 a,b</idno>
@@ -126,7 +124,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="-0065" notAfter="0035">Late first century BCE</date>
+                            <date evidence="unspecified" notBefore="-0065" notAfter="0035">Late first century BCE</date>
                             <placeName ref="europe.italy.rome">Columbiarum near Italy, Rome, Porta Salaria</placeName>
                         </origin>
                         
@@ -158,7 +156,7 @@
         
         <encodingDesc>
             
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -174,7 +172,7 @@
         
         <revisionDesc>
             <change when="2014-12-15" who="Rebecca Ramsey">Initial Encoding</change>
-            <change when="2015-08-26" who="SJD">Cleaned metadata, added altIdentifier, expanded bibl, proofed and corrected transcription; moved translation to its own div</change>
+            <change when="2015-08-26" who="Scott J. DiGiulio">Cleaned metadata, added altIdentifier, expanded bibl, proofed and corrected transcription; moved translation to its own div</change>
         </revisionDesc>
         
     </teiHeader>
@@ -194,8 +192,9 @@
     </facsimile>
     
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/>Decurionum decreto
                     <lb n="2"/>ex domo <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name type="gentilicium" key="Tarius">Tari</name> <name type="cognomen" key="Rufus">Ruf<hi rend="tall">i</hi></name></persName>   <persName><name type="cognomen" key="Agrypnus">Agrypno</name></persName>
@@ -206,18 +205,29 @@
                     <lb n="7"/>calimitosa de suo.
                 </ab>
             </div>
-            
-            <div type="commentary"><!-- notes go here -->
-                <p>Line 1: Lucius Tarius Rufus, infamous Suffect Consul whom Wilson suggests is the L. Tari Rufi of the inscription, was a consul 16 BCE, giving the inscription a late 1st c. BCE or early 1st c. CE provenence.</p>              
-            </div>
-            <div type="translation">
+        
+        
+                <div type="translation">
                 <p>"By decree of the Decurions: For Agrypnus, doctor [and] teacher from the household of Lucius Tarius Rufus [and] from the household of Quinta, his
                     mother. Agrypnus was born 26 years ago and died in the 27th. In her grief, his mother established this with her own money."</p>
             </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+                <p>Line 1: Lucius Tarius Rufus, infamous Suffect Consul whom Wilson suggests is the L. Tari Rufi of the inscription, was a consul 16 BCE, giving the inscription a late 1st c. BCE or early 1st c. CE provenence.</p>              
+            </div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>
-

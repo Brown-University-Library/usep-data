@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>CA</region>
                         <settlement>Malibu</settlement>
                         <institution>JPGM</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>82.AC.22.14</idno>
                     </msIdentifier>
                     
@@ -66,7 +64,7 @@
                                     <!-- short summary of the material and support of an inscription -->
                                     <p>Bronze stamp die</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height></height>
+                                        <height/>
                                         <width>5.4</width>
                                         <depth/>
                                     </dimensions>
@@ -112,7 +110,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0100">first century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
                             <placeName ref="europe.italy.pompeii">Pompeii, Italy</placeName>
                         </origin>
                         
@@ -140,8 +138,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -156,8 +153,8 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2016-01-26" who="SJD">Initial Encoding</change>
-            <change when="2017-03-16" who="SJD">Removed NoImageAvailable.jpg placeholder</change>
+            <change when="2016-01-26" who="Scott J. DiGiulio">Initial Encoding</change>
+            <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImageAvailable.jpg placeholder</change>
         </revisionDesc>
 
     </teiHeader>
@@ -173,18 +170,34 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1" rend="right-to-left"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name type="gentilicium" key="Aburius">Aburii</name>
                     <lb n="2" rend="right-to-left"/><name type="cognomen" key="Successus">Successi</name></persName>.
                 </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
-            <p></p></div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+            <p/></div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

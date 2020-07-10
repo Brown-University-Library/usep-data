@@ -36,7 +36,8 @@
         2018-08-08 SJD fixes issues with provenance to display according to desired categories; added table display for authorship
         2019-11-14 SJD fixed main issue with authorship display, pushed alpha version to site
         2020-01-30 SJD reordered major metadata categories, display orders of transcription per JB's design requests; commented out editor display privileging authorial creation
-        2020-03-11 SJD temporarily disabled authorship display, pending reconsideration of how to handleb
+        2020-03-11 SJD temporarily disabled authorship display, pending reconsideration of how to handle
+        2020-05-19 SJD disabled Acquisition info, relabeled the provenance into new category as previously discussed
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -256,22 +257,28 @@
                                         <xsl:value-of select="$placeOfOrigin"/>
                                     </td>
                                 </tr>
-
+                                <tr>
+                                    <td class="label">Date</td>
+                                    <td class="value">
+                                        <xsl:value-of select="$dateOfOrigin"/>
+                                    </td>
+                                </tr>
+                                
                                 <xsl:for-each select="//t:provenance">
                                     <tr>
-                                        <td class="label">Subsequent Location</td>
+                                        <td class="label">Object History</td>
                                         <td class="value">
                                             <xsl:choose>
                                                 <xsl:when
-                                                  test="string-length(child::t:p) != 0">
-                                                  <xsl:value-of
-                                                  select="(child::t:p)"/>
+                                                    test="string-length(child::t:p) != 0">
+                                                    <xsl:value-of
+                                                        select="(child::t:p)"/>
                                                 </xsl:when>
                                             </xsl:choose>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
-                                <tr>
+                                <!--  <tr>
                                     <td class="label">Acquired</td>
                                     <td class="value">
                                         <xsl:choose>
@@ -285,13 +292,7 @@
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td class="label">Date</td>
-                                    <td class="value">
-                                        <xsl:value-of select="$dateOfOrigin"/>
-                                    </td>
-                                </tr>
+                                </tr>-->
                             </table>
                         </div>
                     </xsl:if>

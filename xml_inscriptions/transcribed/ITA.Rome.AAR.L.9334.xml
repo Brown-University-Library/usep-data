@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9334</idno>
                         <altIdentifier>
                             <idno>114</idno>
@@ -121,7 +118,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0225">second-early third
+                            <date evidence="unspecified" notBefore="0100" notAfter="0225">second-early third
                                 c. CE</date>
                             <placeName ref="europe.italy.rome">Vigna Nari (near Via Salaria), Rome, Italy</placeName>
                         </origin>                        
@@ -174,8 +171,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -191,8 +187,8 @@
         
         <revisionDesc>
             <change when="2018-06-22" who="Kristin Harper">Initial Encoding</change>
-            <change when="2019-07-17" who="SJD">Proofed and cleaned metadata; added provenance and acquisition information; added links to bibliography; reorganized some information on decoration and layout; proofed transcription; filled in markup for names</change>
-            <change when="2019-08-09" who="SJD">Brought provenance/acqusition into compliance</change>
+            <change when="2019-07-17" who="Scott J. DiGiulio">Proofed and cleaned metadata; added provenance and acquisition information; added links to bibliography; reorganized some information on decoration and layout; proofed transcription; filled in markup for names</change>
+            <change when="2019-08-09" who="Scott J. DiGiulio">Brought provenance/acqusition into compliance</change>
         </revisionDesc>
 
     </teiHeader>
@@ -208,8 +204,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><g type="leaf"/> <expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>. <g type="leaf"/>
                 <lb n="2"/><persName><name type="gentilicium" key="Aelia">Aelia</name> <name type="cognomen" key="Marina">Marina</name></persName> sebiba fe
@@ -217,10 +214,16 @@
                 <lb n="4"/><expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> et filis suis libertis
                 <lb n="5"/>libertabusque posteris
                 <lb n="6" break="no"/>que eorum.
-            </ab></div> 
+            </ab></div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p>Aelia Marina, while she is living, dedicated this tablet to her husband, Aurelius
                     Bassus. While the name Aelia was very typical in Rome, there are only two other
                     instances of it occuring with Marina in Rome (CIL VI 11460 and CIL VI 22195).
@@ -236,8 +239,16 @@
                     than the actual stone's coiugi in the CIL edition. It has been incorrectly
                     documented in MAAR as CIL VI 10973, as it is actually CIL VI 10937.</p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

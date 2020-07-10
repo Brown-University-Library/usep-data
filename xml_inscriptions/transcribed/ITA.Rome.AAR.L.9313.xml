@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9313</idno>
                         <altIdentifier>
                             <idno>93</idno>
@@ -75,7 +72,7 @@
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="complete">
+                                <condition ana="#complete.intact">
                                     <p>minor breaks at the upper and lower left corners that do not
                                         impede upon the text</p>
                                 </condition>
@@ -99,8 +96,7 @@
                                 of the carved lines of these capitals appear to curve outwards
                                 (letters "a" and "m"). The letter "v" varies in terms of design and
                                 use of serifs. The second "i" of Diis is tall
-                                <dimensions
-                                    type="letter" unit="cm">
+                                <dimensions type="letter" unit="cm">
                                     <height min="11" max="28">11-28</height>
                                 </dimensions>
                             </handNote>
@@ -129,7 +125,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notAfter="0199" notBefore="0001">first to second century CE</date>
+                            <date evidence="unspecified" notAfter="0199" notBefore="0001">first to second century CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome, near Via Salaria</placeName>
                         </origin>
                         <provenance type="observed">
@@ -184,8 +180,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -201,9 +196,9 @@
         
         <revisionDesc>
             <change when="2016-07-23" who="Katelin McCullough">Initial Encoding</change>
-            <change when="2017-06-26" who="SJD">Proofed metadata and made small changes to structure; added altIdentifier; expanded bibl to include EDR, AAR entries, Egbert, etc.; proofed transcription (small changes to name tagging, fixed spacing, fixed number, added tall I)</change>
-            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
-            <change when="2019-08-09" who="SJD">Rewriting the provenance/acquisition section</change>
+            <change when="2017-06-26" who="Scott J. DiGiulio">Proofed metadata and made small changes to structure; added altIdentifier; expanded bibl to include EDR, AAR entries, Egbert, etc.; proofed transcription (small changes to name taGaia Gianniing, fixed spacing, fixed number, added tall I)</change>
+            <change when="2018-06-17" who="Scott J. DiGiulio">Switched files from Babcock numbering to new AAR catalog</change>
+            <change when="2019-08-09" who="Scott J. DiGiulio">Rewriting the provenance/acquisition section</change>
         </revisionDesc>
 
     </teiHeader>
@@ -219,8 +214,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/>Di<hi rend="tall">i</hi>s Manibus.
                 <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Iulius">Iulio</name> <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberto</ex></expan> <name type="cognomen" key="Palleus">Palleo</name></persName>,
@@ -231,8 +227,15 @@
                 <lb n="7"/>indulgentissimo.
                 <lb n="8"/>In <expan><abbr>f</abbr><ex>ronte</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="6" type="cardinal">VI</num>, in <expan><abbr>ag</abbr><ex>ro</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="3.75" type="cardinal">III <g type="dodrantem"/></num>.
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>Notes: Solin (1982 and 1996) suggests that the names Palleus and Phalleus are
                     possible indications of Greek origin, but that the names may indicate different
                     origins for the two individuals. In line six, Sp(uri) f(ilius) Col(lina tribu)
@@ -246,8 +249,16 @@
                     equals 3.75.</p>
             </div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

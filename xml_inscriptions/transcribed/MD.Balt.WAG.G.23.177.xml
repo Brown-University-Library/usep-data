@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>WAG</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>23.177</idno>
                     </msIdentifier>
                     
@@ -117,19 +115,20 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="-0410" notAfter="-0400">410-400 BCE</date>
+                            <date evidence="unspecified" notBefore="-0410" notAfter="-0400">410-400 BCE</date>
                             <placeName ref="europe.greece.athens">Greece, Athens</placeName>
                         </origin>
                         <provenance>
-                            <!-- subsequent locations if inscription was moved -->
-                            <date notBefore="1925" notAfter="1925">1925</date>
-                            <placeName ref="MD.Balt">Henry Walters, Baltimore, 1925, by purchase (previously Joseph Brummer, New York; date and mode of acquisition unknown)</placeName>
+                            <p>Acquired by <persName>Joseph Brummer</persName> <date notAfter="1924">1924</date> (date and mode of acquisition unknown)</p>
                         </provenance>
-                        <acquisition>
+                        <provenance type="transferred" subtype="purchased">
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="1931">1931</date>
-                            <p>Walters Art Museum by bequest</p>
-                        </acquisition>
+                            <p>Purchased in <date when="1925">1925</date> by <persName>Henry Walters</persName>, Baltimore,  by purchase <persName>Joseph Brummer</persName>, <placeName>New York</placeName></p>
+                        </provenance>
+                        <provenance type="transferred" subtype="given">
+                            <!-- subsequent locations if inscription was moved -->                    
+                            <p>Donated to the <orgName>Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest</p>
+                        </provenance>
                         
 
                     </history>
@@ -179,8 +178,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -196,7 +194,8 @@
         
         <revisionDesc>
             <change when="2014-12-15" who="Luther Karper">Initial Encoding</change>
-            <change when="2015-08-31" who="SJD">Cleaned metadata, proofed transcription, added bibl, added image, moved acqusition data</change>            
+            <change when="2015-08-31" who="Scott J. DiGiulio">Cleaned metadata, proofed transcription, added bibl, added image, moved acqusition data</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>            
         </revisionDesc>
 
     </teiHeader>
@@ -220,14 +219,22 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ΝΟ<unclear>Σ</unclear><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ΝΕΡ<unclear>Ι</unclear><gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
             </div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>l.1: SEG 41:11 “ΝΟΣ” I have dotted the sigma, because it was all but indecipherable
                     when I saw the stone, and only the left-most strokes are visible. l. 2: Lawton
                     (1995, 119, no. 76; SEG 47:81) “- - -]ẠNEPỊ[- - -” The apex of what appears to
@@ -241,8 +248,16 @@
                     decree proposer, and that it may have been reused and re-inscribed during the
                     Roman period.</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

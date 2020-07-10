@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>BS.A.1226</idno>
                     </msIdentifier>
                     
@@ -117,7 +115,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0137" notAfter="0138">138 CE</date>
+                            <date evidence="unspecified" notBefore="0137" notAfter="0138">138 CE</date>
                             <placeName ref="unknown">Rome(?)</placeName>
                         </origin>
                         
@@ -150,8 +148,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -167,7 +164,7 @@
         
         <revisionDesc>
             <change when="2014-12-01" who="Gaia Gianni">Initial Encoding</change>
-            <change when="2015-09-14" who="SJD">Cleaned metadata and bibl, added LSO to bibl, proofed transcription, added translation div</change>
+            <change when="2015-09-14" who="Scott J. DiGiulio">Cleaned metadata and bibl, added LSO to bibl, proofed transcription, added translation div</change>
         </revisionDesc>
 
     </teiHeader>
@@ -183,8 +180,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/> <expan><abbr>O</abbr><ex>pus</ex></expan> <expan><abbr>d</abbr><ex>oliare</ex></expan>
                         <persName><name type="gentilicium" key="Aristius"><expan><abbr>Aris</abbr><ex>ti</ex></expan></name> <name type="cognomen" key="Thallus"><expan><abbr>Tha</abbr><ex>lli</ex></expan></name></persName>, ex <expan><abbr>pr</abbr><ex>aedis</ex></expan>
@@ -196,10 +194,15 @@
                     <lb n="3"/> <expan><hi rend="inverted"><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></hi></expan>.
                 </ab>
             </div>
-            <div type="translation">
+        
+        
+                <div type="translation">
                 <p>“Brickwork of Aristius Thallus, from the estate of Lucius Ceionius Commodus, son of Caesar. In the consulship of Niger and Camerinus."</p>
-            </div>            
-            <div type="commentary"><!-- notes go here -->
+            </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p>Line 1: A. Aristius Thallus was an officinator working in the workshop of Plaetorius Nepos (cf. CIL XV 1363, 1364, 1365) from 123 to 134 CE. 
                    On 138 CE we know that he was working for L. Ceionius; therefore Ceionius must have acquired the property of Plaetorius Nepos sometime between 134 and 138 CE.</p>
                 <p>Line 1: In 136 CE Lucius Ceionius Commodus was adopted by the emperor Hadrian and afterwords was known as Lucius Aelius Caesar. 
@@ -207,8 +210,16 @@
                 <p>Line 3: Niger and Camerinus were consuls in 138 CE.</p>
             </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -7,7 +6,7 @@
                 <title>MA.Glouc.HCM.L.#97.6.37</title>
             </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -20,8 +19,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -78,7 +77,7 @@
                             <note/>
                         </summary>
                   <origin>
-                     <date notBefore="0150" notAfter="0225">Mid second-early third century CE</date>
+                     <date evidence="unspecified" notBefore="0150" notAfter="0225">Mid second-early third century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -89,12 +88,12 @@
                         <biblScope unit="item"/>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
                 </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -102,9 +101,9 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
-         <change when="2015-07-06" who="SJD">Updated bibl tag to unpub</change>
-         <change when="2015-08-12" who="SJD">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
+         <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
          <change when="2020-06-29" who="SPapandonatou">minor metadata revisions</change>
       </revisionDesc>
    </teiHeader>
@@ -117,8 +116,9 @@
       </surface>
    </facsimile>
    <text>
+
         <body>
-            <div type="edition">
+        <div type="edition">
             <ab>
                 <lb n="1"/><persName><name type="gentilicium" key="Patulcia">Patul<choice><sic>p</sic><corr>c</corr></choice>ia<supplied reason="lost">e</supplied></name>
                 <lb n="2"/><name type="cognomen" key="Felicitas">Felicitati</name></persName> coniu
@@ -130,11 +130,32 @@
                 <lb n="8"/><name type="cognomen" key="Proculus"><supplied reason="lost">P</supplied>roculus</name></persName>
                 <lb n="9"/><supplied reason="lost">fe</supplied>cit.
             </ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
-         </body>
+                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+
+            </div>
+
+
+                <div type="translation">
+                    <p/>
+                </div>
+
+
+
+                <div type="commentary">
+                    <p/>
+                </div>
+
+
+
+                <div type="apparatus">
+                    <p/>
+                </div>
+
+
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+
+
     </text>
 </TEI>

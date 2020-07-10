@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>CA</region>
                         <settlement>Malibu</settlement>
                         <institution>JPGM</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>80.AA.42</idno>
                     </msIdentifier>
                     
@@ -112,7 +110,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="-0550" notAfter="-0500">second half of sixth c. BCE</date>
+                            <date evidence="unspecified" notBefore="-0550" notAfter="-0500">second half of sixth c. BCE</date>
                             <placeName ref="europe.italy.sicily">Sicily (Selinous?)</placeName>
                         </origin>
                         
@@ -161,8 +159,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -177,8 +174,8 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2016-03-07" who="SJD">Initial Encoding</change>
-            <change when="2017-06-27" who="SJD">Stripped out noimageavailable.jpg; fixed typo in transcription</change>
+            <change when="2016-03-07" who="Scott J. DiGiulio">Initial Encoding</change>
+            <change when="2017-06-27" who="Scott J. DiGiulio">Stripped out noimageavailable.jpg; fixed typo in transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -194,19 +191,35 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name key="Latinos Λατῖνος">Λατίνο</name></persName><surplus>η</surplus> ἐμί,
                     <lb n="2"/><persName><name type="ethnic" key="Reginos Ῥηγῖνος">Ῥηγίνο</name></persName> ἐμί.
                 </ab>
             </div>
-             
-            <div type="commentary"><!-- notes go here -->
-            <p></p></div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+            <p/></div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

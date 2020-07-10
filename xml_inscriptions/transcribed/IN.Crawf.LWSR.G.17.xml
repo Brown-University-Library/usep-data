@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!--<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -22,7 +19,7 @@
                         <region>IN</region>
                         <settlement>Crawf</settlement>
                         <institution>LWSR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>17</idno>
                     </msIdentifier>
 
@@ -86,7 +83,7 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0001" notAfter="0002">Date to be displayed</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0002">Date to be displayed</date>
                             <placeName ref="europe.italy.rome">Italy, Rome, San Callisto catacomb</placeName>
                         </origin>
 
@@ -111,8 +108,7 @@
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -127,9 +123,9 @@
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
-            <change when="2011-05-13" who="EM">More tweaks for bib only inscriptions</change>
-            <change when="2019-11-18" who="GG">Adding transcription and data</change>
+            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+            <change when="2019-11-18" who="Gaia Gianni">Adding transcription and data</change>
         </revisionDesc>
 
     </teiHeader>
@@ -145,8 +141,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
             <ab>
                 <lb n="1"/>θεῷ κισινω
                 <lb n="2"/>ὑπέρ σωτηρίας
@@ -158,9 +155,28 @@
                 <lb n="8"/>ὑπέρ εὐχαριστίας
                 <lb n="9"/>ἀνέθηκεν.
             </ab></div>
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

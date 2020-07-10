@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MA</region>
                         <settlement>Well</settlement>
                         <institution>WC</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>#98.4.1</idno>
                     </msIdentifier>
                     
@@ -112,7 +110,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0500">Unknown date</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0500">Unknown date</date>
                             <placeName ref="unknown">Of unknown origin</placeName>
                         </origin>
                         
@@ -137,8 +135,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -153,8 +150,8 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2015-07-29" who="SJD">Initial Encoding</change>
-            <change when="2017-03-16" who="SJD">Removed NoImageAvailable.jpg placeholder</change>
+            <change when="2015-07-29" who="Scott J. DiGiulio">Initial Encoding</change>
+            <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImageAvailable.jpg placeholder</change>
         </revisionDesc>
 
     </teiHeader>
@@ -170,18 +167,34 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Publius">Publi</name>
                 <lb n="2"/><name type="cognomen"><expan><abbr>Clur</abbr></expan></name></persName> <expan><abbr>fe</abbr><ex>cit</ex></expan>.
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
-            <p></p></div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+            <p/></div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

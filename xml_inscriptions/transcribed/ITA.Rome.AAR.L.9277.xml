@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9277</idno>
                         <altIdentifier>
                             <idno>55</idno>
@@ -70,7 +67,7 @@
                                 <support>
                         <!-- short summary of the material and support of an inscription -->
                                     <p>Luna marble tablet</p>
-                                    <dimensions  unit="cm">
+                                    <dimensions unit="cm">
                                         <height>21.7</height>
                                         <width>44.4</width>                                       
                                     </dimensions>
@@ -103,7 +100,7 @@
                         
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
-                            <decoNote><p>cyma reversa molding<p/>
+                            <decoNote><p>cyma reversa molding</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -122,12 +119,11 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0199">first or second century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0199">first or second century CE</date>
                             <placeName ref="europe.italy.rome">near Via Salaria, Rome, Italy</placeName>
                         </origin>
-                        <provenance>
-                            <date notAfter="1885">1885</date>
-                            <placeName ref="europe.italy.rome">Vigna dei Padri Domenicani, south of former Vigna Nari, near the Via Salaria; seen there by Huelsen in the then-Villa Bertone</placeName>
+                        <provenance type="found" subtype="first-recorded">
+                            <p>Seen at <placeName ref="europe.italy.rome">Vigna dei Padri Domenicani, south of former Vigna Nari, near the Via Salaria</placeName> by <persName>Huelsen</persName> in the then-<placeName>Villa Bertone</placeName> in <date when="1885">1885</date></p>
                         </provenance>
                         
 
@@ -181,8 +177,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -198,8 +193,9 @@
         
         <revisionDesc>
             <change when="2018-06-30" who="Elliott Piros">Initial Encoding</change>
-            <change when="2019-07-17" who="SJD">Corrected and fleshed out all metadata, made conformant with USEP vocabularies; added provenance information; added all bibliography entries; added filepath for USEP image; proofed transcription and added more semantic marking for names, etc.; reworked supplied in line 5, since -tis is legible and not dependent on previous editor</change>
-            <change when="2020-03-02" who="GG">Change image filename </change>
+            <change when="2019-07-17" who="Scott J. DiGiulio">Corrected and fleshed out all metadata, made conformant with USEP vocabularies; added provenance information; added all bibliography entries; added filepath for USEP image; proofed transcription and added more semantic marking for names, etc.; reworked supplied in line 5, since -tis is legible and not dependent on previous editor</change>
+            <change when="2020-03-02" who="Gaia Gianni">Change image filename </change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
         </revisionDesc>
 
     </teiHeader>
@@ -208,19 +204,21 @@
         <!-- Used to record images of an inscription.   -->
 
     <facsimile>
-        <surface>
-            <desc>Image available through AAR online catalog</desc>
-            <graphic url="http://nvb.aarome.org/privato/articoli/1081_1.JPG"/>
-        </surface>
+        
         <surface>
             <desc/>
             <graphic url="ITA.Rome.AAR.L.9277.jpg"/>
         </surface>
+        <surface>
+            <desc>Image available through AAR online catalog</desc>
+            <graphic url="http://nvb.aarome.org/privato/articoli/1081_1.JPG"/>
+        </surface>
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
             <lb n="1"/><supplied reason="undefined" evidence="previouseditor">Dis <expan><abbr>Man</abbr><ex>ibus</ex></expan></supplied>.
             <lb n="2"/><supplied reason="undefined" evidence="previouseditor"><persName><name type="gentilicium" key="Antonia">Antoniae</name> <name type="cognomen" key="Phyllis">Phyllidi</name></persName> <expan><abbr>coni</abbr><ex>ugi</ex></expan></supplied>  
@@ -230,11 +228,27 @@
             <lb n="6" break="no"/>que posterisque eorum e<unclear>t</unclear>
             <lb n="7"/>quis quis mihi heres er<hi rend="ligature">it</hi>. 
             </ab></div>
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The text in the part of the inscription now missing is supplied from CIL VI.12064 </p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

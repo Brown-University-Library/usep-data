@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>WAG</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>23.185</idno>
                     </msIdentifier>
                     
@@ -155,20 +153,18 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date
-                                notBefore="-0360" notAfter="-0340">360-340 BCE</date>
+                            <date evidence="unspecified" notBefore="-0360" notAfter="-0340">360-340 BCE</date>
                             <placeName ref="europe.greece.athens">Greece, Athens</placeName>
                         </origin>
-                        <provenance>
+                        <provenance type="transferred" subtype="purchased">
                             <!-- subsequent locations if inscription was moved -->
-                            <date notBefore="1926" notAfter="1926">1926</date>
-                            <placeName ref="MD.Balt">purchased from Joseph Brummer, New York by Henry Walters, Baltimore, 1926</placeName>
+                           <p>Purchased from <persName>Joseph Brummer</persName>, <placeName>New York</placeName> by <persName>Henry Walters</persName>,  <placeName ref="MD.Balt">Baltimore</placeName> in <date when="1926">1926</date></p>
                         </provenance>
-                        <acquisition>
+                        <provenance type="transferred" subtype="given">
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="1931">1931</date>
-                            <p>Walters Art Museum by bequest</p>
-                        </acquisition>
+                            
+                            <p>Donated to the <orgName>Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest</p>
+                        </provenance>
                         
 
                     </history>
@@ -187,8 +183,7 @@
                         <biblScope unit="item">289</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="http://epigraphy.packhum.org/inscriptions/oi?ikey=14137&amp;bookid=5&amp;region=1">PHI IG II² 11646</ref>
+                        <ref type="external" target="http://epigraphy.packhum.org/inscriptions/oi?ikey=14137&amp;bookid=5&amp;region=1">PHI IG II² 11646</ref>
                     </bibl>
                     <bibl>
                         <ref type="external" target="http://art.thewalters.org/detail/20321/funerary-relief-with-eight-figures/">WAG Web Entry</ref>
@@ -226,7 +221,7 @@
             
         <encodingDesc>
                            
-                <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -242,8 +237,9 @@
         
         <revisionDesc>
             <change when="2014-12-15" who="Luther Karper">Initial Encoding</change>
-            <change when="2015-09-02" who="SJD">Cleaned metadata, proofed transcription, tidied bibl, added image, moved acqusition data, added translation div</change>
-            <change when="2017-07-14" who="SJD">Fixed capitalization in metadata; added paragraphing to commentary</change>            
+            <change when="2015-09-02" who="Scott J. DiGiulio">Cleaned metadata, proofed transcription, tidied bibl, added image, moved acqusition data, added translation div</change>
+            <change when="2017-07-14" who="Scott J. DiGiulio">Fixed capitalization in metadata; added paragraphing to commentary</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>            
         </revisionDesc>
 
     </teiHeader>
@@ -307,13 +303,22 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab><lb n="1"/><gap reason="lost" atLeast="2" atMost="7" unit="character"/><persName>όδωρο<supplied reason="lost">ς</supplied></persName>. <persName>Θεομήδης</persName>. <persName>Ἱππόμαχος</persName>. <persName>Θεομνήστη</persName>. <persName>Κηφισόδωρος</persName>. <persName>Μοιρογένης</persName>. <persName>Μοιρίας</persName>. <persName>Κλεαγόρα</persName>.
                 </ab>
             </div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                <p>“-odoros. Theomedes. Hippomachos. Theomneste. Kephisodoros. Moirogenes. Moirias.
+                    Kleagora.”</p>
+            </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p> “-όδωρο[ς]”: All other names which appear on the fillet are in the
                     nominative, leading all editors, myself included, to supply a sigma at the end
                     of the first name, which cannot be restored with any certainty, but is more
@@ -336,13 +341,17 @@
                     well as similar parallels found in reliefs from Sigeion, a fragment from Athens,
                     and a relief from Nea Smyrni, all of which include figures spaced widely apart
                     with similar clothing, gestures, and garments. </p></div>
-            <div type="translation">
-                <p>“-odoros. Theomedes. Hippomachos. Theomneste. Kephisodoros. Moirogenes. Moirias.
-                    Kleagora.”</p>
-            </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

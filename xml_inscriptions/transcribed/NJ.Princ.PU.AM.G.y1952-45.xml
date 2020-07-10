@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!--<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.vase">
+                        <objectDesc ana="#instrumentum.container.vase">
                             <supportDesc ana="#clay.ceramic">
                                 <support>
                                     <p> Ceramic Hydria</p>
@@ -86,7 +83,7 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="-0300" notAfter="-0201">third century BCE</date>
+                            <date evidence="unspecified" notBefore="-0300" notAfter="-0201">third century BCE</date>
                             <placeName ref="africa.egypt">Egypt, Alexandria, Hadra</placeName>
                         </origin>
                         <provenance type="transfer" subtype="sold">
@@ -139,8 +136,7 @@
                         <biblScope unit="item">32, pl. 120, 2-4</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="https://artmuseum.princeton.edu/collections/objects/24204">Princeton
+                        <ref type="external" target="https://artmuseum.princeton.edu/collections/objects/24204">Princeton
                             University Art Museum</ref>
                     </bibl>
                    
@@ -152,8 +148,7 @@
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -184,18 +179,34 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
             <ab>
                 <lb n="1"/><persName><name key="Phidon Φείδων">Φείδων</name></persName> Ἂ<unclear>π</unclear>ωνος<!-- epithet?? -->
                 <lb n="2"/>Κρὴς Ἰτανιος. Χαῖρε.
             </ab></div>
-
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
             <p>Note the lunate sigma in line 1.</p></div>
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

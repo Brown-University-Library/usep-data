@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.954</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -65,7 +64,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date notBefore="0100" notAfter="0125">early second century CE</date>
+                     <date evidence="unspecified" notBefore="0100" notAfter="0125">early second century CE</date>
                      <placeName ref="europe.italy">Italy, Bauli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -83,7 +82,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -91,9 +90,9 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2016-04-12" who="SJD">Fixed typo in bibl id</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-04-12" who="Scott J. DiGiulio">Fixed typo in bibl id</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -103,8 +102,9 @@
       </surface>
    </facsimile>
    <text>
-      <body>
-         <div type="edition">
+      
+        <body>
+        <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                  <ab>
                      <lb n="1"/>
@@ -158,10 +158,28 @@
                </persName> heres
                      <lb n="8"/>bene merenti</ab>
             </div>
-         <div type="apparatus">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="apparatus">
             <p/>
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
    </text>
 </TEI>

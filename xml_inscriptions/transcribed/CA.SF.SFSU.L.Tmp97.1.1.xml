@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -7,7 +6,7 @@
             <title>CA.SF.SFSU.L.#97.1.1</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -53,7 +52,7 @@
                      <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="unknownDec">
+                     <decoNote ana=" ">
                         <p>no photo</p>
                      </decoNote>
                   </decoDesc>
@@ -68,7 +67,7 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="0200" notAfter="0400">third - fourth century CE</date>
+                     <date evidence="unspecified" notBefore="0200" notAfter="0400">third - fourth century CE</date>
                      <placeName ref="europe.italy.rome">Rome?</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
@@ -89,7 +88,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -97,17 +96,18 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2016-01-25" who="SJD">Added missing control vocab, fixed lines/columns values, added dimension metadata from Smutny, prepared transcription from image in article, added ICUR and EDB to bibl</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-25" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns values, added dimension metadata from Smutny, prepared transcription from image in article, added ICUR and EDB to bibl</change>
       </revisionDesc>
    </teiHeader>
    
    <!--facsimile element goes here-->
    
    <text>
-      <body>
-         <div type="edition">
+      
+        <body>
+        <div type="edition">
             <ab>
                <lb n="1"/><persName><name type="gentilicium" key="Aurelia">Aureliae</name> <name type="cognomen" key="Melitine">M<supplied reason="lost">eliti</supplied>
                <lb n="2" break="no"/>neti</name></persName>, quae vixi<unclear>t</unclear> <supplied reason="lost">ann</supplied>
@@ -115,9 +115,28 @@
                <lb n="4"/>merenti in pac<supplied reason="lost">e</supplied>.
             </ab>
          </div>
-         <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
             <p>1-2) <hi rend="italic">Melitineti</hi>: Smutny offers Marciane and Mestr(i)ane as alternative names that would fit the space</p>
          </div>
-      <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div> </body>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
    </text>
 </TEI>

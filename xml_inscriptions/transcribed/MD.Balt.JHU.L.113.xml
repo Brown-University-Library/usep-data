@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>113</idno>
                     </msIdentifier>
                     
@@ -117,7 +115,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0100">1st century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0100">1st century CE</date>
                             <placeName ref="europe.italy.rome">Rome?</placeName>
                         </origin>
                         
@@ -152,8 +150,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -169,7 +166,7 @@
         
         <revisionDesc>
             <change when="2014-12-14" who="Kelly Nguyen">Initial Encoding</change>
-            <change when="2015-08-27" who="SJD">Cleaned metadata and control vocab, added image, proofed and corrected transcription</change>
+            <change when="2015-08-27" who="Scott J. DiGiulio">Cleaned metadata and control vocab, added image, proofed and corrected transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -185,16 +182,24 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/>Restitutus
                 <lb n="2"/>matr<supplied reason="omitted">i</supplied> <persName><name type="gentilicium" key="Tettedia">Tettedia<supplied reason="omitted">e</supplied></name>
                 <lb n="3"/><name type="cognomen" key="Calliope">Calliopae</name></persName> et
                 <lb n="4"/>soror<supplied reason="omitted">i</supplied> <persName><name type="gentilicium" key="Tertulla">Tertullae</name></persName>. <expan><abbr>Ol</abbr><ex>las</ex></expan> <num value="1">I</num>.
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>It is unclear whether the carver meant to inscribe matr as an abbreviation or if he
                     mistakenly carved it without the I. Either way, the deliberate interpunct after
                     matr suggests that this omission is unlikely to have been due to a lack of
@@ -203,8 +208,16 @@
                     missing in sorori. There is also a cutting error as the
                     final E of Tertullae lacks the middle horizontal stroke. </p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>14.10.2</idno>
                         <altIdentifier>
                             <idno>Acc. #839</idno>
@@ -121,7 +119,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0138" notAfter="0145">Between 138 and 145 CE</date>
+                            <date evidence="unspecified" notBefore="0138" notAfter="0145">Between 138 and 145 CE</date>
                             <placeName ref="europe.italy.rome">Unknown</placeName>
                         </origin>
                         
@@ -146,8 +144,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -163,7 +160,7 @@
         
         <revisionDesc>
             <change when="2014-12-14" who="Kelly Nguyen">Initial Encoding</change>
-            <change when="2015-08-27" who="SJD">Added altIdentifier, changed msItem class to label from honorific, cleaned metadata and control vocab, added image, proofed and corrected transcription</change>
+            <change when="2015-08-27" who="Scott J. DiGiulio">Added altIdentifier, changed msItem class to label from honorific, cleaned metadata and control vocab, added image, proofed and corrected transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -195,18 +192,34 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><expan><abbr>Imp</abbr><ex>eratoris</ex></expan> <persName><name type="cognomen" key="Antoninus">Antonini</name> <expan><abbr>Aug</abbr><ex>usti</ex></expan> <name type="cognomen" key="Pius">Pii</name></persName> patr<supplied reason="lost">imonii</supplied>
                 <lb n="2"/><expan><abbr><unclear>p</unclear>roc</abbr><ex>urator</ex></expan> <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Iulius">Iulius</name> <name type="cognomen" key="Rufus">Rufu<supplied reason="lost">s</supplied></name></persName> <supplied reason="lost"><expan><abbr>f</abbr><ex>aciendum</ex></expan> <expan><abbr>c</abbr><ex>uravit</ex></expan></supplied>.
            </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p>This pipe bears a similar stamp to several other recorded pipes (cf. AE 1907, 120), but it is unlikely that it can be identified with any of them due to the differences in the breaks.</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

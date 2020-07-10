@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader><!-- testing1 -->
         <fileDesc>
             <titleStmt>
                 <title>TX.SA.SAMA.L.2001.11.2</title>
             </titleStmt>
             <publicationStmt>
-                <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                     <xi:fallback>
                         <p>The Publications Statement should appear here.</p>
                     </xi:fallback>
@@ -20,7 +18,7 @@
                         <region>TX</region>
                         <settlement>SA</settlement>
                         <institution>SAMA</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>2001.11.2</idno>
                     </msIdentifier>
                     <msContents>
@@ -59,13 +57,12 @@
                         <summary>
                         </summary>
                         <origin>
-                            <date notBefore="-0025" notAfter="-0001">late first century BCE</date>
+                            <date evidence="unspecified" notBefore="-0025" notAfter="-0001">late first century BCE</date>
                             <placeName ref="unknown"/>
                             <p>Roman (Augustan)</p>
                         </origin>
-                        <provenance>
-                            <p>Museum Purchase</p>
-                            <p>Christie's: New York, Friday, June 8, 2001, lot 254</p>
+                        <provenance type="transferred" subtype="purchased">
+                            <p>Museum Purchase at <placeName>Christie's New York</placeName> on Friday, <date when="2001-06-08">June 8, 2001</date>, lot 254</p>
                         </provenance>
                     </history>
                 </msDesc>
@@ -84,7 +81,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -92,9 +89,10 @@
         </encodingDesc>
         <profileDesc/>
         <revisionDesc>
-            <change when="2011-10-10" who="SB">Encoded</change>
-            <change when="2012-05-31" who="CD">Proofread</change>
-            <change when="2015-11-11" who="SJD">Corrected transcription, added metadata from SAMA website, added weblink to SAMA website</change>
+            <change when="2011-10-10" who="Sarah Bond">Encoded</change>
+            <change when="2012-05-31" who="Colleen Donahoe">Proofread</change>
+            <change when="2015-11-11" who="Scott J. DiGiulio">Corrected transcription, added metadata from SAMA website, added weblink to SAMA website</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Tweaks to provenance markup</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -105,8 +103,9 @@
         </surface>
     </facsimile>
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <div type="textpart" subtype="column" n="1">
                     <ab>
                         <lb n="1"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Gallonius">Gallonius</name>
@@ -126,9 +125,28 @@
                     </ab>
                 </div>
             </div>
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
                 <p>Second line of each column in smaller letters than the first. Columns divided by an interpunct.</p>
-            </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-         </body>
+            </div>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

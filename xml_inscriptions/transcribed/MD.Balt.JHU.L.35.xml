@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -122,7 +120,7 @@
 
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0100">First century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0100">First century CE</date>
                             <placeName ref="europe.italy.rome">Porta Salaria, Rome,
                                 Italy</placeName>
                         </origin>
@@ -155,7 +153,7 @@
 
         <encodingDesc>
 
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -172,8 +170,8 @@
         <!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2014-10-01" who="JuliaLenzi">Initial Encoding</change>
-            <change when="2015-08-31" who="SJD">Added altIdentifier, cleaned metadata, corrected and expanded bibliography, proofed and cleaned transcription with JB's corrections</change>            
+            <change when="2014-10-01" who="Julia Lenzi">Initial Encoding</change>
+            <change when="2015-08-31" who="Scott J. DiGiulio">Added altIdentifier, cleaned metadata, corrected and expanded bibliography, proofed and cleaned transcription with JB's corrections</change>            
         </revisionDesc>
 
     </teiHeader>
@@ -193,8 +191,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="gentilicium" key="Domitia">Domitia</name> <persName><g type="Gaiae"/></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Plecusa">Plecusa</name></persName>
@@ -207,8 +206,19 @@
                     <lb n="7"/> libertus.
                 </ab>
             </div>
-
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                <!-- notes go here -->
+                <p>"Domitia Plecusa, the freedwoman of Gaia (a woman) makes this monument for Gaius
+                    Popillius Anthus, the oil-seller, her husband with whom she lived for thirty
+                    five years, and Gaius Popillius Hermeros, the freedman of Gaius and Gaius, the
+                    freedman."</p>
+            </div>
+            
+        
+        
+                <div type="commentary">
                 <!-- notes go here -->
                 <p> Remains of guiding lines evident. There are interpuncts after each word except after the last word in each line.
                     The interpuncts in lines 2, 3 and 5 (with the exception of the mark between
@@ -216,23 +226,23 @@
                     two-three more lines of text (Wilson, 1910, no. 35) and thus the inscription is
                     unfinished. </p>
             </div>
-
-            <div type="translation">
-                <!-- notes go here -->
-                <p>"Domitia Plecusa, the freedwoman of Gaia (a woman) makes this monument for Gaius
-                    Popillius Anthus, the oil-seller, her husband with whom she lived for thirty
-                    five years, and Gaius Popillius Hermeros, the freedman of Gaius and Gaius, the
-                    freedman."</p>
-            </div>
-
-            <div type="bibliography">
-                <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml">
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Epigraphybibliography</p>
                     </xi:fallback>
                 </xi:include>
             </div>
-
-         </body>
+        </body>
+        
+    
     </text>
 </TEI>

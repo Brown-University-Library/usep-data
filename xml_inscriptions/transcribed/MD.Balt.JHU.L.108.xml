@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>108</idno>
                         <altIdentifier>
                             <idno>Acc. #10</idno>
@@ -120,7 +118,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0200" notAfter="0300">Third century CE</date>
+                            <date evidence="unspecified" notBefore="0200" notAfter="0300">Third century CE</date>
                             <placeName ref="europe.italy.rome">Between the Via Appia and Latina,
                                 near the Temple of Deus Rediculus, Rome, Italy</placeName>
                         </origin>
@@ -142,8 +140,7 @@
                         <biblScope unit="item">38769</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144491">EDR144491</ref>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144491">EDR144491</ref>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
@@ -166,8 +163,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -183,7 +179,7 @@
         
         <revisionDesc>
             <change when="2014-12-10" who="Dominic Machado">Initial Encoding</change>
-            <change when="2015-09-09" who="SJD">Added altIdentifier, cleaned metadata, cleaned bibl, proofed transcription</change>
+            <change when="2015-09-09" who="Scott J. DiGiulio">Added altIdentifier, cleaned metadata, cleaned bibl, proofed transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -193,11 +189,11 @@
 
     <facsimile>
         <surface>
-            <desc></desc>
+            <desc/>
             <graphic url="MD.Balt.JHU.L.108.jpg"/>
         </surface>
         <surface>
-            <desc></desc>
+            <desc/>
             <graphic url="MD.Balt.JHU.L.108-alt.jpg"/>
         </surface>
         <surface>
@@ -211,8 +207,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="hedera"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/><persName><name type="gentilicium" key="Pomponia">Pomponia</name>
@@ -225,8 +222,15 @@
                 <lb n="9"/><handShift/><expan><abbr>Fec</abbr><ex>it</ex></expan> <expan><abbr>alu</abbr><ex>mnae</ex></expan> <persName><name type="cognomen">Ianuaria</name></persName>,
                 <lb n="10"/>Mamma.
             </ab></div>
-     
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The que in line 6 is a later variant of quae: the replacement of the -ae dipthong
                     with e (and vice versa) was very common in the later empire (cf. ILS, vol. 3, p.
                     812-3).</p>
@@ -243,8 +247,16 @@
                 <p>Interpuncts appear regularly between words, but not at line-ends. The lettering
                     is carved consistently, but their height varies throughout the inscription.</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

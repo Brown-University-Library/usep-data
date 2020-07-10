@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>NY</region>
                         <settlement>Pough</settlement>
                         <institution>VC</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>CC41.30</idno>
                     </msIdentifier>
                     
@@ -120,7 +118,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0400">unknown date</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0400">unknown date</date>
                             <placeName ref="unknown">unknown</placeName>
                         </origin>
                         
@@ -134,7 +132,7 @@
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#unpub"/>
-                        <biblScope unit="pp"></biblScope>
+                        <biblScope unit="pp"/>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -145,8 +143,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -161,7 +158,7 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2015-10-21" who="SJD">Initial Encoding, based on notes provided by J. Bert Lott</change>
+            <change when="2015-10-21" who="Scott J. DiGiulio">Initial Encoding, based on notes provided by J. Bert Lott</change>
         </revisionDesc>
 
     </teiHeader>
@@ -177,8 +174,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> foro <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> documendo <expan><abbr>v</abbr><ex precision="low">itae</ex></expan> <gap reason="lost" extent="unknown" unit="character"/>
@@ -186,12 +184,27 @@
                     <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> et sibbi a patern<gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> civitatis pren<gap reason="lost" extent="unknown" unit="character"/>
                 </ab></div>
-             
-            <div type="translation"><!-- notes go here -->
+        
+        
+                <div type="translation"><!-- notes go here -->
             <p>"In the forum... as a document of the life... a laurel wreath... and for himself by his ancestral... of the state..."</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

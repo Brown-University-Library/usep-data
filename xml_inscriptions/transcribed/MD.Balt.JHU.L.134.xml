@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -9,7 +7,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>MD.Balt.JHU.134</title>
+                <title>MD.Balt.JHU.L.134</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -19,7 +17,7 @@
             <publicationStmt>
 
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.134">MD.Balt.JHU.134</idno>
+                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.134">MD.Balt.JHU.L.134</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
@@ -119,7 +117,7 @@
 
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0375" notAfter="0425">Late-fourth to early-fifth
+                            <date evidence="unspecified" notBefore="0375" notAfter="0425">Late-fourth to early-fifth
                                 century CE</date>
                             <placeName ref="europe.italy.rome">Cemetery of S. Felicitas on the Via
                                 Salaria, Rome, Italy</placeName>
@@ -146,8 +144,7 @@
                         <biblScope unit="item">2229</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://www.edb.uniba.it/epigraph/21964"
-                            >EDB21964</ref>
+                        <ref type="external" target="http://www.edb.uniba.it/epigraph/21964">EDB21964</ref>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
@@ -166,7 +163,7 @@
 
         <encodingDesc>
 
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -185,7 +182,8 @@
         <revisionDesc>
             <change when="2014-11-17" who="Erika Valdivieso">Initial Encoding</change>
             <change when="2014-12-15" who="Erika Valdivieso">Edited</change>
-            <change when="2015-09-09" who="SJD">Cleaned metadata, added letter dimensions, added description of condition, cleaned bibl, added Marucchi, proofed transcription with JB's edits, added image link</change>
+            <change when="2015-09-09" who="Scott J. DiGiulio">Cleaned metadata, added letter dimensions, added description of condition, cleaned bibl, added Marucchi, proofed transcription with JB's edits, added image link</change>
+            <change when="2020-03-23" who="Gaia Gianni">Added language code in the IDs</change>
         </revisionDesc>
 
     </teiHeader>
@@ -205,8 +203,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <!-- transcription goes here -->
                 <ab>
                     <lb n="1"/>Α<g type="chi-rho">☧</g>Ω 
@@ -214,13 +213,16 @@
                     <lb n="3"/><num value="9">VIIII</num>. Deposita es<supplied reason="omitted">t</supplied> pri<supplied reason="omitted">di</supplied>e N<hi rend="small">o</hi>n 
                     <lb n="4" break="no"/><choice><corr>a</corr><sic>h</sic></choice>s <expan><abbr>A<ex>u</ex>gustas</abbr></expan>. Manet in pace et in Cri<supplied reason="omitted">s</supplied>t<hi rend="small">o</hi>.
                 </ab></div>
-            
-            <div type="translation">
+        
+        
+                <div type="translation">
                 <p>"Victris, who lived for nine years. She was buried on the day before the Nones of
                     August. She abides in peace and in Christ."</p>
             </div>
-
-            <div type="commentary">
+            
+        
+        
+                <div type="commentary">
                 <!-- notes go here -->
                 <p>Line 1: <persName><name><hi rend="italic">Victris</hi></name></persName>: This <hi rend="italic">cognomen</hi> was commonly spelled Victrix, but S for a final X is normal in vernacular Latin.</p>
                 <p><hi rend="italic">que</hi>: In the vernacular long E could substitute for AE.</p>
@@ -247,15 +249,23 @@
                     difference in the S of the last line and elsewhere in the stone. It is possible
                     that portions of the end of the text were carved by a different hand. Numerals
                     are not barred.</p></div>
-
-            <div type="bibliography">
-                <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml">
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Epigraphybibliography</p>
                     </xi:fallback>
                 </xi:include>
             </div>
-
-         </body>
+        </body>
+        
+    
     </text>
 </TEI>

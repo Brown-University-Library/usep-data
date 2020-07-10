@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>NY</region>
                         <settlement>NY</settlement>
                         <institution>NYU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>1</idno>
                     </msIdentifier>
                     
@@ -119,7 +117,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0100">first century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
                             <placeName ref="europe.italy.rome" cert="low">Rome, Italy (?)</placeName>
                         </origin>
                         
@@ -151,8 +149,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -167,8 +164,8 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2016-03-28" who="SJD">Initial Encoding</change>
-            <change when="2017-03-16" who="SJD">Removed NoImage.jpg placeholder</change>
+            <change when="2016-03-28" who="Scott J. DiGiulio">Initial Encoding</change>
+            <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
         </revisionDesc>
 
     </teiHeader>
@@ -184,8 +181,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="praenomen" key="Tiberius">Tiberius</name>
                     <lb n="2"/><name type="cognomen" key="Dama">Dama</name></persName> ex
@@ -193,12 +191,27 @@
                     <lb n="4"/>novo.
                 </ab>
             </div>
-             
-            <div type="commentary"><!-- notes go here -->
-            <p></p></div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+            <p/></div>
             
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

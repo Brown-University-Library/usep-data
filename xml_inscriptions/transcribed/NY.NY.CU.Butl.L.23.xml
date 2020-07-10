@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader><!-- testing1 -->
 
         <fileDesc>
@@ -27,8 +25,7 @@
             -->
 
             <publicationStmt>
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                     <xi:fallback>
                         <p>The Publications Statement should appear here.</p>
                     </xi:fallback>
@@ -206,7 +203,7 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0058" notAfter="0200">mid first century CE - second century CE</date>
+                            <date evidence="unspecified" notBefore="0058" notAfter="0200">mid first century CE - second century CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome, Via Ostiensis?</placeName>
                         </origin>
 </history>
@@ -228,7 +225,7 @@
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#unpub"/>
-                        <biblScope unit="item"></biblScope>
+                        <biblScope unit="item"/>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -252,8 +249,7 @@
                 The taxonomy files can be updated by US Epigraphy staff, but changes should be made only if approved.
                 -->
 
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -273,8 +269,8 @@
                 initial encoding; update original US Ep. values to P5 values; corrected xx; etc.
         -->
         <revisionDesc>
-            <change when="2011-12-14" who="EB">Initial Encoding</change>
-            <change when="2016-04-15" who="SJD">Updated condition control vocab, made minor cosmetic changes to metadata, added richer markup to transcription</change>
+            <change when="2011-12-14" who="Emanuela Bocancea">Initial Encoding</change>
+            <change when="2016-04-15" who="Scott J. DiGiulio">Updated condition control vocab, made minor cosmetic changes to metadata, added richer markup to transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -296,8 +292,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                     <lb n="2"/><persName><name type="gentilicium" key="Claudia">Claudia</name> <name type="cognomen" key="Data">Data</name></persName>
@@ -305,11 +302,32 @@
                     <lb n="4"/>merentibus fe<hi rend="ligature">cit</hi>.
                 </ab>
             </div>
-            <div type="bibliography"> 
-                <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> 
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> 
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> 
                     <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> 
                 </xi:include> 
             </div>
-         </body>
+        </body>
+        
+    
     </text>
 </TEI>

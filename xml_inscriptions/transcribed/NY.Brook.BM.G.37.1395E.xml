@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -7,7 +6,7 @@
                 <title>NY.Brook.BM.G.37.1395E</title>
             </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -75,7 +74,7 @@
                             
                         </summary>
                   <origin>
-                     <date notBefore="0100" notAfter="0250">second to mid third century CE</date>
+                     <date evidence="unspecified" notBefore="0100" notAfter="0250">second to mid third century CE</date>
                      <placeName ref="africa.egypt">Egypt, Thebes</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -91,7 +90,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,8 +98,8 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
-          <change when ="2012-06-29" who="SJD">objectDesc ana corrected</change>
+         <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
+          <change when="2012-06-29" who="Scott J. DiGiulio">objectDesc ana corrected</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -112,21 +111,37 @@
       </surface>
    </facsimile>
    <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>
                <persName key="Ὧρος ψενμώνθου">Ὧρος Ψενμών
                     <lb n="2" break="no"/> θου</persName> λαξός.</ab>
             </div>
-            <div type="apparatus">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                <p>Two lines of demotic follow inscription</p>
+            </div>
+            
+        
+        
+                <div type="apparatus">
                 <p/>
             </div>
-            <div type="commentary">
-                <p>Two lines of demotic follow inscription</p>
-            </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-         </body>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

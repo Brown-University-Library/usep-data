@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!--<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -87,7 +84,7 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0101" notAfter="0300">second-third century CE</date>
+                            <date evidence="unspecified" notBefore="0101" notAfter="0300">second-third century CE</date>
                             <placeName ref="asia.asia_minor">Turkey, Seleucia</placeName>
                         </origin>
                         <provenance type="transfer" subtype="given">
@@ -122,8 +119,7 @@
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -154,10 +150,11 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
             <ab>
-                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>κλιο><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>κλιο&gt;<gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">γ</supplied>υνα<unclear>ικ</unclear>ὸς<gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>σαυτ<unclear>οῦ</unclear><gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>ΛΜTΙ<gap reason="lost" extent="unknown" unit="character"/>
@@ -169,12 +166,27 @@
                 <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ε</unclear>τη <persName><name type="praenomen" key="Titus">Τίτο<unclear>ς</unclear></name> <name type="gentilicium" key="Flavius"><unclear>Φλάο</unclear>υι<unclear>ο</unclear>ς</name> <persName><name key="Kyros Κύρος">Κύ<unclear>ρ</unclear>ου</name></persName> υἱὸς</persName><gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><persName><name><unclear>ιμ</unclear>ιος</name> <persName><name key="Apollonides Ἀπολλωνίδης">Ἀπολλω<unclear>ν</unclear>ίδου</name></persName> υἱὸς</persName><gap reason="lost" extent="unknown" unit="character"/>
             </ab></div>
-
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
             <p><!-- notes --></p></div>
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

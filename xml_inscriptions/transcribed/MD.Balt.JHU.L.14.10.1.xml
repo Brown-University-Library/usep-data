@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>14.10.1</idno>
                         <altIdentifier>
                             <idno>Acc. #HT 543</idno>
@@ -119,7 +117,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0150">Early second century CE</date>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0150">Early second century CE</date>
                             <placeName ref="europe.italy.rome">Rome?</placeName>
                         </origin>
                         
@@ -144,8 +142,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -161,7 +158,7 @@
         
         <revisionDesc>
             <change when="2014-12-14" who="Kelly Nguyen">Initial Encoding</change>
-            <change when="2015-08-27" who="SJD">Added altIdentifier, changed msItem class to label from honorific, cleaned metadata and control vocab, added image, proofed and corrected transcription</change>
+            <change when="2015-08-27" who="Scott J. DiGiulio">Added altIdentifier, changed msItem class to label from honorific, cleaned metadata and control vocab, added image, proofed and corrected transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -177,17 +174,33 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>uli</ex></expan></name> <name type="gentilicium" key="Larcius">Larci</name> <name type="cognomen" key="Macedo">Macedo<supplied reason="lost">nis</supplied></name></persName><gap reason="lost" extent="unknown" unit="character"/>
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p>A similar stamped fistula is recorded in AE 1954, 66.</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

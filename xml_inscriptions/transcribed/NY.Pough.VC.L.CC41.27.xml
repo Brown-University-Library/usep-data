@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>NY</region>
                         <settlement>Pough</settlement>
                         <institution>VC</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>CC41.27</idno>
                     </msIdentifier>
                     
@@ -121,7 +119,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0050" notAfter="0299">mid-first to third century
+                            <date evidence="unspecified" notBefore="0050" notAfter="0299">mid-first to third century
                                 CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
@@ -153,8 +151,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -169,7 +166,7 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2015-10-21" who="SJD">Initial Encoding, based on publication and notes provided by J. Bert Lott</change>
+            <change when="2015-10-21" who="Scott J. DiGiulio">Initial Encoding, based on publication and notes provided by J. Bert Lott</change>
         </revisionDesc>
 
     </teiHeader>
@@ -185,8 +182,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                     <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> <name type="gentilicium" key="Vitellius">Vitellio</name> <name type="cognomen" key="Leo">Leoni</name></persName> filio
@@ -196,12 +194,27 @@
                     <lb n="6"/>posterisque eorum.
                 </ab>
             </div>
-             
-            <div type="translation"><!-- notes go here -->
+        
+        
+                <div type="translation"><!-- notes go here -->
             <p>"To the divine shades. Lucius Vitellius Verus, the father, made this for his son Lucius Vitellius Leo, as well as for himself and for his freedmen and freedwomen and their descendants."</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

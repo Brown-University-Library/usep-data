@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9332</idno>
                         <altIdentifier>
                             <idno>112</idno>
@@ -122,10 +119,10 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0149" cert="medium">first half of second century CE</date>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0149" cert="medium">first half of second century CE</date>
                             <placeName ref="europe.italy.rome">Villa Ludovisi-Paulssen near Italy, Rome, Porta Salaria</placeName>
                         </origin>
-                        <provenance>
+                        <provenance type="found" subtype="first-recorded">
                             <p>seen by <persName>Henzen</persName> in situ in the <date notBefore="1880" notAfter="1889">1880s at the <placeName ref="europe.italy.rome">Villa Ludovisi-Paulssen, Rome, Italy</placeName></date></p>
                         </provenance>                   
 
@@ -179,8 +176,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -196,8 +192,10 @@
         
         <revisionDesc>
             <change when="2018-07-01" who="Elliott Piros">Initial Encoding</change>
-            <change when="2019-07-16" who="SJD">Corrections to metadata categories, changed units to centimeters, added provenance detail, added altIdentifier; added bibliography; added filepath for USEP photo; proofed transcription and added more semantic markup</change>
-            <change when="2019-08-09" who="SJD">Small fixes to provenance</change>
+            <change when="2019-07-16" who="Scott J. DiGiulio">Corrections to metadata categories, changed units to centimeters, added provenance detail, added altIdentifier; added bibliography; added filepath for USEP photo; proofed transcription and added more semantic markup</change>
+            <change when="2019-08-09" who="Scott J. DiGiulio">Small fixes to provenance</change>
+            <change when="2020-03-27" who="Gaia Gianni">Deleted image filename</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
         </revisionDesc>
 
     </teiHeader>
@@ -208,7 +206,7 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="ITA.Rome.AAR.L.9332.jpg"/>
+  
         </surface>
         <surface>
             <desc>Linked image hosted on AAR's website</desc>
@@ -218,20 +216,29 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab> 
             <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-            <lb n="2"/><persName><name type="slaveName" key="Diadumenus">Diadumen<hi rend= "small">o</hi></name></persName>
+            <lb n="2"/><persName><name type="slaveName" key="Diadumenus">Diadumen<hi rend="small">o</hi></name></persName>
             <lb n="3"/><expan><abbr><hi rend="tall">c</hi>ontubern</abbr><ex>ali</ex></expan>
             <lb n="4"/>bene merenti.
             <lb n="5"/>V<hi rend="tall">i</hi>xit ann<hi rend="tall">i</hi>s
             <lb n="6"/><num type="cardinal" value="33">XXXIII</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num type="cardinal" value="11">XI</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num type="cardinal" value="23">XXIII</num>.
-            <lb n="7"/><persName><name type="slaveName" key="Secundilla">Secundill<hi rend="small">a</hi></name></persName> <persName><name type="gentilicium" key="Minicius">M<hi rend="tall">i</hi>nic<hi rend= "small">i</hi></name>
+            <lb n="7"/><persName><name type="slaveName" key="Secundilla">Secundill<hi rend="small">a</hi></name></persName> <persName><name type="gentilicium" key="Minicius">M<hi rend="tall">i</hi>nic<hi rend="small">i</hi></name>
             <lb n="8"/><name type="cognomen" key="Faustinus"><hi rend="tall">F</hi>aust<hi rend="tall">i</hi>n<hi rend="tall">i</hi></name></persName> <expan><abbr>ser</abbr><ex>va</ex></expan> <expan><abbr>fec</abbr><ex>it</ex></expan> sibi <hi rend="ligature">et</hi>
             <lb n="9"/>suis poster<hi rend="tall">i</hi>s <expan><abbr>q</abbr><ex>ue</ex></expan> <expan><abbr>omn</abbr><ex>ibus</ex></expan>.
             </ab></div>
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>As noted by Treggiari in her dicussion of the set to which this epitaph belongs, namely funerary 
                 dedications mentioning contubernales wherein it is clear that this term refers to a spouse in common-law 
                 marriages of which one or more members are servile, two features make this epitaph rare: the fact that 
@@ -240,7 +247,15 @@
                 the brother of the Gaius Minicius Fundanus known from Pliny the Younger, Epistulae 1.9, 4.5, 5.16, and 6.6.
                 The daughter of this Fundanus, Minicia Marcella, is the subject of CIL VI.16631</p>
             </div>
-            <div type="bibliography">
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography">
                 <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Ep bibliography</p>
@@ -248,5 +263,7 @@
                 </xi:include>
             </div>
         </body>
+        
+    
     </text>
 </TEI>

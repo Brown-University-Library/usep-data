@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader><!-- testing1 -->
 
         <fileDesc>
@@ -27,8 +25,7 @@
             -->
 
             <publicationStmt>
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                     <xi:fallback>
                         <p>The Publications Statement should appear here.</p>
                     </xi:fallback>
@@ -196,14 +193,12 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="-0450" notAfter="-0430">c. 440-435 BCE</date>
+                            <date evidence="unspecified" notBefore="-0450" notAfter="-0430">c. 440-435 BCE</date>
                             <placeName ref="europe.greece.athens">Greece, Athens</placeName>
                         </origin>
-                        <provenance>
+                        <provenance type="transferred" subtype="given">
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="1999">1999</date>
-                            <placeName ref="europe.italy">Italy</placeName>
-                            <p>fragments repatriated</p>
+                            <p>fragments repatriated to <placeName ref="europe.italy">Italy</placeName> in <date when="1999">1999</date></p>
                         </provenance>
                     </history>
 
@@ -295,8 +290,7 @@
                 The taxonomy files can be updated by US Epigraphy staff, but changes should be made only if approved.
                 -->
                 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -317,7 +311,9 @@
         -->
         <revisionDesc>
             <change when="2013-07-11" who="Tori Lee">Created stub</change>
-            <change when="2016-02-11" who="SJD">Added missing control vocab, fixed lines/columns, added missing bibl, added note about subsequent repatriation</change>
+            <change when="2016-02-11" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns, added missing bibl, added note about subsequent repatriation</change>
+            <change when="2020-03-25" who="Gaia Gianni">Deleted image filename</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
         </revisionDesc>
 
     </teiHeader>
@@ -334,20 +330,42 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="CA.Malibu.JPGM.G.83.AE.362.jpg"/>
+           
         </surface>
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <!-- transcription goes here -->
             </div>
-            <div type="bibliography"> 
-                <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> 
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> 
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> 
                     <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> 
                 </xi:include> 
             </div>
-         </body>
+        </body>
+        
+    
     </text>
 </TEI>

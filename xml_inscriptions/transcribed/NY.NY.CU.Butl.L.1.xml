@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -112,14 +110,14 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0099">First century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0099">First century CE</date>
                             <placeName ref="europe.italy.rome">East of S. Paolo fuori le Mura, just
                                 across the modern Via Ostiense, Rome, Italy</placeName>
                         </origin>
                         <provenance type="found" subtype="first-seen">
                             <!-- where do we put the <placeName> in this one? -->
                             <p>Found during construction in <placeName>Rome</placeName> across the <placeName>Via Ostiense</placeName> 
-                                from the <placeName>Basilica of S. Paulo fuori la Mura</placeName> <date when="1897">ca. 1897</date></p>
+                                from the <placeName>Basilica of S. Paulo fuori la Mura</placeName> in <date when="1897">ca. 1897</date></p>
                         </provenance>
                         <provenance type="transferred" subtype="sold">
                             <p>Purchased by <persName type="buyer">George N. Olcott</persName> from 
@@ -158,8 +156,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -175,7 +172,7 @@
         
         <revisionDesc>
             <change when="2014-10-01" who="Mahmoud Samori">Initial Encoding</change>
-            <change when="2015-09-07" who="SJD">Cleaned metadata, cleaned bibl, added EDR link, added image link, proofed transcription, added MS's translation</change>
+            <change when="2015-09-07" who="Scott J. DiGiulio">Cleaned metadata, cleaned bibl, added EDR link, added image link, proofed transcription, added MS's translation</change>
         </revisionDesc>
 
     </teiHeader>
@@ -191,8 +188,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/>Dis manibus s<supplied reason="lost">acrum.</supplied>                    
                     <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aio</ex></expan></name> <name type="gentilicium" key="Clatius">Clatio</name> <name type="cognomen" key="Rufus">Rufo</name></persName> co<supplied reason="lost">niugi</supplied>
@@ -202,17 +200,30 @@
                     <lb n="5"/><gap quantity="1" unit="character" reason="illegible"/><gap reason="lost" extent="unknown"/>
                 </ab>
             </div>
-            <div type="translation">
+        
+        
+                <div type="translation">
                 <p>"Sacred to the divine spirits. Aurelia made this for Caius Clatius Rufus, her most dear husband, with her own money."</p>
             </div>
-            <div type="commentary"><!-- notes go here -->
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>Interpuncts appear between words, though perhaps not at the end of lines based on the
                     fragmentary remains of the first line.  Projected original surface perhaps ca.
                     30 cm long and ca. 14 cm high.  Probably the stone was meant to be cut to 1
                     Roman foot long (ca. 29.6 cm), and 1/2 Roman foot tall (ca. 14.8 cm).</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

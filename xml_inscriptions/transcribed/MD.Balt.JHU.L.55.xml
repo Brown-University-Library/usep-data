@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>55</idno>
                         <altIdentifier>
                             <idno>Acc. #1167</idno>
@@ -118,7 +116,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notAfter="0070" notBefore="-0050">Late-first century BCE to
+                            <date evidence="unspecified" notAfter="0070" notBefore="-0050">Late-first century BCE to
                                 mid-first century CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>                       
@@ -138,13 +136,10 @@
                         <biblScope unit="page">69</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="http://archaeologicalmuseum.jhu.edu/the-collection/object-stories/latin-funerary-inscriptions/other-epitaphs/antonius-laomedes/"
-                            >JHU Archaeological Museum Web Entry</ref>
+                        <ref type="external" target="http://archaeologicalmuseum.jhu.edu/the-collection/object-stories/latin-funerary-inscriptions/other-epitaphs/antonius-laomedes/">JHU Archaeological Museum Web Entry</ref>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR001107">EDR001107</ref>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR001107">EDR001107</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -155,8 +150,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -172,7 +166,7 @@
         
         <revisionDesc>
             <change when="2014-12-07" who="Dominic Machado">Initial Encoding</change>
-            <change when="2015-09-09" who="SJD">Added altIdentifier, cleaned metadata, cleaned bibl, proofed transcription with JB's edits</change>
+            <change when="2015-09-09" who="Scott J. DiGiulio">Added altIdentifier, cleaned metadata, cleaned bibl, proofed transcription with JB's edits</change>
         </revisionDesc>
 
     </teiHeader>
@@ -192,16 +186,24 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
                 <lb n="1"/><persName><name type="praenomen" key="Cnaeus"><expan><abbr>Cn</abbr><ex>aei</ex></expan></name> <name type="gentilicium" key="Antonius">Antoni</name> <name type="cognomen" key="Laudemedes">Laumedi</name></persName>,
                 <lb n="2"/><persName><name type="gentilicium" key="Aemilia">Aemiliai</name> <g type="mulieris"/> <expan><abbr>l</abbr><ex>ibertai</ex></expan>, <name type="cognomen" key="Heliconia">Heliconiai</name></persName>,
                 <lb n="3"/><persName><add place="overstrike"><name type="praenomen" key="Cnaeus"><expan><abbr>Cn</abbr><ex>aei</ex></expan></name> <name type="gentilicium" key="Antonius">Antoni</name></add> <persName><name type="praenomen" key="Cnaeus"><expan><abbr><add place="overstrike">C</add>n</abbr><ex>aei</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberti</ex></expan>
                 <lb n="4"/><add place="overstrike"><name type="cognomen" key="Moschio">Moschioni</name></add></persName>.
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>Wilson conjectures that Laumedi (line 1) is dative and comes from Laomedes/Laumedes,
                     a name that is otherwise unattested in the epigraphic corpus. Assuming that
                     Laumedi represents a dative would require the reader to assume that Antoni in
@@ -227,8 +229,16 @@
                     4 appears more deeply cut and slightly smaller (3 cm vs 4 cm) than that of the
                     top two lines.</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

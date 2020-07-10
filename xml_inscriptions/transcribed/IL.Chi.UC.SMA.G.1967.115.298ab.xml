@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -114,7 +112,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="-0461" notAfter="-0429">460-430 BCE</date>
+                            <date evidence="unspecified" notBefore="-0461" notAfter="-0429">460-430 BCE</date>
                             <placeName ref="unknown">unknown</placeName>
                         </origin>
                         
@@ -139,8 +137,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -156,7 +153,7 @@
         
         <revisionDesc>
             <change when="2018-11-01" who="A. Hong">Initial Encoding</change>
-            <change when="2018-11-15" who="SJD">Fixed inverted genre and container control vocab</change>
+            <change when="2018-11-15" who="Scott J. DiGiulio">Fixed inverted genre and container control vocab</change>
         </revisionDesc>
 
     </teiHeader>
@@ -172,17 +169,33 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab><lb n="1"/>ΝΙ<supplied reason="lost">Κ</supplied>ΟΝ
             <lb n="2"/>ΑΝ
             <lb n="3"/>ΠΕ</ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The pi and epsilon are inscribed on the back of fragment A, and the alpha and nu are on the back of fragment B</p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

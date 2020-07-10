@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>BS.134</idno>
                     </msIdentifier>
                     
@@ -115,7 +113,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0122" notAfter="0124">123 CE</date>
+                            <date evidence="unspecified" notBefore="0122" notAfter="0124">123 CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
                         
@@ -160,8 +158,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -177,7 +174,7 @@
         
         <revisionDesc>
             <change when="2014-12-04" who="Gaia Gianni">Initial Encoding</change>
-            <change when="2015-09-15" who="SJD">Cleaned metadata, added letter dimensions, added prose descriptions, cleaned bibl, added LSO and Cozzo entries, proofed transcription, moved translation to own div</change>
+            <change when="2015-09-15" who="Scott J. DiGiulio">Cleaned metadata, added letter dimensions, added prose descriptions, cleaned bibl, added LSO and Cozzo entries, proofed transcription, moved translation to own div</change>
         </revisionDesc>
 
     </teiHeader>
@@ -193,8 +190,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab> 
             <lb n="1"/> <expan><abbr>Op</abbr><ex>us</ex></expan> <expan><abbr>d</abbr><ex>oliare</ex></expan> 
                         <persName><name type="slaveName" key="Dionysus"><expan><abbr>Dionys</abbr><ex>i</ex></expan></name></persName>,
@@ -204,18 +202,31 @@
             <lb n="2"/> <persName><name type="cognomen" key="Paetinus">Pae</name><ex>tino</ex></persName> <hi rend="ligature">et</hi> <persName><name type="cognomen" key="Apronianus"><expan><abbr>Apr</abbr><ex>oniano</ex></expan></name></persName> <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>.
             
             </ab></div>
-             <div type="translation">
+        
+        
+                <div type="translation">
                  <p>“Brick work made by Dionysius, from the estate of Domitia Lucilla, daughter of Publius, in the consulship of Paetinus and  Apronianus.”</p>            
              </div>
-            <div type="commentary"><!-- notes go here -->
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p>Line 1: Dionysius was an <hi rend="italic">officinator</hi>, probably a <hi rend="italic">servus</hi>, who worked for Domitia Lucilla (see CIL XV 1020) and later for her daughter, also called Domitia Lucilla, the daughter of Publius Calvisius Tullus, whose name is impressed on this brick. Before 121 she married M. Annius Verus and gave birth to the future emperor Marcus Aurelius.</p>
                 <p>The <hi rend="italic">gens Domitia</hi> owned many <hi rend="italic">figlinae</hi>. The first <hi rend="italic">figlinae</hi> owned by the family were the <hi rend="italic">Caninianae</hi> and the <hi rend="italic">Domitianae</hi>, but later on Domitia Lucilla, the daughter of Publius and wife of Verus, opened the <hi rend="italic">f. Fulvianae</hi> and <hi rend="italic">Terentianae</hi>. The stamp does not specify in which figlina owned by Domita Lucilla it was produced.</p>
                 <p>Line 2: Paetinus and Apronianus were consuls in 123 CE. </p>
                 
             </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -7,7 +6,7 @@
             <title>DC.DO.G.38.91</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -18,9 +17,9 @@
             <msDesc>
                <msIdentifier>
                   <region>DC</region>
-                  <settlement></settlement>
+                  <settlement/>
                   <institution>DO</institution>
-                  <repository></repository>
+                  <repository/>
                   <idno>38.91</idno>
                </msIdentifier>
                <msContents>
@@ -57,7 +56,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="none">
-                        <p></p>
+                        <p/>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -71,7 +70,7 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date notBefore="-0200" notAfter="-0100">Hellenistic period</date>
+                     <date evidence="unspecified" notBefore="-0200" notAfter="-0100">Hellenistic period</date>
                      <placeName ref="asia.turkey">Antioch, Syria; purchased in Daphne</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
@@ -93,7 +92,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -101,17 +100,18 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="EM">Older inscriptions with info updated to 2009 template</change>
-         <change when="2016-01-21" who="SJD">Added missing control vocab, added metadata from Vikan, updated existing metadata, added Vikan to bibl, added transcription from images in Vikan</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-21" who="Scott J. DiGiulio">Added missing control vocab, added metadata from Vikan, updated existing metadata, added Vikan to bibl, added transcription from images in Vikan</change>
       </revisionDesc>
    </teiHeader>
    
    <!--facsimile element goes here-->
 
    <text>
-      <body>
-         <div type="edition">
+      
+        <body>
+        <div type="edition">
             <ab>
                <lb n="1"/><persName><name key="Apollonides"><supplied reason="lost">Ἀ</supplied><unclear>π</unclear>ολλωνίδο<supplied reason="lost">υ</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="2"/>ἀρχ<supplied reason="lost">ιε</supplied>ρωσύν<supplied reason="lost">η</supplied> <gap reason="lost" extent="unknown" unit="character"/>
@@ -120,10 +120,28 @@
                <lb/><gap reason="lost" extent="unknown" unit="line"/>
             </ab>
          </div>
-         <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
             <p>Vikan suggests that this fragment is related to a letter from Antiochus III (RC 44) appointing a provincial governor to a priesthood that was found in Daphne in the nineteenth century and is now held by the Yale University Libraries.</p>
          </div>
-      <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div> </body>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
    </text>
 </TEI>
-

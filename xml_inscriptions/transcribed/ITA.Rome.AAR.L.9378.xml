@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9378</idno>
                         <altIdentifier>
                             <idno>87</idno>
@@ -118,8 +115,7 @@
                             <rs/>  <!-- content can be "fake" or blank -->
                         </summary>
                         
-                        <origin><!-- original place and dating of inscription --><date
-                                notBefore="-0050" notAfter="-0001">Mid to late first century BCE</date>
+                        <origin><!-- original place and dating of inscription --><date evidence="unspecified" notBefore="-0050" notAfter="-0001">Mid to late first century BCE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
                         
@@ -154,8 +150,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -171,8 +166,8 @@
         
         <revisionDesc>
             <change when="2016-07-09" who="Brahm H. Kleinman">Initial Encoding</change>
-            <change when="2017-02-07" who="SJD">Added altIdentifier, cleaned metadata, filled out bibliography and added links to EDR and AAR, fixed image filepath, proofed transcription (removed vacats in line 4, tweaked name tagging, tweaked genitive spellings)</change>
-            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
+            <change when="2017-02-07" who="Scott J. DiGiulio">Added altIdentifier, cleaned metadata, filled out bibliography and added links to EDR and AAR, fixed image filepath, proofed transcription (removed vacats in line 4, tweaked name taGaia Gianniing, tweaked genitive spellings)</change>
+            <change when="2018-06-17" who="Scott J. DiGiulio">Switched files from Babcock numbering to new AAR catalog</change>
         </revisionDesc>
 
     </teiHeader>
@@ -192,22 +187,38 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
             <ab>
                 <lb n="1"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Postumius">Postumius</name>
                 <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Salvius">Salvius</name></persName>,
-                <lb n="3"/><g type="theta_nigrum"/> <persName><name type="gentilicium" key="Decmia">Decmia</name> <persName><name type="praenomen" key= "Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan>
+                <lb n="3"/><g type="theta_nigrum"/> <persName><name type="gentilicium" key="Decmia">Decmia</name> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan>
                 <lb n="4"/><name type="cognomen" key="Hilara">Hilara</name></persName>.
                 <lb n="5"/>In <expan><abbr>fr</abbr><ex>onte</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="12" type="cardinal">XII</num>,
                 <lb n="6"/>in <expan><abbr>agr</abbr><ex>o</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="18" type="cardinal">XIIX</num>.
             </ab></div>
-             
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
             <p>The lettering, stone type and use of the theta nigra suggest a date from the last half of the first century BCE. The inscription takes up less than half of the stone's height. Stone is broken at lower right. A round hole near the bottom of the stone cuts through the stone. It was likely intended for the insertion of a cross-bar underground to keep the stone upright. </p></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9347</idno>
                         <altIdentifier>
                             <idno>128</idno>
@@ -121,7 +118,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0200">early first century to late second century</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0200">early first century to late second century</date>
                             <placeName ref="europe.italy.rome" cert="low">Rome, Italy (?)</placeName>
                         </origin>
                         <acquisition>                            
@@ -167,8 +164,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -184,8 +180,8 @@
         
         <revisionDesc>
             <change when="2018-07-03" who="Roosa Kallunki">Initial Encoding</change>
-            <change when="2019-07-17" who="SJD">Added links to bibliography; added acquisition information; proofed metadata; proofed transcription (tweaked punctuation, corrected case for an(nis)); added image filepath</change>
-            <change when="2019-08-09" who="SJD">Small fixes to acquisition</change>
+            <change when="2019-07-17" who="Scott J. DiGiulio">Added links to bibliography; added acquisition information; proofed metadata; proofed transcription (tweaked punctuation, corrected case for an(nis)); added image filepath</change>
+            <change when="2019-08-09" who="Scott J. DiGiulio">Small fixes to acquisition</change>
         </revisionDesc>
 
     </teiHeader>
@@ -201,19 +197,35 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="slaveName" key="Phryne">Phryne</name> <persName><name type="cognomen" key="Tertulla">Tertullae</name></persName></persName> quasillaria
                     <lb n="2"/><orgName type="ethnic" key="Africanus">Africana</orgName>
                     <lb n="3"/>hic quiescit. Vixit <expan><abbr>an<ex>nis</ex></abbr></expan><num value="17" type="cardinal">XVII</num>.
                 </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p/></div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

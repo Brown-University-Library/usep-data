@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -9,7 +7,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>Il.Chi.UC.SMA.G.1967.155.340</title>
+                <title>IL.Chi.UC.SMA.G.1967.155.340</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -18,13 +16,12 @@
                 characters that are legal in XML names and viable URLs.  See the wiki for the list of substitutions.
             -->
             <publicationStmt>
-                <xi:include
-                    href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_publicationStmt.xml">
+                <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_publicationStmt.xml">
                     <xi:fallback>
                         <p>The Publications Statement should appear in this space.</p>
                     </xi:fallback>
                 </xi:include>
-                <idno type="USEpigraphy" xml:id="Il.Chi.UC.SMA.G.1967.155.340">Il.Chi.UC.SMA.G.1967.155.340</idno>
+                <idno type="USEpigraphy" xml:id="IL.Chi.UC.SMA.G.1967.155.340">IL.Chi.UC.SMA.G.1967.155.340</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
@@ -67,7 +64,7 @@
                                    using one or more values from the genre taxonomy. The first character of the attribute value should be a #.                      
                 -->
                     <msContents>
-                        <textLang mainLang="la">grc</textLang>
+                        <textLang mainLang="grc"/>
                         <!-- la, grc, ett ?? -->
                         <msItem class="#label">
                             <p>Inventory description</p>
@@ -177,12 +174,11 @@
                             <rs/>
                         </summary>
                         <origin>
-                            <date notBefore="-0490" notAfter="-0480">490-480 BCE</date>
+                            <date evidence="unspecified" notBefore="-0490" notAfter="-0480">490-480 BCE</date>
                             <placeName ref="unknown">unknown</placeName>
                         </origin>
                         <provenance>
-                            <date notBefore="0001" notAfter="0002"></date>
-                            <placeName ref="unknown">unknown</placeName>
+                            <p>unknown</p>
                         </provenance>
                     </history>
                 </msDesc>
@@ -224,8 +220,7 @@
                 The taxonomy files can be updated by US Epigraphy staff, but changes should be made only if approved.
                 -->
                 
-                <xi:include
-                    href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_taxonomies.xml">
+                <xi:include href="http://cds.library.brown.edu/projects/usepigraphy/xml-templates/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -246,7 +241,10 @@
         -->
         <revisionDesc>
             <change when="2018-10-16" who="A. Hong">Initial Encoding</change>
-            <change when="2018-11-15" who="SJD">Changed markup of transcription to reflect interpretation as an abbreviation</change>
+            <change when="2018-11-15" who="Scott J. DiGiulio">Changed markup of transcription to reflect interpretation as an abbreviation</change>
+            <change when="2020-04-22" who="Gaia Gianni">Change title and ID</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
+            <change when="2020-07-08" who="Scott J. DiGiulio">Fixed provenance markup</change>
         </revisionDesc>
 
     </teiHeader>
@@ -269,20 +267,35 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><expan><abbr>στά</abbr><ex>μνος</ex></expan> <expan><abbr>λήκ</abbr><ex>υθος</ex></expan>.
                  
                 </ab>
             </div>
-            <div type="commentary"><ab>The inscription "ΣΤΑΛΗΚ" may be an abbreviation for ΣΤΑΜΝΟΣ ΛΗΚΥΘΟΣ, or "earthenware oil-flask," which may have been added to the piece as in inventory identification. The other inscription, found at the base of the pelike, is indecipherable; it may be a ligature of "χ" or "υ."</ab></div>
-                        
-            <!-- if there is commentary or notes, you can add a <div type="commentary"> after the edition. -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><ab>The inscription "ΣΤΑΛΗΚ" may be an abbreviation for ΣΤΑΜΝΟΣ ΛΗΚΥΘΟΣ, or "earthenware oil-flask," which may have been added to the piece as in inventory identification. The other inscription, found at the base of the pelike, is indecipherable; it may be a ligature of "χ" or "υ."</ab></div>
             
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

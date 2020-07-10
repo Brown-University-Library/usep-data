@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>MD.Balt.JHU.L.M.2.3.4</idno>
                         <altIdentifier>
                             <idno>Acc. #28</idno>
@@ -118,7 +116,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0100">First century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0100">First century CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                         </origin>
                         
@@ -146,8 +144,7 @@
         
         <encodingDesc>
             
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -163,7 +160,7 @@
         
         <revisionDesc>
             <change when="2014-12-15" who="Rebecca Ramsey">Initial Encoding</change>
-            <change when="2015-08-26" who="SJD">Cleaned metadata; added altIdentifier; added bibl; proofed and corrected transcription; added previous readings from Wilson</change>            
+            <change when="2015-08-26" who="Scott J. DiGiulio">Cleaned metadata; added altIdentifier; added bibl; proofed and corrected transcription; added previous readings from Wilson</change>            
         </revisionDesc>
         
     </teiHeader>
@@ -179,8 +176,9 @@
     </facsimile>
     
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="gentilicium" key="Antistia"><supplied reason="undefined" evidence="previouseditor">Antisti</supplied>a</name> <name type="cognomen" key="Urbana">Urbana</name></persName>
                     <lb n="2"/><supplied reason="undefined" evidence="previouseditor">fecit aedi</supplied>culam sibi
@@ -188,13 +186,29 @@
                     <lb n="4"/><supplied reason="undefined" evidence="previouseditor">filio</supplied> suo.
                     <lb n="5"/><supplied reason="undefined" evidence="previouseditor"><hi rend="tall">I</hi>s vixit annis</supplied> <num value="18">XVIII</num>.
                 </ab>
-            </div>            
-            <div type="commentary"><!-- notes go here -->
-                <p>Wilson originally had the entire stone; at some point since, it was broken and only the right half of the inscription remains at Johns Hopkins.</p>
-            </div>            
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            </div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-         </body>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+                <p>Wilson originally had the entire stone; at some point since, it was broken and only the right half of the inscription remains at Johns Hopkins.</p>
+            </div>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>
-

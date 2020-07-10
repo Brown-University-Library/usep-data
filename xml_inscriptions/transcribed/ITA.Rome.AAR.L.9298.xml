@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +38,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9298</idno>
                         <altIdentifier>
                             <idno>76</idno>
@@ -84,7 +81,7 @@
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="5">
-                                    <p></p>
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -123,11 +120,11 @@
 
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0375" notAfter="0554">ca. 375-554 CE</date>
+                            <date evidence="unspecified" notBefore="0375" notAfter="0554">ca. 375-554 CE</date>
                             <placeName ref="europe.italy.rome">Unknown, likely Rome</placeName>
                         </origin>
-                        <provenance>
-                            <p>immured above eye-level near the World War I memorial bench in the cortile of the American Academy in Rome's McKim, Mead and White Building</p>
+                        <provenance type="observed" subtype="built-into">
+                            <p>immured above eye-level near the World War I memorial bench in the cortile of the <orgName>American Academy in Rome</orgName>'s McKim, Mead and White Building</p>
                         </provenance>
 
 
@@ -165,8 +162,7 @@
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -182,8 +178,9 @@
 
         <revisionDesc>
             <change when="2018-06-25" who="Kevin S. Lee">Initial Encoding</change>
-            <change when="2019-07-17" who="SJD">Proofed and streamlined much of the commentary throughout metadata; made small corrections to transcription (redundant gaps/supplied, etc.); added image filepath</change>
-            <change when="2019-09-26" who="SJD">Fixed validation error</change>
+            <change when="2019-07-17" who="Scott J. DiGiulio">Proofed and streamlined much of the commentary throughout metadata; made small corrections to transcription (redundant gaps/supplied, etc.); added image filepath</change>
+            <change when="2019-09-26" who="Scott J. DiGiulio">Fixed validation error</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
         </revisionDesc>
 
     </teiHeader>
@@ -199,8 +196,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="praenomen"><gap reason="lost" atLeast="1" atMost="5" unit="character"/>orius</name></persName>
                     <lb n="2"/><gap reason="lost" atLeast="1" atMost="5" unit="character"/> <supplied reason="lost" cert="low"><expan><abbr>vix</abbr><ex>it</ex></expan></supplied> <expan><abbr>an</abbr><ex>nos</ex></expan> <num type="cardinal" value="14">XIIII</num>
@@ -209,13 +207,17 @@
                    <lb n="5" break="no"/>ce. <g type="christogram"/>
                 </ab>
             </div>
-
-             <div type="translation">
-                 <ab>
+        
+        
+                <div type="translation">
+                 <p>
                      "[---]orius, lived fourteen years, interred on Easter Day on the fifth of April, in peace."
-                 </ab>
+                 </p>
              </div>
-            <div type="commentary"><!-- notes go here -->
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>The landing of Easter upon the nones of April allows for some specificity in dating.  In his 1931 study of the American Academy's epigraphic collection Raymond T. Ohl cited the fifth-century AD mathematician and writer
                 Victorius of Aquitaine for eight possible dates the Paschal Day and the nones of April coincided between the fourth and sixth centuries A.D. To wit: 375, 386, 397, 459, 470, 481, 543, and 554.
                 Ohl selected the fourth to sixth centuries based on the style of the letters and the terminus post quem furnished by the Constantinian Christogram. See Ohl, 1931: 102 for his treatment of the inscription,
@@ -225,9 +227,17 @@
             <p>Charles Babcock, in his entry for this piece in the AAR catalogue, calls it a "Columbarium tablet" without
                further comment. Columbaria ceased to be used c. A.D. 125. Given the late periodization, a tablet covering a loculus in a catacomb or affixed to an above-ground familial tomb is more likely. See Bodel in Brinker and Green 2008, esp. pp. 210-235.</p>
             </div>
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>

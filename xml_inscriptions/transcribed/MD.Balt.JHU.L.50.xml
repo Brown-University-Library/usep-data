@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>50</idno>
                     </msIdentifier>
                     
@@ -120,7 +118,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0200" notAfter="0400">Ca. third century CE</date>
+                            <date evidence="unspecified" notBefore="0200" notAfter="0400">Ca. third century CE</date>
                             <placeName ref="europe.italy.rome">Villa Pamfilia, Rome, Italy</placeName>
                         </origin>
                         
@@ -156,8 +154,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -173,7 +170,7 @@
         
         <revisionDesc>
             <change when="2014-10-01" who="Alvaro Pires">Initial Encoding</change>
-            <change when="2015-09-02" who="SJD">Cleaned metadata, expanded bibliography, proofed transcription, added image links, added AP's translation</change>
+            <change when="2015-09-02" who="Scott J. DiGiulio">Cleaned metadata, expanded bibliography, proofed transcription, added image links, added AP's translation</change>
         </revisionDesc>
 
     </teiHeader>
@@ -245,8 +242,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <div type="textpart" subtype="ansa">
                     <ab>
                     <lb n="1"/><g type="hedera"/>
@@ -255,7 +253,7 @@
                     <lb n="4"/>dulcis et
                     <lb n="5"/>innocua,
                     <lb n="6"/>have.
-                    <lb n="7"/><g type="hedera"></g>
+                    <lb n="7"/><g type="hedera"/>
                     </ab>
                 </div>
             <div type="textpart" subtype="campus">
@@ -290,12 +288,17 @@
                 </ab>
             </div>
             </div>
-            <div type="translation">
+        
+        
+                <div type="translation">
                 <p>Left Ansa: "Auguria, a sweet and gentle soul, farewell."</p>
                 <p>Right Ansa: "Auguria, your gentle soul is in goodness."</p>
                 <p>Campus: "For Agileia Prima, who is also (called) Auguria, consecrated to her eternal home, a wife most chaste beyond her age, and most modest and most temperate, who innocently loved her husband and his household; her husband, Quintus Oppius Secundus, made this for her, deserving everything about herself, and for himself. 'From the time when I was born Nature wore away from me twenty years, and after these were completed, finally on the seventh day, set free from all contracts, I was given over to eternal peace. This was my life. Oppius, do not fear Lethe, for it is foolish to forgo the joys of life at every instance, while you fear death. For indeed, death is the nature of humans, not a punishment; to whom it has befallen to be born, it follows accordingly to die as well. Lord Oppius, my husband, do not grieve for me because I have gone before you; in the eternal bed I hold off your arrival. Farewell, all you who dwell above, both men and women, farewell.'"</p>
             </div>
-            <div type="commentary"><!-- notes go here -->
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
                 <p>Left Ansa: "(hedera) Auguria ... have (hedera)"</p>
                 <p>Body (lines 1-16: "domui aeternae
                     ... cunctaeque valete"): Line 1: written on the top border of the campus. Line
@@ -309,8 +312,16 @@
                 <p>Right Ansa: "(hedera) Auguria ... bono (hedera)"</p>
             </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

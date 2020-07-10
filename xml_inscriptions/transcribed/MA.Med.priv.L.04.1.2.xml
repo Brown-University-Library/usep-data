@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -39,7 +37,7 @@
                         <region>MA</region>
                         <settlement>Med</settlement>
                         <institution>priv</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>04.1.2</idno>
                     </msIdentifier>
                     
@@ -49,7 +47,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>Fragment of unknown dedication with relief of Jupiter Dolichenus</p>
+                            <p>fragment of unknown dedication with relief of Jupiter Dolichenus</p>
                         </msItem>
                     </msContents>
                     
@@ -61,7 +59,7 @@
                             <supportDesc ana="#metal.bronze">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Fragment of a bronze plaque</p>
+                                    <p> fragment of a bronze plaque</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>11</height>
                                         <width/>
@@ -88,7 +86,7 @@
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>In high relief, Jupiter Dolichenus</p>
+                                <p>in high relief, Jupiter Dolichenus</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -107,7 +105,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0200">Ca. second century CE</date>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0200">Ca. second century CE</date>
                             <placeName ref="unknown">Of unknown origin</placeName>
                         </origin>
                         
@@ -131,8 +129,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -147,7 +144,9 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2015-07-23" who="SJD">Initial Encoding</change>
+            <change when="2015-07-23" who="Scott J. DiGiulio">Initial Encoding</change>
+            <change when="2020-06-17" who="John Bodel">edited transcription, added translation</change>
+            <change when="2020-06-19" who="Scott J. DiGiulio">Tidied name markup for validation</change>
         </revisionDesc>
 
     </teiHeader>
@@ -163,21 +162,37 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
             <ab>
-                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>PER
-                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost" cert="low">Iu</supplied>li Satur
-                <lb n="3" break="no"/><supplied reason="lost" cert="low">nini</supplied><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" extent="1" unit="character"/>INI SER
-                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> vilicus
+                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName><name type="cognomen" key="Aper"><supplied reason="lost" cert="low">A</supplied>per</name></persName>
+                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><persName><name type="gentilicium" key="Iulius"><supplied reason="lost" cert="low">Iu</supplied>li</name> <name type="cognomen" key="Saturnini">Satur
+                <lb n="3" break="no"/><supplied reason="lost" cert="low">n</supplied>ini</name></persName> <expan><abbr>ser</abbr><ex>vus</ex></expan> 
+                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>vilicus
                 <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">dona</supplied>vit.
             </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
-            <p></p></div>
+        
+        
+                <div type="translation">
+                   <p>[A]per, slave bailiff of Iulius Satur[n]inus, donated (this).</p>
+                </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+            <p/></div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

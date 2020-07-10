@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MA</region>
                         <settlement>Well</settlement>
                         <institution>WC</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>#98.4.15</idno>
                     </msIdentifier>
                     
@@ -113,7 +111,7 @@
                         
                         <origin>
                         <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0002">Unknonwn</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0002">Unknonwn</date>
                             <placeName ref="unknown">Unknown findspot</placeName>
                         </origin>
                         
@@ -138,8 +136,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -154,8 +151,8 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2015-08-03" who="SJD">Initial Encoding</change>
-            <change when="2017-03-16" who="SJD">Removed NoImageAvailable.jpg placeholder</change>
+            <change when="2015-08-03" who="Scott J. DiGiulio">Initial Encoding</change>
+            <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImageAvailable.jpg placeholder</change>
         </revisionDesc>
 
     </teiHeader>
@@ -171,17 +168,33 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1" rend="right-to-left"/>LIT
                 </ab></div>
-             
-            <div type="commentary"><!-- notes go here -->
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
             <p>Thumb print on handle to the left of the stamp</p></div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

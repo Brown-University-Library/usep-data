@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader><!-- testing1 -->
 
         <fileDesc>
@@ -22,8 +20,7 @@
             -->
 
             <publicationStmt>
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                     <xi:fallback>
                         <p>The Publications Statement should appear here.</p>
                     </xi:fallback>
@@ -53,7 +50,7 @@
                     <msIdentifier>
                         <region>IL</region>
                        <settlement>Chi</settlement>
-                        <institution></institution>
+                        <institution/>
                         <repository>AIC</repository> <!-- optional -->
                         <idno>1926.621</idno>
                     </msIdentifier>
@@ -130,7 +127,7 @@
                                </support>
 
                                 <condition ana="#complete.intact">
-                                    <p ></p>
+                                    <p/>
                                 </condition>
 
                             </supportDesc>
@@ -198,7 +195,7 @@
                         </summary>
 
                         <origin>
-                            <date notBefore="0001" notAfter="0099">first century CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0099">first century CE</date>
                             <placeName ref="europe">unknown origin, but appears Roman.</placeName>
                         </origin>
 
@@ -226,6 +223,10 @@
                         <ptr type="rest-of-bibl" target="#Alexander"/>
                         <biblScope unit="item">38</biblScope>
                     </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.artic.edu/artworks/29231/cinerary-urn">External
+                            Reference AIC</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -248,8 +249,7 @@
                 The taxonomy files can be updated by US Epigraphy staff, but changes should be made only if approved.
                 -->
                 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -269,9 +269,10 @@
                 initial encoding; update original US Ep. values to P5 values; corrected xx; etc.
         -->
         <revisionDesc>
-            <change when="2011-11-22" who="sb">Initial Encoding</change>
-            <change when="2014-05-05" who="sjd">XML Proofing and Cleaning; moved decodesc to commentary and shortened the deconote; changed genre to funerary.other </change>
-            <change when="2016-04-13" who="SJD">Removed handNote/@ana since object does not have inscription, fixed external image link</change>
+            <change when="2011-11-22" who="Sarah Bond">Initial Encoding</change>
+            <change when="2014-05-05" who="Scott J. DiGiulio">XML Proofing and Cleaning; moved decodesc to commentary and shortened the deconote; changed genre to funerary.other </change>
+            <change when="2016-04-13" who="Scott J. DiGiulio">Removed handNote/@ana since object does not have inscription, fixed external image link</change>
+            <change when="2020-03-24" who="Gaia Gianni">Added external reference, deleted external image link (not working) </change>
         </revisionDesc>
 
     </teiHeader>
@@ -292,29 +293,44 @@
             </surface>
         <surface>
             <desc/>
-            <graphic url="IL.Chi.AIC.L.1926.621.det.jpg"/>
+            <graphic url="IL.Chi.AIC.L.1926.621.det1.jpg"/>
         </surface>
-        <surface>
-            <desc/>
-            <graphic url="http://www.artic.edu/aic/collections/citi/images/standard/WebLarge/WebImg_000326/188742_3886205.jpg"/>
-        </surface>
+        
+        
+
+
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <ab>
                     <lb n="0"/>
                 </ab>
             </div>
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
                 <p>On the lid are portraits of the deceased, probably a husband and wife, who are surrounded by love symbols: Venus, erotes, and dolphins. There are garland swags and ox heads on the cinerarium itself, as well as rabbits.</p>   
             </div>
-                        
-            <!-- if there is commentary or notes, you can add a <div type="commentary"> after the edition. -->
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
             
-         </body>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

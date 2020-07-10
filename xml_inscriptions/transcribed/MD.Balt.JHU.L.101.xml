@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -124,7 +122,7 @@
 
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0150" notAfter="0200">2nd c. CE</date>
+                            <date evidence="unspecified" notBefore="0150" notAfter="0200">2nd c. CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
 
@@ -176,7 +174,7 @@
 
         <encodingDesc>
 
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -194,7 +192,7 @@
 
         <revisionDesc>
             <change when="2014-10-01" who="Julia Lenzi">Initial Encoding</change>
-            <change when="2015-08-31" who="SJD">Added altIdentifier, cleaned metadata, corrected and expanded bibliography, proofed and cleaned transcription with JB's corrections</change>
+            <change when="2015-08-31" who="Scott J. DiGiulio">Added altIdentifier, cleaned metadata, corrected and expanded bibliography, proofed and cleaned transcription with JB's corrections</change>
         </revisionDesc>
 
     </teiHeader>
@@ -210,8 +208,9 @@
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan><expan><abbr>M</abbr><ex>anibus</ex></expan>.
@@ -230,8 +229,19 @@
                     <lb n="14"/>in <expan><abbr>front</abbr><ex>e</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="3">III</num>.
                 </ab>
             </div>
-
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                <!-- notes go here -->
+                <p> "To the Divine Shades. Publius Mindius Vitalis and Mindia Zosime, the parents,
+                    and Mindia Charis, the grandmother, made this for Galatia, their most dear daughter.
+                    She lived 6 years, 6 months and 22 days. 4 feet in the back and
+                    3 feet in the front." </p>
+            </div>
+            
+        
+        
+                <div type="commentary">
                 <!-- notes go here -->
                 <p>Museum records indicate that there are guiding lines beneath the border of the
                     inscription, suggesting that a second section was considered but abandoned in
@@ -246,24 +256,23 @@
                     be, but there is an interpunct in the middle of the gentilicium, “Min*dia.”
                     There is also no interpunct between “parentes” and “et” in line 5.</p>
             </div>
-
-            <div type="translation">
-                <!-- notes go here -->
-                <p> "To the Divine Shades. Publius Mindius Vitalis and Mindia Zosime, the parents,
-                    and Mindia Charis, the grandmother, made this for Galatia, their most dear daughter.
-                    She lived 6 years, 6 months and 22 days. 4 feet in the back and
-                    3 feet in the front." </p>
-            </div>
-
-
-            <div type="bibliography">
-                <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml">
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Epigraphybibliography</p>
                     </xi:fallback>
                 </xi:include>
             </div>
-
-         </body>
+        </body>
+        
+    
     </text>
 </TEI>

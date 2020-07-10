@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -7,7 +6,7 @@
                 <title>MA.Glouc.HCM.L.#97.6.5-mdn</title>
             </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -21,8 +20,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -40,7 +39,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           
+
                            <p>Rectangular marble slab</p>
                            <dimensions type="surface" unit="m">
                                         <height>0.68.5</height>
@@ -61,7 +60,7 @@
                                 <layout columns="1" writtenLines="5">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
-                                </layout>                     
+                                </layout>
                             </layoutDesc>
                   </objectDesc>
                   <handDesc>
@@ -74,17 +73,17 @@
                   </decoDesc>
                </physDesc>
                <history>
-                  
+
                   <summary>
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
                      <rs>fake</rs>
-                     
+
                         </summary>
                   <origin>
-                     <date notBefore="0050" notAfter="0200">mid first-second century CE</date>
+                     <date evidence="unspecified" notBefore="0050" notAfter="0200">mid first-second century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -95,7 +94,7 @@
                         <biblScope unit="item">28921</biblScope>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
 
 <bibl>
 <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143430">EDR143430</ref>
@@ -104,7 +103,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -112,8 +111,9 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2011-11-01" who="EM">Early version Epidoc converted to 2009 Epidoc</change>
-         <change when="2015-08-04" who="SJD">Updated transcription, whcih was for the original inscription rather than this forgery; updated the authenticity tag</change>
+         <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2015-08-04" who="Scott J. DiGiulio">Updated transcription, whcih was for the original inscription rather than this forgery; updated the authenticity tag</change>
+         <change when="2020-03-24" who="Gaia Gianni">Deleted image filename</change>
          <change when="2020-06-24" who="SPapandonatou">added -mdn and name tags</change>
       </revisionDesc>
    </teiHeader>
@@ -126,8 +126,9 @@
       </surface>
    </facsimile>
    <text>
+
         <body>
-            <div type="edition">
+        <div type="edition">
             <ab>
                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                <lb n="2"/><expan><abbr>Fil</abbr><ex>io</ex></expan> <persName><name type="cognomen" key="Victor">Victori</name></persName>.
@@ -136,12 +137,30 @@
                <lb n="5"/>et <expan><abbr>fil</abbr><ex>ii</ex></expan> fecerunt.
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-           <div type="commentary">
-              <p>The inscription appears to be a modern forgery based on CIL 6.28921.</p>
-           </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
-         </body>
+            </div>
+
+
+                <div type="translation">
+                    <p/>
+                </div>
+
+
+
+                <div type="commentary">
+              <p>The inscription appears to be a modern forgery based on CIL 6.28921.</p>
+           </div>
+
+
+
+                <div type="apparatus">
+                    <p/>
+                </div>
+
+
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+
+
     </text>
 </TEI>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
     <teiHeader>
         <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
@@ -38,7 +36,7 @@
                         <region>ITA</region>
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>9343</idno>
                         <altIdentifier>
                             <idno>124</idno>
@@ -113,7 +111,7 @@
                         </summary>
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0199">first to second cenury CE</date>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0199">first to second cenury CE</date>
                             <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
                     </history>
@@ -159,8 +157,8 @@
         <!-- Record all changes here -->
         <revisionDesc>
             <change when="2016-07-20" who="Richard Phillips">Initial Entry</change>
-            <change when="2017-06-26" who="SJD">Added altIdentifier; cleaned metadata (preferred AAR data where noted); formatted and corrected bibl; proofed transcription (corrected punctuation; typo in vixit; case of expanded names)</change>
-            <change when="2018-06-17" who="SJD">Switched files from Babcock numbering to new AAR catalog</change>
+            <change when="2017-06-26" who="Scott J. DiGiulio">Added altIdentifier; cleaned metadata (preferred AAR data where noted); formatted and corrected bibl; proofed transcription (corrected punctuation; typo in vixit; case of expanded names)</change>
+            <change when="2018-06-17" who="Scott J. DiGiulio">Switched files from Babcock numbering to new AAR catalog</change>
         </revisionDesc>
     </teiHeader>
     <!--  *************************************  <facsimile>  *********************************  -->
@@ -172,27 +170,42 @@
         </surface>
     </facsimile>
     <text>
+        
         <body>
-            <div type="edition">
+        <div type="edition">
                 <!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="gentilicium" key="Magius">Magia</name> <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <persName><name type="gentilicium" key="Gaia"><g type="mulieris"/></name></persName> <expan><abbr>l<ex>iberta</ex></abbr></expan> <name type="cognomen" key="Faustilla">Faustilla</name></persName>
                     <lb n="2"/>vixit annos <num value="20" type="cardinal">XX</num>, iusta
-                    <lb n="3"/>et kara coniugi, <persName><name type="praenomen"
-                        key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name><name type="gentilicium" key="Fabius">Fabio</name></persName>
-                    <lb n="4"/><persName><name type="cognomen"
-                        key="Donatus">Donato</name></persName>. Hoc contulit ossu
-                    <lb n="5" break ="no"/>a colenda digna pro meritis
+                    <lb n="3"/>et kara coniugi, <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name><name type="gentilicium" key="Fabius">Fabio</name></persName>
+                    <lb n="4"/><persName><name type="cognomen" key="Donatus">Donato</name></persName>. Hoc contulit ossu
+                    <lb n="5" break="no"/>a colenda digna pro meritis
                     <lb n="6"/>eius.
                 </ab>
             </div>
-            <div type="commentary">
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
+            
+        
+        
+                <div type="commentary">
                 <!-- notes go here -->
                 <p>There are interpuncts between words throughout except in line 4. The
                     backwards C in line 1 stands for Gaiae or mulieris. In line 1 Ohl mistakenly
                     reads Faustilia. In line 5 Van Buren reads digne for digna.</p>
             </div>
-            <div type="bibliography">
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography">
                 <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Ep bibliography</p>
@@ -200,5 +213,7 @@
                 </xi:include>
             </div>
         </body>
+        
+    
     </text>
 </TEI>

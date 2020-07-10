@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         
         <fileDesc>
@@ -40,7 +38,7 @@
                         <region>MD</region>
                         <settlement>Balt</settlement>
                         <institution>JHU</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>48</idno>
                         <altIdentifier>
                             <idno>Acc. #1206 a, b, c</idno>
@@ -119,7 +117,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0100" notAfter="0199">second century CE</date>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0199">second century CE</date>
                             <placeName ref="europe.italy.rome">Via Salaria, 'in vinea
                                 Naria,' Rome, Italy</placeName>
                         </origin>
@@ -148,7 +146,7 @@
         
         <encodingDesc>
             
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -164,7 +162,7 @@
         
         <revisionDesc>
             <change when="2014-12-15" who="Rebecca Ramsey">Initial Encoding</change>
-            <change when="2015-08-26" who="SJD">Cleaned metadata, added altIdentifier, expanded bibl, proofed and corrected transcription; removed incorrect CIL tag from image; corrected translation and added to correct div</change>
+            <change when="2015-08-26" who="Scott J. DiGiulio">Cleaned metadata, added altIdentifier, expanded bibl, proofed and corrected transcription; removed incorrect CIL tag from image; corrected translation and added to correct div</change>
             
         </revisionDesc>
         
@@ -185,8 +183,9 @@
     </facsimile>
     
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
                     <lb n="2"/><persName><name type="gentilicium" key="Aelia">Aeliae</name> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <expan><abbr>f</abbr><ex>iliae</ex></expan>
@@ -198,14 +197,29 @@
                     <lb n="8" break="no"/>tes <expan><abbr>fecer</abbr><ex>unt</ex></expan> animulae <expan><abbr>dulc</abbr><ex>issimae</ex></expan>.
                     <lb n="9"/>Hic anima dulcis terra tegitur.
                 </ab>
-            </div>            
-            <div type="translation"><!-- notes go here -->
+            </div>
+        
+        
+                <div type="translation"><!-- notes go here -->
                 <p>"To the Divine Shades of Aelia Phoebe, daughter of Publius, who lived ten years, 2 months, and 21 days. Publius Aelius Phoebion and Aelia Ianuaria, her parents, made this for her sweetest little soul. Here her sweet soul is covered by the earth."</p> 
             </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary">
+                    <p/>
+                </div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>
-

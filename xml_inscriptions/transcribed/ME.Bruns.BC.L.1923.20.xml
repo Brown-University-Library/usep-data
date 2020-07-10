@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
@@ -112,7 +110,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="-0001" notAfter="0100">Late 1st Century CE</date>
+                            <date evidence="unspecified" notBefore="-0001" notAfter="0100">Late 1st Century CE</date>
                             <placeName ref="unknown">Unknown</placeName>
                         </origin>
                         
@@ -132,6 +130,10 @@
                         <ptr type="rest-of-bibl" target="#Herbert_AABC"/>
                         <biblScope unit="page">83, no. 247</biblScope>
                     </bibl>
+                    <bibl>
+                        <ref type="external" target="https://artmuseum.bowdoin.edu/objects-1/info/1685">External
+                            Reference Bowdoin Museum of Art</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -141,8 +143,7 @@
             
         <encodingDesc>
                            
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -158,8 +159,9 @@
         
         <revisionDesc>
             <change when="2014-10-01" who="Sam Caldis">Initial Encoding</change>
-            <change when="2015-08-19" who="SJD">Tidied metadata, proofed transcription</change>
-            <change when="2017-03-16" who="SJD">Removed NoImage.jpg placeholder</change>
+            <change when="2015-08-19" who="Scott J. DiGiulio">Tidied metadata, proofed transcription</change>
+            <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
+            <change when="2020-04-22" who="Gaia Gianni">Added external reference link and image</change>
         </revisionDesc>
 
     </teiHeader>
@@ -170,23 +172,39 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="https://artmuseum.bowdoin.edu/Media/Previews/InventoryPictures/kiosk.040915/1923.20.jpg"/>
         </surface>
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition"><!-- transcription goes here -->
+        <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/><persName><name type="cognomen" key="Tigranes">Tigrani</name></persName>.
                 </ab>
             </div>
-             
-            <div type="commentary"><!-- notes go here -->
-            <p></p></div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        
+                <div type="commentary"><!-- notes go here -->
+            <p/></div>
             
-         </body>
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
     </text>
 </TEI>

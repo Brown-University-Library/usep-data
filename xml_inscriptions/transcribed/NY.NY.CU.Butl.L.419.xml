@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -64,7 +62,7 @@
                             <handNote ana="#impressed.inscribed.chiseled">guide lines are visible in the main body of text</handNote>
                         </handDesc>
                         <decoDesc>
-                            <decoNote ana="#blank">
+                            <decoNote ana="">
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -74,11 +72,10 @@
                         </summary>
                         <origin>
                             <placeName ref="unknown">unknown</placeName>
-                            <date notBefore="0100" notAfter="0299">second or third century CE</date>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0299">second or third century CE</date>
                         </origin>
-                        <provenance type="observed">
-                            <date notAfter="2012-10-19">2012</date>
-                            <placeName ref="NY.NY.CU">identified in the Butler library collection not later than 19 October 2012</placeName>
+                        <provenance type="observed" subtype="autopsy">
+                            <p>Identified in the <placeName ref="NY.NY.CU">Butler library</placeName> collection not later than <date notAfter="2012-10-19">19 October 2012</date></p>
                         </provenance>
                     </history>
                     <additional>
@@ -94,7 +91,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                 <xi:fallback>
                     <p>Taxonomies for US Epigraphy controlled values</p>
                 </xi:fallback>
@@ -108,19 +105,22 @@
             <change when="2014-08-20" who="Elizabeth Heintges">Edited code, added dates, with input from JS</change>
             <change when="2015-02-27" who="Elizabeth Heintges">Removed cm markings where unnecessary, slightly edited history to match boilerplate</change>
             <change when="2015-03-13" who="Elizabeth Heintges">Fixed expansion problem in transcription, finalized translation, deleted unnecessary code elements</change>
-            <change when="2016-02-29" who="SJD">Proofed xml document for conformity to USEP standards and style; added commentary div and moved part of handNote there; small edits to transcrpition</change>
-            <change when="2016-03-02" who="SJD">Corrected language code, corrected xi:include  directory, corrected provenance p to placeName</change>
+            <change when="2016-02-29" who="Scott J. DiGiulio">Proofed xml document for conformity to USEP standards and style; added commentary div and moved part of handNote there; small edits to transcrpition</change>
+            <change when="2016-03-02" who="Scott J. DiGiulio">Corrected language code, corrected xi:include  directory, corrected provenance p to placeName</change>
+            <change when="2020-03-22" who="Gaia Gianni">Deleted image filename</change>
+            <change when="2020-05-19" who="Scott J. DiGiulio">Changed provenance information to match new USEP standards; added missing bibl div</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.CU.Butl.L.419.jpg"/>
+            
         </surface>
     </facsimile>
     <text>
+        
         <body>
-            <div type="edition" xml:lang="la" xml:space="preserve">
+        <div type="edition" xml:lang="la" xml:space="preserve">
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                     <lb n="2"/><persName><name type="gentilicium" key="Pompeia"><hi rend="tall">P</hi>ompeiae</name> <persName><name type="praenomen" key="Gnaeus"><expan><abbr>Gn</abbr><ex>aei</ex></expan></name></persName>  <expan><abbr>fil</abbr><ex>iae</ex></expan> <name type="cognomen" key="Augurina">Au <g type="hedera"/>
@@ -132,13 +132,30 @@
                     <lb n="8" break="no"/>q</abbr><ex>ue</ex></expan> eorum. <space quantity="11" unit="character"/>
                 </ab>
             </div>
-            <div type="translation" xml:lang="en">
+        
+        
+                <div type="translation" xml:lang="en">
                 <p>"To the sacred shades. For Pompeia Augurina, daughter of Gnaeus, most pious mother, Aelius Nigrinus and Aelia Augurina, children of Publius, made (this) and for her freedmen, freedwomen, and their descendants."</p>
             </div>
-            <div type="commentary">
+            
+        
+        
+                <div type="commentary">
                 <p>The capitals are rustic in style (note, e.g., the formation of "M" and "V"). While the hand is largely consistent (the letters are generally spaced evenly and of a similar dimension), there is some variation in lettering, which is especially visible in the rendering of the letter M. Variety is also visible in the appearance of the interpuncts (slashes and points are both present) and they do not have a consistent depth, though this may be the product of wear on the surface. </p>
                 <p>At the end of each of the first two lines of the main body of text within the incised frame, there is a hedera. These "hederae" are irregular and inconsistent in shape. While they are roughly the same size (3.3 cm vs. 3.5 cm measured on the diagonal), the first hedera is topped with a hook curving to the left, while the second remains straight. There are also small traces of paint visible.</p>
             </div>
-         </body>
+            
+        
+        
+                <div type="apparatus">
+                    <p/>
+                </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        
+        
+        </body>
+        
+    
     </text>
 </TEI>
