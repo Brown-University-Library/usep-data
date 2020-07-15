@@ -2,7 +2,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.86</title>
+            <title>MI.AA.UM.KM.L.817</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -10,7 +10,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.86">MI.AA.UM.KM.L.86</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.817">MI.AA.UM.KM.L.817</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -19,12 +19,12 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>86</idno>
+                  <idno>817</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem class="#funerary.epitaph">
-                     <p>Fragmentary epitaph</p>
+                  <msItem class="#building">
+                     <p>Public building restoration by C. Avianius C.f. C.n. Flaccus, duovir</p>
                   </msItem>
                </msContents>
                            
@@ -32,23 +32,21 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
+                           <seg type="material">White marble, luna?</seg>
                            
-                           <seg type="material">Gray marble</seg>
+                           <p>Two reconstituted marble slabs</p>
                            
-                           
-                                                
                                             <dimensions type="surface" unit="m">
-                              <height>0.085</height>
-                              <width>0.135</width>
-                              <depth>0.025</depth>
+                              <height>0.615</height>
+                              <width>2.20</width>
+                              <depth>0.018</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p> fragmented on all sides; deep weathering</p>
+                        <condition><!--Add ana attribute with controlled value for condition--><p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="1">
+                        <layout columns="1" writtenLines="2">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -67,15 +65,23 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#unspecified" notBefore="0001" notAfter="0100">first century CE</date>
-                     <placeName ref="africa">Carthage, North Africa</placeName>
+                     <date evidence="#paleography #archeology" notBefore="-0005" notAfter="-0005">c. 5 BCE</date>
+                     <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_X"/>
+                  <biblScope unit="item">1792</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#HSCP_DArms"/>
+                  <biblScope unit="item"/>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
-                  <biblScope unit="item">227 no. 399</biblScope>
+                  <biblScope unit="item">14, no. 8</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -91,27 +97,46 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-         <change when="2012-07-02" who="Scott J. DiGiulio">Updated msItem class and image link</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.86.jpg"/>
+         <graphic url="MI.AA.UM.KM.L.817.jpg"/>
       </surface>
    </facsimile>
    <text>
       
         <body>
         <div type="edition">
-            <ab>
-                <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>IS<unclear>O</unclear>
-               <gap reason="lost" extent="unknown" unit="character"/>
-            </ab>
-                
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+                <ab>
+                    <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Gaius">
+                     <expan>
+                        <abbr>C</abbr><ex>aius</ex>
+                     </expan>
+                  </name> 
+                  <name type="gentilicium" key="Avianius">Avianius</name> 
+                  <name type="praenomen" key="Gaius">
+                     <expan>
+                        <abbr>C</abbr><ex>aii</ex>
+                     </expan>
+                  </name> 
+                  <expan>
+                     <abbr>f</abbr><ex>ilius</ex>
+                  </expan> 
+                  <name type="praenomen" key="Gaius"/>
+                  <expan>
+                     <abbr>C</abbr><ex>aii</ex>
+                  </expan> 
+                  <expan>
+                     <abbr>n</abbr><ex>epos</ex>
+                  </expan>
+                    <lb n="2"/>
+                  <name type="cognomen" key="Flaccus">Flaccus</name>
+               </persName> duovir refecit.</ab>
             </div>
         
         
@@ -122,7 +147,7 @@
         
         
                 <div type="commentary">
-                   <p>Non-joining fragment of MI.AA.UM.KM.L.85.</p>
+                    <p/>
                 </div>
             
         

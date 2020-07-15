@@ -19,8 +19,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -31,15 +31,16 @@
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>Epitaph of L. Preciliius Epitynchanus</p>
+                     <p>Epitaph of L. Precilius Epitynchanus</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#altar">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.76.2</height>
+                           <p>Marble altar</p>
+                           <dimensions type="surface" unit="cm">
+                                        <height>76.2</height>
                                         <width/>
                                         <depth/>
                                     </dimensions>
@@ -54,7 +55,7 @@
                                 <layout columns="1" writtenLines="4">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
-                                </layout>                     
+                                </layout>
                             </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
@@ -72,7 +73,7 @@
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                            <rs/>
                         </summary>
                   <origin>
                      <date evidence="unspecified" notBefore="0050" notAfter="0125">second half of the first-early second century CE</date>
@@ -86,7 +87,7 @@
                   <biblScope unit="page">137-138</biblScope>
                </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
 
 <bibl>
 <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143443">EDR143443</ref>
@@ -108,6 +109,8 @@
          <change when="2015-10-13" who="Scott J. DiGiulio">Added new bibl entry for publication of
             inscription</change>
          <change when="2020-03-24" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2020-06-24" who="SPapandonatou">minor metadata revisions, added name
+            tags</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -115,47 +118,45 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-          
+
       </surface>
    </facsimile>
    <text>
-        
+
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>Dis Manibus
-                <lb n="1"/> 
-               <expan>
-                  <abbr>L</abbr><ex>ucio</ex>
-               </expan> Precilio
-                <lb n="1"/> Epitynchano
-                <lb n="1"/> Laius verna</ab>
-                
+                <lb n="1"/>Dis Manibus.
+                <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> <name type="gentilicium" key="Precilius">Precilio</name>
+                <lb n="3"/> <name type="cognomen" key="Epitynchanus">Epitynchano</name></persName>.
+                <lb n="4"/> <persName><name key="Laius">Laius</name></persName> verna.
+            </ab>
+
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div>
-        
-        
+
+
                 <div type="translation">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="apparatus">
                     <p/>
                 </div>
-            
-        
+
+
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
     </text>
 </TEI>

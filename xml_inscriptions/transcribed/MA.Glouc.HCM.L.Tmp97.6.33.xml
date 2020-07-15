@@ -19,8 +19,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -35,30 +35,33 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p/>
+                           <p>Marble tablet</p>
                            <dimensions type="surface" unit="cm">
-                                        <height>60</height>
-                                        <width>28</width>
-                                        <depth/>
-                                    </dimensions>
+                              <height>60</height>
+                              <width>28</width>
+                              <depth/>
+                           </dimensions>
                            <dimensions type="letter" unit="cm">
                               <height min="4.0" max="4.5">4.0-4.5</height>
                            </dimensions>
                         </support>
-                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition-->
-                           <p>broken along the top and at the far left and right, losing the numerous characters at the beginning of each line and an indeterminate amount of text above the extant text</p>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken along the top and at the far left and right, losing the
+                              numerous characters at the beginning of each line and an indeterminate
+                              amount of text above the extant text</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="4">
-                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                        <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="4">
+                           <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#impressed.inscribed.carved"/>
@@ -89,7 +92,7 @@
                         <biblScope unit="item"/>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -106,6 +109,7 @@
          <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
          <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
          <change when="2016-05-10" who="Scott J. DiGiulio">Added writing control vocab, fixed typos in date and condition</change>
+         <change when="2020-06-29" who="SPapandonatou">minor revisions to metadata</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,7 +121,7 @@
       </surface>
    </facsimile>
    <text>
-        
+
         <body>
         <div type="edition">
             <ab>
@@ -125,34 +129,34 @@
                 <lb n="1"/><gap reason="lost" quantity="5" unit="character"/><unclear>O</unclear> fecit sibi et suis
                 <lb n="2"/><supplied reason="lost">liber</supplied>tis <expan><abbr>libertabusq</abbr><ex>ue</ex></expan>
                 <lb n="3"/><supplied reason="lost">poste</supplied><expan><abbr>risq</abbr><ex>ue</ex></expan> eoru<supplied reason="lost">m</supplied>.
-                <lb n="4"/><supplied reason="lost"><expan><abbr>h</abbr><ex>uic</ex></expan></supplied> <expan><abbr><unclear>m</unclear></abbr><ex>onumento</ex></expan> <expan><abbr>d</abbr><ex>olus</ex></expan> <expan><abbr>m</abbr><ex>alus</ex></expan> <expan><abbr>a</abbr><ex>besto</ex></expan>.
+                <lb n="4"/><supplied reason="lost"><expan><abbr>H</abbr><ex>uic</ex></expan></supplied> <expan><abbr><unclear>m</unclear></abbr><ex>onumento</ex></expan> <expan><abbr>d</abbr><ex>olus</ex></expan> <expan><abbr>m</abbr><ex>alus</ex></expan> <expan><abbr>a</abbr><ex>besto</ex></expan>.
             </ab>
-                
+
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div>
-        
-        
+
+
                 <div type="translation">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="apparatus">
                     <p/>
                 </div>
-            
-        
+
+
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
     </text>
 </TEI>

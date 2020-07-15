@@ -19,8 +19,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -31,7 +31,7 @@
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>fragmentary epitaph</p>
+                     <p>Fragmentary epitaph</p>
                   </msItem>
                </msContents>
                <physDesc>
@@ -45,7 +45,10 @@
                                         <depth/>
                                     </dimensions>
                         </support>
-                        <condition ana="#fragments.contig"><!--Add ana attribute with controlled value for condition--><p>Broken at left and along bottom; diagonal break down across last five letters of each line, fragments are immured together</p>
+                        <condition ana="#fragments.contig">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Broken at left and along bottom; diagonal break down across last five
+                              letters of each line, fragments are immured together</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -53,7 +56,7 @@
                                 <layout columns="1" writtenLines="7">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
-                                </layout>                     
+                                </layout>
                             </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
@@ -71,7 +74,7 @@
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                            <rs/>
                         </summary>
                   <origin>
                      <date evidence="unspecified" notBefore="0075" notAfter="0200">Late first-second century CE</date>
@@ -85,7 +88,7 @@
                         <biblScope unit="item"/>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -103,6 +106,7 @@
          <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
          <change when="2016-04-13" who="Scott J. DiGiulio">Corrected condition value</change>
          <change when="2020-03-24" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2020-07-01" who="SPapandonatou">minor metadata revisions</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -110,11 +114,11 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-   
+
       </surface>
    </facsimile>
    <text>
-        
+
         <body>
         <div type="edition">
             <ab>
@@ -123,36 +127,36 @@
                 <lb n="3"/><gap reason="lost" quantity="5" unit="character"/>tum prope vitae tempus
                 <lb n="4"/><gap reason="lost" quantity="5" unit="character"/>dinali <expan><abbr>ferrar</abbr><ex>ium</ex></expan> plurimis
                 <lb n="5"/><gap reason="lost" quantity="5" unit="character"/>B occupatus singularem
-                <lb n="6"/><gap reason="lost" quantity="5" unit="character"/>perpetuo <expan><abbr>praestit</abbr><ex>uo</ex></expan>
+                <lb n="6"/><gap reason="lost" quantity="5" unit="character"></gap>perpetuo <expan><abbr>praestit</abbr><ex>it</ex></expan>
                 <lb n="7"/><gap reason="lost" quantity="5" unit="character"/>i patruo optime merito P
                 <lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
              </ab>
-         
+
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div>
-        
-        
+
+
                 <div type="translation">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="apparatus">
                     <p/>
                 </div>
-            
-        
+
+
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
     </text>
 </TEI>

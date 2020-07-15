@@ -19,8 +19,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -35,30 +35,32 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p/>
+                           <p>Fragmentary marble tablet</p>
                            <dimensions type="surface" unit="cm">
-                                        <height>29</height>
-                                        <width>25.5</width>
-                                        <depth/>
-                                    </dimensions>
+                              <height>29</height>
+                              <width>25.5</width>
+                              <depth/>
+                           </dimensions>
                            <dimensions type="letter" unit="cm">
                               <height min="4.5" max="5.5">4.5-5.5</height>
                            </dimensions>
                         </support>
-                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition-->
-                           <p>missing large sections of stone, including lettering, on bottom and sides</p>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>missing large sections of stone, including lettering, on bottom and
+                              sides</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="4">
-                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                        <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="4">
+                           <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#impressed.inscribed.carved"/>
@@ -70,7 +72,7 @@
                   </decoDesc>
                </physDesc>
                <history>
-                  <summary>A recent comment on the inscription, via autopsy, states that the stone is marble or plaster; the latter would imply a modern reproduction 
+                  <summary>A recent comment on the inscription, via autopsy, states that the stone is marble or plaster; the latter would imply a modern reproduction
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
@@ -89,7 +91,7 @@
                         <biblScope unit="item"/>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -106,6 +108,7 @@
          <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
          <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, corrected transcription errors</change>
          <change when="2016-05-10" who="Scott J. DiGiulio">Fixed small typos in condition, date, summary; added control vocab for writing</change>
+         <change when="2020-06-29" who="SPapandonatou">minor revisions to metadata</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,7 +120,7 @@
       </surface>
    </facsimile>
    <text>
-        
+
         <body>
         <div type="edition">
             <ab>
@@ -127,30 +130,30 @@
                 <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><unclear>C</unclear>E<gap reason="lost" extent="unknown" unit="character"/>
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div>
-        
-        
+
+
                 <div type="translation">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="apparatus">
                     <p/>
                 </div>
-            
-        
+
+
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
     </text>
 </TEI>
