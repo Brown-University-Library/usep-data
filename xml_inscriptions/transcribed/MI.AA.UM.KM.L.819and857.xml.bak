@@ -2,7 +2,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.86</title>
+            <title>MI.AA.UM.KM.L.819+857</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -10,7 +10,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.86">MI.AA.UM.KM.L.86</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.819and857">MI.AA.UM.KM.L.819+857</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -19,12 +19,12 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>86</idno>
+                  <idno>819+857</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Fragmentary epitaph</p>
+                     <p>Epitaph of M. Caecilius M.l. Clymenus</p>
                   </msItem>
                </msContents>
                            
@@ -32,23 +32,20 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
                            
                            <seg type="material">Gray marble</seg>
-                           
-                           
-                                                
+                           <p>Partially reconstituted marble slab</p>
                                             <dimensions type="surface" unit="m">
-                              <height>0.085</height>
-                              <width>0.135</width>
-                              <depth>0.025</depth>
+                              <height>0.475</height>
+                              <width>0.81</width>
+                              <depth>0.038</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p> fragmented on all sides; deep weathering</p>
+                        <condition><!--Add ana attribute with controlled value for condition--><p>found in five fragments, traces of guidlines on the surface</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="1">
+                        <layout columns="1" writtenLines="7">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -67,15 +64,19 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#unspecified" notBefore="0001" notAfter="0100">first century CE</date>
-                     <placeName ref="africa">Carthage, North Africa</placeName>
+                     <date evidence="#paleography" notBefore="0050" notAfter="0125">mid first-early second century CE</date>
+                     <placeName ref="europe.italy">Via Campana, Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#AJA_Dennison"/>
+                  <biblScope unit="item">378, no. 10</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
-                  <biblScope unit="item">227 no. 399</biblScope>
+                  <biblScope unit="item">69, no. 91</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -91,27 +92,80 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-         <change when="2012-07-02" who="Scott J. DiGiulio">Updated msItem class and image link</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.86.jpg"/>
+         <graphic url="MI.AA.UM.KM.L.819.jpg"/>
       </surface>
    </facsimile>
    <text>
       
         <body>
         <div type="edition">
-            <ab>
-                <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>IS<unclear>O</unclear>
-               <gap reason="lost" extent="unknown" unit="character"/>
-            </ab>
-                
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+                <ab>
+                    <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan>
+                        <abbr>M</abbr><ex>arcus</ex>
+                     </expan>
+                  </name> 
+                  <name type="gentilicium" key="Caecilius">Caecilius</name> 
+                  <name type="praenomen" key="Marcus">
+                     <expan>
+                        <abbr>M</abbr><ex>arci</ex>
+                     </expan>
+                  </name> 
+                  <expan>
+                     <abbr>l</abbr><ex>ibertus</ex>
+                  </expan> 
+                  <name type="cognomen" key="Clymenus">Cl<hi rend="tall">y</hi>menus</name>
+               </persName>
+                    <lb n="2"/>sibi, et
+                    <lb n="3"/>
+               <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan>
+                        <abbr>M</abbr><ex>arco</ex>
+                     </expan>
+                  </name> 
+                  <name type="gentilicium" key="Caecilius">Caecilio</name> 
+                  <name type="cognomen" key="Agenor">Agenor<hi rend="tall">i</hi>
+                  </name>
+               </persName> 
+               <expan>
+                  <abbr>patron</abbr><ex>o</ex></expan>, e<hi rend="tall">t</hi>
+                    <lb n="4"/>
+               <persName>
+                  <name type="gentilicium" key="Caecilia">Caeciliae</name> 
+                  <name type="praenomen" key="Marcus">
+                     <expan>
+                        <abbr>M</abbr><ex>arci</ex>
+                     </expan>
+                  </name> 
+                  <expan>
+                     <abbr>l</abbr><ex>ibertae</ex>
+                  </expan> 
+                  <name type="cognomen" key="Charite">Charite</name>
+               </persName> uxor<hi rend="tall"><hi rend="apex">i</hi></hi>
+                    <lb n="5"/>suae, et
+                    <lb n="6"/>
+               <persName>
+                  <name type="gentilicium" key="Cossinius">Cossinio</name> 
+                  <name type="praenomen" key="Aulus">
+                     <expan>
+                        <abbr>A</abbr><ex>uli</ex>
+                     </expan>
+                  </name> 
+                  <expan>
+                     <abbr>l</abbr><ex>iberto</ex>
+                  </expan> 
+                  <name type="cognomen" key="Pandarus">Pandaro</name>
+               </persName>
+                    <lb n="7"/>argentario, et su<hi rend="tall">i</hi>s.</ab>
             </div>
         
         
@@ -122,7 +176,7 @@
         
         
                 <div type="commentary">
-                   <p>Non-joining fragment of MI.AA.UM.KM.L.85.</p>
+                    <p/>
                 </div>
             
         
