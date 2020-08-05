@@ -267,10 +267,8 @@
                                 <tr>
                                     <td class="label">Dating Criteria</td>
                                     <td class="value">
-                                        <<td class="value">
-                                            <xsl:value-of
-                                                select="id(substring-after($dateOfOrigin/@evidence, '#'))/t:catDesc"
-                                            />
+                                        <td class="value">
+                                            <xsl:value-of select="id(substring-after($dateOfOrigin/@evidence, '#'))/t:catDesc"/>
                                     </td>
                                 </tr>
                                 
