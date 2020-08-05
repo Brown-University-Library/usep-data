@@ -190,8 +190,8 @@ msItem:before {
              edit, "@class",
              columns 20,
              editable, false,
-             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-genre"]/category/@xml:id, ",#")'))),
-             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-genre"]/category/catDesc, ",")' ))
+             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-genre"]//category/@xml:id, ",#")'))),
+             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-genre"]//category/catDesc, ",")' ))
 );}
 
     msItem p:before {
@@ -226,8 +226,8 @@ msItem:before {
              edit, "@ana",
              columns 20,
              editable, false,
-             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-form"]/category/@xml:id, ",#")'))),
-             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-form"]/category/catDesc, ",")' ))
+             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-form"]//category/@xml:id, ",#")'))),
+             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-form"]//category/catDesc, ",")' ))
              );
         display:block;
     }
@@ -239,8 +239,8 @@ msItem:before {
              edit, "@ana",
              columns 20,
              editable, false,
-             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-materials"]/category/@xml:id, ",#")'))),
-             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-materials"]/category/catDesc, ",")' ))
+             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-materials"]//category/@xml:id, ",#")'))),
+             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-materials"]//category/catDesc, ",")' ))
              );
         display:block;
     }
@@ -314,8 +314,8 @@ msItem:before {
              edit, "@ana",
              columns 20,
              editable, false,
-             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-preservation"]/category/@xml:id, ",#")' ))),
-             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-preservation"]/category/catDesc, ",")' ))
+             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-preservation"]//category/@xml:id, ",#")' ))),
+             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-preservation"]//category/catDesc, ",")' ))
              );
            display:block;        ;
     }
@@ -470,7 +470,7 @@ msItem:before {
        }
 
        history summary rs:before {
-           content: "Is this a fake?";
+           content: "Is this a modern copy?";
        }
 
        history summary rs {
@@ -479,8 +479,8 @@ msItem:before {
              type, combo,
              edit, "#text",
              editable, false,
-             values, ", fake",
-             labels, "Genuine, Fake");
+             values, ", modern",
+             labels, "Genuine, Modern");
              display:block;
              visibility: -oxy-collapse-text ;
        }
@@ -517,8 +517,17 @@ msItem:before {
        }
 
        origin date:before, provenance date:before {
-          content: "Dates (4 digit dates, BCE is negative). Not Before"
+          content: "Dates (4 digit dates, BCE is negative). Dating Criteria:"
           oxy_editor(
+             type, combo,
+             edit, "@evidence",
+             columns 20,
+             editable, false,
+             values, oxy_concat("#", oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-DatingCriteria"]//category/@xml:id, ",#")' ))),
+             labels, oxy_xpath(oxy_concat('string-join(doc("', oxy_url('${framework}/', 'resources/include_taxonomies.xml'), '")//taxonomy[@xml:id="USEp-DatingCriteria"]//category/catDesc, ",")' ))
+              )
+             " Not Before: "
+             oxy_editor(
              type, text,
              edit, "@notBefore"
              columns, 7)
@@ -643,7 +652,7 @@ msItem:before {
       /* **************** Body and full text  **************** */
 
    body:before {
-       content: "Transcription and Notes";
+       content: "Transcription, Translation and Notes";
        font-weight:bold;
         font-size: 130%;
         display:block;
@@ -658,10 +667,25 @@ msItem:before {
 
         div[type="commentary"]:before {
         font-weight:bold;
-        content: "Notes";
+        content: "Notes (optional)";
         display:block;
         visibility: -oxy-collapse-text ;
     }
+    
+        div[type="translation"]:before {
+        font-weight:bold;
+        content: "Translation";
+        display:block;
+        visibility: -oxy-collapse-text ;
+    }
+
+        div[type="apparatus"]:before {
+        font-weight:bold;
+        content: "Apparatus (optional)";
+        display:block;
+        visibility: -oxy-collapse-text ;
+    }
+
 
 /*
     div[subtype="transcription"]:after {
@@ -690,6 +714,24 @@ msItem:before {
         display:block;
         -oxy-placeholder-content: 'text here';
     }
+    
+        div[type="translation"] p {
+        border:2px solid rgb(153, 153, 143);
+        background-color:rgb(245, 243, 221);
+        margin:10px 20px 15px 20px;
+        display:block;
+        -oxy-placeholder-content: 'text here';
+    }
+
+       div[type="apparatus"] p {
+        border:2px solid rgb(153, 153, 143);
+        background-color:rgb(245, 243, 221);
+        margin:10px 20px 15px 20px;
+        display:block;
+        -oxy-placeholder-content: 'text here';
+    }
+
+
 
     div[type="edition"]  {
           border-style:solid;
@@ -704,6 +746,22 @@ msItem:before {
           border-color: rgb(153, 153, 143);
           background-color: rgb(217, 227, 208);
     }
+    
+     div[type="translation"]  {
+          border-style:solid;
+          border-width:3px;
+          border-color: rgb(153, 153, 143);
+          background-color: rgb(217, 227, 208);
+    }
+    
+     div[type="apparatus"]  {
+          border-style:solid;
+          border-width:3px;
+          border-color: rgb(153, 153, 143);
+          background-color: rgb(217, 227, 208);
+    }
+
+
 
 
 

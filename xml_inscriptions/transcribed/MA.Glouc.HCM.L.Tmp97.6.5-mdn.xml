@@ -3,7 +3,7 @@
       <fileDesc>
          <titleStmt>
                 <!-- printable version of USEpi inscription ID: -->
-                <title>MA.Glouc.HCM.L.#97.6.25</title>
+                <title>MA.Glouc.HCM.L.#97.6.5-mdn</title>
             </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,7 +11,8 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.25">MA.Glouc.HCM.L.#97.6.25</idno>
+            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.5-mdn"
+               >MA.Glouc.HCM.L.#97.6.5-mdn</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -19,79 +20,85 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
                         <!--required.-->
                         <!--  accession number, last part of USEP number -->
-                        <idno>#97.6.25</idno>
+                        <idno>97.6.5-mdn</idno>
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>Epitaph of Serevra</p>
+                     <p>Epitaph of Victor</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
-                     <supportDesc ana="#plaster">
+                     <supportDesc ana="#stone.marble">
                         <support>
-                           
-                           
-                           <p>Rectangular plaster plaque</p>
+
+                           <p>Rectangular marble slab</p>
                            <dimensions type="surface" unit="m">
-                                        <height>0.26</height>
-                                        <width>0.32</width>
+                                        <height>0.68.5</height>
+                                        <width>0.39.3</width>
                                         <depth/>
                                     </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="2.5" max="3.0">2.5-3.0</height>
+                           </dimensions>
                         </support>
-                        <condition ana="#complete.intact">
+                        <condition ana="#complete">
                            <!--Add ana attribute with controlled value for condition-->
-                           <p>Sides somewhat uneven, probably from being immured</p>
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="7">
+                                <layout columns="1" writtenLines="5">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
-                                </layout>                     
+                                </layout>
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc hands="1">
+                  <handDesc>
                      <handNote/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="hedera">
-                        <p>hedera</p>
+                     <decoNote ana="figured_scene">
+                        <p>gabled pediment with wreath and trailing vines</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history>
+
                   <summary>
-                     <rs>fake</rs>
-                           
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                     <rs>modern</rs>
+                     <note/>
                         </summary>
                   <origin>
-                     <date evidence="unspecified">Modern</date>
-                     <placeName ref="unknown">Unknown</placeName>
+                     <date evidence="unspecified" notBefore="0050" notAfter="0200">mid first-second century CE</date>
+                     <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#unpub"/>
-                        <biblScope unit="item"/>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">28921</biblScope>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
+
+<bibl>
+<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143430">EDR143430</ref>
+</bibl>
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -105,9 +112,9 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
-         <change when="2011-11-27" who="Colleen Donahoe">Replaced @fake type=object with @rs fake</change>
-         <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
-         <change when="2015-08-06" who="Scott J. DiGiulio">Updated metadata, transcription and name taGaia Gianniing</change>
+         <change when="2015-08-04" who="Scott J. DiGiulio">Updated transcription, whcih was for the original inscription rather than this forgery; updated the authenticity tag</change>
+         <change when="2020-03-24" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2020-06-24" who="SPapandonatou">added -mdn and name tags</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -115,47 +122,45 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-            <graphic url="MA.Glouc.HCM.L.Tmp97.6.25.jpg"/>
+            <graphic url="MA.Glouc.HCM.L.Temp97.6.5.jpg"/>
       </surface>
    </facsimile>
    <text>
-        
+
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-                <lb n="2"/><persName><name type="gentilicium" key="Severa"><expan><abbr>Severa</abbr><ex>e</ex></expan></name></persName> <g type="hedera"/> <expan><abbr>co</abbr><ex>n</ex></expan>
-                <lb break="no" n="3"/>iu<choice><sic>c</sic><corr>g</corr></choice>i. <persName><name type="gentilicium" key="Aerenius">Aerenius</name>
-                <lb n="4"/><name type="cognomen" key="Niceta">Nicita</name></persName> coniu
-                <lb break="no" n="5"/><choice><sic>c</sic><corr>g</corr></choice>i <expan> <abbr>be</abbr><ex>ne</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>
-                <lb n="6"/> vixsit<note>!</note> annos <num value="16">X
-                <lb break="no" n="7"/>VI</num>.
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/><expan><abbr>Fil</abbr><ex>io</ex></expan> <persName><name type="cognomen" key="Victor">Victori</name></persName>.
+               <lb n="3"/><persName><name type="gentilicium" key="Attia">Attia</name></persName> ITCINIA CO
+               <lb break="no" n="4"/>IUEL bene merenti
+               <lb n="5"/>et <expan><abbr>fil</abbr><ex>ii</ex></expan> fecerunt.
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div>
-        
-        
+
+
                 <div type="translation">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
+              <p>The inscription appears to be a modern forgery based on CIL 6.28921.</p>
+           </div>
+
+
+
                 <div type="apparatus">
                     <p/>
                 </div>
-            
-        
+
+
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
     </text>
 </TEI>

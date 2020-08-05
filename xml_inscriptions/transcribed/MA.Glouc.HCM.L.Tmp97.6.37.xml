@@ -19,8 +19,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -35,26 +35,29 @@
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
-                        <support>                                                
-                           <p>White, medium grained marble slab</p>
+                        <support>
+                           <p>Broken marble tablet</p> <!-- white, medium grained -->
                            <dimensions type="surface" unit="cm">
-                                        <height>29</height>
-                                        <width>36</width>
-                                        <depth/>
-                                    </dimensions>
+                              <height>29</height>
+                              <width>36</width>
+                              <depth/>
+                           </dimensions>
                         </support>
-                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p>Top and bottom of slab missing; top right and bottom left corners broken diagonally</p>
+                        <condition ana="#fragment.single"> <!-- broken -->
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Top and bottom of slab missing; top right and bottom left corners
+                              broken diagonally</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="9">
-                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                        <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="9">
+                           <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#impressed.inscribed.carved"/>
@@ -85,7 +88,7 @@
                         <biblScope unit="item"/>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -101,6 +104,7 @@
          <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
          <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
+         <change when="2020-06-29" who="SPapandonatou">minor metadata revisions</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -112,46 +116,46 @@
       </surface>
    </facsimile>
    <text>
-        
+
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/><persName><name type="gentilicium" key="Patulcia">Patul<choice><sic>p</sic><corr>c</corr></choice>ulia<supplied reason="lost">e</supplied></name>
+                <lb n="1"/><persName><name type="gentilicium" key="Patulcia">Patul<choice><sic>p</sic><corr>c</corr></choice>ia<supplied reason="lost">e</supplied></name>
                 <lb n="2"/><name type="cognomen" key="Felicitas">Felicitati</name></persName> coniu
                 <lb break="no" n="3"/>gi sanctissimae
                 <lb n="4"/>et <persName><name type="gentilicium" key="Patulcia">Patulciae</name>
                 <lb n="5"/><name type="cognomen" key="Prima">Primae</name></persName> alumnae
-                <lb n="6"/>communi
-                <lb n="7"/><persName><name type="gentilicium" key="Heltutius">Heltutiu<supplied reason="lost">s</supplied></name>
+                <lb n="6"/>communi.
+                <lb n="7"/><persName><name type="gentilicium" key="Heltutius">Heltutiu<unclear>s</unclear></name>
                 <lb n="8"/><name type="cognomen" key="Proculus"><supplied reason="lost">P</supplied>roculus</name></persName>
                 <lb n="9"/><supplied reason="lost">fe</supplied>cit.
             </ab>
-                
+
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div>
-        
-        
+
+
                 <div type="translation">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="apparatus">
                     <p/>
                 </div>
-            
-        
+
+
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
     </text>
 </TEI>

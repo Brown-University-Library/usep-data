@@ -19,8 +19,8 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MA</region> 
+
+                        <region>MA</region>
                         <settlement>Glouc</settlement>
                         <institution/>
                         <repository>HCM</repository>
@@ -38,9 +38,9 @@
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support>                     
-                           
-                           <p/>
+                        <support>
+
+                           <p>Marble slab</p>
                            <dimensions type="surface" unit="cm">
                                         <height>43.2</height>
                                         <width>33</width>
@@ -50,7 +50,9 @@
                               <height>2.5</height>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>Broken around all edges, though campus remains intact</p>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Broken around all edges, though campus remains intact</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -58,7 +60,7 @@
                                 <layout columns="1" writtenLines="7">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
-                                </layout>                     
+                                </layout>
                             </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
@@ -90,7 +92,7 @@
                         <biblScope unit="item"/>
                     </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
+
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -106,6 +108,8 @@
          <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
          <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
+         <change when="2020-06-29" who="SPapandonatou">minor metadata revision, corrected minor
+            transcription errors</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -117,12 +121,12 @@
       </surface>
    </facsimile>
    <text>
-        
+
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-                <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Lepidius">Lepidi</name> <name type="cognomen" key="Eutichus">Eutichi</name></persName>.
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Lepidius">Lepidi</name> <name type="cognomen" key="Eutychus">Eutychi</name></persName>.
                 <lb n="3"/>Fecit <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Lepidius">Lepidius</name>
                 <lb n="4"/><name type="cognomen" key="Hermeros">Hermeros</name></persName> filio
                 <lb n="5"/>suo, qui vixit an
@@ -130,30 +134,30 @@
                 <lb n="7"/><num value="10">X</num>, diebus <num value="26">XXVI</num>.
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div>
-        
-        
+
+
                 <div type="translation">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary">
                     <p/>
                 </div>
-            
-        
-        
+
+
+
                 <div type="apparatus">
                     <p/>
                 </div>
-            
-        
+
+
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
     </text>
 </TEI>
