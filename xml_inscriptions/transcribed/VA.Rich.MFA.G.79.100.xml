@@ -21,8 +21,8 @@
                     <msIdentifier>
                         <region>VA</region>
                         <settlement>Rich</settlement>
-                        <institution/>
-                        <repository>MFA</repository>
+                        <institution>MFA</institution>
+                        <repository></repository>
                         <idno>79.100</idno>
                     </msIdentifier>
                     <msContents>
@@ -32,15 +32,15 @@
                         </msItem>
                     </msContents>
                     <physDesc>
-                        <objectDesc ana="#instrumentum.container">
+                        <objectDesc ana="#instrumentum.container.other">
                             <supportDesc ana="#clay.terracotta">
                                 <support>
-                                    <p/>
+                                    <p>Terracotta rhyton</p>
                                     
-                                    <dimensions type="surface" unit="in">
-                                        <height>8.88</height>
-                                        <width>5.5</width>
-                                        <depth/>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>22.54</height>
+                                        <width>5.13.97</width>
+                                        <depth>26.67</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
@@ -52,7 +52,7 @@ free text here, don't forget the ana attribute on the condition element
                                 </condition>
                             </supportDesc>
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
+                                <layout columns="0" writtenLines="1">
                                     <!--
 use a <locus> to narrow down part of inscription being discussed, i.e. campus
 -->
@@ -60,12 +60,12 @@ use a <locus> to narrow down part of inscription being discussed, i.e. campus
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        <handDesc ana="#text_other">
-                            <handNote>Goes down the nose of the ram.</handNote>
+                        <handDesc ana="#painted">
+                            <handNote>Goes down the nose of the ram</handNote>
                         </handDesc>
                         <decoDesc>
-                            <decoNote ana="blank">
-                                <p>Rhyton in the shape of a Ram head attributed to the Triptolemos painter.</p>
+                            <decoNote>
+                                <p>Rhyton in the shape of a ram's head</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -109,6 +109,9 @@ Add provenance element(s) to locations at later dates - same content as origin
                      <bibl>
                          <ref type="external" target="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0047%3Aentry%3D32">Shapiro in Perseus</ref>
                     </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.vmfa.museum/piction/6027262-8532059/">VMFA Web Entry</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -122,6 +125,7 @@ Add provenance element(s) to locations at later dates - same content as origin
         <profileDesc/>
         <revisionDesc>
             <change when="2020-05-19" who="Scott J. DiGiulio">Added missing revisionDesc; fixed provenance markup</change>
+            <change when="2020-06-24" who="Scott J. DiGiulio">Fixed institution; converted units to metric; fixed hand control vocab; added VMFA link to bibl; rewrote transcription in non-diplomatic; removed dead image link</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -132,7 +136,7 @@ Add provenance element(s) to locations at later dates - same content as origin
 URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".
 -->
             <graphic url="VA.Rich.MFA.G.79.100.jpg"/>
-            <graphic url="http://www.vmfa.state.va.us/Collections/Ancient_Art/Greek_Attic_79_100_Red-Figure_Ram%E2%80%99s-Head_Rhyton_Triptolemos_painter.as"/>
+            
         </surface>
     </facsimile>
     <text>
@@ -140,7 +144,7 @@ URL will actually only have the file name, which is the machine readable USEP nu
         <body>
         <div type="edition">
                 <ab>
-                    <lb n="1"/><persName>ΧΑΡΙΝΟΣ</persName>ΜΕΕΠΟΙΗΣΕΝ
+                    <lb n="1"/><persName><name key="Χαρῖνος">Χαρῖνός</name></persName> με ἐποίεσεν.
                 </ab>
                 <!--
 The marked up transcription goes here, surrounded by <ab> </ab> elements
@@ -155,7 +159,7 @@ The marked up transcription goes here, surrounded by <ab> </ab> elements
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>Rhyton attributed to the Triptolemos painter</p>
                 </div>
             
         

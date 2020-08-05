@@ -20,8 +20,8 @@
                     <msIdentifier>
                         <region>VA</region>
                         <settlement>Rich</settlement>
-                        <institution/>
-                        <repository>MFA</repository>
+                        <institution>MFA</institution>
+                        <repository></repository>
                         <idno>57.18.1</idno>
                     </msIdentifier>
                     <msContents>
@@ -37,32 +37,31 @@
                                     <p>
                                         <seg type="material">Bronze Hydria</seg>
                                     </p>
-                                    <dimensions type="surface" unit="in">
-                                        <height>18.25</height>
-                                        <width>14.75</width>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>45.4</height>
+                                        <width>37.47</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
-                                    <p>
-                                        <!--
+                                    <p>Handles and foot were applied seperately; modern repatination at the joints                              <!--
 free text here, don't forget the ana attribute on the condition element
 -->
                                     </p>
                                 </condition>
                             </supportDesc>
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
+                                <layout columns="0" writtenLines="1">
                                     <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         <handDesc ana="#impressed.points">
-                            <p>Dotted inscription located on the rim of the hydria.</p>
+                            <handNote>Dotted inscription located on the rim of the hydria</handNote>
                         </handDesc>
                         <decoDesc>
-                            <decoNote ana="blank">
-                                <p>Handles and foot were applied seperately. Modern repatination at the joints. Evidence of gilding.</p>
+                            <decoNote>
+                                <p>Evidence of gilding</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -108,6 +107,9 @@ Should contain information about origin of inscription including place and date.
                         <ptr type="rest-of-bibl" target="#Gnomon_vBothmer"/>
                         <biblScope unit="item">604-605</biblScope>
                     </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.vmfa.museum/piction/6027262-51954436/">VMFA Web Entry</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -121,6 +123,7 @@ Should contain information about origin of inscription including place and date.
         <profileDesc/>
         <revisionDesc>
             <change when="2020-05-19" who="Scott J. DiGiulio">Added missing revisionDesc; fixed provenance markup</change>
+            <change when="2020-06-">Rewrote transcription out of dipolomatic; converted dimensions to metric; fixed repo/institution; added link to VMFA website</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -138,8 +141,7 @@ URL will actually only have the file name, which is the machine readable USEP nu
         <body>
         <div type="edition">
                 <ab>
-                    <lb n="1"/>
-                    ΧΑΠΩΝΙΔΑΧΑΙΡΕ ΔΕΙ 
+                    <lb n="1"/><persName><name key="Χαρωνίδας">Χαρωνίδα</name></persName> χαῖρε. ΔΕΙ.
                 </ab>
                 <!--
 The marked up transcription goes here, surrounded by <ab> </ab> elements

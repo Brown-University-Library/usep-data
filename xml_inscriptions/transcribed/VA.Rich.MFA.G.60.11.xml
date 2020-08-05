@@ -21,14 +21,14 @@
                     <msIdentifier>
                         <region>VA</region>
                         <settlement>Rich</settlement>
-                        <institution/>
-                        <repository>MFA</repository>
+                        <institution>MFA</institution>
+                        <repository></repository>
                         <idno>60.11</idno>
                     </msIdentifier>
                     <msContents>
                         <textLang mainLang="grc"/>
                         <msItem class="#label">
-                            <p/>
+                            <p>Black-figure neck amphora with nonsense inscriptions</p>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -36,9 +36,9 @@
                             <supportDesc ana="#clay.ceramic">
                                 <support>
                                     <p>Black-figured neck-amphora</p>
-                                    <dimensions type="surface" unit="in">
-                                        <height>8.25</height>
-                                        <width/>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>20.96</height>
+                                        <width>11.75</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
@@ -51,7 +51,7 @@ free text here, don't forget the ana attribute on the condition element
                                 </condition>
                             </supportDesc>
                             <layoutDesc>
-                                <layout columns="2" writtenLines="2">
+                                <layout columns="0" writtenLines="5">
                                     <!--
 use a <locus> to narrow down part of inscription being discussed, i.e. campus
 -->
@@ -63,7 +63,7 @@ use a <locus> to narrow down part of inscription being discussed, i.e. campus
                             <handNote/>
                         </handDesc>
                         <decoDesc>
-                            <decoNote ana="blank">
+                            <decoNote>
                                 <p>A. Herakles slaying Kyknos B. Ares and Athena parting in different directions, probably to help their proteges on side A</p>
                             </decoNote>
                         </decoDesc>
@@ -104,6 +104,9 @@ Add provenance element(s) to locations at later dates - same content as origin
                         <ptr type="rest-of-bibl" target="#Beazley_ARVP"/>
                         <biblScope unit="item">p.250</biblScope>
                     </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.vmfa.museum/piction/6027262-15469550/">VMFA Web Entry</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -117,6 +120,7 @@ Add provenance element(s) to locations at later dates - same content as origin
         <profileDesc/>
         <revisionDesc>
             <change when="2020-05-19" who="Scott J. DiGiulio">Added missing revisionDesc; fixed provenance markup</change>
+            <change when="2020-06-24" who="Scott J. DiGiulio">Added transcription; fixed repo/institution; converted dimensions to metric; added link to VMFA website</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -134,6 +138,11 @@ URL will actually only have the file name, which is the machine readable USEP nu
         <body>
         <div type="edition">
                 <ab>
+                    <lb n="1"/>ΧΧΓΧ
+                    <lb n="2"/>ΧΧΧ<unclear>Χ</unclear>ΕΧ
+                    <lb n="3"/>ΥΚΥΚ
+                    <lb n="4"/>hΙΣΥΚΙ
+                    <lb n="5"/>ΥΚΙΣΥΥ
                 </ab>
                 <!--
 The marked up transcription goes here, surrounded by <ab> </ab> elements

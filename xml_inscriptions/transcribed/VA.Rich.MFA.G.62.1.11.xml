@@ -21,14 +21,14 @@
                     <msIdentifier>
                         <region>VA</region>
                         <settlement>Rich</settlement>
-                        <institution/>
-                        <repository>MFA</repository>
+                        <institution>MFA</institution>
+                        <repository></repository>
                         <idno>62.1.11</idno>
                     </msIdentifier>
                     <msContents>
                         <textLang mainLang="grc"/>
                         <msItem class="#label">
-                            <p>"Nikosthenes made (this)"</p>
+                            <p>Black-figured eye cup with maker's signature</p>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -36,10 +36,10 @@
                             <supportDesc ana="#clay.terracotta">
                                 <support>
                                     <p>Terracotta black figured eye-cup</p>
-                                    <dimensions type="surface" unit="in">
-                                        <height>3.5</height>
-                                        <width>9.25</width>
-                                        <depth/>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>8.89</height>
+                                        <width>23.5</width>
+                                        <depth>29.85</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
@@ -51,7 +51,7 @@ free text here, don't forget the ana attribute on the condition element
                                 </condition>
                             </supportDesc>
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
+                                <layout columns="0" writtenLines="1">
                                     <!--
 use a <locus> to narrow down part of inscription being discussed, i.e. campus
 -->
@@ -59,12 +59,12 @@ use a <locus> to narrow down part of inscription being discussed, i.e. campus
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        <handDesc ana="#label">
+                        <handDesc ana="#painted">
                             <handNote/>
                         </handDesc>
                         <decoDesc>
-                            <decoNote ana="blank">
-                                <p>Depicted on exterior, each side: nose between eyes. Depicted on interior: Gorgoneion surrounded by concentric circles.</p>
+                            <decoNote>
+                                <p>Exterior, each side: nose between eyes. Interior: Gorgoneion surrounded by concentric circles.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -101,7 +101,19 @@ Add provenance element(s) to locations at later dates - same content as origin
                 </msDesc>
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#unpub"/>
+                        <ptr type="rest-of-bibl" target="#Beazley_ARVP"/>
+                        <biblScope unit="item">122 n. 1, 1627</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Beazley_2"/>
+                        <biblScope unit="item">109.15BIS</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Beazley_Addenda"/>
+                        <biblScope unit="item">60</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.vmfa.museum/piction/6027262-182968811/">VMFA Web Entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -116,6 +128,7 @@ Add provenance element(s) to locations at later dates - same content as origin
         <profileDesc/>
         <revisionDesc>
             <change when="2020-05-19" who="Scott J. DiGiulio">Added missing revisionDesc; fixed provenance markup</change>
+            <change when="2020-06-24" who="Scott J. DiGiulio">Fixed institution, converted and expanded dimensions, corrected writing metadata, added various Beazley items to bibl, added link to VMFA, converted transcription from diplomatic, added translation</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -133,8 +146,8 @@ URL will actually only have the file name, which is the machine readable USEP nu
         <body>
         <div type="edition">
                 <ab>
-                    <lb n="1"/>
-                    ΝΙΚΟΣθΕΝΕΣΕΠΟΙΣΕΝ
+                    <lb n="1"/><persName><name key="Νικσοθένης">Νικσοθένeς</name></persName> ἐπο<supplied reason="lost">ί</supplied>εσεν.
+                    
                 </ab>
                 <!--
 The marked up transcription goes here, surrounded by <ab> </ab> elements
@@ -143,7 +156,7 @@ The marked up transcription goes here, surrounded by <ab> </ab> elements
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Nikosthenes made [this].</p>
                 </div>
             
         
