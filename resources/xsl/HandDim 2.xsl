@@ -29,6 +29,7 @@
             <xsl:apply-templates select="node()|@*"/>
         </xsl:copy>
     </xsl:template>
+    
     <xsl:template match="t:revisionDesc">
         <xsl:choose>                    
         <xsl:when test="//t:dimensions[@type='letter']">
@@ -42,11 +43,17 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="t:dimensions[@type='letter']" />
+    
+    <xsl:template match="t:dimensions[@type='letter']"/>
+    
     <xsl:template match="t:handNote">
         <xsl:copy>
             <xsl:apply-templates select="@*" />
-            <xsl:copy-of select="//t:dimensions[@type='letter']" />
+            <xsl:text>
+            </xsl:text>
+            <xsl:copy-of select="//t:dimensions[@type='letter']" xml:space="preserve"/>
+            <xsl:text>
+            </xsl:text>
             <xsl:apply-templates select="node()" />
         </xsl:copy>
     </xsl:template>
