@@ -21,8 +21,8 @@
                     <msIdentifier>
                         <region>VA</region>
                         <settlement>Rich</settlement>
-                        <institution/>
-                        <repository>MFA</repository>
+                        <institution>MFA</institution>
+                        <repository></repository>
                         <idno>79.148</idno>
                     </msIdentifier>
                     <msContents>
@@ -36,13 +36,13 @@
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <p/>
-                                    <dimensions type="surface" unit="in">
-                                        <height>29</height>
-                                        <width>18.5</width>
-                                        <depth>4.5</depth>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>73.66</height>
+                                        <width>47.0</width>
+                                        <depth>11.43</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.intact">
+                                <condition ana="#complete.broken">
                                     <p>
                                         <!--
 free text here, don't forget the ana attribute on the condition element
@@ -59,11 +59,11 @@ use a <locus> to narrow down part of inscription being discussed, i.e. campus
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        <handDesc>
+                        <handDesc ana="#impressed.inscribed.carved">
                             <handNote/>
                         </handDesc>
                         <decoDesc>
-                            <decoNote ana="blank">
+                            <decoNote>
                                 <p>Palmette</p>
                             </decoNote>
                         </decoDesc>
@@ -89,7 +89,7 @@ Please say whether the object is fake (and therfore the inscription also) or onl
 Should contain information about origin of inscription including place and date.
 -->
                                 <date evidence="unspecified" notBefore="-0330" notAfter="-0310">c.320 BCE</date>
-                                <placeName ref="europe.greece.attica">Attic</placeName>
+                                <placeName ref="europe.greece.attica">Attica</placeName>
                             </origin>
                         <provenance type="transferred" subtype="given">
                             <p>The <persName>Arthur</persName> and <persName>Margaret Glasgow Fund</persName></p>
@@ -101,9 +101,10 @@ Add provenance element(s) to locations at later dates - same content as origin
                 </msDesc>
                 <listBibl>
                    
-                        <bibl>
-                            <ptr type="rest-of-bibl" target="#unpub"/>
-                        </bibl>
+                        
+                    <bibl>
+                        <ref type="external" target="https://www.vmfa.museum/piction/6027262-12954197/">VMFA Web Entry</ref>
+                    </bibl>
                     
                 </listBibl>
             </sourceDesc>
@@ -118,6 +119,7 @@ Add provenance element(s) to locations at later dates - same content as origin
         <profileDesc/>
         <revisionDesc>
             <change when="2020-05-19" who="Scott J. DiGiulio">Added missing revisionDesc; fixed provenance markup</change>
+            <change when="2020-06-24" who="Scott J. DiGiulio">Fixed institution; converted units to metric; added bibliography and link to VMFA; added writing control vocab; rewrote transcription from diplomatic; reconfigured image markup; changed condition from intact to broken; added translation</change>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -128,7 +130,11 @@ Add provenance element(s) to locations at later dates - same content as origin
 URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".
 -->
             <graphic url="VA.Rich.MFA.G.79.148.jpg"/>
-            <graphic url="http://www.vmfa.state.va.us/Collections/Ancient_Art/Greek_Attic_79_148_Flame-Palmette_Finial_for_Funerary_Stele.aspx"/>
+            
+        </surface>
+        <surface>
+            <graphic url="https://vmfa-dmz.piction.com/piction/ump.di?e=32118F9D27224A3299A53DD2FA5E4CC01356AF262524F30D54BF383B64BEB099&s=21&se=1928022810&v=&f=%5Cd5419%5Cu12954197%5C79_148_s1_TF_200906_o7.jpg"/>
+            <desc>Image from VMFA Website</desc>
         </surface>
     </facsimile>
     <text>
@@ -136,8 +142,8 @@ URL will actually only have the file name, which is the machine readable USEP nu
         <body>
         <div type="edition">
                 <ab>
-                    <lb n="1"/><persName>ΦΙΛΩΝΕΙΩΣ</persName>
-                    <lb n="2"/>ΓΡΟΣΠΑΛΤΙΟΣ
+                    <lb n="1"/><persName><name key="Φιλωνείως">Φιλωνείως</name>
+                        <lb n="2"/><name type="ethnic" key="Προσπάλτιος">Προσπάλτιος</name></persName>.
                 </ab>
                 <!--
 The marked up transcription goes here, surrounded by <ab> </ab> elements
@@ -146,7 +152,7 @@ The marked up transcription goes here, surrounded by <ab> </ab> elements
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Philoneios of Prospalta.</p>
                 </div>
             
         

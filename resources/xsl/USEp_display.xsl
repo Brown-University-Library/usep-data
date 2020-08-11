@@ -38,6 +38,7 @@
         2020-01-30 SJD reordered major metadata categories, display orders of transcription per JB's design requests; commented out editor display privileging authorial creation
         2020-03-11 SJD temporarily disabled authorship display, pending reconsideration of how to handle
         2020-05-19 SJD disabled Acquisition info, relabeled the provenance into new category as previously discussed
+        2020-06-24 SJD added display for dating criteria
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -261,6 +262,12 @@
                                     <td class="label">Date</td>
                                     <td class="value">
                                         <xsl:value-of select="$dateOfOrigin"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Dating Criteria</td>
+                                     <td class="value">
+                                            <xsl:value-of select="id(substring-after($dateOfOrigin/@evidence, '#'))/t:catDesc"/>
                                     </td>
                                 </tr>
                                 
