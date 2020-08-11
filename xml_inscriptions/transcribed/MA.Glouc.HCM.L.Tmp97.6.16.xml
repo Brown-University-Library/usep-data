@@ -39,7 +39,7 @@
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
                         <objectDesc ana="#slab">
-                            <supportDesc ana="#stone">
+                            <supportDesc ana="#stone.marble">
                                 <support>
                                     <p>Fragmentary marble slab</p>
                                     <dimensions type="surface" unit="cm">
@@ -74,12 +74,30 @@
                         </decoDesc>
                     </physDesc>
 
-                    <!--  *************************************  <history>  *********************************  -->
-
-                 
+                    <history>
+                        <summary>
+                            <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
+                            <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
+                            <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
+                            <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
+                            
+                            <rs/>
+                        </summary>
+                        <origin>
+                            <date evidence="#nomenclature #formulae" notBefore="0050"
+                                notAfter="0200">second half of the first-second century CE ?</date>
+                            <placeName ref="unknown">unknown</placeName>
+                        </origin>
+                        <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
                 </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-    
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#unpub"/>
+                        <biblScope unit="item"/>
+                    </bibl>
+                    <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+                    
+                </listBibl>
             </sourceDesc>
         </fileDesc>
 
@@ -123,11 +141,16 @@
         <body>
         <div type="edition">
             <ab>
-            <lb n="1"/><supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-             <lb n="2"/><persName><name type="gentilicium" key="Claudia"><supplied reason="lost">Cla</supplied>udiae</name></persName> <expan><abbr>con</abbr><ex>uigi</ex></expan>
-             <lb n="3"/>fecit <persName><name type="cognomen" key="Stator">Stator</name></persName>
-              <lb n="4"/><supplied reason="lost">be</supplied>ne mere<supplied reason="lost">nti</supplied>.
-            </ab></div>
+                    <lb n="1"/><supplied reason="lost"
+                        ><expan><abbr>D</abbr><ex>is</ex></expan></supplied>
+                    <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                    <lb n="2"/><persName><name type="gentilicium" key="Claudia"><supplied
+                                reason="lost">Cla</supplied>udiae</name></persName>
+                    <expan><abbr>con</abbr><ex>iugi</ex></expan>
+                    <lb n="3"/>fecit <persName><name type="cognomen" key="Stator"
+                        >Stator</name></persName>
+                    <lb n="4"/><supplied reason="lost">be</supplied>ne mere<supplied reason="lost"
+                        >nti</supplied>. </ab></div>
         
         
                 <div type="translation">
@@ -137,7 +160,7 @@
         
         
                 <div type="commentary">
-            <p>Notes here, </p></div>
+            <p/></div>
             
         
         

@@ -3,7 +3,7 @@
       <fileDesc>
          <titleStmt>
                 <!-- printable version of USEpi inscription ID: -->
-                <title>MA.Glouc.HCM.L.#97.6.44-mdn</title>
+                <title>MA.Glouc.HCM.L.#97.6.39</title>
             </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,7 +11,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.44-mdn">MA.Glouc.HCM.L.#97.6.44-mdn</idno>
+            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.39">MA.Glouc.HCM.L.#97.6.39</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -26,72 +26,74 @@
                         <repository>HCM</repository>
                         <!--required.-->
                         <!--  accession number, last part of USEP number -->
-                        <idno>#97.6.44-mdn</idno>
+                        <idno>#97.6.39</idno>
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>Epitaph of Peducaea Graptusa (copy of original in Rome)</p>
+                     <p>Epitaph of Pontia Procilla</p>
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#stele">
-                     <supportDesc ana="#material_other">
+                  <objectDesc ana="#altar">
+                     <supportDesc ana="#stone.marble">
                         <support>
-
-
-                           <p>Regular cement stele</p>
+                           <p>Marble altar</p>
                            <dimensions type="surface" unit="cm">
-                                        <height>71</height>
-                                        <width>38</width>
-                                        <depth/>
-                                    </dimensions>
+                              <height>32</height>
+                              <width>38</width>
+                              <depth>27</depth>
+                           </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>23</height>
+                              <width>29</width>
+                           </dimensions>
+                           <dimensions type="letter" unit="cm">
+                              <height min="1.0" max="2.0">1.0-2.0</height>
+                           </dimensions>
                         </support>
-                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p>Stele is intact</p>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>Only the front of the altar, which bears the inscription, and the lid
+                              remain intact</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="6">
-                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
+                        <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="8">
+                           <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-                     <handNote ana="#impressed.inscribed"/>
+                     <handNote ana="#impressed.inscribed.carved"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
-                        <p>Rosettes; leaf border</p>
+                        <p>Figured pediment with molded cornice, acroteria; simple molding border around campus</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history>
                   <summary>
-                     <rs>modern</rs>
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
+                            <rs/>
                         </summary>
                   <origin>
-                     <date evidence="unspecified">modern</date>
-                     <date evidence="unspecified" notBefore="0075" notAfter="0200">late first-second century CE (original)</date>
-                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                     <date evidence="unspecified" notBefore="0050" notAfter="0150">Late first - early second century CE</date>
+                     <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Van_Buren_1931"/>
-                        <biblScope unit="pp">317</biblScope>
+                        <ptr type="rest-of-bibl" target="#unpub"/>
+                        <biblScope unit="item"/>
                     </bibl>
-               <bibl>
-                  <ptr type="rest-of-bibl" target="#Solin_1982"/>
-                  <biblScope unit="pp">1172</biblScope>
-               </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
 
                 </listBibl>
@@ -107,10 +109,9 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
-         <change when="2011-11-27" who="Colleen Donahoe">Replaced @fake type=object with @rs fake</change>
-         <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl entry</change>
-         <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
-         <change when="2020-06-30" who="SPapandonatou">minor metadata revisions, added mdn</change>
+         <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
+         <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, added name markup to transcription, rewrote transcription</change>
+         <change when="2020-06-29" who="SPapandonatou">minor metadata revisions</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -118,22 +119,24 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-            <graphic url="MA.Glouc.HCM.L.Tmp97.6.44.jpg"/>
+            <graphic url="MA.Glouc.HCM.L.Tmp97.6.39.jpg"/>
+           <graphic url="MA.Glouc.HCM.L.Tmp97.6.39.det.jpg"/>
       </surface>
    </facsimile>
    <text>
 
         <body>
         <div type="edition">
-               <ab>
-                  <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-                  <lb n="2"/><persName><name type="gentilicium" key="Peducaea">Peducaeae</name>
-                  <lb n="3"/><name type="cognomen" key="Graptusa">Graptusae</name></persName>
-                  <lb n="4"/>filiae <expan><abbr>dulciss</abbr><ex>imae</ex></expan>.
-                  <lb n="5"/><expan><abbr>Vix</abbr><ex>it</ex></expan> annis <num value="2">II</num>,
-                  <lb n="6"/><expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="8">VIII</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="15">XV</num>.
-               </ab>
-
+            <ab>
+               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/><persName><name type="gentilicium" key="Pontia">Pontia</name> <name type="cognomen" key="Procilla">Procilla</name></persName>
+               <lb n="3"/><expan><abbr>fec</abbr><ex>it</ex></expan> sibi et suis <expan><abbr>pos
+               <lb break="no" n="4"/>terisq</abbr><ex>ue</ex></expan> eius et <persName><name type="gentilicium" key="Pontia">Pon
+               <lb n="5" break="no"/>tiae</name> <name type="cognomen" key="Zosime">Zosime</name></persName> et
+               <lb n="6"/>coniugi eius <persName><name type="gentilicium" key="Pompeius">Pom
+               <lb n="7" break="no"/>peio</name> <name type="cognomen" key="Felix">Felici</name></persName> <expan><abbr>poste
+               <lb break="no" n="8"/>risq</abbr><ex>ue</ex></expan> eorum.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
 
             </div>

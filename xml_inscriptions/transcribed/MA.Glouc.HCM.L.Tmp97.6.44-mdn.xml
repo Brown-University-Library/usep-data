@@ -3,7 +3,7 @@
       <fileDesc>
          <titleStmt>
                 <!-- printable version of USEpi inscription ID: -->
-                <title>MA.Glouc.HCM.L.#97.6.5-mdn</title>
+                <title>MA.Glouc.HCM.L.#97.6.44-mdn</title>
             </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,8 +11,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.5-mdn"
-               >MA.Glouc.HCM.L.#97.6.5-mdn</idno>
+            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.44-mdn">MA.Glouc.HCM.L.#97.6.44-mdn</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -27,78 +26,79 @@
                         <repository>HCM</repository>
                         <!--required.-->
                         <!--  accession number, last part of USEP number -->
-                        <idno>97.6.5-mdn</idno>
+                        <idno>#97.6.44-mdn</idno>
                         <!-- optionally some <altIdentifier>s or <msName>s here -->
                     </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                     <p>Modern: Epitaph of Victor</p>
+                     <p>Modern: Epitaph of Peducaea Graptusa (copy of Rolfe p 317)</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#stele">
-                     <supportDesc ana="#stone.marble">
+                     <supportDesc ana="#material_other">
                         <support>
 
-                           <p>Marble stele</p>
-                           <dimensions type="surface" unit="m">
-                                        <height>0.68.5</height>
-                                        <width>0.39.3</width>
+
+                           <p>Cement stele</p>
+                           <dimensions type="surface" unit="cm">
+                                        <height>71</height>
+                                        <width>38</width>
                                         <depth/>
                                     </dimensions>
-                           <dimensions type="letter" unit="cm">
-                              <height min="2.5" max="3.0">2.5-3.0</height>
-                           </dimensions>
                         </support>
-                        <condition ana="#complete">
-                           <!--Add ana attribute with controlled value for condition-->
-                           <p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p>stele is intact</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="5">
+                                <layout columns="1" writtenLines="6">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
                                     <p/>
                                 </layout>
                             </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#impressed.inscribed"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="figured_scene">
-                        <p>gabled pediment with wreath and trailing vines</p>
+                     <decoNote ana="Dec_other">
+                        <p>rosettes; leaf border</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history>
-
                   <summary>
+                     <rs>modern</rs>
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                     <rs>modern</rs>
-                     <note/>
+                            
                         </summary>
                   <origin>
-                     <date evidence="#unspecified">modern</date>
+                     <date evidence="#archaeology" notBefore="1910" notAfter="1930">early twentieth
+                        century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome (?)</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">28921</biblScope>
+                        <ptr type="rest-of-bibl" target="#Van_Buren_1931"/>
+                        <biblScope unit="pp">317</biblScope>
                     </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Solin_1982"/>
+                  <biblScope unit="pp">1172</biblScope>
+               </bibl>
                         <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102050"
+                     >EDR102050</ref>
+               </bibl>
 
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143430">EDR143430</ref>
-</bibl>
                 </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -112,9 +112,10 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
-         <change when="2015-08-04" who="Scott J. DiGiulio">Updated transcription, whcih was for the original inscription rather than this forgery; updated the authenticity tag</change>
-         <change when="2020-03-24" who="Gaia Gianni">Deleted image filename</change>
-         <change when="2020-06-24" who="SPapandonatou">added -mdn and name tags</change>
+         <change when="2011-11-27" who="Colleen Donahoe">Replaced @fake type=object with @rs fake</change>
+         <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl entry</change>
+         <change when="2015-08-12" who="Scott J. DiGiulio">Small metadata updates, added name markup to transcription, corrected transcription errors</change>
+         <change when="2020-06-30" who="SPapandonatou">minor metadata revisions, added mdn</change>
          <change when="2020-07-31" who="SPapandonatou">added commentary</change>
       </revisionDesc>
    </teiHeader>
@@ -123,20 +124,22 @@
             <!-- Caption in desc element -->
         <desc/>
             <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-            <graphic url="MA.Glouc.HCM.L.Temp97.6.5.jpg"/>
+            <graphic url="MA.Glouc.HCM.L.Tmp97.6.44.jpg"/>
       </surface>
    </facsimile>
    <text>
 
         <body>
         <div type="edition">
-            <ab>
-               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-               <lb n="2"/><expan><abbr>Fil</abbr><ex>io</ex></expan> <persName><name type="cognomen" key="Victor">Victori</name></persName>.
-               <lb n="3"/><persName><name type="gentilicium" key="Attia">Attia</name></persName> ITCINIA CO
-               <lb break="no" n="4"/>IUEL bene merenti
-               <lb n="5"/>et <expan><abbr>fil</abbr><ex>ii</ex></expan> fecerunt.
-            </ab>
+               <ab>
+                  <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                  <lb n="2"/><persName><name type="gentilicium" key="Peducaea">Peducaeae</name>
+                  <lb n="3"/><name type="cognomen" key="Graptusa">Graptusae</name></persName>
+                  <lb n="4"/>filiae <expan><abbr>dulciss</abbr><ex>imae</ex></expan>.
+                  <lb n="5"/><expan><abbr>Vix</abbr><ex>it</ex></expan> annis <num value="2">II</num>,
+                  <lb n="6"/><expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="8">VIII</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="15">XV</num>.
+               </ab>
+
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
 
             </div>
@@ -149,13 +152,12 @@
 
 
                 <div type="commentary">
-              <p>The inscription appears to be a modern forgery based on CIL 6.28921. Note the
-               letters running together without distinction between individual words in line 2, the
-               upper case “U” in “fecerunt” in line 5, and the perfectly rounded interpuncts between
-               words in line 2, before “bene merenti” in line 4, and after “et” in line 5. (Peter
-               Lech) Note also the fixed-width font. Since CIL 6.28921 is from Rome, this
-               inscription was probably also manufactured there.</p>
-           </div>
+                   <p>This inscription is a copy of a stone published by A. W. van Buren, <hi
+                  rend="italic">Classical Studies in honor of John C. Rolfe</hi> (Philadelphia 1931)
+               317. The excavation of the original is the basis of my dating for this copy. The
+               original was found in Rome, so this inscription was probably also manufactured there.
+               The stamp in the lower left corner was probably added during the copying process.</p>
+                </div>
 
 
 
