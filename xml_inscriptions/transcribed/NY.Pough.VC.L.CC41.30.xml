@@ -72,9 +72,7 @@
                                         <height>16</height>
                                         <width>21</width>
                                     </dimensions>
-                                    <dimensions type="letter" unit="cm">
-                                        <height min="2.2" max="4.0">2.2-4.0</height>
-                                    </dimensions>
+                                    
                                 </support>
                                 <condition ana="#fragment.single">
                                     <p>broken on all edges</p>
@@ -92,7 +90,11 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved"> </handNote>
+                            <handNote ana="#impressed.inscribed.carved">
+            <dimensions type="letter" unit="cm">
+                                        <height min="2.2" max="4.0">2.2-4.0</height>
+                                    </dimensions>
+             </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
@@ -159,7 +161,7 @@
         
         <revisionDesc>
             <change when="2015-10-21" who="Scott J. DiGiulio">Initial Encoding, based on notes provided by J. Bert Lott</change>
-        </revisionDesc>
+        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change></revisionDesc>
 
     </teiHeader>
 
