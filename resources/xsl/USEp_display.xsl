@@ -39,6 +39,7 @@
         2020-03-11 SJD temporarily disabled authorship display, pending reconsideration of how to handle
         2020-05-19 SJD disabled Acquisition info, relabeled the provenance into new category as previously discussed
         2020-06-24 SJD added display for dating criteria
+        2020-10-22 SJD commented out display of decoNote/@ana
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -227,8 +228,8 @@
                                 <tr>
                                     <td class="label">Decoration</td>
                                     <td class="value">
-                                        <xsl:value-of
-                                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote/@ana"/>
+                                        <!--<xsl:value-of
+                                            select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote/@ana"/>-->
                                         <xsl:value-of
                                             select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:decoDesc/t:decoNote"
                                         />

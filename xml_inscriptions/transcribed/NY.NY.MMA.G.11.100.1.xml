@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          ->
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+--><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+
+            <titleStmt>
+                <title>NY.NY.MMA.G.11.100.1</title>
+            </titleStmt>
+
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.11.100.1">NY.NY.MMA.G.11.100.1</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>MMA</institution>
+                        <repository></repository>
+                        <idno>11.100.1</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Grave stele for Sostrate</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p> marble stele</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>177.6</height>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>pilasters missing (reconstructed)</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="1">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>seated man with a girl standing in front of him, and another woman
+                                    behind him holding a child</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or blank -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="-0400" notAfter="-0299">4 c.
+                                BCE</date>
+                            <placeName ref="europe.greece.attica">Attica</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="acquired">
+                            <!-- subsequent locations if inscription was moved -->
+                            
+                            <p>Acquired by <orgName>MMA</orgName> using <persName>Rogers</persName> Fund in <date when="1911">1911</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#IG_II2"/>
+                        <biblScope unit="item">7287</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SEG_34"/>
+                        <biblScope unit="item">no. 239</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September
+                2009 EpiDoc</change>
+            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only
+                inscriptions</change>
+            <change when="2020-10-09" who="Itamar Levin">transcription, translation, and
+                metadata</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.G.11.100.1.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab><lb n="1"/><persName key="Σωστράτη">Σωστράτη</persName> <name type="patronymic" key="Θυμοκλέους">Θυμοκλέους</name> <name type="demotic" key="Πρασιέως">Πρασιέως</name>.</ab></div>
+            
+            <div type="translation">
+            <p>Sostrate, daugther of Thymokles of Prasiae. </p></div>
+
+            <div type="commentary">
+                <p>The stele is characteristic to fourth century Attica. Richter suggested that the artwork belongs to the beginning of the century because
+                    “the figures retaining much of the early majesty while the drapery and the
+                    developed form of the shrine point to the later date (1927, 258). The
+                    composition intimates that the standing woman is Sostrate, the dedicatee. The
+                    other represented people are, plausibly, her family members: father, mother, and
+                    sister. </p></div>
+            
+            <div type="apparatus">
+            <p></p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

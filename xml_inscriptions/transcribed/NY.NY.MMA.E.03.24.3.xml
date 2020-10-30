@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
 
             <titleStmt>
-                <title>NY.NY.CU.Butl.ETR.255</title>
+                <title>NY.NY.MMA.E.03.24.3</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.CU.Butl.ETR.255">NY.NY.CU.Butl.ETR.255</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.E.03.24.3">NY.NY.MMA.E.03.24.3</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -18,9 +18,9 @@
                     <msIdentifier>
                         <region>NY</region>
                         <settlement>NY</settlement>
-                        <institution>CU</institution>
-                        <repository>Butl</repository>
-                        <idno>255</idno>
+                        <institution>MMA</institution>
+                        <repository/>
+                        <idno>03.24.3</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -29,7 +29,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>Etruscan inscription on cantharos of bucchero nero</p>
+                            <p>Etruscan inscription with names of divinities</p>
                         </msItem>
                     </msContents>
 
@@ -38,13 +38,13 @@
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.container.other">
-                            <supportDesc ana="#clay">
+                        <objectDesc ana="#instrumentum">
+                            <supportDesc ana="#metal">
                                 <support>
-                                    <p> Undecorated bucchero nero cantharos</p>
+                                    <p> Bronze mirror with decorative handle</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
+                                        <height>27.9</height>
+                                        <width>14.5</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
@@ -69,7 +69,7 @@
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>Depiction of the Unbinding of Prometheus</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -83,8 +83,8 @@
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="-0100" notAfter="0079">before 79 CE</date>
-                            <placeName ref="europe.italy">Pompeii(?)</placeName>
+                            <date evidence="unspecified" notBefore="-0299" notAfter="-0250">early third century BC</date>
+                            <placeName ref="europe.italy">Italy, Bolsena</placeName>
                         </origin>
 
 
@@ -93,7 +93,11 @@
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                     
+                        <ptr type="rest-of-bibl" target="#"/>
+                        <biblScope unit="page">00</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/247074">NY.NY.MMA.E.03.24.3 on the MMA website</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -118,7 +122,7 @@
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2019-11-20" who="Gaia Gianni">Initial Encoding</change>
+            <change when="2019-11-22" who="Gaia Gianni">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -137,7 +141,13 @@
         
         <body>
         <div type="edition">
-                <ab>Transcription goes here</ab></div>
+            <ab>
+            <lb n="1"/> <name type="god" key="Asclepius Esplace">Esplace</name> 
+                <name type="god" key="Prometheus Prumathe">Prumathe</name>
+                <name type="goddess" key="Minerva Menrva">Menrva</name>
+                <name type="god" key="Hercules Hercle">Hercle</name>
+            
+            </ab></div>
         
         
                 <div type="translation">
@@ -147,7 +157,8 @@
         
         
                 <div type="commentary">
-                <p>Notes here, </p></div>
+                    <p/>
+                </div>
             
         
         

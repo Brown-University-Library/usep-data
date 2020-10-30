@@ -72,9 +72,7 @@
                                         <height>28.3</height>
                                         <width>21.6</width>
                                     </dimensions>
-                                    <dimensions type="letter" unit="cm">
-                                        <height min="1.3" max="3.3">1.3-3.3</height>
-                                    </dimensions>
+                                    
                                 </support>
                                 <condition ana="#fragment.single">
                                     <p>preserves right half of inscription</p>
@@ -91,7 +89,13 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed.carved"> </handNote>
+                            <handNote ana="#impressed.inscribed.carved">
+            <dimensions type="letter" unit="cm">
+                                        <height min="1.3" max="3.3">1.3-3.3</height>
+                                    </dimensions>
+            
+            
+             </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
 
@@ -161,7 +165,7 @@
             <change when="2015-08-05" who="Scott J. DiGiulio">Initial Encoding</change>
             <change when="2015-08-17" who="Scott J. DiGiulio">Added image</change>
             <change when="2020-06-26" who="SPapandonatou">minor metadata revisions</change>
-        </revisionDesc>
+        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change></revisionDesc>
 
     </teiHeader>
 
@@ -180,32 +184,19 @@
         <body>
         <div type="edition"><!-- transcription goes here -->
                 <ab>
-                    <lb n="1"/><supplied reason="lost"
-                        ><expan><abbr>D</abbr><ex>is</ex></expan></supplied>
+                    <lb n="1"/><supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied>
                     <g type="hedera"/>
-                    <expan><abbr>M</abbr>anibus</expan>. <lb n="2"/><gap reason="lost" quantity="22"
-                        precision="low" unit="character"/><supplied reason="lost">pa</supplied>ter
-                    et <persName><name type="gentilicium" key="Flavia"
-                                    ><expan><abbr>Fl</abbr><ex>avia</ex></expan></name>
-                        <name type="cognomen" key="Palatina">Palatina</name></persName> mater <lb
-                        n="3"/><gap reason="lost" quantity="4" precision="low" unit="character"
-                        /><supplied reason="lost" cert="low">filiae carissi</supplied>mae, quae
+                    <expan><abbr>M</abbr>anibus</expan>. <lb n="2"/><gap reason="lost" quantity="22" precision="low" unit="character"/><supplied reason="lost">pa</supplied>ter
+                    et <persName><name type="gentilicium" key="Flavia"><expan><abbr>Fl</abbr><ex>avia</ex></expan></name>
+                        <name type="cognomen" key="Palatina">Palatina</name></persName> mater <lb n="3"/><gap reason="lost" quantity="4" precision="low" unit="character"/><supplied reason="lost" cert="low">filiae carissi</supplied>mae, quae
                     vixit <expan><abbr>ann</abbr><ex>is</ex></expan>
-                    <lb n="4"/><gap reason="lost" quantity="7" precision="low" unit="character"
-                        /><supplied reason="lost" cert="low">mensibus <num/> die</supplied>bus <num
-                        value="6">VI</num>, fecerunt et <lb n="5"/><supplied reason="lost">sibi et
-                        suis libertis li</supplied>bertabusque poste <lb n="6"/><supplied
-                        reason="lost">risque eorum</supplied>
+                    <lb n="4"/><gap reason="lost" quantity="7" precision="low" unit="character"/><supplied reason="lost" cert="low">mensibus <num/> die</supplied>bus <num value="6">VI</num>, fecerunt et <lb n="5"/><supplied reason="lost">sibi et
+                        suis libertis li</supplied>bertabusque poste <lb n="6"/><supplied reason="lost">risque eorum</supplied>
                     <gap reason="lost" quantity="5" precision="low" unit="character"/> et
                             <persName><name type="gentilicium" key="Valerius">Valerio</name>
                         <name type="cognomen" key="Iason">Iasoni</name></persName>
-                    <lb n="7"/><gap reason="lost" quantity="21" precision="low" unit="character"
-                            /><persName><name type="cognomen" key="Theseus"><supplied reason="lost"
-                                >T</supplied>heseo</name></persName> cum <persName><name
-                            type="gentilicium" key="Claudia"
-                                ><expan><abbr>Cl</abbr><ex>audia</ex></expan></name>
-                        <name type="cognomen" key="Epigone"
-                                ><expan><abbr>Epigonen</abbr><ex>i</ex></expan></name></persName>
+                    <lb n="7"/><gap reason="lost" quantity="21" precision="low" unit="character"/><persName><name type="cognomen" key="Theseus"><supplied reason="lost">T</supplied>heseo</name></persName> cum <persName><name type="gentilicium" key="Claudia"><expan><abbr>Cl</abbr><ex>audia</ex></expan></name>
+                        <name type="cognomen" key="Epigone"><expan><abbr>Epigonen</abbr><ex>i</ex></expan></name></persName>
                     <lb n="8"/><supplied reason="lost">con</supplied>iuge. </ab></div>
 
 
