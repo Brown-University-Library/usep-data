@@ -48,9 +48,9 @@
                     <msContents>
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#altar">
+                        <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p/>  
+                            <p>Altar dedicated to Mother Earth by Aurelia Flavia Iuliana
                         </msItem>
                     </msContents>
                     
@@ -64,7 +64,7 @@
                             <supportDesc ana="#marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> base and top are unfinished</p>
+                                    <p>marble altar</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>81.5</height>
                                         <width>46.3</width>
@@ -72,7 +72,7 @@
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
-                                    <p/>
+                                    <p>base and top are unfinished</p>
                                 </condition>
                             </supportDesc>
                             
@@ -114,23 +114,19 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0100" evidence="#unspecified">1st
+                            <date notBefore="0001" notAfter="0100" evidence="#unspecified">first
                                 century CE</date>
                             <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                         </origin>
                         <provenance>
-                            <date notBefore="1850" notAfter="1902">before 1902</date>
-                            <placeName ref="europe.italy.rome">Don Marcello Massarenti Collection, Rome</placeName>
+                            <p>in the <orgName><persName<Don Marcello Massarenti</persName> Collection</orgName>, <placeName ref="europe.italy.rome">Rome</placeName><date notBefore="1850" notAfter="1902">before 1902</date>
                         </provenance>
-                        <provenance>
-                            <date when="1902">1902</date>
-                            <placeName ref="northAmerica.unitedStates.baltimore">Henry Walters, by purchase</placeName>
+                        <provenance type="transferred" subtype="purchased">                            
+                            <p>Acquired by <persName role="buye">Henry Walters</persName> in <date when="1902">1902</date>, by purchase</placeName>
                         </provenance>
-                        <provenance>
-                            <date when="1931">1931</date>
-                            <placeName ref="northAmerica.unitedStates.baltimore">Walters Art Museum, by bequest</placeName>
-                        </provenance>
-                        
+                        <provenance type="transferred" subtype="given">
+                            <p>Given to the <orgName>Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date></placeName>
+                        </provenance>                        
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
@@ -139,7 +135,7 @@
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="CIL_VI"/>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
                         <biblScope type="page">771</biblScope>
                     </bibl>
                     <bibl>
@@ -184,6 +180,7 @@
             <change when="2017-07-05" who="A. Hong">Initial Encoding</change>
             <change when="2020-10-30" who="Itamar Levin">some corrections in the transcription, and
                 adding translation</change>
+            <change when="2020-11-15" who="Scott J. DiGiulio">Rewrote much of provenance to match current system; corrections to transcription markup; added general description of inscription; corrected text genre</change>
         </revisionDesc>
         
     </teiHeader>
@@ -202,16 +199,16 @@
         <body>
             <div type="edition"><!-- transcription goes here; DONE -->
                 <ab>
-                    <lb n="1" break="no"/>deae sanctis, 
+                    <lb n="1"/>Deae sanctis 
                     <lb n="2" break="no"/>simae <persName><name key="Terra Mater" type="divine">Ter 
                         <lb n="3"/>rae Matri</name></persName>,
-                    <lb n="4" break="no"/><persName><name key="Aurelia">Aurelia</name> <name key="Flavia">Fla
-                        <lb n="5"/>via</name> <name key="Iuliana">Iuliana</name></persName>,
-                    <lb n="6"/><persName><name type="gentilicium" key="Caii"><expan><abbr>C</abbr><ex>aii</ex></expan></name></persName> <expan><abbr>f</abbr><ex>ilia</ex></expan>, votum 
+                    <lb n="4" break="no"/><persName><name key="Aurelia" type="gentilicium">Aurelia</name> <name key="Flavia" type="gentilicium">Fla
+                        <lb n="5"/>via</name> <name key="Iuliana" type="cognomen">Iuliana</name></persName>,
+                    <lb n="6"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aii</ex></expan></name></persName> <expan><abbr>f</abbr><ex>ilia</ex></expan>, votum 
                     <lb n="7"/>solvit. </ab></div>
             
             <div type="translation">
-                <p>to the holiest goddess, Mother Earth, Aurelia Flavia Iuliana, daughter of Gaius,
+                <p>To the holiest goddess, Mother Earth, Aurelia Flavia Iuliana, daughter of Gaius,
                     fulfilled (her) vow.</p></div>
             
             <div type="commentary"><!-- notes go here -->
