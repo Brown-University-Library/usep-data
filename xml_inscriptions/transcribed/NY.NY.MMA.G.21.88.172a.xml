@@ -12,12 +12,13 @@ changes: Added @evidence to date
         <fileDesc>
 
             <titleStmt>
-                <title>NY.NY.MMA.G.08.258.7</title>
+                <title>NY.NY.MMA.G.21.88.172a</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.08.258.7">NY.NY.MMA.G.08.258.7</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.21.88.172a"
+                    >NY.NY.MMA.G.21.88.172a</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -28,7 +29,7 @@ changes: Added @evidence to date
                         <settlement>NY</settlement>
                         <institution>MMA</institution>
                         <repository></repository>
-                        <idno>08.258.7</idno>
+                        <idno>21.88.172a</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -37,7 +38,7 @@ changes: Added @evidence to date
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>Bronze shepherd dedicated to Pan</p>
+                            <p>Votive tablet for Serapis</p>
                         </msItem>
                     </msContents>
 
@@ -46,13 +47,13 @@ changes: Added @evidence to date
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#sculpture">
+                        <objectDesc ana="#tablet">
                             <supportDesc ana="#metal.bronze">
                                 <support>
-                                    <p> </p>
+                                    <p> Bronze votive tablet </p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>10.1</height>
-                                        <width/>
+                                        <height>4.4</height>
+                                        <width>12.9</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
@@ -62,7 +63,7 @@ changes: Added @evidence to date
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
+                                <layout columns="1" writtenLines="3">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -77,7 +78,7 @@ changes: Added @evidence to date
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>statue of a cloaked shepherd</p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -91,14 +92,14 @@ changes: Added @evidence to date
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-0551" notAfter="-0499">550-500
-                                BCE</date>
-                            <placeName ref="europe.greece.arcadia">near Andritsena,
-                                Arcadia</placeName>
+                            <date evidence="#unspecified" notBefore="0100" notAfter="0200">2nd c.
+                                CE</date>
+                            <placeName ref="unknown">unknown</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="purchased">
-                            <!-- subsequent locations if inscription was moved -->
-                            <p>Acquired by the <orgName>MMA</orgName> in <date when="1908">1908</date> using the <persName>Rogers</persName> fund.</p>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>
+                                acquired using <persName role="funder"><name key="Rogers">Rogers</name></persName> Fund in <date when="1921">1921</date>.
+                            </p>
                         </provenance>
 
 
@@ -107,13 +108,9 @@ changes: Added @evidence to date
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#LSAG"/>
-                        <biblScope unit="item">215, no. 7</biblScope>
+                        <ptr type="rest-of-bibl" target="#MMAB_19_McLees"/>
+                        <biblScope unit="item">166</biblScope>
                     </bibl>
-                        <bibl>
-                            <ptr type="rest-of-bibl" target="#SEG_11"/>
-                            <biblScope unit="item">no. 1162</biblScope>
-                        </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -140,8 +137,10 @@ changes: Added @evidence to date
         <revisionDesc>
             <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September
                 2009 EpiDoc</change>
-            <change when="2011-05-13" who="Elli Mylonas">Converted to September 2009 EpiDoc</change>
-            <change when="2020-10-02" who="Itamar Levin">transcription and translation</change>
+            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only
+                inscriptions</change>
+            <change when="2020-10-29" who="Itamar Levin">transcription, translation, and
+                metadata</change>
         </revisionDesc>
 
     </teiHeader>
@@ -152,7 +151,7 @@ changes: Added @evidence to date
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.G.08.258.7.jpg"/>
+            <graphic url="NY.NY.MMA.G.21.88.172a.jpg"/>
         </surface>
     </facsimile>
 
@@ -160,17 +159,19 @@ changes: Added @evidence to date
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><persName><name key="Φαυλέας">Φαυλέας</name></persName> ἀνέθυσε τõι <persName type="divine"><name key="Πᾶν">Πανί</name></persName>.</ab></div>
+                <lb n="1"/><persName><name key="Ἀγαθόπους" role="dedicator">Ἀγαθό
+                    <lb n="2" break="no"/>πους</name></persName> <persName><name key="Γράπτος" type="patronymic">Γράπ
+                        <lb n="3" break="no"/>του</name></persName>
+            
+            </ab></div>
             
             <div type="translation">
-            <p>Phauleas dedicated (this) to Pan.</p></div>
+            <p>Agathopous (son of) Graptus</p></div>
 
             <div type="commentary">
-            <p>A small dedicatory statue with inscription on the base. The item is one of several
-                    bronze figurines found in Andritzena in Southern Arcadia, dated to the sixth
-                    century BCE. Pan was the patron god of shepherds, which suggests that the
-                    dedicator Phauleas was a shepherd himself. The pileus, pointed hat, was worn by
-                    travelers, and the stute could represent Phauleas. </p></div>
+            <p>Both sides of the object give: "Agathopous (son of) Graptus dedicated (this) to
+                    Serapis." The object is in the shape of  tabula ansata, and is pierced in both
+                    sides to be hung at temple. </p></div>
             
             <div type="apparatus">
             <p></p></div>
