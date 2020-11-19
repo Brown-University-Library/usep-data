@@ -12,12 +12,12 @@ changes: Added @evidence to date
         <fileDesc>
 
             <titleStmt>
-                <title>NY.NY.MMA.G.08.258.7</title>
+                <title>NY.NY.MMA.G.25.78.30</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.08.258.7">NY.NY.MMA.G.08.258.7</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.25.78.30">NY.NY.MMA.G.25.78.30</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -27,17 +27,17 @@ changes: Added @evidence to date
                         <region>NY</region>
                         <settlement>NY</settlement>
                         <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>08.258.7</idno>
+                        <repository/>
+                        <idno>25.78.30</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Bronze shepherd dedicated to Pan</p>
+                            <p>Grave stele of Callidemus</p>
                         </msItem>
                     </msContents>
 
@@ -46,23 +46,23 @@ changes: Added @evidence to date
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#sculpture">
-                            <supportDesc ana="#metal.bronze">
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> </p>
+                                    <p>marble stele</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>10.1</height>
-                                        <width/>
+                                        <height>81.2</height>
+                                        <width>47.6</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete">
-                                    <p/>
+                                <condition ana="#complete.broken">
+                                    <p>upper part</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
+                                <layout columns="2" writtenLines="2">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -77,7 +77,8 @@ changes: Added @evidence to date
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>statue of a cloaked shepherd</p>
+                                <p>acroterion decorated with a double palmette flanked by two half
+                                    palmettes</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -91,14 +92,14 @@ changes: Added @evidence to date
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-0551" notAfter="-0499">550-500
+                            <date evidence="#archaeology" notBefore="-0400" notAfter="-0300">4th c.
                                 BCE</date>
-                            <placeName ref="europe.greece.arcadia">near Andritsena,
-                                Arcadia</placeName>
+                            <placeName ref="europe.greece.attica">Attica</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="purchased">
-                            <!-- subsequent locations if inscription was moved -->
-                            <p>Acquired by the <orgName>MMA</orgName> in <date when="1908">1908</date> using the <persName>Rogers</persName> fund.</p>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>
+                                acquired with the <persName role="funder"><name key="Fletcher" >Fletcher</name></persName> Fund in <date when="1925">1925</date>.
+                            </p>
                         </provenance>
 
 
@@ -107,13 +108,9 @@ changes: Added @evidence to date
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#LSAG"/>
-                        <biblScope unit="item">215, no. 7</biblScope>
+                        <ptr type="rest-of-bibl" target="#IG_II2"/>
+                        <biblScope unit="item">11771a</biblScope>
                     </bibl>
-                        <bibl>
-                            <ptr type="rest-of-bibl" target="#SEG_11"/>
-                            <biblScope unit="item">no. 1162</biblScope>
-                        </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -138,10 +135,10 @@ changes: Added @evidence to date
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September
-                2009 EpiDoc</change>
-            <change when="2011-05-13" who="Elli Mylonas">Converted to September 2009 EpiDoc</change>
-            <change when="2020-10-02" who="Itamar Levin">transcription and translation</change>
+            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+            <change when="2020-11-03" who="Itamar Levin">Transcription, translation, and
+                metadata</change>
         </revisionDesc>
 
     </teiHeader>
@@ -152,7 +149,7 @@ changes: Added @evidence to date
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.G.08.258.7.jpg"/>
+            <graphic url="NY.NY.MMA.G.25.78.30.jpg"/>
         </surface>
     </facsimile>
 
@@ -160,17 +157,19 @@ changes: Added @evidence to date
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><persName><name key="Φαυλέας">Φαυλέας</name></persName> ἀνέθυσε τõι <persName type="divine"><name key="Πᾶν">Πανί</name></persName>.</ab></div>
+                <lb n="1"/><persName><name key="Καλλίδημος">Καλλίδημος</name></persName>
+                <lb n="2"/><persName><name key="Καλλιάδος" type="patronymic">Καλλιάδο</name></persName>.
+                
+                
+            </ab></div>
             
             <div type="translation">
-            <p>Phauleas dedicated (this) to Pan.</p></div>
+            <p>Callidemus (son) of Calliadus.</p></div>
 
             <div type="commentary">
-            <p>A small dedicatory statue with inscription on the base. The item is one of several
-                    bronze figurines found in Andritzena in Southern Arcadia, dated to the sixth
-                    century BCE. Pan was the patron god of shepherds, which suggests that the
-                    dedicator Phauleas was a shepherd himself. The pileus, pointed hat, was worn by
-                    travelers, and the stute could represent Phauleas. </p></div>
+            <p>The back of the stele was cut down in modern times. The leaves of the palmette are no
+                    longer symmetrical in shape as in the fifth century (Richter, BMMA 21.5, 129),
+                    suggesting a later date.</p></div>
             
             <div type="apparatus">
             <p></p></div>

@@ -12,12 +12,12 @@ changes: Added @evidence to date
         <fileDesc>
 
             <titleStmt>
-                <title>NY.NY.MMA.G.08.258.7</title>
+                <title>NY.NY.MMA.G.38.11.7</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.08.258.7">NY.NY.MMA.G.08.258.7</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.38.11.7">NY.NY.MMA.G.38.11.7</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -28,7 +28,7 @@ changes: Added @evidence to date
                         <settlement>NY</settlement>
                         <institution>MMA</institution>
                         <repository></repository>
-                        <idno>08.258.7</idno>
+                        <idno>38.11.7</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -37,7 +37,7 @@ changes: Added @evidence to date
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>Bronze shepherd dedicated to Pan</p>
+                            <p>Spear-butt dedicated to the Tyndaridae</p>
                         </msItem>
                     </msContents>
 
@@ -46,13 +46,13 @@ changes: Added @evidence to date
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#sculpture">
+                        <objectDesc ana="#instrumentum.other">
                             <supportDesc ana="#metal.bronze">
                                 <support>
-                                    <p> </p>
+                                    <p> bronze spear-butt</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>10.1</height>
-                                        <width/>
+                                        <height/>
+                                        <width>42.3</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
@@ -63,7 +63,7 @@ changes: Added @evidence to date
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="0" writtenLines="1">
-                                    <p/>
+                                    <p>along one of the four sides of the butt</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -71,13 +71,13 @@ changes: Added @evidence to date
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#impressed.inscribed"> </handNote>
+                            <handNote ana="#impressed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>statue of a cloaked shepherd</p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -91,14 +91,14 @@ changes: Added @evidence to date
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-0551" notAfter="-0499">550-500
+                            <date evidence="#history" notBefore="-0510" notAfter="-0490">ca. 500
                                 BCE</date>
-                            <placeName ref="europe.greece.arcadia">near Andritsena,
-                                Arcadia</placeName>
+                            <placeName ref="europe.greece.arcadia">Arcadia</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="purchased">
-                            <!-- subsequent locations if inscription was moved -->
-                            <p>Acquired by the <orgName>MMA</orgName> in <date when="1908">1908</date> using the <persName>Rogers</persName> fund.</p>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>
+                                acquired with the <persName role="funder"><name key="Fletcher">Fletcher</name></persName> Fund in <date when="1938">1938</date>.
+                            </p>
                         </provenance>
 
 
@@ -108,12 +108,12 @@ changes: Added @evidence to date
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#LSAG"/>
-                        <biblScope unit="item">215, no. 7</biblScope>
+                        <biblScope unit="item">215, no. 11</biblScope>
                     </bibl>
-                        <bibl>
-                            <ptr type="rest-of-bibl" target="#SEG_11"/>
-                            <biblScope unit="item">no. 1162</biblScope>
-                        </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SEG_11"/>
+                        <biblScope unit="item">no. 1045</biblScope>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -138,10 +138,10 @@ changes: Added @evidence to date
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September
-                2009 EpiDoc</change>
-            <change when="2011-05-13" who="Elli Mylonas">Converted to September 2009 EpiDoc</change>
-            <change when="2020-10-02" who="Itamar Levin">transcription and translation</change>
+            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+            <change when="2020-11-07" who="Itamar Levin">Transcription, translation, and
+                metadata</change>
         </revisionDesc>
 
     </teiHeader>
@@ -152,7 +152,7 @@ changes: Added @evidence to date
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.G.08.258.7.jpg"/>
+            <graphic url="NY.NY.MMA.G.38.11.7.jpg"/>
         </surface>
     </facsimile>
 
@@ -160,17 +160,18 @@ changes: Added @evidence to date
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><persName><name key="Φαυλέας">Φαυλέας</name></persName> ἀνέθυσε τõι <persName type="divine"><name key="Πᾶν">Πανί</name></persName>.</ab></div>
+                    <lb n="1"/>Ἰερὸς <name key="Τυνδαρίδαιυς" type="divine">Τυνδαρίδαιυς</name> ἀπ’ <placeName ref="europe.greece.arcadia.heraia">Ἐραέον</placeName>. </ab></div>
             
             <div type="translation">
-            <p>Phauleas dedicated (this) to Pan.</p></div>
+            <p>sacred to the Tyndaridae from (the spoils of) the Heraeans.</p></div>
 
             <div type="commentary">
-            <p>A small dedicatory statue with inscription on the base. The item is one of several
-                    bronze figurines found in Andritzena in Southern Arcadia, dated to the sixth
-                    century BCE. Pan was the patron god of shepherds, which suggests that the
-                    dedicator Phauleas was a shepherd himself. The pileus, pointed hat, was worn by
-                    travelers, and the stute could represent Phauleas. </p></div>
+            <p>Richter (1939) understood Τυνδαρίδαιυς as a dative dual form in Arcadian dialect. The
+                    Tyndarians were the Dioscuri. Heraea was a city in western Arcadia. The
+                    stylistic features and letter form suggest dating the item to around 500 BCE.
+                    Richter also suggest from a gap in coinage that Heraea was defeated by another
+                    Arcadian city, perhaps the Kleitors who are reported in Paus. 5.23.7 to have
+                    dedicated a statue of Zeus at Olympia in honor of their triumphs. </p></div>
             
             <div type="apparatus">
             <p></p></div>
