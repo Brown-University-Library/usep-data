@@ -2,7 +2,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MD.Balt.WAG.G.23.2</title>
+            <title>MD.Balt.WAG.G.23.38</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -10,7 +10,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MD.Balt.WAG.G.23.2">MD.Balt.WAG.G.23.2</idno>
+            <idno type="USEpigraphy" xml:id="MD.Balt.WAG.G.23.38">MD.Balt.WAG.G.23.38</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -19,26 +19,29 @@
                   <settlement>Balt</settlement>
                   <institution>WAG</institution>
                   <repository/>
-                  <idno>23.2</idno>
+                  <idno>23.38</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p>Funerary lekythos for Micon of Sigeion </p>
-                  </msItem>
+                  <msItem class="#funerary">
+                        <!-- short summary of the content of an inscription -->
+                            <p/>
+                        </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#instrumentum.container.vase">
+                  <objectDesc ana="#slab">
                             <supportDesc ana="#stone.marble">
                                 <support>
                         <!-- short summary of the material and support of an inscription -->
-                                    <p>marble lekythos </p>
+                                    <p>bottom of relief is broken
+                                    </p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>69.5</height>
+                                        <height>83</height>
+                                        <width>51</width>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
-                                   <p>neck and base are broken</p>
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             
@@ -60,41 +63,40 @@
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>a seated woman and a standing man.</p>
+                                <p>female figure holding bird in left hand and fan in right; girl is Sosibolis, according to inscription</p>
                             </decoNote>
                         </decoDesc></physDesc>
                <history>
-               <summary>
+                  <summary>
                             <rs/>  <!-- content can be "fake" or blank -->
                         </summary>
                         
                         <origin>
-                            <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="-0400" notAfter="-0300">4th c.
-                                BCE</date>
-                            <placeName ref="europe.greece.attica">Attica</placeName>
+                        <!-- original place and dating of inscription -->
+                            <date evidence="unspecified" notBefore="-0400" notAfter="-0300">4th c. BCE</date>
+                            <placeName ref="europe.greece">Greece, Attica</placeName>
                         </origin>
-                   
-                   <provenance type="transferred" subtype="purchased">
-                            <p>Purchased by <persName>Joseph Brummer</persName> in <date when="1924">1924</date></p>
+                        
+                        <provenance>
+                            <p>In the possession of <persName>Joseph Brummer</persName> no later than <date notAfter="1922">1922</date></p>                         
                         </provenance>
                   <provenance type="transferred" subtype="purchased">
-                         <p>Purchased in <date when="1925">1925</date> by <persName>Henry Walters</persName>
-                            </p>
+                            <p>Purchased by <persName>Henry Walters</persName> in <date when="1922">1922</date></p>
+                            
                         </provenance>
-                        <provenance type="transferred" subtype="given">
-                            <p>Acquired by the <placeName ref="northAmerica.unitedStates.baltimore">Walters Art Museum</placeName> in <date when="1931">1931</date>, by bequest</p>
-                        </provenance>
-               </history>
+                   <provenance type="transferred" subtype="given">
+                            <p>Given to the <orgName>Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date></p>
+                   </provenance>
+                  </history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#CAT_2"/>
-                  <biblScope unit="item">349</biblScope>
+                  <ptr type="rest-of-bibl" target="#CAT_0"/>
+                  <biblScope unit="item">722</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#IG_II2"/>
-                  <biblScope unit="item">10575a</biblScope>
+                  <biblScope unit="item">12721a</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -111,37 +113,26 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2017-08-11" who="A. Hong">Addition of metadata</change>
-            <change when="2020-10-22" who="Itamar Levin">Transcription, translation, and additional
-                metadata</change>
+          <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
+          
       </revisionDesc>
    </teiHeader>
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.2.jpg"/>
-        </surface>
-    </facsimile>
-    
-    
-    <text>
+   <!--facsimile element goes here--><text>
       
         <body>
         <div type="edition">
-            <ab><lb n="1"/><persName><name key="Ἄδα">Ἄδα</name></persName>. <persName><name key="Μίκων">Μίκων</name></persName> ἐξ <placeName key="Σιγείον">Σιγείου</placeName>.
-                
-            </ab></div>
-         
+         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+         </div>
         
         
                 <div type="translation">
-                    <p>Ada. Micon of Sigeion. </p>
+                    <p/>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p>Sigeion was a city in Asia Minor which maintained strong relations with
-                    Athens in the 5th and 4th c. BCE. </p>
+                    <p/>
                 </div>
             
         
