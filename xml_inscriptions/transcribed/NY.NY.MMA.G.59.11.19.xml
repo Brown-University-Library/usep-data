@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          ->
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+--><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+
+            <titleStmt>
+                <title>NY.NY.MMA.G.59.11.19</title>
+            </titleStmt>
+
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.59.11.19">NY.NY.MMA.G.59.11.19</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>MMA</institution>
+                        <repository/>
+                        <idno>59.11.19</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#honorific">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Relief fragment depicting athletic prizes</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p> Marble stele</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>32.5</height>
+                                        <width>67.7 </width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragment.single">
+                                    <p>middle part of the stele</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="2">
+                                    <p>inscriptions in three crowns an another line below</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>an amphora and three crowns</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or blank -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="-0250" notAfter="-0150">late
+                                3rd-early 2nd c. BCE</date>
+                            <placeName ref="europe.greece">Greece</placeName>
+                        </origin>
+                        <provenance type="observed">
+                            <p>First  observed in Greece by <persName role="observer"><name key="Michel Fourmont">Michel Fourmont</name></persName> in <date notBefore="1728" notAfter="1731">1729/30</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Reappeared at an auction sale in <placeName>London</placeName> as from the <orgName>collection of <persName role="owner"><name key="Lord Hatherton">Lord Hatherton</name></persName></orgName>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>
+                                Acquired by <orgName>The Metropolitan Museum of Art</orgName> with the <persName role="funder"><name key="Rogers">Rogers</name></persName> Fund in <date when="1959">1959</date>.
+                            </p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#BE_1963"/>
+                        <biblScope unit="item">no. 80</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Cook_20"/>
+                        <biblScope unit="item">no. 10</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#IG_II2"/>
+                        <biblScope unit="item">3145</biblScope>
+                    </bibl>
+                    <bibl> 
+                        <ref type="eternal" target="https://www.metmuseum.org/art/collection/search/255013">Metropolitan Museum Web Entry</ref> 
+                    </bibl>
+                    
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+            <change when="2020-11-19" who="Itamar Levin">Transcription, translation, and metadata</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.G.59.11.19"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition" subtype="Panathenaic-amphora">
+            <ab>
+                <lb n="1"/>Παναθή
+                <lb n="2" break="no"/>ναια
+            </ab></div>
+            <div type="edition" subtype="Isthmian-pine-wreath">
+                <ab><lb n="1"/>Ἴσθμια</ab></div>
+            <div type="edition" subtype="Argive-shield">
+                <ab>
+                    <lb n="1"/>ἐξ <placeName ref="europe.greece.argos">Ἄργους</placeName>
+                    <lb n="2"/>ἀσπίς </ab></div>
+            <div type="edition" subtype="Nemean-celery-wreath">
+                <ab>Νέμ<supplied reason="lost" cert="high">εα</supplied></ab></div>
+            <div type="edition" subtype="dedication">
+                <ab><persName><name key="Αλέξανδρος Ῥαμνούσιος"></name></persName><gap reason="lost" extent="unknown" unit="character"></gap><supplied reason="lost" cert="high">Ἀλε</supplied>ξάνδρου <name type="demotic">Ῥαμνούσιος</name> ἀνέ<supplied reason="lost">θηκε</supplied>.</ab></div>
+            
+            <div type="translation" subtype="Panathenaic-amphora">
+                <p>Panathenaic Games</p></div>
+            <div type="translation" subtype="Isthmian-pine-wreath">
+                <p>Isthmian Games</p></div>
+            <div type="translation"  subtype="Argive-shield">
+                <p>a shield from Argos</p></div>
+            <div type="translation" subtype="Nemean-celery-wreath">
+                <p>Nemean Games</p></div>
+            <div type="translation" subtype="dedication">
+                <p>Alexandrus of (the deme) Rhamnous dadicated (this)</p></div>
+            <div type="commentary">
+                <p>A dedication from Alexandrus from the Attic deme Rhamnous who had won in four
+                    major Greek games. Plausibly, there was another depiction for the Olympean games
+                    in the form of an olive branch (von Bothmer, MMAB 19.6, 183). The forms of the
+                    amphora and letters suggest to date this item to the Hellenisitic period, late
+                    3rd or early 2nd century BCE. If the datings are correct, this is our earliest
+                    representation of a pine crown (Broneee, AJA 66.3, 261).</p></div>
+            
+            <div type="apparatus">
+            <p></p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
