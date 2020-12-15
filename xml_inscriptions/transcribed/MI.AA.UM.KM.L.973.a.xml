@@ -2,7 +2,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.973.r</title>
+            <title>MI.AA.UM.KM.L.973.a</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -10,7 +10,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.973.r">MI.AA.UM.KM.L.973.r</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.973.a">MI.AA.UM.KM.L.973.a</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -19,12 +19,12 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>973.r</idno>
+                  <idno>973.a</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Mamidia</p>
+                  <msItem class="#text_unknown">
+                     <p>Fragment of two monumental letters</p>
                   </msItem>
                </msContents>
                            
@@ -32,21 +32,25 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Opisthographic broken marble slab</p>
+                           <p>Fragmentary marble slab</p>
+                           
                            <seg type="material">Gray marble</seg>
-                           <dimensions type="surface" unit="cm">
+                           
+                           
+                                                
+                                            <dimensions type="surface" unit="cm">
                               <height>25.7</height>
                               <width>22.0</width>
                               <depth>5.4</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#broken">
+                        <condition ana="#fragment.single">
                            <!--Add ana attribute with controlled value for condition-->
-                           <p>right third of slab missing</p>
+                           <p>small fragment of marble slab</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="6">
+                        <layout columns="1" writtenLines="1">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -65,19 +69,15 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#formulae" notBefore="0001" notAfter="0200">first - second century CE</date>
+                     <date evidence="#unspecified" notBefore="0001" notAfter="0050">early first century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#CIL_X"/>
-                  <biblScope unit="item">8196</biblScope>
-               </bibl>
-               <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
-                  <biblScope unit="item">112, no. 167</biblScope>
+                  <biblScope unit="item">163-164, no. 266</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -93,43 +93,23 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2012-07-02" who="Scott J. DiGiulio">Updated msItem class and bibliography number, and image link</change>
+         <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.973.r.jpg"/>
+         <graphic url="MI.AA.UM.KM.L.973.v.jpg"/>
       </surface>
    </facsimile>
    <text>
       
         <body>
         <div type="edition">
+            <gap reason="illegible" extent="2" unit="chars"/>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>Dis M<supplied reason="lost">anibus</supplied>.
-                    <lb n="2"/> 
-               <persName>
-                  <name type="gentilicium" key="Mamidia">Mamidia<supplied reason="lost">e</supplied>
-                  </name>
-               </persName>
-               <gap reason="lost" quantity="5" unit="character"/>
-                    <lb n="3"/> bene meren<supplied reason="lost">ti</supplied>,
-                    <lb n="4"/> 
-               <persName>
-                  <name type="cognomen" key="Eutyces">Eut<hi rend="tall">y</hi>ces</name>
-               </persName> <expan><abbr>co</abbr><ex>n</ex><abbr>iunx</abbr></expan> <supplied reason="lost">et</supplied>
-                    <lb n="5"/> 
-               <persName>
-                  <name type="cognomen" key="Vitalius">Vitalio</name>
-               </persName> filius fec<supplied reason="lost">erunt, et</supplied>
-                    <lb n="6"/> 
-               <persName>
-                  <name type="gentilicium" key="Amulia">Amuliae</name> 
-                  <name type="cognomen" key="Olympias">Oly<supplied reason="lost">mpiadi.</supplied>
-                  </name>
-               </persName>
-            </ab>
+                
             </div>
         
         
@@ -145,12 +125,7 @@
             
         
         
-                <div type="apparatus">
-            <p>4) CONIUN[X]: CIL</p>
-         </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
         
     

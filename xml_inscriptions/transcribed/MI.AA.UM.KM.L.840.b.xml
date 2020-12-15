@@ -2,7 +2,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.875.v</title>
+            <title>MI.AA.UM.KM.L.840.b</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -10,7 +10,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.875.v">MI.AA.UM.KM.L.875.v</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.840.b">MI.AA.UM.KM.L.840.b</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -19,12 +19,12 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>875</idno>
+                  <idno>840.b</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Modia Ma&lt;r&gt;cellina</p>
+                     <p>Epitaph (?) of Augen(dus)?</p>
                   </msItem>
                </msContents>
                            
@@ -32,25 +32,23 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           
-                           <p>Marble slab</p>
-                           <seg type="material">Luna marble</seg>
-                           
-                           
+                           <p>Broken opisthographic marble slab</p>
+                           <seg type="material">White marble</seg>
                                                 
-                                            <dimensions type="surface" unit="cm">
-                              <height>34.5</height>
-                              <width>24.5</width>
-                              <depth>3.5</depth>
+                          <dimensions type="surface" unit="cm">
+                              <height>23.2</height>
+                              <width>29.6</width>
+                              <depth>5</depth>
+
                            </dimensions>
                         </support>
-                        <condition ana="#complete.intact">
+                        <condition ana="#fragment.single">
                            <!--Add ana attribute with controlled value for condition-->
-                           <p>rough lettering, chipping on bottom, right, and left edges</p>
+                           <p>its inscription was never completed</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="6">
+                        <layout columns="0" writtenLines="1">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -69,7 +67,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#formulae #nomenclature" notBefore="0175" notAfter="0200">late second century CE</date>
+                     <date evidence="#palaeography" notBefore="0100" notAfter="0200">second century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -77,11 +75,29 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CIL_X"/>
-                  <biblScope unit="item">2748</biblScope>
+                  <biblScope unit="item">2133</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Puteoli_9-10"/>
+                  <biblScope unit="item">41-78</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1988"/>
+                  <biblScope unit="item">301</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
-                  <biblScope unit="item">117, no. 177</biblScope>
+                  <biblScope unit="item">163 no. 265</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_2005"/>
+                  <biblScope unit="item">365</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD007976?">EDH nr. HD007976</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR080836">EDR080836</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -97,38 +113,27 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2014-05-27" who="Scott J. DiGiulio">Changed filename and ID for consistency (mark verso as .v), corrected image file path; corrected transcription xml</change>
+         <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
+         <change when="2015-05-31" who="Scott J. DiGiulio">Fixed image url error.</change>
+         <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.875.v.jpg"/>
+         <graphic/>
       </surface>
    </facsimile>
    <text>
       
         <body>
         <div type="edition">
+            <ab>
+                <lb n="1"/>
+               <expan><abbr>Augen</abbr><ex cert="low">dus</ex></expan></ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
-                    <lb n="2"/> 
-               <persName>
-                  <name type="gentilicium" key="Modia">Modia</name>
-                    <lb n="3"/> 
-                  <name type="cognomen" key="Marcellina">Ma<supplied reason="omitted">r</supplied>cell<choice><sic>e</sic><corr>i</corr></choice>na</name></persName>.
-                    <lb n="4"/> 
-               <persName>
-                  <name type="gentilicium" key="Modia">Modia</name>
-               </persName>
-                    <lb n="5"/> sorori. <sic>be</sic>
-                    <lb n="6"/> Bix<unclear>i</unclear><supplied reason="omitted">t</supplied>
-               <num xml:lang="lat" value="54">LIIII</num>.</ab>
+                
             </div>
         
         
@@ -144,12 +149,7 @@
             
         
         
-                <div type="apparatus">
-            <p>6)BIX LIIII: CIL</p>
-         </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
         
     
