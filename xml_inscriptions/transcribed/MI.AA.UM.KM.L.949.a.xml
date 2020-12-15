@@ -2,7 +2,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.949.r</title>
+            <title>MI.AA.UM.KM.L.949.a</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -10,7 +10,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.949.r">MI.AA.UM.KM.L.949.r</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.949.a">MI.AA.UM.KM.L.949.a</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -19,12 +19,12 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>949.r</idno>
+                  <idno>949.a</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Marius Priscus</p>
+                     <p>Epitaph of a sailor</p>
                   </msItem>
                </msContents>
                            
@@ -32,15 +32,16 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Partially reconstituted opisthographic marble slab</p>
+                           <p>Opisthographic fragmentary marble slab</p>
+                           <seg type="form">Opisthographic slab</seg>
                            <seg type="material">White marble</seg>
                            <dimensions type="surface" unit="m">
-                              <height>0.228</height>
-                              <width>0.277</width>
+                              <height>0.277</height>
+                              <width>0.228</width>
                               <depth>0.02</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.broken">
+                        <condition ana="#fragments">
                            <!--Add ana attribute with controlled value for condition-->
                            <p>broken, mended, and now preserved in two joined fragments</p>
                         </condition>
@@ -55,8 +56,8 @@
                      <handNote ana="#incribed"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p/>
+                     <decoNote ana="hedera">
+                        <p>hedera</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -65,7 +66,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#nomenclature" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#formulae" notBefore="0075" notAfter="0200">late first-second century CE</date>
                      <placeName ref="europe.italy">Italy, Baiae</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -77,11 +78,7 @@
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
-                  <biblScope unit="item">115, no. 173</biblScope>
-               </bibl>
-               <bibl>
-                  <ptr type="rest-of-bibl" target="#AE_2005"/>
-                  <biblScope unit="item">367</biblScope>
+                  <biblScope unit="item">54, no. 63</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -97,12 +94,14 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions</change>
+         <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.949.r.jpg"/>
+         <graphic url=""/>
       </surface>
    </facsimile>
    <text>
@@ -111,23 +110,20 @@
         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <persName>
-                  <name type="gentilicium" key="Marius">Mario</name> 
-                  <name type="cognomen" key="Priscus">Pri
-                    <lb n="2" break="no"/>sco</name></persName>, <persName>
-                  <name type="gentilicium" key="Marius">Marius</name>
-                    <lb n="3"/> 
-                  <name type="cognomen" key="Xenofon">Xenofon</name>
-               </persName>
-                    <lb n="4"/> patronus
-                    <lb n="5"/> 
-               <expan>
-                  <abbr>ben</abbr><ex>e</ex>
-               </expan> 
-               <expan>
-                  <abbr>mer</abbr><ex>enti</ex>
-               </expan> fecit.</ab>
+               <lb n="1"/>
+               <gap reason="lost" quantity="1" unit="lines"/>
+               <lb n="2"/>
+               <supplied reason="lost"><expan><abbr>Cl</abbr><ex>assis</ex></expan>
+                  <expan><abbr>Pr</abbr><ex>aetoriae</ex></expan></supplied>
+               <expan><abbr>Misenat</abbr><ex>ium</ex></expan>
+               <lb n="3"/>
+               <gap reason="lost" extent="unknown" unit="character"/> qui <lb n="4"/>
+               <supplied reason="lost">vixit annis <num/> mensi</supplied>bus <num xml:lang="lat" value="10">X</num> <g type="hedera"/>
+               <lb n="5"/>
+               <gap reason="lost" extent="unknown" unit="character"/>o 
+               <lb n="6"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">fe</supplied>cit.</ab>
             </div>
         
         
