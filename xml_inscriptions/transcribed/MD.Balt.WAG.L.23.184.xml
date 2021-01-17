@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://cds.library.brown.edu/projects/usepigraphy/schema/exp-epidoc.rng" type="xml"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
         
@@ -114,7 +114,7 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0001" notAfter="0100" evidence="#unspecified">first
+                            <date evidence="#unspecified" notBefore="0001" notAfter="0100" >first
                                 century CE</date>
                             <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                         </origin>
@@ -136,21 +136,21 @@
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope type="page">771</biblScope>
+                        <biblScope unit="page">771</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#vanEsbroeck"/>
-                        <biblScope type="vol">2</biblScope>
-                        <biblScope type="page">150</biblScope>
+                        <biblScope unit="vol">2</biblScope>
+                        <biblScope unit="page">150</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#BaltM_1972"/>
-                        <biblScope type="issue">2</biblScope>
-                        <biblScope type="page">16</biblScope>
+                        <biblScope unit="issue">2</biblScope>
+                        <biblScope unit="page">16</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#WAG1971"/>
-                        <biblScope type="issue">320</biblScope>
+                        <biblScope unit="issue">320</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -181,6 +181,7 @@
             <change when="2020-10-30" who="Itamar Levin">some corrections in the transcription, and
                 adding translation</change>
             <change when="2020-11-15" who="Scott J. DiGiulio">Rewrote much of provenance to match current system; corrections to transcription markup; added general description of inscription; corrected text genre</change>
+            <change when="2021-01-16" who="Scott J. DiGiulio">Fixed validation errors</change>
         </revisionDesc>
         
     </teiHeader>
