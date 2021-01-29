@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+        
+        <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+            <titleStmt>
+                <title>MD.Balt.WAG.L.23.184</title>
+            </titleStmt>
+            <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+            <publicationStmt>
+                
+                <authority>Brown University</authority> 
+                <idno type="USEpigraphy" xml:id="MD.Balt.WAG.L.23.184">MD.Balt.WAG.L.23.184</idno>
+            </publicationStmt>
+            <!--  *************************************  <sourceDesc>  ********************************* -->
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MD</region>
+                        <settlement>Balt</settlement>
+                        <institution>WAG</institution>
+                        <repository/>
+                        <idno>23.184</idno>
+                    </msIdentifier>
+                    
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#dedicatory">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Altar dedicated to Mother Earth by Aurelia Flavia Iuliana</p>
+                        </msItem>
+                    </msContents>
+                    
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                        
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                        
+                        <objectDesc ana="#altar">
+                            <supportDesc ana="#marble">
+                                <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p>marble altar</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>81.5</height>
+                                        <width>46.3</width>
+                                        <depth>40</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p>base and top are unfinished</p>
+                                </condition>
+                            </supportDesc>
+                            
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout writtenLines="7" columns="1">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                        <!--     Contains information about types of writing and means of inscription.  -->
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed.carved"> </handNote>
+                            <!-- <handNote> is a repeatable element -->
+                        </handDesc>
+                        
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Right side contains a relief of a patera, an offering dish; left
+                                    side has relief of vase</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <!--  *************************************  <history>  *********************************  -->
+                    
+                    <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+                    <history>
+                        
+                        <summary>
+                            <rs/>  <!-- content can be "fake" or blank -->
+                        </summary>
+                        
+                        <origin>
+                            <!-- original place and dating of inscription -->
+                            <date evidence="#unspecified" notBefore="0001" notAfter="0100" >first
+                                century CE</date>
+                            <placeName ref="europe.italy.rome">Rome, Italy</placeName>
+                        </origin>
+                        <provenance>
+                            <p>in the <orgName><persName>Don Marcello Massarenti</persName> Collection</orgName>, <placeName ref="europe.italy.rome">Rome</placeName><date notBefore="1850" notAfter="1902">before 1902</date></p>
+                        </provenance>
+                        <provenance type="transferred" subtype="purchased">                            
+                            <p>Acquired by <persName role="buyer">Henry Walters</persName> in <date when="1902">1902</date>, by purchase</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="given">
+                            <p>Given to the <orgName>Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date></p>
+                        </provenance>                        
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="page">771</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#vanEsbroeck"/>
+                        <biblScope unit="vol">2</biblScope>
+                        <biblScope unit="page">150</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#BaltM_1972"/>
+                        <biblScope unit="issue">2</biblScope>
+                        <biblScope unit="page">16</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#WAG1971"/>
+                        <biblScope unit="issue">320</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+        
+        <encodingDesc>
+            
+            <xi:include
+                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
+            
+        </encodingDesc>
+        
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+        <!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2017-07-05" who="A. Hong">Initial Encoding</change>
+            <change when="2020-10-30" who="Itamar Levin">some corrections in the transcription, and
+                adding translation</change>
+            <change when="2020-11-15" who="Scott J. DiGiulio">Rewrote much of provenance to match current system; corrections to transcription markup; added general description of inscription; corrected text genre</change>
+            <change when="2021-01-16" who="Scott J. DiGiulio">Fixed validation errors</change>
+        </revisionDesc>
+        
+    </teiHeader>
+    
+    <!--  *************************************  <facsimile>  *********************************  -->
+    <!-- Used to record images of an inscription.   -->
+    
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MD.Balt.WAG.L.23.184.jpg"/>
+        </surface>
+    </facsimile>
+    
+    <text>
+        <body>
+            <div type="edition"><!-- transcription goes here; DONE -->
+                <ab>
+                    <lb n="1"/>Deae sanctis 
+                    <lb n="2" break="no"/>simae <persName><name key="Terra Mater" type="divine">Ter 
+                        <lb n="3"/>rae Matri</name></persName>,
+                    <lb n="4" break="no"/><persName><name key="Aurelia" type="gentilicium">Aurelia</name> <name key="Flavia" type="gentilicium">Fla
+                        <lb n="5"/>via</name> <name key="Iuliana" type="cognomen">Iuliana</name></persName>,
+                    <lb n="6"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aii</ex></expan></name></persName> <expan><abbr>f</abbr><ex>ilia</ex></expan>, votum 
+                    <lb n="7"/>solvit. </ab></div>
+            
+            <div type="translation">
+                <p>To the holiest goddess, Mother Earth, Aurelia Flavia Iuliana, daughter of Gaius,
+                    fulfilled (her) vow.</p></div>
+            
+            <div type="commentary"><!-- notes go here -->
+                <p>Notes here, </p></div>
+            
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            
+        </body>
+    </text>
+</TEI>
