@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          ->
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+--><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+
+            <titleStmt>
+                <title>NY.NY.MMA.G.26.50</title>
+            </titleStmt>
+
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.26.50">NY.NY.MMA.G.26.50</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>MMA</institution>
+                        <repository></repository>
+                        <idno>26.50</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#honorific">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Prize hydria at the games of Argive Hera</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#instrumentum.container.other">
+                            <supportDesc ana="#metal.bronze">
+                                <support>
+                                    <p>bronze hydria</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>51.41</height>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete">
+                                    <p>blue-green patina</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="1">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed"> inscription on the rim</handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>a woman's bust emerging from the mouth</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or blank -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="-0475" notAfter="-0450">mid-5th
+                                c. BCE</date>
+                            <placeName ref="europe.greece.Peloponnese">Peloponnese (?)</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>
+                                Purchased, <persName  role="owner"><name key="Joseph Pulitzer">Joseph Pulitzer</name></persName> bequest, <date when="1926">1926</date>.
+                            </p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#LSAG"/>
+                        <biblScope unit="item">169, no. 26</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SEG_11"/>
+                        <biblScope unit="item">no. 355</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+            <change when="2020-11-05" who="Itamar Levin">Transcription, translation, and
+                metadata</change>
+            <change when="2021-01-27" who="Elli Mylonas">removed incorrect second facsimile
+                element</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.G.26.50-Det1.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.G.26.50-Det2.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                παρ <name key="Ἥρα Ἀργεία" type="divine">Ἥρας Ἀργείας</name> ἐμι το͂ν ἀϝέθλον.
+            </ab></div>
+            
+            <div type="translation">
+            <p>one of the prizes from Argive Hera.</p></div>
+
+            <div type="commentary">
+            <p>Said to have been found in the Peloponnese
+                    (Mertens 1985, p. 40). The style was prevelant in the middle of the fifth
+                    century BCE.</p></div>
+            
+            <div type="apparatus">
+            <p></p></div>
+            
+
+        </body>
+    </text>
+</TEI>
