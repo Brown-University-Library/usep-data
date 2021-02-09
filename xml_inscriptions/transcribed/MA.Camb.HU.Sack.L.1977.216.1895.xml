@@ -3,7 +3,7 @@
       <fileDesc>
          <titleStmt>
             <!--printable version of USEpi inscription ID:-->
-            <title>MA.Camb.HU.Sack.L.1977.216.1883</title>
+            <title>MA.Camb.HU.Sack.L.1977.216.1895</title>
          </titleStmt>
          <publicationStmt>
             <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,7 +11,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Camb.HU.Sack.L.1977.216.1883">MA.Camb.HU.Sack.L.1977.216.1883</idno>
+            <idno type="USEpigraphy" xml:id="MA.Camb.HU.Sack.L.1977.216.1895">MA.Camb.HU.Sack.L.1977.216.1895</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -20,25 +20,25 @@
                   <settlement>Camb</settlement>
                   <institution>HU</institution>
                   <repository>Sack</repository>
-                  <idno>1977.216.1883</idno>
+                  <idno>1977.216.1895</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Aufustia Hedone</p>
+                     <p>Epitaph of a slave Comice</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Reconstituted marble slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>broken marble mensa sepulchralis</p><dimensions type="surface" unit="cm">
+                              <height>40.0</height>
+                              <width>49.0</width>
+                              <depth>5.0</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.broken">
-                           <p>bottom left corner broken off and later mended</p>
+                        <condition ana="#fragment.single">
+                           <p>broken on top right and bottom right edges</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,7 +49,11 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-                     <handNote ana="#impressed.inscribed.carved"/>
+                     <handNote ana="#impressed.inscribed.carved">
+                        <dimensions type="letter" unit="cm">
+                           <height min="2.1" max="2.9">2.1-2.9</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -67,31 +71,33 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first
-                  century CE</date>
-                     <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
+                     <date evidence="unspecified" notBefore="0050" notAfter="0150">mid
+                  first-mid second century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>purchased in <placeName>Rome</placeName> by <persName role="purchaser"><name key="Clifford Moore">Clifford Moore</name></persName> for the <orgName>Harvard Department of Classics</orgName>, <date notBefore="1905" notAfter="1906">1905-1906</date></p>
+                  </provenance>
+                  <provenance type="transferred" subtype="moved">
+                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date></p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#HSCP_Moore"/>
-                  <biblScope unit="item">3, no. 8</biblScope>
+                  <biblScope unit="item">7, no. 20</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#AJA_Bodel"/>
-                  <biblScope unit="item">80-81, no. 3 (fig. 4, [ph])</biblScope>
-               </bibl>
-               <bibl>
-                  <ptr type="rest-of-bibl" target="#AE_1992"/>
-                  <biblScope unit="item">100</biblScope>
+                  <biblScope unit="item">86-88, no. 6 (fig. 7, [ph])</biblScope>
                </bibl>
 
 <bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR032872">EDR032872</ref>
+<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR032873">EDR032873</ref>
 </bibl>
                <bibl>
-                  <ref type="external" target="http://www.harvardartmuseums.org/collections/object/287022?position=0">Harvard University Art Museums web entry</ref>
+                  <ref type="external" target="https://hvrd.art/o/287171">Harvard University Art Museums web entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -108,6 +114,7 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-20" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns, added link to HUAM website</change>
+         <change when="2021-02-07" who="Scott J. DiGiulio">Restored and enhanced transcription, based on Ilaria Marchesi's original; added provenance information; added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -115,19 +122,25 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="MA.Camb.HU.Sack.L.1977.216.1883.jpg"/>
+         <graphic url="MA.Camb.HU.Sack.L.1977.216.1895.jpg"/>
       </surface>
    </facsimile>
    <text>
       
         <body>
         <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+           <ab>
+              <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+              <lb n="2"/><persName><name type="servile" key="Trophimus">Trophimus</name> <persName><name key="Isias">Isiadis</name></persName> <supplied reason="lost" cert="low">servus</supplied></persName>,
+              <lb n="3"/><persName><name type="servile" key="Comice">Comiceni</name></persName> conse<unclear>r</unclear><supplied reason="lost">vae</supplied>
+              <lb n="4"/>optimae, de se bene
+              <lb n="5"/>meren<choice><sic>i</sic><corr>t</corr></choice>i, et <persName>D<unclear>a</unclear><gap reason="lost" extent="3" unit="character" precision="low"/></persName>
+              <lb n="6"/>fi<choice><sic>i</sic><corr>l</corr></choice>io et sibi <surplus>et</surplus> posterisque eorum.</ab>
          </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the divine spirits. Trophimus, slave(?) of Isias, made this out of his own means for Comice, his well-deserving fellow-slave and Da-- his son and for himself and their descendants</p>
                 </div>
             
         
