@@ -40,7 +40,7 @@ changes: correct handling of provenance information
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>Oil lamp</p>
+                            <p>oil lamp</p>
                         </msItem>
                     </msContents>
                     
@@ -54,8 +54,8 @@ changes: correct handling of provenance information
                                 <support>
                                     <p>terracotta oil lamp </p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>2.9</height>
-                                        <width>10.8</width>
+                                        <height>2.5</height>
+                                        <width>8.9</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
@@ -65,7 +65,7 @@ changes: correct handling of provenance information
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
+                                <layout columns="0" writtenLines="2">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -74,13 +74,13 @@ changes: correct handling of provenance information
                         <!--  *************************************  <handDesc>  ********************************* -->
                         
                         <handDesc hands="1">
-                            <handNote ana="#incribed"> </handNote>
+                            <handNote ana="#impressed.inscribed"> </handNote>
                         </handDesc>
                         
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>vine wreath with grapes</p>
+                                <p>petals</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -95,7 +95,7 @@ changes: correct handling of provenance information
                         
                         <origin>
                             <date evidence="#unspecified" notBefore="0001" notAfter="0050">early 1st
-                                century CE</date>
+                                c. CE</date>
                             <placeName ref="europe.cyprus">Cyprus</placeName>
                         </origin>
                         <provenance type="transferred" subtype="acquired">
@@ -109,6 +109,9 @@ changes: correct handling of provenance information
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Myres"/>
                         <biblScope unit="item">no. 2861</biblScope>
+                    </bibl>
+                    <bibl> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/241713">Metropolitan Museum Web Entry</ref> 
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -137,6 +140,8 @@ changes: correct handling of provenance information
             <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
             <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
             <change when="2021-01-27" who="Itamar Levin">Transcription and metadata</change>
+            <change when="2021-02-11" who="Itamar Levin">Adding a link to MMA website</change>
+            
         </revisionDesc>
         
     </teiHeader>
@@ -161,10 +166,13 @@ changes: correct handling of provenance information
     <text>
         <body>
             <div type="edition">
-                <ab></ab></div>
+                <ab>
+                    <lb n="1"/><persName><name key="Faustus" type="cognomen"><unclear>Fa</unclear>us<unclear>t</unclear>i</name></persName>
+                    <lb n="2"/>Y
+                </ab></div>
             
             <div type="translation">
-                <p></p></div>
+                <p>Of Faustus.</p></div>
             
             <div type="commentary">
                 <p></p></div>
