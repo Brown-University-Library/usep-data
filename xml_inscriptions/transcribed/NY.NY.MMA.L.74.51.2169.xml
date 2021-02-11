@@ -65,7 +65,7 @@ changes: correct handling of provenance information
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
+                                <layout columns="0" writtenLines="8">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -110,6 +110,9 @@ changes: correct handling of provenance information
                         <ptr type="rest-of-bibl" target="#Myres"/>
                         <biblScope unit="item">no. 2860</biblScope>
                     </bibl>
+                    <bibl> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/241722">Metropolitan Museum Web Entry</ref> 
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -137,6 +140,8 @@ changes: correct handling of provenance information
             <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
             <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
             <change when="2021-01-27" who="Itamar Levin">Transcription and metadata</change>
+            <change when="2021-02-11" who="Itamar Levin">Adding a link to MMA website and another inscription on the item</change>
+            
         </revisionDesc>
         
     </teiHeader>
@@ -159,10 +164,24 @@ changes: correct handling of provenance information
     
     <text>
         <body>
-            <div type="edition">
-                <ab><lb n="1"/><persName><name key="Faustus" type="praenomen">Fausti</name></persName>.</ab></div>
+            <div type="edition" subtype="shield">
+                <ab><lb n="1"/>annu<supplied reason="omitted">m</supplied>
+                    <lb n="2"/>nov<supplied reason="omitted">u</supplied>m
+                    <lb n="3"/>fau
+                    <lb n="4" break="no"/>stum
+                    <lb n="5"/>fel
+                    <lb n="6" break="no"/>icem
+                    <lb n="7"/>mi
+                    <lb n="8" break="no"/>hi.
+                
+                </ab></div>
             
-            <div type="translation">
+            <div type="edition" subtype="base">
+                <ab><lb n="1"/><persName><name key="Faustus" type="cognomen">Faus<sic>i</sic><choice><corr>t</corr></choice>i</name></persName>.</ab></div>
+            
+            <div type="translation" subtype="shield">
+                <p>Of Faustus.</p></div>
+            <div type="translation" subtype="base">
                 <p>Of Faustus.</p></div>
             
             <div type="commentary">
