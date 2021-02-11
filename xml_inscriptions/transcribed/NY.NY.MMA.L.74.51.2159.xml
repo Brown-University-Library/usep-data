@@ -65,7 +65,7 @@ changes: correct handling of provenance information
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
+                                <layout columns="0" writtenLines="2">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -80,7 +80,7 @@ changes: correct handling of provenance information
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>vine wreath with grapes</p>
+                                <p></p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -94,7 +94,7 @@ changes: correct handling of provenance information
                         </summary>
                         
                         <origin>
-                            <date evidence="#unspecified" notBefore="0001" notAfter="0050">early 1st
+                            <date evidence="#unspecified" notBefore="0001" notAfter="0100">1st
                                 century CE</date>
                             <placeName ref="europe.cyprus">Cyprus</placeName>
                         </origin>
@@ -109,6 +109,9 @@ changes: correct handling of provenance information
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Myres"/>
                         <biblScope unit="item">no. 2863</biblScope>
+                    </bibl>
+                    <bibl> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/241712">Metropolitan Museum Web Entry</ref> 
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -137,6 +140,7 @@ changes: correct handling of provenance information
             <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
             <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
             <change when="2021-01-27" who="Itamar Levin">Transcription and metadata</change>
+            <change when="2021-02-11" who="Itamar Levin">Adding a link to MMA website</change>
         </revisionDesc>
         
     </teiHeader>
@@ -160,13 +164,16 @@ changes: correct handling of provenance information
     <text>
         <body>
             <div type="edition">
-                <ab><persName><name key="Faustus" type="cognomen">Fausti</name></persName>.</ab></div>
+                <ab>
+                    <lb n="1"/><persName><name key="Fuasus" type="cognomen">Fua<unclear>s</unclear>i</name></persName>.
+                <lb n="2"/>X
+                </ab></div>
             
             <div type="translation">
-                <p>Of Faustus.</p></div>
+                <p>Of Fausus.</p></div>
             
             <div type="commentary">
-                <p></p></div>
+                <p>The inscription perhaps refers to Faustus, a potter whose name appears on many similar oil lamps</p></div>
             
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
