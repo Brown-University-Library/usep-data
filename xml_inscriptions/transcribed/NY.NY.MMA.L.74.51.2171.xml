@@ -59,8 +59,8 @@ changes: correct handling of provenance information
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete">
-                                    <p/>
+                                <condition ana="#complete.broken">
+                                    <p>missing nozzle</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -110,6 +110,9 @@ changes: correct handling of provenance information
                         <ptr type="rest-of-bibl" target="#Myres"/>
                         <biblScope unit="item">no. 2898</biblScope>
                     </bibl>
+                    <bibl> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/241724">Metropolitan Museum Web Entry</ref> 
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -137,6 +140,8 @@ changes: correct handling of provenance information
             <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
             <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
             <change when="2021-01-27" who="Itamar Levin">Transcription and metadata</change>
+            <change when="2021-02-11" who="Itamar Levin">Adding a link to MMA website</change>
+            
         </revisionDesc>
         
     </teiHeader>
@@ -161,14 +166,14 @@ changes: correct handling of provenance information
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>Eva.
+                    <lb n="1"/><persName><name key="Faustus" type="cognomen"><expan><abbr>F<sic>ua</sic><corr>au</corr>s</abbr><ex>ti</ex></expan></name></persName>.
                 </ab></div>
             
             <div type="translation">
-                <p>Eva.</p></div>
+                <p>Of Faustus.</p></div>
             
             <div type="commentary">
-                <p>The signature might be abbrevation for the name Evagoras (Myers).</p></div>
+                <p></p></div>
             
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
