@@ -25,16 +25,16 @@
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Attia Sex.l. Daphne</p>
+                     <p>Epitaph of Attia Sex. l. Daphne</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.travertine">
-                        <support><p>Travertine slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>travertine slab</p><dimensions type="surface" unit="cm">
+                              <height>35.0</height>
+                              <width>59.0</width>
+                              <depth>10.0</depth>
                            </dimensions>
                         </support>
                         <condition ana="#complete.intact">
@@ -49,7 +49,11 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-                     <handNote ana="#impressed.inscribed.carved"/>
+                     <handNote ana="#impressed.inscribed.carved">
+                        <dimensions type="letter" unit="cm">
+                           <height min="2.0" max="4.0">2.0-4.0</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -67,10 +71,16 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="-0075" notAfter="0025">late
+                     <date evidence="#formulae" notBefore="-0025" notAfter="0025">late
                   first century BCE-early first century CE</date>
-                     <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
+                     <placeName ref="europe.italy.rome">Italy, Rome, between the Porta Salaria and the Porta Pinciana</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased in <placeName>Rome</placeName> by <persName role="purchaser"><name key="Clifford Moore">Clifford Moore</name></persName> for the <orgName>Harvard Department of Classics</orgName> in <date when="1906">1906</date></p>
+                  </provenance>
+                  <provenance type="transferred" subtype="moved">
+                     <p>Internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date></p>
+                  </provenance>
                   <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -97,7 +107,7 @@
 <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072515">EDR072515</ref>
 </bibl>
                <bibl>
-                  <ref type="external" target="http://www.harvardartmuseums.org/collections/object/287425?position=0">Harvard University Art Museums web entry</ref>
+                  <ref type="external" target="https://hvrd.art/o/287425">Harvard University Art Museums web entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -116,6 +126,7 @@
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2016-01-20" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns, added link to HUAM website</change>
+         <change when="2021-02-07" who="Scott J. DiGiulio">Restored and enhanced transcription, based on Ilaria Marchesi's original; added provenance information; added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -130,12 +141,17 @@
       
         <body>
         <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+           <ab>
+              <lb n="1"/><persName><name type="gentilicium" key="Attia">Attiae</name> <persName><name type="praenomen" key="Sextus"><expan><abbr>Sex</abbr><ex>ti</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertae</ex></expan> <name type="cognomen" key="Daphne">Daphne</name></persName>,
+              <lb n="2"/><persName><name type="servile" key="Secundus">Secundus</name> <persName type="emperor"><name type="cognomen" key="Caesar">Caesaris</name> <name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> <supplied reason="subaudible">servus</supplied>
+              <lb n="3"/><name type="servile" key="Erotianus"><expan><abbr>Erotian</abbr><ex>us</ex>,</expan></name></persName>, <expan><abbr>contubernal</abbr><ex>i</ex></expan>
+              <lb n="4"/>et sibi <expan><abbr>posterisq</abbr><ex>ue</ex></expan> eorum.
+              <lb n="5"/>In <expan><abbr>fr</abbr><ex>onte</ex></expan> <expan><abbr>ped</abbr><ex>es</ex></expan> <num type="cardinal" value="12">XII</num>, in <expan><abbr>agr</abbr><ex>o</ex></expan> <expan><abbr>ped</abbr><ex>es</ex></expan> <num type="cardinal" value="24">XXIIII</num>.</ab>
          </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Secundus Erotianus, slave of Caesar Augustus, made this for his wife Attia Daphne, freedwoman of Sextus, and for himself and their descendants. Twelve feet in width, twenty-four feet in depth.</p>
                 </div>
             
         
