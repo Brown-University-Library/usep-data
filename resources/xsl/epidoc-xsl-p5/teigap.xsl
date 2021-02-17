@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: teigap.xsl 2354 2015-05-08 16:28:41Z paregorios $ -->
+<!-- $Id$ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:t="http://www.tei-c.org/ns/1.0"
    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:EDF="http://epidoc.sourceforge.net/ns/functions"
    exclude-result-prefixes="t" version="2.0">
@@ -152,10 +152,15 @@
             <xsl:call-template name="verse-string"/>
          </xsl:when>
          <xsl:otherwise>
-            <!-- Don't display again if there is a preceding adjecent gap of the same kind -->
+            <!-- Don't display again if there is a preceding adjecent gap with @reason='lost' and @extent='unknown' 
+            -->
             <xsl:if
-               test="not(preceding::node()[1][self::text()][normalize-space(.)=''][preceding-sibling::node()[1][self::t:gap[@reason='lost']]])
-               and not(preceding::node()[1][self::t:gap[@reason='lost']])">
+               test="
+               (
+               not(preceding::node()[1][self::text()][normalize-space(.)=''][preceding-sibling::node()[1][self::t:gap[@reason='lost'][@extent='unknown']]])
+               and not(preceding::node()[1][self::t:gap[@reason='lost'][@extent='unknown']])
+               ) 
+               or not(self::t:gap[@reason='lost'][@extent='unknown'])">
                <xsl:call-template name="extent-string"/>
             </xsl:if>
          </xsl:otherwise>
@@ -198,10 +203,11 @@
 
 
    <xsl:template name="extent-string">
-      <xsl:param name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
-      <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
-      <xsl:variable name="cur-dot" select="EDF:dotchar($parm-leiden-style,@reason)"></xsl:variable>
-      <xsl:variable name="cur-max" select="EDF:dotmax($parm-leiden-style)"></xsl:variable>
+      <xsl:param name="parm-edition-type" tunnel="yes" required="no"/>
+      <xsl:param name="parm-leiden-style" tunnel="yes" required="no"/>
+      <xsl:param name="parm-edn-structure" tunnel="yes" required="no"/> <!-- added for creta -->
+      <xsl:variable name="cur-dot" select="EDF:dotchar($parm-leiden-style,@reason)"/>
+      <xsl:variable name="cur-max" select="EDF:dotmax($parm-leiden-style)"/>
       <!-- Precision of <gap> defined -->
       <xsl:variable name="circa">
          <xsl:choose>
@@ -272,6 +278,9 @@
                         <xsl:text>---</xsl:text>
                      </xsl:when>
                   </xsl:choose>
+               </xsl:when>
+               <xsl:when test="$parm-edn-structure = 'creta'"> <!-- added for creta -->
+                  <xsl:text>- - -</xsl:text>
                </xsl:when>
                <xsl:otherwise>
                   <xsl:text>---</xsl:text>
