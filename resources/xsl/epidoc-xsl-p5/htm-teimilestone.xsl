@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: htm-teimilestone.xsl 2392 2016-03-22 15:47:38Z hcayless $ -->
+<!-- $Id$ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
    xmlns:t="http://www.tei-c.org/ns/1.0"
    exclude-result-prefixes="t" version="2.0">
@@ -29,7 +29,11 @@
                   <xsl:text>~~~~~~~~</xsl:text>
                </xsl:when>
                <xsl:when test="@rend = 'paragraphos'">
-                  <xsl:if test="following-sibling::node()[not(self::text() and normalize-space(self::text())='')][1]/self::t:lb[@break='no']">-</xsl:if>
+                  <!--         imported change  from https://sourceforge.net/p/epidoc/code/2602/-->
+                  <!-- Added to controll '-' when there is a milestone@rend='paragraphos' followed by a lb@break='no' see: https://github.com/DCLP/dclpxsltbox/issues/52-->
+                 <xsl:if test="following-sibling::node()[not(self::text() 
+                    and normalize-space(self::text())='')][1]/self::t:lb[@break='no'] 
+                    and not(preceding-sibling::*[1][self::t:supplied[@reason='lost']])">-</xsl:if>
                   <xsl:if test="not(parent::t:supplied)">
                      <br/>
                   </xsl:if>

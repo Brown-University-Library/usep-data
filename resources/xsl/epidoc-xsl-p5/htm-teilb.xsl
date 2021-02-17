@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: htm-teilb.xsl 2354 2015-05-08 16:28:41Z paregorios $ -->
+<!-- $Id$ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
    xmlns:t="http://www.tei-c.org/ns/1.0"
    xmlns:EDF="http://epidoc.sourceforge.net/ns/functions"
@@ -158,7 +158,6 @@
                </xsl:when>              
                <xsl:otherwise>
                   <br id="a{$div-loc}l{$line}"/>
-                  <xsl:value-of select="$parm-verse-lines" />
                </xsl:otherwise>
             </xsl:choose>
             <xsl:choose>
@@ -184,8 +183,7 @@
                   <!-- always print line-no when broken orig in line, in ddbdp -->
                   <xsl:call-template name="margin-num"/>
                </xsl:when>
-<!--                <xsl:otherwise>uh oh</xsl:otherwise>
- -->            </xsl:choose>
+            </xsl:choose>
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>

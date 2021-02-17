@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: teisupplied.xsl 2582 2017-04-26 16:51:19Z gabrielbodard $ -->
+<!-- $Id$ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
    xmlns:t="http://www.tei-c.org/ns/1.0" 
    xmlns:EDF="http://epidoc.sourceforge.net/ns/functions"
@@ -129,11 +129,9 @@
      <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
      <xsl:choose>
         <xsl:when test="starts-with($parm-leiden-style, 'edh') or $parm-leiden-style='eagletxt'"/>
-        <xsl:otherwise>   
-           <xsl:text>(scil. </xsl:text>
-           <xsl:apply-templates/>
-           <xsl:call-template name="cert-low"/>
-           <xsl:text>)</xsl:text>
+        <xsl:otherwise>
+            <!-- Found in [htm|txt]-teisupplied.xsl -->
+            <xsl:call-template name="supplied-subaudible"/>
         </xsl:otherwise> </xsl:choose>
   </xsl:template>
   
