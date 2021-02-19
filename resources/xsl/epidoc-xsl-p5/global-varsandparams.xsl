@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: global-varsandparams.xsl 2476 2016-10-10 15:05:02Z pietroliuzzo $ -->
+<!-- $Id$ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 
             <!-- Location of file defining the parameters and variables -->

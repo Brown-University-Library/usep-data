@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: htm-teidivedition.xsl 2484 2016-11-28 15:34:24Z gabrielbodard $ -->
+<!-- $Id$ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
    xmlns:t="http://www.tei-c.org/ns/1.0"
    exclude-result-prefixes="t" version="2.0">
@@ -60,8 +60,9 @@
             <xsl:text>-</xsl:text>
          </xsl:for-each>
       </xsl:variable>
-      <xsl:if test="@n"><!-- prints div number -->
-         <span class="textpartnumber" id="{$div-type}ab{$div-loc}{@n}">
+      <xsl:if test="@n"><!-- prints div number. -->
+          <!-- position() added (BR #176-v9.2) to guarantee uniqueness of @id for textparts with same @n values -->
+          <span class="textpartnumber" id="{$div-type}ab{$div-loc}{@n}-{position()}">
            <!-- add ancestor textparts -->
              <xsl:if test="($parm-leiden-style = 'ddbdp' or $parm-leiden-style = 'sammelbuch') and @subtype">
               <xsl:value-of select="@subtype"/>

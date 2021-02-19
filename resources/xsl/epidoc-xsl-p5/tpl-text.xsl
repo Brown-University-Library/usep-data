@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: tpl-text.xsl 2401 2016-04-16 19:26:50Z gabrielbodard $ -->
+<!-- $Id$ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:t="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t" 
                 version="2.0">
@@ -9,6 +9,21 @@
       <xsl:param name="parm-leiden-style" tunnel="yes" required="no"></xsl:param>
       <xsl:choose>
          <!-- strip all spaces and punctuation in diplomatic edition -->
+         
+         <!-- Georgian Alphabet in diplomatic edition-->
+         
+         <xsl:when test="$parm-edition-type = 'diplomatic' and ancestor::t:div[@type='edition'] and not(ancestor::t:head)
+            and ancestor-or-self::t:*[@xml:lang][1][@xml:lang='ka']">
+            <xsl:value-of select="translate(.,'აბგდევზჱთიკლმნჲოპჟრსტჳუფქღყშჩცძწჭხჴჯჰჵ','ႠႡႢႣႤႥႦჁႧႨႩႪႫႬჂႭႮႯႰႱႲჃႳႴႵႶႷႸႹႺႻႼႽႾჄႿჀჅ')" />
+         </xsl:when>
+         
+         <!-- Armenian Alphabet  -->
+         
+         <xsl:when test="$parm-edition-type = 'diplomatic' and ancestor::t:div[@type='edition'] and not(ancestor::t:head)
+            and ancestor-or-self::t:*[@xml:lang][1][@xml:lang='hy']">
+            <xsl:value-of select="translate(.,'աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփք','ԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔ')" />
+         </xsl:when> 
+         
           <xsl:when test="$parm-edition-type = 'diplomatic' and ancestor::t:div[@type='edition'] and not(ancestor::t:head)">
             <xsl:variable name="apos">
                <xsl:text><![CDATA[']]></xsl:text>
