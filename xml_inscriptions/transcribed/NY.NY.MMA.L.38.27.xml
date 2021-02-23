@@ -38,7 +38,7 @@ changes: correct handling of provenance information
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph #label">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
                             <p>epitaph of Cominia Tyche and her family</p>
                         </msItem>
@@ -49,23 +49,23 @@ changes: correct handling of provenance information
                         
                         <!--  *************************************  <objectDesc>  *********************************  -->
                         
-                        <objectDesc ana="#cippus">
+                        <objectDesc ana="#altar">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p>marble cippus</p>
+                                    <p>marble funerary altar</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>101.6</height>
                                         <width/>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="7">
+                                <layout columns="1" writtenLines="7">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -96,22 +96,22 @@ changes: correct handling of provenance information
                         <origin>
                             <date evidence="#archaeology" notBefore="0089" notAfter="0101">ca. 90-100
                                 CE</date>
-                            <placeName ref="europe.italy.rome">Rome</placeName>
+                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
-                        <provenance type="recorded">
-                            <p>By the late <date notBefore="1565" notAfter="1570">1560s,</date> recorded in the house that formerly belonged to <persName role="landlord"><name key="Angelo of Capranica">Angelo of <placeName>Capranica</placeName></name></persName>, near the curch of S. Sebastiano in the St. Eustachio area, <placeName>Rome</placeName>.</p>
+                        <provenance type="observed" subtype="recorded">
+                            <p>by the  <date notBefore="1565" notAfter="1570">late 1560s</date>, recorded in the house that formerly belonged to <persName role="landlord"><name key="Angelo of Capranica">Angelo of <placeName>Capranica</placeName></name></persName>, near the church of S. Sebastiano in the St. Eustachio area, <placeName>Rome</placeName></p>
                         </provenance>
-                        <provenance type="recorded">
-                            <p>Before <date notAfter="1677">1677</date> until <date when="1937">1937</date>, collection of <persName role="owner"><name key="Cardinal Francesco Barberini">Cardinal Francesco Barberini</name></persName>, <placeName>Rome</placeName>.</p>
+                        <provenance type="observed" subtype="recorded">
+                            <p>before <date notAfter="1677">1677</date> until <date when="1937">1937</date>, collection of <persName role="owner"><name key="Cardinal Francesco Barberini">Cardinal Francesco Barberini</name></persName>, <placeName>Rome</placeName></p>
                         </provenance>
-                        <provenance type="transferred" subtype="acquired">
-                            <p><date when="1937">1937</date>, purchased from <persName role="seller"><name key="Jandolo">Jandolo</name></persName> by <persName role="buyer"><name key="Joseph Brummer">Joseph Brummer</name></persName>, <placeName>New York</placeName>.</p>
+                        <provenance type="transferred" subtype="sold">
+                            <p>purchased from <persName role="seller"><name key="Jandolo">Jandolo</name></persName> by <persName role="buyer"><name key="Joseph Brummer">Joseph Brummer</name></persName> in <placeName>New York</placeName> in <date when="1937">1937</date></p>
                         </provenance>
-                        <provenance type="transferred" subtype="acquired">
-                            <p><date when="1939">1938</date>, purchased from <persName role="seller"><name key="Joseph Brummer">Joseph Brummer</name></persName> by <persName role="buyer"><name key="Philip Hofer">Philip Hofer</name></persName>, <placeName>New York</placeName>.</p>
+                        <provenance type="transferred" subtype="sold">
+                            <p>purchased from <persName role="seller"><name key="Joseph Brummer">Joseph Brummer</name></persName> by <persName role="buyer"><name key="Philip Hofer">Philip Hofer</name></persName> in <placeName>New York</placeName>in <date when="1938">1938</date></p>
                         </provenance>
-                        <provenance type="transferred" subtype="gifted">
-                            <p><date when="1939">1938</date>, gifted by <persName role="donor"><name key="Philip Hofer">Philip Hofer</name></persName> to the Metropolitan Museum of Art, <placeName>New York</placeName>.</p>
+                        <provenance type="transferred" subtype="given">
+                            <p>given by <persName role="donor"><name key="Philip Hofer">Philip Hofer</name></persName> to the <orgName>Metropolitan Museum of Art</orgName> in <date when="1938">1938</date></p>
                         </provenance>
                     </history>
                 </msDesc>
@@ -161,6 +161,7 @@ changes: correct handling of provenance information
             <change when="2016-04-19" who="Scott J. DiGiulio">Updates to bibl, added link to Met website</change>
             <change when="2021-02-18" who="Itamar Levin">Transcription, translation, and
                 metadata</change>
+                 <change when="2021-02-23" who="Scott J. DiGiulio">Corrections to control vocabulary, provenance markup; corrected transcription markup in line 3 and fixed various typos, enhanced markup and added hi elements</change> 
         </revisionDesc>
         
     </teiHeader>
@@ -183,23 +184,23 @@ changes: correct handling of provenance information
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>Dis Manibus 
-                    <lb n="2"/><persName><name type="gentilicium" key="Cominia">Cominiae</name> <name type="cognomen" key="Tyche">Tyche</name></persName> sanctissimae
-                    <lb n="3"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Annius">Ann<supplied reason="lost">i</supplied>us</name> <name type="cognomen" key="Festus"><supplied reason="lost">F</supplied>estus</name></persName> coniugi
-                    <lb n="4"/>castissimae si<supplied reason="lost">b</supplied>i<expan><abbr>q</abbr><ex>ue</ex></expan> amantissi
-                    <lb n="5" break="no"/>mae vixit annis XXVII
-                    <lb n="6"/>mensibus XI diesbus XXVIII 
-                    <lb n="7"/>et sibi posteris<expan><abbr>q</abbr><ex>ue</ex></expan> suis.
+                    <lb n="1"/>D<hi rend="tall">i</hi>s Manibus.
+                    <lb n="2"/><persName><name type="gentilicium" key="Cominia">Cominia<hi rend="apex">e</hi></name> <name type="cognomen" key="Tyche">Tyche</name></persName> sanctissim<hi rend="apex">a</hi>e
+                    <lb n="3"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Annius">Ann<unclear>i</unclear>us</name> <name type="cognomen" key="Festus"><supplied reason="lost">F</supplied>estus</name></persName> coniugi
+                    <lb n="4"/>castissimae <expan><abbr>sibiq</abbr><ex>ue</ex></expan> amantissi
+                    <lb n="5" break="no"/>mae, vixit annis <num type="cardinal" value="27">XXVII</num>,
+                         <lb n="6"/>mensibus <num type="cardinal" value="11">XI</num>, diebus <num value="28" type="cardinal">XXVIII</num>,
+                    <lb n="7"/>et sibi <expan><abbr>posterisq</abbr><ex>ue</ex></expan> suis.
                 </ab></div>
             
             <div type="translation">
-                <p>To the divine shades, to the most venerable Cominia Tyche, Lucius Annius Festus
-                    (made this) to his most chaste and loving wife, (who) lived 27 years, 11 months,
+                <p>To the divine shades. To the most venerable Cominia Tyche, Lucius Annius Festus
+                    (made this) for his most chaste and loving wife, (who) lived 27 years, 11 months,
                     and 28 days, and for himself and for his children. </p></div>
             
             <div type="commentary">
                 <p>The shape of the bust supports dating the monument to around the time of the
-                    Flavian emperors   (96-99 CE).</p></div>
+                    Flavian emperors (96-99 CE). Hedera distinguens used as an interpunct fairly regularly throughout the inscription.</p></div>
             
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
