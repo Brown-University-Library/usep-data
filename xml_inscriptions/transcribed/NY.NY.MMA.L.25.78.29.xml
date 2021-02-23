@@ -15,12 +15,12 @@ changes: correct handling of provenance information
         <fileDesc>
             
             <titleStmt>
-                <title>NY.NY.MMA.L.17.194.844</title>
+                <title>NY.NY.MMA.L.25.78.29</title>
             </titleStmt>
             
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.17.194.844">NY.NY.MMA.L.17.194.844</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.25.78.29">NY.NY.MMA.L.25.78.29</idno>
             </publicationStmt>
             
             <sourceDesc>
@@ -31,16 +31,16 @@ changes: correct handling of provenance information
                         <settlement>NY</settlement>
                         <institution>MMA</institution>
                         <repository></repository>
-                        <idno>17.194.844</idno>
+                        <idno>25.78.29</idno>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>a beaker</p>
+                            <p>epitaph of Quintus Fabius Diogenes and his wife</p>
                         </msItem>
                     </msContents>
                     
@@ -49,14 +49,14 @@ changes: correct handling of provenance information
                         
                         <!--  *************************************  <objectDesc>  *********************************  -->
                         
-                        <objectDesc ana="#instrumentum.clay-product">
-                            <supportDesc ana="#clay.terracotta">
+                        <objectDesc ana="#altar">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p>Terracotta beaker</p>
+                                    <p>marble funerary altar</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>10.6</height>
-                                        <width>7.9</width>
-                                        <depth/>
+                                        <height>80.7</height>
+                                        <width>43.18</width>
+                                        <depth>35.56</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete">
@@ -65,7 +65,7 @@ changes: correct handling of provenance information
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
+                                <layout columns="0" writtenLines="8">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -74,13 +74,13 @@ changes: correct handling of provenance information
                         <!--  *************************************  <handDesc>  ********************************* -->
                         
                         <handDesc hands="1">
-                            <handNote ana="#painted"> </handNote>
+                            <handNote ana="#impressed.inscribed"> </handNote>
                         </handDesc>
                         
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p> rams’ heads and garlends</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -94,12 +94,12 @@ changes: correct handling of provenance information
                         </summary>
                         
                         <origin>
-                            <date evidence="#unspecified" notBefore="0200" notAfter="0300">3rd c.
+                            <date evidence="#archaeology" notBefore="0013" notAfter="0069">ca. 14-68
                                 CE</date>
-                            <placeName ref="europe">Europe</placeName>
+                            <placeName ref="europe.italy">Italy</placeName>
                         </origin>
                         <provenance type="transferred" subtype="acquired">
-                            <p>Gift of <persName role="donor"><name key="J. Pierpont Morgan">J. Pierpont Morgan</name></persName>, <date when="1917">1917</date>.</p>
+                            <p>Acquired through the <persName role="donor"><name key="Fletcher">Fletcher</name></persName> Fund, <date when="1925">1925</date>.</p>
                         </provenance>
                         
                         
@@ -108,13 +108,21 @@ changes: correct handling of provenance information
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Froehner"/>
-                        <biblScope unit="item">no. 251</biblScope>
+                        <ptr type="rest-of-bibl" target="#Boschung"/>
+                        <biblScope unit="item">no. 715</biblScope>
                     </bibl>
-                    <bibl> 
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/250070">Metropolitan Museum Web Entry</ref> 
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#MMAB_20_Alexander"/>
+                        <biblScope unit="item">177-78 (fig. 3)</biblScope>
                     </bibl>
                     
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR033440">EDR033440</ref>
+                    </bibl>
+                    
+                    <bibl> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/251815">Metropolitan Museum Web Entry</ref> 
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -138,14 +146,13 @@ changes: correct handling of provenance information
         <!--  *************************************  <revisionDesc>  ********************************* -->
         <!-- Record all changes here -->
         
-        
-            <revisionDesc>
-                <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-                <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-                <change when="2021-01-20" who="Itamar Levin">Transcription, translation, and
-                    metadata</change>
-            </revisionDesc>
-        
+        <revisionDesc>
+            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+            <change when="2021-02-18" who="Itamar Levin">Transcription, translation, and
+                metadata</change>
+                 <change when="2021-02-23" who="Scott J. DiGiulio">Small corrections and additions to transcription markup</change>
+        </revisionDesc>
         
     </teiHeader>
     
@@ -155,23 +162,33 @@ changes: correct handling of provenance information
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.L.17.194.844.jpg"/>
+            <graphic url="NY.NY.MMA.L.25.78.29-Det1.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.L.25.78.29-Det2.jpg"/>
         </surface>
     </facsimile>
     
     <text>
         <body>
             <div type="edition">
-                <ab><lb n="1"/>Avete.
+                <ab>
+                    <lb n="1"/><persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uinto</ex></expan></name> <name type="gentilicium" key="Fabius">Fabio</name> <name type="cognomen" key="Diogenes">Diogeni</name></persName>
+                    <lb n="2"/>et <persName><name type="gentilicium" key="Fabia">Fabiae</name>
+                        <lb n="3"/><name type="cognomen" key="Primigenia">Primigeniae</name></persName>
+                         <lb n="4"/>quae v<hi rend="tall">i</hi>xit cum eo
+                         <lb n="5"/>annis <num type="cardinal" value="47">XXXXVII</num>
+                    <lb n="6"/>liberti et libertae
+                    <lb n="7"/>et familia <persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uinti</ex></expan></name> <name type="gentilicium" key="Fabius">Fabi</name> 
+                        <lb n="8"/><name type="cognomen" key="Diogenes">Diogenis</name></persName> posueru<hi rend="ligature>nt</hi>.
                 </ab></div>
             
             <div type="translation">
-                <p>
-                    Desire!
-                </p></div>
+                <p>To Quintus Fabius Diogenes and Fabia Primigenia who lived with him 47 years, the freedmen, freedwomen, and family of Quintus Fabius Diogenes have set (this).</p></div>
             
             <div type="commentary">
-                <p></p></div>
+                <p>The style of the grave alter has flourished during the time of Claudius. </p></div>
             
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
