@@ -38,7 +38,7 @@ changes: correct handling of provenance information
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
                             <p>spurious epitaph of Iulia Paepusae</p>
                         </msItem>
@@ -59,13 +59,13 @@ changes: correct handling of provenance information
                                         <depth>16.5</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete">
+                                <condition ana="#complete.broken">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="4">
+                                <layout columns="0" writtenLines="5">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -94,10 +94,10 @@ changes: correct handling of provenance information
                         </summary>
 
                         <origin>
-                            <date evidence="#unspecified" notBefore="1600" notAfter="0170">17th c. </date>
+                            <date evidence="#unspecified" notBefore="1600" notAfter="1700">chest is early imperial; addition of inscription dates to 17th c. CE</date>
                             <placeName ref="europe.italy">Italy</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="gifted">
+                        <provenance type="transferred" subtype="given">
                             <p>Gift of <persName role="donor"><name key="Mr. S. Paul Jones">Mr. S. Paul Jones</name></persName>, <date when="1947">1947</date>.</p>
                         </provenance>
 
@@ -135,6 +135,7 @@ changes: correct handling of provenance information
         <revisionDesc>
             <change when="2021-02-23" who="Itamar Levin">Initial Transcription, translation, and
                 metadata</change>
+                 <change when="2021-02-23" who="Scott J. DiGiulio">Proofed metadata; corrected transcription and added missing first line; added external image link</change>
         </revisionDesc>
 
     </teiHeader>
@@ -144,8 +145,8 @@ changes: correct handling of provenance information
 
     <facsimile>
         <surface>
-            <desc/>
-            <graphic url=""/>
+                 <desc>image at metmuseum.org</desc>
+            <graphic url="https://images.metmuseum.org/CRDImages/gr/original/DP132676.jpg"/>
         </surface>
     </facsimile>
 
@@ -153,19 +154,20 @@ changes: correct handling of provenance information
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><persName><name key="Iulia" type="gentilicium">Iuliae</name> <name key="Paepusa" type="cognomen">Paepusa</name></persName>
-                <lb n="2"/><persName><name key="Quintus" type="praenomen"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name> <name key="Marcius" type="gentilicium">Marcius</name>
-                    <lb n="3"/><name type="cognomen" key="Amaranthus">Amaranthus</name></persName>
-                <lb n="4"/>coniugi <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
+                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                     <lb n="2"/><persName><name key="Iulia" type="gentilicium">Iuliae</name> <name key="Paepusa" type="cognomen">Paepusae</name></persName>
+                <lb n="3"/><persName><name key="Quintus" type="praenomen"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name> <name key="Marcius" type="gentilicium">Marcius</name>
+                    <lb n="5"/><name type="cognomen" key="Amaranthus">Amaranthus</name></persName>
+                <lb n="5"/>coniugi <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
             </ab></div>
             
             <div type="translation">
-                <p>Quintus Marcius Amaranthus made (this) to his wife, Iulia Paepusa, well deserving.</p></div>
+                <p>To the divine spirits. Quintus Marcius Amaranthus made (this) to his wife, Iulia Paepusa, well deserving.</p></div>
             <div type="commentary">
             <p>The Latin inscription was copied from a Roman funerary plaque and added to this chest
                     during the 17th century. As such it bears witness to the growing awareness of
-                    and interest in epigraphy among scholars and collectors in Renaissance Italy.
-                    (MMA)</p></div>
+                    and interest in epigraphy among scholars and collectors in Renaissance Italy
+                    (MMA). The first line is written on the upper frame of the tabula ansata.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
