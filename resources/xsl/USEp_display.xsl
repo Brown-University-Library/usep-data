@@ -77,7 +77,7 @@
                 <div class="topDivs">
                   <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
                   <xsl:if
-                      test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lgor /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
+                      test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
                       <div class="transcription">
                         <h3>Transcription</h3>
                       <style id="transcription_style">
