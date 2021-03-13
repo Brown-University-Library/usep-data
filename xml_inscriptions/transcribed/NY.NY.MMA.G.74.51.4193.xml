@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+
+            <titleStmt>
+                <title>NY.NY.MMA.G.74.51.4193</title>
+            </titleStmt>
+
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.74.51.4193">NY.NY.MMA.G.74.51.4193</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>MMA</institution>
+                        <repository></repository>
+                        <idno>74.51.4193</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#label">
+                            <!-- short summary of the content of an inscription -->
+                            <p>gem labeled: Zoothemis (Cypriote alphabet)</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#object_other">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p> agate scarab</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width>1.8</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="1">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>cow suckling a calf</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or blank -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#palaeography #archeology" notBefore="-0700"
+                                notAfter="-0500">7th-6th c. BCE</date>
+                            <placeName ref="europe.cyprus.kourion">Kourion, Cyprus</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>The <persName role="collector"><name key="Cesnola">Cesnola</name></persName> Collection, Purchased by subscription, <date notBefore="1873" notAfter="1877">1874–76</date></p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Myres"/>
+                        <biblScope unit="item">4193</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Engraved_gems"/>
+                        <biblScope unit="item">no. 21, Pl. 4</biblScope>
+                    </bibl>
+                    <bibl> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/243605">Metropolitan Museum Web Entry</ref> 
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2021-03-13" who="Itamar Levin">Translation, transcription, and
+                metadata</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.G.74.51.4193-Det1.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.G.74.51.4193-Det2.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab><lb n="1"/><persName><name key="Ζωόθεμις">Ζωόθεμις</name></persName>.</ab></div>
+            
+            <div type="translation">
+            <p>Zoothemis.</p></div>
+
+            <div type="commentary">
+            <p>Transcription &amp; translation from Myres (1914) and Richter (1956 [1920]),
+                    following R. Meister (1910). Written in Cypriote charachters. The artwork and
+                    letterform are of an archaic style, seventh-sixth century BCE. Zoothemis was
+                    possibly a personal name.</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
