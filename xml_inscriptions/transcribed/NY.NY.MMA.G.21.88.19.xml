@@ -4,23 +4,25 @@
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          ->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
-        
+
         <fileDesc>
-            
+
             <titleStmt>
-                <title>NY.NY.MMA.G.74.51.2445</title>
+                <title>NY.NY.MMA.G.21.88.19</title>
             </titleStmt>
-            
+
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.74.51.2445"
-                    >NY.NY.MMA.G.74.51.2445</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.21.88.19">NY.NY.MMA.G.21.88.19</idno>
             </publicationStmt>
-            
+
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
@@ -28,156 +30,143 @@ changes: Added @evidence to date
                         <region>NY</region>
                         <settlement>NY</settlement>
                         <institution>MMA</institution>
-                        <repository/>
-                        <idno>74.51.2445</idno>
+                        <repository></repository>
+                        <idno>21.88.19</idno>
                     </msIdentifier>
-                    
+
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>three fragmentary names</p>
+                            <p>ring labeled: Lysicrates</p>
                         </msItem>
                     </msContents>
-                    
+
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-                        
+
                         <!--  *************************************  <objectDesc>  *********************************  -->
-                        
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.limestone">
+
+                        <objectDesc ana="#instrumentum.other">
+                            <supportDesc ana="#metal.other">
                                 <support>
-                                    <p>limestone block</p>
+                                    <p>gold ring </p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>17.5</height>
-                                        <width>15.9</width>
-                                        <depth>5.4</depth>
+                                        <height/>
+                                        <width>3</width>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>bottom left corner</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="3">
+                                <layout columns="0" writtenLines="1">
                                     <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        
+
                         <!--  *************************************  <handDesc>  ********************************* -->
-                        
+
                         <handDesc hands="1">
                             <handNote ana="#inscribed"> </handNote>
                         </handDesc>
-                        
+
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>a woman</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
-                    
+
                     <!--  *************************************  <history>  *********************************  -->
-                    
+
                     <history>
-                        
+
                         <summary>
                             <rs/>  <!-- content can be "modern" or blank -->
                         </summary>
-                        
+
                         <origin>
-                            <date evidence="#palaeography" notBefore="-0500" notAfter="-0400">5th c. BCE</date>
-                            <placeName ref="europe.greece.cyprus.golgoi">Golgoi, Cyprus</placeName>
+                            <date evidence="#palaeography #archaeology" notBefore="-0450"
+                                notAfter="-0400">second half of 5th c. BCE</date>
+                            <placeName ref="europe.greece.attica">Attica (?)</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="acquired">
-                            <p>
-                                <orgName>The <persName role="owner"><name key="Cesnola">Cesnola</name></persName> Collection</orgName>, Purchased by subscription, <date notBefore="1873" notAfter="1876">1874–76</date>
-                                
-                            </p>
-                        </provenance>
-                        
+
+
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Myres"/>
-                        <biblScope unit="item">no. 1917</biblScope>
+                        <ptr type="rest-of-bibl" target="#Engraved_gems"/>
+                        <biblScope unit="item">no. 87, Pl. 15</biblScope>
                     </bibl>
                     <bibl> 
-                        <ref type="eternal" target="https://www.metmuseum.org/art/collection/search/241999">Metropolitan Museum Web Entry</ref> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/251045">Metropolitan Museum Web Entry</ref> 
                     </bibl>
-                    
                 </listBibl>
             </sourceDesc>
         </fileDesc>
-        
+
         <!--  *************************************  <encodingDesc>  ********************************* -->
-        
+
         <encodingDesc>
-            
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-            
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
         </encodingDesc>
-        
+
         <profileDesc> <!-- not used --> </profileDesc>
-        
-        
+
+
         <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
+    	<!-- Record all changes here -->
+
         <revisionDesc>
-            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-            <change when="2020-12-17" who="Itamar Levin">Transcription and
+            <change when="2021-03-13" who="Itamar Levin">Transcription, translation, and
                 metadata</change>
         </revisionDesc>
-        
+
     </teiHeader>
-    
+
     <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
+        <!-- Used to record images of an inscription.   -->
+
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.G.74.51.2445.jpg"/>
+            <graphic url="NY.NY.MMA.G.21.88.19.jpg"/>
         </surface>
     </facsimile>
-    
+
     <text>
         <body>
             <div type="edition">
-                <ab>
-                    <lb n="1"/>Ἀριστο<gap reason="lost" extent="unknown" unit="character"></gap>
-                    <lb n="2" break="no"/>πυτιον κα<supplied reason="lost">ὶ</supplied> <gap reason="lost" extent="unknown"></gap>
-                    <lb n="3" break="no"/>πυτιε ἐπ<supplied reason="lost">ὶ</supplied> <gap reason="lost" extent="unknown"></gap>
-
-                </ab></div>
+                <ab><lb n="1"/><persName><name key="Λυσικράτης"><expan><abbr><unclear>Λ</unclear><supplied reason="lost">υ</supplied>σικ<supplied reason="lost">ρ</supplied></abbr><ex>άτης</ex></expan></name></persName></ab></div>
             
             <div type="translation">
-                <p></p></div>
-            
+                <p>Lysicrates.</p></div>
+
             <div type="commentary">
-                <p>Transcription follows Myres. Too fragmantery to translate.</p></div>
+            <p>Transcription follows Richter (1956 [1920]). The item is dated to the second half of
+                    the fifth century BCE based on the form of the garments and letters. Lysicrates,
+                    a common Athenian name, was probably the owner.</p></div>
             
-            <div type="apparatus">
-                <p></p></div>
-            
-            
+
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
+
         </body>
     </text>
 </TEI>

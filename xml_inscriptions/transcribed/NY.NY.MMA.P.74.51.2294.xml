@@ -4,23 +4,25 @@
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          ->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
-        
+
         <fileDesc>
-            
+
             <titleStmt>
-                <title>NY.NY.MMA.G.74.51.2445</title>
+                <title>NY.NY.MMA.P.74.51.2294</title>
             </titleStmt>
-            
+
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.74.51.2445"
-                    >NY.NY.MMA.G.74.51.2445</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.P.74.51.2294">NY.NY.MMA.P.74.51.2294</idno>
             </publicationStmt>
-            
+
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
@@ -28,53 +30,53 @@ changes: Added @evidence to date
                         <region>NY</region>
                         <settlement>NY</settlement>
                         <institution>MMA</institution>
-                        <repository/>
-                        <idno>74.51.2445</idno>
+                        <repository></repository>
+                        <idno>74.51.2294</idno>
                     </msIdentifier>
-                    
+
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
+                        <textLang mainLang="phn" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#dedicatory #document">
                             <!-- short summary of the content of an inscription -->
-                            <p>three fragmentary names</p>
+                            <p>Documention of two offerings to Eshmonmelqart</p>
                         </msItem>
                     </msContents>
-                    
+
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-                        
+
                         <!--  *************************************  <objectDesc>  *********************************  -->
-                        
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.limestone">
+
+                        <objectDesc ana="#cippus">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p>limestone block</p>
+                                    <p> marble block</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>17.5</height>
-                                        <width>15.9</width>
-                                        <depth>5.4</depth>
+                                        <height>23.2</height>
+                                        <width>13</width>
+                                        <depth>13.7</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>bottom left corner</p>
+                                <condition ana="#complete.broken">
+                                    <p>broken at the top and sides</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="3">
+                                <layout columns="0" writtenLines="8">
                                     <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        
+
                         <!--  *************************************  <handDesc>  ********************************* -->
-                        
+
                         <handDesc hands="1">
                             <handNote ana="#inscribed"> </handNote>
                         </handDesc>
-                        
+
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
@@ -82,102 +84,109 @@ changes: Added @evidence to date
                             </decoNote>
                         </decoDesc>
                     </physDesc>
-                    
+
                     <!--  *************************************  <history>  *********************************  -->
-                    
+
                     <history>
-                        
+
                         <summary>
                             <rs/>  <!-- content can be "modern" or blank -->
                         </summary>
-                        
+
                         <origin>
-                            <date evidence="#palaeography" notBefore="-0500" notAfter="-0400">5th c. BCE</date>
-                            <placeName ref="europe.greece.cyprus.golgoi">Golgoi, Cyprus</placeName>
+                            <date evidence="#history" notBefore="-0363" notAfter="-0311">ca. 362-312
+                                BCE</date>
+                            <placeName ref="europe.cyprus.cition">the sanctuary of Eshmonmelqart at Cition, Cyprus
+                            </placeName>
                         </origin>
                         <provenance type="transferred" subtype="acquired">
-                            <p>
-                                <orgName>The <persName role="owner"><name key="Cesnola">Cesnola</name></persName> Collection</orgName>, Purchased by subscription, <date notBefore="1873" notAfter="1876">1874–76</date>
-                                
-                            </p>
+                            <p>The <persName role="collector"><name key="Cesnola">Cesnola</name></persName> Collection, Purchased by subscription, <date notBefore="1873" notAfter="1877">1874–76</date>.</p>
                         </provenance>
-                        
+
+
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Myres"/>
-                        <biblScope unit="item">no. 1917</biblScope>
+                        <biblScope unit="item">1801</biblScope>
                     </bibl>
                     <bibl> 
-                        <ref type="eternal" target="https://www.metmuseum.org/art/collection/search/241999">Metropolitan Museum Web Entry</ref> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/241847">Metropolitan Museum Web Entry</ref> 
                     </bibl>
-                    
                 </listBibl>
             </sourceDesc>
         </fileDesc>
-        
+
         <!--  *************************************  <encodingDesc>  ********************************* -->
-        
+
         <encodingDesc>
-            
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-            
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
         </encodingDesc>
-        
+
         <profileDesc> <!-- not used --> </profileDesc>
-        
-        
+
+
         <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
+    	<!-- Record all changes here -->
+
         <revisionDesc>
-            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-            <change when="2020-12-17" who="Itamar Levin">Transcription and
+            <change when="2021-03-14" who="Itamar Levin">Transcription, translation, and
                 metadata</change>
         </revisionDesc>
-        
+
     </teiHeader>
-    
+
     <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
+        <!-- Used to record images of an inscription.   -->
+
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.G.74.51.2445.jpg"/>
+            <graphic url="NY.NY.MMA.P.74.51.2294-Det1.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.P.74.51.2294-Det2.jpg"/>
         </surface>
     </facsimile>
-    
+
     <text>
         <body>
             <div type="edition">
-                <ab>
-                    <lb n="1"/>Ἀριστο<gap reason="lost" extent="unknown" unit="character"></gap>
-                    <lb n="2" break="no"/>πυτιον κα<supplied reason="lost">ὶ</supplied> <gap reason="lost" extent="unknown"></gap>
-                    <lb n="3" break="no"/>πυτιε ἐπ<supplied reason="lost">ὶ</supplied> <gap reason="lost" extent="unknown"></gap>
-
-                </ab></div>
+            <ab>
+                    <lb n="1"/><supplied reason="lost">בשנת</supplied><gap reason="lost"
+                        quantity="4"/>
+                    <supplied reason="lost">למלך פמייתן</supplied>
+                    <lb n="2"/>מלך כתי ואדיל בן <lb n="3"/><supplied reason="lost">מל</supplied>כיתן
+                    מלך כתי ו <lb n="4" break="no"/>אז אש II <supplied reason="lost">אדי</supplied>ל
+                    מנחת <lb n="5"/><supplied reason="lost">יתן ו</supplied>יטנא עבדאל<supplied
+                        reason="lost">ם בן</supplied>
+                    <lb n="6"/>עבדמלקרת בן <supplied reason="lost">עבד</supplied>
+                    <lb n="7" break="no"/><supplied reason="lost">ר</supplied>שף לאדני ל<supplied
+                        reason="lost">אדן</supplied>
+                    <lb n="8"/><supplied reason="lost">אשמנמ</supplied>לקרת </ab></div>
             
             <div type="translation">
-                <p></p></div>
-            
+            <p>In the year... to king Pumiyathon, king of Cithion and Idalion, son of Malekyathon,
+                    king of Cithion and Idalion, these two offerings which Abedelim, son of
+                    Abedmelqart son of Abedreshef gave and dedicated to his lord, Lord
+                    Eshmonmelqart.</p></div>
+
             <div type="commentary">
-                <p>Transcription follows Myres. Too fragmantery to translate.</p></div>
+            <p>Transcription from Myres. Pumiyathon ruled between 362-312 BCE. </p></div>
             
-            <div type="apparatus">
-                <p></p></div>
-            
-            
+
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
+
         </body>
     </text>
 </TEI>

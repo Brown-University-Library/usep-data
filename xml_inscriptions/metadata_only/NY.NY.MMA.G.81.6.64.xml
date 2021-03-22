@@ -4,21 +4,23 @@
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          ->
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
         
         <fileDesc>
             
             <titleStmt>
-                <title>NY.NY.MMA.G.74.51.2445</title>
+                <title>NY.NY.MMA.G.81.6.64</title>
             </titleStmt>
             
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.74.51.2445"
-                    >NY.NY.MMA.G.74.51.2445</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.81.6.64">NY.NY.MMA.G.81.6.64</idno>
             </publicationStmt>
             
             <sourceDesc>
@@ -29,16 +31,16 @@ changes: Added @evidence to date
                         <settlement>NY</settlement>
                         <institution>MMA</institution>
                         <repository/>
-                        <idno>74.51.2445</idno>
+                        <idno>81.6.64</idno>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>three fragmentary names</p>
+                            <p>labeled ringstone</p>
                         </msItem>
                     </msContents>
                     
@@ -47,23 +49,23 @@ changes: Added @evidence to date
                         
                         <!--  *************************************  <objectDesc>  *********************************  -->
                         
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.limestone">
+                        <objectDesc ana="#object_other">
+                            <supportDesc ana="#stone.other">
                                 <support>
-                                    <p>limestone block</p>
+                                    <p>carnelian ringstone</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>17.5</height>
-                                        <width>15.9</width>
-                                        <depth>5.4</depth>
+                                        <height/>
+                                        <width>2.1</width>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>bottom left corner</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="3">
+                                <layout columns="0" writtenLines="1">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -78,7 +80,7 @@ changes: Added @evidence to date
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>Apollo</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -92,28 +94,26 @@ changes: Added @evidence to date
                         </summary>
                         
                         <origin>
-                            <date evidence="#palaeography" notBefore="-0500" notAfter="-0400">5th c. BCE</date>
-                            <placeName ref="europe.greece.cyprus.golgoi">Golgoi, Cyprus</placeName>
+                            <date evidence="#paleography" notBefore="-0100" notAfter="0400">1st BCE-4th
+                                c. CE</date>
+                            <placeName ref="europe.italy">Italy</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="acquired">
-                            <p>
-                                <orgName>The <persName role="owner"><name key="Cesnola">Cesnola</name></persName> Collection</orgName>, Purchased by subscription, <date notBefore="1873" notAfter="1876">1874–76</date>
-                                
-                            </p>
+                        <provenance type="transferred" subtype="given">
+                            <p>Gift of <persName role="donor"><name key="John Taylor Johnston">John Taylor Johnston</name></persName>, <date when="1881">1881</date>.</p>
                         </provenance>
+                        
                         
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Myres"/>
-                        <biblScope unit="item">no. 1917</biblScope>
+                        <ptr type="rest-of-bibl" target="#Engraved_gems"/>
+                        <biblScope unit="item">no. 275, Pl. 40</biblScope>
                     </bibl>
                     <bibl> 
-                        <ref type="eternal" target="https://www.metmuseum.org/art/collection/search/241999">Metropolitan Museum Web Entry</ref> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/244935">Metropolitan Museum Web Entry</ref> 
                     </bibl>
-                    
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -138,9 +138,7 @@ changes: Added @evidence to date
         <!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-            <change when="2020-12-17" who="Itamar Levin">Transcription and
+            <change when="2021-03-17" who="Itamar Levin">Transcription and
                 metadata</change>
         </revisionDesc>
         
@@ -152,7 +150,11 @@ changes: Added @evidence to date
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.G.74.51.2445.jpg"/>
+            <graphic url="NY.NY.MMA.G.81.6.64-Det1.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.G.81.6.64-Det2.jpg"/>
         </surface>
     </facsimile>
     
@@ -160,20 +162,16 @@ changes: Added @evidence to date
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/>Ἀριστο<gap reason="lost" extent="unknown" unit="character"></gap>
-                    <lb n="2" break="no"/>πυτιον κα<supplied reason="lost">ὶ</supplied> <gap reason="lost" extent="unknown"></gap>
-                    <lb n="3" break="no"/>πυτιε ἐπ<supplied reason="lost">ὶ</supplied> <gap reason="lost" extent="unknown"></gap>
-
+                    <lb n="1"/>χ ηεα
                 </ab></div>
             
             <div type="translation">
                 <p></p></div>
             
-            <div type="commentary">
-                <p>Transcription follows Myres. Too fragmantery to translate.</p></div>
             
-            <div type="apparatus">
-                <p></p></div>
+            
+            <div type="commentary">
+                <p>Transcription from photo. The meaning of the inscription is obscure, perahps referring to the owner (Richter 1956 [1920]).</p></div>
             
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
