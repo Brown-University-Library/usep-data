@@ -2,11 +2,11 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.1122</title>
+            <title>MI.AA.UM.KM.L.1122-mdn</title>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1122">MI.AA.UM.KM.L.1122</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1122-mdn">MI.AA.UM.KM.L.1122-mdn</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -15,12 +15,12 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>1122</idno>
+                  <idno>1122-mdn</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Modern forgery of epitaph</p>
+                     <p>Modern: Epitaph of Lucius Postilius</p>
                   </msItem>
                </msContents>
                            
@@ -38,7 +38,9 @@
                               <depth>31.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -58,10 +60,10 @@
                </physDesc>
                <history>
                   <summary>
-                     <note/>
+                    <rs>modern</rs>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE (?) modern inscription</date>
+                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE (?)</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -86,6 +88,7 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2020-03-22" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2021-02-24" who="Sophia Papandonatou">added -mdn, commentary</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -97,7 +100,7 @@
    <text>
       
         <body>
-        <div type="edition">
+        <div type="edition" subtype="face" n="a">
             <ab>
                 <lb n="1"/>
                <expan>
@@ -107,14 +110,14 @@
                   <abbr>M</abbr><ex>anibus</ex>
                </expan>
             </ab> 
-            <p>obverse</p>
+           
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
-            </div><div type="edition">
+            </div><div type="edition" subtype="face" n="b">
             <ab>
                 <lb n="1"/>ossa hic
-                <lb n="2"/> Luci Postili</ab> 
-            <p>reverse</p>
+               <lb n="2"/> <persName><name type="praenomen" key="Lucius">Luci</name> <name key="Postilius">Postili</name></persName></ab> 
+            
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -128,7 +131,15 @@
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>"Many aspects of the inscription suggest that it is a forgery added in modern
+               times to increase the value of the urn before sale. Postilius is not attested in any
+               of the standard sources on Roman onomastics. The division of the inscription across
+               the obverse and reverse panels is unprecedented in these casket cineraria ... The
+               molding surrounding the inscription on the reverse is unfinished, although it was
+               designed to complement that on the obverse. Finally, the carving on the inscription
+               is noticeably clean and appears recent. There is no wear or encrustation on the
+               lettering as there is on the remain- der of the decoration." (Tuck)</p>
+            <p>The inscription is divided across two opposite panels.</p>
                 </div>
             
         

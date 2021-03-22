@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragment of a marble slab</p>
+                           <p>Partially reconstituted marble slab</p>
                            
                            <seg type="material">Coarse-grained white marble</seg>
                            <dimensions type="surface" unit="cm">
@@ -37,7 +37,9 @@
                               <depth>3.4</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>notch cut in lower right edge of stone and smooth reverse indicate reuse</p>
+                        <condition ana="#fragments.contig">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>two fragments</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0150" notAfter="0200">second half of the second century CE</date>
+                     <date evidence="#history" notBefore="0150" notAfter="0200">second half of the
+                        second century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -77,6 +80,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">11, no. 1</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR128497"
+                     >EDR128497</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -108,19 +116,18 @@
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>esio <gap reason="lost" extent="unknown" unit="character"/>
+               <gap reason="lost" extent="unknown" unit="character"/>ESIO<gap reason="lost" extent="unknown" unit="character"/>
               
                     <lb n="2"/>
                <gap reason="lost" extent="unknown" unit="character"/>
                <persName>
-                  <name type="praenomen" key="Marcus">
+                  <supplied reason="lost"><name type="praenomen" key="Marcus">
                      <expan>
                         <abbr>M</abbr><ex>arci</ex>
                      </expan>
-                  </name> 
+                  </name></supplied> 
                   <name type="gentilicium" key="Aurelius">
-                     <add place="overstrike">Aurel</add>
-                     <supplied reason="lost">i</supplied>
+                     <add place="overstrike">Aurel</add><supplied reason="lost">i</supplied>
                   </name> 
                   <gap reason="lost" extent="unknown" unit="character"/>
                   <lb n="3"/>
@@ -133,7 +140,7 @@
                   <supplied reason="lost">f</supplied>ilio</persName> 
                <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="5"/>
-               <gap reason="lost" extent="unknown" unit="character"/>avi<gap reason="lost" extent="unknown" unit="character"/>
+               <gap reason="lost" extent="unknown" unit="character"/>AVI<gap reason="lost" extent="unknown" unit="character"/>
             </ab>
             </div>
         
@@ -145,7 +152,7 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p> Line 2 of the inscription is cut over an erasure. (Tuck) </p>
                 </div>
             
         
