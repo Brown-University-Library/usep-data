@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
 
             <titleStmt>
-                <title>NY.NY.FU.G.2013.1.14</title>
+                <title>NY.NY.MMA.G.21.88.19</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.FU.G.2013.1.14">NY.NY.FU.G.2013.1.14</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.21.88.19">NY.NY.MMA.G.21.88.19</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -20,9 +29,9 @@
                     <msIdentifier>
                         <region>NY</region>
                         <settlement>NY</settlement>
-                        <institution>FU</institution>
+                        <institution>MMA</institution>
                         <repository></repository>
-                        <idno>2013.1.14</idno>
+                        <idno>21.88.19</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -31,7 +40,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>Inscribed lamp</p>
+                            <p>ring labeled: Lysicrates</p>
                         </msItem>
                     </msContents>
 
@@ -40,23 +49,23 @@
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.lamp">
-                            <supportDesc ana="#clay">
+                        <objectDesc ana="#instrumentum.other">
+                            <supportDesc ana="#metal.other">
                                 <support>
-                                    <p> Clay lamp</p>
+                                    <p>gold ring </p>
                                     <dimensions type="surface" unit="cm">
                                         <height/>
-                                        <width/>
+                                        <width>3</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana= "#complete.intact">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="0">
+                                <layout columns="0" writtenLines="1">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -65,13 +74,13 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#impressed"> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>a woman</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -81,12 +90,13 @@
                     <history>
 
                         <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
+                            <rs/>  <!-- content can be "modern" or blank -->
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="0001" notAfter="0002">Date to be displayed</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#palaeography #archaeology" notBefore="-0450"
+                                notAfter="-0400">second half of 5th c. BCE</date>
+                            <placeName ref="europe.greece.attica">Attica (?)</placeName>
                         </origin>
 
 
@@ -95,8 +105,11 @@
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#"/>
-                        <biblScope unit="page">00</biblScope>
+                        <ptr type="rest-of-bibl" target="#Engraved_gems"/>
+                        <biblScope unit="item">no. 87, Pl. 15</biblScope>
+                    </bibl>
+                    <bibl> 
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/251045">Metropolitan Museum Web Entry</ref> 
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -122,7 +135,8 @@
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2020-03-13" who="Gaia Gianni">Initial Encoding</change>
+            <change when="2021-03-13" who="Itamar Levin">Transcription, translation, and
+                metadata</change>
         </revisionDesc>
 
     </teiHeader>
@@ -133,21 +147,23 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.FU.G.2013.1.14.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.FU.G.2013.1.14.det1.jpg"/>
+            <graphic url="NY.NY.MMA.G.21.88.19.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>Transcription goes here</ab></div>
+                <ab><lb n="1"/><persName><name key="Λυσικράτης"><expan><abbr><unclear>Λ</unclear><supplied reason="lost">υ</supplied>σικ<supplied reason="lost">ρ</supplied></abbr><ex>άτης</ex></expan></name></persName></ab></div>
+            
+            <div type="translation">
+                <p>Lysicrates.</p></div>
 
             <div type="commentary">
-            <p>Notes here, </p></div>
+            <p>Transcription follows Richter (1956 [1920]). The item is dated to the second half of
+                    the fifth century BCE based on the form of the garments and letters. Lysicrates,
+                    a common Athenian name, was probably the owner.</p></div>
+            
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
