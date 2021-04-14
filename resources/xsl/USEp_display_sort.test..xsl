@@ -40,7 +40,7 @@
         2020-05-19 SJD disabled Acquisition info, relabeled the provenance into new category as previously discussed
         2020-06-24 SJD added display for dating criteria
         2020-10-22 SJD commented out display of decoNote/@ana
-        2021-03-31 SJD fixed dating display issues
+        2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -78,7 +78,7 @@
                 <div class="topDivs">
                   <!-- This outputs the text using Epidoc stylesheets, checks to see if there is a transcription. -->
                   <xsl:if
-                      test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
+                      test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
                       <div class="transcription">
                         <h3>Transcription</h3>
                       <style id="transcription_style">
@@ -408,6 +408,7 @@
 
     <xsl:template name="bibl">        
         <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:listBibl/t:bibl">
+            <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date" data-type="number" order="ascending"/>
             <xsl:variable name="myID" select="substring-after(t:ptr/@target, '#')"/>
             <p>
                 <!-- Note: I'm not handling cases where articles are directly in the monograph. Only where they
