@@ -1,35 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
 
             <titleStmt>
-                <title>NY.NY.MMA.E.22.139.61</title>
+                <title>RI.Prov.BU.G.21.04.01-mdn</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.E.22.139.61">NY.NY.MMA.E.22.139.61</idno>
+                <idno type="USEpigraphy" xml:id="RI.Prov.BU.G.21.04.01-mdn">RI.Prov.BU.G.21.04.01-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository/>
-                        <idno>22.139.61</idno>
+                        <region>RI</region>
+                        <settlement>Prov</settlement>
+                        <institution>BU</institution>
+                        <repository></repository>
+                        <idno>21.04.01</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="ett" otherLangs=""/>
+                        <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>mirror labeled with the names of Zipunu, Prucnas, and Thalna</p>
+                            <p>epitaph of Hegeso son of Proxenus</p>
                         </msItem>
                     </msContents>
 
@@ -38,18 +49,18 @@
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.other">
-                            <supportDesc ana="#metal.bronze">
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <p> Bronze mirror</p>
+                                    <p>plaster replica of a marble stele</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>23.5</height>
-                                        <width>17</width>
+                                        <height/>
+                                        <width/>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete">
-                                    <p/>
+                                <condition ana="#complete.broken">
+                                    <p>left lower corner missing; signs of weathering</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -69,7 +80,7 @@
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>goddess Zipunu flanked by local heroes Prucnas and Thalna</p>
+                                <p>a sitting man (Hegeso?) and a standing woman</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -79,17 +90,14 @@
                     <history>
 
                         <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
+                            <rs>modern</rs>  <!-- content can be "modern" or blank -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-0350" notAfter="-0300">350-300
-                                BC</date>
-                            <placeName ref="europe.italy.etruria">Etruria, Italy</placeName>
+                            <date evidence="#unknown" notBefore="1700" notAfter="2000">modern
+                                times</date>
+                            <placeName ref="united_states">United States</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="acquired">
-                            <p>Acquired with the <persName role="donor"><name key="Rogers">Rogers</name></persName> Fund, <date when="1922">1922</date>.</p>
-                        </provenance>
 
 
                     </history>
@@ -97,11 +105,8 @@
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#CSE_3"/>
-                        <biblScope unit="item">20</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/251234">NY.NY.MMA.E.22.139.61 on the MMA website</ref>
+                        <ptr type="rest-of-bibl" target="#IG_I3"/>
+                        <biblScope unit="item">1289</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -111,7 +116,8 @@
 
         <encodingDesc>
 
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -126,13 +132,8 @@
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2019-11-22" who="Gaia Gianni">Initial Encoding</change>
-            <change when="2021-02-23" who="Elli Mylonas">Changed metal to metal.bronze</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-02-24" who="Elli Mylonas">Change instrumentum to instrumentum.other</change>
-            <change when="2021-04-07" who="Itamar Levin">Adding
-                bibliography, provenance, dating criteria, and photo</change>
-</revisionDesc>
+            <change when="2021-04-16" who="Itamar Levin">Initial Encoding</change>
+        </revisionDesc>
 
     </teiHeader>
 
@@ -142,36 +143,30 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.E.22.139.61.jpg"/>
+            <graphic url="RI.Prov.BU.G.21.04.01-mdn-Det1.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="RI.Prov.BU.G.21.04.01-mdn-Det2.jpg"/>
         </surface>
     </facsimile>
 
     <text>
-        
         <body>
-        <div type="edition">
+            <div type="edition">
             <ab>
-                <name type="divine">Zipunu</name>  <name type="hero">Prucnas</name> <name type="hero">Thalna</name>
+                <lb n="1"/><persName><name key="Ἡγησώ">Ἡ<unclear>γ</unclear>η<supplied reason="lost">σ</supplied>ὼ</name> <persName><name key="Πρόξενος" type="patronymic">Προξένο</name></persName></persName>.
             </ab></div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
             
-        
-        
-                <div type="commentary">
-                    <p>Towards the end of the fourth century BCE, the handle—which was previously
-                    formed by a tang consisted of wood or bone, was cast in one piece with the disk
-                    (see Richter, GERB, 271-72). </p>
-                </div>
+            <div type="translation">
+            <p>Hegeso son of Proxenus.</p></div>
+
+            <div type="commentary">
+                <p>Transcription from photo. The modern plaster cast is a replica of IG I3 1289, an Attic grave relief dated to the end of the fourth century BCE.</p></div>
             
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
         </body>
-        
-    
     </text>
 </TEI>
