@@ -27,9 +27,9 @@
                     <msContents>
                         <textLang mainLang="ett" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+                        <msItem class="#dedicatory #label">
                             <!-- short summary of the content of an inscription -->
-                            <p>Etruscan inscription of the name Capne</p>
+                            <p>gemstone labeled: Capne (Capaneus)</p>
                         </msItem>
                     </msContents>
 
@@ -38,7 +38,7 @@
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum">
+                        <objectDesc ana="#instrumentum.other">
                             <supportDesc ana="#material_other">
                                 <support>
                                     <p> Carnelian scarab</p>
@@ -54,7 +54,7 @@
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
+                                <layout columns="0" writtenLines="1">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -84,9 +84,13 @@
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="-0480" notAfter="-0450">480-450 BCE</date>
+                            <date evidence="#archaeology" notBefore="-0480" notAfter="-0450">480-450
+                                BCE</date>
                             <placeName ref="europe.italy">Populonia</placeName>
                         </origin>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Acquired via the <persName role="donor"><name key="Rogers">Rogers</name></persName> Fund, <date when="1948">1948</date>.</p>
+                        </provenance>
 
 
                     </history>
@@ -94,8 +98,8 @@
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#"/>
-                        <biblScope unit="page"/>
+                        <ptr type="rest-of-bibl" target="#Engraved_gems"/>
+                        <biblScope unit="item">no. 13, Pl. 3</biblScope>
                     </bibl>
                     <bibl>
                         <ref type="external" target="https://www.metmuseum.org/art/collection/search/254596">NY.NY.MMA.E.48.11.1 on the MMA website</ref>
@@ -125,6 +129,9 @@
         <revisionDesc>
             <change when="2019-11-22" who="Gaia Gianni">Initial Encoding</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+<change when="2021-02-24" who="Elli Mylonas">Change instrumentum to instrumentum.other</change>
+            <change when="2021-03-13" who="Itamar Levin">Adding information from Richter's
+                Catalogue, photo, translation, provenance, commentary</change>
 </revisionDesc>
 
     </teiHeader>
@@ -135,7 +142,7 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="NY.NY.MMA.E.48.11.1.jpg"/>
         </surface>
     </facsimile>
 
@@ -149,13 +156,15 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Capaneus.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>Richter dates the item to the early fifth century BCE based on the artwork.
+                    Athe collapsing of Capaneus, one of the seven Argive warriors fought against
+                    Thebes,  is a common motif on Etruscan scrabs.</p>
                 </div>
             
         

@@ -5,11 +5,7 @@
             <title>MI.AA.UM.KM.L.1049</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
-               <xi:fallback>
-                  <p>The Publications Statement should appear here. (c) Brown University</p>
-               </xi:fallback>
-            </xi:include>
+            <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1049">MI.AA.UM.KM.L.1049</idno>
          </publicationStmt>
          <sourceDesc>
@@ -30,18 +26,18 @@
                            
                             <physDesc>
                   <objectDesc ana="#slab">
-                     <supportDesc ana="#stone.limestone">
+                     <supportDesc ana="#stone.other">
                         <support>
                            <p>Limestone slab</p>
-                           
-                           <seg type="material">Oolitic limestone</seg>
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>37</height>
                               <width>43</width>
                               <depth>15.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,12 +46,12 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
-                        <p>blank</p>
+                        <p/>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -64,7 +60,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0025">early first century CE</date>
+                     <date evidence="#palaeography #nomenclature #language" notBefore="-0020" notAfter="0025">late first century BCE to early first
+                        century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -119,24 +116,21 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <expan>
-                  <abbr>M</abbr><ex>anius</ex>
-               </expan> Sirtius <expan>
-                  <abbr>M</abbr><ex>ani</ex>
-               </expan> 
+               <persName>
+                <name type="praenomen" key="Manius"><expan>
+                  <abbr><hi rend="ligature">M</hi></abbr><ex>a</ex><abbr><hi rend="ligature">n</hi></abbr><ex>ius</ex>
+                </expan></name> <name type="gentilicium" key="Sirtius">Sirtius</name> <name type="praenomen" key="Manius"><expan>
+                  <abbr><hi rend="ligature">M</hi></abbr><ex>a</ex><abbr><hi rend="ligature">n</hi></abbr><ex>i</ex>
+               </expan></name> 
                <expan>
                   <abbr>f</abbr><ex>ilius</ex>
+               </expan></persName>
+               <lb n="2"/> <persName><name key="Valeria" type="gentilicium">Valeriae</name> <name type="cognomen" key="Callityches"><expan>
+                  <abbr>Callit<hi rend="small">y</hi></abbr><ex>he</ex></expan></name></persName>,
+               <lb n="3"/> <persName><name key="Epaphra" type="cognomen">Epaphrae</name></persName>, delic<hi rend="tall">i</hi>e<hi rend="tall">i</hi>s <supplied reason="lost">l</supplied>eiberteis le<expan><abbr>ibertabusq</abbr><ex>ue</ex>,
                </expan>
-                <lb n="2"/> Valeriae <expan>
-                  <abbr>Callityc</abbr><ex>he</ex>
-               </expan>
-                <lb n="3"/> Epaphrae delic<hi rend="tall">i</hi>e<hi rend="tall">i</hi>s <supplied reason="lost">l</supplied>
-               <sic>e</sic>ibert<sic>e</sic>is l<sic>e</sic>
-               <expan>
-                  <abbr>ibertabusq</abbr><ex>ue</ex>
-               </expan>
-                <lb n="4"/> quos ex testamento inferr<supplied reason="lost">e</supplied>
-                <lb n="5"/> iussit</ab>
+               <lb n="4"/> quos ex testamento <expan><abbr><hi rend="tall">i</hi>nfer</abbr><ex>re</ex></expan>
+                <lb n="5"/> iussit.</ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
@@ -149,14 +143,13 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Oolitic limestone</seg> (Tuck)</p>
+                   <p>Archaizing EI in "delicieis" in line 3 and "leiberteis leibertabusq(ue)" in line 4.</p>
+                   <p>line 2: Callityc[he et] (AE)</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>2) Callityc[he et]: AE</p>
-         </div>
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

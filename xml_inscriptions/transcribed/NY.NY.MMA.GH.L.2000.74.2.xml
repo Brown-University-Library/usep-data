@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+
+            <titleStmt>
+                <title>NY.NY.MMA.GH.L.2000.74.2</title>
+            </titleStmt>
+
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.GH.L.2000.74.2">NY.NY.MMA.GH.L.2000.74.2</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>MMA</institution>
+                        <repository></repository>
+                        <idno>L.2000.74.2</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs="hbo"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#dedicatory #document">
+                            <!-- short summary of the content of an inscription -->
+                            <p>donation to a synagogue </p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p>marble plaque</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>40</height>
+                                        <width>40.6</width>
+                                        <depth>6.25</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>part of the right side missing</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="9">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Jewish symbols: menorah, lulav, etrog, and shofar</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or blank -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#palaeography" notBefore="0400" notAfter="0600">ca.
+                                fourth-sixth c. CE</date>
+                            <placeName ref="unknown">unknown</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="loaned">
+                                 <p>Owner: The <persName role="collector"><name key="Judy Steinhardt">Judy</persName> and <persName role="collector"><name key="Michael Steinhardt">Michael Steinhardt</name></persName> Collection; on loan to the <orgName>Metropolitan Museum</orgName>, <placeName>New York</placeName>, since <date when="2000">2000</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SCI_22_Ameling"/>
+                        <biblScope unit="page">241-255</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2021-03-23" who="Itamar Levin">Transcription, translation, and
+                metadata</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.GH.L.2000.74.2.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/><supplied reason="lost">θε</supplied>οῦ προνoίᾳ <persName><name key="Εὕρετος"><unclear>Ε</unclear><supplied reason="lost" cert="low">ὕρε
+                    <lb n="2" break="no"/>το</supplied>ς</name></persName> <expan><abbr>πρεσβύ</abbr><ex>τερος</ex></expan> κὲ ἔποικος
+                <lb n="3"/>μετὰ τῆς συβίου κὲ τέκν
+                <lb n="4" break="no"/>ων μου ἀνενέωσα τὸ  
+                <lb n="5"/>πρόναον τοῦ ἁγιάσ
+                <lb n="6" break="no"/>ματος ἐκ τῶν δωρε
+                <lb n="7" break="no"/>ῶν τοῦ θεοῦ.
+                <lb n="8"/><foreign xml:lang="hbo" style="text-direction:r-to-l">וארטאס עשה
+                    <lb n="9"/>תפּלות שלום</foreign>
+            </ab></div>
+            
+            <div type="translation">
+                <p>Through the providence of God, I, E[uretu]s(?), Elder and Trustee, with my wife and children, renovated the forecourt of the temple with the gifts of god. (Hebrew) Euretus made house of prayer, peace.</p></div>
+
+            <div type="commentary">
+                <p>Transcription from photo. Line 1-2: Ameling Ε[.../..]Σ. The missing letters in Greek render the dedicator's name, which is supposedly given also at the beginning of the Hebrew segment. The Hebrew appears to read "וארטאס," possibly the Greek name "Euretus." The letter-forms, especially the minscule Δ and the shape of the Β, support dating the inscription to a later date, between the fourth to sixth centuries CE (Ameling). </p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

@@ -5,11 +5,7 @@
             <title>MI.AA.UM.KM.L.988</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
-               <xi:fallback>
-                  <p>The Publications Statement should appear here. (c) Brown University</p>
-               </xi:fallback>
-            </xi:include>
+            <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.988">MI.AA.UM.KM.L.988</idno>
          </publicationStmt>
          <sourceDesc>
@@ -32,19 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Partially reconstituted slab</p>
-                           
+                           <p>Reconstituted slab</p>
                            <seg type="material">White marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>19.1</height>
                               <width>46.3</width>
                               <depth>3.1</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken into six sections</p>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken into six sections</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -53,12 +47,12 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
-                        <p>blank</p>
+                        <p/>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -67,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0200" notAfter="0300">third century CE</date>
+                     <date evidence="#nomenclature" notBefore="0200" notAfter="0300">third century
+                        CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -80,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">130 no. 201</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR107049"
+                     >EDR107049</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -95,6 +95,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2021-04-21" who="Scott J. DiGiulio">Added name tagging to transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -108,45 +109,43 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <expan>
                   <abbr>D</abbr><ex>is</ex>
-               </expan> 
+               </expan>
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
-                <lb n="2"/> Septymia Elpis sibi
-                <lb n="3"/> 
-               <expan>
-                  <abbr>P</abbr><ex>ublico</ex>
-               </expan> Trofymo <expan>
-                  <abbr>co</abbr><ex>n</ex>
-                  <abbr>iugi</abbr>
-               </expan> et
-                <lb n="4"/> 
-               <expan>
+                  <abbr>M</abbr><ex>anibus</ex></expan>. 
+               <lb n="2"/> <persName><name type="gentilicium" key="Septymia">Septymia</name> <name type="cognomen" key="Elpis">Elpis</name> sibi 
+               <lb n="3"/>
+               <persName><name type="praenomen" key="Publius"><expan>
+                  <abbr>P</abbr><ex>ublio</ex>
+                  </expan></name> <name type="gentilicium" key="Trofymus">Trofymo</name></persName> <expan>
+                  <abbr>co</abbr><ex>n</ex><abbr>iugi</abbr>
+               </expan> et 
+               <lb n="4"/>
+               <persName><name type="praenomen" key="Sextus"><expan>
                   <abbr>S</abbr><ex>exto</ex>
-               </expan> Prosdocimo <expan>
-                  <abbr>C</abbr><ex>aiae</ex>
-               </expan> Septymiae et
-                <lb n="5"/> 
-               <expan>
+                  </expan></name> <name type="gentilicium" key="Prosdocimus">Prosdocimo</name></persName>, <expan>
+                  <persName><name type="gentilicium" key="Gaia"><abbr>C</abbr><ex>aiae</ex>
+                     </expan></name> <name type="cognomen" key="Septymia">Septymiae</name></persName> et 
+               <lb n="5"/>
+               <persName><name type="praenomen" key="Sextus"><expan>
                   <abbr>S</abbr><ex>exto</ex>
-               </expan> Maximo et Rodine <expan>
+                  </expan></name> <name type="gentilicium" key="Maximus">Maximo</name></persName> et <persName><name type="cognomen" key="Rodine">Rodine</name></persName> <expan>
                   <abbr>liber</abbr><ex>tae</ex>
                </expan>
-                <lb n="6"/> 
-               <expan>
+               <lb n="6"/>
+               <persName><name type="gentilicium" key="Publius"><expan>
                   <abbr>P</abbr><ex>ublio</ex>
-               </expan> Trofymo et <expan>
+                  </expan></name> <name type="gentilicium" key="Trofymus">Trofymo</name></persName> et <expan>
                   <abbr>l</abbr><ex>ibertis</ex>
-               </expan> 
+               </expan>
                <expan>
                   <abbr>l</abbr><ex>ibertabusque</ex>
-               </expan> 
+               </expan>
                <expan>
                   <abbr>p</abbr><ex>osterisque</ex>
-               </expan> meis</ab>
+               </expan> m<supplied reason="lost" evidence="previouseditor">e</supplied><unclear>i</unclear>s.</ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -160,14 +159,10 @@
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>Switch from third person in line 2—"Septymia Elpis sibi"— to first person in
+               line 6—"meis." Cursive F's in "Trofymo" in line 3 and 6.</p>
+                   <p>line 6, libertis libertabus: Tuck</p>
                 </div>
-            
-        
-        
-                <div type="apparatus">
-            <p>libertis libertabus: Tuck</p>
-         </div>
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
