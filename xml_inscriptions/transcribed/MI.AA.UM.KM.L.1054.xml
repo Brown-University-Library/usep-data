@@ -29,7 +29,7 @@
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>Partially reconstituted marble tablet</p>
-                           <seg type="material">Luna marble</seg>
+                           
                                                 
                                             <dimensions type="surface" unit="cm">
                               <height>23</height>
@@ -37,7 +37,9 @@
                               <depth>5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>missing bottom-left corner, eight unmended fragments</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>missing bottom-left corner, eight unmended fragments</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#nomenclature #formulae" notBefore="0001" notAfter="0050">first
+                        half of the first century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -77,6 +80,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">100, no. 145</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR113791"
+                     > EDR113791</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -117,23 +125,18 @@
                   <persName>
                      <name type="praenomen" key="Gaius">
                         <expan>
-                           <abbr>C</abbr><ex>aii</ex>
+                           <abbr>C</abbr><ex>ai</ex>
                         </expan>
                      </name> 
                      <name type="gentilicium" key="Iulius">Iuli</name> 
                      <name type="praenomen" key="Gaius">
                         <expan>
-                           <abbr>C</abbr><ex>aii</ex>
+                           <abbr>C</abbr><ex>ai</ex>
                         </expan>
                      </name> 
                      <expan>
                         <abbr>f</abbr><ex>ilii</ex>
-                     </expan> Fab<expan>
-                        <abbr>
-                           <am>
-                              <g type="symbol"/>
-                           </am>
-                        </abbr><ex>ia tribu</ex>
+                     </expan> Fab<expan><abbr><am><g type="symbol"/></am></abbr><ex>ia tribu</ex>
                      </expan>
                     <lb n="2"/> 
                      <name type="cognomen" key="Erastus">Erasti</name>
@@ -146,25 +149,20 @@
                     <lb n="3"/> 
                <expan>
                   <abbr>August</abbr><ex>alis</ex>
-               </expan> sibi, et <persName>
+               </expan> sibi et <persName>
                   <name type="gentilicium" key="Lollia">Lolliae</name>
                     <lb n="4"/> 
                   <name type="cognomen" key="Nereis">Nereidi</name>
-               </persName> bene <expan>
+               </persName> coniugi bene <expan>
                   <abbr>m</abbr><ex>erenti</ex>
-               </expan>,
-                    <lb n="5"/> et libertis libertabu<supplied reason="omitted">s</supplied>,
+               </expan>
+                    <lb n="5"/> et libertis, libertabus,
                     <lb n="6"/> 
-               <supplied reason="lost">p</supplied>
                <expan>
-                  <abbr>osterisq</abbr><ex>ue</ex>
-               </expan> suis omnibu<supplied reason="omitted">s</supplied>,
+                  <abbr><supplied reason="lost">p</supplied>osterisq</abbr><ex>ue</ex>
+               </expan> suis omnibus,
                     <lb n="7"/> 
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>h</abbr><ex>oc</ex>
-                  </expan>
-               </supplied> 
+               <supplied reason="lost"><expan><abbr>h</abbr><ex>oc</ex></expan></supplied> 
                <expan>
                   <abbr>m</abbr><ex>onumentum</ex>
                </expan> 
@@ -181,8 +179,7 @@
                   <abbr>n</abbr><ex>on</ex>
                </expan> 
                <expan>
-                  <abbr>s</abbr><ex>equetur</ex>
-               </expan>.</ab>
+                  <abbr>s</abbr><ex>equetur</ex></expan>.</ab>
             </div>
         
         
@@ -193,7 +190,7 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Luna marble</seg> (Tuck)</p>
                 </div>
             
         
