@@ -2,11 +2,11 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.1534.v</title>
+            <title>MI.AA.UM.KM.L.1534.b</title>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1534.v">MI.AA.UM.KM.L.1534.v</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1534.b">MI.AA.UM.KM.L.1534.b</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -15,7 +15,7 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>1534.v</idno>
+                  <idno>1534.b</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
@@ -28,9 +28,9 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Opisthographic fragmentary marble slab</p>
+                           <p>opisthographic broken marble slab</p>
                            
-                           <seg type="material">Luna marble</seg>
+                           
                            
                            
                                                 
@@ -40,7 +40,9 @@
                               <depth>2.3</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p> break on lower right corner of stone</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p> break on lower right corner of stone</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +51,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="hedera">
@@ -63,7 +65,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0200">first century CE</date>
+                     <date evidence="#formulae #archaeology" notBefore="0001" notAfter="0200">first century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -81,6 +84,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">198 no. 338</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132617"
+                     >EDR132617</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -96,6 +104,7 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-05-27" who="Scott J. DiGiulio">Updated id to match recto/verso conventions</change>
+         <change when="2021-05-25" who="Sophia Papandonatou">changed id # from .v to .b</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -116,22 +125,16 @@
                   </expan> 
                   <g type="hedera"/> 
                   <expan>
-                     <abbr>M</abbr><ex>anibus.</ex>
-                  </expan>
+                     <abbr>M</abbr><ex>anibus</ex></expan>.
                   <lb n="2"/> 
                   <persName>
-                     <name type="gentilicium" key="Tullia">Tull<hi rend="tall">i</hi>
-                        <hi rend="apex">a</hi>
+                     <name type="gentilicium" key="Tullia">Tull<hi rend="tall">i</hi><hi rend="apex">a</hi>
                      </name> 
-                     <name type="cognomen" key="Graphice"/>Graphice</persName>,
-                <lb n="3"/> libert<hi rend="apex">i</hi>s liberta<supplied reason="lost">
-                     <expan>
-                        <abbr>bus</abbr><ex>que</ex>
-                     </expan>
-                  </supplied>
-                  <lb n="4"/> sibi et su<hi rend="tall">i</hi>s,
-                <lb n="5"/> posterisq<supplied reason="lost">ue</supplied>
-               </add>
+                     <name type="cognomen" key="Graphice">Graph<hi rend="tall">i</hi>ce</name></persName>
+                  <lb n="3"/> libert<hi rend="apex">i</hi>s libert<hi rend="apex">a</hi><supplied reason="lost">bus</supplied></add>
+                  <lb n="4"/> sibi et su<hi rend="tall">i</hi>s
+               <lb n="5"/> poster<hi rend="tall">i</hi>sq<supplied reason="lost">ue</supplied>
+               
                 <lb n="6"/> suorum.</ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -146,7 +149,8 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Luna marble</seg> (Tuck)</p>
+                   <p>Line 3: libertá[bus(que)] (Tuck).</p>
                 </div>
             
         
