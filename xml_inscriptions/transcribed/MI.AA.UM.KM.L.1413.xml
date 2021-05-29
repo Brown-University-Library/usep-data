@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of father of Asia</p>
+                     <p>epitaph of father of Asia</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>Marble slab</p>
+                           <p>marble columbarium slab</p>
                            
-                           <seg type="material">Luna marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>7.3</height>
                               <width>22.6</width>
                               <depth>3</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>chipped edges</p>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>chipped edges</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0125">first-early second century CE</date>
+                     <date evidence="#archaeology" notBefore="0001" notAfter="0125">first-early
+                        second century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">204 no. 350</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR100560"
+                     >EDR100560</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -105,9 +111,9 @@
             <ab>
                 <lb n="1"/>
                <persName>
-                  <name type="cognomen" key="Asia"/>Asia</persName> patri suo
+                  <name type="cognomen" key="Asia">Asia</name></persName> patri suo
                 <lb n="2"/> fecit et <persName>
-                  <name type="cognomen" key="Ingenuus"/>Ingenuo</persName>.</ab>
+                   <name type="cognomen" key="Ingenuus">Ingenuo</name></persName>.</ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -121,7 +127,7 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Luna marble</seg> (Tuck).</p>
                 </div>
             
         
