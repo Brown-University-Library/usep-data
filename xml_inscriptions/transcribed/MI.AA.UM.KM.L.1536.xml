@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Septimia Rufina</p>
+                     <p>epitaph of Septimia Rufina's husband</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
-                           
+                           <p>broken marble slab</p>
                            <seg type="material">Gray marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>17.2</height>
                               <width>34.2</width>
                               <depth>2.7</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="hedera">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0175" notAfter="0300">late second-third century CE</date>
+                     <date evidence="#formulae #nomenclature #palaeography" notBefore="0175" notAfter="0300">late second-third
+                        century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">196-197 no. 334</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102705"
+                     >EDR102705</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,6 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -108,16 +116,14 @@
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>. <g type="hedera"/>
+                  <abbr>M</abbr><ex>anibus</ex></expan>. <g type="hedera"/>
                 <lb n="2"/> Fecit <persName>
                   <name type="gentilicium" key="Septima">Septimia</name>
                   <lb n="3"/> 
                   <name type="cognomen" key="Rufina">Rufina</name>
                </persName> bene mere
                 <lb break="no" n="4"/> nti <expan>
-                  <abbr>co</abbr><ex>n</ex>
-                  <abbr>iugi</abbr>
+                  <abbr>co</abbr><ex>n</ex><abbr>iugi</abbr>
                </expan> sanctis
                 <lb break="no" n="5"/> 
                <supplied reason="lost">simo</supplied>.</ab>
@@ -127,7 +133,8 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits. Septimia Rufina made (this) for (her) well-deserving,
+               most vener[able] husband. </p>
                 </div>
             
         

@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of L. Tarius L.l. Auctu[s]</p>
+                     <p>epitaph of Lucius Tarius Auctu[s], a freedman</p>
                   </msItem>
                </msContents>
                            
@@ -28,9 +28,9 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">Fragmentary marble tablet</seg>
+                           broken marble columbarium tablet
                            
-                           <seg type="material">Luna marble</seg>
+                           
                            
                                             <dimensions type="surface" unit="cm">
                               <height>7.6</height>
@@ -38,7 +38,9 @@
                               <depth>2.8</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
@@ -61,7 +63,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0200">first-second century CE</date>
+                     <date evidence="#nomenclature #palaeography #archaeology" notBefore="0001"
+                        notAfter="0100">first century CE</date>
                      <placeName ref="europe.italy.rome">Via Latina, Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -79,6 +82,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">198 no. 337</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132791"
+                     >EDR132791</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -93,6 +101,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -123,9 +133,8 @@
                   <expan>
                      <abbr>l</abbr><ex>ibertus</ex>
                   </expan> 
-                  <name type="cognomen" key="Auctus">Auctu<supplied reason="lost">s</supplied>
-                  </name>
-               </persName>
+                  <name type="cognomen" key="Auctus">Au<hi rend="small">c</hi>u<supplied reason="lost">s</supplied>
+                  </name></persName>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -134,13 +143,13 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Lucius Tarius Auctus, freedman of Lucius.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Luna marble</seg> (Tuck)</p>
                 </div>
             
         

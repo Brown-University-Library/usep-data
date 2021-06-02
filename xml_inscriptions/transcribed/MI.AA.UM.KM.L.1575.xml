@@ -20,27 +20,25 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Fragmentary epitaph</p>
+                     <p>fragmentary epitaph</p>
                   </msItem>
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
-                           
+                           <p>fragmentary marble columbarium tablet</p>
                            <seg type="material">Gray marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>12.9</height>
                               <width>12.6</width>
                               <depth>2.7</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -63,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#palaeography" notBefore="0001" notAfter="0100">first century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -76,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">219-220 no. 385</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102782"
+                     >EDR102782</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -91,6 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,9 +110,9 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>Co<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="1"/>Co<gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="2"/> 
-               <gap reason="lost" extent="unknown" unit="character"/>i Po<gap reason="lost" extent="unknown" unit="character"/>
+               <gap reason="lost" extent="unknown" unit="character"/> <expan><abbr><unclear>i</unclear></abbr></expan> Po<gap reason="lost" extent="unknown" unit="character"/>
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -121,15 +127,12 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Line 2: l Po (Baldwin).</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>2) l Po: Baldwin</p>
-         </div>
-            
+               
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>

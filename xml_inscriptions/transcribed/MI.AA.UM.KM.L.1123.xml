@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of unknown deceased</p>
+                     <p>epitaph of unknown deceased</p>
                   </msItem>
                </msContents>
                            
@@ -28,16 +28,17 @@
                   <objectDesc ana="#ash_urn">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble urn</p>
-                           <seg type="form">Urn</seg>
-                           <seg type="material">White marble</seg>
+                           <p>marble ash urn</p>
+                           
                                             <dimensions type="surface" unit="cm">
                               <height>30</height>
                               <width>28</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
@@ -60,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#archaeology #formulae" notBefore="0100" notAfter="0200">second century
+                        CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -84,7 +86,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation and commentary</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -97,18 +100,18 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>merenti qui
+                <lb n="1"/>Merenti qui
                 <lb n="2"/> 
                <expan>
                   <abbr>v</abbr><ex>ixit</ex>
                </expan> 
                <expan>
                   <abbr>a</abbr><ex>nnis</ex>
-               </expan> XIII <expan>
+               </expan> <num xml:lang="lat" value="13">XIII</num> <expan>
                   <abbr>m</abbr><ex>ensibus</ex>
-               </expan> III <expan>
+               </expan> <num xml:lang="lat" value="3">III</num> <expan>
                   <abbr>n</abbr><ex>octe</ex>
-               </expan> I</ab>
+               </expan> <num xml:lang="lat" value="1">I</num></ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -116,13 +119,15 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To (someone) deserving who lived for thirteen years, three months, and one
+               night.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>The beginning of the inscription—<hi rend="italic">merenti</hi>, without the name of the deceased—is
+               extremely unusual.</p>
                 </div>
             
         

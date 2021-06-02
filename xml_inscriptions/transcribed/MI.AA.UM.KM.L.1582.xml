@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Modestus and Saecularis</p>
+                     <p>epitaph of Modestus and Saecularis</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble tablet</p>
+                           <p>marble tablet</p>
                            
                            <seg type="material">White marble</seg>
                                                 
@@ -38,7 +38,9 @@
                               <depth>6.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -61,7 +63,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0075" notAfter="0150">late first to mid second century CE</date>
+                     <date evidence="#formulae #history #nomenclature" notBefore="0075" notAfter="0150">late first to mid
+                        second century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +77,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">210 no. 362</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101914"
+                     >EDR101914</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,6 +97,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,15 +117,14 @@
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/> 
                <persName>
                   <name type="cognomen" key="Modestus">Modesto</name>
                </persName> et <persName>
                   <name type="cognomen" key="Saecularis">Saec<supplied reason="omitted">u</supplied>lari</name>
-               </persName>,
-                <lb n="3"/> fratribus,
+               </persName>
+                <lb n="3"/> fratribus;
                 <lb n="4"/> 
                <persName>
                   <name type="gentilicium" key="Domitia">Domitia</name> 
@@ -124,8 +133,9 @@
                 <lb n="5"/> mater <expan>
                   <abbr>f</abbr><ex>ecit</ex>
                </expan>
-                <lb n="6"/> 
-               <add>et suis</add>.</ab>
+                <lb n="6"/>
+               <handShift/>
+               <add>et suis.</add></ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>

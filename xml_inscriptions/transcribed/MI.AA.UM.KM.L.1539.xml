@@ -20,27 +20,25 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of C. Caelius Herma</p>
+                     <p>epitaph of Gaius Caelius Herma</p>
                   </msItem>
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#cippus">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Broken marble cippus</p>
-                           
+                           <p>partially reconstituted marble tablet</p>
                            <seg type="material">White marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>27</height>
                               <width>24</width>
                               <depth>4</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>three fragments with a fourth missing from the bottom right</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -63,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#formulae #nomenclature #archaeology" notBefore="0001" notAfter="0100">first century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Labicana</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -81,6 +80,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">181 no. 301</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132222"
+                     >EDR132222</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -95,6 +99,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -110,14 +116,13 @@
             <ab>
                 <lb n="1"/>
                <persName>
-                  <name type="praenomen" key="Gaius"/>
+                  <name type="praenomen" key="Gaius">
                   <expan>
                      <abbr>C</abbr><ex>aio</ex>
-                  </expan> 
+                  </expan></name> 
                   <name type="gentilicium" key="Caelius">Caelio</name>
                   <lb n="2"/> 
-                  <name type="cognomen" key="Herma">Hermae</name>
-               </persName>
+                  <name type="cognomen" key="Herma">Hermae</name></persName>.
                 <lb n="3"/> 
                <persName>
                   <name type="praenomen" key="Gaius">
@@ -127,26 +132,21 @@
                   </name> 
                   <name type="cognomen" key="Satrius">Satrius</name>
                </persName>
-                <lb n="4"/> Herme<app type="previouslyread">
-                  <lem resp="previous">s et</lem>
-               </app>
-                <lb n="5"/> Accia Pollit<app type="previouslyread">
-                  <lem resp="previous">ta</lem>
-               </app>
-                <lb n="6"/> amico optim<app type="previouslyread">
-                  <lem resp="previous">o</lem>
-               </app>
-                <lb n="7"/> fecerunt
+               <lb n="4"/> <persName><name key="Hermes" type="cognomen">Herme<supplied reason="lost" evidence="previouseditor">s</supplied></name></persName> <supplied reason="lost" evidence="previouseditor">et</supplied>
+               <lb n="5"/> <persName><name key="Accia" type="gentilicium">Accia</name> <name type="cognomen" key="Pollita">Pollit<supplied reason="lost" evidence="previouseditor">ta</supplied></name></persName>
+               <lb n="6"/> amico optim<supplied reason="lost" evidence="previouseditor">o</supplied>
+                <lb n="7"/> fecerunt,
                 <lb n="8"/> ex permissu
-                <lb n="9"/> Calpurniaes Praeousa<supplied reason="lost">es</supplied>
-                <lb n="10"/> loco donato</ab>
+               <lb n="9"/> <persName><name type="gentilicium" key="Calpurnia">Calpurniaes</name> <name type="cognomen" key="Praepusa">Praepusa<supplied reason="lost" evidence="previouseditor">es</supplied></name></persName>
+                <lb n="10"/> loco donato.</ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To Gaius Caelius Herma. Gaius Satrius Hermes and Accia Pollitta made (this)
+               for (their) best friend, with the place given by leave of Calpurnia Praepusa.</p>
                 </div>
             
         

@@ -2,11 +2,11 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.1446.v</title>
+            <title>MI.AA.UM.KM.L.1446.b</title>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1446.v">MI.AA.UM.KM.L.1446.v</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1446.b">MI.AA.UM.KM.L.1446.b</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -15,12 +15,12 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>1446.v</idno>
+                  <idno>1446.b</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Turranius [Epap]hroditus</p>
+                     <p>epitaph of Pasidius Fortunatus</p>
                   </msItem>
                </msContents>
                            
@@ -28,30 +28,33 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Opisthographic fragmentary marble slab</p>
+                           broken opisthographic marble slab
                            
-                           <seg type="material">White marble</seg>
+                           <seg type="material">Gray marble</seg>
+                                                
                                             <dimensions type="surface" unit="cm">
                               <height>23.3</height>
                               <width>16.6</width>
                               <depth>6</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="8">
+                        <layout columns="1" writtenLines="6">
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
-                     <decoNote ana="blank">
-                        <p/>
+                     <decoNote ana="Dec_other">
+                        <p>gabled pediment</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -60,7 +63,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0125">first to early second century CE</date>
+                     <date evidence="#archaeology #formulae" notBefore="0200" notAfter="0225">early third
+                        century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -76,10 +80,10 @@
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
-                  <biblScope unit="item">199 no. 340</biblScope>
+                  <biblScope unit="item">192-193 no. 325</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030163">EDR030163</ref>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030162">EDR030162</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -97,12 +101,16 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Added EDR link</change>
+         <change when="2021-05-22" who="Sophia Papandonatou">changed id # from .r to .b</change>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation and commentary</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-28" who="Sophia Papandonatou">updated image url to .b</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.1446.v.jpg"/>
+         <graphic url="MI.AA.UM.KM.L.1446.b.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -111,33 +119,43 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>D</abbr><ex>is</ex>
-                  </expan>
-               </supplied> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
+                  <abbr>D</abbr><ex>is</ex>
+               </expan> 
+               <expan>
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/> 
-               <gap reason="lost" extent="unknown" unit="character"/> 
-               <supplied reason="lost">Tu</supplied>rranio
-                <lb n="3"/> 
-               <supplied reason="lost">Epap</supplied>hrodito
+               <persName>
+                  <name type="gentilicium" key="Pasidius">Pasidio</name> 
+                  <name type="cognomen" key="Fortunatus">For<supplied reason="lost">tun</supplied>
+                     <lb break="no" n="3"/>at<hi rend="small">o</hi></name></persName>; 
+               <persName>
+                  
+                  <name type="cognomen" key="Theofilia">Theofil<supplied reason="lost">a</supplied>
+                  </name>
+               </persName> 
+               <supplied reason="lost">et</supplied>
                 <lb n="4"/> 
-               <supplied reason="lost">qui vi</supplied>xit annis
-                <lb n="5"/> 
-               <gap reason="lost" extent="unknown" unit="character"/>
-               <supplied reason="lost">T</supplied>urrania
-                <lb n="6"/> 
-               <supplied reason="lost">Res</supplied>tituta
-                <lb n="7"/> 
-               <supplied reason="lost">ma</supplied>ter filio
-                <lb n="8"/> 
-               <supplied reason="lost">dul</supplied>cissimo
-                <lb n="9"/>  
-               <gap reason="lost" quantity="1" unit="lines"/>
+               <persName>
+                  <name type="cognomen" key="Felix">Felix</name>
+               </persName> paren<supplied reason="lost">tes</supplied>
+               <lb n="5"/>filio pii<hi rend="small">ss</hi>im<supplied reason="lost">o</supplied>. 
+               <supplied reason="lost">V</supplied>
+                <lb break="no" n="6"/>
+               <expan>
+                  <abbr>i</abbr><ex>xit</ex>
+               </expan> 
+               <expan>
+                  <abbr>an</abbr><ex>nis</ex>
+               </expan> 
+               <num xml:lang="lat" value="14">XIV<del>X</del>
+               </num>
+               <expan>
+                  <abbr>m</abbr><ex>ensibus</ex>
+               </expan> 
+               <num xml:lang="lat" value="2">II</num>.
             </ab>
+             
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -145,18 +163,22 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits. To Pasidius For[tun]atus. Theophil[a and] Felix, (his)
+               parents, (made this) for (their) most dutif[ul] son [wh]o (lived) for fourteen years
+               (and) two months.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>"It seems likely that the last X" in line 6 "was carved as a mistake and that, as Bodel suggests, the gouge in the center of it means it should have been erased." (Tuck)</p>
+                   <p>Line 5: filio pissim[o qu]; line 6: i XIVX m(ensibus) II (Tuck)</p>
                 </div>
             
         
         
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        
+        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
         
     

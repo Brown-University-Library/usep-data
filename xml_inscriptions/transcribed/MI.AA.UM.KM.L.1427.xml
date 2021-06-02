@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Ramia Storge</p>
+                     <p>epitaph of Ramia Storge</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Partially reconstituted marble slab</p>
-                           
+                           <p>partially reconstituted marble columbarium slab</p>
                            <seg type="material">White marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>9.2</height>
                               <width>16.3</width>
                               <depth>1.8</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#archaeology" notBefore="0001" notAfter="0100">first century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -87,6 +88,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">194 no. 328</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132789"
+                     >EDR132789</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -101,7 +107,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -118,8 +125,7 @@
                <persName>
                   <name type="gentilicium" key="Ramia">Ramia</name>
                   <lb n="2"/>
-                  <name type="cognomen" key="Storge">Storge</name>
-               </persName>
+                  <name type="cognomen" key="Storge">Storge</name></persName>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -128,7 +134,7 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Ramia Storge.</p>
                 </div>
             
         

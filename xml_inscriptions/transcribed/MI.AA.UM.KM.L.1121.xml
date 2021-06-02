@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of husband of Nice</p>
+                     <p>epitaph of husband of Nice</p>
                   </msItem>
                </msContents>
                            
@@ -30,7 +30,7 @@
                         <support>
                            <p>broken marble slab</p>
                            
-                           <seg type="material">Gray marble</seg>
+                           
                                                 
                                             <dimensions type="surface" unit="cm">
                               <height>27.5</height>
@@ -38,17 +38,19 @@
                               <depth>3</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="6">
+                        <layout columns="1" writtenLines="7">
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +63,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0075" notAfter="0200">late first-second century CE</date>
+                     <date evidence="#formulae" notBefore="0150" notAfter="0250">late first-second
+                        century CE</date>
                      <placeName ref="europe.italy">Italy, Baiae</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -70,6 +73,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">153 no. 245</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101524"
+                     >EDR101524</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -85,7 +93,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -98,35 +107,37 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
-               <gap reason="illegible" quantity="1" unit="chars"/>c<gap reason="illegible" quantity="2" unit="chars"/>
-                <lb n="2"/> 
+               <lb n="1"/><gap reason="lost" unit="line" quantity="1"/>
+                <lb n="2"/>
+               <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">A</supplied>
+               <unclear>l</unclear>c<unclear>im</unclear><supplied reason="lost">o</supplied>,
+                <lb n="3"/> 
                <supplied reason="lost">q</supplied>ui vixi<supplied reason="lost">t</supplied>
-                <lb n="3"/> annis <expan>
+                <lb n="4"/> annis <expan>
                   <abbr>n</abbr><ex>umero</ex>
-               </expan> L,
-                <lb n="4"/> 
+                </expan> <num xml:lang="lat" value="50">L</num>,
+                <lb n="5"/> 
                <expan>
                   <abbr>m</abbr><ex>ensibus</ex>
-               </expan> II, <expan>
+               </expan> <num xml:lang="lat" value="2">II</num>, <expan>
                   <abbr>d</abbr><ex>iebus</ex>
-               </expan> XV
-                <lb n="5"/> Nice, uxor,
-                <lb n="6"/> bene merenti.</ab>
+               </expan> <num xml:lang="lat" value="15">XV</num>;
+                <lb n="6"/> Nice uxor
+                <lb n="7"/> bene merenti.</ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>[ to A]lcim[us, w]ho live[d] for years fifty in number, two months, and
+               fifteen days. Nice, (his) wife, (made this) for (him), well-deserving.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>The letters of the inscriptions are unusually rounded.</p>
                 </div>
             
         

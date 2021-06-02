@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of [...] Quintus</p>
+                     <p>epitaph dedicated by Gaius Claudius and Afrodisia</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Partially reconstituted marble slab</p>
+                           <p>partially reconstituted marble slab</p>
                            <seg type="material">Gray marble</seg>
                            
                                             <dimensions type="surface" unit="cm">
@@ -37,7 +37,9 @@
                               <depth>1.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>top right and left corners missing</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>two fragments, top right and left corners missing</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -62,7 +64,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0075" notAfter="0125">late first - early second century CE</date>
+                     <date evidence="#palaeography #formulae" notBefore="0150" notAfter="0230">mid second to
+                        early third century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli (?)</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -75,6 +78,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#AE_2005"/>
                   <biblScope unit="item">349</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112672"
+                     >EDR112672</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -90,7 +98,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and commentary</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -105,11 +114,9 @@
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>
-               <gap reason="lost" quantity="3" unit="character"/>e <persName>
-                  <name type="praenomen" key="Quintus">Q<supplied reason="lost">ui</supplied>
-                    <lb n="2" break="no"/> nti</name>
-               </persName> inno<supplied reason="lost">cent</supplied>
-                    <lb n="3" break="no"/> issimo, qui <expan>
+               <gap reason="lost" quantity="3" unit="character" cert="low"/>EQ<gap reason="lost" extent="unknown" unit="character"></gap> 
+                   <lb n="2" /><gap reason="lost" quantity="3" unit="character" cert="low"/>nti inno<supplied reason="lost">cent</supplied>
+                    <lb n="3" break="no"/><supplied reason="lost">i</supplied>ssimo, qui <expan>
                   <abbr>vix</abbr><ex>it</ex>
                </expan>
                     <lb n="4"/> 
@@ -123,7 +130,7 @@
                <num xml:lang="lat" value="8">VIII</num>, <expan>
                   <abbr>d</abbr><ex>iebus</ex>
                </expan> 
-               <num xml:lang="lat" value="3">III</num>,
+               <num xml:lang="lat" value="3">III</num>.
                     <lb n="5"/> 
                <persName>
                   <name type="praenomen" key="Gaius">
@@ -138,7 +145,7 @@
                   </name> 
                   <name type="cognomen" key="Quintus">
                      <expan>
-                        <abbr>Q</abbr><ex>uintus</ex>
+                        <abbr>Q</abbr><ex cert="low">uintus</ex>
                      </expan>
                   </name>
                </persName> et <persName>
@@ -148,8 +155,7 @@
                   <abbr>dul</abbr><ex>cissimo</ex>
                </expan> 
                <expan>
-                  <abbr>f</abbr><ex>ecerunt</ex>
-               </expan>.</ab>
+                  <abbr>f</abbr><ex>ecerunt</ex></expan>.</ab>
             </div>
         
         
@@ -160,7 +166,7 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Line 1-2: ]e Q[ui]/nti (Tuck).</p>
                 </div>
             
         

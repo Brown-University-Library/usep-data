@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Lucius Flavius Salvius</p>
+                     <p>epitaph of Lucius Flavius</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>Marble slab</p>
-                           
+                           <p>marble columbarium slab</p>
                            <seg type="material">White marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>8</height>
                               <width>23</width>
                               <depth>3</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0075" notAfter="0200">early first-second century CE</date>
+                     <date evidence="#nomenclature #formulae #archaeology #palaeography" notBefore="-0100" notAfter="-0001">first century
+                        BCE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">185-186 no. 312</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR033499"
+                     > EDR033499</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,7 +95,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation and commentary</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">added commentary</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -108,11 +116,9 @@
                </expan> Flavius
                 <lb n="2"/> 
                <expan>
-                  <abbr>Sal</abbr><ex>vius</ex>
-               </expan> 
-               <expan>
-                  <abbr>pom</abbr><ex>arius</ex>
-               </expan>?</ab>
+                  <abbr>Sal</abbr><ex cert="low">vi</ex>
+               </expan> <supplied reason="subaudible">filius</supplied> <expan>
+                  <abbr>Pom</abbr><ex cert="low">ptina</ex></expan>.</ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -120,20 +126,31 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Lucius Flavius, son of Salvius, from the Pomptina (tribe).</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>The reverse shows traces of a scroll that has been incompletely erased,
+               indicating the reuse of the piece for this inscription. (Tuck)</p>
+            <p>The form of the name is highly unusual and it is therefore difficult to expand the
+               abbreviations with certainty. The palaeography is Republican, which would lend itself
+               to the expansion <hi rend="italic">L(ucius) Flavius Sal(vi) (scil. filius) Pom(ptina)</hi> as the formula of
+               filiation followed by tribe name points to a date in the late first century BCE.
+               However, <hi rend="italic">Salvius</hi> was a Republican <hi rend="italic">nomen</hi>, so the resulting mismatch between <hi rend="italic">Flavius</hi>
+               and <hi rend="italic">Salvius</hi> would be unusual. But, the fact that the columbarium slab was found
+               outside the Porta Salaria, that it is made of marble, and that it shows signs of
+               reuse point to a more Imperial date in the first century CE. It was not unusual for
+               columbaria in the early Imperial period to preserve name and occupation, hence
+               another possible expansion, as suggested by Solin, is <hi rend="italic">L(ucius) Flavius Sal(vius)
+               pom(arius)</hi>, which is still unusual. </p>
+                   <p>Line 2: Sal(vius) Pom(ptina tribu) (Baldwin); Sal(vius) pom(arius) (Tuck)</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>2) Sal(vius) Pom(ptina tribu): Baldwin</p>
-         </div>
+              
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

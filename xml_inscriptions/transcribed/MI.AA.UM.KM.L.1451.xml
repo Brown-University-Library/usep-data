@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of L. Nevius Pietas</p>
+                     <p>epitaph of Lucius Nevius Pietas</p>
                   </msItem>
                </msContents>
                            
@@ -28,27 +28,27 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Reconstituted marble tablet</p>
-                           
+                           <p>partially reconstituted marble tablet</p>
                            <seg type="material">White marble</seg>
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>17</height>
                               <width>22.5</width>
                               <depth>2.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken into three pieces; lower right corner missing</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken into three pieces; lower right corner missing</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="7">
+                        <layout columns="1" writtenLines="6">
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0125">early second century CE</date>
+                     <date evidence="#formulae #nomenclature" notBefore="0100" notAfter="0125">early second
+                        century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -89,6 +90,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,38 +110,35 @@
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/> 
-               <expan>
+               <persName><name type="praenomen" key="Lucius"><expan>
                   <abbr>L</abbr><ex>ucio</ex>
-               </expan> Necio Pietat<supplied reason="lost">i</supplied>
+               </expan></name> <name type="gentilicum" key="Nevius">Nevio</name> <name type="cognomen" key="Pietas">Pietat<supplied reason="lost">i</supplied></name></persName>
                 <lb n="3"/> 
                <expan>
                   <abbr>mil</abbr><ex>iti</ex>
                </expan> 
                <expan>
-                  <abbr>Coh</abbr><ex>ortis</ex>
+                  <abbr>coh</abbr><ex>ortis</ex>
                </expan> VI<gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="4"/> 
-               <g type="C"/>
-               <expan>
-                  <abbr/>
-                  <ex>enturiae</ex>
-               </expan> Exorati<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="5"/> Nevius Val<supplied reason="lost">ens</supplied>
+               <g type="centuria"/>
+                Exorati <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="5"/> <persName><name type="gentilicium" key="Nevius">Nevius</name> <name key="Valens" type="cognomen">Val<supplied reason="lost">ens</supplied></name></persName>
                 <lb n="6"/> 
-               <supplied reason="lost">---f</supplied>rat<supplied reason="lost">er---</supplied>
-            </ab>
+               <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">f</supplied>rat<supplied reason="lost">er</supplied><gap reason="lost" extent="unknown" unit="character"/>
+            
                 <lb n="7"/> 
-            <gap reason="lost" extent="12" unit="chars"/>
+               <gap reason="lost" extent="12" unit="character"/></ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits. To Lucius Nevius Pietas, a soldier of the [ ] cohort,
+               from the [ ] century of Exoratus [ ]. Nevius Val[ens b]rot[her ]</p>
                 </div>
             
         

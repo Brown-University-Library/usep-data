@@ -21,7 +21,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of P. Caesonius P.l. Anteros</p>
+                     <p>epitaph of Publius Caesonius Anteros, a freedman</p>
                   </msItem>
                </msContents>
 
@@ -29,14 +29,16 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>White marble columbarium tablet</p>
+                           <p>white marble columbarium tablet</p>
                            <dimensions type="surface" unit="cm">
                               <height>7</height>
                               <width>17.5</width>
                               <depth>1.8</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>left half broken off</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#archaeology" notBefore="0001" notAfter="0100">first century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin-->
@@ -112,7 +115,8 @@
             standards; removed deco ana; added correct textparts to edition; corrected previous
             readings to conform to current epidoc; changed app div to commentary div, added note about status of inscription; added link to Trismegistos</change>
       <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -126,22 +130,23 @@
         <div type="edition">
             <div type="textpart" subtype="column" n="column 1">
                <ab>
-                  <lb n="1"/><persName><supplied reason="lost"><name type="gentilicium" key="Plotia">Plotia</name> <g type="Gaiae"/></supplied> <expan><abbr>l</abbr><ex>iberta</ex></expan>
-                  <lb n="2"/><supplied reason="lost"><name type="cognomen" key="Fausta">Fausta</name></supplied></persName>.
+                  <lb n="1"/><persName><supplied reason="lost" evidence="previouseditor"><name type="gentilicium" key="Plotia">Plotia</name> <g type="Gaiae"/></supplied> <expan><abbr>l</abbr><ex>iberta</ex></expan>
+                  <lb n="2"/><supplied reason="lost" evidence="previouseditor"><name type="cognomen" key="Fausta">Fausta</name></supplied></persName>.
                </ab>
             </div>
            
             <div type="textpart" subtype="column" n="column 2">
                <ab>
                   <lb n="1"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Caesonius">Caesonius</name>
-                  <lb n="2"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublii</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Anteros">Anteros</name></persName>
+                  <lb n="2"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublii</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Anteros">Anteros</name></persName>.
                </ab>
             </div>
          </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>[Plotia Fausta,] freedwoman [of a woman.] </p>
+            <p>Publius Caesonius Anteros, freedman of Publius.</p>
                 </div>
             
         

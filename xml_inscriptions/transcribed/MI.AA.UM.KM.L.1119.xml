@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Antonia Chrysis</p>
+                     <p>epitaph of Antonia Chrysis</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>Marble slab</p>
+                          <p>marble slab</p>
                            
                            <seg type="material">Coarse-grained gray marble</seg>
                            <dimensions type="surface" unit="cm">
@@ -37,7 +37,9 @@
                               <depth>3.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>smoothly finished faces with rough edges</p>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>smoothly finished faces with rough edges</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="hedera">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0058" notAfter="0100">second half first century CE</date>
+                     <date evidence="#formulae #nomenclature #palaeography" notBefore="0075"
+                        notAfter="0175">late first to late second century CE</date>
                      <placeName ref="europe.italy">Italy, Misenum</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -69,6 +72,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">61-62, no. 77</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112683"
+                     >EDR112683</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -84,7 +92,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -104,14 +113,11 @@
                </expan> 
                <g type="hedera"/> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                     <lb n="2"/>
                <persName>
                   <name type="gentilicium" key="Antonia">Antoniae</name> 
-                  <name type="cognomen" key="Chrysis">Chrysid<hi rend="tall">i</hi>
-                  </name>
-               </persName>
+                  <name type="cognomen" key="Chrysis">Chrysid<hi rend="tall">i</hi></name></persName>.
                     <lb n="3"/>
                <persName>
                   <name type="praenomen" key="Gaius">
@@ -123,19 +129,21 @@
                      <hi rend="tall">I</hi>ulius</name> 
                   <name type="cognomen" key="Priscus">Pr<hi rend="tall">i</hi>scus</name>
                </persName>
-                    <lb n="4"/>co<supplied reason="omitted">n</supplied>iugi bene merenti
-                    <lb n="5"/>vixit annis <num xml:lang="lat" value="35">XXXV</num> men
-                    <lb n="6" break="no"/>sibus <num xml:lang="lat" value="7">VII</num> 
+                   <lb n="4"/><expan><abbr>co</abbr><ex>n</ex><abbr>iugi</abbr></expan> bene merenti;
+                    <lb n="5"/>vixit annis <num xml:lang="lat" value="35">XXXV</num>, men
+                    <lb n="6" break="no"/>sibus <num xml:lang="lat" value="7">VII</num>, 
                <expan>
                   <abbr>dieb</abbr><ex>us</ex>
                </expan> 
-               <num xml:lang="lat" value="15">XV</num>
+               <num xml:lang="lat" value="15">XV</num>.
             </ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits. To Antonia Chrysis. Gaius Julius Priscus (made this)
+               for (his) well-deserving wife. She lived for thirty-five years, seven months, and
+               fifteen days.</p>
                 </div>
             
         

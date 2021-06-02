@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of M. Turius M.l. Felix</p>
+                     <p>epitaph of Marcus Turius Felix, a freedman</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Luna marble tablet</p>
+                           <p>marble columbarium tablet</p>
                            
                            <dimensions type="surface" unit="cm">
                               <height>8</height>
@@ -36,7 +36,9 @@
                               <depth>4.4</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>minor chipping on edges</p>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>minor chipping on edges</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -59,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#archaeology #nomenclature #palaeography" notBefore="0001" notAfter="0100">first century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -72,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">198-199 no. 339</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102969"
+                     >EDR102969</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -87,7 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -117,8 +126,7 @@
                   <expan>
                      <abbr>l</abbr><ex>ibertus</ex>
                   </expan> 
-                  <name type="cognomen" key="Felix">Felix</name>
-               </persName>
+                  <name type="cognomen" key="Felix">Felix</name></persName>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -127,13 +135,13 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Marcus Turius Felix, freedman of Marcus.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>Luna marble (Tuck).</p>
                 </div>
             
         

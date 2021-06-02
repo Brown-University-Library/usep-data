@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Aspasius</p>
+                     <p>epitaph of Aspasius</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>Marble slab</p>
+                          <p>marble slab</p>
                            
                            <seg type="material">White marble</seg>
                            
@@ -40,7 +40,9 @@
                               <depth>3.7</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -63,7 +65,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#formulae" notBefore="0100" notAfter="0130">early second
+                        century CE</date>
                      <placeName ref="europe.italy">Puteoli (?), Italy </placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -76,6 +79,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#AE_2005"/>
                   <biblScope unit="item">00357</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112673"
+                     >EDR112673</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -91,6 +99,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and commentary</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,18 +114,17 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>Dis <g type="hedera"/> 
+                <lb n="1"/>D<hi rend="tall">i</hi>s <g type="hedera"/> 
                <expan>
                   <abbr>M</abbr><ex>anibus</ex>
                </expan> 
                <g type="hedera"/> 
                <expan>
-                  <abbr>S</abbr><ex>acrum</ex>
-               </expan> 
-               <g type="hedera"/>.
+                  <abbr>s</abbr><ex>acrum</ex></expan>. 
+               <g type="hedera"/>
                 <lb n="2"/> 
                <persName>
-                  <name type="cognomen" key="Aspasius">Aspasius</name>
+                  <name type="cognomen" key="Aspasius">A<hi rend="apex">s</hi>pasius</name>
                </persName> pius vixit annis <num xml:lang="lat" value="24">XXIIII</num>,
                 <lb n="3"/> mensibus <num xml:lang="lat" value="5">V</num>, <expan>
                   <abbr>dieb</abbr><ex>us</ex>
@@ -124,9 +133,9 @@
                <g type="hedera"/>;
                 <lb n="4"/> fecerunt <persName>
                   <name type="cognomen" key="Heron">Heron</name>
-               </persName>, et <persName>
+               </persName> et <persName>
                   <name type="cognomen" key="Dynamis">Dynamis</name>
-               </persName>, et
+               </persName> et
                 <lb n="5"/> 
                <persName>
                   <name type="cognomen" key="Abdas">Abdas</name>
@@ -152,7 +161,8 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>The opposite face "has <hi rend="italic">fasces</hi> running horizontally across it, indicating that
+               the piece is a reused architrave." (Tuck)</p>
                 </div>
             
         

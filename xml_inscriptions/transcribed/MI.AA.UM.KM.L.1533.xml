@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of M. Scribonius Syneros</p>
+                     <p>epitaph of Marcus Scribonius Syneros and an unknown</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble tablet</p>
+                           <p>broken marble columbarium tablet</p>
                            
                                             <dimensions type="surface" unit="cm">
                               <height>15.9</height>
@@ -36,17 +36,19 @@
                               <depth>2.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p> large break on left side of stone</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p> large break on left side of stone</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="6">
+                        <layout columns="2" writtenLines="6">
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
@@ -59,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="-0025" notAfter="0075">late first century BCE-late first century CE</date>
+                     <date evidence="#archaeology #palaeography #formulae" notBefore="-0025" notAfter="0075">late first
+                        century BCE-late first century CE</date>
                      <placeName ref="europe.italy.rome">Via Latina, Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -81,6 +84,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">195 no. 330</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132790"
+                     >EDR132790</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -95,6 +103,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,25 +117,27 @@
       
         <body>
         <div type="edition">
+           <div type="textpart" subtype="column" n="1">
             <ab>
                 <lb n="1"/>
                <gap reason="lost" extent="unknown" unit="character"/>mus
                 <lb n="2"/> 
-               <gap reason="lost" extent="unknown" unit="character"/>s</ab> 
-            <p>left</p>
+               <gap reason="lost" extent="unknown" unit="character"/>S</ab> 
+           </div>
+           <div type="textpart" subtype="column" n="2">
                 <ab>
-                    <lb n="1"/>
+                    <lb n="1"/> <handShift/>
                <persName>
                   <name type="praenomen" key="Marcus">
                      <expan>
                         <abbr>M</abbr><ex>arcus</ex>
                      </expan>
                   </name> 
-                  <name type="gentilicium" key="Scribonius">Scribonius</name>,
+                  <name type="gentilicium" key="Scribonius">Scr<hi rend="tall">i</hi>onius</name>
                     <lb n="2"/> 
                   <name type="cognomen" key="Syneros">Syneros</name>
-               </persName>,
-                    <lb n="3"/> supra aedificia
+               </persName>
+                    <lb n="3"/> supra aedificia.
                     <lb n="4"/> 
                <persName>
                   <name type="cognomen" key="Hilarus ">Hilarus </name>
@@ -133,14 +145,16 @@
                <expan>
                   <abbr>l</abbr><ex>ibertus</ex>
                </expan> fecit.</ab>
-            <p>right</p>
+           </div>
+            
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Marcus Scribonius Syneros (was) in charge of buildings. Hilarus, a freedman,
+               made (this).</p>
                 </div>
             
         

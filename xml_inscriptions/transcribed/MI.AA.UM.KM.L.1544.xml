@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Onesimus, slave of Augustus</p>
+                     <p>epitaph of Onesimus, slave of the emperor</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
+                           <p>fragmentary marble slab</p>
                            
                            <seg type="material">White marble</seg>
                            
@@ -39,7 +39,9 @@
                               <depth>2</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -48,8 +50,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="hedear">
@@ -62,7 +64,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0175" notAfter="0225">late second to early third century CE</date>
+                     <date evidence="#palaeography #archaeology" notBefore="0175" notAfter="0225">late second to
+                        early third century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -80,6 +83,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">214 no. 370</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132816"
+                     >EDR132816</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -94,6 +102,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -108,26 +119,24 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>D</abbr><ex>is</ex>
-                  </expan>
-               </supplied> 
+               <supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan> 
+                  <abbr>M</abbr><ex>anibus</ex></expan>. 
                <g type="hedera"/>
                 <lb n="2"/> 
                <persName>
                   <name type="cognomen" key="Onesimus">
-                     <supplied reason="lost">Onesi</supplied>mo</name>
+                     <supplied reason="lost">Ones<unclear>i</unclear></supplied>mo</name>
                </persName> 
                <expan>
                   <abbr>Aug</abbr><ex>usti</ex>
                </expan>
                 <lb n="3"/>
-               <gap reason="lost" quantity="4" unit="charracter"/> dis<sic>s</sic>pe<supplied reason="lost">nsator</supplied>i Aure
-                <lb break="no" n="4"/>lia (?)</ab>
+               <gap reason="lost" quantity="4" unit="charracter"/> dis<surplus>s</surplus>pe
+               <lb break="no" n="4"/><supplied reason="lost">nsator</supplied><unclear>i</unclear>; Aure
+               <lb break="no" n="5"/><supplied reason="lost" cert="low">lia</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+            </ab>
                
                 
                 
@@ -137,7 +146,8 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>[To the Divine] Spirits. To [Onesi]mus [ ] of the emperor, an accounts
+               manager. Aure[lia(?) ]</p>
                 </div>
             
         

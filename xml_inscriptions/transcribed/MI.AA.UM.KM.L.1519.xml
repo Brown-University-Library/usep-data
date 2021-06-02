@@ -20,25 +20,25 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of C. Pisentius Sabinus</p>
+                     <p>epitaph of Gaius Pisentius Sabinus</p>
                   </msItem>
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#stele">
+                  <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble stele</p>
-                           
+                           <p>marble slab</p>
                            <seg type="material">White marble</seg>
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>39.1</height>
                               <width>30.8</width>
                               <depth>3.2</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -61,7 +61,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0150">early-mid second century CE</date>
+                     <date evidence="#archaeology #formulae #palaeography" notBefore="0100" notAfter="0150">early-mid second century CE</date>
                      <placeName ref="europe.italy">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +74,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">175-176 no. 291</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR006598"
+                     >EDR006598</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,6 +94,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,8 +114,7 @@
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/> 
                <persName>
                   <name type="praenomen" key="Gaius">
@@ -116,7 +122,7 @@
                         <abbr>C</abbr><ex>aio</ex>
                      </expan>
                   </name> 
-                  <name type="gentilicium" key="Pisentius">Pisentio, </name> 
+                  <name type="gentilicium" key="Pisentius">Pisentio </name> 
                   <name type="praenomen" key="Gaius">
                      <expan>
                         <abbr>C</abbr><ex>aii</ex>
@@ -124,40 +130,33 @@
                   </name> 
                   <expan>
                      <abbr>f</abbr><ex>ilio</ex>
-                  </expan>,
+                  </expan>
                 <lb n="3"/> 
-                  <name type="cognomen" key="Arretius">Arretio</name> 
-                  <name type="cognomen" key="Sabinus">Sabino</name>
-               </persName>,
+                  Arretio 
+                  <name type="cognomen" key="Sabinus">Sabino</name></persName>
                 <lb n="4"/> 
                <expan>
                   <abbr>mil</abbr><ex>iti</ex>
                </expan> 
                <expan>
-                  <abbr>Cah</abbr><ex>ortis</ex>
+                  <abbr>coh</abbr><ex>ortis</ex>
                </expan> 
                <num xml:lang="lat" value="6">VI</num>
-               <expan>, <abbr>Pr</abbr><ex>aetoriae</ex>
+               <expan> <abbr>Pr</abbr><ex>aetoriae</ex>
                </expan> 
-               <expan>
-                  <abbr>
-                     <g type="C"/>
-                  </abbr><ex>enturiae</ex>
-               </expan>.
+                     <g type="centuria"/>
+                  
                 <lb n="5"/> 
                <persName>
-                  <name type="praenomen" key="Marcus">Marci</name>
-               </persName> fecerunt
-                <lb n="6"/> fratres, <expan> 
+                  <name type="praenomen" key="Marcus">Marci</name></persName>. Fecerunt
+                <lb n="6"/> fratres <expan> 
                   <abbr>f</abbr><ex>ratri</ex>
                </expan> 
                <expan>
-                  <abbr>b</abbr><ex>e</ex>
-                  <abbr>n</abbr><ex>e</ex>
+                  <abbr>b</abbr><ex>e</ex><abbr>n</abbr><ex>e</ex>
                </expan> 
                <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan>.
+                  <abbr>m</abbr><ex>erenti</ex></expan>,
                 <lb n="7"/> 
                <persName>
                   <name type="praenomen" key="Gaius">
@@ -173,7 +172,7 @@
                   <abbr>mil</abbr><ex>es</ex>
                </expan> 
                <expan>
-                  <abbr>Coh</abbr><ex>ortis</ex>
+                  <abbr>coh</abbr><ex>ortis</ex>
                </expan> 
                <num xml:lang="lat" value="6">VI</num> 
                <expan>
@@ -187,13 +186,13 @@
                   </name> 
                   <name type="gentilicium" key="Pisentius">Pisentius</name> 
                   <name type="cognomen" key="Probus">Pro
-                 <lb break="no" n="10"/> bus</name>
+                 <lb break="no" n="10"/>bus</name>
                </persName> 
                <expan>
                   <abbr>mil</abbr><ex>es</ex>
                </expan> 
                <expan>
-                  <abbr>Coh</abbr><ex>ortis</ex>
+                  <abbr>coh</abbr><ex>ortis</ex>
                </expan> VI <expan>
                   <abbr>Pr</abbr><ex>aetoriae</ex>
                </expan>
@@ -205,8 +204,8 @@
                   </name> 
                   <name type="gentilicium" key="Pisentius">Pisentius</name>
                  <lb n="12"/> 
-                  <name type="cognomen" key="Festus"/>
-                  <supplied reason="lost">F</supplied>estus</persName> 
+                  <name type="cognomen" key="Festus">
+                     <supplied reason="lost">F</supplied>estus</name></persName> 
                <expan>
                   <abbr>mil</abbr><ex>es</ex>
                </expan> 
@@ -215,8 +214,7 @@
                </expan> 
                <num xml:lang="lat" value="6">VI</num>
                <expan>
-                  <abbr>Pr</abbr><ex>aetoriae</ex>
-               </expan>.</ab>
+                  <abbr>Pr</abbr><ex>aetoriae</ex></expan>.</ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -224,13 +222,20 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits. To Gaius Pisentius Sabinus, son of Gaius, from
+               Arretium, soldier of the sixth Praetorian cohort, from the century of Marcus. (His)
+               brothers made this for (their) well-deserving brother: Gaius Pisentius Justus,
+               soldier of the sixth Praetorian cohort, and Gaius Pisentius Probus, soldier of the
+               sixth Praetorian cohort, and Gaius Pisentius [F]estus, soldier of the sixth
+               Praetorian cohort.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>The name of the deceased is unusual in the arrangement of the elements;
+                       <hi rend="italic">Arretio</hi>, apparently this soldier’s <hi rend="italic">domus</hi>, is listed before the <hi rend="italic">cognomen</hi>, <hi rend="italic">Sabino</hi> in the
+               normal tribal position. (Tuck)</p>
                 </div>
             
         

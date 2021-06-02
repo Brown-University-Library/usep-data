@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Iunia Paramytia</p>
+                     <p>epitaph of Iunia Paramytia</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Reconstituted marble slab</p>
+                           <p>reconstituted marble slab</p>
                            
                            <seg type="material">White marble</seg>
                            
@@ -40,7 +40,9 @@
                               <depth>4.3</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +51,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="hedera">
@@ -63,7 +65,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">second-third century CE</date>
+                     <date evidence="#formulae #nomenclature" notBefore="0001" notAfter="0100">second-third
+                        century CE</date>
                      <placeName ref="europe.italy.rome"/>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -81,6 +84,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">189 no. 319</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132784"
+                     >EDR132784</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -95,6 +103,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -140,27 +150,29 @@
                </persName> coniugi
                 <lb n="9"/> bene merenti
                 <lb n="10"/> 
-               <g type="hedera"/> fecit <g type="hedera"/>.</ab>
+               <g type="hedera"/> fecit. <g type="hedera"/></ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits of Junia Paramytia, the best wife, who lived for
+               thirty-five years, six months, (and) nine days. Junius Agrippa (made this) for his
+               well-deserving wife.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>The number of years and days the deceased lived are given in numerals (XXXV in line 6 and VIIII in line 7) 
+                       while the number of months she lived is spelled out ("sex" in line 6). </p>
+                   <p> Line 5: vixit (Tuck). </p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>5) vixit: Tuck </p>
-         </div>
+                
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

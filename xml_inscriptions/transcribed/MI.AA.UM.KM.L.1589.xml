@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of [?Patu]lcia Procla</p>
+                     <p>epitaph of [  ] Procula</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Broken marble tablet</p>
+                           <p>broken marble tablet</p>
                            
                                                 
                                             <dimensions type="surface" unit="cm">
@@ -37,7 +37,9 @@
                               <depth>8.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#palaeography #formulae" notBefore="0030" notAfter="0070">mid first century
+                        CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -100,6 +103,8 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, edited app crit</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -114,36 +119,30 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>nti <expan>
-                  <abbr>l</abbr><ex>iberti</ex>
+               <gap reason="lost" extent="unknown" unit="character"/><unclear>n</unclear>ti <expan>
+                  <abbr>l</abbr><ex>iberto</ex>
                </expan>
                 <lb n="2"/> 
-               <supplied reason="lost">---et</supplied> Zosimo <expan>
+               <supplied reason="lost">et</supplied> <gap reason="lost" extent="unknown" unit="character"/> <persName><name key="Zosimo" type="cognomen">Zosimo</name></persName> <expan>
                   <abbr>l</abbr><ex>iberto</ex>
                </expan>
                 <lb n="3"/> 
-               <supplied reason="lost">---et c</supplied>
-               <expan>
-                  <abbr>ontub</abbr><ex>ernali</ex>
-               </expan> suae
+               <supplied reason="lost">et</supplied> <gap reason="lost" extent="unknown" unit="character"/> <expan><abbr><supplied reason="lost">c</supplied>ontub</abbr><ex>ernali</ex></expan> suae
                 <lb n="4"/> 
-               <supplied reason="lost">---lciae</supplied> 
-               <expan>
-                  <abbr>Proc</abbr><ex>u</ex>
-                  <abbr>lae</abbr>
-               </expan> 
+               <persName><gap reason="lost" extent="unknown" unit="character"/>lciae
+              <name type="cognomen" key="Procula"><expan>
+                  <abbr>Proc</abbr><ex>u</ex><abbr>lae</abbr>
+              </expan></name></persName> 
                <expan>
                   <abbr>l</abbr><ex>ibertae</ex>
                </expan>
                 <lb n="5"/> 
-               <gap reason="lost" extent="unknown" unit="character"/>nuleio <persName>
-                  <name type="cognomen" key="Dionysius">Dionysio</name>
-               </persName>
+               <persName><gap reason="lost" extent="unknown" unit="character"/>nuleio 
+                  <name type="cognomen" key="Dionysius">Dionysio</name></persName>
+               
                 <lb n="6"/> 
-               <supplied reason="lost">---po</supplied>
-               <expan>
-                  <abbr>sterisq</abbr><ex>ue</ex>
-               </expan> eorum</ab>
+               <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">po</supplied><expan><abbr>sterisq</abbr><ex>ue</ex>
+               </expan> eorum.</ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -157,14 +156,12 @@
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>Line 1: l(iberti) (Tuck).</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>1) l(iberto)?: AE</p>
-         </div>
+               
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

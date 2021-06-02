@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Ti. Claudius Celadus</p>
+                     <p>epitaph of Tiberius Claudius Celadus</p>
                   </msItem>
                </msContents>
                            
@@ -28,15 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble slab</p>
-                           <seg type="material">Gray marble</seg>
+                           <p>marble slab</p>
+                         
                                             <dimensions type="surface" unit="cm">
                               <height>21.5</height>
                               <width>35.2</width>
                               <depth>3.8</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>dressed reverse</p>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>dressed reverse</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -59,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0025" notAfter="0075">mid first century CE</date>
+                     <date evidence="#formulae #nomenclature #history" notBefore="0025" notAfter="0075">mid first century
+                        CE</date>
                      <placeName ref="europe.italy">Cumae, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -72,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#AE_2005"/>
                   <biblScope unit="item">370</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR100071"
+                     >EDR100071</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -87,7 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -102,8 +111,7 @@
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>Di<hi rend="tall">i</hi>s <expan>
-                  <abbr>Manib</abbr><ex>us</ex>
-               </expan>.
+                  <abbr>Manib</abbr><ex>us</ex></expan>.
                     <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Tiberius">
@@ -118,7 +126,7 @@
                      </expan>
                   </name>
                </persName>
-                    <lb n="3"/>bene merenti, <persName>
+                    <lb n="3"/>bene merenti <persName>
                   <name type="gentilicium" key="Mammia">Mammia</name>
                     <lb n="4"/>
                   <name type="cognomen" key="Sympherusa">Sympherusa.</name>
@@ -128,7 +136,8 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits. Mammia Symoherusa (made this) for Tiberius Claudius
+               Celadus.</p>
                 </div>
             
         

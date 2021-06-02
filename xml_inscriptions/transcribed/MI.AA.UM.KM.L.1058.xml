@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of A. Oblicius Optatus</p>
+                     <p>epitaph of Aulus Oblicius Optatus</p>
                   </msItem>
                </msContents>
                            
@@ -28,15 +28,17 @@
                   <objectDesc ana="#ash_urn">
                      <supportDesc ana="#clay">
                         <support>
-                           <p>Clay Urn</p>
-                           <seg type="Material">Red clay</seg>
+                           <p>clay ash urn</p>
+                           
                                             <dimensions type="surface" unit="cm">
                               <height>30.6</height>
                               <width>27.5</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>brown-purple slip</p>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>brown-purple slip</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#painted"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -59,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="-0025" notAfter="-0001">late first century BCE</date>
+                     <date evidence="#archaeology #palaeogrpahy #nomenclature" notBefore="-0030" notAfter="-0010">late first
+                        century BCE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -77,6 +80,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">119-120, no. 182</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114484"
+                     >EDR114484</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -91,7 +99,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -114,19 +123,19 @@
                   </name> 
                   <name type="gentilicium" key="Oblicius">Oblicio</name>
                     <lb n="2"/> 
-                  <name type="cognomen" key="Optatus">Optato</name>
-               </persName>.</ab>
+                  <name type="cognomen" key="Optatus">Optato</name></persName>.</ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>To Aulus Oblicius Optatus.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="Material">Red clay.</seg></p>
+                   <p>The cover now on the urn bears no traces of an inscription mentioned by Dennison. (Tuck)</p>
                 </div>
             
         

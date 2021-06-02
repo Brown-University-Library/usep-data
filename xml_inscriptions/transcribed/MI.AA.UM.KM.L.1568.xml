@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of [Ti. Cla]udius</p>
+                     <p>epitaph of [Tiberius Cla]udius</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
+                           <p>fragmentary marble slab</p>
                            
                            <seg type="material">White marble</seg>
                            
@@ -40,7 +40,9 @@
                               <depth>2.6</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken along all edges except top</p>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken along all edges except top</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +51,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -63,8 +65,10 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0075" notAfter="0200">late first-second century CE</date>
-                     <placeName ref="europe.italy.rome">Vigna Virili, Italy, Rome, Via Appia</placeName>
+                     <date evidence="#formulae #nomenclature #palaeography" notBefore="0075" notAfter="0200">late first-second
+                        century CE</date>
+                     <placeName ref="europe.italy.rome">Vigna Virili, Italy, Rome, Via
+                        Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -81,6 +85,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">182-183 no. 304</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132689"
+                     >EDR132689</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -95,6 +104,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,21 +120,15 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>D</abbr><ex>is</ex>
-                  </expan>
-               </supplied> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
+               <supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/>
-               <supplied reason="lost">
-                  <expan>
+               <persName><supplied reason="lost">
+                  <name type="praenomen" key="Tiberius"><expan>
                      <abbr>Ti</abbr><ex>berius</ex>
-                  </expan> Cla</supplied>udius
+                     </expan></name> <name type="gentilicium" key="Claudius">Cla</supplied>udius</name></persName>
                 <lb n="3"/>
-               <gap reason="lost" quantity="5" unit="chars"/> s Cast<supplied reason="lost">or</supplied>
+               <gap reason="lost" quantity="5" unit="character"/>s Cast<supplied reason="lost">or</supplied>
+               <lb n="4"/><gap reason="lost" extent="unknown" unit="line"/>
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->

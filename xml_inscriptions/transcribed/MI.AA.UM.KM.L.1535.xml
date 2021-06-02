@@ -20,25 +20,25 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of L. Aninius Evenus (Eventus?)</p>
+                     <p>epitaph of Lucius Aninius Evenus</p>
                   </msItem>
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Broken marble stele</p>
+                           <p>broken marble tablet</p>
                            
-                           <seg type="material">Pentelic? marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>35</height>
                               <width>21</width>
                               <depth>4</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>stele broken on bottom half</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p> broken on bottom half</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#formulae #nomeclature #archaeology" notBefore="0050" notAfter="0150">mid first to
+                        mid second century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -79,6 +80,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">177-178 no. 294</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132213"
+                     >EDR132213</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -93,6 +99,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -114,8 +122,7 @@
                   <abbr>M</abbr><ex>anibus</ex>
                </expan> 
                <expan>
-                  <abbr>S</abbr><ex>acrum</ex>
-               </expan>.
+                  <abbr>s</abbr><ex>acrum</ex></expan>.
                 <lb n="2"/> 
                <persName>
                   <name type="Lucius" key="Lucius">
@@ -133,45 +140,37 @@
                      <abbr>f</abbr><ex>ilio</ex>
                   </expan>
                   <lb n="3"/> 
-                  <name type="cognomen" key="Evenus">Eveno</name>
-               </persName> 
+                  <name type="cognomen" key="Evenus">Eveno</name></persName>; 
                <expan>
-                  <abbr>vix</abbr><ex>it</ex>
+                  <abbr>v<hi rend="tall">i</hi>x</abbr><ex>it</ex>
                </expan> 
-               <expan>
+               <lb n="4"/><expan>
                   <abbr>an</abbr><ex>nis</ex>
                </expan> 
-               <num xml:lang="lat" value="75">LXXV</num>;
-                <lb n="4"/> 
+               <num xml:lang="lat" value="75">LXXV</num>.
+                <lb n="5"/> 
                <persName>
                   <name type="praenomen" key="Sextus">
                      <expan>
                         <abbr>Sex</abbr><ex>tus</ex>
                      </expan>
                   </name> 
-                  <name type="gentilicium" key="Munatius"/>Munatius</persName>
-                <lb n="5"/> 
-               <app type="previouslyread">
-                  <lem resp="previous">
-                     <expan>
-                        <abbr>L</abbr><ex>uci</ex>
-                     </expan> 
+                  <name type="gentilicium" key="Munatius">Muna<hi rend="tall">t</hi>ius</name>
+                <lb n="6"/> 
+                  <supplied reason="lost" evidence="previouseditor"><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex>
+               </expan></name> 
                      <expan>
                         <abbr>f</abbr><ex>ilius</ex>
-                     </expan> Perennis</lem>
-               </app>
-                <lb n="6"/>
-               <app type="previouslyread">
-                  <lem resp="previous">patri suo</lem>
-               </app>
-                <lb n="7"/> 
-               <app type="previouslyread">
-                  <lem resp="previous">bene merenti</lem>
-               </app>
-                <lb n="8"/>  
-               <app type="previouslyread">
-                  <lem resp="previous">fecit.</lem>
-               </app>
+                     </expan></supplied> <name type="cognomen" key="Perennis"><supplied reason="lost" evidence="previouseditor">Pe</supplied><unclear>r</unclear>ennis</name></persName>
+                <lb n="7"/>
+               <supplied reason="lost" evidence="previouseditor">patri suo
+                <lb n="8"/> 
+               bene merenti
+                <lb n="9"/>  
+                  fecit.</supplied>
+               
+               <!-- <app type="previouslyread">
+                  <lem resp="previous"> -->
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -179,13 +178,15 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Sacred to the Divine Spirits. To Lucius Aninius Evenus, son of Lucius; he
+               lived for seventy-five years. Sextus Munatius Perennis, son of Lucius, made (this)
+               for his well-deserving father.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Pentelic? marble</seg> (Tuck)</p>
                 </div>
             
         

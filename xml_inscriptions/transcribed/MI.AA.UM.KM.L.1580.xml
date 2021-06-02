@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Sextu[---]</p>
+                     <p>epitaph of Sextus</p>
                   </msItem>
                </msContents>
                            
@@ -28,18 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
-                           
+                           <p>broken marble slab</p>
                            <seg type="material">White marble</seg>
-                           
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>11.3</height>
                               <width>23.5</width>
                               <depth>3.8</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken along left edge and heavily encrusted</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken along left edge and heavily encrusted</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -48,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -62,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0200" notAfter="0400">third to fourth century CE</date>
+                     <date evidence="#palaeography" notBefore="0200" notAfter="0400">third to fourth
+                        century CE</date>
                      <placeName ref="europe.rome.italy">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -75,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">216 no. 375</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102812"
+                     >EDR102812</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -90,6 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,15 +111,12 @@
         <div type="edition"> 
             <ab>
                 <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>s et Sextu<gap reason="lost" extent="unknown" unit="character"/>
+               <gap reason="lost" extent="unknown" unit="character"/>s et Sextu<supplied reason="lost">s</supplied> <gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="2"/> 
-               <gap reason="lost" extent="unknown" unit="character"/>nus V <expan>
-                  <abbr>Non</abbr><ex>a</ex>
-                  <abbr>s</abbr>
-               </expan> 
+               <gap reason="lost" extent="unknown" unit="character"/><unclear>n</unclear>us V <expan>
+                  <abbr>Non</abbr><ex>a</ex><abbr>s</abbr></expan> 
                <expan>
-                  <abbr>S</abbr><ex>eptembres</ex>
-               </expan>
+                  <abbr>S</abbr><ex>eptembres</ex></expan>.
             </ab>
                 
                 
@@ -128,7 +132,7 @@
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>Line 2: VNONSS (EDR).</p>
                 </div>
             
         

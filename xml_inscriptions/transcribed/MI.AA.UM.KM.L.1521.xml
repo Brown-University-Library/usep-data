@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Iulius Maximus</p>
+                     <p>epitaph of Iulius Maximus</p>
                   </msItem>
                </msContents>
                            
@@ -28,9 +28,9 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>Marble slab</p>
+                          <p>marble slab</p>
                            
-                           <seg type="material">Proconnesian marble</seg>
+                           
                                                 
                                             <dimensions type="surface" unit="cm">
                               <height>28</height>
@@ -38,7 +38,9 @@
                               <depth>2</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +63,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0150" notAfter="0300">mid second-third century CE</date>
+                     <date evidence="#history #nomenclature" notBefore="0150" notAfter="0300">mid second-third century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +76,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">174 no. 289</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR006597"
+                     >EDR006597</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,6 +96,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,8 +116,7 @@
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/> 
                <persName>
                   <name type="gentilicium" key="Iulius">
@@ -117,24 +125,23 @@
                      </expan>
                   </name> 
                   <name type="cognomen" key="Maximus">Maximus</name>
-               </persName>, <expan>
+               </persName> <expan>
                   <abbr>mil</abbr><ex>es</ex>
                </expan>
                 <lb n="3"/> 
                <expan>
                   <abbr>coh</abbr><ex>ortis</ex>
                </expan> 
-               <num xml:lang="lat" value="10">X</num>, <expan>
+               <num xml:lang="lat" value="10">X</num> <expan>
                   <abbr>Pr</abbr><ex>aetoriae</ex>
                </expan> 
-               <g type="C"/>enturiae Nicomed
-                <lb break="no" n="4"/> es <expan>
-                  <abbr>; vix</abbr><ex>it</ex>
+               <g type="centuria"/> <persName><name type="cognomen" key="Nicomedes">Nicomed
+                  <lb break="no" n="4"/> es</name></persName> <expan><abbr>vix</abbr><ex>it</ex>
                </expan> 
                <expan>
                   <abbr>an</abbr><ex>nis</ex>
                </expan> 
-               <num xml:lang="lat" value="28">XXVIII </num>
+               <num xml:lang="lat" value="28">XXVIII, </num>
                <expan>
                   <abbr>mil</abbr><ex>itavit</ex>
                </expan>
@@ -144,26 +151,20 @@
                </expan> 
                <num xml:lang="lat" value="8">VIII</num>, <expan>
                   <abbr>nat</abbr><ex>ione</ex>
-               </expan> 
-               <persName>
-                  <name type="gentilicium" key="Tergestinus">Terges
-                <lb break="no" n="6"/> tinus</name> 
-                  <name type="gentilicium" key="Gavia">Gavia </name> 
-                  <name type="cognomen" key="Felicitas">Felicitas</name>
-               </persName>
+               </expan> Terges
+                     <lb break="no" n="6"/>tinus. <persName>
+                  <name type="gentilicium" key="Gavia">Ga<hi rend="apex">v</hi>a </name> 
+                  <name type="cognomen" key="Felicitas">Felicitas</name></persName>
+               
                 <lb n="7"/> 
                <expan>
-                  <abbr>co</abbr><ex>n</ex>
-                  <abbr>iu</abbr><ex>n</ex>
-                  <abbr>x</abbr>
+                  <abbr>co</abbr><ex>n</ex><abbr>iu</abbr><ex>n</ex><abbr>x</abbr>
                </expan> 
                <expan>
-                  <abbr>co</abbr><ex>n</ex>
-                  <abbr>iugi</abbr>
+                  <abbr>co</abbr><ex>n</ex><abbr>iu<hi rend="apex">g</hi>g</abbr>
                </expan> 
                <expan>
-                  <ex>h</ex>
-                  <abbr>eres</abbr>
+                  <ex>h</ex><abbr>eres</abbr>
                </expan>
                 <lb n="8"/> 
                <expan>
@@ -173,21 +174,23 @@
                   <abbr>m</abbr><ex>erenti</ex>
                </expan> 
                <expan>
-                  <abbr>f</abbr><ex>ecit</ex>
-               </expan>.</ab>
+                  <abbr>f</abbr><ex>ecit</ex></expan>.</ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits. Julius Maximus, soldier of the tenth Praetorian
+               cohort, from the century of Nicomedes, lived for twenty-eight years (and) served for
+               eight years, from Tergeste by origin. Gavia Felicitas, (his) wife (and) heir, made
+               this for (her) husband, well-deserving. </p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Proconnesian marble</seg> (Tuck)</p>
                 </div>
             
         

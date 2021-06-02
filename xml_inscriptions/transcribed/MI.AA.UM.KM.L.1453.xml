@@ -20,23 +20,23 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Petronius D. l. Philematius</p>
+                     <p>epitaph of Petronia Philematius, a freedwoman</p>
                   </msItem>
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#cippus">
-                     <supportDesc ana="#stone">
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.other">
                         <support>
                            <seg type="material">Tufa</seg>
-                           <p>Marble Stele</p>
+                           <p>tufa slab</p>
                            <dimensions type="surface" unit="cm">
                               <height>29.8</height>
                               <width>15.5</width>
                               <depth>4.7</depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#broken">
                            <!--Add ana attribute with controlled value for condition-->
                            <p>heavily damaged, inscribed surface abraded</p>
                         </condition>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="-0100" notAfter="0001">first century BCE</date>
+                     <date evidence="#archaeology #palaeography" notBefore="-0100" notAfter="0001">first century
+                        BCE</date>
                      <placeName ref="europe.rome.italy">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">211 no. 364</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102077"
+                     >EDR102077</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -90,6 +96,8 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-05-31" who="Scott J. DiGiulio">Fixed image url error.</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -105,7 +113,7 @@
             <ab>
                 <lb n="1"/>
                <persName>
-                  <name type="gentilicium" key="Petronius">
+                  <name type="gentilicium" key="Petronia">
                      <supplied reason="lost">Pet</supplied>ron
                 <lb break="no" n="2"/> 
                      <supplied reason="lost">i</supplied>ae</name> 
@@ -118,9 +126,8 @@
                      <abbr>l</abbr><ex>ibertae</ex>
                   </expan>
                   <lb n="3"/> 
-                  <name type="cognomen" key="Philematius">P<supplied reason="lost">hi</supplied>lem
-                <lb break="no" n="4"/> atium</name>
-               </persName>
+                  <name type="cognomen" key="Philematium">P<choice><corr>hil</corr><sic>i<hi rend="ligature">hl</hi></sic></choice>em
+                <lb break="no" n="4"/> atium</name></persName>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -129,13 +136,14 @@
         
         
                 <div type="translation">
-                    <p/>
+                   <p>To Petronia Philematium, freedwoman of Decius.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>Nominative "Philematium" in lines 3-4 instead of dative.</p>
+                   <p>Line 3: Piilem= (EDR). </p>
                 </div>
             
         

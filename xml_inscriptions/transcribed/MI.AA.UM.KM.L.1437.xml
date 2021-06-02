@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Munnia Prima</p>
+                     <p>epitaph of Munnia Prima</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.limestone">
                         <support>
-                           <p>Limestone slab</p>
-                           
+                           <p>limestone columbarium slab</p>
                            <seg type="material">yellow limestone</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>6.2</height>
                               <width>14.4</width>
                               <depth>1.8</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#archaeology #palaeography" notBefore="0001" notAfter="0100">first century
+                        CE</date>
                      <placeName ref="europe.rome.italy">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">191-192 no. 323</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101933"
+                     >EDR101933</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,7 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -106,8 +113,7 @@
                <persName>
                   <name type="gentilicium" key="Munnia">Munnia</name>
                   <lb n="2"/> 
-                  <name type="cognomen" key="Prima">Pr<hi rend="tall"/>ima</name>
-               </persName>
+                  <name type="cognomen" key="Prima">Pr<hi rend="tall">i</hi>ma</name></persName>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -116,7 +122,7 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Munnia Prima.</p>
                 </div>
             
         

@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Fragmentary epitaph</p>
+                     <p>fragmentary epitaph</p>
                   </msItem>
                </msContents>
                            
@@ -28,9 +28,9 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
+                           <p>fragmentary marble slab</p>
                            
-                           <seg type="material">Luna marble</seg>
+                           
                            
                            
                                                 
@@ -40,7 +40,9 @@
                               <depth>3.1</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +51,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -63,7 +65,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#palaeography" notBefore="0100" notAfter="0200">second century
+                        CE</date>
                      <placeName ref="europe.rome.italy">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -95,6 +98,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -131,7 +136,7 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Luna marble</seg> (Tuck)</p>
                 </div>
             
         

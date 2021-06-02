@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of [C]aecilius [...]tianus</p>
+                     <p>epitaph of [Ca]ecilius Gen[ialis]</p>
                   </msItem>
                </msContents>
                            
@@ -28,16 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
+                           <p>broken marble slab</p>
                            <seg type="material">Gray marble</seg>
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>27</height>
                               <width>19</width>
                               <depth>2.6</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>left edge broken, significant erosion and chipping</p>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>left edge broken, significant erosion and chipping</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#formulae" notBefore="0100" notAfter="0200">second century
+                        CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -73,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#AE_2005"/>
                   <biblScope unit="item">353</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112670"
+                     >EDR112670</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -88,6 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -103,28 +112,24 @@
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>D</abbr><ex>is</ex>
-                  </expan>
-               </supplied> 
+               <supplied reason="lost"><expan>
+                     <abbr>D</abbr><ex>is</ex></expan></supplied> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                     <lb n="2"/> 
-               <persName>
+                   <gap reason="lost" quantity="2" unit="character" cert="low"/> <persName>
                   <name type="gentilicium" key="Caecilius">
                      <supplied reason="lost">C</supplied>aecilius</name>
                </persName>
                     <lb n="3"/> 
-               <gap reason="lost" quantity="3" unit="character"/>tianus
+               <gap reason="lost" quantity="3" unit="character" cert="low"/>tianus
                     <lb n="4"/> 
-               <persName>
+                   <gap reason="lost" quantity="2" unit="character" cert="low"/> <persName>
                   <name type="cognomen" key="Caecilius">
                      <supplied reason="lost">Ca</supplied>ecilio</name> 
-                  <name type="cognomen" key="Genialis">Gen
+                  <name type="cognomen" key="Genialis">Ge<hi rend="small">n</hi>
                     <lb n="5" break="no"/> 
-                     <supplied reason="lost">iali</supplied>
+                     <supplied reason="lost" cert="low">iali</supplied>
                   </name>
                </persName> filio carissi
                     <lb n="6"/> 
@@ -136,13 +141,8 @@
                </expan> 
                <num xml:lang="lat" value="24">XXIIII</num>,
                     <lb n="7"/> 
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>men</abbr><ex>sibus</ex>
-                  </expan>
-               </supplied> 
-               <num xml:lang="lat" value="10">X</num>, <expan>
-                  <abbr>ben</abbr><ex>e</ex>
+               <supplied reason="lost"><expan><abbr>men</abbr><ex>sibus</ex></expan></supplied> 
+               <num xml:lang="lat" value="10">X</num>; <expan><abbr>ben</abbr><ex>e</ex>
                </expan> 
                <expan>
                   <abbr>mer</abbr><ex>enti</ex>
@@ -160,14 +160,12 @@
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Tuck attests that AEOLLIVS is painted over line 2.</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>2) in paint: Aeollius: Tuck</p>
-         </div>
+            
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

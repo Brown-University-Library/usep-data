@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Cn(aeus) Atus Felix</p>
+                     <p>epitaph of Gnaeus Atus Felix</p>
                   </msItem>
                </msContents>
                            
@@ -28,8 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>Marble slab</p>
-                           
+                           <p>broken marble slab</p>
                            <seg type="material">Coarse-grained white marble</seg>
                            <dimensions type="surface" unit="cm">
                               <height>20.4</height>
@@ -37,7 +36,9 @@
                               <depth>2.0</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>surface is eroded and encrusted</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken along the right edge (Tuck)</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0058" notAfter="0225">late first-early third century CE</date>
+                     <date evidence="#formulae" notBefore="0058" notAfter="0200">late first-third
+                        century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -69,6 +71,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">63-64, no. 81</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101534"
+                     >EDR101534</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -84,6 +91,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and comment</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,7 +113,7 @@
                </expan> 
                <expan>
                   <abbr>M</abbr><ex>anibus</ex>
-               </expan>
+               </expan> <expan><abbr><supplied reason="lost">S</supplied></abbr><ex>acrum</ex></expan>.
                     <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Gnaeus">
@@ -113,16 +122,13 @@
                      </expan>
                   </name> 
                   <name type="gentilicium" key="Atus">Atus</name> 
-                  <name type="cognomen" key="Felix">F<choice>
-                        <sic>i</sic>
-                        <corr>e</corr>
-                     </choice>l<hi rend="ligature">ix</hi>
+                  <name type="cognomen" key="Felix">Fel<hi rend="ligature">i<unclear>x</unclear></hi>
                   </name>
                </persName>
                     <lb n="3"/>vixit <expan>
                   <abbr>anni</abbr><ex>s</ex>
                </expan> 
-               <num xml:lang="lat" value="19">XIX</num>
+               <num xml:lang="lat" value="19">XIX</num>.
                     <lb n="4"/>
                <persName>
                   <name type="cognomen" key="Charis">Charis</name>
@@ -130,8 +136,7 @@
                   <abbr>b</abbr><ex>ene</ex>
                </expan> 
                <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan>
+                  <abbr>m</abbr><ex>erenti</ex></expan>.
             </ab>
             </div>
         
@@ -143,7 +148,9 @@
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>The E in "Felix" (line 2) doesn't have a crossbar. </p>
+                     <p>According to Tuck, Schulze cites "Atus" as a variant of "Atius."</p>
+                   <p>Line 2: Aius (EDR).</p>
                 </div>
             
         

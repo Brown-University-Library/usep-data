@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of C. Caninius</p>
+                     <p>epitaph of Gaius Caninius</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble tablet</p>
+                           <p>marble columbarium tablet</p>
                            
-                           <seg type="material">Proconnesian marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>9</height>
                               <width>18.4</width>
                               <depth>2.1</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0075" notAfter="0125">late first-early second century CE</date>
+                     <date evidence="#archaeology #nomenclature #formulae" notBefore="0075" notAfter="0125">late first-early
+                        second century CE</date>
                      <placeName ref="europe.rome.italy">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">182 no. 303</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030382"
+                     >EDR030382</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,7 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,14 +118,14 @@
                   </name> 
                   <name type="gentilicium" key="Caninius">Caninius</name>
                   <lb n="2"/> 
-                  <name type="cognomen" key="Felicio"/>Felicio</persName>
+                  <name type="cognomen" key="Felicio">Felicio</name></persName>
                 <lb n="3"/> 
                <expan>
                   <abbr>vix</abbr><ex>it</ex>
                </expan> 
                <expan>
                   <abbr>an</abbr><ex>nis</ex>
-               </expan> V</ab>
+               </expan> <num xml:lang="lat" value="5">V</num>.</ab>
                 
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -127,13 +134,13 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Gaius Caninius Felicio lived for five years.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Proconnesian marble</seg> (Tuck)</p>
                 </div>
             
         

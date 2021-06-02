@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaphs of Umbonia C. l. Zosima and Octavia Q. l. Mneme</p>
+                     <p>epitaph of Octavia Mneme</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>Marble slab</p>
-                           
-                           <seg type="material">Gray marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <p>marble columbarium slab</p>
+                          
+                           <dimensions type="surface" unit="cm">
                               <height>13.9</height>
                               <width>21.5</width>
                               <depth>2.9</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -61,7 +61,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0125">1st c. or early 2nd c. CE</date>
+                     <date evidence="#archaeology" notBefore="0001" notAfter="0070">early to mid first century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +74,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">200 no. 342</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR103220"
+                     >EDR103220</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -90,7 +95,8 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2018-05-15" who="John Bodel">Fixed error in title</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -102,24 +108,23 @@
       
         <body>
         <div type="edition">
+           <div type="textpart" subtype="column" n="1">
             <ab>
                 <lb n="1"/>
                <persName>
-                  <name type="gentilicium" key="Umbonius"/>Umbon
+                  <name type="gentilicium" key="Umbonius">Umbon
                 <lb break="no" n="2"/>
-                  <expan>
-                     <abbr>ia <name type="praenomen" key="Gaius"/>C</abbr><ex>aii</ex>
-                     <abbr> l</abbr><ex>iberta</ex>
+                     ia</name> <name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aii</ex></expan></name> <expan><abbr>l</abbr><ex>iberta</ex>
                   </expan>
                   <lb n="3"/>
                   <name type="cognomen" key="Zosima">Zosi
-                <lb break="no" n="4"/>ma</name>
-               </persName>
+                <lb break="no" n="4"/>ma</name></persName>.
             </ab> 
-            <p>left inscription</p>
+           </div>
+           
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
-            </div><div type="edition">
+           <div type="textpart" subtype="column" n="2">
             <ab>
                 <lb n="1"/>
                <persName>
@@ -135,17 +140,17 @@
                   </expan>
                   <lb n="3"/> 
                   <name type="cognomen" key="Mneme">Mnem
-                <lb break="no" n="4"/>eni</name>
-               </persName>
+                <lb break="no" n="4"/>eni</name></persName>.
             </ab> 
-            <p>right inscription</p>
+            
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+            </div>    
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Umbonia Zosima, freedwoman of Gaius, (made this) for Octavia Mneme,
+               freedwoman of Quintus. </p>
                 </div>
             
         

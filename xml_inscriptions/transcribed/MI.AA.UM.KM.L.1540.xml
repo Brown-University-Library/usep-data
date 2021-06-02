@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Marcia C[</p>
+                     <p>epitaph of Marcia [ ]</p>
                   </msItem>
                </msContents>
                            
@@ -29,14 +29,16 @@
                      <supportDesc ana="#stone.marble">
                         <support>
                            <seg type="material">White marble</seg>
-                           <p>Fragmentary marble altar</p>
-                                            <dimensions type="surface" unit="cm">
+                           <p>broken marble altar</p>
+                           <dimensions type="surface" unit="cm">
                               <height>22</height>
                               <width>18.5</width>
                               <depth>4.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>upper left portion </p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,12 +47,12 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
-                        <p>bucraniium draped with a garland; simple border surrounded by inscription</p>
+                        <p>bucranium draped with a garland; simple border around inscription</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -59,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#formulae #nomenclature #archaeology" notBefore="0100" notAfter="0200">second century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -81,6 +84,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">191 no. 322</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132781"
+                     >EDR132781</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -95,6 +103,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">added dating criteria, updated metadata and corrected transcription in line w/CLE, added EDR link</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -111,15 +122,13 @@
                 <lb n="1"/>Marcia C<gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="2"/> vixit <expan>
                   <abbr>ann</abbr><ex>is</ex>
-               </expan> 
-               <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="3"/> ultima <supplied reason="lost">fata</supplied>
-                <lb n="4"/> erep<supplied reason="lost">ta</supplied>
-                <lb n="5"/> et nunc angus<supplied reason="lost">to</supplied>
-               <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="6"/> in lapide
-                <lb n="7"/> quid queror infelix <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="8"/> respnsura s<gap reason="lost" extent="unknown" unit="character"/>
+               </expan> <supplied evidence="previouseditor" reason="lost">XV</supplied><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="3"/> Ultima <supplied reason="lost" evidence="previouseditor">i</supplied><supplied reason="lost">am subii crudeli fun</supplied>
+                <lb n="4" break="no"/>ere <unclear>f</unclear><supplied reason="lost">ata</supplied>
+                <lb n="5"/> et nunc angus<supplied reason="lost">to comprimor</supplied>
+                <lb n="6"/> in lapide.
+                <lb n="7"/> Quid queror infelix <supplied reason="lost">non</supplied>
+                <lb n="8"/> responsura s<supplied reason="lost" cert="low">orori</supplied>?
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -128,21 +137,21 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Marcia [ ] lived for [ ] years.</p> 
+                   <p>Already, I have submitted to the ultimate
+               fate, merciless death, and now I am contained in (this) narrow gravestone. Why do I,
+               unhappy (and) unable to attend to (my) sister, lament?</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Line 2: VIX ANN X V (CIL). Lines 3-4: ultima f[ata subi lugenti]/ erep[ta marito]. Line 8: [sodali] (Sheldon in Boldwin and Torelli, CLE)</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>2) VIX ANN X V: CIL 3-8) ultima f[ata subi lugenti]/ erep[ta marito]/ et nunc angust[o comprimor]/ in lapide/ quid queror infelix [non]/ responsura s[odali]: Sheldon 3-8) ultima iam subii crudeli funere fata/ et nunc angusto comprimor in lapide/ quid queror infelix non responsura sorori: CLE</p>
-         </div>
-            
+                
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>

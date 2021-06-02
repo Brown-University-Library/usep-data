@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of [(P)ublius] Heterius P. l.Florentinu(s)</p>
+                     <p>epitaph of [Publius] Heterius Florentinus, a freedman</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
-                           
+                           <p>broken marble columbarium slab</p>
                            <seg type="material">White marble</seg>
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>11</height>
                               <width>17.2</width>
                               <depth>1.6</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0050" notAfter="0225">mid first century-early third century CE</date>
+                     <date evidence="#archaeology #nomenclature #formulae" notBefore="0030" notAfter="0070">mid first
+                        century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -79,6 +80,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">187-188 no. 316</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132605"
+                     >EDR132605</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -93,6 +99,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,28 +117,24 @@
                 <lb n="1"/>
                <persName>
                   <name type="praenomen" key="Publius">
-                     <supplied reason="lost">
-                        <expan>
-                           <abbr>P</abbr><ex>ublius</ex>
-                        </expan>
-                     </supplied>
+                     <supplied reason="lost"><expan><abbr>P</abbr><ex>ublius</ex></expan></supplied>
                   </name> 
-                  <name type="gentilicium" key="Heterius">Heterius</name>, <name type="praenomen" key="Publius">
+                  <name type="gentilicium" key="Heterius">Heterius</name> <name type="praenomen" key="Publius">
                      <expan>
                         <abbr>P</abbr><ex>ublii</ex>
                      </expan>
                   </name> 
                   <expan>
                      <abbr>l</abbr><ex>ibertus</ex>
-                  </expan>, <name type="cognomen" key="Florentinus">
+                  </expan> <name type="cognomen" key="Florentinus">
                      <expan>
-                        <abbr>Floren<hi rend="ligature">ti</hi>nu</abbr><ex>s</ex>
+                        <abbr><choice><sic>E</sic><corr>F</corr></choice>loren<hi rend="ligature">ti</hi>nu</abbr><ex>s</ex>
                      </expan>
-                  </name>;</persName>
+                  </name></persName>
                 <lb n="2"/> vixit <expan>
                   <abbr>ann</abbr><ex>is</ex>
                </expan> 
-               <num xml:lang="lat" value="14">XIIII</num>
+               <num xml:lang="lat" value="14">XIIII</num>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -139,20 +143,20 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>[Publius] Heterius Florentinus, freedman of Publius, lived for fourteen
+               years. </p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>"The gentilicium Heterius was restored by Solin on the conjecture that the first two vertical strokes rep- resent an H without the horizontal stroke carved. The resulting name is common at Rome." (Tuck)</p>
+                   <p>Line 1: LIETERIVS P.L.ELORENTINN (CIL);  Lieterius P.l. Florentinu (Baldwin). </p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>LIETERIUS P.L.ELORENTINN: CIL 1) Lieterius P.l. Florentinu: Baldwin </p>
-         </div>
+               
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

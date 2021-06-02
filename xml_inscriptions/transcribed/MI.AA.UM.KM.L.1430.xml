@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of M. Poblicius Syneros</p>
+                     <p>epitaph of Marcus Poblicius Syneros</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">Marble slab</seg>
+                           marble columbarium slab
                            
                            <seg type="material">White marble</seg>
                            
@@ -40,7 +40,9 @@
                               <depth>2.4</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>small chips along bottom edge</p>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>small chips along bottom edge</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +51,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -63,8 +65,9 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">Italy, Rome, Porta Salaria</date>
-                     <placeName ref="europe.italy.rome">first century CE</placeName>
+                     <date evidence="#archaeology" notBefore="0001" notAfter="0030">Italy, Rome,
+                        Porta Salaria</date>
+                     <placeName ref="europe.italy.rome">early first century CE</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
@@ -76,6 +79,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">193 no. 327</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102785"
+                     >EDR102785</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -91,7 +99,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -113,12 +122,12 @@
                   </name> 
                   <name type="gentilicium" key="Poblicius">Poblic<hi rend="tall">i</hi>us</name>
                   <lb n="2"/>
-                  <name type="cognomen" key="Syneros">Syneros</name>
+                  <name type="cognomen" key="Syneros">S<hi rend="tall">y</hi>eros</name>
                </persName> 
                <expan>
-                  <abbr>ol</abbr><ex>las</ex>
+                  <abbr>o<hi rend="tall">l</hi></abbr><ex>las</ex>
                </expan> 
-               <num xml:lang="lat" value="2">II</num>
+               <num xml:lang="lat" value="2">II</num>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -127,7 +136,7 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Marcus Poblicius Syneros (has) two urn cavities.</p>
                 </div>
             
         

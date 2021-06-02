@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Fragmentary epitaph</p>
+                     <p>epitaph of a duplarius</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Broken marble slab</p>
+                           <p>broken marble slab</p>
                            
                            <seg type="material">Gray marble</seg>
                            
@@ -38,7 +38,9 @@
                               <depth>2.2</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +63,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#formulae #palaeography" notBefore="0100" notAfter="0130"> early second century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -93,6 +96,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -107,43 +113,32 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <supplied reason="lost">
+               <supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan> 
                   <expan>
-                     <abbr>D</abbr><ex>is</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>M</abbr><ex>anibus</ex>
-                  </expan>
-               </supplied> 
+                     <abbr>M</abbr><ex>anibus</ex></expan></supplied> 
                <expan>
-                  <abbr>S</abbr><ex>acrum</ex>
-               </expan>
+                  <abbr>s</abbr><ex>acrum</ex></expan>.
                 <lb n="2"/> 
-               <gap reason="lost" quantity="7" unit="chars"/>o duplario
+               <gap reason="lost" quantity="7" unit="character"/>o duplario
                 <lb n="3"/> 
-               <gap reason="lost" quantity="8" unit="chars"/>cae <expan>
-                  <abbr>stip</abbr><ex>endiae</ex>
+               <gap reason="lost" quantity="8" unit="character"/>cae <expan>
+                  <abbr>stip</abbr><ex>endiorum</ex>
                </expan> 
                 <lb n="4"/>
-               <gap reason="lost" quantity="5" unit="chars"/>
+               <gap reason="lost" quantity="5" unit="character"/>
                <persName>
                   <name type="cognomen" key="Maximus">
                      <supplied reason="lost">Ma</supplied>ximus</name>
                </persName> et
                 <lb n="5"/> 
-               <gap reason="lost" quantity="8" unit="chars"/>s Milli
+               <gap reason="lost" quantity="8" unit="character"/>s Milli
                 <lb n="6"/> 
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>b</abbr><ex>ene</ex>
-                  </expan>
-               </supplied> 
+               <supplied reason="lost"><expan><abbr>b</abbr><ex>ene</ex></expan></supplied> 
                <expan>
                   <abbr>m</abbr><ex>erenti</ex>
                </expan> 
                <expan>
-                  <abbr>f</abbr><ex>ecerunt</ex>
-               </expan>
+                  <abbr>f</abbr><ex>ecerunt</ex></expan>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -152,7 +147,8 @@
         
         
                 <div type="translation">
-                    <p/>
+                   <p>Sacred [to the Divine Spirits]. To [ ], a <hi rend="italic">duplarius</hi> [ ] (years) of military
+               service [ Ma]ximus and [ ] Milli made (this) for (him), [well]-deserving.</p>
                 </div>
             
         

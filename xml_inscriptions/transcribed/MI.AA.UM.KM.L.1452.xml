@@ -20,23 +20,23 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of A. Marcius A.l. Anthiocus</p>
+                     <p>epitaph of Aulus Marcius Anthiocus, a freedman</p>
                   </msItem>
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#cippus">
-                     <supportDesc ana="#stone.marble">
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.other">
                         <support>
-                           <seg type="material">White marble</seg>
-                           <p>Fragmentary travertine stele</p>
+                           
+                           <p>fragmentary travertine slab</p>
                            <dimensions type="surface" unit="cm">
                               <height/>
                               <width>34</width>
                               <depth>6.7</depth>
                            </dimensions>
                         </support>
-                        <condition>
+                        <condition ana="#broken">
                            <!--Add ana attribute with controlled value for condition-->
                            <p/>
                         </condition>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="-0100" notAfter="-0001">first century BCE</date>
+                     <date evidence="#archaeology #formulae" notBefore="-0100" notAfter="-0001">first century
+                        BCE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -79,6 +80,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">190 no. 321</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132785"
+                     >EDR132785</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -93,6 +99,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -121,12 +129,10 @@
                      </expan> 
                   </name>
                   <expan>
-                     <abbr>l</abbr><ex>ibetus</ex>
+                     <abbr>l</abbr><ex>ibertus</ex>
                   </expan> 
                   <name type="cognomen" key="Anthiocus">
-                     <add place="overstrike">Anthiocus</add>
-                  </name>
-               </persName>.
+                     <add place="overstrike">Anthiocus</add></name></persName>.
                 <lb n="3"/> In <expan>
                   <abbr>fr</abbr><ex>onte</ex>
                </expan> 
@@ -134,16 +140,11 @@
                   <abbr>p</abbr><ex>edes</ex>
                </expan> 
                <num xml:lang="lat" value="9">IX</num>,
-                <lb n="4"/> in <supplied reason="lost">
-                  <expan>
-                     <abbr>ag</abbr><ex>ro</ex>
+                <lb n="4"/> in <supplied reason="lost"><expan><abbr>ag</abbr><ex>ro</ex>
                   </expan> 
                   <expan>
-                     <abbr>p</abbr><ex>edes</ex>
-                  </expan>
-               </supplied>
-                <lb n="5"/>
-               <gap reason="lost" extent="unknow" unit="lines"/>
+                     <abbr>p</abbr><ex>edes</ex></expan></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+                
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -151,20 +152,18 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Aulus Marcius Antiochus, freedman of Aulus. In width, nine feet, in [depth,
+               feet ] </p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p> 2) A. LI. Anthiocus: CIL  3) in [ag(ro) p(edes) novem)]: Schwartz</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p> 2) A. LI. Anthiocus: CIL  3) in [ag(ro) p(edes) novem)]: Schwartz</p>
-         </div>
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

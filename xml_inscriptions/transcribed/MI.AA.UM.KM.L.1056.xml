@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of M. Aulius Secundus</p>
+                     <p>epitaph of Marcus Aulius Secundus</p>
                   </msItem>
                </msContents>
                            
@@ -28,15 +28,18 @@
                   <objectDesc ana="#ash_urn">
                      <supportDesc ana="#clay.terracotta">
                         <support>
-                           <seg type="form">Olla</seg>
-                           <p>Concave olla with triple loop handles and saucer-shaped lid</p>
+                           
+                           <!-- <p>Concave olla with triple loop handles and saucer-shaped lid</p> -->
+                           <p>terracotta ash urn</p>
                            <dimensions type="surface" unit="cm">
                               <height>28.5</height>
                               <width>25.7</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,7 +48,7 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
+                  <handDesc hands="1">
                      <handNote ana="#painted"/>
                   </handDesc>
                   <decoDesc>
@@ -59,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0032" notAfter="0032">32 CE</date>
+                     <date evidence="#prosopography #history" notBefore="0032" notAfter="0032">12-13
+                        December, 32 CE</date>
                      <placeName ref="europe.italy">Via Domitiana, Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -81,6 +85,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">64, no. 82</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114299"
+                     >EDR114299</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -95,7 +104,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+         
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -121,8 +132,7 @@
                         <abbr>Auli</abbr><ex>i</ex>
                      </expan>
                   </name> 
-                  <name type="cognomen" key="Secundus">Secundi</name>
-               </persName>
+                  <name type="cognomen" key="Secundus">Secundi</name></persName>,
                     <lb n="2"/>idibus <expan>
                   <abbr>Decembr</abbr><ex>ibus</ex>
                </expan>
@@ -136,15 +146,13 @@
                   <name type="cognomen" key="Domitius">Domitio</name>
                </persName> 
                <expan>
-                  <abbr>Co</abbr><ex>n</ex>
-                  <abbr>s</abbr><ex>ule</ex>
-               </expan>
+                  <abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan>.
             </ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>(The remains) of Marcus Aulus Secundus, on the Ides of December, when Cn. Domitius was consul.</p>
                 </div>
             
         

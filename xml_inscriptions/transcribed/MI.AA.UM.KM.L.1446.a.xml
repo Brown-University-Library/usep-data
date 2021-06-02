@@ -2,11 +2,11 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.1574.r</title>
+            <title>MI.AA.UM.KM.L.1446.a</title>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1574.r">MI.AA.UM.KM.L.1574.r</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.1446.a">MI.AA.UM.KM.L.1446.a</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -15,12 +15,12 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>1574.r</idno>
+                  <idno>1446.a</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Fragmentary epitaph</p>
+                     <p>epitaph of Turranius [Epap]hroditus</p>
                   </msItem>
                </msContents>
                            
@@ -28,26 +28,28 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Fragmentary marble slab</p>
+                           <p>broken opisthographic marble slab</p>
                            
-                                                
+                           <seg type="material">White marble</seg>
                                             <dimensions type="surface" unit="cm">
-                              <height>8.6</height>
-                              <width>9.9</width>
-                              <depth>2.8</depth>
+                              <height>23.3</height>
+                              <width>16.6</width>
+                              <depth>6</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="1">
+                        <layout columns="1" writtenLines="8">
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,19 +62,27 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
-                     <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
+                     <date evidence="#nomenclature #formulae" notBefore="0001" notAfter="0125">first to early
+                        second century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Baldwin_Torelli"/>
-                  <biblScope unit="item">27</biblScope>
+                  <biblScope unit="item">43</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Claudia"/>
+                  <biblScope unit="item">160</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
-                  <biblScope unit="item">220 no. 388</biblScope>
+                  <biblScope unit="item">199 no. 340</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030163">EDR030163</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,12 +99,17 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions</change>
+         <change when="2015-08-17" who="Scott J. DiGiulio">Added EDR link</change>
+         <change when="2021-05-22" who="Sophia Papandonatou">changed id # from .v to .a</change>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-28" who="Sophia Papandonatou">updated image url to .a</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.1574.r.jpg"/>
+         <graphic url="MI.AA.UM.KM.L.1446.a.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -103,8 +118,27 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>uc<unclear>t</unclear>
+               <supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> 
+               <expan>
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/> 
+               <persName><gap reason="lost" extent="unknown" unit="character"/> 
+                  <name type="gentilicium" key="Turranius"><supplied reason="lost">Tu</supplied>rranio</name>
+                <lb n="3"/> 
+                  <name type="cognomen" key="Epaphrodtius"><supplied reason="lost">Epap</supplied>hrodito</name></persName>,
+                <lb n="4"/> 
+               <supplied reason="lost">qui vi</supplied>xit annis.
+                <lb n="5"/> 
                <gap reason="lost" extent="unknown" unit="character"/>
+               <persName><name type="gentilicium" key="Turrania"><supplied reason="lost">T</supplied>urrania</name>
+                <lb n="6"/> 
+                  <name type="cognomen" key="Restituta"><supplied reason="lost">Res</supplied>tituta</name></persName>
+                <lb n="7"/> 
+               <supplied reason="lost">ma</supplied>ter filio
+                <lb n="8"/> 
+               <supplied reason="lost">dul</supplied>cissimo
+                <lb n="9"/>  
+               <gap reason="lost" quantity="1" unit="lines"/>
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -113,7 +147,9 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>[To the Divine] Spirits. [ to Tu]rranius [Epap]hroditus, [who li]ved for [ ]
+               years. [T]urrania [Res]tituta, (his) [mo]ther, (made this) for (her) [dea]rest son [
+               ]</p>
                 </div>
             
         

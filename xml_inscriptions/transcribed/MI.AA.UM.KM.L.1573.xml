@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Fragmentary epitaph</p>
+                     <p>fragmentary epitaph</p>
                   </msItem>
                </msContents>
                            
@@ -30,7 +30,7 @@
                         <support>
                            <seg type="material">White limestone</seg>
                            
-                           <p>Fragmentary limestone slab</p>
+                           <p>fragmentary limestone slab</p>
                            
                                             <dimensions type="surface" unit="cm">
                               <height>10.6</height>
@@ -38,7 +38,9 @@
                               <depth>4</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +63,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0200">first to second century CE</date>
+                     <date evidence="#palaeography" notBefore="0201" notAfter="0300">third century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -93,6 +96,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -106,8 +111,11 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>s fecit</ab>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+                <lb n="2"/>
+               <gap reason="lost" extent="unknown" unit="character"/>s fecit
+               <lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+            </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 

@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#label">
-                     <p>Fistula of Egnatius Certus</p>
+                     <p>fistula of Egnatius Certus</p>
                   </msItem>
                </msContents>
                            
@@ -28,7 +28,7 @@
                   <objectDesc ana="#instrumentum.other">
                      <supportDesc ana="#metal.lead">
                         <support>
-                           <p>Lead fistula</p>
+                           <p>lead fistula</p>
                            <seg type="form">Fistula</seg>
                            
                                                 
@@ -38,7 +38,9 @@
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>section of lead waterpipe (Tuck)</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#molded #in_relief"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +63,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0175" notAfter="0225">late second-early third century CE</date>
+                     <date evidence="#prosopography" notBefore="0201" notAfter="0250">first half of
+                        the third century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -79,6 +82,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">166 no. 275</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115552"
+                     >EDR115552</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -94,7 +102,8 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2020-03-22" who="Gaia Gianni">Deleted image filename</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation and commentary</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -107,15 +116,14 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>Egnati Certi et <expan>
+               <lb n="1"/><persName><name type="gentilicium" key="Egnatius">Egnati</name> <name type="cognomen" key="Certus">Certi</name></persName> et <expan>
                   <abbr>fil</abbr><ex>ii</ex>
                </expan> 
                <expan>
                   <abbr>cl</abbr><ex>arissimi</ex>
                </expan> 
                <expan>
-                  <abbr>vir</abbr><ex>i</ex>
-               </expan>
+                  <abbr>vir</abbr><ex>i</ex></expan>.
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -124,13 +132,15 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Of Egnatius Certus and of (his) son, a most distinguished man.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><hi rend="italic">vir clarissimus</hi> ("most distinguished man") was a formal
+               title indicating senatorial status. It is unclear here whether both father and son
+               were of the senatorial class or if it was only the son.</p>
                 </div>
             
         

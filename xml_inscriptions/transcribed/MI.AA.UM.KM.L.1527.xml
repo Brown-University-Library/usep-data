@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Daphinius</p>
+                     <p>epitaph of Daphinius</p>
                   </msItem>
                </msContents>
                            
@@ -28,16 +28,18 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble slab</p>
+                           <p>marble slab</p>
                            
-                           <seg type="material">Luna marble</seg>
+                           
                                             <dimensions type="surface" unit="cm">
                               <height>33.7</height>
                               <width>32</width>
                               <depth>3.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>worn along all edges</p>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>worn along all edges</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0300">second to third century CE</date>
+                     <date evidence="#palaeography #formulae" notBefore="0100" notAfter="0300">second to third
+                        century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -73,6 +76,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">206-207 no. 355</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030957"
+                     >EDR030957</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -88,6 +96,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -105,23 +115,20 @@
                <expan>
                   <abbr>D</abbr><ex>is</ex>
                   <abbr> M</abbr><ex>anibus</ex>
-                  <abbr> S</abbr><ex>acrum</ex>
-               </expan>.
+                  <abbr> S</abbr><ex>acrum</ex></expan>.
                 <lb n="2"/>
                <persName>
-                  <name type="cognomen" key="Daphnius">Daphinus</name> 
-                  <name type="cognomen" key="Pius">Pius</name>
-               </persName>
+                  <name type="cognomen" key="Daphinus">Daphinus</name></persName>
+                  pius
                 <lb n="3"/>vixit annis
                 <lb n="4"/>
-               <num xml:lang="lat" value="4">IIII</num>; mater filio
-                <lb n="5"/>pientissimo
+               <num xml:lang="lat" value="4">IIII</num>. Mater filio
+                <lb n="5"/>pientissimo.
                 <lb n="6"/>
                <expan>
-                  <abbr>h</abbr><ex>oc</ex>
-                  <abbr> s</abbr><ex>epulchrum</ex>
-                  <abbr> f</abbr><ex>ecit</ex>
-               </expan>.</ab>
+                  <abbr>H</abbr><ex>ic</ex>
+                  <abbr> s</abbr><ex>itus</ex>
+                  <abbr> e</abbr><ex>st</ex></expan>.</ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -129,21 +136,20 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Sacred to the Divine Spirits. Daphinus, a loyal (boy), lived for four years.
+               (His) mother (made this) for (her) most dutiful son. He is buried here.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Luna marble</seg> (Tuck)</p>
+                   <p>Line 1: Pius (Schwartz in Baldwin and Torelli).</p>
+                   <p>Line 6: h(oc) s(epulchrum) f(ecit) (Tuck).</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p> 1) pius: Tuck</p>
-         </div>
-            
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>

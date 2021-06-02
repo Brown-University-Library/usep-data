@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of P. Rufinus Sucessus</p>
+                     <p>epitaph of Publius Rufinus Sucessus</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <seg type="material">Gray and light brown marble</seg>
-                           <p>Partially reconstituted marble slab</p>                    
+                           
+                           <p>partially reconstituted marble slab</p>                    
                                             <dimensions type="surface" unit="cm">
                               <height>43.5</height>
                               <width>25.7</width>
                               <depth>2</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>
-                                        extant in two fragments, lower-left corner missing
-                                    </p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p> extant in two fragments, lower-left corner missing </p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="2">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#formulae #palaeogrpahy" notBefore="0100" notAfter="0200">second century
+                        CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#AE_2005"/>
                   <biblScope unit="item">354</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101535"
+                     >EDR101535</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,7 +95,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      </revisionDesc>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation and commentary</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -108,8 +115,7 @@
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>.
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
                     <lb n="2"/> 
                <persName>
                   <name type="praenomen" key="Publius">
@@ -119,58 +125,55 @@
                   </name> 
                   <name type="gentilicium" key="Rufinus">Rufino</name>
                     <lb n="3"/> 
-                  <name type="cognomen" key="Sucessus">Sucesso</name>
-               </persName>;
+                  <name type="cognomen" key="Sucessus">Sucesso</name></persName>;
                     <lb n="4"/> vixit <expan>
                   <abbr>ann</abbr><ex>is</ex>
                </expan>
                     <lb n="5"/> plus <expan>
                   <abbr>m</abbr><ex>inus</ex>
                </expan> 
-               <num xml:lang="lat" value="60">LX</num>,
+               <num xml:lang="lat" value="60">LX</num>.
                     <lb n="6"/> 
                <persName>
                   <name type="gentilicium" key="Aviana">Aviania</name> 
                   <name type="cognomen" key="Maximillia">Ma
                     <lb n="7" break="no"/> ximillia</name>
-               </persName> co<supplied reason="omitted">n</supplied>i<supplied reason="lost">u</supplied>
-                    <lb n="8" break="no"/> gi suo <expan>
+               </persName> <expan><abbr>co</abbr><ex>n</ex><abbr>i<supplied reason="lost">u</supplied>
+                  <lb n="8" break="no"/> gi</abbr></expan> suo <expan>
                   <abbr>b</abbr><ex>ene</ex>
                </expan> 
                <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan>.
-                    <lb n="9"/> 
-               <add>
-                  <persName>
-                     <name type="praenomen" key="Aula">
-                        <expan>
-                           <abbr>A</abbr><ex>ula</ex>
-                        </expan>
-                     </name> 
+                  <abbr>m</abbr><ex>erenti</ex></expan>.
+                    <lb n="9"/><handShift/> 
+               <add place="bottom">A 
                      <name type="gentilicium" key="Clodia">Clodia</name> 
-                     <name type="cognomen" key="Felicissima">Felic<supplied reason="lost">issima</supplied>
+                     <name type="cognomen" key="Felicissima">Felic<unclear>i</unclear><supplied reason="lost">ssima</supplied>
                      </name>
-                  </persName>
                     <lb n="10"/>
                   <expan>
-                     <abbr>locu</abbr><ex>m</ex>
+                     <abbr>locu</abbr><ex>s</ex>
                   </expan> 
                   <expan>
-                     <abbr>d</abbr><ex>onavit</ex>
-                  </expan>.</add>
+                     <abbr>d</abbr><ex>onatus</ex></expan>.</add>
             </ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits. To Publius Rufinus Sucessus. He lived for around sixty
+               years. Aviania Maximillia (made this) for her well-deserving husband. The place was
+               given by Clodia Felic[issima]. </p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">Gray and light brown marble</seg> (Tuck).</p>
+            <p>Line 9: A(ula) Clodia (Tuck)</p>
+            <p>Line 10: locu(m) d(onavit) (Tuck) </p>
+                   <p>The formula <hi rend="italic">locus datus</hi> occurs fairly commonly at the
+               end of inscriptions, although it is unusual for the ablative agent to precede it.
+               This inscription is also the only attestation of <hi rend="italic">locus datus</hi> abbreviated as LOCV D in EDCS.</p>
                 </div>
             
         
