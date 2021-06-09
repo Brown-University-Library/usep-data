@@ -2,11 +2,11 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.2004.1.1.r</title>
+            <title>MI.AA.UM.KM.L.2004.1.1.v-mdn</title>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.2004.1.1.r">MI.AA.UM.KM.L.2004.1.1.r</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.2004.1.1.v-mdn">MI.AA.UM.KM.L.2004.1.1.v-mdn</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -15,28 +15,29 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>2004.1.1.r</idno>
+                  <idno>2004.1.1.v-mdn</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>epitaph of Nestor, Imperial slave</p>
+                     <p>modern: fragmentary inscription</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+                <physDesc>
                   <objectDesc ana="#object_other">
                      <supportDesc ana="#metal.bronze">
                         <support>
-                           <p>fake bronze plaque</p>
-                           <seg type="form">plaque</seg>
+                           <p>bronze plaque</p>
+                           <seg type="form">Plaque</seg>
                            <dimensions type="surface" unit="cm">
                               <height>52</height>
                               <width>86</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,8 +46,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#etched"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -59,7 +60,8 @@
                      <rs>modern</rs>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="1000" notAfter="2000">modern</date>
+                     <date evidence="#unspecified" notBefore="1800" notAfter="1900">nineteenth
+                        century</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -83,9 +85,12 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-         <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions; deleted duplicate file not marking forged status</change>
-         <change when="2015-05-12" who="Scott J. DiGiulio">Added commentary indicating the source inscription</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+         <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions</change>
+         <change when="2015-05-12" who="Scott J. DiGiulio">Update bibliography, added note about the forger</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-03" who="Sophia Papandonatou">added dating criteria, updated metadata
+            to current standards, added -mdn</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -98,27 +103,9 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>Nestor
-                <lb n="2"/> 
-               <expan>
-                  <abbr>C</abbr><ex>aii</ex>
-               </expan> Caesaris <expan>
-                  <abbr>Ser</abbr><ex>vus</ex>
-               </expan>
-                <lb n="3"/> Germanicianus
-                <lb n="4"/> 
-               <expan>
-                  <abbr>A</abbr><ex>ulus</ex>
-               </expan> Supelectile
-                <lb n="5"/> 
-               <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> 
-               <num xml:lang="lat" value="40">XL</num>
-            </ab>
+                <lb n="1"/>GE
+                <lb n="2"/> P</ab>
+                
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
@@ -131,7 +118,7 @@
         
         
                 <div type="commentary">
-            <p>Copy of a known forgery, CIL 6.4357</p>
+            <p>Copy of a known forged inscription, CIL 6.4357</p>
          </div>
             
         
