@@ -2,11 +2,12 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.2004.1.1.v-mdn</title>
+            <title>MI.AA.UM.KM.L.2004.1.1.a-mdn</title>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.2004.1.1.v-mdn">MI.AA.UM.KM.L.2004.1.1.v-mdn</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.2004.1.1.a-mdn"
+               >MI.AA.UM.KM.L.2004.1.1.a-mdn</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -15,27 +16,27 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>2004.1.1.v-mdn</idno>
+                  <idno>2004.1.1.a-mdn</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>modern: fragmentary inscription</p>
+                     <p>modern: epitaph of Nestor</p>
                   </msItem>
                </msContents>
-                <physDesc>
+               <physDesc>
                   <objectDesc ana="#object_other">
                      <supportDesc ana="#metal.bronze">
                         <support>
                            <p>bronze plaque</p>
-                           <seg type="form">Plaque</seg>
+                           <seg type="form">plaque</seg>
                            <dimensions type="surface" unit="cm">
                               <height>52</height>
                               <width>86</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#fragment.single">
+                        <condition ana="#complete.intact">
                            <!--Add ana attribute with controlled value for condition-->
                            <p/>
                         </condition>
@@ -60,7 +61,7 @@
                      <rs>modern</rs>
                   </summary>
                   <origin>
-                     <date evidence="#unspecified" notBefore="1800" notAfter="1900">nineteenth
+                     <date evidence="#history" notBefore="1800" notAfter="1900">nineteenth
                         century</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
@@ -70,6 +71,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">223 no. 394</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR106226"
+                     >EDR106226</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -83,13 +89,20 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-         <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions</change>
-         <change when="2015-05-12" who="Scott J. DiGiulio">Update bibliography, added note about the forger</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
-         <change when="2021-06-03" who="Sophia Papandonatou">added dating criteria, updated metadata
-            to current standards, added -mdn</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009
+            template</change>
+         <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso
+            conventions; deleted duplicate file not marking forged status</change>
+         <change when="2015-05-12" who="Scott J. DiGiulio">Added commentary indicating the source
+            inscription</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to
+            English and lower case</change>
+         <change when="2021-06-02" who="Sophia Papandonatou">added dating criteria, updated metadata
+            to current standards, edited transcription, added -mdn</change>
+         <change when="2021-06-10" who="Sophia Papandonatou">added EDR link, changed .r to
+            .a</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -103,9 +116,24 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>GE
-                <lb n="2"/> P</ab>
-                
+               <lb n="1"/><persName><name key="Nestor">Nestor</name>
+                <lb n="2"/> 
+               <name key="Gaius"><expan>
+                  <abbr>C</abbr><ex>aii</ex>
+               </expan></name> Caesaris <expan>
+                  <abbr>ser</abbr><ex>vus</ex>
+               </expan>
+                  <lb n="3"/> <name key="Germanicianus">Germanicianus</name></persName>,
+               <lb n="4"/> a <persName><name key="Supelex">Supelectile</name></persName>,
+                <lb n="5"/> 
+               <expan>
+                  <abbr>vix</abbr><ex>it</ex>
+               </expan> 
+               <expan>
+                  <abbr>a</abbr><ex>nnis</ex>
+               </expan> 
+               <num xml:lang="lat" value="40">XL</num>.
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
@@ -118,7 +146,7 @@
         
         
                 <div type="commentary">
-            <p>Copy of a known forged inscription, CIL 6.4357</p>
+            <p>Copy of a known forgery, CIL 6.4357</p>
          </div>
             
         
