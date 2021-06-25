@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader><!-- testing1 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1437</title>
@@ -23,10 +26,9 @@
                      <p>epitaph of Munnia Prima</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
-                     <supportDesc ana="#stone.limestone">
+                     <supportDesc ana="#stone.other">
                         <support>
                            <p>limestone columbarium slab</p>
                            <seg type="material">yellow limestone</seg>
@@ -61,11 +63,12 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#archaeology #palaeography" notBefore="0001" notAfter="0100">first century
-                        CE</date>
+                     <date evidence="#archaeology #palaeography" notBefore="0001" notAfter="0100"
+                        >first century CE</date>
                      <placeName ref="europe.rome.italy">Italy, Rome, Porta Salaria</placeName>
                   </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -93,10 +96,16 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009
+            template</change>
+         <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata
+            and transcription to current standards, added translation</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to
+            English and lower case</change>
+         <change when="2021-06-18" who="Colin Olson">changed stone.limestone to stone.other</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -105,37 +114,29 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <persName>
                   <name type="gentilicium" key="Munnia">Munnia</name>
-                  <lb n="2"/> 
-                  <name type="cognomen" key="Prima">Pr<hi rend="tall">i</hi>ma</name></persName>.
-            </ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>Munnia Prima.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+                  <lb n="2"/>
+                  <name type="cognomen" key="Prima">Pr<hi rend="tall">i</hi>ma</name></persName>. </ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Munnia Prima.</p>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>
