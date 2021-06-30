@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#label">
-                     <p>epitaph of Salviu[s]</p>
+                     <p>label naming Salviu[s]</p>
                   </msItem>
                </msContents>
                            
@@ -37,7 +37,9 @@
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>fragment broken along the left and right</p>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>fragment broken along the left and right</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#etched"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0200">first to second century CE</date>
+                     <date evidence="#nomenclature #palaeography" notBefore="0001" notAfter="0200">first to second
+                        century CE</date>
                      <placeName ref="europe.italy.rome">Rome(?), Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -84,7 +87,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-08" who="Sophia Papandonatou">updated metadata to current standards, edited transcription</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -101,7 +107,7 @@
                <persName>
                   <name type="cognomen" key="Salvius">Salviu<supplied reason="lost">s</supplied>
                   </name>
-               </persName>
+               </persName> <gap reason="lost" unit="character" extent="unknown"></gap>
             </ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
@@ -110,13 +116,13 @@
         
         
                 <div type="translation">
-                    <p/>
+                   <p>Salviu[s   ]</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>The pyxis is cylindrical. It has a hole, probably for a handle or clasp to hold on to a lid. (Bodel)</p>
                 </div>
             
         

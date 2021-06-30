@@ -25,11 +25,11 @@
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>fragmentary marble slab</p>
-                           <seg type="form">Slab (?)</seg>
+                           <p>fragmentary marble tablet</p>
+                          
                                                 
                                             <dimensions type="surface" unit="cm">
                               <height/>
@@ -37,17 +37,19 @@
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#fragments.contig"><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragments.non_contig">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>two fragments</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="2" writtenLines="2">
+                        <layout columns="0" writtenLines="2">
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE (?)</date>
+                     <date evidence="#palaeography" notBefore="0001" notAfter="0100">first century
+                        CE (?)</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -69,6 +72,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">164 no. 269</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR122335"
+                     >EDR122335</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -86,7 +94,10 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2012-07-02" who="Scott J. DiGiulio">Updated msItem class, added condition ana</change>
          <change when="2014-05-27" who="Scott J. DiGiulio">Updated image filepath</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-07" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, added transcription, added EDR link</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -98,13 +109,16 @@
       
         <body>
         <div type="edition">
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+                <ab>
+                   <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>sus<gap reason="lost" extent="unknown" unit="character"/>
+                   <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>iu<gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[   ]</p>
                 </div>
             
         

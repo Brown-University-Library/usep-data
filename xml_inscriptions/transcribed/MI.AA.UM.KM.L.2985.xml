@@ -30,14 +30,16 @@
                         <support>
                            <p>broken marble slab</p>
                            
-                           <seg type="material">Medium-grained Greek island marble</seg>
+                           
                            <dimensions type="surface" unit="cm">
                               <height>31.5</height>
                               <width>48</width>
                               <depth>3</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>large rust stain at the top</p>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#palaeography #formulae" notBefore="0071" notAfter="0130">late first to early second century
+                        CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -101,7 +104,10 @@
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-07-01" who="Scott J. DiGiulio">Changed markup of certainty for name in transcription, correction to EDR/EDH nos.</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-07" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -116,20 +122,20 @@
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>
-               <persName>
+               <persName><gap reason="lost" quantity="1" unit="character"/>
                   <name type="gentilicium" key="Valerius">
                      <supplied reason="lost" cert="low">Valeri</supplied>us</name> 
-                  <name type="cognomen" key="Dabalus">Dabali</name>
+                  <name type="cognomen" key="Dabalus">Dabal<hi rend="tall">i</hi></name>
                </persName> 
                <expan>
                   <abbr>f</abbr><ex>ilius</ex>
                </expan>
                     <lb n="2"/>
-               <gap reason="lost" extent="unknown" unit="character"/> de <expan>
+               <gap reason="lost" extent="unknown" unit="character"/>o de <expan>
                   <abbr>Lib</abbr><ex>urna</ex>
                </expan> Margar<hi rend="tall">i</hi>ta
                     <lb n="3"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
+               <supplied reason="lost">sibi et</supplied>
                <persName>
                   <name type="praenomen" key="Quintus">
                      <expan>
@@ -138,28 +144,31 @@
                   </name> 
                   <name type="gentilicium" key="Valerius">Valerio</name> 
                   <name type="cognomen" key="Apro">Apro</name>
-               </persName> et <name type="gentilicium" key="Valeria">Valer<add>i</add>ae</name>
+               </persName> et <name type="gentilicium" key="Valeria">Valer<add>i</add>a<hi rend="small">e</hi></name>
                     <lb n="4"/>
                <gap reason="lost" extent="unknown" unit="character"/>ae contubernal<hi rend="tall">i</hi> suae et
                     <lb n="5"/>
                <supplied reason="lost">liberti</supplied>s l<hi rend="tall">i</hi>bertabusque su<hi rend="tall">i</hi>s
                     <lb n="6"/>
                <supplied reason="lost">posteri</supplied>sque omnibus <expan>
-                  <abbr>testame<hi rend="ligature">nt</hi>
-                  </abbr><ex>o fieri iussit</ex>
+                  <abbr>testame<hi rend="ligature">nt</hi></abbr><ex>o</ex>
                </expan>
+                   <lb n="7"/><supplied reason="lost">fieri iussit.</supplied>
             </ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[Valer]ius [   ] son of Dabalus, [   ] from the Liburnian (ship) Margarita, [   ] for Quintus Valerius Aprus 
+                      and for Valeria [  ], his partner and for his freedmen and freedwomen and all his descendants instructed in 
+                      (his) will that (this) be made.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Line 6: testament(o fieri iussit) (Tuck).</p>
+                   <p><seg type="material">Medium-grained Greek island marble</seg> (Tuck).</p>
                 </div>
             
         

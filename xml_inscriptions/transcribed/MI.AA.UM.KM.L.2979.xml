@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>epitaph of Sabina Gorgia</p>
+                     <p>epitaph of Sabina</p>
                   </msItem>
                </msContents>
                            
@@ -37,7 +37,9 @@
                               <depth>3.6</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0075" notAfter="0125">late first-early second century CE</date>
+                     <date evidence="#formulae" notBefore="0075" notAfter="0125">late first-early
+                        second century CE</date>
                      <placeName ref="europe.italy">Puteoli?, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -69,6 +72,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">157, no. 2979</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112680"
+                     >EDR112680</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -84,7 +92,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-03" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -107,20 +118,20 @@
                </expan>
                     <lb n="2"/>
                <persName>
-                  <name type="gentilicium" key="Sabina">Sabinae</name>
+                  <name type="cognomen" key="Sabina">Sabinae</name></persName> 
                     <lb n="3"/>
-                  <name type="cognomen" key="Gorgia">Gorgiae</name>
-               </persName> 
+                   <persName>
+                  <name type="cognomen" key="Gorgias">Gorgiae</name>
+                   </persName>
                <expan>
-                  <abbr>fil</abbr><ex>iae</ex>
-               </expan>
-                    <lb n="4"/>vixit annis <num xml:lang="lat" value="30">XXX</num>
+                  <abbr>fil</abbr><ex>iae</ex></expan>;
+                    <lb n="4"/>vixit annis <num xml:lang="lat" value="30">XXX</num>.
             </ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>Divine Spirits of Sabina, daughter of Gorgias; she lived for thirty years.</p>
                 </div>
             
         

@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>fragmentary marble slab</p>
-                           
+                           <p>broken marble columbarium slab</p>
                            <seg type="material">White marble</seg>
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>5.8</height>
                               <width>10.9</width>
                               <depth>2.4</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken at left edge and lower right corner</p>
+                        <condition ana="#complete.broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken at left edge and lower right corner</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -61,7 +61,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" cert="low">Possibly 1st century CE</date>
+                     <date evidence="#archaeology #palaeography" cert="low">first? century CE</date>
                      <placeName ref="europe.italy.rome">Rome</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -102,7 +102,10 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-07-05" who="Scott J. DiGiulio">Updated origin placename, date, added cert for date</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-09" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -116,12 +119,12 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>uta Rosci
+               <gap reason="lost" extent="unknown" unit="character"/>uta Rosc<hi rend="tall">i</hi>
                 <lb n="2"/> 
-               <unclear>e</unclear>t Hortensiae <gap reason="lost"/>
-                <lb n="3"/> vixit <expan>
+               <gap reason="lost"/> <unclear>e</unclear>t Hortensiae
+               <lb n="3"/><gap reason="lost"/> vixit <expan>
                   <abbr>ann</abbr><ex>is</ex>
-               </expan> VII</ab>
+               </expan> VII.</ab>
                 
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -129,7 +132,7 @@
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[  ] of Roscius and Hortensia [   ] she lived for seven years.</p>
                 </div>
             
         

@@ -25,19 +25,20 @@
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>broken marble slab</p>
-                           
+                           <p>broken marble stele</p>
                            <seg type="material">White marble</seg>
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>41.5</height>
                               <width>65.0</width>
                               <depth>3.7</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0275" notAfter="0400">late third-fourth century CE</date>
+                     <date evidence="#formulae #palaeography" notBefore="0275" notAfter="0400">late third-fourth
+                        century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -69,6 +71,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">155-156 no. 249</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101140">EDR101140</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -84,7 +89,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-07" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -98,45 +106,46 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <supplied reason="lost">Req</supplied>uiescit in pace
+               <supplied reason="lost">Hic req</supplied><unclear>u</unclear>iescit in pace
                 <lb n="2"/> 
-               <supplied reason="lost">agnel</supplied>lus Dei <persName>
+               <supplied reason="lost">famu</supplied>lus Dei <persName>
                   <name type="cognomen" key="Paulus">Paulus</name>
-               </persName> diaconus;
+               </persName> diac<hi rend="tall">o</hi>nus,
                 <lb n="3"/> qui bixit <expan>
-                  <abbr>an</abbr><ex>n</ex>
-                  <abbr>us</abbr>
+                  <abbr>an</abbr><ex>n</ex><abbr>us</abbr>
                </expan> 
                <expan>
-                  <abbr>pl</abbr><ex>u</ex>
-                  <abbr>s</abbr>
+                  <abbr>pl</abbr><ex>u</ex><abbr><hi rend="small">s</hi></abbr>
                </expan> 
                <expan>
-                  <abbr>m</abbr><ex>inu</ex>
-                  <abbr>s</abbr>
+                  <abbr>m</abbr><ex>inu</ex><abbr>s</abbr>
                </expan> 
-               <num xml:lang="lat" value="20">XX</num>,
-                <lb n="4"/> depositus SDS <num xml:lang="lat" value="8">VIII</num> 
+               <num xml:lang="lat" value="20"><hi rend="ligature">XX</hi></num>,
+                <lb n="4"/> depositus SDS <num xml:lang="lat" value="9">VIIII</num> 
                <expan>
                   <abbr>Kal</abbr><ex>endas</ex>
                </expan> 
                <expan>
-                  <abbr>Dec</abbr><ex>em</ex>
-                  <abbr>br</abbr><ex>es</ex>
-               </expan>.</ab>
+                  <abbr>Dec</abbr><ex>em</ex><abbr>br</abbr><ex>es</ex></expan>.</ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[Here res]ts in peace Paulus, a servant of God (and) a deacon, who lived more or less for twenty years 
+                      (and) was laid (here) on the ninth day before? [   ] the Kalends of December.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>"anus" for "annos" in line 3.</p>
+                    <p>The expansion of SDS in line 4 is unclear. EDR suggests that the SD be
+               expanded into "s(ub) d(ie)", which is a common component of the dating formula used
+               in this inscription but does not account for the second S. The second S is distinct
+               in style from the first S and resembles the S's of the abbreviated "pl(u)s m(inu)s" in line
+               3, suggesting that the DS in line 4 may also be an abbreviation. </p>
                 </div>
             
         
