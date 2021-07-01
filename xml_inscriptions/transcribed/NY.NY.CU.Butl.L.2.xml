@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
-
         <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
@@ -15,14 +16,13 @@
                 characters that are legal in XML names and viable URLs. 
             -->
             <publicationStmt>
-               
-                <authority>Brown University</authority> 
+                <authority>Brown University</authority>
                 <idno type="USEpigraphy" xml:id="NY.NY.CU.Butl.L.2">NY.NY.CU.Butl.L.2</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
                               <settlement>  = city
                               <institution> = library, museum, university or other institution
@@ -41,28 +41,24 @@
                         <repository>Butl</repository>
                         <idno>2</idno>
                     </msIdentifier>
-                    
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Fabius Anicetus by Aemilius Eutyches</p>
+                            <p>epitaph of Fabius Anicetus by Aemilius Eutyches</p>
                         </msItem>
                     </msContents>
-                    
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-                    
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
                         <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.limestone">
+                            <supportDesc ana="#stone.other">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Limestone columbarium slab</p>
+                                    <p>limestone columbarium slab</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>16</height>
                                         <width>29</width>
@@ -80,14 +76,12 @@
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        
                         <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
+                        <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
                             <handNote ana="#inscribed"> </handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
-                        
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
@@ -95,31 +89,27 @@
                             </decoNote>
                         </decoDesc>
                     </physDesc>
-                    
                     <!--  *************************************  <history>  *********************************  -->
-                    
                     <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
                     <history>
-                    
                         <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
+                            <rs/>
+                            <!-- content can be "fake" or blank -->
                         </summary>
-                        
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0058" notAfter="0199">Late first to second century CE</date>
+                            <date evidence="unspecified" notBefore="0058" notAfter="0199">Late first
+                                to second century CE</date>
                             <placeName ref="europe.italy.rome">East of S. Paolo fuori le Mura, just
                                 across the modern Via Ostiense, Rome, Italy</placeName>
                         </origin>
-                        
-
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
                 <listBibl>
@@ -132,42 +122,37 @@
                         <biblScope unit="item">34307</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114531">EDR114531</ref>
+                        <ref type="external"
+                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114531"
+                            >EDR114531</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
-
         <!--  *************************************  <encodingDesc>  ********************************* -->
         <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
         <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
         </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
+        <profileDesc><!-- not used --></profileDesc>
         <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
+        <!-- Record all changes here -->
         <revisionDesc>
             <change when="2014-10-01" who="Mahmoud Samori">Initial Encoding</change>
-            <change when="2015-09-07" who="Scott J. DiGiulio">Cleaned metadata, cleaned bibl, added EDR link, added image link, proofed transcription, added MS's translation</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-
+            <change when="2015-09-07" who="Scott J. DiGiulio">Cleaned metadata, cleaned bibl, added
+                EDR link, added image link, proofed transcription, added MS's translation</change>
+            <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to
+                inscribed</change>
+            <change when="2021-06-18" who="Colin Olson">Changed stone.limestone to stone.other and
+                capitalization issues</change>
+        </revisionDesc>
     </teiHeader>
-
     <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
+    <!-- Used to record images of an inscription.   -->
     <facsimile>
         <surface>
             <desc/>
@@ -182,36 +167,37 @@
             <graphic url="NY.NY.CU.Butl.L.2-det2.jpg"/>
         </surface>
     </facsimile>
-
     <text>
-        
         <body>
-        <div type="edition"><!-- transcription goes here -->
+            <div type="edition">
+                <!-- transcription goes here -->
                 <ab>
-                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan><g type="interpunct"/><expan><abbr>M</abbr><ex>anibus</ex></expan>.
-                    <lb n="2"/><persName><name type="gentilicium" key="Aemilius">Aemilius</name> <name type="cognomen" key="Eutyches">Eut<hi rend="tall">y</hi>che<supplied reason="omitted">s</supplied></name></persName>
-                    <lb n="3"/><persName><name type="gentilicium" key="Fabius">Fa<hi rend="italic">b</hi>io</name> <name type="cognomen" key="Anicetus">Aniceto</name></persName>
-                    <lb n="4"/>amico <hi rend="italic reversed">b</hi>ene me
-                    <lb n="5" break="no"/>renti fecit.
-                </ab>
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan><g type="interpunct"
+                            /><expan><abbr>M</abbr><ex>anibus</ex></expan>. <lb n="2"
+                            /><persName><name type="gentilicium" key="Aemilius">Aemilius</name>
+                        <name type="cognomen" key="Eutyches">Eut<hi rend="tall">y</hi>che<supplied
+                                reason="omitted">s</supplied></name></persName>
+                    <lb n="3"/><persName><name type="gentilicium" key="Fabius">Fa<hi rend="italic"
+                                >b</hi>io</name>
+                        <name type="cognomen" key="Anicetus">Aniceto</name></persName>
+                    <lb n="4"/>amico <hi rend="italic reversed">b</hi>ene me <lb n="5" break="no"
+                    />renti fecit. </ab>
             </div>
-        
-        
-                <div type="translation">
-                <p>"Sacred to the divine spirits. Aemilius Eutyches made this for his well-deserving friend, Fabius Anicetus."</p>
+            <div type="translation">
+                <p>"Sacred to the divine spirits. Aemilius Eutyches made this for his well-deserving
+                    friend, Fabius Anicetus."</p>
             </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
+            <div type="commentary">
+                <!-- notes go here -->
                 <p/>
             </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+                    <xi:fallback>
+                        <p>US Epigraphybibliography</p>
+                    </xi:fallback>
+                </xi:include>
+            </div>
         </body>
-        
-    
     </text>
 </TEI>
