@@ -30,9 +30,9 @@
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph for C(aius) Poppaeus Vales, Poppaea Ilias and Aviania
+                            <p>epitaph for Gaius Poppaeus Vales, Poppaea Ilias, and Aviania
                                 Charis</p>
                         </msItem>
                     </msContents>
@@ -43,7 +43,7 @@
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
                         <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone">
+                            <supportDesc ana="#stone.marble">
                                 <support>
                                     <p> </p>
                                     <dimensions type="surface" unit="cm">
@@ -52,7 +52,8 @@
                                         <depth>3.3</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete">
+                                <condition ana="#complete.broken">
+
                                     <p/>
                                 </condition>
                             </supportDesc>
@@ -136,6 +137,10 @@
         <revisionDesc>
             <change when="2020-05-07" who="GG">Initial Encoding</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+            <change when="2021-06-15" who="Colin Olson">fixed transcription to follow EDR (making
+                Aviania Charis dative); updated metadata categories such as stone type, condition, and
+                inscription type; added translation; added object description in the commentary field.</change>
+          <change when="2021-07-01" who="Scott J. DiGiulio">resolved conflicts</change>
 </revisionDesc>
 
     </teiHeader>
@@ -157,12 +162,15 @@
                 <lb n="1"/> Diis Manibus.
                 <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Poppaeus">Poppaeus</name> <name type="cognomen" key="Vales">Vales</name></persName> et
                 <lb n="3"/><persName><name type="gentilicium" key="Poppaea">Poppaea</name> <name type="cognomen" key="Ilias">Ilias</name></persName> fecerunt
-                <lb n="4"/>sibi et <persName><name type="gentilicium" key="Aviania">Aviania</name> <name type="cognomen" key="Charis">Charis</name></persName>
+                <lb n="4"/>sibi et <persName><name type="gentilicium" key="Aviania">Avianiae</name> <name type="cognomen" key="Charis">Charidi</name></persName>
                 <lb n="5"/>amicae suae carissimae.
             </ab></div>
+            
+            <div type="translation">
+                <p>To the divine shades. Gaius Poppaeus Vales and Poppaea Ilias made (this monument) for themselves and for Aviania Charis, (their) dearest friend.</p></div>
 
             <div type="commentary">
-            <p>Notes here, </p></div>
+            <p>The Penn Museum webpage suggests that this epitaph was, at some point in time, "mended" with another inscription in their collection (accession number L-1033-28B).</p></div>
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 

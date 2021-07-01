@@ -23,20 +23,22 @@
                      <p>epitaph of Titus Helvius Tacitus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
-                     <supportDesc ana="#stone.limestone">
+                     <supportDesc ana="#stone.other">
                         <support>
                            <p>fragmentary limestone slab</p>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>22</height>
                               <width>27.5</width>
                               <depth>10.6</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>crumbling from salt reefflorescence; large break in lower left corner</p>
+
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>crumbling from salt reefflorescence; large break in lower left
+                              corner</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -59,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#nomenclature #palaeography" notBefore="0100" notAfter="0200"
+                        >second century CE</date>
                      <placeName ref="africa.egypt">Terenouthis, Egypt</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -68,6 +71,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">225 no. 396</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD054883">EDH nr.
+                     HD054883</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -81,69 +89,79 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009
+            template</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to
+            English and lower case</change>
+         <change when="2021-06-09" who="Sophia Papandonatou">added dating criteria, updated metadata
+            to current standards, edited transcription, added EDH link</change>
+         <change when="2021-06-14" who="Sophia Papandonatou">added image</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change> 
+  <change when="2021-06-18" who="Colin Olson">changed stone.limestone to stone.other</change>
+  <change when="2021-07-01" who="Scott J. DiGiulio">resolved conflicts</change>
+      </revisionDesc>
+
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url=""/>
+         <graphic url="MI.AA.UM.KM.L.21194.jpg"/>
       </surface>
    </facsimile>
    <text>
-      
+
         <body>
         <div type="edition">
             <ab>
                 <lb n="1"/>
                <expan>
                   <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus.</ex>
                </expan>
-                <lb n="2"/> 
+               <expan>
+                  <abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Titus">
                      <expan>
                         <abbr>T</abbr><ex>itus</ex>
                      </expan>
-                  </name> 
-                  <name type="gentilicium" key="Helvius">Helvius</name> 
+                  </name>
+                  <name type="gentilicium" key="Helvius">Helvius</name>
                   <name type="cognomen" key="Tacitus">Ta
                 <lb break="no" n="3"/>citus</name>
-               </persName> 
+               </persName>
                <expan>
                   <abbr>mil</abbr><ex>es</ex>
                </expan>
+               <lb n="4"/><gap reason="lost" extent="unknown" unit="line"/>
             </ab>
-                
+
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+
             </div>
-        
-        
+
+
                 <div type="translation">
-                    <p/>
+                 <p>Titus Helvius Tacitus, soldier [of the   legion].</p>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary">
-                    <p/>
+                   <p> Line 3:=citus. (without mil(es)) (Tuck).</p>
+                   <p>Tuck omits mil(es) in the last line. The designation would have been followed by an indication of the legion in which he served.</p>
                 </div>
+
+
+
             
-        
-        
-                <div type="apparatus">
-            <p> 3)=citus. (without mil(es)): Tuck</p>
-         </div>
-            
-        
+
+
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
    </text>
 </TEI>

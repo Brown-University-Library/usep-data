@@ -19,37 +19,41 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem class="#legal">
+
+                  <msItem class="#document #honorific">
+
                      <p>decree of the decurions of Puteoli</p>
                   </msItem>
                </msContents>
                            
                             <physDesc>
                   <objectDesc ana="#slab">
-                     <supportDesc ana="#stone.limestone">
+                     <supportDesc ana="#stone.other">
                         <support>
-                           <p>broken Proconnesian marble slab </p>
-                           
+
+                           <p>broken limestone slab </p>
                            <seg type="material">Proconnesian limestone</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>26</height>
                               <width>48</width>
                               <depth>5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken along right and left edges, surface is stained and
-                                        eroded</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+
+                           <p>broken along right and left edges, surface is stained and eroded</p>
+
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" writtenLines="0">
+                        <layout columns="1" writtenLines="8">
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -62,7 +66,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0113" notAfter="0113">113 CE</date>
+                     <date evidence="#prosopography" notBefore="0113" notAfter="0113">113 CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -102,7 +106,14 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-18" who="Colin Olson">changed genre to meet new control vocabulary,
+            changed stone.limestone to stone.other, added condition "broken" as it seems that more
+            than half of the inscription may be present, changed material summary description to reflect that the slab is made of limestone as opposed to marble.</change></revisionDesc>
+         <change when="2021-06-02" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+<change when="2021-07-01" who="Scott J. DiGiulio">resolved conflicts; included both honorific and document as genre</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -117,13 +128,7 @@
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>
-               <persName>
-                  <name type="praenomen" key="Lucius">
-                     <supplied reason="lost">
-                        <expan>
-                           <abbr>L</abbr><ex>ucio</ex>
-                        </expan>
-                     </supplied>
+               <persName><name type="praenomen" key="Lucius"><supplied reason="lost"><expan><abbr>L</abbr><ex>ucio</ex></expan></supplied>
                   </name> 
                   <name type="gentilicium" key="Publilius">Publilio</name> 
                   <name type="cognomen" key="Celsus">Celso</name>
@@ -140,15 +145,11 @@
                      <name type="gentilicium" key="Clodius">Clodio</name> 
                      <name type="cognomen" key="Crispinus">Crispino</name>
                   </persName> 
-                  <expan>
-                     <abbr>Co</abbr><ex>n</ex>
-                     <abbr>s</abbr><ex>ulibus</ex>
-                  </expan>
-               </supplied>
+                  <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan></supplied>
                     <lb n="2"/>
-               <gap reason="lost" extent="unknown" unit="character"/>r inchalcidico <expan>
+                   <gap reason="lost" extent="unknown" unit="character"/><expan><abbr>r</abbr></expan> in chalcidico <persName type="imperial"><name type="cognomen" key="Augustus"><expan>
                   <abbr>Aug</abbr><ex>usti</ex>
-               </expan> 
+               </expan></name></persName> 
                <name type="cognomen" key="Suettianus">Suettian<supplied reason="lost">o</supplied>
                </name> 
                <supplied reason="lost">scribundo adfuerunt</supplied> 
@@ -172,7 +173,7 @@
                   <name type="gentilicium" key="Blossius">Blossi<supplied reason="lost">us</supplied>
                   </name>
                </persName> 
-               <supplied reason="lost">IIviri <expan>
+                   <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><expan><num><am>II</am></num><ex>duo</ex>viri</expan> <expan>
                      <abbr>v</abbr><ex>erba</ex>
                   </expan> 
                   <expan>
@@ -182,15 +183,18 @@
                <supplied reason="lost">memor</supplied>ia <persName>
                   <name type="gentilicium" key="Iulius">Iuli</name> 
                   <name type="cognomen" key="Iulianus">Iuliani</name>
-               </persName> probissimi adque orn<supplied reason="lost">atissimi viri <expan>
-                     <abbr>q</abbr><ex>uid</ex>
+               </persName> probissimi adque orn<supplied reason="lost">atissimi viri. <expan>
+                     <abbr>Q</abbr><ex>uid</ex>
                   </expan> 
                   <expan>
                      <abbr>d</abbr><ex>e</ex>
                   </expan> 
                   <expan>
                      <abbr>e</abbr><ex>a</ex>
-                  </expan> 
+                  </expan>
+                  <expan>
+                     <abbr>r</abbr><ex>e</ex>
+                  </expan>
                   <expan>
                      <abbr>f</abbr><ex>ieri</ex>
                   </expan> 
@@ -210,38 +214,43 @@
                      <abbr>i</abbr><ex>ta</ex>
                   </expan> 
                   <expan>
-                     <abbr>c</abbr><ex>ensuerunt</ex>
-                  </expan>
+                     <abbr>c</abbr><ex>ensuerunt</ex></expan>.
                </supplied> 
-               <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="5"/>
-               <supplied reason="lost">cum</supplied> 
+               <supplied reason="lost">Cum</supplied> 
                <persName>
                   <name type="gentilicium" key="Iulius">
                      <supplied reason="lost">Iuli</supplied>us</name> 
                   <name type="cognomen" key="Iulianus">Iulianus</name>
-               </persName> splendidus adulescens Co<gap reason="lost" extent="unknown" unit="character"/>
+               </persName> splendidus adulescens co<gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="6"/>
-               <gap reason="lost" extent="unknown" unit="character"/>s et inmatura velocitate fatorum occup<supplied reason="lost">atus</supplied> 
+               <gap reason="lost" extent="unknown" unit="character"/>s et inmatura velocitate fatorum occup<supplied reason="lost">atus</supplied>, 
                <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="7"/>
-               <gap reason="lost" extent="unknown" unit="character"/> huic ordini <persName>
+                   <gap reason="lost" extent="unknown" unit="character"/> huic ordini <persName>
                   <name type="gentilicium" key="Iulius">Iulio</name> 
                   <name type="cognomen" key="Iulianus">Iuliano</name>
-               </persName> splendido viro st<supplied reason="lost">atuam ponere</supplied> 
+               </persName> splendido viro st<supplied reason="lost">atuam</supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ponere</supplied> 
                <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="8"/>placuit</ab>
+                    <lb n="8"/>placuit.</ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>When [Lucius] Publicius Celsus was consul for the sec[ond time (and) Gaius Clodius Crispinus was consul   ] 
+                      [present to sign (as witnesses)] in the Suettian porch of Augustus [were] [   ] Marcus Caecilius Crispinus. 
+                      As to the matter on which Gaius Blossi[us   <hi rend="italic">duoviri</hi> made a verbal report regarding honoring the memor]y of 
+                      Julius Julianus, a most upright and dec[orated man, what it pleased them should happen regarding this affair, 
+                      regarding the affair they thus decreed:</p>
+                      <p>Since Juli]us Julianus, a distinguished young man [   ] and seized by the untimely quickness of the fates, 
+                         [   ] it pleased this order [   to set up] a st[atue] for Julius Julianus, a distinguished man.
+                   </p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    <p>Proconnesian limestone (Tuck)</p>
                 </div>
             
         

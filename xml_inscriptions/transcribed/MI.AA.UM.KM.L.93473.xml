@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -23,20 +24,21 @@
                      <p>fragmentary epitaph</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
-                  <objectDesc ana="#stele">
+               <physDesc>
+                  <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <seg type="material">White Marble</seg>
-                           <p>broken stele</p>
+                           <p>fragmentary marble slab</p>
                            <dimensions type="surface" unit="cm">
                               <height>11</height>
                               <width>18</width>
                               <depth>3.3</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -59,15 +61,25 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0200">first-second century CE</date>
+                     <date evidence="#palaeography #formulae" notBefore="0101" notAfter="0200"
+                        >second century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
                <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_2005"/>
+                  <biblScope unit="item">363</biblScope>
+               </bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">162 no. 263</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112681"
+                     >EDR112681</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -81,56 +93,50 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009
+            template</change>
          <change when="2020-03-22" who="Gaia Gianni">Deleted image filename</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to
+            English and lower case</change>
+         <change when="2021-06-11" who="Sophia Papandonatou">added dating criteria, updated metadata
+            to current standards, edited transcription, added EDR link</change>
+         <change when="2021-06-14" who="Sophia Papandonatou">added AE reference</change>
+         <change when="2021-06-15" who="Sophia Papandonatou">added image</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         
-      </surface>
-   </facsimile>
+         <graphic url="MI.AA.UM.KM.L.93473.jpg"/>
+      </surface></facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <gap reason="lost" extent="unknown" unit="character"/>
                <gap reason="illegible" quantity="1" unit="character"/>
-               <unclear>e</unclear>s
-                <lb n="2"/> 
-               <gap reason="lost" extent="unknown" unit="character"/> servo
-                <lb n="3"/> 
-               <supplied reason="lost">bene mere</supplied>nti fecit</ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-            <p>1) ces 2) [bene mer]enti: Tuck</p>
+               <unclear>re</unclear>s <lb n="2"/>
+               <gap reason="lost" extent="unknown" unit="character"/> servo <lb n="3"/>
+               <supplied reason="lost">bene mere</supplied>nti feci<hi rend="tall">t</hi>.</ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
          </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>[   ] made (this) for [   ], a well-deserving slave.</p>
+         </div>
+         <div type="commentary">
+            <p>Line: 1 ces; line 2: [bene mer]enti (Tuck).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

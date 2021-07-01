@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
@@ -45,7 +47,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Arched niche with epitaph for Daphnos</p>
+                            <p>arched niche with epitaph for Daphnos</p>
                         </msItem>
                     </msContents>
                     <!--  *************************************  <physDesc>  ********************************* -->
@@ -53,10 +55,10 @@
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                         <objectDesc ana="#stele">
-                            <supportDesc ana="#stone.limestone">
+                            <supportDesc ana="#stone.other">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Yellow limestone stele</p>
+                                    <p>yellow limestone stele</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>62</height>
                                         <width>52</width>
@@ -82,9 +84,11 @@
                         </handDesc>
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
-                            <decoNote><p>Portrait of a man in chiton and himation,
-                                    clutching a scroll in the left hand. Eyes turned slightly
-                                    upward. Typical of Syrian funerary portraiture. Architectural frame of two columnis with Ionic capitals connectd by an arch, with two half-palmettes in the spandrels.</p>
+                            <decoNote><p>Portrait of a man in chiton and himation, clutching a
+                                    scroll in the left hand. Eyes turned slightly upward. Typical of
+                                    Syrian funerary portraiture. Architectural frame of two columnis
+                                    with Ionic capitals connectd by an arch, with two half-palmettes
+                                    in the spandrels.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -100,7 +104,8 @@
                         </summary>
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0130" notAfter="0140">130-140 CE</date>
+                            <date evidence="unspecified" notBefore="0130" notAfter="0140">130-140
+                                CE</date>
                             <placeName ref="asia.turkey">Turkey, Hierapolis</placeName>
                         </origin>
                         <acquisition>
@@ -129,7 +134,9 @@
                         <biblScope unit="pp">157-158</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="https://www.brooklynmuseum.org/opencollection/objects/94783/Architectural_Decoration_Containing_a_Male_Bust">Brooklyn Museum Web Catalog</ref>
+                        <ref type="external"
+                            target="https://www.brooklynmuseum.org/opencollection/objects/94783/Architectural_Decoration_Containing_a_Male_Bust"
+                            >Brooklyn Museum Web Catalog</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -148,10 +155,14 @@
         <!-- Record all changes here -->
         <revisionDesc>
             <change when="2014-10-01" who="William Jacobs">Initial Encoding</change>
-            <change when="2015-08-24" who="Scott J. DiGiulio">Cleaned metadata and control vocabulary, expanded bibliography, proofed transcription, added image</change>
+            <change when="2015-08-24" who="Scott J. DiGiulio">Cleaned metadata and control
+                vocabulary, expanded bibliography, proofed transcription, added image</change>
             <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.chiseled to inscribed</change>
-</revisionDesc>
+            <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.chiseled to
+                inscribed</change>
+            <change when="2021-06-18" who="Colin Olson">Changed stone.limestone to stone.other and
+                capitalization issues</change>
+        </revisionDesc>
     </teiHeader>
     <!--  *************************************  <facsimile>  *********************************  -->
     <!-- Used to record images of an inscription.   -->
@@ -162,34 +173,23 @@
         </surface>
     </facsimile>
     <text>
-        
         <body>
-        <div type="edition">
+            <div type="edition">
                 <!-- transcription goes here -->
                 <ab>
-                    <lb n="1"/>Δάφνε, χρηστὲ ἄλυπε
-                    <lb n="2"/>χαῖρε.
-                </ab>
+                    <lb n="1"/>Δάφνε, χρηστὲ ἄλυπε <lb n="2"/>χαῖρε. </ab>
             </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
+            <div type="translation">
+                <p/>
+            </div>
+            <div type="commentary">
                 <!-- notes go here -->
                 <p>The adjective ἄλυπε is typical of Eastern funerary inscriptions, particularly
                     those found in Syria and, less frequently, Egypt. It is uncertain whether the
                     word has an active force ("prohibiting grief") or a passive one ("without
                     grief").</p>
             </div>
-            
-        
-        
-<div type="bibliography">
+            <div type="bibliography">
                 <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
                     <xi:fallback>
                         <p>US Epigraphybibliography</p>
@@ -197,7 +197,5 @@
                 </xi:include>
             </div>
         </body>
-        
-    
     </text>
 </TEI>

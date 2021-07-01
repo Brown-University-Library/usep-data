@@ -25,10 +25,10 @@
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#slab">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>reconstituted white marble slab </p>
+                           <p>reconstituted marble tablet </p>
                            <seg type="material">Coarse-grained white marble</seg>
                            <dimensions type="surface" unit="cm">
                               <height>74.5</height>
@@ -36,7 +36,9 @@
                               <depth>5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding._border">
@@ -59,7 +61,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0125">early second century CE</date>
+                     <date evidence="#history #palaeography" notBefore="0100" notAfter="0125">early second century
+                        CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -72,6 +75,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">21-22, no. 19</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR073144"
+                     >EDR073144</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -87,7 +95,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-07" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and commentary</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -102,7 +113,7 @@
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>
-               <gap reason="lost" quantity="7" unit="character"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
                <persName>
                   <name type="praenomen" key="Gaius">
                      <expan>
@@ -115,49 +126,40 @@
                   <name type="cognomen" key="Fortunata">Fortunata</name>
                </persName>
                     <lb n="2"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
-               <supplied reason="lost">sibi</supplied> et
+                              <supplied reason="lost">sibi</supplied> et
                     <lb n="3"/>
                <persName>
                   <name type="praenomen" key="Quintus">
-                     <supplied reason="lost">
-                        <expan>
-                           <abbr>Q</abbr><ex>uinto</ex>
-                        </expan>
-                     </supplied>
+                     <supplied reason="lost"><expan><abbr>Q</abbr><ex>uinto</ex></expan></supplied>
                   </name> 
                   <gap reason="lost" extent="unknown" unit="character"/>o <name type="cognomen" key="Celsus">Celso</name>
                </persName> viro suo <expan>
-                  <abbr>tr</abbr><ex>ierarcho</ex>
+                  <abbr><hi rend="supraline">tr</hi></abbr><ex>ierarcho</ex>
                </expan>
                     <lb n="4"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
-               <supplied reason="lost">Classis</supplied> 
+                
+               <supplied reason="lost">classis</supplied> 
                <expan>
-                  <abbr>Praet</abbr><ex>orianae</ex>
+                  <abbr>praet</abbr><ex>orianae</ex>
                </expan> 
                <expan>
-                  <abbr>Mis</abbr><ex>enensis</ex>
-               </expan> 
+                  <abbr>is</abbr><ex>enensis</ex></expan>, 
                <expan>
-                  <abbr>mil</abbr><ex>itavit</ex>
-               </expan> 
+                  <abbr>mil</abbr><ex>itavit</ex></expan>, 
                <expan>
                   <abbr>ann</abbr><ex>is</ex>
                </expan> 
                <num xml:lang="lat" value="44">XLIIII</num>
                     <lb n="5"/>
-               <supplied reason="lost">vi</supplied>
-               <expan>
-                  <abbr>x</abbr><ex>it</ex>
+                   <expan><abbr><supplied reason="lost">vi</supplied>x</abbr><ex>it</ex>
                </expan> 
                <expan>
                   <abbr>ann</abbr><ex>is</ex>
                </expan> 
-               <num xml:lang="lat" value="60">LX</num> et
+               <num xml:lang="lat" value="60">LX</num>, et
                     <lb n="6"/>
                <persName>
-                  <gap reason="lost" extent="unknown" unit="character"/>o <name type="praenomen" key="Quintus">
+                  <gap reason="lost" extent="unknown" unit="character"/><unclear>o</unclear> <name type="praenomen" key="Quintus">
                      <expan>
                         <abbr>Q</abbr><ex>uinti</ex>
                      </expan>
@@ -172,49 +174,39 @@
                   <name type="cognomen" key="Torquatus">Torquato</name>
                </persName> 
                <expan>
-                  <abbr>f</abbr><ex>ilio suo</ex>
+                  <abbr>f</abbr><ex>ilio</ex>
                </expan>
                     <lb n="7"/>
                <gap reason="lost" extent="unknown" unit="character"/> 
-               <supplied reason="lost">adl</supplied>
                <expan>
-                  <abbr>ect</abbr><ex>o</ex>
+                  <abbr><supplied reason="lost">adl</supplied><unclear>e</unclear>ct</abbr><ex>o</ex>
                </expan> in <expan>
-                  <abbr>ord</abbr><ex>inem decurionum</ex>
-               </expan> 
-               <expan>
-                  <abbr>IIvir</abbr><ex>o</ex>
-               </expan>
+                  <abbr>ord</abbr><ex>inem</ex></expan> <expan><abbr>decur</abbr><ex>ionum</ex></expan> 
+                   <expan>
+                  <abbr><hi rend="supraline"><am>II</am></hi><ex>duo</ex>vir</abbr><ex>o</ex></expan>,
                     <lb n="8"/>
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>vix</abbr><ex>it</ex>
-                  </expan> an</supplied>
+               <supplied reason="lost"><expan><abbr>vix</abbr><ex>it</ex>
+               </expan></supplied> 
                <expan>
-                  <abbr>n</abbr><ex>is</ex>
+                  <abbr><supplied reason="lost">an</supplied>n</abbr><ex>is</ex>
                </expan> 
-               <num xml:lang="lat" value="24">XXIIII</num> 
+               <num xml:lang="lat" value="24">XXIIII</num>, 
                <expan>
                   <abbr>mens</abbr><ex>ibus</ex>
                </expan> 
-               <num xml:lang="lat" value="11">XI</num> 
+               <num xml:lang="lat" value="11">XI</num>, 
                <expan>
                   <abbr>dieb</abbr><ex>us</ex>
                </expan> 
-               <num xml:lang="lat" value="11">XI</num> et
-                    <lb n="9"/>liber<supplied reason="lost">tis l</supplied>
+               <num xml:lang="lat" value="11">XI</num>, et
+                    <lb n="9"/>liber<supplied reason="lost">tis</supplied> 
                <expan>
-                  <abbr>ibertabusq</abbr><ex>ue</ex>
+                  <abbr><supplied reason="lost">l</supplied>ibertabusq</abbr><ex>ue</ex>
                </expan> 
-               <add place="overstrike">
-                  <expan>
-                     <abbr>posterisq</abbr><ex>ue</ex>
-                  </expan> eorum</add>
+               <add place="overstrike"><expan><abbr>posterisq</abbr><ex>ue</ex>
+                  </expan> eorum.</add>
                     <lb n="10"/>
-               <add>
-                  <supplied reason="lost">
-                     <expan>
-                        <abbr>h</abbr><ex>oc</ex>
+               <add><supplied reason="lost"><expan><abbr>H</abbr><ex>oc</ex>
                      </expan> 
                      <expan>
                         <abbr>m</abbr><ex>onumentum</ex>
@@ -236,15 +228,19 @@
                      <abbr>n</abbr><ex>on</ex>
                   </expan> 
                   <expan>
-                     <abbr>s</abbr><ex>equetur</ex>
-                  </expan>
+                     <abbr>s</abbr><ex>equetur</ex></expan>.
                </add>
             </ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[   ] Fortunata, freedwoman of Gaius, [   for herself] and [for Quintus   ] Celsus, 
+                      her husband, a <hi rend="italic">trierachus</hi> [   ] of the praetorian [fleet] of Misenum—he served for forty-four years 
+                      (and) [li]ved for sixty years—and for [   ] Torquatus, son of Quintus, from the Claudia tribe, 
+                      her son, [adm]itted as <hi rend="italic">duovir</hi> into the order of decurions—[he lived] for twenty-four [ye]ars, 
+                      eleven months, (and) eleven days—and [for] (her) freed[men] and [f]reedwomen and their desecendants. 
+                      [This monument] or tomb shall not follow the heir.</p>
                 </div>
             
         
