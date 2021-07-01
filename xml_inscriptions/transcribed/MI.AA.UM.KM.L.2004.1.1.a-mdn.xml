@@ -2,11 +2,12 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.L.2004.1.1.r</title>
+            <title>MI.AA.UM.KM.L.2004.1.1.a-mdn</title>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.2004.1.1.r">MI.AA.UM.KM.L.2004.1.1.r</idno>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.L.2004.1.1.a-mdn"
+               >MI.AA.UM.KM.L.2004.1.1.a-mdn</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -15,20 +16,19 @@
                   <settlement>AA</settlement>
                   <institution>UM</institution>
                   <repository>KM</repository>
-                  <idno>2004.1.1.r</idno>
+                  <idno>2004.1.1.a-mdn</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>epitaph of Nestor, Imperial slave</p>
+                     <p>modern: epitaph of Nestor</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#object_other">
                      <supportDesc ana="#metal.bronze">
                         <support>
-                           <p>fake bronze plaque</p>
+                           <p>bronze plaque</p>
                            <seg type="form">plaque</seg>
                            <dimensions type="surface" unit="cm">
                               <height>52</height>
@@ -36,7 +36,9 @@
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -45,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#etched"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -59,7 +61,8 @@
                      <rs>modern</rs>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="1000" notAfter="2000">modern</date>
+                     <date evidence="#history" notBefore="1800" notAfter="1900">nineteenth
+                        century</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -68,6 +71,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">223 no. 394</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR106226"
+                     >EDR106226</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -81,11 +89,22 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-         <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions; deleted duplicate file not marking forged status</change>
-         <change when="2015-05-12" who="Scott J. DiGiulio">Added commentary indicating the source inscription</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009
+            template</change>
+         <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso
+            conventions; deleted duplicate file not marking forged status</change>
+         <change when="2015-05-12" who="Scott J. DiGiulio">Added commentary indicating the source
+            inscription</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to
+            English and lower case</change>
+         <change when="2021-06-02" who="Sophia Papandonatou">added dating criteria, updated metadata
+            to current standards, edited transcription, added -mdn</change>
+         <change when="2021-06-10" who="Sophia Papandonatou">added EDR link, changed .r to
+            .a</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -98,18 +117,15 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>Nestor
+               <lb n="1"/><persName><name key="Nestor">Nestor</name>
                 <lb n="2"/> 
-               <expan>
+               <persName><name key="Gaius"><expan>
                   <abbr>C</abbr><ex>aii</ex>
-               </expan> Caesaris <expan>
-                  <abbr>Ser</abbr><ex>vus</ex>
+               </expan></name> <name key="Caesar" type="cognomen">Caesaris</name></persName> <expan>
+                  <abbr>ser</abbr><ex>vus</ex>
                </expan>
-                <lb n="3"/> Germanicianus
-                <lb n="4"/> 
-               <expan>
-                  <abbr>A</abbr><ex>ulus</ex>
-               </expan> Supelectile
+                  <lb n="3"/> <name key="Germanicianus">Germanicianus</name></persName>,
+               <lb n="4"/> a <persName><name key="Supelex">Supelectile</name></persName>,
                 <lb n="5"/> 
                <expan>
                   <abbr>vix</abbr><ex>it</ex>
@@ -117,7 +133,7 @@
                <expan>
                   <abbr>a</abbr><ex>nnis</ex>
                </expan> 
-               <num xml:lang="lat" value="40">XL</num>
+               <num xml:lang="lat" value="40">XL</num>.
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -125,7 +141,7 @@
         
         
                 <div type="translation">
-                    <p/>
+                   <p>Nestor Germanicianus, slave of the emperor Gaius (and) in charge of furniture, lived for forty years.</p>
                 </div>
             
         

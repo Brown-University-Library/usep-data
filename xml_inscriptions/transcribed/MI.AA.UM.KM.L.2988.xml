@@ -30,7 +30,7 @@
                         <support>
                            
                            <seg type="material">White marble</seg>
-                           <p>fragmentary marble slab</p>
+                           <p>broken marble slab</p>
                                                 
                                             <dimensions type="surface" unit="cm">
                               <height>10</height>
@@ -38,7 +38,9 @@
                               <depth>2.4</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken along top and right, name lost, discoloration</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken along top and right, name lost, discoloration</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +49,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,7 +63,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#palaeography #formulae" notBefore="0100" notAfter="0200">second century
+                        CE</date>
                      <placeName ref="europe.italy">Puteoli(?), Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -74,6 +77,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#AE_2005"/>
                   <biblScope unit="item">352</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112671"
+                     >EDR112671</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -89,7 +97,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-08" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -104,24 +115,24 @@
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
                     <lb n="1"/>
-               <gap reason="lost" quantity="1" unit="line"/>
+               <gap reason="lost" extent="unknown" unit="line"/>
                     <lb n="3"/>vixi<supplied reason="lost">t <expan>
                      <abbr>an</abbr><ex>nis</ex>
                   </expan>
                </supplied>
-               <gap reason="lost" quantity="3" unit="character"/>,
+                   <gap reason="lost" extent="unknown" unit="character"/>,
                     <lb n="4"/>
                <persName>
                   <name type="gentilicium" key="Nonia">Nonia</name>
                </persName>
                <gap reason="lost" quantity="4" unit="character"/>
-                    <lb n="5"/>mater<gap reason="lost" quantity="4" unit="character"/>
-                    <lb n="4"/>piisim<gap reason="lost" quantity="3" unit="character"/>.</ab>
+                   <lb n="5"/>mater <gap reason="lost" extent="unknown" unit="character"/>
+                   <lb n="4"/>piisim<gap reason="lost" extent="unknown" unit="character"/></ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[   ] he? live[d for    years   ] Nonia [  ], (his?) mother [  ] for? (her) most dutiful [   ]</p>
                 </div>
             
         

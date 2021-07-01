@@ -19,8 +19,8 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem class="#funerary.epitaph">
-                     <p>fragmentary dedication or epitaph of an imperial official</p>
+                  <msItem class="#funerary.epitaph #dedicatory #text_unknown">
+                     <p>fragmentary inscription of a praefectus vehiculorum</p>
                   </msItem>
                </msContents>
                            
@@ -37,7 +37,9 @@
                               <depth>7.6</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>broken on all sides, chipped, weathered, and discolored</p>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>broken on all sides, chipped, weathered, and discolored</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -46,8 +48,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,7 +62,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0125">early second century CE</date>
+                     <date evidence="#palaeography" notBefore="0100" notAfter="0125">early second
+                        century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -70,6 +73,12 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">13, no. 6</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143250"
+                     >EDR143250</ref>
+               </bibl>
+               
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -85,12 +94,16 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-11" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and commentary</change>
+         <change when="2021-06-15" who="Sophia Papandonatou">added image</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url=""/>
+         <graphic url="MI.AA.UM.KM.L.93474.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -99,39 +112,26 @@
         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>Proc</abbr><ex>urator</ex>
-                  </expan>
-               </supplied> Prov<supplied reason="lost">inciae</supplied> 
-               <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
-               <supplied reason="lost">Prae</supplied>
-               <expan>
-                  <abbr>f</abbr><ex>ectus</ex>
-               </expan> Ve<supplied reason="lost">
-                  <expan>
-                     <abbr>hiculor</abbr><ex>um</ex>
-                  </expan>
-               </supplied> 
-               <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="3"/>
-               <gap reason="lost" extent="unknown" unit="character"/>n A<gap reason="lost" extent="unknown" unit="character"/>
+                   <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+                   <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low">procurator</supplied> <expan><abbr>prov</abbr><ex>inciae</ex></expan> <gap reason="lost" extent="unknown" unit="character"/>
+                   <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><expan><abbr>praef</abbr><ex>ectus</ex></expan></supplied> ve<supplied reason="lost">hiculorum</supplied><gap reason="lost" extent="unknown" unit="character"/>
+                   <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><unclear>n</unclear> A<gap reason="lost" extent="unknown" unit="character"/>
+                   <lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+                   
             </ab>
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[   ] of the province [   ]</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                    
+                   <p>Line 3: Prae]f(ectus) (Tuck).</p>
+                   <p>In line 4, the ]n A[ could perhaps be "in Asia", or another province that begins with an "A." </p>
                 </div>
             
         

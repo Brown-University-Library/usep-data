@@ -23,23 +23,21 @@
                      <p>epitaph of Lucius Sutorius</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>partially reconstituted marble tablet</p>
-                           
                            <seg type="material">White marble</seg>
-                           
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>23.2</height>
                               <width>17.8</width>
                               <depth>2.8</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>four fragments, with a fifth larger one missing</p>
+                        <condition ana="#fragments.contig">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>four fragments</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -48,8 +46,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="simple_molding_border">
@@ -62,7 +60,8 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#formulae #palaeography" notBefore="0100" notAfter="0200"
+                        >second century CE</date>
                      <placeName ref="europe.italy.rome">Via Ruggero, Rome, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
@@ -71,6 +70,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">221 no. 390</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148644"
+                     >EDR148644</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -84,14 +88,22 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change></revisionDesc>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
+         <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009
+            template</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to
+            English and lower case</change>
+         <change when="2021-06-02" who="Sophia Papandonatou">added dating criteria, updated metadata
+            to current standards, edited transcription, added EDR link</change>
+         <change when="2021-06-14" who="Sophia Papandonatou">added image</change>
+         <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url=""/>
+         <graphic url="MI.AA.UM.KM.L.2003.5.1.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -103,11 +115,7 @@
                <expan>
                   <abbr>D</abbr><ex>is</ex>
                </expan> 
-               <supplied reason="lost">
-                  <expan>
-                     <abbr>M</abbr><ex>anibus.</ex>
-                  </expan>
-               </supplied>
+               <supplied reason="lost"><expan><abbr>M</abbr><ex>anibus</ex></expan>.</supplied>
                 <lb n="2"/> 
                <persName>
                   <name type="praenomen" key="Lucius">
@@ -115,17 +123,16 @@
                         <abbr>L</abbr><ex>ucio</ex>
                      </expan>
                   </name> 
-                  <name type="gentilicium" key="Sutorius">Sutorio</name>
+                  <name type="gentilicium" key="Sutorius">Sutori<unclear>o</unclear></name>
                </persName> 
                <gap reason="lost" quantity="6" unit="character"/>
-                <lb n="3"/> ti coniugi <unclear>b</unclear>
+                <lb n="3" break="no"/> ti coniugi <unclear>b</unclear>
                <gap reason="lost" extent="unknown" unit="character"/> 
                <supplied reason="lost">be</supplied>
-                <lb break="no" n="4"/>nedicto<gap reason="lost" quantity="7" unit="character"/>
-                <lb n="5"/> vixit<gap reason="lost" quantity="9" unit="character"/>
+                <lb break="no" n="4"/>nedicto <gap reason="lost" quantity="7" unit="character"/>
+                <lb n="5"/> vixit <gap reason="lost" quantity="9" unit="character"/>
                 <lb n="6"/> 
-               <num xml:lang="lat" value="16">XVI</num>
-               <gap reason="lost" quantity="15" unit="character"/>
+               XVI<gap reason="lost" quantity="15" unit="character"/>
                 <lb n="7"/> 
                <unclear>P</unclear>
                <gap reason="illegible" quantity="1" unit="character"/>
@@ -136,20 +143,17 @@
         
         
                 <div type="translation">
-                    <p/>
+                   <p>To the Divine [Spirits.] To Lucius Sutorius [  ] husband, [   b]lessed [   ] he lived [   </p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Line 3: b[ene....]; line 4: ne dicto; line 7: H(ic) [S(itus) E(st)] (Tuck).</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>3) b[ene....]; 4) ne dicto; 7) H(ic) [S(itus) E(st)]: Tuck</p>
-         </div>
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
