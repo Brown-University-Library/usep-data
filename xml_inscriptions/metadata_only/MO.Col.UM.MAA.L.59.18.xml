@@ -29,7 +29,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#honorific">
                             <!-- short summary of the content of an inscription -->
-                            <p>Medallion of Trebonianus Gallus and Volusian</p>
+                            <p>commemoration of the adventus of Volusian and Gallus</p>
                         </msItem>
                     </msContents>
 
@@ -39,23 +39,24 @@
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
                         <objectDesc ana="#instrumentum.other">
-                            <supportDesc ana="#metal">
+                            <supportDesc ana="#metal.bronze">
                                 <support>
-                                    <p> </p>
+                                    <p>bimetallic medallion</p>
                                     <dimensions type="surface" unit="cm">
                                         <height/>
                                         <width/>
                                         <depth/>
+                                        <dim type="diameter">3.9</dim>
                                     </dimensions>
                                 </support>
-                                <condition ana= "#complete.intact">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout writtenLines="2" columns="2">
-                                    <p>Two sided medallion with one line of writing on each side</p>
+                                <layout writtenLines="2" columns="0">
+                                    <p>each side has one line of writing around the rim</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -63,13 +64,17 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#stamped.relief"> </handNote>
+                            <handNote ana="#stamped #in_relief"/> 
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>Dark bronze center with rim of lighter bronze?.</p>
+                                <p>Face a: laureate vis-a-vis busts; Gallus on the right and
+                                    Volusian on the left, both draped and cuirassed.</p>
+                                <p>Face b: winged Victory on the left, holding a wreath and leading the two mounted <hi rend="italic">augusti</hi>, 
+                                    behind whom are a standard, a legionary eagle, and two <hi rend="italic">insignia</hi>.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -83,22 +88,36 @@
                         </summary>
 
                         <origin>
-                         
-                         
+                            <date evidence="#history" notBefore="0251" notAfter="0253">251-253 CE</date>
+                            <placeName ref="unknown">unknown</placeName>
                         </origin>
+                        
+                        <provenance type="transferred" subtype="given">
+                            <p>Gift of <persName role="donor">Cornelius Ruxton Love, Jr.</persName> to the <orgName role="recipient">Museum of Art and Archaeology</orgName> of the <orgName>University of Missouri</orgName>.</p>
+                        </provenance>
 
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
+                    
                     <bibl>
-                      
-                      
+                        <ref type="external"
+                            target="http://maacollections.missouri.edu/ArgusNET/Portal.aspx?lang=en-US&amp;g_AAEM=59.18"
+                            >Museum of Art and Archeology (Web Entry)</ref>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://maacollections.missouri.edu/ArgusNET/Portal.aspx?lang=en-US">External Reference</ref>
+                        <ref type="external"
+                            target="https://hdl.handle.net/10355/65488"
+                            >Benjamin, Anna. "A Medallion of Two Roman Emperors." Muse: Annual of the Museum of Art and Archeology (MU), vol. 2 (1968), pp. 21-24.</ref>
                     </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://hdl.handle.net/10355/65482"
+                            >Elkins, Nathan T. "Medallions, Protocontorniates, and contorniates in the Museum of Art and Archaeology." Muse: Annual of the Museum of Art and Archeology (MU), vol. 46 (2012), pp. 16, 21-22.</ref>
+                    </bibl>
+                    
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -124,6 +143,7 @@
         <revisionDesc>
             <change when="2020-04-18" who="Gaia Gianni">Initial Encoding</change>
         <change when="2021-02-24" who="Elli Mylonas">Change instrumentum to instrumentum.other</change>
+            <change when="2021-07-06" who="Sophia Papandonatou">updated metadata, added decoNote and bibliography</change>
 </revisionDesc>
 
     </teiHeader>
@@ -142,7 +162,18 @@
         
         <body>
         <div type="edition">
-            <ab>Transcription goes here</ab></div>
+            <div type="textpart" subtype="face" n="a">
+                <ab>
+                    <lb n="1"/><persName type="imperial"><name type="praenomen" key="Imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></name> <name type="cognomen" key="Volusianus">Volusianus</name> <name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>gustus</ex></expan></name></persName>, 
+                    <persName type="imperial"><name type="praenomen" key="Imperator"><expan><abbr>Imp</abbr><ex>erator</ex></expan></name> <name type="cognomen" key="Gallus">Gallus</name> <name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>gustus</ex></expan></name></persName>.
+                </ab>
+            </div>
+            
+            <div type="textpart" subtype="face" n="b">
+            <ab>
+                <lb n="1"/>Adventus <expan><abbr>Aug<am>g</am></abbr><ex>ustorum</ex></expan>.
+            </ab></div>
+        </div>
         
         
                 <div type="translation">
@@ -152,13 +183,10 @@
         
         
                 <div type="commentary">
-            <p>Notes here, </p></div>
+            <p/></div>
             
         
         
-                <div type="apparatus">
-                    <p/>
-                </div>
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
