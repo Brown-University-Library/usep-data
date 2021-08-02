@@ -3,7 +3,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MO.Col.UM.MAA.L.83.267</title>
+            <title>MO.Col.UM.MAA.L.83.263.2</title>
          </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,7 +11,7 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MO.Col.UM.MAA.L.83.267">MO.Col.UM.MAA.L.83.267</idno>
+            <idno type="USEpigraphy" xml:id="MO.Col.UM.MAA.L.83.263.2">MO.Col.UM.MAA.L.83.263.2</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -20,27 +20,28 @@
                   <settlement>Col</settlement>
                   <institution>UM</institution>
                   <repository>MAA</repository>
-                  <idno>83.267</idno>
+                  <idno>83.263.2</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem>
-                     <p>label naming Claudius Maximus</p>
+                  <msItem class="#label">
+                     <p>label naming Melissus</p>
                   </msItem>
                </msContents>
                <physDesc><!--objectDesc, handDesc, decoDesc go here-->
-                  <objectDesc ana="#clay-product #instrumentum.other">
+                  <objectDesc ana="#instrumentum.amphora #clay-product #fragment">
                      <supportDesc ana="#clay">
                         <support>
-                           <p>terracotta brick</p>
+                           <p>amphora handle</p>
                            <dimensions type="surface" unit="cm">
-                              <height>9.90</height>
-                              <width>8.10</width>
-                              <depth>4.10</depth>
+                              <height>4.60</height>
+                              <width/>
+                              <depth/>
+                              
                            </dimensions>
                         </support>
-                        <condition ana="#broken">
-                           <p>some of the stamp has worn away</p>
+                        <condition ana="#complete.broken">
+                           <p>only stamped portion of handle preserved</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -50,7 +51,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-                     <handNote ana="#stamped">written in two concentric rings</handNote>
+                     <handNote ana="#stamped"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -58,25 +59,28 @@
                      </decoNote>
                   </decoDesc>
                </physDesc>
-               
-                  <history><!--summary, origin, provenance go here-->
-                     <origin>
-                        <date evidence="#unspecified" notBefore="0069" notAfter="0117">late first
-                           century to early second century CE</date>
-                        <placeName ref="europe.italy.rome">Italy, Rome</placeName>
-                     </origin>
-                     <provenance type="transferred" subtype="given">
-                        <p>Given to the <orgName role="recipient">Museum of Art and Archaeology of the
-                           University of Missouri</orgName> by Dr. <persName role="donor"
-                              >Allen A. Heflin</persName>.</p>
-                     </provenance>
-                  
+               <history><!--summary, origin, provenance go here-->
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0037" notAfter="0324">late first
+                        century BCE to mid fourth century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome, Monte Testaccio</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p>Given to the <orgName role="recipient">Museum of Art and Archaeology of the
+                        University of Missouri</orgName> by Dr. <persName role="donor"
+                           >Allen A. Heflin</persName>.</p>
+                  </provenance>
                </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CIL_XV"/>
-                  <biblScope unit="item">252</biblScope>
+                  <biblScope unit="item">2775a</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://maacollections.missouri.edu/ArgusNET/Portal.aspx?lang=en-US&amp;g_AAEM=83.263.2"
+                     >Museum of Art and Archeology</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -92,6 +96,8 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2021-07-29" who="Sophia Papandonatou">added some metadata, trancription,
+            provenance and museum link</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
@@ -99,10 +105,11 @@
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/>Ex <expan><abbr>pr</abbr><ex>aediis</ex></expan> <persName><name type="gentilicium" key="Claudius">Cl<unclear>a</unclear><supplied reason="lost" evidence="parallel">udi</supplied></name> <supplied reason="lost" evidence="parallel"><name type="cognomen" key="Maximus">Maximi</name></supplied></persName>
-               <lb n="2"/>ab <persName key="Isis" type="slaveName"></persName>.
+               <lb n="1"/>II <persName><name key="Camilius" type="gentilicium">Camili</name>
+                  <lb n="2"/><name key="Melissus" type="cognomen">Melissi</name></persName>.
             </ab>
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+         </div>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>
