@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>epitaph of an imperial slab</p>
+                     <p>epitaph of an imperial slave</p>
                   </msItem>
                </msContents>
                            
@@ -28,17 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>fragmentary marble slab</p>
-                           
+                           <p>partially reconstituted marble columbarium slab</p>
                            <seg type="material">Luna marble</seg>
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height/>
                               <width/>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>Luna marble columbarium slab, broken into three pieces</p>
+                        <condition ana="#broken">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p>three fragments</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -61,9 +61,13 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0014" notAfter="0037">Tiberian</date>
+                     <date evidence="#formulae #archaeology #nomenclature" notBefore="0014" notAfter="0037">Tiberian period</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased in <date when="1909">1909</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">the Antiquario Pacifico</orgName> on the via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
+                        He was funded by Mr. <persName role="funder">M. E. Farr</persName> and Mr. <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
+                  </provenance>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -97,6 +101,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
+         <change when="2021-06-08" who="Sophia Papandonatou">added commentary</change>
+         <change when="2021-06-17" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -111,44 +119,48 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <gap reason="lost" quantity="14" unit="chars"/>us <expan>
-                  <abbr>Ti</abbr><ex>berii</ex>
-               </expan>
+               <gap reason="lost" extent="unknown" unit="character"/>us <persName type="imperial"><name key="Tiberius" type="praenomen"><expan>
+                  <abbr>T<hi rend="tall">i</hi></abbr><ex>berii</ex>
+               </expan></name>
                 <lb n="2"/> 
-               <supplied reason="lost">Caesaris <expan>
-                     <abbr>ser</abbr><ex>vus</ex>
-                  </expan>
-               </supplied> horrea
+                  <name type="cognomen" key="Caesar"><supplied reason="lost">Caesaris</supplied></name></persName> <supplied reason="lost"><expan>
+                     <abbr>ser</abbr><ex>vus</ex></expan></supplied> <unclear>h</unclear>orrea
                 <lb break="no" n="3"/> 
-               <supplied reason="lost">rius.<gap reason="lost" quantity="17" unit="chars"/>
+               <supplied reason="lost">rius</supplied> <gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
                   <lb n="4"/> 
                   <persName>
-                     <name type="cognomen" key="Maecenatianus">Maec<supplied reason="lost">enatianus</supplied>
-                     </name>  
-                     <supplied reason="lost">fecit, et</supplied>
-                  </persName>                
-                  <lb n="5"/> sibi hic ea<supplied reason="lost">m</supplied> qua olla.
-                <lb n="6"/> Ossa sua c<supplied reason="lost">on</supplied>sita sint</supplied>.</ab>
+                     <name type="slaveName" key="Maecenatianus">Ma<unclear>ec</unclear><supplied reason="lost" cert="low">enatianus</supplied>
+                     </name></persName> <supplied reason="lost" cert="low">fecit</supplied>          
+                  <lb n="5"/> <hi rend="tall">s</hi>ibi, hic e<gap reason="illegible" unit="character" quantity="1"/><gap reason="lost" unit="character" quantity="1" cert="low"/><supplied reason="lost">in</supplied> qua olla
+                <lb n="6"/> ossa sua c<supplied reason="lost">on</supplied>sita sint.</ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[   ] [slave of the emperor] Tiberius, granary kee[per   ] Maec[enatianus made (this)] for himself, 
+                      [   in] which burial urn may his bones here be lai[d together].</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Line 3: qui vixit anno]s LI (Baldwin)</p>
+                   <p>Line 4: Maec[enatianus fecit et] (Baldwin; Tuck)</p>
+                   <p>Line 5: sibi hic es[t in] qua olla (Baldwin); sibi hic ea[m] qua olla (Tuck)</p>
+                   <p>Line 6: ossa sua c[um eo]sita sint (Baldwin)</p>
+                   <p>In terms of the sense of the Latin, both "hic ea[m] qua" (an accusative?) and
+               "hic es[t in] qua" ("here is, in which...") are unlikely supplements, however it is
+               difficult to say what a likely supplement would be.</p>
+                   <p>The name Maecenatianus indicates that the deceased was originally a slave of
+               Maecenas who was then inherited by Augustus upon Maecenas' death and finally
+               inherited by Tiberius. </p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>[---] us Ti(berii)/ [Caesaris ser(vus)] horrea/[rius qui vixit anno] s LI/ Maec[enatinus fecit et] sibi hic es[t in] qua olla/ ossa sua c[um eo]sita sint: Baldwin</p>
-         </div>
+               
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

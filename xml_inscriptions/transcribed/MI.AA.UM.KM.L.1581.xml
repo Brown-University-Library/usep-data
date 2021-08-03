@@ -25,22 +25,20 @@
                </msContents>
                            
                             <physDesc>
-                  <objectDesc ana="#cippus">
+                  <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>marble cippus</p>
-                           
+                           <p>marble tablet</p>
                            <seg type="material">White marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>44</height>
                               <width>22.5</width>
                               <depth>11.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -63,9 +61,14 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <date evidence="#palaeography #formulae" notBefore="0100" notAfter="0200">second century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased by <persName role="buyer">Walter Dennison</persName> from a dealer near the <placeName>Roman forum</placeName> for the <orgName role="recipient">University of Michigan</orgName> and recieved in <date when="1909">1909</date> (Baldwin and Torelli).
+                        He was funded by Mr. <persName role="funder">M. E. Farr</persName> and Mr. <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
+                  </provenance>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -81,6 +84,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">209 no. 360</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101327"
+                     >EDR101327</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -95,6 +103,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
+         <change when="2021-06-15" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -111,12 +122,10 @@
                 <lb n="1"/>
                <expan>
                   <abbr>D<hi rend="tall">i</hi>s Manib</abbr><ex>us</ex>
-                  <abbr>.</abbr>
                </expan>
                 <lb n="2"/>
                <persName>
-                  <name type="cognomen" key="Lucifera">Luciferae</name>
-               </persName>;
+                  <name type="cognomen" key="Lucifera">Luciferae</name></persName>;
                 <lb n="3"/>
                <expan>
                   <abbr>vix</abbr><ex>it</ex>
@@ -126,8 +135,8 @@
                 <lb n="4"/>
                <persName>
                   <name type="cognomen" key="Victrix">Victrix</name>
-               </persName>,
-                <lb n="5"/>mater, filiae
+               </persName>
+                <lb n="5"/>mater filiae
                 <lb n="6"/>dulcissimae
                 <lb n="7"/>et p<hi rend="tall">i</hi>issimae
                 <lb n="8"/>fecit.</ab>
@@ -137,7 +146,8 @@
         
         
                 <div type="translation">
-                    <p/>
+                   <p>To the Divine Spirits of Lucifera; she lived for three years. 
+                      Victrix, (her) mother, made this for her dearest and most dutiful daughter. </p>
                 </div>
             
         

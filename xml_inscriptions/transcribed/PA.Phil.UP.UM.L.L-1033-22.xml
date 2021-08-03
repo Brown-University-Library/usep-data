@@ -32,7 +32,8 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph for L(ucius) Tuccius Primus and Tuccia Olympia</p>
+                            <p>epitaph for freedman Lucius Tuccius Primus and freedwoman Tuccia
+                                Olympia</p>
                         </msItem>
                     </msContents>
 
@@ -42,7 +43,7 @@
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
                         <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone">
+                            <supportDesc ana="#stone.marble">
                                 <support>
                                     <p> </p>
                                     <dimensions type="surface" unit="cm">
@@ -51,7 +52,7 @@
                                         <depth>2.9</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
@@ -135,6 +136,8 @@
         <revisionDesc>
             <change when="2020-05-07" who="GG">Initial Encoding</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+            <change when="2021-06-11" who="Colin Olson">Fixed "stone" to stone.marble, took out
+                filler text in commentary, added "freedman" and "freedwoman" distinction in inscription summary field, added translation</change>
 </revisionDesc>
 
     </teiHeader>
@@ -170,8 +173,12 @@
                     </ab>
                 </div>
 </div>
+            
+            <div type="translation">
+            <p>Lucius Tuccius Primus, freedman of Diodota, patron (of this inscription, lies here). Tuccia Olympia, freedwoman of Lucius, (lies here.) She lived for 19 years.</p></div>   
+           
             <div type="commentary">
-            <p>Notes here, </p></div>
+            <p></p></div>
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 

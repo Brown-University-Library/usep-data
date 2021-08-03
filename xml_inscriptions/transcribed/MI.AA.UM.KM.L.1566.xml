@@ -40,7 +40,9 @@
                               <depth>1.2</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +51,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -63,9 +65,14 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0150" notAfter="0300">mid-second to third century CE</date>
+                     <date evidence="#palaeography" notBefore="0150" notAfter="0300">mid-second to
+                        third century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased in <date when="1909">1909</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">the Antiquario Pacifico</orgName> on the via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
+                        He was funded by Mr. <persName role="funder">M. E. Farr</persName> and Mr. <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
+                  </provenance>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -95,6 +102,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
+         <change when="2021-06-15" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -109,9 +119,8 @@
         <div type="edition">
             <ab>
                 <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/>
-               <unclear>u</unclear>e memor<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="2"/> sius <gap reason="lost" extent="unknown" unit="character"/>
+               <gap reason="lost" extent="unknown" unit="character"/><unclear>u</unclear>e memor<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> suis <unclear>I</unclear><gap reason="lost" extent="unknown" unit="character"/>
             </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
@@ -119,7 +128,7 @@
         
         
                 <div type="translation">
-                    <p/>
+                   <p>[   ]</p>
                 </div>
             
         

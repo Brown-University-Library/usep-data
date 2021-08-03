@@ -28,7 +28,7 @@
                   <objectDesc ana="#arch_element">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Opisthographic fragments of a marble epistyle ?</p>
+                           <p>opisthographic fragments of a marble epistyle ?</p>
                            <seg type="form">Epistyle</seg>
                            <seg type="material">Fine-grained white marble, Luna?</seg>
                            <dimensions type="surface" unit="cm">
@@ -66,6 +66,9 @@
                      <date evidence="#palaeography" notBefore="0001" notAfter="0100">first century CE</date>
                      <placeName ref="europe.italy">Italy, Misenum</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased from the collection of <persName>Guiseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
+                  </provenance>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -89,6 +92,11 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">13, no. 7</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR122426"
+                     >EDR122426</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -104,14 +112,17 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-05-28" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions</change>
-         <change when="2021-01-31" who="Sophia Papandonatou">added translation, changed file name and ID from .v to .a</change>
+         <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation, changed file name and ID from .v to .a</change>
       <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
+<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-28" who="Sophia Papandonatou">updated image url to .a</change>
+         <change when="2021-06-17" who="Sophia Papandonatou">added EDR link</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-             <graphic url="MI.AA.UM.KM.L.878.v-Det.1.jpg"/>
+             <graphic url="MI.AA.UM.KM.L.878.a.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -120,19 +131,22 @@
         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 <ab>
-                    <lb n="1"/>Cla<supplied reason="lost">ssis Misenensis</supplied>
+                    <lb n="1"/>Cla<supplied reason="lost" cert="low">ssis Misenensis</supplied> <gap reason="lost" extent="unknown" unit="character"></gap>
             </ab>
             </div>
         
         
                 <div type="translation">
-                    <p>[Of the] fle[et of Misenum.]</p>
+                    <p>[Of the] fle[et of Misenum   ]</p>
                 </div>
             
         
         
                 <div type="commentary">
-                   <p>The inscription on the other is side is MI.AA.UM.KM.L.878.v.</p>
+                   <p>The inscription on the other is side is MI.AA.UM.KM.L.878.b.</p>
+                   <p>This inscription cannot be dated more precisely than to the first century, but if it was carved after 69 CE,
+                      then line 1 would be supplemented as cla[ssis praetoriae Misenensis   ], as the fleet had then been awarded the
+                   additional honorific title by Vespasian.</p>
                 </div>
             
         

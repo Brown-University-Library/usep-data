@@ -20,7 +20,7 @@
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>epitaph of Ianuarius</p>
+                     <p>epitaph of(?) an underslave</p>
                   </msItem>
                </msContents>
                            
@@ -28,19 +28,17 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>fragmentary marble slab</p>
-                           
+                           <p>fragmentary columbarium marble slab</p>
                            <seg type="material">White marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>6</height>
                               <width>12.2</width>
                               <depth>2.5</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -49,8 +47,8 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="Dec_other">
@@ -63,9 +61,14 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#archaeology #palaeography" notBefore="0001" notAfter="0100">first century
+                        CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Via Appia</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased in <date when="1909">1909</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">the Antiquario Pacifico</orgName> on the via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
+                        He was funded by Mr. <persName role="funder">M. E. Farr</persName> and Mr. <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
+                  </provenance>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -76,6 +79,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">207-208 no. 357</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101003"
+                     >EDR101003</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -91,6 +99,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-31" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
+         <change when="2021-06-08" who="Sophia Papandonatou">added commentary</change>
+         <change when="2021-06-10" who="Sophia Papandonatou">added translation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -104,15 +116,16 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/><gap reason="lost" unit="character" extent="unknown"/>
+                <lb n="2"/>
                <expan>
-                  <abbr>Vican</abbr><ex>ii</ex>
-               </expan> v<supplied reason="lost">icarius</supplied>
-                <lb n="2"/> 
+                  <abbr>vicar</abbr><ex cert="low">ius</ex>
+               </expan> v<gap reason="lost" unit="character" extent="unknown"/>
+                <lb n="3"/> 
                <persName>
-                  <name type="cognomen" key="Ianuarius">Ianua<supplied reason="lost">rius</supplied>
+                  <name type="cognomen" key="Ianuarius">Ianua<supplied reason="lost" cert="low">rius</supplied>
                   </name>
-               </persName>
+               </persName><gap reason="lost" unit="character" extent="unknown"/>
             </ab>
                 
                 
@@ -122,20 +135,20 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>[   ] an underslave [   ] Janua[rius   ]</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Line 2: vicar(ius) v[...] v[ixit annos tot? (Bodel); vicar(ii) v[icarius] (Tuck).</p>
+                   <p>The vicarius in line 2 and the Januarius in line 3 are two separate people, but it is unclear 
+                      who is the dedicator and who is the dedicatee as they can appear in either order and we lack the endings to tell, 
+                   which is why Bodel's supplement is uncertain. vicar(ii) vicarius is only attested once in EDCS and therefore seems unlikely.</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>2) vicar(ius) v[...] v[ixit annos tot?:Bodel</p>
-         </div>
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

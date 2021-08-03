@@ -26,15 +26,11 @@
                            
                             <physDesc>
                   <objectDesc ana="#slab">
-                     <supportDesc ana="#stone">
+                     <supportDesc ana="#stone.marble">
                         <support>
-                           
-                           
                            <seg type="material">Friable stone</seg>
                            <p>reconstituted marble slab</p>
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>29</height>
                               <width>41.5</width>
                               <depth>3</depth>
@@ -68,6 +64,9 @@
                      <date evidence="#formulae #nomenclature" notBefore="0001" notAfter="0100">first century CE</date>
                      <placeName ref="europe.italy">Via Campana, Italy, Pozzuoli</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased from the collection of <persName>Guiseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
+                  </provenance>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -78,6 +77,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">101, no. 147</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR113826"
+                     >EDR113826</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -93,9 +97,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-         <change when="2021-02-01" who="Sophia Papandonatou">added translation</change>
+         <change when="2021-02-01" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
       <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
+<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-06-18" who="Sophia Papandonatou">added commentary and EDR link</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -117,12 +122,11 @@
                      </expan>
                   </name> 
                   <name type="gentilicium" key="Iulius">Iulio</name> 
-                  <name type="cognomen" key="Primigenius">Primiceni</name>
+                  <name type="cognomen" key="Primigenius"><expan><abbr>Primiceni</abbr><ex>o</ex></expan></name>
                </persName>
                     <lb n="2"/> et <persName>
                   <name type="gentilicium" key="Iulia">Iulia</name> 
-                  <name type="cognomen" key="Irenetis">Irenetis</name>
-               </persName>
+                  <name type="cognomen" key="Irenetis">Irenetis</name></persName>;
                     <lb n="3"/> se bibi fecerunt
                     <lb n="4"/> 
                <expan>
@@ -135,21 +139,21 @@
         
         
                 <div type="translation">
-                    <p>To Gaius Iulius Primigenius and Iulia Irene. While they (were) alive, (they)
-               made (this) for their freedmen and freedwomen.</p>
+                    <p>To Gaius Iulius Primigenius and Iulia Irene; they
+               made (this) for their freedmen and freedwomen while they were alive.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p>Line 3: "se bibi" as a variant of "se vivo." (Tuck)</p>
+                    <p>B for V in "bibi" in line 3. We would expect "bibi" to be in the ablative in order to form the formulaic ablative absolute "se vivis"; 
+                    It was perhaps attracted into the nominative by the verb (fecerunt) following it.</p>
+                   <p>Line 1: PRIMIGENI (CIL).</p>
                 </div>
             
         
         
-                <div type="apparatus">
-            <p>1) PRIMIGENI: CIL</p>
-         </div>
+               
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>

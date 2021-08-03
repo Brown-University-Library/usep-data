@@ -28,7 +28,7 @@
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>broken opisthographic <seg type="material">white marble</seg> slab</p>
+                           <p>broken opisthographic marble slab</p>
                           <dimensions type="surface" unit="cm">
                               <height>23.2</height>
                               <width>29.6</width>
@@ -64,6 +64,9 @@
                      <date evidence="#palaeography" notBefore="0100" notAfter="0200">second century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased from the collection of <persName>Guiseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
+                  </provenance>
                   <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
             </msDesc>
             <listBibl>
@@ -91,7 +94,9 @@
                   <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD007976?">EDH nr. HD007976</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR080836">EDR080836</ref>
+                  <ref type="external"
+                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101918"
+                     >EDR101918</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -112,14 +117,17 @@
          <change when="2015-05-31" who="Scott J. DiGiulio">Fixed image url error.</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2021-01-16" who="Scott J. DiGiulio">Fixed validation errors; correcting image</change>
-         <change when="2021-01-31" who="Sophia Papandonatou">added translation, changed filename and ID to .a (formerly .v)</change>
+         <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation, changed filename and ID to .a (formerly .v)</change>
       <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
+        <change when="2021-05-26" who="Sophia Papandonatou">removed incorrect image</change>
+<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-28" who="Sophia Papandonatou">updated image url to .a</change>
+         <change when="2021-06-17" who="Sophia Papandonatou">updated EDR link</change></revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MI.AA.UM.KM.L.840.v.jpg"/>
+         <graphic url="MI.AA.UM.KM.L.840.a.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -127,21 +135,23 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan><abbr>Augen</abbr><ex cert="low">dus</ex></expan></ab>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+                <lb n="2"/>
+               Augen<supplied reason="lost" cert="low">dus</supplied><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
                 
             </div>
         
         
                 <div type="translation">
-                    <p>Augendus.</p>
+                    <p>[   ] Augen[dus?   ]</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p><seg type="material">White marble</seg> (Tuck).</p>
                 </div>
             
         
