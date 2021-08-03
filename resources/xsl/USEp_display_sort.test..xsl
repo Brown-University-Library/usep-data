@@ -41,6 +41,7 @@
         2020-06-24 SJD added display for dating criteria
         2020-10-22 SJD commented out display of decoNote/@ana
         2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
+        2021-07-29 EM added bibliography processing.
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -408,65 +409,70 @@
 
     <xsl:template name="bibl">        
         <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:listBibl/t:bibl">
-            <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date" data-type="number" order="ascending"/>
+            <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date/@when" order="ascending"/> <!-- @data-type="number"  -->
+           
+            <!--<xsl:value-of select="id(substring-after(t:ptr/@target, '#'))/t:date"/> This was for testing-->
             <xsl:variable name="myID" select="substring-after(t:ptr/@target, '#')"/>
             <p>
-                <!-- Note: I'm not handling cases where articles are directly in the monograph. Only where they
-                    are in a volume. We don't have any, so let's do it later.
-                -->
                 <!-- Output the author, if there is one. Right now, assumption is that there is an
                     potentially an author on the bibl if it's an article, or on the outermost bibl if
-                    it's a corpus or monograph. Assume that there is always a <persName type="sort"> and use that.
+                    it's a corpus or monograph. Corpora don't have authors in the inscription bibliography. 
+                    Use <persName type="sort"> if it's there. Otherwise use the first <persName>
                 -->
-
-                <xsl:if test="id($myID)/t:author/t:persName[@type = 'sort']">
-                    <xsl:value-of
-                        select="concat(id($myID)/t:author/t:persName[@type = 'sort'], ', ')"/>
+                <xsl:if test="id($myID)/t:author[1]/t:persName">
+                    <xsl:choose>
+                        <xsl:when test="id($myID)/t:author[1]/t:persName[@type = 'sort']">
+                          <xsl:value-of
+                                select="concat(id($myID)/t:author[1]/t:persName[@type = 'sort'], ', ')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="concat(id($myID)/t:author[1]/t:persName, ', ')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:if>
-
-                <!-- output title or abbreviation. if it's a monograph, output the title. If  corpus or a journal
-                    output the abbreviation if there is one. I am not outputting titles for volumes or articles, as
-                    we don't have any. If it's an abbreviation, link it back to the bibliography. This was changed. Code
-                    left in.
+               
+                <!-- output title or abbreviation. if it's a monograph, journal article or edited volume article, output the title. 
+                    If it's a corpus volume, just output the corpus abbreviation (from corpus bibl entry). Ideally, these might link to their entries in the 
+                    Citations page, at some future time.
                 -->
 
                 <xsl:choose>
-                    <xsl:when
-                        test="id($myID)/ancestor-or-self::t:bibl[@type = 'm' or @type = 'u']/t:title">
-                        <i>
-                            <xsl:value-of
-                                select="id($myID)/ancestor-or-self::t:bibl[@type = 'm' or @type = 'u']/t:title"
-                            />
-                        </i>
+                    
+      <!-- monograph or unpublished type="m" type="u"-->
+                    <xsl:when test="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']">
+                        <i><xsl:value-of
+                                select="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']/t:title"/>.</i>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:choose>
-                            <xsl:when
-                                test="id($myID)/ancestor-or-self::t:bibl[@type = 'c' or @type = 'j']/t:abbr">
-                                <!-- I  have commented out the code that made an abbreviation into a link to the actual bibliographic entry -->
-                                <!-- <a href="../refList.html#{//bibl[@id=$myID]/ancestor-or-self::bibl[@type='c' or @type='j']/@id}"> -->
-                                <i>
-                                    <xsl:value-of
-                                        select="id($myID)/ancestor-or-self::t:bibl[@type = 'c' or @type = 'j']/t:abbr[@type = 'primary']"
-                                    />
-                                </i>
-                                <!-- </a> -->
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of
-                                    select="id($myID)/ancestor-or-self::t:bibl[@type = 'c' or @type = 'j']/t:title"
-                                />
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:otherwise>
+                    
+       <!-- corpus volume type="v-c" or journal volume type="v-j" -->
+                    <xsl:when test="id($myID)/self::t:bibl[@type = 'v-c' or @type= 'v-j']">v-c
+                      <i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='c' or @level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/></i>
+                    </xsl:when>
+                    
+        <!-- volume in a monograph type="v-m" These are separate volumes, and don't have titles of their own. Treat like
+              corpus volumes, but instead of abbreviation, use title. -->
+                    <xsl:when test="id($myID)/self::t:bibl[@type = 'v-m']">
+                        <i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='m']/@ref, '#'))/self::t:bibl/t:title"/></i>
+                    </xsl:when>
+                    
+         <!-- journal article type="a-j" -->
+                    <xsl:when test="id($myID)/self::t:bibl[@type = 'a-j']">
+                        <xsl:text>“</xsl:text><xsl:value-of select="id($myID)/self::t:bibl[@type = 'a-j']/t:title"/><xsl:text>”, </xsl:text> 
+                        <i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/> </i>
+                    </xsl:when>
+                                        
+        <!-- monograph article type="a-m"  (edited volume) -->
+                    <xsl:when test="id($myID)/self::t:bibl[@type = 'a-m']">
+                        <xsl:text>“</xsl:text><xsl:value-of select="id($myID)/self::t:bibl[@type = 'a-m']/t:title"/><xsl:text>” in </xsl:text>
+                        <xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='m']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/>.
+                    </xsl:when>
+                    
                 </xsl:choose>
 
                 <!-- output the volume, if there is one. with a space before it. -->
 
-                <xsl:if test="id($myID)/ancestor-or-self::t:bibl[@type = 'v']">
-                    <xsl:value-of
-                        select="concat(' ', id($myID)/ancestor-or-self::t:bibl[@type = 'v']/t:biblScope)"
-                    />
+                <xsl:if test="id($myID)/self::t:bibl/t:biblScope[@unit='vol']">
+                    <xsl:value-of select="concat(' Vol. ', id($myID)/self::t:bibl/t:biblScope)"/>
                 </xsl:if>
 
                 <!-- output the year, if there is one. with a space before it and inside parentheses. -->
@@ -474,12 +480,6 @@
                 <xsl:choose>
                     <xsl:when test="id($myID)/t:date">
                         <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
-                    </xsl:when>
-                    <xsl:when
-                        test="id($myID)/ancestor-or-self::t:bibl[@type = 'v' or type = 'm']/t:date">
-                        <xsl:value-of
-                            select="concat(' (', id($myID)/ancestor-or-self::t:bibl[@type = 'v' or type = 'm']/t:date, ')')"
-                        />
                     </xsl:when>
                 </xsl:choose>
 
@@ -489,18 +489,12 @@
                     <xsl:value-of select="concat(': ', t:biblScope)"/>
                 </xsl:if>
 
-                <!--  This puts the author at the end of a citation in quotes. seems odd, can't tell what or why.
-                <xsl:if test="id($myID)/t:author">
-                    <xsl:value-of select="concat(' [', id($myID)/t:author, ']')"/>
-                </xsl:if> -->
-
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type = 'jstor']">
                     <br/>
                     <a href="{id($myID)/t:ref/@target}" class="biblink">
                         <xsl:value-of
-                            select="concat(id($myID)/t:ref[@type = 'jstor'], '(external link; access to JSTOR required)')"
-                        />
+                            select="concat(id($myID)/t:ref[@type = 'jstor'], '(external link; access to JSTOR required)')"/>
                     </a>
                 </xsl:if>
 
