@@ -408,10 +408,9 @@
     <!-- ****************** This outputs the bibliography ******************** -->
 
     <xsl:template name="bibl">        
-        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:listBibl/t:bibl">
+        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:listBibl/t:bibl[child::t:ptr[@type='rest-of-bibl']]">
             <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date/@when" order="ascending"/> <!-- @data-type="number"  -->
            
-            <!--<xsl:value-of select="id(substring-after(t:ptr/@target, '#'))/t:date"/> This was for testing-->
             <xsl:variable name="myID" select="substring-after(t:ptr/@target, '#')"/>
             <p>
                 <!-- Output the author, if there is one. Right now, assumption is that there is an
@@ -441,11 +440,11 @@
       <!-- monograph or unpublished type="m" type="u"-->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']">
                         <i><xsl:value-of
-                                select="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']/t:title"/>.</i>
+                                select="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']/t:title"/></i>
                     </xsl:when>
                     
        <!-- corpus volume type="v-c" or journal volume type="v-j" -->
-                    <xsl:when test="id($myID)/self::t:bibl[@type = 'v-c' or @type= 'v-j']">v-c
+                    <xsl:when test="id($myID)/self::t:bibl[@type = 'v-c' or @type= 'v-j']">
                       <i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='c' or @level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/></i>
                     </xsl:when>
                     
@@ -464,7 +463,7 @@
         <!-- monograph article type="a-m"  (edited volume) -->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'a-m']">
                         <xsl:text>“</xsl:text><xsl:value-of select="id($myID)/self::t:bibl[@type = 'a-m']/t:title"/><xsl:text>” in </xsl:text>
-                        <xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='m']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/>.
+                        <xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='m']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/>
                     </xsl:when>
                     
                 </xsl:choose>
@@ -472,12 +471,17 @@
                 <!-- output the volume, if there is one. with a space before it. -->
 
                 <xsl:if test="id($myID)/self::t:bibl/t:biblScope[@unit='vol']">
-                    <xsl:value-of select="concat(' Vol. ', id($myID)/self::t:bibl/t:biblScope)"/>
+                    <xsl:choose>
+                        <xsl:when test="substring-before($myID,'_')='AE'"/>
+                        <xsl:otherwise><xsl:value-of select="concat(' Vol. ', id($myID)/self::t:bibl/t:biblScope)"/></xsl:otherwise>
+                    </xsl:choose>
+                    
                 </xsl:if>
 
                 <!-- output the year, if there is one. with a space before it and inside parentheses. -->
 
                 <xsl:choose>
+                    <xsl:when test="substring-before($myID,'_')='AE'"/>
                     <xsl:when test="id($myID)/t:date">
                         <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
                     </xsl:when>
@@ -498,14 +502,14 @@
                     </a>
                 </xsl:if>
 
-                <xsl:if test="t:ref">
-                    <a href="{t:ref/@target}">
-                        <xsl:value-of select="concat(t:ref, ' (external link)')"/>
-                    </a>
-                </xsl:if>
-
             </p> 
             
+        </xsl:for-each>
+        
+        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:listBibl/t:bibl[child::t:ref[@type='external']]">
+           <p> <a href="{t:ref/@target}" class="biblink">
+               <xsl:value-of select="t:ref"/></a></p>
+           
         </xsl:for-each>
         
            
