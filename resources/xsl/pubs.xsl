@@ -10,6 +10,7 @@
    
     
     <xsl:output method="xml" encoding="UTF-8" exclude-result-prefixes="xs xd t" indent="yes"/>
+    <xsl:preserve-space elements="*"/>
     
     <xd:doc scope="stylesheet">
         <xd:desc>
