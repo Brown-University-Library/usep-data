@@ -55,7 +55,7 @@
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="2" writtenLines="2">
+                                <layout columns="0" writtenLines="2">
                                     <p>Two faced coin molds, one line per side</p>
                                 </layout>
                             </layoutDesc>
@@ -71,6 +71,8 @@
                         <decoDesc>
                             <decoNote>
                                 <p>a: laureate head of the emperor</p>
+                            </decoNote>
+                            <decoNote>
                                 <p>b: figure of the Jupiter standing</p>
                             </decoNote>
                         </decoDesc>
@@ -127,6 +129,8 @@
 
         <revisionDesc>
             <change when="2020-04-19" who="Gaia Gianni">Initial Encoding</change>
+            <change when="2021-08-02" who="Sophia Papandonatou">added some metadata, link,
+                transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -145,7 +149,22 @@
         
         <body>
         <div type="edition">
-            <ab>Transcription goes here</ab></div>
+            <div type="textpart" subtype="face" n="a">
+            <ab>
+                <lb n="1"/><persName type="imperial">Imperator <expan><abbr>C</abbr><ex>aesar</ex></expan> 
+                    <name type="gentilicium" key="Galerius"><expan><abbr>Gal</abbr><ex>erius</ex></expan></name> <name type="gentilicium" key="Valerius"><expan><abbr>Val</abbr><ex>erius</ex></expan></name>
+                    <name type="cognomen" key="Galerius">Maximinus</name> 
+                    <expan><abbr>P</abbr><ex>ius</ex></expan> <expan><abbr>F</abbr><ex>elix</ex></expan>
+                    <expan><abbr>Aug</abbr><ex>ustus</ex></expan></persName>.
+            </ab>
+            </div>
+            <div type="textpart" subtype="face" n="b">
+                <ab>
+                    <lb n="1"/>Iovi conservatori <expan><abbr>Aug<am>g</am></abbr><ex>ustorum</ex></expan>.
+                    <!-- can't read exegue + 3 letters in left field -->
+                </ab>
+            </div>
+            </div>
         
         
                 <div type="translation">
@@ -155,13 +174,11 @@
         
         
                 <div type="commentary">
-            <p>Notes here, </p></div>
+            <p/></div>
             
         
         
-                <div type="apparatus">
-                    <p/>
-                </div>
+              
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
