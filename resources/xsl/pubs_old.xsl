@@ -14,7 +14,7 @@
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Apr 11, 2014</xd:p>
             <xd:p><xd:b>Author:</xd:b> elli</xd:p>
-            <xd:p></xd:p>
+            <xd:p>test change</xd:p>
         </xd:desc>
     </xd:doc>
     <xsl:strip-space elements="*"/>
