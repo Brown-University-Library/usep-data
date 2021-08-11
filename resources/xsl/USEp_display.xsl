@@ -489,8 +489,8 @@
 
                 <!-- everything has a reference except for unpub. but put a space before it. -->
 
-                <xsl:if test="t:biblScope[ancestor::t:sourceDesc">
-                    <xsl:value-of select="concat(': ', t:biblScope[ancestor::sourceDesc)"/>
+                <xsl:if test="t:biblScope[ancestor::t:sourceDesc]">
+                    <xsl:value-of select="concat(': ', t:biblScope[ancestor::t:sourceDesc])"/>
                 </xsl:if>
 
                 <!-- This prints the jstor link   -->
@@ -502,6 +502,7 @@
                             <xsl:value-of
                             select="concat(id($myID)/t:ref[@type = 'jstor'], '(external link; access to JSTOR required)')"/>-->
                     </a>
+                </xsl:if>
                 <xsl:if test="id($myID)/t:ref[@subtype='OA']">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:50px;"/>  
                 </xsl:if>
