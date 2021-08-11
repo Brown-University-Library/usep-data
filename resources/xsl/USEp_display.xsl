@@ -496,10 +496,14 @@
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type = 'jstor']">
                     <br/>
-                    <a href="{id($myID)/t:ref/@target}" class="biblink">
-                        <xsl:value-of
-                            select="concat(id($myID)/t:ref[@type = 'jstor'], '(external link; access to JSTOR required)')"/>
+                    <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:text> [JSTOR] </xsl:text>
+                        
+                        <!-- There should be no content in the ref element.
+                            <xsl:value-of
+                            select="concat(id($myID)/t:ref[@type = 'jstor'], '(external link; access to JSTOR required)')"/>-->
                     </a>
+                <xsl:if test="id($myID)/t:ref[@subtype='OA']">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:50px;"/>  
                 </xsl:if>
 
             </p> 
