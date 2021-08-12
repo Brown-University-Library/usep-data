@@ -68,7 +68,7 @@
                             <a href="/../{concat($url, @xml:id)}"><xsl:value-of select="$author"/>
                                 <xsl:value-of select="concat('“', t:title[not(@level)][1], '”',', ')"/> 
                                 <xsl:value-of select="t:biblScope[@unit='vol']"/>
-                                <xsl:value-of select="concat(' (', t:date, ')autho')"/>.
+                                <xsl:value-of select="concat(' (', t:date, ')')"/>.
                                 <xsl:if test="t:biblScope[@unit='pp']">
                                     <xsl:value-of select="concat('pp. ',t:biblScope[@unit='pp'])"/>
                                 </xsl:if>
