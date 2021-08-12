@@ -456,7 +456,7 @@
                     
          <!-- journal article type="a-j" -->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'a-j']">
-                        <xsl:text>“</xsl:text><xsl:value-of select="id($myID)/self::t:bibl[@type = 'a-j']/t:title"/><xsl:text>”, </xsl:text> 
+                        <xsl:text>“</xsl:text><xsl:value-of select="id($myID)/self::t:bibl[@type = 'a-j']/t:title[not(@level)]"/><xsl:text>”, </xsl:text> 
                         <i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/> </i>
                     </xsl:when>
                                         
