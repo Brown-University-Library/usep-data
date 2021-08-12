@@ -494,8 +494,9 @@
                     <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:text>[JSTOR]</xsl:text></a>
                     
                 </xsl:if>
+                
                 <xsl:if test="id($myID)/t:ref[@subtype='OA']">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:50px;"/>  
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:50px;"/>  
                 </xsl:if>
                 
  
