@@ -49,7 +49,7 @@
             
             <xsl:for-each-group select="t:bibl[@type='a-j']" group-by="t:title[@level='j']/@ref">
                 
-                <p><a href="/../{concat($url, substring-after(current-grouping-key(),'#'))}"><xsl:value-of select="preceding-sibling::t:bibl[@xml:id=substring-after(current-grouping-key(),'#')]/t:abbr[@type='primary']"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
+                <p><a href="/../{concat($url, substring-after(current-grouping-key(),'#'))}"><xsl:value-of select="preceding-sibling::t:bibl[@xml:id=substring-after(current-grouping-key(),'#')]/t:title"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
                 <ul>
                     <xsl:for-each select="current-group()">
                         <li>
@@ -63,8 +63,18 @@
       <!-- Monographs  -->
             <h2 style="text-align:center;" id="monograph">Monographs</h2>
             <xsl:for-each select="t:bibl[@type='m']">
+                <xsl:variable name="author">
+                    <xsl:choose>
+                        <xsl:when test="t:author/t:persName[@type = 'sort']">
+                            <xsl:value-of select="concat(t:author/t:persName[@type = 'sort'], ', ')" />
+                        </xsl:when>
+                        <xsl:when test="t:author/t:persName">
+                           <xsl:value-of select="concat(t:author/t:persName, ', ')"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
                 
-                <p><a href="/../{concat($url, @xml:id)}"><xsl:value-of select="t:title"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="@xml:id"/><xsl:text>]</xsl:text></span></p>
+                <p><a href="/../{concat($url, @xml:id)}"><xsl:value-of select="$author"/> <xsl:value-of select="t:title"/> <xsl:value-of select="concat(' (', t:date, ')')"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="@xml:id"/><xsl:text>]</xsl:text></span></p>
                 
             </xsl:for-each>   
             
