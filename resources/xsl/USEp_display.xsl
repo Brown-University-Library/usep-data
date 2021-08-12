@@ -306,7 +306,7 @@
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
                         <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
-
+                            
                             <xsl:for-each select="t:graphic">
                                 <xsl:choose>
                                     <xsl:when test="starts-with(@url, 'http')">
@@ -329,7 +329,7 @@
                         </xsl:for-each>
                     </xsl:result-document>
                 </div>
-
+                
 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->
                 <div class="bibl">
@@ -445,7 +445,7 @@
                     
        <!-- corpus volume type="v-c" or journal volume type="v-j" -->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'v-c' or @type= 'v-j']">
-                      <i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='c' or @level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/></i>
+                      xx<i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='c' or @level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/></i>
                     </xsl:when>
                     
         <!-- volume in a monograph type="v-m" These are separate volumes, and don't have titles of their own. Treat like
@@ -489,20 +489,16 @@
 
                 <!-- everything has a reference except for unpub. but put a space before it. -->
 
-                <xsl:if test="t:biblScope">
-                    <xsl:value-of select="concat(': ', 'foo')"/>
+                <xsl:if test="./t:biblScope">
+                    <xsl:value-of select="concat(': ', ./t:biblScope)"/>
                 </xsl:if>
 
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type = 'jstor']">
                     <br/>
-                    <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:text> [JSTOR] </xsl:text>
-                        
-                        <!-- There should be no content in the ref element.
-                            <xsl:value-of
-                            select="concat(id($myID)/t:ref[@type = 'jstor'], '(external link; access to JSTOR required)')"/>-->
-                    </a>
+                    <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:text> [JSTOR] </xsl:text></a>
                 </xsl:if>
+                
                 <xsl:if test="id($myID)/t:ref[@subtype='OA']">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:50px;"/>  
                 </xsl:if>
