@@ -473,19 +473,14 @@
                 <xsl:if test="id($myID)/self::t:bibl/t:biblScope[@unit='vol']">
                     <xsl:choose>
                         <xsl:when test="substring-before($myID,'_')='AE'"/>
-                        <xsl:otherwise><xsl:value-of select="concat(' Vol. ', id($myID)/self::t:bibl/t:biblScope[@unit='vol'])"/></xsl:otherwise>
+                        <xsl:otherwise><xsl:value-of select="concat(' ', id($myID)/self::t:bibl/t:biblScope[@unit='vol'])"/></xsl:otherwise>
                     </xsl:choose>
                     
                 </xsl:if>
 
                 <!-- output the year, if there is one. with a space before it and inside parentheses. -->
-
-                <xsl:choose>
-                    <xsl:when test="substring-before($myID,'_')='AE'"/>
-                    <xsl:when test="id($myID)/t:date">
-                        <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
-                    </xsl:when>
-                </xsl:choose>
+        
+                 <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
 
                 <!-- everything has a reference except for unpub. but put a space before it. -->
 
