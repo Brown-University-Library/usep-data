@@ -2,14 +2,15 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-    xmlns:t="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:t="http://www.tei-c.org/ns/1.0" 
     exclude-result-prefixes="xs xd t"
     version="2.0">
-    
+ 
+        
     <xsl:param name="url" />
    
-    
-    <xsl:output method="xml" encoding="UTF-8" exclude-result-prefixes="xs xd t" indent="yes"/>
+    <xsl:output method="xhtml" encoding="UTF-8" />
+    <!--<xsl:output method="xml" encoding="UTF-8" exclude-result-prefixes="xs xd t" indent="yes"/>-->
     <xsl:preserve-space elements="*"/>
     
     <xd:doc scope="stylesheet">
