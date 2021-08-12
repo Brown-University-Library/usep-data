@@ -496,7 +496,7 @@
                 </xsl:if>
                 
                 <xsl:if test="id($myID)/t:ref[@subtype='OA']">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:50px;"/>  
+                  <xsl:text> </xsl:text> <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:25px;"/>  
                 </xsl:if>
                 
  
