@@ -489,8 +489,8 @@
 
                 <!-- everything has a reference except for unpub. but put a space before it. -->
 
-                <xsl:if test="t:biblScope[ancestor::t:sourceDesc]">
-                    <xsl:value-of select="concat(': ', t:biblScope[ancestor::t:sourceDesc])"/>
+                <xsl:if test="./t:biblScope">
+                    <xsl:value-of select="concat(': ', ./t:biblScope)"/>
                 </xsl:if>
 
                 <!-- This prints the jstor link   -->
