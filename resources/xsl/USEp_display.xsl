@@ -445,7 +445,7 @@
                     
        <!-- corpus volume type="v-c" or journal volume type="v-j" -->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'v-c' or @type= 'v-j']">
-                      xx<i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='c' or @level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/></i>
+                      <i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='c' or @level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/></i>
                     </xsl:when>
                     
         <!-- volume in a monograph type="v-m" These are separate volumes, and don't have titles of their own. Treat like
@@ -496,7 +496,7 @@
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type = 'jstor']">
                     <br/>
-                    <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:text> [JSTOR] </xsl:text></a>
+                    <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:text>[JSTOR]</xsl:text></a>
                 </xsl:if>
                 
                 <xsl:if test="id($myID)/t:ref[@subtype='OA']">
