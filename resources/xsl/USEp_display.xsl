@@ -490,7 +490,7 @@
                 <!-- everything has a reference except for unpub. but put a space before it. -->
 
                 <xsl:if test="./t:biblScope">
-                    <xsl:value-of select="concat(': ', ./t:biblScope)"/>
+                    <xsl:value-of select="concat(': ', foo)"/>
                 </xsl:if>
 
                 <!-- This prints the jstor link   -->
