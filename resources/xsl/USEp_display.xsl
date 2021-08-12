@@ -473,7 +473,7 @@
                 <xsl:if test="id($myID)/self::t:bibl/t:biblScope[@unit='vol']">
                     <xsl:choose>
                         <xsl:when test="substring-before($myID,'_')='AE'"/>
-                        <xsl:otherwise><xsl:value-of select="concat(' Vol. ', id($myID)/self::t:bibl/t:biblScope)"/></xsl:otherwise>
+                        <xsl:otherwise><xsl:value-of select="concat(' Vol. ', id($myID)/self::t:bibl/t:biblScope[@unit="vol"])"/></xsl:otherwise>
                     </xsl:choose>
                     
                 </xsl:if>
@@ -489,7 +489,9 @@
 
                 <!-- everything has a reference except for unpub. but put a space before it. -->
 
-               
+                <xsl:if test="./t:biblScope">
+                    <xsl:value-of select="concat(': ', ./t:biblScope)"/>
+                </xsl:if>
 
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type = 'jstor']">
