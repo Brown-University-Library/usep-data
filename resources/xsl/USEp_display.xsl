@@ -412,7 +412,7 @@
             <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date/@when" order="ascending"/> <!-- @data-type="number"  -->
            
             <xsl:variable name="myID" select="substring-after(t:ptr/@target, '#')"/>
-            <td>
+            <p>
                 <!-- Output the author, if there is one. Right now, assumption is that there is an
                     potentially an author on the bibl if it's an article, or on the outermost bibl if
                     it's a corpus or monograph. Corpora don't have authors in the inscription bibliography. 
@@ -504,7 +504,7 @@
                 </xsl:if>
                 
  
-            </td> 
+            </p> 
             
         </xsl:for-each>
         
