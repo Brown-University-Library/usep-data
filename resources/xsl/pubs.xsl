@@ -53,12 +53,27 @@
                 <ul>
                     <xsl:for-each select="current-group()">
                         <xsl:sort select="t:biblScope[@unit='vol']" order="ascending"/>
-                        <li>
-                            <a href="/../{concat($url, @xml:id)}"><xsl:value-of select="concat('“', t:title[not(@level)][1], '”',', ')"/>. 
+                        
+                        <li><xsl:variable name="author">
+                            <xsl:choose>
+                                <xsl:when test="t:author/t:persName[@type = 'sort']">
+                                    <xsl:value-of select="concat(t:author/t:persName[@type = 'sort'], ', ')" />
+                                </xsl:when>
+                                <xsl:when test="t:author/t:persName">
+                                    <xsl:value-of select="concat(t:author/t:persName, ', ')"/>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:variable>
+                            
+                            <a href="/../{concat($url, @xml:id)}"><xsl:value-of select="$author"/>
+                                <xsl:value-of select="concat('“', t:title[not(@level)][1], '”',', ')"/> 
                                 <xsl:value-of select="t:biblScope[@unit='vol']"/>
-                                <xsl:value-of select="concat(' (', t:date, ') ')"/>
-                                <xsl:value-of select="t:biblScope[@unit='pp']"/>
-                            </a><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+                                <xsl:value-of select="concat(' (', t:date, ')autho')"/>.
+                                <xsl:if test="t:biblScope[@unit='pp']">
+                                    <xsl:value-of select="concat('pp. ',t:biblScope[@unit='pp'])"/>
+                                </xsl:if>
+                                
+                            </a><!--<xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>-->
                         </li>
                     </xsl:for-each>
                 </ul>
