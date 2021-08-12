@@ -412,7 +412,7 @@
             <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date/@when" order="ascending"/> <!-- @data-type="number"  -->
            
             <xsl:variable name="myID" select="substring-after(t:ptr/@target, '#')"/>
-            <p>
+            <td>
                 <!-- Output the author, if there is one. Right now, assumption is that there is an
                     potentially an author on the bibl if it's an article, or on the outermost bibl if
                     it's a corpus or monograph. Corpora don't have authors in the inscription bibliography. 
@@ -497,13 +497,14 @@
                 <xsl:if test="id($myID)/t:ref[@type = 'jstor']">
                     <br/>
                     <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:text>[JSTOR]</xsl:text></a>
+                    
                 </xsl:if>
-                
                 <xsl:if test="id($myID)/t:ref[@subtype='OA']">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:50px;"/>  
                 </xsl:if>
-
-            </p> 
+                
+ 
+            </td> 
             
         </xsl:for-each>
         
