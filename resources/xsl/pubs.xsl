@@ -2,14 +2,15 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-    xmlns:t="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:t="http://www.tei-c.org/ns/1.0" 
     exclude-result-prefixes="xs xd t"
     version="2.0">
-    
+ 
+        
     <xsl:param name="url" />
    
-    
-    <xsl:output method="xml" encoding="UTF-8" exclude-result-prefixes="xs xd t" indent="yes"/>
+    <xsl:output method="xhtml" encoding="UTF-8" />
+    <!--<xsl:output method="xml" encoding="UTF-8" exclude-result-prefixes="xs xd t" indent="yes"/>-->
     <xsl:preserve-space elements="*"/>
     
     <xd:doc scope="stylesheet">
@@ -47,12 +48,32 @@
             </xsl:text><h2 style="text-align:center;" id="journal">Journal Articles</h2>
             
             <xsl:for-each-group select="t:bibl[@type='a-j']" group-by="t:title[@level='j']/@ref">
-                
-                <p><a href="/../{concat($url, substring-after(current-grouping-key(),'#'))}"><xsl:value-of select="preceding-sibling::t:bibl[@xml:id=substring-after(current-grouping-key(),'#')]/t:abbr[@type='primary']"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
+            
+                <p><a href="/../{concat($url, substring-after(current-grouping-key(),'#'))}"><xsl:value-of select="preceding-sibling::t:bibl[@xml:id=substring-after(current-grouping-key(),'#')]/t:title"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
                 <ul>
                     <xsl:for-each select="current-group()">
-                        <li>
-                            <a href="/../{concat($url, @xml:id)}"><xsl:value-of select="t:biblScope"/></a><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+                        <xsl:sort select="t:biblScope[@unit='vol']" order="ascending"/>
+                        
+                        <li><xsl:variable name="author">
+                            <xsl:choose>
+                                <xsl:when test="t:author/t:persName[@type = 'sort']">
+                                    <xsl:value-of select="concat(t:author/t:persName[@type = 'sort'], ', ')" />
+                                </xsl:when>
+                                <xsl:when test="t:author/t:persName">
+                                    <xsl:value-of select="concat(t:author/t:persName, ', ')"/>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:variable>
+                            
+                            <a href="/../{concat($url, @xml:id)}"><xsl:value-of select="$author"/>
+                                <xsl:value-of select="concat('“', t:title[not(@level)][1], '”',', ')"/> 
+                                <xsl:value-of select="t:biblScope[@unit='vol']"/>
+                                <xsl:value-of select="concat(' (', t:date, ')')"/>.
+                                <xsl:if test="t:biblScope[@unit='pp']">
+                                    <xsl:value-of select="concat('pp. ',t:biblScope[@unit='pp'])"/>
+                                </xsl:if>
+                                
+                            </a><!--<xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>-->
                         </li>
                     </xsl:for-each>
                 </ul>
@@ -62,8 +83,18 @@
       <!-- Monographs  -->
             <h2 style="text-align:center;" id="monograph">Monographs</h2>
             <xsl:for-each select="t:bibl[@type='m']">
+                <xsl:variable name="author">
+                    <xsl:choose>
+                        <xsl:when test="t:author/t:persName[@type = 'sort']">
+                            <xsl:value-of select="concat(t:author/t:persName[@type = 'sort'], ', ')" />
+                        </xsl:when>
+                        <xsl:when test="t:author/t:persName">
+                           <xsl:value-of select="concat(t:author/t:persName, ', ')"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
                 
-                <p><a href="/../{concat($url, @xml:id)}"><xsl:value-of select="t:title"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="@xml:id"/><xsl:text>]</xsl:text></span></p>
+                <p><a href="/../{concat($url, @xml:id)}"><xsl:value-of select="$author"/> <xsl:value-of select="t:title"/> <xsl:value-of select="concat(' (', t:date, ')')"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="@xml:id"/><xsl:text>]</xsl:text></span></p>
                 
             </xsl:for-each>   
             

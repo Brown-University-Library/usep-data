@@ -306,7 +306,7 @@
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
                         <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
-
+                            
                             <xsl:for-each select="t:graphic">
                                 <xsl:choose>
                                     <xsl:when test="starts-with(@url, 'http')">
@@ -329,7 +329,7 @@
                         </xsl:for-each>
                     </xsl:result-document>
                 </div>
-
+                
 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->
                 <div class="bibl">
@@ -456,7 +456,7 @@
                     
          <!-- journal article type="a-j" -->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'a-j']">
-                        <xsl:text>“</xsl:text><xsl:value-of select="id($myID)/self::t:bibl[@type = 'a-j']/t:title"/><xsl:text>”, </xsl:text> 
+                        <xsl:text>“</xsl:text><xsl:value-of select="id($myID)/self::t:bibl[@type = 'a-j']/t:title[not(@level)]"/><xsl:text>”, </xsl:text> 
                         <i><xsl:value-of select="id(substring-after(id($myID)/self::t:bibl/t:title[@level='j']/@ref, '#'))/self::t:bibl/t:abbr[@type='primary']"/> </i>
                     </xsl:when>
                                         
@@ -473,35 +473,33 @@
                 <xsl:if test="id($myID)/self::t:bibl/t:biblScope[@unit='vol']">
                     <xsl:choose>
                         <xsl:when test="substring-before($myID,'_')='AE'"/>
-                        <xsl:otherwise><xsl:value-of select="concat(' Vol. ', id($myID)/self::t:bibl/t:biblScope)"/></xsl:otherwise>
+                        <xsl:otherwise><xsl:value-of select="concat(' ', id($myID)/self::t:bibl/t:biblScope[@unit='vol'])"/></xsl:otherwise>
                     </xsl:choose>
                     
                 </xsl:if>
 
                 <!-- output the year, if there is one. with a space before it and inside parentheses. -->
-
-                <xsl:choose>
-                    <xsl:when test="substring-before($myID,'_')='AE'"/>
-                    <xsl:when test="id($myID)/t:date">
-                        <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
-                    </xsl:when>
-                </xsl:choose>
+        
+                 <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
 
                 <!-- everything has a reference except for unpub. but put a space before it. -->
 
-                <xsl:if test="t:biblScope">
-                    <xsl:value-of select="concat(': ', t:biblScope)"/>
+                <xsl:if test="./t:biblScope">
+                    <xsl:value-of select="concat(': ', ./t:biblScope)"/>
                 </xsl:if>
-
+                
                 <!-- This prints the jstor link   -->
                 <xsl:if test="id($myID)/t:ref[@type = 'jstor']">
                     <br/>
-                    <a href="{id($myID)/t:ref/@target}" class="biblink">
-                        <xsl:value-of
-                            select="concat(id($myID)/t:ref[@type = 'jstor'], '(external link; access to JSTOR required)')"/>
-                    </a>
+                    <a href="{id($myID)/t:ref/@target}" class="biblink"><xsl:text>[JSTOR]</xsl:text></a>
+                    
                 </xsl:if>
-
+                
+                <xsl:if test="id($myID)/t:ref[@subtype='OA']">
+                  <xsl:text> </xsl:text> <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Open_Access_logo_PLoS_white.svg"  style="height:25px;"/>  
+                </xsl:if>
+                
+ 
             </p> 
             
         </xsl:for-each>
