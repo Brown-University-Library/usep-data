@@ -50,7 +50,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>Altar dedicated to Mother Earth by Aurelia Flavia Iuliana</p>
+                            <p>dedication to Mother Earth by Aurelia Flavia Iuliana</p>
                         </msItem>
                     </msContents>
                     
@@ -61,7 +61,7 @@
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                         
                         <objectDesc ana="#altar">
-                            <supportDesc ana="#marble">
+                            <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
                                     <p>marble altar</p>
@@ -72,7 +72,7 @@
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
-                                    <p>base and top are unfinished</p>
+                                    <p>back cut off; base and top are unfinished</p>
                                 </condition>
                             </supportDesc>
                             
@@ -114,18 +114,22 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="#unspecified" notBefore="0001" notAfter="0100" >first
+                            <date evidence="#nomenclature" notBefore="0201" notAfter="0300">third
                                 century CE</date>
                             <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                         </origin>
+                        <provenance type="found" subtype="first-recorded">
+                            <p>First reported by <persName>Joseph Marie de Suarès</persName> in <date when="1662">1662</date> near the church of S. Cesario, <placeName>Rome</placeName> (The Walters Art Museum).</p></provenance>
+                        <provenance><p>At the Villa Carpegna, <placeName>Rome</placeName>, by <date notAfter="1699">1699</date>(The Walters Art Museum).</p></provenance>
+                        
                         <provenance>
-                            <p>in the <orgName><persName>Don Marcello Massarenti</persName> Collection</orgName>, <placeName ref="europe.italy.rome">Rome</placeName><date notBefore="1850" notAfter="1902">before 1902</date></p>
+                            <p>In the <orgName><persName>Don Marcello Massarenti</persName> Collection</orgName>, <placeName ref="europe.italy.rome">Rome</placeName><date notBefore="1850" notAfter="1902">before 1902</date>.</p>
                         </provenance>
                         <provenance type="transferred" subtype="purchased">                            
-                            <p>Acquired by <persName role="buyer">Henry Walters</persName> in <date when="1902">1902</date>, by purchase</p>
+                            <p>Acquired by <persName role="buyer">Henry Walters</persName> in <date when="1902">1902</date>, by purchase.</p>
                         </provenance>
                         <provenance type="transferred" subtype="given">
-                            <p>Given to the <orgName>Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date></p>
+                            <p>Given to the <orgName>Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date>.</p>
                         </provenance>                        
                     </history>
                 </msDesc>
@@ -151,6 +155,15 @@
                     <bibl>
                         <ptr type="rest-of-bibl" target="#WAG1971"/>
                         <biblScope unit="issue">320</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="www.edr-edr.it/edr_programmi/res_complex_comune.php?visua=si&amp;id_nr=EDR148411"
+                            > EDR148411</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://art.thewalters.org/detail/5360/stele/"
+                            >Walters Art Museum Web Entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -183,6 +196,8 @@
             <change when="2020-11-15" who="Scott J. DiGiulio">Rewrote much of provenance to match current system; corrections to transcription markup; added general description of inscription; corrected text genre</change>
             <change when="2021-01-16" who="Scott J. DiGiulio">Fixed validation errors</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+            <change when="2021-10-13" who="Sophia Papandonatou">edited transcription and
+                translation, added links</change>
 </revisionDesc>
         
     </teiHeader>
@@ -201,20 +216,20 @@
         <body>
             <div type="edition"><!-- transcription goes here; DONE -->
                 <ab>
-                    <lb n="1"/>Deae sanctis 
+                    <lb n="1"/>Deae sanc<hi rend="tall">t</hi><hi rend="small">i</hi>s 
                     <lb n="2" break="no"/>simae <persName><name key="Terra Mater" type="divine">Ter 
                         <lb n="3"/>rae Matri</name></persName>,
                     <lb n="4" break="no"/><persName><name key="Aurelia" type="gentilicium">Aurelia</name> <name key="Flavia" type="gentilicium">Fla
                         <lb n="5"/>via</name> <name key="Iuliana" type="cognomen">Iuliana</name></persName>,
-                    <lb n="6"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aii</ex></expan></name></persName> <expan><abbr>f</abbr><ex>ilia</ex></expan>, votum 
+                    <lb n="6"/><expan><abbr>c</abbr><ex>larissima</ex></expan> <expan><abbr>f</abbr><ex>emina</ex></expan>, votum 
                     <lb n="7"/>solvit. </ab></div>
             
             <div type="translation">
-                <p>To the holiest goddess, Mother Earth, Aurelia Flavia Iuliana, daughter of Gaius,
+                <p>To the holiest goddess, Mother Earth; Aurelia Flavia Iuliana, most renowned woman,
                     fulfilled (her) vow.</p></div>
             
             <div type="commentary"><!-- notes go here -->
-                <p>Notes here, </p></div>
+                <p/></div>
             
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
             
