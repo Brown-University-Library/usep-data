@@ -35,9 +35,9 @@ changes: Added @evidence to date
                     <msContents>
                         <textLang mainLang="ett" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#label #text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p>Bulla with Daedalus and Icarus </p>
+                            <p>label naming Daedalus and Icarus </p>
                         </msItem>
                     </msContents>
 
@@ -46,8 +46,8 @@ changes: Added @evidence to date
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.container">
-                            <supportDesc ana="#metal.gold">
+                        <objectDesc ana="#instrumentum.container.other #instrumentum.other">
+                            <supportDesc ana="#metal.other">
                                 <support>
                                     <p> gold bulla</p>
                                     <dimensions type="surface" unit="cm">
@@ -56,7 +56,7 @@ changes: Added @evidence to date
                                         <depth>2.6</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
@@ -91,17 +91,20 @@ changes: Added @evidence to date
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="-0500" notAfter="-0399">5 c.
-                                BCE</date>
+                            <date evidence="unspecified" notBefore="-0500" notAfter="-0399">fifth
+                                century BCE</date>
                             <placeName ref="europe.italy.Comacchio">Comacchio, Italy (?)</placeName>
                         </origin>
                         <provenance type="transferred" subtype="purchased">
+                            Ancquired? by <persName>Sangiorgi</persName>; date and mode of acquisition unknown.
+                        </provenance>
+                        <provenance type="transferred" subtype="purchased">
                             
-                            <p>Purchased by <persName role="buyer"><name key="Henry Walters">Henry Walters</name></persName> from <placeName>Baltimore</placeName> in <date when="1902">1930</date>.</p>
+                            <p>Purchased by <persName role="buyer"><name key="Henry Walters">Henry Walters</name></persName> from <placeName>Baltimore</placeName> in <date when="1930">1930</date>.</p>
                         </provenance>
                         <provenance type="transferred" subtype="acquired">
                             
-                            <p>Acquired by <orgName>Walters Art Museum</orgName>, <date when="1931">1931</date>, by bequest.</p>
+                            <p>Acquired by <orgName role="recipient">Walters Art Museum</orgName>, <date when="1931">1931</date>, by bequest.</p>
                         </provenance>
 
 
@@ -117,9 +120,14 @@ changes: Added @evidence to date
                         <ptr type="rest-of-bibl" target="#Apollo_84_Randall"/>
                         <biblScope unit="page">67</biblScope>
                     </bibl>
-                    <bibl>
+                  <bibl>
                         <ptr type="rest-of-bibl" target="#WAG1984"/>
                         <biblScope unit="page">92</biblScope>
+                    </bibl> 
+                    <bibl>
+                        <ref type="external"
+                            target="https://art.thewalters.org/detail/36446/bulla-with-daedalus-and-icarus/"
+                            >Walters Art Museum Web Entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -147,6 +155,8 @@ changes: Added @evidence to date
         <revisionDesc>
             <change when="2020-10-20" who="Itamar Levin">Transcription, translation, and metadata</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+            <change when="2021-11-05" who="Sophia Papandonatou">updated metadata and added museum
+                link</change>
 </revisionDesc>
 
     </teiHeader>
@@ -179,8 +189,7 @@ changes: Added @evidence to date
             <p>Transcription and translation from the museum catalogue. The inscription is written
                     in retrograde. Reported to be from Comacchio, near Ferrara.</p></div>
             
-            <div type="apparatus">
-            <p></p></div>
+          
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
