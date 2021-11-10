@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- $Id$ -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-   xmlns:t="http://www.tei-c.org/ns/1.0"
+    xmlns:t="http://www.tei-c.org/ns/1.0" 
    xmlns:xs="http://www.w3.org/2001/XMLSchema"
    exclude-result-prefixes="t" version="2.0">
    <xsl:output method="xml" encoding="UTF-8"/>
 
-   <xsl:include href="global-varsandparams.xsl"/>
+    <xsl:include href="global-varsandparams.xsl"/>
 
    <!-- html related stylesheets, these may import tei{element} stylesheets if relevant eg. htm-teigap and teigap -->
    <xsl:include href="htm-teiab.xsl"/>
@@ -67,12 +67,14 @@
     <xsl:include href="htm-tpl-struct-edak.xsl"/>
     <xsl:include href="htm-tpl-struct-inslib.xsl"/>
     <xsl:include href="htm-tpl-struct-iospe.xsl"/>
+    <xsl:include href="htm-tpl-struct-sample.xsl"/>
     <xsl:include href="htm-tpl-struct-sigidoc.xsl"/>
     <xsl:include href="htm-tpl-struct-ecg.xsl"/>
 
     <!-- global named templates with no html, also used by start-txt  -->
    <xsl:include href="tpl-certlow.xsl"/>
-   <xsl:include href="tpl-text.xsl"/>
+    <xsl:include href="tpl-text.xsl"/>
+    <xsl:include href="functions.xsl"/>
 
 
 
@@ -151,6 +153,19 @@
                  <xsl:with-param name="parm-css-loc" select="$css-loc" tunnel="yes"/>
             </xsl:call-template>
          </xsl:when>
+          <xsl:when test="$edn-structure = 'sample'">
+              <xsl:call-template name="sample-structure">
+                  <xsl:with-param name="parm-internal-app-style" select="$internal-app-style" tunnel="yes"/>
+                  <xsl:with-param name="parm-external-app-style" select="$external-app-style" tunnel="yes"/>
+                  <xsl:with-param name="parm-edn-structure" select="$edn-structure" tunnel="yes"/>
+                  <xsl:with-param name="parm-edition-type" select="$edition-type" tunnel="yes"/>
+                  <xsl:with-param name="parm-hgv-gloss" select="$hgv-gloss" tunnel="yes"/>
+                  <xsl:with-param name="parm-leiden-style" select="$leiden-style" tunnel="yes"/>
+                  <xsl:with-param name="parm-line-inc" select="$line-inc" tunnel="yes" as="xs:double"/>
+                  <xsl:with-param name="parm-verse-lines" select="$verse-lines" tunnel="yes"/>
+                  <xsl:with-param name="parm-css-loc" select="$css-loc" tunnel="yes"/>
+              </xsl:call-template>
+          </xsl:when>
           <xsl:when test="$edn-structure = 'sigidoc'">
               <xsl:call-template name="sigidoc-structure">
                   <xsl:with-param name="parm-internal-app-style" select="$internal-app-style" tunnel="yes"/>
@@ -220,6 +235,7 @@
                 <xsl:with-param name="parm-line-inc" select="$line-inc" tunnel="yes" as="xs:double"/>
                  <xsl:with-param name="parm-verse-lines" select="$verse-lines" tunnel="yes"/>
                  <xsl:with-param name="parm-css-loc" select="$css-loc" tunnel="yes"/>
+                 <xsl:with-param name="parm-glyph-variant" select="$glyph-variant" tunnel="yes"/>
             </xsl:call-template>
          </xsl:otherwise>
       </xsl:choose>
