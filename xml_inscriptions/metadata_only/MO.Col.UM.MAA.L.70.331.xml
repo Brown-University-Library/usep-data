@@ -27,9 +27,9 @@
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_other">
+                        <msItem class="#dedicatory #label">
                             <!-- short summary of the content of an inscription -->
-                            <p>Mold for casting a counterfeit bronze nummus of Maximinus</p>
+                            <p>label naming the emperor Maximinus (Daza)</p>
                         </msItem>
                     </msContents>
 
@@ -39,22 +39,23 @@
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
                         <objectDesc ana="#object_other">
-                            <supportDesc ana="#clay.terracotta">
+                            <supportDesc ana="#clay">
                                 <support>
-                                    <p> </p>
+                                    <p>terrocotta mold for casting a counterfeit bronze nummus</p>
                                     <dimensions type="surface" unit="cm">
                                         <height/>
                                         <width/>
                                         <depth/>
+                                        <dim type="diameter">2.85</dim>
                                     </dimensions>
                                 </support>
-                                <condition ana= "#complete.intact">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="2" writtenLines="2">
+                                <layout columns="0" writtenLines="2">
                                     <p>Two faced coin molds, one line per side</p>
                                 </layout>
                             </layoutDesc>
@@ -63,13 +64,16 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#stamped.relief"> </handNote>
+                            <handNote ana="#stamped #in_relief"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>a: laureate head of the emperor</p>
+                            </decoNote>
+                            <decoNote>
+                                <p>b: figure of the Jupiter standing</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -83,8 +87,9 @@
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="0300" notAfter="0325">early 4th century CE</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#history" notBefore="0300" notAfter="0325">early 4th
+                                century CE</date>
+                            <placeName ref="asia.near_east">Asia, Near East</placeName>
                         </origin>
 
 
@@ -96,7 +101,9 @@
                  
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://maacollections.missouri.edu/ArgusNET/Portal.aspx?lang=en-US">External Reference</ref>
+                        <ref type="external"
+                            target="http://maacollections.missouri.edu/ArgusNET/Portal.aspx?lang=en-US&amp;g_AAEM=70.331"
+                            >Museum of Art and Archeology - University of Missouri (Web Entry)</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -122,6 +129,8 @@
 
         <revisionDesc>
             <change when="2020-04-19" who="Gaia Gianni">Initial Encoding</change>
+            <change when="2021-08-02" who="Sophia Papandonatou">added some metadata, link,
+                transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -140,7 +149,22 @@
         
         <body>
         <div type="edition">
-            <ab>Transcription goes here</ab></div>
+            <div type="textpart" subtype="face" n="a">
+            <ab>
+                <lb n="1"/><persName type="imperial">Imperator <expan><abbr>C</abbr><ex>aesar</ex></expan> 
+                    <name type="gentilicium" key="Galerius"><expan><abbr>Gal</abbr><ex>erius</ex></expan></name> <name type="gentilicium" key="Valerius"><expan><abbr>Val</abbr><ex>erius</ex></expan></name>
+                    <name type="cognomen" key="Maximinus">Maximinus</name> 
+                    <expan><abbr>P</abbr><ex>ius</ex></expan> <expan><abbr>F</abbr><ex>elix</ex></expan>
+                    <expan><abbr>Aug</abbr><ex>ustus</ex></expan></persName>.
+            </ab>
+            </div>
+            <div type="textpart" subtype="face" n="b">
+                <ab>
+                    <lb n="1"/>Iovi conservatori <expan><abbr>Aug<am>g</am></abbr><ex>ustorum</ex></expan>.
+                    <!-- can't read exegue + 3 letters in left field -->
+                </ab>
+            </div>
+            </div>
         
         
                 <div type="translation">
@@ -150,13 +174,11 @@
         
         
                 <div type="commentary">
-            <p>Notes here, </p></div>
+            <p/></div>
             
         
         
-                <div type="apparatus">
-                    <p/>
-                </div>
+              
             
         
         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
