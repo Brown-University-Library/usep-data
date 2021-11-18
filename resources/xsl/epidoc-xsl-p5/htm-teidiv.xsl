@@ -24,6 +24,7 @@
                      <xsl:value-of select="@type"/>
                   </h2>
               </xsl:when>
+              <xsl:when test="@type='bibliography'"></xsl:when>
               <xsl:otherwise>
                   <h2>
                      <xsl:value-of select="@type"/>
@@ -37,7 +38,7 @@
           </xsl:if>
 
           <!-- Body of the div -->
-          <xsl:apply-templates/>
+          <xsl:if test="not(@type='bibliography')"><xsl:apply-templates/></xsl:if>
 
         </div>
 
