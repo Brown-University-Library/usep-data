@@ -95,7 +95,7 @@
                         <xsl:when
                             test="preceding-sibling::node()[not(self::text() and normalize-space(self::text()) = '')][1]/self::t:milestone[@rend = 'paragraphos']"/>
                         <xsl:otherwise>
-                            <xsl:text>-</xsl:text>
+                            <xsl:text>=</xsl:text>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:if>
