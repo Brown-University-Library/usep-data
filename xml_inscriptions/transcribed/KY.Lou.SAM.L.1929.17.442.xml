@@ -1,43 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
-changes: Added @evidence to date
-         Added translation and apparatus <div>s
-         changed "fake" to "modern" in history <rs>
-          ->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
 
         <fileDesc>
 
             <titleStmt>
-                <title>MD.Balt.WAG.L.23.179</title>
+                <title>KY.Lou.SAM.L.1929.17.442</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="MD.Balt.WAG.L.23.179">MD.Balt.WAG.L.23.179</idno>
+                <idno type="USEpigraphy" xml:id="KY.Lou.SAM.L.1929.17.442">KY.Lou.SAM.L.1929.17.442</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>WAG</institution>
-                        <repository></repository>
-                        <idno>23.179</idno>
+                        <region>KY</region>
+                        <settlement>Lou</settlement>
+                        <institution>SAM</institution>
+                        <repository/>
+                        <idno>1929.17.422</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary #honorific">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>funerary inscription</p>
+                            <p>Epitaph for Domitia Grapta</p>
                         </msItem>
                     </msContents>
 
@@ -46,23 +38,23 @@ changes: Added @evidence to date
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#stele">
+                        <objectDesc ana="#tablet">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p>marble stele with civic crown</p>
+                                    <p> broken marble tablet</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>93</height>
-                                        <width>59.7</width>
-                                        <depth>38</depth>
+                                        <height/>
+                                        <width/>
+                                        <depth/>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.broken">
-                                    <p>cut in half, through the inscription and civic crown</p>
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="3" writtenLines="3">
+                                <layout columns="1" writtenLines="3">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -77,9 +69,7 @@ changes: Added @evidence to date
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>ornamentation in relief, including on the second face a relief,
-                                    branch and bird and on the third face a civic crown,
-                                    unfinished</p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -89,25 +79,14 @@ changes: Added @evidence to date
                     <history>
 
                         <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
+                            <rs/>  <!-- content can be "fake" or blank -->
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="-0001" notAfter="0100">1st c.
-                                CE</date>
-                            <placeName ref="unknown">Roman Empire</placeName>
+                            <date evidence="#archaeology #formulae" notBefore="0001" notAfter="0100">first
+                                century CE</date>
+                            <placeName ref="europe.italy.rome">Rome, Porta Salaria</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="purchased">
-                            <p>
-                                Purchased from <orgName><persName role="collector"><name key="Don Marcello Massarenti">Don Marcello Massarenti</name></persName> Collection</orgName> in <placeName>Rome</placeName> by <persName role="buyer"><name key="Henry Walters">Henry Walters</name></persName> from <placeName>Baltimore</placeName>, <date when="1902">1902</date>.
-                            </p>
-                        </provenance>
-                        <provenance type="transferred" subtype="given">
-                            <p>
-                                Given to the <orgName role="recipient">Walters Art Museum</orgName> by bequest, <date when="1931">1931</date>.
-                            </p>
-                            
-                        </provenance>
 
 
                     </history>
@@ -115,9 +94,13 @@ changes: Added @evidence to date
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#vanEsbroeck"/>
-                        <biblScope unit="page">vol. 2, 151</biblScope>
-                        
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">33557</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR182214 "
+                            > EDR182214 </ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -127,8 +110,7 @@ changes: Added @evidence to date
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -143,8 +125,11 @@ changes: Added @evidence to date
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2020-10-23" who="Itamar Levin">Metadata and photo</change>
+            <change when="2020-03-28" who="Gaia Gianni">Initial Encoding</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+            <change when="2022-01-31" who="Sophia Papandonatou">confused with 422AandB, fixed, added
+                transcription and EDR link</change>
+            <change when="2022-01-31" who="Sophia Papandonatou">added EDR link</change>
 </revisionDesc>
 
     </teiHeader>
@@ -155,25 +140,36 @@ changes: Added @evidence to date
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="MD.Balt.WAG.L.23.179.jpg"/>
+           
         </surface>
     </facsimile>
 
     <text>
+        
         <body>
-            <div type="edition">
-            <ab></ab></div>
+        <div type="edition">
+            <ab>
+                <lb n="1"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Ancharius">Ancharius</name> <persName><name type="praenomen" key="Marcus">Marci</name></persName>
+                <lb n="2"/>et <g type="mulieris"/> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="praenomen" key="Quartius">Quar<supplied reason="lost">t</supplied>io</name></persName> vixit
+                <lb n="3"/>annos <num xml:lang="lat" value="17">XVII</num> <g type="semis"/>.
+            </ab>
+            </div>
+        
+        
+                <div type="translation">
+                    <p/>
+                </div>
             
-            <div type="translation">
-            <p></p></div>
-
-            <div type="commentary">
-            <p></p></div>
+        
+        
+                <div type="commentary">
+            <p/></div>
             
-         
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+        
+        
+<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
         </body>
+        
+    
     </text>
 </TEI>
