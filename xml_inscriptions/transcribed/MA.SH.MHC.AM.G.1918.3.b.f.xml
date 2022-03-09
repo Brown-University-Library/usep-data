@@ -47,7 +47,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p>Fragment of a Greek inscription</p>
+                            <p>fragmentary inscription</p>
                         </msItem>
                     </msContents>
                     
@@ -59,7 +59,7 @@
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Marble fragment</p>
+                                    <p> marble fragment</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>9.525</height>
                                         <width>11.7475</width>
@@ -67,12 +67,12 @@
                                     </dimensions>
                                 </support>
                                 <condition ana="#fragment.single">
-                                    <p>Single square-shaped fragment, broken on all sides</p>
+                                    <p>single square-shaped fragment, broken on all sides</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="2">
+                                <layout columns="0" writtenLines="2">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -105,9 +105,13 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="-0300" notAfter="0200">Unknown</date>
+                            <date evidence="unspecified" notBefore="-0300" notAfter="0200"
+                                >unknown</date>
                             <placeName ref="unknown">Of unknown origin</placeName>
                         </origin>
+                        <provenance type="transferred" subtype="given">
+                            <p>Gifted to the <orgName role="recipient">Mount Holyoke College Art Museum</orgName> by the <orgName role="donor">Metropolitan Museum of Art</orgName> circa <date when="1918">1918</date>.</p>
+                        </provenance>
                         
 
                     </history>
@@ -117,8 +121,12 @@
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
                 <listBibl>
+                    
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#unpub"/>
+                        <ref type="external"
+                            target="https://museums.fivecolleges.edu/detail.php?t=objects&amp;type=ext&amp;id_number=MH+1918.3.B.F"
+                            >Five Colleges and Historic Deerfield Museum Consortium - Online
+                            Collections Database</ref>
                     </bibl>
                     
                 </listBibl>
@@ -147,6 +155,8 @@
         <revisionDesc>
             <change when="2015-07-27" who="Scott J. DiGiulio">Initial Encoding</change>
             <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab</change>
+            <change when="2022-02-28" who="Sophia Papandonatou">updated metadata, added link and
+                provenance</change>
         </revisionDesc>
 
     </teiHeader>
