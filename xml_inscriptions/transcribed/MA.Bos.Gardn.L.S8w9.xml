@@ -29,7 +29,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph set up by Q. Minucius Karus for his parents</p>
+                            <p>epitaph by Quintus Minucius Karus for his parents</p>
                         </msItem>
                     </msContents>
 
@@ -41,7 +41,7 @@
                         <objectDesc ana="#ash_urn">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> </p>
+                                    <p>marble ash urn</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>66</height>
                                         <width>39.7</width>
@@ -63,7 +63,7 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -83,9 +83,17 @@
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="0100" notAfter="0200">2nd century CE</date>
+                            <date evidence="#archaeology #formulae" notBefore="0100" notAfter="0200">second
+                                century CE</date>
                             <placeName ref="europe.italy.rome">Rome, Ostia antica</placeName>
                         </origin>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Cinerarium described and inscription transcribed by the Flemish antiquarian, <persName>Martinus Smetius</persName> (c. 1525-1578), in the <date notBefore="1501" notAfter="1600">16th century</date> at the <placeName>port of Ostia</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Cinerarium described and inscription transcribed by the Swiss scholar, <persName>Martinus Smetius</persName> (16th century) in <date when="1550-03">March 1550</date> at the <placeName>port of Ostia</placeName>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="purchased">Purchased by <persName role="collector buyer">Isabella Stewart Gardner</persName> from the <orgName role="seller">Galleria Sangiorgi</orgName>, <placeName>Rome</placeName> on <date when="1895-04-18">13 April 1895</date>.</provenance>
 
 
                     </history>
@@ -95,6 +103,10 @@
                     <bibl>
                         <ptr type="rest-of-bibl" target="#CIL_X"/>
                         <biblScope unit="item">766 </biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_XIV"/>
+                        <biblScope unit="item">1358</biblScope>
                     </bibl>
                     <bibl>
                         <ref type="external" target="https://www.gardnermuseum.org/experience/collection/11378">Museum External Reference</ref>
@@ -126,6 +138,10 @@
 
         <revisionDesc>
             <change when="2020-04-28" who="Gaia Gianni">Initial Encoding</change>
+            <change when="2022-03-04" who="Sophia Papandonatou">updated metadata, added translation
+                and provenance</change>
+            <change when="2022-03-09" who="Sophia Papandonatou">added commentary and new
+                images</change>
         </revisionDesc>
 
     </teiHeader>
@@ -136,7 +152,11 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="https://www.gardnermuseum.org/sites/default/files/images/art/S8w9_001.jpg"/>
+            <graphic url="MA.Bos.Gardn.L.S8w9.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="MA.Bos.Gardn.L.S8w9-det.jpg"/>
         </surface>
     </facsimile>
 
@@ -145,8 +165,8 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/> Dis <expan><abbr>Manib</abbr><ex>us</ex></expan>
-                <lb n="2"/> <persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uinti</ex></expan></name> <name type="gentilicium" key="Minucius">Minuci</name> <name type="cognomen" key="Primigenius">Primigeni</name></persName>
+                <lb n="1"/> D<hi rend="tall">i</hi>s <expan><abbr>Manib</abbr><ex>us</ex></expan>
+                <lb n="2"/> <persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uinti</ex></expan></name> <name type="gentilicium" key="Minucius">Minuci</name> <name type="cognomen" key="Primigenius">Primige<hi rend="ligature">ni</hi></name></persName>
                <lb n="3"/> et <persName><name type="gentilicium" key="Minucia">Miniciae</name> <name type="cognomen" key="Successa">Successae</name></persName>,
                 <lb n="4"/> coniugi eius.
                 <lb n="5"/><persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uintus</ex></expan></name> <name type="gentilicium" key="Minucius">Minucius</name> <name type="cognomen" key="Karus">Karus</name></persName>
@@ -155,13 +175,14 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine Spirits of Quintus Minucius Primigenus and to Minicia Successa,
+                    his wife. Quintus Minucius Karus (made this) for (his) parents, the best. </p>
                 </div>
             
         
         
-                <div type="commentary">
-            <p>Notes here, </p></div>
+            <div type="commentary"><p>As of 2022-03-09, the museum site has the inscription listed as CIL 14, 1359; I double checked
+                    CIL, and it's CIL 14, 1358.</p></div>
             
         
         
