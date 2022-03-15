@@ -29,7 +29,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                         <!-- short summary of the content of an inscription -->
-                            <p>Epitaph for Valerius Crocus</p>
+                            <p>epitaph of Valerius Crocus</p>
                         </msItem>
                     </msContents>
 
@@ -41,32 +41,27 @@
                         <objectDesc ana="#ash_urn">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> </p>
+                                    <p>marble ash urn</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>22.9</height>
                                         <width>35.6</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
+                                <condition ana="#broken">
+                                    <p>missing lid, upper half abraded</p>
                                 </condition>
+  
                             </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="4">
                                     <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
+                            <handNote ana="#inscribed"/>
                         </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
                                 <p/>
@@ -76,18 +71,27 @@
 
                     <!--  *************************************  <history>  *********************************  -->
 
-                    <history>
-
+                    <history><!--summary, origin, provenance go here-->
+                        
                         <summary>
                             <rs/>  <!-- content can be "fake" or blank -->
                         </summary>
-
                         <origin>
-                            <date evidence="unspecified" notBefore="0117" notAfter="0138">117-138 CE</date>
-                            <placeName ref="europe.italy.rome">Rome</placeName>
+                            <date evidence="#archaeology #palaeography" notBefore="0117" notAfter="0138"
+                                >early to mid second century CE</date>
+                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
-
-
+                        <provenance type="observed" subtype="recorded">
+                            <p>Documented as being in the studio of an architect named <persName
+                                    role="collector">Carmini (or Carminium)</persName> on the
+                                    <placeName>via di San Giovanni in Laterano, Rome</placeName> in
+                                    <date when="1881">1881</date>. MA.Bos.Gardn.L.SG8w8 was also
+                                recorded as being in his possession. </p>
+                        </provenance>
+                        <provenance type="transferred" subtype="purchased">
+                            <p>Possibly purchased by <persName role="collector buyer">Isabella Stewart Gardner</persName> from the <orgName role="seller">Galleria Sangiorgi</orgName>, <placeName>Rome</placeName> on <date when="1895-04-13">13 April 1895</date>.</p>
+                        </provenance>
+                        
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
@@ -101,6 +105,10 @@
                     </bibl>
                     <bibl>
                         <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143416&amp;partId=1">EDR 143416</ref>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Gardner"/>
+                        <biblScope unit="item">no. 54</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -127,6 +135,9 @@
         <revisionDesc>
             <change when="2020-04-28" who="Gaia Gianni">Initial Encoding</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+            <change when="2022-03-07" who="Sophia Papandonatou">updated metadata, added provenance
+                and translation, deleted duplicate in bib-only</change>
+            <change when="2022-03-09" who="Sophia Papandonatou">added new image</change>
 </revisionDesc>
 
     </teiHeader>
@@ -137,7 +148,7 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="https://www.gardnermuseum.org/sites/default/files/images/art/19/12/SG_8e7_001.JPG"/>
+            <graphic url="MA.Bos.Gardn.L.SG8e7.jpg"/>
         </surface>
     </facsimile>
 
@@ -146,7 +157,7 @@
         <body>
         <div type="edition">
             <ab>
-                <lb n="1"/> <expan><abbr>D</abbr><ex>is</ex></expan> <supplied reason="lost"><expan><abbr>M</abbr><ex>anibus</ex></expan></supplied>.  <persName><name type="gentilicium" key="Valerius"><supplied reason="lost">Vale</supplied>rio</name>
+                <lb n="1"/> <expan><abbr>D</abbr><ex>is</ex></expan> <supplied reason="lost" evidence="previouseditor"><expan><abbr>M</abbr><ex>anibus</ex></expan></supplied>.  <persName><name type="gentilicium" key="Valerius"><supplied reason="lost" evidence="previouseditor">Val</supplied><unclear>e</unclear>rio</name>
                 <lb n="2"/> <name type="cognomen" key="Crocus">Crooco</name></persName> <persName><name type="gentilicium" key="Satria">Satria</name>
                 <lb n="3"/> <name type="cognomen" key="Eucarpia">Eucarpia</name></persName> con
                 <lb n="4" break="no"/>iugi suo <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
@@ -154,13 +165,14 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p>To the Divine [Spirits]. To [Val]erius Crocus. Satria Eucarpia made (this)
+                    for her well-deserving husband.</p>
                 </div>
             
         
         
                 <div type="commentary">
-            <p>Notes here, </p></div>
+            <p/></div>
             
         
         
