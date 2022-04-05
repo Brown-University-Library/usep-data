@@ -24,12 +24,57 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#funerary.epitaph">
+                     <p>epitaph of Tyssania Pieris' child</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <physDesc>
+                 
+                     <objectDesc ana="#fragment">
+                        <supportDesc ana="#stone.marble">
+                           <support><p>partially reconstituted marble slab</p><dimensions type="surface" unit="cm">
+                              <height>10.5</height>
+                              <width>20</width>
+                              <depth>3</depth>
+                           </dimensions>
+                           </support>
+                           <condition ana="#fragments.contig">
+                           <p>bottom of the inscription in two contiguous fragments</p>
+                        </condition>
+                        </supportDesc>
+                        <layoutDesc>
+                           <layout columns="1" writtenLines="3">
+                              <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
+                              <p/>
+                           </layout>
+                        </layoutDesc>
+                     </objectDesc>
+                     <handDesc hands="1">
+                        <handNote ana="#inscribed"/>
+                     </handDesc>
+                     <decoDesc>
+                        <decoNote ana="blank">
+                           <p/>
+                        </decoNote>
+                     </decoDesc>
+                  
+               </physDesc>
+               <history><!--summary, origin, provenance go here-->
+                  <summary>
+                     <note/>
+                  </summary>
+                  <origin>
+                     <!--Should contain information about origin of inscription including place and date.-->
+                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome, between the Via Salaria and the Via Pinciana</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="acquired">
+                     <p>Acquired by Dr. <persName role="collector">A. S. Pease</persName> likely in <date notBefore="1905" notAfter="1906">1905-6</date> in <placeName>Rome</placeName>, while at the <orgName>American School of Classical Studies</orgName>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="given">
+                     <p>Given by Dr. <persName role="donor">A. S. Pease</persName> to the <orgName role="recipient">Harvar Department of Classics</orgName>.</p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -64,7 +109,23 @@
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            <ab>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>a fecit
+               <lb n="3"/><persName><name key="Tyssania" type="gentilicium">Tyssania</name>
+               <lb n="4"/><name key="Pieris" type="cognomen">Pieris</name></persName> mater.
+            </ab>
+         </div>
+         
+         <div type="translation">
+            <p>[---] Tyssania Pieris, (his?) mother, made (this).</p>
+         </div>
+         
+         <div type="commentary">
+            <p>The lines scratched to guide the cutter are clearly visible, and there are considerable remains of minium in the letters. (Moore)</p>
+            <p>Untraceabe since April 1989 (EDR).</p>
+         </div>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>
