@@ -15,32 +15,32 @@ changes: correct handling of provenance information
         <fileDesc>
 
             <titleStmt>
-                <title>NY.NY.MMA.GH.L.2000.74.2</title>
+                <title>KY.Lou.SAM.L.1929.17.401</title>
             </titleStmt>
 
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.GH.L.2000.74.2">NY.NY.MMA.GH.L.2000.74.2</idno>
+                <idno type="USEpigraphy" xml:id="KY.Lou.SAM.L.1929.17.401">KY.Lou.SAM.L.1929.17.401</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>L.2000.74.2</idno>
+                        <region>KY</region>
+                        <settlement>Lou</settlement>
+                        <institution>SAM</institution>
+                        <repository/>
+                        <idno>1929.17.401</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc" otherLangs="hbo"/>
+                        <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory #document">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>donation to a synagogue</p>
+                            <p>epitaph of Valeria Nymphe</p>
                         </msItem>
                     </msContents>
 
@@ -49,23 +49,23 @@ changes: correct handling of provenance information
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#stele">
+                        <objectDesc ana="#tablet">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p>marble plaque</p>
+                                    <p> marble tablet</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>40</height>
-                                        <width>40.6</width>
-                                        <depth>6.25</depth>
+                                        <height/>
+                                        <width/>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.broken">
-                                    <p>part of the right side missing</p>
+                                <condition ana="#broken">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="9">
+                                <layout columns="0" writtenLines="2">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -80,7 +80,7 @@ changes: correct handling of provenance information
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>Jewish symbols below the last line of text: menorah, lulav, etrog, and shofar</p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -94,13 +94,11 @@ changes: correct handling of provenance information
                         </summary>
 
                         <origin>
-                            <date evidence="#palaeography" notBefore="0400" notAfter="0600">ca.
-                                fourth-sixth c. CE</date>
-                            <placeName ref="unknown">unknown</placeName>
+                            <date evidence="#archaeology #formulae" notBefore="0001" notAfter="0100"
+                                >first century CE</date>
+                            <placeName ref="europe.italy.rome">Italy, Rome, between the via Salaria
+                                and the via Pinciana</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="loaned">
-                                 <p>Owner: The <persName role="collector"><name key="Judy Steinhardt">Judy</name></persName> and <persName role="collector"><name key="Michael Steinhardt">Michael Steinhardt</name></persName> Collection; on loan to the <orgName>Metropolitan Museum</orgName>, <placeName>New York</placeName>, since <date when="2000">2000</date>.</p>
-                        </provenance>
 
 
                     </history>
@@ -108,8 +106,13 @@ changes: correct handling of provenance information
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#SCI_22_Ameling"/>
-                        <biblScope unit="page">241-255</biblScope>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">33664</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR182247"
+                            >EDR182247</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -135,8 +138,8 @@ changes: correct handling of provenance information
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2021-03-23" who="Itamar Levin">Transcription, translation, and
-                metadata</change>
+            <change when="2022-02-04" who="Sophia Papandonatou">Initial Encoding,
+                translation</change>
         </revisionDesc>
 
     </teiHeader>
@@ -147,7 +150,7 @@ changes: correct handling of provenance information
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.MMA.GH.L.2000.74.2.jpg"/>
+            <graphic url=""/>
         </surface>
     </facsimile>
 
@@ -155,22 +158,15 @@ changes: correct handling of provenance information
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><supplied reason="lost">θε</supplied>οῦ προνoίᾳ <persName><name key="Εὕρετος"><unclear>Ε</unclear><supplied reason="lost" cert="low">ὕρε
-                    <lb n="2" break="no"/>το</supplied>ς</name></persName> <expan><abbr>πρεσβύ</abbr><ex>τερος</ex></expan> κὲ ἔποικος
-                <lb n="3"/>μετὰ τῆς συβίου κὲ τέκν
-                <lb n="4" break="no"/>ων μου ἀνενέωσα τὸ  
-                <lb n="5"/>πρόναον τοῦ ἁγιάσ
-                <lb n="6" break="no"/>ματος ἐκ τῶν δωρε
-                <lb n="7" break="no"/>ῶν τοῦ θεοῦ.
-                <lb n="8"/><foreign xml:lang="hbo" style="text-direction:r-to-l">וארטאס עשה
-                    <lb n="9"/>תפּלות שלום</foreign>
+                <lb n="1"/><persName><name key="Valeria" type="gentilicium">Vale<unclear>r</unclear><supplied reason="lost">ia</supplied></name>
+                    <lb n="2"/><name type="cognomen" key="Nymphe">Nym<supplied reason="lost">phe</supplied></name></persName>.
             </ab></div>
             
             <div type="translation">
-                <p>Through the providence of God, I, E[uretu]s(?), Elder and Trustee, with my wife and children, renovated the forecourt of the temple with the gifts of god. (Hebrew) Euretus made house of prayer, peace.</p></div>
+            <p>Valeria Nymphe.</p></div>
 
             <div type="commentary">
-                <p>Transcription from photo. Line 1-2: Ameling Ε[.../..]Σ. The missing letters in Greek render the dedicator's name, which is supposedly given also at the beginning of the Hebrew segment. The Hebrew appears to read "וארטאס," possibly the Greek name "Euretus." The letter-forms, especially the minscule Δ and the shape of the Β, support dating the inscription to a later date, between the fourth to sixth centuries CE (Ameling). </p></div>
+            <p></p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
