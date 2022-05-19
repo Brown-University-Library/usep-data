@@ -48,7 +48,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                         <!-- short summary of the content of an inscription -->
-                            <p/>  
+                            <p>epitaph of Antaios Meilesios</p>  
                         </msItem>
                     </msContents>
                     
@@ -59,10 +59,10 @@
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                             
                         <objectDesc ana="#stele">
-                            <supportDesc ana="#marble">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                        <!-- short summary of the material and support of an inscription -->
-                                    <p>White (Pantelic?) marble stele</p>
+                                    <!-- short summary of the material and support of an inscription -->
+                                    <p>marble stele</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>103</height>
                                         <width>40</width>
@@ -111,17 +111,18 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
-                            <placeName ref="unknown">Roman Empire</placeName>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0200">second
+                                century CE</date>
+                            <placeName ref="europe.greece.attica">Greece, Attica</placeName>
                         </origin>
-                        <provenance>
-                            <p>Acquired by <persName>Joseph Brummer</persName> <date notBefore="1914" notAfter="1924">before 1924</date></p>
+                        <provenance  type="transferred" subtype="acquired">
+                            <p>Acquired by <persName >Joseph Brummer</persName> <date notBefore="1914" notAfter="1924">before 1924</date>.</p>
                         </provenance>
                         <provenance type="transferred" subtype="purchased">
-                            <p>Purchased by <persName>Henry Walters</persName> in <date when="1924">1924</date></p>
+                            <p>Purchased by <persName role="buyer">Henry Walters</persName> in <date when="1924">1924</date>.</p>
                         </provenance>
-                        <provenance>
-                            <p>Donated to the <orgName>Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest</p>
+                        <provenance type="transferred" subtype="given">
+                            <p>Donated to the <orgName role="recipient">Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest.</p>
                         </provenance>
 
                     </history>
@@ -133,10 +134,14 @@
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#vanEsbroeck"/>
-                        <biblScope unit="page">2.151</biblScope>
+                        <biblScope unit="page">vol. 2, 151</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://art.thewalters.org/detail/30157/funeral-stele-2/">Walters Art Gallery website</ref>
+                        <ptr type="rest-of-bibl" target="#IG_II2"/>
+                        <biblScope unit="item">9391a</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://art.thewalters.org/detail/30157/funeral-stele-2/">Walters Art Museum Web Entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -166,6 +171,7 @@
             <change when="2017-10-06" who="Scott J. DiGiulio">Cleaned metadata, tidied transcription, added name tagging to transcription and provenance data, added link to WAG website; linked WAM image; added comment indicating possible identification of the inscription</change>
             <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+            <change when="2021-11-10" who="Sophia Papandonatou">took out image image link to WAG website, added image</change>
 </revisionDesc>
 
     </teiHeader>
@@ -175,8 +181,12 @@
 
     <facsimile>
         <surface>
-            <desc>Walters Art Museum (http://art.thewalters.org/images/art/pl7_23175_fnt_bw-2.jpg)</desc>
-            <graphic url="http://art.thewalters.org/images/art/pl7_23175_fnt_bw-2.jpg"/>
+            <desc/>
+            <graphic url="MD.Balt.WAG.G.23.175-det.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="MD.Balt.WAG.G.23.175.jpg"/>
         </surface>
     </facsimile>
 
@@ -191,13 +201,14 @@
         
         
                 <div type="translation" >
-                    <p/>
+                    <p>Antaios Meilesios.</p>
                 </div>
             
         
         
                 <div type="commentary" resp="SJD"><!-- notes go here -->
                 <p>The inscription appears to be identical to <bibl><hi rend="italic">IG</hi> <biblScope unit="item">9391a</biblScope></bibl>.</p>
+                    <p>White (Pentelic?) marble.</p>
             </div>
             
         

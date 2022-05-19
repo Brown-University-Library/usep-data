@@ -48,7 +48,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                         <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Marcus Ogulnius Iustus</p> 
+                            <p>epitaph of Marcus Ogulnius Iustus</p> 
                         </msItem>
                     </msContents>
                     
@@ -56,12 +56,11 @@
                     <physDesc>
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                        <objectDesc ana="#stele">
+                        <objectDesc ana="#altar">
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Marble stele, clamp holes on top of each end; base and top
-                                        not part of original inscription</p>
+                                    <p> marble altar</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>113</height>
                                         <width>66.5</width>
@@ -69,7 +68,7 @@
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
-                                    <p/>
+                                    <p>clamp holes on top of each end</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -88,7 +87,7 @@
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>Ring on right side, unfinished vase on left side</p>
+                                <p>ring on right side, unfinished vase on left side</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -107,23 +106,24 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0001" notAfter="0100">1st century CE</date>
+                            <date evidence="#formulae #archeology" notBefore="0001" notAfter="0100"
+                                >first century CE</date>
                             <placeName ref="europe.italy.rome">Vinea Brunona, Via Appia</placeName>
                         </origin>
-                        <provenance>
-                            
-                            <p>In the <persName>Don Marcello Massarenti</persName> Collection, <placeName>Rome</placeName> <date notBefore="1850" notAfter="1902">before 1902
-                            </date></p>
-                        </provenance>
+                     
+                     <provenance type="found" subtype="first-recorded">
+                         <p>First reported by <persName>Fabretti</persName> in <date when="1699">1699</date> near the second milestone on the Via Appia, <placeName>Rome</placeName> (The Walters Art Museum).</p></provenance>
+                        <provenance>At the Villa Carpegna, <placeName>Rome</placeName>, by <date notAfter="1699">1699</date> (The Walters Art Museum).</provenance>
+                        <provenance> 
+                            <p>In the <persName>Don Marcello Massarenti</persName> Collection, <placeName>Rome</placeName> <date notBefore="1850" notAfter="1902">before 1902</date>.</p></provenance>
 <provenance type="transferred" subtype="purchased">
     
-    <p>Purchased by <persName>Henry Walters</persName> in <date when="1902">1902
-    </date>
+    <p>Purchased by <persName role="buyer">Henry Walters</persName> in <date when="1902">1902</date>.
     </p>
 </provenance>
                         <provenance type="transferred" subtype="given">
                             <p>Donated to the 
-                                <orgName>Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest
+                                <orgName role="recipient">Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest.
                             </p>
                            
                         </provenance>
@@ -147,10 +147,10 @@
                        <biblScope unit="page">1.1516</biblScope>
                    </bibl>
                   <bibl>
-                      <ref type="external" target="http://art.thewalters.org/detail/26468/funeral-stele/">Walters Art Museum Web Entry</ref>
+                      <ref type="external" target="https://art.thewalters.org/detail/26468/funeral-stele/">Walters Art Museum Web Entry</ref>
                   </bibl>
                   <bibl>
-                      <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR133916">EDR133916</ref>
+                      <ref type="external" target="https://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR133916">EDR133916</ref>
                   </bibl>
                 </listBibl>
             </sourceDesc>
@@ -182,6 +182,8 @@
             <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
             <change when="2020-10-30" who="Itamar Levin">some tweaks, translation and image</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+            <change when="2021-10-10" who="Sophia Papandonatou">minor edits to metadata,
+                transcription and translation</change>
 </revisionDesc>
 
     </teiHeader>
@@ -202,20 +204,23 @@
         <div type="edition"><!-- transcription goes here; DONE -->
                 <ab>
                     <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan>
-                    <expan><abbr>M</abbr><ex>anibus</ex></expan>. <lb n="2"/><persName><name
+                    <expan><abbr>M</abbr><ex>anibus</ex></expan>. 
+                    <lb n="2"/><persName><name
                             type="praenomen" key="Marcus"
                             ><expan><abbr>M</abbr><ex>arco</ex></expan></name>
                         <name type="gentilicium" key="Ogulnius">Ogulnio</name>
-                        <lb n="3"/><name type="cognomen" key="Iustus">Iusto</name></persName> filio
-                        <lb n="4"/>pientissimo. <lb n="5"
+                        <lb n="3"/><name type="cognomen" key="Iustus"><hi rend="tall">I</hi>usto</name></persName> filio
+                        <lb n="4"/>pientissimo. 
+                    <lb n="5"
                         /><expan><abbr>Vix</abbr><ex>it</ex></expan>
                     <expan><abbr>ann</abbr><ex>is</ex></expan>
                     <num value="15">XV</num>, <expan><abbr>mens</abbr><ex>ibus</ex></expan>
                     <num value="2">II</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan>
-                    <num value="22">XXII</num>. <lb n="6"/><persName><name type="praenomen"
+                    <num value="22">XXII</num>. 
+                    <lb n="6"/><persName><name type="praenomen"
                             key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name>
                         <name type="gentilicium" key="Ogulnius">Ogulnius</name>
-                        <lb n="7"/><name type="cognomen" key="Iustus">Iustus</name></persName> pater
+                        <lb n="7"/><name type="cognomen" key="Iustus"><hi rend="tall">I</hi>ustus</name></persName> pater
                         <lb n="8"/>et sibi fecit. </ab>
                </div>
         
@@ -223,15 +228,15 @@
                 <div type="translation">
                    
                    
-                    <p>to the Divine Shades. to Marcus Ogulnius Iustus, a most pious son. lived 15
-                    years, 2 months, 22 days. the father, Marcus Ogulnius Iustus, made (it) also for
+                    <p>To the Divine Spirits. To Marcus Ogulnius Iustus, a most pious son. He lived for fifteen
+                    years, two months, (and) twenty-two days. (His) father, Marcus Ogulnius Iustus, made (this for him) and for
                     himself. </p>
                 </div>
             
         
         
                 <div type="commentary"><!-- notes go here -->
-            <p/></div>
+            <p>The base and top are not part of the original inscription.</p></div>
             
         
         
