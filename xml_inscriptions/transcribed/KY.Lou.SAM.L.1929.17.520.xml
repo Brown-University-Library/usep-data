@@ -3,11 +3,11 @@
       <fileDesc>
          <titleStmt>
             <!--printable version of USEpi inscription ID:-->
-            <title>KY.Lou.SAM.L.1929.17.530</title>
+            <title>KY.Lou.SAM.L.1929.17.520</title>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="KY.Lou.SAM.L.1929.17.530">KY.Lou.SAM.L.1929.17.530</idno>
+            <idno type="USEpigraphy" xml:id="KY.Lou.SAM.L.1929.17.520">KY.Lou.SAM.L.1929.17.520</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -16,40 +16,45 @@
                   <settlement>Lou</settlement>
                   <institution>SAM</institution>
                   <repository/>
-                  <idno>1929.17.530</idno>
+                  <idno>1929.17.520</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>fragmentary epitaph</p>
+                     <p>epitaph of Ianuarius, imperial freedman</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>broken marble columbarium slab</p><dimensions type="surface" unit="cm">
-                              <height/>
-                              <width/>
-                              <depth/>
+                        <support><p>broken marble slab</p><dimensions type="surface" unit="cm">
+                              <height>15.2</height>
+                              <width>18.1</width>
+                              <depth>3.9</depth>
                            </dimensions>
+                           
                         </support>
                         <condition ana="#fragment.single">
                            <p>broken at left and bottom</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="2">
+                        <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                               <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-                     <handNote ana="#inscribed"/>
+                     <handNote ana="#inscribed">
+            <dimensions type="letter" unit="cm">
+                              <height min="2.5" max="2.7">2.5-2.7</height>
+                           </dimensions>
+            </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
-                        <p> </p>
+                        <p>Libella on top right</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -71,12 +76,13 @@
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                  <biblScope unit="item">33681.32</biblScope>
+                  <ptr type="rest-of-bibl" target="#MAAR_GiganteHouston"/>
+                  <biblScope unit="pp">40-41, no. 5</biblScope>
                </bibl>
-               <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR134755">EDR134755</ref>
-               </bibl>
+
+<bibl>
+<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR141433">EDR141433</ref>
+</bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -91,9 +97,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-         <change when="2015-12-14" who="Scott J. DiGiulio">Added missing control vocabulary, fixed lines/columns, added EDR link</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-         <change when="2022-07-29" who="Justin Cheng">Added transcription, translation and
+         <change when="2015-12-14" who="Scott J. DiGiulio">Added missing control vocabulary, fixed lines/columns, added Gigante/Houston to bibl, incorporated their measurements</change>
+      <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2022-07-27" who="Justin Cheng">Added transcription, translation and
             commentary; corrected summary</change>
 </revisionDesc>
    </teiHeader>
@@ -102,7 +108,7 @@
          <!--Caption in desc element-->
          <desc/>
          <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
-         <graphic url="KY.Lou.SAM.L.1929.17.530.jpg"/>
+         <graphic url="KY.Lou.SAM.L.1929.17.520.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -110,20 +116,30 @@
         <body>
         <div type="edition">
            <ab>
-              <lb n="1"/><persName><name type="gentilicium"><gap reason="lost" extent="unknown" unit="character"/>leius</name>
-              <lb n="2"/><name type="cognomen" cert="low"><gap reason="lost" extent="unknown" unit="character"/><unclear>ius</unclear></name></persName>
+              <lb n="1"/><supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                  <expan><abbr>s</abbr><ex>acrum</ex></expan>.
+              <lb n="2" break="no"/><persName><name type="gentilicium" key="Aurelius"><expan><abbr><supplied reason="lost" cert="low">Au</supplied>r</abbr><ex>elius</ex></expan></name> 
+                  <name type="cognomen" key="Ianuarius">Ianuarius</name>
+              <lb n="3"/><persName><name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName>
+                  <expan><abbr>lib</abbr><ex>ertus</ex></expan></persName>
+              <lb n="4"/><persName><name><gap reason="lost" extent="unknown" unit="character"/>a</name></persName> et 
+                  <persName><name type="cognomen" key="Veneria">Veneria</name></persName>
+              <lb n="5"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
            </ab>
         </div>
         
         
                 <div type="translation">
-                    <p>[---]leius [---]ius.</p>
+                    <p>Sacred to the Divine Spirits. [Aurelius?] Ianuarius, freedman of Augustus, [---]. [---]a and Veneria [---].</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p>Possibly part of the same name, or two different names.</p>
+                    <p>
+                       Line 1 - "[D(is)]" supplied by formula. Libella at end of line.
+                       Line 3 - Quite notably, Augustus is the name of the emperor, so this man was an imperial freedman.
+                    </p>
                 </div>
             
         
