@@ -3,7 +3,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.G.21053</title>
+            <title>MA.Bos.MFA.G.64.47</title>
          </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,36 +11,36 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.21053">MI.AA.UM.KM.G.21053</idno>
+            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.64.47">MA.Bos.MFA.G.64.47</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <region>MI</region>
-                  <settlement>AA</settlement>
-                  <institution>UM</institution>
-                  <repository>KM</repository>
-                  <idno>21053</idno>
+                  <region>MA</region>
+                  <settlement>Bos</settlement>
+                  <institution>MFA</institution>
+                  <repository/>
+                  <idno>64.47</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem class="#funerary.epitaph">
-                     <p>epitaph of Lukarion</p>
+                  <msItem class="#dedicatory">
+                     <p>dedication to the twelve gods</p>
                   </msItem>
                </msContents>
                <physDesc><!--objectDesc, handDesc, decoDesc go here-->
-                  <objectDesc ana="#stele">
-                     <supportDesc ana="#stone.other">
+                  <objectDesc ana="#tablet #sculpture">
+                     <supportDesc ana="#stone.marble">
                         <support>
-                           <p>limestone stele</p>
+                           <p>broken marble votive relief</p>
                            <dimensions type="surface" unit="cm">
-                              <height>36.2</height>
-                              <width>24.3</width>
+                              <height>33</height>
+                              <width>37</width>
                               <depth/>
                            </dimensions>
                         </support>
                         <condition ana="#broken">
-                           <p>portions of the inscription have worn away</p>
+                           <p/>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -50,17 +50,14 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  
-                  <!--  *************************************  <handDesc>  ********************************* -->
-                  
                   <handDesc hands="1">
-                     <handNote ana="#inscribed"> </handNote>
+                     <handNote ana="#inscribed"></handNote>
                   </handDesc>
                   
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
-                        <p>relief depicting a standing male figure with a seated hawk on the left and a seated jackal on the right, both in profile facing the figure</p>
+                        <p/>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -70,19 +67,21 @@
                   </summary>
                   
                   <origin>
-                     <date evidence="#archaeology" notBefore="0275" notAfter="0340">late third to
-                        early fourth century CE</date>
-                     <placeName ref="africa.egypt">Egypt, Terenouthis (Kom Abou Billou)</placeName>
+                     <date evidence="#archaeology" notBefore="0275" notAfter="0400"> late third to
+                        fourth century CE</date>
+                     <placeName ref="asia.asia_minor">Lycia</placeName>
                   </origin>
-                  <provenance type="found" subtype="discovered">
-                     <p>Uncovered during excavations in modern Kom Abou Billou (the modern name of the necropolitan site of the ancient city of Terenouthis) conducted in February-April 1935 by the University of Michigan.</p>
-                  </provenance>
+                  
                </history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#SEG_20"/>
-                  <biblScope unit="item">no. 517</biblScope>
+                  <ptr type="rest-of-bibl" target="#CVS"/>
+                  <biblScope unit="item">no. 293</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_28"/>
+                  <biblScope unit="item">no. 1572</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -98,13 +97,26 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2022-07-10" who="Sophia Papandonatou">added metadata, transcription,
+            translation</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            <ab>
+               <lb n="1"/><supplied reason="lost">Δώδεκα Θεοῖς</supplied> κατʹ ἐπιταγήν
+               <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>αρχου
+            </ab>
+         </div>
+         <div type="translation">
+            <p>To the twelve gods, according to divine command. [---]</p>
+         </div>
+         <div type="commentary">
+            <p>The extant portion of the second line may be the name "Archos."</p>
+         </div>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>

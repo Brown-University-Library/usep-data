@@ -3,7 +3,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MI.AA.UM.KM.G.21053</title>
+            <title>MA.Bos.MFA.G.22.659</title>
          </titleStmt>
          <publicationStmt>
             <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
@@ -11,41 +11,43 @@
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.21053">MI.AA.UM.KM.G.21053</idno>
+            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.22.659">MA.Bos.MFA.G.22.659</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <region>MI</region>
-                  <settlement>AA</settlement>
-                  <institution>UM</institution>
-                  <repository>KM</repository>
-                  <idno>21053</idno>
+                  <region>MA</region>
+                  <settlement>Bos</settlement>
+                  <institution>MFA</institution>
+                  <repository/>
+                  <idno>22.659</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
-                     <p>epitaph of Lukarion</p>
+                     <p>epitaph of Aththaia</p>
                   </msItem>
                </msContents>
                <physDesc><!--objectDesc, handDesc, decoDesc go here-->
-                  <objectDesc ana="#stele">
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#sculpture">
                      <supportDesc ana="#stone.other">
                         <support>
-                           <p>limestone stele</p>
+                           <p>limestone funerary portrait</p>
                            <dimensions type="surface" unit="cm">
-                              <height>36.2</height>
-                              <width>24.3</width>
+                              <height>55</height>
+                              <width/>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#broken">
-                           <p>portions of the inscription have worn away</p>
+                        <condition ana="#complete.broken">
+                           <p/>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="0" writtenLines="2">
+                        <layout columns="0" writtenLines="4">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -60,29 +62,38 @@
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
-                        <p>relief depicting a standing male figure with a seated hawk on the left and a seated jackal on the right, both in profile facing the figure</p>
+                        <p>bust of the deceased</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history><!--summary, origin, provenance go here-->
-                  <summary>
-                     <rs/>  <!-- content can be "modern" or blank -->
-                  </summary>
                   
-                  <origin>
-                     <date evidence="#archaeology" notBefore="0275" notAfter="0340">late third to
-                        early fourth century CE</date>
-                     <placeName ref="africa.egypt">Egypt, Terenouthis (Kom Abou Billou)</placeName>
+                     
+                     <summary>
+                        <rs/>  <!-- content can be "modern" or blank -->
+                     </summary>
+                     
+                     <origin>
+                     <date evidence="#archaeology" notBefore="0150" notAfter="0200">second half of
+                        the second century CE</date>
+                     <placeName ref="asia">Palmyra, Syria</placeName>
                   </origin>
-                  <provenance type="found" subtype="discovered">
-                     <p>Uncovered during excavations in modern Kom Abou Billou (the modern name of the necropolitan site of the ancient city of Terenouthis) conducted in February-April 1935 by the University of Michigan.</p>
-                  </provenance>
+                     
+                     <provenance type="transferred" subtype="given">
+                        <p>
+                           Gifted to the <orgName type="recipient">Museum of Fine Arts</orgName> by <persName type="donor">Edward Perry Warren</persName> in memory of his sister.
+                        </p>
+                        
+                     </provenance>
+                     
+                     
+                 
                </history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#SEG_20"/>
-                  <biblScope unit="item">no. 517</biblScope>
+                  <ptr type="rest-of-bibl" target="#CVS"/>
+                  <biblScope unit="item">no. 401</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -98,13 +109,26 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2022-07-10" who="Sophia Papandonatou">added metadata, transcription,
+            translation</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            <ab>
+               <lb n="1"/><persName><name key="Ἀθθαία Aththaia">Ἀθθαία</name>
+                  <lb n="2"/><name key="Malchos Μάλχος">Μάλχου</name></persName>
+               <lb n="3"/>ἄλ<unclear>υ</unclear>πε
+               <lb n="4"/>χαῖρε.
+            </ab>
+         </div>
+         <div type="translation">
+            <p>O Aththaia, (daughter) of Malchos, causing no offese, farewell.</p>
+         </div>
+         <div type="commentary"></div>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>
