@@ -35,8 +35,8 @@
                            <p>broken limestone stele</p>
                            <dimensions type="surface" unit="cm">
                               <height>25.2</height>
-                              <width>20-16</width>
-                              <depth>10-12</depth>
+                              <width min="16" max="20">16-20</width>
+                              <depth min="10" max="12">10-12</depth>
                            </dimensions>
                         </support>
                         <condition ana="#broken">
@@ -71,11 +71,11 @@
                   
                   <origin>
                      <date evidence="#archaeology #nomenclature #history" notBefore="-0261" notAfter="-0225">mid to early third century CE</date>
-                     <placeName ref="asia">Seleucia on the Tigris</placeName>
+                     <placeName ref="asia https://pleiades.stoa.org/places/894178">Seleucia on the Tigris</placeName>
                   </origin>
                   
                   <provenance type="found" subtype="discovered">
-                     <p>Uncovered during excavations on the site of Seleucia in the Tigris conducted the during the seasons 1927-1928 to 1931-1932 under the auspices of the University of Michigan, the Toldedo Museon of Art and, later the Cleveland Museum of Art. 
+                     <p>Uncovered during excavations on the site of Seleucia on the Tigris conducted the during the seasons 1927-1928 to 1931-1932 under the auspices of the University of Michigan, the Toldedo Museon of Art and, later the Cleveland Museum of Art. 
                         This inscription was found built into a subsurface wall of a Parthian structure in trial trench 4.</p>
                   </provenance>
                </history>
@@ -105,6 +105,7 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2022-07-15" who="Sophia Papandonatou">added metadata, transcription, Estremo, changed from MI.AA.UM.KM.G.Tmp97.6.3</change>
+         <change when="2022-09-13" who="Scott DiGiulio">added Pleiades ref</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
@@ -112,12 +113,12 @@
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/><supplied reason="lost">ἐπὶ ἱερέως Σελεύκου μὲν Νικάτορος</supplied>
-               <lb n="2"/><supplied reason="lost"><surplus>τοῦ δεῖνος τοῦ δεῖνος</surplus>, Ἀντιό</supplied>χου δὲ σω<supplied reason="lost">τῆ
+               <lb n="1"/><supplied reason="lost">ἐπὶ ἱερέως <persName><name key="Σέλευκος Seleukos">Σελεύκου</name> μὲν <name key="Νικάτωρ Nikator">Νικάτορος</name></persName></supplied>
+               <lb n="2"/><supplied reason="lost"><surplus>τοῦ δεῖνος τοῦ δεῖνος</surplus>,</supplied> <persName><name key="Ἀντίοχος Antiochos"><supplied reason="lost">Ἀντιό</supplied>χου</name></persName> δὲ σω<supplied reason="lost">τῆ
                <lb n="3" break="no"/>ρος <surplus>τοῦ δεῖνος τοῦ δεῖνος</surplus>, βα</supplied>σιλέως δὲ
-               <lb n="4"/><supplied reason="lost">Ἀντιόχου <surplus>τοῦ δεῖνος</surplus> <gap reason="lost" extent="unknown" unit="character"/></supplied>ξένου, ἱερ<supplied reason="lost">ο</supplied>μνή
+               <lb n="4"/><supplied reason="lost"><persName><name key="Ἀντίοχος Antiochos">Ἀντιόχου</name></persName> <surplus>τοῦ δεῖνος</surplus> <gap reason="lost" extent="unknown" unit="character"/></supplied>ξένου, ἱερ<supplied reason="lost">ο</supplied>μνή
                <lb n="5" break="no"/><supplied reason="lost">μονοῦντος δὲ <surplus>τοῦ δεῖνο</surplus> <gap reason="lost" extent="unknown" unit="character"/></supplied>ς, ἀγωνοθετοῦν
-               <lb n="6" break="no"/><supplied reason="lost">τος <gap reason="lost" extent="unknown" unit="character"/></supplied> ταμί<supplied reason="lost">α</supplied> Σωτᾶς
+               <lb n="6" break="no"/><supplied reason="lost">τος <gap reason="lost" extent="unknown" unit="character"/></supplied> ταμί<supplied reason="lost">α</supplied> <persName><name key="Σωτᾶς Sotas">Σωτᾶς</name></persName>
                <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>κεστράτου. 
             </ab>
          </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
