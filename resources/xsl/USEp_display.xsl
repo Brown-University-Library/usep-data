@@ -42,7 +42,6 @@
         2020-10-22 SJD commented out display of decoNote/@ana
         2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
         2021-07-29 EM added bibliography processing.
-        2021-12-15 SJD added several features from EFES, including Pleiades links, letter dimensions, and other dimension display formatting
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -162,31 +161,6 @@
                                         </xsl:for-each>
                                     </td>
                                 </tr>
-                                
-                                <!-- Add objection dimensions -->
-                                <tr>
-                                    <td class="label">Object Dimensions</td>
-                                    <td class="value">
-                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:supportDesc/t:support">
-                                            <xsl:template match="t:dimensions" mode="usep-object-dimensions">      
-                                                <xsl:if test="t:width/text()">w: 
-                                                    <xsl:value-of select="t:width"/>
-                                                    <xsl:if test="t:height/text()"> x
-                                                    </xsl:if>
-                                                </xsl:if>
-                                                <xsl:if test="t:height/text()">h:
-                                                    <xsl:value-of select="t:height"/>
-                                                </xsl:if>
-                                                <xsl:if test="t:depth/text()"> x d:
-                                                    <xsl:value-of select="t:depth"/>
-                                                </xsl:if>
-                                                <xsl:if test="t:dim[@type='diameter']/text()">x diam.:
-                                                    <xsl:value-of select="t:dim[@type='diameter']"/>
-                                                </xsl:if>
-                                            </xsl:template>
-                                        </xsl:for-each>
-                                    </td>
-                                
                                 <!-- check for existence of controlled and full text values here. -->
                                 <tr>
                                     <td class="label">Writing</td>
@@ -206,28 +180,6 @@
                                         </xsl:choose>
                                     </td>
                                 </tr>
-                                
-                                <!-- Add letter dimensions -->
-                                <tr>
-                                    <td class="label">Letter Dimensions</td>
-                                    <td class="value">
-                                        <xsl:template match="t:dimensions" mode="usep-letter-dimensions">      
-                                    <xsl:if test="$writing/t:width/text()">w: 
-                                        <xsl:value-of select="t:width"/>
-                                        <xsl:if test="t:height/text()"> x 
-                                        </xsl:if>
-                                    </xsl:if>
-                                    <xsl:if test="t:height/text()">h: 
-                                        <xsl:value-of select="t:height"/>
-                                    </xsl:if>
-                                    <xsl:if test="t:depth/text()"> x d:
-                                        <xsl:value-of select="t:depth"/>
-                                    </xsl:if>   
-                                </xsl:template>
-                                    </td>
-                                </tr>
-                                
-                                
                                 <tr>
                                     <td class="label">Layout</td>
                                     <td class="value">
@@ -351,25 +303,6 @@
                         </div>
                     </xsl:if>
 
-<!-- Print links to Pleiades when they appear in texts or metadata -->
-                   
-                    <xsl:template match="t:placeName" mode="usep-placename"> <!-- remove rs? -->
-                        <xsl:choose>
-                            <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
-                                <a>
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="@ref"/>
-                                    </xsl:attribute>
-                                    <xsl:apply-templates/>
-                                </a>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:apply-templates/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:template>
-                   
-                    
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
                         <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
@@ -503,14 +436,7 @@
                 -->
 
                 <xsl:choose>
-      
-     <!-- single-volume corpus -->
-                    <xsl:when test="id($myID)/self::t:bibl[@type = 'c']">
-                        <i><xsl:value-of
-                            select="id($myID)/self::t:bibl[@type = 'c']/t:abbr[@type = 'primary'"/></i>
-                    </xsl:when>
-                  
-                  
+                    
       <!-- monograph or unpublished type="m" type="u"-->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']">
                         <i><xsl:value-of
