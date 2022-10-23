@@ -24,12 +24,65 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#funerary.epitaph">
+                     <p>fragmentary epitaph?</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <physDesc><!--objectDesc, handDesc, decoDesc go here-->
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p>fragmentary marble slab?</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>20.0</height>
+                              <width>29.0</width>
+                              <depth min="4.0" max="4.2">4.0-4.2</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragment.single">
+                           <p>left and bottom edges missing</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="4">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <history><!--summary, origin, provenance go here-->
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or blank -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="0101" notAfter="0200">second century
+                        CE</date>
+                     <placeName ref="asia.asia_minor">Asia Minor or the Greek islands?</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased in <date when="1908-12">December 1908</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">Antiquario Pacifico</orgName> on the Via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
+                        He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
+                  </provenance>
+                  <provenance type="found">
+                     <p><persName>H. Solin</persName> assigned this fragment to <placeName ref="https://pleiades.stoa.org/places/837">Asia Minor</placeName> or the Greek islands (ARCTOS 15 (1981) 150, cited in SEG).</p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -39,6 +92,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_30"/>
                   <biblScope unit="item">no. 1798</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1447/0000_00_1447">Kelsey
+                     Museum of Archaeology</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -54,13 +112,28 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2022-10-04" who="Sophia Papandonatou">added metadata, transcription</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+            <ab>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>προ αὐτοῦ με
+               <lb n="2" break="no"/><gap reason="lost" extent="unknown" unit="character"/>ος δὶς τοῦ <persName><name key="Dositheos Δωσίθεος">Δωσι
+               <lb n="3" break="no"/><supplied reason="lost">θέου</supplied></name></persName> <gap reason="lost" quantity="2" unit="character"/><supplied reason="lost">κλ</supplied>ηρονόμων
+               <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>ησει γραμμα
+               <lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+            </ab>
+         </div>
+         <div type="translation">
+            <p></p>
+         </div>
+         <div type="commentary">
+            <p>Lines 3-4: εἴ τις τῶν κλ]ηρονόμων | [ἀποκοσμ]ήσει γράμμα|[τα- - - .] (Solin)</p>
+         </div>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>
