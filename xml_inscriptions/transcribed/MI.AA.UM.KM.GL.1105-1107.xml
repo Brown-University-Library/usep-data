@@ -48,7 +48,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>Transfer of a  cult statue of Sarepta from Tyre to Puteoli;
+                            <p>transfer of a cult statue of Sarepta from Tyre to Puteoli;
                                 dedication to Domitian</p>
                         </msItem>
                     </msContents>
@@ -63,7 +63,7 @@
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Fine-grained chalky gray marble</p>
+                                    <p>marble</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>36.5</height>
                                         <width>42.5</width>
@@ -75,13 +75,13 @@
                                     </dimensions>
                                 </support>
                                 <condition ana="#fragments.non_contig">
-                                    <p>First fragment broken along left and at right, damaging text; second fragment, containing text from lines 2-5, has been cut into a circular disc</p>
+                                    <p>first fragment broken along left and at right, damaging text; second fragment, containing text from lines 2-5, has been cut into a circular disc</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="8">
-                                    <p>the first line seems appended or copied hastily. Lines 1-6
+                                    <p>the first line seems appended or copied hastily; lines 1-6
                                         are in Greek, 7-8 in Latin. </p>
                                 </layout>
                             </layoutDesc>
@@ -91,7 +91,7 @@
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="2">
                             <handNote ana="#inscribed">
-                                <p>Possibly 3 hands if the first line
+                                <p>possibly 3 hands if the first line
                                 represents an additional carver</p></handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
@@ -118,11 +118,15 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0079" notAfter="0079">May 29th, 79 CE</date>
+                            <date evidence="#prosopography #history" notBefore="0079" notAfter="0079">May
+                                29th, 79 CE</date>
                             <placeName ref="europe.italy.puteoli">Pozzuoli, Italy</placeName>
                         </origin>
                         
-
+                        <provenance type="transferred" subtype="purchased">
+                            <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName>
+                                for the <orgName role="recipient">University of Michigan</orgName>.</p>
+                        </provenance>
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
@@ -172,6 +176,16 @@
                     <bibl>
                         <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD007973">EDH nr. HD007973</ref>
                     </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1105/0000_00_1105p01.tif"
+                            >Kelsey Museum of Archaeology</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1107/0000_00_1107p01.tif"
+                            >Kelsey Museum of Archaeology</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -201,6 +215,8 @@
             <change when="2017-06-29" who="Scott J. DiGiulio">Fixed typo in transcription; fixed small error in bibl</change>
             <change when="2021-01-20" who="E. Mylonas">Changed genre to match vocabularies</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+            <change when="2022-10-11" who="Sophia Papandonatou">updated transcription, metadata,
+                added to commentary, added translation and provenance</change>
 </revisionDesc>
 
     </teiHeader>
@@ -227,10 +243,10 @@
         
         <body>
         <div type="edition"><!-- transcription goes here -->
-            <ab><lb n="1"/><date>ἐπ' ὑπάτων <persName><name type="praenomen" key="Lucius">Λουκίοu</name> <name type="cognomen" key="Caesennius">Καισε<supplied reason="lost" cert="high">ννίου</supplied></name></persName> <supplied reason="lost" cert="high">καὶ <persName><name type="praenomen" key="Publius">Ποπλίου</name> <name type="gentilicium" key="Calvisius">Καλοuισίου</name></persName></supplied>
-                <lb n="2"/>καὶ <geogName>Τυρίοις</geogName> <num value="204"><hi rend="supraline tick">ΣΔ</hi></num>, <supplied reason="lost" cert="high">μ</supplied>ηνὸς ἀρ<supplied reason="lost">τεμ</supplied>
-                <lb n="3" break="no"/>ισίου <num value="11"><hi rend="supraline tick">ΙΑ</hi></num></date>, κατέ<supplied reason="lost" cert="high">π</supplied>λευσεν ἀ<supplied reason="lost" cert="high">πὸ</supplied>
-                <lb n="4"/><settlement>Τύρου</settlement> εἰς <settlement>Ποτι<supplied reason="lost" cert="high">ό</supplied>λοις</settlement> θεὸς <supplied reason="lost">ἅγ</supplied>
+            <ab><lb n="1"/><date>Ἐπ' ὑπάτων <persName><name type="praenomen" key="Lucius">Λουκίοu</name> <name type="cognomen" key="Caesennius">Καισε<supplied reason="lost" cert="high">ννίου</supplied></name></persName> <supplied reason="lost" cert="high">καὶ <persName><name type="praenomen" key="Publius">Ποπλίου</name> <name type="gentilicium" key="Calvisius">Καλοuισίου</name></persName></supplied>
+                <lb n="2"/>καὶ <geogName>Τυρίοις</geogName> <g type="ἔτους"/><num value="204" xml:lang="grc"><hi rend="supraline tick">σδ</hi>ʹ</num>, <supplied reason="lost" cert="high">μ</supplied>ηνὸς ἀρ<supplied reason="lost">τεμ</supplied>
+                <lb n="3" break="no"/>ισίου <num value="11"><hi rend="supraline" xml:lang="grc">ιαʹ</hi></num></date>, κατέ<supplied reason="lost" cert="high">π</supplied>λευσεν ἀ<supplied reason="lost" cert="high">πὸ</supplied>
+                <lb n="4"/><placeName ref="https://pleiades.stoa.org/places/678437"><settlement>Τύρου</settlement></placeName> εἰς <placeName ref="https://pleiades.stoa.org/places/432815"><settlement>Ποτι<supplied reason="lost" cert="high">ό</supplied>λοις</settlement></placeName> θεὸς <supplied reason="lost">ἅγ</supplied>
                 <lb n="5" break="no"/>ιος <foreign><supplied reason="omitted">Σ</supplied>αρεπτηνό<supplied reason="lost" cert="high">ς</supplied></foreign>. <supplied reason="lost" cert="high">ἤ</supplied>γαγεν <gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="6"/><foreign>ηλειμ</foreign> κατ' ἐπιτο<supplied reason="lost" cert="low">λὴν τοῦ </supplied><gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="7"/><handShift/><foreign xml:lang="lat">Pro <expan><abbr>sal</abbr><ex>ute</ex></expan> <expan><abbr>Imp</abbr><ex>eratoris</ex></expan> <persName><name type="cognomen" key="Domitianus">Domitiani</name></persName> <supplied reason="lost" cert="high"><expan><abbr>Aug</abbr><ex>usti</ex></expan></supplied>
@@ -240,20 +256,30 @@
         
         
                 <div type="translation">
-                    <p/>
+                    <p> In the consulship of Lucius (Junius) Caese[nnius and Publius Calvisius (Ruso Julius Frontinus)] 
+                        and in the year 204 of the Tyrians, on the eleventh day in the month Artemision, there sailed 
+                        f[rom] Tyre to Pute[o]li the [ho]ly god of Sarept[a]. Leading (him?) was [---] eleim, at the ri[se o]f the [---]</p>
+                    <p>On behalf of the health of the emperor Domitian [Augustus]. The place was granted [by decree of the decurions.]</p>
                 </div>
             
         
         
                 <div type="commentary"><!-- notes go here -->
-            <p>Line 1: Λουκίου Καισεννίου καὶ Ποπλίου Καλουισίου- the consuls are Lucius Junius
+            <p>Line 1: Λουκίου Καισεννίου καὶ Ποπλίου Καλουισίου-the consuls are Lucius Junius
                     Caesennius and Publius Calvisius Ruso Julius Frontinus who were in office in 79 CE
                     from March through May (Gallivan 1981, 186-220), as is confirmed by the following “year
                     204 of the Tyrians”. This line of text is not well planned and does not
                     match the continuation of the dating formula in the proceeding lines; perhaps it
-                    was copied hastily or added in later.</p> <p>Lines 2 and 3: Ἀρ[tεμ]-ισίου •Ι•Α•- May
-                    29th, 79 CE.</p> <p>Lines 7 and 8: the inscription ends in Latin with an Imperial
-                    dedication seemingly by a different hand. </p></div>
+                    was copied hastily or added in later.</p> 
+                    <p>Lines 2 and 3: Ἀρ[tεμ]/ισίου •Ι•Α•-May
+                        29th, 79 CE. L with supraline for ἔτους.</p>
+                    <p>Line 4: Ποτιόλοις for Ποτιόλου (Visonà cited in SEG).</p>
+                    <p>Line 4-6: Θεὸς [Ἥλ]|ιος Ἀρεπτηνό[ς], ἤγαγεν [δὲ] | Ἠλειμ κατ’ ἐπιτο[λὴν τοῦ θεοῦ] (OGIS cited in SEG); Θεὸς [Ἥλ]|ιο[ς] Σαρεπτηνὸ[ς] ἤγαγεν [δὲ] | Ἠλεὶμ κατ’ ἐπιτολήν (IGR cited in SEG).</p>
+                    <p>-ηλειμ is perhaps a theophoric name, e.g. [Ἀβδ]|ηλείμ as suggested but rejected by Clermont-Ganneau 230/231 (Visonà cited in SEG).</p>
+                    <p>Lines 7 and 8: the inscription ends in Latin with an Imperial
+                        dedication seemingly by a different hand. "The Latin dedication was engraved during Domitian’s reign, the Greek text probably before it." (Visonà cited in SEG) </p>
+                    <p>Fine-grained chalky gray marble.</p>
+                </div>
             
         
         

@@ -7,7 +7,7 @@
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
             <titleStmt>
-                <title>MI.AA.UM.KM.G.1108</title>
+                <title>MI.AA.UM.KM.G.1106</title>
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
@@ -17,7 +17,7 @@
             <publicationStmt>
                
                 <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.1108">MI.AA.UM.KM.G.1108</idno>
+                <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.1106">MI.AA.UM.KM.G.1106</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
             <sourceDesc>
@@ -39,7 +39,7 @@
                         <settlement>AA</settlement>
                         <institution>UM</institution>
                         <repository>KM</repository>
-                        <idno>1108</idno>
+                        <idno>1106</idno>
                     </msIdentifier>
                     
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -47,8 +47,8 @@
                         <textLang mainLang="grc"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
-                        <!-- short summary of the content of an inscription -->
-                            <p>epitaph of Proklos, son of Οnesicrates</p>
+                            <!-- short summary of the content of an inscription -->
+                            <p>epitaph of a young woman</p>
                         </msItem>
                     </msContents>
                     
@@ -62,22 +62,23 @@
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>partially reconstituted marble slab</p>
+                                    <p>patially reconstituted marble slab</p>
                                     
                                     <dimensions type="surface" unit="cm">
-                                        <height>22.4</height>
-                                        <width>22.8</width>
-                                        <depth>1.8</depth>
+                                        <height>27.0</height>
+                                        <width>43.5</width>
+                                        <depth>2.2</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#fragments.contig">
-                                    <p>broekn vertically down the center of text; remaining 2 fragments join and preserve left half of incsription</p>
+                                    <p>four contiguous fragments preserve the top left of the
+                                        inscription</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="7">
-                                    <p>concerted effort to center text on the stone</p>
+                                <layout columns="0" writtenLines="7">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -85,16 +86,14 @@
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> shallowly carved lettering, neatly
-                                cut; small serifs and slight shading; lunate sigmas and rounded
-                                epsilons.</handNote>
+                            <handNote ana="#inscribed"/>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
                         
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>laurel wreath</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -113,15 +112,19 @@
                         
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
-                            <placeName ref="europe.italy.misenum">Italy, Misenum</placeName>
-                        </origin>
-                        
+                            <date evidence="unspecified" notBefore="0100" notAfter="0200">second
+                                century CE</date>
+                            <placeName ref="europe.italy.puteoli">Italy,
+                            Pozzuoli</placeName><!-- subsequent locations if inscription was moved --></origin>
+                        <provenance type="found" subtype="discovered">
+                            <p>Found along the Via Campania in Puetoli in <date when="1897">1897</date>.</p>
+                        </provenance>
                         <provenance type="transferred" subtype="purchased">
                             <p>Purchased from the collection of <persName>Giuseppe De
                                 Criscio</persName> for the <orgName role="recipient">University
                                     of Michigan</orgName>.</p>
                         </provenance>
+
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
@@ -130,13 +133,22 @@
                 -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#IG_XIV"/>
-                        <biblScope unit="item">876b</biblScope>
+                        <ptr type="rest-of-bibl" target="#SEG_28"/>
+                        <biblScope unit="item">no. 799</biblScope>
                     </bibl>
+                   
                     <bibl>
                         <ref type="external"
-                            target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1108/0000_00_1108p01.tif"
+                            target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1106/0000_00_1106p01.tif"
                             >Kelsey Museum of Archaeology</ref>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#AJA_Dennison"/>
+                        <biblScope unit="item">40, pp. 389-390</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#RFIC_78_Miranda"/>
+                        <biblScope unit="page">191-194</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -162,11 +174,8 @@
     	<!-- Record all changes here -->
         
         <revisionDesc>
-            <change when="2014-10-01" who="Samantha Lash">Initial Encoding</change>
-            <change when="2014-08-24" who="Scott J. DiGiulio">Cleaned metadata for conformity, proofed transcription, added image</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-            <change when="2022-10-12" who="Sophia Papandonatou">updated metadata to current
-                conventions, added link, provenance, translation, additional commentary</change>
+            
+            <change when="2022-10-12" who="Sophia Papandonatou">initial encoding</change>
 </revisionDesc>
 
     </teiHeader>
@@ -177,7 +186,7 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="MI.AA.UM.KM.G.1108.jpg"/>
+            <graphic url=""/>
         </surface>
     </facsimile>
 
@@ -185,30 +194,34 @@
         
         <body>
         <div type="edition"><!-- transcription goes here -->
-                <ab><lb n="1"/>Θεοῖς Καταχθ<supplied reason="lost" cert="high">ονίοις</supplied>
-                    <lb n="2"/><persName><name type="cognomen" key="Proclus">Πρόκλου</name> τ<supplied reason="lost" cert="high">οῦ</supplied>
-                    <lb n="3"/><persName><name type="patronymic" key="Onesicrates">Ὀνησικράτ<supplied reason="lost" cert="high">ου</supplied></name>
-                    <lb n="4"/><name type="ethnonym">Νεικομηδέ<supplied reason="lost">ως</supplied>,</name></persName></persName> <supplied reason="lost">ζή</supplied>
-                    <lb n="5" break="no"/>σαντος ἔτη <num value="10" xml:lang="grc">ι</num>, <gap reason="lost" atLeast="2" atMost="7" unit="character" precision="medium"/>
-                    <lb n="6"/>τέκνῳ ἐπόη<supplied reason="lost" cert="high">σε </supplied> μνήμης
-                    <lb n="7"/>ἕνεκα <gap reason="lost" extent="unknown" unit="character"/>.
+                <ab>
+                    <lb n="1"/><expan><abbr>Θ</abbr><ex>εοῖς</ex></expan> <supplied reason="lost"><expan><abbr>Κ</abbr><ex>αταχθονίοις</ex></expan></supplied>. 
+                    <lb n="2"/>Ἔνθα κόρη κεῖμαι πεποθημέν<supplied reason="lost">η, ὕπνον ἔχουσα</supplied>
+                    <lb n="3"/>ὕστατον ἐν φθιμένοις, φάος ἠελίο<unclear>ι</unclear><supplied reason="lost">ο λιποῦσα</supplied>, 
+                    <lb n="4"/>τέσσαρας ἑβδομάδας κατάγουσα πικρῶ<supplied reason="lost">ν ἐνιαυτῶν</supplied>
+                    <lb n="5"/>ἑπτὰ δὲ <unclear>κ</unclear><supplied reason="lost">αὶ μῆνας</supplied> <unclear>γο</unclear>ερούς, οὓς οὐκ ἐτέλε<supplied reason="lost">σσα. 
+                    <lb n="6"/>Στήθεά μου μήτηρ κατ</supplied>εκόψατο καὶ γένος <supplied reason="lost">ἄλλο</supplied>
+                    <lb n="7"/><gap reason="lost" quantity="25" cert="low" unit="character"/>ο μηδὲ τ<gap reason="lost" quantity="12" cert="low" unit="character"/>
                 </ab>
             </div>
         
         
                 <div type="translation">
-                    <p>To the gods of the underworld of Proclus, (son) of Onesicrates of Nicomedia,
-                    (who) lived for 1[X?] years [---] he made (this) for (his) child, in (his)
-                    memory.</p>
+                    <p>To the gods of the underworld. Here I lie, a regretfu[l] girl, [keeping (this)] final [slumber] among the dead, having left behind the light of the sun, 
+                        having lived 4 hebdomads of bitter years and 7 mournful months, which I did not fini[sh. My mother be]at (her) [chest] (as did) the [rest] of (my) 
+                        family [---] no one(?) [---] </p>
                 </div>
             
         
         
                 <div type="commentary"><!-- notes go here -->
-            <p>Lines 3-4: The epitaph of Onesicrates of Nicomedia himself was set up by his fellow townsman Zoilos, apparently also at Misenum: see IG 14.876a (= MI.AA.UM.KM.G.1109) also
-  also from De Criscio’s collection.</p>
-           <p> Line 5: The number of years the deceased is at least 10, but another numeral may be missing. Kaibel in IG plausibly supplies πατήρ in the missing text.</p>
-                    <p>Fine-grained marble.</p>
+                    <p>A hebdomad is a group of 7 years, so "4 hebdomads of ... years" means that she lived for 28 years. This phrasing, paired with "7 mournful months, which I did not finish," standing in for a more simple "6 mournful months", 
+                        makes clear the author's desire to create number symbolism with 7s.</p>
+                    <p>Line 2: πεποθημέν[ον ἄνθος ἅπασιν | (Comparetti in Dennison); πεποθημέν[η ἠδʹ ἀγαπητή, | (Halbherr in Dennison).</p>
+                    <p>Line 3: ἠελίου [μεταβᾶσα | (Comparetti in Dennison); ἠελίοι[ο ἰδοῦσα, | (Halbherr in Dennison).</p>
+                    <p>Line 4: πικρῶ[ν ὑπὸ μόχθων, | (Comparetti in Dennison); πικρῶ[ς τέλος ἔσχον, | (Halbherr in Dennison).</p>
+                    <p>Line 5: ἑπτὰ δὲ κ(ύ)[κλους μοι] γοερούς (Comparetti in Dennison); ἑπτὰ δὲ [καὶ μῆνας γο]ερούς οὓς οὐκ ἐτέλε[σθην | (Halbherr in Dennison).</p>
+                    <p>Line 6: [Δῶκε θεός· μήτηρ δὲ μʹ] ἐκόψατο (Comparetti in Dennison).</p>
                 </div>
             
         

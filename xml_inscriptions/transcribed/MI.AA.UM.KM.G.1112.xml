@@ -71,11 +71,12 @@
                   </summary>
                   
                   <origin>
-                     <date evidence="#unknown" notBefore="0001" notAfter="0001"/>
+                     <date evidence="#unknown" notBefore="0001" notAfter="0001">unknown</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <provenance type="transferred" subtype="purchased">
-                     <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
+                     <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName>
+                        for the <orgName role="recipient">University of Michigan</orgName>.</p>
                   </provenance>
                </history>
             </msDesc>
@@ -103,7 +104,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-         <change when="2022-10-04" who="Sophia Papandonatou">added metadata, transcription</change>
+         <change when="2022-10-04" who="Sophia Papandonatou">added metadata, transcription, translation, commentary</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
@@ -111,12 +112,18 @@
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/><supplied reason="omitted"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></supplied> Σεπτί<supplied reason="lost">μιος</supplied> <gap reason="lost" quantity="3" unit="character" cert="low"/>
-               <lb n="2"/><gap reason="lost" quantity="1" unit="character" cert="low"/>ταριανὸ<supplied reason="lost">ς</supplied> <gap reason="lost" quantity="4" unit="character" cert="low"/>
+               <lb n="1"/><persName><name key="Marcus Μᾶρκος" type="praenomen"><supplied reason="omitted"><expan><abbr>Μ</abbr><ex>ᾶρκος</ex></expan></supplied></name> <name key="Σεπτίμιος Septimius" type="gentilicium">Σεπτί<supplied reason="lost">μιος</supplied></name> <name type="cognomen"><gap reason="lost" quantity="3" unit="character" cert="low"/>
+                  <lb n="2"/><gap reason="lost" quantity="1" unit="character" cert="low"/>ταριανὸ<supplied reason="lost">ς</supplied></name></persName> <gap reason="lost" quantity="4" unit="character" cert="low"/>
                <lb n="3"/><unclear>ἔ</unclear>ζησε <supplied reason="omitted">ἔ</supplied>τη <num>μ<gap reason="lost" quantity="1" unit="character" cert="low"/>ʹ</num> <gap reason="lost" quantity="2" unit="character" cert="low"/>
                <lb n="5"/>ἀ<supplied reason="omitted">ξ</supplied>ίῳ ἀπελευθέρῳ. 
             </ab>
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+         </div>
+         <div type="translation">
+            <p>Marcus Septimius [- ---] lived for 4[X] years, [---], for a worthy freedman.</p>
+         </div>
+         <div type="commentary">
+            <p>Line 2: Based on comparanda, the only supplement of the deceased's cognomen ending in -tarianus is "Matarianus"; the cognomen is uncommon and is attested only in inscriptions from Gallia Lugdunensis and one from Aquitania (cf. CAG-89-02 and CAG-63-02).</p></div>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>
