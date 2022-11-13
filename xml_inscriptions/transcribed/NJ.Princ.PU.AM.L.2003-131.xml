@@ -29,7 +29,7 @@
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p>Fragment of a Latin inscription</p>
+                            <p>fragmentary inscription</p>
                         </msItem>
                     </msContents>
 
@@ -39,9 +39,9 @@
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
                         <objectDesc ana="#fragment">
-                            <supportDesc ana="#stone">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> </p>
+                                    <p>opisthographic marble fragment</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>13.3</height>
                                         <width>14.6</width>
@@ -83,12 +83,12 @@
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="0001" notAfter="0002">Date to be displayed</date>
-                            <placeName ref="asia.asia_minor">Turkey, Antioch</placeName>
+                            <date evidence="unspecified" notBefore="0001" notAfter="0002"/>
+                            <placeName ref="https://pleiades.stoa.org/places/658381">Turkey, Antioch</placeName>
                         </origin>
                        <provenance type="transfer" subtype="given">
-                     <p> Gift of the <orgName>Committee for the Excavation of Antioch</orgName> to <orgName>Princeton
-                        University</orgName> in <date when="2003">2003</date>
+                     <p>Gift of the <orgName>Committee for the Excavation of Antioch</orgName> to <orgName>Princeton
+                        University</orgName> in <date when="2003">2003</date>.
                      </p>
                   </provenance>
 
@@ -97,9 +97,16 @@
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
-                    
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#RAM_63_Acq"/>
+                        <biblScope unit="page">138</biblScope>
+                    </bibl>
                     <bibl>
                         <ref type="external" target="https://artmuseum.princeton.edu/collections/objects/41958">External Link Princeton Art Museum</ref>
+                    </bibl>
+                    <bibl>                         
+                        <ptr type="rest-of-bibl" target="#Antioch_II"/>                         
+                        <biblScope unit="item">21, p. 150</biblScope>                     
                     </bibl>
                 
                 </listBibl>
@@ -127,6 +134,8 @@
         <revisionDesc>
             <change when="2020-03-16" who="Gaia Gianni">Initial Encoding</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+            <change when="2022-10-24" who="Sophia Papandonatou">added image link, updated
+                transcription</change>
 </revisionDesc>
 
     </teiHeader>
@@ -137,7 +146,7 @@
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="NJ.Princ.PU.AM.L.2003-131.jpg"/>
         </surface>
     </facsimile>
 
@@ -145,9 +154,18 @@
         
         <body>
         <div type="edition">
+            <div type="textpart" subtype="side" n="a">
+                <ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><g type="centurio" cert="low"/><gap reason="lost" quantity="1" unit="character"/>F<gap reason="lost" extent="unknown" unit="character"/>
+                </ab>
+            </div>
+            <div type="textpart" subtype="side" n="b">
             <ab>
                 <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>C E B E <gap reason="lost" extent="unknown" unit="character"/>
-            </ab></div>
+                
+            </ab>
+            </div>
+            </div>
         
         
                 <div type="translation">
@@ -157,7 +175,7 @@
         
         
                 <div type="commentary">
-            <p>Notes here, </p></div>
+            <p/></div>
             
         
         

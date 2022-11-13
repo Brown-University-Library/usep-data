@@ -45,7 +45,7 @@
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="0" writtenLines="4">
+                        <layout columns="0" writtenLines="8">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -71,11 +71,12 @@
                   </summary>
                   
                   <origin>
-                     <date evidence="#unknown" notBefore="0001" notAfter="0001"/>
+                     <date evidence="#unknown" notBefore="0001" notAfter="0001">unknown</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <provenance type="transferred" subtype="purchased">
-                     <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
+                     <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName>
+                        for the <orgName role="recipient">University of Michigan</orgName>.</p>
                   </provenance>
                </history>
             </msDesc>
@@ -103,7 +104,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-         <change when="2022-10-04" who="Sophia Papandonatou">added metadata, transcription</change>
+         <change when="2022-10-04" who="Sophia Papandonatou">added metadata, transcription, translation, link</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
@@ -111,12 +112,25 @@
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/>Ἐνειπέα Σα
-               <lb n="2" break="no"/>κέρδωτος ∙ ναύ
-               <lb n="3" break="no"/>κληρον Κωρυκι
-               <lb n="4" break="no"/>ώτην ἐτῶν <num value="22" xml:lang="grc">κβʹ</num>. 
+               <lb n="1"/><persName><name key="Θολομαῖος Tholomaios">Θολο<g type="hedera"/>
+                  <lb n="2" break="no"/>μαῖος</name>
+               <lb n="3"/><persName><name key="Θαιμάλος Thaimalos" type="patronymic">Θαιμάλ
+                  <lb n="4" break="no"/>λου</name></persName></persName> <g type="hedera"/> ὁ <g type="hedera"/> καὶ
+               <lb n="5"/><persName><name key="Μάξιμος Maximus" type="cognomen">Μάξιμος</name>
+                  <lb n="6"/><name key="Πετραῖος Petraeus" type="cognomen">Πετραῖος</name></persName>,
+               <lb n="7"/>ἔζησεν
+               <lb n="8"/>ἔτη <g type="hedera"/> <num value="33" xml:lang="grc">λγʹ</num>.  
             </ab>
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+         </div>
+         <div type="translation">
+            <p>
+               Tholomaios, (son) of Thaimalos, and also Maximus Petraeus, who lived for 33 years.
+            </p>
+         </div>
+         <div type="commentary">
+            <p>Θαιμάλος as a variation of Θαιμάλλας?</p>
+         </div>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>
