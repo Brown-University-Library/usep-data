@@ -337,7 +337,6 @@
                                                   select="concat($acquisitionDate, ', ', $acquisitionDesc)"
                                                 />
                                             </xsl:when>
-                                            <xsl:otherwise>
                                                 <xsl:value-of select="$acquisitionDate"/>
                                             </xsl:otherwise>
                                         </xsl:choose>
@@ -350,7 +349,22 @@
 
 <!-- Print links to Pleiades when they appear in texts or metadata -->
                    
-                    <xsl:for-each select="../t:placeName">
+                    <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName">
+                        <xsl:choose>
+                            <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="@ref"/>
+                                    </xsl:attribute>
+                                    <xsl:apply-templates/>
+                                </a>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:apply-templates/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
+                    <xsl:for-each select="/t:TEI/t:text/t:body/t:div[child::t:placeName]">
                         <xsl:choose>
                             <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
                                 <a>
