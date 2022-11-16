@@ -161,6 +161,31 @@
                                         </xsl:for-each>
                                     </td>
                                 </tr>
+
+                                <!-- Add objection dimensions -->
+                                <tr>
+                                    <td class="label">Object Dimensions</td>
+                                    <td class="value">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:supportDesc/t:support/t:dimensions">
+                                            
+                                                <xsl:if test="t:width/text()">w: 
+                                                    <xsl:value-of select="t:width"/>
+                                                    <xsl:if test="t:height/text()"> x
+                                                    </xsl:if>
+                                                </xsl:if>
+                                                <xsl:if test="t:height/text()">h:
+                                                    <xsl:value-of select="t:height"/>
+                                                </xsl:if>
+                                                <xsl:if test="t:depth/text()"> x d:
+                                                    <xsl:value-of select="t:depth"/>
+                                                </xsl:if>
+                                                <xsl:if test="t:dim[@type='diameter']/text()">x diam.:
+                                                    <xsl:value-of select="t:dim[@type='diameter']"/>
+                                                </xsl:if>
+                                        </xsl:for-each>
+                                    </td>
+                                </tr>
+        
                                 <!-- check for existence of controlled and full text values here. -->
                                 <tr>
                                     <td class="label">Writing</td>
@@ -178,6 +203,26 @@
                                                 />
                                             </xsl:otherwise>
                                         </xsl:choose>
+                                    </td>
+                                </tr>
+                              
+                                <!-- Add letter dimensions -->
+                                <tr>
+                                    <td class="label">Letter Dimensions</td>
+                                    <td class="value">
+                                        <xsl:for-each select="t:dimensions">      
+                                    <xsl:if test="$writing/t:width/text()">w: 
+                                        <xsl:value-of select="t:width"/>
+                                        <xsl:if test="t:height/text()"> x 
+                                        </xsl:if>
+                                    </xsl:if>
+                                    <xsl:if test="t:height/text()">h: 
+                                        <xsl:value-of select="t:height"/>
+                                    </xsl:if>
+                                    <xsl:if test="t:depth/text()"> x d:
+                                        <xsl:value-of select="t:depth"/>
+                                    </xsl:if>   
+                                </xsl:for-each>
                                     </td>
                                 </tr>
                                 <tr>
@@ -303,6 +348,25 @@
                         </div>
                     </xsl:if>
 
+
+<!-- Print links to Pleiades when they appear in texts or metadata -->
+                   
+                    <xsl:for-each select="t:placeName">
+                        <xsl:choose>
+                            <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="@ref"/>
+                                    </xsl:attribute>
+                                    <xsl:apply-templates/>
+                                </a>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:apply-templates/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
+                
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
                         <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
@@ -436,8 +500,14 @@
                 -->
 
                 <xsl:choose>
-                    
-      <!-- monograph or unpublished type="m" type="u"-->
+
+     <!-- single-volume corpus -->
+                    <xsl:when test="id($myID)/self::t:bibl[@type = 'c']">
+                        <i><xsl:value-of
+                            select="id($myID)/self::t:bibl[@type = 'c']/t:abbr[@type = 'primary']"/></i>
+                    </xsl:when>
+                  
+         <!-- monograph or unpublished type="m" type="u"-->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']">
                         <i><xsl:value-of
                                 select="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']/t:title"/></i>
