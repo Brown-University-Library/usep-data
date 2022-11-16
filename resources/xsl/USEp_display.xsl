@@ -350,7 +350,7 @@
 
 <!-- Print links to Pleiades when they appear in texts or metadata -->
                    
-                    <xsl:for-each select="$placeOfOrigin">
+                    <xsl:for-each select="../t:placeName">
                         <xsl:choose>
                             <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
                                 <a>
