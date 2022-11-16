@@ -19,17 +19,75 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p>Inscription on sarcophagus</p>
+                  <msItem class="#funerary.epitaph">
+                     <p>epitaph of Nemaisas, Apollonarion, Hephaistas, and Nemesammon</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <physDesc><!--objectDesc, handDesc, decoDesc go here-->
+                  <objectDesc ana="#stele">
+                     <supportDesc ana="#stone.other">
+                        <support>
+                           <p>limestone stele</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>26.5</height>
+                              <width>35.5</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#broken">
+                           <p>support intact, but badly worn and defaced</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="3">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>relief depicting three reclining figures—two right figures (male? and female) partially concealed by left (male)—on a couch; two standing female figures to left of couch; seated jackals below couch, on either side, facing center; left of couch, small, youthful, standing male figure; couch and banquet scene</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <history><!--summary, origin, provenance go here-->
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or blank -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#archaeology" notBefore="0275" notAfter="0340">late third to
+                        early fourth century CE</date>
+                     <placeName ref="africa.egypt">Egypt, Terenouthis (Kom Abou Billou)</placeName>
+                  </origin>
+                  <provenance type="found" subtype="discovered">
+                     <p>Uncovered during excavations in modern Kom Abou Billou (the modern name of the necropolis of the ancient city of <placeName ref="https://pleiades.stoa.org/places/727244">Terenouthis</placeName>) conducted in February-April 1935 by the University of Michigan.</p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_20"/>
                   <biblScope unit="item">no. 553</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#KomAbouBillou_Hooper_1961"/>
+                  <biblScope unit="item">no. 136</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://quod.lib.umich.edu/k/kelsey/x-0000.02.1182/0000_02_1182p01.tif"
+                     >Kelsey Museum of Archaeology</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -45,6 +103,7 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2022-09-28" who="Sophia Papandonatou">added metadata, translation, commentary, edited transcription</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here--><text>
@@ -52,22 +111,25 @@
         <body>
         <div type="edition">
         <ab>
-           <lb n="1"/> <persName><name key="Νεμαισᾶς">Νεμαισᾶς</name></persName> ξʹ, <persName><name key="Ἀπολλωνάρις">Ἀπολλωνάριν</name></persName>  λεʹ, <persName><name key="Ἡφαιστᾶς">Ἡφαιστᾶς</name></persName>  <hi rend="supraline">μ</hi>, <persName><name key="Νεμεσάμμων">Νεμεσάμμω<supplied reason="lost">ν</supplied></name></persName>. κ Ἁθὺρ <hi rend="supraline">ια</hi>.
+           <lb n="1"/><persName><name key="Νεμαισᾶς Nemaisas">Νεμαισᾶς</name></persName> <g type="ἐτῶν"/> <num value="60" xml:lang="grc">ξʹ</num>. <persName><name key="Ἀπολλωνάριον Ἀπολλωνάριν Apollonarion">Ἀπολλωνάριν</name></persName> <g type="ἐτῶν"/> <num value="35" xml:lang="grc">λεʹ</num>. <persName><name key="Ἡφαιστᾶς Hephaistas">Ἡφαιστᾶς</name></persName>
+           <lb n="2"/><g type="ἐτῶν"/> <num value="40" xml:lang="grc"><hi rend="supraline">μ</hi>ʹ</num>. <persName><name key="Νεμεσάμμων Nemesammon">Νεμεσάμμω<supplied reason="lost">ν</supplied></name></persName> <gap reason="omitted" quantity="3" cert="low" unit="character"/>. 
+           <lb n="2"/><g type="Ἔτους"/> <num value="20" xml:lang="grc"><unclear>κ</unclear>ʹ</num>, Ἁθὺρ <num value="11" xml:lang="grc"><hi rend="supraline">ια</hi>ʹ</num>.
            
         </ab>
-        
-        
          </div>
         
         
                 <div type="translation">
-                    <p/>
+                    <p>Nemaisas, 60 years old. Apollonarion, 35 years old. Hephaistas, 40 years old.
+                       Nemesammon &lt;XX(?) years old&gt;. Year 20, Hathyr 11.</p>
                 </div>
             
         
         
                 <div type="commentary">
-                    <p/>
+                   <p>Line 1-2: L for ἐτῶν.</p>
+                   <p>Line 3: L for ἔτους.</p>
+                   <p>"Year 20, Hathyr 11" refers to the year of reign—although the emperor is not specified—followed by the day of the month. Hathyr corresponds roughly to November, after the calendar reform of 25 BCE.</p>
                 </div>
             
         

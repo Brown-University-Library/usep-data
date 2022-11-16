@@ -42,7 +42,6 @@
         2020-10-22 SJD commented out display of decoNote/@ana
         2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
         2021-07-29 EM added bibliography processing.
-        2021-12-15 SJD added several features from EFES, including Pleiades links, letter dimensions, and other dimension display formatting
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -162,7 +161,7 @@
                                         </xsl:for-each>
                                     </td>
                                 </tr>
-                                
+
                                 <!-- Add objection dimensions -->
                                 <tr>
                                     <td class="label">Object Dimensions</td>
@@ -186,7 +185,7 @@
                                         </xsl:for-each>
                                     </td>
                                 </tr>
-                                
+        
                                 <!-- check for existence of controlled and full text values here. -->
                                 <tr>
                                     <td class="label">Writing</td>
@@ -206,7 +205,7 @@
                                         </xsl:choose>
                                     </td>
                                 </tr>
-                                
+                              
                                 <!-- Add letter dimensions -->
                                 <tr>
                                     <td class="label">Letter Dimensions</td>
@@ -226,8 +225,6 @@
                                 </xsl:for-each>
                                     </td>
                                 </tr>
-                                
-                                
                                 <tr>
                                     <td class="label">Layout</td>
                                     <td class="value">
@@ -351,6 +348,7 @@
                         </div>
                     </xsl:if>
 
+
 <!-- Print links to Pleiades when they appear in texts or metadata -->
                    
                     <xsl:for-each select="t:placeName">
@@ -368,8 +366,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:for-each>
-                   
-                    
+                
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
                         <xsl:for-each select="/t:TEI/t:facsimile/t:surface">
@@ -503,15 +500,14 @@
                 -->
 
                 <xsl:choose>
-      
+
      <!-- single-volume corpus -->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'c']">
                         <i><xsl:value-of
                             select="id($myID)/self::t:bibl[@type = 'c']/t:abbr[@type = 'primary']"/></i>
                     </xsl:when>
                   
-                  
-      <!-- monograph or unpublished type="m" type="u"-->
+         <!-- monograph or unpublished type="m" type="u"-->
                     <xsl:when test="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']">
                         <i><xsl:value-of
                                 select="id($myID)/self::t:bibl[@type = 'm' or @type = 'u']/t:title"/></i>

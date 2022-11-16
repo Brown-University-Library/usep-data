@@ -11,12 +11,12 @@
             </titleStmt>
             <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
-                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
-                characters that are legal in XML names and viable URLs. 
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined
+                characters that are legal in XML names and viable URLs.
             -->
             <publicationStmt>
-               
-                <authority>Brown University</authority> 
+
+                <authority>Brown University</authority>
                 <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.1109">MI.AA.UM.KM.G.1109</idno>
             </publicationStmt>
             <!--  *************************************  <sourceDesc>  ********************************* -->
@@ -29,7 +29,7 @@
                               <repository> = collection within the institution if there is more than one. This element will not always be used.
                               <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
                                         component of the USEP id after the language code.
-                              
+
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
@@ -41,29 +41,28 @@
                         <repository>KM</repository>
                         <idno>1109</idno>
                     </msIdentifier>
-                    
+
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph for Onesicrates of Nicomedia from his townsman Zoilos</p>
+                            <p>epitaph for Onesicrates of Nicomedia from his townsman Zoilos</p>
                         </msItem>
                     </msContents>
-                    
+
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-                    
+
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
+
                         <objectDesc ana="#slab">
                             <supportDesc ana="#stone.marble">
                                 <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Fine-grained gray marble, rough edges  and chiseled back
-                                        with molding on left side.</p>
+                                    <p> gray marble slab</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>27.3</height>
                                         <width>31.0</width>
@@ -71,27 +70,27 @@
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.broken">
-                                    <p>Edges are extremely rough and worn, bottom appears broken
-                                        off; evidence of red pigment in letters remains</p>
+                                    <p>edges are extremely rough and worn, bottom appears broken
+                                        off; chiseled back with molding on left side; evidence of red pigment in letters remains</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="8">
-                                    <p>Great care taken to center text on stone</p>
+                                    <p>the lines of text are centered</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-                        
+
                         <!--  *************************************  <handDesc>  ********************************* -->
                       <!--     Contains information about types of writing and means of inscription.  -->
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> shallow lettering, very neatly cut. Traces
-                                of guidelines. Small serifs and distinct shading, distinct bars for
+                            <handNote ana="#inscribed"> shallow lettering, very neatly cut; traces
+                                of guidelines; small serifs and distinct shading, distinct bars for
                                 thetas, epsilons and etas, cursive mu, and lunate sigmas.</handNote>
                             <!-- <handNote> is a repeatable element -->
                         </handDesc>
-                        
+
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
@@ -99,29 +98,33 @@
                             </decoNote>
                         </decoDesc>
                     </physDesc>
-                    
+
                     <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
-                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+
+                    <!-- <origin> encodes the origin of inscription including place and date.
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
                     <history>
-                    
+
                         <summary>
                             <rs/>  <!-- content can be "fake" or blank -->
                         </summary>
-                        
+
                         <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0100" notAfter="0200">2nd century CE</date>
+                            <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
                             <placeName ref="europe.italy.misenum">Italy, Misenum</placeName><!-- subsequent locations if inscription was moved --></origin>
-                        
+                        <provenance type="transferred" subtype="purchased">
+                            <p>Purchased from the collection of <persName>Giuseppe De
+                                Criscio</persName> for the <orgName role="recipient">University
+                                    of Michigan</orgName>.</p>
+                        </provenance>
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>.
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
                 <listBibl>
@@ -130,34 +133,41 @@
                         <biblScope unit="item">876a</biblScope>
                     </bibl>
                     <bibl> </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1109/0000_00_1109p01.tif"
+                            >Kelsey Museum of Archaeology</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
 
         <!--  *************************************  <encodingDesc>  ********************************* -->
         <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
+
         <encodingDesc>
-                           
+
                 <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
                 </xi:include>
-            
+
         </encodingDesc>
 
         <profileDesc> <!-- not used --> </profileDesc>
-        
-        
+
+
         <!--  *************************************  <revisionDesc>  ********************************* -->
     	<!-- Record all changes here -->
-        
+
         <revisionDesc>
             <change when="2014-10-01" who="Samantha Lash">Initial Encoding</change>
             <change when="2015-08-24" who="Scott J. DiGiulio">Cleaned metadata for conformity, updated control vocabularies, added image, proofed transcription</change>
         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
             <change when="2022-07-10" who="Sophia Papandonatou">corrected image name</change>
+            <change when="2022-10-12" who="Sophia Papandonatou">updated metadata to current
+                conventions, added museum link, provenance, translation</change>
 </revisionDesc>
 
     </teiHeader>
@@ -173,13 +183,13 @@
     </facsimile>
 
     <text>
-        
+
         <body>
         <div type="edition"><!-- transcription goes here -->
                 <ab>
                     <lb n="1"/>Θεοῖς <expan><abbr>Καταχθ<hi rend="small">ον</hi></abbr><ex>ίοις</ex></expan>
                     <lb n="2"/><persName><name type="cognomen" key="Onesicrates">Ὀνησικράτου</name>
-                    <lb n="3"/><name type="ethnonym" key="Nicomedes">Νεικομηδέος</name></persName>,
+                    <lb n="3"/><name type="ethnonym" key="Nicomedes">Νεικομηδέος</name></persName>.
                     <lb n="4"/><persName><name type="cognomen" key="Zoilus">Ζωίλος</name></persName> συνπο
                     <lb n="5" break="no"/>λείτης ἐπόησε
                     <lb n="6"/>μνήμης ἕνεκα
@@ -187,28 +197,34 @@
                     <lb n="8"/>ἔτη <num value="60">Ξ</num>. Χαίρετε.
                 </ab>
             </div>
-        
-        
+
+
                 <div type="translation">
-                    <p/>
+                    <p> To the gods of the underworld of Onesicrates of Nicomedia. Zoilos, (his) fellow
+                    townsman made (this) as a memorial for his friend, (who) lived for 60 years.
+                    Farewell.</p>
                 </div>
-            
-        
-        
+
+
+
                 <div type="commentary"><!-- notes go here -->
             <p>Line 1: small and raised -ον- mark the only abbreviation which expands to complete
-                    the plural masculine dative adjective of the common epitaph formula. Line 2/3:
-                    ‘Ονησικράτου Νεικομηdέος is attested also in the epitaph in his son Proklos, IG
-                    14.876b (=MI.AA.UM.KM.G.1108), also from Misenum and the De Criscio collection.; Νεικομηδεος for
-                    Νεικομηδεως. Line 4: Ζωίλος is a fairly common Greek name , presumably his
-                    townsman of Nicomedia in Asia minor. Line 7: φίλου is marked by a dot over the
-                    upsilon although no other accents or diacritics are indiciated. </p></div>
-            
-        
-        
+                    the plural masculine dative adjective of the common epitaph formula. </p>
+                <p>Lines 2-3: ‘Ονησικράτου Νεικομηdέος is attested also in the epitaph of his son
+                    Proklos, IG 14.876b (=MI.AA.UM.KM.G.1108), also from Misenum and the De Criscio
+                    collection.; Νεικομηδεος for Νεικομηδεως. </p>
+                <p>Line 4: Ζωίλος is a fairly common Greek name, presumably his townsman of
+                    Nicomedia in Asia minor. </p>
+                <p>Line 7: φίλου is marked by a dot over the upsilon although no other accents or
+                    diacritics are indicated. </p>
+                    <p>Fine-grained gray marble.</p>
+                </div>
+
+
+
 <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
         </body>
-        
-    
+
+
     </text>
 </TEI>
