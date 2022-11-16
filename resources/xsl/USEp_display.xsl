@@ -299,7 +299,7 @@
                                 <tr>
                                     <td class="label">Place of Origin</td>
                                     <td class="value">
-                                        <xsl:for-each select="$placeOfOrigin">
+                                       <!-- <xsl:for-each select="$placeOfOrigin">
                                             <xsl:choose>
                                                <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
                                                     <a>
@@ -315,7 +315,8 @@
                                                     <xsl:value-of select="$placeOfOrigin"/>
                                                 </xsl:otherwise>
                                             </xsl:choose>
-                                        </xsl:for-each>
+                                        </xsl:for-each> -->
+                                                                                <xsl:value-of select="$placeOfOrigin"/>
                                     </td>
                                 </tr>
                                 <tr>
