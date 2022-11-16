@@ -303,6 +303,9 @@
                                             <xsl:choose>
                                                <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
                                                     <a>
+                                                        <xsl:text>
+                                                            <xsl:value-of select="$placeOfOrigin"
+                                                        </xsl:text>
                                                          <xsl:attribute name="href">
                                                               <xsl:value-of select="@ref"/>
                                                           </xsl:attribute>
