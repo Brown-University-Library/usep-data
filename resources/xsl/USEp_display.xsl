@@ -102,7 +102,7 @@
                         <div class="metadata">
                             <h3>Attributes</h3>
                             <!-- variables -->
-                            <xsl:variable name="placeOfOrigin"
+                            <xsl:variable name="$placeOfOrigin"
                                 select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
                             <xsl:variable name="dateOfOrigin" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:date"/>                               
                             
