@@ -166,7 +166,7 @@
                                 <tr>
                                     <td class="label">Object Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions">
                                             
                                                 <xsl:if test="t:width/text()">w: 
                                                     <xsl:value-of select="t:width"/>
