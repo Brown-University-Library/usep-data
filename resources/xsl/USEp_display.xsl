@@ -166,7 +166,7 @@
                                 <tr>
                                     <td class="label">Object Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:supportDesc/t:support/t:dimensions">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions">
                                             
                                                 <xsl:if test="t:width/text()">w: 
                                                     <xsl:value-of select="t:width"/>
@@ -194,7 +194,7 @@
                                             <xsl:when
                                                 test="string-length($writing/@ana) != 0 and normalize-space($writing)">
                                                 <xsl:value-of
-                                                  select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing)"
+                                                  select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing/t:p)"
                                                 />
                                             </xsl:when>
                                             <xsl:otherwise>
@@ -210,7 +210,7 @@
                                 <tr>
                                     <td class="label">Letter Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="t:dimensions">      
+                                        <xsl:for-each select="$writing/t:dimensions">      
                                     <xsl:if test="$writing/t:width/text()">w: 
                                         <xsl:value-of select="t:width"/>
                                         <xsl:if test="t:height/text()"> x 
