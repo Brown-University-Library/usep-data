@@ -105,7 +105,8 @@
                             <xsl:variable name="placeOfOrigin"
                                 select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
                             <xsl:variable name="dateOfOrigin" select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:date"/>                               
-                            
+                            <xsl:variable name="placeOfOrigin"
+                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:origin/t:placeName"/>
                             <!-- <xsl:variable name="placeOfProvenance">
                                 <xsl:sequence
                                     select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:history/t:provenance/t:p"
@@ -165,7 +166,7 @@
                                 <tr>
                                     <td class="label">Object Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions">
                                             
                                                 <xsl:if test="t:width/text()">w: 
                                                     <xsl:value-of select="t:width"/>
@@ -350,7 +351,7 @@
 
 <!-- Print links to Pleiades when they appear in texts or metadata -->
                    
-                    <xsl:for-each select="$placeOfOrigin">
+                    <xsl:for-each select="t:placeName">
                         <xsl:choose>
                             <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
                                 <a>
