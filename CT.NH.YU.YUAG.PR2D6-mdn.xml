@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+
+            <titleStmt>
+                <title>CT.NH.YU.YUAG.PR2D6-mdn</title>
+                <!-- Is this the correct title? Is there more informaiton about the archive that I should include? -->
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="CT.NH.YU.YUAG.PR2D6-mdn">CT.NH.YU.YUAG.PR2D6-mdn</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>CT</region>
+                        <settlement>NH</settlement>
+                        <institution>YU</institution>
+                        <repository>YUAG</repository>
+                        <idno>PR2D6-mdn</idno>
+                        <altIdentifier>
+                            <idno>SEG 7:540</idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno>PH320781</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#dedicatory #label">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Short graffito recording the name of Menophilos son of Seleucos</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#arch_element">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p>limestone masonry block</p>
+
+                                    <dimensions type="surface" unit="cm">
+                                        <height>15</height>
+                                        <width>60</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>discovered partially damaged; present condition unknown</p>
+                                </condition>
+                            </supportDesc>
+
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="2">
+                                    <p>The number of lines is reconstructed based on the facsimile
+                                    </p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#etched">
+                                     <dimensions unit="cm" atLeast="6.5" atMost="6.5">
+                                        <height>6.5</height>
+                                    </dimensions>
+                                </handNote>
+                        </handDesc>
+
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or blank -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#palaeography" notBefore="-0150" notAfter="0165">mid-second century BCE-second century CE</date>                    
+                            <placeName ref="https://pleiades.stoa.org/places/980015057">Syria, Dura-Europos, Palmyrene Gate</placeName>
+                            <p>south wall of the passage, outside the innermost entrance to the city</p>
+                        </origin>
+                        <provenance type="found">
+                            <p>Excavated and recorded by <orgName>Yale-French Excavations at Dura-Europos</orgName> in 1928-1929.</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Dura-Europos"/>
+                        <biblScope unit="page">00</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2022-08-11" who="James Flynn">Initial Encoding</change>
+            <change when="2022-11-23" who="Ilaria Bucci">Edited; general revision</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc>Photograph (1929) of the tracings D1, D2, D6, D98-99 (YUAG)</desc>
+            <graphic url="https://library.artstor.org/#/asset/SS7730479_7730479_10869597"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="https://commons.wikimedia.org/wiki/File:Palmyrene_Gate_D1,2,6,98-99.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/><persName><name key="Μηνόφιλος Menophilos">Μηνόφιλ<supplied reason="lost">ος</supplied></name></persName>
+                <lb n="2"/><persName><name type="patronymic" key="Σέλευκος Seleucus"></name>Σελεύκου</persName>.
+        </ab></div>
+
+
+            <div type="translation">
+            <p>Menophilos son of Seleucos.</p></div>
+
+            <div type="commentary">
+                <p>Both Menophilos and Seleucos are Greek names attested at Dura. The paleography (large and square hammer-cut letters) seems to suggests an earlier (possibly pre-Roman) date.</p>
+                <p>Bibliography: Dura P.R. 2, p. 116; SEG 7:540; PH320781, https://inscriptions.packhum.org/text/320781?hs=18-31</p></div>
+
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
