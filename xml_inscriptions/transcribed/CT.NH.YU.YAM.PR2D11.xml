@@ -15,12 +15,12 @@ changes: correct handling of provenance information
         <fileDesc>
 
             <titleStmt>
-                <title>CT.NH.YU.YUAG.PR2D1-mdn</title>
+                <title>CT.NH.YU.YAM.PR2D11</title>
                 <!-- Is this the correct title? Is there more informaiton about the archive that I should include? -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="CT.NH.YU.YUAG.PR2D1-mdn">CT.NH.YU.YUAG.G.PR2D1-mdn</idno>
+                <idno type="USEpigraphy" xml:id="CT.NH.YU.YAM.PR2D11">CT.NH.YU.YAM.PR2D11</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -30,13 +30,13 @@ changes: correct handling of provenance information
                         <region>CT</region>
                         <settlement>NH</settlement>
                         <institution>YU</institution>
-                        <repository>YUAG</repository>
-                        <idno>PR2D1-mdn</idno>
+                        <repository>YAM</repository>
+                        <idno>PR2D11</idno>
                         <altIdentifier>
-                            <idno>SEG 7:535</idno>
+                            <idno>SEG 7:543</idno>
                         </altIdentifier>
                         <altIdentifier>
-                            <idno>PH320776</idno>
+                            <idno>PH320784</idno>
                         </altIdentifier>
                     </msIdentifier>
 
@@ -44,9 +44,9 @@ changes: correct handling of provenance information
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+                        <msItem class="#dedicatory #label">
                             <!-- short summary of the content of an inscription -->
-                            <p>Remembrance graffito of Naobiaribolos.</p>
+                            <p>Short graffito recording the name of Heraclides.</p>
                         </msItem>
                     </msContents>
 
@@ -59,21 +59,20 @@ changes: correct handling of provenance information
                             <supportDesc ana="#stone.other">
                                 <support>
                                     <p>limestone masonry block</p>
-                                    
                                     <dimensions type="surface" unit="cm">
-                                        <height>6</height>
-                                        <width>36</width>
+                                        <height>11</height>
+                                        <width/>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.intact">
-                                    <p>discovered intact; present condition unknown</p>
+                                <condition ana="#complete.broken #condition.unknown">
+                                    <p>discovered damaged; present condition unknown</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="2">
-                                    <p>Two lines are visible in the facsimile, but the reconstruction of the original layout is uncertain</p>
+                                <layout columns="0" writtenLines="1">
+                                    <p>The reconstruction of the original extension and layout of the text is doubtful. The last part of the name was inscribed over by the later D12</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -82,8 +81,8 @@ changes: correct handling of provenance information
 
                         <handDesc hands="1">
                             <handNote ana="#etched">
-                                <dimensions unit="cm" atLeast="2" atMost="2">
-                                    <height>2</height>
+                                <dimensions unit="cm" atLeast="11" atMost="11">
+                                    <height>11</height>
                                 </dimensions>
                             </handNote>
                         </handDesc>
@@ -105,11 +104,11 @@ changes: correct handling of provenance information
                         </summary>
 
                         <origin>
-                            <date evidence="archaeology" notBefore="0100" notAfter="0256">second-third century CE</date>
+                            <date evidence="#archaeology" notBefore="-0150" notAfter="0165">mid-second century BCE-second century CE</date>
                             <placeName ref="https://pleiades.stoa.org/places/980015057">Syria, Dura-Europos, Palmyrene Gate</placeName>
-                            <p>south wall of the passage, outside the innermost entrance to the city</p>
+                            <p>south wall of the passage, flanking the innermost entrance to the city</p>
                         </origin>
-                           <provenance type="found">
+                        <provenance type="found">
                             <p>Excavated and recorded by <orgName>Yale-French Excavations at Dura-Europos</orgName> in 1928-1929.</p>
                         </provenance>
 
@@ -118,8 +117,8 @@ changes: correct handling of provenance information
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target=""/>
-                        <biblScope unit="page"></biblScope>
+                        <ptr type="rest-of-bibl" target="#Dura-Europos"/>
+                        <biblScope unit="page">00</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -145,7 +144,7 @@ changes: correct handling of provenance information
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2022-06-30" who="James Flynn">Initial Encoding</change>
+            <change when="2022-08-11" who="James Flynn">Initial Encoding</change>
             <change when="2022-11-23" who="Ilaria Bucci">Edited; general revision</change>
         </revisionDesc>
 
@@ -156,12 +155,12 @@ changes: correct handling of provenance information
 
     <facsimile>
         <surface>
-            <desc>Photograph (1929) of the tracings D1, D2, D6, D98-99 (YUAG)</desc>
-            <graphic url="https://library.artstor.org/#/asset/SS7730479_7730479_10869597"/>
+            <desc>Photograph (1929) of the tracings D9-D12, D123-D124 (YAM)</desc>
+            <graphic url="https://library.artstor.org/#/asset/SS7730479_7730479_10869614"/>
         </surface>
         <surface>
             <desc/>
-            <graphic url="https://commons.wikimedia.org/wiki/File:Palmyrene_Gate_D1,2,6,98-99.jpg"/>
+            <graphic url="https://commons.wikimedia.org/wiki/File:Palmyrene_Gate_D9-12,_123-4.jpg"/>
         </surface>
     </facsimile>
 
@@ -169,25 +168,21 @@ changes: correct handling of provenance information
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>μνησθῇ 
-                <lb n="2"/><persName><name key="Ναοβιαρίβωλος Naobiaribolos">Ναοβιαρίβωλος</name></persName>.
-            </ab>
+                <lb n="1"/><persName><name key="Ἡρακλείδης Heraclides">Ἡρακ<unclear reason="faded">λείδ</unclear><supplied reason="lost">ης</supplied></name></persName>.
+             </ab>
             </div>
 
 
             <div type="translation">
-            <p>May Naobiaribolos be remembered.</p></div>
+            <p>Heraclides.</p></div>
 
             <div type="commentary">
-                <p>The theophoric Naobiaribolos is based on the name of the Palmyrene god Yarḥibôl.</p>
-                <p>Bibliography: Dura P.R. 2, D1, 115; SEG 7:535; PH320776, https://inscriptions.packhum.org/text/320776?hs=27-42
-                </p>
+                <p>The edition is based on both the facsimile (ΗΡΑΚ) and the edition princeps. The paleography (large and square hammer-cut letters) seems to suggests an earlier (possibly pre-Roman) date.</p>
+                <p>Bibliography: Dura P.R. 2, p. 117; SEG 7:543; PH320784, https://inscriptions.packhum.org/text/320784?hs=18-34</p>
             </div>
 
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> 
-            <p/>
-            </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

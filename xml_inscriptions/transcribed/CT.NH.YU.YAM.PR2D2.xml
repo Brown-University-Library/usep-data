@@ -15,12 +15,12 @@ changes: correct handling of provenance information
         <fileDesc>
 
             <titleStmt>
-                <title>CT.NH.YU.YUAG.PR2D6-mdn</title>
+                <title>CT.NH.YU.YAM.PR2D2</title>
                 <!-- Is this the correct title? Is there more informaiton about the archive that I should include? -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="CT.NH.YU.YUAG.PR2D6-mdn">CT.NH.YU.YUAG.PR2D6-mdn</idno>
+                <idno type="USEpigraphy" xml:id="CT.NH.YU.YAM.PR2D2">CT.NH.YU.YAM.PR2D2</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -30,13 +30,13 @@ changes: correct handling of provenance information
                         <region>CT</region>
                         <settlement>NH</settlement>
                         <institution>YU</institution>
-                        <repository>YUAG</repository>
-                        <idno>PR2D6-mdn</idno>
+                        <repository>YAM</repository>
+                        <idno>PR2D2</idno>
                         <altIdentifier>
-                            <idno>SEG 7:540</idno>
+                            <idno>SEG 7:536</idno>
                         </altIdentifier>
                         <altIdentifier>
-                            <idno>PH320781</idno>
+                            <idno>PH320777</idno>
                         </altIdentifier>
                     </msIdentifier>
 
@@ -44,9 +44,9 @@ changes: correct handling of provenance information
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory #label">
+                        <msItem class="#text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p>Short graffito recording the name of Menophilos son of Seleucos</p>
+                            <p>Short graffito of uncertain reading.</p>
                         </msItem>
                     </msContents>
 
@@ -54,28 +54,27 @@ changes: correct handling of provenance information
                     <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
+                    
                         <objectDesc ana="#arch_element">
                             <supportDesc ana="#stone.other">
                                 <support>
                                     <p>limestone masonry block</p>
-
+                                    
                                     <dimensions type="surface" unit="cm">
-                                        <height>15</height>
-                                        <width>60</width>
+                                        <height></height>
+                                        <width>30</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.broken">
-                                    <p>discovered partially damaged; present condition unknown</p>
+                                    <p>the text is only partly legible; present condition
+                                        unknown</p>
                                 </condition>
                             </supportDesc>
-
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="0" writtenLines="2">
-                                    <p>The number of lines is reconstructed based on the facsimile
-                                    </p>
+                                    <p>The beginning of a second line featuring "αχ" (perhaps the beginning of the same word) is visible in the facsimile, but the reconstruction of the original layout is uncertain</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -83,14 +82,13 @@ changes: correct handling of provenance information
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#etched">
-                                     <dimensions unit="cm" atLeast="6.5" atMost="6.5">
-                                        <height>6.5</height>
-                                    </dimensions>
-                                </handNote>
+                            <handNote ana="#etched">the letters are deeply cut
+                              <dimensions unit="cm" atLeast="4.5" atMost="4.5">
+                                <height>4.5</height>
+                              </dimensions>
+                            </handNote>
                         </handDesc>
-
-
+                        
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
@@ -108,7 +106,8 @@ changes: correct handling of provenance information
                         </summary>
 
                         <origin>
-                            <date evidence="#palaeography" notBefore="-0150" notAfter="0165">mid-second century BCE-second century CE</date>                    
+                            <date evidence="#archaeology" notBefore="0100" notAfter="0256"
+                                >second-third century CE</date>
                             <placeName ref="https://pleiades.stoa.org/places/980015057">Syria, Dura-Europos, Palmyrene Gate</placeName>
                             <p>south wall of the passage, outside the innermost entrance to the city</p>
                         </origin>
@@ -121,7 +120,7 @@ changes: correct handling of provenance information
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Dura-Europos"/>
+                        <ptr type="rest-of-bibl" target="X"/>
                         <biblScope unit="page">00</biblScope>
                     </bibl>
                 </listBibl>
@@ -148,7 +147,7 @@ changes: correct handling of provenance information
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2022-08-11" who="James Flynn">Initial Encoding</change>
+            <change when="2022-06-30" who="James Flynn">Initial Encoding</change>
             <change when="2022-11-23" who="Ilaria Bucci">Edited; general revision</change>
         </revisionDesc>
 
@@ -159,7 +158,7 @@ changes: correct handling of provenance information
 
     <facsimile>
         <surface>
-            <desc>Photograph (1929) of the tracings D1, D2, D6, D98-99 (YUAG)</desc>
+            <desc>Photograph (1929) of the tracings D1, D2, D6, D98-99 (YAM)</desc>
             <graphic url="https://library.artstor.org/#/asset/SS7730479_7730479_10869597"/>
         </surface>
         <surface>
@@ -167,22 +166,25 @@ changes: correct handling of provenance information
             <graphic url="https://commons.wikimedia.org/wiki/File:Palmyrene_Gate_D1,2,6,98-99.jpg"/>
         </surface>
     </facsimile>
+    
 
     <text>
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><persName><name key="Μηνόφιλος Menophilos">Μηνόφιλ<supplied reason="lost">ος</supplied></name></persName>
-                <lb n="2"/><persName><name type="patronymic" key="Σέλευκος Seleucus"></name>Σελεύκου</persName>.
-        </ab></div>
+                <lb n="1"/><unclear>A</unclear>χατα<unclear>κιο</unclear>.
+                <lb n="2"/>Aχ<gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+            </div>
 
 
             <div type="translation">
-            <p>Menophilos son of Seleucos.</p></div>
+            <p/></div>
 
             <div type="commentary">
-                <p>Both Menophilos and Seleucos are Greek names attested at Dura. The paleography (large and square hammer-cut letters) seems to suggests an earlier (possibly pre-Roman) date.</p>
-                <p>Bibliography: Dura P.R. 2, p. 116; SEG 7:540; PH320781, https://inscriptions.packhum.org/text/320781?hs=18-31</p></div>
+                <p>The beginning of a second line (Aχ) is visible in the facsimile but is not included in the editio princeps nor in the SEG</p>
+                <p>Bibliography: Dura P.R. 2, p. 115; SEG 7:536; PH320777, https://inscriptions.packhum.org/text/320777?hs=18-31</p>
+            </div>
 
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
