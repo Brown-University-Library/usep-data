@@ -3,15 +3,15 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MA.Bos.MFA.X.01.18</title>
+            <title>MA.Bos.MFA.X.76.47</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.X.01.18">MA.Bos.MFA.X.01.18</idno>
+            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.X.76.47">MA.Bos.MFA.X.76.47</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -20,10 +20,10 @@
                   <settlement>Bos</settlement>
                   <institution>MFA</institution>
                   <repository/>
-                  <idno>01.18</idno>
+                  <idno>76.47</idno>
                </msIdentifier>
                <msContents>
-                  <textLang mainLang="und"/>
+                  <textLang mainLang="und" otherLangs="grc"/>
                   <msItem class="#text_other">
                      <p>nonsense inscription</p>
                   </msItem>
@@ -32,19 +32,20 @@
                   <objectDesc ana="#instrumentum.vase">
                      <supportDesc ana="#clay">
                         <support>
-                           <p>neck amphora</p>
+                           <p>ceramic kylix</p>
                            <dimensions type="surface" unit="cm">
                               <height/>
+                              <dim type="diameter">8.7</dim>
                               <width/>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.intact">
+                        <condition ana="#complete.broken">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="0" writtenLines="1">
+                        <layout columns="0" writtenLines="3">
                            <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                            <p/>
                         </layout>
@@ -55,8 +56,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote>
-                        <p>A: warrior with phiale departing, woman with phiale and oinochoe, bird;
-                           B: youth</p>
+                        <p>interior: reclining youth with skyphos; a=b: a draped man and two youths, one with lyra</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -70,32 +70,42 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="-0475" notAfter="-0425">second quarter of the fifth century BCE</date>
-                     <placeName ref="unknown">unknown</placeName>
+                     <date evidence="unspecified" notBefore="-0450" notAfter="-0440"> ca. 450–440 century BCE</date>
+                     <placeName ref="https://pleiades.stoa.org/places/579885">Greece, Attica, Athens</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+                  
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased from <persName role="seller">Alessandro Castellani</persName> by the <orgName role="buyer collector">Thomas G. Appleton</orgName>, allegedly from <placeName ref="https://pleiades.stoa.org/places/432754">Capua</placeName>.</p>
+                  </provenance>
+                  
+                  
+                  <provenance type="transferred" subtype="given">
+                     <p>Gifted by <persName role="donor">Thomas G. Appleton</persName> by the <orgName role="recipient">Museum of Fine Arts</orgName> in <date when="1876">1876</date>.</p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
-                  <biblScope unit="page">288-289</biblScope>
+                  <biblScope unit="page">294-295</biblScope>
                   
                </bibl>
                <bibl>
-                  <ref type="external"
-                     target="https://www.beazley.ox.ac.uk/record/22C55065-08B2-4886-AE9E-457814719DE4"
-                     >BAD 207784</ref>
+                  <ref type="external" target="https://www.beazley.ox.ac.uk/record/352FBA73-C02E-4FAD-818F-4DD136AA62C2">BAD 207259</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2844"
-                     >AVI 2697</ref>
+                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2755">AVI 2608</ref>
                </bibl>
-               
+               <bibl>
+                  <ref type="external" target="https://collections.mfa.org/objects/153666">Museum of
+                     Fine Arts, Boston (Website)</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -103,29 +113,54 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2022-11-14" who="Sophia Papandonatou">initial encoding</change>
+         <change when="2023-01-18" who="Sophia Papandonatou">initial encoding</change>
+         
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
    <facsimile>
+   <surface>
+      <desc/>
+      <graphic url="MA.Bos.MFA.X.76.47int-det.jpg"/>
+ 
+      </surface>
+      
       <surface>
          <desc/>
-         <graphic url="NoImage.jpg"/>
+         <graphic url="MA.Bos.MFA.X.76.47int.jpg"/>
+         
       </surface>
       
    </facsimile>
-      
-      
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <div type="textpart" subtype="scene" n="interior">
+               <ab>
+                  <lb n="1"/>ΣΥΥΣΓ
+                  
+                  
+               </ab>
+            </div>
+            <div type="textpart" subtype="scene" n="a">
+               <ab>
+                  <lb n="2"/>ΓΥΙΓΥ<unclear>L</unclear>ΥL<unclear>Ι</unclear>
+                  
+               </ab>
+            </div>
+            <div type="textpart" subtype="scene" n="b">
+               <ab>
+                  <lb n="3"/>ΓΥΙΓΓΙ<gap reason="lost" quantity="1" unit="character"/>ΣΓΥΓΓ
+                  
+               </ab>
+            </div>
+            
          </div>
          <div type="commentary">
-            <p>Attributed to the Ethiop painter.</p>
+            
+            <p>Attributed to the Villa Giulia Painter.</p>
          </div>
-         <div type="bibliography"> 
-            <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
        </body>
    </text>
