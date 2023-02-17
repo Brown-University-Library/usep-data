@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.2003.5.1</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -60,8 +71,7 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#formulae #palaeography" notBefore="0100" notAfter="0200"
-                        >second century CE</date>
+                     <date evidence="#formulae #palaeography" notBefore="0100" notAfter="0200">second century CE</date>
                      <placeName ref="europe.italy.rome">Via Ruggero, Rome, Italy</placeName>
                   </origin>
                   <provenance type="transferred">
@@ -70,7 +80,8 @@
                   <provenance type="transferred" subtype="given">
                      <p>Given to the <orgName role="recipient">Kelsey Museum</orgName> by <persName role="donor">William H. Peck</persName> in <date when="2003">2003</date> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -79,14 +90,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148644"
-                     >EDR148644</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148644">EDR148644</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -105,7 +116,8 @@
          <change when="2021-06-14" who="Sophia Papandonatou">added image</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
          <change when="2021-08-05" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -114,60 +126,63 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <supplied reason="lost"><expan><abbr>M</abbr><ex>anibus</ex></expan>.</supplied>
-                <lb n="2"/> 
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <supplied reason="lost">
+                  <expan>
+                     <abbr>M</abbr>
+                     <ex>anibus</ex>
+                  </expan>.</supplied>
+               <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Lucius">
                      <expan>
-                        <abbr>L</abbr><ex>ucio</ex>
+                        <abbr>L</abbr>
+                        <ex>ucio</ex>
                      </expan>
-                  </name> 
-                  <name type="gentilicium" key="Sutorius">Sutori<unclear>o</unclear></name>
-               </persName> 
+                  </name>
+                  <name type="gentilicium" key="Sutorius">Sutori<unclear>o</unclear>
+                  </name>
+               </persName>
                <gap reason="lost" quantity="6" unit="character"/>
-                <lb n="3" break="no"/> ti coniugi <unclear>b</unclear><gap reason="lost" extent="unknown" unit="character"/> 
+               <lb n="3" break="no"/> ti coniugi <unclear>b</unclear>
+               <gap reason="lost" extent="unknown" unit="character"/>
                <supplied reason="lost">be</supplied>
-                <lb break="no" n="4"/>nedicto <gap reason="lost" quantity="7" unit="character"/>
-                <lb n="5"/> vixit <gap reason="lost" quantity="9" unit="character"/>
-                <lb n="6"/> 
+               <lb break="no" n="4"/>nedicto <gap reason="lost" quantity="7" unit="character"/>
+               <lb n="5"/> vixit <gap reason="lost" quantity="9" unit="character"/>
+               <lb n="6"/> 
                XVI<gap reason="lost" quantity="15" unit="character"/>
-                <lb n="7"/> 
-               <unclear>P</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="7"/>
+               <unclear>P</unclear>
+               <gap reason="illegible" quantity="1" unit="character"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
             </ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                   <p>To the Divine [Spirits.] To Lucius Sutorius [- (her) -] husband, [b]lessed [---] he lived [X ---]</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 3: b[ene....] (Tuck).</p>
-                   <p>Line 2-3: The deceased's cognomen is missing; the "ti" in line 3 may be its ending.</p>
-                   <p>Line 4: ne dicto (Tuck).</p>
-                   <p>Line 6: It is unclear whether “XVI” refers to the number of months or of days he lived. The numberal is likely incomplete. It is at least sixteen.</p>
-                   <p>line 7: H(ic) [S(itus) E(st)] (Tuck).</p>  
-                </div>
-            
-        
-        
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine [Spirits.] To Lucius Sutorius [- (her) -] husband, [b]lessed [---] he lived [X ---]</p>
+         </div>
+         <div type="commentary">
+            <p>Line 3: b[ene....] (Tuck).</p>
+            <p>Line 2-3: The deceased's cognomen is missing; the "ti" in line 3 may be its ending.</p>
+            <p>Line 4: ne dicto (Tuck).</p>
+            <p>Line 6: It is unclear whether “XVI” refers to the number of months or of days he lived. The numberal is likely incomplete. It is at least sixteen.</p>
+            <p>line 7: H(ic) [S(itus) E(st)] (Tuck).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

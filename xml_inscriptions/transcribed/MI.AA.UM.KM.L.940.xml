@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.940</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Iunius Serapion</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -67,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased in <date when="1898">1898</date> by <persName role="buyer">Walter Dennison</persName> from <persName role="seller">Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName>, funded by <persName role="funder">Henry P. Glover</persName>; the inscription arrived at the university in <date when="1899">1899</date> (D'Arms).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -83,16 +94,19 @@
                   <biblScope unit="item">107, no. 158</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010692?">EDH nr. HD0110692</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010692?">EDH nr. HD0110692</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075775">EDR075775</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075775">EDR075775</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -105,7 +119,9 @@
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2021-02-01" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -114,67 +130,79 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
                <expan>
-                  <abbr><unclear>M</unclear></abbr><ex>anibus</ex></expan>.
-                    <lb n="2"/> 
+                  <abbr>
+                     <unclear>M</unclear>
+                  </abbr>
+                  <ex>anibus</ex>
+               </expan>.
+                    <lb n="2"/>
                <persName>
                   <name type="gentilicium" key="Iunius">
-                     <hi rend="tall">I</hi>unio</name> 
-                  <name type="cognomen" key="Serapio">Serapio<hi rend="ligature">ni</hi></name></persName>,
+                     <hi rend="tall">I</hi>unio</name>
+                  <name type="cognomen" key="Serapio">Serapio<hi rend="ligature">ni</hi>
+                  </name>
+               </persName>,
                     <lb n="3"/> qui <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> 
+                  <abbr>vix</abbr>
+                  <ex>it</ex>
+               </expan>
                <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
                <num xml:lang="lat" value="4">IIII</num>,
-                    <lb n="4"/> 
+                    <lb n="4"/>
                <expan>
-                  <abbr><hi rend="supraline">m</hi></abbr><ex>ensibus</ex>
-               </expan> 
+                  <abbr>
+                     <hi rend="supraline">m</hi>
+                  </abbr>
+                  <ex>ensibus</ex>
+               </expan>
                <num xml:lang="lat" value="8">VIII</num>, <persName>
                   <name type="gentilicium" key="Iunius">
-                     <hi rend="tall">I</hi>unius</name> 
+                     <hi rend="tall">I</hi>unius</name>
                   <name type="cognomen" key="Severus">Seve
                     <lb n="5" break="no"/> rus</name>
                </persName> alumno
                     <lb n="6"/> dulcissimo <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
+                  <abbr>b</abbr>
+                  <ex>ene</ex>
+               </expan>
                <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> 
+                  <abbr>m</abbr>
+                  <ex>erenti</ex>
+               </expan>
                <expan>
-                  <abbr>f</abbr><ex>ecit</ex></expan>.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Iunius Serapio, who lived for four years (and)
+                  <abbr>f</abbr>
+                  <ex>ecit</ex>
+               </expan>.</ab>
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. To Iunius Serapio, who lived for four years (and)
                eight months. Iunius Severus made (this) for (his) dearest, well-deserving foster
                child.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

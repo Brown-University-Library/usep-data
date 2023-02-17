@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.2987</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Fortunata, a freedwoman</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -68,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,14 +92,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR073144"
-                     >EDR073144</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR073144">EDR073144</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -98,11 +109,12 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-07" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and commentary</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
          <change when="2021-08-05" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,154 +123,215 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <gap reason="lost" extent="unknown" unit="character"/>
                <persName>
                   <name type="praenomen" key="Gaius">
                      <expan>
-                        <abbr>C</abbr><ex>aii</ex>
+                        <abbr>C</abbr>
+                        <ex>aii</ex>
                      </expan>
-                  </name> 
+                  </name>
                   <expan>
-                     <abbr>lib</abbr><ex>erta</ex>
-                  </expan> 
+                     <abbr>lib</abbr>
+                     <ex>erta</ex>
+                  </expan>
                   <name type="cognomen" key="Fortunata">Fortunata</name>
                </persName>
-                    <lb n="2"/>
-                              <supplied reason="lost">sibi</supplied> et
+               <lb n="2"/>
+               <supplied reason="lost">sibi</supplied> et
                     <lb n="3"/>
                <persName>
                   <name type="praenomen" key="Quintus">
-                     <supplied reason="lost"><expan><abbr>Q</abbr><ex>uinto</ex></expan></supplied>
-                  </name> 
+                     <supplied reason="lost">
+                        <expan>
+                           <abbr>Q</abbr>
+                           <ex>uinto</ex>
+                        </expan>
+                     </supplied>
+                  </name>
                   <gap reason="lost" extent="unknown" unit="character"/>o <name type="cognomen" key="Celsus">Celso</name>
                </persName> viro suo <expan>
-                  <abbr><hi rend="supraline">tr</hi></abbr><ex>ierarcho</ex>
+                  <abbr>
+                     <hi rend="supraline">tr</hi>
+                  </abbr>
+                  <ex>ierarcho</ex>
                </expan>
-                    <lb n="4"/>
-                
-               <supplied reason="lost">classis</supplied> 
+               <lb n="4"/>
+               <supplied reason="lost">classis</supplied>
                <expan>
-                  <abbr>praet</abbr><ex>oriae</ex>
-               </expan> 
+                  <abbr>praet</abbr>
+                  <ex>oriae</ex>
+               </expan>
                <expan>
-                  <abbr>Mis</abbr><ex>enensis</ex></expan>, 
+                  <abbr>Mis</abbr>
+                  <ex>enensis</ex>
+               </expan>, 
                <expan>
-                  <abbr>mil</abbr><ex>itavit</ex></expan>, 
+                  <abbr>mil</abbr>
+                  <ex>itavit</ex>
+               </expan>, 
                <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
                <num xml:lang="lat" value="44">XLIIII</num>
-                    <lb n="5"/>
-                   <expan><abbr><supplied reason="lost">vi</supplied>x</abbr><ex>it</ex>
-               </expan> 
+               <lb n="5"/>
                <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>
+                     <supplied reason="lost">vi</supplied>x</abbr>
+                  <ex>it</ex>
+               </expan>
+               <expan>
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
                <num xml:lang="lat" value="60">LX</num>, et
                     <lb n="6"/>
                <persName>
-                  <gap reason="lost" extent="unknown" unit="character"/><unclear>o</unclear> <name type="praenomen" key="Quintus">
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                  <unclear>o</unclear>
+                  <name type="praenomen" key="Quintus">
                      <expan>
-                        <abbr>Q</abbr><ex>uinti</ex>
+                        <abbr>Q</abbr>
+                        <ex>uinti</ex>
                      </expan>
-                  </name> 
+                  </name>
                   <expan>
-                     <abbr>f</abbr><ex>ilio</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>Claud</abbr><ex>ia</ex>
+                     <abbr>f</abbr>
+                     <ex>ilio</ex>
                   </expan>
-                  <supplied reason="subaudible">tribu</supplied> 
+                  <expan>
+                     <abbr>Claud</abbr>
+                     <ex>ia</ex>
+                  </expan>
+                  <supplied reason="subaudible">tribu</supplied>
                   <name type="cognomen" key="Torquatus">Torquato</name>
-               </persName> 
+               </persName>
                <expan>
-                  <abbr>f</abbr><ex>ilio</ex></expan>,
+                  <abbr>f</abbr>
+                  <ex>ilio</ex>
+               </expan>,
                     <lb n="7"/>
-               
                <expan>
-                  <abbr><supplied reason="lost">adl</supplied><unclear>e</unclear>ct</abbr><ex>o</ex>
+                  <abbr>
+                     <supplied reason="lost">adl</supplied>
+                     <unclear>e</unclear>ct</abbr>
+                  <ex>o</ex>
                </expan> in <expan>
-                  <abbr>ord</abbr><ex>inem</ex></expan> <expan><abbr>decur</abbr><ex>ionum</ex></expan>, 
-                   <expan>
-                  <abbr><hi rend="supraline"><am>II</am></hi><ex>duo</ex>vir</abbr><ex>o</ex></expan>,
-                    <lb n="8"/>
-               <supplied reason="lost"><expan><abbr>vix</abbr><ex>it</ex>
-               </expan></supplied> 
+                  <abbr>ord</abbr>
+                  <ex>inem</ex>
+               </expan>
                <expan>
-                  <abbr><supplied reason="lost">an</supplied>n</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>decur</abbr>
+                  <ex>ionum</ex>
+               </expan>, 
+                   <expan>
+                  <abbr>
+                     <hi rend="supraline">
+                        <am>II</am>
+                     </hi>
+                     <ex>duo</ex>vir</abbr>
+                  <ex>o</ex>
+               </expan>,
+                    <lb n="8"/>
+               <supplied reason="lost">
+                  <expan>
+                     <abbr>vix</abbr>
+                     <ex>it</ex>
+                  </expan>
+               </supplied>
+               <expan>
+                  <abbr>
+                     <supplied reason="lost">an</supplied>n</abbr>
+                  <ex>is</ex>
+               </expan>
                <num xml:lang="lat" value="24">XXIIII</num>, 
                <expan>
-                  <abbr>mens</abbr><ex>ibus</ex>
-               </expan> 
+                  <abbr>mens</abbr>
+                  <ex>ibus</ex>
+               </expan>
                <num xml:lang="lat" value="11">XI</num>, 
                <expan>
-                  <abbr>dieb</abbr><ex>us</ex>
-               </expan> 
+                  <abbr>dieb</abbr>
+                  <ex>us</ex>
+               </expan>
                <num xml:lang="lat" value="11">XI</num>, et
-                    <lb n="9"/>liber<supplied reason="lost">tis</supplied> 
+                    <lb n="9"/>liber<supplied reason="lost">tis</supplied>
                <expan>
-                  <abbr><supplied reason="lost">l</supplied>ibertabusq</abbr><ex>ue</ex>
-               </expan> 
-               <add place="overstrike"><expan><abbr>posterisq</abbr><ex>ue</ex>
+                  <abbr>
+                     <supplied reason="lost">l</supplied>ibertabusq</abbr>
+                  <ex>ue</ex>
+               </expan>
+               <add place="overstrike">
+                  <expan>
+                     <abbr>posterisq</abbr>
+                     <ex>ue</ex>
                   </expan> eorum.</add>
-                    <lb n="10"/>
-               <add><supplied reason="lost"><expan><abbr>H</abbr><ex>oc</ex>
-                     </expan> 
+               <lb n="10"/>
+               <add>
+                  <supplied reason="lost">
                      <expan>
-                        <abbr>m</abbr><ex>onumentum</ex>
+                        <abbr>H</abbr>
+                        <ex>oc</ex>
                      </expan>
-                  </supplied> 
+                     <expan>
+                        <abbr>m</abbr>
+                        <ex>onumentum</ex>
+                     </expan>
+                  </supplied>
                   <expan>
-                     <abbr>s</abbr><ex>ive</ex>
-                  </expan> 
+                     <abbr>s</abbr>
+                     <ex>ive</ex>
+                  </expan>
                   <expan>
-                     <abbr>s</abbr><ex>epulchrum</ex>
-                  </expan> 
+                     <abbr>s</abbr>
+                     <ex>epulchrum</ex>
+                  </expan>
                   <expan>
-                     <abbr>e</abbr><ex>st</ex>
-                  </expan> 
+                     <abbr>e</abbr>
+                     <ex>st</ex>
+                  </expan>
                   <expan>
-                     <abbr>h</abbr><ex>eredem</ex>
-                  </expan> 
+                     <abbr>h</abbr>
+                     <ex>eredem</ex>
+                  </expan>
                   <expan>
-                     <abbr>n</abbr><ex>on</ex>
-                  </expan> 
+                     <abbr>n</abbr>
+                     <ex>on</ex>
+                  </expan>
                   <expan>
-                     <abbr>s</abbr><ex>equetur</ex></expan>.</add>
+                     <abbr>s</abbr>
+                     <ex>equetur</ex>
+                  </expan>.</add>
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[-] Fortunata, freedwoman of Gaius, (made this) [for herself] and [for Quintus -] Celsus, 
+         </div>
+         <div type="translation">
+            <p>[-] Fortunata, freedwoman of Gaius, (made this) [for herself] and [for Quintus -] Celsus, 
                       her husband, a <hi rend="italic">trierachus</hi> of the praetorian [fleet] of Misenum—he served for forty-four years 
                       (and) [li]ved for sixty years—and for [- -] Torquatus, son of Quintus, from the Claudia tribe, 
                       her son, [adm]itted into the order of decurions, a <hi rend="italic">duovir</hi>—[he lived] for twenty-four [ye]ars, 
                       eleven months, (and) eleven days—and [for] (her) freed[men] and [f]reedwomen and their descendants. 
                       [This monument] or tomb shall not follow the heir.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 1: Fortunata’s gentilicium is missing.</p>
-                   <p>Line 3: The abbreviation of her husband’s praenomen and his gentilicium (except for the ending) are missing. His praenomen can be supplemented as “Quinto” given the reference to their son as “Q(uinti) filio” in line 6.</p>
-                   <p>Line 6: The abbreviation of her son’s praenomen and his gentilicium (except for the ending) are missing.
+         </div>
+         <div type="commentary">
+            <p>Line 1: Fortunata’s gentilicium is missing.</p>
+            <p>Line 3: The abbreviation of her husband’s praenomen and his gentilicium (except for the ending) are missing. His praenomen can be supplemented as “Quinto” given the reference to their son as “Q(uinti) filio” in line 6.</p>
+            <p>Line 6: The abbreviation of her son’s praenomen and his gentilicium (except for the ending) are missing.
                    </p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

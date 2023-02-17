@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="usep">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>ITA.Rome.AAR.L.9443</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>ITA.Rome.AAR.L.9443</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9443">ITA.Rome.AAR.L.9443</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9443">ITA.Rome.AAR.L.9443</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
@@ -33,66 +42,61 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>ITA</region>
-                        <settlement>Rome</settlement>
-                        <institution>AAR</institution>
-                        <repository/>
-                        <idno>9443</idno>
-                        <altIdentifier>
-                            <idno>162</idno>
-                        </altIdentifier>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory"> 
+            <msDesc>
+               <msIdentifier>
+                  <region>ITA</region>
+                  <settlement>Rome</settlement>
+                  <institution>AAR</institution>
+                  <repository/>
+                  <idno>9443</idno>
+                  <altIdentifier>
+                     <idno>162</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#dedicatory"> 
                         <!-- short summary of the content of an inscription -->
-                            <p>Altar to Silvanus dedicated by discharged praetorian Gaius Humidius Quetus</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Altar to Silvanus dedicated by discharged praetorian Gaius Humidius Quetus</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#altar">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#altar">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                         <!-- short summary of the material and support of an inscription -->
-                                    <p>Marble dedicatory altar with moulded base and cornice
+                           <p>Marble dedicatory altar with moulded base and cornice
                                     </p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height min="9" max="52.5">Height of altar: c. 52.5 cm. Height of shaft: c. 24.2 cm. Height of base: c. 9 cm.</height>
-                                        <width min="20.4" max="27.2">Width of base: c. 27.2 cm. Width of shaft: c. 20.4 cm.</width>
-                                        <depth min="22.2" max="25.4">Depth of base: c. 25.4 cm. Depth of shaft: c. 22.2 cm.</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p>inscription intact; damage to left-hand corners of altar's cornice and base</p>
-                                </condition>
-                            </supportDesc>
-                            
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="9">
-                                    <p>first eight lines inscribed on shaft, last line inscribed on base</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                    <height min="1.6" max="2">1.6-2.0</height> 
-                                </dimensions>
+                           <dimensions type="surface" unit="cm">
+                              <height min="9" max="52.5">Height of altar: c. 52.5 cm. Height of shaft: c. 24.2 cm. Height of base: c. 9 cm.</height>
+                              <width min="20.4" max="27.2">Width of base: c. 27.2 cm. Width of shaft: c. 20.4 cm.</width>
+                              <depth min="22.2" max="25.4">Depth of base: c. 25.4 cm. Depth of shaft: c. 22.2 cm.</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p>inscription intact; damage to left-hand corners of altar's cornice and base</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="9">
+                           <p>first eight lines inscribed on shaft, last line inscribed on base</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.6" max="2">1.6-2.0</height>
+                        </dimensions>
             
             
             
@@ -100,177 +104,206 @@
             letters are regular second-century A.D. capitals; ten triangular interpuncts pointing variously downards, to the left, or upward
                                 
                             </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BC has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "fake" or blank -->
+                  </summary>
+                  <origin>
                         <!-- original place and dating of inscriptiona-->
-                            <date evidence="unspecified" notBefore="0161" notAfter="0200" ana="imperial">c. 161-175</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome, Via Latina at the fifth milestone outside the city</placeName>
-                        </origin>
-                        <provenance type="found">                           
-                            <p>found at the <placeName>Torlonia farm di Roma Vecchia</placeName>, near the fifth mile marker of the Via Latina in  <date when="1876">1876</date></p>
-                        </provenance>
-                        <provenance type="transferred">                            
-                            <p>in the collection of the American Academy by <date notBefore="1926">1926</date>; now stored in the Van Buren Study Collection in the Five-B Building of the AAR</p>
-                        </provenance>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date evidence="unspecified"
+                            notBefore="0161"
+                            notAfter="0200"
+                            ana="imperial">c. 161-175</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome, Via Latina at the fifth milestone outside the city</placeName>
+                  </origin>
+                  <provenance type="found">
+                     <p>found at the <placeName>Torlonia farm di Roma Vecchia</placeName>, near the fifth mile marker of the Via Latina in  <date when="1876">1876</date>
+                     </p>
+                  </provenance>
+                  <provenance type="transferred">
+                     <p>in the collection of the American Academy by <date notBefore="1926">1926</date>; now stored in the Van Buren Study Collection in the Five-B Building of the AAR</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">3711</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">31009</biblScope>
-                    </bibl>                    
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146950">EDR 146950</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1189&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Online Catalog</ref>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">127, no. 162</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AE_1993"/>
-                        <biblScope unit="item">1364</biblScope> 
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Cagnat"/>
-                        <biblScope unit="page">127</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Dorcey_1992"/>
-                        <biblScope unit="page">112 n.98; 152</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Gordon_1957"/>
-                        <biblScope unit="page">195</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Gordon_1957"/>
-                        <biblScope unit="page">195</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Gordon"/>
-                        <biblScope unit="page">II 117-18, no. 231</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_10_Sanders"/>
-                        <biblScope unit="page">71</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2018-06-30" who="Kevin S. Lee">Initial Encoding</change>
-            <change when="2019-07-16" who="Scott J. DiGiulio">Smoothed and made minor corrections to metadata; added information on provenance; added several bibliography items; proofed transcription; added image filepath</change>
-            <change when="2019-08-09" who="Scott J. DiGiulio">rewrites to data on provenance</change>
-            <change when="2020-03-27" who="Gaia Gianni">Deleted image filename</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.chiseled to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Humidius">Humidius</name> <name type="cognomen" key="Quetus">Que
-                    <lb n="2" break="no"/><hi rend="ligature">tu</hi>s</name></persName> vet<supplied reason="omitted">e</supplied>rani
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">3711</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">31009</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146950">EDR 146950</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1189&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Online Catalog</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                  <biblScope unit="page">127, no. 162</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1993"/>
+                  <biblScope unit="item">1364</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Cagnat"/>
+                  <biblScope unit="page">127</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Dorcey_1992"/>
+                  <biblScope unit="page">112 n.98; 152</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Gordon_1957"/>
+                  <biblScope unit="page">195</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Gordon_1957"/>
+                  <biblScope unit="page">195</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Gordon"/>
+                  <biblScope unit="page">II 117-18, no. 231</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MAAR_10_Sanders"/>
+                  <biblScope unit="page">71</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2018-06-30" who="Kevin S. Lee">Initial Encoding</change>
+         <change when="2019-07-16" who="Scott J. DiGiulio">Smoothed and made minor corrections to metadata; added information on provenance; added several bibliography items; proofed transcription; added image filepath</change>
+         <change when="2019-08-09" who="Scott J. DiGiulio">rewrites to data on provenance</change>
+         <change when="2020-03-27" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.chiseled to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Gaius">
+                     <expan>
+                        <abbr>C</abbr>
+                        <ex>aius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Humidius">Humidius</name>
+                  <name type="cognomen" key="Quetus">Que
+                    <lb n="2" break="no"/>
+                     <hi rend="ligature">tu</hi>s</name>
+               </persName> vet<supplied reason="omitted">e</supplied>rani
                     <lb n="3"/>missus hon
                     <lb n="4" break="no"/>esta missione
-                    <lb n="5"/>ex <expan><abbr>c<supplied reason="omitted">o</supplied>ho</abbr><ex>rte</ex></expan><note>sic</note> <num type="ordinal" value="8">VIII</num> <expan><abbr>pr</abbr><ex>aetoria</ex></expan>
-                    <lb n="6"/><g type="centuria"/> <persName><name type="gentilicium" key="Cesonius">Cesoni</name></persName> ab <persName type="emperor"><name key="Antoninus" type="cognomen">An
-                    <lb n="7" break="no"/>tonino</name></persName> et <persName type="emperor"><name key="Verus" type="cognomen">Vero</name></persName>
-                    <lb n="8"/><expan><abbr>Imp</abbr><ex>eratoribus</ex></expan> <expan><abbr>Aug</abbr><ex>ustis</ex></expan> <persName><name type="divine" key="Silvanus">Silva
-                    <lb n="9" break="no"/>no</name></persName> <expan><abbr>donu</abbr><ex>m</ex></expan> dedit.
+                    <lb n="5"/>ex <expan>
+                  <abbr>c<supplied reason="omitted">o</supplied>ho</abbr>
+                  <ex>rte</ex>
+               </expan>
+               <note>sic</note>
+               <num type="ordinal" value="8">VIII</num>
+               <expan>
+                  <abbr>pr</abbr>
+                  <ex>aetoria</ex>
+               </expan>
+               <lb n="6"/>
+               <g type="centuria"/>
+               <persName>
+                  <name type="gentilicium" key="Cesonius">Cesoni</name>
+               </persName> ab <persName type="emperor">
+                  <name key="Antoninus" type="cognomen">An
+                    <lb n="7" break="no"/>tonino</name>
+               </persName> et <persName type="emperor">
+                  <name key="Verus" type="cognomen">Vero</name>
+               </persName>
+               <lb n="8"/>
+               <expan>
+                  <abbr>Imp</abbr>
+                  <ex>eratoribus</ex>
+               </expan>
+               <expan>
+                  <abbr>Aug</abbr>
+                  <ex>ustis</ex>
+               </expan>
+               <persName>
+                  <name type="divine" key="Silvanus">Silva
+                    <lb n="9" break="no"/>no</name>
+               </persName>
+               <expan>
+                  <abbr>donu</abbr>
+                  <ex>m</ex>
+               </expan> dedit.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                <p>"Gaius Humidius Quetus, Veteran(?), discharged with an honorable discharge from the Eighth Praetorian Cohort, from the century of Cesonius
+         </div>
+         <div type="translation">
+            <p>"Gaius Humidius Quetus, Veteran(?), discharged with an honorable discharge from the Eighth Praetorian Cohort, from the century of Cesonius
                     by Antoninus and Verus the Augustan Emperors, gave to Silvanus as a gift."</p>
-            </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-                <p>Humidius is a nomen attested in at least one other military context: a centurion of Legio I Italica named on an officer list of A.D. 196 from Novae. See AE 1993, 1364.</p>
-                <p>Two of the final three letters of line 1 are unclear. That restored as a Q is missing its tail due to damage. That restored as an E has a distinctly shorter bottom stroke, and
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p>Humidius is a nomen attested in at least one other military context: a centurion of Legio I Italica named on an officer list of A.D. 196 from Novae. See AE 1993, 1364.</p>
+            <p>Two of the final three letters of line 1 are unclear. That restored as a Q is missing its tail due to damage. That restored as an E has a distinctly shorter bottom stroke, and
                    could be restored as an F or P. The ligature of T and U in the second line nonetheless makes Quetus the most likely restoration. Quetus is an infrequent but attested variation of the cognomen Quietus. 
                    In the AAR catalog Charles Babcock directs readers to CIL VI, 37289, and CIL VI, 23035 for exempla.</p>
-                <p>In his 1931 study of the American Academy's epigraphic collection Raymond T. Ohl states the genitive "Vet(e)rani" is an error; "Veteranus" is intended. Alterantively, A.E. Gordon, cited by Charles Babcock in the AAR online catalog, suggests "Veteranus" is 
+            <p>In his 1931 study of the American Academy's epigraphic collection Raymond T. Ohl states the genitive "Vet(e)rani" is an error; "Veteranus" is intended. Alterantively, A.E. Gordon, cited by Charles Babcock in the AAR online catalog, suggests "Veteranus" is 
                 the father's cognomen, with the filiation omitted but implied.</p>
-                <p>The joint mention of Marcus Aurelius and Lucius Verus as Augusti dates Humidius' discharge to A.D. 161-169. The altar could have been dedicated then or at some thereafter during
+            <p>The joint mention of Marcus Aurelius and Lucius Verus as Augusti dates Humidius' discharge to A.D. 161-169. The altar could have been dedicated then or at some thereafter during
                 the second century.</p>
-                <p>Silvanus, the guardian deity of woodlands, fields, and their boundaries, was a popular divinity among those who did not belong to the equestrian and senatorial orders. Other dedications to Silvanus in CIL VI
+            <p>Silvanus, the guardian deity of woodlands, fields, and their boundaries, was a popular divinity among those who did not belong to the equestrian and senatorial orders. Other dedications to Silvanus in CIL VI
                     were made by freeborn, freedmen, and soldiers alike. The closest comparandum to Humidius' altar is CIL VI, 3716 = 31013, a dedication to Silvanus Salutarius by Titus Severinius Speratus, also a veteran of the Praetorian 
                     Guard. In his 1992 study of the deity and his cult, Peter Dorcey observes that Silvanus is second only to Jupiter in numbers of inscriptions from the city of Rome.</p>
-            </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

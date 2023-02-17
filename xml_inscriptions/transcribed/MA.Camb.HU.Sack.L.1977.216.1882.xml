@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>MA.Camb.HU.Sack.L.1977.216.1882</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -42,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="5">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -74,12 +84,17 @@
                      <placeName ref="europe.italy.rome">Italy, Rome, between the Porta Salaria and the Porta Pinciana</placeName>
                   </origin>
                   <provenance type="transferred" subtype="purchased">
-                     <p>purchased in <placeName>Rome</placeName> by <persName role="purchaser"><name key="Clifford Moore">Clifford Moore</name></persName> for the <orgName>Harvard Department of Classics</orgName> in <date when="1906">1906</date></p>
+                     <p>purchased in <placeName>Rome</placeName> by <persName role="purchaser">
+                           <name key="Clifford Moore">Clifford Moore</name>
+                        </persName> for the <orgName>Harvard Department of Classics</orgName> in <date when="1906">1906</date>
+                     </p>
                   </provenance>
                   <provenance type="transferred" subtype="moved">
-                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date></p>
+                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date>
+                     </p>
                   </provenance>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -97,13 +112,15 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#AE_1992"/>
                   <biblScope unit="item">99</biblScope>
-                  </bibl>
-               <bibl>
-                     <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD028308">EDH nr. HD028308</ref>
                </bibl>
                <bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072515">EDR072515</ref>
-</bibl>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD028308">EDH nr. HD028308</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072515">EDR072515</ref>
+               </bibl>
                <bibl>
                   <ref type="external" target="https://hvrd.art/o/287425">Harvard University Art Museums web entry</ref>
                </bibl>
@@ -111,7 +128,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -125,11 +143,11 @@
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2016-01-20" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns, added link to HUAM website</change>
          <change when="2021-02-07" who="Scott J. DiGiulio">Restored and enhanced transcription, based on Ilaria Marchesi's original; added provenance information; added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-07-07" who="Colin Olson">fixed capitalization errors, changed
             stone.travertine to stone.other, removed seperate apparatus division, removed
             superfluous comma in the transcription, edited summary description of form</change>
-</revisionDesc>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -140,33 +158,86 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <ab>
-              <lb n="1"/><persName><name type="gentilicium" key="Attia">Attiae</name> <persName><name type="praenomen" key="Sextus"><expan><abbr>Sex</abbr><ex>ti</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertae</ex></expan> <name type="cognomen" key="Daphne">Daphne</name></persName>,
-              <lb n="2"/><persName><name type="servile" key="Secundus">Secundus</name> <persName type="emperor"><name type="cognomen" key="Caesar">Caesaris</name> <name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName> <supplied reason="subaudible">servus</supplied>
-              <lb n="3"/><name type="servile" key="Erotianus"><expan><abbr>Erotian</abbr><ex>us</ex></expan></name></persName>, <expan><abbr>contubernal</abbr><ex>i</ex></expan>
-              <lb n="4"/>et sibi <expan><abbr>posterisq</abbr><ex>ue</ex></expan> eorum.
-              <lb n="5"/>In <expan><abbr>fr</abbr><ex>onte</ex></expan> <expan><abbr>ped</abbr><ex>es</ex></expan> <num type="cardinal" value="12">XII</num>, in <expan><abbr>agr</abbr><ex>o</ex></expan> <expan><abbr>ped</abbr><ex>es</ex></expan> <num type="cardinal" value="24">XXIIII</num>.</ab>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="gentilicium" key="Attia">Attiae</name>
+                  <persName>
+                     <name type="praenomen" key="Sextus">
+                        <expan>
+                           <abbr>Sex</abbr>
+                           <ex>ti</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <expan>
+                     <abbr>l</abbr>
+                     <ex>ibertae</ex>
+                  </expan>
+                  <name type="cognomen" key="Daphne">Daphne</name>
+               </persName>,
+              <lb n="2"/>
+               <persName>
+                  <name type="servile" key="Secundus">Secundus</name>
+                  <persName type="emperor">
+                     <name type="cognomen" key="Caesar">Caesaris</name>
+                     <name type="cognomen" key="Augustus">
+                        <expan>
+                           <abbr>Aug</abbr>
+                           <ex>usti</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <supplied reason="subaudible">servus</supplied>
+                  <lb n="3"/>
+                  <name type="servile" key="Erotianus">
+                     <expan>
+                        <abbr>Erotian</abbr>
+                        <ex>us</ex>
+                     </expan>
+                  </name>
+               </persName>, <expan>
+                  <abbr>contubernal</abbr>
+                  <ex>i</ex>
+               </expan>
+               <lb n="4"/>et sibi <expan>
+                  <abbr>posterisq</abbr>
+                  <ex>ue</ex>
+               </expan> eorum.
+              <lb n="5"/>In <expan>
+                  <abbr>fr</abbr>
+                  <ex>onte</ex>
+               </expan>
+               <expan>
+                  <abbr>ped</abbr>
+                  <ex>es</ex>
+               </expan>
+               <num type="cardinal" value="12">XII</num>, in <expan>
+                  <abbr>agr</abbr>
+                  <ex>o</ex>
+               </expan>
+               <expan>
+                  <abbr>ped</abbr>
+                  <ex>es</ex>
+               </expan>
+               <num type="cardinal" value="24">XXIIII</num>.</ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>Secundus Erotianus, slave of Caesar Augustus, made this for his wife Attia Daphne, freedwoman of Sextus, and for himself and their descendants. Twelve feet in width, twenty-four feet in depth.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>Secundus Erotianus, slave of Caesar Augustus, made this for his wife Attia Daphne, freedwoman of Sextus, and for himself and their descendants. Twelve feet in width, twenty-four feet in depth.</p>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

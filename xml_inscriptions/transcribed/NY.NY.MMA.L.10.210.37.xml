@@ -9,186 +9,179 @@ changes: Added @evidence to date
 changes: correct handling of provenance information
           -->
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-        
-        <fileDesc>
-            
-            <titleStmt>
-                <title>NY.NY.MMA.L.10.210.37</title>
-            </titleStmt>
-            
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.10.210.37">NY.NY.MMA.L.10.210.37</idno>
-            </publicationStmt>
-            
-            <sourceDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>NY.NY.MMA.L.10.210.37</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.10.210.37">NY.NY.MMA.L.10.210.37</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>10.210.37</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>MMA</institution>
+                  <repository/>
+                  <idno>10.210.37</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>Arretine bowl</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Arretine bowl</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                         
                         <!--  *************************************  <objectDesc>  *********************************  -->
-                        
-                        <objectDesc ana="#instrumentum.vase">
-                            <supportDesc ana="#clay.terracotta">
-                                <support>
-                                    <p> terracotta vase</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>18.4 </height>
-                                        <width>21.9</width>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        
-                        <handDesc hands="1">
-                            <handNote ana="#stamped"> </handNote>
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>dancers and musicians </p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <history>
-                        
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-                        
-                        <origin>
-                            <date evidence="#history" notBefore="-0100" notAfter="0100">first c.
+                  <objectDesc ana="#instrumentum.vase">
+                     <supportDesc ana="#clay.terracotta">
+                        <support>
+                           <p> terracotta vase</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>18.4 </height>
+                              <width>21.9</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#stamped"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>dancers and musicians </p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#history" notBefore="-0100" notAfter="0100">first c.
                                 BCE - first c. CE</date>
-                            <placeName ref="europe.italy">Italy</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="acquired">
-                            <p>Acquired with the <persName role="donor"><name key="Rogers">Rogers</name></persName> Fund, <date when="1910">1910</date>.</p>
-                        </provenance>
-                        
-                        
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AEA_32"/>
-                        <biblScope unit="item">77</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_XI"/>
-                        <biblScope unit="item">6700 450ww</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CVA_USA_9"/>
-                        <biblScope unit="item">Pl. XXVI</biblScope>
-                    </bibl>
-                    <bibl> 
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/248324">Metropolitan Museum Web Entry</ref> 
-                    </bibl>
-                    
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        
-        <encodingDesc>
-            
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-            
-        </encodingDesc>
-        
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
-        
-            <revisionDesc>
-                <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-                <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-                <change when="2021-01-20" who="Itamar Levin">Transcription, translation, and metadata
+                     <placeName ref="europe.italy">Italy</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="acquired">
+                     <p>Acquired with the <persName role="donor">
+                           <name key="Rogers">Rogers</name>
+                        </persName> Fund, <date when="1910">1910</date>.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AEA_32"/>
+                  <biblScope unit="item">77</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_XI"/>
+                  <biblScope unit="item">6700 450ww</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CVA_USA_9"/>
+                  <biblScope unit="item">Pl. XXVI</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.metmuseum.org/art/collection/search/248324">Metropolitan Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2021-01-20" who="Itamar Levin">Transcription, translation, and metadata
                     </change>
-                <change when="2021-03-25" who="Elli Mylonas">Change instrumentum.clay-product to instrumentum.vase</change>
-            </revisionDesc>
-        
-        
-    </teiHeader>
-    
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.L.10.210.37.jpg"/>
-        </surface>
-    </facsimile>
-    
-    <text>
-        <body>
-            <div type="edition">
-                <ab>
-                    <persName>
-                        <name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Perennius">Perennius</name>
-                        <name type="cognomen" key="Tigranus">Tigranus</name>.
+         <change when="2021-03-25" who="Elli Mylonas">Change instrumentum.clay-product to instrumentum.vase</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.L.10.210.37.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan>
+                        <abbr>M</abbr>
+                        <ex>arcus</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Perennius">Perennius</name>
+                  <name type="cognomen" key="Tigranus">Tigranus</name>.
                     </persName>
-                </ab></div>
-            
-            <div type="translation">
-                <p>Marcus Perennius Tigranus.</p></div>
-            
-            <div type="commentary">
-                <p>The bowl is stampped by M(arcus) Perennius Tigranus, who owned one of the most
+            </ab>
+         </div>
+         <div type="translation">
+            <p>Marcus Perennius Tigranus.</p>
+         </div>
+         <div type="commentary">
+            <p>The bowl is stampped by M(arcus) Perennius Tigranus, who owned one of the most
                     prolific workshops operating at Arretium (modern Arezzo, Italy) during the
-                    Julio-Claudian period.</p></div>
-            
-            
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
-        </body>
-    </text>
+                    Julio-Claudian period.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

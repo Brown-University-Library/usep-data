@@ -8,202 +8,213 @@ changes: Added @evidence to date
 <!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
           -->
-          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-
-        <fileDesc>
-
-            <titleStmt>
-                <title>MA.Bos.Gardn.L.S12s2</title>
-            </titleStmt>
-            
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="MA.Bos.Gardn.L.S12s2">MA.Bos.Gardn.L.S12s2</idno>
-            </publicationStmt>
-            
-            <sourceDesc>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>MA.Bos.Gardn.L.S12s2</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MA.Bos.Gardn.L.S12s2">MA.Bos.Gardn.L.S12s2</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MA</region>
-                        <settlement>Bos</settlement>
-                        <institution>Gardn</institution>
-                        <repository/>
-                        <idno>S12s2</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>MA</region>
+                  <settlement>Bos</settlement>
+                  <institution>Gardn</institution>
+                  <repository/>
+                  <idno>S12s2</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaph of Ulpia Hygia</p>
-                        </msItem>
-                    </msContents>
-                    
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>epitaph of Ulpia Hygia</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#sarcophagus">
-                            <supportDesc ana="#stone.marble">
-                                <support>
-                                    <p> marble sarcophagus</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>36.8</height>
-                                        <width>154.9</width>
-                                        <depth>30.5</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="5">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <history>
-
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-
-                        <origin>
-                            <date evidence="#archaeology #palaeography #nomenclature" notBefore="0101"
-                                notAfter="0150">early to mid second century</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
-                        </origin>
-                        <provenance type="observed" subtype="recorded">
-                            <p>Transcribed and described by <persName>Aldus Manutius, the Younger</persName> (1547-1597) in the <placeName>Vatican gardens.</placeName></p>
-                        </provenance>
-                        <provenance type="observed" subtype="recorded">
-                            <p>Transcribed and described by <persName>Aldus Manutius, the Younger</persName> in the <placeName>Cortile del Belvedere, Vatican</placeName>.</p>
-                        </provenance>
-                        <provenance type="observed" subtype="recorded">
-                            <p>Reported in the <placeName>the vigna Jacobini detta dell' Orologio</placeName> near the <placeName>via Portuense, Rome</placeName>.</p>        
-                        </provenance>
-                        <provenance type="transferred" subtype="purchased">
-                            <p>Purchased by Dr. <persName role="buyer">Henry C. Sartorio</persName> from the dealer <persName role="seller">A. Scale</persName>, <placeName>Rome</placeName> in <date when="1922-01">January 1922</date>.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="purchased">
-                            <p>
+                  <objectDesc ana="#sarcophagus">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble sarcophagus</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>36.8</height>
+                              <width>154.9</width>
+                              <depth>30.5</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="5">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#archaeology #palaeography #nomenclature"
+                            notBefore="0101"
+                            notAfter="0150">early to mid second century</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+                  <provenance type="observed" subtype="recorded">
+                     <p>Transcribed and described by <persName>Aldus Manutius, the Younger</persName> (1547-1597) in the <placeName>Vatican gardens.</placeName>
+                     </p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p>Transcribed and described by <persName>Aldus Manutius, the Younger</persName> in the <placeName>Cortile del Belvedere, Vatican</placeName>.</p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p>Reported in the <placeName>the vigna Jacobini detta dell' Orologio</placeName> near the <placeName>via Portuense, Rome</placeName>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased by Dr. <persName role="buyer">Henry C. Sartorio</persName> from the dealer <persName role="seller">A. Scale</persName>, <placeName>Rome</placeName> in <date when="1922-01">January 1922</date>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>
                                 Purchased by <persName role="recipient collector">Isabella Stewart Gardner</persName> through Mrs. <persName role="buyer">Henry L. Higginson</persName> from the dealer Dr. <persName role="seller">Henry C. Sartorio</persName>, <placeName>Rome</placeName> on <date when="1923-05-25">25 May 1923</date> (Ida Agassiz, 1837-1935).
-                            </p></provenance> 
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Gardner"/>
-                        <biblScope unit="page">42, no. 57</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">29363</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="https://www.gardnermuseum.org/experience/collection/13449"
-                            >Museum External Reference</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148209"
-                            >EDR148209</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-
-        <encodingDesc>
-
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2022-03-11" who="Sophia Papandonatou">Initial Encoding</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MA.Bos.Gardn.L.S12s2.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MA.Bos.Gardn.L.S12s2-det.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        <body>
-            <div type="edition">
+                            </p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Gardner"/>
+                  <biblScope unit="page">42, no. 57</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">29363</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.gardnermuseum.org/experience/collection/13449">Museum External Reference</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148209">EDR148209</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2022-03-11" who="Sophia Papandonatou">Initial Encoding</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.Gardn.L.S12s2.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.Gardn.L.S12s2-det.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-                <lb n="2"/><persName><name type="gentilicium" key="Ulpia">Ulpiae</name> <persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name></persName> <expan><abbr>f</abbr><ex>iliae</ex></expan>
-                <lb n="3"/><name type="cognomen" key="Hygia">Hygiae</name></persName>.
+               <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>
+               <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Ulpia">Ulpiae</name>
+                  <persName>
+                     <name type="praenomen" key="Marcus">
+                        <expan>
+                           <abbr>M</abbr>
+                           <ex>arci</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <expan>
+                     <abbr>f</abbr>
+                     <ex>iliae</ex>
+                  </expan>
+                  <lb n="3"/>
+                  <name type="cognomen" key="Hygia">Hygiae</name>
+               </persName>.
                 <lb n="4"/>Parentes filiae 
                 <lb n="5"/>piisimae fecerunt.
-            </ab></div>
-            
-            <div type="translation">
+            </ab>
+         </div>
+         <div type="translation">
             <p>
                 To the Divine Spirits of Uplia Hygia, daughter of Marcus. (Her) parents made (this) for (their) most dutiful daughter.
-            </p></div>
-
-            <div type="commentary">
-            <p/></div>
-            
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
-        </body>
-    </text>
+            </p>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

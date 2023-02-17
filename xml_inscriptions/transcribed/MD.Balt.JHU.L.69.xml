@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MD.Balt.JHU.L.69</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MD.Balt.JHU.L.69</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.69">MD.Balt.JHU.L.69</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.69">MD.Balt.JHU.L.69</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,220 +42,309 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>JHU</institution>
-                        <repository/>
-                        <idno>69</idno>
-                        <altIdentifier>
-                            <idno>Acc. #32</idno>
-                        </altIdentifier>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>JHU</institution>
+                  <repository/>
+                  <idno>69</idno>
+                  <altIdentifier>
+                     <idno>Acc. #32</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Cn. Domitius Hymnus</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Epitaph of Cn. Domitius Hymnus</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Small marble tablet</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>18.9</height>
-                                        <width>22.8</width>
-                                        <depth>2.77</depth>
-                                    </dimensions>
-                                    
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p>Rectangular chunk missing from the lower left hand corner of
+                           <p>Small marble tablet</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>18.9</height>
+                              <width>22.8</width>
+                              <depth>2.77</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p>Rectangular chunk missing from the lower left hand corner of
                                         the back of the stone, possibly removed in order to fit
                                         stone into a recess</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="7">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                        <height min="1.2" max="2.4">1.2-2.4</height>
-                                    </dimensions>
-            
-            
-            
-            
-            </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>Double interpuncts appear between the D and the M in line 1</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="7">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.2" max="2.4">1.2-2.4</height>
+                        </dimensions>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>Double interpuncts appear between the D and the M in line 1</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "fake" or blank -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0075" notAfter="0100">late-first century C.E.</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
-                        </origin>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date evidence="unspecified" notBefore="0075" notAfter="0100">late-first century C.E.</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJP_Wilson4"/>
-                        <biblScope unit="pp">179, no. 69</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030987">EDR030987</ref>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">39738</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">71</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AE_2005"/>
-                        <biblScope unit="item">281</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Arctos_39_Solin"/>
-                        <biblScope unit="page">182-183</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-11-16" who="Erika Valdivieso">Initial Encoding</change>
-            <change when="2014-12-14" who="Erika Valdivieso">Edited</change>
-            <change when="2015-09-08" who="Scott J. DiGiulio">Cleaned metadata, added letter dimensions, cleaned bibl, proofed transcription with JB's corrections</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.69.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.69-alt.jpg"/>
-        </surface>
-        <surface>
-            <desc>Detail of double interpuncts</desc>
-            <graphic url="MD.Balt.JHU.L.69-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc>Detail of reverse side</desc>
-            <graphic url="MD.Balt.JHU.L.69-det2.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson4"/>
+                  <biblScope unit="pp">179, no. 69</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030987">EDR030987</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">39738</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
+                  <biblScope unit="page">71</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_2005"/>
+                  <biblScope unit="item">281</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Arctos_39_Solin"/>
+                  <biblScope unit="page">182-183</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-11-16" who="Erika Valdivieso">Initial Encoding</change>
+         <change when="2014-12-14" who="Erika Valdivieso">Edited</change>
+         <change when="2015-09-08" who="Scott J. DiGiulio">Cleaned metadata, added letter dimensions, cleaned bibl, proofed transcription with JB's corrections</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.JHU.L.69.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.JHU.L.69-alt.jpg"/>
+      </surface>
+      <surface>
+         <desc>Detail of double interpuncts</desc>
+         <graphic url="MD.Balt.JHU.L.69-det1.jpg"/>
+      </surface>
+      <surface>
+         <desc>Detail of reverse side</desc>
+         <graphic url="MD.Balt.JHU.L.69-det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
             <ab>
-            <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-            <lb n="2"/><persName><name type="praenomen" key="Gnaeus"><expan><abbr>Gn</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Domitius">Domiti</name> <persName><name type="gentilicium" key="Domitia"><expan><abbr>D</abbr><ex>omitiae</ex></expan></name></persName> <expan><abbr>lib</abbr><ex>erti</ex></expan>
-            <lb n="3"/><name type="cognomen" key="Hymnus">Hymni</name></persName>.  <expan><abbr>V</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num value="4"><hi rend="supraline">IV</hi></num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan>
-            <lb n="4"/><num value="5"><hi rend="supraline">V</hi></num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="23">XXIII</num>.  Fecit <persName><name type="cognomen" key="Heraclia">He
-            <lb n="5" break="no"/>raclia</name></persName> mater <expan><abbr>fil</abbr><ex>io</ex></expan>
-            <lb n="6"/>pi<choice><corr>e</corr><sic>i</sic></choice>ntissimo, <expan><abbr>d</abbr><ex>e</ex></expan> <expan><abbr>s</abbr><ex>e</ex></expan> <expan><abbr>b</abbr><ex>ene</ex></expan> 
-            <lb n="7"/><expan><abbr>m</abbr><ex>erenti</ex></expan>.        
+               <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>
+               <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Gnaeus">
+                     <expan>
+                        <abbr>Gn</abbr>
+                        <ex>ai</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Domitius">Domiti</name>
+                  <persName>
+                     <name type="gentilicium" key="Domitia">
+                        <expan>
+                           <abbr>D</abbr>
+                           <ex>omitiae</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <expan>
+                     <abbr>lib</abbr>
+                     <ex>erti</ex>
+                  </expan>
+                  <lb n="3"/>
+                  <name type="cognomen" key="Hymnus">Hymni</name>
+               </persName>.  <expan>
+                  <abbr>V</abbr>
+                  <ex>ixit</ex>
+               </expan>
+               <expan>
+                  <abbr>a</abbr>
+                  <ex>nnis</ex>
+               </expan>
+               <num value="4">
+                  <hi rend="supraline">IV</hi>
+               </num>, <expan>
+                  <abbr>m</abbr>
+                  <ex>ensibus</ex>
+               </expan>
+               <lb n="4"/>
+               <num value="5">
+                  <hi rend="supraline">V</hi>
+               </num>, <expan>
+                  <abbr>d</abbr>
+                  <ex>iebus</ex>
+               </expan>
+               <num value="23">XXIII</num>.  Fecit <persName>
+                  <name type="cognomen" key="Heraclia">He
+            <lb n="5" break="no"/>raclia</name>
+               </persName> mater <expan>
+                  <abbr>fil</abbr>
+                  <ex>io</ex>
+               </expan>
+               <lb n="6"/>pi<choice>
+                  <corr>e</corr>
+                  <sic>i</sic>
+               </choice>ntissimo, <expan>
+                  <abbr>d</abbr>
+                  <ex>e</ex>
+               </expan>
+               <expan>
+                  <abbr>s</abbr>
+                  <ex>e</ex>
+               </expan>
+               <expan>
+                  <abbr>b</abbr>
+                  <ex>ene</ex>
+               </expan>
+               <lb n="7"/>
+               <expan>
+                  <abbr>m</abbr>
+                  <ex>erenti</ex>
+               </expan>.        
                 
-            </ab></div>
-        
-        
-                <div type="translation">
-                <p>"To the divine shades of Gnaeus Domitius Hymnus, freedman of Domitia.  He lived for four years, five months,(and) twenty-three days. (His) mother Heraclia made (this) for a most dutiful son, deserving well from her."</p>
-            </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-                <p>Line 1: <hi rend="italic"><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan></hi>: note the doubled interpuncts between each letter.</p>
-                <p>Line 2: <hi rend="italic"><name type="gentilicium"><expan><abbr>D</abbr><ex>omitiae</ex></expan></name></hi>: The deceased is a freedman who once belonged to the <name type="gentilicum">Domitii</name>.  The child’s owner was a woman, <persName><name type="gentilicium">Domitia</name></persName>, and after manumission he took the <hi rend="italic">praenomen</hi> of her father.</p>
-                <p>Line 6: <hi rend="italic">pi<choice><corr>e</corr><sic>i</sic></choice>ntissimo</hi> : Originally was <hi rend="italic">piintissimo</hi>.  The T and I in this word were very difficult to tell apart, but the horizontal serif at the top of the T appeared fractionally longer.</p>
-                <p>The letters are deeply cut, but the spacing is irregular and the lines appear to wobble across the stone.  The top line measures 2.4 cm high, and decreases in size until the last line, which measures 1.2 cm high.  The final M, in <hi rend="italic"><expan><abbr>m</abbr><ex>erenti</ex></expan></hi>, is much smaller than the rest of the text and off-centered; the carver may have run out of room.  Supralinear lines appear over the number of years and months lived, but not over the number of days.  Interpuncts are used irregularly and at line ends.  Interpuncts are missing between the deceased’s <hi rend="italic">gentilicium</hi>, his patroness's <hi rend="italic">gentilicium</hi>, <hi rend="italic"><expan>lib</expan><ex>erti</ex></hi>, and his <hi rend="italic">cognomen</hi>.  An interpunct is also missing between <hi rend="italic"><persName><name type="cognomen">Heraclia</name></persName></hi> and <hi rend="italic">mater</hi> and between <hi rend="italic"><expan><abbr>d</abbr><ex>e</ex></expan> <expan><abbr>s</abbr><ex>e</ex></expan></hi>.  Some interpuncts are shallower than others, and the shapes vary from triangles to circles.</p>
-            </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>"To the divine shades of Gnaeus Domitius Hymnus, freedman of Domitia.  He lived for four years, five months,(and) twenty-three days. (His) mother Heraclia made (this) for a most dutiful son, deserving well from her."</p>
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p>Line 1: <hi rend="italic">
+                  <expan>
+                     <abbr>D</abbr>
+                     <ex>is</ex>
+                  </expan>
+                  <expan>
+                     <abbr>M</abbr>
+                     <ex>anibus</ex>
+                  </expan>
+               </hi>: note the doubled interpuncts between each letter.</p>
+            <p>Line 2: <hi rend="italic">
+                  <name type="gentilicium">
+                     <expan>
+                        <abbr>D</abbr>
+                        <ex>omitiae</ex>
+                     </expan>
+                  </name>
+               </hi>: The deceased is a freedman who once belonged to the <name type="gentilicum">Domitii</name>.  The child’s owner was a woman, <persName>
+                  <name type="gentilicium">Domitia</name>
+               </persName>, and after manumission he took the <hi rend="italic">praenomen</hi> of her father.</p>
+            <p>Line 6: <hi rend="italic">pi<choice>
+                     <corr>e</corr>
+                     <sic>i</sic>
+                  </choice>ntissimo</hi> : Originally was <hi rend="italic">piintissimo</hi>.  The T and I in this word were very difficult to tell apart, but the horizontal serif at the top of the T appeared fractionally longer.</p>
+            <p>The letters are deeply cut, but the spacing is irregular and the lines appear to wobble across the stone.  The top line measures 2.4 cm high, and decreases in size until the last line, which measures 1.2 cm high.  The final M, in <hi rend="italic">
+                  <expan>
+                     <abbr>m</abbr>
+                     <ex>erenti</ex>
+                  </expan>
+               </hi>, is much smaller than the rest of the text and off-centered; the carver may have run out of room.  Supralinear lines appear over the number of years and months lived, but not over the number of days.  Interpuncts are used irregularly and at line ends.  Interpuncts are missing between the deceased’s <hi rend="italic">gentilicium</hi>, his patroness's <hi rend="italic">gentilicium</hi>, <hi rend="italic">
+                  <expan>lib</expan>
+                  <ex>erti</ex>
+               </hi>, and his <hi rend="italic">cognomen</hi>.  An interpunct is also missing between <hi rend="italic">
+                  <persName>
+                     <name type="cognomen">Heraclia</name>
+                  </persName>
+               </hi> and <hi rend="italic">mater</hi> and between <hi rend="italic">
+                  <expan>
+                     <abbr>d</abbr>
+                     <ex>e</ex>
+                  </expan>
+                  <expan>
+                     <abbr>s</abbr>
+                     <ex>e</ex>
+                  </expan>
+               </hi>.  Some interpuncts are shallower than others, and the shapes vary from triangles to circles.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

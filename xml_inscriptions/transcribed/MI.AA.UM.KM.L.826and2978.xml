@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.826+2978</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,13 +34,11 @@
                      <p>epitaph of Gaius Apollonius Priscus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <seg type="material">Partially reconstituted marble slab</seg>
-                           
                            <seg type="material">Coarse-grained white marble</seg>
                            <dimensions type="surface" unit="cm">
                               <height>20.5</height>
@@ -69,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,14 +92,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116607"
-                     >EDR116607</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116607">EDR116607</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -102,10 +112,11 @@
          <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
          <change when="2019-03-26" who="Scott J. DiGiulio">Fixed missing image</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -114,78 +125,108 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <persName>
                   <name type="praenomen" key="Gaius">
                      <expan>
-                        <abbr>C</abbr><ex>aio</ex>
+                        <abbr>C</abbr>
+                        <ex>aio</ex>
                      </expan>
-                  </name> 
-                  <name type="gentilicium" key="Apollonius">Apollonio</name> 
+                  </name>
+                  <name type="gentilicium" key="Apollonius">Apollonio</name>
                   <name type="cognomen" key="Priscus">Prisco</name>
                </persName>
-                    <lb n="2"/>
-                   <expan><abbr><supplied reason="lost" evidence="parallel">m</supplied>il</abbr><ex>iti</ex></expan> 
+               <lb n="2"/>
                <expan>
                   <abbr>
-                     <hi rend="supraline">cl</hi></abbr><ex>assis</ex></expan> 
-               <expan>
-                  <abbr>
-                     <hi rend="supraline">pr</hi></abbr><ex>aetoriae</ex></expan> 
-               <expan>
-                  <abbr>
-                     <hi rend="supraline">Mis</hi></abbr><ex>enensis</ex>
+                     <supplied reason="lost" evidence="parallel">m</supplied>il</abbr>
+                  <ex>iti</ex>
                </expan>
-                    <lb n="3"/>
-               <supplied reason="lost" evidence="parallel"><expan><abbr>n</abbr><ex>atione</ex>
-                  </expan> 
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">cl</hi>
+                  </abbr>
+                  <ex>assis</ex>
+               </expan>
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">pr</hi>
+                  </abbr>
+                  <ex>aetoriae</ex>
+               </expan>
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">Mis</hi>
+                  </abbr>
+                  <ex>enensis</ex>
+               </expan>
+               <lb n="3"/>
+               <supplied reason="lost" evidence="parallel">
                   <expan>
-                     <abbr>Alex</abbr><ex>andrino</ex></expan></supplied>; vixit <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-                  </expan> <num xml:lang="lat" value="40">XL</num>.
+                     <abbr>n</abbr>
+                     <ex>atione</ex>
+                  </expan>
+                  <expan>
+                     <abbr>Alex</abbr>
+                     <ex>andrino</ex>
+                  </expan>
+               </supplied>; vixit <expan>
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
+               <num xml:lang="lat" value="40">XL</num>.
                     <lb n="4"/>
                <persName>
                   <name>
-                     <expan><abbr><supplied reason="lost" evidence="parallel">L</supplied></abbr><ex>ucius</ex></expan>
-                  </name> 
+                     <expan>
+                        <abbr>
+                           <supplied reason="lost" evidence="parallel">L</supplied>
+                        </abbr>
+                        <ex>ucius</ex>
+                     </expan>
+                  </name>
                   <name type="gentilicium" key="Fabullius">
-                     <supplied reason="lost" evidence="parallel">Fab</supplied>ullius</name> 
+                     <supplied reason="lost" evidence="parallel">Fab</supplied>ullius</name>
                   <name type="cognomen" key="Serenus">Serenus</name>
                </persName>
-                    <lb n="5"/>
-                   <expan><abbr><supplied reason="lost" evidence="parallel">dupl</supplied></abbr><ex>icarius</ex></expan> 
+               <lb n="5"/>
                <expan>
-                  <abbr>class</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>
+                     <supplied reason="lost" evidence="parallel">dupl</supplied>
+                  </abbr>
+                  <ex>icarius</ex>
+               </expan>
                <expan>
-                  <abbr>eiusd</abbr><ex>em</ex>
+                  <abbr>class</abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>eiusd</abbr>
+                  <ex>em</ex>
                </expan> heres.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To Gaius Apollonius Priscus, [s]oldier of the praetorian fleet of Misenum,
+         </div>
+         <div type="translation">
+            <p>To Gaius Apollonius Priscus, [s]oldier of the praetorian fleet of Misenum,
                [Alexandrian by origin]; he lived for forty years. [Lucius Fab]ullius Serenus,
                [<hi rend="italic">duplicarius</hi>] of the same fleet, (his) heir, (made this).</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>This is a duplicate of <ref type="external" target="https://usepigraphy.brown.edu/projects/usep/inscription/MI.AA.UM.KM.L.828/">MI.AA.UM.KM.L.828</ref>.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>This is a duplicate of <ref type="external"
+                     target="https://usepigraphy.brown.edu/projects/usep/inscription/MI.AA.UM.KM.L.828/">MI.AA.UM.KM.L.828</ref>.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

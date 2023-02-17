@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>MA.Camb.HU.Sack.L.1932.56.129.v</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -34,7 +44,6 @@
                               <width>28.9</width>
                               <depth>13.5</depth>
                            </dimensions>
-                           
                         </support>
                         <condition ana="#complete.intact">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
@@ -49,10 +58,10 @@
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                              <height min="2.7" max="4.0">2.7-4.0</height>
-                           </dimensions>
-            </handNote>
+                        <dimensions type="letter" unit="cm">
+                           <height min="2.7" max="4.0">2.7-4.0</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -70,24 +79,44 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="#archaeology #palaeography" notBefore="0150" notAfter="0200">mid-late second
+                     <date evidence="#archaeology #palaeography"
+                            notBefore="0150"
+                            notAfter="0200">mid-late second
                         century CE</date>
                      <placeName ref="europe.italy">Italy, Liguria, Ventimiglia</placeName>
                   </origin>
                   <provenance type="found" subtype="discovered">
-                     <p>found in situ west of the Roman theatre at Ventimiglia (ancient <placeName ref="https://pleiades.stoa.org/places/157802">Albintimilium</placeName>) on the property of <persName role="owner"><name key="Paolina Biamonti">Paolina Biamonti</name></persName> in the <date when="1884">spring of 1884</date></p>
+                     <p>found in situ west of the Roman theatre at Ventimiglia (ancient <placeName ref="https://pleiades.stoa.org/places/157802">Albintimilium</placeName>) on the property of <persName role="owner">
+                           <name key="Paolina Biamonti">Paolina Biamonti</name>
+                        </persName> in the <date when="1884">spring of 1884</date>
+                     </p>
                   </provenance>
                   <provenance type="observed" subtype="squeeze-taken">
-                     <p><persName>Rossi</persName> made a squeeze around the time of his edition in <hi rend="italic">NSc</hi> in <date when="1884">1884</date></p>
+                     <p>
+                        <persName>Rossi</persName> made a squeeze around the time of his edition in <hi rend="italic">NSc</hi> in <date when="1884">1884</date>
+                     </p>
                   </provenance>
                   <provenance type="transferred" subtype="sold">
-                     <p>sold by <persName role="seller"><name key="Paolina Biamonti">Paolina Biamonti</name></persName> to <persName role="buyer"><name key="Cora Sade Kennedy">Cora Sade Kennedy</name></persName> prior to <date notAfter="1893">1893</date></p>
+                     <p>sold by <persName role="seller">
+                           <name key="Paolina Biamonti">Paolina Biamonti</name>
+                        </persName> to <persName role="buyer">
+                           <name key="Cora Sade Kennedy">Cora Sade Kennedy</name>
+                        </persName> prior to <date notAfter="1893">1893</date>
+                     </p>
                   </provenance>
                   <provenance type="transferred" subtype="given">
-                     <p>on her death in <date when="1893">1893</date>, given to one of <persName><name key="Cora Sade Kennedy">Cora Sade Kennedy's</name></persName> heirs, possible <persName role="recipient"><name key="Harris Kennedy">Harris Kennedy</name></persName></p>
+                     <p>on her death in <date when="1893">1893</date>, given to one of <persName>
+                           <name key="Cora Sade Kennedy">Cora Sade Kennedy's</name>
+                        </persName> heirs, possible <persName role="recipient">
+                           <name key="Harris Kennedy">Harris Kennedy</name>
+                        </persName>
+                     </p>
                   </provenance>
                   <provenance type="transferred" subtype="given">
-                     <p>donated to the <orgName role="recipient">Fogg Art Museum</orgName> by <persName role="donor"><name key="Harris Kennedy">Harris Kennedy</name></persName> in <date when="1932">1932</date></p>
+                     <p>donated to the <orgName role="recipient">Fogg Art Museum</orgName> by <persName role="donor">
+                           <name key="Harris Kennedy">Harris Kennedy</name>
+                        </persName> in <date when="1932">1932</date>
+                     </p>
                   </provenance>
                </history>
             </msDesc>
@@ -109,10 +138,12 @@
                   <biblScope unit="item">97-100, no. 13 (fig. 15, [ph])</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD002833">EDH nr. HD002833</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD002833">EDH nr. HD002833</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR010794">EDR010794</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR010794">EDR010794</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="https://hvrd.art/o/292045">Harvard University Art Museums web entry</ref>
@@ -121,7 +152,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -134,10 +166,10 @@
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2016-01-20" who="Scott J. DiGiulio">Added missing control vocab, added dimension metadata from folder, fixed columns/lines, added link to HUAM website</change>
-      <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2021-02-08" who="Scott J. DiGiulio">Restored and enhanced transcription, based on Ilaria Marchesi's original; added provenance information; added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -148,40 +180,119 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <ab>
-              <lb n="1"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Statorius">Statorius</name>
-              <lb n="2"/><name type="cognomen" key="Sippo">Sippo</name></persName>, <persName><name type="gentilicium" key="Manilia"><expan><abbr>Manil</abbr><ex>ia</ex></expan></name>
-              <lb n="3"/><persName><name type="praenomen" key="Manius"><expan><abbr>M<add place="above"><am>'</am></add></abbr><ex>ani</ex></expan></name></persName> <expan><abbr><choice><sic>e</sic><corr>f</corr></choice></abbr><ex>ilia</ex></expan> <name type="cognomen" key="Tertulla">Tertulla</name></persName>,
-              <lb n="4"/><persName><name type="gentilicium" key="Statoria">Statoriae</name> <persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>ai</ex></expan></name></persName> <expan><abbr>f</abbr><ex>iliae</ex></expan>
-              <lb n="5"/><name type="cognomen" key="Appia">Appiae</name></persName>, <expan><abbr>an</abbr><ex>norum</ex></expan> <num type="cardinal" value="22">XXII</num>,
-              <lb n="6"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Statorius">Statorio</name> <name type="cognomen" key="Proculus">Procu
-              <lb n="7" break="no"/><choice><sic>i</sic><corr>l</corr></choice>o</name></persName> <expan><abbr><choice><sic>e</sic><corr>f</corr></choice></abbr><ex>ilio</ex></expan>, <expan><abbr>ann</abbr><ex>orum</ex></expan> <num type="cardinal" value="25">XXV</num>.</ab>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Gaius">
+                     <expan>
+                        <abbr>C</abbr>
+                        <ex>aius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Statorius">Statorius</name>
+                  <lb n="2"/>
+                  <name type="cognomen" key="Sippo">Sippo</name>
+               </persName>, <persName>
+                  <name type="gentilicium" key="Manilia">
+                     <expan>
+                        <abbr>Manil</abbr>
+                        <ex>ia</ex>
+                     </expan>
+                  </name>
+                  <lb n="3"/>
+                  <persName>
+                     <name type="praenomen" key="Manius">
+                        <expan>
+                           <abbr>M<add place="above">
+                                 <am>'</am>
+                              </add>
+                           </abbr>
+                           <ex>ani</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <expan>
+                     <abbr>
+                        <choice>
+                           <sic>e</sic>
+                           <corr>f</corr>
+                        </choice>
+                     </abbr>
+                     <ex>ilia</ex>
+                  </expan>
+                  <name type="cognomen" key="Tertulla">Tertulla</name>
+               </persName>,
+              <lb n="4"/>
+               <persName>
+                  <name type="gentilicium" key="Statoria">Statoriae</name>
+                  <persName>
+                     <name type="praenomen" key="Gaius">
+                        <expan>
+                           <abbr>C</abbr>
+                           <ex>ai</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <expan>
+                     <abbr>f</abbr>
+                     <ex>iliae</ex>
+                  </expan>
+                  <lb n="5"/>
+                  <name type="cognomen" key="Appia">Appiae</name>
+               </persName>, <expan>
+                  <abbr>an</abbr>
+                  <ex>norum</ex>
+               </expan>
+               <num type="cardinal" value="22">XXII</num>,
+              <lb n="6"/>
+               <persName>
+                  <name type="praenomen" key="Gaius">
+                     <expan>
+                        <abbr>C</abbr>
+                        <ex>aius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Statorius">Statorio</name>
+                  <name type="cognomen" key="Proculus">Procu
+              <lb n="7" break="no"/>
+                     <choice>
+                        <sic>i</sic>
+                        <corr>l</corr>
+                     </choice>o</name>
+               </persName>
+               <expan>
+                  <abbr>
+                     <choice>
+                        <sic>e</sic>
+                        <corr>f</corr>
+                     </choice>
+                  </abbr>
+                  <ex>ilio</ex>
+               </expan>, <expan>
+                  <abbr>ann</abbr>
+                  <ex>orum</ex>
+               </expan>
+               <num type="cardinal" value="25">XXV</num>.</ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>Gaius Statorius Sippo (and) Manilia Tertulla, the daughter of Manius, (made this) for Statoria Appia, daughter of Gaius, aged twenty-years, and their son Gaius Statorius Proculus, aged twenty-five years.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>per Rossi, a coin of Antoninus Pius was found among the grave goods of the undisturbed tomb at its discovery in 1884, providing a terminus post quem for the epitaph</p>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-                    <p/>
-                </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>Gaius Statorius Sippo (and) Manilia Tertulla, the daughter of Manius, (made this) for Statoria Appia, daughter of Gaius, aged twenty-years, and their son Gaius Statorius Proculus, aged twenty-five years.</p>
+         </div>
+         <div type="commentary">
+            <p>per Rossi, a coin of Antoninus Pius was found among the grave goods of the undisturbed tomb at its discovery in 1884, providing a terminus post quem for the epitaph</p>
+         </div>
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

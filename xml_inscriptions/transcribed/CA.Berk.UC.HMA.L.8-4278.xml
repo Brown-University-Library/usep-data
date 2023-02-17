@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Berk.UC.HMA.L.8/4278</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -42,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -66,10 +76,14 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="0300" notAfter="0325" cert="low">early fourth century CE ?</date>
+                     <date evidence="unspecified"
+                            notBefore="0300"
+                            notAfter="0325"
+                            cert="low">early fourth century CE ?</date>
                      <placeName ref="europe.italy">Marino (SE of Rome), Italy</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -89,16 +103,19 @@
                   <biblScope unit="item">66</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015131?">EDH nr. HD015131</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD015131?">EDH nr. HD015131</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR074544">EDR074544</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR074544">EDR074544</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -111,8 +128,8 @@
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2015-11-23" who="Scott J. DiGiulio">Updated handNote and handDesc, added p under condition, added cert to date, slight change to det. 1 caption, added transcription from image added CIL 6 entries to bibl</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -129,31 +146,62 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/><persName><name type="cognomen" key="Nisus">Nisi</name></persName>, <expan><abbr>ann</abbr><ex>is</ex></expan> <num value="2" xml:lang="lat">duobus</num>, <expan><abbr>men</abbr><ex>sibus</ex></expan> <num value="9" xml:lang="lat">VIIII</num>, <expan><abbr>die</abbr><ex>bus</ex></expan> <num value="19" xml:lang="lat">XVIIII</num>. <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Nonius"><expan><abbr>Non</abbr><ex>ius</ex></expan></name> <name type="cognomen" key="Rufus">Ru<unclear>f</unclear>us</name></persName> <unclear>p</unclear>ater et <persName><name type="gentilicium" key="Caecilia">Cec<unclear>i</unclear><supplied reason="lost">lia</supplied></name></persName><gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="1"/>
+               <persName>
+                  <name type="cognomen" key="Nisus">Nisi</name>
+               </persName>, <expan>
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
+               <num value="2" xml:lang="lat">duobus</num>, <expan>
+                  <abbr>men</abbr>
+                  <ex>sibus</ex>
+               </expan>
+               <num value="9" xml:lang="lat">VIIII</num>, <expan>
+                  <abbr>die</abbr>
+                  <ex>bus</ex>
+               </expan>
+               <num value="19" xml:lang="lat">XVIIII</num>. <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>L</abbr>
+                        <ex>ucius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Nonius">
+                     <expan>
+                        <abbr>Non</abbr>
+                        <ex>ius</ex>
+                     </expan>
+                  </name>
+                  <name type="cognomen" key="Rufus">Ru<unclear>f</unclear>us</name>
+               </persName>
+               <unclear>p</unclear>ater et <persName>
+                  <name type="gentilicium" key="Caecilia">Cec<unclear>i</unclear>
+                     <supplied reason="lost">lia</supplied>
+                  </name>
+               </persName>
+               <gap reason="lost" extent="unknown" unit="character"/>
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

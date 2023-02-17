@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!-- printable version of USEpi inscription ID: -->
             <title>MA.Glouc.HCM.L.#97.6.1</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown
                      University</p>
@@ -69,12 +80,13 @@
                      <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                      <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                      <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-
-                        <rs/>  <!-- content can be "fake" or blank -->
-
+                     <rs/>
+                     <!-- content can be "fake" or blank -->
                   </summary>
                   <origin>
-                     <date evidence="#nomeclature #palaeography" notBefore="0200" notAfter="0300">second century CE</date>
+                     <date evidence="#nomeclature #palaeography"
+                            notBefore="0200"
+                            notAfter="0300">second century CE</date>
                      <placeName ref="europe.italy">ancient Ad Vicensium, Eturia, Italy</placeName>
                   </origin>
                   <!--Add provenance element(s) for locations at later dates - same content as origin-->
@@ -89,14 +101,16 @@
                   <ptr type="rest-of-bibl" target="#JIWE"/>
                   <biblScope unit="item">I 204</biblScope>
                </bibl>
-               <bibl><ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146748"
-                     >EDR146748</ref></bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146748">EDR146748</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -112,8 +126,8 @@
          <change when="2020-06-23" who="Sophia Papandonatou">updated history/provenance to genuine</change>
          <change when="2020-07-27" who="Sophia Papandonatou">dating</change>
          <change when="2021-02-18" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -122,51 +136,105 @@
       </surface>
    </facsimile>
    <text>
-
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <g type="hedera"/> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-               <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> <g type="hedera"/> <name type="gentilicium" key="Valerius">Valerio</name> <name type="cognomen" key="Maximus">Maximo</name></persName>.
-               <lb n="3"/><persName><name type="gentilicium" key="Aurelia">Aurelia</name> <name type="cognomen" key="Mariame">Mariame</name></persName> m
-               <lb break="no" n="4"/>ater infe<add place="above">li</add>cissima et <persName><name type="gentilicium" key="Flavia">Fl
-               <lb break="no" n="5"/>avia</name> <name type="cognomen" key="Marcellina">Marcellina</name></persName> <expan><abbr>co</abbr><ex>n</ex><abbr>i
-               <lb break="no" n="6"/>u</abbr><ex>n</ex><abbr>x</abbr></expan> pien<choice><sic>i</sic><corr>t</corr></choice>issima, cu
-               <lb n="7" break="no"/>m quo vixit <expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="la" value="20" type="cardinal">XX</num>,
-               <lb n="8"/><expan><abbr>m</abbr><ex>ensibus</ex></expan> <num xml:lang="la" type="cardinal" value="8">VIII</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num xml:lang="la" type="cardinal" value="7">VII</num>, <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>fe
-               <lb break="no" n="9"/>c</abbr><ex>erunt</ex></expan>. Trium ci<note>b</note>itatiu<hi rend="stacked">m</hi>
-               <lb n="10"/><expan><abbr>om</abbr><ex>nibus</ex></expan> <supplied reason="omitted">h</supplied>onoribus fu<supplied reason="omitted">n</supplied>ctum.
+               <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <g type="hedera"/>
+               <expan>
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>.
+               <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>L</abbr>
+                        <ex>ucio</ex>
+                     </expan>
+                  </name>
+                  <g type="hedera"/>
+                  <name type="gentilicium" key="Valerius">Valerio</name>
+                  <name type="cognomen" key="Maximus">Maximo</name>
+               </persName>.
+               <lb n="3"/>
+               <persName>
+                  <name type="gentilicium" key="Aurelia">Aurelia</name>
+                  <name type="cognomen" key="Mariame">Mariame</name>
+               </persName> m
+               <lb break="no" n="4"/>ater infe<add place="above">li</add>cissima et <persName>
+                  <name type="gentilicium" key="Flavia">Fl
+               <lb break="no" n="5"/>avia</name>
+                  <name type="cognomen" key="Marcellina">Marcellina</name>
+               </persName>
+               <expan>
+                  <abbr>co</abbr>
+                  <ex>n</ex>
+                  <abbr>i
+               <lb break="no" n="6"/>u</abbr>
+                  <ex>n</ex>
+                  <abbr>x</abbr>
+               </expan> pien<choice>
+                  <sic>i</sic>
+                  <corr>t</corr>
+               </choice>issima, cu
+               <lb n="7" break="no"/>m quo vixit <expan>
+                  <abbr>an</abbr>
+                  <ex>nis</ex>
+               </expan>
+               <num xml:lang="la" value="20" type="cardinal">XX</num>,
+               <lb n="8"/>
+               <expan>
+                  <abbr>m</abbr>
+                  <ex>ensibus</ex>
+               </expan>
+               <num xml:lang="la" type="cardinal" value="8">VIII</num>, <expan>
+                  <abbr>d</abbr>
+                  <ex>iebus</ex>
+               </expan>
+               <num xml:lang="la" type="cardinal" value="7">VII</num>, <expan>
+                  <abbr>b</abbr>
+                  <ex>ene</ex>
+               </expan>
+               <expan>
+                  <abbr>m</abbr>
+                  <ex>erenti</ex>
+               </expan>
+               <expan>
+                  <abbr>fe
+               <lb break="no" n="9"/>c</abbr>
+                  <ex>erunt</ex>
+               </expan>. Trium ci<note>b</note>itatiu<hi rend="stacked">m</hi>
+               <lb n="10"/>
+               <expan>
+                  <abbr>om</abbr>
+                  <ex>nibus</ex>
+               </expan>
+               <supplied reason="omitted">h</supplied>onoribus fu<supplied reason="omitted">n</supplied>ctum.
             </ab>
-
             <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-
          </div>
-
-
-                <div type="translation">
-                    <p>To the Divine Spirits. To Lucius Valerius Maximus. Aurelia Mariame, (his)
+         <div type="translation">
+            <p>To the Divine Spirits. To Lucius Valerius Maximus. Aurelia Mariame, (his)
                most unhappy mother, and Flavia Marcellina, (his) most dutiful wife, with whom he
                lived for twenty years, eight months, (and) seven days, made (this) for (him),
                well-deserving. He had fulfilled all of the offices of three cities.</p>
-                </div>
-
-
-
-                <div type="commentary">
-                    <p/>
-                </div>
-
-
-
-<div type="bibliography">
-            <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
             </xi:include>
          </div>
-        </body>
-
-
+      </body>
    </text>
 </TEI>

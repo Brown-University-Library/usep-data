@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- birkin-testing-14 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.71.AA.121</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,8 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Marble pedimental stele</p>
+                        <support>
+                           <p>Marble pedimental stele</p>
                            <dimensions type="surface" unit="cm">
                               <height>97.8</height>
                               <width>43.8</width>
@@ -41,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -75,7 +86,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased by the <orgName role="buyer collector">J. Paul Getty Museum</orgName> in <date when="1971">1971</date> from <persName role="seller">Nicolas Koutoulakis</persName>.</p>
                   </provenance>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -143,13 +155,15 @@
                   <biblScope unit="page">267, Table 1, no. 10</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/6582/unknown-maker-grave-stele-of-mynnia-greek-attic-about-370-bc/">Getty Museum Web Entry</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/6582/unknown-maker-grave-stele-of-mynnia-greek-attic-about-370-bc/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -160,10 +174,10 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-03-22" who="Scott J. DiGiulio">Added dimensions, added and formatted control vocab, greatly expanded bibl and added link to JPGM site, added transcription from image</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2022-03-20" who="Sophia Papandonatou">edited transcription, added
             translation, commentary, provenance</change>
-</revisionDesc>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -174,32 +188,48 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/>Ἐνθά<supplied reason="lost">δε</supplied> κεῖται <persName><name key="Mynnia Μυννία">Μυννία</name></persName>, μητρὶ ποθεινὴ
-               <lb n="2"/><persName><name key="Euphrosyne Εὐφροσύνη">Εὐφ<supplied reason="lost">ρ</supplied>οσύνη</name></persName>∶ <handShift/><persName><name key="Artemisia Ἀρτεμισία"><add>Ἀρτεμισίας</add></name></persName><handShift/> <persName><name key="Mynnia Μυννία">Μυννία</name></persName> <handShift/><persName><name key="Euteles Εὐτέλης"><add>Εὐτέλο</add></name></persName>.
+               <lb n="1"/>Ἐνθά<supplied reason="lost">δε</supplied> κεῖται <persName>
+                  <name key="Mynnia Μυννία">Μυννία</name>
+               </persName>, μητρὶ ποθεινὴ
+               <lb n="2"/>
+               <persName>
+                  <name key="Euphrosyne Εὐφροσύνη">Εὐφ<supplied reason="lost">ρ</supplied>οσύνη</name>
+               </persName>∶ <handShift/>
+               <persName>
+                  <name key="Artemisia Ἀρτεμισία">
+                     <add>Ἀρτεμισίας</add>
+                  </name>
+               </persName>
+               <handShift/>
+               <persName>
+                  <name key="Mynnia Μυννία">Μυννία</name>
+               </persName>
+               <handShift/>
+               <persName>
+                  <name key="Euteles Εὐτέλης">
+                     <add>Εὐτέλο</add>
+                  </name>
+               </persName>.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                   <p>Here lies Mynnia, to the sorrow of (her) mother, Euphrosyne. Artemisia,
+         <div type="translation">
+            <p>Here lies Mynnia, to the sorrow of (her) mother, Euphrosyne. Artemisia,
                Mynnia, (daughters) of Euteles. (from Getty Museum web entry)</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 2: A double point interpunct follows the name "Εὐφροσύνη" and is indicated by a colon in the transcription. The names "Ἀρτεμισίας" and "Εὐτέλο" were added later by a different hand (note the different letter heights and especially the sigmas in "Ἀρτεμισίας"); Artemisia likely died after the original inscription was carved.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Line 2: A double point interpunct follows the name "Εὐφροσύνη" and is indicated by a colon in the transcription. The names "Ἀρτεμισίας" and "Εὐτέλο" were added later by a different hand (note the different letter heights and especially the sigmas in "Ἀρτεμισίας"); Artemisia likely died after the original inscription was carved.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

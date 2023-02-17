@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MI.AA.UM.KM.GL.1105-1107</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MI.AA.UM.KM.GL.1105-1107</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.GL.1105-1107">MI.AA.UM.KM.GL.1105-1107</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.GL.1105-1107">MI.AA.UM.KM.GL.1105-1107</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,259 +42,298 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MI</region>
-                        <settlement>AA</settlement>
-                        <institution>UM</institution>
-                        <repository>KM</repository>
-                        <idno>1105-1107</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc" otherLangs="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+            <msDesc>
+               <msIdentifier>
+                  <region>MI</region>
+                  <settlement>AA</settlement>
+                  <institution>UM</institution>
+                  <repository>KM</repository>
+                  <idno>1105-1107</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc" otherLangs="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>transfer of a cult statue of Sarepta from Tyre to Puteoli;
+                     <p>transfer of a cult statue of Sarepta from Tyre to Puteoli;
                                 dedication to Domitian</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>marble</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>36.5</height>
-                                        <width>42.5</width>
-                                        <depth>4.9</depth>
-                                    </dimensions>
-                                    <dimensions type="surface" unit="cm">
-                                        <dim type="diameter">27</dim>
-                                        <depth>4.9</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#fragments.non_contig">
-                                    <p>first fragment broken along left and at right, damaging text; second fragment, containing text from lines 2-5, has been cut into a circular disc</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="8">
-                                    <p>the first line seems appended or copied hastily; lines 1-6
+                           <p>marble</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>36.5</height>
+                              <width>42.5</width>
+                              <depth>4.9</depth>
+                           </dimensions>
+                           <dimensions type="surface" unit="cm">
+                              <dim type="diameter">27</dim>
+                              <depth>4.9</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragments.non_contig">
+                           <p>first fragment broken along left and at right, damaging text; second fragment, containing text from lines 2-5, has been cut into a circular disc</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="8">
+                           <p>the first line seems appended or copied hastily; lines 1-6
                                         are in Greek, 7-8 in Latin. </p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="2">
-                            <handNote ana="#inscribed">
-                                <p>possibly 3 hands if the first line
-                                represents an additional carver</p></handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="2">
+                     <handNote ana="#inscribed">
+                        <p>possibly 3 hands if the first line
+                                represents an additional carver</p>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "fake" or blank -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="#prosopography #history" notBefore="0079" notAfter="0079">May
+                     <date evidence="#prosopography #history" notBefore="0079" notAfter="0079">May
                                 29th, 79 CE</date>
-                            <placeName ref="https://pleiades.stoa.org/places/432815">Italy, Pozzuoli</placeName>
-                        </origin>
-                        
-                        <provenance type="transferred" subtype="purchased">
-                            <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName>
+                     <placeName ref="https://pleiades.stoa.org/places/432815">Italy, Pozzuoli</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName>
                                 for the <orgName role="recipient">University of Michigan</orgName>.</p>
-                        </provenance>
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#OGIS_2"/>
-                        <biblScope unit="item">594</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#IGRR_I"/>
-                        <biblScope unit="item">420</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#SEG_36"/>
-                        <biblScope unit="item">923</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#NSA_1891"/>
-                        <biblScope unit="pp">167-168</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AE_1901"/>
-                        <biblScope unit="item">151</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AE_1988"/>
-                        <biblScope unit="item">300</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#BE_1949"/>
-                        <biblScope unit="item">196</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Puteoli_Visona"/>
-                        <biblScope unit="pp">50-57</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_Dennison"/>
-                        <biblScope unit="pp">p. 391, no. 43</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR08083">EDR08083</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD007973">EDH nr. HD007973</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1105/0000_00_1105p01.tif"
-                            >Kelsey Museum of Archaeology</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1107/0000_00_1107p01.tif"
-                            >Kelsey Museum of Archaeology</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-10-01" who="Samantha Lash">Initial Encoding</change>
-            <change when="2015-08-19" who="Scott J. DiGiulio">Updated metadata, expanded bibliography, added images, proofed transcription</change>
-            <change when="2017-06-29" who="Scott J. DiGiulio">Fixed typo in transcription; fixed small error in bibl</change>
-            <change when="2021-01-20" who="E. Mylonas">Changed genre to match vocabularies</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-            <change when="2022-10-11" who="Sophia Papandonatou">updated transcription, metadata,
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#OGIS_2"/>
+                  <biblScope unit="item">594</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#IGRR_I"/>
+                  <biblScope unit="item">420</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_36"/>
+                  <biblScope unit="item">923</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#NSA_1891"/>
+                  <biblScope unit="pp">167-168</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1901"/>
+                  <biblScope unit="item">151</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1988"/>
+                  <biblScope unit="item">300</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#BE_1949"/>
+                  <biblScope unit="item">196</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Puteoli_Visona"/>
+                  <biblScope unit="pp">50-57</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJA_Dennison"/>
+                  <biblScope unit="pp">p. 391, no. 43</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR08083">EDR08083</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD007973">EDH nr. HD007973</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1105/0000_00_1105p01.tif">Kelsey Museum of Archaeology</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1107/0000_00_1107p01.tif">Kelsey Museum of Archaeology</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-10-01" who="Samantha Lash">Initial Encoding</change>
+         <change when="2015-08-19" who="Scott J. DiGiulio">Updated metadata, expanded bibliography, added images, proofed transcription</change>
+         <change when="2017-06-29" who="Scott J. DiGiulio">Fixed typo in transcription; fixed small error in bibl</change>
+         <change when="2021-01-20" who="E. Mylonas">Changed genre to match vocabularies</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2022-10-11" who="Sophia Papandonatou">updated transcription, metadata,
                 added to commentary, added translation and provenance</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MI.AA.UM.KM.G.1105-1107.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MI.AA.UM.KM.G.1105-1107.det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MI.AA.UM.KM.G.1105-1107.det2.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-            <ab><lb n="1"/><date>Ἐπ' ὑπάτων <persName><name type="praenomen" key="Lucius">Λουκίοu</name> <name type="cognomen" key="Caesennius">Καισε<supplied reason="lost" cert="high">ννίου</supplied></name></persName> <supplied reason="lost" cert="high">καὶ <persName><name type="praenomen" key="Publius">Ποπλίου</name> <name type="gentilicium" key="Calvisius">Καλοuισίου</name></persName></supplied>
-                <lb n="2"/>καὶ <geogName>Τυρίοις</geogName> <g type="ἔτους"/><num value="204" xml:lang="grc"><hi rend="supraline tick">σδ</hi>ʹ</num>, <supplied reason="lost" cert="high">μ</supplied>ηνὸς ἀρ<supplied reason="lost">τεμ</supplied>
-                <lb n="3" break="no"/>ισίου <num value="11"><hi rend="supraline" xml:lang="grc">ιαʹ</hi></num></date>, κατέ<supplied reason="lost" cert="high">π</supplied>λευσεν ἀ<supplied reason="lost" cert="high">πὸ</supplied>
-                <lb n="4"/><placeName ref="https://pleiades.stoa.org/places/678437"><settlement>Τύρου</settlement></placeName> εἰς <placeName ref="https://pleiades.stoa.org/places/432815"><settlement>Ποτι<supplied reason="lost" cert="high">ό</supplied>λοις</settlement></placeName> θεὸς <supplied reason="lost">ἅγ</supplied>
-                <lb n="5" break="no"/>ιος <foreign><supplied reason="omitted">Σ</supplied>αρεπτηνό<supplied reason="lost" cert="high">ς</supplied></foreign>. <supplied reason="lost" cert="high">ἤ</supplied>γαγεν <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="6"/><foreign>ηλειμ</foreign> κατ' ἐπιτο<supplied reason="lost" cert="low">λὴν τοῦ </supplied><gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="7"/><handShift/><foreign xml:lang="lat">Pro <expan><abbr>sal</abbr><ex>ute</ex></expan> <expan><abbr>Imp</abbr><ex>eratoris</ex></expan> <persName><name type="cognomen" key="Domitianus">Domitiani</name></persName> <supplied reason="lost" cert="high"><expan><abbr>Aug</abbr><ex>usti</ex></expan></supplied>
-                <lb n="8"/><expan><abbr>L</abbr><ex>oco</ex></expan> <expan><abbr>c</abbr><ex>oncesso</ex></expan> <supplied reason="lost" cert="high"><expan><abbr>d</abbr><ex>ecreto</ex></expan> <expan><abbr>d</abbr><ex>ecurionum</ex></expan>.</supplied> </foreign>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MI.AA.UM.KM.G.1105-1107.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MI.AA.UM.KM.G.1105-1107.det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MI.AA.UM.KM.G.1105-1107.det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <date>Ἐπ' ὑπάτων <persName>
+                     <name type="praenomen" key="Lucius">Λουκίοu</name>
+                     <name type="cognomen" key="Caesennius">Καισε<supplied reason="lost" cert="high">ννίου</supplied>
+                     </name>
+                  </persName>
+                  <supplied reason="lost" cert="high">καὶ <persName>
+                        <name type="praenomen" key="Publius">Ποπλίου</name>
+                        <name type="gentilicium" key="Calvisius">Καλοuισίου</name>
+                     </persName>
+                  </supplied>
+                  <lb n="2"/>καὶ <geogName>Τυρίοις</geogName>
+                  <g type="ἔτους"/>
+                  <num value="204" xml:lang="grc">
+                     <hi rend="supraline tick">σδ</hi>ʹ</num>, <supplied reason="lost" cert="high">μ</supplied>ηνὸς ἀρ<supplied reason="lost">τεμ</supplied>
+                  <lb n="3" break="no"/>ισίου <num value="11">
+                     <hi rend="supraline" xml:lang="grc">ιαʹ</hi>
+                  </num>
+               </date>, κατέ<supplied reason="lost" cert="high">π</supplied>λευσεν ἀ<supplied reason="lost" cert="high">πὸ</supplied>
+               <lb n="4"/>
+               <placeName ref="https://pleiades.stoa.org/places/678437">
+                  <settlement>Τύρου</settlement>
+               </placeName> εἰς <placeName ref="https://pleiades.stoa.org/places/432815">
+                  <settlement>Ποτι<supplied reason="lost" cert="high">ό</supplied>λοις</settlement>
+               </placeName> θεὸς <supplied reason="lost">ἅγ</supplied>
+               <lb n="5" break="no"/>ιος <foreign>
+                  <supplied reason="omitted">Σ</supplied>αρεπτηνό<supplied reason="lost" cert="high">ς</supplied>
+               </foreign>. <supplied reason="lost" cert="high">ἤ</supplied>γαγεν <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="6"/>
+               <foreign>ηλειμ</foreign> κατ' ἐπιτο<supplied reason="lost" cert="low">λὴν τοῦ </supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="7"/>
+               <handShift/>
+               <foreign xml:lang="lat">Pro <expan>
+                     <abbr>sal</abbr>
+                     <ex>ute</ex>
+                  </expan>
+                  <expan>
+                     <abbr>Imp</abbr>
+                     <ex>eratoris</ex>
+                  </expan>
+                  <persName>
+                     <name type="cognomen" key="Domitianus">Domitiani</name>
+                  </persName>
+                  <supplied reason="lost" cert="high">
+                     <expan>
+                        <abbr>Aug</abbr>
+                        <ex>usti</ex>
+                     </expan>
+                  </supplied>
+                  <lb n="8"/>
+                  <expan>
+                     <abbr>L</abbr>
+                     <ex>oco</ex>
+                  </expan>
+                  <expan>
+                     <abbr>c</abbr>
+                     <ex>oncesso</ex>
+                  </expan>
+                  <supplied reason="lost" cert="high">
+                     <expan>
+                        <abbr>d</abbr>
+                        <ex>ecreto</ex>
+                     </expan>
+                     <expan>
+                        <abbr>d</abbr>
+                        <ex>ecurionum</ex>
+                     </expan>.</supplied>
+               </foreign>
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p> In the consulship of Lucius (Junius) Caese[nnius and Publius Calvisius (Ruso Julius Frontinus)] 
+         </div>
+         <div type="translation">
+            <p> In the consulship of Lucius (Junius) Caese[nnius and Publius Calvisius (Ruso Julius Frontinus)] 
                         and in the year 204 of the Tyrians, on the eleventh day in the month Artemision, there sailed 
                         f[rom] Tyre to Pute[o]li the [ho]ly god of Sarept[a]. Leading (him?) was [---] eleim, at the ri[se o]f the [---]</p>
-                    <p>On behalf of the health of the emperor Domitian [Augustus]. The place was granted [by decree of the decurions.]</p>
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
+            <p>On behalf of the health of the emperor Domitian [Augustus]. The place was granted [by decree of the decurions.]</p>
+         </div>
+         <div type="commentary"><!-- notes go here -->
             <p>Line 1: Λουκίου Καισεννίου καὶ Ποπλίου Καλουισίου-the consuls are Lucius Junius
                     Caesennius and Publius Calvisius Ruso Julius Frontinus who were in office in 79 CE
                     from March through May (Gallivan 1981, 186-220), as is confirmed by the following “year
                     204 of the Tyrians”. This line of text is not well planned and does not
                     match the continuation of the dating formula in the proceeding lines; perhaps it
-                    was copied hastily or added in later.</p> 
-                    <p>Lines 2 and 3: Ἀρ[tεμ]/ισίου •Ι•Α•-May
+                    was copied hastily or added in later.</p>
+            <p>Lines 2 and 3: Ἀρ[tεμ]/ισίου •Ι•Α•-May
                         29th, 79 CE. L with supraline for ἔτους.</p>
-                    <p>Line 4: Ποτιόλοις for Ποτιόλου (Visonà cited in SEG).</p>
-                    <p>Line 4-6: Θεὸς [Ἥλ]|ιος Ἀρεπτηνό[ς], ἤγαγεν [δὲ] | Ἠλειμ κατ’ ἐπιτο[λὴν τοῦ θεοῦ] (OGIS cited in SEG); Θεὸς [Ἥλ]|ιο[ς] Σαρεπτηνὸ[ς] ἤγαγεν [δὲ] | Ἠλεὶμ κατ’ ἐπιτολήν (IGR cited in SEG).</p>
-                    <p>-ηλειμ is perhaps a theophoric name, e.g. [Ἀβδ]|ηλείμ as suggested but rejected by Clermont-Ganneau 230/231 (Visonà cited in SEG).</p>
-                    <p>Lines 7 and 8: the inscription ends in Latin with an Imperial
+            <p>Line 4: Ποτιόλοις for Ποτιόλου (Visonà cited in SEG).</p>
+            <p>Line 4-6: Θεὸς [Ἥλ]|ιος Ἀρεπτηνό[ς], ἤγαγεν [δὲ] | Ἠλειμ κατ’ ἐπιτο[λὴν τοῦ θεοῦ] (OGIS cited in SEG); Θεὸς [Ἥλ]|ιο[ς] Σαρεπτηνὸ[ς] ἤγαγεν [δὲ] | Ἠλεὶμ κατ’ ἐπιτολήν (IGR cited in SEG).</p>
+            <p>-ηλειμ is perhaps a theophoric name, e.g. [Ἀβδ]|ηλείμ as suggested but rejected by Clermont-Ganneau 230/231 (Visonà cited in SEG).</p>
+            <p>Lines 7 and 8: the inscription ends in Latin with an Imperial
                         dedication seemingly by a different hand. "The Latin dedication was engraved during Domitian’s reign, the Greek text probably before it." (Visonà cited in SEG) </p>
-                    <p>Fine-grained chalky gray marble.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            <p>Fine-grained chalky gray marble.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

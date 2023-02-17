@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.76.AA.30</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,9 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Marble stele</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Marble stele</p>
+                           <dimensions type="surface" unit="cm">
                               <height/>
                               <width/>
                               <depth/>
@@ -40,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="52">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -66,7 +78,8 @@
                      <date evidence="unspecified" notBefore="0001" notAfter="0001">c. 1 CE</date>
                      <placeName ref="asia.turkey">Kyme, Turkey</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -86,13 +99,15 @@
                   <biblScope unit="item">1243</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/7315/unknown-maker-stele-with-inscription-greek-late-1st-century-bc/">Getty Museum Website with image</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/7315/unknown-maker-stele-with-inscription-greek-late-1st-century-bc/">Getty Museum Website with image</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -105,8 +120,8 @@
          <change when="2015-11-30" who="Scott J. DiGiulio">Updated various control vocabulary metadata, corrected line and column numbers, added link to Getty Museum website</change>
          <change when="2016-03-14" who="Scott J. DiGiulio">Added transcription from image on Getty website</change>
          <change when="2020-10-22" who="Scott J. DiGiulio">Removed the empty @ana on decoNote</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -117,14 +132,40 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/>Εἰσαγησαμένων τῶν στρατάγων ἔγραψαν τρεῖς οἰ λάχοντες· <persName><name key="Asklapon Ἀσκλάπων">Ἀσκλάπων</name></persName>
-               <lb n="2"/><persName><name key="Dionysios Διονύσιος">Διονυσίω</name></persName>, <persName><name key="Hegesandros Ἡγήσανδρος">Ἠγήσανδρος</name></persName> <persName><name key="Herakleidas Ἡρακλίδας">Ἠρακλείδα</name></persName>, <persName><name key="Athenagoras Ἀθηναγόρας">Ἀθηναγόρας</name></persName> <persName><name key="Dionysios Διονύσιος">Διονυσίω</name></persName>, καὶ ὀ γραμμά
-               <lb n="3" break="no"/>τευς τῶ δάμω <persName><name key="Heraios Ἡραῖος">Ἠραῖος</name></persName> <persName><name key="Antipatros Ἀντίπατρος">Ἀντιπάτρω</name></persName>·
-               <lb n="4" rend="outdent"/>ἔπει <persName><name key="Kleanax Κλεάναξ">Κλεάναξ</name></persName> <persName><name key="Sarapion Σαράπιων">Σαραπίωνος</name></persName>, φύσει δὲ <persName><name key="Phildamos Φιλοδάμος">Φιλοδάμω</name></persName>, ὀ πρύτανις ἀμφιθά
+               <lb n="1"/>Εἰσαγησαμένων τῶν στρατάγων ἔγραψαν τρεῖς οἰ λάχοντες· <persName>
+                  <name key="Asklapon Ἀσκλάπων">Ἀσκλάπων</name>
+               </persName>
+               <lb n="2"/>
+               <persName>
+                  <name key="Dionysios Διονύσιος">Διονυσίω</name>
+               </persName>, <persName>
+                  <name key="Hegesandros Ἡγήσανδρος">Ἠγήσανδρος</name>
+               </persName>
+               <persName>
+                  <name key="Herakleidas Ἡρακλίδας">Ἠρακλείδα</name>
+               </persName>, <persName>
+                  <name key="Athenagoras Ἀθηναγόρας">Ἀθηναγόρας</name>
+               </persName>
+               <persName>
+                  <name key="Dionysios Διονύσιος">Διονυσίω</name>
+               </persName>, καὶ ὀ γραμμά
+               <lb n="3" break="no"/>τευς τῶ δάμω <persName>
+                  <name key="Heraios Ἡραῖος">Ἠραῖος</name>
+               </persName>
+               <persName>
+                  <name key="Antipatros Ἀντίπατρος">Ἀντιπάτρω</name>
+               </persName>·
+               <lb n="4" rend="outdent"/>ἔπει <persName>
+                  <name key="Kleanax Κλεάναξ">Κλεάναξ</name>
+               </persName>
+               <persName>
+                  <name key="Sarapion Σαράπιων">Σαραπίωνος</name>
+               </persName>, φύσει δὲ <persName>
+                  <name key="Phildamos Φιλοδάμος">Φιλοδάμω</name>
+               </persName>, ὀ πρύτανις ἀμφιθά
                <lb n="5" break="no"/>λεα τὰν ἐκ πατέρων ἔχων εὐγένηαν καὶ τὰν ἀνυπέρβλητον εἰς φιλοδοξί
                <lb n="6" break="no"/>αν εἰς τᾶν πάτριν ἀρέσκηαν, πόλλα μὲν καὶ μέγαλα τῷ διηνέικει βίῳ τᾷ πό
                <lb n="7" break="no"/>λει παρέσχηται, οὔδενα καῖρον ὐφέμενος ἐν ᾧ τὰν ὐπὲρ τῶ δάμω κα
@@ -132,67 +173,124 @@
                <lb n="9"/>λόγῳ καὶ ἔργῳ· ἔφ' οἷς οὔτον ἐπὶ τῶν παρεόντων τᾶς ἐνπρυτανευομέ
                <lb n="10" break="no"/>νας αὔτω φιλοδοξίας ὀ ἔπαινος ὐπὸ τῶ δάμω κατ τὸ πάρεον μεμα<unclear>ρ</unclear>
                <lb n="11" break="no"/>τύρηται, π<unclear>όλ</unclear>λοις δὲ ὐπομναμάτεσσιν καῖ διὰ τᾶς τῶν πρότερον ψαφισμά
-               <lb n="12" break="no"/>των <supplied reason="omitted" cert="low">ψάφω</supplied> ἀ τῶ δάμω χάρις ἀπάνταται· ὄσσα μὲν γὰρ εἰρατεύσαις τῶ <persName><name type="divinity" key="Dionysios Διονύσιος">Διννύσω</name> τῶ <name type="epithet" key="Pandemos Πάνδαμος">Πα<supplied reason="lost">ν</supplied>
-               <lb n="13" break="no"/>δάμω</name></persName> ἐπετέλεσσεν εἰς τὰ συνεκτίσμενα μυστήρια τῷ πόλει, καὶ ὄσσαι<supplied reason="lost">ς</supplied>
+               <lb n="12" break="no"/>των <supplied reason="omitted" cert="low">ψάφω</supplied> ἀ τῶ δάμω χάρις ἀπάνταται· ὄσσα μὲν γὰρ εἰρατεύσαις τῶ <persName>
+                  <name type="divinity" key="Dionysios Διονύσιος">Διννύσω</name> τῶ <name type="epithet" key="Pandemos Πάνδαμος">Πα<supplied reason="lost">ν</supplied>
+                     <lb n="13" break="no"/>δάμω</name>
+               </persName> ἐπετέλεσσεν εἰς τὰ συνεκτίσμενα μυστήρια τῷ πόλει, καὶ ὄσσαι<supplied reason="lost">ς</supplied>
                <lb n="14"/>ἐποιήσατο δαᾶάναις εἰς τὸν πενταετήρικον τῶν μυστηρίων κόσμον, ὀ τό
                <lb n="15" break="no"/>τε τῶν ἀναλωμάτων καῖρος τὰν πονπευομέναν αὔτω φιλοδοξίαν καὶ εὐ
                <lb n="16" break="no"/>σέβηαν ἐπέδειξεν· μόνος καὶ πρῶτος τὰν ἄρχαν ποησάμενος καὶ καλέσ
                <lb n="17" break="no"/>σαις ἐκ προγράφας τοίς τε πολείτας καῖ Ρωμαίοις κᾶι παροίκοις καὶ ξένοις ἀρίστ<supplied reason="lost">ι</supplied>
-               <lb n="18" break="no"/>σεν ἐν τῷ τεμένει τῳ <persName><name type="divinity" key="Dionysios Διονύσιος">Διννύσω</name></persName>, καὶ πολυτελέως εὐώχις ἐκόσμει τὰν ἐόρ
+               <lb n="18" break="no"/>σεν ἐν τῷ τεμένει τῳ <persName>
+                  <name type="divinity" key="Dionysios Διονύσιος">Διννύσω</name>
+               </persName>, καὶ πολυτελέως εὐώχις ἐκόσμει τὰν ἐόρ
                <lb n="19" break="no"/>ταν κατ' ἐνίαυτον· γ<unclear>ά</unclear>μοις τε τᾶς θύγατρος ἐπιτελέων ἀρίστε τὸ πλᾶθος·
                <lb n="20" break="no"/>ἐφ' οἷς ὀ δᾶμος, περὸ τῶν ἀγάθων ἔχων μνάμαν κὰι διάγνωσιν, οὐδὲ τῶν λοίπων οἷς
                <lb n="21"/>συνενγεγήρακεν ἐπιτευγμάτων ἐπιλέλασται· <space quantity="1" unit="character"/> ἔστιν δὲ καὶ κατ τοῦτο ἐπα<unclear>ι</unclear>
-               <lb n="22" break="no"/>νέτεος καὶ τείμιος ὀ πρύτανις <persName><name key="Kleanax Κλεάναξ">Κλεάναξ</name></persName> ὄττι γενόμενος καὶ καλλίτεκνος
+               <lb n="22" break="no"/>νέτεος καὶ τείμιος ὀ πρύτανις <persName>
+                  <name key="Kleanax Κλεάναξ">Κλεάναξ</name>
+               </persName> ὄττι γενόμενος καὶ καλλίτεκνος
                <lb n="23"/>προενοήθη τῶ παῖδος τᾶς ἐν τοῖς λόγοις ἀγώγας, καὶ παρέστασε τῷ δάμ<supplied reason="lost">ῼ</supplied>
-               <lb n="24"/>ἄνδρα ἄξιον μὲν τῳ γένεος <persName><name key="Sarapion Σαράπιων">Σαραπίωνα</name></persName>, καδέμονα δὲ καὸ βόαθον καὶ ἐν πό<unclear>λ</unclear>
+               <lb n="24"/>ἄνδρα ἄξιον μὲν τῳ γένεος <persName>
+                  <name key="Sarapion Σαράπιων">Σαραπίωνα</name>
+               </persName>, καδέμονα δὲ καὸ βόαθον καὶ ἐν πό<unclear>λ</unclear>
                <lb n="25" break="no"/>λοις ἀποδεδείγμενον ἤδη διὰ τῶν ἰδίων ἀνδραγαθημάτων ταν εἰς τὰν πόλιν
                <lb n="26"/>ἐτένησαν· <space quantity="1" unit="character"/> ἄνδρα φιλοπάτορα καὶ ὀφέλλοντα καὶ δαμοσίῳ τᾶν ἐπωνυμίαν
                <lb n="27"/>ταύταν προσχρημ<unclear>ατί</unclear>ζεσθαι, μαρτυρήμενον τὸ φιλόστοργον εὀς τὸν π<unclear>ά</unclear>
                <lb n="28" break="no"/>τερα καὶ δαμοσίῳ ψ<unclear>α</unclear>φίσματι πρὸς τον αἴωνα· ἐφ' οἷς παῖσιν ἀποδεχόμε
-               <lb n="29" break="no"/>νος ὀ δᾶμος <persName><name key="Kleanax Κλεάναξ">Κλεάνακτα</name></persName> τὸν πρύτανιν ἐπαίνει διηνεκέως αὔτω τετηρ<supplied reason="lost">ή</supplied>
-               <lb n="30" break="no"/><unclear>κ</unclear>οντος τὰν πρὸς τὸν δᾶμον εὔνοιαν· τὰ δὲ νῦν πρυτανεύσαις ἐπετέλε<supplied reason="lost">σ</supplied>
+               <lb n="29" break="no"/>νος ὀ δᾶμος <persName>
+                  <name key="Kleanax Κλεάναξ">Κλεάνακτα</name>
+               </persName> τὸν πρύτανιν ἐπαίνει διηνεκέως αὔτω τετηρ<supplied reason="lost">ή</supplied>
+               <lb n="30" break="no"/>
+               <unclear>κ</unclear>οντος τὰν πρὸς τὸν δᾶμον εὔνοιαν· τὰ δὲ νῦν πρυτανεύσαις ἐπετέλε<supplied reason="lost">σ</supplied>
                <lb n="31" break="no"/>σεν μὲν τᾷ νέᾳ νουμηνίᾳ ταὶς θυσίαις τοῖς θέοισι κατ τὰ πάτρια καὶ ἐγλύ
                <lb n="32" break="no"/>κισσε τοὶς ἐν τᾷ πόλει πάντας καὶ ἐπεσέλεσσεν θέαις πολυτέλεας καὶ <supplied reason="lost">ἐ</supplied>
                <lb n="33" break="no"/>ποίησε ταὶς εὐετηρίαις καὶ ταῖς θυσίαις κατ τὰ πάτρια καὶ εὐώχῃσεν ἐν τῷ πρυ
                <lb n="34" break="no"/>τανήῳ ἐπὶ πλήονας ἀμέραις πόλλοις τῶν πολείταν καὶ Ρωμάοις, ἐποίησεν δὲ
                <lb n="35"/>καὶ τοῖς κατοιχομένοις ἐν τᾷ εἰθισμένᾳ ἀμέρᾳ κατ τὰ πάτρια καὰ ταῖς ἀποθύσιας
                <lb n="36"/>καὶ χονδρὀγαλα παῖσιν τοῖς ἐν τᾷ πόλει ἐλευθέροις τε καὶ δοίλοις, ἔν τε τᾷ Κορύδον<unclear>ι</unclear>
-               <lb n="37"/><unclear>π</unclear>ρῶτος καὶ μόνος τοὶς μὲν πολείταις καὶ Ρωμαίοις καὶ παροίκοις καὶ ξένοις ἀπὸ καρ<supplied reason="lost">ύ</supplied>
+               <lb n="37"/>
+               <unclear>π</unclear>ρῶτος καὶ μόνος τοὶς μὲν πολείταις καὶ Ρωμαίοις καὶ παροίκοις καὶ ξένοις ἀπὸ καρ<supplied reason="lost">ύ</supplied>
                <lb n="38" break="no"/>γματος ἀρίστισεν ἐν τῷ πρυτανήῳ, καὶ τὰν διαρρίφαν κατ τὰ αὖτα κατ τὰ καὶ οἰ λοίποι
                <lb n="39"/>πρυτάνις <unclear>ἐπο</unclear>ίησαν, ταίς τε πόμπαις τᾶς δάφνας ἐπόησεν, τοίσ τε εἴρεας κα<supplied reason="lost">ὶ</supplied>
                <lb n="40"/>εἰρονείκαις καῖ ταῖς ἄρχαις καὶ πόλλοις τῶν πολείταν ἀρίστισεν· ἐπετέλσε<supplied reason="lost">ν</supplied>
-               <lb n="41"/>δὲ καὶ ἐν τοῖς ἀγομένοις ὐπὸ τᾶς Ἀσίας Καισαρήοις, κάθως ἐπανγείλατο, τα<unclear>ίς</unclear> <supplied reason="lost">τε</supplied>
-               <lb n="42"/><unclear>θ</unclear>υσίαις καὶ εὐωίαις, βουθυτήσιαις μὲν τῷ αὐτοκράτορι <persName><name type="cognomen" key="Caesar Καῖσαρ">Καίσαρι</name> <name type="cognomen" key="Augustus Σεβαστός">Σεβάστῳ</name></persName> <unclear>κ</unclear><supplied reason="lost">αὶ τοῖς παί</supplied>
-               <lb n="43" break="no"/>δεσσιν αὔτω καὶ τοῖς λοίποισι θέοισι, ἀφ' ἇν θυσίαν καὶ εὐώχησε κατ<unclear>α</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" atLeast="6" atMost="8" unit="character"/> <supplied reason="lost">ἐν τᾷ&gt;</supplied>
-               <lb n="44"/>ἀγόρᾳ ἐκ προγράφας Ἔλλανας τε καὶ Ρωμαίοις καὶ παροίκοις καὶ ξέ<unclear>ν</unclear><supplied reason="lost">οις</supplied> <gap reason="lost" quantity="12" cert="low" unit="character"/>
-               <lb n="45"/>ταν πο<unclear>ιη</unclear>σάμ<supplied reason="lost">ε</supplied>νος τὰν χοραγίαν, τά τε λοῖπα εἶρα ἐπετέ<supplied reason="lost">λλεσεν</supplied> <gap reason="lost" quantity="14" cert="low" unit="character"/> <supplied reason="lost"><space quantity="1" unit="character"/></supplied>
-               <lb n="46" rend="outdent"/>Δι' ἃ δὴ δέδοχθ<unclear>α</unclear>ι <unclear>τ</unclear>ᾷ βόλλᾳ καὶ τῷ δάμῳ· στεφάνωσθαι αὖτ<unclear>ο</unclear><supplied reason="lost">ν ἐν τοῖς Διονυσίοισι πρὸς τῷ</supplied>
-               <lb n="47"/>βώμῳ τῶ <persName><name type="divinity" key="Zeus Ζεύς">Δί<unclear>ο</unclear><supplied reason="lost">ς</supplied></name></persName> μετὰ τὰν θυσίαν καὶ ἐν παίσαισι τα<unclear>ῖ</unclear><supplied reason="lost">ς</supplied> <gap reason="lost" quantity="21" cert="low" unit="character"/> <supplied reason="lost">τοῖς</supplied>
-               <lb n="48"/>ἀρχαιρεσίοισ<unclear>ι</unclear> μετὰ ταὶς ἐπεύχαις καὶ ἐν τα<unclear>ι</unclear><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="12" cert="low" unit="character"/><supplied reason="lost"> , ἀνανγελλομένας</supplied>
-               <lb n="49"/>τᾶς στεφα<unclear>ν</unclear>ώσιος κατ τάδε· Στεφάνοι ὀ δ<supplied reason="lost">ᾶμος <persName><name key="Kleanax Κλεάναξ">Κλεάνακτα</name></persName> <persName><name key="Sarapion Σαράπιων">Σαραπίωνος</name></persName>, φύσει δὲ</supplied>
-               <lb n="50"/><persName><name key="Philodamos Φιλοδάμος"><supplied reason="lost">Φιλο</supplied><unclear>δάμω</unclear></name></persName>, <unclear>χ</unclear>ρυσίῳ στεφάνῳ πρυταν<unclear>ε</unclear><supplied reason="lost">ύσαντα</supplied> <gap reason="lost" quantity="28" cert="low" unit="character"/><supplied reason="lost">,</supplied>
-               <lb n="51"/><supplied reason="lost">ἐπιμέλειαν π</supplied>οιημένων τᾶς στ<unclear>ε</unclear><supplied reason="lost">φανώσιος τῶν</supplied><gap reason="lost" quantity="24" cert="low" unit="character"/>
-               <lb n="52"/><gap reason="lost" cert="low" quantity="12" unit="character"/>. αὖτον καὶ τ<unclear>ας</unclear><gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="53"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="41"/>δὲ καὶ ἐν τοῖς ἀγομένοις ὐπὸ τᾶς Ἀσίας Καισαρήοις, κάθως ἐπανγείλατο, τα<unclear>ίς</unclear>
+               <supplied reason="lost">τε</supplied>
+               <lb n="42"/>
+               <unclear>θ</unclear>υσίαις καὶ εὐωίαις, βουθυτήσιαις μὲν τῷ αὐτοκράτορι <persName>
+                  <name type="cognomen" key="Caesar Καῖσαρ">Καίσαρι</name>
+                  <name type="cognomen" key="Augustus Σεβαστός">Σεβάστῳ</name>
+               </persName>
+               <unclear>κ</unclear>
+               <supplied reason="lost">αὶ τοῖς παί</supplied>
+               <lb n="43" break="no"/>δεσσιν αὔτω καὶ τοῖς λοίποισι θέοισι, ἀφ' ἇν θυσίαν καὶ εὐώχησε κατ<unclear>α</unclear>
+               <gap reason="illegible" quantity="1" unit="character"/>
+               <gap reason="lost" atLeast="6" atMost="8" unit="character"/>
+               <supplied reason="lost">ἐν τᾷ&gt;</supplied>
+               <lb n="44"/>ἀγόρᾳ ἐκ προγράφας Ἔλλανας τε καὶ Ρωμαίοις καὶ παροίκοις καὶ ξέ<unclear>ν</unclear>
+               <supplied reason="lost">οις</supplied>
+               <gap reason="lost" quantity="12" cert="low" unit="character"/>
+               <lb n="45"/>ταν πο<unclear>ιη</unclear>σάμ<supplied reason="lost">ε</supplied>νος τὰν χοραγίαν, τά τε λοῖπα εἶρα ἐπετέ<supplied reason="lost">λλεσεν</supplied>
+               <gap reason="lost" quantity="14" cert="low" unit="character"/>
+               <supplied reason="lost">
+                  <space quantity="1" unit="character"/>
+               </supplied>
+               <lb n="46" rend="outdent"/>Δι' ἃ δὴ δέδοχθ<unclear>α</unclear>ι <unclear>τ</unclear>ᾷ βόλλᾳ καὶ τῷ δάμῳ· στεφάνωσθαι αὖτ<unclear>ο</unclear>
+               <supplied reason="lost">ν ἐν τοῖς Διονυσίοισι πρὸς τῷ</supplied>
+               <lb n="47"/>βώμῳ τῶ <persName>
+                  <name type="divinity" key="Zeus Ζεύς">Δί<unclear>ο</unclear>
+                     <supplied reason="lost">ς</supplied>
+                  </name>
+               </persName> μετὰ τὰν θυσίαν καὶ ἐν παίσαισι τα<unclear>ῖ</unclear>
+               <supplied reason="lost">ς</supplied>
+               <gap reason="lost" quantity="21" cert="low" unit="character"/>
+               <supplied reason="lost">τοῖς</supplied>
+               <lb n="48"/>ἀρχαιρεσίοισ<unclear>ι</unclear> μετὰ ταὶς ἐπεύχαις καὶ ἐν τα<unclear>ι</unclear>
+               <gap reason="lost" quantity="2" unit="character"/>
+               <gap reason="illegible" quantity="2" unit="character"/>
+               <gap reason="lost" quantity="12" cert="low" unit="character"/>
+               <supplied reason="lost"> , ἀνανγελλομένας</supplied>
+               <lb n="49"/>τᾶς στεφα<unclear>ν</unclear>ώσιος κατ τάδε· Στεφάνοι ὀ δ<supplied reason="lost">ᾶμος <persName>
+                     <name key="Kleanax Κλεάναξ">Κλεάνακτα</name>
+                  </persName>
+                  <persName>
+                     <name key="Sarapion Σαράπιων">Σαραπίωνος</name>
+                  </persName>, φύσει δὲ</supplied>
+               <lb n="50"/>
+               <persName>
+                  <name key="Philodamos Φιλοδάμος">
+                     <supplied reason="lost">Φιλο</supplied>
+                     <unclear>δάμω</unclear>
+                  </name>
+               </persName>, <unclear>χ</unclear>ρυσίῳ στεφάνῳ πρυταν<unclear>ε</unclear>
+               <supplied reason="lost">ύσαντα</supplied>
+               <gap reason="lost" quantity="28" cert="low" unit="character"/>
+               <supplied reason="lost">,</supplied>
+               <lb n="51"/>
+               <supplied reason="lost">ἐπιμέλειαν π</supplied>οιημένων τᾶς στ<unclear>ε</unclear>
+               <supplied reason="lost">φανώσιος τῶν</supplied>
+               <gap reason="lost" quantity="24" cert="low" unit="character"/>
+               <lb n="52"/>
+               <gap reason="lost" cert="low" quantity="12" unit="character"/>. αὖτον καὶ τ<unclear>ας</unclear>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="53"/>
+               <gap reason="lost" extent="unknown" unit="line"/>
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.77.AC.119</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,8 @@
                <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#metal.bronze">
-                        <support><p>Bronze tabula ansata</p>
+                        <support>
+                           <p>Bronze tabula ansata</p>
                            <dimensions type="surface" unit="cm">
                               <height>5.9</height>
                               <width>11.8</width>
@@ -67,7 +78,8 @@
                      <date evidence="unspecified" notBefore="0200" notAfter="0300">third century CE</date>
                      <placeName ref="asia.turkey">Asia Minor</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -79,13 +91,15 @@
                   <biblScope unit="item">1583</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/8087/unknown-maker-tabula-ansata-roman-3rd-century/">Getty Museum Website</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/8087/unknown-maker-tabula-ansata-roman-3rd-century/">Getty Museum Website</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -110,35 +124,35 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><persName><name type="gentilicium" key="Aurelius Αὐρήλιος">Αὐρήλιος</name> <name type="cognomen" key="Marinus Μαρῖνος">Μα
-               <lb n="2" break="no"/>ρῖνος</name></persName> κορνικου
+               <lb n="1"/>
+               <persName>
+                  <name type="gentilicium" key="Aurelius Αὐρήλιος">Αὐρήλιος</name>
+                  <name type="cognomen" key="Marinus Μαρῖνος">Μα
+               <lb n="2" break="no"/>ρῖνος</name>
+               </persName> κορνικου
                <lb n="3" break="no"/>λάριος σέξ/τα δε
                <lb n="4" break="no"/>κίμανος εὐξά
                <lb n="5" break="no"/>μενος ἀνέθη
                <lb n="6" break="no"/>κεν.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

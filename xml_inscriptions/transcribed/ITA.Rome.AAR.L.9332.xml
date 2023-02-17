@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="usep">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>ITA.Rome.AAR.L.9332</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>ITA.Rome.AAR.L.9332</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="usepigraphy" xml:id="ITA.Rome.AAR.L.9332">ITA.Rome.AAR.L.9332</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="usepigraphy" xml:id="ITA.Rome.AAR.L.9332">ITA.Rome.AAR.L.9332</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
@@ -33,219 +42,245 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>ITA</region>
-                        <settlement>Rome</settlement>
-                        <institution>AAR</institution>
-                        <repository/>
-                        <idno>9332</idno>
-                        <altIdentifier>
-                            <idno>112</idno>
-                        </altIdentifier>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>ITA</region>
+                  <settlement>Rome</settlement>
+                  <institution>AAR</institution>
+                  <repository/>
+                  <idno>9332</idno>
+                  <altIdentifier>
+                     <idno>112</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                         <!-- short summary of the content of an inscription -->
-                            <p>Epitaph for Diadumenus, contubernalis of Secundilla, a slave of Minicius Faustinus</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Epitaph for Diadumenus, contubernalis of Secundilla, a slave of Minicius Faustinus</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.marble">
-                                <support> 
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#stone.marble">
+                        <support> 
                         <!-- short summary of the material and support of an inscription -->
-                                    <p>Well-polished marble tablet</p>
-      
-                                    <dimensions unit="cm">
-                                        <width>30.9</width>
-                                        <height>37.2</height>                                       
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p>border has some minor wear along the bottom and sides</p>
-                                </condition>
-                            </supportDesc>
-                            
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="9">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                    <height min="1.4" max="2.3">1.4-2.3</height>
-                                </dimensions>
-            
-            
-            
-            
-            
-                                
-                                <p>writing is well-planned and well-executed, free from errors and unanticipated corrections</p>
-                            </handNote>                                               
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>simple molding border, cyma reversa 
+                           <p>Well-polished marble tablet</p>
+                           <dimensions unit="cm">
+                              <width>30.9</width>
+                              <height>37.2</height>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p>border has some minor wear along the bottom and sides</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="9">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.4" max="2.3">1.4-2.3</height>
+                        </dimensions>
+                        <p>writing is well-planned and well-executed, free from errors and unanticipated corrections</p>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>simple molding border, cyma reversa 
                                 <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "fake" or blank -->
+                  </summary>
+                  <origin>
                         <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0100" notAfter="0149" cert="medium">first half of second century CE</date>
-                            <placeName ref="europe.italy.rome">Villa Ludovisi-Paulssen near Italy, Rome, Porta Salaria</placeName>
-                        </origin>
-                        <provenance type="found" subtype="first-recorded">
-                            <p>seen by <persName>Henzen</persName> in situ in the <date notBefore="1880" notAfter="1889">1880s at the <placeName ref="europe.italy.rome">Villa Ludovisi-Paulssen, Rome, Italy</placeName></date></p>
-                        </provenance>                   
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date evidence="unspecified"
+                            notBefore="0100"
+                            notAfter="0149"
+                            cert="medium">first half of second century CE</date>
+                     <placeName ref="europe.italy.rome">Villa Ludovisi-Paulssen near Italy, Rome, Porta Salaria</placeName>
+                  </origin>
+                  <provenance type="found" subtype="first-recorded">
+                     <p>seen by <persName>Henzen</persName> in situ in the <date notBefore="1880" notAfter="1889">1880s at the <placeName ref="europe.italy.rome">Villa Ludovisi-Paulssen, Rome, Italy</placeName>
+                        </date>
+                     </p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">16832</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#RE_XV"/>
-                        <biblScope unit="page">1892, no. 10</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">123, no. 112</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Phoenix_35_Treggiari"/>
-                        <biblScope unit="page">46, 47 n. 12, 63</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Solin_1982"/>
-                        <biblScope unit="item">860</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Salomies_1987"/>
-                        <biblScope unit="page">394</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Degrassi_1952"/>
-                        <biblScope unit="page">34-5</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1139&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=General">AAR online catalog</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=&amp;fo_antik=&amp;fo_modern=&amp;Bibliografia%5B%5D=16832&amp;Testo=&amp;boolTesto=AND&amp;Testo2=&amp;bool=AND&amp;ordinamento=id_nr&amp;javasi=javascriptsi&amp;se_foto=tutte&amp;lang=it">EDR147491</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2018-07-01" who="Elliott Piros">Initial Encoding</change>
-            <change when="2019-07-16" who="Scott J. DiGiulio">Corrections to metadata categories, changed units to centimeters, added provenance detail, added altIdentifier; added bibliography; added filepath for USEP photo; proofed transcription and added more semantic markup</change>
-            <change when="2019-08-09" who="Scott J. DiGiulio">Small fixes to provenance</change>
-            <change when="2020-03-27" who="Gaia Gianni">Deleted image filename</change>
-            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-  
-        </surface>
-        <surface>
-            <desc>Linked image hosted on AAR's website</desc>
-            <graphic url="http://nvb.aarome.org/privato/articoli/1139_1.JPG"/>
-        </surface>
-        
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-            <ab> 
-            <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-            <lb n="2"/><persName><name type="slaveName" key="Diadumenus">Diadumen<hi rend="small">o</hi></name></persName>
-            <lb n="3"/><expan><abbr><hi rend="tall">c</hi>ontubern</abbr><ex>ali</ex></expan>
-            <lb n="4"/>bene merenti.
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">16832</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#RE_XV"/>
+                  <biblScope unit="page">1892, no. 10</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                  <biblScope unit="page">123, no. 112</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Phoenix_35_Treggiari"/>
+                  <biblScope unit="page">46, 47 n. 12, 63</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Solin_1982"/>
+                  <biblScope unit="item">860</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Salomies_1987"/>
+                  <biblScope unit="page">394</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Degrassi_1952"/>
+                  <biblScope unit="page">34-5</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1139&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=General">AAR online catalog</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=&amp;fo_antik=&amp;fo_modern=&amp;Bibliografia%5B%5D=16832&amp;Testo=&amp;boolTesto=AND&amp;Testo2=&amp;bool=AND&amp;ordinamento=id_nr&amp;javasi=javascriptsi&amp;se_foto=tutte&amp;lang=it">EDR147491</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2018-07-01" who="Elliott Piros">Initial Encoding</change>
+         <change when="2019-07-16" who="Scott J. DiGiulio">Corrections to metadata categories, changed units to centimeters, added provenance detail, added altIdentifier; added bibliography; added filepath for USEP photo; proofed transcription and added more semantic markup</change>
+         <change when="2019-08-09" who="Scott J. DiGiulio">Small fixes to provenance</change>
+         <change when="2020-03-27" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+      </surface>
+      <surface>
+         <desc>Linked image hosted on AAR's website</desc>
+         <graphic url="http://nvb.aarome.org/privato/articoli/1139_1.JPG"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>.
+            <lb n="2"/>
+               <persName>
+                  <name type="slaveName" key="Diadumenus">Diadumen<hi rend="small">o</hi>
+                  </name>
+               </persName>
+               <lb n="3"/>
+               <expan>
+                  <abbr>
+                     <hi rend="tall">c</hi>ontubern</abbr>
+                  <ex>ali</ex>
+               </expan>
+               <lb n="4"/>bene merenti.
             <lb n="5"/>V<hi rend="tall">i</hi>xit ann<hi rend="tall">i</hi>s
-            <lb n="6"/><num type="cardinal" value="33">XXXIII</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num type="cardinal" value="11">XI</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num type="cardinal" value="23">XXIII</num>.
-            <lb n="7"/><persName><name type="slaveName" key="Secundilla">Secundill<hi rend="small">a</hi></name></persName> <persName><name type="gentilicium" key="Minicius">M<hi rend="tall">i</hi>nic<hi rend="small">i</hi></name>
-            <lb n="8"/><name type="cognomen" key="Faustinus"><hi rend="tall">F</hi>aust<hi rend="tall">i</hi>n<hi rend="tall">i</hi></name></persName> <expan><abbr>ser</abbr><ex>va</ex></expan> <expan><abbr>fec</abbr><ex>it</ex></expan> sibi <hi rend="ligature">et</hi>
-            <lb n="9"/>suis poster<hi rend="tall">i</hi>s <expan><abbr>q</abbr><ex>ue</ex></expan> <expan><abbr>omn</abbr><ex>ibus</ex></expan>.
-            </ab></div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
+            <lb n="6"/>
+               <num type="cardinal" value="33">XXXIII</num>, <expan>
+                  <abbr>m</abbr>
+                  <ex>ensibus</ex>
+               </expan>
+               <num type="cardinal" value="11">XI</num>, <expan>
+                  <abbr>d</abbr>
+                  <ex>iebus</ex>
+               </expan>
+               <num type="cardinal" value="23">XXIII</num>.
+            <lb n="7"/>
+               <persName>
+                  <name type="slaveName" key="Secundilla">Secundill<hi rend="small">a</hi>
+                  </name>
+               </persName>
+               <persName>
+                  <name type="gentilicium" key="Minicius">M<hi rend="tall">i</hi>nic<hi rend="small">i</hi>
+                  </name>
+                  <lb n="8"/>
+                  <name type="cognomen" key="Faustinus">
+                     <hi rend="tall">F</hi>aust<hi rend="tall">i</hi>n<hi rend="tall">i</hi>
+                  </name>
+               </persName>
+               <expan>
+                  <abbr>ser</abbr>
+                  <ex>va</ex>
+               </expan>
+               <expan>
+                  <abbr>fec</abbr>
+                  <ex>it</ex>
+               </expan> sibi <hi rend="ligature">et</hi>
+               <lb n="9"/>suis poster<hi rend="tall">i</hi>s <expan>
+                  <abbr>q</abbr>
+                  <ex>ue</ex>
+               </expan>
+               <expan>
+                  <abbr>omn</abbr>
+                  <ex>ibus</ex>
+               </expan>.
+            </ab>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary"><!-- notes go here -->
             <p>As noted by Treggiari in her dicussion of the set to which this epitaph belongs, namely funerary 
                 dedications mentioning contubernales wherein it is clear that this term refers to a spouse in common-law 
                 marriages of which one or more members are servile, two features make this epitaph rare: the fact that 
@@ -253,19 +288,15 @@
                 to that of Diadumenus, is made explicit (serva). Minicius Faustinus is likely the suffect consul of 0117, 
                 the brother of the Gaius Minicius Fundanus known from Pliny the Younger, Epistulae 1.9, 4.5, 5.16, and 6.6.
                 The daughter of this Fundanus, Minicia Marcella, is the subject of CIL VI.16631</p>
-            </div>
-            
-        
-        
-<div type="bibliography">
-                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
-                    <xi:fallback>
-                        <p>US Ep bibliography</p>
-                    </xi:fallback>
-                </xi:include>
-            </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

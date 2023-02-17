@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-        
-        <fileDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MD.Balt.WAG.L.54.176</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MD.Balt.WAG.L.54.176</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-                
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.WAG.L.54.176">MD.Balt.WAG.L.54.176</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MD.Balt.WAG.L.54.176">MD.Balt.WAG.L.54.176</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -35,215 +42,421 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>WAG</institution>
-                        <repository/>
-                        <idno>54.176</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#honorific">
+            <msDesc>
+               <msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>WAG</institution>
+                  <repository/>
+                  <idno>54.176</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#honorific">
                             <!-- short summary of the content of an inscription -->
-                            <p>inscription honoring Ancharia Luperca</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>inscription honoring Ancharia Luperca</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                         
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                        
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#metal.bronze">
-                                <support>
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>bronze tablet </p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>69.5</height>
-                                        <width>48.5</width>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="24">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"><p>first three lines larger than the body of text</p>
-                         </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                           <p>bronze tablet </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>69.5</height>
+                              <width>48.5</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="24">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <p>first three lines larger than the body of text</p>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                        
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "fake" or blank -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date notBefore="0223" notAfter="0225" evidence="#archaeology">January
+                     <date notBefore="0223" notAfter="0225" evidence="#archaeology">January
                                 23, 224 CE</date>
-                            <placeName ref="europe.italy">Bolsena</placeName>
-                        </origin>
-                        <provenance type="found" subtype="discovered">
-                            <p>Excavated in <date when="1882">1882</date> in <placeName>Bolsena (Volsinii)</placeName>, Italy (Walters Art Museum).</p>  
-                        </provenance>
-                        <provenance>
-                            <p>In the collection of <persName role="owner">Giovanni Scotti</persName> (Walters Art Museum).</p>
-                        </provenance>
-                        <provenance>
-                            <p>In the <orgName><persName role="owner">Don Marcello Massarenti</persName> Collection</orgName>, <placeName ref="europe.italy.rome">Rome</placeName> <date notBefore="1850" notAfter="1902">before 1902</date>.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="purchased">                            
-                            <p>Acquired by <persName role="buyer">Henry Walters</persName> in <date when="1902">1902</date>, by purchase.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="given">
-                            <p>Given to the <orgName role="recipient">Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date>.</p>
-                        </provenance>       
-                        
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <placeName ref="europe.italy">Bolsena</placeName>
+                  </origin>
+                  <provenance type="found" subtype="discovered">
+                     <p>Excavated in <date when="1882">1882</date> in <placeName>Bolsena (Volsinii)</placeName>, Italy (Walters Art Museum).</p>
+                  </provenance>
+                  <provenance>
+                     <p>In the collection of <persName role="owner">Giovanni Scotti</persName> (Walters Art Museum).</p>
+                  </provenance>
+                  <provenance>
+                     <p>In the <orgName>
+                           <persName role="owner">Don Marcello Massarenti</persName> Collection</orgName>, <placeName ref="europe.italy.rome">Rome</placeName>
+                        <date notBefore="1850" notAfter="1902">before 1902</date>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Acquired by <persName role="buyer">Henry Walters</persName> in <date when="1902">1902</date>, by purchase.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="given">
+                     <p>Given to the <orgName role="recipient">Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date>.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_XI"/>
-                        <biblScope unit="page">2702</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#ILS"/>
-                        <biblScope unit="page">7217</biblScope>
-                    </bibl>
-                    <bibl> 
-                        <ptr type="rest-of-bibl" target="#vanEsbroeck"/>
-                        
-                        <biblScope unit="page">vol. 2, 8</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="https://art.thewalters.org/detail/39495/tablet-with-inscription-honoring-ancharia-luperca/"
-                            >Walters Art Museum Web Entry</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="https://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR145228"
-                            >EDR145228</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-        
-        <encodingDesc>
-            
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-            
-        </encodingDesc>
-        
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2017-07-05" who="A. Hong">Initial Encoding</change>
-            <change when="2020-11-15" who="Scott J. DiGiulio">Extensive proofreading and correction of transcription; addition of some semantic markup to transcription; rewrote provenance into new USEP compliant form; corrected genre and description; added short note about layout of text</change>
-            <change when="2021-01-16" who="Scott J. DiGiulio">Fixed validation errors</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-        
-    </teiHeader>
-    
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.L.54.176.jpg"/>
-        </surface>
-    </facsimile>
-    
-    <text>
-        <body>
-            <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/><persName type="emperor"><name type="praenomen" key="Appius"><expan><abbr>App</abbr><ex>io</ex></expan></name> <name type="gentilicium" key="Claudius">Claudio</name> <name type="gentilicium" key="Julianus">Juliano</name></persName> <num value="2" type="ordinal"><hi rend="supraline">II</hi></num> <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan>
-                    <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> <name type="gentilicium" key="Bruttius">Bruttio</name> <name type="cognomen" key="Crispinus">Crispino</name></persName>
-                    <lb n="3"/><date when="0224-01-23"><num value="10">X</num> <expan><abbr>kal</abbr><ex>endas</ex></expan> <expan><abbr>Feb</abbr><ex>ruarias</ex></expan></date>.
-                    <lb n="4"/>In schola collegi fabrum civitatis <orgName>Volsiniensium</orgName> <choice><orig>quem</orig><reg>quam</reg></choice> coegerunt
-                    <lb n="5"/><persName><name type="praenomen" key="Titus"><expan><abbr>T</abbr><ex>itus</ex></expan></name> <name type="gentilicium" key="Sossius">Sossius</name> <name type="cognomen" key="Hilarus">Hilarus</name></persName> et <persName><name type="gentilicium" key="Caetennius">Caetennius</name> <name type="cognomen" key="Onesimus">Onesimus</name></persName> <expan><abbr><hi rend="supraline">Q</hi></abbr><ex>uin</ex></expan><expan><abbr><hi rend="supraline">q</hi></abbr><ex>uennales</ex></expan>, ibi idem <expan><abbr><hi rend="supraline">Q</hi></abbr><ex>uin</ex></expan><expan><abbr>q</abbr><ex>uennales</ex></expan> verba <expan><abbr>fecer</abbr><ex>unt</ex></expan>:
-                    <lb n="6"/>quanto amore quantaque adfectione <persName><name type="gentilicium" key="Laberius">Laberius</name> <name type="cognomen" key="Gallus">Gallus</name></persName> <expan><abbr>p</abbr><ex>rimi</ex></expan> <expan><abbr>p</abbr><ex>ilaris</ex></expan> <expan><abbr>v</abbr><ex>ir</ex></expan> <expan><abbr>e</abbr><ex>gregius</ex></expan> erga
-                    <lb n="7"/><expan><abbr>coll</abbr><ex>eg</ex><abbr>ium</abbr></expan> <expan><abbr>n</abbr><ex>ostrum</ex></expan> agere institutuerit, beneficia eius iam dudum in nos
-                    <lb n="8"/>conlata confirmant. Et ideo <persName><name type="gentilicium" key="Ancharia ">Anchariam</name> <name type="cognomen" key="Luperca">Lupercam</name></persName> uxorem
-                    <lb n="9"/>eius, filiam <persName><name type="gentilicium" key="Ancharius">Anchari</name> quondam <name type="cognomen" key="Celer">Celeris</name></persName>
-                    <expan><abbr>b</abbr><ex>onae</ex></expan> <expan><abbr>m</abbr><ex>emoriae</ex></expan> <expan><abbr>v</abbr><ex>iri</ex></expan>,cuius proles et
-                    <lb n="10"/>prosapia omnibus honoribus patriae <expan><abbr>n</abbr><ex>ostrae</ex></expan> sincera fide func
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_XI"/>
+                  <biblScope unit="page">2702</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#ILS"/>
+                  <biblScope unit="page">7217</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#vanEsbroeck"/>
+                  <biblScope unit="page">vol. 2, 8</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://art.thewalters.org/detail/39495/tablet-with-inscription-honoring-ancharia-luperca/">Walters Art Museum Web Entry</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR145228">EDR145228</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2017-07-05" who="A. Hong">Initial Encoding</change>
+         <change when="2020-11-15" who="Scott J. DiGiulio">Extensive proofreading and correction of transcription; addition of some semantic markup to transcription; rewrote provenance into new USEP compliant form; corrected genre and description; added short note about layout of text</change>
+         <change when="2021-01-16" who="Scott J. DiGiulio">Fixed validation errors</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.L.54.176.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <persName type="emperor">
+                  <name type="praenomen" key="Appius">
+                     <expan>
+                        <abbr>App</abbr>
+                        <ex>io</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Claudius">Claudio</name>
+                  <name type="gentilicium" key="Julianus">Juliano</name>
+               </persName>
+               <num value="2" type="ordinal">
+                  <hi rend="supraline">II</hi>
+               </num>
+               <expan>
+                  <abbr>co</abbr>
+                  <ex>n</ex>
+                  <abbr>s</abbr>
+                  <ex>ul</ex>
+               </expan>
+               <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>L</abbr>
+                        <ex>ucio</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Bruttius">Bruttio</name>
+                  <name type="cognomen" key="Crispinus">Crispino</name>
+               </persName>
+               <lb n="3"/>
+               <date when="0224-01-23">
+                  <num value="10">X</num>
+                  <expan>
+                     <abbr>kal</abbr>
+                     <ex>endas</ex>
+                  </expan>
+                  <expan>
+                     <abbr>Feb</abbr>
+                     <ex>ruarias</ex>
+                  </expan>
+               </date>.
+                    <lb n="4"/>In schola collegi fabrum civitatis <orgName>Volsiniensium</orgName>
+               <choice>
+                  <orig>quem</orig>
+                  <reg>quam</reg>
+               </choice> coegerunt
+                    <lb n="5"/>
+               <persName>
+                  <name type="praenomen" key="Titus">
+                     <expan>
+                        <abbr>T</abbr>
+                        <ex>itus</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Sossius">Sossius</name>
+                  <name type="cognomen" key="Hilarus">Hilarus</name>
+               </persName> et <persName>
+                  <name type="gentilicium" key="Caetennius">Caetennius</name>
+                  <name type="cognomen" key="Onesimus">Onesimus</name>
+               </persName>
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">Q</hi>
+                  </abbr>
+                  <ex>uin</ex>
+               </expan>
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">q</hi>
+                  </abbr>
+                  <ex>uennales</ex>
+               </expan>, ibi idem <expan>
+                  <abbr>
+                     <hi rend="supraline">Q</hi>
+                  </abbr>
+                  <ex>uin</ex>
+               </expan>
+               <expan>
+                  <abbr>q</abbr>
+                  <ex>uennales</ex>
+               </expan> verba <expan>
+                  <abbr>fecer</abbr>
+                  <ex>unt</ex>
+               </expan>:
+                    <lb n="6"/>quanto amore quantaque adfectione <persName>
+                  <name type="gentilicium" key="Laberius">Laberius</name>
+                  <name type="cognomen" key="Gallus">Gallus</name>
+               </persName>
+               <expan>
+                  <abbr>p</abbr>
+                  <ex>rimi</ex>
+               </expan>
+               <expan>
+                  <abbr>p</abbr>
+                  <ex>ilaris</ex>
+               </expan>
+               <expan>
+                  <abbr>v</abbr>
+                  <ex>ir</ex>
+               </expan>
+               <expan>
+                  <abbr>e</abbr>
+                  <ex>gregius</ex>
+               </expan> erga
+                    <lb n="7"/>
+               <expan>
+                  <abbr>coll</abbr>
+                  <ex>eg</ex>
+                  <abbr>ium</abbr>
+               </expan>
+               <expan>
+                  <abbr>n</abbr>
+                  <ex>ostrum</ex>
+               </expan> agere institutuerit, beneficia eius iam dudum in nos
+                    <lb n="8"/>conlata confirmant. Et ideo <persName>
+                  <name type="gentilicium" key="Ancharia ">Anchariam</name>
+                  <name type="cognomen" key="Luperca">Lupercam</name>
+               </persName> uxorem
+                    <lb n="9"/>eius, filiam <persName>
+                  <name type="gentilicium" key="Ancharius">Anchari</name> quondam <name type="cognomen" key="Celer">Celeris</name>
+               </persName>
+               <expan>
+                  <abbr>b</abbr>
+                  <ex>onae</ex>
+               </expan>
+               <expan>
+                  <abbr>m</abbr>
+                  <ex>emoriae</ex>
+               </expan>
+               <expan>
+                  <abbr>v</abbr>
+                  <ex>iri</ex>
+               </expan>,cuius proles et
+                    <lb n="10"/>prosapia omnibus honoribus patriae <expan>
+                  <abbr>n</abbr>
+                  <ex>ostrae</ex>
+               </expan> sincera fide func
                     <lb n="11" break="no"/>ta est, in honorem eorum, et pro morum eius castitatae
                     <lb n="12"/>et iam priscae consuetudinis sanctitatae, patronam
-                    <lb n="13"/>collegi <expan><abbr>n</abbr><ex>ostri</ex></expan> cooptemus, statuam etiam ei aeream iuxta eun
-                    <lb n="14" break="no"/>dem <persName><name type="praenomen" key="gentilicium">Laberium</name> <name type="cognomen" key="Gallus">Gallum</name></persName> maritum suum in schola collegi <expan><abbr>n</abbr><ex>ostri</ex></expan>
-                    <lb n="15"/>ponamus <expan><abbr>q</abbr><ex>uid</ex></expan> <expan><abbr>d</abbr><ex>e</ex></expan> <expan><abbr>e</abbr><ex>a</ex></expan> <expan><abbr>r</abbr><ex>e</ex></expan> <expan><abbr>f</abbr><ex>ieri</ex></expan> <expan><abbr>p</abbr><ex>laceret</ex></expan>; 
-                    <expan><abbr>u</abbr><ex>niversi</ex></expan> <expan><abbr>i</abbr><ex>ta</ex></expan> <expan><abbr>c</abbr><ex>ensuerunt</ex></expan> recte et merito retulisse
-                    <lb n="16"/><expan><abbr><hi rend="supraline">Q</hi></abbr><ex>uin</ex><abbr><hi rend="supraline">q</hi></abbr><ex>uennales</ex></expan> <expan><abbr><hi rend="supraline">n<am>n</am></hi></abbr><ex>ostros</ex></expan> ut
-                    <persName><name type="gentilicium" key="Ancharia">Anchariam</name> <name type="cognomen" key="Luperca">Lupercam</name></persName>, honestam matronam, <expan><abbr>sanc
-                    <lb n="17" break="no"/>t</abbr><ex>a</ex><abbr>e</abbr></expan> indolis et disciplinae caerimonis etiam praeditis feminam,
-                    <lb n="18"/>in honorem <persName><name type="gentilicium" key="Laberius">Laberi</name> <name type="cognomen" key="Gallus">Galli</name></persName> <expan><abbr>p</abbr><ex>rimi</ex></expan> <expan><abbr>p</abbr><ex>ilaris</ex></expan>
-                    <expan><abbr>e</abbr><ex>gregii</ex></expan>
-                    <expan><abbr>v</abbr><ex>iri</ex></expan> mariti eius, patroni collegi
-                    <lb n="19"/><expan><abbr><hi rend="supraline">n</hi></abbr><ex>ostri</ex></expan> et in memoriam <persName><name type="gentilicium" key="Ancharius">Anchari</name> quondam <name type="cognomen" key="Celer">Celeris</name></persName> patris eius
+                    <lb n="13"/>collegi <expan>
+                  <abbr>n</abbr>
+                  <ex>ostri</ex>
+               </expan> cooptemus, statuam etiam ei aeream iuxta eun
+                    <lb n="14" break="no"/>dem <persName>
+                  <name type="praenomen" key="gentilicium">Laberium</name>
+                  <name type="cognomen" key="Gallus">Gallum</name>
+               </persName> maritum suum in schola collegi <expan>
+                  <abbr>n</abbr>
+                  <ex>ostri</ex>
+               </expan>
+               <lb n="15"/>ponamus <expan>
+                  <abbr>q</abbr>
+                  <ex>uid</ex>
+               </expan>
+               <expan>
+                  <abbr>d</abbr>
+                  <ex>e</ex>
+               </expan>
+               <expan>
+                  <abbr>e</abbr>
+                  <ex>a</ex>
+               </expan>
+               <expan>
+                  <abbr>r</abbr>
+                  <ex>e</ex>
+               </expan>
+               <expan>
+                  <abbr>f</abbr>
+                  <ex>ieri</ex>
+               </expan>
+               <expan>
+                  <abbr>p</abbr>
+                  <ex>laceret</ex>
+               </expan>; 
+                    <expan>
+                  <abbr>u</abbr>
+                  <ex>niversi</ex>
+               </expan>
+               <expan>
+                  <abbr>i</abbr>
+                  <ex>ta</ex>
+               </expan>
+               <expan>
+                  <abbr>c</abbr>
+                  <ex>ensuerunt</ex>
+               </expan> recte et merito retulisse
+                    <lb n="16"/>
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">Q</hi>
+                  </abbr>
+                  <ex>uin</ex>
+                  <abbr>
+                     <hi rend="supraline">q</hi>
+                  </abbr>
+                  <ex>uennales</ex>
+               </expan>
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">n<am>n</am>
+                     </hi>
+                  </abbr>
+                  <ex>ostros</ex>
+               </expan> ut
+                    <persName>
+                  <name type="gentilicium" key="Ancharia">Anchariam</name>
+                  <name type="cognomen" key="Luperca">Lupercam</name>
+               </persName>, honestam matronam, <expan>
+                  <abbr>sanc
+                    <lb n="17" break="no"/>t</abbr>
+                  <ex>a</ex>
+                  <abbr>e</abbr>
+               </expan> indolis et disciplinae caerimonis etiam praeditis feminam,
+                    <lb n="18"/>in honorem <persName>
+                  <name type="gentilicium" key="Laberius">Laberi</name>
+                  <name type="cognomen" key="Gallus">Galli</name>
+               </persName>
+               <expan>
+                  <abbr>p</abbr>
+                  <ex>rimi</ex>
+               </expan>
+               <expan>
+                  <abbr>p</abbr>
+                  <ex>ilaris</ex>
+               </expan>
+               <expan>
+                  <abbr>e</abbr>
+                  <ex>gregii</ex>
+               </expan>
+               <expan>
+                  <abbr>v</abbr>
+                  <ex>iri</ex>
+               </expan> mariti eius, patroni collegi
+                    <lb n="19"/>
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">n</hi>
+                  </abbr>
+                  <ex>ostri</ex>
+               </expan> et in memoriam <persName>
+                  <name type="gentilicium" key="Ancharius">Anchari</name> quondam <name type="cognomen" key="Celer">Celeris</name>
+               </persName> patris eius
                     <lb n="20"/>dignissimam patronam cooptemus, statuamque ei aeream
-                    <lb n="21"/>in schola collegi <expan><abbr><hi rend="supraline">n</hi></abbr><ex>ostri</ex></expan> iuxta eundem <persName><name type="gentilicium" key="Laberius">Laberium</name> <name type="cognomen" key="Gallus">Gallum</name></persName> maritum
+                    <lb n="21"/>in schola collegi <expan>
+                  <abbr>
+                     <hi rend="supraline">n</hi>
+                  </abbr>
+                  <ex>ostri</ex>
+               </expan> iuxta eundem <persName>
+                  <name type="gentilicium" key="Laberius">Laberium</name>
+                  <name type="cognomen" key="Gallus">Gallum</name>
+               </persName> maritum
                     <lb n="22"/>suum ponamus, ut eius erga<surplus>a</surplus> nos pietas et nostra erga eam vo
                     <lb n="23" break="no"/>luntas publica etiam visionem conspiciatur. <g type="hedera"/> Tabulam quo
                     <lb n="24" break="no"/>que patrocinalem in domo eius adfigi.
-                </ab></div>
-            
-            <div type="translation">
-                <p>When Appius Claudius Julianus (for the second time) and Lucius Bruttius Crispinus were consuls, 
+                </ab>
+         </div>
+         <div type="translation">
+            <p>When Appius Claudius Julianus (for the second time) and Lucius Bruttius Crispinus were consuls, 
                     on the tenth day before the Kalends of February, in the schola of the collegium of craftsmen of 
                     the citizens of Volsinium whom Titus Sossius Hilarus and Caetennius Onesimus, quinquennales, assembled there, 
                     these same quinquennales made a verbal report regarding the fact that, with such love and such affection, 
@@ -261,15 +474,19 @@
                     her husband, so that her piety towards us and our general affection towards her may be seen through? this sight; 
                     also that a patronage tablet be affixed in her home.  
                 </p>
-            </div>
-            
-            <div type="commentary"><!-- notes go here -->
-                <p> A male bust <ref type="external"
-                    target="https://art.thewalters.org/detail/29311/male-portrait-bust/"
-                    >(Walters 54.1148)</ref> was riveted to the top of the tablet when it entered the Walters' collection (Walters Art Museum).</p></div>
-            
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
-        </body>
-    </text>
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p> A male bust <ref type="external"
+                     target="https://art.thewalters.org/detail/29311/male-portrait-bust/">(Walters 54.1148)</ref> was riveted to the top of the tablet when it entered the Walters' collection (Walters Art Museum).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

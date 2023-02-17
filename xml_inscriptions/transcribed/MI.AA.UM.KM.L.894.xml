@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.894</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,13 +34,11 @@
                      <p>epitaph of Cyrilla, wife of Valerius Vitalio</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>partially reconstituted marble slab</p>
-                           
                            <seg type="material">Coarse-grained gray marble</seg>
                            <dimensions type="surface" unit="cm">
                               <height>23</height>
@@ -68,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,14 +91,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115993"
-                     >EDR115993</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115993">EDR115993</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,10 +109,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-17" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,88 +122,103 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>.
                     <lb n="2"/>
                <persName>
                   <name type="cognomen" key="Cyrilla">Cyrilla</name>
-               </persName> 
+               </persName>
                <expan>
-                  <abbr>nat</abbr><ex>ione</ex>
-               </expan> 
-               <expan>
-                  <abbr>Cappa</abbr><ex>dociana</ex>
+                  <abbr>nat</abbr>
+                  <ex>ione</ex>
                </expan>
-                    <lb n="3"/>
                <expan>
-                  <abbr>q</abbr><ex>ui</ex>
-               </expan> 
+                  <abbr>Cappa</abbr>
+                  <ex>dociana</ex>
+               </expan>
+               <lb n="3"/>
                <expan>
-                  <abbr>vix</abbr><ex>it</ex>
+                  <abbr>q</abbr>
+                  <ex>ui</ex>
+               </expan>
+               <expan>
+                  <abbr>vix</abbr>
+                  <ex>it</ex>
                </expan> annis <num xml:lang="lat" value="30">XXX</num>.
                     <lb n="4"/>
                <persName>
-                  <name type="gentilicium" key="Valerius">Valerius</name> 
+                  <name type="gentilicium" key="Valerius">Valerius</name>
                   <name type="cognomen" key="Vitalio">Vitalio</name>
                </persName>
-                    <lb n="5"/>
+               <lb n="5"/>
                <expan>
-                  <abbr>mil</abbr><ex>es</ex>
-               </expan> 
-               <expan>
-                  <abbr>cl</abbr><ex>assis</ex>
-               </expan> 
-               <expan>
-                  <abbr>pr</abbr><ex>aetoriae</ex>
-               </expan> 
-               <expan>
-                  <abbr>Mis</abbr><ex>e</ex><abbr>n</abbr><ex>ensis</ex>
+                  <abbr>mil</abbr>
+                  <ex>es</ex>
                </expan>
-                    <lb n="6"/>
                <expan>
-                  <abbr>co</abbr><ex>n</ex>
+                  <abbr>cl</abbr>
+                  <ex>assis</ex>
+               </expan>
+               <expan>
+                  <abbr>pr</abbr>
+                  <ex>aetoriae</ex>
+               </expan>
+               <expan>
+                  <abbr>Mis</abbr>
+                  <ex>e</ex>
+                  <abbr>n</abbr>
+                  <ex>ensis</ex>
+               </expan>
+               <lb n="6"/>
+               <expan>
+                  <abbr>co</abbr>
+                  <ex>n</ex>
                </expan>iugi <expan>
-                  <abbr>dulc</abbr><ex>issimae</ex>
+                  <abbr>dulc</abbr>
+                  <ex>issimae</ex>
                </expan>
-                    <lb n="7"/>
+               <lb n="7"/>
                <expan>
-                  <abbr>b</abbr><ex>onae</ex>
-               </expan> 
+                  <abbr>b</abbr>
+                  <ex>onae</ex>
+               </expan>
                <expan>
-                  <abbr>m</abbr><ex>emoriae</ex>
-               </expan> 
+                  <abbr>m</abbr>
+                  <ex>emoriae</ex>
+               </expan>
                <expan>
-                  <abbr>s</abbr><ex>acrum</ex></expan>.
+                  <abbr>s</abbr>
+                  <ex>acrum</ex>
+               </expan>.
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. Cyrilla, Cappadocian by origin, who lived for thirty
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. Cyrilla, Cappadocian by origin, who lived for thirty
                years. Valerius Vitalio, soldier of the praetorian fleet of Misenum, (made this) for
                (his) dearest wife, sacred to (her) good memory.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>Line 7: b(ene) m(erenti) ⌜f(ecit)⌝ (EDR).</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Line 7: b(ene) m(erenti) ⌜f(ecit)⌝ (EDR).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

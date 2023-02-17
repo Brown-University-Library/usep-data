@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1012</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,19 +34,19 @@
                      <p>epitaph of Claudia Zosime</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>marble slab</p>
-                          <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>23</height>
                               <width>25.5</width>
                               <depth>2.7</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -65,7 +76,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -77,13 +89,15 @@
                   <biblScope unit="item">80 no.112</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR113751">EDR113751</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR113751">EDR113751</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -94,9 +108,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-06-08" who="Scott J. DiGiulio">Added control vocab for condition and writing, added specificity to placename ref; added link to EDR</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-04-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -105,84 +121,105 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
-                    <lb n="2"/> 
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>.
+                    <lb n="2"/>
                <persName>
                   <name type="gentilicium" key="Claudia">
                      <expan>
-                        <abbr>Cl</abbr><ex>audiae</ex>
+                        <abbr>Cl</abbr>
+                        <ex>audiae</ex>
                      </expan>
-                  </name> 
-                  <name type="cognomen" key="Zosime">Zosime</name></persName>; <expan>
-                  <abbr>vix</abbr><ex>it</ex>
+                  </name>
+                  <name type="cognomen" key="Zosime">Zosime</name>
+               </persName>; <expan>
+                  <abbr>vix</abbr>
+                  <ex>it</ex>
                </expan>
-                    <lb n="3"/> 
+               <lb n="3"/>
                <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
                <num xml:lang="lat" value="24">XXIIII</num>, <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> 
+                  <abbr>m</abbr>
+                  <ex>ensibus</ex>
+               </expan>
                <num xml:lang="lat" value="6">VI</num>;
                     <lb n="4"/> inaptabili <expan>
-                  <abbr>fem</abbr><ex>inae</ex>
+                  <abbr>fem</abbr>
+                  <ex>inae</ex>
                </expan>
-                    <lb n="5"/> et <expan>
-                  <abbr>incompar</abbr><ex>abili</ex>
-                    </expan> <expan><abbr>co</abbr><ex>n</ex>
-                       <lb n="6" break="no"/><abbr>iug</abbr><ex>i</ex></expan>
-               <surplus>coiug</surplus> 
-               <expan><abbr>b</abbr><ex>ene</ex>
-               </expan> 
-                  <expan>
-                     <abbr><hi rend="supraline">m</hi></abbr><ex>erenti</ex></expan>,
-                    <lb n="7"/> 
+               <lb n="5"/> et <expan>
+                  <abbr>incompar</abbr>
+                  <ex>abili</ex>
+               </expan>
+               <expan>
+                  <abbr>co</abbr>
+                  <ex>n</ex>
+                  <lb n="6" break="no"/>
+                  <abbr>iug</abbr>
+                  <ex>i</ex>
+               </expan>
+               <surplus>coiug</surplus>
+               <expan>
+                  <abbr>b</abbr>
+                  <ex>ene</ex>
+               </expan>
+               <expan>
+                  <abbr>
+                     <hi rend="supraline">m</hi>
+                  </abbr>
+                  <ex>erenti</ex>
+               </expan>,
+                    <lb n="7"/>
                <persName>
                   <name type="gentilicium" key="Fabius">
                      <expan>
-                        <abbr>Fab</abbr><ex>ius</ex>
-                     </expan>
-                  </name> 
-                  <name type="cognomen" key="Antonius">
-                     <expan>
-                        <abbr>Anton</abbr><ex>inus</ex>
+                        <abbr>Fab</abbr>
+                        <ex>ius</ex>
                      </expan>
                   </name>
-               </persName> 
+                  <name type="cognomen" key="Antonius">
+                     <expan>
+                        <abbr>Anton</abbr>
+                        <ex>inus</ex>
+                     </expan>
+                  </name>
+               </persName>
                <expan>
-                  <abbr>opt</abbr><ex>io</ex>
+                  <abbr>opt</abbr>
+                  <ex>io</ex>
                </expan>
-                    <lb n="8"/> fecit.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Claudia Zosime; she lived for twenty-four years
+               <lb n="8"/> fecit.</ab>
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. To Claudia Zosime; she lived for twenty-four years
                        (and) six months. Fabius Antoninus, <hi rend="italic">optio</hi>, made (this) for (her), an incomparable
                woman and peerless wife, well-deserving. </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>
