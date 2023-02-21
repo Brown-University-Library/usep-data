@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.Bos.MFA.X.01.8075</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -74,7 +85,6 @@
                      <placeName ref="https://pleiades.stoa.org/places/579885">Greece, Attica, Athens</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
-                  
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased by <persName role="buyer">Edward Perry Warren</persName> by <date notAfter="1901">1901</date> in <placeName>Rome</placeName>.</p>
                   </provenance>
@@ -87,16 +97,14 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
                   <biblScope unit="page">290-291</biblScope>
-                  
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://www.beazley.ox.ac.uk/record/2530C035-441C-4EA6-8BD0-1BFE4FF85EAC"
-                     >BAD 204518</ref>
+                        target="https://www.beazley.ox.ac.uk/record/2530C035-441C-4EA6-8BD0-1BFE4FF85EAC">BAD 204518</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2866"
-                     >AVI 2718</ref>
+                  <ref type="external"
+                        target="https://www.avi.unibas.ch/DB/searchform.html?ID=2866">AVI 2718</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="https://collections.mfa.org/objects/153709">Museum of
@@ -106,7 +114,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -119,11 +128,10 @@
    </teiHeader>
    <!--facsimile element goes here-->
    <facsimile>
-   <surface>
-      <desc/>
-      <graphic url="MA.Bos.MFA.X.01.8075int.jpg"/>
-   </surface>
-      
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.X.01.8075int.jpg"/>
+      </surface>
    </facsimile>
    <text>
       <body>
@@ -141,8 +149,14 @@
          <div type="commentary">
             <p>In the manner of the Dokimasia Painter.</p>
          </div>
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

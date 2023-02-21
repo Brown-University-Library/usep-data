@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>KY.Lou.SAM.L.1929.17.308</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,9 @@
                <physDesc>
                   <objectDesc ana="#ash_urn">
                      <supportDesc ana="#stone.marble">
-                        <support><p>marble ash urn (urna quattuor loculorum)</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>marble ash urn (urna quattuor loculorum)</p>
+                           <dimensions type="surface" unit="cm">
                               <height/>
                               <width/>
                               <depth/>
@@ -40,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="6">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -67,7 +79,8 @@
                  late first - mid century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -76,14 +89,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR182263"
-                     >EDR182263</ref>
+                        target="https://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR182263">EDR182263</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -96,11 +109,11 @@
          <change when="2015-12-07" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns</change>
          <change when="2018-05-16" who="John Bodel">Fixed typo in title, changed dating</change>
          <change when="2020-02-05" who="Sophia Papandonatou">Added transcription and commentary</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2022-01-31" who="Sophia Papandonatou">added EDR link</change>
          <change when="2022-02-07" who="Sophia Papandonatou">added translation, edited
             commentary</change>
-</revisionDesc>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -117,46 +130,67 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><persName><name type="praenomen" key="Titus"
-                           ><expan><abbr>T</abbr><ex>itus</ex></expan></name>
+               <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Titus">
+                     <expan>
+                        <abbr>T</abbr>
+                        <ex>itus</ex>
+                     </expan>
+                  </name>
                   <name type="gentilicium" key="Statulenus">S<hi rend="tall">t</hi>atulenus</name>
-                  <name type="cognomen" key="Quintiο">Quin<hi rend="tall">t</hi>io</name></persName>
+                  <name type="cognomen" key="Quintiο">Quin<hi rend="tall">t</hi>io</name>
+               </persName>
                <lb n="2"/>ossuarium marmoreum <lb n="3"/>fecit sibi e<hi rend="tall">t</hi>
-               <persName><name type="praenomen" key="Titus"
-                        ><expan><abbr>T</abbr><ex>ito</ex></expan></name>
+               <persName>
+                  <name type="praenomen" key="Titus">
+                     <expan>
+                        <abbr>T</abbr>
+                        <ex>ito</ex>
+                     </expan>
+                  </name>
                   <name type="gentilicium" key="Statulenus">Statuleno</name>
-                  <lb n="4"/><name type="cognomen" key="Philomusus">Philomuso</name></persName>
-               <expan><abbr>collib</abbr><ex>erto</ex></expan> qui obi<supplied reason="omitted"
-                  >i</supplied><hi rend="tall">t</hi>
-               <lb n="5"/>suum diem <expan><abbr>ann</abbr><ex>orum</ex></expan>
-               <num type="cardinal" value="30" xml:lang="lat">XXX</num> et <lb n="6"
-                     /><persName><name type="cognomen" key="Ipora">Iporae</name></persName>
-               <expan><abbr>collib</abbr><ex>ertae</ex></expan> meae. </ab>
+                  <lb n="4"/>
+                  <name type="cognomen" key="Philomusus">Philomuso</name>
+               </persName>
+               <expan>
+                  <abbr>collib</abbr>
+                  <ex>erto</ex>
+               </expan> qui obi<supplied reason="omitted">i</supplied>
+               <hi rend="tall">t</hi>
+               <lb n="5"/>suum diem <expan>
+                  <abbr>ann</abbr>
+                  <ex>orum</ex>
+               </expan>
+               <num type="cardinal" value="30" xml:lang="lat">XXX</num> et <lb n="6"/>
+               <persName>
+                  <name type="cognomen" key="Ipora">Iporae</name>
+               </persName>
+               <expan>
+                  <abbr>collib</abbr>
+                  <ex>ertae</ex>
+               </expan> meae. </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>Titus Statulenus Quintio made (this) marble ossuarium for himself and for
+         <div type="translation">
+            <p>Titus Statulenus Quintio made (this) marble ossuarium for himself and for
                Titus Statulenus Philomusus, a fellow freedman, who went to (meet) his (final) day,
                thirty years (of age), and for Ipora, my fellow freedwoman. </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-            
+         </div>
+         <div type="commentary">
             <p>Since only Philomusus bears an age at death, it is possible that the receptacle was
-               made for the death of Philomusus, while Quintio and Ipora were still alive. </p></div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+               made for the death of Philomusus, while Quintio and Ipora were still alive. </p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

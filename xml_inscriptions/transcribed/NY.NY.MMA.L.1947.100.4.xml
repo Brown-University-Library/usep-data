@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>NY.NY.MMA.L.1947.100.4</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -33,9 +44,8 @@
                            </dimensions>
                         </support>
                         <condition ana="#complete.intact">
-                          <p>sarcophagus and lid with inscription both in excellent condition.</p> 
+                           <p>sarcophagus and lid with inscription both in excellent condition.</p>
                         </condition>
-                        
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="1" writtenLines="6">
@@ -45,7 +55,8 @@
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed"/>
-                  </handDesc><!--objectDesc, handDesc, decoDesc go here-->
+                  </handDesc>
+                  <!--objectDesc, handDesc, decoDesc go here-->
                   <decoDesc>
                      <decoNote ana="#relief">
                         <p>Front of sarcophagus preserves a version of the myth of Endymion and Selene in high relief</p>
@@ -68,7 +79,8 @@
                   <origin>
                      <date evidence="unspecified" notBefore="0200" notAfter="0300">Third century CE.</date>
                      <placeName ref="europe.italy.ostia">Ostia, Italy</placeName>
-                  </origin><!--summary, origin, provenance go here-->
+                  </origin>
+                  <!--summary, origin, provenance go here-->
                </history>
             </msDesc>
             <listBibl>
@@ -85,13 +97,15 @@
                   <biblScope unit="pp">67-81</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.metmuseum.org/collection/the-collection-online/search/254590">Metropolitan Museum of Art web entry</ref>
+                  <ref type="external"
+                        target="http://www.metmuseum.org/collection/the-collection-online/search/254590">Metropolitan Museum of Art web entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -102,43 +116,67 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2015-07-08" who="Scott J. DiGiulio">Added transcription from photograph, added extensive amounts of metadata based on Sorella article and Met website.</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here--><text>
-      
-        <body>
-        <div type="edition">
+   <!--facsimile element goes here-->
+   <text>
+      <body>
+         <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/><persName><name type="gentilicium">Aninia</name> <name type="cognomen">Hilara</name></persName>
-               <lb n="2"/><persName><name type="gentilicium"><expan><abbr>Cl</abbr><ex>audiae</ex></expan></name> <name type="cognomen">Arriae</name> </persName> ma<supplied reason="omitted">t</supplied>ri
-               <lb n="3"/><choice><corr>i</corr><sic>l</sic></choice>inconparabil<choice><corr>i</corr><sic>e</sic></choice>
+               <lb n="1"/>
+               <persName>
+                  <name type="gentilicium">Aninia</name>
+                  <name type="cognomen">Hilara</name>
+               </persName>
+               <lb n="2"/>
+               <persName>
+                  <name type="gentilicium">
+                     <expan>
+                        <abbr>Cl</abbr>
+                        <ex>audiae</ex>
+                     </expan>
+                  </name>
+                  <name type="cognomen">Arriae</name>
+               </persName> ma<supplied reason="omitted">t</supplied>ri
+               <lb n="3"/>
+               <choice>
+                  <corr>i</corr>
+                  <sic>l</sic>
+               </choice>inconparabil<choice>
+                  <corr>i</corr>
+                  <sic>e</sic>
+               </choice>
                <lb n="4"/>fecit. Vixit
-               <lb n="5"/><expan><abbr>ann</abbr><ex>is</ex></expan> <num value="50">L</num> <expan><abbr>men</abbr><ex>sibus</ex></expan>
-               <lb n="6"/><num value="10">X</num>
+               <lb n="5"/>
+               <expan>
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
+               <num value="50">L</num>
+               <expan>
+                  <abbr>men</abbr>
+                  <ex>sibus</ex>
+               </expan>
+               <lb n="6"/>
+               <num value="10">X</num>
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>3) lnconparabile: lapis</p>
-                </div>
-            
-        
-        
-                
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p>3) lnconparabile: lapis</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

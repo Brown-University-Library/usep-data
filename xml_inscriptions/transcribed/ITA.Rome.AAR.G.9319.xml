@@ -8,202 +8,199 @@ changes: Added @evidence to date
 <!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
           -->
-          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-
-        <fileDesc>
-
-            <titleStmt>
-                <title>ITA.Rome.AAR.G.9319</title>
-            </titleStmt>
-
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.G.9319">ITA.Rome.AAR.G.9319</idno>
-            </publicationStmt>
-
-            <sourceDesc>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>ITA.Rome.AAR.G.9319</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.G.9319">ITA.Rome.AAR.G.9319</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>ITA</region>
-                        <settlement>Rome</settlement>
-                        <institution>AAR</institution>
-                        <repository></repository>
-                        <idno>9319</idno>
-                    </msIdentifier>
-
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#magic">
+            <msDesc>
+               <msIdentifier>
+                  <region>ITA</region>
+                  <settlement>Rome</settlement>
+                  <institution>AAR</institution>
+                  <repository/>
+                  <idno>9319</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#magic">
                             <!-- short summary of the content of an inscription -->
-                            <p>Christian imprecation</p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Christian imprecation</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
-                                <support>
-                                    <p>broken marble slab</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>50.5</height>
-                                        <width>96</width>
-                                        <depth>7</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#broken">
-                                    <p>broken across top and to the left</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="9">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <history>
-
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-
-                        <origin>
-                            <date evidence="#formulae #history" notBefore="0501" notAfter="0600"
-                                >sixth century CE</date>
-                            <placeName ref="unknown">unknown</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="purchased">
-                            <p>Purchased in <date notBefore="1910" notAfter="1911">1910-1911</date> from a dealer in <placeName ref="https://pleiades.stoa.org/places/373757">Benghazi</placeName>, who claimed it was originally from <placeName ref="https://pleiades.stoa.org/places/373778">Cyrene</placeName>. Might have been bought from a German resident: see the commentary at IRCyr. C.762</p>
-                        </provenance>
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">122, no. 99</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="https://ircyr2020.inslib.kcl.ac.uk/en/inscriptions/C.762.html"
-                            >IRCyr C.762</ref>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#SEG_18"/>
-                        <biblScope unit="item">no. 771</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#BE_1961"/>
-                        <biblScope unit="item">no. 835</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_17_Robinson"/>
-                        <biblScope unit="page">189, no. 104</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_17_Robinson2"/>
-                        <biblScope unit="page">504</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-
-        <encodingDesc>
-
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2022-08-19" who="Sophia Papandonatou">Initial Encoding</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url=""/>
-        </surface>
-    </facsimile>
-
-    <text>
-        <body>
-            <div type="edition">
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p>broken marble slab</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>50.5</height>
+                              <width>96</width>
+                              <depth>7</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#broken">
+                           <p>broken across top and to the left</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="9">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#formulae #history" notBefore="0501" notAfter="0600">sixth century CE</date>
+                     <placeName ref="unknown">unknown</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased in <date notBefore="1910" notAfter="1911">1910-1911</date> from a dealer in <placeName ref="https://pleiades.stoa.org/places/373757">Benghazi</placeName>, who claimed it was originally from <placeName ref="https://pleiades.stoa.org/places/373778">Cyrene</placeName>. Might have been bought from a German resident: see the commentary at IRCyr. C.762</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                  <biblScope unit="page">122, no. 99</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://ircyr2020.inslib.kcl.ac.uk/en/inscriptions/C.762.html">IRCyr C.762</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_18"/>
+                  <biblScope unit="item">no. 771</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#BE_1961"/>
+                  <biblScope unit="item">no. 835</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJA_17_Robinson"/>
+                  <biblScope unit="page">189, no. 104</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJA_17_Robinson2"/>
+                  <biblScope unit="page">504</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2022-08-19" who="Sophia Papandonatou">Initial Encoding</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url=""/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ΛΛ</unclear><gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="2"/><supplied reason="lost">ἤν τις ἀδικήϲῃ τὸν ναὸν</supplied> ϲου τῶν ἐνταῦθα θε
-                <lb n="3" break="no"/><supplied reason="lost">ομαχούντων κακοπο</supplied><unclear>ί</unclear>ηϲον τὸν οἶκον αὐτοῦ
-                <lb n="4"/><supplied reason="lost">καὶ τὸ ὄνομα αὐτοῦ ἐ</supplied>ξάλιψον ἐν γενεᾷ μιᾷ καὶ τὴν
-                <lb n="5"/><supplied reason="lost">μερίδα αὐτοῦ μετ</supplied>ὰ τῶν θεοκτόνων Ἰουδαίων κα
-                <lb n="6" break="no"/><supplied reason="lost">τάθεϲ; τῶν δ</supplied>ὲ φροντιζόντων τοῦ ναοῦ ϲου τού
-                <lb n="7" break="no"/><supplied reason="lost">του Παρθέν</supplied>ε θεοτόκε μὴ ἐκλείπῃ τὸ γένοϲ ἕ
-                <lb n="8" break="no"/><supplied reason="lost">ωϲ τῆϲ ϲυν</supplied>τελίαϲ τοῦ αἰῶνοϲ. Ἀμήν.
-                <lb n="9"/><g type="crux"/> <g type="leaf"/>
-            </ab></div>
-            
-            <div type="translation">
+               <lb n="1"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <unclear>ΛΛ</unclear>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/>
+               <supplied reason="lost">ἤν τις ἀδικήϲῃ τὸν ναὸν</supplied> ϲου τῶν ἐνταῦθα θε
+                <lb n="3" break="no"/>
+               <supplied reason="lost">ομαχούντων κακοπο</supplied>
+               <unclear>ί</unclear>ηϲον τὸν οἶκον αὐτοῦ
+                <lb n="4"/>
+               <supplied reason="lost">καὶ τὸ ὄνομα αὐτοῦ ἐ</supplied>ξάλιψον ἐν γενεᾷ μιᾷ καὶ τὴν
+                <lb n="5"/>
+               <supplied reason="lost">μερίδα αὐτοῦ μετ</supplied>ὰ τῶν θεοκτόνων Ἰουδαίων κα
+                <lb n="6" break="no"/>
+               <supplied reason="lost">τάθεϲ; τῶν δ</supplied>ὲ φροντιζόντων τοῦ ναοῦ ϲου τού
+                <lb n="7" break="no"/>
+               <supplied reason="lost">του Παρθέν</supplied>ε θεοτόκε μὴ ἐκλείπῃ τὸ γένοϲ ἕ
+                <lb n="8" break="no"/>
+               <supplied reason="lost">ωϲ τῆϲ ϲυν</supplied>τελίαϲ τοῦ αἰῶνοϲ. Ἀμήν.
+                <lb n="9"/>
+               <g type="crux"/>
+               <g type="leaf"/>
+            </ab>
+         </div>
+         <div type="translation">
             <p>
                 [--- if anyone damages Your temple] from among those here who [fight with] God, damage his house
                 [and] wipe out [his name] within one generation, and place [his share] with the Jews who killed God; 
                 [but] of those that care for Your temple, [Virgin] Mother of God, 
                 let not their race fail [until] the end of time. Amen.
-            </p></div>
-
-            <div type="commentary">
+            </p>
+         </div>
+         <div type="commentary">
             <p>Lunate sigma.</p>
-                <p>Lines 4-5: Cf. Matth XXIV. 51, τὸ μέρος αὐτοῦ μετὰ τῶν ὑποκριτῶν θήσει, and Luke XII. 46, τὸ μέρος αὐτοῦ μετὰ τῶν ἀπίστων θήσει, and for the antisemitism, Synesios, Epp. 4; 
+            <p>Lines 4-5: Cf. Matth XXIV. 51, τὸ μέρος αὐτοῦ μετὰ τῶν ὑποκριτῶν θήσει, and Luke XII. 46, τὸ μέρος αὐτοῦ μετὰ τῶν ἀπίστων θήσει, and for the antisemitism, Synesios, Epp. 4; 
                     this feeling may have been sharpened in Cyrenaica by memories of the Jewish Revolt of 115 CE. Robinson noted that the text shows the ecclesiastical use of language found 
                     in the curse tablets. Those being threatened were almost certainly Monophysites (IRCyr C.762).</p>
-            </div>
-            
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
-        </body>
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.84.AN.1.42</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,10 @@
                <physDesc>
                   <objectDesc ana="#instrumentum.other">
                      <supportDesc ana="#stone.other">
-                        <support><p><seg type="material">Oval carnelian gemstone</seg></p>
+                        <support>
+                           <p>
+                              <seg type="material">Oval carnelian gemstone</seg>
+                           </p>
                            <dimensions type="surface" unit="cm">
                               <height>1.2</height>
                               <width>0.9</width>
@@ -41,7 +54,7 @@
                      <layoutDesc>
                         <layout columns="0" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p>text written upwards to right of bust</p>
+                           <p>text written upwards to right of bust</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -67,7 +80,8 @@
                      <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
                      <placeName ref="asia.turkey">Asia Minor</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -79,13 +93,15 @@
                   <biblScope unit="item">1701</biblScope>
                </bibl>
                <bibl>
-                  <ref type="rest-of-bibl" target="http://www.getty.edu/art/collection/objects/17628/unknown-maker-engraved-gem-roman-1st-century/">Getty Museum Web Entry</ref>
+                  <ref type="rest-of-bibl"
+                        target="http://www.getty.edu/art/collection/objects/17628/unknown-maker-engraved-gem-roman-1st-century/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,34 +115,28 @@
          <change when="2016-02-10" who="Scott J. DiGiulio">Added missing control vocab and available dimensions metadata, fixed line/column, added link to JPGM website, added transcription from image</change>
       </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-   
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
                <lb n="1"/>ΣΚΥ.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

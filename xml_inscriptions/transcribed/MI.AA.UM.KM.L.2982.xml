@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.2982</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Paulus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -68,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -76,13 +87,15 @@
                   <biblScope unit="item">155-156 no. 249</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101140">EDR101140</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101140">EDR101140</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -92,10 +105,11 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-07" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -104,58 +118,69 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <supplied reason="lost">Hic req</supplied><unclear>u</unclear>iescit in pace
-                <lb n="2"/> 
+               <lb n="1"/>
+               <supplied reason="lost">Hic req</supplied>
+               <unclear>u</unclear>iescit in pace
+                <lb n="2"/>
                <supplied reason="lost">famu</supplied>lus Dei <persName>
                   <name type="cognomen" key="Paulus">Paulus</name>
                </persName> diac<hi rend="tall">o</hi>nus,
                 <lb n="3"/> qui bixit <expan>
-                  <abbr>an</abbr><ex>n</ex><abbr>us</abbr>
-               </expan> 
+                  <abbr>an</abbr>
+                  <ex>n</ex>
+                  <abbr>us</abbr>
+               </expan>
                <expan>
-                  <abbr>pl</abbr><ex>u</ex><abbr><hi rend="small">s</hi></abbr>
-               </expan> 
+                  <abbr>pl</abbr>
+                  <ex>u</ex>
+                  <abbr>
+                     <hi rend="small">s</hi>
+                  </abbr>
+               </expan>
                <expan>
-                  <abbr>m</abbr><ex>inu</ex><abbr>s</abbr>
-               </expan> 
-               <num xml:lang="lat" value="20"><hi rend="ligature">XX</hi></num>,
-                <lb n="4"/> depositus SDS <num xml:lang="lat" value="9">VIIII</num> 
+                  <abbr>m</abbr>
+                  <ex>inu</ex>
+                  <abbr>s</abbr>
+               </expan>
+               <num xml:lang="lat" value="20">
+                  <hi rend="ligature">XX</hi>
+               </num>,
+                <lb n="4"/> depositus SDS <num xml:lang="lat" value="9">VIIII</num>
                <expan>
-                  <abbr>Kal</abbr><ex>endas</ex>
-               </expan> 
+                  <abbr>Kal</abbr>
+                  <ex>endas</ex>
+               </expan>
                <expan>
-                  <abbr>Dec</abbr><ex>em</ex><abbr>br</abbr><ex>es</ex></expan>.</ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[Here res]ts in peace Paulus, a [serv]ant of God (and) a deacon, who lived more or less for twenty years 
+                  <abbr>Dec</abbr>
+                  <ex>em</ex>
+                  <abbr>br</abbr>
+                  <ex>es</ex>
+               </expan>.</ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>[Here res]ts in peace Paulus, a [serv]ant of God (and) a deacon, who lived more or less for twenty years 
                       (and) was laid (here) on the ninth day before? --- the Kalends of December.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 3: "anus" for "annos".</p>
-                    <p>Line 4: The expansion of SDS is unclear. EDR suggests that the SD be
+         </div>
+         <div type="commentary">
+            <p>Line 3: "anus" for "annos".</p>
+            <p>Line 4: The expansion of SDS is unclear. EDR suggests that the SD be
                expanded into "s(ub) d(ie)", which is a common component of the dating formula used
                in this inscription but does not account for the second S. The second S is distinct
                in style from the first S and resembles the S's of the abbreviated "pl(u)s m(inu)s" in line
                3, suggesting that the DS in line 4 may also be an abbreviation. </p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1589</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,15 +34,12 @@
                      <p>epitaph of Procula</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>broken marble tablet</p>
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>56.5</height>
                               <width>37.0</width>
                               <depth>8.5</depth>
@@ -69,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased in <date when="1909">1909</date> by <persName role="buyer">Walter Dennison</persName> from <persName role="seller">Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (D'Arms).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -85,16 +94,19 @@
                   <biblScope unit="item">158-159 no. 256</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010716?">EDH nr. HD010716</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010716?">EDH nr. HD010716</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075783">EDR075783</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075783">EDR075783</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -106,10 +118,11 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, edited app crit</change>
          <change when="2021-06-15" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -118,67 +131,83 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <gap reason="lost" extent="unknown" unit="character"/><unclear>n</unclear>ti <expan>
-                  <abbr>l</abbr><ex>iberto</ex>
+               <lb n="1"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <unclear>n</unclear>ti <expan>
+                  <abbr>l</abbr>
+                  <ex>iberto</ex>
                </expan>
-                <lb n="2"/> 
-               <supplied reason="lost">et</supplied> <gap reason="lost" extent="unknown" unit="character"/> <persName><name key="Zosimo" type="cognomen">Zosimo</name></persName> <expan>
-                  <abbr>l</abbr><ex>iberto</ex>
-               </expan>
-                <lb n="3"/> 
-               <supplied reason="lost">et</supplied> <gap reason="lost" extent="unknown" unit="character"/> <expan><abbr><supplied reason="lost">c</supplied>ontub</abbr><ex>ernali</ex></expan> suae
-                <lb n="4"/> 
-               <persName><gap reason="lost" extent="unknown" unit="character"/>lciae
-              <name type="cognomen" key="Procula"><expan>
-                  <abbr>Proc</abbr><ex>u</ex><abbr>lae</abbr>
-              </expan></name></persName> 
+               <lb n="2"/>
+               <supplied reason="lost">et</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <persName>
+                  <name key="Zosimo" type="cognomen">Zosimo</name>
+               </persName>
                <expan>
-                  <abbr>l</abbr><ex>ibertae</ex>
+                  <abbr>l</abbr>
+                  <ex>iberto</ex>
                </expan>
-                <lb n="5"/> 
-               <persName><gap reason="lost" extent="unknown" unit="character"/>nuleio 
-                  <name type="cognomen" key="Dionysius">Dionysio</name></persName>
-               
-                <lb n="6"/> 
-               <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">po</supplied><expan><abbr>sterisq</abbr><ex>ue</ex>
+               <lb n="3"/>
+               <supplied reason="lost">et</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <expan>
+                  <abbr>
+                     <supplied reason="lost">c</supplied>ontub</abbr>
+                  <ex>ernali</ex>
+               </expan> suae
+                <lb n="4"/>
+               <persName>
+                  <gap reason="lost" extent="unknown" unit="character"/>lciae
+              <name type="cognomen" key="Procula">
+                     <expan>
+                        <abbr>Proc</abbr>
+                        <ex>u</ex>
+                        <abbr>lae</abbr>
+                     </expan>
+                  </name>
+               </persName>
+               <expan>
+                  <abbr>l</abbr>
+                  <ex>ibertae</ex>
+               </expan>
+               <lb n="5"/>
+               <persName>
+                  <gap reason="lost" extent="unknown" unit="character"/>nuleio 
+                  <name type="cognomen" key="Dionysius">Dionysio</name>
+               </persName>
+               <lb n="6"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">po</supplied>
+               <expan>
+                  <abbr>sterisq</abbr>
+                  <ex>ue</ex>
                </expan> eorum.</ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[- - -] to a freedman, [and] to [- -] Zosimus, a freedman, [--- and] to his
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>[- - -] to a freedman, [and] to [- -] Zosimus, a freedman, [--- and] to his
                partner [-] Procula, a freedwoman, to [- -] Dionysius [---] and to their
                [de]scendants. </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>Line 1: l(iberti) (Tuck). The praenomen, gentilicium, and the beginning of a
+         </div>
+         <div type="commentary">
+            <p>Line 1: l(iberti) (Tuck). The praenomen, gentilicium, and the beginning of a
                cognomen ending in "nti" are likely missing.</p>
             <p>Line 2: Zosimus' praenomen and gentilicium are missing.</p>
             <p>Line 4: The beginning of Procula's gentilicium ending in "lciae" is missing.</p>
             <p>Line 5: Dionysus' praenomen and the beginning of his gentilicium ending in "nuleio"
                are missing.</p>
-           
-                </div>
-            
-        
-        
-               
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

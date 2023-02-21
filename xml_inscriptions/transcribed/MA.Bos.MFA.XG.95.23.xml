@@ -1,12 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
+
             <title>MA.Bos.MFA.XG.95.23</title>
+
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -76,14 +90,14 @@
                         Athens</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
+
                   <provenance type="found" subtype="discovered">
                      <p>Found in <placeName ref="https://pleiades.stoa.org/places/413373">Orvieto</placeName> during the excavations of <persName role="excavator">Riccardo Mancini</persName> <date notBefore="1872" notAfter="1884">c. 1872-1884</date>.</p>
                   </provenance>
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased by <persName role="collector buyer">Edward Perry Warren</persName> in <date when="1893-03">March 1893</date>, in <placeName ref="https://pleiades.stoa.org/places/413373">Orvieto</placeName>.</p>
+
                   </provenance>
-                  
-                  
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from <persName role="seller">Warren</persName> by the <orgName role="buyer">Museum of Fine Arts</orgName> in <date when="1895">1895</date>.</p>
                   </provenance>
@@ -103,6 +117,7 @@
                <bibl>
                   <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2773"
                      >AVI 2626</ref>
+
                </bibl>
                <bibl>
                   <ref type="external" target="https://collections.mfa.org/objects/153646">Museum of
@@ -112,7 +127,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -120,8 +136,10 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
+
          <change when="2023-02-03" who="Sophia Papandonatou">initial encoding</change>
          
+
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
@@ -132,14 +150,13 @@
       
    
    
+
       </surface>
       <surface>
          <desc/>
          <graphic url="MA.Bos.MFA.XG.95.23b.jpg"/>
       </surface>
-     
-     
-      
+
    </facsimile>
    <text>
       <body>
@@ -153,22 +170,26 @@
             </div>
             <div type="textpart" subtype="scene" n="b">
                <ab>
-                  
-                  
+
                   <lb n="4"/><foreign xml:lang="grc"><hi rend="reversed">καλος
                   <lb n="5"/><name type="divine" key="Nερευς Νηρεύς Nereus">Nερευς</name></hi></foreign>
                   
+
                </ab>
             </div>
-            
          </div>
          <div type="commentary">
             <p>Attributed to the Fröhner Painter.</p>
-            
-            
-         </div>
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
 
-       </body>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

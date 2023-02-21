@@ -1,14 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>GA.Atl.EU.MCM.X.2002.012.020</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="GA.Atl.EU.MCM.X.2002.012.020"
-               >GA.Atl.EU.MCM.X.2002.012.020</idno>
+            <idno type="USEpigraphy" xml:id="GA.Atl.EU.MCM.X.2002.012.020">GA.Atl.EU.MCM.X.2002.012.020</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -69,20 +78,20 @@
                      <date evidence="unspecified" notBefore="-0540" notAfter="-0530">540-530 BCE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
-              
                <bibl>
                   <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
                   <biblScope unit="page">256-257</biblScope>
                </bibl>
-              
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -90,13 +99,10 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-        
          <change when="2022-11-02" who="Sophia Papandonatou">initial encoding</change>
       </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-  
    <facsimile>
       <surface>
          <desc/>
@@ -104,36 +110,30 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-           <ab>
-              <lb n="1"/>ΟL<gap reason="lost" quantity="1" unit="character"/>Α<unclear>Σ</unclear>
-           </ab>
+            <ab>
+               <lb n="1"/>ΟL<gap reason="lost" quantity="1" unit="character"/>Α<unclear>Σ</unclear>
+            </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-                    <p/>
-                </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

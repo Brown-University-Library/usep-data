@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1453</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Petronia Philematius, a freedwoman</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.other">
                         <support>
@@ -61,7 +71,9 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#archaeology #palaeography" notBefore="-0100" notAfter="0001">first century
+                     <date evidence="#archaeology #palaeography"
+                            notBefore="-0100"
+                            notAfter="0001">first century
                         BCE</date>
                      <placeName ref="europe.rome.italy">Italy, Rome</placeName>
                   </origin>
@@ -69,7 +81,8 @@
                      <p>Purchased in <date when="1908-12">December 1908</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">Antiquario Pacifico</orgName> on the Via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,14 +95,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102077"
-                     >EDR102077</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102077">EDR102077</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -100,9 +113,10 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-05-31" who="Scott J. DiGiulio">Fixed image url error.</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-31" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,50 +125,51 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <persName>
                   <name type="gentilicium" key="Petronia">
                      <supplied reason="lost">Pet</supplied>ron
-                <lb break="no" n="2"/> 
-                     <supplied reason="lost">i</supplied>ae</name> 
+                <lb break="no" n="2"/>
+                     <supplied reason="lost">i</supplied>ae</name>
                   <name type="praenomen" key="Decius">
                      <expan>
-                        <abbr>D</abbr><ex>ecii</ex>
+                        <abbr>D</abbr>
+                        <ex>ecii</ex>
                      </expan>
-                  </name> 
+                  </name>
                   <expan>
-                     <abbr>l</abbr><ex>ibertae</ex>
+                     <abbr>l</abbr>
+                     <ex>ibertae</ex>
                   </expan>
-                  <lb n="3"/> 
-                  <name type="cognomen" key="Philematium">P<choice><corr>hil</corr><sic>i<hi rend="ligature">hl</hi></sic></choice>em
-                <lb break="no" n="4"/> atium</name></persName>.
+                  <lb n="3"/>
+                  <name type="cognomen" key="Philematium">P<choice>
+                        <corr>hil</corr>
+                        <sic>i<hi rend="ligature">hl</hi>
+                        </sic>
+                     </choice>em
+                <lb break="no" n="4"/> atium</name>
+               </persName>.
             </ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                   <p>To Petronia Philematium, freedwoman of Decius.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>Nominative "Philematium" in lines 3-4 instead of dative.</p>
-                   <p>Line 3: Piilem= (EDR). </p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To Petronia Philematium, freedwoman of Decius.</p>
+         </div>
+         <div type="commentary">
+            <p>Nominative "Philematium" in lines 3-4 instead of dative.</p>
+            <p>Line 3: Piilem= (EDR). </p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

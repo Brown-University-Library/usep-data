@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.North.SC.L.1920.21-1</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -26,7 +37,6 @@
                <physDesc>
                   <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                  
                   <objectDesc ana="#ash_urn">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -49,28 +59,29 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  
                   <!--  *************************************  <handDesc>  ********************************* -->
                   <!--     Contains information about types of writing and means of inscription.  -->
                   <handDesc hands="1">
                      <handNote ana="#inscribed"> </handNote>
                      <!-- <handNote> is a repeatable element -->
                   </handDesc>
-                  
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
                         <p/>
                      </decoNote>
-                  </decoDesc></physDesc>
+                  </decoDesc>
+               </physDesc>
                <history>
                   <summary>
-                    <rs/>  <!-- content can be "fake" or blank -->
+                     <rs/>
+                     <!-- content can be "fake" or blank -->
                   </summary>
-                  
                   <origin>
                      <!-- original place and dating of inscription -->
-                     <date evidence="#palaeography #archaeology" notBefore="0068" notAfter="0100">late first century.
+                     <date evidence="#palaeography #archaeology"
+                            notBefore="0068"
+                            notAfter="0100">late first century.
                         CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
@@ -85,21 +96,21 @@
                   <ptr type="rest-of-bibl" target="#Sinn"/>
                   <biblScope unit="item">no. 209, Taf. 41d</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143427">EDR143427</ref>
-</bibl>
                <bibl>
                   <ref type="external"
-                     target="https://museums.fivecolleges.edu/detail.php?t=objects&amp;type=ext&amp;id_number=SC+1920.21.1"
-                     >Five Colleges and Historic Deerfield Museum Consortium - Online Collections
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143427">EDR143427</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://museums.fivecolleges.edu/detail.php?t=objects&amp;type=ext&amp;id_number=SC+1920.21.1">Five Colleges and Historic Deerfield Museum Consortium - Online Collections
                      Database</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -110,56 +121,139 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2015-07-22" who="Scott J. DiGiulio">Updated some metadata, added transcription, images</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2022-02-16" who="Sophia Papandonatou">added translation</change>
          <change when="2022-02-23" who="Sophia Papandonatou">added link</change>
-</revisionDesc>
+      </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
    <facsimile>
       <surface>
          <desc/>
-         <graphic url="MA.North.SC.AM.L.1920.21.1.jpg"/>            
+         <graphic url="MA.North.SC.AM.L.1920.21.1.jpg"/>
          <graphic url="MA.North.SC.AM.L.1920.21.1-Det.1.jpg"/>
          <graphic url="MA.North.SC.AM.L.1920.21.1-Det.2.jpg"/>
          <graphic url="MA.North.SC.AM.L.1920.21.1-Det.3.jpg"/>
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-               <lb n="2"/><persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>ulo</ex></expan></name> <name type="gentilicium" key="Seius">Seio</name> <name type="cognomen" key="Zosimianus">Zosimiano</name></persName>,
-               <lb n="3"/><expan><abbr>equit</abbr><ex>i</ex></expan> <expan><abbr>Rom</abbr><ex>ano</ex></expan>, <expan><abbr>praef</abbr><ex>ecto</ex></expan> <expan><abbr>co
-               <lb n="4" break="no"/>hort</abbr><ex>is</ex></expan> <num type="ordinal" value="3">III</num> <expan><abbr>Bracaraug</abbr><ex>ustanorum</ex></expan>,
-               <lb n="5"/><expan><abbr>trib</abbr><ex>uno</ex></expan> <expan><abbr>leg</abbr><ex>ionis</ex></expan> <num type="ordinal" value="11">XI</num> <expan><abbr>Cl</abbr><ex>audiae</ex></expan>, <expan><abbr>succu</abbr><ex>ratori</ex></expan>
-               <lb n="6"/>viae, et <expan><abbr>dec</abbr><ex>urioni</ex></expan> Antiati
-               <lb n="7"/><persName><name type="praenomen" key="Aulus"><expan><abbr>A</abbr><ex>ulus</ex></expan></name> <name type="gentilicium" key="Seius">Seius</name> <name type="cognomen" key="Africanus">Africanus</name> <expan><abbr>fi</abbr><ex>lius</ex></expan></persName>
-               <lb n="8"/><expan><abbr>pat</abbr><ex>ri</ex></expan> <expan><abbr>piissim</abbr><ex>o</ex></expan> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> fecit.
+               <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>.
+               <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Aulus">
+                     <expan>
+                        <abbr>A</abbr>
+                        <ex>ulo</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Seius">Seio</name>
+                  <name type="cognomen" key="Zosimianus">Zosimiano</name>
+               </persName>,
+               <lb n="3"/>
+               <expan>
+                  <abbr>equit</abbr>
+                  <ex>i</ex>
+               </expan>
+               <expan>
+                  <abbr>Rom</abbr>
+                  <ex>ano</ex>
+               </expan>, <expan>
+                  <abbr>praef</abbr>
+                  <ex>ecto</ex>
+               </expan>
+               <expan>
+                  <abbr>co
+               <lb n="4" break="no"/>hort</abbr>
+                  <ex>is</ex>
+               </expan>
+               <num type="ordinal" value="3">III</num>
+               <expan>
+                  <abbr>Bracaraug</abbr>
+                  <ex>ustanorum</ex>
+               </expan>,
+               <lb n="5"/>
+               <expan>
+                  <abbr>trib</abbr>
+                  <ex>uno</ex>
+               </expan>
+               <expan>
+                  <abbr>leg</abbr>
+                  <ex>ionis</ex>
+               </expan>
+               <num type="ordinal" value="11">XI</num>
+               <expan>
+                  <abbr>Cl</abbr>
+                  <ex>audiae</ex>
+               </expan>, <expan>
+                  <abbr>succu</abbr>
+                  <ex>ratori</ex>
+               </expan>
+               <lb n="6"/>viae, et <expan>
+                  <abbr>dec</abbr>
+                  <ex>urioni</ex>
+               </expan> Antiati
+               <lb n="7"/>
+               <persName>
+                  <name type="praenomen" key="Aulus">
+                     <expan>
+                        <abbr>A</abbr>
+                        <ex>ulus</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Seius">Seius</name>
+                  <name type="cognomen" key="Africanus">Africanus</name>
+                  <expan>
+                     <abbr>fi</abbr>
+                     <ex>lius</ex>
+                  </expan>
+               </persName>
+               <lb n="8"/>
+               <expan>
+                  <abbr>pat</abbr>
+                  <ex>ri</ex>
+               </expan>
+               <expan>
+                  <abbr>piissim</abbr>
+                  <ex>o</ex>
+               </expan>
+               <expan>
+                  <abbr>b</abbr>
+                  <ex>ene</ex>
+               </expan>
+               <expan>
+                  <abbr>m</abbr>
+                  <ex>erenti</ex>
+               </expan> fecit.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Aulus Seius Zosimianus, Roman knight, prefect of
+         <div type="translation">
+            <p>To the Divine Spirits. To Aulus Seius Zosimianus, Roman knight, prefect of
                        the third cohort of the <hi rend="italic">Bracaraugusti</hi>, tribune of the eleventh legion of Claudia,
                subcurator of the road, and decurion of Antias. Aulus Seius Africanus, (his) son,
                made (this) for his most dutiful father, well-deserving.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

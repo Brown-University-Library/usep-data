@@ -9,203 +9,236 @@ changes: Added @evidence to date
 changes: correct handling of provenance information
           -->
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-        
-        <fileDesc>
-            
-            <titleStmt>
-                <title>NY.NY.MMA.L.38.27</title>
-            </titleStmt>
-            
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.38.27">NY.NY.MMA.L.38.27</idno>
-            </publicationStmt>
-            
-            <sourceDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>NY.NY.MMA.L.38.27</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.38.27">NY.NY.MMA.L.38.27</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>38.27</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>MMA</institution>
+                  <repository/>
+                  <idno>38.27</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaph of Cominia Tyche and her family</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>epitaph of Cominia Tyche and her family</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                         
                         <!--  *************************************  <objectDesc>  *********************************  -->
-                        
-                        <objectDesc ana="#altar">
-                            <supportDesc ana="#stone.marble">
-                                <support>
-                                    <p>marble funerary altar</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>101.6</height>
-                                        <width/>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="7">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>a portrait bust of a woman</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <history>
-                        
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-                        
-                        <origin>
-                            <date evidence="#archaeology" notBefore="0089" notAfter="0101">ca. 90-100
+                  <objectDesc ana="#altar">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p>marble funerary altar</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>101.6</height>
+                              <width/>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="7">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>a portrait bust of a woman</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#archaeology" notBefore="0089" notAfter="0101">ca. 90-100
                                 CE</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
-                        </origin>
-                        <provenance type="observed" subtype="recorded">
-                            <p>by the  <date notBefore="1565" notAfter="1570">late 1560s</date>, recorded in the house that formerly belonged to <persName role="landlord"><name key="Angelo of Capranica">Angelo of <placeName>Capranica</placeName></name></persName>, near the church of S. Sebastiano in the St. Eustachio area, <placeName>Rome</placeName></p>
-                        </provenance>
-                        <provenance type="observed" subtype="recorded">
-                            <p>before <date notAfter="1677">1677</date> until <date when="1937">1937</date>, collection of <persName role="owner"><name key="Cardinal Francesco Barberini">Cardinal Francesco Barberini</name></persName>, <placeName>Rome</placeName></p>
-                        </provenance>
-                        <provenance type="transferred" subtype="sold">
-                            <p>purchased from <persName role="seller"><name key="Jandolo">Jandolo</name></persName> by <persName role="buyer"><name key="Joseph Brummer">Joseph Brummer</name></persName> in <placeName>New York</placeName> in <date when="1937">1937</date></p>
-                        </provenance>
-                        <provenance type="transferred" subtype="sold">
-                            <p>purchased from <persName role="seller"><name key="Joseph Brummer">Joseph Brummer</name></persName> by <persName role="buyer"><name key="Philip Hofer">Philip Hofer</name></persName> in <placeName>New York</placeName>in <date when="1938">1938</date></p>
-                        </provenance>
-                        <provenance type="transferred" subtype="given">
-                            <p>given by <persName role="donor"><name key="Philip Hofer">Philip Hofer</name></persName> to the <orgName>Metropolitan Museum of Art</orgName> in <date when="1938">1938</date></p>
-                        </provenance>
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">16054</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Claudia"/>
-                        <biblScope unit="item">199, no. 149</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MMAB_33_Richter"/>
-                        <biblScope unit="item">103-5 (figs. 1-3)</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://metmuseum.org/art/collection/search/253569">Metropolitan Museum Web Entry</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        
-        <encodingDesc>
-            
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-            
-        </encodingDesc>
-        
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
-            <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-            <change when="2016-04-19" who="Scott J. DiGiulio">Updates to bibl, added link to Met website</change>
-            <change when="2021-02-18" who="Itamar Levin">Transcription, translation, and
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+                  <provenance type="observed" subtype="recorded">
+                     <p>by the  <date notBefore="1565" notAfter="1570">late 1560s</date>, recorded in the house that formerly belonged to <persName role="landlord">
+                           <name key="Angelo of Capranica">Angelo of <placeName>Capranica</placeName>
+                           </name>
+                        </persName>, near the church of S. Sebastiano in the St. Eustachio area, <placeName>Rome</placeName>
+                     </p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p>before <date notAfter="1677">1677</date> until <date when="1937">1937</date>, collection of <persName role="owner">
+                           <name key="Cardinal Francesco Barberini">Cardinal Francesco Barberini</name>
+                        </persName>, <placeName>Rome</placeName>
+                     </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p>purchased from <persName role="seller">
+                           <name key="Jandolo">Jandolo</name>
+                        </persName> by <persName role="buyer">
+                           <name key="Joseph Brummer">Joseph Brummer</name>
+                        </persName> in <placeName>New York</placeName> in <date when="1937">1937</date>
+                     </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p>purchased from <persName role="seller">
+                           <name key="Joseph Brummer">Joseph Brummer</name>
+                        </persName> by <persName role="buyer">
+                           <name key="Philip Hofer">Philip Hofer</name>
+                        </persName> in <placeName>New York</placeName>in <date when="1938">1938</date>
+                     </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="given">
+                     <p>given by <persName role="donor">
+                           <name key="Philip Hofer">Philip Hofer</name>
+                        </persName> to the <orgName>Metropolitan Museum of Art</orgName> in <date when="1938">1938</date>
+                     </p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">16054</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Claudia"/>
+                  <biblScope unit="item">199, no. 149</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MMAB_33_Richter"/>
+                  <biblScope unit="item">103-5 (figs. 1-3)</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://metmuseum.org/art/collection/search/253569">Metropolitan Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2016-04-19" who="Scott J. DiGiulio">Updates to bibl, added link to Met website</change>
+         <change when="2021-02-18" who="Itamar Levin">Transcription, translation, and
                 metadata</change>
-                 <change when="2021-02-23" who="Scott J. DiGiulio">Corrections to control vocabulary, provenance markup; corrected transcription markup in line 3 and fixed various typos, enhanced markup and added hi elements</change> 
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
-        
-    </teiHeader>
-    
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.L.38.27-Det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.L.38.27-Det2.jpg"/>
-        </surface>
-    </facsimile>
-    
-    <text>
-        <body>
-            <div type="edition">
-                <ab>
-                    <lb n="1"/>D<hi rend="tall">i</hi>s Manibus.
-                    <lb n="2"/><persName><name type="gentilicium" key="Cominia">Cominia<hi rend="apex">e</hi></name> <name type="cognomen" key="Tyche">Tyche</name></persName> sanctissim<hi rend="apex">a</hi>e
-                    <lb n="3"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Annius">Ann<unclear>i</unclear>us</name> <name type="cognomen" key="Festus"><supplied reason="lost">F</supplied>estus</name></persName> coniugi
-                    <lb n="4"/>castissimae <expan><abbr>sibiq</abbr><ex>ue</ex></expan> amantissi
+         <change when="2021-02-23" who="Scott J. DiGiulio">Corrections to control vocabulary, provenance markup; corrected transcription markup in line 3 and fixed various typos, enhanced markup and added hi elements</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.L.38.27-Det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.L.38.27-Det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>D<hi rend="tall">i</hi>s Manibus.
+                    <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Cominia">Cominia<hi rend="apex">e</hi>
+                  </name>
+                  <name type="cognomen" key="Tyche">Tyche</name>
+               </persName> sanctissim<hi rend="apex">a</hi>e
+                    <lb n="3"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>L</abbr>
+                        <ex>ucius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Annius">Ann<unclear>i</unclear>us</name>
+                  <name type="cognomen" key="Festus">
+                     <supplied reason="lost">F</supplied>estus</name>
+               </persName> coniugi
+                    <lb n="4"/>castissimae <expan>
+                  <abbr>sibiq</abbr>
+                  <ex>ue</ex>
+               </expan> amantissi
                     <lb n="5" break="no"/>mae, vixit annis <num type="cardinal" value="27">XXVII</num>,
                          <lb n="6"/>mensibus <num type="cardinal" value="11">XI</num>, diebus <num value="28" type="cardinal">XXVIII</num>,
-                         <lb n="7"/>et sib<hi rend="tall">i</hi> <expan><abbr>poster<hi rend="tall">i</hi>sq</abbr><ex>ue</ex></expan> su<hi rend="tall">i</hi>s.
-                </ab></div>
-            
-            <div type="translation">
-                <p>To the divine shades. To the most venerable Cominia Tyche, Lucius Annius Festus
+                         <lb n="7"/>et sib<hi rend="tall">i</hi>
+               <expan>
+                  <abbr>poster<hi rend="tall">i</hi>sq</abbr>
+                  <ex>ue</ex>
+               </expan> su<hi rend="tall">i</hi>s.
+                </ab>
+         </div>
+         <div type="translation">
+            <p>To the divine shades. To the most venerable Cominia Tyche, Lucius Annius Festus
                     (made this) for his most chaste and loving wife, (who) lived 27 years, 11 months,
-                    and 28 days, and for himself and for his children. </p></div>
-            
-            <div type="commentary">
-                <p>The shape of the bust supports dating the monument to around the time of the
-                    Flavian emperors (96-99 CE). Hedera distinguens used as an interpunct fairly regularly throughout the inscription.</p></div>
-            
-            
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
-        </body>
-    </text>
+                    and 28 days, and for himself and for his children. </p>
+         </div>
+         <div type="commentary">
+            <p>The shape of the bust supports dating the monument to around the time of the
+                    Flavian emperors (96-99 CE). Hedera distinguens used as an interpunct fairly regularly throughout the inscription.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1542</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Arescusa and Quartio</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -61,7 +71,9 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#nomenclature #palaeography" notBefore="0001" notAfter="0200">first to second
+                     <date evidence="#nomenclature #palaeography"
+                            notBefore="0001"
+                            notAfter="0200">first to second
                         century CE</date>
                      <placeName ref="https://pleiades.stoa.org/places/758962698">Italy, Rome, Porta Salaria</placeName>
                   </origin>
@@ -69,7 +81,8 @@
                      <p>Purchased in <date when="1909">1909</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">the Antiquario Pacifico</orgName> on the via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,14 +95,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000907"
-                     >EDR000907</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000907">EDR000907</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,11 +112,12 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-27" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added EDR link</change>
          <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
          <change when="2021-08-21" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -112,48 +126,57 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/> D<hi rend="tall">i</hi>s <expan><abbr>M<supplied reason="lost">an</supplied></abbr><ex>ibus</ex></expan>.
-                <lb n="2"/> 
+               <lb n="1"/> D<hi rend="tall">i</hi>s <expan>
+                  <abbr>M<supplied reason="lost">an</supplied>
+                  </abbr>
+                  <ex>ibus</ex>
+               </expan>.
+                <lb n="2"/>
                <persName>
-                  <name type="slaveName" key="Arescusa">Arescus<supplied reason="lost">a</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="3"/> 
+                  <name type="slaveName" key="Arescusa">Arescus<supplied reason="lost">a</supplied>
+                  </name>
+               </persName>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/>
                <persName>
                   <name type="cognomen" key="Severa">Severaes</name>
-               </persName> 
-               <supplied reason="lost"><expan><abbr>v</abbr><ex>ixit</ex></expan></supplied>
-                <lb n="4"/> annis XX<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="5"/> 
+               </persName>
+               <supplied reason="lost">
+                  <expan>
+                     <abbr>v</abbr>
+                     <ex>ixit</ex>
+                  </expan>
+               </supplied>
+               <lb n="4"/> annis XX<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="5"/>
                <persName>
                   <name type="slaveName" key="Quartio">
-                     Qu<unclear>a</unclear>rtio <gap reason="lost" extent="unknown" unit="character"/></name></persName>
-               <lb n="6"/> Caes<unclear>a</unclear><supplied reason="lost">ris</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="7"/> 
+                     Qu<unclear>a</unclear>rtio <gap reason="lost" extent="unknown" unit="character"/>
+                  </name>
+               </persName>
+               <lb n="6"/> Caes<unclear>a</unclear>
+               <supplied reason="lost">ris</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="7"/>
                <expan>
-                  <abbr>ser</abbr><ex>vus</ex>
-               </expan> v<supplied reason="lost" cert="low">ixit</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="8"/> 
+                  <abbr>ser</abbr>
+                  <ex>vus</ex>
+               </expan> v<supplied reason="lost" cert="low">ixit</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="8"/>
                <gap reason="lost" extent="unknown" unit="lines"/>
             </ab>
-                
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine S[pirits]. Arescus[a] (slave) of [-] Severa [lived] [X]
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine S[pirits]. Arescus[a] (slave) of [-] Severa [lived] [X]
                years [---]. Quartio [---], slave [of] the empero[r], l[ived(?) X ---]</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 2: The first deceased’s name was likely in the
+         </div>
+         <div type="commentary">
+            <p>Line 2: The first deceased’s name was likely in the
                nominative—“Arescusa”—corresponding with the nominative case of the second deceased’s
                name—“Quartio.” The gentilicium of Arescusa’s mistress is likely missing. </p>
             <p>Line 4: It is unclear whether the numeral indicating the number of years the deceased
@@ -163,13 +186,15 @@
                name of the emperor whose slave Quartio was (cf. CIL VIII, 5415).</p>
             <p>Line 7: The rest of the age at death formula (years, months?, and days? lived) is
                missing. </p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

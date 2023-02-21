@@ -1,9 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1421</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -24,7 +35,6 @@
                      <p>epitaph of Publius Caesonius Anteros, a freedman</p>
                   </msItem>
                </msContents>
-
                <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
@@ -93,9 +103,9 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">181-182 no. 302</biblScope>
                </bibl>
-
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR122019">EDR122019</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR122019">EDR122019</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="http://www.trismegistos.org/text/279381">Trismegistos no. 279381</ref>
@@ -104,7 +114,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -118,9 +129,11 @@
          <change when="2017-10-06" who="Scott J. DiGiulio">Added condition ana; brought material up to current
             standards; removed deco ana; added correct textparts to edition; corrected previous
             readings to conform to current epidoc; changed app div to commentary div, added note about status of inscription; added link to Trismegistos</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -129,47 +142,71 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <div type="textpart" subtype="column" n="column 1">
                <ab>
-                  <lb n="1"/><persName><supplied reason="lost" evidence="parallel"><name type="gentilicium" key="Plotia">Plotia</name> <g type="Gaiae"/></supplied> <expan><abbr>l</abbr><ex>iberta</ex></expan>
-                     <lb n="2"/><supplied reason="lost" evidence="parallel"><name type="cognomen" key="Fausta">Fausta</name></supplied></persName>.
+                  <lb n="1"/>
+                  <persName>
+                     <supplied reason="lost" evidence="parallel">
+                        <name type="gentilicium" key="Plotia">Plotia</name>
+                        <g type="Gaiae"/>
+                     </supplied>
+                     <expan>
+                        <abbr>l</abbr>
+                        <ex>iberta</ex>
+                     </expan>
+                     <lb n="2"/>
+                     <supplied reason="lost" evidence="parallel">
+                        <name type="cognomen" key="Fausta">Fausta</name>
+                     </supplied>
+                  </persName>.
                </ab>
             </div>
-           
             <div type="textpart" subtype="column" n="column 2">
                <ab>
-                  <lb n="1"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Caesonius">Caesonius</name>
-                  <lb n="2"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublii</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan> <name type="cognomen" key="Anteros">Anteros</name></persName>.
+                  <lb n="1"/>
+                  <persName>
+                     <name type="praenomen" key="Publius">
+                        <expan>
+                           <abbr>P</abbr>
+                           <ex>ublius</ex>
+                        </expan>
+                     </name>
+                     <name type="gentilicium" key="Caesonius">Caesonius</name>
+                     <lb n="2"/>
+                     <persName>
+                        <name type="praenomen" key="Publius">
+                           <expan>
+                              <abbr>P</abbr>
+                              <ex>ublii</ex>
+                           </expan>
+                        </name>
+                     </persName>
+                     <expan>
+                        <abbr>l</abbr>
+                        <ex>ibertus</ex>
+                     </expan>
+                     <name type="cognomen" key="Anteros">Anteros</name>
+                  </persName>.
                </ab>
             </div>
          </div>
-        
-        
-                <div type="translation">
-                    <p>[Plotia Fausta,] freedwoman [of a woman.] </p>
+         <div type="translation">
+            <p>[Plotia Fausta,] freedwoman [of a woman.] </p>
             <p>Publius Caesonius Anteros, freedman of Publius.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
+         </div>
+         <div type="commentary">
             <p>The bulk of the first column is in Rome in the Musei Capitolini, NCE 295.</p>
          </div>
-            
-        
-        
-<div type="bibliography">
-            <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
             </xi:include>
          </div>
-        </body>
-        
-    
+      </body>
    </text>
 </TEI>

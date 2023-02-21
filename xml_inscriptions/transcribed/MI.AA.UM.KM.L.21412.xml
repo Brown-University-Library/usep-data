@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.21412</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -66,7 +77,8 @@
                   <provenance type="found" subtype="discovered">
                      <p>Acquired in <date when="1934">1934</date> as a surface find of the <orgName>University of Michigan</orgName>'s excavations in <placeName>Karanis, Egypt</placeName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -91,14 +103,15 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD019274">EDH nr.
+                        target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD019274">EDH nr.
                      HD019274</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -115,7 +128,8 @@
             English and lower case</change>
          <change when="2021-06-14" who="Sophia Papandonatou">added image</change>
          <change when="2021-08-05" who="Sophia Papandonatou">added commentary and translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -124,161 +138,418 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <div type="textpart" subtype="side" n="a">
-            <ab>
-                <lb n="1"/>
-               <persName type="imperial"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>erator</ex></expan> 
-                  <name type="cognomen" key="Caesar"><expan>
-                     <abbr>Caes</abbr><ex>ar</ex></expan></name></supplied>, divi <persName type="imperial"><name type="cognomen" key="Hadrianus">Hadri<supplied reason="lost">iani</supplied></name></persName> <supplied reason="lost"><expan>
-                        <abbr>f</abbr><ex>ilius</ex></expan>, divi</supplied> <persName type="imperial"><name type="cognomen" key="Traianus"><supplied reason="lost">Traia
+      <body>
+         <div type="edition">
+            <div type="textpart" subtype="side" n="a">
+               <ab>
+                  <lb n="1"/>
+                  <persName type="imperial">
+                     <supplied reason="lost">
+                        <expan>
+                           <abbr>Imp</abbr>
+                           <ex>erator</ex>
+                        </expan>
+                        <name type="cognomen" key="Caesar">
+                           <expan>
+                              <abbr>Caes</abbr>
+                              <ex>ar</ex>
+                           </expan>
+                        </name>
+                     </supplied>, divi <persName type="imperial">
+                        <name type="cognomen" key="Hadrianus">Hadri<supplied reason="lost">iani</supplied>
+                        </name>
+                     </persName>
+                     <supplied reason="lost">
+                        <expan>
+                           <abbr>f</abbr>
+                           <ex>ilius</ex>
+                        </expan>, divi</supplied>
+                     <persName type="imperial">
+                        <name type="cognomen" key="Traianus">
+                           <supplied reason="lost">Traia
                 <lb n="2" break="no"/> 
-                           ni</supplied></name> <name type="agnomen" key="Parthicus"><expan><abbr><supplied reason="lost">Parth</supplied>ic</abbr><ex>i</ex>
-               </expan></name></persName> 
-               <expan>
-                  <abbr>nep</abbr><ex>os</ex></expan>, divi <supplied reason="lost"><persName type="imperial"><name type="cognomen" key="Nerva">Nervae</name></persName> <expan>
-                     <abbr>pronep</abbr><ex>os</ex></expan>, <name type="praenomen" key="Titus"><expan>
-                     <abbr>T</abbr><ex>itus</ex>
-                     </expan></name> <name type="gentilicium" key="Aelius">Ae
-                        <lb break="no" n="3"/> lius</name></supplied> <name type="cognomen" key="Hadrianus"><supplied reason="lost">Had</supplied>rianus</name> <name type="cognomen" key="Antoninus">Ant<supplied reason="lost">oninus</supplied></name> <supplied reason="lost"><name type="cognomen" key="Augustus"><expan>
-                     <abbr>Aug</abbr><ex>ustus</ex>
-                        </expan></name> <name type="agnomen" key="Pius">Pius</name></supplied></persName>,
-                <lb n="4"/> 
-                  <supplied reason="lost"><expan><abbr>pont</abbr><ex>ifex</ex>
-                  </expan></supplied> <expan><abbr><supplied reason="lost">ma</supplied>x</abbr><ex>imus</ex></expan>, <expan>
-                  <abbr>trib</abbr><ex>unicia</ex>
-               </expan> 
-               <expan>
-                  <abbr>pot</abbr><ex>estate</ex>
-               </expan> 
-               <num xml:lang="lat" value="20">XX</num><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">
+                           ni</supplied>
+                        </name>
+                        <name type="agnomen" key="Parthicus">
+                           <expan>
+                              <abbr>
+                                 <supplied reason="lost">Parth</supplied>ic</abbr>
+                              <ex>i</ex>
+                           </expan>
+                        </name>
+                     </persName>
+                     <expan>
+                        <abbr>nep</abbr>
+                        <ex>os</ex>
+                     </expan>, divi <supplied reason="lost">
+                        <persName type="imperial">
+                           <name type="cognomen" key="Nerva">Nervae</name>
+                        </persName>
+                        <expan>
+                           <abbr>pronep</abbr>
+                           <ex>os</ex>
+                        </expan>, <name type="praenomen" key="Titus">
+                           <expan>
+                              <abbr>T</abbr>
+                              <ex>itus</ex>
+                           </expan>
+                        </name>
+                        <name type="gentilicium" key="Aelius">Ae
+                        <lb break="no" n="3"/> lius</name>
+                     </supplied>
+                     <name type="cognomen" key="Hadrianus">
+                        <supplied reason="lost">Had</supplied>rianus</name>
+                     <name type="cognomen" key="Antoninus">Ant<supplied reason="lost">oninus</supplied>
+                     </name>
+                     <supplied reason="lost">
+                        <name type="cognomen" key="Augustus">
+                           <expan>
+                              <abbr>Aug</abbr>
+                              <ex>ustus</ex>
+                           </expan>
+                        </name>
+                        <name type="agnomen" key="Pius">Pius</name>
+                     </supplied>
+                  </persName>,
+                <lb n="4"/>
+                  <supplied reason="lost">
+                     <expan>
+                        <abbr>pont</abbr>
+                        <ex>ifex</ex>
+                     </expan>
+                  </supplied>
                   <expan>
-                     <abbr>imp</abbr><ex>erator</ex>
+                     <abbr>
+                        <supplied reason="lost">ma</supplied>x</abbr>
+                     <ex>imus</ex>
+                  </expan>, <expan>
+                     <abbr>trib</abbr>
+                     <ex>unicia</ex>
                   </expan>
-                  <num xml:lang="lat" value="2">II</num>, <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex>
-                  </expan> <num xml:lang="lat" value="4">IV</num>, <expan>
-                     <abbr>p</abbr><ex>ater</ex>
-                  </expan> 
                   <expan>
-                     <abbr>p</abbr><ex>atriae</ex>
+                     <abbr>pot</abbr>
+                     <ex>estate</ex>
                   </expan>
-                <lb n="5"/> 
+                  <num xml:lang="lat" value="20">XX</num>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                  <supplied reason="lost">
+                     <expan>
+                        <abbr>imp</abbr>
+                        <ex>erator</ex>
+                     </expan>
+                     <num xml:lang="lat" value="2">II</num>, <expan>
+                        <abbr>co</abbr>
+                        <ex>n</ex>
+                        <abbr>s</abbr>
+                        <ex>ul</ex>
+                     </expan>
+                     <num xml:lang="lat" value="4">IV</num>, <expan>
+                        <abbr>p</abbr>
+                        <ex>ater</ex>
+                     </expan>
+                     <expan>
+                        <abbr>p</abbr>
+                        <ex>atriae</ex>
+                     </expan>
+                     <lb n="5"/>
+                     <expan>
+                        <abbr>equitib</abbr>
+                        <ex>us</ex>
+                     </expan> e</supplied>t <expan>
+                     <abbr>peditib</abbr>
+                     <ex>us</ex>
+                  </expan> qu<supplied reason="lost">i <expan>
+                        <abbr>milit</abbr>
+                        <ex>averunt</ex>
+                     </expan> in alis <num xml:lang="lat" value="4">IIII</num>
+                     <lb n="6"/>quae</supplied>
                   <expan>
-                     <abbr>equitib</abbr><ex>us</ex>
-                  </expan> e</supplied>t <expan>
-                  <abbr>peditib</abbr><ex>us</ex>
-               </expan> qu<supplied reason="lost">i <expan>
-                     <abbr>milit</abbr><ex>averunt</ex>
-                  </expan> in alis <num xml:lang="lat" value="4">IIII</num>
-                  <lb n="6"/>quae</supplied> <expan>
-                     <abbr><supplied reason="lost">app</supplied>ell</abbr><ex>antur</ex>
-               </expan> veteran<supplied reason="lost">a <expan>
-                     <abbr>Galli</abbr><ex>ca</ex>
-                  </expan> et</supplied>
-               <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="7"/> 
-               <gap reason="lost" quantity="3" unit="character"/> <expan><abbr><supplied reason="lost">Hercul</supplied>ian</abbr><ex>a</ex></expan> <expan><abbr>provi<supplied reason="lost">nc</supplied></abbr><ex>ialis</ex></expan> <supplied reason="lost">et Vocontiorum et
-                <lb n="8"/> 
-                  <expan><abbr>coh</abbr><ex>ortibus</ex></expan> <num xml:lang="lat" value="13">XIII </num> 
-                  <num xml:lang="lat" value="1">I </num>
+                     <abbr>
+                        <supplied reason="lost">app</supplied>ell</abbr>
+                     <ex>antur</ex>
+                  </expan> veteran<supplied reason="lost">a <expan>
+                        <abbr>Galli</abbr>
+                        <ex>ca</ex>
+                     </expan> et</supplied>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                  <lb n="7"/>
+                  <gap reason="lost" quantity="3" unit="character"/>
                   <expan>
-                     <abbr>Ulp</abbr><ex>ia</ex>
-                  </expan></supplied> 
+                     <abbr>
+                        <supplied reason="lost">Hercul</supplied>ian</abbr>
+                     <ex>a</ex>
+                  </expan>
                   <expan>
-                     <abbr>Afror</abbr><ex>um</ex>
-                  </expan> et <num xml:lang="lat" value="1">I</num> <expan><abbr>Apameno<supplied reason="lost">r</supplied></abbr><ex>um</ex></expan> 
-               e<supplied reason="lost">t</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">et <num xml:lang="lat" value="1">I</num></supplied> 
+                     <abbr>provi<supplied reason="lost">nc</supplied>
+                     </abbr>
+                     <ex>ialis</ex>
+                  </expan>
+                  <supplied reason="lost">et Vocontiorum et
+                <lb n="8"/>
+                     <expan>
+                        <abbr>coh</abbr>
+                        <ex>ortibus</ex>
+                     </expan>
+                     <num xml:lang="lat" value="13">XIII </num>
+                     <num xml:lang="lat" value="1">I </num>
+                     <expan>
+                        <abbr>Ulp</abbr>
+                        <ex>ia</ex>
+                     </expan>
+                  </supplied>
                   <expan>
-                     <abbr>Pannon</abbr><ex>iorum</ex>
-                  </expan> et <num xml:lang="lat" value="1">I</num> 
+                     <abbr>Afror</abbr>
+                     <ex>um</ex>
+                  </expan> et <num xml:lang="lat" value="1">I</num>
                   <expan>
-                     <abbr>Aug</abbr><ex>usta</ex>
+                     <abbr>Apameno<supplied reason="lost">r</supplied>
+                     </abbr>
+                     <ex>um</ex>
                   </expan> 
+               e<supplied reason="lost">t</supplied>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                  <lb n="9"/>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                  <supplied reason="lost">et <num xml:lang="lat" value="1">I</num>
+                  </supplied>
                   <expan>
-                     <abbr>Lusitan</abbr><ex>orum</ex>
-                  </expan>   
-                <lb n="10"/>
-               <supplied reason="lost">et <expan><abbr>scutat</abbr><ex>a</ex></expan> <expan><abbr>civ</abbr><ex>ium</ex></expan> et <expan><abbr>R</abbr><ex>omanorum</ex></expan> 
-                  <num xml:lang="lat" value="5">V</num></supplied> <expan><abbr><supplied reason="lost">P</supplied>ac</abbr><ex>ensis</ex></expan> <expan><abbr>Nerv</abbr><ex>iorum</ex></expan> et <num xml:lang="lat">II</num> <expan>
+                     <abbr>Pannon</abbr>
+                     <ex>iorum</ex>
+                  </expan> et <num xml:lang="lat" value="1">I</num>
+                  <expan>
+                     <abbr>Aug</abbr>
+                     <ex>usta</ex>
+                  </expan>
+                  <expan>
+                     <abbr>Lusitan</abbr>
+                     <ex>orum</ex>
+                  </expan>
+                  <lb n="10"/>
+                  <supplied reason="lost">et <expan>
+                        <abbr>scutat</abbr>
+                        <ex>a</ex>
+                     </expan>
+                     <expan>
+                        <abbr>civ</abbr>
+                        <ex>ium</ex>
+                     </expan> et <expan>
+                        <abbr>R</abbr>
+                        <ex>omanorum</ex>
+                     </expan>
+                     <num xml:lang="lat" value="5">V</num>
+                  </supplied>
+                  <expan>
+                     <abbr>
+                        <supplied reason="lost">P</supplied>ac</abbr>
+                     <ex>ensis</ex>
+                  </expan>
+                  <expan>
+                     <abbr>Nerv</abbr>
+                     <ex>iorum</ex>
+                  </expan> et <num xml:lang="lat">II</num>
+                  <expan>
                      <abbr>Iturae
                 <lb n="11" break="no"/>
-                        <supplied reason="lost">or</supplied></abbr><ex>um</ex>
+                        <supplied reason="lost">or</supplied>
+                     </abbr>
+                     <ex>um</ex>
                   </expan>
-               <supplied reason="lost">et <num xml:lang="lat">II</num> <expan><abbr>Thrac</abbr><ex>um</ex></expan> et <num xml:lang="lat">II</num></supplied> 
-               <expan>
-                  <abbr><supplied reason="lost">Th</supplied>ebaeor</abbr><ex>um</ex>
-               </expan> et <num xml:lang="lat" value="3">III</num> et <num xml:lang="lat" value="5">V</num>
-                <lb n="12"/> 
-               <supplied reason="lost">et <num xml:lang="lat" value="7">VII</num> 
+                  <supplied reason="lost">et <num xml:lang="lat">II</num>
+                     <expan>
+                        <abbr>Thrac</abbr>
+                        <ex>um</ex>
+                     </expan> et <num xml:lang="lat">II</num>
+                  </supplied>
                   <expan>
-                     <abbr>Ituraeor</abbr><ex>um</ex>
-                  </expan> et sun</supplied>t in Aegupto sub
+                     <abbr>
+                        <supplied reason="lost">Th</supplied>ebaeor</abbr>
+                     <ex>um</ex>
+                  </expan> et <num xml:lang="lat" value="3">III</num> et <num xml:lang="lat" value="5">V</num>
+                  <lb n="12"/>
+                  <supplied reason="lost">et <num xml:lang="lat" value="7">VII</num>
+                     <expan>
+                        <abbr>Ituraeor</abbr>
+                        <ex>um</ex>
+                     </expan> et sun</supplied>t in Aegupto sub
                 <lb n="13"/>
-               <supplied reason="lost"><persName><name key="Marcus" type="praenomen"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name key="Sempronius" type="gentilicium">Sempronio</name> <name key="Liberalis" type="cognomen">Liberali</name></persName></supplied> 
+                  <supplied reason="lost">
+                     <persName>
+                        <name key="Marcus" type="praenomen">
+                           <expan>
+                              <abbr>M</abbr>
+                              <ex>arco</ex>
+                           </expan>
+                        </name>
+                        <name key="Sempronius" type="gentilicium">Sempronio</name>
+                        <name key="Liberalis" type="cognomen">Liberali</name>
+                     </persName>
+                  </supplied>
                   <expan>
-                     <abbr>praef</abbr><ex>ecto</ex></expan>, quinque et 
-               <lb n="14"/><supplied reason="lost">viginti stipendis</supplied> <expan><abbr><supplied reason="lost">em</supplied>erit</abbr><ex>is</ex></expan>, dimissis ho
-                <lb n="15" break="no"/> 
-               <supplied reason="lost">nesta missione, quorum</supplied> nomina subscrip
-               <lb break="no" n="16"/> 
-               <supplied reason="lost">ta sunt</supplied> <gap reason="ellipsis"/>
-               </ab>  
-               </div>
-               
-           <div type="textpart" subtype="side" n="b">
-              <ab>
-                 <lb n="1"/><gap reason="ellipsis"/>
-                 <lb n="2"/>vetera<supplied reason="lost">na <expan><abbr>Gall</abbr><ex>ica</ex></expan></supplied> <gap reason="ellipsis"/>
-                 <lb n="3"/>et <expan><abbr>Vocon<supplied reason="lost">ior</supplied></abbr><ex>um</ex></expan> <gap reason="ellipsis"/> <supplied reason="lost">et <num xml:lang="lat" value="1">I</num></supplied> <expan><abbr><supplied reason="lost">Apa</supplied>
-                    <lb n="4" break="no"/>menor</abbr><ex>um</ex></expan> e<supplied reason="lost">t <gap reason="ellipsis"/> et <num xml:lang="lat" value="1">I</num> <expan><abbr>Aug</abbr>usta</expan></supplied>
-                 <lb n="5"/><expan><abbr>Lusitan</abbr><ex>orum</ex></expan> et <supplied reason="lost"><expan><abbr>scutat</abbr><ex>a</ex></expan> <expan><abbr>civ</abbr><ex>ium</ex></expan> et <expan><abbr>R</abbr><ex>omanorum</ex></expan> 
-                    <num xml:lang="lat" value="5">V</num> <expan><abbr>Pac</abbr><ex>ensis</ex></expan> <expan><abbr>Nerv</abbr><ex>iorum</ex></expan> et <num xml:lang="lat">II</num></supplied>
-                 <lb n="6"/><expan>
-                    <abbr>Ituraeor</abbr><ex>um</ex>
-                 </expan> <supplied reason="lost">et <num xml:lang="lat">II</num> <expan><abbr>Thrac</abbr><ex>um</ex></expan> et <num xml:lang="lat">II</num> <expan><abbr>Thebaeor</abbr><ex>um</ex></expan> et <num xml:lang="lat" value="3">III</num> et <num xml:lang="lat" value="5">V</num> et <num xml:lang="lat" value="7">VII</num>
-                    <lb n="7"/><expan>
-                       <abbr>Ituraeor</abbr><ex>um</ex></expan></supplied> et sunt in <supplied reason="lost">in Aegupto sub 
-                          <persName><name key="Marcus" type="praenomen"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name key="Sempronius" type="gentilicium">Sempronio</name> 
-                <lb n="8"/><name key="Liberalis" type="cognomen">Liberali</name></persName></supplied> <expan><abbr><supplied reason="lost">p</supplied>raef</abbr><ex>ecto</ex></expan>, <num xml:lang="lat" value="25">XXV</num> sti<supplied reason="lost">pendis <expan><abbr>emerit</abbr><ex>is</ex></expan>, dimissis
-                   <lb/>honesta</supplied> <expan><abbr><supplied reason="lost">mi</supplied>ssion</abbr><ex>e</ex></expan>, quo<supplied reason="lost">rum nomina subscrip
+                     <abbr>praef</abbr>
+                     <ex>ecto</ex>
+                  </expan>, quinque et 
+               <lb n="14"/>
+                  <supplied reason="lost">viginti stipendis</supplied>
+                  <expan>
+                     <abbr>
+                        <supplied reason="lost">em</supplied>erit</abbr>
+                     <ex>is</ex>
+                  </expan>, dimissis ho
+                <lb n="15" break="no"/>
+                  <supplied reason="lost">nesta missione, quorum</supplied> nomina subscrip
+               <lb break="no" n="16"/>
+                  <supplied reason="lost">ta sunt</supplied>
+                  <gap reason="ellipsis"/>
+               </ab>
+            </div>
+            <div type="textpart" subtype="side" n="b">
+               <ab>
+                  <lb n="1"/>
+                  <gap reason="ellipsis"/>
+                  <lb n="2"/>vetera<supplied reason="lost">na <expan>
+                        <abbr>Gall</abbr>
+                        <ex>ica</ex>
+                     </expan>
+                  </supplied>
+                  <gap reason="ellipsis"/>
+                  <lb n="3"/>et <expan>
+                     <abbr>Vocon<supplied reason="lost">ior</supplied>
+                     </abbr>
+                     <ex>um</ex>
+                  </expan>
+                  <gap reason="ellipsis"/>
+                  <supplied reason="lost">et <num xml:lang="lat" value="1">I</num>
+                  </supplied>
+                  <expan>
+                     <abbr>
+                        <supplied reason="lost">Apa</supplied>
+                        <lb n="4" break="no"/>menor</abbr>
+                     <ex>um</ex>
+                  </expan> e<supplied reason="lost">t <gap reason="ellipsis"/> et <num xml:lang="lat" value="1">I</num>
+                     <expan>
+                        <abbr>Aug</abbr>usta</expan>
+                  </supplied>
+                  <lb n="5"/>
+                  <expan>
+                     <abbr>Lusitan</abbr>
+                     <ex>orum</ex>
+                  </expan> et <supplied reason="lost">
+                     <expan>
+                        <abbr>scutat</abbr>
+                        <ex>a</ex>
+                     </expan>
+                     <expan>
+                        <abbr>civ</abbr>
+                        <ex>ium</ex>
+                     </expan> et <expan>
+                        <abbr>R</abbr>
+                        <ex>omanorum</ex>
+                     </expan>
+                     <num xml:lang="lat" value="5">V</num>
+                     <expan>
+                        <abbr>Pac</abbr>
+                        <ex>ensis</ex>
+                     </expan>
+                     <expan>
+                        <abbr>Nerv</abbr>
+                        <ex>iorum</ex>
+                     </expan> et <num xml:lang="lat">II</num>
+                  </supplied>
+                  <lb n="6"/>
+                  <expan>
+                     <abbr>Ituraeor</abbr>
+                     <ex>um</ex>
+                  </expan>
+                  <supplied reason="lost">et <num xml:lang="lat">II</num>
+                     <expan>
+                        <abbr>Thrac</abbr>
+                        <ex>um</ex>
+                     </expan> et <num xml:lang="lat">II</num>
+                     <expan>
+                        <abbr>Thebaeor</abbr>
+                        <ex>um</ex>
+                     </expan> et <num xml:lang="lat" value="3">III</num> et <num xml:lang="lat" value="5">V</num> et <num xml:lang="lat" value="7">VII</num>
+                     <lb n="7"/>
+                     <expan>
+                        <abbr>Ituraeor</abbr>
+                        <ex>um</ex>
+                     </expan>
+                  </supplied> et sunt in <supplied reason="lost">in Aegupto sub 
+                          <persName>
+                        <name key="Marcus" type="praenomen">
+                           <expan>
+                              <abbr>M</abbr>
+                              <ex>arco</ex>
+                           </expan>
+                        </name>
+                        <name key="Sempronius" type="gentilicium">Sempronio</name>
+                        <lb n="8"/>
+                        <name key="Liberalis" type="cognomen">Liberali</name>
+                     </persName>
+                  </supplied>
+                  <expan>
+                     <abbr>
+                        <supplied reason="lost">p</supplied>raef</abbr>
+                     <ex>ecto</ex>
+                  </expan>, <num xml:lang="lat" value="25">XXV</num> sti<supplied reason="lost">pendis <expan>
+                        <abbr>emerit</abbr>
+                        <ex>is</ex>
+                     </expan>, dimissis
+                   <lb/>honesta</supplied>
+                  <expan>
+                     <abbr>
+                        <supplied reason="lost">mi</supplied>ssion</abbr>
+                     <ex>e</ex>
+                  </expan>, quo<supplied reason="lost">rum nomina subscrip
                 <lb break="no" n="9"/> 
-                      ta sunt, </supplied> <expan><abbr><supplied reason="lost">civ</supplied>it</abbr><ex>atem</ex></expan> <expan>
-                  <abbr>Roman</abbr><ex>am</ex>
-               </expan> q<supplied reason="lost">ui eorum non haberent de
+                      ta sunt, </supplied>
+                  <expan>
+                     <abbr>
+                        <supplied reason="lost">civ</supplied>it</abbr>
+                     <ex>atem</ex>
+                  </expan>
+                  <expan>
+                     <abbr>Roman</abbr>
+                     <ex>am</ex>
+                  </expan> q<supplied reason="lost">ui eorum non haberent de
                 <lb break="no" n="10"/> 
-               dit et</supplied> 
-               <expan>
-                  <abbr><supplied reason="lost">conu</supplied>b</abbr><ex>ium</ex>
-               </expan> cum 
+               dit et</supplied>
                   <expan>
-                     <abbr>uxo<supplied reason="lost">rib</supplied></abbr><ex>us</ex>
-                  </expan> <supplied reason="lost">quas tunc <expan>
-                     <abbr>habuis</abbr><ex>sent</ex>
-                  </expan> cum est
-                <lb n="11"/> 
+                     <abbr>
+                        <supplied reason="lost">conu</supplied>b</abbr>
+                     <ex>ium</ex>
+                  </expan> cum 
                   <expan>
-                     <abbr>civit</abbr><ex>as</ex>
-                  </expan> is dat</supplied>a, <note>!</note> si qui <expan>
-                     <abbr>ca<supplied reason="lost">elib</supplied></abbr><ex>es</ex>
-                  </expan> <supplied reason="lost">essent, cum is quas
+                     <abbr>uxo<supplied reason="lost">rib</supplied>
+                     </abbr>
+                     <ex>us</ex>
+                  </expan>
+                  <supplied reason="lost">quas tunc <expan>
+                        <abbr>habuis</abbr>
+                        <ex>sent</ex>
+                     </expan> cum est
+                <lb n="11"/>
+                     <expan>
+                        <abbr>civit</abbr>
+                        <ex>as</ex>
+                     </expan> is dat</supplied>a, <note>!</note> si qui <expan>
+                     <abbr>ca<supplied reason="lost">elib</supplied>
+                     </abbr>
+                     <ex>es</ex>
+                  </expan>
+                  <supplied reason="lost">essent, cum is quas
                 <lb n="12"/> 
                post <expan>
-                     <abbr>duxis</abbr><ex>sent</ex></expan>, du</supplied>mataxat sin<supplied reason="lost">guli singulas</supplied>
-               <gap reason="lost" extent="unknown" unit="character"/>
-              
-            </ab>
-           </div>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
+                        <abbr>duxis</abbr>
+                        <ex>sent</ex>
+                     </expan>, du</supplied>mataxat sin<supplied reason="lost">guli singulas</supplied>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+               </ab>
             </div>
-        
-        
-                <div type="translation">
-                    <p>[Emperor Caesar] [Titus Aelius Had]rianus Ant[oninus Augustus Pius], [son] of
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>[Emperor Caesar] [Titus Aelius Had]rianus Ant[oninus Augustus Pius], [son] of
                the deified Hadr[ian], grandson of [the deified Trajan Parth]icus, [great-grandson
                of] the deified [Nerva], [pontifex ma]ximus, holder of tribunician power for the [X
                time, saluted imperator twice, consul for the fourth time, father of (his) country],
@@ -293,30 +564,26 @@
                [and seventh (cohorts) of the Ituraei] and are in Egypt under the prefect [Marcus
                Sempronius Liberalis]—having se[rved] out twenty-five (years and) having been
                ho[norably] discharged (and) who[se] names [are written below]—(he grants) Roman
-               [cit]izenship [to those of them] w[ho did not have (it) and <hi rend="italic"
-                  >conu</hi>]<hi rend="italic">bium</hi> with the wi[ves whom they had then when
+               [cit]izenship [to those of them] w[ho did not have (it) and <hi rend="italic">conu</hi>]<hi rend="italic">bium</hi> with the wi[ves whom they had then when
                citizenship was given to them] (or)—if someone is un[married—with those whom they
                should marry after, but o]nly on[e each ---]</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>(a)</p>
-                   <p>Line 4: The numeral indicating how many times Antoninus Pius had held tribunician power at the time is incomplete. It is at least twenty.</p>
-                   <p>Line 6-7: The name of one of the four wings is missing.</p>
-                   <p>Line 8-9: The name of one of the thirteen cohorts is missing.</p>
-                   
-                   <p>(b)</p>
-                   <p>Line 11: Unusual because the formula is always “<hi rend="italic">aut si qui caelibes</hi>.”</p>
-                   
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>(a)</p>
+            <p>Line 4: The numeral indicating how many times Antoninus Pius had held tribunician power at the time is incomplete. It is at least twenty.</p>
+            <p>Line 6-7: The name of one of the four wings is missing.</p>
+            <p>Line 8-9: The name of one of the thirteen cohorts is missing.</p>
+            <p>(b)</p>
+            <p>Line 11: Unusual because the formula is always “<hi rend="italic">aut si qui caelibes</hi>.”</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

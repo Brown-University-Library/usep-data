@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.96.AI.146</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -41,7 +51,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="3">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p>text disposed around central figure of elephant</p>
+                           <p>text disposed around central figure of elephant</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -67,7 +77,8 @@
                      <date evidence="unspecified" notBefore="-0200" notAfter="0001">second-first century BCE</date>
                      <placeName ref="asia.syria.antioch">Syria, Antioch</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -75,13 +86,15 @@
                   <biblScope unit="item">204-205, no. 98</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29651/unknown-maker-weight-with-elephant-greek-seleucid-2nd-1st-century-bc/">Getty Museum Web Entry</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/29651/unknown-maker-weight-with-elephant-greek-seleucid-2nd-1st-century-bc/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -95,36 +108,33 @@
          <change when="2016-02-01" who="Scott J. DiGiulio">Added missing control vocab, added available dimensions metadata, fixed lines/columns, added Getty Museum website, added transcription from images</change>
       </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-   
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
                <lb n="1"/>Ἀντιοχεία
                <lb n="2"/>μνᾶ
-               <lb n="3"/>ἐπὶ <persName><name key="Zenophanes Ζηνοφάνης"><hi rend="reversed">Ζ</hi>ηνοφάν<surplus>υ</surplus>ου</name></persName>.
+               <lb n="3"/>ἐπὶ <persName>
+                  <name key="Zenophanes Ζηνοφάνης">
+                     <hi rend="reversed">Ζ</hi>ηνοφάν<surplus>υ</surplus>ου</name>
+               </persName>.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

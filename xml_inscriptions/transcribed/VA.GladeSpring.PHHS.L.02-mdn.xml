@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>VA.GladeSpring.PHHS.L.02-mdn</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>VA.GladeSpring.PHHS.L.02-mdn</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="VA.GladeSpring.PHHS.L.02-mdn">VA.GladeSpring.PHHS.L.02-mdn</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="VA.GladeSpring.PHHS.L.02-mdn">VA.GladeSpring.PHHS.L.02-mdn</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,199 +42,247 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>VA</region>
-                        <settlement>Glade Spring</settlement>
-                        <institution>PHHS</institution>
-                        <repository/>
-                        <idno>02-mdn</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+            <msDesc>
+               <msIdentifier>
+                  <region>VA</region>
+                  <settlement>Glade Spring</settlement>
+                  <institution>PHHS</institution>
+                  <repository/>
+                  <idno>02-mdn</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#dedicatory">
                         <!-- short summary of the content of an inscription -->
-                            <p>ex-voto dedication to Mithras by L. Antonius Proculus (reproduction of RIB 1544)</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>ex-voto dedication to Mithras by L. Antonius Proculus (reproduction of RIB 1544)</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#plaster">
-                                <support>
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#plaster">
+                        <support>
                         <!-- short summary of the material and support of an inscription -->
-                                    <p>white plaster of Paris slab</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="6">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#writing.other">the letters are cast</handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                           <p>white plaster of Paris slab</p>
+                           <dimensions type="surface" unit="cm">
+                              <height/>
+                              <width/>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="6">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#writing.other">the letters are cast</handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs>modern</rs>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs>modern</rs>
+                     <!-- content can be "fake" or blank -->
+                  </summary>
+                  <origin>
                         <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0213" notAfter="0222" resp="RIB">213-222 CE (original inscription)</date>
-                            <placeName ref="europe.england.carrawburgh">England, Carrawburgh (original inscription)</placeName>
-                        </origin>
-                        <provenance>
-                            <p>Replica produced at some point in second half of the twentieth century, <date notBefore="1949">after 1949</date>.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="purchased">                           
-                            <p>purchased by Mr. <persName>John Walker</persName> at a curio shop near <placeName>West Jefferson, VA</placeName> in <date when="2006">2006</date></p>
-                        </provenance>
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date evidence="unspecified"
+                            notBefore="0213"
+                            notAfter="0222"
+                            resp="RIB">213-222 CE (original inscription)</date>
+                     <placeName ref="europe.england.carrawburgh">England, Carrawburgh (original inscription)</placeName>
+                  </origin>
+                  <provenance>
+                     <p>Replica produced at some point in second half of the twentieth century, <date notBefore="1949">after 1949</date>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>purchased by Mr. <persName>John Walker</persName> at a curio shop near <placeName>West Jefferson, VA</placeName> in <date when="2006">2006</date>
+                     </p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#JRS_40_Wright"/>
-                        <biblScope unit="page">114, no. 1</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AE_1951"/>
-                        <biblScope unit="item">125</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIMRM"/>
-                        <biblScope unit="item">845</biblScope>
-                    </bibl><bibl>
-                        <ptr type="rest-of-bibl" target="#CSIR_I"/>
-                        <biblScope unit="item">6.121</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://www.trismegistos.org/text/156037">Trismegistos no. TM 156037</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021154">EDH no. HD021154</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://db.edcs.eu/epigr/edcs_id.php?s_sprache=en&amp;p_edcs_id=EDCS-07900352">EDCS-07900352</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://romaninscriptionsofbritain.org/inscriptions/1544"><hi rend="italic">RIB</hi> 1544</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2019-07-28" who="Scott J. DiGiulio">Initial Encoding</change>
-            <change when="2021-04-03" who="John Bodel">corrected typo, edited punctuation in transcription; needed still: additional ligature in line 4 Coh(ortis) I</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="VA.GladeSpring.PHHS.L.02-mdn.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#JRS_40_Wright"/>
+                  <biblScope unit="page">114, no. 1</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1951"/>
+                  <biblScope unit="item">125</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIMRM"/>
+                  <biblScope unit="item">845</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CSIR_I"/>
+                  <biblScope unit="item">6.121</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="https://www.trismegistos.org/text/156037">Trismegistos no. TM 156037</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD021154">EDH no. HD021154</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://db.edcs.eu/epigr/edcs_id.php?s_sprache=en&amp;p_edcs_id=EDCS-07900352">EDCS-07900352</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://romaninscriptionsofbritain.org/inscriptions/1544">
+                     <hi rend="italic">RIB</hi> 1544</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2019-07-28" who="Scott J. DiGiulio">Initial Encoding</change>
+         <change when="2021-04-03" who="John Bodel">corrected typo, edited punctuation in transcription; needed still: additional ligature in line 4 Coh(ortis) I</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="VA.GladeSpring.PHHS.L.02-mdn.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
             <ab>
-                <lb n="1"/>Deo <expan><abbr>Inv</abbr><ex>icto</ex></expan> <persName type="divine"><name key="Mithras"><expan><abbr>M</abbr><ex>ithrae</ex></expan></name></persName>
-                <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Antonius">A<hi rend="ligature">nt</hi>o<hi rend="ligature">ni</hi><hi rend="ligature">us</hi></name>
-                <lb n="3"/><name type="cognomen" key="Proculus">Proculus</name></persName>,
-                <lb n="4"/><expan><abbr>p<hi rend="ligature">ra</hi><hi rend="ligature">ef</hi></abbr><ex>ectus</ex></expan> <expan><abbr>c<hi rend="intraline small">o</hi><hi rend="ligature">h<am>I</am></hi></abbr><ex>ortis</ex></expan> <num value="1" type="ordinal">I</num> <orgName type="ethnic"><expan><abbr>B<hi rend="ligature">at</hi></abbr><ex>avorum</ex></expan></orgName>
-                <lb n="5"/><hi rend="ligature">Ant</hi>o<hi rend="ligature">nini</hi><hi rend="ligature">an</hi><hi rend="ligature">ae</hi>,
-                <lb n="6"/><expan><abbr>v</abbr><ex>otum</ex></expan> <expan><abbr>s</abbr><ex>olvit</ex></expan> <expan><abbr>l</abbr><ex>ibens</ex></expan> <expan><abbr>m</abbr><ex>erito</ex></expan>.
+               <lb n="1"/>Deo <expan>
+                  <abbr>Inv</abbr>
+                  <ex>icto</ex>
+               </expan>
+               <persName type="divine">
+                  <name key="Mithras">
+                     <expan>
+                        <abbr>M</abbr>
+                        <ex>ithrae</ex>
+                     </expan>
+                  </name>
+               </persName>
+               <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>L</abbr>
+                        <ex>ucius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Antonius">A<hi rend="ligature">nt</hi>o<hi rend="ligature">ni</hi>
+                     <hi rend="ligature">us</hi>
+                  </name>
+                  <lb n="3"/>
+                  <name type="cognomen" key="Proculus">Proculus</name>
+               </persName>,
+                <lb n="4"/>
+               <expan>
+                  <abbr>p<hi rend="ligature">ra</hi>
+                     <hi rend="ligature">ef</hi>
+                  </abbr>
+                  <ex>ectus</ex>
+               </expan>
+               <expan>
+                  <abbr>c<hi rend="intraline small">o</hi>
+                     <hi rend="ligature">h<am>I</am>
+                     </hi>
+                  </abbr>
+                  <ex>ortis</ex>
+               </expan>
+               <num value="1" type="ordinal">I</num>
+               <orgName type="ethnic">
+                  <expan>
+                     <abbr>B<hi rend="ligature">at</hi>
+                     </abbr>
+                     <ex>avorum</ex>
+                  </expan>
+               </orgName>
+               <lb n="5"/>
+               <hi rend="ligature">Ant</hi>o<hi rend="ligature">nini</hi>
+               <hi rend="ligature">an</hi>
+               <hi rend="ligature">ae</hi>,
+                <lb n="6"/>
+               <expan>
+                  <abbr>v</abbr>
+                  <ex>otum</ex>
+               </expan>
+               <expan>
+                  <abbr>s</abbr>
+                  <ex>olvit</ex>
+               </expan>
+               <expan>
+                  <abbr>l</abbr>
+                  <ex>ibens</ex>
+               </expan>
+               <expan>
+                  <abbr>m</abbr>
+                  <ex>erito</ex>
+               </expan>.
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Unconquered God Mithras, Lucius Antonius Proculus, prefect of the First Antoninian cohort of the Batavians, gladly fulfills his vow to one deserving.</p>
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
+         </div>
+         <div type="translation">
+            <p>To the Unconquered God Mithras, Lucius Antonius Proculus, prefect of the First Antoninian cohort of the Batavians, gladly fulfills his vow to one deserving.</p>
+         </div>
+         <div type="commentary"><!-- notes go here -->
             <p>Note the ligatures and space-saving devices in lines 2 (ligatures of nt, ni, and, unusually, to save space at the end of the line, us), 4 (ligatures of ra, ef, and at, and a small o nestled within the c) and 5 (ligatures in ant, nini, an, and ae, leaving o as the only letter standing alone). In contrast, perhaps by design,  lines 1, 3, and 6 are entirely lacking in ligatures and other space saving devices.</p>
-                <p>The plaster of Paris reproduction preserves the text of a dedication inscribed on the front panel of a votive altar dedicated to Mithras discovered in place in a Mithraeum outside Carrawburgh fort (ancient Brocolitia) on Hadrian’s Wall in Scotland. Originally dedicated sometime between 213 and 222 CE, the sandstone altar was housed following its discovery in 1949 (from 1956?) in the Museum of Antiquities, Newcastle upon Tyne, until 2009, when the museum merged with two others to become the Great North Museum: Hancock (RIB 1544 = EDH021154). The findspot, along with the identification in the text of the military unit of the dedicator, L. Antonius Proculus, as the First Antoninian Cohort of Batavians, enables us to assign the date of the monument to within a decade.</p>
-                    <p>This cast was probably made in Scotland, possibly around the year 1949, when the votive altar to Mithras was first discovered. According to the English Heritage website for the Carrawburgh fort, a three-dimensional replica of the Mithraic altar stands in place along with two others in the Mithraeum, and indeed all three can be seen together in one of the promotional images currently shown at the website homepage. It is possible, even likely, that our slab impression of the inscribed front face was cast from the mold made at the time the three-dimensional replica was formed.</p></div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            <p>The plaster of Paris reproduction preserves the text of a dedication inscribed on the front panel of a votive altar dedicated to Mithras discovered in place in a Mithraeum outside Carrawburgh fort (ancient Brocolitia) on Hadrian’s Wall in Scotland. Originally dedicated sometime between 213 and 222 CE, the sandstone altar was housed following its discovery in 1949 (from 1956?) in the Museum of Antiquities, Newcastle upon Tyne, until 2009, when the museum merged with two others to become the Great North Museum: Hancock (RIB 1544 = EDH021154). The findspot, along with the identification in the text of the military unit of the dedicator, L. Antonius Proculus, as the First Antoninian Cohort of Batavians, enables us to assign the date of the monument to within a decade.</p>
+            <p>This cast was probably made in Scotland, possibly around the year 1949, when the votive altar to Mithras was first discovered. According to the English Heritage website for the Carrawburgh fort, a three-dimensional replica of the Mithraic altar stands in place along with two others in the Mithraeum, and indeed all three can be seen together in one of the promotional images currently shown at the website homepage. It is possible, even likely, that our slab impression of the inscribed front face was cast from the mold made at the time the three-dimensional replica was formed.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

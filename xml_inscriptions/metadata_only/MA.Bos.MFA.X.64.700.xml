@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.Bos.MFA.X.64.700</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -74,9 +85,6 @@
                      <placeName ref="https://pleiades.stoa.org/places/579885">Greece, Attica, Athens</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
-                  
-                 
-                  
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from <persName role="seller"> Robert E. Hecht, Jr.</persName> by the <orgName role="buyer">Museum of Fine Arts</orgName> on <date when="1964-05-13">May 13, 1964</date> with funds from the Francis Bartlett Donation of 1900.</p>
                   </provenance>
@@ -86,16 +94,14 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
                   <biblScope unit="page">294-295</biblScope>
-                  
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://www.beazley.ox.ac.uk/record/BD99D18F-B9CD-4EBE-A66F-2B7D5C3E7AFA"
-                     >BAD 180</ref>
+                        target="https://www.beazley.ox.ac.uk/record/BD99D18F-B9CD-4EBE-A66F-2B7D5C3E7AFA">BAD 180</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2962"
-                     >AVI 2814</ref>
+                  <ref type="external"
+                        target="https://www.avi.unibas.ch/DB/searchform.html?ID=2962">AVI 2814</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="https://collections.mfa.org/objects/153488/">Museum of
@@ -105,7 +111,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -114,24 +121,18 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2023-01-18" who="Sophia Papandonatou">initial encoding</change>
-         
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
    <facsimile>
-   <surface>
-      <desc/>
-      <graphic url="MA.Bos.MFA.X.64.700a.jpg"/>
-      
-   
-   
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.X.64.700a.jpg"/>
       </surface>
       <surface>
          <desc/>
          <graphic url="MA.Bos.MFA.X.64.700b.jpg"/>
       </surface>
-     
-      
    </facsimile>
    <text>
       <body>
@@ -139,25 +140,25 @@
             <div type="textpart" subtype="scene" n="a">
                <ab>
                   <lb n="1"/>
-                  
-                  
                </ab>
             </div>
             <div type="textpart" subtype="scene" n="b">
                <ab>
-                  
                   <lb n="2"/>
-                 
                </ab>
             </div>
-            
          </div>
          <div type="commentary">
             <p>Attributed to Kalistan the Painter.</p>
-           
          </div>
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

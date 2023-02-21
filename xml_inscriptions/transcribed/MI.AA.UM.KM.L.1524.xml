@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1524</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,15 +34,13 @@
                      <p>epitaph of Callista</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>marble stele</p>
-                           
                            <seg type="material">White marble</seg>
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>28.4</height>
                               <width>14.5</width>
                               <depth>3</depth>
@@ -69,7 +78,8 @@
                      <p>Purchased in <date when="1909">1909</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">the Antiquario Pacifico</orgName> on the via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,14 +92,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030363"
-                     >EDR030363</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030363">EDR030363</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,9 +109,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -110,56 +121,64 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <expan>
-                  <abbr>D</abbr><ex>is</ex>
-                  <abbr> M</abbr><ex>anibus</ex></expan>.
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+                  <abbr> M</abbr>
+                  <ex>anibus</ex>
+               </expan>.
                 <lb n="2"/>
                <persName>
-                  <name type="cognomen" key="Callistus">Callisteni</name></persName>;
+                  <name type="cognomen" key="Callistus">Callisteni</name>
+               </persName>;
                 <lb n="3"/>
                <expan>
-                  <abbr>v</abbr><ex>ixit</ex>
-                  <abbr> a</abbr><ex>nnos</ex>
-                  <abbr> 
-                     <num xml:lang="lat" value="1">I</num>, m</abbr><ex>enses</ex>
-                  <abbr> 
-                     <num xml:lang="lat" value="6">VI</num></abbr></expan>.
+                  <abbr>v</abbr>
+                  <ex>ixit</ex>
+                  <abbr> a</abbr>
+                  <ex>nnos</ex>
+                  <abbr>
+                     <num xml:lang="lat" value="1">I</num>, m</abbr>
+                  <ex>enses</ex>
+                  <abbr>
+                     <num xml:lang="lat" value="6">VI</num>
+                  </abbr>
+               </expan>.
                 <lb n="4"/>
                <persName>
                   <name type="cognomen" key="Callistus">Callistus</name>
                </persName>
-                <lb n="5"/>
+               <lb n="5"/>
                <expan>
-                  <abbr>f</abbr><ex>iliae</ex>
-                  <abbr> dulciss</abbr><ex>imae</ex>
+                  <abbr>f</abbr>
+                  <ex>iliae</ex>
+                  <abbr> dulciss</abbr>
+                  <ex>imae</ex>
                   <abbr>
-                     <lb n="6"/>pos</abbr><ex>uit</ex></expan>.</ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Callista; she lived for one year (and) six months.
+                     <lb n="6"/>pos</abbr>
+                  <ex>uit</ex>
+               </expan>.</ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. To Callista; she lived for one year (and) six months.
                Callistus set (this) up for (his) dearest daughter.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

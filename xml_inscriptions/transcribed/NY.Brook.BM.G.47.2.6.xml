@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-                <!-- printable version of USEpi inscription ID: -->
-                <title>NY.Brook.BM.G.47.2.6</title>
-            </titleStmt>
+            <title>NY.Brook.BM.G.47.2.6</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="NY.Brook.BM.G.47.2.6">NY.Brook.BM.G.47.2.6</idno>
@@ -15,18 +25,18 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>NY</region> 
-                        <settlement>Brook</settlement>
-                        <institution>BM</institution>
-                        <repository/>
-                        <!--required.-->
-                        <!--  accession number, last part of USEP number -->
-                        <idno>47.2.6</idno>
-                        <!-- optionally some <altIdentifier>s or <msName>s here -->
-                    </msIdentifier>
+                  <region>NY</region>
+                  <settlement>Brook</settlement>
+                  <institution>BM</institution>
+                  <repository/>
+                  <!--required.-->
+                  <!--  accession number, last part of USEP number -->
+                  <idno>47.2.6</idno>
+                  <!-- optionally some <altIdentifier>s or <msName>s here -->
+               </msIdentifier>
                <msContents>
-                  <textLang mainLang="grc"/><msItem class="#label">
+                  <textLang mainLang="grc"/>
+                  <msItem class="#label">
                      <p>Gem with the word "Joy"</p>
                   </msItem>
                </msContents>
@@ -35,22 +45,23 @@
                      <supportDesc ana="#stone.other">
                         <support>
                            <p>Green bloodstone gem</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>1</height>
-                                        <width>1.3</width>
-                                        <depth/>
-                                    </dimensions>
+                           <dimensions type="surface" unit="cm">
+                              <height>1</height>
+                              <width>1.3</width>
+                              <depth/>
+                           </dimensions>
                         </support>
-                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p>good condition</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>good condition</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="1">
+                        <layout columns="1" writtenLines="1">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc>
                      <handNote/>
@@ -73,20 +84,21 @@
                      <date evidence="unspecified" notBefore="0250" notAfter="0300">second half third century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
-                        <biblScope unit="item">81, no. 47 (pl. XXVIII)</biblScope>
-                    </bibl>
-                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
-                </listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
+                  <biblScope unit="item">81, no. 47 (pl. XXVIII)</biblScope>
+               </bibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,38 +111,34 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-        <surface>
+      <surface>
             <!-- Caption in desc element -->
-        <desc/>
-            <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-            <graphic url="NY.Brook.BM.G.47.2.6.jpg"/>
+         <desc/>
+         <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
+         <graphic url="NY.Brook.BM.G.47.2.6.jpg"/>
       </surface>
    </facsimile>
    <text>
-        
-        <body>
-        <div type="edition" subtype="obverse">
+      <body>
+         <div type="edition" subtype="obverse">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>Χαρά.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            <ab>
+               <lb n="1"/>Χαρά.</ab>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

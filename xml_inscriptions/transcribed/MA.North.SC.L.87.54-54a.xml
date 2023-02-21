@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-                <!-- printable version of USEpi inscription ID: -->
-                <title>MA.North.SC.L.87.54-54a</title>
-            </titleStmt>
+            <title>MA.North.SC.L.87.54-54a</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="MA.North.SC.L.87.54-54a">MA.North.SC.L.54-54a</idno>
@@ -66,8 +76,8 @@
                             <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
-                            <note/>
-                        </summary>
+                     <note/>
+                  </summary>
                   <origin>
                      <!-- Should contain information about origin of inscription including place and date.  -->
                      <date evidence="#formulae #palaeography" notBefore="0001" notAfter="0100">first century
@@ -76,33 +86,34 @@
                      <geogName/>
                      <!-- geographical coordinates -->
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">33037</biblScope>
-                    </bibl>
-                    <bibl>
-                       <ptr type="rest-of-bibl" target="#NSA_1886"/>
-                        <biblScope unit="item">400, no. 422</biblScope>
-                    </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143425">EDR143425</ref>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">33037</biblScope>
                </bibl>
-                    <bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#NSA_1886"/>
+                  <biblScope unit="item">400, no. 422</biblScope>
+               </bibl>
+               <bibl>
                   <ref type="external"
-                     target="https://library.artstor.org/public/SS37318_37318_37676469">ARTSTOR
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143425">EDR143425</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://library.artstor.org/public/SS37318_37318_37676469">ARTSTOR
                      link</ref>
                </bibl>
-               
-                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
-                </listBibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -116,60 +127,109 @@
          <change when="2015-05-20" who="Scott J. DiGiulio">Updated metadata, bibl, updated transcription encoding</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Added EDR no.</change>
          <change when="2015-10-06" who="Scott J. DiGiulio">Corrected filename in xml doc</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2022-02-11" who="Sophia Papandonatou">added translation, updated Smith
             College link</change>
-</revisionDesc>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
             <!-- Caption in desc element -->
-        <desc/>
-            <!-- URL will actually only have the file name. -->
-            <graphic url="MA.North.SC.L.87.54and54a.jpg"/>
-            <graphic url="MA.North.SC.L.87.54and54a-Det.1.jpg"/>
-            <graphic url="MA.North.SC.L.87.54and54a-Det.2.jpg"/>
+         <desc/>
+         <!-- URL will actually only have the file name. -->
+         <graphic url="MA.North.SC.L.87.54and54a.jpg"/>
+         <graphic url="MA.North.SC.L.87.54and54a-Det.1.jpg"/>
+         <graphic url="MA.North.SC.L.87.54and54a-Det.2.jpg"/>
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb/><gap reason="lost" extent="unknown" unit="line"/>
-               <lb n="1"/><persName><name type="gentilicium" key="Pollio"><supplied reason="undefined" evidence="previouseditor">Poll</supplied><supplied reason="lost" cert="low">ioni</supplied></name>                
-               <lb n="2"/><name type="cognomen" key="Domitianus"><supplied reason="undefined" evidence="previouseditor">Do</supplied>mit<supplied reason="lost">iano</supplied></name></persName>
-               <lb n="3"/><supplied reason="undefined" evidence="previouseditor"><expan><abbr>mil</abbr><ex>iti</ex></expan></supplied> <expan><abbr>coh</abbr><ex>ortis</ex></expan> <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><g type="centuria"/></supplied>
-               <lb n="4"/><supplied reason="undefined" evidence="previouseditor">D</supplied>ulsi. Mili<supplied reason="lost">tavit</supplied>
-               <lb n="5"/><expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="lat" value="6">VI</num>, vixit <expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="lat" value="22">XXII</num>.
-               <lb n="6"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Vennonius">Vennonius</name> <name type="cognomen" key="Sabinus">Sabinus</name></persName>
-               <lb n="7"/>et <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Abuxellius">Abuxellius</name>
-               <lb n="8"/><name type="cognomen" key="Severus">Severus</name></persName> amico
+               <lb/>
+               <gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/>
+               <persName>
+                  <name type="gentilicium" key="Pollio">
+                     <supplied reason="undefined" evidence="previouseditor">Poll</supplied>
+                     <supplied reason="lost" cert="low">ioni</supplied>
+                  </name>
+                  <lb n="2"/>
+                  <name type="cognomen" key="Domitianus">
+                     <supplied reason="undefined" evidence="previouseditor">Do</supplied>mit<supplied reason="lost">iano</supplied>
+                  </name>
+               </persName>
+               <lb n="3"/>
+               <supplied reason="undefined" evidence="previouseditor">
+                  <expan>
+                     <abbr>mil</abbr>
+                     <ex>iti</ex>
+                  </expan>
+               </supplied>
+               <expan>
+                  <abbr>coh</abbr>
+                  <ex>ortis</ex>
+               </expan>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">
+                  <g type="centuria"/>
+               </supplied>
+               <lb n="4"/>
+               <supplied reason="undefined" evidence="previouseditor">D</supplied>ulsi. Mili<supplied reason="lost">tavit</supplied>
+               <lb n="5"/>
+               <expan>
+                  <abbr>an</abbr>
+                  <ex>nis</ex>
+               </expan>
+               <num xml:lang="lat" value="6">VI</num>, vixit <expan>
+                  <abbr>an</abbr>
+                  <ex>nis</ex>
+               </expan>
+               <num xml:lang="lat" value="22">XXII</num>.
+               <lb n="6"/>
+               <persName>
+                  <name type="praenomen" key="Caius">
+                     <expan>
+                        <abbr>C</abbr>
+                        <ex>aius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Vennonius">Vennonius</name>
+                  <name type="cognomen" key="Sabinus">Sabinus</name>
+               </persName>
+               <lb n="7"/>et <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>L</abbr>
+                        <ex>ucius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Abuxellius">Abuxellius</name>
+                  <lb n="8"/>
+                  <name type="cognomen" key="Severus">Severus</name>
+               </persName> amico
                <lb n="9"/>carissimo bene
                <lb n="10"/>merenti de se
                <lb n="11"/>fecerunt.
-            </ab>       
-            </div>
-        
-        
-                <div type="translation">
-                    <p>[---] To [-] Poll[io?] Domit[ianus], soldier of the [---] cohort, [from the
+            </ab>
+         </div>
+         <div type="translation">
+            <p>[---] To [-] Poll[io?] Domit[ianus], soldier of the [---] cohort, [from the
                century] of Dulsus. He served for six years (and) lived for twenty-two years. Gaius
                Vennonius Sabinus and Lucius Abuxellius Severus made (this) for (their) most beloved
                friend, well-deserving, from their own (money).</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

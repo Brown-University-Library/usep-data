@@ -1,12 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
+
             <title>MA.Bos.MFA.XG.59.178</title>
+
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -77,12 +90,9 @@
                      <placeName ref="https://pleiades.stoa.org/places/579885">Greece, Attica, Athens</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
-                  
                   <provenance type="observed" subtype="recorded">
                      <p>In the possession of <orgName role="collector">Münzen und Medaillen A.G.</orgName>, at Malzgasse 25 in Basel, Switzerland.</p>
                   </provenance>
-                  
-                  
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from <orgName role="seller">Münzen und Medaillen A.G.</orgName> by the <orgName role="buyer">Museum of Fine Arts</orgName> on <date when="1959-02-12">February 12, 1959</date>.</p>
                   </provenance>
@@ -92,16 +102,14 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
                   <biblScope unit="page">292-293</biblScope>
-                  
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://www.beazley.ox.ac.uk/record/FA28B09B-2E97-40CF-A3A8-C399FF234525"
-                     >BAD 206829</ref>
+                        target="https://www.beazley.ox.ac.uk/record/FA28B09B-2E97-40CF-A3A8-C399FF234525">BAD 206829</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2949"
-                     >AVI 2801</ref>
+                  <ref type="external"
+                        target="https://www.avi.unibas.ch/DB/searchform.html?ID=2949">AVI 2801</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="https://collections.mfa.org/objects/153660">Museum of
@@ -111,7 +119,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -120,18 +129,16 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2023-01-20" who="Sophia Papandonatou">initial encoding</change>
-         
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
    <facsimile>
+
    <surface>
       <desc/>
       <graphic url="MA.Bos.MFA.XG.59.178.jpg"/>
       
-      
-   
-   
+     
       </surface>
       <surface>
          <desc/>
@@ -141,37 +148,56 @@
          <desc/>
          <graphic url="MA.Bos.MFA.XG.59.178b.jpg"/>
       </surface>
-     
-      
    </facsimile>
    <text>
       <body>
          <div type="edition">
             <div type="textpart" subtype="scene" n="a">
                <ab>
-                  <lb n="1"/><foreign xml:lang="grc"><persName><name key="Αἴας Ajax Aias">Αἴας</name></persName></foreign>
+                  <lb n="1"/>
+                  <foreign xml:lang="grc">
+                     <persName>
+                        <name key="Αἴας Ajax Aias">Αἴας</name>
+                     </persName>
+                  </foreign>
                   <lb n="2"/>LΟΝΙΟΥ
                   
                </ab>
             </div>
             <div type="textpart" subtype="scene" n="b">
                <ab>
-                  
-                  <lb n="3"/><gap reason="lost" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character" cert="low"/>ΑLΟL
-                  <lb n="4"/><foreign xml:lang="grc"><persName><name key="Aeneas Αἰνείας"><expan><abbr>Αἰν</abbr><ex>ε</ex><abbr>ία<supplied reason="omitted">ς</supplied></abbr></expan></name></persName></foreign>
+                  <lb n="3"/>
+                  <gap reason="lost" quantity="1" unit="character"/>
+                  <gap reason="lost" quantity="1" unit="character" cert="low"/>ΑLΟL
+                  <lb n="4"/>
+                  <foreign xml:lang="grc">
+                     <persName>
+                        <name key="Aeneas Αἰνείας">
+                           <expan>
+                              <abbr>Αἰν</abbr>
+                              <ex>ε</ex>
+                              <abbr>ία<supplied reason="omitted">ς</supplied>
+                              </abbr>
+                           </expan>
+                        </name>
+                     </persName>
+                  </foreign>
                   <lb n="5"/>ΓΙΑΟ
                   
                </ab>
             </div>
-            
          </div>
          <div type="commentary">
             <p>Attributed to the Altamura Painter.</p>
-           
-            
          </div>
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

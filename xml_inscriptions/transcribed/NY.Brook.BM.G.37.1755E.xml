@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-                <!-- printable version of USEpi inscription ID: -->
-                <title>NY.Brook.BM.G.37.1755E</title>
-            </titleStmt>
+            <title>NY.Brook.BM.G.37.1755E</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="NY.Brook.BM.G.37.1755E">NY.Brook.BM.G.37.1755E</idno>
@@ -15,18 +25,18 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>NY</region> 
-                        <settlement>Brook</settlement>
-                        <institution>BM</institution>
-                        <repository/>
-                        <!--required.-->
-                        <!--  accession number, last part of USEP number -->
-                        <idno>37.1755E</idno>
-                        <!-- optionally some <altIdentifier>s or <msName>s here -->
-                    </msIdentifier>
+                  <region>NY</region>
+                  <settlement>Brook</settlement>
+                  <institution>BM</institution>
+                  <repository/>
+                  <!--required.-->
+                  <!--  accession number, last part of USEP number -->
+                  <idno>37.1755E</idno>
+                  <!-- optionally some <altIdentifier>s or <msName>s here -->
+               </msIdentifier>
                <msContents>
-                  <textLang mainLang="grc"/><msItem class="#magic">
+                  <textLang mainLang="grc"/>
+                  <msItem class="#magic">
                      <p>Amulet of the lion headed god</p>
                   </msItem>
                </msContents>
@@ -34,23 +44,24 @@
                   <objectDesc ana="#instrumentum.jewelry">
                      <supportDesc ana="#stone.other">
                         <support>
-<p>Oval red jasper amulet</p>
-<dimensions type="surface" unit="cm">
-                                        <height>2</height>
-                                        <width>1.7</width>
-                                        <depth>0.2</depth>
-                                    </dimensions>
+                           <p>Oval red jasper amulet</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>2</height>
+                              <width>1.7</width>
+                              <depth>0.2</depth>
+                           </dimensions>
                         </support>
-                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p>excellent condition</p>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p>excellent condition</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="20">
+                        <layout columns="1" writtenLines="20">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc>
                      <handNote/>
@@ -73,25 +84,25 @@
                      <date evidence="unspecified" notBefore="0100" notAfter="0300">second to third century CE</date>
                      <placeName ref="africa.egypt">Egypt, Saqqara</placeName>
                   </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
-                    <bibl>
-                       <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
-                       <biblScope unit="item">49, no. 24 (pl. XV)</biblScope>
-                    </bibl>
-                    <bibl>
-                       <ptr type="rest-of-bibl" target="#Bonner"/>
-                       <biblScope unit="item">183-185, no. 283 (pl. XIII)</biblScope>
-                    </bibl>
-                   
-                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     
-                </listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Herbert_GLIBM"/>
+                  <biblScope unit="item">49, no. 24 (pl. XV)</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bonner"/>
+                  <biblScope unit="item">183-185, no. 283 (pl. XIII)</biblScope>
+               </bibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -104,67 +115,100 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-        <surface>
+      <surface>
             <!-- Caption in desc element -->
-        <desc/>
-            <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-            <graphic url="NY.Brook.BM.G.37.1755E.r.jpg"/>
-            <graphic url="NY.Brook.BM.G.37.1755E.r-Det.1.jpg"/>
-            <graphic url="NY.Brook.BM.G.37.1755E.v.jpg"/>
-            <graphic url="NY.Brook.BM.G.37.1755E.v-Det.1.jpg"/>
+         <desc/>
+         <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
+         <graphic url="NY.Brook.BM.G.37.1755E.r.jpg"/>
+         <graphic url="NY.Brook.BM.G.37.1755E.r-Det.1.jpg"/>
+         <graphic url="NY.Brook.BM.G.37.1755E.v.jpg"/>
+         <graphic url="NY.Brook.BM.G.37.1755E.v-Det.1.jpg"/>
       </surface>
    </facsimile>
    <text>
-        
-        <body>
-        <div type="edition" subtype="obverse">
+      <body>
+         <div type="edition" subtype="obverse">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>κ<choice><corr>λ</corr><sic>α</sic></choice>ῦθι μοι,
-                    <lb n="2"/> ὁ ἐν Λεοντ<choice><corr>ο</corr><sic>ω</sic></choice>πό
-                    <lb n="3" break="no"/><choice><corr>λ</corr><sic>δ</sic></choice>ι τὴν κατοικίαν κ
+            <ab>
+               <lb n="1"/>κ<choice>
+                  <corr>λ</corr>
+                  <sic>α</sic>
+               </choice>ῦθι μοι,
+                    <lb n="2"/> ὁ ἐν Λεοντ<choice>
+                  <corr>ο</corr>
+                  <sic>ω</sic>
+               </choice>πό
+                    <lb n="3" break="no"/>
+               <choice>
+                  <corr>λ</corr>
+                  <sic>δ</sic>
+               </choice>ι τὴν κατοικίαν κ
                     <lb n="4" break="no"/>εκληρωμένος, ὁ ἐ
                     <lb n="5" break="no"/>ν τῷ ἁγίῳ σηκῷ ἐνι
-                    <lb n="6" break="no"/><choice><corr>δ</corr><sic>λ</sic></choice>ρυμένος, ὁ ἀστράπ
+                    <lb n="6" break="no"/>
+               <choice>
+                  <corr>δ</corr>
+                  <sic>λ</sic>
+               </choice>ρυμένος, ὁ ἀστράπ
                     <lb n="7" break="no"/>των καὶ βροντῶν κα<supplied reason="omitted">ὶ</supplied>
-                    <lb n="8"/>γνόφου καὶ ἀνέμω
-                    <lb n="9" break="no"/>ν <choice><corr>κ</corr><sic>χ</sic></choice>ύριος, ὁ τὴν ἐνο
-                    <lb n="10" break="no"/>υράνιον τῆς <choice><corr>αἰ</corr><sic>ε</sic></choice>ων
+               <lb n="8"/>γνόφου καὶ ἀνέμω
+                    <lb n="9" break="no"/>ν <choice>
+                  <corr>κ</corr>
+                  <sic>χ</sic>
+               </choice>ύριος, ὁ τὴν ἐνο
+                    <lb n="10" break="no"/>υράνιον τῆς <choice>
+                  <corr>αἰ</corr>
+                  <sic>ε</sic>
+               </choice>ων
                     <lb n="11" break="no"/>ίου φύσεως κεκλ
                     <lb n="12" break="no"/>ηρωμένος ἀ
-                    <lb n="13" break="no"/>νά<choice><corr>γ</corr><sic>ν</sic></choice>κην.
+                    <lb n="13" break="no"/>νά<choice>
+                  <corr>γ</corr>
+                  <sic>ν</sic>
+               </choice>κην.
                 </ab>
-            </div><div type="edition" subtype="edge">
+         </div>
+         <div type="edition" subtype="edge">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>Σὺ <supplied reason="omitted">ε</supplied>ἶ ὁ ταχυε<surplus>ε</surplus><supplied reason="lost">ρυ</supplied><surplus>ε</surplus>ός,
-                    <lb n="2"/><choice><corr>ὁ</corr><sic>θ</sic></choice> ἐ<choice><corr>π</corr><sic>ν</sic></choice>ήκοος θεός, ὁ μεγαλόδοξος
-                    <lb n="3"/> λεοντόμο<choice><corr>ρ</corr><sic>τ</sic></choice>φος: ὄν<supplied reason="omitted">ο</supplied>μα σοι.
+            <ab>
+               <lb n="1"/>Σὺ <supplied reason="omitted">ε</supplied>ἶ ὁ ταχυε<surplus>ε</surplus>
+               <supplied reason="lost">ρυ</supplied>
+               <surplus>ε</surplus>ός,
+                    <lb n="2"/>
+               <choice>
+                  <corr>ὁ</corr>
+                  <sic>θ</sic>
+               </choice> ἐ<choice>
+                  <corr>π</corr>
+                  <sic>ν</sic>
+               </choice>ήκοος θεός, ὁ μεγαλόδοξος
+                    <lb n="3"/> λεοντόμο<choice>
+                  <corr>ρ</corr>
+                  <sic>τ</sic>
+               </choice>φος: ὄν<supplied reason="omitted">ο</supplied>μα σοι.
                 </ab>
-            </div><div type="edition" subtype="reverse">
+         </div>
+         <div type="edition" subtype="reverse">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>Μίως, Μίωσι, Ἁρμίως, Οὐσιρμίως,
+            <ab>
+               <lb n="1"/>Μίως, Μίωσι, Ἁρμίως, Οὐσιρμίως,
                     <lb n="2"/> Φρῆ, Σιμίεφε, Φνοῦτο, Φῶς, Πῦρ,
                     <lb n="3"/> Φλόξ: <surplus>ε</surplus>ἵλεως Ἀμμωνίῳ.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

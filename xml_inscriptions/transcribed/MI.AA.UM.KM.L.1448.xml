@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1448</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,16 +34,13 @@
                      <p>epitaph of Iulianus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>fragmentary marble slab</p>
-                           
                            <seg type="material">White marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>31.5</height>
                               <width>20</width>
                               <depth>4.3</depth>
@@ -73,7 +81,8 @@
                      <p>Purchased in <date when="1908-12">December 1908</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">Antiquario Pacifico</orgName> on the Via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -102,14 +111,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132815"
-                     >EDR132815</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132815">EDR132815</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -120,9 +129,10 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-07-07" who="Scott J. DiGiulio">Corrected erroneous metadata; extensive corrections to the transcription markup; added brief commentary indicating the sources of the restorations.</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -131,31 +141,68 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><supplied reason="undefined" evidence="previouseditor">Di Manes, Manes sitis: iam morte misellis</supplied>
-               <lb n="2"/><supplied reason="undefined" evidence="previouseditor">praepropera senibus sero datum rapitis.</supplied>
-               <lb n="3"/><supplied reason="undefined" evidence="previouseditor">Hic etinim puer est umbri de sanguine cretus,</supplied>
-               <lb n="4"/><supplied reason="undefined" evidence="previouseditor">invida quem tenerum Parca tenax rapuit.</supplied>
-               <lb n="5"/><supplied reason="undefined" evidence="previouseditor">Quo matri multos scribsit, multos <expan><abbr>quoq</abbr><ex>ue</ex></expan>patri</supplied>
-               <lb n="6"/><supplied reason="undefined" evidence="previouseditor">ingratis annos, vota satis misera?</supplied>
-               <lb n="7"/><supplied reason="undefined" evidence="previouseditor">Nam solos septe</supplied>m proles q<supplied reason="undefined" evidence="previouseditor">uos duxerit orbes,</supplied>
-               <lb n="8"/><supplied reason="undefined" evidence="previouseditor">septuaginta f</supplied>orent ni m<supplied reason="undefined" evidence="previouseditor">iseros cuperet.</supplied>
-               <lb n="9"/><supplied reason="undefined" evidence="previouseditor">Qui pro vinetis</supplied>fundis <expan><abbr>te<supplied reason="undefined" evidence="previouseditor">rr</supplied><supplied reason="undefined" evidence="parallel">aq</supplied></abbr><ex>ue</ex></expan> <supplied reason="undefined" evidence="parallel"><expan><abbr>mariq</abbr><ex>ue</ex></expan></supplied>
-               <lb n="10"/><supplied reason="undefined" evidence="previouseditor">hoc solum p</supplied>roli, ho<supplied reason="undefined" evidence="previouseditor">c pep</supplied><supplied reason="undefined" evidence="parallel">erere solum</supplied>
-               <lb n="11"/><persName><name type="cognomen" key="Iulianus"><supplied reason="undefined" evidence="previouseditor">Iulia</supplied>no</name></persName> f<supplied reason="undefined" evidence="previouseditor">ilio</supplied>
-               <lb n="12"/><persName><supplied reason="undefined" evidence="previouseditor"><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Umbrius">Umbriu</name></supplied>s <name type="cognomen" key="Saturninus">Sat<supplied reason="undefined" evidence="previouseditor">urni</supplied><supplied reason="undefined" evidence="parallel">nus.</supplied></name></persName>
+               <lb n="1"/>
+               <supplied reason="undefined" evidence="previouseditor">Di Manes, Manes sitis: iam morte misellis</supplied>
+               <lb n="2"/>
+               <supplied reason="undefined" evidence="previouseditor">praepropera senibus sero datum rapitis.</supplied>
+               <lb n="3"/>
+               <supplied reason="undefined" evidence="previouseditor">Hic etinim puer est umbri de sanguine cretus,</supplied>
+               <lb n="4"/>
+               <supplied reason="undefined" evidence="previouseditor">invida quem tenerum Parca tenax rapuit.</supplied>
+               <lb n="5"/>
+               <supplied reason="undefined" evidence="previouseditor">Quo matri multos scribsit, multos <expan>
+                     <abbr>quoq</abbr>
+                     <ex>ue</ex>
+                  </expan>patri</supplied>
+               <lb n="6"/>
+               <supplied reason="undefined" evidence="previouseditor">ingratis annos, vota satis misera?</supplied>
+               <lb n="7"/>
+               <supplied reason="undefined" evidence="previouseditor">Nam solos septe</supplied>m proles q<supplied reason="undefined" evidence="previouseditor">uos duxerit orbes,</supplied>
+               <lb n="8"/>
+               <supplied reason="undefined" evidence="previouseditor">septuaginta f</supplied>orent ni m<supplied reason="undefined" evidence="previouseditor">iseros cuperet.</supplied>
+               <lb n="9"/>
+               <supplied reason="undefined" evidence="previouseditor">Qui pro vinetis</supplied>fundis <expan>
+                  <abbr>te<supplied reason="undefined" evidence="previouseditor">rr</supplied>
+                     <supplied reason="undefined" evidence="parallel">aq</supplied>
+                  </abbr>
+                  <ex>ue</ex>
+               </expan>
+               <supplied reason="undefined" evidence="parallel">
+                  <expan>
+                     <abbr>mariq</abbr>
+                     <ex>ue</ex>
+                  </expan>
+               </supplied>
+               <lb n="10"/>
+               <supplied reason="undefined" evidence="previouseditor">hoc solum p</supplied>roli, ho<supplied reason="undefined" evidence="previouseditor">c pep</supplied>
+               <supplied reason="undefined" evidence="parallel">erere solum</supplied>
+               <lb n="11"/>
+               <persName>
+                  <name type="cognomen" key="Iulianus">
+                     <supplied reason="undefined" evidence="previouseditor">Iulia</supplied>no</name>
+               </persName> f<supplied reason="undefined" evidence="previouseditor">ilio</supplied>
+               <lb n="12"/>
+               <persName>
+                  <supplied reason="undefined" evidence="previouseditor">
+                     <name type="praenomen" key="Lucius">
+                        <expan>
+                           <abbr>L</abbr>
+                           <ex>ucius</ex>
+                        </expan>
+                     </name>
+                     <name type="gentilicium" key="Umbrius">Umbriu</name>
+                  </supplied>s <name type="cognomen" key="Saturninus">Sat<supplied reason="undefined" evidence="previouseditor">urni</supplied>
+                     <supplied reason="undefined" evidence="parallel">nus.</supplied>
+                  </name>
+               </persName>
             </ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>O Divine Spirits—may you be kindly. Now you snatch him away from (his)
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>O Divine Spirits—may you be kindly. Now you snatch him away from (his)
                wretched old (parents)—him given over lately to overhasty death. For this boy has
                risen from the blood of the Umbri—this delicate boy whom envious Fate, close-fisted,
                snatched away. Why has she written out so many years for the mother and for the
@@ -163,20 +210,19 @@
                (his) offspring led—only seven—would have been seventy if she had not desired that
                they be wretched. Lucius Umbrius Saturninus, who—instead of vineyard estates on land
                and sea—acquired this alone for (his) offspring, this land for (his) son Julianus. </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-            <p>Lines 1-6 are supplied by the etching made by Piranesi, who saw and drew the whole inscription. The ends of lines 9, 10, and 12 are preserved in the non-contiguous fragment held by the American Academy at Rome.</p>
-                   <p>Pun on solum in line 10: first solum has a long o, second solum has a short o. </p>
          </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="commentary">
+            <p>Lines 1-6 are supplied by the etching made by Piranesi, who saw and drew the whole inscription. The ends of lines 9, 10, and 12 are preserved in the non-contiguous fragment held by the American Academy at Rome.</p>
+            <p>Pun on solum in line 10: first solum has a long o, second solum has a short o. </p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

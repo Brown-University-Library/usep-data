@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>MA.Camb.HU.Sack.L.1977.216.1897</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,12 +37,13 @@
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Fragment of a white marble slab</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Fragment of a white marble slab</p>
+                           <dimensions type="surface" unit="cm">
                               <height>20.5</height>
                               <width>21</width>
                               <depth>3</depth>
                            </dimensions>
-                           
                         </support>
                         <condition ana="#fragment.single">
                            <p>triangular fragment broken on all sides but top</p>
@@ -41,16 +52,16 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="7">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                              <height min="1.6" max="2.4">1.6-2.4</height>
-                           </dimensions>
-            </handNote>
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.6" max="2.4">1.6-2.4</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -73,12 +84,17 @@
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <provenance type="transferred" subtype="purchased">
-                     <p>purchased in <placeName>Rome</placeName> by <persName role="purchaser"><name key="Clifford Moore">Clifford Moore</name></persName> for the <orgName>Harvard Department of Classics</orgName>, <date notBefore="1905" notAfter="1906">1905-1906</date></p>
+                     <p>purchased in <placeName>Rome</placeName> by <persName role="purchaser">
+                           <name key="Clifford Moore">Clifford Moore</name>
+                        </persName> for the <orgName>Harvard Department of Classics</orgName>, <date notBefore="1905" notAfter="1906">1905-1906</date>
+                     </p>
                   </provenance>
                   <provenance type="transferred" subtype="moved">
-                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date></p>
+                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date>
+                     </p>
                   </provenance>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -102,11 +118,13 @@
                   <biblScope unit="item">106</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD001124?">EDH nr. HD001124</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD001124?">EDH nr. HD001124</ref>
                </bibl>
                <bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR078447">EDR078447</ref>
-</bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR078447">EDR078447</ref>
+               </bibl>
                <bibl>
                   <ref type="external" target="https://hvrd.art/o/287108">Harvard University Art Museums web entry</ref>
                </bibl>
@@ -114,7 +132,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -129,8 +148,8 @@
          <change when="2016-01-20" who="Scott J. DiGiulio">Added misisng control vocab, added dimensions metadata from folder, fixed lines/columns, added link to HUAM website</change>
          <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2021-02-07" who="Scott J. DiGiulio">Restored and enhanced transcription, based on Ilaria Marchesi's original; added provenance information; added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -141,41 +160,129 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <ab>
-              <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr><unclear>M</unclear></abbr><ex>anibus</ex></expan>.
-              <lb n="2"/><name type="praenomen"><gap reason="lost" atLeast="1" atMost="3" unit="character"/></name> <name type="gentilicium" key="Julius">Iulius</name> <persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name></persName> <expan><abbr>f</abbr><ex>ilius</ex></expan> <expan><abbr>Mae</abbr><ex>cia tribu</ex></expan> <gap reason="illegible" extent="1" unit="character"/> <gap reason="lost" extent="7" unit="character" precision="low"/>,
-              <lb n="3"/><expan><abbr><supplied reason="lost">Pela</supplied>g</abbr><ex>onia</ex></expan>, <expan><abbr>mil</abbr><ex>es</ex></expan> <expan><abbr>coh</abbr><ex>ortis</ex></expan> <num type="ordinal" value="5"><hi rend="supraline">V</hi></num> <expan><abbr>pr</abbr><ex>aetoriae</ex></expan>, <supplied reason="lost"><g type="centuria"/></supplied> <gap reason="lost" extent="7" unit="character" precision="low"/>              
-              <lb n="4"/><expan><abbr><supplied reason="lost">mil</supplied></abbr><ex>itavit</ex></expan> <expan><abbr><supplied reason="lost">a</supplied><unclear>n</unclear></abbr><ex>nis</ex></expan> <num type="cardinal" value="15">XV</num>, <expan><abbr>vix</abbr><ex>it</ex></expan> <expan><abbr>an</abbr><ex>nis</ex></expan> <gap reason="lost" extent="7" unit="character" precision="low"/>.
-              <lb n="5"/><gap reason="lost" extent="8" unit="character" precision="low"/><unclear>s</unclear> <persName><name type="cognomen" key="Clemens">Clem<unclear>e</unclear><supplied reason="lost">ns</supplied></name></persName> <gap reason="lost" extent="8" unit="character" precision="low"/>
-              <lb n="6"/><gap reason="lost" extent="7" unit="character" precision="low"/>ter e<gap reason="lost" extent="9" unit="character" precision="low"/>
-              <lb n="7"/><gap reason="lost" extent="9" unit="character" precision="low"/><gap reason="illegible" extent="1" unit="character"/> <expan><abbr><unclear>f</unclear></abbr><ex cert="low">ecit</ex></expan> <gap reason="lost" extent="9" unit="character" precision="low"/>
-           </ab>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>
+                     <unclear>M</unclear>
+                  </abbr>
+                  <ex>anibus</ex>
+               </expan>.
+              <lb n="2"/>
+               <name type="praenomen">
+                  <gap reason="lost" atLeast="1" atMost="3" unit="character"/>
+               </name>
+               <name type="gentilicium" key="Julius">Iulius</name>
+               <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan>
+                        <abbr>M</abbr>
+                        <ex>arci</ex>
+                     </expan>
+                  </name>
+               </persName>
+               <expan>
+                  <abbr>f</abbr>
+                  <ex>ilius</ex>
+               </expan>
+               <expan>
+                  <abbr>Mae</abbr>
+                  <ex>cia tribu</ex>
+               </expan>
+               <gap reason="illegible" extent="1" unit="character"/>
+               <gap reason="lost" extent="7" unit="character" precision="low"/>,
+              <lb n="3"/>
+               <expan>
+                  <abbr>
+                     <supplied reason="lost">Pela</supplied>g</abbr>
+                  <ex>onia</ex>
+               </expan>, <expan>
+                  <abbr>mil</abbr>
+                  <ex>es</ex>
+               </expan>
+               <expan>
+                  <abbr>coh</abbr>
+                  <ex>ortis</ex>
+               </expan>
+               <num type="ordinal" value="5">
+                  <hi rend="supraline">V</hi>
+               </num>
+               <expan>
+                  <abbr>pr</abbr>
+                  <ex>aetoriae</ex>
+               </expan>, <supplied reason="lost">
+                  <g type="centuria"/>
+               </supplied>
+               <gap reason="lost" extent="7" unit="character" precision="low"/>
+               <lb n="4"/>
+               <expan>
+                  <abbr>
+                     <supplied reason="lost">mil</supplied>
+                  </abbr>
+                  <ex>itavit</ex>
+               </expan>
+               <expan>
+                  <abbr>
+                     <supplied reason="lost">a</supplied>
+                     <unclear>n</unclear>
+                  </abbr>
+                  <ex>nis</ex>
+               </expan>
+               <num type="cardinal" value="15">XV</num>, <expan>
+                  <abbr>vix</abbr>
+                  <ex>it</ex>
+               </expan>
+               <expan>
+                  <abbr>an</abbr>
+                  <ex>nis</ex>
+               </expan>
+               <gap reason="lost" extent="7" unit="character" precision="low"/>.
+              <lb n="5"/>
+               <gap reason="lost" extent="8" unit="character" precision="low"/>
+               <unclear>s</unclear>
+               <persName>
+                  <name type="cognomen" key="Clemens">Clem<unclear>e</unclear>
+                     <supplied reason="lost">ns</supplied>
+                  </name>
+               </persName>
+               <gap reason="lost" extent="8" unit="character" precision="low"/>
+               <lb n="6"/>
+               <gap reason="lost" extent="7" unit="character" precision="low"/>ter e<gap reason="lost" extent="9" unit="character" precision="low"/>
+               <lb n="7"/>
+               <gap reason="lost" extent="9" unit="character" precision="low"/>
+               <gap reason="illegible" extent="1" unit="character"/>
+               <expan>
+                  <abbr>
+                     <unclear>f</unclear>
+                  </abbr>
+                  <ex cert="low">ecit</ex>
+               </expan>
+               <gap reason="lost" extent="9" unit="character" precision="low"/>
+            </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>To the divine spirits. [-] Julius, of the Maecian tribe... [from Pelagonia], a soldier of the fifth praetorian cohort, [from the century of --]; he served for fifteen years, he lived for [--] years. [--]s Clemens... made (this). </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-                    <p/>
-                </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>To the divine spirits. [-] Julius, of the Maecian tribe... [from Pelagonia], a soldier of the fifth praetorian cohort, [from the century of --]; he served for fifteen years, he lived for [--] years. [--]s Clemens... made (this). </p>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

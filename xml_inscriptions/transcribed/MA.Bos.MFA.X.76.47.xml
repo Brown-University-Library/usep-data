@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.Bos.MFA.X.76.47</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -74,12 +85,9 @@
                      <placeName ref="https://pleiades.stoa.org/places/579885">Greece, Attica, Athens</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
-                  
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from <persName role="seller">Alessandro Castellani</persName> by the <orgName role="buyer collector">Thomas G. Appleton</orgName>, allegedly from <placeName ref="https://pleiades.stoa.org/places/432754">Capua</placeName>.</p>
                   </provenance>
-                  
-                  
                   <provenance type="transferred" subtype="given">
                      <p>Gifted by <persName role="donor">Thomas G. Appleton</persName> by the <orgName role="recipient">Museum of Fine Arts</orgName> in <date when="1876">1876</date>.</p>
                   </provenance>
@@ -89,13 +97,14 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
                   <biblScope unit="page">294-295</biblScope>
-                  
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.beazley.ox.ac.uk/record/352FBA73-C02E-4FAD-818F-4DD136AA62C2">BAD 207259</ref>
+                  <ref type="external"
+                        target="https://www.beazley.ox.ac.uk/record/352FBA73-C02E-4FAD-818F-4DD136AA62C2">BAD 207259</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2755">AVI 2608</ref>
+                  <ref type="external"
+                        target="https://www.avi.unibas.ch/DB/searchform.html?ID=2755">AVI 2608</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="https://collections.mfa.org/objects/153666">Museum of
@@ -105,7 +114,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -114,23 +124,18 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2023-01-18" who="Sophia Papandonatou">initial encoding</change>
-         
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
    <facsimile>
-   <surface>
-      <desc/>
-      <graphic url="MA.Bos.MFA.X.76.47int-det.jpg"/>
- 
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.X.76.47int-det.jpg"/>
       </surface>
-      
       <surface>
          <desc/>
          <graphic url="MA.Bos.MFA.X.76.47int.jpg"/>
-         
       </surface>
-      
    </facsimile>
    <text>
       <body>
@@ -145,7 +150,6 @@
             <div type="textpart" subtype="scene" n="a">
                <ab>
                   <lb n="2"/>ΓΥΙΓΥ<unclear>L</unclear>ΥL<unclear>Ι</unclear>
-                  
                </ab>
             </div>
             <div type="textpart" subtype="scene" n="b">
@@ -154,14 +158,18 @@
                   
                </ab>
             </div>
-            
          </div>
          <div type="commentary">
-            
             <p>Attributed to the Villa Giulia Painter.</p>
          </div>
-         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

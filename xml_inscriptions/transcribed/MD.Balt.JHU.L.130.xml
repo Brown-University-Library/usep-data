@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MD.Balt.JHU.L.130</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MD.Balt.JHU.L.130</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.130">MD.Balt.JHU.L.130</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.130">MD.Balt.JHU.L.130</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,205 +42,213 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>JHU</institution>
-                        <repository/>
-                        <idno>130</idno>
-                        <altIdentifier>
-                            <idno>Acc. #118</idno>
-                        </altIdentifier>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>JHU</institution>
+                  <repository/>
+                  <idno>130</idno>
+                  <altIdentifier>
+                     <idno>Acc. #118</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of M. Vispansius Isochrysus</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Epitaph of M. Vispansius Isochrysus</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Marble columbarium slab</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>12</height>
-                                        <width>16.5</width>
-                                        <depth>4.25</depth>
-                                    </dimensions>
-                                    
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p>There are tools marks along the
+                           <p> Marble columbarium slab</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>12</height>
+                              <width>16.5</width>
+                              <depth>4.25</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p>There are tools marks along the
                                         back of the stone, which are meant to help it catch when
                                         inserted into the wall.  The surface area of the front of
                                         the inscription is larger than the back, because the sides
                                         angle in like a picture frame.</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="4">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                        <height min="1.5" max="2.3">1.5-2.3</height>
-                                    </dimensions>
-            
-            
-            </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="4">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.5" max="2.3">1.5-2.3</height>
+                        </dimensions>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "fake" or blank -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="-0027" notAfter="0050">Late first century BCE to mid-first
+                     <date evidence="unspecified" notBefore="-0027" notAfter="0050">Late first century BCE to mid-first
                                 century CE</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
-                        </origin>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJP_Wilson6"/>
-                        <biblScope unit="pp">431, no. 130</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">39052</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144671">EDR144671</ref>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="item">78</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-11-17" who="Erika Valdivieso">Initial Encoding</change>
-            <change when="2014-12-14" who="Erika Valdivieso">Edited</change>
-            <change when="2015-09-09" who="Scott J. DiGiulio">Cleaned metadata, added letter dimensions, relocated description of condition, cleaned bibl, proofed transcription with JB's edits</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>        
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.130.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.130-alt.jpg"/>
-        </surface>
-        <surface>
-            <desc>Reverse</desc>
-            <graphic url="MD.Balt.JHU.L.130-rev.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Vipsanius">Vipsanius</name>
-                    <lb n="2"/><name type="cognomen" key="Isochrysus"><hi rend="tall">I</hi>sochrysus</name></persName>.
-                    <lb n="3"/><expan><abbr>Vix</abbr><ex>it</ex></expan> <expan><abbr>ann</abbr><ex>is</ex></expan> <num value="8">VIII</num>,
-                    <lb n="4"/><expan><abbr>mens</abbr><ex>ibus</ex></expan> <num value="3">III</num>, <expan><abbr>dieb</abbr><ex>us</ex></expan> <num value="18">XIIX</num>.
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson6"/>
+                  <biblScope unit="pp">431, no. 130</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">39052</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144671">EDR144671</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
+                  <biblScope unit="item">78</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-11-17" who="Erika Valdivieso">Initial Encoding</change>
+         <change when="2014-12-14" who="Erika Valdivieso">Edited</change>
+         <change when="2015-09-09" who="Scott J. DiGiulio">Cleaned metadata, added letter dimensions, relocated description of condition, cleaned bibl, proofed transcription with JB's edits</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.JHU.L.130.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.JHU.L.130-alt.jpg"/>
+      </surface>
+      <surface>
+         <desc>Reverse</desc>
+         <graphic url="MD.Balt.JHU.L.130-rev.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan>
+                        <abbr>M</abbr>
+                        <ex>arcus</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Vipsanius">Vipsanius</name>
+                  <lb n="2"/>
+                  <name type="cognomen" key="Isochrysus">
+                     <hi rend="tall">I</hi>sochrysus</name>
+               </persName>.
+                    <lb n="3"/>
+               <expan>
+                  <abbr>Vix</abbr>
+                  <ex>it</ex>
+               </expan>
+               <expan>
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
+               <num value="8">VIII</num>,
+                    <lb n="4"/>
+               <expan>
+                  <abbr>mens</abbr>
+                  <ex>ibus</ex>
+               </expan>
+               <num value="3">III</num>, <expan>
+                  <abbr>dieb</abbr>
+                  <ex>us</ex>
+               </expan>
+               <num value="18">XIIX</num>.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                <p>"Marcus Vipsanius Isochrysus.  He lived for eight years, three months, (and) eighteen days."</p>
-            </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-            <p>Line 2: <hi rend="italic"><persName><name type="cognomen"><hi rend="tall">I</hi>sochrysus</name></persName></hi>: The I longa was popular during the first century CE.</p>
+         </div>
+         <div type="translation">
+            <p>"Marcus Vipsanius Isochrysus.  He lived for eight years, three months, (and) eighteen days."</p>
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p>Line 2: <hi rend="italic">
+                  <persName>
+                     <name type="cognomen">
+                        <hi rend="tall">I</hi>sochrysus</name>
+                  </persName>
+               </hi>: The I longa was popular during the first century CE.</p>
             <p>Line 4: <num value="18">XIIX</num>: This numeral shows the subtractive form of 8, so the total number of days lived is 18.  This way of writing the number flourished between the time of Augustus and 51 CE.  Note this subtractive form in contrast with the longer form written above in line 3.</p>
             <p>The spacing is even and regular and the lettering is well cut.  The lines are straight, though the last line might be a little tilted.  The name has clearly been carved larger than the rest of the text.  Numerals are not barred.  Triangular interpuncts are used consistently between words but not at the end of lines.  The interpuncts are a little smaller on the fourth line than on the rest of the stone.  No words are broken across the line.  The first two lines measure 2 cm in height, and each of the next two lines decreases in size by a quarter of a centimeter.  The I longa measures 2.3 cm, while the smallest letter, the E in dieb(us), measures 1.5 cm.  The <hi rend="italic">CIL</hi> speculates that this is a columbarium tablet.</p>
-            </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

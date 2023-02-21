@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1412</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,13 +34,11 @@
                      <p>epitaph of Marcus Turius Felix, a freedman</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>marble columbarium tablet</p>
-                           
                            <dimensions type="surface" unit="cm">
                               <height>8</height>
                               <width>17.3</width>
@@ -61,7 +70,9 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#archaeology #nomenclature #palaeography" notBefore="0001" notAfter="0100">first century
+                     <date evidence="#archaeology #nomenclature #palaeography"
+                            notBefore="0001"
+                            notAfter="0100">first century
                         CE</date>
                      <placeName ref="https://pleiades.stoa.org/places/758962698">Italy, Rome, Porta Salaria</placeName>
                   </origin>
@@ -70,7 +81,8 @@
                         <orgName role="seller">Antiquario Maniani</orgName> on the Via della Consolazione in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -83,14 +95,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102969"
-                     >EDR102969</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102969">EDR102969</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -101,7 +113,9 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -110,50 +124,48 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <persName>
                   <name type="praenomen" key="Marcus">
                      <expan>
-                        <abbr>M</abbr><ex>arcus</ex>
+                        <abbr>M</abbr>
+                        <ex>arcus</ex>
                      </expan>
-                  </name> 
+                  </name>
                   <name type="gentilicium" key="Turius">Turius</name>
-                  <lb n="2"/> 
+                  <lb n="2"/>
                   <name type="praenomen" key="Marcus">
                      <expan>
-                        <abbr>M</abbr><ex>arci</ex>
-                     </expan> 
+                        <abbr>M</abbr>
+                        <ex>arci</ex>
+                     </expan>
                   </name>
                   <expan>
-                     <abbr>l</abbr><ex>ibertus</ex>
-                  </expan> 
-                  <name type="cognomen" key="Felix">Felix</name></persName>.
+                     <abbr>l</abbr>
+                     <ex>ibertus</ex>
+                  </expan>
+                  <name type="cognomen" key="Felix">Felix</name>
+               </persName>.
             </ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>Marcus Turius Felix, freedman of Marcus.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>Luna marble (Tuck).</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Marcus Turius Felix, freedman of Marcus.</p>
+         </div>
+         <div type="commentary">
+            <p>Luna marble (Tuck).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

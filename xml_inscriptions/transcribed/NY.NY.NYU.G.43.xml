@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>NY.NY.NYU.G.43</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -42,16 +52,16 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                              <height min="0.9" max="2.6">0.9-2.6</height>
-                           </dimensions>
-            </handNote>
+                        <dimensions type="letter" unit="cm">
+                           <height min="0.9" max="2.6">0.9-2.6</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_molding">
@@ -72,7 +82,8 @@
                      <date evidence="unspecified" notBefore="0001" notAfter="0100">first century CE</date>
                      <placeName ref="asia.turkey">Asia Minor</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -95,7 +106,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -106,10 +118,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-18" who="Scott J. DiGiulio">Added missing control vocab, fixed columns/lines, added metadata from folder, added transcripion from image</change>
-      <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-06-25" who="Colin Olson">changed stone.limestone to stone.other, fixed
             capitalization issue</change>
-</revisionDesc>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -120,34 +133,38 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb/><gap reason="lost" extent="unknown" unit="line"/>
-               <lb n="1"/><gap reason="lost" atLeast="4" atMost="6" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><unclear>Ω Κυζικ</unclear>ηνῷ ζή
-               <lb n="2" break="no"/>σαντι ἔτη <num value="38"><hi rend="supraline">ΛΗ</hi></num>· <persName><name key="Galenos Γάληνος">Γάληνος</name></persName>
+               <lb/>
+               <gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="1"/>
+               <gap reason="lost" atLeast="4" atMost="6" unit="character"/>
+               <gap reason="illegible" quantity="2" unit="character"/>
+               <unclear>Ω Κυζικ</unclear>ηνῷ ζή
+               <lb n="2" break="no"/>σαντι ἔτη <num value="38">
+                  <hi rend="supraline">ΛΗ</hi>
+               </num>· <persName>
+                  <name key="Galenos Γάληνος">Γάληνος</name>
+               </persName>
                <lb n="3"/>ἄδελφος ἐποίει.
                <lb n="4"/>Χαίρετε.               
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>
