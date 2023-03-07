@@ -1,28 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MA.Bos.MFA.X.77.220</title>
-            <author>Author</author>
-            <respStmt>
-               <resp>Translation</resp>
-               <name>Translator</name>
-            </respStmt>
-            <respStmt>
-               <resp>Commentary</resp>
-               <name>Commenter</name>
-            </respStmt>
+            <title>MA.Bos.MFA.XG.95.30</title>
          </titleStmt>
          <publicationStmt>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.X.77.220">MA.Bos.MFA.X.77.220</idno>
+            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.XG.95.30">MA.Bos.MFA.XG.95.30</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -31,10 +20,10 @@
                   <settlement>Bos</settlement>
                   <institution>MFA</institution>
                   <repository/>
-                  <idno>77.220</idno>
+                  <idno>95.30</idno>
                </msIdentifier>
                <msContents>
-                  <textLang mainLang="und" otherLangs=""/>
+                  <textLang mainLang="und" otherLangs="grc"/>
                   <msItem class="#text_other">
                      <p>nonsense inscription</p>
                   </msItem>
@@ -43,15 +32,15 @@
                   <objectDesc ana="#instrumentum.vase">
                      <supportDesc ana="#clay">
                         <support>
-                           <p>ceramic lekythos</p>
+                           <p>ceramic kylix</p>
                            <dimensions type="surface" unit="cm">
-                              <height/>
-                              <dim type="diameter"/>
+                              <height>9.5</height>
+                              <dim type="diameter">22.7</dim>
                               <width/>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#condition.unknown">
+                        <condition ana="#complete.broken">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
@@ -67,7 +56,9 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote>
-                        <p>Athena fighting against a giant, chariot</p>
+                        <p>interior: Dionysos with leopard and thyrsos, behind him a burning altar; a:
+                           satyr pursuing a maenad, behind him another maenad; b: satyr playing
+                           pipes between two dancing maenads</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -81,39 +72,47 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="-0525" notAfter="-0475"> late sixth to
-                        early fifth century BCE</date>
+                     <date evidence="unspecified" notBefore="-0470" notAfter="-0460">c. 470-460
+                        BCE</date>
                      <placeName ref="https://pleiades.stoa.org/places/579885">Greece, Attica,
                         Athens</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
-                  <provenance type="observed" subtype="recorded">
-                     <p>From <placeName ref="https://pleiades.stoa.org/places/541138">Thebes</placeName>.</p>
+                 
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased by <persName role="collector buyer">Edward Perry Warren</persName> by <date notAfter="1894">1894</date>, in <placeName ref="https://pleiades.stoa.org/places/423025">Rome</placeName>.</p>
                   </provenance>
-                  <provenance type="transferred" subtype="given">
-                     <p>Gifted by <persName role="donor collector">Edward Robinson</persName> to the <orgName role="recipient">Museum of Fine Arts</orgName>.</p>
+                  
+                  
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased from <persName role="seller">Warren</persName> by the <orgName role="buyer">Museum of Fine Arts</orgName> in <date when="1895">1895</date>.</p>
                   </provenance>
                </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
-                  <biblScope unit="page">294-295</biblScope>
+                  <biblScope unit="page">296-297</biblScope>
+                  
                </bibl>
                <bibl>
                   <ref type="external"
-                        target="https://www.beazley.ox.ac.uk/record/A7DE9991-265B-430E-B085-730D6F3F22CF">BAD 390425</ref>
+                     target="https://www.beazley.ox.ac.uk/record/26552658-A41E-4A17-8147-BAAE28965A47"
+                     >BAD 210144</ref>
                </bibl>
                <bibl>
-                  <ref type="external"
-                        target="https://www.avi.unibas.ch/DB/searchform.html?ID=2756">AVI 2609</ref>
+                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2778"
+                     >AVI 2631</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="https://collections.mfa.org/objects/153676">Museum of
+                     Fine Arts, Boston (Website)</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -121,39 +120,56 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2023-01-31" who="Sophia Papandonatou">initial encoding</change>
+         <change when="2023-02-03" who="Sophia Papandonatou">initial encoding</change>
+         
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
    <facsimile>
+   <surface>
+      <desc/>
+      <graphic url="MA.Bos.MFA.XG.95.30int.jpg"/>
+      
+   
+   
+      </surface>
       <surface>
          <desc/>
-         <graphic url="noImage.jpg"/>
+         <graphic url="MA.Bos.MFA.XG.95.30a.jpg"/>
       </surface>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.XG.95.30b.jpg"/>
+      </surface>
+     
+     
+      
    </facsimile>
    <text>
       <body>
          <div type="edition">
-            <ab>
-               <lb n="1"/>
-               <unclear>ΟΣΕ</unclear>
-               <lb n="2"/>
-               <unclear>Σ</unclear>
-               <gap reason="lost" quantity="1" unit="character"/>
-               <unclear>Σ</unclear>
-            </ab>
+            <div type="textpart" subtype="scene" n="interior">
+               <ab>
+                  <lb n="1"/><foreign xml:lang="grc">καλοι</foreign>
+               </ab>
+            </div>
+            <div type="textpart" subtype="scene" n="a">
+               <ab>
+                  
+                  
+                  <lb n="2"/>ΟΣΥLΣΣ
+                  
+               </ab>
+            </div>
+            
          </div>
          <div type="commentary">
-            <p>Attributed to the Haimon Painter.</p>
+            <p>Attributed to the Telephos Painter.</p>
+            
+            
          </div>
-         <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
-               <xi:fallback>
-                  <p>US Epigraphybibliography</p>
-               </xi:fallback>
-            </xi:include>
-         </div>
-      </body>
+         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+
+       </body>
    </text>
 </TEI>
