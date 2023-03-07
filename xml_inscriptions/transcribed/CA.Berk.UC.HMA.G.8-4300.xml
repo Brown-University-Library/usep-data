@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID: (test-edit 2014-09-08 8:16am) -->
             <title>CA.Berk.UC.HMA.G.8/4300</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -42,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="7">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -68,7 +78,8 @@
                      <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
                      <placeName ref="asia.syria.antioch">Syria, Antioch</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -83,7 +94,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -94,8 +106,8 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-11-24" who="Scott J. DiGiulio">updated placeName, fixed handDesc/handNote, added note under condition, added transcription from image</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -106,17 +118,22 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition"> 
+      <body>
+         <div type="edition">
             <ab>
-               <lg>               
+               <lg>
                   <l n="1">
-                     <lb n="1"/><placeName key="Ladon">Λάδωνος</placeName> ποτα<supplied reason="lost">μ</supplied>
-                     <lb n="2"/>οῦ καὶ <persName><name key="Daphne">Δάφνης</name></persName>
+                     <lb n="1"/>
+                     <placeName key="Ladon">Λάδωνος</placeName> ποτα<supplied reason="lost">μ</supplied>
+                     <lb n="2"/>οῦ καὶ <persName>
+                        <name key="Daphne">Δάφνης</name>
+                     </persName>
                      <lb n="3"/>ἀνθοκόμοιο
-                  </l> 
-                  <l n="2"><persName><name key="Antiochus">Ἀντί</name></persName>
+                  </l>
+                  <l n="2">
+                     <persName>
+                        <name key="Antiochus">Ἀντί</name>
+                     </persName>
                      <lb n="4" break="no"/>οχος πάτρης
                      <lb n="5"/>Ἀντιοχίης
                      <lb n="6"/>ἐνθάδε
@@ -125,23 +142,20 @@
                </lg>
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

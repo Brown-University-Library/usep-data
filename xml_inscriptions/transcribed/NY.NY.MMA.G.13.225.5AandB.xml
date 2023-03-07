@@ -8,175 +8,171 @@ changes: Added @evidence to date
 <!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
           -->
-          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-
-        <fileDesc>
-
-            <titleStmt>
-                <title>NY.NY.MMA.G.13.225.5A+B</title>
-            </titleStmt>
-
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.13.225.5AandB">NY.NY.MMA.G.13.225.5A+B</idno>
-            </publicationStmt>
-
-            <sourceDesc>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>NY.NY.MMA.G.13.225.5A+B</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.13.225.5AandB">NY.NY.MMA.G.13.225.5A+B</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>13.225.5a,b</idno>
-                    </msIdentifier>
-
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>MMA</institution>
+                  <repository/>
+                  <idno>13.225.5a,b</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>cymbals labeled with their owner's name: Callistheneia</p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>cymbals labeled with their owner's name: Callistheneia</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#object_other">
-                            <supportDesc ana="#metal.bronze">
-                                <support>
-                                    <p>pair of bronze cymbals</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width>9.8</width>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p>handles missings, but pieces of their loop attachments are preserved</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p>1 line each</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <history>
-
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-
-                        <origin>
-                            <date evidence="#palaeography" notBefore="-0500" notAfter="-0300"
-                                >fifth-fourth c. BCE</date>
-                            <placeName ref="europe.greece.elis">Elis (?), Greece</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="acquired">
-                            <p>Purchased in <date when="1913">1913</date> with the <persName role="donor"><name key="Rogers">Rogers</name></persName> Fund.</p>
-                        </provenance>
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MMA"/>
-                        <biblScope unit="pp">454-455</biblScope>
-                    </bibl>
-                    <bibl> 
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/248755">Metropolitan Museum Web Entry</ref> 
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-
-        <encodingDesc>
-
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2021-04-07" who="Itamar Levin">initial encoding and metadata</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.G.13.225.5AandB-Det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.G.13.225.5AandB-Det2.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        <body>
-            <div type="edition" subtype="section" n="A">
+                  <objectDesc ana="#object_other">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p>pair of bronze cymbals</p>
+                           <dimensions type="surface" unit="cm">
+                              <height/>
+                              <width>9.8</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>handles missings, but pieces of their loop attachments are preserved</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p>1 line each</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#palaeography" notBefore="-0500" notAfter="-0300">fifth-fourth c. BCE</date>
+                     <placeName ref="europe.greece.elis">Elis (?), Greece</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="acquired">
+                     <p>Purchased in <date when="1913">1913</date> with the <persName role="donor">
+                           <name key="Rogers">Rogers</name>
+                        </persName> Fund.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MMA"/>
+                  <biblScope unit="pp">454-455</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.metmuseum.org/art/collection/search/248755">Metropolitan Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2021-04-07" who="Itamar Levin">initial encoding and metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.G.13.225.5AandB-Det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.G.13.225.5AandB-Det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" subtype="section" n="A">
             <ab>
-                <lb n="1"/><persName><name key="Καλλισθενεία">Καλλισθενείας</name></persName>
-            </ab></div>
-            <div type="edition" subtype="section" n="B">
-                <ab>
-                    <lb n="1"/><persName><name key="Καλλισθενεία">Καλλισθενείαρ</name></persName>
-                </ab></div>
-            
-            <div type="translation">
-            <p>Callistheneia's.</p></div>
-
-            <div type="commentary">
-                <p>Tanscription from Richter GERB. The substitution of Ρ for Σ in inscription B is characteristic of Elian dialect (454-455). Callistheneia was probably the owner, although the name is not otherwise recorded. </p></div>
-            
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
-        </body>
-    </text>
+               <lb n="1"/>
+               <persName>
+                  <name key="Καλλισθενεία">Καλλισθενείας</name>
+               </persName>
+            </ab>
+         </div>
+         <div type="edition" subtype="section" n="B">
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name key="Καλλισθενεία">Καλλισθενείαρ</name>
+               </persName>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>Callistheneia's.</p>
+         </div>
+         <div type="commentary">
+            <p>Tanscription from Richter GERB. The substitution of Ρ for Σ in inscription B is characteristic of Elian dialect (454-455). Callistheneia was probably the owner, although the name is not otherwise recorded. </p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

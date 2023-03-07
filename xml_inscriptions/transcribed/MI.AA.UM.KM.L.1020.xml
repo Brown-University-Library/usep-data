@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1020</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -34,7 +45,8 @@
                               <depth>2.5</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -64,7 +76,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased in <date when="1898">1898</date> by <persName role="buyer">Walter Dennison</persName> from <persName role="seller">Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName>, funded by <persName role="funder">Henry P. Glover</persName>; the inscription arrived at the university in <date when="1899">1899</date> (D'Arms).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -80,16 +93,19 @@
                   <biblScope unit="item">134 no. 207</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010704?">EDH nr. HD010704</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010704?">EDH nr. HD010704</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075779">EDR075779</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075779">EDR075779</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -102,9 +118,11 @@
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2016-06-02" who="Scott J. DiGiulio">Added control vocab for condition, writing; added note on text layout; tweaked formatting of transcription</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-04-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -113,41 +131,60 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr>s</abbr><ex>acrum</ex></expan>.
-               <lb n="2"/><persName><name type="gentilicium" key="Tantilia">Tantiliae</name>
-               <lb n="3"/><name type="cogomen" key="Megale">Megaleni</name></persName>
-               <lb n="4"/><expan><abbr>co</abbr><ex>n</ex><abbr>iugi</abbr></expan> in
+               <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>
+               <expan>
+                  <abbr>s</abbr>
+                  <ex>acrum</ex>
+               </expan>.
+               <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Tantilia">Tantiliae</name>
+                  <lb n="3"/>
+                  <name type="cogomen" key="Megale">Megaleni</name>
+               </persName>
+               <lb n="4"/>
+               <expan>
+                  <abbr>co</abbr>
+                  <ex>n</ex>
+                  <abbr>iugi</abbr>
+               </expan> in
                <lb break="no" n="5"/>conparabi
-               <lb break="no" n="6"/>li <persName><name type="gentilicium" key="Vinuleius">Vinuleius</name>
-               <lb n="7"/><name type="cognomen" key="Fortunatus">Fortunatus</name></persName>
+               <lb break="no" n="6"/>li <persName>
+                  <name type="gentilicium" key="Vinuleius">Vinuleius</name>
+                  <lb n="7"/>
+                  <name type="cognomen" key="Fortunatus">Fortunatus</name>
+               </persName>
                <lb n="8"/>fecit.
             </ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>Sacred to the Divine Spirits. Vinuleius Fortunatus made (this) for Tantilia
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Sacred to the Divine Spirits. Vinuleius Fortunatus made (this) for Tantilia
                Megale, peerless wife.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p><seg type="material">Italian marble</seg> (Tuck).</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>
+               <seg type="material">Italian marble</seg> (Tuck).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

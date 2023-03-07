@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.L.83.Aq.377.26</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,9 @@
                <physDesc>
                   <objectDesc ana="#instrumentum.lamp">
                      <supportDesc ana="#clay.terracotta">
-                        <support><p>Terracotta lamp</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Terracotta lamp</p>
+                           <dimensions type="surface" unit="cm">
                               <height>2.7</height>
                               <width>7.5</width>
                               <depth>10</depth>
@@ -40,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="3">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p>within shield held by winged Nike on top of lamp</p>
+                           <p>within shield held by winged Nike on top of lamp</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -66,7 +78,8 @@
                      <date evidence="unspecified" notBefore="0001" notAfter="0025">early first century CE</date>
                      <placeName ref="asia.turkey">Turkey</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -74,13 +87,15 @@
                   <biblScope unit="item">6216</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/16682/unknown-maker-lamp-roman-1st-4th-century/">Getty Museum Web Entry, with Image</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/16682/unknown-maker-lamp-roman-1st-4th-century/">Getty Museum Web Entry, with Image</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -95,36 +110,34 @@
          <change when="2021-03-24" who="Elli Mylonas">Changed writing to molded</change>
       </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-   
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
                <lb n="1"/>Ob
                <lb n="2"/>civis
-               <lb n="3"/><expan><abbr>ser</abbr><ex>vatos</ex></expan>.
+               <lb n="3"/>
+               <expan>
+                  <abbr>ser</abbr>
+                  <ex>vatos</ex>
+               </expan>.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

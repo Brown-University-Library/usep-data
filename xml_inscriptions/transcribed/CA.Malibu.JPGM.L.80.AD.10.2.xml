@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.L.80.AD.10.2</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,9 @@
                <physDesc>
                   <objectDesc ana="#instrumentum.brick">
                      <supportDesc ana="#clay.terracotta">
-                        <support><p>Fragment of brick</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Fragment of brick</p>
+                           <dimensions type="surface" unit="cm">
                               <height>13</height>
                               <width>14</width>
                               <depth>4</depth>
@@ -40,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -66,7 +78,8 @@
                      <date evidence="unspecified" notBefore="0123" notAfter="0123">a. 123 CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -78,13 +91,15 @@
                   <biblScope unit="item">187-88, no. 3, fig. 2</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/15187/unknown-maker-roman-brick-fragment-roman-1st-2nd-century/">Getty Museum Web Entry</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/15187/unknown-maker-roman-brick-fragment-roman-1st-2nd-century/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -96,38 +111,107 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-26" who="Scott J. DiGiulio">Added missing control vocab, updated metadata from folder, fixed lines/columns, added JPGM website to bibl, added transcription from drawing in Rodriguez Almeida</change>
          <change when="2021-03-24" who="Elli Mylonas">Added litteris cavis to handNote</change>
-      <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
-</revisionDesc>
+         <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
+      </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-   
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><supplied reason="lost"><persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uinto</ex></expan></name> <name type="gentilicium" key="Articuleius"><expan><abbr>A</abbr><ex>rticuleio</ex></expan></name> <name type="cognomen" key="Paetinus"><expan><abbr>P</abbr><ex>aetino</ex></expan></name></persName></supplied>, <persName><name type="praenomen" key="Lucius"><expan><abbr><unclear>L</unclear></abbr><ex>ucio</ex></expan></name> <name type="gentilicium" key="Venuleius"><expan><abbr>V</abbr><ex>enuleio</ex></expan></name> <name type="cognomen" key="Apronianus"><expan><abbr>A</abbr><ex>proniano</ex></expan></name></persName> <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>,
-               <lb n="2"/><persName><supplied reason="lost"><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <name type="gentilicium" key="Vinicius"><expan><abbr>Vinic</abbr><ex>ii</ex></expan></name></supplied> <name type="cognomen" key="Pantagathus"><expan><abbr>Pantag</abbr><ex>athi</ex></expan></name></persName>, <expan><abbr>S<unclear>u</unclear></abbr><ex>ulpicianum</ex></expan>.
+               <lb n="1"/>
+               <supplied reason="lost">
+                  <persName>
+                     <name type="praenomen" key="Quintus">
+                        <expan>
+                           <abbr>Q</abbr>
+                           <ex>uinto</ex>
+                        </expan>
+                     </name>
+                     <name type="gentilicium" key="Articuleius">
+                        <expan>
+                           <abbr>A</abbr>
+                           <ex>rticuleio</ex>
+                        </expan>
+                     </name>
+                     <name type="cognomen" key="Paetinus">
+                        <expan>
+                           <abbr>P</abbr>
+                           <ex>aetino</ex>
+                        </expan>
+                     </name>
+                  </persName>
+               </supplied>, <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>
+                           <unclear>L</unclear>
+                        </abbr>
+                        <ex>ucio</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Venuleius">
+                     <expan>
+                        <abbr>V</abbr>
+                        <ex>enuleio</ex>
+                     </expan>
+                  </name>
+                  <name type="cognomen" key="Apronianus">
+                     <expan>
+                        <abbr>A</abbr>
+                        <ex>proniano</ex>
+                     </expan>
+                  </name>
+               </persName>
+               <expan>
+                  <abbr>co</abbr>
+                  <ex>n</ex>
+                  <abbr>s</abbr>
+                  <ex>ulibus</ex>
+               </expan>,
+               <lb n="2"/>
+               <persName>
+                  <supplied reason="lost">
+                     <name type="praenomen" key="Marcus">
+                        <expan>
+                           <abbr>M</abbr>
+                           <ex>arci</ex>
+                        </expan>
+                     </name>
+                     <name type="gentilicium" key="Vinicius">
+                        <expan>
+                           <abbr>Vinic</abbr>
+                           <ex>ii</ex>
+                        </expan>
+                     </name>
+                  </supplied>
+                  <name type="cognomen" key="Pantagathus">
+                     <expan>
+                        <abbr>Pantag</abbr>
+                        <ex>athi</ex>
+                     </expan>
+                  </name>
+               </persName>, <expan>
+                  <abbr>S<unclear>u</unclear>
+                  </abbr>
+                  <ex>ulpicianum</ex>
+               </expan>.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.981</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,13 +34,11 @@
                      <p>epitaph of [Iulius] Malchus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>partially reconsituted marble slab</p>
-                           
                            <seg type="material">Medium-grained white marble</seg>
                            <dimensions type="surface" unit="cm">
                               <height>17.9</height>
@@ -70,7 +79,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -83,14 +93,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115541"
-                     >EDR115541</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115541">EDR115541</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -101,10 +111,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-02-02" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-21" who="Sophia Papandonatou">added EDR link</change>
          <change when="2021-08-06" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -113,91 +124,106 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-              <ab>
+            <ab>
                <lb n="1"/>
-                 <expan><abbr><supplied reason="lost">D</supplied></abbr><ex>is</ex></expan>
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan> 
+                  <abbr>
+                     <supplied reason="lost">D</supplied>
+                  </abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>
                <lb n="2"/>
                <gap reason="lost" quantity="1" unit="character" cert="low"/>
                <persName>
-                  <name type="gentilicium" key="Iulius"><supplied reason="lost">Iuli</supplied></name>
+                  <name type="gentilicium" key="Iulius">
+                     <supplied reason="lost">Iuli</supplied>
+                  </name>
                   <name type="cognomen" key="Malchus">Malchi</name>
                </persName>
                <expan>
-                  <abbr>ma<hi rend="ligature">nip</hi></abbr><ex>ularis</ex>
+                  <abbr>ma<hi rend="ligature">nip</hi>
+                  </abbr>
+                  <ex>ularis</ex>
                </expan>
                <lb n="3"/>
-               <unclear><g type="tetrere"/></unclear>
+               <unclear>
+                  <g type="tetrere"/>
+               </unclear>
                <expan>
-                  <abbr>Min</abbr><ex>erva</ex></expan>. <expan>
-                  <abbr>Mil</abbr><ex>itavit</ex>
+                  <abbr>Min</abbr>
+                  <ex>erva</ex>
+               </expan>. <expan>
+                  <abbr>Mil</abbr>
+                  <ex>itavit</ex>
                </expan>
                <expan>
-                  <abbr>an</abbr><ex>nis</ex>
+                  <abbr>an</abbr>
+                  <ex>nis</ex>
                </expan>
                <num xml:lang="lat" value="9">VIIII</num>
                <lb n="4"/>
-                 <gap reason="lost" quantity="1" unit="character" cert="low"/>
+               <gap reason="lost" quantity="1" unit="character" cert="low"/>
                <persName>
                   <name type="gentilicium" key="Salvius">
                      <supplied reason="lost">Sa</supplied>lvius</name>
                   <name type="cognomen" key="Salutaris">Salutaris</name>
                </persName>
                <expan>
-                  <abbr>opt</abbr><ex>io</ex>
+                  <abbr>opt</abbr>
+                  <ex>io</ex>
                </expan>
                <lb n="5"/>
                <g type="triere"/>
                <expan>
-                  <abbr>Ven</abbr><ex>ere</ex>
+                  <abbr>Ven</abbr>
+                  <ex>ere</ex>
                </expan>
                <expan>
-                  <abbr>h</abbr><ex>eres</ex>
+                  <abbr>h</abbr>
+                  <ex>eres</ex>
                </expan>
                <expan>
-                  <abbr>b</abbr><ex>ene</ex>
+                  <abbr>b</abbr>
+                  <ex>ene</ex>
                </expan>
                <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
+                  <abbr>m</abbr>
+                  <ex>erenti</ex>
                </expan>
                <expan>
-                  <abbr>f</abbr><ex>ecit</ex></expan>. </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>[To the Divine] Spirits [of - Iulius] Malchus, a marine from the quadrireme
+                  <abbr>f</abbr>
+                  <ex>ecit</ex>
+               </expan>. </ab>
+         </div>
+         <div type="translation">
+            <p>[To the Divine] Spirits [of - Iulius] Malchus, a marine from the quadrireme
                        <hi rend="italic">Minerva</hi>. He served for nine years. [- Sa]lvius Salutaris, <hi rend="italic">optio</hi> from the trireme <hi rend="italic">Venus</hi>,
                (his) heir, made this for (him), well-deserving. </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   
-                   <p>Line 2: The abbreviation of the deceased’s praenomen and his gentilicium are missing. Tuck supplies his gentilicium as “Iuli” based on the length of the gap and parallels.</p>
-                    <p>Line 3: Three of the four minims that make up the symbol for "quadrireme" have been lost,
+         </div>
+         <div type="commentary">
+            <p>Line 2: The abbreviation of the deceased’s praenomen and his gentilicium are missing. Tuck supplies his gentilicium as “Iuli” based on the length of the gap and parallels.</p>
+            <p>Line 3: Three of the four minims that make up the symbol for "quadrireme" have been lost,
                        but the fourth is still visible.</p>
-                   <p>Line 4: ALVIVS SANTARIS. The abbreviation of Salutaris’ praenomen is
+            <p>Line 4: ALVIVS SANTARIS. The abbreviation of Salutaris’ praenomen is
                missing.</p>
             <p>Line: 5 OPT III (Ihm). </p>
-                   <p>Tuck interprets the deceased's cognomen as "Malchus" based on MI.AA.UM.KM.L.981, dedicated by a Julius Malchus, but it could also be "Malchius."</p>
-                   
-                </div>
-            
-        
-        
-            
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <p>Tuck interprets the deceased's cognomen as "Malchus" based on MI.AA.UM.KM.L.981, dedicated by a Julius Malchus, but it could also be "Malchius."</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

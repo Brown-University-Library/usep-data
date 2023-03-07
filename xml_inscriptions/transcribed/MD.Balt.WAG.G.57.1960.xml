@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MD.Balt.WAG.G.57.1960</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -30,8 +41,7 @@
                </msContents>
                <physDesc><!--objectDesc, handDesc, decoDesc go here-->
                   <!--  *************************************  <physDesc>  ********************************* -->
-        
-                     <objectDesc ana="#object_other">
+                  <objectDesc ana="#object_other">
                      <supportDesc ana="#metal.other">
                         <support>
                            <!-- short summary of the material and support of an inscription -->
@@ -40,7 +50,6 @@
                               <height>7.9</height>
                               <width>4.3</width>
                               <depth>0.1</depth>
-                              
                            </dimensions>
                         </support>
                         <condition ana="#complete.intact">
@@ -54,35 +63,30 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                     
-                     <!--  *************************************  <handDesc>  ********************************* -->
-                     <!--     Contains information about types of writing and means of inscription.  -->
-                     <handDesc hands="1">
-                        <handNote ana="#etched"/>
-                        <!-- <handNote> is a repeatable element -->
-                     </handDesc>
-                     
-                     <!--  *************************************  <decoDesc>  *********************************     -->
-                     <decoDesc>
-                        <decoNote>
-                           <p/>
-                        </decoNote>
-                        
-                     </decoDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#etched"/>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
                </physDesc>
                <history><!--summary, origin, provenance go here-->
                   <summary>
                      <rs/>
-                     <!-- content can be "fake" or blank -->
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
-                  
                   <origin>
                      <!-- original place and dating of inscription -->
                      <date evidence="unspecified" notBefore="0301" notAfter="0400">fourth
                         century</date>
                      <placeName ref="asia.syria">Syria, Borsa</placeName>
                   </origin>
-                  
                   <provenance type="transferred" subtype="purchased">Purchased by <persName role="buyer">Robert Garrett</persName> and kept in <placeName>Baltimore</placeName>; date of acquisition unknown.</provenance>
                   <provenance type="transferred" subtype="given">Inherited by the Garrett family in <date when="1961">1961</date>.</provenance>
                   <provenance type="transferred" subtype="given">Gifted to the <orgName role="recipient">Walters Art Museum</orgName> in <date when="1964">1964</date> by the children of <persName>Robert Garrett</persName> .</provenance>
@@ -99,15 +103,15 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://art.thewalters.org/detail/20316/amuletic-inscription/">Walters
+                        target="https://art.thewalters.org/detail/20316/amuletic-inscription/">Walters
                      Art Museum Web Entry</ref>
                </bibl>
-              
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -119,37 +123,51 @@
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
       </revisionDesc>
    </teiHeader>
-   
    <!--  *************************************  <facsimile>  *********************************  -->
    <!-- Used to record images of an inscription.   -->
-   
    <facsimile>
       <surface>
          <desc/>
          <graphic url="MD.Balt.WAG.G.57.1960.jpg"/>
       </surface>
-      
    </facsimile>
    <text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/><gap reason="illegible" quantity="1" unit="character"/><g type="characters"/>Ἰάω,
-               <lb n="2"/><supplied reason="lost">Ἀδ</supplied>ωναῖε, σααααα <g type="characters"/>K<g type="character"/>IXI
-               <lb n="3"/><g type="characters"/> Σαβαώθ εεεεε ηηη
+               <lb n="1"/>
+               <gap reason="illegible" quantity="1" unit="character"/>
+               <g type="characters"/>Ἰάω,
+               <lb n="2"/>
+               <supplied reason="lost">Ἀδ</supplied>ωναῖε, σααααα <g type="characters"/>K<g type="character"/>IXI
+               <lb n="3"/>
+               <g type="characters"/> Σαβαώθ εεεεε ηηη
                <lb n="4"/>ηη <g type="characters"/> μχχψ
                <lb n="5"/>Ἀστραήλ, ηη οοο υυω <g type="characters"/> Κ
-               <lb n="6"/><g type="characters"/> Z Ἰάω, Σαβαώθ, αμιωφεουευισ
+               <lb n="6"/>
+               <g type="characters"/> Z Ἰάω, Σαβαώθ, αμιωφεουευισ
                <lb n="7" break="no"/>αγιζου ηρα ηη ιουω τ δ Ε <g type="characters"/> Y <g type="character"/> R
                <lb n="8"/>ω̄ <g type="characters"/> OEI μ <g type="characters"/> T <g type="characters"/> OY <g type="characters"/> αρ<unclear>τ</unclear>εν
-               <lb n="9" break="no"/><unclear>χ</unclear>ενμω ζεμια θωπτιεχω βαδητο
+               <lb n="9" break="no"/>
+               <unclear>χ</unclear>ενμω ζεμια θωπτιεχω βαδητο
                <lb n="10" break="no"/>ωθ βα <g type="characters"/>Z Ἰάω, Σαβαώθ,   
                <lb n="11"/>ια ιπιωθ ζ θ, ἅγιον καὶ ἰσχυρόν, κραταιὸν
-               <lb n="12"/>καὶ μεγαλο̣δύναμο̣ν <surplus>ον</surplus> ὄνομα, δὸς <expan><abbr>χάρι</abbr><ex>ν</ex></expan>,
-               <lb n="13"/>δόξαν, νίκην <persName><name key="Proclus Πρόκλος">Πρόκλῳ</name></persName> ὃν ἔτεκεν <persName><name key="Salvina Σαλαουίνα">Σαλα               
-               <lb n="14" break="no"/>ουίνα</name></persName>, ἐπὶ <persName><name key="Diogenianus Διογενιανός">Διογενιανοῦ</name></persName> τοῦ δουκὸς Βόστρ               
-               <lb n="15" break="no"/>ων τῆς Ἀραβίας, ἐπὶ <persName><name key="Pelagius Πελάγιος">Πελαγίου</name></persName> τοῦ συνκαθέδρου
+               <lb n="12"/>καὶ μεγαλο̣δύναμο̣ν <surplus>ον</surplus> ὄνομα, δὸς <expan>
+                  <abbr>χάρι</abbr>
+                  <ex>ν</ex>
+               </expan>,
+               <lb n="13"/>δόξαν, νίκην <persName>
+                  <name key="Proclus Πρόκλος">Πρόκλῳ</name>
+               </persName> ὃν ἔτεκεν <persName>
+                  <name key="Salvina Σαλαουίνα">Σαλα               
+               <lb n="14" break="no"/>ουίνα</name>
+               </persName>, ἐπὶ <persName>
+                  <name key="Diogenianus Διογενιανός">Διογενιανοῦ</name>
+               </persName> τοῦ δουκὸς Βόστρ               
+               <lb n="15" break="no"/>ων τῆς Ἀραβίας, ἐπὶ <persName>
+                  <name key="Pelagius Πελάγιος">Πελαγίου</name>
+               </persName> τοῦ συνκαθέδρου
                <lb n="16"/>καὶ ἐπὶ πάντων ἀνθρώπων μικρῶν καὶ
                <lb n="17"/>μεγάλων, ἐπὶ θεῶν, ἐπὶ δαιμόνων, ἵνα νι
                <lb n="18" break="no"/>κήσῃ δικαίως καὶ ἀδίκως πᾶσαν δίκη
@@ -157,19 +175,56 @@
                <lb n="20"/>πάντων τῶν καθορώντων τὸν καὶ  
                <lb n="21"/>ἀκουόντων αὐτοῦ καὶ τῶν λόγων αὐτοῦ.
                <lb n="22"/>Σύνστησον αὐτὸν κραταιόν, ποίησον νι
-               <lb n="23" break="no"/>κητὴν πάντων, μάλιστα δὲ <persName><name key="Salvina Σαλαουίνα">Σαλαουίνα
-               <lb n="24" break="no"/>ς</name></persName>, ἣν ἔτεκεν <persName><name key="Eve Εὔα">Εὔα</name></persName>, τῆς τεκούσης <persName><name key="Abdancha Ἀβαδανχα">Ἀβδανχα</name></persName>,
-               <lb n="25"/><persName><name key="Balona Βαλων Βαλωνα">Βαλωνα</name></persName>, <persName><name key="Mikke Μικκη Μικκης">Μικκην</name></persName>, ἵνα νίκην λάβῃ <persName><name key="Proclus Πρόκλος">Πρό
-                  <lb n="26" break="no"/>κλος</name></persName> ὃν ἔτεκεν <persName><name key="Salvina Σαλαουίνα Σαλαουίνη">Σαλαουίνη</name></persName>, καὶ δόξαν· καὶ φί
+               <lb n="23" break="no"/>κητὴν πάντων, μάλιστα δὲ <persName>
+                  <name key="Salvina Σαλαουίνα">Σαλαουίνα
+               <lb n="24" break="no"/>ς</name>
+               </persName>, ἣν ἔτεκεν <persName>
+                  <name key="Eve Εὔα">Εὔα</name>
+               </persName>, τῆς τεκούσης <persName>
+                  <name key="Abdancha Ἀβαδανχα">Ἀβδανχα</name>
+               </persName>,
+               <lb n="25"/>
+               <persName>
+                  <name key="Balona Βαλων Βαλωνα">Βαλωνα</name>
+               </persName>, <persName>
+                  <name key="Mikke Μικκη Μικκης">Μικκην</name>
+               </persName>, ἵνα νίκην λάβῃ <persName>
+                  <name key="Proclus Πρόκλος">Πρό
+                  <lb n="26" break="no"/>κλος</name>
+               </persName> ὃν ἔτεκεν <persName>
+                  <name key="Salvina Σαλαουίνα Σαλαουίνη">Σαλαουίνη</name>
+               </persName>, καὶ δόξαν· καὶ φί
                <lb n="27" break="no"/>μωσον καὶ ὑπόταξον καὶ καταδούλωσον
-               <lb n="28"/><persName><name key="Salvina Σαλαουίνα Σαλουίνη">Σαλουίνην</name></persName>, ἣ<supplied reason="omitted">ν</supplied> ἔτεκεν <persName><name key="Eve Εὔα">Εὔα</name></persName>, καὶ <persName><name key="Abdancha Ἀβαδανχα">Ἀβαδανχα</name></persName> <unclear>καὶ</unclear>
-               <lb n="29"/><persName><name key="Balona Βαλων Βαλωνα">Βαλωναν</name></persName> καὶ  <persName><name key="Mikke Μικκη Μικκης">Μικκην</name></persName> ο<unclear>ὓς</unclear> ἔτεκεν <persName><name key="Salvina Σαλαουίνα Σαλουίνα">Σαλουί
-               <lb n="30" break="no"/>να</name></persName> καὶ πάντας ἐχθροὺς καὶ ἀντιδίκους καὶ 
-               <lb n="31"/>φίλους καὶ <persName><name key="Diogenianus Διογενιανός">Διογενιανὸν</name></persName> τὸν ἄρχοντα καὶ
-               <lb n="32"/><persName><name key="Pelagius Πελάγιος">Πελάγιον</name></persName>, τὸν σχολαστικὸν αὐτοῦ, συν
+               <lb n="28"/>
+               <persName>
+                  <name key="Salvina Σαλαουίνα Σαλουίνη">Σαλουίνην</name>
+               </persName>, ἣ<supplied reason="omitted">ν</supplied> ἔτεκεν <persName>
+                  <name key="Eve Εὔα">Εὔα</name>
+               </persName>, καὶ <persName>
+                  <name key="Abdancha Ἀβαδανχα">Ἀβαδανχα</name>
+               </persName>
+               <unclear>καὶ</unclear>
+               <lb n="29"/>
+               <persName>
+                  <name key="Balona Βαλων Βαλωνα">Βαλωναν</name>
+               </persName> καὶ  <persName>
+                  <name key="Mikke Μικκη Μικκης">Μικκην</name>
+               </persName> ο<unclear>ὓς</unclear> ἔτεκεν <persName>
+                  <name key="Salvina Σαλαουίνα Σαλουίνα">Σαλουί
+               <lb n="30" break="no"/>να</name>
+               </persName> καὶ πάντας ἐχθροὺς καὶ ἀντιδίκους καὶ 
+               <lb n="31"/>φίλους καὶ <persName>
+                  <name key="Diogenianus Διογενιανός">Διογενιανὸν</name>
+               </persName> τὸν ἄρχοντα καὶ
+               <lb n="32"/>
+               <persName>
+                  <name key="Pelagius Πελάγιος">Πελάγιον</name>
+               </persName>, τὸν σχολαστικὸν αὐτοῦ, συν
                <lb n="33" break="no"/>κάθεδρον, καὶ πάντας τοὺς ἐξ ἐναντίας 
                <lb n="34"/>μικροὺς καὶ μεγάλους, ἄνδρας καὶ γυναῖκας
-               <lb n="35"/>καὶ νήπια, πά<unclear>ν̣τ̣</unclear>ας τοὺς <unclear>ὁ̣</unclear>ρῶντας <persName><name key="Proclus Πρόκλος">Πρόκλον</name></persName> ὃν <surplus>ε</surplus>
+               <lb n="35"/>καὶ νήπια, πά<unclear>ν̣τ̣</unclear>ας τοὺς <unclear>ὁ̣</unclear>ρῶντας <persName>
+                  <name key="Proclus Πρόκλος">Πρόκλον</name>
+               </persName> ὃν <surplus>ε</surplus>
                <lb n="36"/>ἔτεκεν Σαλαουίνα, τὸν φοροῦντά <unclear>σ</unclear>ου τὴν
                <lb n="37"/>ἁγίαν καὶ ἀνίκητον δύναμιν. Καὶ δὸς δύν
                <lb n="38" break="no"/>αμιν, <supplied reason="omitted">ν</supplied>ίκην, χάριν, θράσος, τόλμαν, φόβον
@@ -197,10 +252,16 @@
          </div>
          <div type="commentary">
             <p>Lines 1-11: Magic signs interspersed with nomina sacra and voces magicae (SEG); for specifics, please look to the <ref type="external"
-               target="https://referenceworks.brillonline.com/entries/supplementum-epigraphicum-graecum/seg-41-1597-arabia-unknown-provenance-probably-bostra-victory-charm-for-proclus-concerning-a-trial-ca-353-367-ad-a41_1597?s.num=33336&amp;s.rows=20&amp;s.start=33330">SEG entry</ref>.</p>
+                     target="https://referenceworks.brillonline.com/entries/supplementum-epigraphicum-graecum/seg-41-1597-arabia-unknown-provenance-probably-bostra-victory-charm-for-proclus-concerning-a-trial-ca-353-367-ad-a41_1597?s.num=33336&amp;s.rows=20&amp;s.start=33330">SEG entry</ref>.</p>
          </div>
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>RI.Prov.RISD.MA.L.46.083a-b</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>RI.Prov.RISD.MA.L.46.083a-b</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.L.46.083a-b">RI.Prov.RISD.MA.L.46.083a-b</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.L.46.083a-b">RI.Prov.RISD.MA.L.46.083a-b</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,81 +42,74 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>RI</region>
-                        <settlement>Prov</settlement>
-                        <institution>RISD</institution>
-                        <repository>MA</repository>
-                        <idno>46.083a-b</idno>
-                    </msIdentifier>
-
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>RI</region>
+                  <settlement>Prov</settlement>
+                  <institution>RISD</institution>
+                  <repository>MA</repository>
+                  <idno>46.083a-b</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Delicatus, an imperial slave</p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Epitaph of Delicatus, an imperial slave</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-
-                        <objectDesc ana="#ash_urn">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#ash_urn">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Rectangular, white-marble cinerary urn</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>46.2</height>
-                                        <width>31.0</width>
-                                        <depth>30.8</depth>
-                                    </dimensions>
-                                    <dimensions type="campus" unit="cm">
-                                        <height>9.8</height>
-                                        <width>15.4</width>
-                                    </dimensions>
-                                    
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p>The urn is in good condition overall, however the right
+                           <p>Rectangular, white-marble cinerary urn</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>46.2</height>
+                              <width>31.0</width>
+                              <depth>30.8</depth>
+                           </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>9.8</height>
+                              <width>15.4</width>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p>The urn is in good condition overall, however the right
                                         acroterion was broken at the moment of discovery and was
                                         since mended. Two iron rivets on the lower back may have
                                         mended an ancient break, since a crack runs through both
                                         rivets, or they may have been part of the urn's installation
                                         in the tomb, for the top corners of the back are also partly
                                         carved out. </p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="7">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                        <height>1.1</height>
-                                    </dimensions>
-            </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                          
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>The front, left and right sides are carved with vegetal
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="7">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height>1.1</height>
+                        </dimensions>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>The front, left and right sides are carved with vegetal
                                     decoration, while the back is finished, but has no design. The
                                     front depicts an altar with columns at left and right, with a
                                     garland hanging between. The sides are decorated with vegetal
@@ -117,185 +119,191 @@
                                     fighting a snake. In between these lateral acroteria, the front
                                     of the lid displays a pediment, which contains a 'sacred
                                     still-life' depicting a patera, jug, knife, axe and lituus</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-
-                        <summary>
-                            <rs/>
-                            <!-- content can be "fake" or blank -->
-                        </summary>
-
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0041" notAfter="0069">mid-first century CE (late
+                     <date evidence="unspecified" notBefore="0041" notAfter="0069">mid-first century CE (late
                                 Claudian to Neronian date)</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome, Via Ostiense, Tomb 4E at the necropolis near the
+                     <placeName ref="europe.italy.rome">Italy, Rome, Via Ostiense, Tomb 4E at the necropolis near the
                                 basilica of St. Paul</placeName>
-                        </origin>
-                        <provenance type="found">                            
-                            <p><persName>Lugli</persName> discovered and published the urn in <date when="1919">1919</date></p>
-                        </provenance>
-                        <provenance type="transferred" subtype="loaned">
-                            <p>Loaned by <persName>Marshall H. Gould</persName> to RISD in <date when="1926">1926</date></p>
-                        </provenance>
-                        <provenance type="transferred" subtype="given">
-                            <p>Permanently given to RISD by <persName>Marshall H. Gould</persName> in <date when="1946">1946</date></p>
-                        </provenance>
-                        
-                            <!-- subsequent locations if inscription was moved -->
-                            
-                        
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                  </origin>
+                  <provenance type="found">
+                     <p>
+                        <persName>Lugli</persName> discovered and published the urn in <date when="1919">1919</date>
+                     </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="loaned">
+                     <p>Loaned by <persName>Marshall H. Gould</persName> to RISD in <date when="1926">1926</date>
+                     </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="given">
+                     <p>Permanently given to RISD by <persName>Marshall H. Gould</persName> in <date when="1946">1946</date>
+                     </p>
+                  </provenance>
+                  <!-- subsequent locations if inscription was moved -->
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Ridgway"/>
-                        <biblScope unit="item">44</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#NSA_1919"/>
-                        <biblScope unit="pp">300-301, 304-305, fig. 9a</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Claudia"/>
-                        <biblScope unit="pp">202-203, no. 154</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Sinn"/>
-                        <biblScope unit="item">167, pl. 35b</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Tyche_4_Solin"/>
-                        <biblScope unit="pp">163, no. 167</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Bauschung_1993"/>
-                        <biblScope unit="pp">37-42  </biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="pp">213</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#VanKeuren_2009"/>
-                        <biblScope unit="pp">351-367</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_2011-12_LaFollette"/>
-                        <biblScope unit="pp">15-35</biblScope>
-                    </bibl>        
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000311">EDR000311</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-
-        <encodingDesc>
-
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Ridgway"/>
+                  <biblScope unit="item">44</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#NSA_1919"/>
+                  <biblScope unit="pp">300-301, 304-305, fig. 9a</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Claudia"/>
+                  <biblScope unit="pp">202-203, no. 154</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Sinn"/>
+                  <biblScope unit="item">167, pl. 35b</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Tyche_4_Solin"/>
+                  <biblScope unit="pp">163, no. 167</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bauschung_1993"/>
+                  <biblScope unit="pp">37-42  </biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
+                  <biblScope unit="pp">213</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#VanKeuren_2009"/>
+                  <biblScope unit="pp">351-367</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MAAR_2011-12_LaFollette"/>
+                  <biblScope unit="pp">15-35</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000311">EDR000311</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc>
             <!-- not used -->
         </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2014-12-01" who="Darrel Janzen">Initial Entry</change>
-            <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned metadata, added campus and letter dimensions, cleaned bibl, added EDR link, added correct linking to master bibl, added image links, proofed transcription</change>
-            <change when="2016-10-03" who="Scott J. DiGiulio">Brought provenance information into compliance with new standards</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
-            <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.chiseled to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.L.46.083a-b.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.L.46.083a-b-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.L.46.083a-b-det2.jpg"/>
-        </surface>        
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition">
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-01" who="Darrel Janzen">Initial Entry</change>
+         <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned metadata, added campus and letter dimensions, cleaned bibl, added EDR link, added correct linking to master bibl, added image links, proofed transcription</change>
+         <change when="2016-10-03" who="Scott J. DiGiulio">Brought provenance information into compliance with new standards</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.chiseled to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.L.46.083a-b.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.L.46.083a-b-det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.L.46.083a-b-det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
                 <!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/>Dis <expan><abbr>Manib</abbr><ex>us</ex></expan>
-                    <lb n="2"/><persName><name type="gentilicium" key="Antonia">Antonia</name> <name type="cognomen" key="Saturnina">Saturnina</name></persName>
-                    <lb n="3"/>fecit coniugi suo 
-                    <lb n="4"/><persName><name type="slaveName" key="Delicatus">Delicato</name></persName> <expan><abbr>ser</abbr><ex>vo</ex></expan> <persName><name type="cognomen" key="Caesar"><expan><abbr>Caes</abbr><ex>aris</ex></expan></name></persName>;
-                    <lb n="5"/>item <persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Antonius">Antonius</name></persName>
-                    <lb n="6"/>filius fecit patri 
+            <ab>
+               <lb n="1"/>Dis <expan>
+                  <abbr>Manib</abbr>
+                  <ex>us</ex>
+               </expan>
+               <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Antonia">Antonia</name>
+                  <name type="cognomen" key="Saturnina">Saturnina</name>
+               </persName>
+               <lb n="3"/>fecit coniugi suo 
+                    <lb n="4"/>
+               <persName>
+                  <name type="slaveName" key="Delicatus">Delicato</name>
+               </persName>
+               <expan>
+                  <abbr>ser</abbr>
+                  <ex>vo</ex>
+               </expan>
+               <persName>
+                  <name type="cognomen" key="Caesar">
+                     <expan>
+                        <abbr>Caes</abbr>
+                        <ex>aris</ex>
+                     </expan>
+                  </name>
+               </persName>;
+                    <lb n="5"/>item <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan>
+                        <abbr>M</abbr>
+                        <ex>arcus</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Antonius">Antonius</name>
+               </persName>
+               <lb n="6"/>filius fecit patri 
                     <lb n="7"/>suo bene merenti.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                <p>"To the gods of the dead, Antonia Saturnina made (this) for her spouse Delicatus,
+         </div>
+         <div type="translation">
+            <p>"To the gods of the dead, Antonia Saturnina made (this) for her spouse Delicatus,
                     slave of Caesar; likewise his son Marcus Antonius made (this) for his father,
                     well-deserving."</p>
-            </div>
-            
-        
-        
-                <div type="commentary">
+         </div>
+         <div type="commentary">
                 <!-- notes go here -->
-                <p>Lines 4-5: interpuncts on both sides of an abbreviation (·ser(vo)·, ·M(arcus)·), or on the left side if the abbreviation is at line-end (·Caes(aris)).</p>
-            </div>
-            
-        
-        
-<div type="bibliography">
-                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
-                    <xi:fallback>
-                        <p>US Epigraphybibliography</p>
-                    </xi:fallback>
-                </xi:include>
-            </div>
-        </body>
-        
-    
-    </text>
+            <p>Lines 4-5: interpuncts on both sides of an abbreviation (·ser(vo)·, ·M(arcus)·), or on the left side if the abbreviation is at line-end (·Caes(aris)).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

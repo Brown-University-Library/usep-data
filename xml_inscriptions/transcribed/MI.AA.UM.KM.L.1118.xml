@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1118</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,14 +34,12 @@
                      <p>epitaph of Publius Rufinus Sucessus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           
-                           <p>partially reconstituted marble slab</p>                    
-                                            <dimensions type="surface" unit="cm">
+                           <p>partially reconstituted marble slab</p>
+                           <dimensions type="surface" unit="cm">
                               <height>43.5</height>
                               <width>25.7</width>
                               <depth>2</depth>
@@ -68,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,14 +91,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101535"
-                     >EDR101535</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101535">EDR101535</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,7 +109,9 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation and commentary</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -108,82 +120,99 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
-                    <lb n="2"/> 
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>.
+                    <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Publius">
                      <expan>
-                        <abbr>P</abbr><ex>ublio</ex>
+                        <abbr>P</abbr>
+                        <ex>ublio</ex>
                      </expan>
-                  </name> 
+                  </name>
                   <name type="gentilicium" key="Rufinus">Rufino</name>
-                    <lb n="3"/> 
-                  <name type="cognomen" key="Sucessus">Sucesso</name></persName>;
+                  <lb n="3"/>
+                  <name type="cognomen" key="Sucessus">Sucesso</name>
+               </persName>;
                     <lb n="4"/> vixit <expan>
-                  <abbr>ann</abbr><ex>is</ex>
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
                </expan>
-                    <lb n="5"/> plus <expan>
-                  <abbr>m</abbr><ex>inus</ex>
-               </expan> 
+               <lb n="5"/> plus <expan>
+                  <abbr>m</abbr>
+                  <ex>inus</ex>
+               </expan>
                <num xml:lang="lat" value="60">LX</num>.
-                    <lb n="6"/> 
+                    <lb n="6"/>
                <persName>
-                  <name type="gentilicium" key="Aviana">Aviania</name> 
+                  <name type="gentilicium" key="Aviana">Aviania</name>
                   <name type="cognomen" key="Maximillia">Ma
                     <lb n="7" break="no"/> ximillia</name>
-               </persName> <expan><abbr>co</abbr><ex>n</ex><abbr>i<supplied reason="lost">u</supplied>
-                  <lb n="8" break="no"/> gi</abbr></expan> suo <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
+               </persName>
                <expan>
-                  <abbr>m</abbr><ex>erenti</ex></expan>.
-                    <lb n="9"/><handShift/> 
+                  <abbr>co</abbr>
+                  <ex>n</ex>
+                  <abbr>i<supplied reason="lost">u</supplied>
+                     <lb n="8" break="no"/> gi</abbr>
+               </expan> suo <expan>
+                  <abbr>b</abbr>
+                  <ex>ene</ex>
+               </expan>
+               <expan>
+                  <abbr>m</abbr>
+                  <ex>erenti</ex>
+               </expan>.
+                    <lb n="9"/>
+               <handShift/>
                <add place="bottom">A 
-                     <name type="gentilicium" key="Clodia">Clodia</name> 
-                     <name type="cognomen" key="Felicissima">Felic<unclear>i</unclear><supplied reason="lost">ssima</supplied>
-                     </name>
-                    <lb n="10"/>
+                     <name type="gentilicium" key="Clodia">Clodia</name>
+                  <name type="cognomen" key="Felicissima">Felic<unclear>i</unclear>
+                     <supplied reason="lost">ssima</supplied>
+                  </name>
+                  <lb n="10"/>
                   <expan>
-                     <abbr>locu</abbr><ex>s</ex>
-                  </expan> 
+                     <abbr>locu</abbr>
+                     <ex>s</ex>
+                  </expan>
                   <expan>
-                     <abbr>d</abbr><ex>onatus</ex></expan>.</add>
+                     <abbr>d</abbr>
+                     <ex>onatus</ex>
+                  </expan>.</add>
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Publius Rufinus Sucessus; he lived for more or less sixty
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. To Publius Rufinus Sucessus; he lived for more or less sixty
                years. Aviania Maximillia (made this) for her well-deserving husband. The place was
                given by Clodia Felic[issima]. </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p><seg type="material">Gray and light brown marble</seg> (Tuck).</p>
+         </div>
+         <div type="commentary">
+            <p>
+               <seg type="material">Gray and light brown marble</seg> (Tuck).</p>
             <p>Line 9: A(ula) Clodia (Tuck)</p>
             <p>Line 10: locu(m) d(onavit) (Tuck) </p>
-                   <p>The formula <hi rend="italic">locus datus</hi> occurs fairly commonly at the
+            <p>The formula <hi rend="italic">locus datus</hi> occurs fairly commonly at the
                end of inscriptions, although it is unusual for the ablative agent to precede it.
                This inscription is also the only attestation of <hi rend="italic">locus datus</hi> abbreviated as LOCV D in EDCS.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

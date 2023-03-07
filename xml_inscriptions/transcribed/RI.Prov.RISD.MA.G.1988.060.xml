@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>RI.Prov.RISD.MA.G.1988.060</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>RI.Prov.RISD.MA.G.1988.060</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.G.1988.060">RI.Prov.RISD.MA.G.1988.060</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.G.1988.060">RI.Prov.RISD.MA.G.1988.060</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,46 +42,42 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>RI</region>
-                        <settlement>Prov</settlement>
-                        <institution>RISD</institution>
-                        <repository>MA</repository>
-                        <idno>1988.060</idno>
-                    </msIdentifier>
-
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#document">
+            <msDesc>
+               <msIdentifier>
+                  <region>RI</region>
+                  <settlement>Prov</settlement>
+                  <institution>RISD</institution>
+                  <repository>MA</repository>
+                  <idno>1988.060</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#document">
                             <!-- short summary of the content of an inscription -->
-                            <p>rescript of the emperor Hadrian to the Koinon of the Macedonians about
+                     <p>rescript of the emperor Hadrian to the Koinon of the Macedonians about
                                 procedures for naming successors to local magistracies</p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>slab of reddish-gold colored Pentelic marble</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>74.7</height>
-                                        <width>47.6</width>
-                                        <depth>3.3</depth>
-                                    </dimensions>
-                                    
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p> slab broken diagonally at the lower left hand corner;
+                           <p>slab of reddish-gold colored Pentelic marble</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>74.7</height>
+                              <width>47.6</width>
+                              <depth>3.3</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p> slab broken diagonally at the lower left hand corner;
                                         indentation marks along the top and a boss on the back
                                         surface indicate that it was hung up at some point. The slab
                                         bears several scratches on the front, along the top edge, in
@@ -82,191 +87,214 @@
                                         been a break which has since been mended. The bottom
                                         left-hand corner of the stele is broken off, obscuring at
                                         least part of one word.</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="20">
-                                    <p>Text on the stele is divided into two paragraphs, marked by
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="20">
+                           <p>Text on the stele is divided into two paragraphs, marked by
                                         slight outdentation of the first letter of each paragraph
                                         which protudes about half a letter's width from the left
                                         margin.</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                        <height min="1.1" max="2.7">1.1-2.7; avg. 2.3</height>
-                                    </dimensions>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.1" max="2.7">1.1-2.7; avg. 2.3</height>
+                        </dimensions>
             letters appear carved with a straight-edge,
                                 which is more typical of Greek lettering than Latin lettering. Remains of pigment indicate that the text was
                                 originally colored red in order to increase its legibility. Lines of
                                 ordination are still visible.</handNote>
-                            <!-- <handNote> is a repeatable element -->
-                            
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-
-                        <summary>
-                            <rs/>
-                            <!-- content can be "fake" or blank -->
-                        </summary>
-
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0137" notAfter="0138">137-138 CE</date>
-                            <placeName ref="europe.greece">Macedonia</placeName>
-                        </origin>
-                        <acquisition>
+                     <date evidence="unspecified" notBefore="0137" notAfter="0138">137-138 CE</date>
+                     <placeName ref="europe.greece">Macedonia</placeName>
+                  </origin>
+                  <acquisition>
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="1988">1988</date>
-                            <p>purchase from <persName>James Ede</persName>, of Charles Ede Limited</p>
-                        </acquisition>
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date when="1988">1988</date>
+                     <p>purchase from <persName>James Ede</persName>, of Charles Ede Limited</p>
+                  </acquisition>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>                    
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#SEG_39"/>
-                        <biblScope unit="item">640</biblScope>
-                    </bibl>
-                                    
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#SEG_37"/>
-                        <biblScope unit="item">593</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#IG_X"/>
-                        <biblScope unit="item">593</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#RISD_76"/>
-                        <biblScope unit="pp">11 (A. Boegehold)</biblScope>
-                    </bibl> 
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-
-        <encodingDesc>
-
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_39"/>
+                  <biblScope unit="item">640</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_37"/>
+                  <biblScope unit="item">593</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#IG_X"/>
+                  <biblScope unit="item">593</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#RISD_76"/>
+                  <biblScope unit="pp">11 (A. Boegehold)</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc>
             <!-- not used -->
         </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2014-12-17" who="Darrel Janzen">Initial Entry</change>
-            <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned metadata, filled in missing control vocab fields, cleaned bibl, corrected transcription, added images, formatted commentary div</change>
-            <change when="2017-10-07" who="Scott J. DiGiulio">Added persName tagging to provenance; made changes to line numeration, putting vacats on their own lines; fixed typo in writing control vocab; removed some extraneous prose in condition desc; streamlined verbiage in commentary, since some of commentary is represented in the markup</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
-            <change when="2021-01-20" who="E. Mylonas">changed genre to match vocabularies</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.G.1988.060.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.G.1988.060-det1.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition">
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-17" who="Darrel Janzen">Initial Entry</change>
+         <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned metadata, filled in missing control vocab fields, cleaned bibl, corrected transcription, added images, formatted commentary div</change>
+         <change when="2017-10-07" who="Scott J. DiGiulio">Added persName tagging to provenance; made changes to line numeration, putting vacats on their own lines; fixed typo in writing control vocab; removed some extraneous prose in condition desc; streamlined verbiage in commentary, since some of commentary is represented in the markup</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-01-20" who="E. Mylonas">changed genre to match vocabularies</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.G.1988.060.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.G.1988.060-det1.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
                 <!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/><persName><hi rend="tall">Α</hi>ὐτοκράτωρ <name type="cognomen" key="Caesar">Καῖσαρ</name> Θεοῦ <persName><name type="cognomen" key="Traianus">Τραι
-                    <lb n="2" break="no"/>αν<hi rend="small">ο</hi>ῦ</name>  <name type="cognomen" key="Parthicus">Παρθικ<hi rend="small">ο</hi>ῦ</name></persName> υἱ<hi rend="small">ό</hi>ς, Θε<hi rend="small">ο</hi>ῦ <persName><name type="cognomen" key="Nerva">Ν<hi rend="ligature">έρ</hi>βα</name></persName> υἱ 
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <hi rend="tall">Α</hi>ὐτοκράτωρ <name type="cognomen" key="Caesar">Καῖσαρ</name> Θεοῦ <persName>
+                     <name type="cognomen" key="Traianus">Τραι
+                    <lb n="2" break="no"/>αν<hi rend="small">ο</hi>ῦ</name>
+                     <name type="cognomen" key="Parthicus">Παρθικ<hi rend="small">ο</hi>ῦ</name>
+                  </persName> υἱ<hi rend="small">ό</hi>ς, Θε<hi rend="small">ο</hi>ῦ <persName>
+                     <name type="cognomen" key="Nerva">Ν<hi rend="ligature">έρ</hi>βα</name>
+                  </persName> υἱ 
                     <lb n="3" break="no"/>ων<hi rend="small">ό</hi>ς, <name type="cognomen" key="Traianus">Τραιαν<hi rend="small">ὸ</hi>ς</name>
-                        <name type="cognomen" key="Hadrianus">Ἁδριαν<hi rend="small">ὸ</hi>ς</name> <name type="cognomen" key="Augustus">Σεβα<hi rend="small">σ</hi>τ<hi rend="small">ό</hi>ς</name></persName>, 
+                  <name type="cognomen" key="Hadrianus">Ἁδριαν<hi rend="small">ὸ</hi>ς</name>
+                  <name type="cognomen" key="Augustus">Σεβα<hi rend="small">σ</hi>τ<hi rend="small">ό</hi>ς</name>
+               </persName>, 
                     <lb n="4"/>ἀρχιερεύς μέγιστος, δημαρχι 
                     <lb n="5" break="no"/>κ<hi rend="ligature">ῆς</hi>
                         ἐξ<hi rend="small">ο</hi>υσίας τ<hi rend="small">ὸ</hi>
-                        <num value="21" rend="tick">κα</num>,
+               <num value="21" rend="tick">κα</num>,
                         αὐτ<hi rend="small">ο</hi>κρᾶτωρ τ<hi rend="small">ὸ</hi>
-                    <lb n="6"/><num value="2" rend="tick">β</num>, ὕπατ<hi rend="small">ο</hi>ς τὸ
+               <lb n="6"/>
+               <num value="2" rend="tick">β</num>, ὕπατ<hi rend="small">ο</hi>ς τὸ
                         <num value="3" rend="tick">γ</num>, πατ<hi rend="ligature">ήρ</hi> πατρίδ<hi rend="small">ο</hi>ς,
                         <placeName type="ethnic">τ<hi rend="small">ῶ</hi>
-                    <lb n="7"/>Κοιν<hi rend="small">ῶ</hi> τ<hi rend="small">ῶ</hi><hi rend="ligature">ν Μ</hi>ακεδ<hi rend="small">ό</hi>ν<hi rend="small">ω</hi>ν</placeName>
-                        <g type="hedera"/> <expan><abbr>χαίρ</abbr><ex>ε</ex><abbr>ιν</abbr></expan>·
-                    <lb n="8"/><hi rend="tall">Ὡ</hi>ς ἠξι<hi rend="small">ώ</hi>σατε,
+                  <lb n="7"/>Κοιν<hi rend="small">ῶ</hi> τ<hi rend="small">ῶ</hi>
+                  <hi rend="ligature">ν Μ</hi>ακεδ<hi rend="small">ό</hi>ν<hi rend="small">ω</hi>ν</placeName>
+               <g type="hedera"/>
+               <expan>
+                  <abbr>χαίρ</abbr>
+                  <ex>ε</ex>
+                  <abbr>ιν</abbr>
+               </expan>·
+                    <lb n="8"/>
+               <hi rend="tall">Ὡ</hi>ς ἠξι<hi rend="small">ώ</hi>σατε,
                          οἱ παρὰ τ<hi rend="small">ὸ</hi>ν τε<hi rend="ligature">λε</hi>υ 
                     <lb n="9" break="no"/>ταῖ<hi rend="small">ο</hi>ν τ<hi rend="ligature">ῆς</hi> ἀρχῆς
                         ἑαυτ<hi rend="small">ῶ</hi>ν χρό 
                     <lb n="10" break="no"/>νον ἑ<hi rend="ligature">τέ</hi>ρ<hi rend="small">ο</hi>υς <hi rend="ligature">πρ</hi>οβαλλόμεν<hi rend="small">ο</hi>ι αὐ 
-                    <lb n="11" break="no"/>τ<hi rend="small">ο</hi>ῖς <expan><abbr>ἐκ</abbr><ex>ε</ex><abbr>ίν<hi rend="small">ο</hi>ις</abbr></expan> οὕς <hi rend="ligature">πρ</hi>οβάλλε<hi rend="small">σ</hi>θ<hi rend="small">α</hi>ι 
+                    <lb n="11" break="no"/>τ<hi rend="small">ο</hi>ῖς <expan>
+                  <abbr>ἐκ</abbr>
+                  <ex>ε</ex>
+                  <abbr>ίν<hi rend="small">ο</hi>ις</abbr>
+               </expan> οὕς <hi rend="ligature">πρ</hi>οβάλλε<hi rend="small">σ</hi>θ<hi rend="small">α</hi>ι 
                     <lb n="12"/>μέλλ<hi rend="small">ο</hi>υσιν <hi rend="ligature">πρ</hi>ὸ τριάκ<hi rend="small">ο</hi>ντα ἡμέ 
                     <lb n="13" break="no"/>ρων παρανγελλέτ<hi rend="small">ω</hi>σαν. <g type="hedera"/> Ἐ 
                     <lb n="14" break="no"/>πρέσβευεν <g type="interpunct"/>
-                            <persName><name type="gentilicium" key="Fabius">Φάβιος</name>
-                            <name type="cognomen" key="Paternianus">Πατερνι 
-                    <lb n="15" break="no"/>ανός</name></persName>, <persName><name type="gentilicium" key="Iulius">Ιούλιος</name>
-                    <name type="cognomen" key="Cassandrus">Κάσσανδρος</name></persName>, 
-                    <lb n="16"/><persName><name type="gentilicium" key="Attianus">Ἀττιανὸς</name>
-                    <name type="cognomen" key="Alexandrus">Ἀλέξανδρος</name></persName>, <persName><name type="gentilicium" key="Aelius">Αἴλι 
+               <persName>
+                  <name type="gentilicium" key="Fabius">Φάβιος</name>
+                  <name type="cognomen" key="Paternianus">Πατερνι 
+                    <lb n="15" break="no"/>ανός</name>
+               </persName>, <persName>
+                  <name type="gentilicium" key="Iulius">Ιούλιος</name>
+                  <name type="cognomen" key="Cassandrus">Κάσσανδρος</name>
+               </persName>, 
+                    <lb n="16"/>
+               <persName>
+                  <name type="gentilicium" key="Attianus">Ἀττιανὸς</name>
+                  <name type="cognomen" key="Alexandrus">Ἀλέξανδρος</name>
+               </persName>, <persName>
+                  <name type="gentilicium" key="Aelius">Αἴλι 
                     <lb n="17" break="no"/>ος</name>
-                    <name type="cognomen" key="Artemon">Ἀρτέμων</name></persName>, <persName><name type="gentilicium" key="Ulpius">Οὔλπιος</name>
-                    <name type="cognomen" key="Lucianus">Λ<hi rend="small">ο</hi>υκια<hi rend="ligature">ν<unclear>ό</unclear>ς</hi></name></persName>· 
-                    <lb n="18"/><space quantity="6.5" unit="character"/>εὐτυχεῖτε <g type="hedera"/><space quantity="8" unit="character"/>
-                    <lb n="19"/><space quantity="1" unit="line"/>
-                    <lb n="20"/><date>π<hi rend="small">ο</hi>λιταρχ<hi rend="small">ο</hi>ύντ<hi rend="small">ω</hi>ν τ<hi rend="small">ῶ</hi>ν <hi rend="ligature">πε</hi>ρὶ <persName><name>Θεoδᾶν
-                                    </name> <persName><name>Θε<hi rend="small">ο</hi>δᾶ</name></persName></persName></date>
-                    <lb n="21"/><space quantity="1" unit="line"/>
-                    <lb n="22"/><date when="0137" datingMethod="Actian Era"><supplied reason="lost">ἔτο</supplied>υς <num value="169" rend="tick">θξρ</num>
+                  <name type="cognomen" key="Artemon">Ἀρτέμων</name>
+               </persName>, <persName>
+                  <name type="gentilicium" key="Ulpius">Οὔλπιος</name>
+                  <name type="cognomen" key="Lucianus">Λ<hi rend="small">ο</hi>υκια<hi rend="ligature">ν<unclear>ό</unclear>ς</hi>
+                  </name>
+               </persName>· 
+                    <lb n="18"/>
+               <space quantity="6.5" unit="character"/>εὐτυχεῖτε <g type="hedera"/>
+               <space quantity="8" unit="character"/>
+               <lb n="19"/>
+               <space quantity="1" unit="line"/>
+               <lb n="20"/>
+               <date>π<hi rend="small">ο</hi>λιταρχ<hi rend="small">ο</hi>ύντ<hi rend="small">ω</hi>ν τ<hi rend="small">ῶ</hi>ν <hi rend="ligature">πε</hi>ρὶ <persName>
+                     <name>Θεoδᾶν
+                                    </name>
+                     <persName>
+                        <name>Θε<hi rend="small">ο</hi>δᾶ</name>
+                     </persName>
+                  </persName>
+               </date>
+               <lb n="21"/>
+               <space quantity="1" unit="line"/>
+               <lb n="22"/>
+               <date when="0137" datingMethod="Actian Era">
+                  <supplied reason="lost">ἔτο</supplied>υς <num value="169" rend="tick">θξρ</num>
                             Σεβαστ<hi rend="small">ο</hi>ῦ</date>.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                <p>"Imperator Caesar, son of the divine Trajan Parthicus, grandson of the divine
+         </div>
+         <div type="translation">
+            <p>"Imperator Caesar, son of the divine Trajan Parthicus, grandson of the divine
                     Nerva, Trajan, Hadrian Augustus, chief priest, with tribunician power for the
                     twenty-first time, imperator for second time, consul for the third time, father of his country, (bids)
                     greetings to the Common Assembly of the Macedonians. As you thought fit, let those who
@@ -275,22 +303,19 @@
                     Fabius Paternianus, Iulius Cassandrus, Attianus Alexandrus, Aelius Artemon (and)
                     Ulpius Lucianus served as envoys. Farewell. While those around Theodas, son of
                     Theodas, were serving as politarchs. In year 169 of Augustus."</p>
-            </div>
-            
-        
-        
-                <div type="commentary">
+         </div>
+         <div type="commentary">
                 <!-- notes go here -->
-                <p>Line 2: Νέρβα (genitive) is treated as indeclinable.</p>
-                <p>Line 6-7: τῶ Κοινῶ for classical τῶι Κοινῶι.</p>
-                <p>Line 7: χαίριν for
+            <p>Line 2: Νέρβα (genitive) is treated as indeclinable.</p>
+            <p>Line 6-7: τῶ Κοινῶ for classical τῶι Κοινῶι.</p>
+            <p>Line 7: χαίριν for
                     classical χαίρειν appears to reflect the process of iotacism in the phonology
                     post-classical Greek (cf. ἐκίνοις for classical ἐκείνοις on line 11).</p>
-                <p>Line 12: παρανγελλέτωσαν for classical παραγγελλέτωσαν.</p>
-                <p>Line 18: εὐτυχεῖτε is centered, with nothing else on its line.</p>
-                <p>Line 19: dating formula is in smaller lettering size and indented, though not so far
+            <p>Line 12: παρανγελλέτωσαν for classical παραγγελλέτωσαν.</p>
+            <p>Line 18: εὐτυχεῖτε is centered, with nothing else on its line.</p>
+            <p>Line 19: dating formula is in smaller lettering size and indented, though not so far
                     indented as line 18. There is also an uninscribed line both above and below it.</p>
-                <p>Line 20: separated by an uninscribed line from line 19 above it. If the editors'
+            <p>Line 20: separated by an uninscribed line from line 19 above it. If the editors'
                     restoration of [ἔτο]υς is correct, it is indented farther than line 19. From the
                     first word, there survives a cross-bar (such as the top stroke found on capital
                     pi, sigma and tau), a gap of approximately one character, then the top parts of
@@ -298,19 +323,15 @@
                     to the missing bottom-left corner of the front of the tablet. Given that numbers
                     follow + Σεβαστοῦ, clearly a dating formula, editors have confidently restored
                     the first word to [ἔτο]υς.</p>
-            </div>
-            
-        
-        
-<div type="bibliography">
-                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
-                    <xi:fallback>
-                        <p>US Epigraphybibliography</p>
-                    </xi:fallback>
-                </xi:include>
-            </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

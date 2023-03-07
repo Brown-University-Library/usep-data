@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.2985</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,14 +34,11 @@
                      <p>epitaph dedicated by [Valeri?]us, a sailor</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>broken marble slab</p>
-                           
-                           
                            <dimensions type="surface" unit="cm">
                               <height>31.5</height>
                               <width>48</width>
@@ -69,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -85,16 +94,19 @@
                   <biblScope unit="item">53-54, no. 62</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010713">EDH nr. HD010713 </ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010713">EDH nr. HD010713 </ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075782">EDR075782</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075782">EDR075782</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -107,10 +119,11 @@
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-07-01" who="Scott J. DiGiulio">Changed markup of certainty for name in transcription, correction to EDR/EDH nos.</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-07" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -119,69 +132,75 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
-               <persName><gap reason="lost" quantity="1" unit="character"/>
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <gap reason="lost" quantity="1" unit="character"/>
                   <name type="gentilicium" key="Valerius">
-                     <supplied reason="lost" cert="low">Valeri</supplied>us</name> 
-                  <name type="cognomen" key="Dabalus">Dabal<hi rend="tall">i</hi></name>
-               </persName> 
+                     <supplied reason="lost" cert="low">Valeri</supplied>us</name>
+                  <name type="cognomen" key="Dabalus">Dabal<hi rend="tall">i</hi>
+                  </name>
+               </persName>
                <expan>
-                  <abbr>f</abbr><ex>ilius</ex>
+                  <abbr>f</abbr>
+                  <ex>ilius</ex>
                </expan>
-                    <lb n="2"/>
+               <lb n="2"/>
                <gap reason="lost" extent="unknown" unit="character"/>o de <expan>
-                  <abbr>Lib</abbr><ex>urna</ex>
+                  <abbr>Lib</abbr>
+                  <ex>urna</ex>
                </expan> Margar<hi rend="tall">i</hi>ta
                     <lb n="3"/>
                <supplied reason="lost">sibi et</supplied>
                <persName>
                   <name type="praenomen" key="Quintus">
                      <expan>
-                        <abbr>Q</abbr><ex>uinto</ex>
+                        <abbr>Q</abbr>
+                        <ex>uinto</ex>
                      </expan>
-                  </name> 
-                  <name type="gentilicium" key="Valerius">Valerio</name> 
+                  </name>
+                  <name type="gentilicium" key="Valerius">Valerio</name>
                   <name type="cognomen" key="Apro">Apro</name>
-               </persName> et <name type="gentilicium" key="Valeria">Valer<add>i</add>a<hi rend="small">e</hi></name>
-                    <lb n="4"/>
+               </persName> et <name type="gentilicium" key="Valeria">Valer<add>i</add>a<hi rend="small">e</hi>
+               </name>
+               <lb n="4"/>
                <gap reason="lost" extent="unknown" unit="character"/>ae contubernal<hi rend="tall">i</hi> suae et
                     <lb n="5"/>
                <supplied reason="lost">liberti</supplied>s l<hi rend="tall">i</hi>bertabusque su<hi rend="tall">i</hi>s
                     <lb n="6"/>
                <supplied reason="lost">posteri</supplied>sque omnibus <expan>
-                  <abbr>testame<hi rend="ligature">nt</hi></abbr><ex>o</ex>
+                  <abbr>testame<hi rend="ligature">nt</hi>
+                  </abbr>
+                  <ex>o</ex>
                </expan>
-                   <lb n="7"/><supplied reason="lost">fieri iussit.</supplied>
+               <lb n="7"/>
+               <supplied reason="lost">fieri iussit.</supplied>
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[- Valeri]us [-] son of Dabalus, [-] from the Liburnian (ship) Margarita, for Quintus Valerius Aprus 
+         </div>
+         <div type="translation">
+            <p>[- Valeri]us [-] son of Dabalus, [-] from the Liburnian (ship) Margarita, for Quintus Valerius Aprus 
                       and for Valeria [-], his partner, and for his freedmen and freedwomen and all his [descendant]s [instructed] in 
                       (his) will that (this) [be made].</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 1: the abbreviation of the dedicator's praenomen is missing. His gentilicium was restored based on the gentilicium of the two people named in line 3.</p>
-                   <p>Line 2: the dedicator's cognomen as well as his rank are likely missing.</p>
-                   <p>Line 4: Valeria's cognomen is missing.</p>
-                   <p>Line 6: testament(o fieri iussit) (Tuck). Restored based on comparanda.</p>
-                   <p><seg type="material">Medium-grained Greek island marble</seg> (Tuck).</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Line 1: the abbreviation of the dedicator's praenomen is missing. His gentilicium was restored based on the gentilicium of the two people named in line 3.</p>
+            <p>Line 2: the dedicator's cognomen as well as his rank are likely missing.</p>
+            <p>Line 4: Valeria's cognomen is missing.</p>
+            <p>Line 6: testament(o fieri iussit) (Tuck). Restored based on comparanda.</p>
+            <p>
+               <seg type="material">Medium-grained Greek island marble</seg> (Tuck).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

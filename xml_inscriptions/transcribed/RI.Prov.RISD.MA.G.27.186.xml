@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>RI.Prov.RISD.MA.G.27.186</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>RI.Prov.RISD.MA.G.27.186</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.G.27.186">RI.Prov.RISD.MA.G.27.186</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.G.27.186">RI.Prov.RISD.MA.G.27.186</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,170 +42,147 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>RI</region>
-                        <settlement>Prov</settlement>
-                        <institution>RISD</institution>
-                        <repository>MA</repository>
-                        <idno>27.186</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+            <msDesc>
+               <msIdentifier>
+                  <region>RI</region>
+                  <settlement>Prov</settlement>
+                  <institution>RISD</institution>
+                  <repository>MA</repository>
+                  <idno>27.186</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#label">
                         <!-- short summary of the content of an inscription -->
-                            <p>Greek terracotta lamp belonging to Delphis</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Greek terracotta lamp belonging to Delphis</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#instrumentum.lamp">
-                            <supportDesc ana="#clay.terracotta">
-                                <support>
+                  <objectDesc ana="#instrumentum.lamp">
+                     <supportDesc ana="#clay.terracotta">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>terracotta lamp (Howland's Type 22c)</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>2</height>
-                                        <width>10.2</width>
-                                        <dim type="diameter">7.7</dim>
-                                  </dimensions>
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p>nozzle broken but mended; body and base extensively worn. inscription intact.</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="1">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#painted"/>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                           <p>terracotta lamp (Howland's Type 22c)</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>2</height>
+                              <width>10.2</width>
+                              <dim type="diameter">7.7</dim>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>nozzle broken but mended; body and base extensively worn. inscription intact.</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#painted"/>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="-0500" notAfter="-0400">500-400 BCE</date>
-                            <placeName ref="europe.greece">Gela</placeName>
-                        </origin>
-                        <acquisition>
+                     <date evidence="unspecified" notBefore="-0500" notAfter="-0400">500-400 BCE</date>
+                     <placeName ref="europe.greece">Gela</placeName>
+                  </origin>
+                  <acquisition>
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="1927">1927</date>
-                            <p>gift of E.P. Warren</p>
-                        </acquisition>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date when="1927">1927</date>
+                     <p>gift of E.P. Warren</p>
+                  </acquisition>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AshmeadPhillips"/>
-                        <biblScope unit="pp">27, no. 27; 89, pl. 27a-b</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-12-09" who="Darrel Janzen">Initial Entry</change>
-            <change when="2015-09-16" who="Scott J. DiGiulio">Updated metadata, filled in missing control vocab labels, added bibliography, added transcription</change>
-            <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url=""/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/>Δέλφιδος ἐμί.
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AshmeadPhillips"/>
+                  <biblScope unit="pp">27, no. 27; 89, pl. 27a-b</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-09" who="Darrel Janzen">Initial Entry</change>
+         <change when="2015-09-16" who="Scott J. DiGiulio">Updated metadata, filled in missing control vocab labels, added bibliography, added transcription</change>
+         <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url=""/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>Δέλφιδος ἐμί.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>I belong to Delphis.</p><p/>
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
+         </div>
+         <div type="translation">
+            <p>I belong to Delphis.</p>
+            <p/>
+         </div>
+         <div type="commentary"><!-- notes go here -->
             <p>Simona Stoyanova and Valentina Mignosa at Oxford University's Centre for the Study of Ancient Documents report a handwritten record of the inscription in the Anne Jeffrey Archive that includes a rubbing and transcription of the text and a tentative attribution of the lamp to Gela.</p>
-                    <p/></div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

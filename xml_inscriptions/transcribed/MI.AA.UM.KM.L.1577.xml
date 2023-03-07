@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1577</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Valeria Florentina</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -61,7 +71,9 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#palaeography #nomenclature" notBefore="0200" notAfter="0300">third century
+                     <date evidence="#palaeography #nomenclature"
+                            notBefore="0200"
+                            notAfter="0300">third century
                         CE</date>
                      <placeName ref="europe.italy.rome">Rome, Italy </placeName>
                   </origin>
@@ -69,7 +81,8 @@
                      <p>Purchased by <persName role="buyer">Walter Dennison</persName> from a dealer near the <placeName>Roman forum</placeName> for the <orgName role="recipient">University of Michigan</orgName> and recieved in <date when="1909">1909</date> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,14 +95,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR103042"
-                     >EDR103042</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR103042">EDR103042</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,11 +112,12 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
          <change when="2021-06-15" who="Sophia Papandonatou">added translation</change>
          <change when="2021-08-03" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -112,87 +126,101 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <expan>
-                  <abbr>D</abbr><ex>is</ex>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
                   <abbr> </abbr>
                </expan>
                <supplied reason="lost">Manibus</supplied>
-                <lb n="2"/>
+               <lb n="2"/>
                <persName>
                   <name type="gentilicium" key="Valeria">
                      <expan>
-                        <abbr>Val</abbr><ex>eriae</ex>
+                        <abbr>Val</abbr>
+                        <ex>eriae</ex>
                      </expan>
-                  </name> <g type="hedera"/>
+                  </name>
+                  <g type="hedera"/>
                   <name type="cognomen" key="Florentina">Flo<supplied reason="lost">ren</supplied>
                      <lb break="no" n="3"/>tinae
                   </name>
                </persName> fili<supplied reason="lost">ae</supplied>
-                <lb n="4"/>dulcissim<supplied reason="lost">ae</supplied>,
+               <lb n="4"/>dulcissim<supplied reason="lost">ae</supplied>,
                 <lb n="5"/>quae 
                <expan>
-                  <abbr>v</abbr><ex>ixit</ex>
-               </expan> 
+                  <abbr>v</abbr>
+                  <ex>ixit</ex>
+               </expan>
                <expan>
-                  <abbr>a</abbr><ex>nnis</ex>
-               </expan> 
-               <num xml:lang="lat" value="4"><hi rend="tall">I</hi>III</num>, <supplied reason="lost" cert="low"><expan><abbr>m</abbr><ex>ensibus</ex></expan></supplied> <gap reason="lost" quantity="1" unit="character" cert="low"/>
-                <lb n="6"/>fecerunt <expan>
-                   <abbr><unclear>b</unclear></abbr><ex>ene</ex>
-               </expan> 
-               <supplied reason="lost"><expan><abbr>m</abbr><ex>erenti</ex></expan></supplied>
-                <lb n="7"/>
+                  <abbr>a</abbr>
+                  <ex>nnis</ex>
+               </expan>
+               <num xml:lang="lat" value="4">
+                  <hi rend="tall">I</hi>III</num>, <supplied reason="lost" cert="low">
+                  <expan>
+                     <abbr>m</abbr>
+                     <ex>ensibus</ex>
+                  </expan>
+               </supplied>
+               <gap reason="lost" quantity="1" unit="character" cert="low"/>
+               <lb n="6"/>fecerunt <expan>
+                  <abbr>
+                     <unclear>b</unclear>
+                  </abbr>
+                  <ex>ene</ex>
+               </expan>
+               <supplied reason="lost">
+                  <expan>
+                     <abbr>m</abbr>
+                     <ex>erenti</ex>
+                  </expan>
+               </supplied>
+               <lb n="7"/>
                <persName>
                   <name type="praenomen" key="Lucius">
                      <expan>
-                        <abbr>L</abbr><ex>ucius</ex>
+                        <abbr>L</abbr>
+                        <ex>ucius</ex>
                      </expan>
-                  </name> 
+                  </name>
                   <name type="gentilicium" key="Valerius">
                      <expan>
-                        <abbr>Val</abbr><ex>erius</ex>
+                        <abbr>Val</abbr>
+                        <ex>erius</ex>
                      </expan>
-                  </name> 
+                  </name>
                   <name type="cognomen" key="Valerianus">Valer<supplied reason="lost">ianus</supplied>
                   </name>
                </persName>
-                <lb n="8"/>et Concordia <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="9"/>par<unclear>e</unclear><supplied reason="lost">ntes.</supplied>
+               <lb n="8"/>et Concordia <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="9"/>par<unclear>e</unclear>
+               <supplied reason="lost">ntes.</supplied>
             </ab>
-        
-                
-            </div>
-        
-        
-                <div type="translation">
-                   <p>To the Divine [Spirits] of Valeria Flo[ren]tina, deare[st] daught[er], 
+         </div>
+         <div type="translation">
+            <p>To the Divine [Spirits] of Valeria Flo[ren]tina, deare[st] daught[er], 
                       who lived for three years, [X months(?)] Lucius Valerius Valer[ianus] 
                       and Concordia [---], (her) parents, made (this) for (her), well-deserving.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>The letters are deeply but crudely carved, without shading. Horizontal lines of ordination 
+         </div>
+         <div type="commentary">
+            <p>The letters are deeply but crudely carved, without shading. Horizontal lines of ordination 
                        are visible between lines. "A"s are carved with the crossbar descending diagonally from the second 
                        stroke in lines 2, 3 and 5 and with crossbars absent in lines 7, 8, and 9.</p>
-                   <p>Line 5: The number of months the deceased lived is likely missing.</p>
-                   <p>Line 8: It is uncertain whether there is anything missing after “Concordia” as Concordia is a cognomen and tends to appear by itself or after the gentilicium, but there may have been an inversion of the usual ordering of names, in which case Concordia’s gentilicium is missing. A title indicating Concordia’s relationship to the deceased, e.g. “mater,” is common in such a position, but “parentes” in line 9 precludes that possibility.</p>
-                   
-                </div>
-            
-        
-        
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <p>Line 5: The number of months the deceased lived is likely missing.</p>
+            <p>Line 8: It is uncertain whether there is anything missing after “Concordia” as Concordia is a cognomen and tends to appear by itself or after the gentilicium, but there may have been an inversion of the usual ordering of names, in which case Concordia’s gentilicium is missing. A title indicating Concordia’s relationship to the deceased, e.g. “mater,” is common in such a position, but “parentes” in line 9 precludes that possibility.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

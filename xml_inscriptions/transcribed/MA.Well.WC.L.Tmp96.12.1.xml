@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.Well.WC.L.#96.12.1</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +38,6 @@
                   
                   <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                  
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -38,13 +48,11 @@
                               <width>30</width>
                               <depth>2.3</depth>
                            </dimensions>
-                           
                         </support>
                         <condition ana="#complete.intact">
                            <p>slight weathering, some discoloration on face</p>
                         </condition>
                      </supportDesc>
-                     
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
                         <layout columns="1" writtenLines="6">
@@ -52,22 +60,16 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  
                   <!--  *************************************  <handDesc>  ********************************* -->
                   <!--     Contains information about types of writing and means of inscription.  -->
                   <handDesc hands="1">
                      <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                              <height min="1.6" max="2.0">1.6-2.0</height>
-                           </dimensions>
-            
-            
-            
-            
-             </handNote>
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.6" max="2.0">1.6-2.0</height>
+                        </dimensions>
+                     </handNote>
                      <!-- <handNote> is a repeatable element -->
                   </handDesc>
-                  
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
@@ -75,27 +77,22 @@
                      </decoNote>
                   </decoDesc>
                </physDesc>
-               
                <!--  *************************************  <history>  *********************************  -->
-               
                <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
                <history>
-                  
                   <summary>
-                     <rs/>  <!-- content can be "fake" or blank -->
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
-                  
                   <origin>
                      <!-- original place and dating of inscription -->
                      <date evidence="#formulae" notBefore="0100" notAfter="0200">Second century
                         CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
-                  
-                  
                </history>
             </msDesc>
             <listBibl>
@@ -108,13 +105,15 @@
                   <biblScope unit="pp">65</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143183">EDR143183</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143183">EDR143183</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -126,39 +125,53 @@
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2015-07-27" who="Scott J. DiGiulio">Updated bibl, metadata, added transcription</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
-      <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here--><text>
-      
-        <body>
-        <div type="edition">
+   <!--facsimile element goes here-->
+   <text>
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-               <lb n="2"/><persName><name type="cognomen" key="Urbana">Urbanae</name></persName> animae bonae,
-               <lb n="3"/><persName><name type="cognomen" key="Mercator">Mercator</name></persName> coniugi
+               <lb n="1"/>
+               <expan>
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
+               <expan>
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>
+               <lb n="2"/>
+               <persName>
+                  <name type="cognomen" key="Urbana">Urbanae</name>
+               </persName> animae bonae,
+               <lb n="3"/>
+               <persName>
+                  <name type="cognomen" key="Mercator">Mercator</name>
+               </persName> coniugi
                <lb n="4"/>piissimae et bene de se
                <lb n="5"/>meritae fecit. Vixit annis
-               <lb n="6"/><num value="28">XXVIII</num>.
+               <lb n="6"/>
+               <num value="28">XXVIII</num>.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits of Urbana, (a woman) of good spirit. Mercator made (this) for his most dutiful wife, well-deserving of him. She lived for twenty-eight years.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>To the Divine Spirits of Urbana, (a woman) of good spirit. Mercator made (this) for his most dutiful wife, well-deserving of him. She lived for twenty-eight years.</p>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

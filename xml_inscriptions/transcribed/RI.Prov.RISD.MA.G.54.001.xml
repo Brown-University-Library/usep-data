@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>RI.Prov.RISD.MA.G.54.001</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>RI.Prov.RISD.MA.G.54.001</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.G.54.001">RI.Prov.RISD.MA.G.54.001</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.G.54.001">RI.Prov.RISD.MA.G.54.001</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,44 +42,41 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>RI</region>
-                        <settlement>Prov</settlement>
-                        <institution>RISD</institution>
-                        <repository>MA</repository>
-                        <idno>54.001</idno>
-                    </msIdentifier>
-
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+            <msDesc>
+               <msIdentifier>
+                  <region>RI</region>
+                  <settlement>Prov</settlement>
+                  <institution>RISD</institution>
+                  <repository>MA</repository>
+                  <idno>54.001</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>An inscribed bronze kouros of brown metallic color</p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>An inscribed bronze kouros of brown metallic color</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-
-                        <objectDesc ana="#sculpture">
-                            <supportDesc ana="#metal.bronze">
-                                <support>
+                  <objectDesc ana="#sculpture">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p/>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>9.9</height>
-                                        <width>2.7 (at elbows)</width>
-                                        <depth>2 (left toe to right heel)</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p>The kouros is generally in good condition. Six parallel
+                           <p/>
+                           <dimensions type="surface" unit="cm">
+                              <height>9.9</height>
+                              <width>2.7 (at elbows)</width>
+                              <depth>2 (left toe to right heel)</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p>The kouros is generally in good condition. Six parallel
                                         incisions on the underside of the plinth seem to have been
                                         created with some sort of modern tool. Two modern
                                         screw-holes in the bottom of the plinth have been filled
@@ -87,32 +93,30 @@
                                         consisting of wax and green pigment was removed during this
                                         inspection, also containing malachite with a cuprous oxide
                                         underlayer.</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="2">
-                                    <p>The incised inscription is in remarkably good condition: it
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="2">
+                           <p>The incised inscription is in remarkably good condition: it
                                         runs left-to-right, starting on the outside of the right
                                         thigh (kouros' perspective) of the kouros, just below the
                                         buttock, and runs down the leg until the ankle, before
                                         starting at the ankle of the left leg and running up the
                                         leg, finishing at the hip.</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#etched">Incised</handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>The kouros stands nude in a rigid, upright pose. It has
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#etched">Incised</handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>The kouros stands nude in a rigid, upright pose. It has
                                     conventionalized, simple features. The head is turned
                                     forwards, with wavy, schematized hair falling to the
                                     shoulders. The face displays the 'archaic smile.' The body
@@ -123,135 +127,115 @@
                                     arrows or reins for an implied chariot. The left foot is
                                     advanced about half a foot length ahead of the right foot.
                                     Both feet are bare</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-
-                        <summary>
-                            <rs/>
-                            <!-- content can be "fake" or blank -->
-                        </summary>
-
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="-0600" notAfter="-0500">540 BCE</date>
-                            <placeName ref="europe.greece">Greece, Boeotia</placeName>
-                        </origin>
-                        <acquisition>
+                     <date evidence="unspecified" notBefore="-0600" notAfter="-0500">540 BCE</date>
+                     <placeName ref="europe.greece">Greece, Boeotia</placeName>
+                  </origin>
+                  <acquisition>
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="1954">January 5, 1954</date>
-                            <p>Purchased from Fahim Kouchakji (1886-1976, a Syrian-born dealer of
+                     <date when="1954">January 5, 1954</date>
+                     <p>Purchased from Fahim Kouchakji (1886-1976, a Syrian-born dealer of
                                 antiquities based in New York City) with the Mary B. Jackson Fund
                                 and the Jesse Metcalf Fund</p>
-                        </acquisition>
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                  </acquisition>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#RISD_11_Maxon"/>
-                        <biblScope unit="pp">4</biblScope>
-                    </bibl>                               
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Archaeology_11_Brinkerhoff"/>
-                        <biblScope unit="pp">151</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#FouillesDelphV"/>
-                        <biblScope unit="pp">126-130, figs. 37-40</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Ducat1971"/>
-                        <biblScope unit="pp">6</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Mitten"/>
-                        <biblScope unit="item">11</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-
-        <encodingDesc>
-
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#RISD_11_Maxon"/>
+                  <biblScope unit="pp">4</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Archaeology_11_Brinkerhoff"/>
+                  <biblScope unit="pp">151</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#FouillesDelphV"/>
+                  <biblScope unit="pp">126-130, figs. 37-40</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Ducat1971"/>
+                  <biblScope unit="pp">6</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Mitten"/>
+                  <biblScope unit="item">11</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc>
             <!-- not used -->
         </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2014-12-09" who="Darrel Janzen">Initial Entry</change>
-            <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned and updated metadata, cleaned bibl, added linking to master bibl, added image links, corrected transcription to preserve epichoric alphabet, formatted commentary div</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.G.54.001.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.G.54.001-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.G.54.001-det2.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition">
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-09" who="Darrel Janzen">Initial Entry</change>
+         <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned and updated metadata, cleaned bibl, added linking to master bibl, added image links, corrected transcription to preserve epichoric alphabet, formatted commentary div</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.G.54.001.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.G.54.001-det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.G.54.001-det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
                 <!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/><persName><name type="Amphias">Ἀμφίας</name></persName> ϝεκᾱβόλι
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="Amphias">Ἀμφίας</name>
+               </persName> ϝεκᾱβόλι
                     <lb n="2"/>τὰς δεκάτας ἀνέθκεν.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                <p>"Amphias made (this dedication) from the tithe to the Far-Shooter."</p>
-            </div>
-            
-        
-        
-                <div type="commentary">
+         </div>
+         <div type="translation">
+            <p>"Amphias made (this dedication) from the tithe to the Far-Shooter."</p>
+         </div>
+         <div type="commentary">
                 <!-- notes go here -->
-                <p>Line 1: ϝεκαβόλοι: the digamma survives much longer in dialects besides Attic-Ionic and
+            <p>Line 1: ϝεκαβόλοι: the digamma survives much longer in dialects besides Attic-Ionic and
                     Lesbian. It survives longest of all in initial position before a vowel, where it
                     preserved in some dialects into the 2nd cent. BCE. Long alpha: Boeotian has no
                     eta, so alpha represents long and short α, as it also does in the fem. gen.
@@ -262,13 +246,13 @@
                     (Μάντικλος μ’ἀνέθεκεν Ϝεκαβόλοι) as does a Laconian lebes. In his study of the
                     kouroi at Ptoion, Ducat notes that this epithet is not used as an epithet of
                     Apollo.</p>
-                <p>Line 2: δεκάτης is a partitive genitive (sc. Ἀμφίας τοῦτο τὸ ἄγαλμα ἐκ τῆς
+            <p>Line 2: δεκάτης is a partitive genitive (sc. Ἀμφίας τοῦτο τὸ ἄγαλμα ἐκ τῆς
                     δεκάτης ἀνέθηκεν). Ducat notes that in the
                     dedications at Ptoion the inscriptions do not mention a tithe.</p>
-                <p>Metre:
+            <p>Metre:
                     the first half (left leg) is a trochee, while the second half is a dactyl or
                     pentameter: -u/-u/-u || -uu/-uu/-u.</p>
-                <p>Based on the letter forms and the language,
+            <p>Based on the letter forms and the language,
                     the inscription is thought to be Boeotian in dialect, with some irregularities.
                     The 5 bar sigma occurs here for all three sigmas, which is not known in archaic
                     Boeotian, which uses the 4 or 3 bar sigma. The 5 bar sigma would be normal for
@@ -279,19 +263,15 @@
                     Finally, the nu ephelkuetikon (attracted to the end of the word) in archaic
                     Boeotian seems to be unattested at the end of a sentence in with ἀνέθεκε or
                     ἐποίεσε. The rest of the letter-forms conform to Boeotian practice. </p>
-            </div>
-            
-        
-        
-<div type="bibliography">
-                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
-                    <xi:fallback>
-                        <p>US Epigraphybibliography</p>
-                    </xi:fallback>
-                </xi:include>
-            </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

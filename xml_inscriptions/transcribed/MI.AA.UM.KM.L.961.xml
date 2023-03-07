@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.961</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,16 +34,13 @@
                      <p>epitaph of Kania Musa</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>marble tablet</p>
-                           
                            <seg type="material">Gray marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>50.3</height>
                               <width>50.6</width>
                               <depth>8.1</depth>
@@ -69,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,14 +91,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR137801"
-                     >EDR137801</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR137801">EDR137801</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -100,9 +109,10 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-02-02" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-21" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,80 +121,86 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <persName>
-                  <name type="gentilicium" key="Cania">Kania</name> 
+                  <name type="gentilicium" key="Cania">Kania</name>
                   <name type="cognomen" key="Musa">Mus<hi rend="small">a</hi>
                   </name>
                </persName>
-                    <lb n="2"/> sibi,
+               <lb n="2"/> sibi,
                     <lb n="3"/> et <persName>
                   <name type="praenomen" key="Marcus">
                      <expan>
-                        <abbr>M</abbr><ex>arco</ex>
+                        <abbr>M</abbr>
+                        <ex>arco</ex>
                      </expan>
-                  </name> 
-                  <name type="gentilicium" key="Canius">Kanio</name> 
-                       <name type="cognomen" key="Protus">Pro<hi rend="tall">t</hi><add><hi rend="small">o</hi></add>
+                  </name>
+                  <name type="gentilicium" key="Canius">Kanio</name>
+                  <name type="cognomen" key="Protus">Pro<hi rend="tall">t</hi>
+                     <add>
+                        <hi rend="small">o</hi>
+                     </add>
                   </name>
                </persName>
-                    <lb n="4"/> patrono,
-                    <lb n="5"/> e<hi rend="tall">t</hi> 
+               <lb n="4"/> patrono,
+                    <lb n="5"/> e<hi rend="tall">t</hi>
                <persName>
                   <name type="praenomen" key="Marcus">
                      <expan>
-                        <abbr>M</abbr><ex>arco</ex>
+                        <abbr>M</abbr>
+                        <ex>arco</ex>
                      </expan>
-                  </name> 
-                  <name type="gentilicium" key="Canius">Kanio</name> 
+                  </name>
+                  <name type="gentilicium" key="Canius">Kanio</name>
                   <name type="cognomen" key="Mopso">Mopso</name>
                </persName>
-                    <lb n="6"/> coll<hi rend="ligature">ib</hi>er<hi rend="tall">t</hi>o,
+               <lb n="6"/> coll<hi rend="ligature">ib</hi>er<hi rend="tall">t</hi>o,
                     <lb n="7"/> et <persName>
                   <name type="praenomen" key="Marcus">
                      <expan>
-                        <abbr>M</abbr><ex>arco</ex>
+                        <abbr>M</abbr>
+                        <ex>arco</ex>
                      </expan>
-                  </name> 
-                  <name type="gentilicium" key="Canius">Kanio</name> 
-                  <name type="cognomen" key="Leborianus">Leboriano</name></persName>,
+                  </name>
+                  <name type="gentilicium" key="Canius">Kanio</name>
+                  <name type="cognomen" key="Leborianus">Leboriano</name>
+               </persName>,
                     <lb n="8"/> et <persName>
                   <name type="praenomen" key="Marcus">
                      <expan>
-                        <abbr>M</abbr><ex>arco</ex>
+                        <abbr>M</abbr>
+                        <ex>arco</ex>
                      </expan>
-                  </name> 
-                  <name type="gentilicium" key="Canius">Kanio</name> 
+                  </name>
+                  <name type="gentilicium" key="Canius">Kanio</name>
                   <name type="cognomen" key="Eutychus">Eu<hi rend="tall">ty</hi>cho</name>
-               </persName> 
+               </persName>
                <expan>
-                  <abbr>l<hi rend="tall">i</hi>b</abbr><ex>ertis</ex></expan>,
+                  <abbr>l<hi rend="tall">i</hi>b</abbr>
+                  <ex>ertis</ex>
+               </expan>,
                     <lb n="9"/> et suis.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>Kania Musa (made this) for herself, for Marcus Kanius Protus, (her) patron,
+         </div>
+         <div type="translation">
+            <p>Kania Musa (made this) for herself, for Marcus Kanius Protus, (her) patron,
                for Marcus Kanius Mopsus, (her) fellow freedman, for Marcus Kanius Leborianus and
                Marcus Kanius Eutychus, freedmen, and for her own.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-               <p>Line 4: IB in ligature.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Line 4: IB in ligature.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

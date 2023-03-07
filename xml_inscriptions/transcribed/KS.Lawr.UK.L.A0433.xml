@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>KS.Lawr.UK.L.A0433</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -26,7 +37,6 @@
                <physDesc>
                   
                   <!--  *************************************  <objectDesc>  *********************************  -->
-                  
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -48,13 +58,10 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  
                   <!--  *************************************  <handDesc>  ********************************* -->
-                  
                   <handDesc hands="1">
                      <handNote ana="#inscribed"> </handNote>
                   </handDesc>
-                  
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
@@ -62,21 +69,16 @@
                      </decoNote>
                   </decoDesc>
                </physDesc>
-               
                <!--  *************************************  <history>  *********************************  -->
-               
                <history>
-                  
                   <summary>
-                     <rs/>  <!-- content can be "fake" or blank -->
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
-                  
                   <origin>
                      <date evidence="unspecified" notBefore="0001" notAfter="0050">early first century CE</date>
                      <placeName ref="europe.italy.rome">Rome, via Salaria</placeName>
                   </origin>
-                  
-                  
                </history>
             </msDesc>
             <listBibl>
@@ -89,16 +91,19 @@
                   <biblScope unit="item">159, no. A, Pl. 48</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000920&amp;partId=1">EDR External Reference</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR000920&amp;partId=1">EDR External Reference</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://wilcoxcollection.ku.edu/s/wilcox/item/16570">Museum External Reference</ref>
+                  <ref type="external"
+                        target="https://wilcoxcollection.ku.edu/s/wilcox/item/16570">Museum External Reference</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -110,8 +115,8 @@
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2020-04-24" who="Gaia Gianni">Added metadata, external reference link and image,
             transcription</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -119,34 +124,74 @@
          <graphic url="https://wilcoxcollection.ku.edu/files/large/903981e933cabfa32fcac6530ffbb7c6d1d25ae5.jpg"/>
       </surface>
    </facsimile>
-   
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/> <persName><name type="praenomen" key="Sextus"><expan><abbr>Sex</abbr><ex>tus</ex></expan></name> <name type="gentilicium" key="Lartidius">Lartidius</name> <persName><name type="praenomen"><expan><abbr>Sex</abbr><ex>ti</ex></expan></name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan>
-               <lb n="2"/> <name type="cognomen" key="Thelys">Thelys</name></persName>, <expan><abbr>mag</abbr><ex>ister</ex></expan> <expan><abbr>q</abbr><ex>uinquennalis</ex></expan>
-               <lb n="3"/> <expan><abbr>famil</abbr><ex>iae</ex></expan> <expan><abbr>an</abbr><ex>nis</ex></expan> <num value="30">XXX</num>
-               <lb n="4"/> et <persName><name type="cognomen" key="Lesbiaius">Lesbiaii</name></persName> <expan><abbr>l</abbr><ex>ibertus</ex></expan>.
-            </ab></div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+               <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Sextus">
+                     <expan>
+                        <abbr>Sex</abbr>
+                        <ex>tus</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Lartidius">Lartidius</name>
+                  <persName>
+                     <name type="praenomen">
+                        <expan>
+                           <abbr>Sex</abbr>
+                           <ex>ti</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <expan>
+                     <abbr>l</abbr>
+                     <ex>ibertus</ex>
+                  </expan>
+                  <lb n="2"/>
+                  <name type="cognomen" key="Thelys">Thelys</name>
+               </persName>, <expan>
+                  <abbr>mag</abbr>
+                  <ex>ister</ex>
+               </expan>
+               <expan>
+                  <abbr>q</abbr>
+                  <ex>uinquennalis</ex>
+               </expan>
+               <lb n="3"/>
+               <expan>
+                  <abbr>famil</abbr>
+                  <ex>iae</ex>
+               </expan>
+               <expan>
+                  <abbr>an</abbr>
+                  <ex>nis</ex>
+               </expan>
+               <num value="30">XXX</num>
+               <lb n="4"/> et <persName>
+                  <name type="cognomen" key="Lesbiaius">Lesbiaii</name>
+               </persName>
+               <expan>
+                  <abbr>l</abbr>
+                  <ex>ibertus</ex>
+               </expan>.
+            </ab>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

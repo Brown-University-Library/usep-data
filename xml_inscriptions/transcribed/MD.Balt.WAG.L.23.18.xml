@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MD.Balt.WAG.L.23.18</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MD.Balt.WAG.L.23.18</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.WAG.L.23.18">MD.Balt.WAG.L.23.18</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MD.Balt.WAG.L.23.18">MD.Balt.WAG.L.23.18</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,252 +42,264 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>WAG</institution>
-                        <repository/>
-                        <idno>23.18</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>WAG</institution>
+                  <repository/>
+                  <idno>23.18</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                         <!-- short summary of the content of an inscription -->
-                            <p>metrical epitaph of M. Iunius Rufus</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>metrical epitaph of M. Iunius Rufus</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#altar">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#altar">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                         <!-- short summary of the material and support of an inscription -->
-                                    <p>white marble funerary altar</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>95.3</height>
-                                        <width>56.5</width>
-                                        <depth>45.7</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p>hollow inside, hole on right end, modern base</p>
-                                </condition>
-                            </supportDesc>
-                            
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="7">
-                                    <p>inscription in two parts, 2 lines on the top beneath
+                           <p>white marble funerary altar</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>95.3</height>
+                              <width>56.5</width>
+                              <depth>45.7</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p>hollow inside, hole on right end, modern base</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="7">
+                           <p>inscription in two parts, 2 lines on the top beneath
                                         the arch; 5 lines below the depiction of the horse and
                                         two figures.</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>Two figures, one standing and one sitting; below them, one figure
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>Two figures, one standing and one sitting; below them, one figure
                                     leading horse with rider. Masks on left and right ends. </p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="#archaeology" notBefore="0131" notAfter="0160">mid second century CE</date>
-                            <placeName ref="europe.italy.
-                                            ">near S. Lucia del Gonfale, on the via dei Banchi Vecchi, Rome, Italy</placeName>
-                        </origin>
-                        <provenance type="found" subtype="first-recorded">
-                            <p>First reported by <persName>Pirro Ligorio</persName> (1512-1583) in S. Stefano [Piscinula] near S. Lucia del Gonfalone/della Chiavica, on the via dei Banchi Vecchi, <placeName>Rome</placeName> (The Walters Art Museum).</p></provenance>
-
-                        <provenance type="observed" subtype="reported">
+                     <date evidence="#archaeology" notBefore="0131" notAfter="0160">mid second century CE</date>
+                     <placeName ref="europe.italy.                                             ">near S. Lucia del Gonfale, on the via dei Banchi Vecchi, Rome, Italy</placeName>
+                  </origin>
+                  <provenance type="found" subtype="first-recorded">
+                     <p>First reported by <persName>Pirro Ligorio</persName> (1512-1583) in S. Stefano [Piscinula] near S. Lucia del Gonfalone/della Chiavica, on the via dei Banchi Vecchi, <placeName>Rome</placeName> (The Walters Art Museum).</p>
+                  </provenance>
+                  <provenance type="observed" subtype="reported">
                             <!-- subsequent locations if inscription was moved -->
-                            
-                            <p>At the <placeName ref="europe.italy.rome">Villa Carpegna, Rome</placeName> from <date notBefore="1699" notAfter="1882">1699-1882</date>.</p>
-                        </provenance>
-                        <provenance>
-                            
-                            <p>In the <persName>Don Marcello Massarenti</persName> Collection, <placeName>Rome</placeName> <date notBefore="1850" notAfter="1902">before 1902</date>.
+                     <p>At the <placeName ref="europe.italy.rome">Villa Carpegna, Rome</placeName> from <date notBefore="1699" notAfter="1882">1699-1882</date>.</p>
+                  </provenance>
+                  <provenance>
+                     <p>In the <persName>Don Marcello Massarenti</persName> Collection, <placeName>Rome</placeName>
+                        <date notBefore="1850" notAfter="1902">before 1902</date>.
                             </p>
-                        </provenance>
-                        <provenance type="transferred" subtype="purchased">
-                            
-                            <p>Purchased by <persName role="buyer">Henry Walters</persName> in <date when="1902">1902</date>.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="given">
-                            <p>Donated to the 
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased by <persName role="buyer">Henry Walters</persName> in <date when="1902">1902</date>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="given">
+                     <p>Donated to the 
                                 <orgName role="recipient">Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest.
                             </p>
-                            
-                        </provenance>
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">9752</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">33815</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CLE"/>
-                        <biblScope unit="item">1555</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Matz"/>                        
-                        <biblScope unit="item">3889</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#vanEsbroeck"/>              
-                        <biblScope unit="page">vol 2., 143</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Kleiner"/>
-                        <biblScope unit="page">249-251, no. 110</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Mander"/>
-                        <biblScope unit="page">141</biblScope>                        
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR137198">EDR137198</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://art.thewalters.org/detail/29811/funeral-stele-with-figure-guiding-a-horse-and-rider/">Walters Art Museum Web Entry</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2017-07-05" who="A. Hong">Initial Encoding</change>
-            <change when="2017-07-13" who="Scott J. DiGiulio">Tweaks to metadata, expanded bibl</change>
-            <change when="2017-10-06" who="Scott J. DiGiulio">Transcribed front of inscription from photo, added persName tagging to provenance; linked WAG image; added metrical markup for opening epigram</change>
-            <change when="2017-10-06" who="Scott J. DiGiulio">Added persName tags to provenance information</change>
-            <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-            <change when="2021-11-10" who="Sophia Papandonatou">took out image image link to WAG website, added image</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.L.23.18.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.L.23.18-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.L.23.18-det2.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <div type="textpart" n="in fastigio">
-                    <lg met="choliambic">
-                        <l n="1" met="choliamb" real="++-+-++--+-++--++"><lb n="1"/><supplied reason="lost">Si</supplied> <supplied reason="undefined" evidence="previouseditor">q</supplied><unclear>u</unclear>a tamen pietas gelidos movet <unclear>r</unclear>u<unclear>stic</unclear>a M<supplied reason="lost" source="CLE" evidence="previouseditor">anes</supplied>,</l>
-                        <l n="2" met="choliamb" real="+--+++-+--+--++"><lb n="2"/>rumpe moras <supplied reason="lost" evidence="previouseditor" source="CLE">spes haec s</supplied>ola est mihi gratia <supplied reason="lost" evidence="previouseditor" source="CLE">vitae</supplied>.</l>
-                    </lg>
-                </div>
-                <div type="textpart" n="in fronte">
-                    <ab>
-                        <lb n="1"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="gentilicium" key="Iunius">Iunio</name> <persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name></persName> <expan><abbr>f</abbr><ex>ilio</ex></expan> <expan><abbr>Pal</abbr><ex>atina tribu</ex></expan> <name type="cognomen" key="Rufus">Rufo</name></persName>
-                        <lb n="2"/><persName><name type="cognomen" key="Soterichus">Soterichus</name></persName> <expan><abbr>paedagog</abbr><ex>us</ex></expan> fecit.
-                        <lb n="3"/>Hae sunt parvae tuae <expan><abbr>meaeq</abbr><ex>ue</ex></expan> sedes,
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">9752</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">33815</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CLE"/>
+                  <biblScope unit="item">1555</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Matz"/>
+                  <biblScope unit="item">3889</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#vanEsbroeck"/>
+                  <biblScope unit="page">vol 2., 143</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Kleiner"/>
+                  <biblScope unit="page">249-251, no. 110</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Mander"/>
+                  <biblScope unit="page">141</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR137198">EDR137198</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://art.thewalters.org/detail/29811/funeral-stele-with-figure-guiding-a-horse-and-rider/">Walters Art Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2017-07-05" who="A. Hong">Initial Encoding</change>
+         <change when="2017-07-13" who="Scott J. DiGiulio">Tweaks to metadata, expanded bibl</change>
+         <change when="2017-10-06" who="Scott J. DiGiulio">Transcribed front of inscription from photo, added persName tagging to provenance; linked WAG image; added metrical markup for opening epigram</change>
+         <change when="2017-10-06" who="Scott J. DiGiulio">Added persName tags to provenance information</change>
+         <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-11-10" who="Sophia Papandonatou">took out image image link to WAG website, added image</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.L.23.18.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.L.23.18-det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.L.23.18-det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <div type="textpart" n="in fastigio">
+               <lg met="choliambic">
+                  <l n="1" met="choliamb" real="++-+-++--+-++--++">
+                     <lb n="1"/>
+                     <supplied reason="lost">Si</supplied>
+                     <supplied reason="undefined" evidence="previouseditor">q</supplied>
+                     <unclear>u</unclear>a tamen pietas gelidos movet <unclear>r</unclear>u<unclear>stic</unclear>a M<supplied reason="lost" source="CLE" evidence="previouseditor">anes</supplied>,</l>
+                  <l n="2" met="choliamb" real="+--+++-+--+--++">
+                     <lb n="2"/>rumpe moras <supplied reason="lost" evidence="previouseditor" source="CLE">spes haec s</supplied>ola est mihi gratia <supplied reason="lost" evidence="previouseditor" source="CLE">vitae</supplied>.</l>
+               </lg>
+            </div>
+            <div type="textpart" n="in fronte">
+               <ab>
+                  <lb n="1"/>
+                  <persName>
+                     <name type="praenomen" key="Marcus">
+                        <expan>
+                           <abbr>M</abbr>
+                           <ex>arco</ex>
+                        </expan>
+                     </name>
+                     <name type="gentilicium" key="Iunius">Iunio</name>
+                     <persName>
+                        <name type="praenomen" key="Marcus">
+                           <expan>
+                              <abbr>M</abbr>
+                              <ex>arci</ex>
+                           </expan>
+                        </name>
+                     </persName>
+                     <expan>
+                        <abbr>f</abbr>
+                        <ex>ilio</ex>
+                     </expan>
+                     <expan>
+                        <abbr>Pal</abbr>
+                        <ex>atina tribu</ex>
+                     </expan>
+                     <name type="cognomen" key="Rufus">Rufo</name>
+                  </persName>
+                  <lb n="2"/>
+                  <persName>
+                     <name type="cognomen" key="Soterichus">Soterichus</name>
+                  </persName>
+                  <expan>
+                     <abbr>paedagog</abbr>
+                     <ex>us</ex>
+                  </expan> fecit.
+                        <lb n="3"/>Hae sunt parvae tuae <expan>
+                     <abbr>meaeq</abbr>
+                     <ex>ue</ex>
+                  </expan> sedes,
                         <lb n="4"/>haec certa est domus, haec colenda nobis,
                         <lb n="5"/>haec est quem mihi suscitavi vivus.
                     </ab>
-                </div>            
-           </div>
-        
-        
-                <div type="translation">
-                    <p>in fastigio</p>
-                    <p>But if a rustic piety moves, somehow, those cold Spirits—end this wait—this hope is, to me, life’s one grace.</p>
-                    <p>in fronte</p>
-                    <p>To Marcus Junius Rufus, son of Marcus, from the Palatine (tribe); Soterichus, (his) <hi rend="italic">paedagogus</hi> , made (this for him); this little thing is the resting place of you and me, this is our fixed dwelling, to be protected by us, this is what I—living—built up for myself.</p>
-                        
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-                    <p>There are new pieces set on top. The base is modern and has been removed. The
-                    front of the bottom is modern as well (The Walters Art Museum).</p>
             </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="translation">
+            <p>in fastigio</p>
+            <p>But if a rustic piety moves, somehow, those cold Spirits—end this wait—this hope is, to me, life’s one grace.</p>
+            <p>in fronte</p>
+            <p>To Marcus Junius Rufus, son of Marcus, from the Palatine (tribe); Soterichus, (his) <hi rend="italic">paedagogus</hi> , made (this for him); this little thing is the resting place of you and me, this is our fixed dwelling, to be protected by us, this is what I—living—built up for myself.</p>
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p>There are new pieces set on top. The base is modern and has been removed. The
+                    front of the bottom is modern as well (The Walters Art Museum).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

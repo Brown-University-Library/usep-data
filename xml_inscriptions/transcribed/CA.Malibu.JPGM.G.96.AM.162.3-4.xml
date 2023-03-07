@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.96.AM.162.3-4</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,8 @@
                <physDesc>
                   <objectDesc ana="#instrumentum.container.other">
                      <supportDesc ana="#metal.silver">
-                        <support><p>Conical silver bowls</p>
+                        <support>
+                           <p>Conical silver bowls</p>
                            <dimensions type="surface" unit="cm">
                               <height>13.7</height>
                               <width/>
@@ -42,7 +53,7 @@
                      <layoutDesc>
                         <layout columns="0" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p>a single line inscribed on the lip of each bowl</p>
+                           <p>a single line inscribed on the lip of each bowl</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -68,7 +79,8 @@
                      <date evidence="unspecified" notBefore="-0100" notAfter="-0050">c. 75 BCE</date>
                      <placeName ref="asia.turkey">Pisidia, Asia Minor</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -80,16 +92,19 @@
                   <biblScope unit="pp">279-283</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29643/unknown-maker-one-conical-bowl-greek-175-75-bc/">Getty Museum Web Entry (96.AM.162.3)</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/29643/unknown-maker-one-conical-bowl-greek-175-75-bc/">Getty Museum Web Entry (96.AM.162.3)</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/29644/unknown-maker-one-conical-bowl-greek-175-75-bc/">Getty Museum Web Entry (96.AM.162.4)</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/29644/unknown-maker-one-conical-bowl-greek-175-75-bc/">Getty Museum Web Entry (96.AM.162.4)</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -123,37 +138,39 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <div type="textpart" subtype="Bowl" n="1">
                <ab>
-                  <lb n="1"/><persName><name key="Κότης">Κοτέους</name></persName> Μητρὸς Ὀρέας.
+                  <lb n="1"/>
+                  <persName>
+                     <name key="Κότης">Κοτέους</name>
+                  </persName> Μητρὸς Ὀρέας.
                </ab>
             </div>
             <div type="textpart" subtype="Bowl" n="2">
                <ab>
-                  <lb n="1"/><persName><name key="Κότης">Κοτέους</name></persName> ἡλίου.
+                  <lb n="1"/>
+                  <persName>
+                     <name key="Κότης">Κοτέους</name>
+                  </persName> ἡλίου.
                </ab>
             </div>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

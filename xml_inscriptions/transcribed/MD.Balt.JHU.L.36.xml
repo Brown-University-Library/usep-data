@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-                <!-- printable version of USEpi inscription ID: -->
-                <title>MD.Balt.JHU.L.36</title>
-            </titleStmt>
+            <title>MD.Balt.JHU.L.36</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.36">MD.Balt.JHU.L.36</idno>
@@ -15,43 +25,43 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-  
-                        <region>MD</region> 
-                        <settlement>Balt</settlement>
-                        <institution>JHU</institution>
-                        <repository/>
-                        <!--required.-->
-                        <!--  accession number, last part of USEP number -->
-                        <idno>36</idno>
-                        <!-- optionally some <altIdentifier>s or <msName>s here -->
-                    </msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>JHU</institution>
+                  <repository/>
+                  <!--required.-->
+                  <!--  accession number, last part of USEP number -->
+                  <idno>36</idno>
+                  <!-- optionally some <altIdentifier>s or <msName>s here -->
+               </msIdentifier>
                <msContents>
-                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
-                      <p>Epitaph of two wardrobe attendants of Cestilius Pinus, Ephyre Cestiliae (serva) and Cestilia Chreste</p>
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
+                     <p>Epitaph of two wardrobe attendants of Cestilius Pinus, Ephyre Cestiliae (serva) and Cestilia Chreste</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                            <p/>
+                           <p/>
                            <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
-                                    </dimensions>
+                              <height/>
+                              <width/>
+                              <depth/>
+                           </dimensions>
                         </support>
                         <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
-                            <p>three reconstituted fragments; some damage to margin on right edge</p>
+                           <p>three reconstituted fragments; some damage to margin on right edge</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="2" writtenLines="9">
+                        <layout columns="2" writtenLines="9">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed"/>
@@ -68,44 +78,47 @@
                             <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
                             <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
                             <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <note/>
-                        </summary>
+                     <note/>
+                  </summary>
                   <origin>
                      <date evidence="unspecified" notBefore="0001" notAfter="0125">first-early second century CE (corrected)</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">33393</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">33395</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">37303</biblScope>
-                        </bibl>
-                        <bibl>
-                            <ptr type="rest-of-bibl" target="#CLE"/>
-                            <biblScope unit="item">2070</biblScope>
-                        </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJP_Wilson7"/>
-                        <biblScope unit="item">40-41 no. 36</biblScope>
-                    </bibl>
-                                            <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     <bibl>
-                         <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144835">EDR144835</ref>
-                     </bibl>
-                </listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">33393</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">33395</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">37303</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CLE"/>
+                  <biblScope unit="item">2070</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson7"/>
+                  <biblScope unit="item">40-41 no. 36</biblScope>
+               </bibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144835">EDR144835</ref>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -114,60 +127,95 @@
       <profileDesc/>
       <revisionDesc>
          <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
-          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR links</change>
-          <change when="2016-05-12" who="Scott J. DiGiulio">Added control vocab for condition, writing; added texts parts to transcription to reflect columns; added name tagging to transcription; changed lib(erta) to lib(erti) in line 2 and 9; added lg and l elements around verse portion of epitaph in col 1</change>
-          <change when="2018-05-15" who="John Bodel">Fixed error in expansion</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR links</change>
+         <change when="2016-05-12" who="Scott J. DiGiulio">Added control vocab for condition, writing; added texts parts to transcription to reflect columns; added name tagging to transcription; changed lib(erta) to lib(erti) in line 2 and 9; added lg and l elements around verse portion of epitaph in col 1</change>
+         <change when="2018-05-15" who="John Bodel">Fixed error in expansion</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
-        <surface>
+      <surface>
             <!-- Caption in desc element -->
-        <desc/>
-            <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-        <graphic url="MD.Balt.JHU.L.36.jpg"/>
+         <desc/>
+         <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
+         <graphic url="MD.Balt.JHU.L.36.jpg"/>
       </surface>
    </facsimile>
    <text>
-        
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <div type="textpart" subtype="column" n="1">
-                    <ab>
-                        <lb n="1"/><persName><name type="slaveName" key="Ephyre">Ephyre</name></persName> <persName><name type="gentilicium" key="Cestilia">Cestiliaes</name></persName>,
-                        <lb n="2"/>vestispica <persName><name type="cognomen" key="Pinus">Pini</name></persName> <expan><abbr>lib</abbr><ex>erti</ex></expan>.
-                        <lg met="elegiac_couplets"><l><lb n="3"/>Nondum bis denos annus compleverat annos</l> 
-                        <l><lb n="4"/>tristia praetulerunt cum mihi fata necem.</l>
-                        <l><lb n="5"/>Discit<choice><sic>i</sic><corr>e</corr></choice> mortales in spem non vivere longam</l>                   
-                        <l><lb n="6"/><hi rend="apex">u</hi>ti quod volu<hi rend="tall"/><hi rend="ligature">it</hi> tempore tempus abet.</l></lg>
-                    </ab>
-                </div>
-                <div type="textpart" subtype="column" n="2">
-                    <ab>
-                        <lb n="7"/><persName><name type="gentilicium" key="Cestilia">Cestilia</name> <g type="mulieris"/> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Chreste">Chreste</name></persName>, 
-                        <lb n="8"/>vestispica <persName><name type="cognomen" key="Pinus">Pini</name></persName> 
-                        <lb n="9"/><expan><abbr><hi rend="tall">l</hi>ib</abbr><ex>iberti</ex></expan>.
-                    </ab>
-                </div>
+            <div type="textpart" subtype="column" n="1">
+               <ab>
+                  <lb n="1"/>
+                  <persName>
+                     <name type="slaveName" key="Ephyre">Ephyre</name>
+                  </persName>
+                  <persName>
+                     <name type="gentilicium" key="Cestilia">Cestiliaes</name>
+                  </persName>,
+                        <lb n="2"/>vestispica <persName>
+                     <name type="cognomen" key="Pinus">Pini</name>
+                  </persName>
+                  <expan>
+                     <abbr>lib</abbr>
+                     <ex>erti</ex>
+                  </expan>.
+                        <lg met="elegiac_couplets">
+                     <l>
+                        <lb n="3"/>Nondum bis denos annus compleverat annos</l>
+                     <l>
+                        <lb n="4"/>tristia praetulerunt cum mihi fata necem.</l>
+                     <l>
+                        <lb n="5"/>Discit<choice>
+                           <sic>i</sic>
+                           <corr>e</corr>
+                        </choice> mortales in spem non vivere longam</l>
+                     <l>
+                        <lb n="6"/>
+                        <hi rend="apex">u</hi>ti quod volu<hi rend="tall"/>
+                        <hi rend="ligature">it</hi> tempore tempus abet.</l>
+                  </lg>
+               </ab>
             </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            <div type="textpart" subtype="column" n="2">
+               <ab>
+                  <lb n="7"/>
+                  <persName>
+                     <name type="gentilicium" key="Cestilia">Cestilia</name>
+                     <g type="mulieris"/>
+                     <expan>
+                        <abbr>l</abbr>
+                        <ex>iberta</ex>
+                     </expan>
+                     <name type="cognomen" key="Chreste">Chreste</name>
+                  </persName>, 
+                        <lb n="8"/>vestispica <persName>
+                     <name type="cognomen" key="Pinus">Pini</name>
+                  </persName>
+                  <lb n="9"/>
+                  <expan>
+                     <abbr>
+                        <hi rend="tall">l</hi>ib</abbr>
+                     <ex>iberti</ex>
+                  </expan>.
+                    </ab>
+            </div>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

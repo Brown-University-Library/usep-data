@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.832</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,13 +34,11 @@
                      <p>epitaph of Aurelius Ursulus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>marble slab</p>
-                           
+                           <p>marble slab</p>
                            <seg type="material">Coarse-grained gray marble</seg>
                            <dimensions type="surface" unit="cm">
                               <height>25.8</height>
@@ -68,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,14 +91,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116343"
-                     >EDR116343</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116343">EDR116343</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,10 +109,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,58 +122,59 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
+                  <abbr>D</abbr>
+                  <ex>is</ex>
+               </expan>
                <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
+                  <abbr>M</abbr>
+                  <ex>anibus</ex>
+               </expan>.
                     <lb n="2"/>
                <persName>
-                  <name type="gentilicium" key="Aurelius">Aurelio</name> 
+                  <name type="gentilicium" key="Aurelius">Aurelio</name>
                   <name type="cognomen" key="Ursulus">Ursulo</name>
                </persName>
-                    <lb n="3"/>qui vixit annis
+               <lb n="3"/>qui vixit annis
                     <lb n="4"/>
-               <num xml:lang="lat" value="40">XXXX</num> 
+               <num xml:lang="lat" value="40">XXXX</num>
                <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> 
-               <num xml:lang="lat" value="2">II</num> 
+                  <abbr>m</abbr>
+                  <ex>ensibus</ex>
+               </expan>
+               <num xml:lang="lat" value="2">II</num>
                <expan>
-                  <abbr>d</abbr><ex>iebus</ex>
-               </expan> 
+                  <abbr>d</abbr>
+                  <ex>iebus</ex>
+               </expan>
                <num xml:lang="lat" value="12">XII</num>.
                     <lb n="5"/>
                <persName>
-                  <name type="gentilicium" key="Aurelia">Aurelia</name> 
+                  <name type="gentilicium" key="Aurelia">Aurelia</name>
                   <name type="cognomen" key="Libertas">Liberitas</name>
                </persName>
-                    <lb n="6"/>filia.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Aurelius Ursulus, who lived for forty years, two
+               <lb n="6"/>filia.</ab>
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. To Aurelius Ursulus, who lived for forty years, two
                months, (and) twelve days. Aurelia Liberitas, (his) daughter, (made this).</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

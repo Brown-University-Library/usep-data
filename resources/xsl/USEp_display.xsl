@@ -166,7 +166,7 @@
                                 <tr>
                                     <td class="label">Object Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:supportDesc/t:support/t:dimensions">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions">
                                             
                                                 <xsl:if test="t:width/text()">w: 
                                                     <xsl:value-of select="t:width"/>
@@ -194,7 +194,7 @@
                                             <xsl:when
                                                 test="string-length($writing/@ana) != 0 and normalize-space($writing)">
                                                 <xsl:value-of
-                                                  select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing)"
+                                                  select="concat(id(substring-after($writing/@ana, '#'))/t:catDesc, ', ', $writing/t:p)"
                                                 />
                                             </xsl:when>
                                             <xsl:otherwise>
@@ -210,8 +210,8 @@
                                 <tr>
                                     <td class="label">Letter Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="$writing/t:dimensions">      
-                                    <xsl:if test="t:width/text()">w: 
+                                        <xsl:for-each select="$writing/t:dimensions">  
+                                    <xsl:if test="$writing/t:width/text()">w: 
                                         <xsl:value-of select="t:width"/>
                                         <xsl:if test="t:height/text()"> x 
                                         </xsl:if>
@@ -299,7 +299,24 @@
                                 <tr>
                                     <td class="label">Place of Origin</td>
                                     <td class="value">
-                                        <xsl:value-of select="$placeOfOrigin"/>
+                                       <!-- <xsl:for-each select="$placeOfOrigin">
+                                            <xsl:choose>
+                                               <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
+                                                    <a>
+                                                        <xsl:text>
+                                                            <xsl:value-of select="$placeOfOrigin"
+                                                        </xsl:text>
+                                                         <xsl:attribute name="href">
+                                                              <xsl:value-of select="@ref"/>
+                                                          </xsl:attribute>
+                                                    </a>
+                                        </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:value-of select="$placeOfOrigin"/>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:for-each> -->
+                                                                                <xsl:value-of select="$placeOfOrigin"/>
                                     </td>
                                 </tr>
                                 <tr>
@@ -349,7 +366,7 @@
                     </xsl:if>
 
 
-<!-- Print links to Pleiades when they appear in texts or metadata -->
+<!-- Print links to Pleiades when they appear in texts or metadata 
                    
                     <xsl:for-each select="t:placeName">
                         <xsl:choose>
@@ -365,7 +382,7 @@
                                 <xsl:apply-templates/>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </xsl:for-each>
+                    </xsl:for-each>-->
                 
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">

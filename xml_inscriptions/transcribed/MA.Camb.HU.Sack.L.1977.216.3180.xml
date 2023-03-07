@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>MA.Camb.HU.Sack.L.1977.216.3180</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,9 @@
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>broken bipartite marble slab of unknown (urban?) origin</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>broken bipartite marble slab of unknown (urban?) origin</p>
+                           <dimensions type="surface" unit="cm">
                               <height>27.8</height>
                               <width>29.3</width>
                               <depth>2.2</depth>
@@ -40,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="2" writtenLines="8">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -68,17 +80,24 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="#nomenclature #palaeography" notBefore="0075" notAfter="0125">late
+                     <date evidence="#nomenclature #palaeography"
+                            notBefore="0075"
+                            notAfter="0125">late
                   first-early second century CE</date>
                      <placeName ref="europe.italy">Italy</placeName>
                   </origin>
                   <provenance type="transferred" subtype="given">
-                     <p>given to the <orgName>Harvard Department of Classics</orgName> in the bequest of <persName role="donor"><name key="Henry Williamson Haynes">Henry Williamson Haynes</name></persName> in <date when="1912">1912</date></p>
+                     <p>given to the <orgName>Harvard Department of Classics</orgName> in the bequest of <persName role="donor">
+                           <name key="Henry Williamson Haynes">Henry Williamson Haynes</name>
+                        </persName> in <date when="1912">1912</date>
+                     </p>
                   </provenance>
                   <provenance type="transferred" subtype="moved">
-                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date></p>
+                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date>
+                     </p>
                   </provenance>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -89,15 +108,16 @@
                   <ptr type="rest-of-bibl" target="#AE_1992"/>
                   <biblScope unit="item">109 a &amp; b</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR032875">EDR032875</ref>
-</bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR032875">EDR032875</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -109,8 +129,8 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-20" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns</change>
          <change when="2021-02-08" who="Scott J. DiGiulio">Restored and enhanced transcription, based on Ilaria Marchesi's original; added provenance information; added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -121,43 +141,140 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <ab>
-              <cb n="i"/>
-              <lb n="1"/><persName><name type="gentilicium"><gap reason="lost" extent="unknown" unit="character"/>a</name> <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Thais"><hi rend="tall">T</hi>hais</name></persName>,
-              <lb n="2"/><persName><name type="gentilicium"><gap reason="lost" extent="unknown" unit="character"/>a</name> <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Lais">Lais</name></persName>
-              <lb n="3"/><space extent="3" unit="character" precision="low"/> <expan><abbr>vix</abbr><ex>it</ex></expan> <expan><abbr>an</abbr><ex>nis</ex></expan> <num type="cardinal" value="25">XXV</num>.
+      <body>
+         <div type="edition">
+            <ab>
+               <cb n="i"/>
+               <lb n="1"/>
+               <persName>
+                  <name type="gentilicium">
+                     <gap reason="lost" extent="unknown" unit="character"/>a</name>
+                  <persName>
+                     <name type="praenomen" key="Lucius">
+                        <expan>
+                           <abbr>L</abbr>
+                           <ex>uci</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <expan>
+                     <abbr>l</abbr>
+                     <ex>iberta</ex>
+                  </expan>
+                  <name type="cognomen" key="Thais">
+                     <hi rend="tall">T</hi>hais</name>
+               </persName>,
+              <lb n="2"/>
+               <persName>
+                  <name type="gentilicium">
+                     <gap reason="lost" extent="unknown" unit="character"/>a</name>
+                  <persName>
+                     <name type="praenomen" key="Lucius">
+                        <expan>
+                           <abbr>L</abbr>
+                           <ex>uci</ex>
+                        </expan>
+                     </name>
+                  </persName>
+                  <expan>
+                     <abbr>l</abbr>
+                     <ex>iberta</ex>
+                  </expan>
+                  <name type="cognomen" key="Lais">Lais</name>
+               </persName>
+               <lb n="3"/>
+               <space extent="3" unit="character" precision="low"/>
+               <expan>
+                  <abbr>vix</abbr>
+                  <ex>it</ex>
+               </expan>
+               <expan>
+                  <abbr>an</abbr>
+                  <ex>nis</ex>
+               </expan>
+               <num type="cardinal" value="25">XXV</num>.
               <cb n="ii"/>
-              <lb n="4"/><persName><name type="praenomen" key="Lucius"><expan><abbr><hi rend="tall">L</hi></abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="">Av<supplied reason="lost">eius</supplied></name> <gap reason="lost" extent="unknown" unit="character"/>
-              <lb n="5"/><name type="cognomen">Qua<gap reason="illegible" extent="1" unit="character"/><gap reason="lost" atLeast="3" atMost="5" unit="character" cert="low"/></name></persName>
-              <lb n="6"/><expan><abbr>v<hi rend="tall">i</hi>x</abbr><ex>it</ex></expan> <expan><abbr>a<supplied reason="lost">n</supplied></abbr><ex>nis</ex></expan> <num><gap reason="lost" extent="unknown" unit="character"/></num>.
-              <lb n="7"/><persName><name type="praenomen" key="Lucius"><expan><abbr><hi rend="tall">L</hi></abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Aveius">Aveius</name> <name type="cognomen"><gap reason="lost" extent="unknown" unit="character"/></name></persName>
-              <lb n="8"/><expan><abbr>vix</abbr><ex>it</ex></expan> <expan><abbr>a<supplied reason="lost">n</supplied></abbr><ex>nis</ex> <num><gap reason="lost" extent="?" unit="character"/></num></expan>.</ab>
+               <lb n="4"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>
+                           <hi rend="tall">L</hi>
+                        </abbr>
+                        <ex>ucius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="">Av<supplied reason="lost">eius</supplied>
+                  </name>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                  <lb n="5"/>
+                  <name type="cognomen">Qua<gap reason="illegible" extent="1" unit="character"/>
+                     <gap reason="lost"
+                           atLeast="3"
+                           atMost="5"
+                           unit="character"
+                           cert="low"/>
+                  </name>
+               </persName>
+               <lb n="6"/>
+               <expan>
+                  <abbr>v<hi rend="tall">i</hi>x</abbr>
+                  <ex>it</ex>
+               </expan>
+               <expan>
+                  <abbr>a<supplied reason="lost">n</supplied>
+                  </abbr>
+                  <ex>nis</ex>
+               </expan>
+               <num>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+               </num>.
+              <lb n="7"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan>
+                        <abbr>
+                           <hi rend="tall">L</hi>
+                        </abbr>
+                        <ex>ucius</ex>
+                     </expan>
+                  </name>
+                  <name type="gentilicium" key="Aveius">Aveius</name>
+                  <name type="cognomen">
+                     <gap reason="lost" extent="unknown" unit="character"/>
+                  </name>
+               </persName>
+               <lb n="8"/>
+               <expan>
+                  <abbr>vix</abbr>
+                  <ex>it</ex>
+               </expan>
+               <expan>
+                  <abbr>a<supplied reason="lost">n</supplied>
+                  </abbr>
+                  <ex>nis</ex>
+                  <num>
+                     <gap reason="lost" extent="?" unit="character"/>
+                  </num>
+               </expan>.</ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>[--]a Thais, freedwoman of Lucius. [--]a Lais, freedwoman of Lucius; she lived for twenty-five years. Lucius Av[eius] Qua[--]; he lived for - years. Lucius Aveius --; he lived for - years.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>The similarities in formulae, and the presence of the praenomen Lucius in the nomenclature of all four individuals suggests that both Thais and Lais were members of the gens Aveia; thus [Avei]a may potentially be restored in lines 1 and 2. Possible restorations of the cognomen in line 5 include Quar[tio], Quar[tus], Quad[ratus], vel sim.</p>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-                    <p/>
-                </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>[--]a Thais, freedwoman of Lucius. [--]a Lais, freedwoman of Lucius; she lived for twenty-five years. Lucius Av[eius] Qua[--]; he lived for - years. Lucius Aveius --; he lived for - years.</p>
+         </div>
+         <div type="commentary">
+            <p>The similarities in formulae, and the presence of the praenomen Lucius in the nomenclature of all four individuals suggests that both Thais and Lais were members of the gens Aveia; thus [Avei]a may potentially be restored in lines 1 and 2. Possible restorations of the cognomen in line 5 include Quar[tio], Quar[tus], Quad[ratus], vel sim.</p>
+         </div>
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

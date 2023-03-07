@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="usep">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>ITA.Rome.AAR.L.9286</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>ITA.Rome.AAR.L.9286</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9286">ITA.Rome.AAR.L.9286</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9286">ITA.Rome.AAR.L.9286</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
@@ -33,191 +42,182 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>ITA</region>
-                        <settlement>Rome</settlement>
-                        <institution>AAR</institution>
-                        <repository/>
-                        <idno>9286</idno>
-                        <altIdentifier>
-                            <idno>64</idno>
-                        </altIdentifier>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+            <msDesc>
+               <msIdentifier>
+                  <region>ITA</region>
+                  <settlement>Rome</settlement>
+                  <institution>AAR</institution>
+                  <repository/>
+                  <idno>9286</idno>
+                  <altIdentifier>
+                     <idno>64</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#text_unknown">
                         <!-- short summary of the content of an inscription -->
-                            <p>Fragment of a tablet</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Fragment of a tablet</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                         <!-- short summary of the material and support of an inscription -->
-                                    <p>White marble tablet fragment
+                           <p>White marble tablet fragment
                                     </p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>19.4</height>
-                                        <width>32.5</width>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#fragment.single">
-                                    <p>lower edge of tablet, broken on all other sides</p>
-                                </condition>
-                            </supportDesc>
-                            
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="4">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                    <height min="2.6" max="3.6">2.6-3.6</height>
-                                </dimensions>
-            
-            
-            
-                                
-                            </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                           <dimensions type="surface" unit="cm">
+                              <height>19.4</height>
+                              <width>32.5</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragment.single">
+                           <p>lower edge of tablet, broken on all other sides</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="4">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height min="2.6" max="3.6">2.6-3.6</height>
+                        </dimensions>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                         <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0300" notAfter="0400" datingMethod="palaeography" cert="medium">fourth century CE</date>
-                            <placeName ref="europe.italy.rome">Piazza in Lucina, Rome, Italy </placeName>
-                        </origin>
-                        <provenance>
-                            
-                            <p><placeName ref="europe.italy.rome">Rome, Piazza in Lucina</placeName>, found in <placeName>Robert's Pharmacy</placeName> <date notAfter="1906">before 1906</date></p>
-                        </provenance>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date evidence="unspecified"
+                            notBefore="0300"
+                            notAfter="0400"
+                            datingMethod="palaeography"
+                            cert="medium">fourth century CE</date>
+                     <placeName ref="europe.italy.rome">Piazza in Lucina, Rome, Italy </placeName>
+                  </origin>
+                  <provenance>
+                     <p>
+                        <placeName ref="europe.italy.rome">Rome, Piazza in Lucina</placeName>, found in <placeName>Robert's Pharmacy</placeName>
+                        <date notAfter="1906">before 1906</date>
+                     </p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">119, no. 64</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_10_Morey"/>
-                        <biblScope unit="page">427, no. 2</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2018-06-24" who="Sunju Li">Initial Encoding</change>
-            <change when="2019-07-16" who="Scott J. DiGiulio">Cleaned and added metadata, dimension; added location/provenance info; added bibliography entries; added image filepath; proofed and made very minor changes to transcription</change>
-            <change when="2019-08-09" who="Scott J. DiGiulio">Fixed invalid pieces of provenance/dating</change>
-            <change when="2020-03-27" who="Gaia Gianni">Deleted image filename</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-          
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                  <biblScope unit="page">119, no. 64</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJA_10_Morey"/>
+                  <biblScope unit="page">427, no. 2</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2018-06-24" who="Sunju Li">Initial Encoding</change>
+         <change when="2019-07-16" who="Scott J. DiGiulio">Cleaned and added metadata, dimension; added location/provenance info; added bibliography entries; added image filepath; proofed and made very minor changes to transcription</change>
+         <change when="2019-08-09" who="Scott J. DiGiulio">Fixed invalid pieces of provenance/dating</change>
+         <change when="2020-03-27" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
             <ab>
-                <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
-                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><unclear>O</unclear>QU<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> undiqu<supplied reason="lost">e</supplied> <gap reason="lost" atMost="1" unit="character"/> <unclear>OI</unclear> <gap reason="lost" extent="unknown" unit="character"/>"
-                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low">i</supplied>den qui patir <unclear>n</unclear><supplied reason="lost" cert="low">oster</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> cu<hi rend="small">m</hi> <hi rend="tall">l</hi>audibus <unclear>F</unclear> <gap reason="lost" extent="unknown" unit="character"/>.
+               <lb n="1"/>
+               <gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="2"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <unclear>O</unclear>QU<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/>
+               <gap reason="lost" extent="unknown" unit="character"/> undiqu<supplied reason="lost">e</supplied>
+               <gap reason="lost" atMost="1" unit="character"/>
+               <unclear>OI</unclear>
+               <gap reason="lost" extent="unknown" unit="character"/>"
+                <lb n="4"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost" cert="low">i</supplied>den qui patir <unclear>n</unclear>
+               <supplied reason="lost" cert="low">oster</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="5"/>
+               <gap reason="lost" extent="unknown" unit="character"/> cu<hi rend="small">m</hi>
+               <hi rend="tall">l</hi>audibus <unclear>F</unclear>
+               <gap reason="lost" extent="unknown" unit="character"/>.
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                <p>throughout this inscription, "e" is mixed with "i," e.g. in the line 4: inqui(inque 2.sing.pr.imperat. of inquam), patir (pater)</p></div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p>throughout this inscription, "e" is mixed with "i," e.g. in the line 4: inqui(inque 2.sing.pr.imperat. of inquam), patir (pater)</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>
