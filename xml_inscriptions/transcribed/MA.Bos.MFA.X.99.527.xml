@@ -1,17 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MA.Bos.MFA.X.98.923</title>
+            <title>MA.Bos.MFA.X.99.527</title>
+            <author>Sophia Papandonatou</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.X.98.923">MA.Bos.MFA.X.98.923</idno>
+            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.X.99.527">MA.Bos.MFA.X.99.527</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -20,7 +31,7 @@
                   <settlement>Bos</settlement>
                   <institution>MFA</institution>
                   <repository/>
-                  <idno>98.923</idno>
+                  <idno>99.527</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="und" otherLangs=""/>
@@ -32,15 +43,15 @@
                   <objectDesc ana="#instrumentum.vase">
                      <supportDesc ana="#clay">
                         <support>
-                           <p>ceramic amphora</p>
+                           <p>ceramic oinochoe</p>
                            <dimensions type="surface" unit="cm">
-                              <height>29.3</height>
-                              <dim type="diameter">24.2</dim>
+                              <height>25.9</height>
+                              <dim type="diameter">15.5</dim>
                               <width/>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.intact">
+                        <condition ana="#complete.broken">
                            <p><!--free text here, don't forget the ana attribute on the condition element--></p>
                         </condition>
                      </supportDesc>
@@ -56,8 +67,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote>
-                        <p>a=b: duel between heavy armed warriors (in a, one warrior with sword, the
-                           other with spear; in b both with spears) </p>
+                        <p>bearded butcher with ivy wreath holding a knife to cut a leg from a carcass lying on an altar-like block, boy steading the leg to be cut</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -71,18 +81,16 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="-0540" notAfter="-0530">c. 540-530 BCE</date>
+                     <date evidence="unspecified" notBefore="-0500" notAfter="-0490">early fifth century BCE</date>
                      <placeName ref="https://pleiades.stoa.org/places/579885">Greece, Attica, Athens</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
+                  <provenance type="recorded" subtype="reported">
+                     <p>In the possession of <persName role="collector">Edward Perry Warren</persName> in London and Rome.</p>
+                  </provenance>
                   
                   <provenance type="transferred" subtype="purchased">
-                     <p>Purchased by <persName role="buyer">Warren</persName>, Morrison sale 283, from the Castellani collection.</p>
-                  </provenance>
-                 
-                  <provenance type="transferred" subtype="purchased">
-                     <p>Purchased from <persName role="seller collector">Edward Perry Warren</persName> by the <orgName role="buyer">Museum of Fine Arts</orgName> in <date when="1898">1898</date>.</p>
-                     
+                     <p>Purchased from <persName role="seller">Edward Perry Warren</persName> by the <orgName role="buyer">Museum of Fine Arts</orgName> in <date when="1899">1899</date>.</p>
                   </provenance>
                </history>
             </msDesc>
@@ -90,29 +98,25 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
                   <biblScope unit="page">298-299</biblScope>
-                  
                </bibl>
-               
                <bibl>
                   <ref type="external"
-                     target="https://www.beazley.ox.ac.uk/record/C9451A00-0E8A-40E4-A3D4-CC6FAFA53883"
-                     >BAD 301077</ref>
+                     target="https://www.beazley.ox.ac.uk/record/D3F23CF0-D9BA-46D7-8069-7E2AD0B88824">BAD 303318</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2816"
-                     >AVI 2669</ref>
+                  <ref type="external"
+                     target="https://www.avi.unibas.ch/DB/searchform.html?ID=2827">AVI 2680</ref>
                </bibl>
-           
                <bibl>
-                  <ref type="external" target="https://collections.mfa.org/objects/153396">Museum of
+                  <ref type="external" target="https://collections.mfa.org/objects/153541">Museum of
                      Fine Arts, Boston (Website)</ref>
                </bibl>
-               
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -120,65 +124,50 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2023-02-17" who="Sophia Papandonatou">initial encoding</change>
-         
+         <change when="2023-02-22" who="Sophia Papandonatou">initial encoding</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
    <facsimile>
-   <surface>
-      <desc/>
-      <graphic url="MA.Bos.MFA.X.98.923a.jpg"/>
-      
-   
-   
-      </surface>
       <surface>
          <desc/>
-         <graphic url="MA.Bos.MFA.X.98.923b.jpg"/>
+         <graphic url="MA.Bos.MFA.X.99.527.jpg"/>
       </surface>
-    
-      
      
-      
+     
    </facsimile>
    <text>
       <body>
          <div type="edition">
             
-          
-            <div type="textpart" subtype="scene" n="a">
                <ab>
+                  <lb n="1"/>LΧΟΣϜ
+                  <lb n="2"/>ΟΝΟ
+                  <lb n="3"/>ΑΝΤΗ
                   
-                  <lb n="1"/>ϜΚΕΚΝ
-                  <lb n="2"/>ΓϜΚΝΓΕΟ<gap reason="lost" quantity="1" unit="character"/>
-                  
-                  
-               </ab>
-            </div>
-            <div type="textpart" subtype="scene" n="b">
-               <ab>
-                  <lb n="3"/>ϜΚΕΚΕϜΚΜ
                 
+                  
                </ab>
-            </div>
             
-         
-         </div>
-         
-         <div type="translation">
-            <p/>
             
             
          </div>
          <div type="commentary">
-            <p>Attributed to the Botkin Class.</p>
+            <p>Attributed to the Class of Vatican G 47.</p>
+            <p>Line 1: LΧΟΣΕ (Chiarini).</p>
             
             
-        
+            
+            
          </div>
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

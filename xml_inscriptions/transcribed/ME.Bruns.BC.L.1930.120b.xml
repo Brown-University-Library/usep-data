@@ -4,7 +4,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>ME.Bruns.BC.G.1902.22</title>
+            <title>ME.Bruns.BC.L.1930.120b</title>
             <author>Author</author>
             <respStmt>
                <resp>Translation</resp>
@@ -16,8 +16,13 @@
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="ME.Bruns.BC.G.1902.22">ME.Bruns.BC.G.1902.22</idno>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               <xi:fallback>
+                  <p>The Publications Statement should appear here. (c) Brown University</p>
+               </xi:fallback>
+            </xi:include>
+            <idno type="USEpigraphy" xml:id="ME.Bruns.BC.L.1930.120b">ME.Bruns.BC.L.1930.120b</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -26,26 +31,29 @@
                   <settlement>Bruns</settlement>
                   <institution>BC</institution>
                   <repository/>
-                  <idno>1902.22</idno>
+                  <idno>1930.120b</idno>
                </msIdentifier>
                <msContents>
-                  <textLang mainLang="grc" otherLangs=""/>
-                  <msItem class="#fragment">
-                     <p>Fragmentary inscription on stele</p>
+                  <textLang mainLang="lat" otherLangs=""/>
+                  <msItem class="#text_unknown">
+                     <p>fragmentary inscription</p>
                   </msItem>
                </msContents>
                <physDesc>
                   
-                  <!--  *************************************  <objectDesc>  *********************************  -->
-                  <objectDesc ana="#stele">
-                     <supportDesc ana="#stone.marble">
+                  <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                  <objectDesc ana="#fragment">
+                     <supportDesc ana="#stone.other">
                         <support>
-                           <p> </p>
+                           <!-- short summary of the material and support of an inscription -->
+                           <p>opisthographic limestone fragment</p>
                            <dimensions type="surface" unit="cm">
-                              <height>30.5</height>
-                              <width>15.7</width>
-                              <depth>3.6</depth>
+                              <height>6.1</height>
+                              <width>8.3</width>
+                              <depth>1.7</depth>
                            </dimensions>
+                           
                         </support>
                         <condition ana="#fragment.single">
                            <p/>
@@ -53,14 +61,16 @@
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="1" writtenLines="5">
+                        <layout columns="0" writtenLines="q">
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
                   <handDesc hands="1">
                      <handNote ana="#inscribed"> </handNote>
+                     <!-- <handNote> is a repeatable element -->
                   </handDesc>
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
@@ -70,33 +80,38 @@
                   </decoDesc>
                </physDesc>
                <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
                <history>
                   <summary>
                      <rs/>
                      <!-- content can be "fake" or blank -->
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0100" notAfter="0200">2nd century CE</date>
-                     <placeName ref="europe">Cyprus</placeName>
+                     <!-- original place and dating of inscription -->
+                     <date evidence="#palaeography" notBefore="0001" notAfter="0125">first to early
+                        second century CE</date>
+                     <placeName ref="unknown">Unknown</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p>Given by <persName role="donor">Edward Perry Warren</persName> to the <orgName role="recipient">Bowdoin College Museum of Art</orgName> in <date when="1926">1926</date>.</p>
+                  </provenance>
                </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#AJA_Herbert2"/>
-                  <biblScope unit="item">385 (fig. 7)</biblScope>
-               </bibl>
-               <bibl>
-                  <ptr type="rest-of-bibl" target="#BE_1963"/>
-                  <biblScope unit="item">no. 37</biblScope>
+                  <biblScope unit="item">384, no. 6, Pl. 105 (fig. 6b)</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Herbert_AABC"/>
-                  <biblScope unit="item">199, no. 1146</biblScope>
+                  <biblScope unit="item">199, no. 1145</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external"
-                        target="https://artmuseum.bowdoin.edu/objects-1/info/652">External Reference Bowdoin Museum of Art</ref>
+                  <ref type="external" target="https://artmuseum.bowdoin.edu/objects-1/info/2109"
+                     >Bowdoin Art Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -113,29 +128,19 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
-         <change when="2020-04-22" who="Gaia Gianni">Added metadata, external reference link and image </change>
-         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile>
-      <surface>
-         <desc/>
-         <graphic url="https://artmuseum.bowdoin.edu/Media/Previews/InventoryPictures/Antiquities/1902.22Dup.jpg"/>
-      </surface>
-   </facsimile>
+   <!--facsimile element goes here-->
    <text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
-         <div type="translation">
-            <p/>
+            <ab>
+               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" unit="character" quantity="1"/>B<gap reason="illegible" unit="character" quantity="1"/><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
          </div>
          <div type="commentary">
-            <p/>
-         </div>
-         <div type="apparatus">
-            <p/>
+            <p>The first letter could be A or M; the third could be L or E (Herbert).</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
