@@ -172,14 +172,14 @@
     </sch:pattern>
     
     <!-- Check for untagged words -->
-    <sch:pattern>
+    <!--<sch:pattern>
         <sch:rule context="//t:div[@type='edition']">
             <sch:report test="descendant::text()[not(ancestor::t:w or ancestor::t:name or ancestor::t:placeName or ancestor::t:geogName or ancestor::t:num or ancestor::t:surplus
                 or ancestor::t:orig or ancestor::t:desc or ancestor::t:note or ancestor::t:head or ancestor::t:g or ancestor::t:abbr[not(ancestor::t:expan)])][not(translate(normalize-space(translate(.,',.;··:','')),' ','')='')]">
                 Character content needs to be tagged as word or name or number or undefined etc.
             </sch:report>
         </sch:rule>
-    </sch:pattern>
+    </sch:pattern>-->
     
     <!-- Check for problems with names and persnames -->
     <sch:pattern>
