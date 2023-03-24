@@ -161,21 +161,8 @@
                      </decoNote>
                   </decoDesc>
                </physDesc>
-               <!--  *************************************  <history>  *********************************
+               <!--  *************************************  <history>  ********************************* -->
                     
-                    This section is for the history of the inscription. 
-                       <summary>  currently used only if it is necessary to indicate if an inscription is genuine or fake. 
-                        If fake, put the text "fake" inside <rs>.  Ex: <rs>fake</s>
-                        [This is a USEp. convention for now, to indicate if an inscription is fake.]
-                     
-                     <origin> encodes the origin of inscription including place and date. 
-                     <provenance> can appear multiple times, and encodes any additional events in the history of the inscription. 
-                         Not currently in use. 
-                           <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
-                           and @notAfter are required. There is no 0000 date; there are only -0001 and 0001. 
-                           <placeName> contains a detailed place name as content. 
-                              @ref has a USEp controlled vocabulary. In the future we plan to use Pleiades information.
-                    -->
                <history>
                   <summary>
                      <rs/>
@@ -186,17 +173,7 @@
                   </origin>
                </history>
             </msDesc>
-            <!--  *************************************  <listBibl>  *********************************
-                    Encodes bibliographic entries. 
-                    <bibl> used to encode each reference. There can be multiple <bibl>s.
-                    @target points to the id of the publication, which is found in the title.xml file. 
-                    <biblScope> contains the reference in the publication, either page or item numbers.
-                       @type[item] contains the item number in a corpus or other publication
-                       @type[pp] contains page numbers. 
-                       Either or  both of these can be part of a reference.
-                    External links, for example to digital corpora. Encode this as a <ref> inside a <bibl>. 
-                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
-                -->
+            <!--  *************************************  <listBibl>  ********************************* -->
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CIL_V"/>
@@ -260,11 +237,9 @@
          <div type="edition">
             <ab>
                <lb n="1"/>
-               <expan>Exa<ex>ctum</ex>
-               </expan>
+               <expan>Exa<ex>ctum</ex></expan>
                     ad III
-                    <expan>Casio<ex>ris</ex>
-               </expan>
+                    <expan>Casio<ex>ris</ex></expan>
             </ab>
          </div>
          <div type="translation">
