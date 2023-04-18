@@ -210,7 +210,7 @@
                                 <tr>
                                     <td class="label">Letter Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="$writing/t:dimensions">      
+                                        <xsl:for-each select="$writing/t:dimensions">  
                                     <xsl:if test="$writing/t:width/text()">w: 
                                         <xsl:value-of select="t:width"/>
                                         <xsl:if test="t:height/text()"> x 
