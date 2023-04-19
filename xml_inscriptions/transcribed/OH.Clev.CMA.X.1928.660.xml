@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader>
+   <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>MO.Col.UM.MAA.L.70.332</title>
-            <author>Author</author>
+            <title>OH.Clev.CMA.X.1928.660</title>
+            <author>Sophia Papandonatou</author>
             <respStmt>
                <resp>Translation</resp>
                <name>Translator</name>
@@ -16,38 +16,39 @@
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="MO.Col.UM.MAA.L.70.332">MO.Col.UM.MAA.L.70.332</idno>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               <xi:fallback>
+                  <p>The Publications Statement should appear here. (c) Brown University</p>
+               </xi:fallback>
+            </xi:include>
+            <idno type="USEpigraphy" xml:id="OH.Clev.CMA.X.1928.660">OH.Clev.CMA.X.1928.660</idno>
          </publicationStmt>
          <sourceDesc>
-                <!--  *************************************  <msDesc>  ********************************* -->
             <msDesc>
                <msIdentifier>
-                  <region>MO</region>
-                  <settlement>Col</settlement>
-                  <institution>UM</institution>
-                  <repository>MAA</repository>
-                  <idno>70.332</idno>
+                  <region>OH</region>
+                  <settlement>Clev</settlement>
+                  <institution>CMA</institution>
+                  <repository/>
+                  <idno>1928.660</idno>
                </msIdentifier>
-               <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
-                  <textLang mainLang="lat" otherLangs=""/>
-                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <textLang mainLang="und" otherLangs=""/>
                   <msItem class="#text_other">
-                            <!-- short summary of the content of an inscription -->
-                     <p>Mold for casting a counterfeit bronze nummus of Maximinus II</p>
+                     <p>nonsense inscription</p>
                   </msItem>
                </msContents>
-               <!--  *************************************  <physDesc>  ********************************* -->
                <physDesc>
-                        
-                        <!--  *************************************  <objectDesc>  *********************************  -->
-                  <objectDesc ana="#object_other">
-                     <supportDesc ana="#clay.terracotta">
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  <objectDesc ana="#instrumentum.vase">
+                     <supportDesc ana="#clay.ceramic">
                         <support>
-                           <p> </p>
+                           <p>ceramic lekythos</p>
                            <dimensions type="surface" unit="cm">
-                              <height/>
+                              <height>43.5</height>
+                              <dim type="diameter">16.5</dim>
                               <width/>
                               <depth/>
                            </dimensions>
@@ -58,19 +59,19 @@
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="2" writtenLines="2">
-                           <p>Two faced coin molds, one line per side</p>
+                        <layout columns="0" writtenLines="2">
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <!--  *************************************  <handDesc>  ********************************* -->
                   <handDesc hands="1">
-                     <handNote ana="#stamped #in_relief"> </handNote>
+                     <handNote ana="#painted"> </handNote>
                   </handDesc>
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
-                        <p/>
+                        <p>warrior cutting a lock of his hair with his sword</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -81,25 +82,37 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0300" notAfter="0325">early 4th century CE</date>
-                     <placeName ref="xx">Detailed place name</placeName>
+                     <date evidence="unspecified" notBefore="-0480" notAfter="-0470">480-470 BCE</date>
+                     <placeName ref="https://pleiades.stoa.org/places/579888">Greece, Attica</placeName>
                   </origin>
+                  
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased by the <orgName role="buyer">Cleveland Museum of Art</orgName> from <persName role="seller">Mario de Ciccio</persName> in <placeName>Naples</placeName> in <date when="1928">1928</date>, funded by the Charles W. Harkness Endowment.</p>
+                  </provenance>
                </history>
             </msDesc>
-            <!--  *************************************  <listBibl>  *********************************  -->
             <listBibl>
                <bibl>
-               
-               
-                    </bibl>
+                  <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
+                  <biblScope unit="page">318-319</biblScope>
+                  
+               </bibl>
                <bibl>
                   <ref type="external"
-                        target="http://maacollections.missouri.edu/ArgusNET/Portal.aspx?lang=en-US">External Reference</ref>
+                     target="https://www.beazley.ox.ac.uk/record/CF966993-0D10-4B37-BF99-97D69FEED3BB"
+                     >BAD 207549</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=3373"
+                     >AVI 3202</ref>
+               </bibl>
+               
+               <bibl>
+                  <ref type="external" target="https://www.clevelandart.org/art/1927.145">Cleveland Museum of Art website</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
-      <!--  *************************************  <encodingDesc>  ********************************* -->
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                       href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
@@ -108,40 +121,43 @@
             </xi:fallback>
          </xi:include>
       </encodingDesc>
-      <profileDesc> <!-- not used --> </profileDesc>
-      <!--  *************************************  <revisionDesc>  ********************************* -->
-      <!-- Record all changes here -->
+      <profileDesc/>
       <revisionDesc>
-         <change when="2020-04-19" who="Gaia Gianni">Initial Encoding</change>
+        
+         <change when="2023-04-08" who="Sophia Papandonatou">Initial encoding</change>
       </revisionDesc>
    </teiHeader>
-   <!--  *************************************  <facsimile>  *********************************  -->
-   <!-- Used to record images of an inscription.   -->
+   <!--facsimile element goes here-->
    <facsimile>
       <surface>
          <desc/>
-         <graphic url=""/>
+         <graphic url="OH.Clev.CMA.X.1928.660.jpg"/>
       </surface>
+      
+      
+      
    </facsimile>
    <text>
       <body>
          <div type="edition">
-            <ab>Transcription goes here</ab>
+            <ab>
+               <lb n="1"/>ΥΛΙΟΣΕΓΥ
+               <lb n="2"/>ΓΥΙΟΣΕΓΥ
+               
+            
+               
+         </ab>
          </div>
-         <div type="translation">
-            <p/>
-         </div>
+         
          <div type="commentary">
-            <p>Notes here, </p>
+            <p>Attributed to Oionokles Painter.</p>
          </div>
-         <div type="apparatus">
-            <p/>
-         </div>
+         
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                          href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
-                  <p>US Ep bibliography</p>
+                  <p>US Epigraphybibliography</p>
                </xi:fallback>
             </xi:include>
          </div>
