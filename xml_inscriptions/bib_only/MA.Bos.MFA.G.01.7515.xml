@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader><!-- testing1 -->
+   <teiHeader>
+      <!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.Bos.MFA.G.01.7515</title>
@@ -17,12 +18,12 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
             </xi:include>
-            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.01.7515">MA.Bos.MFA.G.01.7515</idno>
+            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.01.7515 ">MA.Bos.MFA.G.01.7515</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -35,12 +36,64 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#text_unknown">
+                     <p>text on temple key in the shape of a bearded snake </p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  <objectDesc ana="#fragment #object_other">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p> bronze temple key </p>
+                           <dimensions type="surface" unit="cm">
+                              <height/>
+                              <width>39.6 </width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p> </p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#engraved"></handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0499" notAfter="-0476">about 500-475
+                        B.C.</date>
+                     <placeName ref="europe.greece">Lousoi</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="gifted">
+                     <p> Said to be from the temple of Artemis at <placeName ref="https://pleiades.stoa.org/places/570438"> Lousoi, Greece </placeName> (according to museum records). By <date when="1901">1901</date>, sold in Athens by a man living near Sikyon to <persName>Edward Perry Warren</persName></p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p> in <date when="1901">1901</date>, sold by <persName>Edward Perry Warren</persName> to the <orgName>MFA</orgName>
+                        (Accession date: <date>December 1, 1901</date>)</p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -60,7 +113,7 @@
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -68,19 +121,35 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-06-27" who="Jean Wanlass">adding additional information to bib only
+            file</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.01.7515.jpg"/>
+      </surface>
+   </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>τᾶς Ἀρτάμιτος τᾶς ἐν Λούσοις</ab>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
