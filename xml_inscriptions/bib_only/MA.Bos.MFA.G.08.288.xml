@@ -16,8 +16,7 @@
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,12 +34,89 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#funerary.epitaph #funerary.other">
+                     <p>inscription on a funerary monument for a young athlete</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#stele">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble stele</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>248.9</height>
+                              <width>62.9</width>
+                              <depth>24.8</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragment.single">
+                           <p> reconstructed from five original marble fragments, includes modern
+                              plaster reconstruction</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p>text runs vertically upward</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>Youth in profile, left foot advanced, wearing an oliver wreath with fruit
+                           and leaves and holding up two pomegranates in his raised left hand. His
+                           flexed right arm and hand (with wrist muscles preserved) held
+                           an anaryballos suspended from a leather strap.</p>
+                     </decoNote>
+                     <decoNote>
+                        <p>tongues in low relief on the shoulder of the aryballos</p>
+                     </decoNote>
+                     <decoNote>
+                        <p>lotus flowers and buds around the body in low relief on the aryballos</p>
+                     </decoNote>
+                     <decoNote>
+                        <p>crescents in low relief radiating from the bottom of the aryballos </p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0549" notAfter="-0551">about 550
+                        B.C.</date>
+                     <placeName ref="europe.greece.thebes">Thebes, Boiotia </placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="transferred">
+                     <p>acquired in <date when="1900">1900</date>Thebes by Edward Perry Warren, according to his records</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="transferred">
+                     <p>transferred to <persName>Edward Perry Warren's</persName> brother, <persName>Fiske Warren</persName></p>
+                  </provenance>
+                  <provenance type="transferred" subtype="transferred">
+                     <p>in <date when="1908">1908</date>, gift of <persName role="donor">Fiske Warren</persName> to the <orgName>MFA</orgName>. (Accession Date: <date>May 28, 1908</date>)</p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -51,8 +127,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -62,17 +137,30 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-06-27" who="Jean Wanlass">added information to bib only files</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc></desc>
+         <graphic url="MA.Bos.MFA.G.01.7515.jpg"/>
+      </surface>
+   </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>ΘΟ</ab>
+         </div>
+         <div type="translation">
+            <p>Tho</p>
+         </div>
+         <div type="commentary">
+            <p/>
          </div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
