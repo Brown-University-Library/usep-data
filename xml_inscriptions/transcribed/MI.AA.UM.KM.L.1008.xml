@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1008</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,20 +34,20 @@
                      <p>epitaph of Rufus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>fragmentary marble slab</p>
                            <seg type="material">Luna marble</seg>
-                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>27.5</height>
                               <width>19</width>
                               <depth>2.7</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition--><p/>
+                        <condition ana="#fragment.single"><!--Add ana attribute with controlled value for condition-->
+                           <p/>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -66,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -78,13 +90,15 @@
                   <biblScope unit="item">156-157 no. 251</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143616">EDR143616</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143616">EDR143616</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -95,11 +109,12 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-06-08" who="Scott J. DiGiulio">Added condition and writing control vocab, added specificity to placename ref; added link to EDR</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-04-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
-         <change when="2021-08-21" who="Sophia Papandonatou">added additional commentary and edited translation</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
-      
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-21" who="Sophia Papandonatou">added additional commentary and edited translation</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -108,57 +123,57 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
-                <lb n="2"/> 
-               <gap reason="lost" extent="unknown" unit="character"/><gap reason="lost" quantity="1" unit="character"/>o <persName>
-                  <name type="cognomen" key="Rufus">Rufo</name></persName>;
-                <lb n="3"/> 
+               <lb n="1"/>
+               <supplied reason="lost">
+                  <expan><abbr>D</abbr><ex>is</ex></expan>
+               </supplied>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <gap reason="lost" quantity="1" unit="character"/>o <persName>
+                  <name type="cognomen" key="Rufus">Rufo</name>
+               </persName>;
+                <lb n="3"/>
                <gap reason="lost" extent="unknown" unit="character"/>s 
                <persName>
-                  <name type="cognomen" key="Rufus">Rufus</name></persName>, <expan>
-                  <abbr>pat</abbr><ex>rono</ex></expan>,
-                <lb n="4"/> 
-               <supplied reason="lost">b</supplied><unclear>e</unclear>ne merent<unclear>i</unclear>,
-                <lb n="5"/> 
-               <supplied reason="lost">qui</supplied> <expan>
-                  <abbr>vi</abbr><ex>xit</ex>
-               </expan> 
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-               </expan> XX<gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><expan><abbr>m</abbr><ex>ensibus</ex></expan></supplied>
-                <lb n="6"/> 
-               <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">die</supplied>bu<supplied reason="lost">s</supplied> <gap reason="lost" extent="unknown" unit="character"/>.</ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[To the Divine] Spirits. To [- -] Rufus. [- -] Rufus (made this?) for (his) patron, [w]ell-deserving, [who] lived for [X] years, [X months? (and) X d]ay[s].</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 2: The abbreviation of the praenomen and all but the end of the gentilicium of the dedicatee are missing.</p>
-                   <p>Line 3: The abbreviation of the praenomen and all but the final "s" of the gentilicium of the dedicator are missing.</p>
-                   <p>Line 5: The numeral indicating the number of years lived is incomplete. It is at least twenty.</p>
-                   <p>Line 6: The final line seems to include part of an ablative ending indicating the number of days lived; whether or not it was preceded by a number of months is uncertain.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+                  <name type="cognomen" key="Rufus">Rufus</name>
+               </persName>, <expan><abbr>pat</abbr><ex>rono</ex></expan>,
+                <lb n="4"/>
+               <supplied reason="lost">b</supplied>
+               <unclear>e</unclear>ne merent<unclear>i</unclear>,
+                <lb n="5"/>
+               <supplied reason="lost">qui</supplied>
+               <expan><abbr>vi</abbr><ex>xit</ex></expan>
+               <expan><abbr>an</abbr><ex>nis</ex></expan> XX<gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">
+                  <expan><abbr>m</abbr><ex>ensibus</ex></expan>
+               </supplied>
+               <lb n="6"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">die</supplied>bu<supplied reason="lost">s</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>.</ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>[To the Divine] Spirits. To [- -] Rufus. [- -] Rufus (made this?) for (his) patron, [w]ell-deserving, [who] lived for [X] years, [X months? (and) X d]ay[s].</p>
+         </div>
+         <div type="commentary">
+            <p>Line 2: The abbreviation of the praenomen and all but the end of the gentilicium of the dedicatee are missing.</p>
+            <p>Line 3: The abbreviation of the praenomen and all but the final "s" of the gentilicium of the dedicator are missing.</p>
+            <p>Line 5: The numeral indicating the number of years lived is incomplete. It is at least twenty.</p>
+            <p>Line 6: The final line seems to include part of an ablative ending indicating the number of days lived; whether or not it was preceded by a number of months is uncertain.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

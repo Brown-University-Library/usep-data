@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MD.Balt.WAG.G.23.185</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MD.Balt.WAG.G.23.185</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.WAG.G.23.185">MD.Balt.WAG.G.23.185</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MD.Balt.WAG.G.23.185">MD.Balt.WAG.G.23.185</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,300 +42,275 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>WAG</institution>
-                        <repository/>
-                        <idno>23.185</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>WAG</institution>
+                  <repository/>
+                  <idno>23.185</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaph of Theomedes and seven others</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>epitaph of Theomedes and seven others</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#base">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#base">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>marble remains of a funerary monument</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>48.2</height>
-                                        <width>188.1</width>
-                                        <depth>10.2</depth>
-                                    </dimensions>
-                                    
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p>fourteen joining fragments; upper left-hand corner broken, and one name fragmented
+                           <p>marble remains of a funerary monument</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>48.2</height>
+                              <width>188.1</width>
+                              <depth>10.2</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>fourteen joining fragments; upper left-hand corner broken, and one name fragmented
                                         thereby; cracked and broken in several places, into eight
                                         pieces, but apparently the relief is complete</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="1">
-                                    <p>eight names written across the top of the the relief, space
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="1">
+                           <p>eight names written across the top of the the relief, space
                                         between each name varies from 5.5 cm to 14.5 cm</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                        <height min="0.8" max="1.5">0.8-1.5</height>
-                                    </dimensions>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height min="0.8" max="1.5">0.8-1.5</height>
+                        </dimensions>
             
             
             relatively shallow but not
                                 perfectly uniform; Ionic alphabet; no serifs; 4 bar sigmas</handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>Bearded man, standing, facing right, right shoulder uncovered,
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>Bearded man, standing, facing right, right shoulder uncovered,
                                     right arm draped downward, left arm supporting clothing</p>
-                            </decoNote>
-                            <decoNote>
-                                <p>Bearded man, standing, facing left, left army draping</p>
-                            </decoNote>
-                            <decoNote>
-                                <p>Bearded man, standing, facing right, right shoulder uncovered,
+                     </decoNote>
+                     <decoNote>
+                        <p>Bearded man, standing, facing left, left army draping</p>
+                     </decoNote>
+                     <decoNote>
+                        <p>Bearded man, standing, facing right, right shoulder uncovered,
                                     right arm bent, left hand pointing upwards with fingers bent
                                     towards face</p>
-                            </decoNote>
-                            <decoNote>
-                                <p>Woman seated in chair, facing  right, left hand pointing upwards
+                     </decoNote>
+                     <decoNote>
+                        <p>Woman seated in chair, facing  right, left hand pointing upwards
                                     with fingers curled towards face, right arm extended, right hand
                                     clasping right hand of man to her right</p>
-                            </decoNote>
-                            <decoNote>
-                                <p>Bearded man, standing, facing left, looking at woman to left,
+                     </decoNote>
+                     <decoNote>
+                        <p>Bearded man, standing, facing left, looking at woman to left,
                                     left arm bent, supporting clothing, right shoulder uncovered,
                                     right arm extended, right hand clasping right hand of
                                     seated-woman to left</p>
-                            </decoNote>
-                            <decoNote>
-                                <p>Bearded man standing, facing right, right shoulder uncovered,
+                     </decoNote>
+                     <decoNote>
+                        <p>Bearded man standing, facing right, right shoulder uncovered,
                                     right arm extended, right hand clasping right hand of beared man
                                     seated to his right</p>
-                            </decoNote>
-                            <decoNote>
-                                <p>Bearded man seated on chair, upper torso uncovered, left arm
+                     </decoNote>
+                     <decoNote>
+                        <p>Bearded man seated on chair, upper torso uncovered, left arm
                                     resting on back of chair, right arm extended, right hand
                                     clasping right hand of man to left</p>
-                            </decoNote>
-                            <decoNote>
-                                <p>Woman standing facing left, right arm bent upwards, right hand
+                     </decoNote>
+                     <decoNote>
+                        <p>Woman standing facing left, right arm bent upwards, right hand
                                     slightly touching chin with fingers curled towards self, left
                                     arm bent, resting in fold of clothing</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>
-                            <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="-0360" notAfter="-0340">360-340 BCE</date>
-                            <placeName ref="europe.greece.athens">Greece, Athens</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="purchased">
+                     <date evidence="unspecified" notBefore="-0360" notAfter="-0340">360-340 BCE</date>
+                     <placeName ref="europe.greece.athens">Greece, Athens</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
                             <!-- subsequent locations if inscription was moved -->
-                           <p>Purchased from <persName role="seller">Joseph Brummer</persName>, <placeName>New York</placeName> by <persName role="buyer">Henry Walters</persName>, <placeName ref="MD.Balt">Baltimore</placeName> in <date when="1926">1926</date>.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="given">
+                     <p>Purchased from <persName role="seller">Joseph Brummer</persName>, <placeName>New York</placeName> by <persName role="buyer">Henry Walters</persName>, <placeName ref="MD.Balt">Baltimore</placeName> in <date when="1926">1926</date>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="given">
                             <!-- subsequent locations if inscription was moved -->
-                            
-                            <p>Donated to the <orgName role="recipient">Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest.</p>
-                        </provenance>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <p>Donated to the <orgName role="recipient">Walters Art Museum</orgName> in <date when="1931">1931</date>, by bequest.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#IG_II2"/>
-                        <biblScope unit="item">11646</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#SEG_39"/>
-                        <biblScope unit="item">289</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://epigraphy.packhum.org/inscriptions/oi?ikey=14137&amp;bookid=5&amp;region=1">PHI IG II² 11646</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="https://art.thewalters.org/detail/20321/funerary-relief-with-eight-figures/"
-                            >Walters Art Museum Web Entry</ref>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Brueckner1926"/>
-                        <biblScope unit="pp">274-276</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MDAIA_93_Schmaltz"/>
-                        <biblScope unit="pp">90-91 pl. 30-31</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#ArchDelt_Kaninia"/>
-                        <biblScope unit="pp">257-258</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#GRSA"/>
-                        <biblScope unit="pp">107, no. 77</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Clairmont"/>
-                        <biblScope unit="pp">69 n. 57, 274-275 pl. 7</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Reeder1988"/>
-                        <biblScope unit="pp">73-74</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-12-15" who="Luther Karper">Initial Encoding</change>
-            <change when="2015-09-02" who="Scott J. DiGiulio">Cleaned metadata, proofed transcription, tidied bibl, added image, moved acqusition data, added translation div</change>
-            <change when="2017-07-14" who="Scott J. DiGiulio">Fixed capitalization in metadata; added paragraphing to commentary</change>
-            <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>            
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det2.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det3.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det4.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det5.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det6.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det7.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det8.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det9.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det10.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det11.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.185-det12.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <ab><lb n="1"/><gap reason="lost" atLeast="2" atMost="7" unit="character"/><persName>όδωρο<supplied reason="lost">ς</supplied></persName>. <persName>Θεομήδης</persName>. <persName>Ἱππόμαχος</persName>. <persName>Θεομνήστη</persName>. <persName>Κηφισόδωρος</persName>. <persName>Μοιρογένης</persName>. <persName>Μοιρίας</persName>. <persName>Κλεαγόρα</persName>.
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#IG_II2"/>
+                  <biblScope unit="item">11646</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_39"/>
+                  <biblScope unit="item">289</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://epigraphy.packhum.org/inscriptions/oi?ikey=14137&amp;bookid=5&amp;region=1">PHI IG II² 11646</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://art.thewalters.org/detail/20321/funerary-relief-with-eight-figures/">Walters Art Museum Web Entry</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Brueckner1926"/>
+                  <biblScope unit="pp">274-276</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MDAIA_93_Schmaltz"/>
+                  <biblScope unit="pp">90-91 pl. 30-31</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#ArchDelt_Kaninia"/>
+                  <biblScope unit="pp">257-258</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#GRSA"/>
+                  <biblScope unit="pp">107, no. 77</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Clairmont"/>
+                  <biblScope unit="pp">69 n. 57, 274-275 pl. 7</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Reeder1988"/>
+                  <biblScope unit="pp">73-74</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-15" who="Luther Karper">Initial Encoding</change>
+         <change when="2015-09-02" who="Scott J. DiGiulio">Cleaned metadata, proofed transcription, tidied bibl, added image, moved acqusition data, added translation div</change>
+         <change when="2017-07-14" who="Scott J. DiGiulio">Fixed capitalization in metadata; added paragraphing to commentary</change>
+         <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det2.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det3.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det4.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det5.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det6.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det7.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det8.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det9.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det10.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det11.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.185-det12.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <gap reason="lost" atLeast="2" atMost="7" unit="character"/>
+               <persName>όδωρο<supplied reason="lost">ς</supplied>
+               </persName>. <persName>Θεομήδης</persName>. <persName>Ἱππόμαχος</persName>. <persName>Θεομνήστη</persName>. <persName>Κηφισόδωρος</persName>. <persName>Μοιρογένης</persName>. <persName>Μοιρίας</persName>. <persName>Κλεαγόρα</persName>.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                <p>“-odoros. Theomedes. Hippomachos. Theomneste. Kephisodoros. Moirogenes. Moirias.
+         </div>
+         <div type="translation">
+            <p>“-odoros. Theomedes. Hippomachos. Theomneste. Kephisodoros. Moirogenes. Moirias.
                     Kleagora.”</p>
-            </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-                <p> “-όδωρο[ς]”: All other names which appear on the fillet are in the
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p> “-όδωρο[ς]”: All other names which appear on the fillet are in the
                     nominative, leading all editors, myself included, to supply a sigma at the end
                     of the first name, which cannot be restored with any certainty, but is more
                     likely to have faded than to have been omitted by the carver, since the letters
@@ -335,25 +319,28 @@
                     left-hand corner of the stone, and there would otherwise be little room for much
                     else to appear before the first name, if one were to grant the possibility that
                     more is lost.</p>
-                <p>“Μοιρογένης”: IG II2 11646 Μοιρογέν[η]ς; Dow “Μοιρογένες”; Reeder “Μοιρογένης” (SEG 39:289): I myself
+            <p>“Μοιρογένης”: IG II2 11646 Μοιρογέν[η]ς; Dow “Μοιρογένες”; Reeder “Μοιρογένης” (SEG 39:289): I myself
                     have seen this stone and can attest to the surety of the reading “Μοιρογένης.”
                     Kirchner’s IG note explains why the faint “Η” was not seen by earlier editors,
                     who produced editions from photos. This matter seems to have been further confused by the
                     fact that Μοιρογένης appears to be a hapax in the epigraphic record.</p>
-                <p>The sheer
+            <p>The sheer
                     size of this relief suggests that it was part of a monument, an inference
                     corroborated by the clamp cuttings and the anathyrosis present on the stone.
                     Reeder suggests that it was once part of the socle of a grave monument and cites
                     a parallel from Kallithea, dated to the second half of the fourth century, as
                     well as similar parallels found in reliefs from Sigeion, a fragment from Athens,
                     and a relief from Nea Smyrni, all of which include figures spaced widely apart
-                    with similar clothing, gestures, and garments. </p></div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+                    with similar clothing, gestures, and garments. </p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

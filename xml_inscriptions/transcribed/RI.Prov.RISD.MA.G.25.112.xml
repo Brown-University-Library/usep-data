@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>RI.Prov.RISD.MA.G.25.112</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>RI.Prov.RISD.MA.G.25.112</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.G.25.112">RI.Prov.RISD.MA.G.25.112</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.G.25.112">RI.Prov.RISD.MA.G.25.112</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,237 +42,206 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>RI</region>
-                        <settlement>Prov</settlement>
-                        <institution>RISD</institution>
-                        <repository>MA</repository>
-                        <idno>25.112</idno>
-                    </msIdentifier>
-
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+            <msDesc>
+               <msIdentifier>
+                  <region>RI</region>
+                  <settlement>Prov</settlement>
+                  <institution>RISD</institution>
+                  <repository>MA</repository>
+                  <idno>25.112</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>Inscribed bronze kalpis (pitcher)</p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Inscribed bronze kalpis (pitcher)</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-
-                        <objectDesc ana="#instrumentum.vase">
-                            <supportDesc ana="#metal.bronze">
-                                <support>
+                  <objectDesc ana="#instrumentum.vase">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Kalpis with high, round body, wide shoulder, slender neck and
+                           <p>Kalpis with high, round body, wide shoulder, slender neck and
                                         three handles, two of which arise from the body of the jug,
                                         and the third, which rises vertically from the shoulder to
                                         just below the rim.  </p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>39.4</height>
-                                        <width/>
-                                        <depth>0.7 </depth>
-                                        <dim type="diameter">33.3</dim>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="1">
-                                    <p>The campus is the flat surface of the rim: the inscription
+                           <dimensions type="surface" unit="cm">
+                              <height>39.4</height>
+                              <width/>
+                              <depth>0.7 </depth>
+                              <dim type="diameter">33.3</dim>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="1">
+                           <p>The campus is the flat surface of the rim: the inscription
                                         runs clockwise from the vertical handle around one half of
                                         the rim's circumference</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#etched"> The writing appears to have
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#etched"> The writing appears to have
                                 been written by a Boeotian hand</handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>The jug's slight decoration is concentrated on the rim, which is
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>The jug's slight decoration is concentrated on the rim, which is
                                     decorated with two mouldings: the upper consists of beads, while
                                     the lower is formed of convex tongue-like elements bordered by a
                                     raised ridge.</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-
-                        <summary>
-                            <rs/>
-                            <!-- content can be "fake" or blank -->
-                        </summary>
-
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="-0500" notAfter="-0450">Ca. early fifth century
+                     <date evidence="unspecified" notBefore="-0500" notAfter="-0450">Ca. early fifth century
                                 BCE</date>
-                            <placeName ref="europe.greece.boeotia">Greece, Boeotia</placeName>
-                        </origin>
-                        <acquisition>
+                     <placeName ref="europe.greece.boeotia">Greece, Boeotia</placeName>
+                  </origin>
+                  <acquisition>
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="1925">September 1925</date>
-                            <p>Museum Appropriation and Special Gift</p>
-                        </acquisition>
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date when="1925">September 1925</date>
+                     <p>Museum Appropriation and Special Gift</p>
+                  </acquisition>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Mitten"/>
-                        <biblScope unit="item">13</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Diehl"/>
-                        <biblScope unit="page">31, 34, 180, 217-18</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#FestscrhAmelung_Richter"/>
-                        <biblScope unit="pp">189 n. 2</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Jacobsthal_1933"/>
-                        <biblScope unit="pp">21-22, figs. 10-11</biblScope>                        
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_Robinson2"/>
-                        <biblScope unit="pp">180-182, figs. 12-13</biblScope>                           
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#LSAG"/>
-                        <biblScope unit="pp">93, 95, no. 16, pl. 9 and p. 402</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#BCH_91_Thasos"/>
-                        <biblScope unit="pp">596</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#BCH_95_Amandry"/>
-                        <biblScope unit="pp">617, no. 7</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#EG_1"/>
-                        <biblScope unit="pp">150, no. 5</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-
-        <encodingDesc>
-
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Mitten"/>
+                  <biblScope unit="item">13</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Diehl"/>
+                  <biblScope unit="page">31, 34, 180, 217-18</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#FestscrhAmelung_Richter"/>
+                  <biblScope unit="pp">189 n. 2</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Jacobsthal_1933"/>
+                  <biblScope unit="pp">21-22, figs. 10-11</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJA_Robinson2"/>
+                  <biblScope unit="pp">180-182, figs. 12-13</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#LSAG"/>
+                  <biblScope unit="pp">93, 95, no. 16, pl. 9 and p. 402</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#BCH_91_Thasos"/>
+                  <biblScope unit="pp">596</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#BCH_95_Amandry"/>
+                  <biblScope unit="pp">617, no. 7</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#EG_1"/>
+                  <biblScope unit="pp">150, no. 5</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc>
             <!-- not used -->
         </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2014-12-09" who="Darrel Janzen">Initial Entry</change>
-            <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned metadata and filled in missing fields, updated bibl and added correct tagging to the master bibl, corrected transcription and removed regularization to Attic alphabet</change>
-            <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change instrumentum.container.vase to instrumentum.vase</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.G.25.112.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.G.25.112-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.G.25.112-det2.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition">
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-09" who="Darrel Janzen">Initial Entry</change>
+         <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned metadata and filled in missing fields, updated bibl and added correct tagging to the master bibl, corrected transcription and removed regularization to Attic alphabet</change>
+         <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change instrumentum.container.vase to instrumentum.vase</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.G.25.112.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.G.25.112-det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.G.25.112-det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
                 <!-- transcription goes here -->
-                <ab><lb n="1"/>το͂ν <placeName type="city" ref="europe.greece.thebes">Θέβαις</placeName> αἴθλο̄ν</ab>
-            </div>
-        
-        
-                <div type="translation">
-                <p>"From the contests at Thebes."</p>
-            </div>
-            
-        
-        
-                <div type="commentary">
+            <ab>
+               <lb n="1"/>το͂ν <placeName type="city" ref="europe.greece.thebes">Θέβαις</placeName> αἴθλο̄ν</ab>
+         </div>
+         <div type="translation">
+            <p>"From the contests at Thebes."</p>
+         </div>
+         <div type="commentary">
                 <!-- notes go here -->
-                <p>τὸν αἴθλον is partitive genitive. The mention of Thebes and the use of
+            <p>τὸν αἴθλον is partitive genitive. The mention of Thebes and the use of
                     iota in αἴθλο̄ν (rather than ἄεθλο̄ν) suggests a Boeotian hand. αἴθλον with this spelling
                     is otherwise unparalleled. The alpha with horizontal bar slanting to the right is also
                     Boeotian. The 'cross-barred' or 'cartwheel' theta is an unexpectedly archaic
                     feature which helps date the kalpis. The three bar sigma present in
                     Θέβαις appears sporadically in Boeotian before 550 BCE and becomes the common
                     representation for sigma during the second half of the 6th c. BCE.</p>
-            </div>
-            
-        
-        
-<div type="bibliography">
-                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
-                    <xi:fallback>
-                        <p>US Epigraphybibliography</p>
-                    </xi:fallback>
-                </xi:include>
-            </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

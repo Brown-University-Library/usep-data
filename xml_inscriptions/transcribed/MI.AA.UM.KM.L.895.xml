@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.895</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,16 +34,13 @@
                      <p>epitaph of Decia Hegemonis, a freedwoman</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>marble slab</p>
-                           
+                           <p>marble slab</p>
                            <seg type="material">Gray marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>31.2</height>
                               <width>51.4</width>
                               <depth>4.2-8.2</depth>
@@ -63,13 +71,16 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#palaeography #nomenclature #formulae" notBefore="0001" notAfter="0100">first century CE</date>
+                     <date evidence="#palaeography #nomenclature #formulae"
+                            notBefore="0001"
+                            notAfter="0100">first century CE</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
                   </origin>
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,14 +93,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114372"
-                     >EDR114372</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114372">EDR114372</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -100,10 +111,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-17" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -112,69 +124,53 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition"> 
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <persName>
                   <name type="gentilicium" key="Decia">Decia </name>
                   <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>uli</ex>
-                     </expan>
-                  </name> 
-                  <expan>
-                     <abbr>l</abbr><ex>iberta</ex>
-                  </expan> 
-                  <name type="cognomen" key="Hegemonis">Hegemo<hi rend="ligature">ni</hi>s</name> 
+                     <expan><abbr>A</abbr><ex>uli</ex></expan>
+                  </name>
+                  <expan><abbr>l</abbr><ex>iberta</ex></expan>
+                  <name type="cognomen" key="Hegemonis">Hegemo<hi rend="ligature">ni</hi>s</name>
                </persName>
-                <lb n="2"/>sibi, et
+               <lb n="2"/>sibi, et
                 <lb n="3"/>
                <persName>
-                  <name type="gentilicium" key="Decia">Deciae</name> 
-                  <g type="Gaiae"/> 
-                  <expan>
-                     <abbr>l</abbr><ex>ibertae</ex>
-                  </expan> 
+                  <name type="gentilicium" key="Decia">Deciae</name>
+                  <g type="Gaiae"/>
+                  <expan><abbr>l</abbr><ex>ibertae</ex></expan>
                   <name type="cognomen" key="Italia">Italiae</name>
-               </persName> 
-               <expan>
-                  <abbr>vern</abbr><ex>ae</ex>
-               </expan> suae, et
+               </persName>
+               <expan><abbr>vern</abbr><ex>ae</ex></expan> suae, et
                 <lb n="4"/>
                <persName>
                   <name type="gentilicium" key="Decia">Deciae</name>
-                  <name type="cognomen" key="Epitychia">Epitychiae</name></persName> 
-               <expan>
-                  <abbr>lib</abbr><ex>ertae</ex>
-               </expan> 
-               <expan>
-                  <abbr>vern</abbr><ex>ae</ex>
-               </expan> suae
+                  <name type="cognomen" key="Epitychia">Epitychiae</name>
+               </persName>
+               <expan><abbr>lib</abbr><ex>ertae</ex></expan>
+               <expan><abbr>vern</abbr><ex>ae</ex></expan> suae
                 <lb n="5"/>et su<hi rend="tall">i</hi>s.</ab>
             <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>Decia Hegemonis, freedwoman of Aulus, (made this) for herself, and for Decia
+         </div>
+         <div type="translation">
+            <p>Decia Hegemonis, freedwoman of Aulus, (made this) for herself, and for Decia
                Italia, freedwoman of a woman (and) her homeborn slave, and for Epitychia, freedwoman
                (and) her homeborn slave, and for her own.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

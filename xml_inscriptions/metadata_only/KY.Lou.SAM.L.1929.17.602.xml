@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>KY.Lou.SAM.L.1929.17.602</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,9 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p>partially reconstituted marble stele</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>partially reconstituted marble stele</p>
+                           <dimensions type="surface" unit="cm">
                               <height>60.3</height>
                               <width>28.5</width>
                               <depth>1.2</depth>
@@ -40,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="0" writtenLines="9">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -55,10 +67,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -67,7 +75,8 @@
                         second century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -78,19 +87,20 @@
                   <ptr type="rest-of-bibl" target="#MAAR_GiganteHouston"/>
                   <biblScope unit="pp">pp. 60-61, no. 32</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR136645">EDR136645</ref>
-</bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR136786">EDR136786</ref>
-</bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR136645">EDR136645</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR136786">EDR136786</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -101,10 +111,10 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-12-07" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2022-10-17" who="Sophia Papandonatou">added dimensions, transcription,
             translation, commentary</change>
-</revisionDesc>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -133,45 +143,70 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-           <ab>
-              <lb n="1"/><persName><name key="Sextilia" type="gentilicium">Sextiliae</name>
-                 <lb n="2"/><name key="Onesimenes" type="cognomen">Onesimeni</name></persName>,
-              <lb n="3"/>quae vixit <expan><abbr>ann</abbr><ex>is</ex></expan>
-              <lb n="4"/><num value="35" xml:lang="lat">XXXV</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="2" xml:lang="lat"><unclear>II</unclear></num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="11" xml:lang="lat">XI</num>,
-              <lb n="5"/><persName><name key="Pantagathus" type="slaveName">Pantaga<supplied reason="omitted">t</supplied>hus</name></persName> 
-              <lb n="6"/>coniugae
-              <lb n="7"/>b<supplied reason="lost">e</supplied><unclear>n</unclear>ae merenti
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name key="Sextilia" type="gentilicium">Sextiliae</name>
+                  <lb n="2"/>
+                  <name key="Onesimenes" type="cognomen">Onesimeni</name>
+               </persName>,
+              <lb n="3"/>quae vixit <expan>
+                  <abbr>ann</abbr>
+                  <ex>is</ex>
+               </expan>
+               <lb n="4"/>
+               <num value="35" xml:lang="lat">XXXV</num>, <expan>
+                  <abbr>m</abbr>
+                  <ex>ensibus</ex>
+               </expan>
+               <num value="2" xml:lang="lat">
+                  <unclear>II</unclear>
+               </num>, <expan>
+                  <abbr>d</abbr>
+                  <ex>iebus</ex>
+               </expan>
+               <num value="11" xml:lang="lat">XI</num>,
+              <lb n="5"/>
+               <persName>
+                  <name key="Pantagathus" type="slaveName">Pantaga<supplied reason="omitted">t</supplied>hus</name>
+               </persName>
+               <lb n="6"/>coniugae
+              <lb n="7"/>b<supplied reason="lost">e</supplied>
+               <unclear>n</unclear>ae merenti
               <lb n="8"/>e<unclear>t</unclear> sibi
               <lb n="9"/>fecit.
-              <lb n="10"/><hi rend="inverted"><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.</hi>
-           </ab>
+              <lb n="10"/>
+               <hi rend="inverted">
+                  <expan>
+                     <abbr>D</abbr>
+                     <ex>is</ex>
+                  </expan>
+                  <expan>
+                     <abbr>M</abbr>
+                     <ex>anibus</ex>
+                  </expan>.</hi>
+            </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>To Sextilia Onesimenes, who lived for 35 years, 2 months, (and) 11 days. Pantagathus made (this) for (his) well-deserving wife and for himself. To the Divine Spirits.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>The DM at the bottom of the inscription is upside down with respect to the rest of the text, which suggests that it was cut onto the stele in advance but was either ignored or went unnoticed when the stonecutter added the Sextilia's epitaph.</p>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-                    <p/>
-                </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>To Sextilia Onesimenes, who lived for 35 years, 2 months, (and) 11 days. Pantagathus made (this) for (his) well-deserving wife and for himself. To the Divine Spirits.</p>
+         </div>
+         <div type="commentary">
+            <p>The DM at the bottom of the inscription is upside down with respect to the rest of the text, which suggests that it was cut onto the stele in advance but was either ignored or went unnoticed when the stonecutter added the Sextilia's epitaph.</p>
+         </div>
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

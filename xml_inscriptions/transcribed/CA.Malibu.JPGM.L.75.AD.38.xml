@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.L.75.AD.38</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -20,14 +30,16 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
-                  <msItem class="#stamp">
+                  <msItem class="#label">
                      <p>Brickstamp of M. [R(utilius) L(upus)]</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#instrumentum.brick">
                      <supportDesc ana="#clay.terracotta">
-                        <support><p>Fragment of a brick</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Fragment of a brick</p>
+                           <dimensions type="surface" unit="cm">
                               <height>15</height>
                               <width>14</width>
                               <depth>4</depth>
@@ -40,25 +52,23 @@
                      <layoutDesc>
                         <layout columns="0" writtenLines="2">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p>first line written below</p>
+                           <p>first line written below</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-                     <handNote ana="#stamped.relief"/>
+
+                     <handNote ana="#in_relief #stamped"/>
+                  
                   </handDesc>
                   <decoDesc>
                      <decoNote>
-                        <p>no photo</p>
+                        <p></p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -66,7 +76,8 @@
                      <date evidence="unspecified" notBefore="0115" notAfter="0115">a. 115 CE</date>
                      <placeName ref="unknown"/>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,13 +93,15 @@
                   <biblScope unit="item">39</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/7213/unknown-maker-tile-fragment-roman-about-115/">Getty Museum Web Entry</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/7213/unknown-maker-tile-fragment-roman-about-115/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -100,38 +113,53 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-28" who="Scott J. DiGiulio">Added missing control vocab, updated with available metadata, added link to Getty, fixed line/column values, added transcription from drawing in Rodriquez Almeida</change>
          <change when="2020-10-22" who="Scott J. DiGiulio">Removed the empty @ana on decoNote</change>
-      <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
-</revisionDesc>
+         <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
+         <change when="2023-04-18" who="Scott J. DiGiulio">Small tweaks to conform with new vocab</change>
+      </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-   
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name><supplied reason="lost"><name type="gentilicium" key="Rutilius"><expan><abbr>R</abbr><ex>utili</ex></expan></name> <name type="cognomen" key="Lupus"><expan><abbr>L</abbr><ex>upi</ex></expan></name></supplied></persName>, <persName><name type="cognomen" key="Messala"><expan><abbr><supplied reason="lost">Mes</supplied>sal</abbr><ex>la</ex></expan></name></persName> et <persName><name type="cognomen" key="Pedo">Pedone</name></persName>
-               <lb n="2"/><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>.
+               <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan><abbr>M</abbr><ex>arci</ex></expan>
+                  </name>
+                  <supplied reason="lost">
+                     <name type="gentilicium" key="Rutilius">
+                        <expan><abbr>R</abbr><ex>utili</ex></expan>
+                     </name>
+                     <name type="cognomen" key="Lupus">
+                        <expan><abbr>L</abbr><ex>upi</ex></expan>
+                     </name>
+                  </supplied>
+               </persName>, <persName>
+                  <name type="cognomen" key="Messala">
+                     <expan><abbr><supplied reason="lost">Mes</supplied>sal</abbr><ex>la</ex></expan>
+                  </name>
+               </persName> et <persName>
+                  <name type="cognomen" key="Pedo">Pedone</name>
+               </persName>
+               <lb n="2"/>
+               <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

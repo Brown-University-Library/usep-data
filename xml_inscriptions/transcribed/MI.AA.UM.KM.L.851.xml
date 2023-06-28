@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.851</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,14 +34,13 @@
                      <p>epitaph of Lucius Bellenius Ginealis</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>marble slab</p>
-                           <seg type="material">Fine-grained white marble</seg>                 
-                              <dimensions type="surface" unit="cm">
+                           <seg type="material">Fine-grained white marble</seg>
+                           <dimensions type="surface" unit="cm">
                               <height>26.5</height>
                               <width>36.5</width>
                               <depth>24</depth>
@@ -67,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -80,14 +91,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115992"
-                     >EDR115992</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115992">EDR115992</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -98,10 +109,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-17" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -110,73 +122,53 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
+            <ab>
                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan>
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>. <lb n="2"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>. <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Lucius">
-                     <expan>
-                        <abbr>L</abbr><ex>ucius</ex>
-                     </expan>
+                     <expan><abbr>L</abbr><ex>ucius</ex></expan>
                   </name>
                   <name type="gentilicium" key="Bellenius">Bellenius</name>
-                  <name type="cognomen" key="Genialis">Ginea<choice><sic>il</sic><corr>li</corr></choice>s</name>
+                  <name type="cognomen" key="Genialis">Ginea<choice>
+                        <sic>il</sic>
+                        <corr>li</corr>
+                     </choice>s</name>
                </persName>
-               <lb n="3"/>qui vixit <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan>
+               <lb n="3"/>qui vixit <expan><abbr>ann</abbr><ex>is</ex></expan>
                <num xml:lang="lat" value="33">XXXIII</num>
-               <expan>
-                  <abbr>m<hi rend="stacked">e</hi></abbr><ex>nsibus</ex>
-               </expan>
+               <expan><abbr>m<hi rend="stacked">e</hi></abbr><ex>nsibus</ex></expan>
                <num xml:lang="lat" value="7">VII</num>
                <lb n="4"/>
-               <expan>
-                  <abbr>d</abbr><ex>iebus</ex>
-               </expan>
+               <expan><abbr>d</abbr><ex>iebus</ex></expan>
                <num xml:lang="lat" value="14">XIIII</num>. <persName>
                   <name type="gentilicium" key="Fania">
                      <hi rend="tall">F</hi>ania</name>
                   <name type="Secundina">Sicundi <lb n="5" break="no"/>na</name>
-               </persName> coniugi <expan>
-                  <abbr>b</abbr><ex>e</ex><abbr>n</abbr><ex>e</ex>
-               </expan>
-               <expan>
-                  <abbr>m</abbr><ex>eren</ex><abbr>t</abbr><ex>i</ex>
-               </expan>
-               <expan>
-                  <abbr>f</abbr><ex>e</ex><abbr>c</abbr><ex>it</ex></expan>. </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. Lucius Bellenius Ginealis, who lived for thirty-three
+               </persName> coniugi <expan><abbr>b</abbr><ex>e</ex><abbr>n</abbr><ex>e</ex></expan>
+               <expan><abbr>m</abbr><ex>eren</ex><abbr>t</abbr><ex>i</ex></expan>
+               <expan><abbr>f</abbr><ex>e</ex><abbr>c</abbr><ex>it</ex></expan>. </ab>
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. Lucius Bellenius Ginealis, who lived for thirty-three
                years, seven months, (and) fourteen days. Fania Sicundina made (this) for (her)
                husband, well-deserving.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 2: BELLIENUS (CIL); Genialis (Tuck).</p>
-                </div>
-            
-        
-        
-                
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Line 2: BELLIENUS (CIL); Genialis (Tuck).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

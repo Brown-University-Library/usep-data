@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-                <!-- printable version of USEpi inscription ID: -->
-                <title>MA.Glouc.HCM.L.#97.6.43</title>
-            </titleStmt>
+            <title>MA.Glouc.HCM.L.#97.6.43</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.43">MA.Glouc.HCM.L.#97.6.43</idno>
@@ -15,18 +25,18 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-
-                        <region>MA</region>
-                        <settlement>Glouc</settlement>
-                        <institution/>
-                        <repository>HCM</repository>
-                        <!--required.-->
-                        <!--  accession number, last part of USEP number -->
-                        <idno>#97.6.43</idno>
-                        <!-- optionally some <altIdentifier>s or <msName>s here -->
-                    </msIdentifier>
+                  <region>MA</region>
+                  <settlement>Glouc</settlement>
+                  <institution/>
+                  <repository>HCM</repository>
+                  <!--required.-->
+                  <!--  accession number, last part of USEP number -->
+                  <idno>#97.6.43</idno>
+                  <!-- optionally some <altIdentifier>s or <msName>s here -->
+               </msIdentifier>
                <msContents>
-                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
                      <p>Epitaph of Aponia Lochias</p>
                   </msItem>
                </msContents>
@@ -45,7 +55,6 @@
                               <width>27.1</width>
                               <depth/>
                            </dimensions>
-                           
                         </support>
                         <condition ana="#complete.broken">
                            <!--Add ana attribute with controlled value for condition-->
@@ -63,14 +72,10 @@
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                              <height min="1.1" max="2.2" precision="low">1.1-2.2</height>
-                           </dimensions>
-            
-            
-            
-            
-            </handNote>
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.1" max="2.2" precision="low">1.1-2.2</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="decorated_border">
@@ -80,39 +85,35 @@
                </physDesc>
                <history>
                   <summary>
-                            <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
-                            <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
-                            <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
-                            <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <rs/>
-                        </summary>
+                     <rs/>
+                  </summary>
                   <origin>
                      <date evidence="#nomenclature #formulae" notBefore="0200" notAfter="0300">second-third century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Van_Buren_1931"/>
-                        <biblScope unit="pp">315-316</biblScope>
-                    </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Van_Buren_1931"/>
+                  <biblScope unit="pp">315-316</biblScope>
+               </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Solin_1982"/>
                   <biblScope unit="pp">2.939</biblScope>
                </bibl>
-
-                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR001136">EDR001136</ref>
-</bibl>
-                </listBibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR001136">EDR001136</ref>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -126,55 +127,66 @@
          <change when="2016-05-10" who="Scott J. DiGiulio">Added control vocab for writing, fixed small typos in date and condition</change>
          <change when="2020-06-30" who="Sophia Papandonatou">minor metadata revisions</change>
          <change when="2020-08-03" who="Sophia Papandonatou">added commentary</change>
-      <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2021-02-21" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
-        <surface>
+      <surface>
             <!-- Caption in desc element -->
-        <desc/>
-            <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-            <graphic url="MA.Glouc.HCM.L.Tmp97.6.43.jpg"/>
+         <desc/>
+         <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
+         <graphic url="MA.Glouc.HCM.L.Tmp97.6.43.jpg"/>
       </surface>
    </facsimile>
    <text>
-
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr>s</abbr><ex>acrum</ex></expan>.
-                <lb n="2"/><persName><name type="gentilicium" key="Aponia">Aponiae</name> <name type="cognomen" key="Lochias">Lochiadi</name></persName>.
-                <lb n="3"/><expan><abbr>V</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num value="26">XXVI</num>.
-                <lb n="4"/><persName><name type="cognomen" key="Fructus">Fructus</name></persName> frater e<hi rend="tall">t</hi>
-                <lb n="5"/><persName><name type="cognomen" key="Nicephor">Nicephor</name></persName> coniugi
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <expan><abbr>s</abbr><ex>acrum</ex></expan>.
+                <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Aponia">Aponiae</name>
+                  <name type="cognomen" key="Lochias">Lochiadi</name>
+               </persName>.
+                <lb n="3"/>
+               <expan><abbr>V</abbr><ex>ixit</ex></expan>
+               <expan><abbr>a</abbr><ex>nnis</ex></expan>
+               <num value="26">XXVI</num>.
+                <lb n="4"/>
+               <persName>
+                  <name type="cognomen" key="Fructus">Fructus</name>
+               </persName> frater e<hi rend="tall">t</hi>
+               <lb n="5"/>
+               <persName>
+                  <name type="cognomen" key="Nicephor">Nicephor</name>
+               </persName> coniugi
                 <lb n="6"/>optimae et
                 <lb n="7"/>p<hi rend="tall">i</hi>issimae.
             </ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-
-            </div>
-
-
-                <div type="translation">
-                    <p>Sacred to the Divine Spirits. To Aponia Lochias. She lived for twenty-six
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Sacred to the Divine Spirits. To Aponia Lochias. She lived for twenty-six
                years. Fructus, (her) brother, and Nicephor, for the best and most dutiful wife,
                (made this).</p>
-                </div>
-
-
-
-                <div type="commentary">
-                    <p>In line 7, the tall “i” of piissimae is probably decorative, as it should
+         </div>
+         <div type="commentary">
+            <p>In line 7, the tall “i” of piissimae is probably decorative, as it should
                preclude the presence of another “i.” </p>
-                </div>
-
-
-
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-
-
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

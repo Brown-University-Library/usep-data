@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1415</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,13 +34,11 @@
                      <p>epitaph of Octavia Mneme</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>marble columbarium slab</p>
-                          
                            <dimensions type="surface" unit="cm">
                               <height>13.9</height>
                               <width>21.5</width>
@@ -68,7 +77,8 @@
                      <p>Purchased in <date when="1908-12">December 1908</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">Antiquario Maniani</orgName> on the Via della Consolazione in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,14 +91,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR103220"
-                     >EDR103220</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR103220">EDR103220</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -100,7 +110,9 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2018-05-15" who="John Bodel">Fixed error in title</change>
          <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -109,65 +121,59 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <div type="textpart" subtype="column" n="1">
-            <ab>
-                <lb n="1"/>
-               <persName>
-                  <name type="gentilicium" key="Umbonius">Umbon
+      <body>
+         <div type="edition">
+            <div type="textpart" subtype="column" n="1">
+               <ab>
+                  <lb n="1"/>
+                  <persName>
+                     <name type="gentilicium" key="Umbonius">Umbon
                 <lb break="no" n="2"/>
-                     ia</name> <name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aii</ex></expan></name> <expan><abbr>l</abbr><ex>iberta</ex>
-                  </expan>
-                  <lb n="3"/>
-                  <name type="cognomen" key="Zosima">Zosi
-                <lb break="no" n="4"/>ma</name></persName>.
-            </ab> 
-           </div>
-           
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-           <div type="textpart" subtype="column" n="2">
-            <ab>
-                <lb n="1"/>
-               <persName>
-                  <name type="gentilicium" key="Octavia">Octavi
-                <lb break="no" n="2"/> ae</name> 
-                  <name type="praenomen" key="Quintus">
-                     <expan>
-                        <abbr>Q</abbr><ex>uinti</ex>
-                     </expan>
-                  </name> 
-                  <expan>
-                     <abbr>l</abbr><ex>ibertae</ex>
-                  </expan>
-                  <lb n="3"/> 
-                  <name type="cognomen" key="Mneme">Mnem
-                <lb break="no" n="4"/>eni</name></persName>.
-            </ab> 
-            
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-            </div>    
+                     ia</name>
+                     <name type="praenomen" key="Gaius">
+                        <expan><abbr>C</abbr><ex>aii</ex></expan>
+                     </name>
+                     <expan><abbr>l</abbr><ex>iberta</ex></expan>
+                     <lb n="3"/>
+                     <name type="cognomen" key="Zosima">Zosi
+                <lb break="no" n="4"/>ma</name>
+                  </persName>.
+            </ab>
             </div>
-        
-        
-                <div type="translation">
-                    <p>Umbonia Zosima, freedwoman of Gaius, (made this) for Octavia Mneme,
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+            <div type="textpart" subtype="column" n="2">
+               <ab>
+                  <lb n="1"/>
+                  <persName>
+                     <name type="gentilicium" key="Octavia">Octavi
+                <lb break="no" n="2"/> ae</name>
+                     <name type="praenomen" key="Quintus">
+                        <expan><abbr>Q</abbr><ex>uinti</ex></expan>
+                     </name>
+                     <expan><abbr>l</abbr><ex>ibertae</ex></expan>
+                     <lb n="3"/>
+                     <name type="cognomen" key="Mneme">Mnem
+                <lb break="no" n="4"/>eni</name>
+                  </persName>.
+            </ab>
+               <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+            </div>
+         </div>
+         <div type="translation">
+            <p>Umbonia Zosima, freedwoman of Gaius, (made this) for Octavia Mneme,
                freedwoman of Quintus. </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

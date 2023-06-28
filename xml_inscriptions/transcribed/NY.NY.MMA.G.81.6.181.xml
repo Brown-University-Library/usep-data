@@ -8,171 +8,158 @@ changes: Added @evidence to date
 <!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
           -->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-        
-        <fileDesc>
-            
-            <titleStmt>
-                <title>NY.NY.MMA.G.81.6.181</title>
-            </titleStmt>
-            
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.81.6.181">NY.NY.MMA.G.81.6.181</idno>
-            </publicationStmt>
-            
-            <sourceDesc>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>NY.NY.MMA.G.81.6.181</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.81.6.181">NY.NY.MMA.G.81.6.181</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository/>
-                        <idno>81.6.181</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>MMA</institution>
+                  <repository/>
+                  <idno>81.6.181</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>labeled ringstone</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>labeled ringstone</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                         
                         <!--  *************************************  <objectDesc>  *********************************  -->
-                        
-                        <objectDesc ana="#object_other">
-                            <supportDesc ana="#stone.other">
-                                <support>
-                                    <p>carnelian ringstone</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width>2.1</width>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>Hermes</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <history>
-                        
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-                        
-                        <origin>
-                            <date evidence="#unspecified" notBefore="-0100" notAfter="0400">1st BCE-4th
+                  <objectDesc ana="#object_other">
+                     <supportDesc ana="#stone.other">
+                        <support>
+                           <p>carnelian ringstone</p>
+                           <dimensions type="surface" unit="cm">
+                              <height/>
+                              <width>2.1</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>Hermes</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0100" notAfter="0400">1st BCE-4th
                                 c. CE</date>
-                            <placeName ref="europe.italy">Italy</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="given">
-                            <p>Gift of <persName role="donor"><name key="John Taylor Johnston">John Taylor Johnston</name></persName>, <date when="1881">1881</date>.</p>
-                        </provenance>
-                        
-                        
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Engraved_gems"/>
-                        <biblScope unit="item">no. 289, Pl. 41</biblScope>
-                    </bibl>
-                    <bibl> 
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/245052">Metropolitan Museum Web Entry</ref> 
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        
-        <encodingDesc>
-            
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-            
-        </encodingDesc>
-        
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2021-03-17" who="Itamar Levin">Transcription, translation, and
+                     <placeName ref="europe.italy">Italy</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p>Gift of <persName role="donor">
+                           <name key="John Taylor Johnston">John Taylor Johnston</name>
+                        </persName>, <date when="1881">1881</date>.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Engraved_gems"/>
+                  <biblScope unit="item">no. 289, Pl. 41</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.metmuseum.org/art/collection/search/245052">Metropolitan Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2021-03-17" who="Itamar Levin">Transcription, translation, and
                 metadata</change>
-        </revisionDesc>
-        
-    </teiHeader>
-    
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.G.81.6.181.jpg"/>
-        </surface>
-        
-    </facsimile>
-    
-    <text>
-        <body>
-            <div type="edition">
-                <ab>
-                    <lb n="1"/>ἑπτάχρυσος.
-                </ab></div>
-            
-            <div type="translation">
-                <p>seven golden (measures?)</p></div>
-            
-            
-            
-            <div type="commentary">
-                <p>Transcription from Richter (1956 [1920]). The word ἑπτάχρυσος is unrecorded.</p></div>
-            
-            
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
-        </body>
-    </text>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.G.81.6.181.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>ἑπτάχρυσος.
+                </ab>
+         </div>
+         <div type="translation">
+            <p>seven golden (measures?)</p>
+         </div>
+         <div type="commentary">
+            <p>Transcription from Richter (1956 [1920]). The word ἑπτάχρυσος is unrecorded.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

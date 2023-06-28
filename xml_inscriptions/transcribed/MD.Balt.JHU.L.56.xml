@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-        
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MD.Balt.JHU.L.56</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MD.Balt.JHU.L.56</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-                
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.56">MD.Balt.JHU.L.56</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.56">MD.Balt.JHU.L.56</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,181 +42,181 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>JHU</institution>
-                        <repository/>
-                        <idno>56</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>JHU</institution>
+                  <repository/>
+                  <idno>56</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Appuleia Gratilla</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Epitaph of Appuleia Gratilla</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                         
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                        
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Marble tablet</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>22</height>
-                                        <width>30.5</width>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p>According to Wilson, no mention of breakages or multiple fragments. Two holes for nails, one on the left at the top and the other on the right at the middle</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="8">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                           <p>Marble tablet</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>22</height>
+                              <width>30.5</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p>According to Wilson, no mention of breakages or multiple fragments. Two holes for nails, one on the left at the top and the other on the right at the middle</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="8">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                        
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0075" notAfter="0150">First half of second century CE</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
-                        </origin>
-                        <acquisition>
+                     <date evidence="unspecified" notBefore="0075" notAfter="0150">First half of second century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+                  <acquisition>
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="1911">After 1911</date>
-                            <p>Acquired by New York University; now registered as NY.NY.NYU.L.14</p>
-                        </acquisition>
-                        
-                        
-                        
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date when="1911">After 1911</date>
+                     <p>Acquired by New York University; now registered as NY.NY.NYU.L.14</p>
+                  </acquisition>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJP_Wilson4"/>
-                        <biblScope unit="pp">pp. 171-172, no. 56</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR001142">EDR001142</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-        
-        <encodingDesc>
-            
-            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
-            </xi:include>
-            
-        </encodingDesc>
-        
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-12-15" who="Rebecca Ramsey">Initial Encoding</change>
-            <change when="2015-08-26" who="Scott J. DiGiulio">Cleaned metadata, expanded bibl, proofed and corrected transcription; added note about inscription moving to NYU</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-        
-    </teiHeader>
-    
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.NYU.L.14.jpg"/>
-        </surface>
-    </facsimile>
-    
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/>D<hi rend="tall">i</hi>s M<hi rend="apex">a</hi>nibus
-                    <lb n="2"/><persName><name type="gentilicium" key="Appuleia">Appuleiae</name> <name type="cognomen" key="Gratilla">Gratillae</name></persName>.
-                    <lb n="3"/><expan><abbr>Vix</abbr><ex>it</ex></expan> <expan><abbr>an</abbr><ex>nos</ex></expan> <num value="14">XIIII</num>, <expan><abbr>m</abbr><ex>enses</ex></expan> <num value="6">VI</num>, <expan><abbr>d</abbr><ex>ies</ex></expan> <num value="15">XV</num>. 
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson4"/>
+                  <biblScope unit="pp">pp. 171-172, no. 56</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR001142">EDR001142</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-15" who="Rebecca Ramsey">Initial Encoding</change>
+         <change when="2015-08-26" who="Scott J. DiGiulio">Cleaned metadata, expanded bibl, proofed and corrected transcription; added note about inscription moving to NYU</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.NYU.L.14.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>D<hi rend="tall">i</hi>s M<hi rend="apex">a</hi>nibus
+                    <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Appuleia">Appuleiae</name>
+                  <name type="cognomen" key="Gratilla">Gratillae</name>
+               </persName>.
+                    <lb n="3"/>
+               <expan><abbr>Vix</abbr><ex>it</ex></expan>
+               <expan><abbr>an</abbr><ex>nos</ex></expan>
+               <num value="14">XIIII</num>, <expan><abbr>m</abbr><ex>enses</ex></expan>
+               <num value="6">VI</num>, <expan><abbr>d</abbr><ex>ies</ex></expan>
+               <num value="15">XV</num>. 
                     <lb n="4"/>Fecerunt
-                    <lb n="5"/><persName><name type="praenomen" key="Cnaeus"><expan><abbr>Cn</abbr><ex>aeus</ex></expan></name> <name type="gentilicium" key="Cossutius">Cossutius</name> <name type="cognomen" key="Apriclus">Apriclus</name></persName>
-                    <lb n="6"/>et <persName><name type="gentilicium" key="Appuleia">Appuleia</name> <name type="cognomen" key="Lochias">Lochias</name></persName>,
+                    <lb n="5"/>
+               <persName>
+                  <name type="praenomen" key="Cnaeus">
+                     <expan><abbr>Cn</abbr><ex>aeus</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Cossutius">Cossutius</name>
+                  <name type="cognomen" key="Apriclus">Apriclus</name>
+               </persName>
+               <lb n="6"/>et <persName>
+                  <name type="gentilicium" key="Appuleia">Appuleia</name>
+                  <name type="cognomen" key="Lochias">Lochias</name>
+               </persName>,
                     <lb n="7"/>patroni vernae karissim<hi rend="ligature">ae</hi>,
-                    <lb n="8"/>et <persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucius</ex></expan></name> <name type="gentilicium" key="Appuleius">Appuleius</name> <name type="cognomen" key="Regillus">Regillus</name></persName> tata.
+                    <lb n="8"/>et <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan><abbr>L</abbr><ex>ucius</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Appuleius">Appuleius</name>
+                  <name type="cognomen" key="Regillus">Regillus</name>
+               </persName> tata.
                 </ab>
-            </div>
-        
-        
-                <div type="translation"><!-- notes go here -->
-                <p>"To the Divine Shades of Appuleia Gratilla. She lived 14 years, 6 months, and 15 days. Gnaeus Cossutius Apriclus and Appuleia Lochias, patrons of their most beloved homeborn slave, and Lucius Appuleius Regillus, her grandfather, made this."</p>
-               </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="translation"><!-- notes go here -->
+            <p>"To the Divine Shades of Appuleia Gratilla. She lived 14 years, 6 months, and 15 days. Gnaeus Cossutius Apriclus and Appuleia Lochias, patrons of their most beloved homeborn slave, and Lucius Appuleius Regillus, her grandfather, made this."</p>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1043</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -66,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -86,13 +98,15 @@
                   <biblScope unit="item">15, no. 10</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116611">EDR116611</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116611">EDR116611</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -103,10 +117,12 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-06-30" who="Scott J. DiGiulio">Added control vocab for writing and condition, added link to EDR, added specificity to placeName ref, </change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-04-27" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
-         <change when="2021-08-21" who="Sophia Papandonatou">added additional commentary and edited translation</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-21" who="Sophia Papandonatou">added additional commentary and edited translation</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -115,53 +131,142 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                   <lb n="1"/><persName type="imperial"><supplied reason="lost"><expan><abbr>Imp</abbr><ex>eratore</ex></expan> <name type="cognomen" key="Caesar"><expan><abbr>Caes</abbr><ex>are</ex></expan></name> <name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="gentilicium" key="Aurelius">Aurelio</name></supplied> <name type="cognomen" key="Antoninus">Antonino</name> <name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name></persName> <num xml:lang="lat" value="3"><hi rend="supraline">III</hi></num> et <persName type="imperial">I<supplied reason="lost"><expan><abbr>mp</abbr><ex>eratore</ex></expan> <name type="cognomen" key="Caesar"><expan><abbr>Caes</abbr><ex>are</ex></expan></name> <name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> <name type="gentilicium" key="Aurelius">Aurelio</name></supplied>
-                      <lb n="2"/><supplied reason="lost"><name type="cognomen" key="Verus">Vero</name></supplied></persName> <supplied reason="lost"><num xml:lang="lat" value="2">II</num> <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan></supplied>, <gap reason="lost" extent="unknown" unit="character"/><unclear>s</unclear>, in curia basilicae <persName type="imperial"><name type="cognomen" key="Augustus"><expan><abbr>Au<supplied reason="lost">g</supplied></abbr><ex>usti</ex></expan></name></persName> <supplied reason="lost">Annianiae <expan><abbr>scribund</abbr><ex>o</ex></expan></supplied>
-                 <lb n="3"/><supplied reason="lost"><expan><abbr>adfuer</abbr><ex>unt</ex></expan></supplied><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">qu</supplied>od universis postulan<unclear>t</unclear><supplied reason="lost">ibus</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-                 <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">de collocan</supplied>da biga <persName><name type="gentilicium" key="Silius">Silio</name> <name type="cognomen" key="Satrianus">Satriano</name></persName> <gap reason="lost" extent="unknown" unit="character"/>
-                 <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><expan><abbr>q</abbr><ex>uid</ex></expan> <expan><abbr>d</abbr><ex>e</ex></expan> <expan><abbr>e</abbr><ex>a</ex></expan> <expan><abbr>r</abbr><ex>e</ex></expan> <expan><abbr>f</abbr><ex>ieri</ex></expan></supplied> <expan><abbr>p</abbr><ex>laceret</ex></expan> <expan><abbr>d</abbr><ex>e</ex></expan> <expan><abbr>e</abbr><ex>a</ex></expan> <expan><abbr>r</abbr><ex>e</ex></expan> <supplied reason="lost"><expan><abbr>i</abbr><ex>ta</ex></expan> <expan><abbr>c</abbr><ex>ensuerunt</ex></expan></supplied>
-                 <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">cum</supplied> <persName><supplied reason="lost"><name type="gentilicium" key="Silius">Silius</name></supplied> <name type="cognomen" key="Satrianus"><supplied reason="lost">Satria</supplied>nus</name></persName>, vir rarissimus, <gap reason="lost" extent="unknown" unit="character"/>
-                 <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> voluntatem populu<gap reason="lost" extent="unknown" unit="character"/>
-                 <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ex omnium conse</supplied>nsu bigam pequnia publ<supplied reason="lost">ica</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-                 <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> et decreta esset qu<gap reason="lost" extent="unknown" unit="character"/>
-                 <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><unclear>IDO</unclear> bigam pequnia pu<supplied reason="lost">blica</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-                 <lb n="11"/><gap reason="lost" extent="unknown" unit="line"/>
+            <ab>
+               <lb n="1"/>
+               <persName type="imperial">
+                  <supplied reason="lost">
+                     <expan><abbr>Imp</abbr><ex>eratore</ex></expan>
+                     <name type="cognomen" key="Caesar">
+                        <expan><abbr>Caes</abbr><ex>are</ex></expan>
+                     </name>
+                     <name type="praenomen" key="Marcus">
+                        <expan><abbr>M</abbr><ex>arco</ex></expan>
+                     </name>
+                     <name type="gentilicium" key="Aurelius">Aurelio</name>
+                  </supplied>
+                  <name type="cognomen" key="Antoninus">Antonino</name>
+                  <name type="cognomen" key="Augustus">
+                     <expan><abbr>Aug</abbr><ex>usto</ex></expan>
+                  </name>
+               </persName>
+               <num xml:lang="lat" value="3">
+                  <hi rend="supraline">III</hi>
+               </num> et <persName type="imperial">I<supplied reason="lost">
+                     <expan><abbr>mp</abbr><ex>eratore</ex></expan>
+                     <name type="cognomen" key="Caesar">
+                        <expan><abbr>Caes</abbr><ex>are</ex></expan>
+                     </name>
+                     <name type="praenomen" key="Lucius">
+                        <expan><abbr>L</abbr><ex>ucio</ex></expan>
+                     </name>
+                     <name type="gentilicium" key="Aurelius">Aurelio</name>
+                  </supplied>
+                  <lb n="2"/>
+                  <supplied reason="lost">
+                     <name type="cognomen" key="Verus">Vero</name>
+                  </supplied>
+               </persName>
+               <supplied reason="lost">
+                  <num xml:lang="lat" value="2">II</num>
+                  <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>
+               </supplied>, <gap reason="lost" extent="unknown" unit="character"/>
+               <unclear>s</unclear>, in curia basilicae <persName type="imperial">
+                  <name type="cognomen" key="Augustus">
+                     <expan><abbr>Au<supplied reason="lost">g</supplied></abbr><ex>usti</ex></expan>
+                  </name>
+               </persName>
+               <supplied reason="lost">Annianiae <expan><abbr>scribund</abbr><ex>o</ex></expan>
+               </supplied>
+               <lb n="3"/>
+               <supplied reason="lost">
+                  <expan><abbr>adfuer</abbr><ex>unt</ex></expan>
+               </supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">qu</supplied>od universis postulan<unclear>t</unclear>
+               <supplied reason="lost">ibus</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="4"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">de collocan</supplied>da biga <persName>
+                  <name type="gentilicium" key="Silius">Silio</name>
+                  <name type="cognomen" key="Satrianus">Satriano</name>
+               </persName>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="5"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">
+                  <expan><abbr>q</abbr><ex>uid</ex></expan>
+                  <expan><abbr>d</abbr><ex>e</ex></expan>
+                  <expan><abbr>e</abbr><ex>a</ex></expan>
+                  <expan><abbr>r</abbr><ex>e</ex></expan>
+                  <expan><abbr>f</abbr><ex>ieri</ex></expan>
+               </supplied>
+               <expan><abbr>p</abbr><ex>laceret</ex></expan>
+               <expan><abbr>d</abbr><ex>e</ex></expan>
+               <expan><abbr>e</abbr><ex>a</ex></expan>
+               <expan><abbr>r</abbr><ex>e</ex></expan>
+               <supplied reason="lost">
+                  <expan><abbr>i</abbr><ex>ta</ex></expan>
+                  <expan><abbr>c</abbr><ex>ensuerunt</ex></expan>
+               </supplied>
+               <lb n="6"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">cum</supplied>
+               <persName>
+                  <supplied reason="lost">
+                     <name type="gentilicium" key="Silius">Silius</name>
+                  </supplied>
+                  <name type="cognomen" key="Satrianus">
+                     <supplied reason="lost">Satria</supplied>nus</name>
+               </persName>, vir rarissimus, <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="7"/>
+               <gap reason="lost" extent="unknown" unit="character"/> voluntatem populu<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="8"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">ex omnium conse</supplied>nsu bigam pequnia publ<supplied reason="lost">ica</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="9"/>
+               <gap reason="lost" extent="unknown" unit="character"/> et decreta esset qu<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="10"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <unclear>IDO</unclear> bigam pequnia pu<supplied reason="lost">blica</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="11"/>
+               <gap reason="lost" extent="unknown" unit="line"/>
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[When the emperor Caesar Marcus Aurelius] Antoninus Augustus was consul for
+         </div>
+         <div type="translation">
+            <p>[When the emperor Caesar Marcus Aurelius] Antoninus Augustus was consul for
                       the third time and the e[mperor Caesar Lucius Aurelius Vero was consul for the second
                       time], [present to sign (as witnesses)] in the curia of the basilica [Anniana] of Au[gustus
                       were --- As to] the matter, with everyone request[ing it --- regarding the
                       installation of the chariot for Silius Satrianus [--- what it pleased should happen
-                      regarding this affair, regarding the affair [they thus decreed:</p> 
-                      <p> --- since Silius Satria]nus, a most extraordinary man [---] the will [of?]
+                      regarding this affair, regarding the affair [they thus decreed:</p>
+            <p> --- since Silius Satria]nus, a most extraordinary man [---] the will [of?]
                the people [--- according to the agreement of all], a chariot from publ[ic] funds
                [---] and it was decreed [---] the chariot, from pu[blic] funds [---] </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Lines 1-2: The imperial dating formula is restorable based on the prosopography of the emperors.</p>
-                   <p>A good portion of the inscription is restorable because decurial decrees such as this one tend to be rather formulaic (cf. <ref target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR158296" type="external">EDR158296</ref> and <ref target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR158673" type="external">EDR158673</ref>). </p>
-                   <p><seg type="material">Proconnesian(?) coarse-grained
+         </div>
+         <div type="commentary">
+            <p>Lines 1-2: The imperial dating formula is restorable based on the prosopography of the emperors.</p>
+            <p>A good portion of the inscription is restorable because decurial decrees such as this one tend to be rather formulaic (cf. <ref target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR158296"
+                     type="external">EDR158296</ref> and <ref target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR158673"
+                     type="external">EDR158673</ref>). </p>
+            <p>
+               <seg type="material">Proconnesian(?) coarse-grained
                       gray marble</seg> (Tuck).</p>
             <p>Probably a document detailing the dedication of chariot to one Silius Satrianus.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

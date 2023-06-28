@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MD.Balt.WAG.G.23.38</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -21,68 +32,68 @@
                   <textLang mainLang="grc" otherLangs=""/>
                   <msItem class="#funerary.epitaph #label">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaph of Sosibolis</p>
-                        </msItem>
+                     <p>epitaph of Sosibolis</p>
+                  </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#stele">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>marble stele</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>83</height>
-                                        <width>51</width>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p>bottom of relief is broken </p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>female figure—the deceased—holding bird in left hand and fan in right</p>
-                            </decoNote>
-                        </decoDesc></physDesc>
+                           <p>marble stele</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>83</height>
+                              <width>51</width>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>bottom of relief is broken </p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>female figure—the deceased—holding bird in left hand and fan in right</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
                <history>
                   <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="#archaeology" notBefore="-0400" notAfter="-0300">fourth
+                     <date evidence="#archaeology" notBefore="-0400" notAfter="-0300">fourth
                                 century BCE</date>
-                            <placeName ref="europe.greece">Greece, Attica</placeName>
-                        </origin>
-                        
-                        <provenance>
-                            <p>In the possession of <persName>Joseph Brummer</persName> no later than <date notAfter="1922">1922</date></p>                         
-                        </provenance>
+                     <placeName ref="europe.greece">Greece, Attica</placeName>
+                  </origin>
+                  <provenance>
+                     <p>In the possession of <persName>Joseph Brummer</persName> no later than <date notAfter="1922">1922</date>
+                     </p>
+                  </provenance>
                   <provenance type="transferred" subtype="purchased">
-                            <p>Purchased by <persName role="buyer">Henry Walters</persName> in <date when="1922">1922</date></p>
-                            
-                        </provenance>
-                   <provenance type="transferred" subtype="given">
-                            <p>Given to the <orgName role="recipient">Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date></p>
-                   </provenance>
-                  </history>
+                     <p>Purchased by <persName role="buyer">Henry Walters</persName> in <date when="1922">1922</date>
+                     </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="given">
+                     <p>Given to the <orgName role="recipient">Walters Art Museum</orgName>, by bequest, in <date when="1931">1931</date>
+                     </p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -93,16 +104,16 @@
                   <ptr type="rest-of-bibl" target="#IG_II2"/>
                   <biblScope unit="item">12721a</biblScope>
                </bibl>
-                    <bibl>
-                        <ref type="external"
-                            target="https://art.thewalters.org/detail/18187/funerary-relief-with-girl-bird-and-fan/"
-                            >Walters Art Museum Web Entry</ref>
-                    </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://art.thewalters.org/detail/18187/funerary-relief-with-girl-bird-and-fan/">Walters Art Museum Web Entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -113,57 +124,54 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2017-08-11" who="A. Hong">Addition of metadata</change>
-          <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
-            <change when="2020-10-27" who="Itamar Levin">Transcription, translation, and tweaks for
+         <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
+         <change when="2020-10-27" who="Itamar Levin">Transcription, translation, and tweaks for
                 metadata</change>
-          
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-            <change when="2021-11-02" who="Sophia Papandonatou">added museum link</change>
-          <change when="2021-11-10" who="Sophia Papandonatou">added -det image</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-11-02" who="Sophia Papandonatou">added museum link</change>
+         <change when="2021-11-10" who="Sophia Papandonatou">added -det image</change>
+      </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
-    
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.38.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.WAG.G.23.38-det.jpg"/>
-        </surface>
-    </facsimile>
-    
-    
-    <text>
-      
-        <body>
-            <div type="edition">
-                <ab><lb n="1"/> <persName><name key="Σωσιβωλίς">Σωσιβωλίς</name></persName>.
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.38.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.WAG.G.23.38-det.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name key="Σωσιβωλίς">Σωσιβωλίς</name>
+               </persName>.
                    
                     
                     
                     
-                </ab></div>
-        
-        
-                <div type="translation">
-                    <p>"Sosibolis."</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>The inscription records the name of the deceased. The funerary relief is
+                </ab>
+         </div>
+         <div type="translation">
+            <p>"Sosibolis."</p>
+         </div>
+         <div type="commentary">
+            <p>The inscription records the name of the deceased. The funerary relief is
                     characteristic of 4th c. Athens BCE. </p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

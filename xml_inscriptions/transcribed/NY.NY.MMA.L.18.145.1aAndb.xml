@@ -8,185 +8,182 @@ changes: Added @evidence to date
 <!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
           -->
-          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-
-        <fileDesc>
-
-            <titleStmt>
-                <title>NY.NY.MMA.L.18.145.1aAndb</title>
-            </titleStmt>
-
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.18.145.1aAndb">NY.NY.MMA.L.18.145.1aAndb</idno>
-            </publicationStmt>
-
-            <sourceDesc>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>NY.NY.MMA.L.18.145.1aAndb</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.18.145.1aAndb">NY.NY.MMA.L.18.145.1aAndb</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>18.145.1a,b</idno>
-                    </msIdentifier>
-
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.other">
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>MMA</institution>
+                  <repository/>
+                  <idno>18.145.1a,b</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.other">
                             <!-- short summary of the content of an inscription -->
-                            <p>Jewish golden glass with a greeting</p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Jewish golden glass with a greeting</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#instrumentum.other">
-                            <supportDesc ana="#glass">
-                                <support>
-                                    <p> golden glass</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>6.9</height>
-                                        <width>7 </width>
-                                        <depth>0.7</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#fragments.contig">
-                                    <p>two contiguous fragments</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-
-                        <handDesc hands="1">
-                            <handNote ana="#writing.other"> fused</handNote>
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>a banquet scene with traditional Jewish symbols: menorahs,
+                  <objectDesc ana="#instrumentum.other">
+                     <supportDesc ana="#glass">
+                        <support>
+                           <p> golden glass</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>6.9</height>
+                              <width>7 </width>
+                              <depth>0.7</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragments.contig">
+                           <p>two contiguous fragments</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#writing.other"> fused</handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>a banquet scene with traditional Jewish symbols: menorahs,
                                     scroll, torah-ark, and shofar</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <history>
-
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-
-                        <origin>
-                            <date evidence="#archaeology" notBefore="0300" notAfter="0400">fourth
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#archaeology" notBefore="0300" notAfter="0400">fourth
                                 CE</date>
-                            <placeName ref="europe.italy.rome">Rome</placeName>
-                        </origin>
-                        <provenance type="seen" subtype="reported">
-                            <p>First reported in <date when="1716">1716</date> by <persName role="reporter"><name key="Filippo Buonarruoti">Filippo Buonarruoti</name></persName>,who saw it in the <orgName>Biblioteca della Vallicella</orgName> at <placeName>Rome</placeName>.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="sold">
-                            <p>Seemingly sold prior to <date notAfter="1913">1913</date> and arrived on the antiquities market.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="aquired">
-                            <p>Acquired by the <orgName>Metropolitan Museum</orgName> in <date when="1918">1918</date> via the <persName role="donor"><name key="Rogers">Rogers</name></persName> Fund.</p>
-                        </provenance>
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Goodenough"/>
-                        <biblScope unit="page">111-112</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#JIWE"/>
-                        <biblScope unit="item">2.591</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/465921">Metropolitan Museum Web Entry</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-
-        <encodingDesc>
-
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2021-03-02" who="Itamar Levin">Transcription, translation, and
+                     <placeName ref="europe.italy.rome">Rome</placeName>
+                  </origin>
+                  <provenance type="seen" subtype="reported">
+                     <p>First reported in <date when="1716">1716</date> by <persName role="reporter">
+                           <name key="Filippo Buonarruoti">Filippo Buonarruoti</name>
+                        </persName>,who saw it in the <orgName>Biblioteca della Vallicella</orgName> at <placeName>Rome</placeName>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p>Seemingly sold prior to <date notAfter="1913">1913</date> and arrived on the antiquities market.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="aquired">
+                     <p>Acquired by the <orgName>Metropolitan Museum</orgName> in <date when="1918">1918</date> via the <persName role="donor">
+                           <name key="Rogers">Rogers</name>
+                        </persName> Fund.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Goodenough"/>
+                  <biblScope unit="page">111-112</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#JIWE"/>
+                  <biblScope unit="item">2.591</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.metmuseum.org/art/collection/search/465921">Metropolitan Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2021-03-02" who="Itamar Levin">Transcription, translation, and
                 metadata</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.L.18.145.1aAndb.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        <body>
-            <div type="edition">
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.L.18.145.1aAndb.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/><gap reason="omitted" extent="unknown"></gap>ci <choice><sic>bibas</sic><corr>vivas</corr></choice> cum eulogia conp<supplied reason="lost" cert="low">are</supplied><gap reason="lost" extent="unknown"></gap>
-            </ab></div>
-            
-            <div type="translation">
-            <p>May you live with equal blessing.</p></div>
-
-            <div type="commentary">
+               <lb n="1"/>
+               <gap reason="omitted" extent="unknown"/>ci <choice>
+                  <sic>bibas</sic>
+                  <corr>vivas</corr>
+               </choice> cum eulogia conp<supplied reason="lost" cert="low">are</supplied>
+               <gap reason="lost" extent="unknown"/>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>May you live with equal blessing.</p>
+         </div>
+         <div type="commentary">
             <p>This bowl-fragment is a rare example of the gold-glasses found in the catacombs where
                     they served as grave-markers. Gold glasses were common in 3rd-4th century Rome,
                     where this bowl's elaborate technique supports dating it to the 4th century.
                     The meaning of the inscription is dubious; "bibas" (may you drink) or an
                     alternative spelling for "vivas" (may you live) that attests for a phonetic
                     development indicated by other Jewish inscriptions. Likewise, the word "eulogia"
-                    can refer to the Greek word for "blessing" or to a feminine private name. </p></div>
-            
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
-        </body>
-    </text>
+                    can refer to the Greek word for "blessing" or to a feminine private name. </p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

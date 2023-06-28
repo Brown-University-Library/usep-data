@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>DC.DO.GL.35.4</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,9 @@
                <physDesc>
                   <objectDesc ana="#object_other">
                      <supportDesc ana="#material_other">
-                        <support><p>Ivory writing tablet</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Ivory writing tablet</p>
+                           <dimensions type="surface" unit="cm">
                               <height/>
                               <width/>
                               <depth/>
@@ -40,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="6" writtenLines="26">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p>two main columns preserve inscription in Latin; secondary verse inscription written in Greek in corners of each part of the diptych</p>
+                           <p>two main columns preserve inscription in Latin; secondary verse inscription written in Greek in corners of each part of the diptych</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -55,10 +67,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -66,7 +74,8 @@
                      <date evidence="unspecified" notBefore="0524" notAfter="0526">525 CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -85,7 +94,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,74 +109,67 @@
          <change when="2016-01-21" who="Scott J. DiGiulio">Fixed lines/columns, updated missing control vocab based on CIL, IG entries</change>
          <change who="Gaia Gianni" when="2019-11-17">Transcription</change>
          <change when="2020-10-22" who="Scott J. DiGiulio">Removed the empty @ana on decoNote</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+      </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-   
    <text>
-      
-        <body>
-        <div type="edition">
-
-         <div type="textpart" subtype="column" n="A">
-         <ab>
-            <lb n="1"/>του<space extent="8" unit="character"/>τὶ τὸ
+      <body>
+         <div type="edition">
+            <div type="textpart" subtype="column" n="A">
+               <ab>
+                  <lb n="1"/>του<space extent="8" unit="character"/>τὶ τὸ
             <lb n="2"/>δῶ<space extent="8" unit="character"/>ρον  
             <lb n="8"/>τῇ <space extent="8" unit="character"/> σοφῇ
             <lb n="9"/>γερου<space extent="8" unit="character"/>σίᾳ
          </ab>
-         </div>
-         
-         <div type="textpart" subtype="column" n="B">
-            <ab>
-               <lb n="3"/><expan><abbr>Fl</abbr><ex>avius</ex></expan> Theodorus
+            </div>
+            <div type="textpart" subtype="column" n="B">
+               <ab>
+                  <lb n="3"/>
+                  <expan><abbr>Fl</abbr><ex>avius</ex></expan> Theodorus
                <lb n="4"/>Philoxenus
                <lb n="5"/>Sotericus
                <lb n="6"/>Philoxenus
                <lb n="7"/>vir <expan><abbr>illust</abbr><ex>ris</ex></expan>
-            </ab>   
-         </div>
-         
-          <div type="textpart" subtype="column" n="C">
-         <ab>
-            <lb n="3"/> <expan><abbr>com</abbr><ex>es</ex></expan> <expan><abbr>domest</abbr><ex>icorum</ex></expan>
-            <lb n="4"/> ex magistro <expan><abbr>m</abbr><ex>ilitum</ex></expan>
-            <lb n="5"/> per <expan><abbr>Tracia</abbr><ex>m</ex></expan>
-            <lb n="6"/> et consul
-            <lb n="7"/> <expan><abbr>ordinar</abbr><ex>ius</ex></expan>
-            
-         </ab>
-         </div>
-        
-         <div type="textpart" subtype="column" n="D">
-            <ab>
-               <lb n="1"/> ὕπα<space extent="8" unit="character"/>τος
+               </ab>
+            </div>
+            <div type="textpart" subtype="column" n="C">
+               <ab>
+                  <lb n="3"/>
+                  <expan><abbr>com</abbr><ex>es</ex></expan>
+                  <expan><abbr>domest</abbr><ex>icorum</ex></expan>
+                  <lb n="4"/> ex magistro <expan><abbr>m</abbr><ex>ilitum</ex></expan>
+                  <lb n="5"/> per <expan><abbr>Tracia</abbr><ex>m</ex></expan>
+                  <lb n="6"/> et consul
+            <lb n="7"/>
+                  <expan><abbr>ordinar</abbr><ex>ius</ex></expan>
+               </ab>
+            </div>
+            <div type="textpart" subtype="column" n="D">
+               <ab>
+                  <lb n="1"/> ὕπα<space extent="8" unit="character"/>τος
                <lb n="2"/> ὑπάρ<space extent="8" unit="character"/>χων
                <lb n="8"/> προσ<space extent="8" unit="character"/>φέρω
                <lb n="9"/> Φιλό<space extent="8" unit="character"/>ξενος
              
             </ab>
+            </div>
          </div>
+         <div type="translation">
+            <p/>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

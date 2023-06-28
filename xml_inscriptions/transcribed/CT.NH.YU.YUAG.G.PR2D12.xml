@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM
+changes: correct handling of provenance information
+          -->
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>CT.NH.YU.YUAG.G.PR2D12</title>
+            <author>Ilaria Bucci</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="CT.NH.YU.YUAG.G.PR2D12">CT.NH.YU.YUAG.G.PR2D12</idno>
+         </publicationStmt>
+         <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+            <msDesc>
+               <msIdentifier>
+                  <region>CT</region>
+                  <settlement>NH</settlement>
+                  <institution>YU</institution>
+                  <repository>YUAG</repository>
+                  <idno>PR2D12</idno>
+                  <altIdentifier>
+                     <idno>SEG 7:544</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>PH320785</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#dedicatory #label">
+                            <!-- short summary of the content of an inscription -->
+                     <p>Short graffito recording the name of Artemidoros and possibly the date 183/2 BCE.</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+                  <objectDesc ana="#arch_element">
+                     <supportDesc ana="#stone.other">
+                        <support>
+                           <p>limestone masonry block</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>8</height>
+                              <width>85</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>discovered damaged; present condition unknown</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="2">
+                           <p>The reconstruction of the original extension and layout of the text is very doubtful. The first part of the name Artemidoros is inscribed over D11. The second line recorded in the facsimile could be part of a different text.</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="2">
+                     <handNote ana="#etched">the only surviving letters of the second line (MN) were written by a different hand.
+                                <dimensions unit="cm" atLeast="8" atMost="8">
+                           <height>8</height>
+                        </dimensions>
+                     </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#archaeology" notBefore="-0183" notAfter="-0182">183/2 BCE</date>
+                     <placeName ref="https://pleiades.stoa.org/places/980015057">Syria, Dura-Europos, Palmyrene Gate</placeName>
+                     <p>south wall of the passage, flanking the innermost entrance to the city</p>
+                  </origin>
+                  <provenance type="found">
+                     <p>Excavated and recorded by <orgName>Yale-French Excavations at Dura-Europos</orgName> in 1928-1929.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Dura-Europos"/>
+                  <biblScope unit="page">00</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2022-08-11" who="James Flynn">Initial Encoding</change>
+         <change when="2022-11-23" who="Ilaria Bucci">Edited; general revision</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc>Photograph (1929) of the tracings D9-D12, D123-D124 (YAM)</desc>
+         <graphic url="https://library.artstor.org/public/SS7730479_7730479_10869614"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="https://upload.wikimedia.org/wikipedia/commons/c/c8/Palmyrene_Gate_D9-12%2C_123-4.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name key="Ἀρτεμίδωρος Artemidorus">Ἀρτεμίδωρος</name>
+               </persName>
+               <choice>
+                  <unclear reason="faded">λρ'</unclear>
+                  <unclear reason="faded">Αρ</unclear>
+               </choice>
+               <lb n="2"/>
+               <expan><abbr>μν<ex cert="medium">ησθῇ</ex></abbr></expan>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>Artemidoros 130.</p>
+         </div>
+         <div type="commentary">
+            <p>Line 1: it is unclear whether the final letters indicate a date. If so, it would be 130 of the Seleucid era (183/2 BCE), making this the earliest dated inscription ever found at Dura. The paleography (large and square hammer-cut letters) further supports an early (pre-Roman) date.The alternative is to read the last two letters as AR, which could be the beginning of the patronymic Ἀρτεμιδώρου. The surface of the stone, however, is well preserved at the end of the first line and doesn't show traces of further letters.</p>
+            <p>LIne 2: MN could be the abbreviation for μνησθῇ. If so, it could be either the beginning of a remembrance graffito commemorating somebody else or it could have been added by a later writer who wanted to commomorate Artemidoros.</p>
+            <p>Bibliography: Dura P.R. 2, p. 117; SEG 7:544; PH320785, https://inscriptions.packhum.org/text/320785?hs=18-35</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
+</TEI>

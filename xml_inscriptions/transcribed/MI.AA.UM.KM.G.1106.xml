@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MI.AA.UM.KM.G.1106</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MI.AA.UM.KM.G.1106</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.1106">MI.AA.UM.KM.G.1106</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.1106">MI.AA.UM.KM.G.1106</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,203 +42,199 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MI</region>
-                        <settlement>AA</settlement>
-                        <institution>UM</institution>
-                        <repository>KM</repository>
-                        <idno>1106</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph #verse">
+            <msDesc>
+               <msIdentifier>
+                  <region>MI</region>
+                  <settlement>AA</settlement>
+                  <institution>UM</institution>
+                  <repository>KM</repository>
+                  <idno>1106</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph #verse">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaph of a young woman</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>epitaph of a young woman</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>partially reconstituted marble slab</p>
-                                    
-                                    <dimensions type="surface" unit="cm">
-                                        <height>27.0</height>
-                                        <width>43.5</width>
-                                        <depth>2.2</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#fragments.contig">
-                                    <p>four contiguous fragments preserve the top left of the
+                           <p>partially reconstituted marble slab</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>27.0</height>
+                              <width>43.5</width>
+                              <depth>2.2</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragments.contig">
+                           <p>four contiguous fragments preserve the top left of the
                                         inscription</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="7">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"/>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>laurel wreath</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="7">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>laurel wreath</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0100" notAfter="0200">second
+                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second
                                 century CE</date>
-                            <placeName ref="europe.italy.puteoli">Italy,
-                            Pozzuoli</placeName><!-- subsequent locations if inscription was moved --></origin>
-                        <provenance type="found" subtype="discovered">
-                            <p>Found along the Via Campania in Puetoli in <date when="1897">1897</date>.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="purchased">
-                            <p>Purchased from the collection of <persName>Giuseppe De
+                     <placeName ref="europe.italy.puteoli">Italy,
+                            Pozzuoli</placeName>
+                     <!-- subsequent locations if inscription was moved -->
+                  </origin>
+                  <provenance type="found" subtype="discovered">
+                     <p>Found along the Via Campania in Puetoli in <date when="1897">1897</date>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased from the collection of <persName>Giuseppe De
                                 Criscio</persName> for the <orgName role="recipient">University
                                     of Michigan</orgName>.</p>
-                        </provenance>
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#SEG_28"/>
-                        <biblScope unit="item">no. 799</biblScope>
-                    </bibl>
-                   
-                    <bibl>
-                        <ref type="external"
-                            target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1106/0000_00_1106p01.tif"
-                            >Kelsey Museum of Archaeology</ref>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_Dennison"/>
-                        <biblScope unit="item">40, pp. 389-390</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#RFIC_78_Miranda"/>
-                        <biblScope unit="page">191-194</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            
-            <change when="2022-10-12" who="Sophia Papandonatou">initial encoding</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="noImage.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/><expan><abbr>Θ</abbr><ex>εοῖς</ex></expan> <supplied reason="lost"><expan><abbr>Κ</abbr><ex>αταχθονίοις</ex></expan></supplied>. 
-                    <lg met="dactylic hexameter"><l n="1" met="hexameter"><lb n="2"/>Ἔνθα κόρη κεῖμαι πεποθημέν<supplied reason="lost">η, ὕπνον ἔχουσα</supplied></l>
-                        <lb n="3"/><l n="2" met="hexameter">ὕστατον ἐν φθιμένοις, φάος ἠελίο<unclear>ι</unclear><supplied reason="lost">ο λιποῦσα</supplied>,</l> 
-                        <lb n="4"/><l n="3" met="hexameter">τέσσαρας ἑβδομάδας κατάγουσα πικρῶ<supplied reason="lost">ν ἐνιαυτῶν</supplied></l>
-                        <lb n="5"/><l n="4" met="hexameter">ἑπτὰ δὲ <unclear>κ</unclear><supplied reason="lost">αὶ μῆνας</supplied> <unclear>γο</unclear>ερούς, οὓς οὐκ ἐτέλε<supplied reason="lost">σσα.</supplied></l> 
-                        <lb n="6"/><l n="5" met="hexameter"><supplied reason="lost">Στήθεά μου μήτηρ κατ</supplied>εκόψατο καὶ γένος <supplied reason="lost">ἄλλο</supplied></l>
-                        <lb n="7"/><l n="6" met="hexameter"><gap reason="lost" quantity="25" cert="low" unit="character"/>ο μηδὲ τ<gap reason="lost" quantity="12" cert="low" unit="character"/></l></lg>
-                </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the gods of the underworld. Here I lie, a regretfu[l] girl, [keeping (this)] final [slumber] among the dead, having left behind the light of the sun, 
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_28"/>
+                  <biblScope unit="item">no. 799</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1106/0000_00_1106p01.tif">Kelsey Museum of Archaeology</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJA_Dennison"/>
+                  <biblScope unit="item">40, pp. 389-390</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#RFIC_78_Miranda"/>
+                  <biblScope unit="page">191-194</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2022-10-12" who="Sophia Papandonatou">initial encoding</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="noImage.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <expan><abbr>Θ</abbr><ex>εοῖς</ex></expan>
+               <supplied reason="lost">
+                  <expan><abbr>Κ</abbr><ex>αταχθονίοις</ex></expan>
+               </supplied>. 
+                    <lg met="dactylic hexameter">
+                  <l n="1" met="hexameter">
+                     <lb n="2"/>Ἔνθα κόρη κεῖμαι πεποθημέν<supplied reason="lost">η, ὕπνον ἔχουσα</supplied>
+                  </l>
+                  <lb n="3"/>
+                  <l n="2" met="hexameter">ὕστατον ἐν φθιμένοις, φάος ἠελίο<unclear>ι</unclear>
+                     <supplied reason="lost">ο λιποῦσα</supplied>,</l>
+                  <lb n="4"/>
+                  <l n="3" met="hexameter">τέσσαρας ἑβδομάδας κατάγουσα πικρῶ<supplied reason="lost">ν ἐνιαυτῶν</supplied>
+                  </l>
+                  <lb n="5"/>
+                  <l n="4" met="hexameter">ἑπτὰ δὲ <unclear>κ</unclear>
+                     <supplied reason="lost">αὶ μῆνας</supplied>
+                     <unclear>γο</unclear>ερούς, οὓς οὐκ ἐτέλε<supplied reason="lost">σσα.</supplied>
+                  </l>
+                  <lb n="6"/>
+                  <l n="5" met="hexameter">
+                     <supplied reason="lost">Στήθεά μου μήτηρ κατ</supplied>εκόψατο καὶ γένος <supplied reason="lost">ἄλλο</supplied>
+                  </l>
+                  <lb n="7"/>
+                  <l n="6" met="hexameter">
+                     <gap reason="lost" quantity="25" cert="low" unit="character"/>ο μηδὲ τ<gap reason="lost" quantity="12" cert="low" unit="character"/>
+                  </l>
+               </lg>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>To the gods of the underworld. Here I lie, a regretfu[l] girl, [keeping (this)] final [slumber] among the dead, having left behind the light of the sun, 
                         having lived 4 hebdomads of bitter years and 7 mournful months, which I did not fini[sh. My mother be]at (her) [chest] (as did) the [rest] of (my) 
                         family [---] no one(?) [---] </p>
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-                    <p>A hebdomad is a group of 7 years, so "4 hebdomads of ... years" means that she lived for 28 years. This phrasing, paired with "7 mournful months, which I did not finish," standing in for a more simple "6 mournful months", 
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p>A hebdomad is a group of 7 years, so "4 hebdomads of ... years" means that she lived for 28 years. This phrasing, paired with "7 mournful months, which I did not finish," standing in for a more simple "6 mournful months", 
                         makes clear the author's desire to create number symbolism with 7s.</p>
-                    <p>Epitaph in dactylic hexameter.</p>
-                    <p>Line 2: πεποθημέν[ον ἄνθος ἅπασιν | (Comparetti in Dennison); πεποθημέν[η ἠδʹ ἀγαπητή, | (Halbherr in Dennison).</p>
-                    <p>Line 3: ἠελίου [μεταβᾶσα | (Comparetti in Dennison); ἠελίοι[ο ἰδοῦσα, | (Halbherr in Dennison).</p>
-                    <p>Line 4: πικρῶ[ν ὑπὸ μόχθων, | (Comparetti in Dennison); πικρῶ[ς τέλος ἔσχον, | (Halbherr in Dennison).</p>
-                    <p>Line 5: ἑπτὰ δὲ κ(ύ)[κλους μοι] γοερούς (Comparetti in Dennison); ἑπτὰ δὲ [καὶ μῆνας γο]ερούς οὓς οὐκ ἐτέλε[σθην | (Halbherr in Dennison).</p>
-                    <p>Line 6: [Δῶκε θεός· μήτηρ δὲ μʹ] ἐκόψατο (Comparetti in Dennison).</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            <p>Epitaph in dactylic hexameter.</p>
+            <p>Line 2: πεποθημέν[ον ἄνθος ἅπασιν | (Comparetti in Dennison); πεποθημέν[η ἠδʹ ἀγαπητή, | (Halbherr in Dennison).</p>
+            <p>Line 3: ἠελίου [μεταβᾶσα | (Comparetti in Dennison); ἠελίοι[ο ἰδοῦσα, | (Halbherr in Dennison).</p>
+            <p>Line 4: πικρῶ[ν ὑπὸ μόχθων, | (Comparetti in Dennison); πικρῶ[ς τέλος ἔσχον, | (Halbherr in Dennison).</p>
+            <p>Line 5: ἑπτὰ δὲ κ(ύ)[κλους μοι] γοερούς (Comparetti in Dennison); ἑπτὰ δὲ [καὶ μῆνας γο]ερούς οὓς οὐκ ἐτέλε[σθην | (Halbherr in Dennison).</p>
+            <p>Line 6: [Δῶκε θεός· μήτηρ δὲ μʹ] ἐκόψατο (Comparetti in Dennison).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

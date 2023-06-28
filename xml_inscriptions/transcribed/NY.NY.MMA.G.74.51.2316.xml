@@ -8,173 +8,184 @@ changes: Added @evidence to date
 <!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
           -->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-        
-        <fileDesc>
-            
-            <titleStmt>
-                <title>NY.NY.MMA.G.74.51.2316</title>
-            </titleStmt>
-            
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.74.51.2316">NY.NY.MMA.G.74.51.2316</idno>
-            </publicationStmt>
-            
-            <sourceDesc>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>NY.NY.MMA.G.74.51.2316</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.74.51.2316">NY.NY.MMA.G.74.51.2316</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>74.51.2316</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc-Cprt" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>MMA</institution>
+                  <repository/>
+                  <idno>74.51.2316</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc-Cprt" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>dedication to Apollo in Cypriot syllabary</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>dedication to Apollo in Cypriot syllabary</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                         
                         <!--  *************************************  <objectDesc>  *********************************  -->
-                        
-                        <objectDesc ana="#base">
-                            <supportDesc ana="#stone.other">
-                                <support>
-                                    <p>limestone block</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>33</height>
-                                        <width>38.1</width>
-                                        <depth>8.9</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p>broken at both ends</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="3">
-                                    <p>very effaced </p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <history>
-                        
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-                        
-                        <origin>
-                            <date evidence="#unspecified" notBefore="-0400" notAfter="-0300">4th c. BCE</date>
-                            <placeName ref="europe.cyprus.kourion">Kourion, Cyprus</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="acquired">
-                            <p>The <persName role="collector"><name key="Cesnola">Cesnola</name></persName> Collection, Purchased by subscription, <date notBefore="1873" notAfter="1877">1874–76</date>.</p>
-                        </provenance>
-                        
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Myres"/>
-                        <biblScope unit="item">1851</biblScope>
-                    </bibl>
-                    <bibl> 
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/241870">Metropolitan Museum Web Entry</ref> 
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        
-        <encodingDesc>
-            
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
+                  <objectDesc ana="#base">
+                     <supportDesc ana="#stone.other">
+                        <support>
+                           <p>limestone block</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>33</height>
+                              <width>38.1</width>
+                              <depth>8.9</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>broken at both ends</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="3">
+                           <p>very effaced </p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0400" notAfter="-0300">4th c. BCE</date>
+                     <placeName ref="europe.cyprus.kourion">Kourion, Cyprus</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="acquired">
+                     <p>The <persName role="collector">
+                           <name key="Cesnola">Cesnola</name>
+                        </persName> Collection, Purchased by subscription, <date notBefore="1873" notAfter="1877">1874–76</date>.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Myres"/>
+                  <biblScope unit="item">1851</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.metmuseum.org/art/collection/search/241870">Metropolitan Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2021-05-05" who="Itamar Levin">Transcription , translation, and metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.G.74.51.2316.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" subtype="transliteration_ltn">
+            <ab>
+               <lb n="1" style="text-direction:l-to-r"/>
+               <gap reason="lost"/>ka. se. vo. <unclear>se.</unclear>
+               <lb n="2" style="text-direction:l-to-r"/>
+               <gap reason="lost"/>me. ki.<gap reason="lost"/>
+               <lb n="3" style="text-direction:l-to-r"/>
+               <gap reason="lost"/>
+               <unclear>lo.</unclear>
+               <gap reason="lost"/>
+            </ab>
+         </div>
+         <div type="edition" subtype="transliteration_grk">
+            <ab>
+               <lb n="1" style="text-direction:l-to-r"/>
+               <persName>
+                  <name key="Μέγανος">
+                     <supplied reason="lost">Με</supplied>γάνοϝος</name>
+               </persName>
+               <lb n="2" style="text-direction:l-to-r"/>
+               <supplied reason="lost">ὁ</supplied>
+               <persName>
+                  <name key="Μεγίλλευς">Μεγί<supplied reason="lost">λλω</supplied>
+                  </name>
+               </persName>
+               <lb n="3" style="text-direction:l-to-r"/>
+               <persName type="divine">
+                  <name key="Ἀπόλλω">
+                     <supplied reason="lost">Ἀπόλ</supplied>λω<supplied reason="lost">νι</supplied>
+                  </name>
+               </persName>.
+                </ab>
+         </div>
+         <div type="translation">
+            <p>Meganos, son of Megilleus, [dedicated] to Apollo.</p>
+         </div>
+         <div type="commentary">
+            <p>Transcription from Myres (1914). Written in Cypriot syllabary. The inscription is highly effaced and the reconstruction is ambiguous.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
             </xi:include>
-            
-        </encodingDesc>
-        
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2021-05-05" who="Itamar Levin">Transcription , translation, and metadata</change>
-        </revisionDesc>
-        
-    </teiHeader>
-    
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.G.74.51.2316.jpg"/>
-        </surface>
-    </facsimile>
-    
-    <text>
-        <body>
-            <div type="edition" subtype="transliteration_ltn">
-                <ab>
-                    <lb n="1" style="text-direction:l-to-r"/><gap reason="lost"></gap>ka. se. vo. <unclear>se.</unclear>
-                    <lb n="2" style="text-direction:l-to-r"/><gap reason="lost"></gap>me. ki.<gap reason="lost"></gap>
-                    <lb n="3" style="text-direction:l-to-r"/><gap reason="lost"></gap><unclear>lo.</unclear><gap reason="lost"></gap>
-                </ab></div>
-            <div type="edition" subtype="transliteration_grk">
-                <ab>
-                    <lb n="1" style="text-direction:l-to-r"/><persName><name key="Μέγανος"><supplied reason="lost">Με</supplied>γάνοϝος</name></persName>
-                    <lb n="2" style="text-direction:l-to-r"/><supplied reason="lost">ὁ</supplied> <persName><name key="Μεγίλλευς">Μεγί<supplied reason="lost">λλω</supplied></name></persName>
-                    <lb n="3" style="text-direction:l-to-r"/><persName type="divine"><name key="Ἀπόλλω"><supplied reason="lost">Ἀπόλ</supplied>λω<supplied reason="lost">νι</supplied></name></persName>.
-                </ab></div>
-            
-            <div type="translation">
-                <p>Meganos, son of Megilleus, [dedicated] to Apollo.</p></div>
-            
-            <div type="commentary">
-                <p>Transcription from Myres (1914). Written in Cypriot syllabary. The inscription is highly effaced and the reconstruction is ambiguous.</p></div>
-            
-            
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

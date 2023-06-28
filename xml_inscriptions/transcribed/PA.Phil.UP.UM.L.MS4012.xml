@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing12 -->
       <fileDesc>
          <titleStmt>
             <title>PA.Phil.UP.UM.L.MS4012</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -31,7 +42,6 @@
                <physDesc>
                   
                   <!--  *************************************  <objectDesc>  *********************************  -->
-                  
                   <objectDesc ana="#arch_element">
                      <supportDesc ana="#material_other">
                         <support>
@@ -42,7 +52,7 @@
                               <depth>32 </depth>
                            </dimensions>
                         </support>
-                        <condition ana= "#complete.intact">
+                        <condition ana="#complete.intact">
                            <p/>
                         </condition>
                      </supportDesc>
@@ -53,13 +63,10 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  
                   <!--  *************************************  <handDesc>  ********************************* -->
-                  
                   <handDesc hands="1">
                      <handNote ana="#mosaic"> </handNote>
                   </handDesc>
-                  
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
@@ -67,21 +74,16 @@
                      </decoNote>
                   </decoDesc>
                </physDesc>
-               
                <!--  *************************************  <history>  *********************************  -->
-               
                <history>
-                  
                   <summary>
-                     <rs/>  <!-- content can be "fake" or blank -->
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
-                  
                   <origin>
                      <date evidence="unspecified" notBefore="0200" notAfter="0250">early 3rd century CE</date>
                      <placeName ref="africa">Carthage</placeName>
                   </origin>
-                  
-                  
                </history>
             </msDesc>
             <listBibl>
@@ -94,14 +96,15 @@
                   <biblScope unit="item">cf. 11</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.penn.museum/collections/object/340922"
-                     >Museum External Reference</ref>
+                  <ref type="external"
+                        target="https://www.penn.museum/collections/object/340922">Museum External Reference</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -126,11 +129,19 @@
    <text>
       <body>
          <div type="edition">
-         <ab>
-            <lb n="1"/> <expan><abbr>Vinc<ex>tor</ex></abbr></expan> Lusus.  <expan><abbr>Vinc<ex>tor</ex></abbr></expan> Lusus.
+            <ab>
+               <lb n="1"/>
+               <expan><abbr>Vinc<ex>tor</ex></abbr></expan> Lusus.  <expan><abbr>Vinc<ex>tor</ex></abbr></expan> Lusus.
          </ab>
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

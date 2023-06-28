@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.949.a</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of a sailor</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -37,7 +47,6 @@
                               <depth>2</depth>
                            </dimensions>
                         </support>
-
                         <condition ana="#fragments.contig">
 
                            <!--Add ana attribute with controlled value for condition-->
@@ -70,7 +79,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -83,14 +93,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101871"
-                     >EDR101871</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101871">EDR101871</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -103,11 +113,11 @@
          <change when="2014-05-27" who="Scott J. DiGiulio">Updated filename to match recto/verso conventions</change>
          <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
          <change when="2021-02-01" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation, changed ID # from .v to .a</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-28" who="Sophia Papandonatou">added image url</change>
          <change when="2021-06-18" who="Sophia Papandonatou">added EDR link</change>
-         
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -116,59 +126,56 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
+            <ab>
                <lb n="1"/>
                <gap reason="lost" quantity="1" unit="lines"/>
                <lb n="2"/>
-               <supplied reason="lost"><expan><abbr>cl</abbr><ex>assis</ex></expan>
-                  <expan><abbr>pr</abbr><ex>aetoriae</ex></expan></supplied>
+               <supplied reason="lost">
+                  <expan><abbr>cl</abbr><ex>assis</ex></expan>
+                  <expan><abbr>pr</abbr><ex>aetoriae</ex></expan>
+               </supplied>
                <expan><abbr>Misenat</abbr><ex>ium</ex></expan>
                <lb n="3"/>
                <gap reason="lost" extent="unknown" unit="character"/> qui <lb n="4"/>
-               <supplied reason="lost">vixit annis <num><gap reason="lost" extent="unknown" unit="character"/></num> mensi</supplied>bus <num xml:lang="lat" value="10">X</num> <g type="hedera"/>
+               <supplied reason="lost">vixit annis <num>
+                     <gap reason="lost" extent="unknown" unit="character"/>
+                  </num> mensi</supplied>bus <num xml:lang="lat" value="10">X</num>
+               <g type="hedera"/>
                <lb n="5"/>
                <gap reason="lost" extent="unknown" unit="character"/>o 
                <lb n="6"/>
                <gap reason="lost" extent="unknown" unit="character"/>
                <supplied reason="lost">fe</supplied>cit.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>[--- of the praetorian fleet] of Misenum [---] who [lived for X years, (and)] ten
+         </div>
+         <div type="translation">
+            <p>[--- of the praetorian fleet] of Misenum [---] who [lived for X years, (and)] ten
                months. [--- ma]de (this). </p>
-                </div>
-             
-        
-        
-                <div type="commentary">
-                    <p>Line 1: The name (abbreviation of the praenomen, gentilicium, and cognomen)
+         </div>
+         <div type="commentary">
+            <p>Line 1: The name (abbreviation of the praenomen, gentilicium, and cognomen)
                of the deceased is missing. The name would have likely been followed by some
                military epithet which is also missing; it is usually “miles,” but it could have been
                something more specific, e.g. “cornicularius.” </p>
             <p>Line 3: Further details regarding the deceased are likely missing, such as his place
                or people of origin (cf. <ref type="external"
-                  target="https://usepigraphy.brown.edu/projects/usep/inscription/MI.AA.UM.KM.L.1521"
-                  >MI.AA.UM.KM.L.1521</ref> and <ref type="external"
-                  target="https://usepigraphy.brown.edu/projects/usep/inscription/MI.AA.UM.KM.L.1019bis"
-                  >MI.AA.UM.KM.L.1019bis</ref>). </p>
+                     target="https://usepigraphy.brown.edu/projects/usep/inscription/MI.AA.UM.KM.L.1521">MI.AA.UM.KM.L.1521</ref> and <ref type="external"
+                     target="https://usepigraphy.brown.edu/projects/usep/inscription/MI.AA.UM.KM.L.1019bis">MI.AA.UM.KM.L.1019bis</ref>). </p>
             <p>Line 4: The number of years the deceased lived is missing. </p>
             <p>Line 5: “o” being a masculine singular dative ending implies that the mostly missing
                word may have described the dedicatee. </p>
             <p>Line 6: The name of dedicator is likely missing. </p>
-                </div>
-            
-        
-        
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

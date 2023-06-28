@@ -1,19 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader><!-- testing1 -->
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader><!-- testing1 -->
+      <fileDesc>
 
             <!-- *************************************  <titleStmt>  *********************************
                 Used to group  information about the title of a work and its creator. 
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-
-            <titleStmt>
-                <title>NY.NY.CU.Butl.L.428</title>
-            </titleStmt>
-
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>NY.NY.CU.Butl.L.428</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 Used to group information about the publication and permissions of a work. All files will have a US Ep. copyright
                 statement, which is stored in an external file called include_publicationStmt.xml. In the future, if a collection has 
                 special copyright or permissions, we can add more information after the included file.
@@ -23,20 +31,17 @@
                 element above, with any illegal characters such as ? * # & +  [space] replaced with a set of predeterimined 
                 characters that are legal in XML names and viable URLs.  See the wiki for the list of substitutions.
             -->
-
-            <publicationStmt>
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
-                    <xi:fallback>
-                        <p>The Publications Statement should appear here.</p>
-                    </xi:fallback>
-                </xi:include>
-                <idno type="USEpigraphy" xml:id="NY.NY.CU.Butl.L.428">NY.NY.CU.Butl.L.428</idno>
-                
-            </publicationStmt>
-
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-
-            <sourceDesc>
+         <publicationStmt>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               <xi:fallback>
+                  <p>The Publications Statement should appear here.</p>
+               </xi:fallback>
+            </xi:include>
+            <idno type="USEpigraphy" xml:id="NY.NY.CU.Butl.L.428">NY.NY.CU.Butl.L.428</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
 
                 <!--  *************************************  <msDesc>  ********************************* 
                       <msIdentifier>** breaks out the information that is packed into the US Epigraphy number into its component parts, 
@@ -51,16 +56,16 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>CU</institution>
-                        <repository>Butl</repository> <!-- optional -->
-                        <idno>428</idno>
-                    </msIdentifier>
-
-                <!--  *************************************  <msContents>  ********************************* 
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>CU</institution>
+                  <repository>Butl</repository>
+                  <!-- optional -->
+                  <idno>428</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  ********************************* 
 
                       <msContents>** is normally used to describe the contents of an inscription.
                               
@@ -74,16 +79,14 @@
                                    can be more than one <msItem>. The genre of the inscription is encoded in @class 
                                    using one or more values from the genre taxonomy. The first character of the attribute value should be a #.
                 -->
-                    <msContents>
-                        <textLang mainLang="lat"/> 
-                        <msItem class="#funerary.epitaph">
-                        <p>epitaph of Ephoebus, a child</p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-
-                    <physDesc>
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
+                     <p>epitaph of Ephoebus, a child</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.
@@ -110,75 +113,63 @@
                                     <condition> can contain free text that describes the condition of the inscription. [optional]
                                        @ana contains a controlled value from the preservation category of the taxonomy. 
                         -->
-
-                        <objectDesc ana="#tablet"> 
-
-                            <supportDesc ana="#stone.marble">
-
-                                <support>
-                                <p>funerary tablet of gray-veined white marble with rounded top</p>
-                                     <dimensions type="surface" unit="cm">
-                                        <height>29.2</height>
-                                        <width>21.2</width>
-                                        <depth>5.6</depth>
-                                     </dimensions>
-                                    <dimensions type="campus" unit="cm">
-                                        <height>21.1</height>
-                                        <width>19.8</width>
-                                        </dimensions>
-                                    <dimensions type="letters" unit="cm">
-                                        <height atLeast="1.6" atMost="2.1"/>
-                                    </dimensions>
-                               </support>
-
-                                <condition ana="#fragment.single">
-                                    <p>Broken across entire length of bottom; lower half missing. Face somewhat pitted and edges damaged, particularly in rounded gable. Reverse very smooth and undamaged, with "428" in red paint. Right and left sides very rough, top finished with stippling or chisel marks.</p>
-                                </condition>
-
-                            </supportDesc>
-
-                            <!--  *************************************  <layoutDesc>  *********************************
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p>funerary tablet of gray-veined white marble with rounded top</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>29.2</height>
+                              <width>21.2</width>
+                              <depth>5.6</depth>
+                           </dimensions>
+                           <dimensions type="campus" unit="cm">
+                              <height>21.1</height>
+                              <width>19.8</width>
+                           </dimensions>
+                           <dimensions type="letters" unit="cm">
+                              <height atLeast="1.6" atMost="2.1"/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragment.single">
+                           <p>Broken across entire length of bottom; lower half missing. Face somewhat pitted and edges damaged, particularly in rounded gable. Reverse very smooth and undamaged, with "428" in red paint. Right and left sides very rough, top finished with stippling or chisel marks.</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  *********************************
                                 This is where information about the format of the text is encoded.
                                 Use <locus> to narrow down part of inscription being discussed if necessary.
                                 <layout> can have free text content inside the <p> that provides more detailed information. [optional]
                                 @columns and @writtenLines record the number of columns and number of lines.
                             -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="7">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  *********************************
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="7">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  *********************************
                             Contains information about types of writing and means of inscription.
                             <handNote> is a repeatable element, so that it can handle more than one type of writing. 
                             @ana has one or more values from the writing taxonomy. 
                             Any more specific information is contained inside <handNote>. If there is more than one type of writing, 
                              add @hands (<handDesc hands="2">).
                         -->
-                        
-                        <handDesc>
-                            <handNote ana="#inscribed">
+                  <handDesc>
+                     <handNote ana="#inscribed">
                             </handNote>
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************
                             US Epigraphy doesn't use this much yet, but this is where information about any decorations will go.
                             <decoNote> is a repeatable element, so that it can handle more than one decoration. 
                                @type has one  or more values from the decoration taxonomy, and any more specific information 
                                is contained inside <decoNote>
                         -->
-
-                        <decoDesc>
-                            <decoNote ana="#figured scene">
-                                <p>Campus offset by single line. Relief in gable of two birds holding a leaf with trailing vines in their beaks.</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************
+                  <decoDesc>
+                     <decoNote ana="#figured scene">
+                        <p>Campus offset by single line. Relief in gable of two birds holding a leaf with trailing vines in their beaks.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************
                     
                     This section is for the history of the inscription. 
                        <summary>  currently used only if it is necessary to indicate if an inscription is genuine or fake. 
@@ -193,23 +184,18 @@
                            <placeName> contains a detailed place name as content. 
                               @ref has a USEp controlled vocabulary. In the future we plan to use Pleiades information.
                     -->
-
-                    <history>
-                        <summary>
-                            <rs/>
-                        </summary>
-
-                        <origin>
-                            <date evidence="#palaeography" notBefore="0001" notAfter="0200">1st
+               <history>
+                  <summary>
+                     <rs/>
+                  </summary>
+                  <origin>
+                     <date evidence="#palaeography" notBefore="0001" notAfter="0200">1st
                                 century CE - 2nd century CE</date>
-                            <placeName ref="unknown">Rome (?)</placeName>
-                        </origin>
-
-                    </history>
-
-                </msDesc>
-
-                <!--  *************************************  <listBibl>  *********************************
+                     <placeName ref="unknown">Rome (?)</placeName>
+                  </origin>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************
                     Encodes bibliographic entries. 
                     <bibl> used to encode each reference. There can be multiple <bibl>s.
                     @target points to the id of the publication, which is found in the title.xml file. 
@@ -220,16 +206,15 @@
                     External links, for example to digital corpora. Encode this as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-
-                <listBibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR178652">EDR178652</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  *********************************
+            <listBibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR178652">EDR178652</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  *********************************
             This section of the header contains the controlled vocabularies for the genre, form and material of
             an inscription. The taxonomies are in external files, but as you work, Oxygen is reading them, and can 
             validate ids so that you can be assured that you are using correct values.
@@ -239,44 +224,37 @@
             
             Encoders do not edit the <encodingDesc>.
         -->
-
-        <encodingDesc>
+      <encodingDesc>
            
                 <!-- Taxonomies with lists of controlled values go here.  Each controlled vocabulary is a single file stored at 
                 the URL given below. This allows all encoded inscriptions to use the same set of controlled vocabularies. 
                 The taxonomy files can be updated by US Epigraphy staff, but changes should be made only if approved.
                 -->
-                
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <!-- Ignore profileDesc for now -->
-        <profileDesc> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  *********************************
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <!-- Ignore profileDesc for now -->
+      <profileDesc> </profileDesc>
+      <!--  *************************************  <revisionDesc>  *********************************
              <change> Any change to the file should be recorded here, with most recent revisions listed at the top of the list. 
              @when Dates should be in the format YYYYY-MM-DD.
              @who Type in your name. 
              The content of <change> can be a short description of what changes were made, for example:
                 initial encoding; update original US Ep. values to P5 values; corrected xx; etc.
         -->
-        <revisionDesc>
-            <change when="2011-12-09" who="Katherine Harrington">Initial Encoding</change>
-            <change when="2013-04-09" who="Emanuela Bocancea">Editing transcription from JB's edits</change>
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-            <change when="2021-03-08" who="Itamar Levin">Adding translation, supplying dating
+      <revisionDesc>
+         <change when="2011-12-09" who="Katherine Harrington">Initial Encoding</change>
+         <change when="2013-04-09" who="Emanuela Bocancea">Editing transcription from JB's edits</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-03-08" who="Itamar Levin">Adding translation, supplying dating
                 criteria, correcting photos </change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************
         Used to point to images of an inscription. 
           <graphic> (directly within <facsimile>) Use this if there is only a single "main" image without a special caption.
           <surface> Use <desc> and <graphic> within <surface> if there are mutiple images or if they have captions. <surface>
@@ -284,62 +262,62 @@
           @url contains the name of the image file (no path or directory information, for now).
         <facsimile> can have more than one <graphic> or <surface>.
      -->
-
-    <facsimile>
-        <graphic url="NY.NY.CU.Butl.L.428-Det1.jpg"/>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.CU.Butl.L.428-Det2.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.CU.Butl.L.428-Det3.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.CU.Butl.L.428-Det4.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition">
-                <ab>
-                    <lb n="1"/>Dis Manibus
+   <facsimile>
+      <graphic url="NY.NY.CU.Butl.L.428-Det1.jpg"/>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.CU.Butl.L.428-Det2.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.CU.Butl.L.428-Det3.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.CU.Butl.L.428-Det4.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>Dis Manibus
                     <lb n="2"/> Ephoebi,
-                    <lb n="3"/> <expan><abbr>vi</abbr><ex>xit</ex></expan> annum,
-                    <lb n="4"/> <expan><abbr>mens</abbr><ex>ibus</ex></expan> <num value="11">XI</num>, <expan><abbr>dieb</abbr><ex>us</ex></expan> <num value="8">VIII</num>.
+                    <lb n="3"/>
+               <expan><abbr>vi</abbr><ex>xit</ex></expan> annum,
+                    <lb n="4"/>
+               <expan><abbr>mens</abbr><ex>ibus</ex></expan>
+               <num value="11">XI</num>, <expan><abbr>dieb</abbr><ex>us</ex></expan>
+               <num value="8">VIII</num>.
                     <lb n="5"/> Parentes
                     <lb n="6"/> filio
-                    <lb n="7"/> <supplied reason="lost">du</supplied><unclear>l</unclear>cissim<unclear>o</unclear>
-                    <lb n="8"/> <supplied reason="lost"><expan><abbr>fec</abbr><ex>erunt.</ex></expan></supplied></ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the divine shades. The parents made (this) to the sweetest child Ephoebus,
+                    <lb n="7"/>
+               <supplied reason="lost">du</supplied>
+               <unclear>l</unclear>cissim<unclear>o</unclear>
+               <lb n="8"/>
+               <supplied reason="lost">
+                  <expan><abbr>fec</abbr><ex>erunt.</ex></expan>
+               </supplied>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>To the divine shades. The parents made (this) to the sweetest child Ephoebus,
                     (who) lived one year, 11 months, and 8 days.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>The letters are deeply cut and their form corresponds with the style of the
+         </div>
+         <div type="commentary">
+            <p>The letters are deeply cut and their form corresponds with the style of the
                     first centuries CE. The full spelling of the formula "Dis Manibus" (vis-a-vis "D
                     M") supports dating the inscription to the first century, or early second
                     century. </p>
-                </div>
-            
-        
-        
-<div type="bibliography"> 
-                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> 
-                    <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> 
-                </xi:include> 
-            </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

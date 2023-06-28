@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>MA.Camb.HU.Sack.L.1977.216.1884</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,8 @@
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>marble slab</p>
+                        <support>
+                           <p>marble slab</p>
                            <dimensions type="surface" unit="cm">
                               <height>29.0</height>
                               <width>41.0</width>
@@ -41,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="10">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -60,10 +71,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -73,12 +80,17 @@
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
                   <provenance type="transferred" subtype="purchase">
-                     <p>Purchased, probably in <placeName>Rome</placeName>, by Prof. <persName role="purchaser"><name key="Minton Warren">Minton Warren</name></persName> for the <orgName>Harvard Department of Classics</orgName> in <date notBefore="1904" notAfter="1905">1904 or 1905</date></p>
+                     <p>Purchased, probably in <placeName>Rome</placeName>, by Prof. <persName role="purchaser">
+                           <name key="Minton Warren">Minton Warren</name>
+                        </persName> for the <orgName>Harvard Department of Classics</orgName> in <date notBefore="1904" notAfter="1905">1904 or 1905</date>
+                     </p>
                   </provenance>
                   <provenance type="transferred" subtype="moved">
-                     <p>Internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date></p>
+                     <p>Internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date>
+                     </p>
                   </provenance>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -98,10 +110,12 @@
                   <biblScope unit="item">101</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD028311?">EDH nr. HD028311</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD028311?">EDH nr. HD028311</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072516">EDR072516</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072516">EDR072516</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="https://hvrd.art/o/287036">Harvard University Art Museums web entry</ref>
@@ -110,7 +124,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -124,8 +139,8 @@
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2016-01-20" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns, added link to HUAM website</change>
          <change when="2021-02-07" who="Scott J. DiGiulio">Restored and enhanced transcription, based on Ilaria Marchesi's original; added provenance information; added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -136,43 +151,68 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <ab>
-              <lb n="1"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="gentilicium" key="Baebius">Baebio</name> <name type="cognomen" key="Celer">Ce
-              <lb n="2" break="no"/>leri</name> qui et <name type="peregrine" key="Bato">Bato</name></persName>
-              <lb n="3" /><persName><name key="Daza">Dazantis</name></persName> <expan><abbr>f</abbr><ex>ilius</ex></expan>, <orgName type="ethnic"><expan><abbr>Delma</abbr><ex>tae</ex></expan></orgName>,
-              <lb n="4"/><expan><abbr>mil</abbr><ex>iti</ex></expan> ex <expan><abbr>cl</abbr><ex>asse</ex></expan> <expan><abbr>pr</abbr><ex>aetoria</ex></expan> <expan><abbr>Mis</abbr><ex>enensi</ex></expan>, <g type="centuria"/> <persName><name type="gentilicium" key="Vibius">Vi
-              <lb n="5" break="no"/>bi</name> <name type="cognomen" key="Maximus">Maximi</name></persName>. Vixit <expan><abbr>ann</abbr><ex>is</ex></expan>
-              <lb n="6"/><num type="cardinal" value="40">XL</num>, <expan><abbr>milit</abbr><ex>avit</ex></expan> <expan><abbr>ann</abbr><ex>is</ex></expan> <num type="cardinal" value="19">XVIIII</num>.
-              <lb n="7"/><persName><name type="gentilicium" key="Fulvia">Fulvia</name> <name type="cognomen" key="Basilia">Basilia</name></persName> coniu
-              <lb n="8" break="no"/>gi <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan> et libertis 
-              <lb n="9"/>libertabus posteri<add place="right"><hi rend="small">s</hi></add>
-              <lb n="10" break="no"/>que eorum <expan><abbr>omnib</abbr><ex>us</ex></expan>.</ab>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan><abbr>M</abbr><ex>arco</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Baebius">Baebio</name>
+                  <name type="cognomen" key="Celer">Ce
+              <lb n="2" break="no"/>leri</name> qui et <name type="peregrine" key="Bato">Bato</name>
+               </persName>
+               <lb n="3"/>
+               <persName>
+                  <name key="Daza">Dazantis</name>
+               </persName>
+               <expan><abbr>f</abbr><ex>ilius</ex></expan>, <orgName type="ethnic">
+                  <expan><abbr>Delma</abbr><ex>tae</ex></expan>
+               </orgName>,
+              <lb n="4"/>
+               <expan><abbr>mil</abbr><ex>iti</ex></expan> ex <expan><abbr>cl</abbr><ex>asse</ex></expan>
+               <expan><abbr>pr</abbr><ex>aetoria</ex></expan>
+               <expan><abbr>Mis</abbr><ex>enensi</ex></expan>, <g type="centuria"/>
+               <persName>
+                  <name type="gentilicium" key="Vibius">Vi
+              <lb n="5" break="no"/>bi</name>
+                  <name type="cognomen" key="Maximus">Maximi</name>
+               </persName>. Vixit <expan><abbr>ann</abbr><ex>is</ex></expan>
+               <lb n="6"/>
+               <num type="cardinal" value="40">XL</num>, <expan><abbr>milit</abbr><ex>avit</ex></expan>
+               <expan><abbr>ann</abbr><ex>is</ex></expan>
+               <num type="cardinal" value="19">XVIIII</num>.
+              <lb n="7"/>
+               <persName>
+                  <name type="gentilicium" key="Fulvia">Fulvia</name>
+                  <name type="cognomen" key="Basilia">Basilia</name>
+               </persName> coniu
+              <lb n="8" break="no"/>gi <expan><abbr>b</abbr><ex>ene</ex></expan>
+               <expan><abbr>m</abbr><ex>erenti</ex></expan>
+               <expan><abbr>f</abbr><ex>ecit</ex></expan> et libertis 
+              <lb n="9"/>libertabus posteri<add place="right">
+                  <hi rend="small">s</hi>
+               </add>
+               <lb n="10" break="no"/>que eorum <expan><abbr>omnib</abbr><ex>us</ex></expan>.</ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>To Marcus Baebius Celer, who was also Bato, the son of Daza, a Dalmatian, a soldier of the praetorian Misene fleet, in the century of Vibius Maximus. He lived for forty years; he served for nineteen years. Fulvia Basilia made this for her well-deserving spouse, and all their freedmen, freedwomen, and their descendents.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>A faint "s" appears to have been added at the end of line 9 (Moore: posteri(s)=que)</p>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-                    <p/>
-                </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>To Marcus Baebius Celer, who was also Bato, the son of Daza, a Dalmatian, a soldier of the praetorian Misene fleet, in the century of Vibius Maximus. He lived for forty years; he served for nineteen years. Fulvia Basilia made this for her well-deserving spouse, and all their freedmen, freedwomen, and their descendents.</p>
+         </div>
+         <div type="commentary">
+            <p>A faint "s" appears to have been added at the end of line 9 (Moore: posteri(s)=que)</p>
+         </div>
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

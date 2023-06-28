@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>NY.NY.CU.Butl.L.444</title>
-            <editor>Joe Sheppard</editor>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Columbia University</authority>
@@ -40,11 +50,11 @@
                         <support>
                            <p>Dull, pliable lead tablet, with some traces of a greenish blue at the back, perhaps suggesting a coppor alloy                             
                            </p>
-                              <dimensions type="surface" unit="cm">
-                                 <width>22</width>
-                                 <height>23</height>
-                                 <depth>0.2</depth>
-                              </dimensions>
+                           <dimensions type="surface" unit="cm">
+                              <width>22</width>
+                              <height>23</height>
+                              <depth>0.2</depth>
+                           </dimensions>
                         </support>
                         <condition ana="#fragment.single">
                            <p>top left-hand corner has been broken off, but the general size of the tablet can be projected. Small parts of the edges have been folded over the front surface, and six small holes puncture the object without loss to the text. The varying thickness of the tablet and contours of the back surface give the impression that holes have been patched at a later period with poured lead. Many letters are so worn they are difficult to read.</p>
@@ -66,16 +76,20 @@
                <history>
                   <summary>
                      <note/>
-                     </summary>
+                  </summary>
                   <origin>
                      <placeName ref="unknown">unknown</placeName>
-                     <date evidence="unspecified" notBefore="-0100" notAfter="0001" cert="low">first century BCE</date>
+                     <date evidence="unspecified"
+                            notBefore="-0100"
+                            notAfter="0001"
+                            cert="low">first century BCE</date>
                   </origin>
                   <provenance type="observed" subtype="recorded">
                      <p>Recorded as being in the possession of the Latin department in the <date notAfter="1901-03-31">March, 1901</date> edition of the <placeName>Columbia University</placeName> Quarterly</p>
                   </provenance>
                   <provenance type="observed">
-                     <p>Identified in the <placeName>Butler library</placeName> collection no later than <date notAfter="2011-09-01">1 September 2011</date></p>
+                     <p>Identified in the <placeName>Butler library</placeName> collection no later than <date notAfter="2011-09-01">1 September 2011</date>
+                     </p>
                   </provenance>
                </history>
                <additional>
@@ -92,7 +106,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -109,13 +124,11 @@
    <facsimile>
       <surface>
          <desc/>
-         
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition" xml:lang="la" xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="la" xml:space="preserve">
             <ab>
                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr><choice><sic>C</sic><corr cert="low">S</corr></choice></abbr><ex>acrum</ex></expan>
                <lb n="2"/><gap reason="lost" extent="2" unit="character"/><supplied reason="lost" cert="high">s</supplied>alve tibi viator
@@ -129,24 +142,20 @@
                <lb n="10"/>br<unclear>e</unclear>vis tot tu<unclear>l</unclear>it. <expan><abbr>V</abbr><ex>ale</ex></expan>!
             </ab>
          </div>
-        
-        
-                <div type="translation" xml:lang="en">
+         <div type="translation" xml:lang="en">
             <p>"Sacred to the Shades of the Dead. Greetings to you, traveller! If you wish to identify my inscription, I was Nigrio (?) Aequidicus. I was healthy while I was alive, and I fared well. I devoted happy years to Bacchus and to slumber. Ah, a wretch! A brief hour carried off so many things. Farewell!"</p>
          </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-        
-        </body>
-        
-    
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

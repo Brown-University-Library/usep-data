@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1009</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,14 +34,13 @@
                      <p>epitaph of Seia Olymp[ia]</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support>                          
+                        <support>
                            <p>partially reconstituted marble slab</p>
                            <seg type="material">Luna marble</seg>
-                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>34.5</height>
                               <width>33.4</width>
                               <depth>2.9</depth>
@@ -68,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -80,13 +91,15 @@
                   <biblScope unit="item">129-30, no. 200</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114482">EDR114482</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114482">EDR114482</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -97,11 +110,12 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-06-08" who="Scott J. DiGiulio">Added control vocab for condition and writing, added specificity to placename ref; added link to EDR</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-04-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-08-03" who="Sophia Papandonatou">added commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -110,71 +124,52 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
-                    <lb n="2"/> 
+            <ab>
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                    <lb n="2"/>
                <persName>
-                  <name type="gentilicium" key="Seia">Seia</name> 
+                  <name type="gentilicium" key="Seia">Seia</name>
                   <name type="cognomen" key="Olympia">Olymp<supplied reason="lost">ia,</supplied>
                   </name>
                </persName>
-               
-                   <lb n="3"/> coniugi <expan><abbr>me<unclear>r</unclear><supplied reason="lost">en</supplied></abbr><ex>ti</ex></expan>,
-                    <lb n="4"/> cum quo <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-               </expan> 
-               <num xml:lang="lat" value="10">X</num><gap reason="lost" quantity="2" unit="character" cert="low"/>
-                    <lb n="5"/> sine ulla quaerell<supplied reason="lost">a</supplied>;
-                    <lb n="6"/> 
-               <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-               </expan> 
-                   <num xml:lang="lat" value="39">XXXVIIII</num>, <expan><abbr>me<supplied reason="lost">ns</supplied></abbr><ex>ibus</ex></expan> <gap reason="lost" quantity="3" unit="character"/>,
-                    <lb n="7"/> 
-               <expan>
-                  <abbr>dieb</abbr><ex>us</ex>
-               </expan> 
+               <lb n="3"/> coniugi <expan><abbr>me<unclear>r</unclear><supplied reason="lost">en</supplied></abbr><ex>ti</ex></expan>,
+                    <lb n="4"/> cum quo <expan><abbr>vix</abbr><ex>it</ex></expan>
+               <expan><abbr>an</abbr><ex>nis</ex></expan>
+               <num xml:lang="lat" value="10">X</num>
+               <gap reason="lost" quantity="2" unit="character" cert="low"/>
+               <lb n="5"/> sine ulla quaerell<supplied reason="lost">a</supplied>;
+                    <lb n="6"/>
+               <expan><abbr>vix</abbr><ex>it</ex></expan>
+               <expan><abbr>an</abbr><ex>nis</ex></expan>
+               <num xml:lang="lat" value="39">XXXVIIII</num>, <expan><abbr>me<supplied reason="lost">ns</supplied></abbr><ex>ibus</ex></expan>
+               <gap reason="lost" quantity="3" unit="character"/>,
+                    <lb n="7"/>
+               <expan><abbr>dieb</abbr><ex>us</ex></expan>
                <num xml:lang="lat" value="18">XVIII</num>, fecit.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. Seia Olymp[ia] made (this) for (her) husband with
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. Seia Olymp[ia] made (this) for (her) husband with
                whom she lived for [X] years without any complain[ts]; he lived for thirty-nine
                years, [X] mo[nths], (and) eighteen days.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 4: The numeral indicating the years they lived together is incomplete. It is at least ten.</p>
-                   <p>Line 6: The number of months the deceased lived is missing.
+         </div>
+         <div type="commentary">
+            <p>Line 4: The numeral indicating the years they lived together is incomplete. It is at least ten.</p>
+            <p>Line 6: The number of months the deceased lived is missing.
                    </p>
-                </div>
-            
-        
-        
-               
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.L.80.AI.15.1</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,12 +37,13 @@
                <physDesc>
                   <objectDesc ana="#object_other">
                      <supportDesc ana="#metal.lead">
-                        <support><p>Fragment of a lead fistula</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Fragment of a lead fistula</p>
+                           <dimensions type="surface" unit="cm">
                               <height/>
                               <width>14</width>
                               <depth/>
                            </dimensions>
-                           
                         </support>
                         <condition ana="#fragment.single">
                            <p>broken on left and right sides</p>
@@ -41,18 +52,16 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#molded">
-            <dimensions type="letter" unit="cm">
-                              <height>2.5</height>
-                           </dimensions>
-            
-            
-            </handNote>
+                        <dimensions type="letter" unit="cm">
+                           <height>2.5</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -62,10 +71,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -73,25 +78,28 @@
                      <date evidence="unspecified" notBefore="0075" notAfter="0125">late first century-early second century CE ?</date>
                      <placeName ref="unknown">unknown (possibly Ostia?)</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#GettyMusJ_RodriguezAlmeida"/>
                   <biblScope unit="item">191, no. 5, fig. 4</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148952">EDR148952</ref>
-</bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/15207/unknown-maker-pipe-fragment-roman-late-1st-early-2nd-century/">Getty Museum Web Entry</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148952">EDR148952</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/15207/unknown-maker-pipe-fragment-roman-late-1st-early-2nd-century/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -102,39 +110,38 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-26" who="Scott J. DiGiulio">Added metadata and missing control vocab fields, fixed line/column values, added link to Getty Museum, added transcription from image in GettyMusJ</change>
-      <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2020-10-22" who="Scott J. DiGiulio">Removed the empty @ana on decoNote</change>
       </revisionDesc>
-      
    </teiHeader>
-   
    <!--facsimile element goes here-->
-   
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName><name type="cognomen" key="Parthenius"><supplied reason="lost">Part</supplied>henius</name></persName> <expan><abbr>fe<unclear>c</unclear></abbr><ex>it</ex></expan>.
+               <lb n="1"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <persName>
+                  <name type="cognomen" key="Parthenius">
+                     <supplied reason="lost">Part</supplied>henius</name>
+               </persName>
+               <expan><abbr>fe<unclear>c</unclear></abbr><ex>it</ex></expan>.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

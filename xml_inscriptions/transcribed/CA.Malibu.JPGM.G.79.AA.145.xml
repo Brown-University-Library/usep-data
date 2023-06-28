@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.79.AA.145</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,8 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Light-grey marble relief stele</p>
+                        <support>
+                           <p>Light-grey marble relief stele</p>
                            <dimensions type="surface" unit="cm">
                               <height>172.7</height>
                               <width>53.3</width>
@@ -41,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="16">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p>text of the inscription wraps around the relief sculpture</p>
+                           <p>text of the inscription wraps around the relief sculpture</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -56,10 +67,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -67,7 +74,8 @@
                      <date evidence="unspecified" notBefore="-0275" notAfter="-0275">c. 275 BCE</date>
                      <placeName ref="asia.turkey">Asia Minor</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -87,13 +95,15 @@
                   <biblScope unit="pp">219-221</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/8648/unknown-maker-grave-stele-of-poseides-east-greek-about-275-bc/">Getty Museum Website with image</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/8648/unknown-maker-grave-stele-of-poseides-east-greek-about-275-bc/">Getty Museum Website with image</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -106,8 +116,8 @@
          <change when="2015-11-30" who="Scott J. DiGiulio">Added missing control vocabulary, fixed column/line numbers, added bibliography, added link to Getty website</change>
          <change when="2016-03-08" who="Scott J. DiGiulio">Added transcription from photo and line drawing in folder, added available dimensions</change>
          <change when="2016-05-11" who="Scott J. DiGiulio">Added condition control vocab</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -124,45 +134,55 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/>Τ<hi rend="small">ο</hi>ῦτ<hi rend="small">ο</hi> τ<hi rend="small">ὂ</hi> μνῆμα <persName><name key="Poseides Ποσείδης">Π<hi rend="small">ο</hi>σείδου</name> <name key="Herakleides Ἡρακλείδης">Ἡρακ<choice><corr>λ</corr><sic>α</sic></choice><unclear>ε</unclear>ίδου</name></persName> δικαί<hi rend="small">ο</hi>
+               <lb n="1"/>Τ<hi rend="small">ο</hi>ῦτ<hi rend="small">ο</hi> τ<hi rend="small">ὂ</hi> μνῆμα <persName>
+                  <name key="Poseides Ποσείδης">Π<hi rend="small">ο</hi>σείδου</name>
+                  <name key="Herakleides Ἡρακλείδης">Ἡρακ<choice>
+                        <corr>λ</corr>
+                        <sic>α</sic>
+                     </choice>
+                     <unclear>ε</unclear>ίδου</name>
+               </persName> δικαί<hi rend="small">ο</hi>
                <lb n="2" break="no"/>υ ἀν<hi rend="small">θ</hi>ρ<hi rend="small">ώ</hi>π<hi rend="small">ο</hi>υ· <hi rend="small">ο</hi>ὐδένα δὲ ἠδίκησε π<hi rend="small">ώ</hi>ποτε. εἰ δέ
                <lb n="3"/>τις <hi rend="small">θ</hi>έλει <hi rend="small">θ</hi>εωρῆσαι καὶ ἀγα<hi rend="small">θὸ</hi>ν εἰπεῖν, τούτ<hi rend="small">ω</hi>ι <hi rend="small">ο</hi>ἱ <hi rend="small">θ</hi>ε
-               <lb n="4" break="no"/><hi rend="small">ο</hi>ὶ ἵλε<hi rend="small">ως</hi> εἴησαν· ἀδικήσαι δὲ μηθέν. εἴ τις δὲ ἀ<unclear>δ</unclear>
+               <lb n="4" break="no"/>
+               <hi rend="small">ο</hi>ὶ ἵλε<hi rend="small">ως</hi> εἴησαν· ἀδικήσαι δὲ μηθέν. εἴ τις δὲ ἀ<unclear>δ</unclear>
                <lb n="5" break="no"/>ικήσηι τοῦτο τ<hi rend="small">ὸ</hi> μνῆμα ὴ τὰ  φυτὰ ταῦτα ὴ τὰ <unclear>ζ</unclear>
-               <lb n="6" break="no"/><hi rend="small">ῶ</hi>ια ὴ ἕτερ<hi rend="small">ον</hi> νεκρ<hi rend="small">ὸ</hi>ν εἰσενέγκ<hi rend="small">ο</hi>ι εἰς τ<hi rend="small">ο</hi>ὺτ<hi rend="small">ο</hi> τ<hi rend="small">ὸ</hi> μνῆ
+               <lb n="6" break="no"/>
+               <hi rend="small">ῶ</hi>ια ὴ ἕτερ<hi rend="small">ον</hi> νεκρ<hi rend="small">ὸ</hi>ν εἰσενέγκ<hi rend="small">ο</hi>ι εἰς τ<hi rend="small">ο</hi>ὺτ<hi rend="small">ο</hi> τ<hi rend="small">ὸ</hi> μνῆ
                <lb n="7" break="no"/>μα πλὴν ἐμοῦ καὶ τῆς ἐμῆς γυναικ<hi rend="small">ὸς</hi> κεὶ τῶν
                <lb n="8"/>ἐμ<hi rend="small">ῶ</hi>ν υἱ<hi rend="small">ῶ</hi>ν καὶ θυγατέρ<hi rend="small">ω</hi>ν ἐαυτ<hi rend="small">ο</hi>ῦ<surplus>ς</surplus>, εἴ τι
                <lb n="9" break="no"/>ς δὲ ὴ ἐπ' ἐν ἐχύρ<hi rend="small">ο</hi>ις λήψεται τὸ μηῆμ
                <lb n="10" break="no"/>α τοῦτ<hi rend="small">ο</hi> ὴ <hi rend="small">ὠ</hi>νήσεται ὴ αὐτὸς ὴ ἑτέρ<hi rend="small">ο</hi>ις π
-               <lb n="11" break="no"/><supplied reason="lost">ρ</supplied>οστάξηι ὴ ἔτερον νερκρὸν εὀσενέγκοι π
+               <lb n="11" break="no"/>
+               <supplied reason="lost">ρ</supplied>οστάξηι ὴ ἔτερον νερκρὸν εὀσενέγκοι π
                <lb n="12" break="no"/>λὴν <hi rend="small">ο</hi>ὓς αὐτὸς προείλετο τ<hi rend="small">ο</hi>ύτ<hi rend="small">ω</hi>ι τ<hi rend="small">ῶ</hi>ι μν
                <lb n="13" break="no"/>ήματι, εἴ τις ἢ ὕβριν ἢ ἀνάγκην ποίησ
-               <lb n="14" break="no"/>ει τούτ<hi rend="small">ω</hi>ι, ἡ <persName><name type="divinity" key="Artemis Ἄρτεμις">Ἄρτεμις</name> ἡ <name type="epithet" key="Medeia Μήδεια">Μήδεια</name></persName> κα
-               <lb n="15" break="no"/>ὶ ἡ <persName><name type="epithet" key="Ephesia Ἐφεσία">Ἐφεσία</name></persName> καὶ <hi rend="small">ο</hi>ἱ θεοὶ ἅπαντες
+               <lb n="14" break="no"/>ει τούτ<hi rend="small">ω</hi>ι, ἡ <persName>
+                  <name type="divinity" key="Artemis Ἄρτεμις">Ἄρτεμις</name> ἡ <name type="epithet" key="Medeia Μήδεια">Μήδεια</name>
+               </persName> κα
+               <lb n="15" break="no"/>ὶ ἡ <persName>
+                  <name type="epithet" key="Ephesia Ἐφεσία">Ἐφεσία</name>
+               </persName> καὶ <hi rend="small">ο</hi>ἱ θεοὶ ἅπαντες
                <lb n="16"/>αὐτὸν καὶ τοὺς ἐγγόνους.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.85</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,18 +34,13 @@
                      <p>fragmentary epitaph</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>fragmentary marble slab</p>
-                           
                            <seg type="material">White marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>11</height>
                               <width>11</width>
                               <depth>3</depth>
@@ -71,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased in <date when="1893">1893</date> by <persName role="buyer">Francis W. Kelsey</persName> from <persName role="seller">Reverend R. P. Delattre</persName> in <placeName>Carthage</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Butler).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,12 +89,12 @@
                   <ptr type="rest-of-bibl" target="#Butler_1930"/>
                   <biblScope unit="pp">3</biblScope>
                </bibl>
-               
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,10 +106,11 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2020-04-13" who="Gaia Gianni">Updated image filename</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-08-21" who="Sophia Papandonatou">added commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,41 +119,39 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <supplied reason="lost">Dis Ma</supplied><expan><abbr>nib</abbr><ex>us</ex></expan> S<unclear>a</unclear><supplied reason="lost"><expan><abbr>c</abbr><ex>rum</ex></expan></supplied>.
+               <lb n="1"/>
+               <supplied reason="lost">Dis Ma</supplied>
+               <expan><abbr>nib</abbr><ex>us</ex></expan> S<unclear>a</unclear>
+               <supplied reason="lost">
+                  <expan><abbr>c</abbr><ex>rum</ex></expan>
+               </supplied>.
                 <lb n="2"/>
-               <gap reason="lost" quantity="5" unit="character"/>a <persName><name type="cognomen" key="Secunda">Se<supplied reason="lost">cunda?</supplied></name></persName>
+               <gap reason="lost" quantity="5" unit="character"/>a <persName>
+                  <name type="cognomen" key="Secunda">Se<supplied reason="lost">cunda?</supplied>
+                  </name>
+               </persName>
             </ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>Sa[cred] [to the Divine Sp]irits. [-] Se[cunda?]</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line: 1 S[acrum] (Tuck).</p>
-                   <p>Line 2: All but the final “a” and the initial “Se” of the deceased’s gentilicium and cognomen respectively are missing. Tuck restores her cognomen as “Se[cunda?].”</p>
-                   <p>Non-joining fragment of MI.AA.UM.KM.L.86.</p>
-                   
-                </div>
-            
-        
-        
-              
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Sa[cred] [to the Divine Sp]irits. [-] Se[cunda?]</p>
+         </div>
+         <div type="commentary">
+            <p>Line: 1 S[acrum] (Tuck).</p>
+            <p>Line 2: All but the final “a” and the initial “Se” of the deceased’s gentilicium and cognomen respectively are missing. Tuck restores her cognomen as “Se[cunda?].”</p>
+            <p>Non-joining fragment of MI.AA.UM.KM.L.86.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

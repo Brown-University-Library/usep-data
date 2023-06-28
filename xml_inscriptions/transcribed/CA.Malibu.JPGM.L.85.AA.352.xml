@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.L.85.AA.352</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,9 @@
                <physDesc>
                   <objectDesc ana="#statue">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Marble portrait bust</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Marble portrait bust</p>
+                           <dimensions type="surface" unit="cm">
                               <height>40.5</height>
                               <width/>
                               <depth/>
@@ -40,7 +52,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="5">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -55,10 +67,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -66,7 +74,8 @@
                      <date evidence="unspecified" notBefore="0075" notAfter="0125">late first-early second century CE</date>
                      <placeName ref="unknown">unknown</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -74,16 +83,19 @@
                   <biblScope unit="item">212, no. 20</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101874">EDR101874</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR101874">EDR101874</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/11089/unknown-maker-portrait-bust-with-inscription-roman-98-117/">Getty Museum Web Entry</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/11089/unknown-maker-portrait-bust-with-inscription-roman-98-117/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -94,41 +106,51 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-25" who="Scott J. DiGiulio">Added missing control vocab, updated metadata from folder, fixed line/column values, added link to JPGM site, added transcription based on image</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-   
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><persName><name type="slaveName" key="Martialis">Martiali</name></persName> <expan><abbr>vern</abbr><ex>ae</ex></expan>
+               <lb n="1"/>
+               <persName>
+                  <name type="slaveName" key="Martialis">Martiali</name>
+               </persName>
+               <expan><abbr>vern</abbr><ex>ae</ex></expan>
                <lb n="2"/>dulcissimo, qui
-               <lb n="3"/>vixit <expan><abbr>ann</abbr><ex>is</ex></expan> <num value="2">II</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num value="10">X&gt;</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num value="8">VIII&gt;</num>.
-               <lb n="4"/><persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berius</ex></expan></name> <name type="gentilicium" key="Claudius">Claudius</name> <name type="cognomen" key="Vitalis">Vitalis</name></persName>
-               <lb n="5"/><expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> fecit.
+               <lb n="3"/>vixit <expan><abbr>ann</abbr><ex>is</ex></expan>
+               <num value="2">II</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan>
+               <num value="10">X&gt;</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan>
+               <num value="8">VIII&gt;</num>.
+               <lb n="4"/>
+               <persName>
+                  <name type="praenomen" key="Tiberius">
+                     <expan><abbr>Ti</abbr><ex>berius</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Claudius">Claudius</name>
+                  <name type="cognomen" key="Vitalis">Vitalis</name>
+               </persName>
+               <lb n="5"/>
+               <expan><abbr>b</abbr><ex>ene</ex></expan>
+               <expan><abbr>m</abbr><ex>erenti</ex></expan> fecit.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

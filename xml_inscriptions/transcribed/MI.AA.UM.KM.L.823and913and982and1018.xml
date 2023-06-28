@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.823+913+982+1018</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,18 +34,12 @@
                      <p>epitaphs of Aulus Titinius Narcissus, Aulus Titinius Hisochrysus, Agathopus, Titinia Urbana</p>
                   </msItem>
                </msContents>
-
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <seg type="material">four marble slabs reconstructed as single monument </seg>
-
-
-
-
-
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>123.7</height>
                               <width>33.5</width>
                               <depth>3</depth>
@@ -73,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased in <date when="1898">1898</date> by <persName role="buyer">Walter Dennison</persName> from <persName role="seller">Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName>, funded by <persName role="funder">Henry P. Glover</persName>; the inscription arrived at the university in <date when="1899">1899</date> (D'Arms).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -89,16 +95,19 @@
                   <biblScope unit="item">136 no. 211</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010707?">EDH nr. HD010707</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010707?">EDH nr. HD010707</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075780">EDR075780</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075780">EDR075780</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -114,8 +123,10 @@
          <change when="2020-07-03" who="Sophia Papandonatou">fixed transcription errors, added
             commentary</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -124,86 +135,72 @@
       </surface>
    </facsimile>
    <text>
-
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <persName>
                   <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>uli</ex>
-                     </expan>
+                     <expan><abbr>A</abbr><ex>uli</ex></expan>
                   </name>
                   <name type="gentilicium" key="Titinius">
-                     <expan>
-                        <abbr>T</abbr><ex>itinii</ex>
-                     </expan>
+                     <expan><abbr>T</abbr><ex>itinii</ex></expan>
                   </name>
-                  <name type="cognomen" key="Narcissus">Narcissi</name></persName>.
+                  <name type="cognomen" key="Narcissus">Narcissi</name>
+               </persName>.
             </ab>
-                <ab>
-                 <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <persName>
                   <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>uli</ex>
-                     </expan>
+                     <expan><abbr>A</abbr><ex>uli</ex></expan>
                   </name>
                   <name type="gentilicium" key="Titinius">
-                     <expan>
-                        <abbr>T</abbr><ex>itinii</ex>
-                     </expan>
+                     <expan><abbr>T</abbr><ex>itinii</ex></expan>
                   </name>
-                  <name type="cognomen" key="Hisochrysus">Hisochrysi</name></persName>.
+                  <name type="cognomen" key="Hisochrysus">Hisochrysi</name>
+               </persName>.
             </ab>
-                <ab>
-                 <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <persName>
                   <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>uli</ex>
-                     </expan>
+                     <expan><abbr>A</abbr><ex>uli</ex></expan>
                   </name>
                   <name type="gentilicium" key="Titinius">
-                     <expan>
-                        <abbr>T</abbr><ex>itinii</ex>
-                     </expan>
+                     <expan><abbr>T</abbr><ex>itinii</ex></expan>
                   </name>
                   <name type="cognomen" key="Agathopus">
-                  <expan>
-                     <abbr>Aga<hi rend="ligature">th</hi>opod</abbr><ex>is</ex></expan></name></persName>.
+                     <expan><abbr>Aga<hi rend="ligature">th</hi>opod</abbr><ex>is</ex></expan>
+                  </name>
+               </persName>.
             </ab>
-                <ab>
-                <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <persName>
                   <name type="gentilicium" key="Titinia">Titiniae</name>
                   <name type="cognomen" key="Urbana">
-                     <expan>
-                        <abbr>Urban</abbr><ex>ae</ex></expan></name></persName>.
+                     <expan><abbr>Urban</abbr><ex>ae</ex></expan>
+                  </name>
+               </persName>.
             </ab>
-
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-
-            </div>
-
-
-                <div type="translation">
-                    <p>Of Aulus Titinius Narcissus. Of Aulus Titinius Hisochrysus. Of Aulus Titinius
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Of Aulus Titinius Narcissus. Of Aulus Titinius Hisochrysus. Of Aulus Titinius
                Agathopus. Of Titinia Urbana. </p>
-                </div>
-
-
-
-                <div type="commentary">
-                    <p>The "A" and "T" of "A(uli) T(itinii)" are rendered as an unusual ligature. </p>
-                </div>
-
-
-
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-
-
+         </div>
+         <div type="commentary">
+            <p>The "A" and "T" of "A(uli) T(itinii)" are rendered as an unusual ligature. </p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

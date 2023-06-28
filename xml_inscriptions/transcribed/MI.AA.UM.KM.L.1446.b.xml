@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1446.b</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,16 +34,14 @@
                      <p>epitaph of Pasidius Fortunatus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            broken opisthographic marble slab
                            
                            <seg type="material">Gray marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>23.3</height>
                               <width>16.6</width>
                               <depth>6</depth>
@@ -71,7 +80,8 @@
                      <p>Purchased in <date when="1908-12">December 1908</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">Antiquario Pacifico</orgName> on the Via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -87,13 +97,15 @@
                   <biblScope unit="item">192-193 no. 325</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030162">EDR030162</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR030162">EDR030162</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -107,9 +119,10 @@
          <change when="2015-08-17" who="Scott J. DiGiulio">Added EDR link</change>
          <change when="2021-05-22" who="Sophia Papandonatou">changed id # from .r to .b</change>
          <change when="2021-05-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation and commentary</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-28" who="Sophia Papandonatou">updated image url to .b</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -118,73 +131,57 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
-                <lb n="2"/> 
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/>
                <persName>
-                  <name type="gentilicium" key="Pasidius">Pasidio</name> 
+                  <name type="gentilicium" key="Pasidius">Pasidio</name>
                   <name type="cognomen" key="Fortunatus">For<supplied reason="lost">tun</supplied>
-                     <lb break="no" n="3"/>at<hi rend="small">o</hi></name></persName>; 
+                     <lb break="no" n="3"/>at<hi rend="small">o</hi>
+                  </name>
+               </persName>; 
                <persName>
-                  
                   <name type="cognomen" key="Theofilia">Theofil<supplied reason="lost">a</supplied>
                   </name>
-               </persName> 
+               </persName>
                <supplied reason="lost">et</supplied>
-                <lb n="4"/> 
+               <lb n="4"/>
                <persName>
                   <name type="cognomen" key="Felix">Felix</name>
                </persName> paren<supplied reason="lost">tes</supplied>
                <lb n="5"/>filio pii<hi rend="small">ss</hi>im<supplied reason="lost">o</supplied>. 
                <supplied reason="lost">V</supplied>
-                <lb break="no" n="6"/>
-               <expan>
-                  <abbr>i</abbr><ex>xit</ex>
-               </expan> 
-               <expan>
-                  <abbr>an</abbr><ex>nis</ex>
-               </expan> 
+               <lb break="no" n="6"/>
+               <expan><abbr>i</abbr><ex>xit</ex></expan>
+               <expan><abbr>an</abbr><ex>nis</ex></expan>
                <num xml:lang="lat" value="14">XIV<del>X</del>
                </num>
-               <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> 
+               <expan><abbr>m</abbr><ex>ensibus</ex></expan>
                <num xml:lang="lat" value="2">II</num>.
             </ab>
-             
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Pasidius For[tun]atus. Theophil[a and] Felix, (his)
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. To Pasidius For[tun]atus. Theophil[a and] Felix, (his)
                parents, (made this) for (their) most dutif[ul] son [wh]o (lived) for fourteen years
                (and) two months.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>"It seems likely that the last X" in line 6 "was carved as a mistake and that, as Bodel suggests, the gouge in the center of it means it should have been erased." (Tuck)</p>
-                   <p>Line 5: filio pissim[o qu]; line 6: i XIVX m(ensibus) II (Tuck)</p>
-                </div>
-            
-        
-        
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>"It seems likely that the last X" in line 6 "was carved as a mistake and that, as Bodel suggests, the gouge in the center of it means it should have been erased." (Tuck)</p>
+            <p>Line 5: filio pissim[o qu]; line 6: i XIVX m(ensibus) II (Tuck)</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

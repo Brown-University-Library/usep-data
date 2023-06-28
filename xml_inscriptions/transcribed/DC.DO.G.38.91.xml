@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>DC.DO.G.38.91</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,12 +37,13 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p>Fragment of a white marble stele</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>Fragment of a white marble stele</p>
+                           <dimensions type="surface" unit="cm">
                               <height>9.6</height>
                               <width>14.8</width>
                               <depth>5.5</depth>
                            </dimensions>
-                           
                         </support>
                         <condition ana="#fragment.single">
                            <p>left edge of stone original, broken on all other sides</p>
@@ -41,20 +52,16 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                              <height min="1.0" max="1.3">1.0-1.3</height>
-                           </dimensions>
-            
-            
-            
-            
-            </handNote>
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.0" max="1.3">1.0-1.3</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="none">
@@ -64,10 +71,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -75,7 +78,8 @@
                      <date evidence="unspecified" notBefore="-0200" notAfter="-0100">Hellenistic period</date>
                      <placeName ref="asia.turkey">Antioch, Syria; purchased in Daphne</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -94,7 +98,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -105,41 +110,47 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-21" who="Scott J. DiGiulio">Added missing control vocab, added metadata from Vikan, updated existing metadata, added Vikan to bibl, added transcription from images in Vikan</change>
-      <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
-   
    <!--facsimile element goes here-->
-
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><persName><name key="Apollonides"><supplied reason="lost">Ἀ</supplied><unclear>π</unclear>ολλωνίδο<supplied reason="lost">υ</supplied></name></persName> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="2"/>ἀρχ<supplied reason="lost">ιε</supplied>ρωσύν<supplied reason="lost">η</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="3"/>ὑποτέτ<supplied reason="lost" cert="low">ακται</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="1"/>
+               <persName>
+                  <name key="Apollonides">
+                     <supplied reason="lost">Ἀ</supplied>
+                     <unclear>π</unclear>ολλωνίδο<supplied reason="lost">υ</supplied>
+                  </name>
+               </persName>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/>ἀρχ<supplied reason="lost">ιε</supplied>ρωσύν<supplied reason="lost">η</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/>ὑποτέτ<supplied reason="lost" cert="low">ακται</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="4"/> ΠΟ<gap reason="lost" extent="unknown" unit="character"/>
-               <lb/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb/>
+               <gap reason="lost" extent="unknown" unit="line"/>
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
             <p>Vikan suggests that this fragment is related to a letter from Antiochus III (RC 44) appointing a provincial governor to a priesthood that was found in Daphne in the nineteenth century and is now held by the Yale University Libraries.</p>
          </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

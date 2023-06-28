@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1044</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,18 +34,13 @@
                      <p>funerary inscription identifying properties attached to a tomb</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>broken marble tablet</p>
-                           
                            <seg type="material">White marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>39</height>
                               <width>41</width>
                               <depth>7.5</depth>
@@ -72,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -89,14 +96,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR071680"
-                     >EDR071680</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR071680">EDR071680</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -107,9 +114,10 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-04-27" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-08-03" who="Sophia Papandonatou">added commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -118,42 +126,42 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>Tabernam et s<hi rend="tall">t</hi>abu<unclear>l</unclear><supplied reason="lost">um</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="2"/> et membra quae infra <unclear>e</unclear><supplied reason="lost" cert="low">xscripta sunt</supplied>
-               <lb n="3"/> cum hortul<hi rend="apex">o</hi> et ustrin<hi rend="apex">o</hi> qua<supplied reason="lost">e</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="4"/> in tutelam huic monimen<supplied reason="lost" cert="low">to cedunt</supplied>
-                <lb n="5"/> ita ut nulli liceat neque ex hoc <unclear>m</unclear><supplied reason="lost">onimento neque</supplied>
+               <lb n="1"/>Tabernam et s<hi rend="tall">t</hi>abu<unclear>l</unclear>
+               <supplied reason="lost">um</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/> et membra quae infra <unclear>e</unclear>
+               <supplied reason="lost" cert="low">xscripta sunt</supplied>
+               <lb n="3"/> cum hortul<hi rend="apex">o</hi> et ustrin<hi rend="apex">o</hi> qua<supplied reason="lost">e</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="4"/> in tutelam huic monimen<supplied reason="lost" cert="low">to cedunt</supplied>
+               <lb n="5"/> ita ut nulli liceat neque ex hoc <unclear>m</unclear>
+               <supplied reason="lost">onimento neque</supplied>
                <lb n="6"/> ex his aedi<hi rend="tall">f</hi>ici<hi rend="tall">i</hi>s quae tutela<supplied reason="lost">ria</supplied>
-               <lb n="7"/> <gap reason="lost" extent="unknown" unit="line"/>
+               <lb n="7"/>
+               <gap reason="lost" extent="unknown" unit="line"/>
             </ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>The shop and the garret [---] and the corridors, which below a[re written?], with the small
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>The shop and the garret [---] and the corridors, which below a[re written?], with the small
                garden and the crematorium whic[h ---] [they grant] for the upkeep of this monumen[t]
                in such a way that it is permitted to no one [to take anything] either from this
                m[onument or] from these buildings which are designated for its upkeep [---]</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

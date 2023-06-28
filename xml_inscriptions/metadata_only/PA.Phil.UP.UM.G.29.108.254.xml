@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>PA.Phil.UP.UM.G.29.108.254</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -31,7 +42,6 @@
                <physDesc>
 
                   <!--  *************************************  <objectDesc>  *********************************  -->
-
                   <objectDesc ana="#instrumentum.other">
                      <supportDesc ana="#metal.bronze">
                         <support>
@@ -51,13 +61,10 @@
                         <p/>
                      </layoutDesc>
                   </objectDesc>
-
                   <!--  *************************************  <handDesc>  ********************************* -->
-
                   <handDesc hands="1">
                      <handNote ana="#inscribed"> </handNote>
                   </handDesc>
-
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
@@ -65,20 +72,15 @@
                      </decoNote>
                   </decoDesc>
                </physDesc>
-
                <!--  *************************************  <history>  *********************************  -->
-
                <history>
-
                   <summary>
-                     <rs/>  <!-- content can be "fake" or blank -->
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
-
                   <origin>
                      <placeName ref="asia.near_east">Israel, Beth Shean</placeName>
                   </origin>
-
-
                </history>
             </msDesc>
             <listBibl>
@@ -87,14 +89,15 @@
                   <biblScope unit="item">303, no. 303</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.penn.museum/collections/object/104091"
-                     >Museum External Reference</ref>
+                  <ref type="external"
+                        target="https://www.penn.museum/collections/object/104091">Museum External Reference</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -105,9 +108,9 @@
          <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="EM">More tweaks for bib only inscriptions</change>
          <change who="GG" when="2020-05-10">Added metadata, external reference and image</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-02-24" who="Elli Mylonas">Change instrumentum to instrumentum.other</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-02-24" who="Elli Mylonas">Change instrumentum to instrumentum.other</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -119,12 +122,19 @@
          <graphic url="https://upmaa-pennmuseum.netdna-ssl.com/collections/assets/1600/232710.jpg"/>
       </surface>
    </facsimile>
-      <text>
+   <text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div><div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

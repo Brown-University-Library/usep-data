@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1578</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Turr[anius A]gatho</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -69,7 +79,8 @@
                      <p>Purchased by <persName role="buyer">Walter Dennison</persName> from a dealer near the <placeName>Roman forum</placeName> for the <orgName role="recipient">University of Michigan</orgName> and recieved in <date when="1909">1909</date> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,14 +93,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102971"
-                     >EDR102971</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102971">EDR102971</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,10 +110,11 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
          <change when="2021-06-15" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,57 +123,48 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <supplied reason="lost"><expan><abbr>M</abbr><ex>anibus</ex></expan></supplied>.
-                <lb n="2"/> 
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <supplied reason="lost">
+                  <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               </supplied>.
+                <lb n="2"/>
                <persName>
                   <name type="gentilicium">Turra<supplied reason="lost">nio</supplied>
-                  </name> 
+                  </name>
                   <name type="cognomen" key="Agatho">
                      <supplied reason="lost">A</supplied>
                      <lb break="no" n="3"/> gathon<supplied reason="lost">i</supplied>
                   </name>
-               </persName> 
-               <supplied reason="lost">et</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-                <lb break="no" n="4"/> biae <persName>
+               </persName>
+               <supplied reason="lost">et</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb break="no" n="4"/> biae <persName>
                   <name type="gentilicium" key="Florentina">Flo<supplied reason="lost">rentin</supplied>
                      <lb break="no" n="5"/> ae</name>
-               </persName> coniu<supplied reason="lost">gi</supplied> 
+               </persName> coniu<supplied reason="lost">gi</supplied>
                <supplied reason="lost">bene m</supplied>
-                <lb break="no" n="6"/> ere<supplied reason="lost">nti</supplied>.
+               <lb break="no" n="6"/> ere<supplied reason="lost">nti</supplied>.
             </ab>
-                
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                   <p>To the Divine [Spirits.] To Turra[nius A]gatho [and   ] Flo[rentin]a, (his) [well-d]eserving wi[fe].</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 6: eren[ti] (Tuck)</p>
-                </div>
-            
-        
-        
-           
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine [Spirits.] To Turra[nius A]gatho [and   ] Flo[rentin]a, (his) [well-d]eserving wi[fe].</p>
+         </div>
+         <div type="commentary">
+            <p>Line 6: eren[ti] (Tuck)</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>
