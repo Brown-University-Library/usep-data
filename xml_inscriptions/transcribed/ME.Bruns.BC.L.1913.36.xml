@@ -126,87 +126,89 @@
             <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-            <listBibl>
-               <bibl>
-                  <ptr type="rest-of-bibl" target="#AJA_Herbert2"/>
-                  <biblScope unit="item">383-84, no. 5, Pl. 104 (fig. 5a)</biblScope>
-               </bibl>
-               <bibl>
-                  <ptr type="rest-of-bibl" target="#Herbert_AABC"/>
-                  <biblScope unit="page">198, no. 1144</biblScope>
-               </bibl>
-               <bibl>
-                  <ref type="external"
-                        target="http://artmuseum.bowdoin.edu/Obj1216?sid=27317&amp;x=28385">Bowdoin Art Museum Web Entry</ref>
-               </bibl>
-            </listBibl>
-         </sourceDesc>
-      </fileDesc>
-      <!--  *************************************  <encodingDesc>  ********************************* -->
-      <!-- information about the encoding and controlled vocabularies. Do not edit -->
-      <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-            <xi:fallback>
-               <p>Taxonomies for US Epigraphy controlled values</p>
-            </xi:fallback>
-         </xi:include>
-      </encodingDesc>
-      <profileDesc> <!-- not used --> </profileDesc>
-      <!--  *************************************  <revisionDesc>  ********************************* -->
-      <!-- Record all changes here -->
-      <revisionDesc>
-         <change when="2014-10-01" who="Sam Caldis">Initial Encoding</change>
-         <change when="2015-08-19" who="Scott J. DiGiulio">Updated metadata, added link to BCAM website, added images checked transcription</change>
-         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
-         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-      </revisionDesc>
-   </teiHeader>
-   <!--  *************************************  <facsimile>  *********************************  -->
-   <!-- Used to record images of an inscription.   -->
-   <facsimile>
-      <surface>
-         <desc/>
-         <graphic url="ME.Bruns.BC.L.1913.36.jpg"/>
-      </surface>
-      <surface>
-         <desc/>
-         <graphic url="ME.Bruns.BC.L.1913.36-rev.jpg"/>
-      </surface>
-   </facsimile>
-   <text>
-      <body>
-         <div type="edition"><!-- transcription goes here -->
-            <ab>
-               <lb n="1"/>Dis <supplied reason="lost">
-                  <expan><abbr>Man</abbr><ex>ibus</ex></expan>
-               </supplied>
-               <lb n="2"/>
-               <persName>
-                  <name type="praenomen" key="Quintus">
-                     <expan><abbr>Q</abbr><ex>uinti</ex></expan>
-                  </name>
-                  <name type="gentilicium" key="Valerius">
-                     <expan><abbr>Val</abbr><ex>erii</ex></expan>
-                  </name>
-               </persName>
-            </ab>
-         </div>
-         <div type="translation">
-            <p/>
-         </div>
-         <div type="commentary"><!-- notes go here -->
-            <p>The side of the object bearing the inscription is the side showing evidence of
-               reuse.</p>
-         </div>
-         <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
-               <xi:fallback>
-                  <p>US Epigraphybibliography</p>
-               </xi:fallback>
-            </xi:include>
-         </div>
-      </body>
-   </text>
+
+           <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#AJA_Herbert2"/>
+                        <biblScope unit="item">383-84, no. 5, Pl. 104 (fig. 5a)</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Herbert_AABC"/>
+                        <biblScope unit="page">198, no. 1144</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://artmuseum.bowdoin.edu/Obj1216?sid=27317&amp;x=28385">Bowdoin Art Museum Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <!-- information about the encoding and controlled vocabularies. Do not edit -->
+            
+        <encodingDesc>
+                           
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+        
+        
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+        
+        <revisionDesc>
+            <change when="2014-10-01" who="Sam Caldis">Initial Encoding</change>
+            <change when="2015-08-19" who="Scott J. DiGiulio">Updated metadata, added link to BCAM website, added images checked transcription</change>
+        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+          <change when="2023-06-28" who="Sasha Floru">added translation</change>
+</revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="ME.Bruns.BC.L.1913.36.jpg"/>            
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="ME.Bruns.BC.L.1913.36-rev.jpg"/>            
+        </surface>
+    </facsimile>
+
+    <text>
+        
+        <body>
+        <div type="edition"><!-- transcription goes here -->
+            <ab><lb n="1"/>Dis <supplied reason="lost"><expan><abbr>Man</abbr><ex>ibus</ex></expan></supplied>
+                <lb n="2"/><persName><name type="praenomen" key="Quintus"><expan><abbr>Q</abbr><ex>uinti</ex></expan></name><name type="gentilicium" key="Valerius"><expan><abbr>Val</abbr><ex>erii</ex></expan></name></persName>
+            </ab></div>
+        
+        
+                <div type="translation">
+                    <p/> To the Divine [Spirits] of Quintus Val[erius.]
+                </div>
+            
+        
+        
+                <div type="commentary"><!-- notes go here -->
+            <p>The side of the objection bearing the inscription is the side showing evidence of reuse.</p></div>
+            
+        
+        
+<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
+        </body>
+        
+    
+    </text>
 </TEI>
