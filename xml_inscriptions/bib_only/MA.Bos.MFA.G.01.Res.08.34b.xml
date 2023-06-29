@@ -35,17 +35,85 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#dedicatory #label">
+                     <p>label dedicating a votive plaque, from Hypsistos Daphnis to Zeus </p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#sculpture">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> (attic) marble votive plaque</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>15</height>
+                              <width>12.4</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#broken">
+                           <p>unevenly carved and broken at upper left. Back roughly finished.
+                              Slight yellow patina.</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="2">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>inscribed circle above text </p>
+                     </decoNote>
+                     <decoNote>
+                        <p>inscribed star below text </p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="0099" notAfter="0300">2nd–3rd century
+                        A.D.</date>
+                     <placeName ref="europe.greece.athens"/>
+                  </origin>
+                  <provenance type="transferred" subtype="gifted">
+                     <p> In <date when="1908">1908</date>, gift of Fiske Warren and Edward Perry Warren to the MFA. (Accession date: January 1, 1910) </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p> By <date when="1900">1900</date>, bought in Athens by Edward Perry Warren (according to Warren's records)</p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_28"/>
                   <biblScope unit="item">no. 231</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="xx">Title of Reference</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -62,14 +130,29 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-06-23" who="Jean Wanlass">adding information to bib only stub</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc>photo: MFA Res.08.34b</desc>
+         <graphic url="MA.Bos.MFA.G.Res.08.34b.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab><supplied reason="lost">ΔI</supplied>EIYΨICTШΔAΦNIC <supplied reason="lost">EU</supplied>XHN ANEϴHKE</ab></div>
+         
+         <div type="translation">
+            <p>to Zeus Hypsistos Daphnis dedicated [this in fulfillment of] a vow</p></div>
+         
+         <div type="commentary">
+            <p></p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                          href="http://library.brown.edu/usep_data/resources/titles.xml">
