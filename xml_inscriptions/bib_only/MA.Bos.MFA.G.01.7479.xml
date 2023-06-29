@@ -35,13 +35,78 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#dedicatory #label">
+                     <p>dedication to Zeus on a fragment of a Corinthian-type helmet </p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#fragment #object_other">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p> bronze helmet </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>25</height>
+                              <width>25</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p> </p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> "incised" </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0549" notAfter="-0526">550-525
+                        BC</date>
+                     <placeName ref="europe.greece"/>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>purchased by MFA from Edward Perry Warren, December 1901 <date when="1901">1901</date></p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p>with Edward Perry Warren (Warren's records)</p>
+                  </provenance>
+                  <provenance type="found" subtype="found">
+                     <p>according to Warren's records: from Rhousopoulos: from Olympia</p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
+            
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CVB"/>
@@ -66,14 +131,30 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-06-22" who="Jean Wanlass">expansion of bib only stub</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc>photo: MFA 01.7479</desc>
+         <graphic url="MA.Bos.MFA.G.01.7479.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>ΤΟDΙΟΣΟΛΥΝΠΙΟ</ab></div>
+         
+         <div type="translation">
+            <p>Of Olympian Zeus</p></div>
+         
+         <div type="commentary">
+            <p>in retrograde</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                          href="http://library.brown.edu/usep_data/resources/titles.xml">
