@@ -13,8 +13,8 @@ changes: correct handling of provenance information
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>CT.NH.YU.YAM.PR2D3</title>
-            <author>Author</author>
+            <title>CT.NH.YU.YUAG.G.PR2D5</title>
+            <author>Ilaria Bucci</author>
             <respStmt>
                <resp>Translation</resp>
                <name>Translator</name>
@@ -26,7 +26,7 @@ changes: correct handling of provenance information
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="CT.NH.YU.YAM.PR2D3">CT.NH.YU.YAM.PR2D3</idno>
+            <idno type="USEpigraphy" xml:id="CT.NH.YU.YUAG.G.PR2D5">CT.NH.YU.YUAG.G.PR2D5</idno>
          </publicationStmt>
          <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
@@ -35,22 +35,22 @@ changes: correct handling of provenance information
                   <region>CT</region>
                   <settlement>NH</settlement>
                   <institution>YU</institution>
-                  <repository>YAM</repository>
-                  <idno>PR2D3</idno>
+                  <repository>YUAG</repository>
+                  <idno>PR2D5</idno>
                   <altIdentifier>
-                     <idno>SEG 7:537</idno>
+                     <idno>SEG 7:539</idno>
                   </altIdentifier>
                   <altIdentifier>
-                     <idno>PH320778</idno>
+                     <idno>PH320780</idno>
                   </altIdentifier>
                </msIdentifier>
                <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                  <msItem class="#dedicatory">
-                        <!-- short summary of the content of an inscription -->
-                     <p>Remembrance graffito of Selaios son of Barnaios.</p>
+                  <msItem class="#text_unknown">
+                            <!-- short summary of the content of an inscription -->
+                     <p>short illegible graffito</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
@@ -62,27 +62,27 @@ changes: correct handling of provenance information
                         <support>
                            <p>limestone masonry block</p>
                            <dimensions type="surface" unit="cm">
-                              <height>16</height>
-                              <width>48</width>
+                              <height>18</height>
+                              <width>45</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.intact #condition.unknown">
-                           <p>surface badly weathered at the time of discovery; present condition unknown</p>
+                        <condition ana="#complete.broken #condition.unknown">
+                           <p>discovered intact (?); present condition unknown</p>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="0" writtenLines="3">
-                           <p>Three lines are visible in the facsimile, but the reconstruction of the original layout is uncertain</p>
+                        <layout columns="0" writtenLines="2">
+                           <p>Based on the sole edition (no facsimile), the text originally consisted of two lines.</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <!--  *************************************  <handDesc>  ********************************* -->
                   <handDesc hands="1">
-                     <handNote ana="#etched">the letters are deply cut
-                                <dimensions unit="cm" atLeast="4.5" atMost="4.5">
-                           <height>4.5</height>
+                     <handNote ana="#etched">the letters are large and shallow
+                                <dimensions unit="cm" atLeast="8.5" atMost="8.5">
+                           <height>8.5</height>
                         </dimensions>
                      </handNote>
                   </handDesc>
@@ -100,11 +100,9 @@ changes: correct handling of provenance information
                      <!-- content can be "modern" or blank -->
                   </summary>
                   <origin>
-                     <date evidence="#archaeology" notBefore="0001" notAfter="0256">first-third century CE</date>
-                     <placeName ref="https://pleiades.stoa.org/places/980015057">Syria,
-                                Dura-Europos, Palmyrene Gate</placeName>
-                     <p>south wall of the passage, outside the innermost entrance to the
-                                city</p>
+                     <date evidence="#palaeography" notBefore="-0150" notAfter="0165">mid-second century BCE-second century CE</date>
+                     <placeName ref="https://pleiades.stoa.org/places/980015057">Syria, Dura-Europos, Palmyrene Gate</placeName>
+                     <p>south wall of the passage, outside the innermost entrance to the city</p>
                   </origin>
                   <provenance type="found">
                      <p>Excavated and recorded by <orgName>Yale-French Excavations at Dura-Europos</orgName> in 1928-1929.</p>
@@ -114,7 +112,7 @@ changes: correct handling of provenance information
             <!--  *************************************  <listBibl>  *********************************  -->
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl"/>
+                  <ptr type="rest-of-bibl" target="#Dura-Europos"/>
                   <biblScope unit="page">00</biblScope>
                </bibl>
             </listBibl>
@@ -133,7 +131,7 @@ changes: correct handling of provenance information
       <!--  *************************************  <revisionDesc>  ********************************* -->
       <!-- Record all changes here -->
       <revisionDesc>
-         <change when="2022-06-30" who="James Flynn">Initial Encoding</change>
+         <change when="2022-08-11" who="James Flynn">Initial Encoding</change>
          <change when="2022-11-23" who="Ilaria Bucci">Edited; general revision</change>
       </revisionDesc>
    </teiHeader>
@@ -141,36 +139,24 @@ changes: correct handling of provenance information
    <!-- Used to record images of an inscription.   -->
    <facsimile>
       <surface>
-         <desc>Photograph (1929) of the tracings D3, D20, D60 (YAM)</desc>
-         <graphic url="https://library.artstor.org/#/asset/SS7730479_7730479_10869544"/>
-      </surface>
-      <surface>
          <desc/>
-         <graphic url="https://commons.wikimedia.org/wiki/File:Palmyrene_Gate_D1,2,6,98-99.jpg"/>
+         <graphic url="NoImage.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
             <ab>
-               <lb n="1"/>μνησθῇ
-                <lb n="2"/>
-               <persName>
-                  <name key="Σηλαῖος Selaios">Σηλαῖος</name>
-               </persName>
-               <persName>
-                  <name type="patronymic" key="Βαρναίος Barnaios">Βαρ
-                <lb n="3" break="no"/>ναίου</name>
-               </persName>
-               <gap reason="lost" extent="unknown" unit="character"/>ε.
-        </ab>
+               <lb n="1"/>Ἀκειβρι
+            <lb n="2"/>Μημαία
+            </ab>
          </div>
          <div type="translation">
-            <p>May Selaios son of Barnaios be remembered.</p>
+            <p/>
          </div>
          <div type="commentary">
-            <p>Selaios and Barnaios are both Greek renderings of Semitic names and are both attested in Dura. The same individual seems to be mentioned in D 41 and D 100 (perhaphs also in D 67 where, however, the patronymic is missing).</p>
-            <p>Bibliography: Dura P.R. 2, p. 115-116; SEG 7:537; PH320778, https://inscriptions.packhum.org/text/320778?hs=28-37</p>
+            <p>The meaning of the sequence remains obscure. Based on the sole edition (no facsimile), the original state of conservation of the texts is also obscure. The paleography (large and square shallow letters) seems to suggests an earlier (possibly pre-Roman) date.</p>
+            <p>Bibliography: Dura P.R. 2, p. 116; SEG 7:539; PH320780, https://inscriptions.packhum.org/text/320780?hs=18-27</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"

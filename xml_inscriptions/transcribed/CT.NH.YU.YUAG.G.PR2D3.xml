@@ -13,8 +13,8 @@ changes: correct handling of provenance information
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>CT.NH.YU.YAM.PR2D12</title>
-            <author>Author</author>
+            <title>CT.NH.YU.YUAG.G.PR2D3</title>
+            <author>Ilaria Bucci</author>
             <respStmt>
                <resp>Translation</resp>
                <name>Translator</name>
@@ -26,7 +26,7 @@ changes: correct handling of provenance information
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="CT.NH.YU.YAM.PR2D12">CT.NH.YU.YAM.PR2D12</idno>
+            <idno type="USEpigraphy" xml:id="CT.NH.YU.YUAG.G.PR2D3">CT.NH.YU.YUAG.G.PR2D3</idno>
          </publicationStmt>
          <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
@@ -35,22 +35,22 @@ changes: correct handling of provenance information
                   <region>CT</region>
                   <settlement>NH</settlement>
                   <institution>YU</institution>
-                  <repository>YAM</repository>
-                  <idno>PR2D12</idno>
+                  <repository>YUAG</repository>
+                  <idno>PR2D3</idno>
                   <altIdentifier>
-                     <idno>SEG 7:544</idno>
+                     <idno>SEG 7:537</idno>
                   </altIdentifier>
                   <altIdentifier>
-                     <idno>PH320785</idno>
+                     <idno>PH320778</idno>
                   </altIdentifier>
                </msIdentifier>
                <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                  <msItem class="#dedicatory #label">
-                            <!-- short summary of the content of an inscription -->
-                     <p>Short graffito recording the name of Artemidoros and possibly the date 183/2 BCE.</p>
+                  <msItem class="#dedicatory">
+                        <!-- short summary of the content of an inscription -->
+                     <p>remembrance graffito of Selaios son of Barnaios</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
@@ -62,27 +62,27 @@ changes: correct handling of provenance information
                         <support>
                            <p>limestone masonry block</p>
                            <dimensions type="surface" unit="cm">
-                              <height>8</height>
-                              <width>85</width>
+                              <height>16</height>
+                              <width>48</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.broken">
-                           <p>discovered damaged; present condition unknown</p>
+                        <condition ana="#complete.intact #condition.unknown">
+                           <p>surface badly weathered at the time of discovery; present condition unknown</p>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="0" writtenLines="2">
-                           <p>The reconstruction of the original extension and layout of the text is very doubtful. The first part of the name Artemidoros is inscribed over D11. The second line recorded in the facsimile could be part of a different text.</p>
+                        <layout columns="0" writtenLines="3">
+                           <p>Three lines are visible in the facsimile, but the reconstruction of the original layout is uncertain</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <!--  *************************************  <handDesc>  ********************************* -->
-                  <handDesc hands="2">
-                     <handNote ana="#etched">the only surviving letters of the second line (MN) were written by a different hand.
-                                <dimensions unit="cm" atLeast="8" atMost="8">
-                           <height>8</height>
+                  <handDesc hands="1">
+                     <handNote ana="#etched">the letters are deply cut
+                                <dimensions unit="cm" atLeast="4.5" atMost="4.5">
+                           <height>4.5</height>
                         </dimensions>
                      </handNote>
                   </handDesc>
@@ -100,9 +100,11 @@ changes: correct handling of provenance information
                      <!-- content can be "modern" or blank -->
                   </summary>
                   <origin>
-                     <date evidence="#archaeology" notBefore="-0183" notAfter="-0182">183/2 BCE</date>
-                     <placeName ref="https://pleiades.stoa.org/places/980015057">Syria, Dura-Europos, Palmyrene Gate</placeName>
-                     <p>south wall of the passage, flanking the innermost entrance to the city</p>
+                     <date evidence="#archaeology" notBefore="0001" notAfter="0256">first-third century CE</date>
+                     <placeName ref="https://pleiades.stoa.org/places/980015057">Syria,
+                                Dura-Europos, Palmyrene Gate</placeName>
+                     <p>south wall of the passage, outside the innermost entrance to the
+                                city</p>
                   </origin>
                   <provenance type="found">
                      <p>Excavated and recorded by <orgName>Yale-French Excavations at Dura-Europos</orgName> in 1928-1929.</p>
@@ -112,7 +114,7 @@ changes: correct handling of provenance information
             <!--  *************************************  <listBibl>  *********************************  -->
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#Dura-Europos"/>
+                  <ptr type="rest-of-bibl"/>
                   <biblScope unit="page">00</biblScope>
                </bibl>
             </listBibl>
@@ -131,7 +133,7 @@ changes: correct handling of provenance information
       <!--  *************************************  <revisionDesc>  ********************************* -->
       <!-- Record all changes here -->
       <revisionDesc>
-         <change when="2022-08-11" who="James Flynn">Initial Encoding</change>
+         <change when="2022-06-30" who="James Flynn">Initial Encoding</change>
          <change when="2022-11-23" who="Ilaria Bucci">Edited; general revision</change>
       </revisionDesc>
    </teiHeader>
@@ -139,37 +141,36 @@ changes: correct handling of provenance information
    <!-- Used to record images of an inscription.   -->
    <facsimile>
       <surface>
-         <desc>Photograph (1929) of the tracings D9-D12, D123-D124 (YAM)</desc>
-         <graphic url="https://library.artstor.org/public/SS7730479_7730479_10869614"/>
+         <desc>Photograph (1929) of the tracings D3, D20, D60 (YAM)</desc>
+         <graphic url="https://library.artstor.org/#/asset/SS7730479_7730479_10869544"/>
       </surface>
       <surface>
          <desc/>
-         <graphic url="https://upload.wikimedia.org/wikipedia/commons/c/c8/Palmyrene_Gate_D9-12%2C_123-4.jpg"/>
+         <graphic url="https://commons.wikimedia.org/wiki/File:Palmyrene_Gate_D1,2,6,98-99.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
             <ab>
-               <lb n="1"/>
+               <lb n="1"/>μνησθῇ
+                <lb n="2"/>
                <persName>
-                  <name key="Ἀρτεμίδωρος Artemidorus">Ἀρτεμίδωρος</name>
+                  <name key="Σηλαῖος Selaios">Σηλαῖος</name>
                </persName>
-               <choice>
-                  <unclear reason="faded">λρ'</unclear>
-                  <unclear reason="faded">Αρ</unclear>
-               </choice>
-               <lb n="2"/>
-               <expan><abbr>μν<ex cert="medium">ησθῇ</ex></abbr></expan>
-            </ab>
+               <persName>
+                  <name type="patronymic" key="Βαρναίος Barnaios">Βαρ
+                <lb n="3" break="no"/>ναίου</name>
+               </persName>
+               <gap reason="lost" extent="unknown" unit="character"/>ε.
+        </ab>
          </div>
          <div type="translation">
-            <p>Artemidoros 130.</p>
+            <p>May Selaios son of Barnaios be remembered.</p>
          </div>
          <div type="commentary">
-            <p>Line 1: it is unclear whether the final letters indicate a date. If so, it would be 130 of the Seleucid era (183/2 BCE), making this the earliest dated inscription ever found at Dura. The paleography (large and square hammer-cut letters) further supports an early (pre-Roman) date.The alternative is to read the last two letters as AR, which could be the beginning of the patronymic Ἀρτεμιδώρου. The surface of the stone, however, is well preserved at the end of the first line and doesn't show traces of further letters.</p>
-            <p>LIne 2: MN could be the abbreviation for μνησθῇ. If so, it could be either the beginning of a remembrance graffito commemorating somebody else or it could have been added by a later writer who wanted to commomorate Artemidoros.</p>
-            <p>Bibliography: Dura P.R. 2, p. 117; SEG 7:544; PH320785, https://inscriptions.packhum.org/text/320785?hs=18-35</p>
+            <p>Selaios and Barnaios are both Greek renderings of Semitic names and are both attested in Dura. The same individual seems to be mentioned in D 41 and D 100 (perhaphs also in D 67 where, however, the patronymic is missing).</p>
+            <p>Bibliography: Dura P.R. 2, p. 115-116; SEG 7:537; PH320778, https://inscriptions.packhum.org/text/320778?hs=28-37</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
