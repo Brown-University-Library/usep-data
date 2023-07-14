@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.2988</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,16 +34,13 @@
                      <p>fragmentary epitaph</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           
                            <seg type="material">White marble</seg>
                            <p>broken marble slab</p>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>10</height>
                               <width>15.4</width>
                               <depth>2.4</depth>
@@ -70,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -83,14 +92,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112671"
-                     >EDR112671</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112671">EDR112671</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -100,11 +109,12 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-08" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
          <change when="2021-08-21" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -113,48 +123,44 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <gap reason="lost" extent="unknown" unit="line"/>
-                    <lb n="3"/>vixi<supplied reason="lost">t <expan>
-                     <abbr>an</abbr><ex>nis</ex>
-                  </expan>
+               <lb n="3"/>vixi<supplied reason="lost">t <expan><abbr>an</abbr><ex>nis</ex></expan>
                </supplied>
-                   <gap reason="lost" extent="unknown" unit="character"/>,
+               <gap reason="lost" extent="unknown" unit="character"/>,
                     <lb n="4"/>
                <persName>
                   <name type="gentilicium" key="Nonia">Nonia</name>
                </persName>
-                   <gap reason="lost" extent="unknown" unit="character"/>
-                   <lb n="5"/>mater <supplied reason="lost" cert="low">filio</supplied>
-                   <lb n="4"/>piisim<supplied reason="lost" cert="low">o</supplied> <gap reason="lost" extent="unknown" unit="character"/></ab>
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[---] he? live[d for X years ---] Nonia [-], (his?) mother for (her) most
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="5"/>mater <supplied reason="lost" cert="low">filio</supplied>
+               <lb n="4"/>piisim<supplied reason="lost" cert="low">o</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>[---] he? live[d for X years ---] Nonia [-], (his?) mother for (her) most
                dutiful [son? ---]</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 3: The number of years the child lived is missing. It is unclear if the
+         </div>
+         <div type="commentary">
+            <p>Line 3: The number of years the child lived is missing. It is unclear if the
                number of months they lived is also misssing.</p>
-                   <p>Line 4: Nonia’s cognomen is missing.
+            <p>Line 4: Nonia’s cognomen is missing.
                    </p>
-                   <p>Because the name of the deceased child and the ending of "piissim" (line 4) have been lost, the gender of the child is unclear.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <p>Because the name of the deceased child and the ending of "piissim" (line 4) have been lost, the gender of the child is unclear.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

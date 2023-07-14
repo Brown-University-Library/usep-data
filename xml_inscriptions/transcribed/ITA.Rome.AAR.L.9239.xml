@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="usep">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="usep">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can    contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>ITA.Rome.AAR.L.9239</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>ITA.Rome.AAR.L.9239</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9239">ITA.Rome.AAR.L.9239</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9239">ITA.Rome.AAR.L.9239</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state or country. If a US state, use the two letter US postal code for that state; if a country, use the three letter ISO country code
@@ -33,208 +42,207 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>Italy</region>
-                        <settlement>Rome</settlement>
-                        <institution>AAR</institution>
-                        <repository/>
-                        <idno>9239</idno>
-                        <altIdentifier>
-                            <idno>17</idno>
-                        </altIdentifier>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>Italy</region>
+                  <settlement>Rome</settlement>
+                  <institution>AAR</institution>
+                  <repository/>
+                  <idno>9239</idno>
+                  <altIdentifier>
+                     <idno>17</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaphs of Amandus and Cornelia Libas</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Epitaphs of Amandus and Cornelia Libas</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>White marble tablet</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>20.5</height>
-                                        <width>35.9</width>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="6">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="2">
-                            <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                                    <height min="1.8" max="2.7">1.8-2.7</height>
-                                </dimensions>
-            
-            
-            
-            
-            
-                                
-                            </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                           <p>White marble tablet</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>20.5</height>
+                              <width>35.9</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="6">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="2">
+                     <handNote ana="#inscribed">
+                        <dimensions type="letter" unit="cm">
+                           <height min="1.8" max="2.7">1.8-2.7</height>
+                        </dimensions>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
-                        </origin>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date evidence="unspecified" notBefore="0100" notAfter="0200">second century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">34380</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
-                        <biblScope unit="page">116, no. 17</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146010">EDR146010</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1043&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2016-07-09" who="Brahm H. Kleinman">Initial Encoding</change>
-            <change when="2017-01-31" who="Scott J. DiGiulio">Added altIdentifier; general cleaning of metadata and vocab; added dimensions from AAR; cleaned bibl and added links to AAR and EDR; fixed image filepath; proofed transcription (removed spaces in line 4 since centered, added tall i in 7) </change>
-            <change when="2018-06-17" who="Scott J. DiGiulio">Switched files from Babcock numbering to new AAR catalog</change>
-            <change when="2020-03-01" who="Gaia Gianni">Changed image filename.</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc>Epitaphs of Amandus and Cornelia Libas</desc>
-            <graphic url="ITA.Rome.AAR.L.9239.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition">
-                <div type="textpart" subtype="ansa" n="ansa sinistra">
-                <ab>
-                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan>
-                </ab>
-                </div>
-                <div type="textpart" subtype="ansa" n="ansa dextra">
-                    <ab>
-                        <lb n="1"/><expan><abbr>M</abbr><ex>anibus</ex></expan>.
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">34380</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                  <biblScope unit="page">116, no. 17</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146010">EDR146010</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://nvb.aarome.org/scheda.cfm?scheda=1&amp;id=1043&amp;object=&amp;culture=&amp;source1=&amp;description1=&amp;material1=&amp;provenance1=&amp;category1=&amp;tipo=Inscriptions">AAR Catalog Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2016-07-09" who="Brahm H. Kleinman">Initial Encoding</change>
+         <change when="2017-01-31" who="Scott J. DiGiulio">Added altIdentifier; general cleaning of metadata and vocab; added dimensions from AAR; cleaned bibl and added links to AAR and EDR; fixed image filepath; proofed transcription (removed spaces in line 4 since centered, added tall i in 7) </change>
+         <change when="2018-06-17" who="Scott J. DiGiulio">Switched files from Babcock numbering to new AAR catalog</change>
+         <change when="2020-03-01" who="Gaia Gianni">Changed image filename.</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc>Epitaphs of Amandus and Cornelia Libas</desc>
+         <graphic url="ITA.Rome.AAR.L.9239.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <div type="textpart" subtype="ansa" n="ansa sinistra">
+               <ab>
+                  <lb n="1"/>
+                  <expan><abbr>D</abbr><ex>is</ex></expan>
+               </ab>
+            </div>
+            <div type="textpart" subtype="ansa" n="ansa dextra">
+               <ab>
+                  <lb n="1"/>
+                  <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                      </ab>
-                </div>
-                <div type="textpart" subtype="campus">
-                   
-            <ab>
-                <lb n="1"/><persName><name type="cognomen" key="Amandus">Amando</name></persName> <expan><abbr>fil</abbr><ex>io</ex></expan>
-                <lb n="2"/><persName><name type="cognomen" key="Comse">Comse</name></persName> fecit.
-                <lb n="3"/><handShift/><persName><name type="gentilicium" key="Cornelia">Corneliae</name>
-                <lb n="4"/><name type="cognomen" key="Libas">Libadi</name></persName>
-                <lb n="5"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Cornelius"><expan><abbr>Corn</abbr><ex>elius</ex></expan></name>
-                 <name type="cognomen" key="Symphorus"><expan><abbr>Symphor</abbr><ex>us</ex></expan></name></persName>
-                <lb n="6"/>uxsor<hi rend="tall">i</hi> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>.
+            </div>
+            <div type="textpart" subtype="campus">
+               <ab>
+                  <lb n="1"/>
+                  <persName>
+                     <name type="cognomen" key="Amandus">Amando</name>
+                  </persName>
+                  <expan><abbr>fil</abbr><ex>io</ex></expan>
+                  <lb n="2"/>
+                  <persName>
+                     <name type="cognomen" key="Comse">Comse</name>
+                  </persName> fecit.
+                <lb n="3"/>
+                  <handShift/>
+                  <persName>
+                     <name type="gentilicium" key="Cornelia">Corneliae</name>
+                     <lb n="4"/>
+                     <name type="cognomen" key="Libas">Libadi</name>
+                  </persName>
+                  <lb n="5"/>
+                  <persName>
+                     <name type="praenomen" key="Caius">
+                        <expan><abbr>C</abbr><ex>aius</ex></expan>
+                     </name>
+                     <name type="gentilicium" key="Cornelius">
+                        <expan><abbr>Corn</abbr><ex>elius</ex></expan>
+                     </name>
+                     <name type="cognomen" key="Symphorus">
+                        <expan><abbr>Symphor</abbr><ex>us</ex></expan>
+                     </name>
+                  </persName>
+                  <lb n="6"/>uxsor<hi rend="tall">i</hi>
+                  <expan><abbr>b</abbr><ex>ene</ex></expan>
+                  <expan><abbr>m</abbr><ex>erenti</ex></expan>.
             </ab>
-                </div>
-                </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-            <p>Found at the Villa Bertone in 1886, this marble tablet contains two funerary inscriptions. The first epitaph, for Amandus, encompasses the first two lines of the campus and both sides of the tabula ansata, and is carved in large, well defined capital letters. The second inscription, for Cornelia Libas, is carved in another hand, less finely, and uses interpuncts between words in lines 5-6. No relation is apparent between the two inscriptions. It is possible that the entirety of the campus was originally meant for the relatives of Comse and Amandus, but that Caius Cornelius Symphorus repurposed the tabula for an unrelated funary inscription upon the death of his wife.</p></div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            </div>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p>Found at the Villa Bertone in 1886, this marble tablet contains two funerary inscriptions. The first epitaph, for Amandus, encompasses the first two lines of the campus and both sides of the tabula ansata, and is carved in large, well defined capital letters. The second inscription, for Cornelia Libas, is carved in another hand, less finely, and uses interpuncts between words in lines 5-6. No relation is apparent between the two inscriptions. It is possible that the entirety of the campus was originally meant for the relatives of Comse and Amandus, but that Caius Cornelius Symphorus repurposed the tabula for an unrelated funary inscription upon the death of his wife.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

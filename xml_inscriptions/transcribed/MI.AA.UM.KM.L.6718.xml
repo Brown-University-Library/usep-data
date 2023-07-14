@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.6718</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,15 +34,14 @@
                      <p>label naming Salviu[s]</p>
                   </msItem>
                </msContents>
-
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#instrumentum.container.other">
                      <supportDesc ana="#material_other">
                         <support>
                            <seg type="material">Ivory</seg>
                            <seg type="form">Pyxis</seg>
                            <p>fragmentary ivory pyxis</p>
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>3.3</height>
                               <width>2.4</width>
                               <depth/>
@@ -62,14 +72,17 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#nomenclature #palaeography" notBefore="0001" notAfter="0200">first to second
+                     <date evidence="#nomenclature #palaeography"
+                            notBefore="0001"
+                            notAfter="0200">first to second
                         century CE</date>
                      <placeName ref="europe.italy.rome">Rome(?), Italy</placeName>
                   </origin>
                   <provenance type="transferred" subtype="given">
                      <p>Given to the <orgName role="recipient">Kelsey Museum</orgName> by <persName role="donor">Esther B. Van Deman</persName> in <date when="1938">1938</date>.</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -80,7 +93,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -90,12 +104,13 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-08" who="Sophia Papandonatou">updated metadata to current standards, edited transcription</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
          <change when="2021-08-21" who="Sophia Papandonatou">added commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
-         <change when="2021-12-06" who="Sophia Papandonatou">added image</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+         <change when="2021-12-06" who="Sophia Papandonatou">added image</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -104,40 +119,33 @@
       </surface>
    </facsimile>
    <text>
-
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <persName>
                   <name type="gentilicium" key="Salvius">Salviu<supplied reason="lost">s</supplied>
                   </name>
-               </persName> <gap reason="lost" unit="character" extent="unknown"></gap>
+               </persName>
+               <gap reason="lost" unit="character" extent="unknown"/>
             </ab>
-
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-
-            </div>
-
-
-                <div type="translation">
-
-                   <p>Salviu[s -]</p>
-
-                </div>
-
-
-
-                <div type="commentary">
-                   <p>Line 1: It is possible that the owner's cognomen is also missing.</p>
-                   <p>The pyxis is cylindrical. It has a hole, probably for a handle or clasp to hold on to a lid. (Bodel)</p>
-                </div>
-
-
-
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-
-
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Salviu[s -]</p>
+         </div>
+         <div type="commentary">
+            <p>Line 1: It is possible that the owner's cognomen is also missing.</p>
+            <p>The pyxis is cylindrical. It has a hole, probably for a handle or clasp to hold on to a lid. (Bodel)</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>RI.Prov.RISD.MA.L.27.188</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>RI.Prov.RISD.MA.L.27.188</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.L.27.188">RI.Prov.RISD.MA.L.27.188</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="RI.Prov.RISD.MA.L.27.188">RI.Prov.RISD.MA.L.27.188</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,190 +42,178 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>RI</region>
-                        <settlement>Prov</settlement>
-                        <institution>RISD</institution>
-                        <repository>MA</repository>
-                        <idno>27.188</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+            <msDesc>
+               <msIdentifier>
+                  <region>RI</region>
+                  <settlement>Prov</settlement>
+                  <institution>RISD</institution>
+                  <repository>MA</repository>
+                  <idno>27.188</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#label">
                         <!-- short summary of the content of an inscription -->
-                            <p>Terracotta woman's head plate</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Terracotta woman's head plate</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#instrumentum.tableware">
-                            <supportDesc ana="#clay.terracotta">
-                                <support>
+                  <objectDesc ana="#instrumentum.tableware">
+                     <supportDesc ana="#clay.terracotta">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>Terracotta footed plate </p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>5.2</height>
-                                        <width/>
-                                        <depth/>
-                                        <dim type="diameter">15.6</dim>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p>The plate is complete, but at an earlier stage was broken
+                           <p>Terracotta footed plate </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>5.2</height>
+                              <width/>
+                              <depth/>
+                              <dim type="diameter">15.6</dim>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>The plate is complete, but at an earlier stage was broken
                                         into at least two pieces and was then repaired</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="1">
-                                    <p>The inscription is written left to right, on the bottom of
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="1">
+                           <p>The inscription is written left to right, on the bottom of
                                         the plate's circular footing, in a circular direction,
                                         following the curve of the footing</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#painted"> </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>Plate displays a woman's head in profile
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#painted"> </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>Plate displays a woman's head in profile
                                     with a wave pattern framing her on the rim</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="-0340" notAfter="-0300">340-300 BCE</date>
-                            <placeName ref="europe.italy.falerii">Italy, Falerii</placeName>
-                        </origin>
-                        <acquisition>
+                     <date evidence="unspecified" notBefore="-0340" notAfter="-0300">340-300 BCE</date>
+                     <placeName ref="europe.italy.falerii">Italy, Falerii</placeName>
+                  </origin>
+                  <acquisition>
                             <!-- subsequent locations if inscription was moved -->
-                            <date when="0001">Date to be displayed</date>
-                            <p>Gift. of E.P. Warren</p>
-                        </acquisition>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date when="0001">Date to be displayed</date>
+                     <p>Gift. of E.P. Warren</p>
+                  </acquisition>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Beazley_EVP"/>
-                        <biblScope unit="pp">10, 175 pl. 38, figs. 17-19</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CVA"/>
-                        <biblScope unit="item">pl. 29 figs. 2a-c</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#DelChiaro"/>
-                        <biblScope unit="pp">243, 244, 293, 301</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#DelChiaro_1974"/>
-                        <biblScope unit="pp">64</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AshmeadPhillips"/>
-                        <biblScope unit="pp">64, no. 91</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-12-09" who="Darrel Janzen">Initial Entry</change>
-            <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned metadata, added bibliography, proofed transcription, added links for images</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.L.27.188.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="RI.Prov.RISD.MA.L.27.188-det1.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <ab><lb n="1"/><persName><name type="gentilicium" key="Poplia"><expan><abbr>P</abbr><ex>oplia</ex></expan></name> <name type="cognomen" key="Genucilia"><choice><reg>G</reg><orig>C</orig></choice>enucilia</name></persName>.</ab></div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-            <p/></div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Beazley_EVP"/>
+                  <biblScope unit="pp">10, 175 pl. 38, figs. 17-19</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CVA"/>
+                  <biblScope unit="item">pl. 29 figs. 2a-c</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#DelChiaro"/>
+                  <biblScope unit="pp">243, 244, 293, 301</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#DelChiaro_1974"/>
+                  <biblScope unit="pp">64</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AshmeadPhillips"/>
+                  <biblScope unit="pp">64, no. 91</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-09" who="Darrel Janzen">Initial Entry</change>
+         <change when="2015-09-16" who="Scott J. DiGiulio">Cleaned metadata, added bibliography, proofed transcription, added links for images</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.L.27.188.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="RI.Prov.RISD.MA.L.27.188-det1.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="gentilicium" key="Poplia">
+                     <expan><abbr>P</abbr><ex>oplia</ex></expan>
+                  </name>
+                  <name type="cognomen" key="Genucilia">
+                     <choice>
+                        <reg>G</reg>
+                        <orig>C</orig>
+                     </choice>enucilia</name>
+               </persName>.</ab>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

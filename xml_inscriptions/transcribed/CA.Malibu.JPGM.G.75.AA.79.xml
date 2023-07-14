@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.75.AA.79</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,11 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p><seg type="form">Pedimental stele with image of the deceased sculpted in medium relief</seg></p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>
+                              <seg type="form">Pedimental stele with image of the deceased sculpted in medium relief</seg>
+                           </p>
+                           <dimensions type="surface" unit="cm">
                               <height>69.5</height>
                               <width>34.5</width>
                               <depth/>
@@ -40,7 +54,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -55,10 +69,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -66,7 +76,8 @@
                      <date evidence="unspecified" notBefore="0216" notAfter="0217">216/7 CE</date>
                      <placeName ref="asia.turkey">Asia Minor</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -86,13 +97,15 @@
                   <biblScope unit="page">pl. 20</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/7248/unknown-maker-grave-stele-of-antonina-roman-216-217/">Getty Museum Web Entry</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/7248/unknown-maker-grave-stele-of-antonina-roman-216-217/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -103,8 +116,8 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-03-10" who="Scott J. DiGiulio">Added available metadata, cleaned control vocab, expanded, bibl, added transcription</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -121,33 +134,39 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
                <lb n="1"/>Ἔτους <num value="301">τα΄</num>, <expan><abbr>μ<hi rend="stacked">η</hi></abbr><ex>νὸς</ex></expan> Αὐδναί<hi rend="stacked">ου</hi>,
-               <lb n="2"/><persName><name type="gentilicium" key="Julia Ἰουλία">Ἰουλία</name></persName> <expan><abbr>κ</abbr><ex>αὶ</ex></expan> <persName><name key="Alkibiades Ἀλκιβιάδης">Ἀλκιπιάδης</name></persName>
-               <lb n="3"/><persName><name type="gentilicium" key="Antonina Ἀντωνίνα">Ἀντωνίναν</name></persName> τ<hi rend="ligature">ὴν</hi> θρεπτὴ<hi rend="stacked small">ν</hi>
+               <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Julia Ἰουλία">Ἰουλία</name>
+               </persName>
+               <expan><abbr>κ</abbr><ex>αὶ</ex></expan>
+               <persName>
+                  <name key="Alkibiades Ἀλκιβιάδης">Ἀλκιπιάδης</name>
+               </persName>
+               <lb n="3"/>
+               <persName>
+                  <name type="gentilicium" key="Antonina Ἀντωνίνα">Ἀντωνίναν</name>
+               </persName> τ<hi rend="ligature">ὴν</hi> θρεπτὴ<hi rend="stacked small">ν</hi>
                <lb n="4"/>μνίας χάριν ἐτίμησαν.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

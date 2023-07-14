@@ -8,174 +8,172 @@ changes: Added @evidence to date
 <!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
           -->
-          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-
-        <fileDesc>
-
-            <titleStmt>
-                <title>NY.NY.MMA.L.55.11.5 </title>
-            </titleStmt>
-
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.55.11.5 ">Repeat USEP ID</idno>
-            </publicationStmt>
-
-            <sourceDesc>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>NY.NY.MMA.L.55.11.5 </title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.55.11.5">Repeat USEP ID</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>55.11.5 </idno>
-                    </msIdentifier>
-
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary #label">
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>MMA</institution>
+                  <repository/>
+                  <idno>55.11.5 </idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary #label">
                             <!-- short summary of the content of an inscription -->
-                            <p>ancient sarcophagus with a modern inscription </p>
-                        </msItem>
-                    </msContents>
-
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>ancient sarcophagus with a modern inscription </p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#sarcophagus">
-                            <supportDesc ana="#stone.marble">
-                                <support>
-                                    <p> marble ornamented sarcophagus </p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>86.4</height>
-                                        <width>215.9</width>
-                                        <depth>92.1</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-
-                        <!--  *************************************  <handDesc>  ********************************* -->
-
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                        </handDesc>
-
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>Bacchic scene</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-
-                    <!--  *************************************  <history>  *********************************  -->
-
-                    <history>
-
-                        <summary>
-                            <rs>modern</rs>  <!-- content can be "modern" or blank -->
-                        </summary>
-
-                        <origin>
-                            <date evidence="#archaeology" notBefore="1732" notAfter="1734"
-                                >sarcophagus: ca. 260-270 CE; inscription: 1733</date>
-                            <placeName ref="europe.italy.rome">Rome (?)</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="sold">
-                            <p>Purchased by <persName role="buyer"><name key="Henry Scudamore">Henry Scudamore</name></persName>, 3rd Duke of Beaufort, from <persName role="seller"><name key="Cardinal Giulio Alberoni">Cardinal Giulio Alberoni</name></persName> and was brought from <placeName>Rome</placeName> to <placeName>England</placeName> in <date when="1727">1727</date>, where it was installed in <orgName>Badminton House</orgName> in <date when="1733">1733</date>.  </p>
-                        </provenance>
-                        <provenance type="transferred" subtype="sold">
-                            <p> Purchased by the Metropolitan Museum of Art from <persName role="seller"><name key="Henry Somerset">Henry Somerset</name></persName>, 10th Duke of Beaufort Badminton House, via <persName role="donor"><name key="Joseph Pulitzer">Joseph Pulitzer</name></persName>Bequest, June 10 <date when="1955">1955</date>.</p>
-                        </provenance>
-
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MMAB_14_Alexander"/>
-                        <biblScope unit="page">39-47</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/254819">Metropolitan Museum Web Entry</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-
-        <encodingDesc>
-
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-
-
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-
-        <revisionDesc>
-            <change when="2021-02-24" who="Itamar Levin">Transcription, translation, and
+                  <objectDesc ana="#sarcophagus">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble ornamented sarcophagus </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>86.4</height>
+                              <width>215.9</width>
+                              <depth>92.1</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>Bacchic scene</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs>modern</rs>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#archaeology" notBefore="1732" notAfter="1734">sarcophagus: ca. 260-270 CE; inscription: 1733</date>
+                     <placeName ref="europe.italy.rome">Rome (?)</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="sold">
+                     <p>Purchased by <persName role="buyer">
+                           <name key="Henry Scudamore">Henry Scudamore</name>
+                        </persName>, 3rd Duke of Beaufort, from <persName role="seller">
+                           <name key="Cardinal Giulio Alberoni">Cardinal Giulio Alberoni</name>
+                        </persName> and was brought from <placeName>Rome</placeName> to <placeName>England</placeName> in <date when="1727">1727</date>, where it was installed in <orgName>Badminton House</orgName> in <date when="1733">1733</date>.  </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p> Purchased by the Metropolitan Museum of Art from <persName role="seller">
+                           <name key="Henry Somerset">Henry Somerset</name>
+                        </persName>, 10th Duke of Beaufort Badminton House, via <persName role="donor">
+                           <name key="Joseph Pulitzer">Joseph Pulitzer</name>
+                        </persName>Bequest, June 10 <date when="1955">1955</date>.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MMAB_14_Alexander"/>
+                  <biblScope unit="page">39-47</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.metmuseum.org/art/collection/search/254819">Metropolitan Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2021-02-24" who="Itamar Levin">Transcription, translation, and
                 metadata</change>
-            <change when="2021-03-24" who="Elli Mylonas">Changed "impressed.inscribed" to "inscribed"</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.L.55.11.5-Det1.jpg"/>
-        </surface>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.L.55.11.5-Det2.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        <body>
-            <div type="edition">
-                <ab><lb n="1"/><date when="1773">1773</date> hic <expan><abbr>pos</abbr><ex>itu</ex></expan><abbr>m</abbr> est.</ab></div>
-            
-            <div type="translation">
-            <p>Situated here in 1773.</p></div>
-
-            <div type="commentary">
-            <p>The date of 220-230 was suggested due to artwork.</p></div>
-            
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
-        </body>
-    </text>
+         <change when="2021-03-24" who="Elli Mylonas">Changed "impressed.inscribed" to "inscribed"</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.L.55.11.5-Det1.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.L.55.11.5-Det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <date when="1773">1773</date> hic <expan><abbr>pos</abbr><ex>itu</ex></expan>
+               <abbr>m</abbr> est.</ab>
+         </div>
+         <div type="translation">
+            <p>Situated here in 1773.</p>
+         </div>
+         <div type="commentary">
+            <p>The date of 220-230 was suggested due to artwork.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

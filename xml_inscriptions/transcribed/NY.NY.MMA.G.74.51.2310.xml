@@ -8,169 +8,167 @@ changes: Added @evidence to date
 <!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
           -->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
-    <teiHeader>
-        
-        <fileDesc>
-            
-            <titleStmt>
-                <title>NY.NY.MMA.G.74.51.2310</title>
-            </titleStmt>
-            
-            <publicationStmt>
-                <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.74.51.2310">NY.NY.MMA.G.74.51.2310</idno>
-            </publicationStmt>
-            
-            <sourceDesc>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>NY.NY.MMA.G.74.51.2310</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="NY.NY.MMA.G.74.51.2310">NY.NY.MMA.G.74.51.2310</idno>
+         </publicationStmt>
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>MMA</institution>
-                        <repository></repository>
-                        <idno>74.51.2310</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc-Cprt" otherLangs=""/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedication">
+            <msDesc>
+               <msIdentifier>
+                  <region>NY</region>
+                  <settlement>NY</settlement>
+                  <institution>MMA</institution>
+                  <repository/>
+                  <idno>74.51.2310</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc-Cprt" otherLangs=""/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#dedication">
                             <!-- short summary of the content of an inscription -->
-                            <p>dedication to Apollo in Cypriot syllabary</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>dedication to Apollo in Cypriot syllabary</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                         
                         <!--  *************************************  <objectDesc>  *********************************  -->
-                        
-                        <objectDesc ana="#sculpture">
-                            <supportDesc ana="#stone.other">
-                                <support>
-                                    <p>limestone statuette</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>14</height>
-                                        <width>10.2</width>
-                                        <depth>5.4</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                        
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>a male in oriental dressing</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <history>
-                        
-                        <summary>
-                            <rs/>  <!-- content can be "modern" or blank -->
-                        </summary>
-                        
-                        <origin>
-                            <date evidence="#unspecified" notBefore="-0450" notAfter="-0350">late 5th-early 4th c. BCE</date>
-                            <placeName ref="europe.cyprus.kourion">sanctuary of Apollo Hylates at Kourion, Cyprus</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="acquired">
-                            <p>The <persName role="collector"><name key="Cesnola">Cesnola</name></persName> Collection, Purchased by subscription, <date notBefore="1873" notAfter="1877">1874–76</date>.</p>
-                        </provenance>
-                        
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Myres"/>
-                        <biblScope unit="item">1847</biblScope>
-                    </bibl>
-                    <bibl> 
-                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/241864">Metropolitan Museum Web Entry</ref> 
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-        
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        
-        <encodingDesc>
-            
-            <xi:include
-                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                <xi:fallback>
-                    <p>Taxonomies for US Epigraphy controlled values</p>
-                </xi:fallback>
+                  <objectDesc ana="#sculpture">
+                     <supportDesc ana="#stone.other">
+                        <support>
+                           <p>limestone statuette</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>14</height>
+                              <width>10.2</width>
+                              <depth>5.4</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>a male in oriental dressing</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
+                  </summary>
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0450" notAfter="-0350">late 5th-early 4th c. BCE</date>
+                     <placeName ref="europe.cyprus.kourion">sanctuary of Apollo Hylates at Kourion, Cyprus</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="acquired">
+                     <p>The <persName role="collector">
+                           <name key="Cesnola">Cesnola</name>
+                        </persName> Collection, Purchased by subscription, <date notBefore="1873" notAfter="1877">1874–76</date>.</p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Myres"/>
+                  <biblScope unit="item">1847</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://www.metmuseum.org/art/collection/search/241864">Metropolitan Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2021-05-02" who="Itamar Levin">Transcription , translation, and metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="NY.NY.MMA.G.74.51.2310.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" subtype="transliteration_ltn">
+            <ab>
+               <lb n="1" style="text-direction:l-to-r"/>
+               <gap reason="lost"/>ke. to. te. a. po. lo. ni.<gap reason="lost"/>
+            </ab>
+         </div>
+         <div type="edition" subtype="transliteration_grk">
+            <ab>
+               <lb n="1" style="text-direction:l-to-r"/>
+               <gap reason="lost"/>
+               <supplied reason="lost">ἀνέθη</supplied>κε τόδε <persName type="divine">
+                  <name key="Ἀπόλλων">Ἀπόλωνι</name>
+               </persName>
+               <gap reason="lost" extent="unknown"/>.
+                </ab>
+         </div>
+         <div type="translation">
+            <p>[... dedi]cated this to Apollo [...].</p>
+         </div>
+         <div type="commentary">
+            <p>Transcription from Myres (1914). Written in Cypriot syllabary.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
             </xi:include>
-            
-        </encodingDesc>
-        
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-        <!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2021-05-02" who="Itamar Levin">Transcription , translation, and metadata</change>
-        </revisionDesc>
-        
-    </teiHeader>
-    
-    <!--  *************************************  <facsimile>  *********************************  -->
-    <!-- Used to record images of an inscription.   -->
-    
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="NY.NY.MMA.G.74.51.2310.jpg"/>
-        </surface>
-    </facsimile>
-    
-    <text>
-        <body>
-            <div type="edition" subtype="transliteration_ltn">
-                <ab>
-                    <lb n="1" style="text-direction:l-to-r"/><gap reason="lost"></gap>ke. to. te. a. po. lo. ni.<gap reason="lost"></gap>
-                </ab></div>
-            <div type="edition" subtype="transliteration_grk">
-                <ab>
-                    <lb n="1" style="text-direction:l-to-r"/><gap reason="lost"></gap><supplied reason="lost">ἀνέθη</supplied>κε τόδε <persName type="divine"><name key="Ἀπόλλων">Ἀπόλωνι</name></persName><gap reason="lost" extent="unknown"></gap>.
-                </ab></div>
-            
-            <div type="translation">
-                <p>[... dedi]cated this to Apollo [...].</p></div>
-            
-            <div type="commentary">
-                <p>Transcription from Myres (1914). Written in Cypriot syllabary.</p></div>
-            
-            
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-            
-        </body>
-    </text>
+         </div>
+      </body>
+   </text>
 </TEI>

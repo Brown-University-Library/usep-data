@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>NJ.Princ.PU.AM.G.Pa1377-I252</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -25,7 +36,6 @@
                </msContents>
                <physDesc>
                   <!--  *************************************  <objectDesc>  *********************************  -->
-
                   <objectDesc ana="#fragment">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -47,13 +57,10 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-
                   <!--  *************************************  <handDesc>  ********************************* -->
-
                   <handDesc hands="1">
                      <handNote ana="#inscribed"> </handNote>
                   </handDesc>
-
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
@@ -61,21 +68,20 @@
                      </decoNote>
                   </decoDesc>
                </physDesc>
-
                <history>
                   <summary>
-                     <rs/>  <!-- content can be "fake" or blank -->
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
-
                   <origin>
                      <date evidence="unspecified" notBefore="0350" notAfter="0450">Late Roman</date>
                      <placeName ref="asia.asia_minor">Turkey, Seleucia</placeName>
                   </origin>
-
                   <provenance type="transfer" subtype="given">
                      <!-- subsequent locations if inscription was moved -->
                      <p>Gift of the <orgName>Committee for the Excavation of Antioch</orgName> to <orgName>Princeton
-                        University</orgName> in <date when="2003">2003</date></p>
+                        University</orgName> in <date when="2003">2003</date>
+                     </p>
                   </provenance>
                </history>
             </msDesc>
@@ -85,14 +91,16 @@
                   <biblScope unit="item">106, no. 226</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://artmuseum.princeton.edu/collections/objects/41910">Princeton
+                  <ref type="external"
+                        target="https://artmuseum.princeton.edu/collections/objects/41910">Princeton
                      University Art Museum</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -103,36 +111,39 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2020-02-05" who="Sophia Papandonatou">Added transcription and metadata</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2023-02-09" who="Scott J. DiGiulio">removed extraneous gap element</change>
+      </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here--><text>
-      
-        <body>
-        <div type="edition">
-         <ab>
-            <lb n="1"/><gap reason="lost" extent="unknown"/><unclear>Κ</unclear>ΑΤΑΨΗ<gap reason="lost" extent="unknown"/><gap reason="lost" extent="unknown"/>
-            <lb n="2"/><gap reason="lost" extent="unknown"/>ΩΒΗΝ<gap reason="lost" extent="unknown"/>
-            <lb n="3"/><gap reason="lost" extent="unknown"/><damage>Κ</damage>ΠΑ<gap reason="lost" extent="unknown"/>
-         </ab>
+   <!--facsimile element goes here-->
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <gap reason="lost" extent="unknown"/>
+               <unclear>Κ</unclear>ΑΤΑΨΗ<gap reason="lost" extent="unknown"/>
+               <lb n="2"/>
+               <gap reason="lost" extent="unknown"/>ΩΒΗΝ<gap reason="lost" extent="unknown"/>
+               <lb n="3"/>
+               <gap reason="lost" extent="unknown"/>
+               <damage>Κ</damage>ΠΑ<gap reason="lost" extent="unknown"/>
+            </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

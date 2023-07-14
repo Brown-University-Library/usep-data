@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-                <!-- printable version of USEpi inscription ID: -->
-                <title>MA.Glouc.HCM.L.#97.6.9</title>
-            </titleStmt>
+            <title>MA.Glouc.HCM.L.#97.6.9</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.Tmp97.6.9">MA.Glouc.HCM.L.#97.6.9</idno>
@@ -15,18 +25,18 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-
-                        <region>MA</region>
-                        <settlement>Glouc</settlement>
-                        <institution/>
-                        <repository>HCM</repository>
-                        <!--required.-->
-                        <!--  accession number, last part of USEP number -->
-                        <idno>#97.6.9</idno>
-                        <!-- optionally some <altIdentifier>s or <msName>s here -->
-                    </msIdentifier>
+                  <region>MA</region>
+                  <settlement>Glouc</settlement>
+                  <institution/>
+                  <repository>HCM</repository>
+                  <!--required.-->
+                  <!--  accession number, last part of USEP number -->
+                  <idno>#97.6.9</idno>
+                  <!-- optionally some <altIdentifier>s or <msName>s here -->
+               </msIdentifier>
                <msContents>
-                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
                      <p>Epitaph of L. Precilius Epitynchanus</p>
                   </msItem>
                </msContents>
@@ -36,10 +46,10 @@
                         <support>
                            <p>Marble altar</p>
                            <dimensions type="surface" unit="cm">
-                                        <height>76.2</height>
-                                        <width/>
-                                        <depth/>
-                                    </dimensions>
+                              <height>76.2</height>
+                              <width/>
+                              <depth/>
+                           </dimensions>
                         </support>
                         <condition ana="#complete.intact">
                            <!--Add ana attribute with controlled value for condition-->
@@ -48,11 +58,11 @@
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="4">
+                        <layout columns="1" writtenLines="4">
                                     <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed"/>
@@ -65,34 +75,33 @@
                </physDesc>
                <history>
                   <summary>
-                            <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
-                            <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
-                            <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
-                            <!-- Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real -->
-                            <rs/>
-                        </summary>
+                     <rs/>
+                  </summary>
                   <origin>
-                     <date evidence="#nomenclature #formulae #archaeology #palaeography" notBefore="0050" notAfter="0125">second half of the first-early second century CE</date>
+                     <date evidence="#nomenclature #formulae #archaeology #palaeography"
+                            notBefore="0050"
+                            notAfter="0125">second half of the first-early second century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
-                    <bibl>
+               <bibl>
                   <ptr type="rest-of-bibl" target="#Mastia_5_Yebenes"/>
                   <biblScope unit="page">137-138</biblScope>
                </bibl>
-                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143443">EDR143443</ref>
-</bibl>
-                </listBibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143443">EDR143443</ref>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -108,49 +117,52 @@
          <change when="2020-06-24" who="Sophia Papandonatou">minor metadata revisions, added name
             tags</change>
          <change when="2021-02-18" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
-        <surface>
+      <surface>
             <!-- Caption in desc element -->
-        <desc/>
-            <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
-
+         <desc/>
+         <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
       </surface>
    </facsimile>
    <text>
-
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>Dis Manibus.
-                <lb n="2"/><persName><name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>ucio</ex></expan></name> <name type="gentilicium" key="Precilius">Precilio</name>
-                <lb n="3"/> <name type="cognomen" key="Epitynchanus">Epitynchano</name></persName>
-                <lb n="4"/> <persName><name key="Laius">Laius</name></persName> verna.
+               <lb n="1"/>Dis Manibus.
+                <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan><abbr>L</abbr><ex>ucio</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Precilius">Precilio</name>
+                  <lb n="3"/>
+                  <name type="cognomen" key="Epitynchanus">Epitynchano</name>
+               </persName>
+               <lb n="4"/>
+               <persName>
+                  <name key="Laius">Laius</name>
+               </persName> verna.
             </ab>
-
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-
-            </div>
-
-
-                <div type="translation">
-                    <p>To the Divine Spirits. Laius, a homeborn slave, (made this) for Lucius
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. Laius, a homeborn slave, (made this) for Lucius
                Precilius Epitynchanus.</p>
-                </div>
-
-
-
-                <div type="commentary">
-                    <p/>
-                </div>
-
-
-
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-
-
-    </text>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

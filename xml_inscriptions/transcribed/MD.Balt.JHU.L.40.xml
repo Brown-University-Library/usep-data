@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MD.Balt.JHU.L.40</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MD.Balt.JHU.L.40</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.40">MD.Balt.JHU.L.40</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.40">MD.Balt.JHU.L.40</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,223 +42,214 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MD</region>
-                        <settlement>Balt</settlement>
-                        <institution>JHU</institution>
-                        <repository/>
-                        <idno>40</idno>
-                        <altIdentifier>
-                            <idno>Acc. #1138</idno>
-                        </altIdentifier>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>JHU</institution>
+                  <repository/>
+                  <idno>40</idno>
+                  <altIdentifier>
+                     <idno>Acc. #1138</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Dedication to the genius of C. Gerulonius Ianuarius</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>Dedication to the genius of C. Gerulonius Ianuarius</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#metal.bronze #metal.silver">
-                                <support>
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#metal.bronze #metal.silver">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p> Small bronze tabula ansata with silver letters inset
+                           <p> Small bronze tabula ansata with silver letters inset
                                         (litterae incrustatae)</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>12.3</height>
-                                        <width>21</width>
-                                        <depth>.02</depth>
-                                    </dimensions>
-                                    
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p>lower corner of the left hand ansa has broken off; campus is
+                           <dimensions type="surface" unit="cm">
+                              <height>12.3</height>
+                              <width>21</width>
+                              <depth>.02</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>lower corner of the left hand ansa has broken off; campus is
                                         intact</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="5">
-                                    <p/>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inlaid">
-            <dimensions type="letter" unit="cm">
-                                        <height min="0.9" max="1.5">0.9-1.5</height>
-                                    </dimensions>
-            
-            
-            </handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p>simple molding around the campus, palma on the left ansa, corona
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="5">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inlaid">
+                        <dimensions type="letter" unit="cm">
+                           <height min="0.9" max="1.5">0.9-1.5</height>
+                        </dimensions>
+                     </handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>simple molding around the campus, palma on the left ansa, corona
                                     on the right ansa</p>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0150" notAfter="0200">second half of second century
+                     <date evidence="unspecified" notBefore="0150" notAfter="0200">second half of second century
                                 CE</date>
-                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
-                        </origin>
-                        
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJP_Wilson3"/>
-                        <biblScope unit="item">40</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">30882</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072403">EDR072403</ref>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD028614">EDH nr. HD028614</ref>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">36754</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AE_1893"/>
-                        <biblScope unit="item">110</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AE_1911"/>
-                        <biblScope unit="item">1</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">68</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#MGR_15_Chioffi"/>
-                        <biblScope unit="page">195-6</biblScope>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-11-15" who="Erika Valdivieso">Initial Encoding</change>
-            <change when="2014-11-25" who="Erika Valdivieso">Edited</change>
-            <change when="2015-09-14" who="Scott J. DiGiulio">Cleaned metadata, cleaned bibl and fixed links, fixed filepaths of images, proofed transcription</change>
-        <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
-            <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab (removed dedicatory)</change></revisionDesc>
-        <change when="2021-02-04" who="Elli Mylonas">change attribute inset to inlaid</change>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MD.Balt.JHU.L.40.jpg"/>
-        </surface>
-        <surface>
-            <desc>Corona laureadetail</desc>
-            <graphic url="MD.Balt.JHU.L.40-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc>Palma detail</desc>
-            <graphic url="MD.Balt.JHU.L.40-det2.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson3"/>
+                  <biblScope unit="item">40</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">30882</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072403">EDR072403</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD028614">EDH nr. HD028614</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">36754</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1893"/>
+                  <biblScope unit="item">110</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1911"/>
+                  <biblScope unit="item">1</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
+                  <biblScope unit="page">68</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#MGR_15_Chioffi"/>
+                  <biblScope unit="page">195-6</biblScope>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-11-15" who="Erika Valdivieso">Initial Encoding</change>
+         <change when="2014-11-25" who="Erika Valdivieso">Edited</change>
+         <change when="2015-09-14" who="Scott J. DiGiulio">Cleaned metadata, cleaned bibl and fixed links, fixed filepaths of images, proofed transcription</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2020-12-15" who="Scott J. DiGiulio">Tidied control vocab (removed dedicatory)</change>
+      </revisionDesc>
+      <change when="2021-02-04" who="Elli Mylonas">change attribute inset to inlaid</change>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.JHU.L.40.jpg"/>
+      </surface>
+      <surface>
+         <desc>Corona laureadetail</desc>
+         <graphic url="MD.Balt.JHU.L.40-det1.jpg"/>
+      </surface>
+      <surface>
+         <desc>Palma detail</desc>
+         <graphic url="MD.Balt.JHU.L.40-det2.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
             <ab>
-            <lb n="1"/>Genio
-            <lb n="2"/><persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>ai</ex></expan></name> <name type="gentilicium" key="Gerulonius">Geruloni</name>
-            <lb n="3"/><name type="cognomen" key="Ianuarius">Ianuari</name></persName>.
-            <lb n="4"/><persName><name type="slaveName">Fortunatus</name></persName> <expan><abbr>decur</abbr><ex>ialium</ex></expan>
-            <lb n="5"/>gerulorum <expan><abbr>ser</abbr><ex>vus</ex></expan>.
+               <lb n="1"/>Genio
+            <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Caius">
+                     <expan><abbr>C</abbr><ex>ai</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Gerulonius">Geruloni</name>
+                  <lb n="3"/>
+                  <name type="cognomen" key="Ianuarius">Ianuari</name>
+               </persName>.
+            <lb n="4"/>
+               <persName>
+                  <name type="slaveName">Fortunatus</name>
+               </persName>
+               <expan><abbr>decur</abbr><ex>ialium</ex></expan>
+               <lb n="5"/>gerulorum <expan><abbr>ser</abbr><ex>vus</ex></expan>.
                                
-            </ab></div>
-        
-        
-                <div type="translation"><p>"To the Genius of Caius Gerulonius Ianuarius.  Fortunatus, slave of the club-member couriers,(dedicated this)."</p></div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-                <p>Line 4: <hi rend="italic"><expan><abbr>decur</abbr><ex>ialium</ex></expan></hi>: Reconstruction based on <hi rend="italic">CIL</hi> 6.360.</p>
-                <p>Line 5: <hi rend="italic">gerulorum</hi>, Wilson; <hi rend="italic">cerviorum</hi>, Helbig:  Helbig’s inaccurate copy of <hi rend="italic">cerviorum</hi> was followed for <hi rend="italic">CIL</hi> 6.30882.  After Wilson’s edition in 1910, it was changed to <hi rend="italic">gerulorum</hi> in <hi rend="italic">CIL</hi> 6.36754.</p>
-                <p>The silver inset letters are tarnished, but still legible. The last two letters of line 3 and the last three letters of line 4 might be missing the inset, as is the wreath on the right hand <hi rend="italic">ansa</hi>. An attempt was made to center the letters, though <hi rend="italic">Genio</hi> is to the right of center by 0.10 cm. The first three lines are taller than the last two lines.  The only interpunct, triangular and pointing down, is in the last line between <hi rend="italic">gerulorum</hi> and <hi rend="italic">ser(vus)</hi>.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>"To the Genius of Caius Gerulonius Ianuarius.  Fortunatus, slave of the club-member couriers,(dedicated this)."</p>
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p>Line 4: <hi rend="italic">
+                  <expan><abbr>decur</abbr><ex>ialium</ex></expan>
+               </hi>: Reconstruction based on <hi rend="italic">CIL</hi> 6.360.</p>
+            <p>Line 5: <hi rend="italic">gerulorum</hi>, Wilson; <hi rend="italic">cerviorum</hi>, Helbig:  Helbig’s inaccurate copy of <hi rend="italic">cerviorum</hi> was followed for <hi rend="italic">CIL</hi> 6.30882.  After Wilson’s edition in 1910, it was changed to <hi rend="italic">gerulorum</hi> in <hi rend="italic">CIL</hi> 6.36754.</p>
+            <p>The silver inset letters are tarnished, but still legible. The last two letters of line 3 and the last three letters of line 4 might be missing the inset, as is the wreath on the right hand <hi rend="italic">ansa</hi>. An attempt was made to center the letters, though <hi rend="italic">Genio</hi> is to the right of center by 0.10 cm. The first three lines are taller than the last two lines.  The only interpunct, triangular and pointing down, is in the last line between <hi rend="italic">gerulorum</hi> and <hi rend="italic">ser(vus)</hi>.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

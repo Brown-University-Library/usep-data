@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1590</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -19,18 +30,14 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-
                   <msItem class="#document #honorific">
-
                      <p>decree of the decurions of Puteoli</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.other">
                         <support>
-
                            <p>broken limestone slab </p>
                            <seg type="material">Proconnesian limestone</seg>
                            <dimensions type="surface" unit="cm">
@@ -41,9 +48,7 @@
                         </support>
                         <condition ana="#broken">
                            <!--Add ana attribute with controlled value for condition-->
-
                            <p>broken along right and left edges, surface is stained and eroded</p>
-
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -72,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased in <date when="1905">1905</date> by <persName role="buyer">Walter Dennison</persName> from <persName role="seller">Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (D'Arms).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -88,16 +94,19 @@
                   <biblScope unit="item">15-16, no. 11</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010698?">EDH nr. HD010698</ref>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010698?">EDH nr. HD010698</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075777">EDR075777</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075777">EDR075777</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -109,15 +118,16 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDH/EDR bibl tags</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-02" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
          <change when="2021-06-18" who="Colin Olson">changed genre to meet new control vocabulary,
             changed stone.limestone to stone.other, added condition "broken" as it seems that more
             than half of the inscription may be present, changed material summary description to reflect that the slab is made of limestone as opposed to marble.</change>
-<change when="2021-07-01" who="Scott J. DiGiulio">resolved conflicts; included both honorific and document as genre</change>
+         <change when="2021-07-01" who="Scott J. DiGiulio">resolved conflicts; included both honorific and document as genre</change>
          <change when="2021-08-03" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -126,146 +136,123 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
-               <persName><name type="praenomen" key="Lucius"><supplied reason="lost"><expan><abbr>L</abbr><ex>ucio</ex></expan></supplied>
-                  </name> 
-                  <name type="gentilicium" key="Publilius">Publilio</name> 
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <supplied reason="lost">
+                        <expan><abbr>L</abbr><ex>ucio</ex></expan>
+                     </supplied>
+                  </name>
+                  <name type="gentilicium" key="Publilius">Publilio</name>
                   <name type="cognomen" key="Celsus">Celso</name>
-               </persName> 
+               </persName>
                <num xml:lang="lat" value="2">I<supplied reason="lost">I</supplied>
-               </num> 
+               </num>
                <supplied reason="lost">
                   <persName>
                      <name type="praenomen" key="Caius">
-                        <expan>
-                           <abbr>C</abbr><ex>aio</ex>
-                        </expan>
-                     </name> 
-                     <name type="gentilicium" key="Clodius">Clodio</name> 
+                        <expan><abbr>C</abbr><ex>aio</ex></expan>
+                     </name>
+                     <name type="gentilicium" key="Clodius">Clodio</name>
                      <name type="cognomen" key="Crispinus">Crispino</name>
-                  </persName> 
-                  <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan></supplied>
-                    <lb n="2"/>
-                   <gap reason="lost" extent="unknown" unit="character"/><expan><abbr>r</abbr></expan> in chalcidico <persName type="imperial"><name type="cognomen" key="Augustus"><expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan></name></persName> 
-               <name type="cognomen" key="Suettianus">Suettian<supplied reason="lost">o</supplied>
-               </name> 
-               <supplied reason="lost">scribundo adfuerunt</supplied> 
+                  </persName>
+                  <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>
+               </supplied>
+               <lb n="2"/>
                <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="3"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
+               <expan><abbr>r</abbr></expan> in chalcidico <persName type="imperial">
+                  <name type="cognomen" key="Augustus">
+                     <expan><abbr>Aug</abbr><ex>usti</ex></expan>
+                  </name>
+               </persName>
+               <name type="cognomen" key="Suettianus">Suettian<supplied reason="lost">o</supplied>
+               </name>
+               <supplied reason="lost">scribundo adfuerunt</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="3"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
                <persName>
                   <name type="praenomen" key="Marcus">
-                     <expan>
-                        <abbr>M</abbr><ex>arcus</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Caecilius">Caecilius</name> 
+                     <expan><abbr>M</abbr><ex>arcus</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Caecilius">Caecilius</name>
                   <name type="cognomen" key="Crispinus">Crispinus</name>
                </persName> quod <persName>
                   <name type="praenomen" key="Caius">
-                     <expan>
-                        <abbr>C</abbr><ex>aius</ex>
-                     </expan>
-                  </name> 
+                     <expan><abbr>C</abbr><ex>aius</ex></expan>
+                  </name>
                   <name type="gentilicium" key="Blossius">Blossi<supplied reason="lost">us</supplied>
                   </name>
-               </persName> 
-                   <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><expan><num><am>II</am></num><ex>duo</ex>viri</expan> <expan>
-                     <abbr>v</abbr><ex>erba</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>f</abbr><ex>ecerunt</ex>
-                  </expan> de honoranda</supplied>
-                    <lb n="4"/>
+               </persName>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">
+                  <expan><num><am>II</am></num><ex>duo</ex>viri</expan>
+                  <expan><abbr>v</abbr><ex>erba</ex></expan>
+                  <expan><abbr>f</abbr><ex>ecerunt</ex></expan> de honoranda</supplied>
+               <lb n="4"/>
                <supplied reason="lost">memor</supplied>ia <persName>
-                  <name type="gentilicium" key="Iulius">Iuli</name> 
+                  <name type="gentilicium" key="Iulius">Iuli</name>
                   <name type="cognomen" key="Iulianus">Iuliani</name>
-               </persName> probissimi adque orn<supplied reason="lost">atissimi viri. <expan>
-                     <abbr>Q</abbr><ex>uid</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>d</abbr><ex>e</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>e</abbr><ex>a</ex>
-                  </expan>
-                  <expan>
-                     <abbr>r</abbr><ex>e</ex>
-                  </expan>
-                  <expan>
-                     <abbr>f</abbr><ex>ieri</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>p</abbr><ex>laceret</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>d</abbr><ex>e</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>e</abbr><ex>a</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>r</abbr><ex>e</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>i</abbr><ex>ta</ex>
-                  </expan> 
-                  <expan>
-                     <abbr>c</abbr><ex>ensuerunt</ex></expan>.</supplied> 
-                    <lb n="5"/>
-               <supplied reason="lost">Cum</supplied> 
+               </persName> probissimi adque orn<supplied reason="lost">atissimi viri. <expan><abbr>Q</abbr><ex>uid</ex></expan>
+                  <expan><abbr>d</abbr><ex>e</ex></expan>
+                  <expan><abbr>e</abbr><ex>a</ex></expan>
+                  <expan><abbr>r</abbr><ex>e</ex></expan>
+                  <expan><abbr>f</abbr><ex>ieri</ex></expan>
+                  <expan><abbr>p</abbr><ex>laceret</ex></expan>
+                  <expan><abbr>d</abbr><ex>e</ex></expan>
+                  <expan><abbr>e</abbr><ex>a</ex></expan>
+                  <expan><abbr>r</abbr><ex>e</ex></expan>
+                  <expan><abbr>i</abbr><ex>ta</ex></expan>
+                  <expan><abbr>c</abbr><ex>ensuerunt</ex></expan>.</supplied>
+               <lb n="5"/>
+               <supplied reason="lost">Cum</supplied>
                <persName>
                   <name type="gentilicium" key="Iulius">
-                     <supplied reason="lost">Iuli</supplied>us</name> 
+                     <supplied reason="lost">Iuli</supplied>us</name>
                   <name type="cognomen" key="Iulianus">Iulianus</name>
                </persName> splendidus adulescens co<gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="6"/>
+               <lb n="6"/>
                <gap reason="lost" extent="unknown" unit="character"/>s et inmatura velocitate fatorum occup<supplied reason="lost">atus</supplied>, 
                <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="7"/>
-                   <gap reason="lost" extent="unknown" unit="character"/> huic ordini <persName>
-                  <name type="gentilicium" key="Iulius">Iulio</name> 
+               <lb n="7"/>
+               <gap reason="lost" extent="unknown" unit="character"/> huic ordini <persName>
+                  <name type="gentilicium" key="Iulius">Iulio</name>
                   <name type="cognomen" key="Iulianus">Iuliano</name>
-               </persName> splendido viro st<supplied reason="lost">atuam</supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ponere</supplied> 
+               </persName> splendido viro st<supplied reason="lost">atuam</supplied>
                <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="8"/>placuit.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                   <p>When [Lucius] Publicius Celsus was consul for the sec[ond time (and) Gaius Clodius Crispinus was consul ---] 
+               <supplied reason="lost">ponere</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="8"/>placuit.</ab>
+         </div>
+         <div type="translation">
+            <p>When [Lucius] Publicius Celsus was consul for the sec[ond time (and) Gaius Clodius Crispinus was consul ---] 
                       [present to sign (as witnesses)] in the Suettian porch of Augustus [were] [--- (and)] Marcus Caecilius Crispinus. 
                       As to the matter on which Gaius Blossi[us - (and) - - - <hi rend="italic">duoviri</hi> made a verbal report regarding honoring the memor]y of 
                       Julius Julianus, a most upright and dec[orated man, what it pleased them should happen regarding this affair, 
                       regarding the affair they thus decreed:</p>
-                      <p>Since Juli]us Julianus, a distinguished young man [---] and seized by the untimely quickness of the fates, 
+            <p>Since Juli]us Julianus, a distinguished young man [---] and seized by the untimely quickness of the fates, 
                          [---] it pleased this order [--- to set up] a st[atue] for Julius Julianus, a distinguished man.
                    </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    
-                   <p>Line 2: A continuation of the dating formula, i.e. a reference to the day and the month, is likely missing from the beginning of the line.</p>
-                      <p>Lines 2-3: Following “adfuerunt” at the end of line 2 continuing into the beginning of line 3, the names of whoever was also present are missing.</p> 
-                         <p>Line 3: Blossius’ cognomen is missing. Following “Blossi[us], the name (praenomen, gentilicium and cognomen) of the other duovir is missing.
+         </div>
+         <div type="commentary">
+            <p>Line 2: A continuation of the dating formula, i.e. a reference to the day and the month, is likely missing from the beginning of the line.</p>
+            <p>Lines 2-3: Following “adfuerunt” at the end of line 2 continuing into the beginning of line 3, the names of whoever was also present are missing.</p>
+            <p>Line 3: Blossius’ cognomen is missing. Following “Blossi[us], the name (praenomen, gentilicium and cognomen) of the other duovir is missing.
                    </p>
-                   <p>Proconnesian limestone (Tuck).</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <p>Proconnesian limestone (Tuck).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

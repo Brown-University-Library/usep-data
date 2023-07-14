@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.G.1114</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -50,13 +61,10 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  
                   <!--  *************************************  <handDesc>  ********************************* -->
-                  
                   <handDesc hands="1">
                      <handNote ana="#inscribed"> </handNote>
                   </handDesc>
-                  
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
@@ -64,12 +72,11 @@
                      </decoNote>
                   </decoDesc>
                </physDesc>
-               
                <history><!--summary, origin, provenance go here-->
                   <summary>
-                     <rs/>  <!-- content can be "modern" or blank -->
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
                   </summary>
-                  
                   <origin>
                      <date evidence="#unknown" notBefore="0001" notAfter="0001">unknown</date>
                      <placeName ref="europe.italy">Italy, Pozzuoli</placeName>
@@ -87,14 +94,15 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1114/0000_00_1114">Kelsey
+                        target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1114/0000_00_1114">Kelsey
                      Museum of Archaeology</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -107,19 +115,32 @@
          <change when="2022-10-04" who="Sophia Papandonatou">added metadata, transcription, translation, link</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here--><text>
+   <!--facsimile element goes here-->
+   <text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/><persName><name key="Θολομαῖος Tholomaios">Θολο<g type="hedera"/>
-                  <lb n="2" break="no"/>μαῖος</name>
-               <lb n="3"/><persName><name key="Θαιμάλος Thaimalos" type="patronymic">Θαιμάλ
-                  <lb n="4" break="no"/>λου</name></persName></persName> <g type="hedera"/> ὁ <g type="hedera"/> καὶ
-               <lb n="5"/><persName><name key="Μάξιμος Maximus" type="cognomen">Μάξιμος</name>
-                  <lb n="6"/><name key="Πετραῖος Petraeus" type="cognomen">Πετραῖος</name></persName>,
+               <lb n="1"/>
+               <persName>
+                  <name key="Θολομαῖος Tholomaios">Θολο<g type="hedera"/>
+                     <lb n="2" break="no"/>μαῖος</name>
+                  <lb n="3"/>
+                  <persName>
+                     <name key="Θαιμάλος Thaimalos" type="patronymic">Θαιμάλ
+                  <lb n="4" break="no"/>λου</name>
+                  </persName>
+               </persName>
+               <g type="hedera"/> ὁ <g type="hedera"/> καὶ
+               <lb n="5"/>
+               <persName>
+                  <name key="Μάξιμος Maximus" type="cognomen">Μάξιμος</name>
+                  <lb n="6"/>
+                  <name key="Πετραῖος Petraeus" type="cognomen">Πετραῖος</name>
+               </persName>,
                <lb n="7"/>ἔζησεν
-               <lb n="8"/>ἔτη <g type="hedera"/> <num value="33" xml:lang="grc">λγʹ</num>.  
+               <lb n="8"/>ἔτη <g type="hedera"/>
+               <num value="33" xml:lang="grc">λγʹ</num>.  
             </ab>
          </div>
          <div type="translation">
@@ -130,8 +151,14 @@
          <div type="commentary">
             <p>Θαιμάλος as a variation of Θαιμάλλας?</p>
          </div>
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

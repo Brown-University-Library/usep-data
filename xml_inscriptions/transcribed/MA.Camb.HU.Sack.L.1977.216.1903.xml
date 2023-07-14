@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>MA.Camb.HU.Sack.L.1977.216.1903</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,8 @@
                <physDesc>
                   <objectDesc ana="#stele">
                      <supportDesc ana="#stone.marble">
-                        <support><p>broken marble stele</p>
+                        <support>
+                           <p>broken marble stele</p>
                            <dimensions type="surface" unit="cm">
                               <height>53.0</height>
                               <width>20.5</width>
@@ -45,7 +56,7 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="8">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -64,10 +75,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -80,10 +87,14 @@
                      <p>Reportedly found in <date when="1886">1886</date> in a graveyard outside the Porta Salaria between the Via Salaria and the Via Pinciana</p>
                   </provenance>
                   <provenance type="transferred" subtype="purchased">
-                     <p>purchased in <placeName>Rome</placeName> by <persName role="purchaser"><name key="Clifford Moore">Clifford Moore</name></persName> for the <orgName>Harvard Department of Classics</orgName>, <date notBefore="1905" notAfter="1906">1905-1906</date></p>
+                     <p>purchased in <placeName>Rome</placeName> by <persName role="purchaser">
+                           <name key="Clifford Moore">Clifford Moore</name>
+                        </persName> for the <orgName>Harvard Department of Classics</orgName>, <date notBefore="1905" notAfter="1906">1905-1906</date>
+                     </p>
                   </provenance>
                   <provenance type="transferred" subtype="moved">
-                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date></p>
+                     <p>internally transferred from the <orgName>Harvard Department of Classics</orgName> to the <orgName>Sackler Museum</orgName>, <date when="1977">1977</date>
+                     </p>
                   </provenance>
                </history>
             </msDesc>
@@ -108,10 +119,10 @@
                   <ptr type="rest-of-bibl" target="#AE_1992"/>
                   <biblScope unit="item">107</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR032877">EDR032877</ref>
-</bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR032877">EDR032877</ref>
+               </bibl>
                <bibl>
                   <ref type="external" target="https://hvrd.art/o/286857">Harvard University Art Museums web entry</ref>
                </bibl>
@@ -119,7 +130,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -131,8 +143,8 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-20" who="Scott J. DiGiulio">Added missing control vocab, fixed lines/columns, added link to HUAM website</change>
          <change when="2021-02-08" who="Scott J. DiGiulio">Restored and enhanced transcription, based on Ilaria Marchesi's original; added provenance information; added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -143,42 +155,70 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <ab>
-              <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-              <lb n="2"/><persName><name type="praenomen" key="Lucius"><supplied reason="undefined" evidence="previouseditor" resp="Gatti"><expan><abbr>L</abbr><ex>ucio</ex></expan></supplied></name> <name type="gentilicium" key="Valerius"><supplied reason="undefined" evidence="previouseditor" resp="Gatti">Va</supplied>lerio</name> <name type="cognomen" key="Sabinus">Sabino</name></persName>
-              <lb n="3"/><persName><name type="praenomen" key="Lucius"><supplied reason="undefined" evidence="previouseditor" resp="Gatti"><expan><abbr>L</abbr><ex>ucius</ex></expan></supplied></name> <name type="gentilicium" key="Valerius"><supplied evidence="previouseditor" resp="Gatti" reason="undefined">Va</supplied>lerius</name> <name type="cognomen" key="Restitutus">Resti
-              <lb n="4" break="no"/><supplied reason="undefined" evidence="previouseditor" resp="Gatti">tut</supplied><unclear>u</unclear>s</name></persName> et <persName><name type="gentilicium" key="Isidia">Isidia</name>
-              <lb n="5"/><name type="cognomen" key="Fortunata"><supplied reason="undefined" evidence="previouseditor" resp="Gatti">For</supplied>tunata</name></persName> filio
-              <lb n="6"/><supplied reason="undefined" evidence="previouseditor" resp="Gatti">dul</supplied>cissimo
-              <lb n="7"/><supplied reason="undefined" evidence="previouseditor" resp="Gatti">fec</supplied>erunt, qui <expan><abbr>vix</abbr><ex>it</ex></expan>
-              <lb n="8"/><expan><abbr><supplied reason="undefined" evidence="previouseditor" resp="Gatti">an</supplied><unclear>n</unclear></abbr><ex>is</ex></expan> <num type="cardinal" value="5">V</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan> <num type="cardinal" value="11">XI</num>, <expan><abbr>d</abbr><ex>>iebus</ex></expan> <num type="cardinal" value="21">XXI</num>.
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <supplied reason="undefined" evidence="previouseditor" resp="Gatti">
+                        <expan><abbr>L</abbr><ex>ucio</ex></expan>
+                     </supplied>
+                  </name>
+                  <name type="gentilicium" key="Valerius">
+                     <supplied reason="undefined" evidence="previouseditor" resp="Gatti">Va</supplied>lerio</name>
+                  <name type="cognomen" key="Sabinus">Sabino</name>
+               </persName>
+               <lb n="3"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <supplied reason="undefined" evidence="previouseditor" resp="Gatti">
+                        <expan><abbr>L</abbr><ex>ucius</ex></expan>
+                     </supplied>
+                  </name>
+                  <name type="gentilicium" key="Valerius">
+                     <supplied evidence="previouseditor" resp="Gatti" reason="undefined">Va</supplied>lerius</name>
+                  <name type="cognomen" key="Restitutus">Resti
+              <lb n="4" break="no"/>
+                     <supplied reason="undefined" evidence="previouseditor" resp="Gatti">tut</supplied>
+                     <unclear>u</unclear>s</name>
+               </persName> et <persName>
+                  <name type="gentilicium" key="Isidia">Isidia</name>
+                  <lb n="5"/>
+                  <name type="cognomen" key="Fortunata">
+                     <supplied reason="undefined" evidence="previouseditor" resp="Gatti">For</supplied>tunata</name>
+               </persName> filio
+              <lb n="6"/>
+               <supplied reason="undefined" evidence="previouseditor" resp="Gatti">dul</supplied>cissimo
+              <lb n="7"/>
+               <supplied reason="undefined" evidence="previouseditor" resp="Gatti">fec</supplied>erunt, qui <expan><abbr>vix</abbr><ex>it</ex></expan>
+               <lb n="8"/>
+               <expan><abbr><supplied reason="undefined" evidence="previouseditor" resp="Gatti">an</supplied><unclear>n</unclear></abbr><ex>is</ex></expan>
+               <num type="cardinal" value="5">V</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan>
+               <num type="cardinal" value="11">XI</num>, <expan><abbr>d</abbr><ex>&gt;iebus</ex></expan>
+               <num type="cardinal" value="21">XXI</num>.
            </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>To the divine spirits. To Lucius Valerius Sabinus, Lucius Valerius Restitutus and Isidia Fortunata made this for their sweetest son, who lived for five years, eleven months, twenty-one days.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>The inscription was intact when seen and published by Gatti in 1886, and so represented by Huelsen in CIL in 1894; the upper-left portion was missing when the inscription was published by Moore in 1909</p>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-                    <p/>
-                </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p>To the divine spirits. To Lucius Valerius Sabinus, Lucius Valerius Restitutus and Isidia Fortunata made this for their sweetest son, who lived for five years, eleven months, twenty-one days.</p>
+         </div>
+         <div type="commentary">
+            <p>The inscription was intact when seen and published by Gatti in 1886, and so represented by Huelsen in CIL in 1894; the upper-left portion was missing when the inscription was published by Moore in 1909</p>
+         </div>
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

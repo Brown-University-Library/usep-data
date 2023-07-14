@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1450</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,18 +34,13 @@
                      <p>epitaph of Iunia Paramytia</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>reconstituted marble slab</p>
-                           
                            <seg type="material">White marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>41</height>
                               <width>31.7</width>
                               <depth>4.3</depth>
@@ -73,7 +79,8 @@
                      <p>Purchased in <date when="1908-12">December 1908</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">Antiquario Pacifico</orgName> on the Via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -90,14 +97,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132784"
-                     >EDR132784</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132784">EDR132784</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -107,9 +114,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -118,70 +126,55 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/> 
-               <g type="hedera"/> 
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex>
-               </expan>
+               <lb n="1"/>
+               <g type="hedera"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>
                <g type="hedera"/>.
-                <lb n="2"/> 
+                <lb n="2"/>
                <persName>
-                  <name type="gentilicium" key="Iunia">Iuniae</name> 
+                  <name type="gentilicium" key="Iunia">Iuniae</name>
                   <name type="cognomen" key="Paramythia">Para
                 <lb break="no" n="3"/> mytiae</name>
                </persName> optime
                 <lb n="4"/> femine, quae
                 <lb n="5"/> vicxit annis
-                <lb n="6"/> 
-               <num xml:lang="lat" value="35">XXXV</num>, <expan>
-                  <abbr>mens</abbr><ex>ibus</ex>
-               </expan> sex,
-                <lb n="7"/> 
-               <expan>
-                  <abbr>die</abbr><ex>bus</ex>
-               </expan> 
+                <lb n="6"/>
+               <num xml:lang="lat" value="35">XXXV</num>, <expan><abbr>mens</abbr><ex>ibus</ex></expan> sex,
+                <lb n="7"/>
+               <expan><abbr>die</abbr><ex>bus</ex></expan>
                <num xml:lang="lat" value="9">VIIII</num>. <persName>
                   <name type="gentilicium" key="Iunius">Iunius</name>
-                  <lb n="8"/> 
+                  <lb n="8"/>
                   <name type="cognomen" key="Agrippa">Agrippa</name>
                </persName> coniugi
                 <lb n="9"/> bene merenti
-                <lb n="10"/> 
-               <g type="hedera"/> fecit. <g type="hedera"/></ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits of Junia Paramytia, the best wife, who lived for
+                <lb n="10"/>
+               <g type="hedera"/> fecit. <g type="hedera"/>
+            </ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits of Junia Paramytia, the best wife, who lived for
                thirty-five years, six months, (and) nine days. Junius Agrippa (made this) for his
                well-deserving wife.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>The number of years and days the deceased lived are given in numerals (XXXV in line 6 and VIIII in line 7) 
+         </div>
+         <div type="commentary">
+            <p>The number of years and days the deceased lived are given in numerals (XXXV in line 6 and VIIII in line 7) 
                        while the number of months she lived is spelled out ("sex" in line 6). </p>
-                   <p> Line 5: vixit (Tuck). </p>
-                </div>
-            
-        
-        
-                
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <p> Line 5: vixit (Tuck). </p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

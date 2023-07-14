@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.834</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -35,7 +46,8 @@
                               <depth>3.7</depth>
                            </dimensions>
                         </support>
-                        <condition><!--Add ana attribute with controlled value for condition--><p>inscription face, reverse, and right and top edges are smoothly dressed
+                        <condition><!--Add ana attribute with controlled value for condition-->
+                           <p>inscription face, reverse, and right and top edges are smoothly dressed
                                     part of an iron nail remains at the bottom of the slab
                                     signs of reuse include two carefully drilled holes and rough chiseling along bottom of reverse</p>
                         </condition>
@@ -67,7 +79,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -80,14 +93,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR138117"
-                     >EDR138117</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR138117">EDR138117</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,10 +112,11 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2020-06-17" who="John Bodel">edited transcription, header, name IDs</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,70 +125,53 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
-               <supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
+            <ab>
+               <lb n="1"/>
+               <supplied reason="lost">
+                  <expan><abbr>D</abbr><ex>is</ex></expan>
+               </supplied>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                     <lb n="2"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
-               <supplied reason="lost">f</supplied><expan><abbr>il</abbr><ex>io</ex>
-               </expan> 
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <supplied reason="lost">f</supplied>
+               <expan><abbr>il</abbr><ex>io</ex></expan>
                <persName>
                   <name type="cognomen" key="Piaeris">
-                     <expan>
-                        <abbr>Piaer</abbr><ex>idi</ex>
-                     </expan>
-                  </name> 
+                     <expan><abbr>Piaer</abbr><ex>idi</ex></expan>
+                  </name>
                   <name type="cognomen" key="Aprilis">Aprili</name>
                </persName>
-                    <lb n="3"/>
-               <gap reason="lost" extent="unknown" unit="character"/>o <expan>
-                  <abbr>cl</abbr><ex>assis</ex>
-               </expan> 
-               <expan>
-                  <abbr>pr</abbr><ex>aetoriae</ex>
-               </expan> 
-               <expan>
-                  <abbr>Mis</abbr><ex>enensis</ex>
-               </expan> 
-               <expan>
-                  <abbr>P</abbr><ex>iae</ex>
-               </expan> 
-               <expan>
-                  <abbr>V</abbr><ex>indicis</ex>
-               </expan>
-                    <lb n="4"/>
+               <lb n="3"/>
+               <gap reason="lost" extent="unknown" unit="character"/>o <expan><abbr>cl</abbr><ex>assis</ex></expan>
+               <expan><abbr>pr</abbr><ex>aetoriae</ex></expan>
+               <expan><abbr>Mis</abbr><ex>enensis</ex></expan>
+               <expan><abbr>P</abbr><ex>iae</ex></expan>
+               <expan><abbr>V</abbr><ex>indicis</ex></expan>
+               <lb n="4"/>
                <gap reason="lost" extent="unknown" unit="character"/>m ipse sibi dum adviver<hi rend="small">et</hi>
-                    <lb n="5"/>
-               <gap reason="lost" extent="unknown" unit="character"/> 
+               <lb n="5"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
                <supplied reason="lost">p</supplied>lacuit et comparavit.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>[To the Divine] Spirits. [- - - s]on, to Piaeris Aprilis [---] of the praetorian
+         </div>
+         <div type="translation">
+            <p>[To the Divine] Spirits. [- - - s]on, to Piaeris Aprilis [---] of the praetorian
                fleet of Misenum, Pious Avenger, [---] he, for himself, while he should survive [--- it pleased him? --- and he prepared (this).</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 1: Piaer (Tuck); for attestations of Piaeris, -idis, see <hi rend="italic">CIL</hi> VI 11.455=<hi rend="italic">CIL</hi> VI 12.980=<hi rend="italic">CIL</hi> VI 24.178=AE 1979.+00070, <hi rend="italic">CIL</hi> X 07680. It is likely that the name (abbreviation of the praenomen, gentilicium and cognomen) of the dedicator, the deceased's father, is missing.</p>
-                   <p>Line 2: The deceased's rank or role within the fleet is likely missing.</p>
-                </div>
-            
-        
-        
-              
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Line 1: Piaer (Tuck); for attestations of Piaeris, -idis, see <hi rend="italic">CIL</hi> VI 11.455=<hi rend="italic">CIL</hi> VI 12.980=<hi rend="italic">CIL</hi> VI 24.178=AE 1979.+00070, <hi rend="italic">CIL</hi> X 07680. It is likely that the name (abbreviation of the praenomen, gentilicium and cognomen) of the dedicator, the deceased's father, is missing.</p>
+            <p>Line 2: The deceased's rank or role within the fleet is likely missing.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1039</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Marcus Valerius Laos</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -65,7 +75,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -77,13 +88,15 @@
                   <biblScope unit="item">141 no. 220</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115750">EDR115750</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR115750">EDR115750</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -94,9 +107,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-06-13" who="Scott J. DiGiulio">Added control vocab for writing and condition, added p element for condition; added specificity to placename ref; added link to EDR; added link to image; tweaked format of transcription; </change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-04-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -105,43 +120,61 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-               <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-               <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> <name type="gentilicium" key="Valerius"><expan><abbr>V<hi rend="apex">a</hi>l</abbr><ex>erio</ex></expan></name> <name type="cognomen" key="Laos">Laot<hi rend="tall">i</hi></name>, cui
-               <lb n="3"/>et <name type="cognomen" key="Africanus">Africano</name></persName>, filio
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Marcus">
+                     <expan><abbr>M</abbr><ex>arco</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Valerius">
+                     <expan><abbr>V<hi rend="apex">a</hi>l</abbr><ex>erio</ex></expan>
+                  </name>
+                  <name type="cognomen" key="Laos">Laot<hi rend="tall">i</hi>
+                  </name>, cui
+               <lb n="3"/>et <name type="cognomen" key="Africanus">Africano</name>
+               </persName>, filio
                <lb n="4"/>dulcissimo ac su
                <lb break="no" n="5"/>per ceteros karos
                <lb n="6"/>mihi pi<hi rend="tall">i</hi>ssimo, qui
-               <lb n="7"/>vixit <expan><abbr>ann</abbr><ex>is</ex></expan> <num xml:lang="lat" value="6">V<hi rend="tall">I</hi></num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num xml:lang="lat" value="7">V<hi rend="tall">I</hi>I</num>,
-               <lb n="8"/><expan><ex>h</ex><abbr>oris</abbr></expan> <num xml:lang="lat" value="3"><hi rend="tall">I</hi>II</num>; <persName><name type="gentilicium" key="Aurelia">Aurelia</name> <name type="cognomen" key="Lais"/>Lais</persName> mater
-               <lb n="9"/>filio karissimo <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex> </expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
+               <lb n="7"/>vixit <expan><abbr>ann</abbr><ex>is</ex></expan>
+               <num xml:lang="lat" value="6">V<hi rend="tall">I</hi>
+               </num>, <expan><abbr>d</abbr><ex>iebus</ex></expan>
+               <num xml:lang="lat" value="7">V<hi rend="tall">I</hi>I</num>,
+               <lb n="8"/>
+               <expan><ex>h</ex><abbr>oris</abbr></expan>
+               <num xml:lang="lat" value="3">
+                  <hi rend="tall">I</hi>II</num>; <persName>
+                  <name type="gentilicium" key="Aurelia">Aurelia</name>
+                  <name type="cognomen" key="Lais"/>Lais</persName> mater
+               <lb n="9"/>filio karissimo <expan><abbr>b</abbr><ex>ene</ex></expan>
+               <expan><abbr>m</abbr><ex>erenti</ex></expan>
+               <expan><abbr>f</abbr><ex>ecit</ex></expan>.
             </ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Marcus Valerius Laos, who (was) also (called)
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. To Marcus Valerius Laos, who (was) also (called)
                Africanus, dearest son and most dutiful to me beyond other loved ones, who lived for
                six years, seven days, and three hours. Aurelia Lais, (his) mother, made (this) for
                her most beloved son, well-deserving.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p><seg type="material">Luna marble</seg> (Tuck).</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>
+               <seg type="material">Luna marble</seg> (Tuck).</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

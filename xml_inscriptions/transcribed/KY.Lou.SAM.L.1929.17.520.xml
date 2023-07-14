@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>KY.Lou.SAM.L.1929.17.520</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,12 +37,13 @@
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
-                        <support><p>broken marble slab</p><dimensions type="surface" unit="cm">
+                        <support>
+                           <p>broken marble slab</p>
+                           <dimensions type="surface" unit="cm">
                               <height>15.2</height>
                               <width>18.1</width>
                               <depth>3.9</depth>
                            </dimensions>
-                           
                         </support>
                         <condition ana="#fragment.single">
                            <p>broken at left and bottom</p>
@@ -41,16 +52,16 @@
                      <layoutDesc>
                         <layout columns="1" writtenLines="4">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
-                              <p/>
+                           <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed">
-            <dimensions type="letter" unit="cm">
-                              <height min="2.5" max="2.7">2.5-2.7</height>
-                           </dimensions>
-            </handNote>
+                        <dimensions type="letter" unit="cm">
+                           <height min="2.5" max="2.7">2.5-2.7</height>
+                        </dimensions>
+                     </handNote>
                   </handDesc>
                   <decoDesc>
                      <decoNote ana="blank">
@@ -60,10 +71,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -72,22 +79,24 @@
                   first-second century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome, Porta Salaria</placeName>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#MAAR_GiganteHouston"/>
                   <biblScope unit="pp">40-41, no. 5</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR141433">EDR141433</ref>
-</bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR141433">EDR141433</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -98,10 +107,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-12-14" who="Scott J. DiGiulio">Added missing control vocabulary, fixed lines/columns, added Gigante/Houston to bibl, incorporated their measurements</change>
-      <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change><change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2022-07-27" who="Justin Cheng">Added transcription, translation and
             commentary; corrected summary</change>
-</revisionDesc>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -112,46 +122,63 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           <ab>
-              <lb n="1"/><supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> <expan><abbr>M</abbr><ex>anibus</ex></expan>
-                  <expan><abbr>s</abbr><ex>acrum</ex></expan>.
-              <lb n="2" break="no"/><persName><name type="gentilicium" key="Aurelius"><expan><abbr><supplied reason="lost" cert="low">Au</supplied>r</abbr><ex>elius</ex></expan></name> 
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <supplied reason="lost">
+                  <expan><abbr>D</abbr><ex>is</ex></expan>
+               </supplied>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <expan><abbr>s</abbr><ex>acrum</ex></expan>.
+              <lb n="2" break="no"/>
+               <persName>
+                  <name type="gentilicium" key="Aurelius">
+                     <expan><abbr><supplied reason="lost" cert="low">Au</supplied>r</abbr><ex>elius</ex></expan>
+                  </name>
                   <name type="cognomen" key="Ianuarius">Ianuarius</name>
-              <lb n="3"/><persName><name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name></persName>
-                  <expan><abbr>lib</abbr><ex>ertus</ex></expan></persName>
-              <lb n="4"/><persName><name><gap reason="lost" extent="unknown" unit="character"/>a</name></persName> et 
-                  <persName><name type="cognomen" key="Veneria">Veneria</name></persName>
-              <lb n="5"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
-           </ab>
-        </div>
-        
-        
-                <div type="translation">
-                    <p>Sacred to the Divine Spirits. [Aurelius?] Ianuarius, freedman of Augustus, [---]. [---]a and Veneria [---].</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>
+                  <lb n="3"/>
+                  <persName>
+                     <name type="cognomen" key="Augustus">
+                        <expan><abbr>Aug</abbr><ex>usti</ex></expan>
+                     </name>
+                  </persName>
+                  <expan><abbr>lib</abbr><ex>ertus</ex></expan>
+               </persName>
+               <lb n="4"/>
+               <persName>
+                  <name>
+                     <gap reason="lost" extent="unknown" unit="character"/>a</name>
+               </persName> et 
+                  <persName>
+                  <name type="cognomen" key="Veneria">Veneria</name>
+               </persName>
+               <lb n="5"/>
+               <gap reason="lost" extent="unknown" unit="line">
+                  <certainty match=".." locus="name"/>
+               </gap>
+            </ab>
+         </div>
+         <div type="translation">
+            <p>Sacred to the Divine Spirits. [Aurelius?] Ianuarius, freedman of Augustus, [---]. [---]a and Veneria [---].</p>
+         </div>
+         <div type="commentary">
+            <p>
                        Line 1 - "[D(is)]" supplied by formula. Libella at end of line.
                        Line 3 - Quite notably, Augustus is the name of the emperor, so this man was an imperial freedman.
                     </p>
-                </div>
-            
-        
-        
-                <div type="apparatus">
-                    <p/>
-                </div>
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="apparatus">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

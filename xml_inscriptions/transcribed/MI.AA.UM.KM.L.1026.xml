@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1026</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,19 +34,19 @@
                      <p>epitaph of Valeria Afrodisia</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>reconstituted marble slab</p>
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>32.7</height>
                               <width>42.9</width>
                               <depth>1.2</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>broken vertically roughly down the center of the stone</p>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>broken vertically roughly down the center of the stone</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -65,7 +76,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,13 +93,15 @@
                   <biblScope unit="item">142 no. 222</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114683">EDR114683</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR114683">EDR114683</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -98,9 +112,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-05-24" who="Scott J. DiGiulio">Added missing control vocab for writing and condition, added link to EDR, added ILS to bibl, added specificity to place ref, removed choice and corr</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-04-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -109,39 +125,46 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-                <lb n="2"/><persName><name type="gentilicium" key="Valeria">Valeriae</name> <name type="cognomen" key="Afrodisia">Afrodisiae</name></persName>,
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Valeria">Valeriae</name>
+                  <name type="cognomen" key="Afrodisia">Afrodisiae</name>
+               </persName>,
                 <lb n="3"/>quae vixit annis <num xml:lang="lat" value="27">XXVII</num>,
                 <lb n="4"/>feminae inconpara
-                <lb break="no" n="5"/>bili, univir<add place="inline"><hi rend="small">i</hi></add>ae.
-                <lb n="6"/><persName><name type="gentilicium" key="Aurelius">Aurelius</name> <name type="cognomen" key="Theseus">Theseus</name></persName>
-                <lb n="7"/>virginali suae <expan><ex>p</ex><abbr>ro</abbr></expan> casti
+                <lb break="no" n="5"/>bili, univir<add place="inline">
+                  <hi rend="small">i</hi>
+               </add>ae.
+                <lb n="6"/>
+               <persName>
+                  <name type="gentilicium" key="Aurelius">Aurelius</name>
+                  <name type="cognomen" key="Theseus">Theseus</name>
+               </persName>
+               <lb n="7"/>virginali suae <expan><ex>p</ex><abbr>ro</abbr></expan> casti
                 <lb break="no" n="8"/>tate.</ab>
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits of Valeria Afrodisia, who lived for twenty-seven years;
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits of Valeria Afrodisia, who lived for twenty-seven years;
                peerless, one-man woman. Aurelius Theseus (made this) on behalf of her maidenly
                purity. </p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

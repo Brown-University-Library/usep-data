@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-                <!-- printable version of USEpi inscription ID: -->
-                <title>MD.Balt.JHU.L.9</title>
-            </titleStmt>
+            <title>MD.Balt.JHU.L.9</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
             <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.9">MD.Balt.JHU.L.9</idno>
@@ -15,19 +25,18 @@
                         <!-- same info, parsed out: -->
                         <!-- alternatively, we could just use <msName>, but that isn't as machine -->
                         <!-- accessible (or human, for that matter). -->
-                        
-                          
-                        <region>MD</region> 
-                        <settlement>Balt</settlement>                        
-                        <institution>JHU</institution>
-                        <repository/>
-                        <!--required.-->
-                        <!--  USEp. number as ID (machine readable) -->
-                        <idno>9</idno>
-                        <!-- optionally some <altIdentifier>s or <msName>s here -->
-                    </msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>JHU</institution>
+                  <repository/>
+                  <!--required.-->
+                  <!--  USEp. number as ID (machine readable) -->
+                  <idno>9</idno>
+                  <!-- optionally some <altIdentifier>s or <msName>s here -->
+               </msIdentifier>
                <msContents>
-                  <textLang mainLang="lat"/><msItem class="#funerary.epitaph">
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
                      <p>Epitaph of Livia Acte and Claudius Felix</p>
                   </msItem>
                </msContents>
@@ -37,10 +46,10 @@
                         <support>
                            <p/>
                            <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
-                                    </dimensions>
+                              <height/>
+                              <width/>
+                              <depth/>
+                           </dimensions>
                         </support>
                         <condition ana="#complete.intact"><!--Add ana attribute with controlled value for condition-->
                            <p>unfinished back; modern red ink in border and letters</p>
@@ -48,11 +57,11 @@
                      </supportDesc>
                      <layoutDesc>
                                 <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
-                                <layout columns="1" writtenLines="5">
+                        <layout columns="1" writtenLines="5">
                                     <!-- use a <locus> to narrow down part of inscription being discussed -->
-                                    <p/>
-                                </layout>                     
-                            </layoutDesc>
+                           <p/>
+                        </layout>
+                     </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
                      <handNote ana="#inscribed"/>
@@ -65,35 +74,37 @@
                </physDesc>
                <history>
                   <summary>
-                            <!-- The following note element should be included, with the text "fake" as its content, if the inscription is a fake. -->
-                            <!-- USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.  -->
-                            <!-- This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake. -->
-                            <note/>
-                        </summary>
+                            
+                            
+                     <note/>
+                  </summary>
                   <origin>
                      <date evidence="unspecified" notBefore="0025" notAfter="0075">early-mid first century CE</date>
                      <placeName ref="europe.italy.rome">Porta Pia, near S. Agnese, Rome, Italy</placeName>
                   </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJP_Wilson2.2"/>
-                        <biblScope unit="item">157-58, no. 9</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">38557</biblScope>
-                    </bibl>
-                        <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
-                     <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144453">EDR144453</ref>
-                     </bibl>
-                </listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson2.2"/>
+                  <biblScope unit="item">157-58, no. 9</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">38557</biblScope>
+               </bibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144453">EDR144453</ref>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -103,46 +114,57 @@
       <revisionDesc>
          <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
          <change when="2016-05-12" who="Scott J. DiGiulio">Added control vocab for condition and writing, added name tagging to transcription, corrected minor typo in transcription</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
-        <surface>
+      <surface>
             <!-- Caption in desc element -->
-        <desc/>
-            <!-- URL will actually only have the file name. -->
-            <graphic url="MD.Balt.JHU.L.9.jpg"/>
+         <desc/>
+         <!-- URL will actually only have the file name. -->
+         <graphic url="MD.Balt.JHU.L.9.jpg"/>
       </surface>
    </facsimile>
    <text>
-        
-        <body>
-        <div type="edition">
-                <ab>
-                   <lb n="1"/><persName><name type="gentilicium" key="Livia">Liviae</name> <name type="cognomen" key="Acte">Acte</name></persName> et
-                   <lb n="2"/><persName><name type="gentilicium" key="Claudius">Claudio</name> <name type="cognomen" key="Felix">Felici</name></persName> 
-                   <lb n="3"/>in hoc monumento
-                   <lb n="4"/>dedit ollas duas <persName><name type="praenomen" key="Caius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Heiuleius">Heiu
-                   <lb n="5" break="no"/>leius</name> <name type="cognomen" key="Galenus">Galenus</name></persName> et <expan><abbr>itu</abbr><ex>m</ex></expan> <expan><abbr>ambitu</abbr><ex>m</ex></expan>.
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="gentilicium" key="Livia">Liviae</name>
+                  <name type="cognomen" key="Acte">Acte</name>
+               </persName> et
+                   <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Claudius">Claudio</name>
+                  <name type="cognomen" key="Felix">Felici</name>
+               </persName>
+               <lb n="3"/>in hoc monumento
+                   <lb n="4"/>dedit ollas duas <persName>
+                  <name type="praenomen" key="Caius">
+                     <expan><abbr>C</abbr><ex>aius</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Heiuleius">Heiu
+                   <lb n="5" break="no"/>leius</name>
+                  <name type="cognomen" key="Galenus">Galenus</name>
+               </persName> et <expan><abbr>itu</abbr><ex>m</ex></expan>
+               <expan><abbr>ambitu</abbr><ex>m</ex></expan>.
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

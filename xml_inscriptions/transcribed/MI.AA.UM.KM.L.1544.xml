@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1544</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,17 +34,13 @@
                      <p>epitaph of Onesimus, slave of the emperor</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>fragmentary marble slab</p>
-                           
                            <seg type="material">White marble</seg>
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>19</height>
                               <width>19</width>
                               <depth>2</depth>
@@ -64,7 +71,9 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#palaeography #archaeology" notBefore="0175" notAfter="0225">late second to
+                     <date evidence="#palaeography #archaeology"
+                            notBefore="0175"
+                            notAfter="0225">late second to
                         early third century CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
@@ -72,7 +81,8 @@
                      <p>Purchased in <date when="1909">1909</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">the Antiquario Pacifico</orgName> on the via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -89,14 +99,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132816"
-                     >EDR132816</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR132816">EDR132816</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -106,11 +116,12 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-27" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
          <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
          <change when="2021-08-06" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -119,54 +130,55 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>. 
+               <lb n="1"/>
+               <supplied reason="lost">
+                  <expan><abbr>D</abbr><ex>is</ex></expan>
+               </supplied>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>. 
                <g type="hedera"/>
-                <lb n="2"/> 
+               <lb n="2"/>
                <persName>
                   <name type="slaveName" key="Onesimus">
-                     <supplied reason="lost" cert="low">Ones<unclear>i</unclear></supplied>mo</name>
-               </persName> 
-               <persName type="imperial"><name type="cognomen" key="Augustus"><expan>
-                  <abbr>Aug</abbr><ex>usti</ex>
-               </expan></name></persName>
-                <lb n="3"/>
+                     <supplied reason="lost" cert="low">Ones<unclear>i</unclear>
+                     </supplied>mo</name>
+               </persName>
+               <persName type="imperial">
+                  <name type="cognomen" key="Augustus">
+                     <expan><abbr>Aug</abbr><ex>usti</ex></expan>
+                  </name>
+               </persName>
+               <lb n="3"/>
                <gap reason="lost" quantity="4" unit="charracter"/> dis<surplus>s</surplus>pe
-               <lb break="no" n="4"/><supplied reason="lost">nsator</supplied><unclear>i</unclear>; Aure
-               <lb break="no" n="5"/><supplied reason="lost" cert="low">lia</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-               <lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+               <lb break="no" n="4"/>
+               <supplied reason="lost">nsator</supplied>
+               <unclear>i</unclear>; Aure
+               <lb break="no" n="5"/>
+               <supplied reason="lost" cert="low">lia</supplied>
+               <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="6"/>
+               <gap reason="lost" extent="unknown" unit="line"/>
             </ab>
-               
-                
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[To the Divine] Spirits. To [Onesi?]mus [-] of the emperor, a household manager. Aure[lia(?) ---]</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 2: Tuck restored the name as [Onesi?]mus based on the length of the gap and frequency.</p>
-                   <p>Line 3: Based on comparanda found in EDCS, possible supplements are <hi rend="italic">n(ostri) vernae</hi> ("homeborn slave of our emperor, a ...") which occurs most commonly but may be too long 
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>[To the Divine] Spirits. To [Onesi?]mus [-] of the emperor, a household manager. Aure[lia(?) ---]</p>
+         </div>
+         <div type="commentary">
+            <p>Line 2: Tuck restored the name as [Onesi?]mus based on the length of the gap and frequency.</p>
+            <p>Line 3: Based on comparanda found in EDCS, possible supplements are <hi rend="italic">n(ostri) vernae</hi> ("homeborn slave of our emperor, a ...") which occurs most commonly but may be too long 
                       and <hi rend="italic">vernae</hi> ("homeborn slave of the emperor") or <hi rend="italic">servo</hi> ("slave of the emperor") which occur at about the same frequency as each other, but less so than the first alternative. </p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

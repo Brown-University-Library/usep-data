@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.819+857</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,15 +34,13 @@
                      <p>epitaph of Marcus Caecilius Clymenus, a freedman</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           
                            <seg type="material">Gray marble</seg>
                            <p>partially reconstituted marble slab</p>
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>47.5</height>
                               <width>81</width>
                               <depth>3.8</depth>
@@ -68,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,14 +91,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102441"
-                     >EDR102441</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102441">EDR102441</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -99,10 +109,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -111,92 +122,75 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
+            <ab>
+               <lb n="1"/>
                <persName>
                   <name type="praenomen" key="Marcus">
-                     <expan>
-                        <abbr>M</abbr><ex>arcus</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Caecilius">Caecilius</name> 
+                     <expan><abbr>M</abbr><ex>arcus</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Caecilius">Caecilius</name>
                   <name type="praenomen" key="Marcus">
-                     <expan>
-                        <abbr>M</abbr><ex>arci</ex>
-                     </expan>
-                  </name> 
-                  <expan>
-                     <abbr>l</abbr><ex>ibertus</ex>
-                  </expan> 
+                     <expan><abbr>M</abbr><ex>arci</ex></expan>
+                  </name>
+                  <expan><abbr>l</abbr><ex>ibertus</ex></expan>
                   <name type="cognomen" key="Clymenus">Cl<hi rend="tall">y</hi>menus</name>
                </persName>
-                    <lb n="2"/>sibi, et
+               <lb n="2"/>sibi, et
                     <lb n="3"/>
                <persName>
                   <name type="praenomen" key="Marcus">
-                     <expan>
-                        <abbr>M</abbr><ex>arco</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Caecilius">Caecilio</name> 
+                     <expan><abbr>M</abbr><ex>arco</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Caecilius">Caecilio</name>
                   <name type="cognomen" key="Agenor">Agen<hi rend="apex">o</hi>r<hi rend="tall">i</hi>
                   </name>
-               </persName> 
-               <expan>
-                  <abbr>patr<hi rend="apex">o</hi>n</abbr><ex>o</ex></expan>, e<hi rend="tall">t</hi>
-                    <lb n="4"/>
+               </persName>
+               <expan><abbr>patr<hi rend="apex">o</hi>n</abbr><ex>o</ex></expan>, e<hi rend="tall">t</hi>
+               <lb n="4"/>
                <persName>
-                  <name type="gentilicium" key="Caecilia">Caecilia<hi rend="apex">e</hi></name> 
+                  <name type="gentilicium" key="Caecilia">Caecilia<hi rend="apex">e</hi>
+                  </name>
                   <name type="praenomen" key="Marcus">
-                     <expan>
-                        <abbr>M</abbr><ex>arci</ex>
-                     </expan>
-                  </name> 
-                  <expan>
-                     <abbr>l</abbr><ex>ibertae</ex>
-                  </expan> 
+                     <expan><abbr>M</abbr><ex>arci</ex></expan>
+                  </name>
+                  <expan><abbr>l</abbr><ex>ibertae</ex></expan>
                   <name type="cognomen" key="Charite">Charite</name>
-               </persName> ux<hi rend="apex">o</hi>r<hi rend="tall"><hi rend="apex">i</hi></hi>
-                    <lb n="5"/>suae, et
+               </persName> ux<hi rend="apex">o</hi>r<hi rend="tall">
+                  <hi rend="apex">i</hi>
+               </hi>
+               <lb n="5"/>suae, et
                     <lb n="6"/>
                <persName>
-                  <name type="gentilicium" key="Cossinius">Cossinio</name> 
+                  <name type="gentilicium" key="Cossinius">Cossinio</name>
                   <name type="praenomen" key="Aulus">
-                     <expan>
-                        <abbr>A</abbr><ex>uli</ex>
-                     </expan>
-                  </name> 
-                  <expan>
-                     <abbr>l</abbr><ex>iberto</ex>
-                  </expan> 
-                  <name type="cognomen" key="Pandarus">Pandar<hi rend="apex">o</hi></name>
+                     <expan><abbr>A</abbr><ex>uli</ex></expan>
+                  </name>
+                  <expan><abbr>l</abbr><ex>iberto</ex></expan>
+                  <name type="cognomen" key="Pandarus">Pandar<hi rend="apex">o</hi>
+                  </name>
                </persName>
-                    <lb n="7"/>argentario, et su<hi rend="tall">i</hi>s.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>Marcus Caecilius Clymenus, freedman of Marcus (made this) for himself, and
+               <lb n="7"/>argentario, et su<hi rend="tall">i</hi>s.</ab>
+         </div>
+         <div type="translation">
+            <p>Marcus Caecilius Clymenus, freedman of Marcus (made this) for himself, and
                for Marcus Caecilius Agenor, (his) patron, and for Caecilia Charis, freedwoman of
                Marcus, his wife, and for Cossinius Pandarus, freedman of Aulus, banker, and for his
                own.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

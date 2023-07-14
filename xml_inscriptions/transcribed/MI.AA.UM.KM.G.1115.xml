@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>MI.AA.UM.KM.G.1115</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>MI.AA.UM.KM.G.1115</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.1115">MI.AA.UM.KM.G.1115</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MI.AA.UM.KM.G.1115">MI.AA.UM.KM.G.1115</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,188 +42,187 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>MI</region>
-                        <settlement>AA</settlement>
-                        <institution>UM</institution>
-                        <repository>KM</repository>
-                        <idno>1115</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="grc"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>MI</region>
+                  <settlement>AA</settlement>
+                  <institution>UM</institution>
+                  <repository>KM</repository>
+                  <idno>1115</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="grc"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaph of Kallityche and Gelasios set up by Vibia Aurelia Sabina</p>
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>epitaph of Kallityche and Gelasios set up by Vibia Aurelia Sabina</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
-                                <support>
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
                                     <!-- short summary of the material and support of an inscription -->
-                                    <p>coarse-grained gray marble, back roughly worked</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height>30</height>
-                                        <width>28.5</width>
-                                        <depth>3.5</depth>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.broken">
-                                    <p>Surface eroded and discolored; lower left corner broken off;
+                           <p>coarse-grained gray marble, back roughly worked</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>30</height>
+                              <width>28.5</width>
+                              <depth>3.5</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>Surface eroded and discolored; lower left corner broken off;
                                         two round rust-colored stains top left and right corners</p>
-                                </condition>
-                            </supportDesc>
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="9">
-                                    <p>Text relatively centered on stone, top and bottom
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="9">
+                           <p>Text relatively centered on stone, top and bottom
                                         abbreviations offset</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed">Well cut lettering, long serifs,
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed">Well cut lettering, long serifs,
                                 some shading</handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs/>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                             <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0170" notAfter="0217">170-217 CE</date>
-                            <placeName ref="https://pleiades.stoa.org/places/432815">Italy, Pozzuoli</placeName>
-                        </origin>
-                        <provenance type="transferred" subtype="purchased">
-                            <p>Purchased from the collection of <persName>Giuseppe De
+                     <date evidence="unspecified" notBefore="0170" notAfter="0217">170-217 CE</date>
+                     <placeName ref="https://pleiades.stoa.org/places/432815">Italy, Pozzuoli</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>Purchased from the collection of <persName>Giuseppe De
                                     Criscio</persName> for the <orgName role="recipient">University
                                     of Michigan</orgName>.</p>
-                        </provenance>
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#IG_XIV"/>
-                        <biblScope unit="item">846</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1115/0000_00_1115p01.tif">Kelsey Museum of Archaeology</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2014-10-01" who="Samantha Lash">Initial Encoding</change>
-            <change when="2015-08-24" who="Scott J. DiGiulio">Cleaned metadata for conformity, added image, proofed transcription</change>
-            
-        <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
-            <change when="2022-10-10" who="Sophia Papandonatou">added museum link, provenance, and
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#IG_XIV"/>
+                  <biblScope unit="item">846</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="https://quod.lib.umich.edu/k/kelsey/x-0000.00.1115/0000_00_1115p01.tif">Kelsey Museum of Archaeology</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-10-01" who="Samantha Lash">Initial Encoding</change>
+         <change when="2015-08-24" who="Scott J. DiGiulio">Cleaned metadata for conformity, added image, proofed transcription</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2022-10-10" who="Sophia Papandonatou">added museum link, provenance, and
                 translation</change>
-</revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="MI.AA.UM.KM.G.1115.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
-                <ab>
-                    <lb n="1"/><expan><abbr>Θ</abbr><ex>εοῖς</ex></expan> <expan><abbr>Κ</abbr><ex>αταχθοίνοις</ex></expan>.
-                    <lb n="2"/><persName><name type="cognomen" key="Callityche">Καλλιτύχη</name></persName> ἐνθά
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MI.AA.UM.KM.G.1115.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>
+               <expan><abbr>Θ</abbr><ex>εοῖς</ex></expan>
+               <expan><abbr>Κ</abbr><ex>αταχθοίνοις</ex></expan>.
+                    <lb n="2"/>
+               <persName>
+                  <name type="cognomen" key="Callityche">Καλλιτύχη</name>
+               </persName> ἐνθά
                     <lb n="3" break="no"/>δε κεῖται, ἥτις
-                    <lb n="4"/>ἔζησεν ἔτη <num value="14"><hi rend="supraline">ιδ</hi>ʹ</num>,
-                    <lb n="5"/>καὶ <persName><name type="cognomen" key="Gelasis">Γελάσις</name></persName> ζή
-                    <lb n="6" break="no"/>σας ἔτη <num value="3"><hi rend="supraline">γ</hi>ʹ</num>, <expan><abbr>μ</abbr><ex>ηνας</ex></expan> <num value="5"><hi rend="supraline">ε</hi>ʹ</num>.
-                    <lb n="7"/><persName><name type="gentilicium" key="Aurelia"><del rend="erasure">A</del> <expan><abbr><hi rend="small">Α</hi>ὐρηλ</abbr><ex>ία</ex></expan></name> <name type="gentilicium" key="Vibia"><expan><abbr>Οὐιβ</abbr><ex>ία</ex></expan></name> <name type="cognomen" key="Sabina">Σαβεῖ
-                    <lb n="8" break="no"/>να</name></persName>, <expan><abbr>θρεπτ</abbr><ex>οῖς</ex></expan> ἀξίοις
-                    <lb n="9"/><expan><abbr>μ</abbr><ex>νήμης</ex></expan> 
+                    <lb n="4"/>ἔζησεν ἔτη <num value="14">
+                  <hi rend="supraline">ιδ</hi>ʹ</num>,
+                    <lb n="5"/>καὶ <persName>
+                  <name type="cognomen" key="Gelasis">Γελάσις</name>
+               </persName> ζή
+                    <lb n="6" break="no"/>σας ἔτη <num value="3">
+                  <hi rend="supraline">γ</hi>ʹ</num>, <expan><abbr>μ</abbr><ex>ηνας</ex></expan>
+               <num value="5">
+                  <hi rend="supraline">ε</hi>ʹ</num>.
+                    <lb n="7"/>
+               <persName>
+                  <name type="gentilicium" key="Aurelia">
+                     <del rend="erasure">A</del>
+                     <expan><abbr><hi rend="small">Α</hi>ὐρηλ</abbr><ex>ία</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Vibia">
+                     <expan><abbr>Οὐιβ</abbr><ex>ία</ex></expan>
+                  </name>
+                  <name type="cognomen" key="Sabina">Σαβεῖ
+                    <lb n="8" break="no"/>να</name>
+               </persName>, <expan><abbr>θρεπτ</abbr><ex>οῖς</ex></expan> ἀξίοις
+                    <lb n="9"/>
+               <expan><abbr>μ</abbr><ex>νήμης</ex></expan> 
                     .
                 </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the gods of the underworld. Callityche lies here, who lived for 14 years,
+         </div>
+         <div type="translation">
+            <p>To the gods of the underworld. Callityche lies here, who lived for 14 years,
                     and Gelasis, having lived for 3 years (and) 5 months. Aurelia Vibia Sabina (made
                     this) for (her) worthy houseslaves, in memoriam.  </p>
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
-            <p>Line 7: Vibi Aurelia Sabina</p></div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p>Line 7: Vibi Aurelia Sabina</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

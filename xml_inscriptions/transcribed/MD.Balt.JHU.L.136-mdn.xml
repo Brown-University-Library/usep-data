@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+            <!-- *************************************  <titleStmt>  *********************************
+                <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
+                that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
+            -->
+         <titleStmt>
+            <title>MD.Balt.JHU.L.136-mdn</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>John Bodel</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>John Bodel</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
+                <idno>: Repeat the value that is in <title>.
+                @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
+                characters that are legal in XML names and viable URLs. 
+            -->
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MD.Balt.JHU.L.136-mdn">MD.Balt.JHU.L.136-mdn</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+                              <region>  = state
+                              <settlement>  = city
+                              <institution> = library, museum, university or other institution
+                              <repository> = collection within the institution if there is more than one. This element will not always be used.
+                              <idno> Represents the accession number the object has been given by the collection that houses it.  It should correspond to the
+                                        component of the USEP id after the language code.
+                              
+                              If there is more repository information, or if the inscription is known by another name, this information can
+                              be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
+                -->
+            <msDesc>
+               <msIdentifier>
+                  <region>MD</region>
+                  <settlement>Balt</settlement>
+                  <institution>JHU</institution>
+                  <repository/>
+                  <idno>136-mdn</idno>
+                  <altIdentifier>
+                     <idno>Acc. #138</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.other">
+                            <!-- short summary of the content of an inscription -->
+                     <p>modern forgery featuring a Christian aphorism</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                    
+                        <!--  *************************************  <objectDesc>  *********************************
+                            <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                                    <!-- short summary of the material and support of an inscription -->
+                           <p>irregular rectangular marble slab, broken in the middle</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>19.5</height>
+                              <width>44</width>
+                              <depth>4.5</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>broken into two parts with a very small piece of the stone
+                                        missing from the lower left corner</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="3">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#etched">letters lightly carved in archaizing style</handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
+                         <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
+                           and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
+                    -->
+               <history>
+                  <summary>
+                     <rs>modern</rs>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
+                            <!-- original place and dating of inscription -->
+                     <date evidence="unspecified" notBefore="1850" notAfter="1908">probably early twentieth century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AJP_Wilson6"/>
+                  <biblScope unit="page">433</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
+                  <biblScope unit="page">78</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#AE_1915"/>
+                  <biblScope unit="item">0003</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD029196">HD029196</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072721">EDR072721</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#ILCV"/>
+                  <biblScope unit="item">2384</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://archaeologicalmuseum.jhu.edu/the-collection/object-stories/latin-funerary-inscriptions/other-epitaphs/splendor-et-divitiae/">JHU Archaeological Museum Web Entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2014-12-09" who="Dominic Machado">Initial Encoding</change>
+         <change when="2015-09-09" who="Scott J. DiGiulio">Added altIdentifier, added JHU Museum link, cleaned metadata and bibl, proofed transcription</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.JHU.L.136-mdn.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MD.Balt.JHU.L.136-mdn-alt.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
+            <ab>
+               <lb n="1"/>Non splendor, non diviti<hi rend="ligature">ae</hi>,
+                <lb n="2"/>sed animi corporisque
+                <lb n="3"/>hic datur tranquillitas.
+            </ab>
+         </div>
+         <div type="translation">
+            <p>Neither glory nor riches but peace of mind and body is given here.</p>
+         </div>
+         <div type="commentary"><!-- notes go here -->
+            <p>The contents are unlike any others recorded in genuine Christian inscriptions from imperial Rome, and the style of carving is unusual and suspiciously archaizing. What puts the modernity of the inscription beyond doubt is the discovery of its text written in draft in charcoal on the reverse of a similarly fabricated inscription sold by the same dealer to a buyer, Francesco Vitali di Fermo, for a private collection now housed in the house-museum of the antiquarian Ivan Bruschi in Arezzo, which has been open to the public since 2002.</p>
+            <p>Recognition of the forgery and identification of the connection between the two inscriptions is owed to C. Slavich and A. Raggi, 'La collezione epigrafica dei Conti Vitali di Fermo presso la Casa Museo Ivan Bruschi di Arezzo: un’indagine preliminare,' in F. Paolucci, ed., Epigrafia tra erudizione antiquaria e scienza storica. Ad honorem Detlef Heikamp (Florence 2019) 211-232 at 224-227. See also C. Slavich, La collezione epigrafica della Casa Museo Dell'Antiquariato Ivan Bruschi di Arezzo (Rome 2019) 26-29, 77 no. 83* and fig. 89b.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
+</TEI>

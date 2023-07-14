@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.G.21066</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include  href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -50,13 +61,10 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  
                   <!--  *************************************  <handDesc>  ********************************* -->
-                  
                   <handDesc hands="1">
                      <handNote ana="#inscribed"> </handNote>
                   </handDesc>
-                  
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
@@ -66,9 +74,9 @@
                </physDesc>
                <history><!--summary, origin, provenance go here-->
                   <summary>
-                     <rs/>  <!-- content can be "modern" or blank -->
+                     <rs/>
+                     <!-- content can be "modern" or blank -->
                   </summary>
-                  
                   <origin>
                      <date evidence="#archaeology" notBefore="0275" notAfter="0340">late third to
                         early fourth century CE</date>
@@ -90,14 +98,15 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://quod.lib.umich.edu/k/kelsey/x-0000.02.1066/0000_02_1066">Kelsey
+                        target="https://quod.lib.umich.edu/k/kelsey/x-0000.02.1066/0000_02_1066">Kelsey
                      Museum of Archaeology</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include  href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -110,28 +119,41 @@
          <change when="2022-08-13" who="Sophia Papandonatou">added metadata, transcription, translation, commentary</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here--><text>
+   <!--facsimile element goes here-->
+   <text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
             <ab>
-               <lb n="1"/><persName><name key="Θουῶρις Thouoris">Θου<unclear>ῶ</unclear>ρις</name></persName> ἄωρε μην
-               <lb n="2" break="no"/><supplied reason="lost">ῶν</supplied> <gap reason="lost" quantity="1" unit="character"/>, ἐτῶν <num value="9" xml:lang="grc"><unclear>θ</unclear>ʹ</num>. <g type="Ἔτους"/> <gap reason="omitted" quantity="1" unit="character" cert="low"/>, Τεῦβι<note>!</note> <num value="4" xml:lang="grc"><hi rend="supraline">δ</hi>ʹ</num>.
+               <lb n="1"/>
+               <persName>
+                  <name key="Θουῶρις Thouoris">Θου<unclear>ῶ</unclear>ρις</name>
+               </persName> ἄωρε μην
+               <lb n="2" break="no"/>
+               <supplied reason="lost">ῶν</supplied>
+               <gap reason="lost" quantity="1" unit="character"/>, ἐτῶν <num value="9" xml:lang="grc">
+                  <unclear>θ</unclear>ʹ</num>. <g type="Ἔτους"/>
+               <gap reason="omitted" quantity="1" unit="character" cert="low"/>, Τεῦβι<note>!</note>
+               <num value="4" xml:lang="grc">
+                  <hi rend="supraline">δ</hi>ʹ</num>.
             </ab>
          </div>
          <div type="translation">
             <p>O Thouoris, who died before your time, [X] months and 9 years old. Year [X], Tybi 4.</p>
          </div>
-         
-         <div type="commentary">  
+         <div type="commentary">
             <p>Line 2: L for ἔτους.</p>
             <p>"Year [X], Tybi 4" refers to the year of reign—although the emperor is not specified—followed by the day of the month. The number corresponding to the year of reign seems to be missing. "Τεῦβι" is an extremely unusual spelling of the month "Τῦβι," so Hooper proposes that the cutter may have reversed the order of Τ and E, 
                in which case the end of line 2 should be "((ἔτους)) εʹ, Τῦβι δʹ"—"Year 5, Tybi 4."</p>
-            
          </div>
-         
-         <div type="bibliography"> <xi:include  href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-
-       </body>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

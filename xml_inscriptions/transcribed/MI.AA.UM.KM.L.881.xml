@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.881</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,16 +34,13 @@
                      <p>epitaph of Tiberius Claudius Arrianus, a veteran</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                          <p>marble slab</p>
-                           
+                           <p>marble slab</p>
                            <seg type="material">White marble</seg>
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>19</height>
                               <width>18</width>
                               <depth>6</depth>
@@ -70,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased in <date when="1898">1898</date> by <persName role="buyer">Walter Dennison</persName> from <persName role="seller">Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName>, funded by <persName role="funder">Henry P. Glover</persName>; the inscription arrived at the university in <date when="1899">1899</date> (D'Arms).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -86,17 +95,20 @@
                   <biblScope unit="item">56, no. 66</biblScope>
                </bibl>
                <bibl>
-                  <ptr type="edh" target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010677?"/>
+                  <ptr type="edh"
+                        target="http://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD010677?"/>
                   <biblScope unit="item">EDH nr. HD010677</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075770">EDR075770</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR075770">EDR075770</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -109,8 +121,10 @@
          <change when="2014-10-14" who="Scott J. DiGiulio">Updated EDR bibl entries</change>
          <change when="2015-08-17" who="Scott J. DiGiulio">Updated EDR link</change>
          <change when="2021-01-31" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -119,76 +133,55 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>
-                    <lb n="2"/>
+            <ab>
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Tiberius">
-                     <expan>
-                        <abbr>Ti</abbr><ex>berii</ex>
-                     </expan>
-                  </name> 
+                     <expan><abbr>Ti</abbr><ex>berii</ex></expan>
+                  </name>
                   <name type="gentilicium" key="Claudius">Claudii</name>
-                    <lb n="3"/>
+                  <lb n="3"/>
                   <name type="cognomen" key="Arrianus">Arriani</name>
-               </persName> 
-               <expan>
-                  <abbr>veter</abbr><ex>ani</ex>
-               </expan>
-                    <lb n="4"/>
-               <expan>
-                  <abbr>nat</abbr><ex>ione</ex>
-               </expan> 
-               <expan>
-                  <abbr>Alexandr</abbr><ex>ini</ex></expan>.
+               </persName>
+               <expan><abbr>veter</abbr><ex>ani</ex></expan>
+               <lb n="4"/>
+               <expan><abbr>nat</abbr><ex>ione</ex></expan>
+               <expan><abbr>Alexandr</abbr><ex>ini</ex></expan>.
                     <lb n="5"/>
                <persName>
                   <name type="gentilicium" key="Claudius">
-                     <expan>
-                        <abbr>Claud</abbr><ex>ius</ex>
-                     </expan>
-                  </name> 
+                     <expan><abbr>Claud</abbr><ex>ius</ex></expan>
+                  </name>
                   <name type="cognomen" key="Arrianus">Arrianus</name>
                </persName>
-                    <lb n="6"/>pientissim<hi rend="tall">o</hi> pa<hi rend="tall">t</hi>ri
-                    <lb n="7"/>et <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ecit</ex></expan>.
+               <lb n="6"/>pientissim<hi rend="tall">o</hi> pa<hi rend="tall">t</hi>ri
+                    <lb n="7"/>et <expan><abbr>b</abbr><ex>ene</ex></expan>
+               <expan><abbr>m</abbr><ex>erenti</ex></expan>
+               <expan><abbr>f</abbr><ex>ecit</ex></expan>.
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits of Tiberius Claudius Arrianus, veteran (and)
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits of Tiberius Claudius Arrianus, veteran (and)
                Alexandrian by origin. Claudius Arrianus made (this) for (his) most dutiful and
                well-deserving father.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

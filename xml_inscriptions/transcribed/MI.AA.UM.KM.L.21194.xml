@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.21194</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -34,7 +45,6 @@
                               <depth>10.6</depth>
                            </dimensions>
                         </support>
-
                         <condition ana="#fragment.single">
                            <!--Add ana attribute with controlled value for condition-->
                            <p>crumbling from salt reefflorescence; large break in lower left
@@ -61,14 +71,16 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#nomenclature #palaeography" notBefore="0100" notAfter="0200"
-                        >second century CE</date>
+                     <date evidence="#nomenclature #palaeography"
+                            notBefore="0100"
+                            notAfter="0200">second century CE</date>
                      <placeName ref="africa.egypt">Terenouthis, Egypt</placeName>
                   </origin>
                   <provenance type="found" subtype="discovered">
                      <p>Excavated by the <orgName>University of Michigan</orgName> from <placeName>Terenouthis (Kom Abou Billou), Egypt</placeName> in <date when="1935">1935</date> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -77,14 +89,15 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD054883">EDH nr.
+                        target="https://edh-www.adw.uni-heidelberg.de/edh/inschrift/HD054883">EDH nr.
                      HD054883</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -102,12 +115,11 @@
             to current standards, edited transcription, added EDH link</change>
          <change when="2021-06-14" who="Sophia Papandonatou">added image</change>
          <change when="2021-06-16" who="Sophia Papandonatou">added translation</change>
-  <change when="2021-06-18" who="Colin Olson">changed stone.limestone to stone.other</change>
-  <change when="2021-07-01" who="Scott J. DiGiulio">resolved conflicts</change>
+         <change when="2021-06-18" who="Colin Olson">changed stone.limestone to stone.other</change>
+         <change when="2021-07-01" who="Scott J. DiGiulio">resolved conflicts</change>
          <change when="2021-08-21" who="Sophia Papandonatou">added commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
-      
-
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -116,61 +128,42 @@
       </surface>
    </facsimile>
    <text>
-
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan>
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Titus">
-                     <expan>
-                        <abbr>T</abbr><ex>itus</ex>
-                     </expan>
+                     <expan><abbr>T</abbr><ex>itus</ex></expan>
                   </name>
                   <name type="gentilicium" key="Helvius">Helvius</name>
                   <name type="cognomen" key="Tacitus">Ta
                 <lb break="no" n="3"/>citus</name>
                </persName>
-               <expan>
-                  <abbr>mil</abbr><ex>es</ex>
-               </expan>
-               <lb n="4"/><gap reason="lost" extent="unknown" unit="line"/>
+               <expan><abbr>mil</abbr><ex>es</ex></expan>
+               <lb n="4"/>
+               <gap reason="lost" extent="unknown" unit="line"/>
             </ab>
-
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-
-            </div>
-
-
-                <div type="translation">
-
-                 <p>Titus Helvius Tacitus, soldier [of ---].</p>
-
-                </div>
-
-
-
-                <div type="commentary">
-
-                   <p> Line 3:=citus. (omitting mil(es)) (Tuck). "miles" would have been followed by an indication of which part of the army he
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Titus Helvius Tacitus, soldier [of ---].</p>
+         </div>
+         <div type="commentary">
+            <p> Line 3:=citus. (omitting mil(es)) (Tuck). "miles" would have been followed by an indication of which part of the army he
                served in (i.e. which legion and century or which fleet or which cohort etc.).</p>
-
-                </div>
-
-
-
-
-
-
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-
-
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

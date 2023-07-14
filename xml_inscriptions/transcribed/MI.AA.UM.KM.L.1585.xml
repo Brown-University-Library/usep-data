@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1585</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,15 +34,13 @@
                      <p>epitaph dedicated by Gaius Claudius Quintus(?) and Afrodisia</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>partially reconstituted marble slab</p>
                            <seg type="material">Gray marble</seg>
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>24</height>
                               <width>31.8</width>
                               <depth>1.5</depth>
@@ -71,7 +80,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -84,14 +94,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112672"
-                     >EDR112672</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112672">EDR112672</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -101,11 +111,12 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link and commentary</change>
          <change when="2021-06-15" who="Sophia Papandonatou">added translation</change>
          <change when="2021-08-03" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -114,74 +125,55 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
-               <gap reason="lost" quantity="3" unit="character" cert="low"/>eq<gap reason="lost" extent="unknown" unit="character"></gap> 
-                   <lb n="2" /><gap reason="lost" quantity="3" unit="character" cert="low"/>nti inno<supplied reason="lost">cent</supplied>
-                    <lb n="3" break="no"/><supplied reason="lost">i</supplied>ssimo, qui <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan>
-                    <lb n="4"/> 
-               <expan>
-                  <abbr>
-                     <unclear>a</unclear>n</abbr><ex>nis</ex>
-               </expan> 
-               <num xml:lang="lat" value="7">VII</num>, <expan>
-                  <abbr>m</abbr><ex>ensibus</ex>
-               </expan> 
-               <num xml:lang="lat" value="8">VIII</num>, <expan>
-                  <abbr>d</abbr><ex>iebus</ex>
-               </expan> 
+            <ab>
+               <lb n="1"/>
+               <gap reason="lost" quantity="3" unit="character" cert="low"/>eq<gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="2"/>
+               <gap reason="lost" quantity="3" unit="character" cert="low"/>nti inno<supplied reason="lost">cent</supplied>
+               <lb n="3" break="no"/>
+               <supplied reason="lost">i</supplied>ssimo, qui <expan><abbr>vix</abbr><ex>it</ex></expan>
+               <lb n="4"/>
+               <expan><abbr><unclear>a</unclear>n</abbr><ex>nis</ex></expan>
+               <num xml:lang="lat" value="7">VII</num>, <expan><abbr>m</abbr><ex>ensibus</ex></expan>
+               <num xml:lang="lat" value="8">VIII</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan>
                <num xml:lang="lat" value="3">III</num>.
-                    <lb n="5"/> 
+                    <lb n="5"/>
                <persName>
                   <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aius</ex>
-                     </expan>
-                  </name> 
+                     <expan><abbr>C</abbr><ex>aius</ex></expan>
+                  </name>
                   <name type="gentilicium" key="Claudius">
-                     <expan>
-                        <abbr>Cl</abbr><ex>audius</ex>
-                     </expan>
-                  </name> 
+                     <expan><abbr>Cl</abbr><ex>audius</ex></expan>
+                  </name>
                   <name type="cognomen">
-                     <expan>
-                        <abbr>Q</abbr><ex cert="low">uintus</ex></expan>
+                     <expan><abbr>Q</abbr><ex cert="low">uintus</ex></expan>
                   </name>
                </persName> et <persName>
                   <name type="cognomen" key="Afrodisia">Afrodisia</name>
                </persName>
-                    <lb n="6"/> filio <expan>
-                  <abbr>dul</abbr><ex>cissimo</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ecerunt</ex></expan>.</ab>
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[---] to (him), most blameless, who lived for seven years, eight months, 
+               <lb n="6"/> filio <expan><abbr>dul</abbr><ex>cissimo</ex></expan>
+               <expan><abbr>f</abbr><ex>ecerunt</ex></expan>.</ab>
+         </div>
+         <div type="translation">
+            <p>[---] to (him), most blameless, who lived for seven years, eight months, 
                       (and) three days. Gaius Claudius Quintus(?) and Afrodisia made (this) for (their) dearest son.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 1-2: ]e Q[ui]/nti (Tuck).</p>
-                   <p>Lines 1-2: The name of the deceased is missing. Given the name of the deceased’s father in line 5, I would expect his gentilicium to be “Claudius,” so “eq” may be part of the deceased’s cognomen followed by an epithet ending in the “nti” remaining at the beginning of line 2.</p>
-                   <p>Line 5: "Q" is most commonly an abbreviation for "Quintus" but as a praenomen—"Quintus" is unusual as a cognomen. Another possibility is "Quietus."</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Line 1-2: ]e Q[ui]/nti (Tuck).</p>
+            <p>Lines 1-2: The name of the deceased is missing. Given the name of the deceased’s father in line 5, I would expect his gentilicium to be “Claudius,” so “eq” may be part of the deceased’s cognomen followed by an epithet ending in the “nti” remaining at the beginning of line 2.</p>
+            <p>Line 5: "Q" is most commonly an abbreviation for "Quintus" but as a praenomen—"Quintus" is unusual as a cognomen. Another possibility is "Quietus."</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

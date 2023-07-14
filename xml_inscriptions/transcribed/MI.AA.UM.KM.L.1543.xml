@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1543</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,16 +34,13 @@
                      <p>fragmentary epitaph</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#tablet">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>fragmentary marble tablet</p>
-                           
                            <seg type="material">White marble</seg>
-                           
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>23</height>
                               <width>30</width>
                               <depth>2.2</depth>
@@ -63,7 +71,9 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#palaeography #archaeology" notBefore="0175" notAfter="0225">late second to
+                     <date evidence="#palaeography #archaeology"
+                            notBefore="0175"
+                            notAfter="0225">late second to
                         early third century CE</date>
                      <placeName ref="europe.rome.italy">Italy, Rome, Via Appia</placeName>
                   </origin>
@@ -71,7 +81,8 @@
                      <p>Purchased in <date when="1909">1909</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">the Antiquario Pacifico</orgName> on the via Colosseo in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -82,15 +93,16 @@
                   <ptr type="rest-of-bibl" target="#LIKelsey"/>
                   <biblScope unit="item">213-214 no. 369</biblScope>
                </bibl>
-
-<bibl>
-<ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102032">EDR102032</ref>
-</bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR102032">EDR102032</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -100,10 +112,11 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-27" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription</change>
          <change when="2021-08-21" who="Sophia Papandonatou">added additional commentary and edited translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -112,51 +125,44 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <add place="overstrike"><supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan> 
-                  <expan>
-                     <abbr>M</abbr><ex>anibus</ex></expan></supplied> 
-               <expan>
-                  <abbr>s</abbr><ex>acrum</ex></expan>.
-                <lb n="2"/> 
-               <gap reason="lost" extent="unknown" unit="character"/>ndus
-                <lb n="3"/> 
-               <gap reason="lost" extent="unknown" unit="character"/><gap reason="lost" quantity="1" unit="character"/>IBOCTA
-                <lb n="4"/> 
-               <gap reason="lost" extent="unknown" unit="character"/> <unclear>P</unclear>adani <expan>
-                  <abbr>l<note>!</note></abbr><ex>ibertus</ex></expan>.</add>
+               <lb n="1"/>
+               <add place="overstrike">
+                  <supplied reason="lost">
+                     <expan><abbr>D</abbr><ex>is</ex></expan>
+                     <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                  </supplied>
+                  <expan><abbr>s</abbr><ex>acrum</ex></expan>.
+                <lb n="2"/>
+                  <gap reason="lost" extent="unknown" unit="character"/>ndus
+                <lb n="3"/>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                  <gap reason="lost" quantity="1" unit="character"/>IBOCTA
+                <lb n="4"/>
+                  <gap reason="lost" extent="unknown" unit="character"/>
+                  <unclear>P</unclear>adani <expan><abbr>l<note>!</note></abbr><ex>ibertus</ex></expan>.</add>
             </ab>
-               
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>Sacred [to the Divine Spirits]. [---] a freedman of [P]adanus.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 2: All but the ending—“ndus”—of a name (either a cognomen or a slave name) is missing. If the name is a cognomen, that implies that the abbreviation of a praenomen and a gentilicium are also likely missing. </p>
-                   <p>Line 3: l]ib Octa(vius)? (Tuck).</p>
-                   <p>The last letter in line 4—the abbreviation for l(ibertus)—is formed by an "I" plus a triangular
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Sacred [to the Divine Spirits]. [---] a freedman of [P]adanus.</p>
+         </div>
+         <div type="commentary">
+            <p>Line 2: All but the ending—“ndus”—of a name (either a cognomen or a slave name) is missing. If the name is a cognomen, that implies that the abbreviation of a praenomen and a gentilicium are also likely missing. </p>
+            <p>Line 3: l]ib Octa(vius)? (Tuck).</p>
+            <p>The last letter in line 4—the abbreviation for l(ibertus)—is formed by an "I" plus a triangular
                interpunct at baseline level, likely in place of the usual horizontal stroke of the L. (Bodel)</p>
-                </div>
-            
-        
-        
-              
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

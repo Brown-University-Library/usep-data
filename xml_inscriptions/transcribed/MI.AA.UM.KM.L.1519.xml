@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1519</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of Gaius Pisentius Sabinus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -61,14 +71,17 @@
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="#archaeology #formulae #palaeography" notBefore="0100" notAfter="0150">early-mid second century CE</date>
+                     <date evidence="#archaeology #formulae #palaeography"
+                            notBefore="0100"
+                            notAfter="0150">early-mid second century CE</date>
                      <placeName ref="europe.italy">Italy, Rome</placeName>
                   </origin>
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased in <date when="1908-12">December 1908</date> by <persName role="buyer">Walter Dennison</persName> from <orgName role="seller">Antiquario Maniani</orgName> on the Via della Consolazione in <placeName>Rome</placeName> for the <orgName role="recipient">University of Michigan</orgName> (Baldwin and Torelli).
                         He was funded by <persName role="funder">M. E. Farr</persName> and <persName role="funder">Charles L. Freer</persName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,14 +94,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR006598"
-                     >EDR006598</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR006598">EDR006598</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -98,9 +111,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-05-31" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -109,144 +123,98 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
-               <expan>
-                  <abbr>D</abbr><ex>is</ex>
-               </expan> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
-                <lb n="2"/> 
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/>
                <persName>
                   <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aio</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Pisentius">Pisentio </name> 
+                     <expan><abbr>C</abbr><ex>aio</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Pisentius">Pisentio </name>
                   <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aii</ex>
-                     </expan>
-                  </name> 
-                  <expan>
-                     <abbr>f</abbr><ex>ilio</ex>
-                  </expan>
-                <lb n="3"/> 
+                     <expan><abbr>C</abbr><ex>aii</ex></expan>
+                  </name>
+                  <expan><abbr>f</abbr><ex>ilio</ex></expan>
+                  <lb n="3"/> 
                   Arretio 
-                  <name type="cognomen" key="Sabinus">Sabino</name></persName>
-                <lb n="4"/> 
-               <expan>
-                  <abbr>mil</abbr><ex>iti</ex>
-               </expan> 
-               <expan>
-                  <abbr>coh</abbr><ex>ortis</ex>
-               </expan> 
+                  <name type="cognomen" key="Sabinus">Sabino</name>
+               </persName>
+               <lb n="4"/>
+               <expan><abbr>mil</abbr><ex>iti</ex></expan>
+               <expan><abbr>coh</abbr><ex>ortis</ex></expan>
                <num xml:lang="lat" value="6">VI</num>
-               <expan> <abbr>Pr</abbr><ex>aetoriae</ex>
-               </expan> 
-                     <g type="centuria"/>
-                  
-                <lb n="5"/> 
+               <expan><abbr>Pr</abbr><ex>aetoriae</ex></expan>
+               <g type="centuria"/>
+               <lb n="5"/>
                <persName>
-                  <name type="praenomen" key="Marcus">Marci</name></persName>. Fecerunt
-                <lb n="6"/> fratres <expan> 
-                  <abbr>f</abbr><ex>ratri</ex>
-               </expan> 
-               <expan>
-                  <abbr>b</abbr><ex>e</ex><abbr>n</abbr><ex>e</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex></expan>,
-                <lb n="7"/> 
+                  <name type="praenomen" key="Marcus">Marci</name>
+               </persName>. Fecerunt
+                <lb n="6"/> fratres <expan><abbr>f</abbr><ex>ratri</ex></expan>
+               <expan><abbr>b</abbr><ex>e</ex><abbr>n</abbr><ex>e</ex></expan>
+               <expan><abbr>m</abbr><ex>erenti</ex></expan>,
+                <lb n="7"/>
                <persName>
                   <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aius</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Pisentius">Pisentius</name> 
+                     <expan><abbr>C</abbr><ex>aius</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Pisentius">Pisentius</name>
                   <name type="cognomen" key="Iustus">Ius
                 <lb break="no" n="8"/> tus</name>
-               </persName> 
-               <expan>
-                  <abbr>mil</abbr><ex>es</ex>
-               </expan> 
-               <expan>
-                  <abbr>coh</abbr><ex>ortis</ex>
-               </expan> 
-               <num xml:lang="lat" value="6">VI</num> 
-               <expan>
-                  <abbr>Pr</abbr><ex>aetoriae</ex>
-               </expan>
-                <lb n="9"/> et <persName>
+               </persName>
+               <expan><abbr>mil</abbr><ex>es</ex></expan>
+               <expan><abbr>coh</abbr><ex>ortis</ex></expan>
+               <num xml:lang="lat" value="6">VI</num>
+               <expan><abbr>Pr</abbr><ex>aetoriae</ex></expan>
+               <lb n="9"/> et <persName>
                   <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aius</ex>
-                     </expan>
-                  </name> 
-                  <name type="gentilicium" key="Pisentius">Pisentius</name> 
+                     <expan><abbr>C</abbr><ex>aius</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Pisentius">Pisentius</name>
                   <name type="cognomen" key="Probus">Pro
                  <lb break="no" n="10"/>bus</name>
-               </persName> 
-               <expan>
-                  <abbr>mil</abbr><ex>es</ex>
-               </expan> 
-               <expan>
-                  <abbr>coh</abbr><ex>ortis</ex>
-               </expan> VI <expan>
-                  <abbr>Pr</abbr><ex>aetoriae</ex>
-               </expan>
-                <lb n="11"/> et <persName>
+               </persName>
+               <expan><abbr>mil</abbr><ex>es</ex></expan>
+               <expan><abbr>coh</abbr><ex>ortis</ex></expan> VI <expan><abbr>Pr</abbr><ex>aetoriae</ex></expan>
+               <lb n="11"/> et <persName>
                   <name type="praenomen" key="Gaius">
-                     <expan>
-                        <abbr>C</abbr><ex>aius</ex>
-                     </expan>
-                  </name> 
+                     <expan><abbr>C</abbr><ex>aius</ex></expan>
+                  </name>
                   <name type="gentilicium" key="Pisentius">Pisentius</name>
-                 <lb n="12"/> 
+                  <lb n="12"/>
                   <name type="cognomen" key="Festus">
-                     <supplied reason="lost">F</supplied>estus</name></persName> 
-               <expan>
-                  <abbr>mil</abbr><ex>es</ex>
-               </expan> 
-               <expan>
-                  <abbr>Coh</abbr><ex>ortis</ex>
-               </expan> 
+                     <supplied reason="lost">F</supplied>estus</name>
+               </persName>
+               <expan><abbr>mil</abbr><ex>es</ex></expan>
+               <expan><abbr>Coh</abbr><ex>ortis</ex></expan>
                <num xml:lang="lat" value="6">VI</num>
-               <expan>
-                  <abbr>Pr</abbr><ex>aetoriae</ex></expan>.</ab>
-                
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Gaius Pisentius Sabinus, son of Gaius, from
+               <expan><abbr>Pr</abbr><ex>aetoriae</ex></expan>.</ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. To Gaius Pisentius Sabinus, son of Gaius, from
                Arretium, soldier of the sixth Praetorian cohort, from the century of Marcus. (His)
                brothers made this for (their) well-deserving brother: Gaius Pisentius Justus,
                soldier of the sixth Praetorian cohort, and Gaius Pisentius Probus, soldier of the
                sixth Praetorian cohort, and Gaius Pisentius [F]estus, soldier of the sixth
                Praetorian cohort.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>The name of the deceased is unusual in the arrangement of the elements;
+         </div>
+         <div type="commentary">
+            <p>The name of the deceased is unusual in the arrangement of the elements;
                        <hi rend="italic">Arretio</hi>, apparently this soldier’s <hi rend="italic">domus</hi>, is listed before the <hi rend="italic">cognomen</hi>, <hi rend="italic">Sabino</hi> in the
                normal tribal position. (Tuck)</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

@@ -1,15 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.Bos.MFA.X.03.787</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include
-               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,7 +44,7 @@
                   <objectDesc ana="#instrumentum.vase">
                      <supportDesc ana="#clay">
                         <support>
-                           <p>rhyton in the shape of a donkey</p>
+                           <p>ceramic rhyton in the shape of a donkey</p>
                            <dimensions type="surface" unit="cm">
                               <height>25.4</height>
                               <width/>
@@ -66,10 +75,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -86,8 +91,7 @@
                   </provenance>
                   <provenance type="transferred" subtype="purchase">
                      <p>Sold by <persName role="seller">Edward Perry Warren</persName> to the
-                           <orgName role="buyer">Museum of Fine Arts</orgName> in <date when="1903"
-                           >1903</date>.</p>
+                           <orgName role="buyer">Museum of Fine Arts</orgName> in <date when="1903">1903</date>.</p>
                   </provenance>
                </history>
             </msDesc>
@@ -98,12 +102,11 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="https://www.beazley.ox.ac.uk/record/EE298962-0602-48BE-A409-3068A755278D"
-                     >BAD 204088</ref>
+                        target="https://www.beazley.ox.ac.uk/record/EE298962-0602-48BE-A409-3068A755278D">BAD 204088</ref>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.avi.unibas.ch/DB/searchform.html?ID=2874"
-                     >AVI 2726</ref>
+                  <ref type="external"
+                        target="https://www.avi.unibas.ch/DB/searchform.html?ID=2874">AVI 2726</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="https://collections.mfa.org/objects/153866">Museum of
@@ -113,7 +116,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -141,13 +145,13 @@
    </facsimile>
    <text>
       <body>
-         <div type="edition"
-            ><!--The marked up transcription goes here, surrounded by <ab> </ab> elements--></div>
+         <div type="edition"><!--The marked up transcription goes here, surrounded by <ab> </ab> elements--></div>
          <div type="commentary">
             <p>Attributed to the Brygos painter.</p>
          </div>
          <div type="bibliography">
-            <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>

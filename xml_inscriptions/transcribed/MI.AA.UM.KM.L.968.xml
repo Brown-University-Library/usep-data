@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.968</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,18 +34,13 @@
                      <p>epitaph of Scentius Secundus, a freedman</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>broken marble slab</p>
-                           
                            <seg type="material">white marble</seg>
-                           
-                           
-                                                
-                                            <dimensions type="surface" unit="cm">
+                           <dimensions type="surface" unit="cm">
                               <height>18</height>
                               <width>26</width>
                               <depth>2</depth>
@@ -71,7 +77,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -84,14 +91,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116530"
-                     >EDR116530</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116530">EDR116530</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -102,9 +109,10 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2021-02-02" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-21" who="Sophia Papandonatou">added EDR link</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -113,64 +121,62 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <ab>
-                <lb n="1"/>
+               <lb n="1"/>
                <!--  <app type="previouslyread">
                   <lem resp="previous">-->
-                        <expan>
-                           <abbr><supplied reason="lost" evidence="previouseditor">D</supplied></abbr><ex>is</ex>
-                     </expan>
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>
-                <lb n="2"/>
-               <persName><name key="Scentius" type="gentilicium"><supplied reason="lost" evidence="previouseditor">
-                  Scenti</supplied></name> <name key="Secundus" type="cognomen"><supplied reason="lost" evidence="previouseditor">S</supplied>ecundi</name> <name key="Scentia" type="gentilicium"><expan>
-                  <abbr>Scent</abbr><ex>iae</ex>
-                  </expan></name>
-                <lb n="3"/>
-               <name type="cognomen" key="Domitia"><supplied reason="lost" evidence="previouseditor">Domi</supplied><unclear>t</unclear>
-                  iae</name> <expan>
-                  <abbr>lib</abbr><ex>erti</ex></expan></persName>; vixit
-                <lb n="4"/> 
-                     <expan>
-                        <abbr><supplied reason="lost" evidence="previouseditor">ann</supplied></abbr><ex>is</ex>
-                     </expan> X.
-               <persName><name key="Scentia" type="gentilicium">Scentia</name>
-                <lb n="5"/> 
-                  <name type="cognomen" key="Domitia"><supplied reason="lost" evidence="previouseditor">
-                  Domi</supplied>tia</name></persName> <expan>
-                  <abbr>b</abbr><ex>ene</ex>
-               </expan> 
-               <expan>
-                  <abbr>m</abbr><ex>erenti</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ecit</ex></expan>.
+               <expan><abbr><supplied reason="lost" evidence="previouseditor">D</supplied></abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>
+               <lb n="2"/>
+               <persName>
+                  <name key="Scentius" type="gentilicium">
+                     <supplied reason="lost" evidence="previouseditor">
+                  Scenti</supplied>
+                  </name>
+                  <name key="Secundus" type="cognomen">
+                     <supplied reason="lost" evidence="previouseditor">S</supplied>ecundi</name>
+                  <name key="Scentia" type="gentilicium">
+                     <expan><abbr>Scent</abbr><ex>iae</ex></expan>
+                  </name>
+                  <lb n="3"/>
+                  <name type="cognomen" key="Domitia">
+                     <supplied reason="lost" evidence="previouseditor">Domi</supplied>
+                     <unclear>t</unclear>
+                  iae</name>
+                  <expan><abbr>lib</abbr><ex>erti</ex></expan>
+               </persName>; vixit
+                <lb n="4"/>
+               <expan><abbr><supplied reason="lost" evidence="previouseditor">ann</supplied></abbr><ex>is</ex></expan> X.
+               <persName>
+                  <name key="Scentia" type="gentilicium">Scentia</name>
+                  <lb n="5"/>
+                  <name type="cognomen" key="Domitia">
+                     <supplied reason="lost" evidence="previouseditor">
+                  Domi</supplied>tia</name>
+               </persName>
+               <expan><abbr>b</abbr><ex>ene</ex></expan>
+               <expan><abbr>m</abbr><ex>erenti</ex></expan>
+               <expan><abbr>f</abbr><ex>ecit</ex></expan>.
             </ab>
-                <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits of Scentius Secundus, freedman of Scentia Domitia; he
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits of Scentius Secundus, freedman of Scentia Domitia; he
                lived for ten years. Scentia Domitia made this for (him), well-deserving.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Complete inscription attested in <hi rend="italic">CIL</hi> X, 2938.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Complete inscription attested in <hi rend="italic">CIL</hi> X, 2938.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

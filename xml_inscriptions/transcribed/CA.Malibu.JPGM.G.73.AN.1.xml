@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Malibu.JPGM.G.73.AN.1</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -27,7 +37,8 @@
                <physDesc>
                   <objectDesc ana="#instrumentum.other">
                      <supportDesc ana="#stone.other">
-                        <support><p>Grayish agate amulet</p>
+                        <support>
+                           <p>Grayish agate amulet</p>
                            <dimensions type="surface" unit="cm">
                               <height>3.9</height>
                               <width>3.5</width>
@@ -56,10 +67,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -67,7 +74,8 @@
                      <date evidence="unspecified" notBefore="0200" notAfter="0300">third century CE</date>
                      <placeName ref="unknown"/>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -87,13 +95,15 @@
                   <biblScope unit="page">292, 28.8b</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.getty.edu/art/collection/objects/7011/unknown-maker-magic-inscribed-amulet-greek-or-roman-3rd-century/">Getty Museum Web Entry, with images</ref>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/7011/unknown-maker-magic-inscribed-amulet-greek-or-roman-3rd-century/">Getty Museum Web Entry, with images</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -107,8 +117,8 @@
          <change when="2016-03-21" who="Scott J. DiGiulio">Expanded bibl, added missing control vocab, added dimensions metadata from Getty website, added transcription from images after Kotansky</change>
          <change when="2016-04-15" who="Scott J. DiGiulio">Updated images</change>
          <change when="2020-10-22" who="Scott J. DiGiulio">Removed the empty @ana on decoNote</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
-</revisionDesc>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -123,16 +133,19 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
             <div type="textpart" subtype="side" n="recto">
                <ab>
                   <lb n="1"/>Ἀβλακα<unclear>θ</unclear>α
-                  <lb n="2" break="no"/>ναλβα Ἀβλα<unclear>θ</unclear><supplied reason="lost">α</supplied>
+                  <lb n="2" break="no"/>ναλβα Ἀβλα<unclear>θ</unclear>
+                  <supplied reason="lost">α</supplied>
                   <lb n="3" break="no"/>δαναλβα Ἀβλ<supplied reason="lost">αναθα</supplied>
-                  <lb n="4" break="no"/>ναλβα αναθ<unclear>α</unclear><supplied reason="lost">ναλβ</supplied><unclear>α</unclear>
-                  <lb n="5"/>λαναθαναλβα <unclear>Ἀ</unclear><supplied reason="lost">ναθ</supplied>α
+                  <lb n="4" break="no"/>ναλβα αναθ<unclear>α</unclear>
+                  <supplied reason="lost">ναλβ</supplied>
+                  <unclear>α</unclear>
+                  <lb n="5"/>λαναθαναλβα <unclear>Ἀ</unclear>
+                  <supplied reason="lost">ναθ</supplied>α
                   <lb n="6" break="no"/>ναλβα
                   <lb n="7"/>ναθαλβα
                   <lb n="8"/>αθαλβα
@@ -146,32 +159,36 @@
             <div type="textpart" subtype="side" n="verso">
                <ab>
                   <lb n="14"/>Ἀπάλλαξον
-                  <lb n="15"/><persName><name key="Gais Γαΐς">Γαῒν</name></persName> τοῦ πυρε
-                  <lb n="16" break="no"/>τοῦ <supplied reason="lost">καὶ</supplied> <unclear>τ</unclear>ο<supplied reason="omitted">ῦ</supplied> τε
-                  <lb n="17"/>ῥεί<supplied reason="lost">γους κε</supplied> <unclear>π</unclear>ά
-                  <lb n="18" break="no"/>ση<unclear>ς</unclear> <supplied reason="lost">τῆς ὀ</supplied>
+                  <lb n="15"/>
+                  <persName>
+                     <name key="Gais Γαΐς">Γαῒν</name>
+                  </persName> τοῦ πυρε
+                  <lb n="16" break="no"/>τοῦ <supplied reason="lost">καὶ</supplied>
+                  <unclear>τ</unclear>ο<supplied reason="omitted">ῦ</supplied> τε
+                  <lb n="17"/>ῥεί<supplied reason="lost">γους κε</supplied>
+                  <unclear>π</unclear>ά
+                  <lb n="18" break="no"/>ση<unclear>ς</unclear>
+                  <supplied reason="lost">τῆς ὀ</supplied>
                   <lb n="19" break="no"/>δού<supplied reason="lost">νης τῆς</supplied>
-                  <lb n="20"/>κε<unclear>φ</unclear><supplied reason="lost">αλῆς</supplied>.
+                  <lb n="20"/>κε<unclear>φ</unclear>
+                  <supplied reason="lost">αλῆς</supplied>.
                </ab>
             </div>
          </div>
-        
-        
-                <div type="translation">
-                    <p/>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p/>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

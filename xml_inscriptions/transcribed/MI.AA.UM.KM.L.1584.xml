@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1584</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,8 +34,7 @@
                      <p>epitaph of [Ca]ecilius Gen[ialis]</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
@@ -68,7 +78,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -81,14 +92,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                     target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112670"
-                     >EDR112670</ref>
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR112670">EDR112670</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -98,10 +109,10 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
-      <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
          <change when="2021-06-01" who="Sophia Papandonatou">added dating criteria, updated metadata to current standards, edited transcription, added EDR link</change>
          <change when="2021-06-15" who="Sophia Papandonatou">added translation</change>
-      <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
          <change when="2021-10-20" who="Sophia Papandonatou">added commentary</change>
       </revisionDesc>
    </teiHeader>
@@ -112,74 +123,63 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
-                <ab>
-                    <lb n="1"/>
-               <supplied reason="lost"><expan><abbr>D</abbr><ex>is</ex></expan></supplied> 
-               <expan>
-                  <abbr>M</abbr><ex>anibus</ex></expan>.
-                    <lb n="2"/> 
-                   <gap reason="lost" quantity="2" unit="character" cert="low"/> <persName>
+            <ab>
+               <lb n="1"/>
+               <supplied reason="lost">
+                  <expan><abbr>D</abbr><ex>is</ex></expan>
+               </supplied>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                    <lb n="2"/>
+               <gap reason="lost" quantity="2" unit="character" cert="low"/>
+               <persName>
                   <name type="gentilicium" key="Caecilius">
                      <supplied reason="lost">C</supplied>aecilius</name>
                </persName>
-                    <lb n="3"/> 
+               <lb n="3"/>
                <gap reason="lost" quantity="3" unit="character" cert="low"/>tianus
-                    <lb n="4"/> 
-                   <gap reason="lost" quantity="2" unit="character" cert="low"/> <persName>
+                    <lb n="4"/>
+               <gap reason="lost" quantity="2" unit="character" cert="low"/>
+               <persName>
                   <name type="cognomen" key="Caecilius">
-                     <supplied reason="lost">Ca</supplied>ecilio</name> 
+                     <supplied reason="lost">Ca</supplied>ecilio</name>
                   <name type="cognomen" key="Genialis">Ge<hi rend="small">n</hi>
-                    <lb n="5" break="no"/> 
+                     <lb n="5" break="no"/>
                      <supplied reason="lost" cert="low">iali</supplied>
                   </name>
                </persName> filio carissi
-                    <lb n="6"/> 
-               <supplied reason="lost">mo</supplied>; <expan>
-                  <abbr>vix</abbr><ex>it</ex>
-               </expan> 
-               <expan>
-                  <abbr>ann</abbr><ex>is</ex>
-               </expan> 
+                    <lb n="6"/>
+               <supplied reason="lost">mo</supplied>; <expan><abbr>vix</abbr><ex>it</ex></expan>
+               <expan><abbr>ann</abbr><ex>is</ex></expan>
                <num xml:lang="lat" value="24">XXIIII</num>,
-                    <lb n="7"/> 
-               <supplied reason="lost"><expan><abbr>men</abbr><ex>sibus</ex></expan></supplied> 
-               <num xml:lang="lat" value="10">X</num>; <expan><abbr>ben</abbr><ex>e</ex>
-               </expan> 
-               <expan>
-                  <abbr>mer</abbr><ex>enti</ex>
-               </expan> 
-               <expan>
-                  <abbr>f</abbr><ex>ecit</ex>
-               </expan>.</ab> 
-            </div>
-        
-        
-                <div type="translation">
-                   <p>[To the Divine] Spirits. [- C]aecilius [-] made (this) for [- Ca]ecilus Gen[ialis?], 
+                    <lb n="7"/>
+               <supplied reason="lost">
+                  <expan><abbr>men</abbr><ex>sibus</ex></expan>
+               </supplied>
+               <num xml:lang="lat" value="10">X</num>; <expan><abbr>ben</abbr><ex>e</ex></expan>
+               <expan><abbr>mer</abbr><ex>enti</ex></expan>
+               <expan><abbr>f</abbr><ex>ecit</ex></expan>.</ab>
+         </div>
+         <div type="translation">
+            <p>[To the Divine] Spirits. [- C]aecilius [-] made (this) for [- Ca]ecilus Gen[ialis?], 
                       (his) most belov[ed] son, well-deserving, (who) lived for twenty-four years (and) ten [months].</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                   <p>Line 2: the abbreviation of Caecilius' praenomen is missing.</p>
-                   <p>Line 3: The beginning of Caecilius' cognomen (ending in "tianus") is missing. The ending is too common to confidently restore it.</p>
-                   <p>Line 4-5: The abbreviation of the deceased's praenomen is missing. Tuck restored his gentilicium and cognomen based on frequency and the size of the gap.</p>
-                   <p>Tuck attests that AEOLLIVS is painted over line 2.</p>
-                </div>
-            
-        
-        
-            
-            
-        
-        <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>Line 2: the abbreviation of Caecilius' praenomen is missing.</p>
+            <p>Line 3: The beginning of Caecilius' cognomen (ending in "tianus") is missing. The ending is too common to confidently restore it.</p>
+            <p>Line 4-5: The abbreviation of the deceased's praenomen is missing. Tuck restored his gentilicium and cognomen based on frequency and the size of the gap.</p>
+            <p>Tuck attests that AEOLLIVS is painted over line 2.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

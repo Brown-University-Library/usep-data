@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MI.AA.UM.KM.L.1031</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -23,20 +34,19 @@
                      <p>epitaph of Valerius Aelianus</p>
                   </msItem>
                </msContents>
-                           
-                            <physDesc>
+               <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
                            <p>reconstituted marble slab</p>
-                           
                            <dimensions type="surface" unit="cm">
                               <height>25</height>
                               <width>22.3</width>
                               <depth>1.8</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition--><p>broken into seven fragments</p>
+                        <condition ana="#complete.broken"><!--Add ana attribute with controlled value for condition-->
+                           <p>broken into seven fragments</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -66,7 +76,8 @@
                   <provenance type="transferred" subtype="purchased">
                      <p>Purchased from the collection of <persName>Giuseppe De Criscio</persName> for the <orgName role="recipient">University of Michigan</orgName> (Tuck).</p>
                   </provenance>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -78,13 +89,15 @@
                   <biblScope unit="item">53, no. 61</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116535">EDR116535</ref>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR116535">EDR116535</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -95,9 +108,11 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-06-13" who="Scott J. DiGiulio">Added control vocab for condition and writing; added link to EDR; added specificity to placename ref; tweaked format of transcription and reworked punctuation; removed supplied n in line 6</change>
-      <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
          <change when="2021-04-26" who="Sophia Papandonatou">added dating criteria, updated metadata and transcription to current standards, added translation</change>
-<change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change><change when="2021-08-22" who="Sophia Papandonatou">added provenance</change></revisionDesc>
+         <change when="2021-05-27" who="Sophia Papandonatou">corrected summary descriptions to English and lower case</change>
+         <change when="2021-08-22" who="Sophia Papandonatou">added provenance</change>
+      </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
@@ -106,39 +121,52 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
+      <body>
+         <div type="edition">
                 <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
-                <lb n="2"/><persName><name type="gentilicium" key="Valerius">Valerio</name> <name type="cognomen" key="Aelianus">Ae
-                <lb n="3" break="no"/>liano</name></persName>, qui
-                <lb n="4"/><expan><abbr>vix</abbr><ex>it</ex></expan> <expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="lat" value="60">LX</num>, <expan><abbr>mi</abbr><ex>litavit</ex></expan>
-                <lb n="5"/><expan><abbr>an</abbr><ex>nis</ex></expan> <num xml:lang="lat" value="28">XXVIII</num>. <persName><name type="gentilicium" key="Iulia">Iulia</name>
-                <lb n="6"/><name type="cognomen" key="Cyrilla">Cyrila</name></persName> <expan><abbr>co</abbr><ex>n</ex><abbr>iu
-                <lb n="7" break="no"/>gi</abbr></expan> <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan> <expan><abbr>f</abbr><ex>ecit</ex></expan>.
+               <lb n="1"/>
+               <expan><abbr>D</abbr><ex>is</ex></expan>
+               <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Valerius">Valerio</name>
+                  <name type="cognomen" key="Aelianus">Ae
+                <lb n="3" break="no"/>liano</name>
+               </persName>, qui
+                <lb n="4"/>
+               <expan><abbr>vix</abbr><ex>it</ex></expan>
+               <expan><abbr>an</abbr><ex>nis</ex></expan>
+               <num xml:lang="lat" value="60">LX</num>, <expan><abbr>mi</abbr><ex>litavit</ex></expan>
+               <lb n="5"/>
+               <expan><abbr>an</abbr><ex>nis</ex></expan>
+               <num xml:lang="lat" value="28">XXVIII</num>. <persName>
+                  <name type="gentilicium" key="Iulia">Iulia</name>
+                  <lb n="6"/>
+                  <name type="cognomen" key="Cyrilla">Cyrila</name>
+               </persName>
+               <expan><abbr>co</abbr><ex>n</ex><abbr>iu<lb n="7" break="no"/>gi</abbr></expan>
+               <expan><abbr>b</abbr><ex>ene</ex></expan>
+               <expan><abbr>m</abbr><ex>erenti</ex></expan>
+               <expan><abbr>f</abbr><ex>ecit</ex></expan>.
             </ab>
          </div>
-        
-        
-                <div type="translation">
-                    <p>To the Divine Spirits. To Valerius Aelianus, who lived for sixty years (and)
+         <div type="translation">
+            <p>To the Divine Spirits. To Valerius Aelianus, who lived for sixty years (and)
                served for twenty-eight years. Julia Cyrila made (this) for (her) husband,
                well-deserving.</p>
-                </div>
-            
-        
-        
-                <div type="commentary">
-                    <p>medium-grained white marble (Tuck)</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+         </div>
+         <div type="commentary">
+            <p>medium-grained white marble (Tuck)</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>

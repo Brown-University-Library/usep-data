@@ -1,26 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-
-        <fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
             <!-- *************************************  <titleStmt>   *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
-            <titleStmt>
-                <title>VA.GladeSpring.PHHS.L.01-mdn</title>
-            </titleStmt>
-            <!-- *************************************  <publicationStmt>  *********************************
+         <titleStmt>
+            <title>VA.GladeSpring.PHHS.L.01-mdn</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <!-- *************************************  <publicationStmt>  *********************************
                 <idno>: Repeat the value that is in <title>.
                 @xml:id is the machine readable US Epigraphy number. Replace characters such as ? * # & +  [space]  with a set of predeterimined 
                 characters that are legal in XML names and viable URLs. 
             -->
-            <publicationStmt>
-               
-                <authority>Brown University</authority> 
-                <idno type="USEpigraphy" xml:id="VA.GladeSpring.PHHS.L.01-mdn">VA.GladeSpring.PHHS.L.01-mdn</idno>
-            </publicationStmt>
-            <!--  *************************************  <sourceDesc>  ********************************* -->
-            <sourceDesc>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="VA.GladeSpring.PHHS.L.01-mdn">VA.GladeSpring.PHHS.L.01-mdn</idno>
+         </publicationStmt>
+         <!--  *************************************  <sourceDesc>  ********************************* -->
+         <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
               <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
@@ -33,180 +42,174 @@
                               If there is more repository information, or if the inscription is known by another name, this information can
                               be encoded using <altIdentifer>, which has the same elements as <msIdentifier>, or by <msName>, which contains text.
                 -->
-                <msDesc>
-                    <msIdentifier>
-                        <region>VA</region>
-                        <settlement>Glade Spring</settlement>
-                        <institution>PHHS</institution>
-                        <repository/>
-                        <idno>01-mdn</idno>
-                    </msIdentifier>
-                    
-                    <!--  *************************************  <msContents>  *********************************    -->
-                    <msContents>
-                        <textLang mainLang="lat"/>
-                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+            <msDesc>
+               <msIdentifier>
+                  <region>VA</region>
+                  <settlement>Glade Spring</settlement>
+                  <institution>PHHS</institution>
+                  <repository/>
+                  <idno>01-mdn</idno>
+               </msIdentifier>
+               <!--  *************************************  <msContents>  *********************************    -->
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                  <msItem class="#funerary.epitaph">
                         <!-- short summary of the content of an inscription -->
-                            <p>epitaph of Seia Helis (reproduction of CIL 6.26124)</p>  
-                        </msItem>
-                    </msContents>
-                    
-                    <!--  *************************************  <physDesc>  ********************************* -->
-                    <physDesc>
+                     <p>epitaph of Seia Helis (reproduction of CIL 6.26124)</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
                     
                         <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
-                            
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#plaster">
-                                <support>
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#plaster">
+                        <support>
                         <!-- short summary of the material and support of an inscription -->
-                                    <p>white plaster of Paris slab</p>
-                                    <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
-                                    </dimensions>
-                                </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
-                                </condition>
-                            </supportDesc>
-                            
-                            <!--  *************************************  <layoutDesc>  ********************************* -->
-                            <layoutDesc>
-                                <layout columns="1" writtenLines="7">
-                                    <p>regular triangular interpuncts throughout</p>
-                                </layout>
-                            </layoutDesc>
-                        </objectDesc>
-                        
-                        <!--  *************************************  <handDesc>  ********************************* -->
-                      <!--     Contains information about types of writing and means of inscription.  -->
-                        <handDesc hands="1">
-                            <handNote ana="#writing.other">the letters are cast</handNote>
-                            <!-- <handNote> is a repeatable element -->
-                        </handDesc>
-                        
-                        <!--  *************************************  <decoDesc>  *********************************     -->
-                        <decoDesc>
-                            <decoNote>
-                                <p/>
-                            </decoNote>
-                        </decoDesc>
-                    </physDesc>
-                    
-                    <!--  *************************************  <history>  *********************************  -->
-                    
-                    <!-- <origin> encodes the origin of inscription including place and date. 
+                           <p>white plaster of Paris slab</p>
+                           <dimensions type="surface" unit="cm">
+                              <height/>
+                              <width/>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="7">
+                           <p>regular triangular interpuncts throughout</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <!--     Contains information about types of writing and means of inscription.  -->
+                  <handDesc hands="1">
+                     <handNote ana="#writing.other">the letters are cast</handNote>
+                     <!-- <handNote> is a repeatable element -->
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <!-- <origin> encodes the origin of inscription including place and date. 
                          <date> use 4 digit years, with leading zeros. BCE has a - sign in front of the number. Both @notBefore 
                            and @notAfter are required. There is no 0000 date;  use -0001 or 0001.
                     -->
-                    <history>
-                    
-                        <summary>
-                            <rs>modern</rs>  <!-- content can be "fake" or blank -->
-                        </summary>
-                        
-                        <origin>
+               <history>
+                  <summary>
+                     <rs>modern</rs>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
                         <!-- original place and dating of inscription -->
-                            <date evidence="unspecified" notBefore="0001" notAfter="0100">first c. CE (original inscription)</date>
-                            <placeName ref="europe.italy.rome" resp="CIL">Italy, Rome (original inscription)</placeName>
-                        </origin>
-                        <provenance>
-                            <p>Replica produced at some point in the twentieth century.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="purchased">                            
-                            <p>purchased by Mr. <persName>John Walker</persName> at a curio shop near <placeName>West Jefferson, VA</placeName> in <date when="2006">2006</date></p>
-                        </provenance>
-
-                    </history>
-                </msDesc>
-                <!--  *************************************  <listBibl>  *********************************  -->
-                 <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                     <date evidence="unspecified" notBefore="0001" notAfter="0100">first c. CE (original inscription)</date>
+                     <placeName ref="europe.italy.rome" resp="CIL">Italy, Rome (original inscription)</placeName>
+                  </origin>
+                  <provenance>
+                     <p>Replica produced at some point in the twentieth century.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>purchased by Mr. <persName>John Walker</persName> at a curio shop near <placeName>West Jefferson, VA</placeName> in <date when="2006">2006</date>
+                     </p>
+                  </provenance>
+               </history>
+            </msDesc>
+            <!--  *************************************  <listBibl>  *********************************  -->
+            <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-                <listBibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">26124</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ref type="external" target="https://www.trismegistos.org/text/588254">Trismegistos no. TM 588254</ref>
-                    </bibl>
-                </listBibl>
-            </sourceDesc>
-        </fileDesc>
-
-        <!--  *************************************  <encodingDesc>  ********************************* -->
-        <!-- information about the encoding and controlled vocabularies. Do not edit -->
-            
-        <encodingDesc>
-                           
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-            
-        </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-        
-        
-        <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-        
-        <revisionDesc>
-            <change when="2019-07-28" who="Scott J. DiGiulio">Initial Encoding</change>
-            <change when="2020-05-19" who="Scott J. DiGiulio">Tweaks to provenance markup</change>
-        </revisionDesc>
-
-    </teiHeader>
-
-    <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
-    <facsimile>
-        <surface>
-            <desc/>
-            <graphic url="VA.GladeSpring.PHHS.L.01-mdn.jpg"/>
-        </surface>
-    </facsimile>
-
-    <text>
-        
-        <body>
-        <div type="edition"><!-- transcription goes here -->
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                  <biblScope unit="item">26124</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="https://www.trismegistos.org/text/588254">Trismegistos no. TM 588254</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <!--  *************************************  <encodingDesc>  ********************************* -->
+      <!-- information about the encoding and controlled vocabularies. Do not edit -->
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc> <!-- not used --> </profileDesc>
+      <!--  *************************************  <revisionDesc>  ********************************* -->
+      <!-- Record all changes here -->
+      <revisionDesc>
+         <change when="2019-07-28" who="Scott J. DiGiulio">Initial Encoding</change>
+         <change when="2020-05-19" who="Scott J. DiGiulio">Tweaks to provenance markup</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="VA.GladeSpring.PHHS.L.01-mdn.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition"><!-- transcription goes here -->
             <ab>
-                <lb n="1"/>Di<hi rend="tall">i</hi>s <g type="hedera"/> Manibus.
-                <lb n="2"/><persName><name type="gentilicium" key="Seia">Seiae</name> <name type="cognomen" key="Helis">Helidi</name></persName> filiae
-                <lb n="3"/>su<surplus>e</surplus>ae, quae vixit <expan><abbr>an</abbr><ex>nis</ex></expan> <num type="cardinal" value="10">X</num>,
-                <lb n="4"/><expan><abbr>m</abbr><ex>ensibus</ex></expan> <num type="cardinal" value="5">V</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan> <num type="cardinal" value="18">XVIII</num> carissima suis.
-                <lb n="5"/><persName><name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name> <name type="gentilicium" key="Umidius">Umidius</name> <name type="cognomen" key="Pothus">Pothus</name></persName>
-                <lb n="6"/>et <persName><name type="gentilicium" key="Seia">Seia</name> <name type="cognomen" key="Hedia">Hedia</name></persName> feceru<hi rend="ligature">nt</hi>
-                <lb n="7"/>et sibi et suis.
+               <lb n="1"/>Di<hi rend="tall">i</hi>s <g type="hedera"/> Manibus.
+                <lb n="2"/>
+               <persName>
+                  <name type="gentilicium" key="Seia">Seiae</name>
+                  <name type="cognomen" key="Helis">Helidi</name>
+               </persName> filiae
+                <lb n="3"/>su<surplus>e</surplus>ae, quae vixit <expan><abbr>an</abbr><ex>nis</ex></expan>
+               <num type="cardinal" value="10">X</num>,
+                <lb n="4"/>
+               <expan><abbr>m</abbr><ex>ensibus</ex></expan>
+               <num type="cardinal" value="5">V</num>, <expan><abbr>d</abbr><ex>iebus</ex></expan>
+               <num type="cardinal" value="18">XVIII</num> carissima suis.
+                <lb n="5"/>
+               <persName>
+                  <name type="praenomen" key="Gaius">
+                     <expan><abbr>C</abbr><ex>aius</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Umidius">Umidius</name>
+                  <name type="cognomen" key="Pothus">Pothus</name>
+               </persName>
+               <lb n="6"/>et <persName>
+                  <name type="gentilicium" key="Seia">Seia</name>
+                  <name type="cognomen" key="Hedia">Hedia</name>
+               </persName> feceru<hi rend="ligature">nt</hi>
+               <lb n="7"/>et sibi et suis.
             </ab>
-            </div>
-        
-        
-                <div type="translation">
-                    <p>To the divine spirits. To Seia Helis, their daughter, who lived for ten years, five months, eighteen days, most dear to them. Gaius Umidius Pothus and Seia Hedia made (this) for themselves and their family.</p>
-                </div>
-            
-        
-        
-                <div type="commentary"><!-- notes go here -->
+         </div>
+         <div type="translation">
+            <p>To the divine spirits. To Seia Helis, their daughter, who lived for ten years, five months, eighteen days, most dear to them. Gaius Umidius Pothus and Seia Hedia made (this) for themselves and their family.</p>
+         </div>
+         <div type="commentary"><!-- notes go here -->
             <p>The plaster of Paris reproduction preserves a copy of an epitaph inscribed on the front panel of a funerary altar found at an unknown location in Rome and transported thence in the nineteenth century to Rossie Priory, a country house and estate west of Dundee, Scotland, whence it was transferred in 1948 or 1949 to the National Galleries in Edinburgh, where it is housed today (NG 2729) The same Seia Helis (it seems) is commemorated on a small semi-cylindrical ash-urn also once in Rossie Priory and now in the National Galleries (NG 2733) that was probably found together with the funerary altar in the same tomb in Rome (CIL 6.26122 = EDR174311). An ash urn from Rome commemorating a homonymous Seia Helis minor, CIL 6.26123, concerns a different person but possibly came from the same monument.</p>
-                <p> The plaster slab exhibits in line 1 a tall I in the second I in Diis and a stylized ivy leaf (hedera) dividing the two words, raised triangular interpuncts used irregularly to divide words throughout, and characteristic features of early imperial Roman lettering and impagination. Two round holes neatly drilled to the right and left symmetrically and slightly above line 5 are probably modern, possibly made in order to affix the slab to a wall, rather than ancient and made for attaching a metal fixture to the face of the inscription.</p>
-                </div>
-            
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
-    </text>
+            <p> The plaster slab exhibits in line 1 a tall I in the second I in Diis and a stylized ivy leaf (hedera) dividing the two words, raised triangular interpuncts used irregularly to divide words throughout, and characteristic features of early imperial Roman lettering and impagination. Two round holes neatly drilled to the right and left symmetrically and slightly above line 5 are probably modern, possibly made in order to affix the slab to a wall, rather than ancient and made for attaching a metal fixture to the face of the inscription.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Ep bibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
 </TEI>

@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing-BJD-06 -->
       <fileDesc>
          <titleStmt>
-            <!--printable version of USEpi inscription ID:-->
             <title>CA.Berk.UC.HMA.L.8/2330</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -26,8 +36,10 @@
                </msContents>
                <physDesc>
                   <objectDesc ana="#instrumentum.brick">
-                     <supportDesc ana="#clay">
-                        <support><p/><dimensions type="surface" unit="cm">
+                     <supportDesc ana="#clay.terracotta">
+                        <support>
+                           <p/>
+                           <dimensions type="surface" unit="cm">
                               <height/>
                               <width/>
                               <depth/>
@@ -55,10 +67,6 @@
                </physDesc>
                <history>
                   <summary>
-                     <!--The following note element should be included, with the text "fake" as its content, if the inscription is a fake.-->
-                     <!--USEp. comment: This is a USEp. convention for now, to indicate if an inscription is fake.-->
-                     <!--This isn't sufficient, as it doesn't indicate properly if it's the text or the support that's fake.-->
-                     <!--Please say whether the object is fake (and therfore the inscription also) or only the inscription is fake but the object is real-->
                      <note/>
                   </summary>
                   <origin>
@@ -66,7 +74,8 @@
                      <date evidence="unspecified" notBefore="0198" notAfter="0211">c. 198-211 CE</date>
                      <placeName ref="unknown"/>
                   </origin>
-                  <!--Add provenance element(s) to locations at later dates - same content as origin--></history>
+                  <!--Add provenance element(s) to locations at later dates - same content as origin-->
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -89,7 +98,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -101,6 +111,8 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2015-11-17" who="Scott J. DiGiulio">Wrote transcription from image</change>
          <change when="2016-05-10" who="Scott J. DiGiulio">Fixed writing type</change>
+         <change when="2023-07-14" who="Sasha Floru">Added diplomatic transcription and translation</change>
+         
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -112,46 +124,50 @@
       </surface>
    </facsimile>
    <text>
-      
-        <body>
-        <div type="edition">
-           
-           <!--Diplomatic Transcription-->
-           <ab> 
-              
-              <lb n="1"/> <abbr>OP</abbr> &#183; <abbr>DOL</abbr> &#183; <abbr>EX</abbr> &#183; <abbr>PR</abbr> &#183; <abbr>AVGG</abbr> <abbr>NN</abbr> <abbr>FIG</abbr> &#183; <abbr>OCE</abbr>
-              <lb n="2" break="yes"/> <abbr>AN</abbr> <abbr>MIN</abbr> &#183; <persName><name type="gentilicium" key="Travius">TRA<unclear>V</unclear>IO</name> <name type="cognomen" key="Felix">FELICE</name></persName>.
-              
-           </ab>
-           
-           
-           
+      <body>
+         <div type="edition">
+            
+            <!--Diplomatic transcription goes here, surrounded by <ab> </ab> elements-->
+            
+            <ab>              
+               <lb n="1"/> OP &#183; DOL &#183; EX &#183; PR &#183; AVGG NN FIG &#183; OCE               
+               <lb n="2" break="no"/> AN MIN &#183; <persName><name type="gentilicium" key="Travius">TRA<unclear>V</unclear>IO</name> <name type="cognomen" key="Felix">FELICE</name></persName>.  </ab>
+            
             <ab>
-               <lb n="1"/><expan><abbr>Op</abbr><ex>us</ex></expan> <expan><abbr>dol</abbr><ex>iare</ex></expan> <unclear>e</unclear>x <expan><abbr>pr</abbr><ex>aedis</ex></expan> <expan><abbr>Aug<am>g</am></abbr><ex>ustorum</ex></expan> <expan><abbr>n<am>n</am>ostrorum</abbr></expan> <expan><abbr>fig</abbr><ex>linis</ex></expan> <expan><abbr>Oce
-               <lb n="2" break="no"/>an</abbr><ex>is</ex></expan> <expan><abbr>min</abbr><ex>oribus</ex></expan> <persName><name type="gentilicium" key="Travius">Tra<unclear>v</unclear>io</name> <name type="cognomen" key="Felix">Felice</name></persName>.
+               <lb n="1"/>
+               <expan><abbr>Op</abbr><ex>us</ex></expan>
+               <expan><abbr>dol</abbr><ex>iare</ex></expan>
+               <unclear>e</unclear>x <expan><abbr>pr</abbr><ex>aedis</ex></expan>
+               <expan><abbr>Aug<am>g</am></abbr><ex>ustorum</ex></expan>
+               <expan><abbr>n<am>n</am>ostrorum</abbr></expan>
+               <expan><abbr>fig</abbr><ex>linis</ex></expan>
+               <expan><abbr>Oce
+                  <lb n="2" break="no"/>an</abbr><ex>is</ex></expan>
+               <expan><abbr>min</abbr><ex>oribus</ex></expan>
+               <persName>
+                  <name type="gentilicium" key="Travius">Tra<unclear>v</unclear>io</name>
+                  <name type="cognomen" key="Felix">Felice</name>
+               </persName>.
             </ab>
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <!--The marked up interpretive transcription goes here, surrounded by <ab> </ab> elements-->
          </div>
-        
-        
-                <div type="translation">
-                    <p>Work made of clay from the estate of our Augusti from the Oceane
-               Minore brickyards of Travius Felix. </p>
-                   
-                </div>
+         <div type="translation">
             
-       
-        
-                <div type="commentary">
-                   
-                    <p/>
-                </div>
+            <p>Work made of clay from the estate of our Augusti from the Oceane  Minore brickyards of Travius Felix. </p>
             
-        
-        
-<div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Epigraphybibliography</p> </xi:fallback> </xi:include> </div>
-        </body>
-        
-    
+            <p/>
+         </div>
+         <div type="commentary">
+            <p/>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
    </text>
 </TEI>
