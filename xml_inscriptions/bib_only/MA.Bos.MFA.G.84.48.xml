@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,12 +35,75 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#text_unknown">
+                     <p>fragmentary inscription mentioning Bacchus and Rhodi(on) or Rhodi(kon)</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#stele">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p>fragmentary marble stele</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>19.1</height>
+                              <width>53.4</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragment.single">
+                           <p> broken through the center of the inscription</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="10">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> letters are small and worn which prevents
+                        legibility (MFA web entry)</handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#palaeography" notBefore="-0900" notAfter="-0151">not later
+                        than 150 B.C.</date>
+                     <placeName ref="asia.asia_minor">Assos</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p> gift of the <orgName>Archaeological Institute of America</orgName> to <orgName>MFA</orgName>, <date when="1884">January 15,1884</date></p>
+                  </provenance>
+                  <provenance type="found" subtype="discovered">
+                     <p> From <placeName>Assos </placeName>(Behramkale, Turkey); Byzantine rooms south of the subterranean
+                        passage below the Bouleuterion. <date>1881-2</date>: excavated by the <orgName>Archaeological Institute of America</orgName></p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -52,7 +115,7 @@
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -62,17 +125,49 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-07-18" who="Jean Wanlass">added metadata, transcription</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.84.48.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab><gap extent="unknown" unit="character" reason="illegible"></gap>εξοδ<gap extent="unknown" unit="character" reason="illegible"></gap> <lb/>
+               
+               <gap extent="unknown" unit="character" reason="illegible"></gap><unclear>  γ̣</unclear>αριστω Βάκχω <gap extent="unknown" unit="character" reason="illegible"></gap>  <lb/>  
+               
+               <gap extent="unknown" unit="character" reason="illegible"></gap>ααι ἄμπελοι αἱ ἐν τῷ Ῥοδι <lb/>
+               
+               <supplied reason="undefined"><gap extent="unknown" unit="character" reason="illegible"></gap>κο</supplied>σίων ἄξιαι καὶ ιγαιλ<unclear> </unclear>σεαριαδ <gap extent="unknown" unit="character" reason="illegible"></gap> <lb/>
+               
+                 <gap extent="unknown" unit="character" reason="illegible"></gap> η καὶ πι<unclear>θα</unclear>νὸν <unclear> </unclear>α<unclear> </unclear>ματισμον  <lb/>
+               
+               <gap extent="unknown" unit="character" reason="illegible"></gap> ἄξια σ<unclear>τα</unclear>τήρων ὀγδοήκοντα <lb/>
+               <gap extent="unknown" unit="character" reason="illegible"></gap> τᾶς προσόδ<supplied reason="undefined">ω</supplied> <supplied reason="undefined">τ</supplied>ᾶς <gap extent="unknown" unit="character" reason="illegible"></gap>  <lb/>
+               
+               <gap extent="unknown" unit="character" reason="illegible"></gap>λοισι τὰ δύο μέρη τῷ πατ<unclear>ρ</unclear><supplied reason="undefined">ὶ</supplied> <lb/>
+               
+               ασοισι δὲ καὶ τὸ ε<unclear> </unclear>ρτωνπα<gap extent="unknown" unit="character" reason="illegible"></gap><lb/>
+               
+               <gap extent="unknown" unit="character" reason="illegible"></gap>καταν μάτερα Μεγιστώ <gap extent="unknown" unit="character" reason="illegible"></gap></ab></div>
+         
+         <div type="translation">
+            <p></p></div>
+         
+         <div type="commentary">
+            <p>The fragmentary inscription mentions the name of Bacchus and alludes to vines or vineyards. It also refers to the name Rhodi(on) or Rhodi(kon), which, as scholars have speculated, may be a place name near Assos or a river between Dardanos and Abydos, as described by Strabo (13.595). Others have suggested the island of Rhodes. The document, which may have been a donation or a testament, also speaks of the value of eighty staters; verification: photo, MFA web entry, Assos entry 2023</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
