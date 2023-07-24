@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,12 +35,76 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#dedicatory">
+                     <p>dedication on a votive relief from Atimetos Son of Heraklidos to Apollo</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble votive relief</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>24.3</height>
+                              <width>18.5-20</width>
+                              <depth>5</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="2">
+                           <p>curves to fit arc over figure's head</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>image in relief of a male figure (likely Apollo Sozon) on horseback which
+                           occupies most of the surface below the curved text </p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="0224" notAfter="0251">around A.D.
+                        225–250</date>
+                     <placeName ref="asia.asia_minor">western Asia Minor, probablyPhrygia, Pisidia
+                        or the nearby region of Caria (MFA web entry)</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p> gift to <orgName>MFA</orgName> from <persName>Mathias Komor</persName>, <date when="1969">November 19, 1969</date></p>
+                  </provenance>
+                  <provenance type="observed" subtype="reported">
+                     <p> By date unknown: with <persName>Mathias Komor</persName>, 19 East 71st Street, New York, N.Y.
+                        10021</p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -51,12 +115,17 @@
                   <ptr type="rest-of-bibl" target="#SEG_28"/>
                   <biblScope unit="item">no. 1570</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/155307/votive-relief-to-apollo-sozon?ctx=82f9ec69-0e55-4397-8356-e8ebb8711510&amp;idx=0"
+                     >MFA web entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -66,22 +135,30 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-07-07" who="Jean Wanlass">added metadata, transcription,
+            translation</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.69.1255.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
-         <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
-               <xi:fallback>
-                  <p>US Epigraphybibliography</p>
-               </xi:fallback>
-            </xi:include>
-         </div>
+            <ab>Ατιμετος Ηρακλιδου <lb/> Απολλωνι ευχην </ab></div>
+         
+         <div type="translation">
+            <p>Atimetos Son of Heraklidos paid his vow (dedicated this) to Apollo</p></div>
+         
+         <div type="commentary">
+            <p>verification: photo and MFA web entry, 2023</p></div>
       </body>
    </text>
 </TEI>
