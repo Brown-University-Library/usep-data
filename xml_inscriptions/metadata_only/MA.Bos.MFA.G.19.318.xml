@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,15 +35,15 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#label">
+                     <p>inscription identifying the heroized deceased</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#slab">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble relief slab of hero at a feast</p>
+                           <p>marble relief </p>
                            <dimensions type="surface" unit="cm">
                               <height>13.5</height>
                               <width>9</width>
@@ -65,7 +65,22 @@
                      <handNote ana="#inscribed"/>
                   </handDesc>
                </physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0400" notAfter="-0300">fourth century
+                        B.C.</date>
+                     <placeName ref="europe.greece.athens">Athens</placeName>
+                  </origin>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -85,7 +100,7 @@
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -96,17 +111,33 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2023-07-13" who="Jean Wanlass">added metadata</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.19.318"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>Transcription goes here</ab></div>
+         
+         <div type="translation">
+            <p></p></div>
+         
+         <div type="commentary">
+            <p>Harvard Lab No. HI729: Isotope ratios - delta13C +2.27 / delta18O -2.67, Attribution
+               - Paros 2, Justification - grayish, fine to medium grained marble.</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
