@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,12 +35,83 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#dedicatory">
+                     <p>dedication from Mantiklos to Apollo </p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#sculpture">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p> bronze votive statue</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>20.3</height>
+                              <width/>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p>running up and down the figure's thighs</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> archaic Boeotian characters</handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#archaeology" notBefore="-0701" notAfter="-0674">about 700–675
+                        B.C.</date>
+                     <placeName ref="europe.greece.boiotia">Thebes</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p> purchased by <orgName>MFA</orgName> from <persName>Edward Perry Warren</persName>, <date when="1903">March 1903</date></p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> by <date when="1903">1903</date>: with <persName>Edward Perry Warren</persName></p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p> <date when="1898">1898</date>: auction of the <persName>M. Tyszkiewicz</persName>Collection, Hotel des Commissaires-Priseurs, 9 rue Drouot, <placeName>Paris</placeName>, <date>June 8-10</date>, lot 133 (trouvée à Thèbes)</p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> by <date when="1897">1897</date>: in <persName>Count Michel Tyszkiewicz</persName>Collection</p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> According to <persName>W. Fröhner</persName>, La Collection Tyszkiewicz (1897), p. 40: found in
+                        <placeName>Thebes</placeName> and sent to <persName>M. Hoffmann</persName> toward the end of <date when="1894">1894</date></p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -51,12 +122,17 @@
                   <ptr type="rest-of-bibl" target="#LSAG"/>
                   <biblScope unit="item">94, no. 1</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/152660/mantiklos-apollo?ctx=f793a1e4-8834-4625-9d08-7494e81f8367&amp;idx=0"
+                     >MFA web entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -66,17 +142,37 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-07-18" who="Jean Wanlass">added metadata, transcription,
+            translation</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.03.997"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>ΜΑΝΤΙΚΛΟΣΜΑΝΕΘΕΚΕFΕΚΑΒΟΛΟΙΑΡΓΥΡΟΤΟΧΣΟΙΤΑΣΔΕΚΑΤΑΣΤΥΔΕΦΟΙΒΕΔΙΔΟΙΧΑΡ</ab></div>
+         
+         <div type="translation">
+            <p>Mantiklos donated me as a tithe to the far shooter, the bearer of the Silver Bow.
+               You, Phoebus (Apollo) give something pleasing in return</p></div>
+         
+         <div type="commentary">
+            <p>There are marks of attachment on the top of the head and a hole for attachment in the
+               forehead. The hole in the left hand has been identified as support for a bow. It has
+               been suggested also that the figure was a warrior, wearing a helmet and carrying a
+               spear in the left hand and a shield on the right arm (MFA web entry)</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
