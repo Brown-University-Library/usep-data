@@ -56,7 +56,7 @@
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                   <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                     <p>Restored cup with potter's signature</p>
+                     <p>restored cup with potter's signature</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
@@ -110,10 +110,17 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                            <!-- original place and dating of inscription -->
-                     <date evidence="unspecified" notBefore="-0500" notAfter="-0460">ca. 480-470 BCE</date>
+                     <!-- original place and dating of inscription -->
+                     <date evidence="#prosopography" notBefore="-0500" notAfter="-0460">ca. 480
+                        BCE</date>
                      <placeName ref="europe.greece.attica">Greece, Attica</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p>Distributed by <persName role="donor">Walter Bareiss</persName> and <persName role="donor">Molly Bareiss</persName> to the <orgName role="recipient">Walter Bareiss Children Usufruct</orgName> in <date when="1983">1983</date>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p>Sold by the <orgName role="seller">Walter Bareiss Children Usufruct</orgName> to the <orgName role="buyer">J. Paul Getty Museum</orgName> in <date when="1986">1986</date>.</p>
+                  </provenance>
                </history>
             </msDesc>
             <!--  *************************************  <listBibl>  *********************************  -->
@@ -164,6 +171,7 @@
       <revisionDesc>
          <change when="2016-02-09" who="Scott J. DiGiulio">Initial Encoding</change>
          <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImageAvailable.jpg placeholder</change>
+         <change when="2023-07-25" who="Advaith Rege">Added provenance, transcription from Getty Museum web entry, translation, basis of verification, and dating criteria. Updated date</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -177,25 +185,30 @@
    <text>
       <body>
          <div type="edition"><!-- transcription goes here -->
+            <div type="textpart" subtype="α">
+               <ab>
+                  <lb n="1"/>ΛΣΙΟΕΤΛ.
+               </ab>
+            </div>
+            <div type="textpart" subtype="b">
+               <ab>
+                  <lb n="2"/>ΣΙΛ<gap reason="lost" extent="unknown" unit="character"/>.
+               </ab>
+            </div>
             <div type="textpart" subtype="handle">
                <ab>
-                  <lb n="1"/>
+                  <lb n="3"/>
                   <persName>
                      <name key="Brygos Βρύγος">Βρύγος</name>
                   </persName> ἐποίεσεν.
                     </ab>
             </div>
-            <div type="textpart" subtype="body">
-               <ab>
-                  <lb n="2"/>Γ<hi rend="reversed">Σ</hi>ΙΟΕΤΓ.
-                    </ab>
-            </div>
          </div>
          <div type="translation">
-            <p/>
+            <p>(handle) Brygos made (this).</p>
          </div>
          <div type="commentary"><!-- notes go here -->
-            <p/>
+            <p>Basis of verification: previous edition and photo</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
