@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,24 +35,95 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#dedicatory">
+                     <p>inscription dedicating a votive offering</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#sculpture">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p> bronze votive statue of a bull</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>6.5</height>
+                              <width>8.7</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>tail and possibly ends of the horns are missing, worn down and corroded. (MFA web entry)</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="2">
+                           <p>the inscription on the right side runs from the tail to the head, and
+                              on the left side it runs from the shoulder to the tail (MFA web
+                              entry)</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0451" notAfter="-0449">about 450
+                        B.C.</date>
+                     <placeName ref="europe.greece.boiotia">Thebes</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p> gift of <persName role="donor">Dr. Elie Borowski</persName> to <orgName role="recipient">MFA</orgName>, <date when="1967">June 28, 1967</date></p>
+                  </provenance>
+                  <provenance type="found" subtype="first-recorded">
+                     <p> said to come from the Kabeirion, <placeName>Thebes</placeName></p>
+                  </provenance>
+                  <provenance type="observed" subtype="reported">
+                     <p> By date unknown: with <persName role="owner">Dr. Elie Borowski</persName>, Angensteinerstrasse 7, <placeName>Basel, Switzerland</placeName></p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CVB"/>
                   <biblScope unit="item">no. 58</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/152698/votive-bull?ctx=b335d544-0c0d-4a47-a166-2d1a8b03d3b5&amp;idx=0"
+                     >MFA web entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -62,17 +133,39 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change who="Jean Wanlass" when="2023-07-12">added metadata, transcription</change>
+         <change who="Jean Wanlass" when="2023-07-25">minor corrections</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.67.743.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.67.743.det.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>
+               <lb n="1"/>ΗΙRΟΣΤΟΡΑΔΑΟΙΣ 
+               <lb n="2"/> ΟΝΙΠΠΟ</ab></div>
+         
+         <div type="translation">
+            <p></p></div>
+         
+         <div type="commentary">
+            <p>verification: photo and MFA web entry; 2023</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
