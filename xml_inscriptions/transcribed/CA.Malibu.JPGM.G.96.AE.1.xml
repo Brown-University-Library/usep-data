@@ -56,7 +56,7 @@
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                   <msItem class="#label">
                         <!-- short summary of the content of an inscription -->
-                     <p>Vase depicting Odysseus and Diomedes killing Rhesus</p>
+                     <p>vase depicting Odysseus and Diomedes killing Rhesus</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
@@ -111,10 +111,14 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                        <!-- original place and dating of inscription -->
-                     <date evidence="unspecified" notBefore="-0540" notAfter="-0520">ca. 530 BCE</date>
-                     <placeName ref="europe.greece">Chalkis, Greece</placeName>
+                     <!-- original place and dating of inscription -->
+                     <date evidence="#archaeology" notBefore="-0550" notAfter="-0530">ca. 540
+                        BCE</date>
+                     <placeName ref="europe.italy">Rhegion, Italy</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="sold">
+                     <p>Sold by <orgName role="seller">Robin Symes, Limited</orgName> to the <orgName role="buyer">J. Paul Getty Museum</orgName> in <date when="1996">1996</date>.</p>
+                  </provenance>
                </history>
             </msDesc>
             <!--  *************************************  <listBibl>  *********************************  -->
@@ -150,14 +154,19 @@
          <change when="2016-02-03" who="Scott J. DiGiulio">Initial Encoding</change>
          <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImageAvailable.jpg placeholder</change>
          <change when="2021-02-23" who="Elli Mylonas">Change instrumentum.container.amphora to instrumentum.amphora</change>
+         <change when="2023-08-01" who="Advaith Rege">Added provenance, translation, basis of verification, dating criteria, and images. Updated date and place name</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
    <!-- Used to record images of an inscription.   -->
    <facsimile>
       <surface>
-         <desc/>
-         <graphic url=""/>
+         <desc>side A of amphora</desc>
+         <graphic url="CA.Malibu.JPGM.G.96.AE.1-sideA.jpg"/>
+      </surface>
+      <surface>
+         <desc>side B of amphora</desc>
+         <graphic url="CA.Malibu.JPGM.G.96.AE.1-sideB.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -173,16 +182,18 @@
                   <persName>
                      <name key="Rhesus Ρῆσος">Ἐρε͂σος</name>
                   </persName>.</hi>
+               <lb n="2"/>
                <persName>
                   <name key="Odysseus Ὀδυσσεύς">Ὀδυσεύς</name>
                </persName>.
                 </ab>
          </div>
          <div type="translation">
-            <p/>
+            <p>(side A) Diomedes. Rhesus.</p>
+            <p>(side B) Odysseus.</p>
          </div>
          <div type="commentary"><!-- notes go here -->
-            <p/>
+            <p>Basis of verification: previous edition and photo</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
