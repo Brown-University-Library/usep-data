@@ -31,14 +31,14 @@
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
-                     <p>Epitaph of Alfenius Venerius</p>
+                     <p>epitaph of Alfenius Venerius</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#sarcophagus">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Panel of a reused marble sarcophagus</p>
+                           <p>panel of a reused marble sarcophagus</p>
                            <dimensions type="surface" unit="cm">
                               <height/>
                               <width>200</width>
@@ -61,7 +61,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote>
-                        <p>no photo</p>
+                        <p>four Erotes and two heads (Alfenius Venerius and Cassia Ermione?)</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -71,10 +71,14 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="0300" notAfter="0400">fourth century CE (text)</date>
+                     <date evidence="#formulae" notBefore="0100" notAfter="0200">2nd century
+                        CE</date>
                      <placeName ref="unknown"/>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
+                  <provenance type="transferred" subtype="donated">
+                     <p>Donated by <persName role="donor">Gordon McLendon</persName> to the <orgName role="recipient">J. Paul Getty Museum</orgName> in <date when="1977">1977</date>.</p>
+                  </provenance>
                </history>
             </msDesc>
             <listBibl>
@@ -112,19 +116,65 @@
          <change when="2016-01-28" who="Scott J. DiGiulio">Updated missing control vocab and available metadata, fixed line/column values, added link to JPGM website</change>
          <change when="2020-10-22" who="Scott J. DiGiulio">Removed the empty @ana on decoNote</change>
          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2023-08-04" who="Advaith Rege">Added provenance, transcription, translation, basis of verification, decoration description, dating criteria, and image. Updated date</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="CA.Malibu.JPGM.L.77.AA.66.jpg"/>
+      </surface>
+   </facsimile>
    <text>
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <div type="textpart" subtype="section" n="tablet">
+               <ab>
+                  <lb n="1"/>
+                     <expan><abbr>D</abbr><ex>is</ex></expan>
+                     <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                  <lb n="2"/>
+                  <persName>
+                     <name type="gentilicium" key="Alfenius">Alfenius</name>
+                     <name type="cognomen" key="Venerius">Ve
+                  <lb n="3" break="no"/>nerius</name></persName> hic <supplied reason="lost">es</supplied>t
+                  <lb n="4"/>
+                     <supplied reason="lost" cert="low">iacet</supplied>,
+                     <supplied reason="lost" cert="low">coniux</supplied>
+                     <gap reason="lost" extent="unknown" unit="character"/> vixit
+                  <lb n="5"/>annos 
+                     <num value="46">XLVI</num>,
+                     <expan><abbr>m</abbr><ex>enses</ex></expan>
+                     <num value="9">VIIII</num>.
+               </ab>
+            </div>
+            <div type="textpart" subtype="section" n="ansae">
+               <ab>
+                  <lb n="1"/>Sicut meru.
+                  <lb n="2"/>It fecit.
+               </ab>
+            </div>
+            <div type="textpart" subtype="section" n="lower border">
+               <ab>
+                  <lb n="1"/>
+                  <supplied reason="lost">S</supplied>uper cuius fuit mortem
+                  <persName>
+                     <name type="gentilicium" key="Cassia">Cassia</name>
+                     <name type="cognomen" key="Ermione">Ermione</name>
+                  </persName> coniux huius.
+               </ab>
+            </div>
          </div>
          <div type="translation">
-            <p/>
+            <p>(tablet) To the soul of the deceased. Alfenius Venerius is lying [?] here,... spouse [?]...; he lived 46 years and 9 months.</p>
+            <p>(ansa) As he deserved it. He has made it.</p>
+            <p>(lower border) After his death was Cassia Ermione, his wife.</p>
          </div>
          <div type="commentary">
-            <p/>
+            <p>Translation based on Getty Museum web entry</p>
+            <p>Basis of verification: previous edition and photo</p>
          </div>
          <div type="apparatus">
             <p/>
