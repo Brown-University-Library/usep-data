@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,24 +35,91 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#honorific">
+                     <p>decree from an unknown city honoring the city of Assos</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble slab</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>45.8 </height>
+                              <width>61</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#broken">
+                           <p>much defaced; top broken off; mended, in two pieces (MFA web
+                              entry)</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="32">
+                           <p>Assos counts 'μια' as line 0</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0105" notAfter="-0095">about 100
+                        BC</date>
+                     <placeName ref="asia.asia_minor">Assos</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p> gift of the <orgName role="donor">Archaeological Institute of America</orgName> to <orgName role="recipient">MFA</orgName>, <date when="1884">January 15, 1884</date></p>
+                  </provenance>
+                  <provenance type="found" subtype="discovered">
+                     <p>  found <date when="1881">September 5 and 6, 1881</date>, at the eastern end of Stoa plateau excavated by the <orgName>Archaeological Institute of America</orgName></p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Assos"/>
                   <biblScope unit="item">7</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/199438/honorary-decree-of-an-unknown-city-to-the-people-of-assos-fo?ctx=12e283a4-b2f2-4fb0-bede-d4819ba0a017&amp;idx=0"
+                     >MFA web entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -62,17 +129,122 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-07-13" who="Jean Wanlass">added metadata, transcription,
+            translation</change>
+         <change when="2023-08-08" who="Jean Wanlass">minor corrective edits</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.84.51.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>
+               <lb n="0"/><gap extent="undefined" unit="character" reason="lost"/>μια<gap
+                  extent="undefined" unit="character" reason="lost"/>
+               <lb n="1"/>
+               <gap extent="undefined" unit="character" reason="lost"/>
+               <lb n="2"/>
+               <supplied reason="undefined">ὅπως οὖν ὁ</supplied> δῆμος φαίνηται τὰς κα<supplied
+                  reason="undefined">ταξίας</supplied>
+               <lb n="3"/>
+               <supplied reason="undefined">ἀποδιδοὺς χάριτας</supplied> τοῖς καλοῖς καὶ ἀγαθοῖς τῶν
+               ἀνδρῶν, <lb n="4"/>
+               <supplied reason="undefined">καὶ μετὰ ταῦτα</supplied> παραγίνωνται ἄνδρες ἄξιοι τοῦ
+               δήμου εἰδ<supplied reason="undefined">ό</supplied>
+               <lb n="5" break="no"/>
+               <supplied reason="undefined">τες τὴν ὑ</supplied>πάρχουσαν εὐχαριστίαν, δεδόχθαι τῆι
+                  βουλῆ<unclear>ι̣</unclear>
+               <lb n="6"/>
+               <supplied reason="undefined">καὶ τῶι</supplied> δήμωι· ἐπῃνῆσθαι τὸν δῆμον τὸν Ἀσσίων
+               ἐπὶ τ<supplied reason="undefined">ῆι</supplied>
+               <lb n="7"/>
+               <supplied reason="undefined">αἱρέσ</supplied>ει <supplied reason="undefined"
+                  >ἧι</supplied> ἔχει πρὸς ἡμᾶς, καὶ στεφανοῦσθαι αὐτὸν ἐν τοῖς <lb n="8"/>
+               <supplied reason="undefined">πρώ</supplied>τοις Διονυσίοις αὐλητῶν τῆι πρώτηι ἡμέραι
+               χρυσῶι στε <lb n="9" break="no"/>
+               <supplied reason="undefined">φ</supplied>άνωι ἐπὶ τῷ ἀποστεῖλαι δικαστὰς καλοὺς
+               κἀγαθοὺς κα<supplied reason="undefined">ὶ</supplied>
+               <lb n="10"/>
+               <supplied reason="undefined">γ</supplied>ραμματέα· ἐπῃνῆσθαι δὲ καὶ τοὺς δικαστὰς
+               τοὺς πα <lb n="11" break="no"/> ραγενομένους Ἐχέλαον Ἀθηναγόρου, Λάτιμον Κλεομόρ <lb
+                  n="12" break="no"/>
+               <supplied reason="undefined">τ</supplied>ου, καὶ στεφανῶσαι ἑκάτερον αὐτῶν χρυσῶι
+                  στεφάνω<unclear>ι</unclear> ἐπ<supplied reason="undefined">ὶ</supplied>
+               <lb n="13"/>
+               <supplied reason="undefined">τῶ</supplied>ι τὰς μὲν διαδικάσαι τῶν δικῶν
+                  ἴσ<unclear>ως</unclear> καὶ δικαίως, τὰς <lb n="14"/>
+               <supplied reason="undefined">δὲ διαλ</supplied>ῦσαι ἀπὸ παντὸς τοῦ βελτίστου·
+               ὑπάρχειν δὲ αὐτο<supplied reason="undefined">ῖς</supplied>
+               <lb n="15"/>
+               <supplied reason="undefined">ἔφοδον ἐπὶ τὴ</supplied>μ βουλὴν καὶ τὸν δῆιμον πρώτοις
+               μετὰ τὰ ἱε <lb n="16" break="no"/> ρά· ὑπάρχειν δ’ <supplied reason="undefined"
+                  >αὐτ</supplied>ο<supplied reason="undefined">ὺς</supplied> καὶ προξένους τῆς
+               πόλεως ἡμών· στε <lb n="17" break="no"/> φανωῖσαι δὲ <supplied reason="undefined"
+                  >κ</supplied>αὶ τὸγ γρ<supplied reason="undefined">αμμα</supplied>τέα Μέλαγχρον
+               Μελάνγχρου θαλε <lb n="18" break="no"/> ρῶι στεφάνωι ἐπὶ τῶι παρασχ<supplied
+                  reason="undefined">έ</supplied>σθαι τὴν καθ’ αὑτὸν χρείαν μετὰ <lb n="19"/> πάσης
+               φιλοτιμίας· τῆς τε ἀναγγ<supplied reason="undefined">ε</supplied>λίας τῶν στεφάνων
+               τὴν ἐπ<supplied reason="undefined">ι</supplied>
+               <lb n="20" break="no"/>
+               <supplied reason="undefined">μέλειαν</supplied> ποήσασθαι τοὺς ἀγωνοθέτας τοῦ
+               μουσικοῦ· ἵνα δὲ κα<supplied reason="undefined">ὶ</supplied>
+               <lb n="21"/> Ἄσσιοι εἰδήσωσιν τήν τε τῶν ἀνδρ<supplied reason="undefined"
+                  >ῶν</supplied> καλοκἀγαθίαν καὶ τὴν <lb n="22" break="no"/> τοῦ δήμου εὐχαριστίαν,
+               αἱρεθῆναι πρεσβευτὰς οἵτινες ἀφικό <lb n="23" break="no"/> μενοι πρὸς αὐτοὺς
+                  ἐπελθ<supplied reason="undefined">όντ</supplied>ες ἐπὶ τὴν <supplied
+                  reason="undefined">β</supplied>ουλὴγ καὶ τὸν δῆ <lb n="24" break="no"/> μον τό τε
+               ψήφισμα ἀποδώσουσιν αὐτοῖς κα<supplied reason="undefined">ὶ
+                  ἐ</supplied><unclear>μ</unclear>φανιοῦσι τὴ<supplied reason="undefined"
+                  >ν</supplied>
+               <lb n="25"/> τε τῶν ἀνδρῶν καλοκἀγαθίαν καὶ τὴν εὔνοιαν <supplied reason="undefined"
+                  >ἣ</supplied>ν ἔχομεν <lb n="26"/> πρὸς τὸν δῆμον αὐτῶν, καὶ παρακαλέσουσιν
+               Ἀσσίους καὶ πα <lb n="27" break="no"/> ρ’ αὐτοῖς ποήσασθαι τὴν ἀναγγελίαν τῶν
+                  σ<supplied reason="undefined">τ]εφά</supplied>
+               <lb n="28"/> νων ὑπὸ τοῦ κατασταθησομένου ἀγωνοθέτου <supplied reason="undefined"
+                  >τ</supplied>οῦ <lb n="29"/> μουσικοῦ ἀγῶνος· προνοῆσαι δὲ ἵνα καὶ τὸ ψήφισμα
+                  ἀνα<supplied reason="undefined">γρα</supplied>
+               <lb n="30" break="no"/> φῆι εἰστήλην λιθίνην καὶ ἀνατεθῇ παρ’ αὐτοῖς ἐν τῶι ἐ <lb
+                  n="31" break="no"/> πιφανεστάτωι τόπωι· πρεσβευταὶ ᾑρέθησαν Κλεομή <lb n="32"
+                  break="no"/> δης Ἡγησαγόρου, Ἀναξαγόρας Διονυσίου.
+            </ab></div>
+         
+         <div type="translation">
+            <p>...in order that the people show the proper respect to the good and virtuous men, so
+               that afterwards men also come forward who are worthy and know the present gratitude
+               of the people, the council and demos decided that: the people of Assos should be
+               praised for their conduct toward us, and be rewarded a golden wreath in the upcoming
+               Dionysiac games on the first day of the fluteplayers for sending honorable and good
+               judges and a scribe; the attending judges, Echelaos, son of Athenagoras, and Latimos,
+               son of Cleomortos, should also be praised, and each of them should be adorned with a
+               golden wreath for their equal and just judgement of the trials, and for resolving
+               them in the best possible way; they should have access to the council and people, in
+               the first position after the sacred rites; they also should be public guests of our
+               city; the scribe Melanchros, son of Melanchros, should be honored with a fresh wreath
+               for performing his job with great zeal; the judges of the musical contest should take
+               care to announce the wreaths; in order that the Assians also may learn the noble
+               character of the men and the gratitude of the people, envoys should be chosen who
+               come to them and appear for the council and the people, and they will present to them
+               the decree and make known the noble character of the men and the goodwill which we
+               have toward their people, and they will invite the Assians to have the announcement
+               of the wreaths also made among them by the appointed judge of the musical contest;
+               they should make provisions that the decree be written on a stone monument and be set
+               up in the most conspicuous place. Cleomedes, son of Hegesagoros and Anaxagoras, son
+               of Dionysios were chosen as envoys.</p></div>
+         
+         <div type="commentary">
+            <p>verification: photo, MFA web entry, Assos entry, 2023</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
