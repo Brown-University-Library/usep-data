@@ -4,7 +4,7 @@
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>CA.Malibu.JPGM.L.73.AC.39</title>
+            <title>CA.Malibu.JPGM.L.80.AI.15.1bis (?)</title>
             <author>Author</author>
             <respStmt>
                <resp>Translation</resp>
@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="CA.Malibu.JPGM.L.73.AC.39">CA.Malibu.JPGM.L.73.AC.39</idno>
+            <idno type="USEpigraphy" xml:id="CA.Malibu.JPGM.L.80.AI.15.1bis">CA.Malibu.JPGM.L.80.AI.15.1bis (?)</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -26,38 +26,39 @@
                   <settlement>Malibu</settlement>
                   <institution>JPGM</institution>
                   <repository/>
-                  <idno>73.AC.39</idno>
+                  <idno>80.AI.15.1bis (?)</idno>
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
-                  <msItem class="#legal">
-                     <p>Military diploma of an auxiliary soldier, Dassius, in the Syrian army</p>
+                  <msItem>
+                     <p>stamp of Met() Modes(tus)</p>
                   </msItem>
                </msContents>
                <physDesc>
-                  <objectDesc ana="#tablet">
-                     <supportDesc ana="#metal.bronze">
+                  <objectDesc ana="#object_other">
+                     <supportDesc ana="#metal.lead">
                         <support>
-                           <p>Bronze diploma with two panels</p>
+                           <p>fragment of a lead fistula</p>
                            <dimensions type="surface" unit="cm">
                               <height/>
-                              <width/>
+                              <width>33</width>
                               <depth/>
+                              <dim type="diameter" min="4" max="6">4-6</dim>
                            </dimensions>
                         </support>
-                        <condition>
-                           <p><!--free text here, don't forget the ana attribute on the condition element--></p>
+                        <condition ana="#fragment.single">
+                           <p>broken along left</p>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="000" writtenLines="000">
+                        <layout columns="1" writtenLines="1">
                               <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                            <p/>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
-                  <handDesc>
-                     <handNote/>
+                  <handDesc hands="1">
+                     <handNote ana="#molded"/>
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -71,20 +72,27 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="0088" notAfter="0088">November 7, 88 CE</date>
-                     <placeName ref="unknown"/>
+                     <date evidence="unspecified" notBefore="0075" notAfter="0125">late first century-early second century CE ?</date>
+                     <placeName ref="unknown">unknown (possibly Rome or Ostia?)</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
+                  <provenance type="transferred" subtype="donated">
+                     <p>Donated by <persName role="donor">David Swingler</persName> to the <orgName role="recipient">J. Paul Getty Museum</orgName> in <date when="1980">1980</date>.</p>
+                  </provenance>
                </history>
             </msDesc>
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#GettyMusJ_Mellor"/>
-                  <biblScope unit="item">173-84</biblScope>
+                  <ptr type="rest-of-bibl" target="#GettyMusJ_RodriguezAlmeida"/>
+                  <biblScope unit="item">191-93, no. 6, fig. 6</biblScope>
                </bibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#Roxan"/>
-                  <biblScope unit="item">no. 3</biblScope>
+                  <ref type="external"
+                        target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR148957">EDR148957</ref>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                        target="http://www.getty.edu/art/collection/objects/15208/unknown-maker-pipe-fragment-roman-late-1st-early-2nd-century/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -101,7 +109,9 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
+         <change when="2016-01-26" who="Scott J. DiGiulio">Updated metadata fields and control vocab, fixed line/column values, added Getty Museum link</change>
          <change when="2020-10-22" who="Scott J. DiGiulio">Removed the empty @ana on decoNote</change>
+         <change when="2023-08-08" who="Advaith Rege">Added provenance, transcription, and basis of verification. Updated date</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
@@ -109,12 +119,18 @@
       <body>
          <div type="edition">
          <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/>
+               <gap reason="lost" extent="unknown" unit="character"/>m
+               <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ul</ex></expan> Met<supplied reason="lost" cert="low">ius</supplied> Modes<supplied reason="lost" cert="low">tus</supplied>.
+            </ab>
          </div>
          <div type="translation">
             <p/>
          </div>
          <div type="commentary">
-            <p/>
+            <p>Could be Metius or Metilius (Getty)</p>
+            <p>Basis of verification: previous edition and photo</p>
          </div>
          <div type="apparatus">
             <p/>
