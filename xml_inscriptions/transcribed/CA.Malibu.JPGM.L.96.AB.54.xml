@@ -31,14 +31,14 @@
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#dedicatory.ex-voto">
-                     <p>Ex-voto dedication by L. Maccius Aeternus to the god Cobannus</p>
+                     <p>ex-voto dedication by L. Maccius Aeternus to the god Cobannus</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#statue">
                      <supportDesc ana="#metal.bronze">
                         <support>
-                           <p>Bronze tablet</p>
+                           <p>bronze tablet</p>
                            <dimensions type="surface" unit="cm">
                               <height>76</height>
                               <width/>
@@ -61,7 +61,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote>
-                        <p>no photo</p>
+                        <p>youth wearing northern Roman provincial clothing; originally holding a spear</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -71,10 +71,19 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="0125" notAfter="0175">mid second century CE</date>
+                     <date evidence="unspecified" notBefore="0125" notAfter="0175">125-175 CE</date>
                      <placeName ref="europe.france">France</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
+                  <provenance type="found" subtype="discovered">
+                     <p>Found near <placeName>Besancon, France</placeName></p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p>Sold by <persName role="seller">Jean-Luc Chalmin</persName> to <persName role="buyer">Barbara Fleischman</persName> and <persName role="buyer">Lawrence Fleischman</persName> in <date when="1989">1989</date>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p>Sold by <persName role="seller">Barbara Fleischman</persName> and <persName role="seller">Lawrence Fleischman</persName> to the <orgName role="buyer">J. Paul Getty Museum</orgName> in <date when="1996">1996</date>.</p>
+                  </provenance>
                </history>
             </msDesc>
             <listBibl>
@@ -123,9 +132,18 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-25" who="Scott J. DiGiulio">Added missing control vocab, fixed line/column values, updated dimension metadata from folder, added link to JPGM website, added transcription from image there </change>
          <change when="2020-10-22" who="Scott J. DiGiulio">Removed the empty @ana on decoNote</change>
+         <change when="2023-08-10" who="Advaith Rege">Added provenance, translation, basis of verification, decoration description, image. Updated date</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
+   <facsimile>
+      <surface>
+         <!--Caption in desc element-->
+         <desc/>
+         <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
+         <graphic url="CA.Malibu.JPGM.L.96.AB.54.jpg"/>
+      </surface>
+   </facsimile>
    <text>
       <body>
          <div type="edition">
@@ -145,10 +163,11 @@
             </ab>
          </div>
          <div type="translation">
-            <p/>
+            <p>Sacred to the venerable god Cobannus, Lucius Maccius Aeternus, duumvir (dedicated this) in accordance with a vow.</p>
          </div>
          <div type="commentary">
-            <p/>
+            <p>Translation from Getty Museum web entry</p>
+            <p>Basis of verification: previous edition and photo</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
