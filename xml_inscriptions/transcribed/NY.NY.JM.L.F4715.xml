@@ -15,7 +15,7 @@ changes: correct handling of provenance information
         <fileDesc>
             
             <titleStmt>
-                <title>NY.NY.JM.G.1982-20</title>
+                <title>NY.NY.JM.L.F4715</title>
                 <author>Author</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -28,7 +28,7 @@ changes: correct handling of provenance information
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.JM.G.1982-20">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.JM.L.F4715">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -39,16 +39,16 @@ changes: correct handling of provenance information
                         <settlement>NY</settlement>
                         <institution>JM</institution>
                         <repository></repository>
-                        <idno>1982-20</idno>
+                        <idno>F4715</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
+                        <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_other">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>stamp of priest and month</p>
+                            <p>epitaph of Aurelia Quintilla</p>
                         </msItem>
                     </msContents>
 
@@ -57,23 +57,23 @@ changes: correct handling of provenance information
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.amphora">
-                            <supportDesc ana="#clay.other">
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> stamped clay jar handle</p>
+                                    <p> marble slab</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>11.1</height>
-                                        <width>11.1</width>
-                                        <depth>6.4</depth>
+                                        <height>28.2</height>
+                                        <width>28.2</width>
+                                        <depth>2.5</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#broken">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="3">
+                                <layout columns="1" writtenLines="5">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -82,13 +82,13 @@ changes: correct handling of provenance information
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#stamped"> stamped on handle</handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>etrog and lulav at bottom</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -102,16 +102,17 @@ changes: correct handling of provenance information
                         </summary>
 
                         <origin>
-                            <date evidence="#prosopography" notBefore="-0220" notAfter="-0180">c.
-                                220-180 BCE</date>
-                            <placeName ref="europe.greece">Rhodes, Greece</placeName>
+                            <date evidence="#unspecified" notBefore="0201" notAfter="0400"
+                                >third-fourth century CE</date>
+                            <placeName ref="europe.italy.rome">Rome, Italy</placeName>
                         </origin>
                         <provenance type="observed" subtype="recorded">
-                            <p>Owned by <persName>Betty Ratner</persName> and <persName>Max Ratner</persName> before <date when="1982">1982</date>.</p>
+                            <p>Owned by <persName>Dr. Harry G. Friedman</persName> before <date when="1982">1982</date></p>
                         </provenance>
                         <provenance type="observed" subtype="recorded">
                             <p>Exhibited by the <orgName>Jewish Museum</orgName> in <date when="1982">1982</date>.</p>
                         </provenance>
+
 
                     </history>
                 </msDesc>
@@ -119,7 +120,7 @@ changes: correct handling of provenance information
                 <listBibl>
                     <bibl>
                         <ref type="external"
-                            target="https://thejewishmuseum.org/collection/697-stamped-jar-handle/">Jewish Museum web entry</ref>
+                            target="https://thejewishmuseum.org/collection/10202-burial-plaque/">Jewish Museum web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -145,7 +146,7 @@ changes: correct handling of provenance information
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2023-08-14" who="Advaith Rege">Initial Encoding</change>
+            <change when="2023-08-15" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -156,7 +157,7 @@ changes: correct handling of provenance information
     <facsimile>
         <surface>
             <desc>An image is available from the Museum upon request.</desc>
-            <graphic url="NY.NY.JM.G.1982-20.jpg"/>
+            <graphic url="NY.NY.JM.L.F4715.jpg"/>
         </surface>
     </facsimile>
 
@@ -165,22 +166,30 @@ changes: correct handling of provenance information
             <div type="edition">
                 <ab>
                     <lb n="1"/>
-                    <supplied reason="lost" cert="low">ἐπὶ</supplied>
                     <persName>
-                    <name key="Ainesidamos"><supplied reason="lost">Αἰ</supplied>νησι
-                    <lb n="2" break="no"/>δἀμου</name></persName>
-                    <lb n="3"/>
-                        <date>Πανἀμου.</date>
+                        <name type="gentilicium" key="Aurelia">Aurelia</name>
+                        <name type="cognomen" key="Protogenia">Protoge
+                    <lb n="2" break="no"/>nia</name></persName>
+                    <persName>
+                        <name type="gentilicium" key="Aurelia"><expan><abbr>Aur</abbr><ex>eliae</ex></expan></name>
+                        <name type="cognomen" key="Quintilla">Quintille</name>
+                    </persName>
+                    <lb n="3"/>matri karissime,
+                    <lb n="4"/>que vixit annis
+                    <num value="60">LX</num>
+                    <lb n="5"/>
+                    <expan><abbr>m</abbr><ex>ensibus</ex></expan>
+                    <num value="5">V</num>,
+                    <expan><abbr>b</abbr><ex>ene</ex></expan>
+                    <expan><abbr>m</abbr><ex>erenti</ex></expan> posuit.
                 </ab>
             </div>
+            
             <div type="translation">
-            <p>In the time of Ainesidamos (in) Panamos.</p></div>
+            <p>Aurelia Protogenia placed (this) for Aurelia Quintilla, her dearest mother, who lived 60 years (and) 5 months, well-deserving.</p></div>
 
             <div type="commentary">
-                <p>Transcription based on IG XII, 1 1071</p>
-                <p>
-                Basis of verification: previous edition and photo
-            </p></div>
+            <p>Basis of verification: previous edition and photo</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
