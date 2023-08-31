@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>NY.NY.JM.G.1999-73</title>
+                <author>Author</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.JM.G.1999-73">NY.NY.JM.G.1999-73</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>JM</institution>
+                        <repository></repository>
+                        <idno>1999-73</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs="he"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>epitaph for Anastasia and Esther</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#instrumentum.container">
+                            <supportDesc ana="#glass">
+                                <support>
+                                    <p> glass vessel base</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width>11.4 (diameter)</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>second layer of glass missing</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="6">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#writing.other"> free-blown onto glass</handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>shofar at end of third line, menorah at bottom</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="0301" notAfter="0400">fourth
+                                century CE</date>
+                            <placeName ref="europe.italy.rome" cert="low">Rome (?), Italy</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Purchased by the <orgName role="buyer">Estate of Anna. D. Ternbach Fund</orgName></p>
+                        </provenance>
+                        <provenance type="transferred" subtype="donated">
+                            <p>Donated by <persName role="donor">Dr. Harry G. Friedman</persName> to the <orgName role="recipient">Jewish Museum</orgName></p>
+                        </provenance>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Exhibited by the <orgName>Jewish Museum</orgName> in <date when="2003">2003</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://thejewishmuseum.org/collection/5493-burial-inscription/">Jewish Museum web entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2023-08-17" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc>An image is available from the Museum upon request.</desc>
+            <graphic url="NY.NY.JM.G.1999-73.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/>ἐνθάδε κεῖνται
+                <lb n="2"/>
+                <persName>
+                    <name key="Anastasia Ἀναστασία">Ἀναστασία</name>
+                </persName>, μήτηρ, καὶ
+                <lb n="3"/>
+                <persName>
+                    <name key="Esther Ἀσθήρ">Ἀσθὴρ</name>
+                </persName>, θυγάτ<supplied reason="lost">ηρ</supplied>, ἐν
+                <lb n="4"/>
+                <supplied reason="lost">εἰ</supplied>ρήνῃ ἡ κοίμησεις
+                <lb n="5"/>αὐτῶν. Ἀ<supplied reason="lost">μ</supplied><choice><corr>ή</corr><sic>ν</sic></choice>ν.
+                <lb n="6"/>
+                <foreign xml:lang="he" style="text-direction:r-to-l">שלום</foreign>
+            </ab></div>
+            
+            <div type="translation">
+            <p>Here lies Anastasia, mother, and Esther, daughter, (may) their sleep (be) in peace. Amen. Amen.</p></div>
+
+            <div type="commentary">
+            <p>Basis of verification: previous edition and photo</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
