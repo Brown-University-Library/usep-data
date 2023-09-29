@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -36,23 +36,91 @@
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
                   <msItem>
-                     <p/>
+                     <p>decree from the city of Stratonikeia honoring Amynamenos, a judge from
+                        Assos</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble slab </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>12.7</height>
+                              <width>53.4</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#broken">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="40">
+                           <p>Assos counts "Ἀμυνα-" as line 0 </p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0166" notAfter="-0001">after 166
+                        B.C.</date>
+                     <placeName ref="asia.asia_minor">Assos</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p> In <date when="1884">1884</date>, gift of the <orgName role="donor">Archaeological Institute of America</orgName> to the <orgName role="recipient">MFA</orgName>. (Accession Date: <date when="1884">January 15, 1884</date>)</p>
+                  </provenance>
+                  <provenance type="found" subtype="discovered">
+                     <p> In <date>1881/1882</date>, excavated from beneath the altar in the temple in antis, western
+                        end of the Agora, <placeName>Assos (Behramkale), Turkey</placeName>, by the <orgName>Archaeological Institute of America</orgName></p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Assos"/>
                   <biblScope unit="item">8</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/199439/decree-by-the-city-stratonikeia-for-judge-amynamenos-from-as?ctx=3038efd7-02d9-4c42-a79f-899358c134c8&amp;idx=0"
+                     >MFA web entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -62,17 +130,74 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-08-07" who="Jean Wanlass">added metadata, transcription,
+            translation</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.84.52"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>
+               <lb n="0"/> Ἀμυνα- 
+               <lb n="1"/> <supplied reason="undefined">μενὸν Βρησικλείους, ἄνδρα καλὸν καὶ ἀγαθὸν καὶ ἄξιον τ</supplied>ῆς πατρίδος κ<supplied reason="undefined">αὶ τῆς</supplied>
+               <lb n="2"/> <supplied reason="undefined">ἐγχειρισθείσης αὐτῶι πίστεως, ὃ</supplied>ς καὶ παραγενόμενος εἰς <supplied reason="undefined">τὴν</supplied>
+               <lb n="3"/> <supplied reason="undefined">πόλιν ἡμῶν, βουλόμενος ἀκόλου</supplied>θα πράσσειν τῆι τῆς πατρίδος αἱρέ
+               <lb n="4" break="no"/> <supplied reason="undefined">σει, ἃς μὲν ἔκρινεν ἴσως κ</supplied>αὶ δικαίως καὶ κατὰ τοὺς νόμους, ἃς δὲ κ<supplied reason="undefined">αὶ</supplied>  
+               <lb n="5"/><supplied reason="undefined">διέλυσεν τῶν δικ</supplied>ῶν, ἴσον ἑαυτὸν παρεχόμενος πᾶσιν τοῖς δι<supplied reason="undefined">α</supplied>
+               <lb n="6" break="no"/><supplied reason="undefined">φερομένοι</supplied>ς, καὶ ἐν τοῖς ἄλλοις δὲ τοῖς κατὰ τὴν δικαστείαν ἅπα<supplied reason="undefined">ν</supplied> 
+               <lb n="7" break="no"/><supplied reason="undefined">τα ἐποί</supplied>ησεν ἀξίως τῶν τε ἀποστειλάντων πολιτῶν καὶ τοῦ ἡμ<supplied reason="undefined">ε</supplied>
+               <lb n="8" break="no"/><supplied reason="undefined">τέρου</supplied> δήμου, κατὰ πάντα συντηρῶν τὸ τῆς πατρίδος ἀξίωμα, ἀπ<supplied reason="undefined">ο</supplied> 
+               <lb n="9" break="no"/><supplied reason="undefined">λυθεί</supplied>ς τε ἀπὸ τῆς δικαστείας ἐπεδήμησεν μετὰ πάσης ε<supplied reason="undefined">ὐκοσ</supplied>
+               <lb n="10"/><supplied reason="undefined">μ</supplied>ίας καὶ ὡς πρέπον ἦν ἀνδρὶ καλῷ καὶ ἀγαθῷι· ὅπως οὖν 
+               <lb n="11"/><supplied reason="undefined">καὶ ὁ δῆ</supplied>μος μεμνημένος τῶν ἀγαθῶν ἀνδρῶν ἐν παντὶ 
+               <lb n="12"/><supplied reason="undefined">καιρῶι φ</supplied>αίνηται τὰς καταξίας ἀποδιδοὺς χάριτας· ἀγαθῇ<gap extent="unknown" unit="character" reason="lost"></gap>
+               <lb n="13"/><supplied reason="undefined">τ</supplied>ύχῃ· ἐπαινέσαι μὲν τὸν δῆμον τῶν Ἀσσίων καὶ στεφα 
+               <lb n="14" break="no"/><supplied reason="undefined">ν</supplied>ῶσαι αὐτὸν χρυσέωι στεφάνωι ἐπὶ τῶι ἀποστεῖλ<supplied reason="undefined">α</supplied>ι ἄν
+               <lb n="15" break="no"/>δρα καλὸν κἀγαθὸν καὶ ἄξιον ἀμφοτέρων τῶ<supplied reason="omitted">ν</supplied> πόλεων· ἐπα<supplied reason="undefined">ι</supplied>
+               <lb n="16" break="no"/>νέσαι δὲ καὶ τὸν δικαστὴν Ἀμυναμενὸν Βρησικλείους, 
+               <lb n="17"/>καὶ δεδόσθαι πολιτείαν αὐτῶι καὶ ἐγγ[όνοι]ς αὐτοῦ ἐφ’ ἴσῃ
+               <lb n="18"/><supplied reason="undefined">κ</supplied>αὶ ὁμοίᾳ τοῖς ἡμετέροις πολίταις· καὶ ἐπικληρῶσαι αὐτὸν 
+               <lb n="19"/><supplied reason="undefined">ἐ</supplied>πὶ φυλὴν καὶ δῆμον, στεφανῶσαι δὲ αὐτὸν καὶ χρυσῶι στε
+               <lb n="20" break="no"/>φάνωι· τὴν δὲ ἀναγγελίαν τῶν στεφάνων ποιησάσθωσαν 
+               <lb n="21"/>οἱ ἀγωνοθέται ἐν τῶι ἀγῶνι τῶι μουσικῶι τῶι συντελουμέ
+               <lb n="22" break="no"/>νωι τῆι Ῥώμῃ κατὰ τάδε· "ὁ δῆμος ὁ Στρατονικέων στεφανο<supplied reason="undefined">ῖ</supplied>
+               <lb n="23"/>τὸν δῆμον τὸν Ἀσσίων καὶ τὸν ἀποσταλέντα δικαστὴν 
+               <lb n="24"/>Ἀμυναμενὸν Βρησικλείους χρυσῶι στεφάνωι ἀρετῆς <supplied reason="undefined">ἕνε</supplied> 
+               <lb n="25" break="no"/>κεν καὶ δικαιοσύνης καὶ τῆς πρὸς τὸν δῆμον εὐνοίας· ἵνα 
+               <lb n="26"/>δὲ καὶ Ἄσσιοι εἰδήσωσιν τὴν τοῦ δήμου εὐχαριστίαν, ἑλ<supplied reason="undefined">έσ</supplied> 
+               <lb n="27" break="no"/><supplied reason="undefined">θ</supplied>αι πρεσβευτήν· ὁ δὲ αἱρεθεὶς ἀφικόμενος εἰς Ἄσσον καὶ ἐπ<supplied reason="undefined">ελ</supplied>
+               <lb n="28" break="no"/>θὼν ἐπὶ τὴν βουλὴν καὶ τὴν ἐκλησίαν ἐμφανισάτω τὰ ἐ<supplied reason="undefined">ψη</supplied>
+               <lb n="29" break="no"/>φισμένα αὐτοῖς τίμια ὑπὸ τοῦ δήμου καὶ τὴν γεγενημένη<supplied reason="undefined">ν</supplied>
+               <lb n="30"/>ὑπὸ τοῦ δικαστοῦ δικαιοσύνην, καὶ παρακαλείτω αὐτοὺς εὔ
+               <lb n="31" break="no"/>νους καὶ φίλους ὑπάρχοντας τοῦ δήμου ἐπὶ πλεῖον αὔξειν τ<supplied reason="undefined">ὴν</supplied>
+               <lb n="32"/>φιλίαν, εἰδότας ὅτι καὶ Στρατονικεῖς τὴν πρὸς Ἀσσίους εὔνοια<supplied reason="undefined">ν</supplied> 
+               <lb n="33"/>διαφυλάξουσιν· παρακαλε{ί}τω δὲ ὅπως καὶ παρ’ αὐτοῖς ἀναγγέ<supplied reason="undefined">λ</supplied> 
+               <lb n="34" break="no"/>λωνται αἱ τιμαὶ καθ’ ἕκαστον ἔτος ἐν τοῖς συντελουμένοι<supplied reason="undefined">ς</supplied>
+               <lb n="35"/>ἀγῶσιν, καὶ τόπος ἀποδειχθῇ ἐπιφανὴς ἐν ὧι ἀνατεθήσετ<supplied reason="undefined">αι</supplied>
+               <lb n="36"/><supplied reason="undefined">σ</supplied>τήλη λιθίνη ἔχουσα ἀναγεγραμμένον τόδε τὸ ψήφισμα· 
+               <lb n="37"/>τὸ δὲ τέλεσμα τὸ εἰς στήλην διαγραψάτωσαν οἱ τα 
+               <lb n="38" break="no"/>μίαι τῷ ἀποστελλομένωι πρεσβευτῇ ἀπὸ τῶν κοινῶν πρ<supplied reason="undefined">οσ</supplied>
+               <lb n="39" break="no"/>όδων, μὴ πλεῖον τέλεσμα δραχμῶν τριάκοντα· ᾑρέθη 
+               <lb n="40"/>Πυθίων Ἐνπεδίωνος.</ab></div>
+         
+         <div type="translation">
+            <p>To good Fortune: the people of Assos shall be praised and crowned with a golden crown, because they sent a virtuous and good man to both of our cities. And, the judge Amynamenos, the son of Bresikles, shall be praised, and to him and his descendants citizenship shall be bestowed on fair and equal terms with our fellow-citizens; and he shall be assigned by lot to a tribe and people, and he shall be crowned with a golden crown. And the judges of the contest shall make the announcement regarding these crowns during the music contest which is celebrated in honor of Roma in such a way: "The people of Stratonikeia crown the people of Assos and the judge sent, Amynamenos, son of Bresikles, with golden crowns because of their virtue and their judgement and their goodwill toward the people." In order that the Assians learn about the people's thankfulness, an envoy shall be elected, and the one elected shall travel to Assos and standing before the Council and the Assembly, he shall announce the honors which our people had conferred upon them and the just ruling of the judge and exhort those who are of goodwill and friends of our people to increase their friendship even more, in the knowledge that the Stratonikeians will keep their goodwill toward the Assians. He shall also call on them to have the honors announced yearly among them when the contests are held and that a visible location be made known in which a stone stele will be placed on which the decision is written. The treasurers shall give the payment for this stele to the envoy, the cost not exceeding 30 drachmae. Pythion, the son of Enpedion, was chosen.</p></div>
+         
+         <div type="commentary">
+            <p>verification: photo, MFA web entry, Assos; 2023</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
