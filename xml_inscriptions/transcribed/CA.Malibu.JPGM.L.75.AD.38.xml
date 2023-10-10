@@ -31,7 +31,8 @@
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#label">
-                     <p>brickstamp of M. [R(utilius) L(upus)]</p>
+
+                     <p>brickstamp of Marcus Rutilius Lupus</p>
                   </msItem>
                </msContents>
                <physDesc>
@@ -51,15 +52,15 @@
                      </supportDesc>
                      <layoutDesc>
                         <layout columns="0" writtenLines="2">
-                              <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
+                           <!--use a <locus> to narrow down part of inscription being discussed, i.e. campus-->
                            <p>first line written below</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc hands="1">
-
+                     
                      <handNote ana="#in_relief #stamped"/>
-                  
+                     
                   </handDesc>
                   <decoDesc>
                      <decoNote>
@@ -97,14 +98,14 @@
                </bibl>
                <bibl>
                   <ref type="external"
-                        target="http://www.getty.edu/art/collection/objects/7213/unknown-maker-tile-fragment-roman-about-115/">Getty Museum Web Entry</ref>
+                     target="http://www.getty.edu/art/collection/objects/7213/unknown-maker-tile-fragment-roman-about-115/">Getty Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -119,6 +120,7 @@
          <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
          <change when="2023-04-18" who="Scott J. DiGiulio">Small tweaks to conform with new vocab</change>
          <change when="2023-07-16" who="Sasha Floru">Added image, diplomatic transcription, translation </change>
+         <change when="2023-07-26" who="Sasha Floru">Added commentary </change>
          <change when="2023-08-04" who="Advaith Rege">Added provenance, basis of verification, image, and decoration description</change>
       </revisionDesc>
    </teiHeader>
@@ -140,9 +142,9 @@
             
             <div type="textpart" subtype="diplomatic">
                
-               <ab>              
+               <ab>     
                   <lb n="1"/>    M R L MESSAL&#183;ET PEDONE         
-                  <lb n="2" break="no"/>  COS
+                  <lb n="2"/>  COS
                   
                </ab>                         
                
@@ -150,43 +152,46 @@
             
             <div type="textpart" subtype="interpretive">
                
-            <ab>
-               <lb n="1"/>
-               <persName>
-                  <name type="praenomen" key="Marcus">
-                     <expan><abbr>M</abbr><ex>arci</ex></expan>
-                  </name>
-                  <supplied reason="lost">
-                     <name type="gentilicium" key="Rutilius">
-                        <expan><abbr>R</abbr><ex>utili</ex></expan>
+               <ab>
+                  <lb n="1"/>
+                  <persName>
+                     <name type="praenomen" key="Marcus">
+                        <expan><abbr>M</abbr><ex>arci</ex></expan>
                      </name>
-                     <name type="cognomen" key="Lupus">
-                        <expan><abbr>L</abbr><ex>upi</ex></expan>
+                     <supplied reason="lost">
+                        <name type="gentilicium" key="Rutilius">
+                           <expan><abbr>R</abbr><ex>utili</ex></expan>
+                        </name>
+                        <name type="cognomen" key="Lupus">
+                           <expan><abbr>L</abbr><ex>upi</ex></expan>
+                        </name>
+                     </supplied>
+                  </persName>, <persName>
+                     <name type="cognomen" key="Messala">
+                        <expan><abbr><supplied reason="lost">Mes</supplied>sal</abbr><ex>la</ex></expan>
                      </name>
-                  </supplied>
-               </persName>, <persName>
-                  <name type="cognomen" key="Messala">
-                     <expan><abbr><supplied reason="lost">Mes</supplied>sal</abbr><ex>la</ex></expan>
-                  </name>
-               </persName> et <persName>
-                  <name type="cognomen" key="Pedo">Pedone</name>
-               </persName>
-               <lb n="2"/>
-               <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>.
-            </ab>
-         </div>
+                  </persName> et <persName>
+                     <name type="cognomen" key="Pedo">Pedone</name>
+                  </persName>
+                  <lb n="2"/>
+                  <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>.
+               </ab>
+            </div>
          </div> 
          
          <div type="translation">
             <p> (Work) of Marcus Rutilius Lupus,
                with Messala and Pedo (being) consuls. </p>
          </div>
-         <div type="commentary">
-            <p>Basis of verification: previous edition and photo</p>
+                 <div type="commentary">
+             <p>Basis of verification: previous edition and photo</p>            
+            <p> form: perforated orbiculus, located at the top of the stamp extending through two lines of text and into the center of the stamp (BDRCO 531) </p>                    
+            <p> dating: 198-211, Steinby Chronologia</p>               
+            <p> signum: lupus ds. gradiens altero pede anteriore sublato (BDRCO) </p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
@@ -195,3 +200,4 @@
       </body>
    </text>
 </TEI>
+
