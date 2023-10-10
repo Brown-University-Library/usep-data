@@ -3,7 +3,7 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
-            <!-- *************************************  <titleStmt>  *********************************
+         <!-- *************************************  <titleStmt>  *********************************
                 <title> stores the US Epigraphy number as it will appear when it is displayed. It is the "real" US Epigraphy number
                 that is based on the collection's accession number and can contain characters such as ? * # +  / and [space].
             -->
@@ -30,8 +30,8 @@
          </publicationStmt>
          <!--  *************************************  <sourceDesc>  ********************************* -->
          <sourceDesc>
-                <!--  *************************************  <msDesc>  ********************************* -->
-              <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
+            <!--  *************************************  <msDesc>  ********************************* -->
+            <!--        <msIdentifier>** breaks out the information that is packed into the US Epigraphy number
                               <region>  = state
                               <settlement>  = city
                               <institution> = library, museum, university or other institution
@@ -55,20 +55,20 @@
                   <textLang mainLang="lat"/>
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                   <msItem class="#label">
-                        <!-- short summary of the content of an inscription -->
+                     <!-- short summary of the content of an inscription -->
                      <p>brickstamp of Arrius Antoninus</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
                <physDesc>
-                    
-                        <!--  *************************************  <objectDesc>  *********************************
+                  
+                  <!--  *************************************  <objectDesc>  *********************************
                             <objectDesc> contains information about the physical properties of the object and the inscribed text.  -->
                   <objectDesc ana="#instrumentum.brick">
                      <supportDesc ana="#clay.terracotta">
                         <support>
-                                    <!-- short summary of the material and support of an inscription -->
-                           <p>Rectangular brick stamp</p>
+                           <!-- short summary of the material and support of an inscription -->
+                           
                            <dimensions type="surface" unit="cm">
                               <height>12.5</height>
                               <width>11</width>
@@ -76,7 +76,7 @@
                            </dimensions>
                         </support>
                         <condition ana="#fragment.single">
-                           <p>this example broken at right, resulting in the loss of small amount of text and signum at the end of line 3</p>
+                           <p></p>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -99,7 +99,7 @@
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
-                        <p>signum at end of line 3: boar, runnning right</p>
+                        <p></p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -114,7 +114,7 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                            <!-- original place and dating of inscription -->
+                     <!-- original place and dating of inscription -->
                      <date evidence="unspecified" notBefore="0133" notAfter="0135">134 CE</date>
                      <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                   </origin>
@@ -127,7 +127,7 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CIL_XV"/>
-                  <biblScope unit="item">92b</biblScope>
+                  <biblScope unit="item">92a</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#LSO"/>
@@ -152,7 +152,7 @@
       <!-- information about the encoding and controlled vocabularies. Do not edit -->
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -166,6 +166,7 @@
          <change when="2015-09-15" who="Scott J. DiGiulio">Cleaned metadata, added letter dimensions, added prose descriptions, cleaned bibl, added LSO, S entries, proofed transcription, moved translation to its own div</change>
          <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
+         <change when="2023-10-10" who="Sasha Floru">Added diplomatic transctiption, changed CIL #, added commentary, updated image label</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -178,35 +179,68 @@
    </facsimile>
    <text>
       <body>
+         
+         
+         
+         
+         
          <div type="edition"><!-- transcription goes here -->
-            <ab>
-               <lb n="1"/> Ex <expan><abbr>fig</abbr><ex>linis</ex></expan>
-               <persName>
-                  <name type="gentilicium" key="Arrius">Arri</name>
-               </persName>
-               <name type="cognomen" key="Antoninus">A<supplied reason="lost">ntonini</supplied>
-               </name>
-                <lb n="2"/> C<hi rend="ligature">ae</hi>pioniana. <persName>
-                  <name type="cognomen" key="Servianus">S<supplied reason="lost">erviano</supplied>
-                  </name></persName>
-               <lb n="3"/>
-               <expan><ex>tertium</ex></expan> et <persName>
-                  <name type="cognomen" key="Varus">Varo</name>
-               </persName>
-               <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>.
-                <supplied reason="lost"><g type="aper"/></supplied></ab>
+            
+            
+            
+            <!--Diplomatic transcription goes here, surrounded by <ab> </ab> elements-->
+            
+            <div type="textpart" subtype="diplomatic">
+               
+               <ab>              
+                  <lb n="1"/> EX &#183; FIG &#183; ARRI &#183; ANTONINI               
+                  <lb n="2" break="no"/> C<hi rend="ligature">AE</hi>PIONIANA SERVIAN 
+                  <lb n="3" break="no"/> III ET &#183; VARO &#183; COS
+                  
+               </ab>
+               
+            </div>  
+            
+            
+            <div type="textpart" subtype="interpretive">
+               
+               <ab>
+                  <lb n="1"/> Ex <expan><abbr>fig</abbr><ex>linis</ex></expan>
+                  <persName>
+                     <name type="gentilicium" key="Arrius">Arri</name>
+                  </persName>
+                  <name type="cognomen" key="Antoninus">A<supplied reason="lost">ntonini</supplied>
+                  </name>
+                  <lb n="2"/> C<hi rend="ligature">ae</hi>pioniana. <persName>
+                     <name type="cognomen" key="Servianus">S<supplied reason="lost">erviano</supplied>
+                     </name></persName>
+                  <lb n="3"/>
+                  <expan><ex>tertium</ex></expan> et <persName>
+                     <name type="cognomen" key="Varus">Varo</name>
+                  </persName>
+                  <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan>.
+                  
+                  <supplied reason="lost">aper ds. currens</supplied></ab>
+               
+            </div>
+            
          </div>
          <div type="translation">
             <p>“From the brickyards of Arrius Antoninus, Caeponian (roof-tile), from the year of the consulship of Servianus, consul for the third time, and Varus”.</p>
          </div>
          <div type="commentary"><!-- notes go here -->
-            <p>Line 1: Arrius Antoninus is the future emperor Antoninus Pius, whose mother Arria Fadilla acquired the <hi rend="italic">figlinae Caepionianae</hi> at the beginning of the second century CE.</p>
-            <p>Line 3: The names of the consuls allow us to know that this brick was made in 134 CE, four years before Arrius Antoninus was adopted by Hadrian.</p>
-            <p>Line 3: Since this example is broken at the right side, we cannot see the image of the “aper dextrorsum currens” stamped on the right side of the third line.</p>
+            
+            
+            <p> form: BDRCO 110 (Rectangular with raised letters) </p>                    
+            <p> dating: 134, Steinby Chronologia p. 31</p>               
+            <p> signum: aper ds. currens (BDRCO) </p>
+            <p> verification: photo</p>   
+            
+            
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
