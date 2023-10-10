@@ -36,11 +36,78 @@
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
                   <msItem>
-                     <p/>
+                     <p>dedication from Markos Antonis Silvanos, a legionnaire, to Apollo.</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#instrumentum.other">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p> bronze votive plaque</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>13</height>
+                              <width>23.4</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="3">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#etched"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>etched image of Apollo riding a horse</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="0200" notAfter="0399">third or fourth
+                        century CE</date>
+                     <placeName ref="asia.near_east">Asia Minor or Syria</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p> purchased by <orgName role="buyer">MFA</orgName> from <orgName role="seller">Summa Galleries, Inc.</orgName>, <date when="1983">May 11, 1983</date> </p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> by <date when="1978">1978</date>: with <orgName>Summa Galleries, Inc.</orgName>, P.O. Box 6428, 342 North Rodeo Drive, <placeName>Beverly Hills, CA</placeName> 90212</p>
+                  </provenance>
+                  <provenance type="observed" subtype="reported">
+                     <p>dates unknown: private collections in <placeName>New York</placeName> and <placeName>Boston</placeName>  </p>
+                  </provenance>
+                  <provenance type="observed" subtype="reported">
+                     <p>by date unknown: originally from <placeName>Asia Minor</placeName> or <placeName>Syria</placeName></p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -50,6 +117,11 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#SEG_41"/>
                   <biblScope unit="item">no.1702</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/155305/votive-plaque-to-apollo?ctx=e05da763-eaca-4c9b-b471-c81e025c1fe3&amp;idx=0"
+                     >MFA web entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -66,14 +138,34 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-08-07" who="Jean Wanlass">added metadata, transcription,
+            translation</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.1983.222.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>
+               <lb n="1"/> θεῷ μεγίστῳ Ἀπόλλωνι
+               <lb n="2"/> πραηνω Μάρκος Αντώνις Σιλβα
+               <lb n="3" break="no"/>νός λεγιωνος ΚΒ ευχήν ἀνέθηκεν
+            </ab></div>
+         
+         <div type="translation">
+            <p>Markos Antonis Silvanos of the 22nd legion dedicated [this plaque in fulfillment of a] vow to the greatest of the gods, Apollo of gentle mind</p></div>
+         
+         <div type="commentary">
+            <p>verification: photo, MFA web entry, 2023</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                          href="http://library.brown.edu/usep_data/resources/titles.xml">

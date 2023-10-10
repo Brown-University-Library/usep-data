@@ -31,14 +31,14 @@
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary">
-                     <p>Funerary poem for a girl</p>
+                     <p>funerary poem for a girl</p>
                   </msItem>
                </msContents>
                <physDesc>
                   <objectDesc ana="#object_other">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p>Marble kline momument</p>
+                           <p>marble kline momument</p>
                            <dimensions type="surface" unit="cm">
                               <height min="26" max="38">26 (kline), 38 (top of figure's head)</height>
                               <width>141</width>
@@ -61,7 +61,7 @@
                   </handDesc>
                   <decoDesc>
                      <decoNote>
-                        <p/>
+                        <p>a girl reclines, petting her dog and loking at two dolls</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -71,10 +71,14 @@
                   </summary>
                   <origin>
                      <!--Should contain information about origin of inscription including place and date.-->
-                     <date evidence="unspecified" notBefore="0120" notAfter="0140">c. 120-140 CE</date>
+                     <date evidence="#archaeology" notBefore="0120" notAfter="0140">c. 120-140
+                        CE</date>
                      <placeName ref="europe.italy.rome">Rome?</placeName>
                   </origin>
                   <!--Add provenance element(s) to locations at later dates - same content as origin-->
+                  <provenance type="transferred" subtype="sold">
+                     <p>Sold by <orgName role="seller">Robin Symes, Limited</orgName> to the <orgName role="buyer">J. Paul Getty Museum</orgName> in <date when="1973">1973</date>.</p>
+                  </provenance>
                </history>
             </msDesc>
             <listBibl>
@@ -107,9 +111,18 @@
          <change when="2011-05-17" who="Elli Mylonas">Older inscriptions with info updated to 2009 template</change>
          <change when="2016-01-28" who="Scott J. DiGiulio">Added missing control vocab and added available metadata, fixed line/column values, added JPGM to bibl, added transcription from photos in folder</change>
          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2023-08-03" who="Advaith Rege">Added provenance, translation, basis of verification, decoration description, image, and dating criteria</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
+   <facsimile>
+      <surface>
+         <!--Caption in desc element-->
+         <desc/>
+         <!--URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg".-->
+         <graphic url="CA.Malibu.JPGM.L.73.AA.11.jpg"/>
+      </surface>
+   </facsimile>
    <text>
       <body>
          <div type="edition">
@@ -127,10 +140,11 @@
             </ab>
          </div>
          <div type="translation">
-            <p/>
+            <p>Here lies the most beautiful girl, what a pity in such a young age, and the image...</p>
          </div>
          <div type="commentary">
-            <p/>
+            <p>Translation based on Getty Museum web entry</p>
+            <p>Basis of verification: previous edition and photo</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
