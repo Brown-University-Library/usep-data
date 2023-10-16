@@ -566,13 +566,24 @@
                 </xsl:if>
 
                 <!-- output the year, if there is one. with a space before it and inside parentheses. -->
+                <xsl:if  test="id($myID)/t:date">
+                    <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
+                </xsl:if>
         
-                 <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
+                
 
                 <!-- everything has a reference except for unpub. but put a space before it. -->
+                <!-- if there is no date, don't output the : that would appear after the parenthesis -->
 
                 <xsl:if test="./t:biblScope">
-                    <xsl:value-of select="concat(': ', ./t:biblScope)"/>
+                    <xsl:choose>
+                        <xsl:when test="id($myID)/t:date">
+                             <xsl:value-of select="concat(': ', ./t:biblScope)"/>
+                         </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="concat(' ', ./t:biblScope)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:if>
                 
                 <!-- This prints the jstor link   -->
