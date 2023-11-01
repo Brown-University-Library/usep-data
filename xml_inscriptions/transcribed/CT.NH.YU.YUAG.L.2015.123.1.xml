@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>CT.NH.YU.YUAG.L.2015.123.1</title>
+                <author>Author</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="CT.NH.YU.YUAG.L.2015.123.1">CT.NH.YU.YUAG.L.2015.123.1</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>CT</region>
+                        <settlement>NH</settlement>
+                        <institution>YU</institution>
+                        <repository>YUAG</repository>
+                        <idno>2015.123.1</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>epitaph of M. Fulvius Lamyrus</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#sarcophagus">
+                            <supportDesc ana="#stone.marble #stone.other">
+                                <support>
+                                    <p> marble and porphyry sarcophagus</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>136</height>
+                                        <width>111</width>
+                                        <depth>7</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="10">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"/>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Cosmati opus sectile inlays</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="0150" notAfter="1200"
+                                >mid-second century and twelfth century</date>
+                            <placeName ref="europe.italy">Italy</placeName>
+                        </origin>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Owned by the <orgName>Church of San Gregorio Magno al Celio</orgName> before <date when="1574">1574</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Sold by <persName role="seller">Pino Donati</persName> to <persName role="buyer">Edith Hafter</persName> around <date when="1960">1960</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="given">
+                            <p>Transferred by descent to <orgName role="recipient">Donati Arte Classica</orgName> by <persName role="donor">Edith Hafter</persName>.</p>
+                        </provenance>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Owned by the <orgName>Galerie Chenel</orgName>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Acquired by the <orgName role="recipient">Yale University Art Gallery</orgName> from the <orgName role="donor">Galerie Chenel</orgName> in <date when="2015">2015</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">18677a</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR185091&amp;fo_antik=&amp;fo_modern=&amp;Bibliografia%5B%5D=&amp;Testo=&amp;boolTesto=AND&amp;Testo2=&amp;bool=AND&amp;ordinamento=id_nr&amp;javasi=javascriptsi&amp;se_foto=tutte&amp;lang=en">EDR185091</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://artgallery.yale.edu/collections/objects/210417">Yale University Art Gallery website</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2023-10-31" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="CT.NH.YU.YUAG.L.2015.123.1.jpg"/>
+        </surface>
+        <surface>
+            <desc>detail of inscription</desc>
+            <graphic url="CT.NH.YU.YUAG.L.2015.123.1-det.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/>
+                <expan><abbr>D</abbr><ex>is</ex></expan>
+                <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                <lb n="2"/>
+                <persName>
+                    <name type="praenomen" key="Marcus">
+                        <expan><abbr>M</abbr><ex>arcus</ex></expan>
+                    </name>
+                    <name type="gentilicium" key="Fulvius">Fulvius</name>
+                    <name type="cognomen" key="Lamyrus">Lamyrus</name>
+                </persName>
+                <lb n="3"/>hic conditus est h<supplied reason="omitted">a</supplied>ec
+                <lb n="4"/>mi domus aeternalis
+                <lb n="5"/>erit meis inpendi<supplied reason="omitted">i</supplied>s
+                <lb n="6"/>gratias amico
+                <persName>
+                    <name type="praenomen" key="Marcus">
+                        <expan><abbr>M</abbr><ex>arcus</ex></expan>
+                    </name>
+                <lb n="7"/>
+                    <name type="gentilicium" key="Ulpius">Ulpius</name>
+                    <name type="cognomen" key="Eutychus">Eutychus</name>
+                </persName>
+                <lb n="8"/>amicus
+                <lb n="9"/>et
+                <persName>
+                    <name type="gentilicium" key="Fulvia">Fulvia</name>
+                    <name type="cognomen" key="Charitatus">Charit<choice><corr>a</corr><sic>u</sic></choice></name>
+                </persName>
+                <lb n="10"/>coniugi.
+            </ab></div>
+            
+            <div type="translation">
+            <p>To the souls of the deceased, Marcus Fulvius Lamyrus was buried here, this will be an eternal home for me from my expenses. Marcus Ulpius Eutychus, a friend, (gives) thanks to (his) friend and his wife, Fulvia Charitatus.</p></div>
+
+            <div type="commentary">
+            <p>Line 3: haec (EDR), hec (YUAG)</p>
+            <p>Line 5: inpendiis (EDR), inpendis (YUAG)</p>
+            <p>Line 9: Charitati (EDR), Charituti (YUAG)</p>
+            <p>Basis of verification: previous edition and photo</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
