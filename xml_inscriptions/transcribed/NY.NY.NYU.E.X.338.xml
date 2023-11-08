@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>NY.NY.NYU.E.X.338</title>
+                <author>Author</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.NYU.E.X.338">NY.NY.NYU.E.X.338</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>NYU</institution>
+                        <repository></repository>
+                        <idno>X.338</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="ett" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#dedicatory">
+                            <!-- short summary of the content of an inscription -->
+                            <p>speaking inscription describing ownership</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#instrumentum.vase">
+                            <supportDesc ana="#clay.terracotta #clay.other">
+                                <support>
+                                    <p> terracotta bucchero aryballos</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>5</height>
+                                        <width>4.5</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout writtenLines="1" columns="1">
+                                    <p>spirals around shoulder of flask; last letters run off
+                                        shoulder</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>concentric rays above foot; three rouletting double bands on
+                                    belly and shoulder</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#unspecified" notAfter="-0501" notBefore="-0600">sixth
+                                century BCE</date>
+                            <placeName ref="europe.italy">Cerveteri(?), Italy</placeName>
+                        </origin>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Owned by the collection of <persName>Ludwig Pollak</persName> by <date when="1931">1931</date>.</p>
+                        </provenance>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Owned by the collection of <persName>Antonio Munoz</persName>.</p>
+                        </provenance>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Owned by the collection of <persName>Giorgio Sangiorgi</persName> until <date when="1965">1965</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="given">
+                            <p>Given by <persName role="donor">Giorgio Sangiorgi</persName> to his son, <persName role="recipient">Sergio Sangiorgi</persName>, in <date when="1965">1965</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Acquired by the <orgName role="buyer">New York University</orgName> in <date when="1999">1999</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="loaned">
+                            <p>On loan to the <orgName role="recipient">Metropolitan Museum of Art, New York</orgName> from <date when="2013">2013</date>.</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Bonfante_Fowlkes_2006"/>
+                        <biblScope unit="page">111-113, no. 33</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.metmuseum.org/art/collection/search/258542">Metropolitan Museum web entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2023-11-04" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url=""/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1" style="text-direction:r-to-l"/> mi
+                <name key="Larthai">Larthaia</name>
+                <name key="Telikles">Telicles</name> lechtumuza.
+            </ab></div>
+            
+            <div type="translation">
+            <p>I am the little lekythos of Lartha, (the daughter) of Telikles.</p></div>
+
+            <div type="commentary">
+            <p>Basis of verification: previous edition and photo</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
