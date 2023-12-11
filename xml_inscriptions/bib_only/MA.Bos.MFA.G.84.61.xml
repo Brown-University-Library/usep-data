@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,12 +35,75 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#dedicatory #honorific">
+                     <p>honarary inscription for Lykomedes </p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#slab">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble slab </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>25.4</height>
+                              <width>16.5</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#broken">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="2">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>"in low, inset relief in the plain field, appears an inverted laurel
+                           wreath, inside which is a disk or shield" (MFA web entry)</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0300" notAfter="-0200">fourth - third
+                        century BCE</date>
+                     <placeName ref="asia.asia_minor">Assos</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p> given by the <orgName role="donor">Archaeological Institute of America</orgName> to the
+                        <orgName role="recipient">MFA</orgName> on <date>January 1884</date></p>
+                  </provenance>
+                  <provenance type="observed" subtype="discovered">
+                     <p> From <placeName>Assos (Behramkale, Turkey)</placeName>; near west end of Stoa. Excavated <date>1881-2</date> by the <orgName>Archaeological Institute of America</orgName></p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -52,7 +115,7 @@
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -62,17 +125,31 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-12-10" who="Jean Wanlass">added metadata</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.84.61.jpg"/>
+      </surface>
+   </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>Transcription goes here</ab></div>
+         
+         <div type="translation">
+            <p></p></div>
+         
+         <div type="commentary">
+            <p/></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
