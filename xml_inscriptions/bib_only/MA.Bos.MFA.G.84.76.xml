@@ -36,7 +36,7 @@
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
                   <msItem class="#dedicatory">
-                     <p>fragments of an inscription naming Aristeas and Kallisthenes </p>
+                     <p>fragments of a temple episytle, naming Aristeas and Kallisthenes </p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
@@ -54,13 +54,13 @@
                               <depth>35.6</depth>
                            </dimensions>
                         </support>
-                        <condition ana="#fragment.single">
+                        <condition ana="#fragments.contig">
                            <p>three fragments</p>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="0" writtenLines="2">
+                        <layout columns="0" writtenLines="7">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -92,6 +92,13 @@
                      <date evidence="#unknown" notBefore="0001" notAfter="0002">date unknown</date>
                      <placeName ref="asia.asia_minor">Troad, Assos</placeName>
                   </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p> given to the <orgName role="recipient">MFA</orgName> by the <orgName role="donor">Archaeological Institute of America</orgName> in <date when="1884">January 1884</date></p>
+                  </provenance>
+                  <provenance type="found" subtype="discovered">
+                     <p> excavated at <placeName>Assos</placeName> (Behramkale, Turkey),  from a "little temple (prostylos)
+                        next to the Bath" in 1881-2 by the Archaeological Institute of America;</p>
+                  </provenance>
                   
                   
                </history>
@@ -123,6 +130,7 @@
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change when="2023-12-10" who="Jean Wanlass">added metadata</change>
+         <change when="2024-01-05" who="Jean Wanlass">added transcription, translation</change>
       </revisionDesc>
    </teiHeader>
    
@@ -139,13 +147,23 @@
    <text>
       <body>
          <div type="edition">
-            <ab>Transcription goes here</ab></div>
+            <ab>
+               <lb n="1"/> ὁ δῆμος
+               <lb n="2"/> Καλλισθένει Ἡφαιστογένους ἥρωϊ
+               <lb n="3"/> ὁ δῆμος
+               <lb n="4"/> <supplied reason="lost">Καλλισθένει Ἡφαι</supplied><unclear>σ</unclear>τογένους φιλοπάτ<unclear>ρ</unclear><supplied reason="lost">ιδι</supplied>
+               <lb n="5"/> ἥρωϊ εὐεργέτηι
+               <lb n="6"/> <supplied reason="lost">ὁ δῆμος</supplied>
+               <lb n="7"/>Ἀριστίᾳ <unclear>Ἡ</unclear><supplied reason="lost">φαιστογένους</supplied>
+            </ab></div>
          
          <div type="translation">
-            <p></p></div>
+            <p>the people to the hero, Kallisthenes, son of Hephaistogenes / to Kallisthenes, son of
+               Hephaistogenes, lover of his country, ......to the hero and benefactor / to Aristias,
+               son of Hephaistogenes</p></div>
          
          <div type="commentary">
-            <p></p></div>
+            <p>verification: photo, Assos entry, MFA web entry; 2024</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                href="http://library.brown.edu/usep_data/resources/titles.xml">
