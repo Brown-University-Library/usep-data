@@ -567,7 +567,7 @@
 
                 <!-- output the year, if there is one. with a space before it and inside parentheses. -->
                 <xsl:if  test="id($myID)/t:date">
-                    <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
+                    <xsl:value-of select="concat(' (', id($myID)/t:date[1], ')')"/>
                 </xsl:if>
         
                 
