@@ -490,7 +490,7 @@
 
     <xsl:template name="bibl">        
         <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:listBibl/t:bibl[child::t:ptr[@type='rest-of-bibl']]">
-            <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date/@when" order="ascending"/> <!-- @data-type="number"  -->
+            <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date[1]/@when" order="ascending"/> <!-- @data-type="number"  -->
            
             <xsl:variable name="myID" select="substring-after(t:ptr/@target, '#')"/>
             <p>
