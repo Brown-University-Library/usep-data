@@ -17,7 +17,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>OK.Norm.UO.SM.L.C.1957.2.1</title>
+                <title>IN.Bloom.IUAM.G.63.105.154</title>
                 <author>Author</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,27 +30,27 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="OK.Norm.UO.SM.L.C.1957.2.1">OK.Norm.UO.SM.L.C.1957.2.1</idno>
+                <idno type="USEpigraphy" xml:id="IN.Bloom.IUAM.G.63.105.154">IN.Bloom.IUAM.G.63.105.154</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>OK</region>
-                        <settlement>Norm</settlement>
-                        <institution>UO</institution>
-                        <repository>SM</repository>
-                        <idno>C.1957.2.1</idno>
+                        <region>IN</region>
+                        <settlement>Bloom</settlement>
+                        <institution>IUAM</institution>
+                        <repository></repository>
+                        <idno>63.105.154</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
+                        <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.other">
+                        <msItem class="#text_other">
                             <!-- short summary of the content of an inscription -->
-                            <p>"vivas"</p>
+                            <p>praise of painted young athlete</p>
                         </msItem>
                     </msContents>
 
@@ -59,24 +59,24 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.container">
-                            <supportDesc ana="#material_unknown">
+                        <objectDesc ana="#instrumentum.other">
+                            <supportDesc ana="#clay.terracotta">
                                 <support>
-                                    <p> black mug</p>
+                                    <p> terracotta kylix</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
+                                        <height>8.2</height>
+                                        <width>28.0</width>
+                                        <depth>21.1</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
+                                <condition ana="#fragments.contig">
+                                    <p>reassembled from fragments</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="1">
-                                    <p>writing curves around mug</p>
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -84,13 +84,13 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
+                            <handNote ana="#painted"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>(long-jump?) athlete in profile on right; behind is a pickaxe</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -104,19 +104,19 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <placeName ref="europe">Rhineland, Germany</placeName>
+                            <date evidence="#archaeology" notBefore="-0480" notAfter="-0480">ca. 480
+                                BCE</date>
+                            <placeName ref="europe.greece.athens">Athens, Greece</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="sold">
-                            <p>Bought by the <orgName role="buyer">Sam Noble Oklahoma Museum of Natural History</orgName> in <date when="1957">1957</date>.</p>
-                        </provenance>
+
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target=""/>
-                        <biblScope unit="page">00</biblScope>
+                        <ptr type="rest-of-bibl" target="#Rudolph"/>
+                        <biblScope unit="item">144, no. 137</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -142,7 +142,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2023-09-21" who="Advaith Rege">Initial Encoding</change>
+            <change when="2023-12-01" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -161,18 +161,14 @@ changes: correct handling of provenance information -->
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>Vivas.
+                <lb n="1"/>ὁ π<supplied reason="lost">α</supplied>ῖς κα<supplied reason="lost">λ</supplied>ό<supplied reason="lost">ς</supplied>.
             </ab></div>
             
             <div type="translation">
-            <p>
-                May you live.
-            </p></div>
+            <p>The boy is beautiful.</p></div>
 
             <div type="commentary">
-            <p>
-                Basis of verification: previous edition and photo
-            </p></div>
+            <p>Basis of verification: previous edition</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
