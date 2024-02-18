@@ -17,7 +17,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>NY.NY.NYU.L.X.140</title>
+                <title>MA.Wor.WAM.L.1915.75</title>
                 <author>Author</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,27 +30,27 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.NYU.L.X.140">NY.NY.NYU.L.X.140</idno>
+                <idno type="USEpigraphy" xml:id="MA.Wor.WAM.L.1915.75">MA.Wor.WAM.L.1915.75</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>NYU</institution>
+                        <region>MA</region>
+                        <settlement>Wor</settlement>
+                        <institution>WAM</institution>
                         <repository></repository>
-                        <idno>X.140</idno>
+                        <idno>1915.75</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>signature of potter</p>
+                            <p>epitaph of Nicanor</p>
                         </msItem>
                     </msContents>
 
@@ -59,14 +59,14 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.lamp">
-                            <supportDesc ana="#clay.other">
+                        <objectDesc ana="#ash_urn">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> red clay lamp</p>
+                                    <p> marble cinerary urn</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>3.1</height>
-                                        <width>4.5</width>
-                                        <depth>8.9</depth>
+                                        <height>35.6</height>
+                                        <width>33.6</width>
+                                        <depth>27.3</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
@@ -75,7 +75,7 @@ changes: correct handling of provenance information -->
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
+                                <layout columns="1" writtenLines="5">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -84,13 +84,14 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#in_relief"> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>framing ring decorated with slave mask in center</p>
+                                <p>birds eat fruits from garland; two heads of Jupiter Ammon on each
+                                    side of front; serpent in eagle's mouth in center</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -104,10 +105,13 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#prosopography" notBefore="0069" notAfter="0100">69-100
-                                CE</date>
-                            <placeName ref="europe.italy">Italy</placeName>
+                            <date evidence="#unspecified" notBefore="0050" notAfter="0100">mid first
+                                century CE</date>
+                            <placeName ref="unknown"/>
                         </origin>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Sold by <persName role="seller">Alfredo Barsanti</persName> to the <orgName role="buyer">Worcester Art Museum</orgName> in <date when="1915">1915</date>.</p>
+                        </provenance>
 
 
                     </history>
@@ -115,8 +119,10 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bonfante_Fowlkes_2006"/>
-                        <biblScope unit="page">223-224, no. 79</biblScope>
+                        <ref type="external" target="https://worcester.emuseum.com/objects/9957/cinerary-urn-of-nicanor?ctx=d7a5fc7522be297a550ebe86f3a2cb9c7944915b&amp;idx=179">Worcester Art Museum web entry</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143228&amp;fo_antik=&amp;fo_modern=&amp;Bibliografia%5B%5D=&amp;Testo=&amp;boolTesto=AND&amp;Testo2=&amp;bool=AND&amp;ordinamento=id_nr&amp;javasi=javascriptsi&amp;se_foto=tutte&amp;lang=en">EDR143228</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -142,7 +148,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2023-11-10" who="Advaith Rege">Initial Encoding</change>
+            <change when="2023-12-14" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -153,11 +159,11 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.NYU.L.X.140-det1.jpg"/>
+            <graphic url="MA.Wor.WAM.L.1915.75-LeftSide-sml.jpg"/>
         </surface>
         <surface>
             <desc>detail of inscription</desc>
-            <graphic url="NY.NY.NYU.L.X.140-det2.jpg"/>
+            <graphic url="MA.Wor.WAM.L.1915.75-sml.jpg"/>
         </surface>
     </facsimile>
 
@@ -165,12 +171,28 @@ changes: correct handling of provenance information -->
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-                <persName><name type="cognomen" key="Strobilus">Strobili</name>.</persName>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr>S</abbr><ex>acrum</ex></expan>
+                <lb n="2"/>
+                    <persName>
+                        <name key="Nicanor">Nicanori</name>
+                    </persName>
+                    <expan><abbr>fec</abbr><ex>erunt</ex></expan>
+                <lb n="3"/>
+                    <persName>
+                        <name type="gentilicium" key="Cincia">Cincia</name>
+                        <name type="cognomen" key="Trophime">Trophime</name>
+                    </persName>
+                <lb n="4"/>et 
+                    <persName>
+                        <name key="Hermes">Hermes</name>
+                    </persName>
+                    <expan><abbr>cons</abbr><ex>ervo</ex></expan>
+                <lb n="5"/>
+                    <expan><abbr>B</abbr><ex>ene</ex></expan> <expan><abbr>M</abbr><ex>erenti</ex></expan>.
             </ab></div>
             
             <div type="translation">
-            <p>Of Strobilus</p></div>
+            <p>Sacred to the Divine Spirits. Cincia Trophime and Hermes made (this) for their fellow slave, Nicanor, well-deserving.</p></div>
 
             <div type="commentary">
             <p>Basis of verification: previous edition and photo</p></div>
