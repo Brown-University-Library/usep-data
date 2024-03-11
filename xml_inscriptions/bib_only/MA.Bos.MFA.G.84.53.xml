@@ -84,9 +84,9 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                     <date evidence="#unspecified" notBefore="0001" notAfter="0199">first or second
-                        century BC</date>
-                     <placeName ref="asia.asia_minor">Assos (Behramkale, Turkey)</placeName>
+                     <date evidence="#unspecified" notBefore="-0166" notAfter="-0001">second or first
+                        century BCE</date>
+                     <placeName ref="asia.asia_minor https://pleiades.stoa.org/places/550463">Assos (Behramkale, Turkey)</placeName>
                   </origin>
                   <provenance type="transferred" subtype="given">
                      <p> gift of the <orgName role="donor">Archaeological Institute of
@@ -94,7 +94,7 @@
                            when="1884">January 1884</date>.</p>
                   </provenance>
                   <provenance type="found" subtype="discovered">
-                     <p> From <placeName>Assos (Behramkale, Turkey)</placeName>; below the
+                     <p> From <placeName ref="https://pleiades.stoa.org/places/550463">Assos (Behramkale, Turkey)</placeName>; below the
                         Bouleuterion. <date>1881-1882</date>: excavated by the
                            <orgName>Archaeological Institute of America</orgName></p>
                   </provenance>
@@ -108,6 +108,9 @@
                <bibl>
                   <ptr type="rest-of-bibl" target="#Assos"/>
                   <biblScope unit="item">9</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="https://collections.mfa.org/objects/151278/stele-documenting-mylasa-and-alabanda-honoring-the-judge-lan?ctx=889c5c6e-a07b-4c37-9540-a79b4c4c9ddd&amp;idx=3">MFA Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -127,6 +130,7 @@
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
          <change who="Jean Wanlass" when="2024-01-06">added metadata, transcription,
             translation</change>
+         <change who="Scott J. DiGiulio" when="2024-03-11">added Pleiades refs and name markup, proofed transcription against image</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -140,20 +144,33 @@
    <text>
       <body>
          <div type="edition">
-            <ab>   <lb n="1"/> Λάνθην Προδίκου <lb n="2"/> δικάσαντα. <lb n="3"/> Μυλα <lb n="4"
-                  break="no"/>σεῖς. <lb n="5"/> Ἀλα <lb n="6" break="no"/> βαν <lb n="7" break="no"
-               /> δεῖς <lb n="8"/>
-               <gap extent="unknown" unit="character" reason="lost"/>
-               <lb n="9"/>
-               <gap extent="unknown" unit="character" reason="lost"/>
+            <div type="textpart" n="top">
+            <ab>   
+               <lb n="1"/><persName><name key="Lanthes Λάνθης">Λάνθην</name> <persName><name key="Prodikos Πρόδικος">Προδίκου</name></persName></persName>
+               <lb n="2"/>δικάσαντα. 
             </ab>
+            </div>
+            <div type="textpart" n="in corona sinstra">
+               <ab>
+               <lb n="3"/><orgName type="ethnic" key="Μυλασεῖς">Μυλα 
+               <lb n="4" break="no"/>σεῖς</orgName>.
+               </ab>
+            </div>
+            <div type="textpart" n="in corona dextra">
+               <ab>
+               <lb n="5"/><orgName type="ethnic" key="Ἀλαβανδεῖς">Ἀλα 
+               <lb n="6" break="no"/>βαν 
+               <lb n="7" break="no"/>δεῖς</orgName>.
+            </ab>
+            </div>
          </div>
          <div type="translation">
             <p>Lanthes, son of Prodikos, the judge. The inhabitants of Mylasa. The inhabitants of
-               Alabanda</p>
+               Alabanda.</p>
          </div>
          <div type="commentary">
             <p>verification: MFA web entry, Assos; 2023</p>
+            <p>The text, if any, contained within the lower two wreaths is lost.</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
