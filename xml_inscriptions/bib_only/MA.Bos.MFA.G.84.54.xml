@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,12 +35,74 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#document">
+                     <p>decree from a magistrate, Tiberius Claudius Nikasis, declining to appoint
+                        tax collectors</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#stele">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble stele </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>50.8</height>
+                              <width>76.2</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragments.contig">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="27">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#history #palaeography" notBefore="0069" notAfter="0200">early Roman Imperial
+                        Period</date>
+                     <placeName ref="asia.asia_minor https://pleiades.stoa.org/places/550463">Assos</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="sold">
+                     <p>gift of the <orgName role="donor">Archaeological Institute of America</orgName> to <orgName role="recipient">MFA</orgName>, <date when="1884">January 15, 1884</date>.</p>
+                  </provenance>
+                  <provenance type="found" subtype="discovered">
+                     <p> Found in <placeName ref="https://pleiades.stoa.org/places/550463">Assos (Behramkale, Turkey)</placeName>; below the Bouleuterion, between 1880 and 1884 (exact year unknown), excavated by the <orgName>Archaeological Institute of America</orgName></p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -51,12 +113,17 @@
                   <ptr type="rest-of-bibl" target="#IGRR_IV"/>
                   <biblScope unit="item">259</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/199443/decree-not-to-appoint-tax-collectors?ctx=0a61f11a-a814-42fc-b8c4-bf3820719382&amp;idx=0"
+                     >MFA web entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -66,17 +133,73 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-08-04" who="Jean Wanlass">added metadata, transcription,
+            translation</change>
+         <change when="2024-03-11" who="Scott J. DiGiulio">narrowed dating, added Pleiades IDs, revised transcription from photograph</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.84.54.jpg"/>
+      </surface>
+   </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/>Δόγμα περὶ τοῦ μὴ καθίστασθαι πράκτορας,
+               <lb n="2"/>γνώμη βουλῆς τε καὶ δήμου, λαχόντων δο
+               <lb n="3" break="no"/>γματογράφων <persName><namekey="Epanthes Επάνθης">Ἐπάνθους</name> τοῦ <persName><name key="Hermogenes Ἑρμογένης">Ἑρμογένους</name></persName></persName>,
+               <lb n="4"/><persName><name key="Hermogenes Ἑρμογένης">Ἑρμογένους</name> τοῦ <persName><name key="Epanthes Ἐπάνθης">Ἐπάνθους</name></persName></persName>, <persName><name key="Kratesinikos Κρατησίνεικος">Κρατησινεί
+               <lb n="5" break="no"/>κου</name> τοῦ <persName><name key="Menestheus Μενεσθεύς">Μενεσθέως</name></persName></persName>· ἐπειδὴ ὁ κοινὸς ἁπάν
+               <lb n="6" break="no"/>των ἐκ προγόνων εὐεργέτης <persName><name type="praenomen" key="Tiberius Τιβέριος"><expan><abbr>Τι</abbr><ex>βέριος</ex></expan></name> <g type="interpunct"/> <name type="gentilicium" key="Claudius Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιος</ex></expan></name> <g type="interpunct"/> <name type="cognomen" key="Nikasis Νεικάσις">Νεικά
+               <lb n="7" break="no"/>σις</name></persName> σὺν ἅπασιν οἷς ἄλλοις εὐεργετῖ τὴν πα
+               <lb n="8" break="no"/>τρίδα, κοσμῶν τὸ ἑαυτοῦ γένος, ἐν παντὶ και
+               <lb n="9" break="no"/>ρῷ ἐνδεικνύμενος τὴν εἰς τὴν πατρίδα εὔ
+               <lb n="10" break="no"/>νοιαν, καὶ τῇ σήμερον ἡμέρᾳ βεβούληται
+               <lb n="11"/>νομοθέτης εἰς τὸν αἰῶνα <supplied reason="lost">κ</supplied><unclear>α</unclear>τα<surplus>ε</surplus>στῆναι τῆς
+               <lb n="12"/>κοινῆς εὐεργεσίας καὶ πικρ<supplied reason="lost">οῦ καὶ</supplied> μεγάλου φορ
+               <lb n="13" break="no"/>τίου τὴν πατρίδα κου<supplied reason="lost">φίσαι, αὐτ</supplied>ὸς ἀναδεχό
+               <lb n="14" break="no"/>μενος τὴν τῶν πολ<unclea>ι</unclear><supplied reason="lost">τικῶν πρα</supplied>κτόρων πρᾶ
+               <lb n="15" break="no"/>ξιν, δεδόχθαι τῇ <supplied reason="lost">βουλῇ καὶ τῷ δ</supplied>ήμῳ καὶ τοῖς
+               <lb n="16"/>πραγματευομ<supplied reason="lost">ένοις παρ' ἡμῖν</supplied> <orgName type="ethnic"><supplied reason="lost">Ῥ</supplied><unclear>ω</unclear>μαίοις</orgName>· ἐπῃ
+               <lb n="17" break="no"/>νῆσθαι μὲν <g type="interpunct"/> <persName><name type="praenomen" key="Tiberius Τιβέριος"><expan><abbr>Τ<supplied reason="lost">ι</supplied></abbr><ex>βέριον</ex></expan></name> <supplied reason="lost"><name type="gentilicium" key="Claudius Κλαύδιος"><expan><abbr>Κλ</abbr><ex>αύδιον</ex></expan></name> <name type="cognomen" key="Nikasis Νεικάσις">Νεικάσιν</name></supplied></persName> τὸν ἄρ<supplied reason="lost">χ</supplied>ον
+               <lb n="18" break="no"/>τα, λέγοντα <supplied reason="lost">μὲν ἀεὶ περὶ τῆς π</supplied>όλεως
+               <lb n="19"/>τὰ κάλλισ<unclear>τ</unclear><supplied reason="lost">α</supplied> <gap extent="unknown" unit="character" reason="lost"/> <supplied reason="lost">ο</supplied>υς τὰ ἐ
+               <lb n="20" break="no"/>πικεφά<supplied reason="lost">λαια</supplied><gap extent="unknown" unit="character" reason="lost"/> τὸν
+               <lb n="21"/>στρα<supplied reason="lost">τηγὸν</supplied><gap extent="unknown" unit="character" reason="lost"/><supplied reason="lost">στρα</supplied>τηγί
+               <lb n="22" break="no"/>ας νομο<gap extent="unknown" unit="character" reason="lost"/>ου
+               <lb n="23"/>τὴν κατόρθ<supplied reason="lost">ωσιν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+               <lb n="24"/>πράκτορ<supplied reason="lost">ας</supplied><gap extent="unknown" unit="character" reason="lost"></gap>
+               <lb n="25"/>ξενικ<gap extent="unknown" unit="character" reason="lost"></gap>
+               <lb n="26"/>τουτ<gap extent="unknown" unit="character" reason="lost"></gap>
+               <lb n="27"/>το<gap extent="unknown" unit="character" reason="lost"></gap> 
+               </ab>
          </div>
+         <div type="translation">
+            <p>Decree not to appoint tax collectors. Motion of the council and people - as scribes
+               of the decree were assigned by lot: Epanthes son of Hermogenes, Hermogenes son of
+               Epanthes, and Kratesinikos son of Menistheus. Since Ti(berius) Cl(audius) Nikasis,
+               the public benefactor of all, following his ancestral traditions, together with the
+               other things through which he is a benefactor of our home town, honoring his own
+               family and each time showing his kindness to our town, has also decided today to
+               become a lawgiver of public service for always, and to relieve our town from the
+               hateful and oppressive burden by taking upon himself the business of the municipal
+               tax collectors; the council and people and the Roman businessmen among us have
+               decreed to publicly praise T(iberius) Cl(audius) Nikasis, the magistrate, who always
+               proposes the best for the town...</p></div>
+         
+         <div type="commentary">
+            <p>The last part of the inscription is fragmentary and speaks about the polltax, the
+               office of the magistrate, and tax collectors (MFA web entry)</p>
+            <p>verification: photo, MFA web entry, Assos; 2023</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>

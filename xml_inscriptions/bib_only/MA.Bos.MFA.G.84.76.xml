@@ -17,7 +17,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,24 +35,91 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#dedicatory">
+                     <p>fragments of a temple episytle, naming Aristeas and Kallisthenes </p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#arch_element">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble epistyle</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>44.4</height>
+                              <width>166</width>
+                              <depth>35.6</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#fragments.contig">
+                           <p>three fragments</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="7">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unknown" notBefore="0001" notAfter="0002">date unknown</date>
+                     <placeName ref="asia.asia_minor">Troad, Assos</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="given">
+                     <p> given to the <orgName role="recipient">MFA</orgName> by the <orgName role="donor">Archaeological Institute of America</orgName> in <date when="1884">January 1884</date></p>
+                  </provenance>
+                  <provenance type="found" subtype="discovered">
+                     <p> excavated at <placeName>Assos</placeName> (Behramkale, Turkey),  from a "little temple (prostylos)
+                        next to the Bath" in 1881-2 by the Archaeological Institute of America;</p>
+                  </provenance>
+                  
+                  
+               </history>
+               
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Assos"/>
                   <biblScope unit="item">27a</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/199465/inscription-on-a-little-temple?ctx=085e14ec-50a7-45ff-893b-8d8d5ab1c7c2&amp;idx=0"
+                     >MFA web entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -62,17 +129,44 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-12-10" who="Jean Wanlass">added metadata</change>
+         <change when="2024-01-05" who="Jean Wanlass">added transcription, translation</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.84.76.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
-         </div>
+            <ab>
+               <lb n="1"/> ὁ δῆμος
+               <lb n="2"/> Καλλισθένει Ἡφαιστογένους ἥρωϊ
+               <lb n="3"/> ὁ δῆμος
+               <lb n="4"/> <supplied reason="lost">Καλλισθένει Ἡφαι</supplied><unclear>σ</unclear>τογένους φιλοπάτ<unclear>ρ</unclear><supplied reason="lost">ιδι</supplied>
+               <lb n="5"/> ἥρωϊ εὐεργέτηι
+               <lb n="6"/> <supplied reason="lost">ὁ δῆμος</supplied>
+               <lb n="7"/>Ἀριστίᾳ <unclear>Ἡ</unclear><supplied reason="lost">φαιστογένους</supplied>
+            </ab></div>
+         
+         <div type="translation">
+            <p>the people to the hero, Kallisthenes, son of Hephaistogenes / to Kallisthenes, son of
+               Hephaistogenes, lover of his country, ......to the hero and benefactor / to Aristias,
+               son of Hephaistogenes</p></div>
+         
+         <div type="commentary">
+            <p>verification: photo, Assos entry, MFA web entry; 2024</p></div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
