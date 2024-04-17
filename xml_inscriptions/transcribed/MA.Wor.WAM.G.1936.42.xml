@@ -17,7 +17,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>NY.NY.NYU.L.X.140</title>
+                <title>MA.Wor.WAM.G.1936.42</title>
                 <author>Author</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,27 +30,27 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.NYU.L.X.140">NY.NY.NYU.L.X.140</idno>
+                <idno type="USEpigraphy" xml:id="MA.Wor.WAM.G.1936.42">MA.Wor.WAM.G.1936.42</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>NYU</institution>
+                        <region>MA</region>
+                        <settlement>Wor</settlement>
+                        <institution>WAM</institution>
                         <repository></repository>
-                        <idno>X.140</idno>
+                        <idno>1936.42</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
+                        <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#label">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>signature of potter</p>
+                            <p>epitaph for Claudius</p>
                         </msItem>
                     </msContents>
 
@@ -59,14 +59,14 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.lamp">
-                            <supportDesc ana="#clay.other">
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> red clay lamp</p>
+                                    <p> green marble stele</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>3.1</height>
-                                        <width>4.5</width>
-                                        <depth>8.9</depth>
+                                        <height>34.3</height>
+                                        <width>36.2</width>
+                                        <depth/>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
@@ -84,13 +84,14 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#in_relief"> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>framing ring decorated with slave mask in center</p>
+                                <p>Claudius reclines on dining couch holding cup(?); in front is a
+                                    three-legged table with cakes</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -104,19 +105,21 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#prosopography" notBefore="0069" notAfter="0100">69-100
-                                CE</date>
-                            <placeName ref="europe.italy">Italy</placeName>
+                            <date evidence="#unspecified" notBefore="0001" notAfter="0200">first to
+                                second century CE</date>
+                            <placeName ref="asia.asia_minor">Antioch on the Orontes</placeName>
                         </origin>
-
+                        <provenance type="found" subtype="discovered">
+                            <p>Excavated at <placeName>Antioch</placeName> in <date when="1936">1936</date>.</p>
+                        </provenance>
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bonfante_Fowlkes_2006"/>
-                        <biblScope unit="page">223-224, no. 79</biblScope>
+                        <ref type="external" target="
+                            https://worcester.emuseum.com/objects/27222/grave-relief-of-claudius;jsessionid=B9970B7C3C0BB56994455C057F7F0665">Worcester Art Museum web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -142,7 +145,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2023-11-10" who="Advaith Rege">Initial Encoding</change>
+            <change when="2023-12-30" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -153,11 +156,7 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.NYU.L.X.140-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc>detail of inscription</desc>
-            <graphic url="NY.NY.NYU.L.X.140-det2.jpg"/>
+            <graphic url="MA.Wor.WAM.G.1936.42-sml.jpg"/>
         </surface>
     </facsimile>
 
@@ -165,15 +164,16 @@ changes: correct handling of provenance information -->
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>
-                <persName><name type="cognomen" key="Strobilus">Strobili</name>.</persName>
+                <lb n="1"/><persName>
+                    <name type="cognomen" key="Claudius">Κλαύδι</name>
+                </persName>, ἄλυπε, χαῖρε.
             </ab></div>
             
             <div type="translation">
-            <p>Of Strobilus</p></div>
+            <p>Claudius, free from pain, farewell.</p></div>
 
             <div type="commentary">
-            <p>Basis of verification: previous edition and photo</p></div>
+            <p>Basis of verifcation: previous edition and photo</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>

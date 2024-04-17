@@ -17,7 +17,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>NY.NY.NYU.L.X.140</title>
+                <title>MA.Wor.WAM.G.1936.2</title>
                 <author>Author</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,27 +30,27 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.NYU.L.X.140">NY.NY.NYU.L.X.140</idno>
+                <idno type="USEpigraphy" xml:id="MA.Wor.WAM.G.1936.2">MA.Wor.WAM.G.1936.2</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>NY</region>
-                        <settlement>NY</settlement>
-                        <institution>NYU</institution>
+                        <region>MA</region>
+                        <settlement>Wor</settlement>
+                        <institution>WAM</institution>
                         <repository></repository>
-                        <idno>X.140</idno>
+                        <idno>1936.2</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
+                        <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p>signature of potter</p>
+                            <p>fragmentary mosaic inscription of Dionysos</p>
                         </msItem>
                     </msContents>
 
@@ -59,17 +59,17 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.lamp">
-                            <supportDesc ana="#clay.other">
+                        <objectDesc ana="#arch_element">
+                            <supportDesc ana="#stone.other">
                                 <support>
-                                    <p> red clay lamp</p>
+                                    <p> limestone and marble cubes embedded in lime mortar</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>3.1</height>
-                                        <width>4.5</width>
-                                        <depth>8.9</depth>
+                                        <height>293.6</height>
+                                        <width>198.6</width>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.intact">
+                                <condition ana="#fragment.single">
                                     <p/>
                                 </condition>
                             </supportDesc>
@@ -84,13 +84,14 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#in_relief"> </handNote>
+                            <handNote ana="#mosaic"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>framing ring decorated with slave mask in center</p>
+                                <p>Hermes with winged sandals and hat, herald's staff, carries baby
+                                    Dionysos</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -104,19 +105,20 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#prosopography" notBefore="0069" notAfter="0100">69-100
-                                CE</date>
-                            <placeName ref="europe.italy">Italy</placeName>
+                            <date evidence="#archaeology" notBefore="0301" notAfter="0400">fourth
+                                century CE</date>
+                            <placeName ref="asia.asia_minor">Antioch on the Orontes</placeName>
                         </origin>
-
+                        <provenance type="found" subtype="discovered">
+                            <p>Excavated at <placeName>Antioch</placeName> in <date when="1933">1933</date>.</p>
+                        </provenance>
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bonfante_Fowlkes_2006"/>
-                        <biblScope unit="page">223-224, no. 79</biblScope>
+                        <ref type="external" target="https://worcester.emuseum.com/objects/16554/hermes-and-dionysos-floor-mosaic?ctx=111e56cceec0e8679db69cafceb10899cc65b763&amp;idx=712">Worcester Art Museum web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -142,7 +144,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2023-11-10" who="Advaith Rege">Initial Encoding</change>
+            <change when="2023-12-14" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -153,11 +155,7 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.NY.NYU.L.X.140-det1.jpg"/>
-        </surface>
-        <surface>
-            <desc>detail of inscription</desc>
-            <graphic url="NY.NY.NYU.L.X.140-det2.jpg"/>
+            <graphic url="MA.Wor.WAM.G.1936.2-sml.jpg"/>
         </surface>
     </facsimile>
 
@@ -166,11 +164,15 @@ changes: correct handling of provenance information -->
             <div type="edition">
             <ab>
                 <lb n="1"/>
-                <persName><name type="cognomen" key="Strobilus">Strobili</name>.</persName>
+                    <persName>
+                        <name type="divinity" key="Dionysos">
+                            Διόν<supplied reason="lost" cert="low">υσος</supplied>
+                        </name>
+                    </persName>
             </ab></div>
             
             <div type="translation">
-            <p>Of Strobilus</p></div>
+            <p>Dionysos.</p></div>
 
             <div type="commentary">
             <p>Basis of verification: previous edition and photo</p></div>
