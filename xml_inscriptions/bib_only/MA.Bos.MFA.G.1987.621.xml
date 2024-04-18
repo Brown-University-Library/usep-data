@@ -35,17 +35,104 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#label">
+                     <p>label on a marble discus </p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#object_other">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> marble discus </p>
+                           <dimensions type="surface" unit="cm">
+                              <height>18.2</height>
+                              <width>5</width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#broken">
+                           <p> </p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p>following circular edge of discus</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>illegible remnants of a painted tondo</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0450" notAfter="-0550">about 500
+                        BCE</date>
+                     <placeName ref="europe.greece"/>
+                  </origin>
+                  <provenance type="transferred" subtype="acquired">
+                     <p> partial purchase by <orgName role="buyer">MFA</orgName> from <persName role="seller">Catherine Gallatin</persName> and partial gift of <persName role="donor">Catherine Gallatin</persName> to <orgName role="recipient">MFA</orgName>, on <date when="1987">December 16, 1987</date></p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> by <date when="1973">1973</date>, in <persName>Catherine Gallatin</persName> Collection</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="loaned">
+                     <p> loaned by <persName role="lender">Albert F. Gallatin</persName> to <orgName role="recipient">MFA</orgName>, on <date when="1948">September 18, 1948</date> (as 192.48);</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="moved">
+                     <p> In <date when="1947">1947</date>: returned to <persName>Albert F. Gallatin</persName> Collection</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="loaned">
+                     <p> loaned by <persName role="lender">Albert Gallatin</persName> to the <orgName role="recipient">Metropolitan Museum of Art</orgName> from <date when="1930">March 14, 1930</date> to <date when="1947">May 26, 1947</date></p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> by <date when="1929">1929</date>, in <persName>Albert Gallatin</persName> Collection</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold">
+                     <p> sold at <orgName role="seller">Sotheby's</orgName> auction, in <date when="1929">May 1929</date> lot 89</p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> by 1929: with <orgName>Sotheby's</orgName></p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p>Before <date when="1928">1928</date>, in <persName>Edward Perry Warren</persName> Collection</p>
+                  </provenance>
+                  
+                  
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#IG_I3"/>
                   <biblScope unit="item">1395</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/130164/discus?ctx=db0ff760-cb15-4af6-a51e-8d3ef8f18486&amp;idx=0"
+                     >MFA web entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -62,14 +149,43 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-12-10" who="Jean Wanlass">added metadata and transcription</change>
+         <change when="2024-03-11" who="Scott J. DiGiulio">corrected transcription</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc></desc>
+         <graphic url="MA.Bos.MFA.G.1987.621.jpg"/>
+      </surface>
+   </facsimile>
+   
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/>ἐκ το͂ν ἐ<supplied reason="lost">ρί</supplied>ον.
+            </ab></div>
+         
+         <div type="translation">
+            <p>from the Eria (burial mound?) </p></div>
+         
+         <div type="commentary">
+            <p>From the position of the 6th letter and through comparison with other inscriptions, the MFA website entry suggests "eirion/εἴριον" (burial mound), and cites IG I(3), Attica, no. 1395.</p>
+            <p>verification: photo, MFA web entry; 2023</p></div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+                
+               </xi:fallback>
+            </xi:include>
          </div>
+       
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                          href="http://library.brown.edu/usep_data/resources/titles.xml">
