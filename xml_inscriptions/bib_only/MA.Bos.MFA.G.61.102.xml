@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader><!-- testing1 -->
+   <teiHeader>
+      <!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.Bos.MFA.G.61.102</title>
@@ -17,7 +18,7 @@
          </titleStmt>
          <publicationStmt>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -35,12 +36,73 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#magic #label #text_other">
+                     <p>inscription marking a moneybox as a container of votive offerings for good
+                        heath</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <physDesc>
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  <objectDesc ana="#instrumentum.container">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p>bronze moneybox</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>9.4</height>
+                              <width>10</width>
+                              <depth>13</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p/>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0200" notAfter="-0150">about 180
+                        BCE</date>
+                     <placeName ref="africa.egypt https://pleiades.stoa.org/places/736963">Memphis, Egypt</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="sold">
+                     <p> on <date when="1961">January 11, 1961</date>, purchased by <orgName
+                           role="buyer">MFA</orgName> from <orgName role="seller">Spink and Son,
+                           Ltd.</orgName> for $800.00</p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> by <date when="1960">1960</date>, with <orgName>Spink and Son, Ltd.</orgName>, 5, 6 + 7 King
+                        Street, St. James's, London, S.W. 1, origin claimed to be
+                           <placeName ref="https://pleiades.stoa.org/places/736963">Memphis, Egypt</placeName>
+                     </p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p>by date unknown, in G. Michaïlidis Collection, Cairo (according to
+                           <persName>G. Michaïlidis</persName>, Annales du Service des Antiquités de
+                        l'Égypte 55, 1958, pp. 191-197) </p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
@@ -52,7 +114,7 @@
       </fileDesc>
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -60,19 +122,35 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-12-28" who="Jean Wanlass">added metadata, translation,
+            transcription</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.61.102.jpg"/>
+      </surface>
+   </facsimile>
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab><lb n="1"/>Ὑγίαινε.</ab>
+         </div>
+         <div type="translation">
+            <p>Be of good health.</p>
+         </div>
+         <div type="commentary">
+            <p>verification: photo, MFA web entry; 2023</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>
