@@ -490,7 +490,7 @@
 
     <xsl:template name="bibl">        
         <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:listBibl/t:bibl[child::t:ptr[@type='rest-of-bibl']]">
-            <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date/@when" order="ascending"/> <!-- @data-type="number"  -->
+            <xsl:sort select="id(substring-after(t:ptr/@target, '#'))/t:date[1]/@when" order="ascending"/> <!-- @data-type="number"  -->
            
             <xsl:variable name="myID" select="substring-after(t:ptr/@target, '#')"/>
             <p>
@@ -567,7 +567,7 @@
 
                 <!-- output the year, if there is one. with a space before it and inside parentheses. -->
                 <xsl:if  test="id($myID)/t:date">
-                    <xsl:value-of select="concat(' (', id($myID)/t:date, ')')"/>
+                    <xsl:value-of select="concat(' (', id($myID)/t:date[1], ')')"/>
                 </xsl:if>
         
                 
