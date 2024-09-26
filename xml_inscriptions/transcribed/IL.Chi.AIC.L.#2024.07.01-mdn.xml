@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>IL.Chi.AIC.L.#2024.07.01-mdn</title>
+                <author>Author</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="IL.Chi.AIC.L.#2024.07.01-mdn">IL.Chi.AIC.L.#2024.07.01-mdn</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>IL</region>
+                        <settlement>Chi</settlement>
+                        <institution>AIC</institution>
+                        <repository></repository>
+                        <idno>2024.07.01</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>epitaph for Claudia Tyche from her husband, M. Ulpius Cerdo</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#sarcophagus">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p> marble sarcophagus</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>58</height>
+                                        <width>208</width>
+                                        <depth>62</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="7">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>cupids leaning against lid side-edges; torch-bearing cupids fly away from cupids holding campus on either side; three Graces in center panel, surrounded by strigillation and torch-bearing cupids at the ends.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs>modern-text</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="0201" notAfter="0250">early
+                                third century</date>
+                            <placeName ref="unknown"/>
+                        </origin>
+                        <provenance type="transferred" subtype="moved">
+                            <p>Brought by <persName>Thomas Mansel-Talbot</persName> from <placeName>Italy</placeName> in the late eighteenth century.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="moved">
+                            <p>Moved to <placeName>Margam Abbey</placeName> in the early nineteenth century.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="moved">
+                            <p>Moved to <placeName>Penrice Castle</placeName> in the late 19th century and owned by a <persName>Miss Talbot</persName>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="purchased">
+                            <p>Bought by a private Californian collection from <orgName role="seller">Robin Symes, Ltd.</orgName> in <date when="1989">1989</date>.</p>
+                        </provenance>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Sold at an auction by <orgName role="seller">Sotheby's</orgName> in <date when="2022">2022</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ref type="external" target="https://www.sothebys.com/en/buy/auction/2022/master-sculpture-from-four-millennia/a-roman-marble-strigillated-sarcophagus-1st">Sotheby's auction listing</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-09-22" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="IL.Chi.AIC.L.#2024.07.01-mdn-entire.jpg"/>
+        </surface>
+        <surface>
+            <desc>Detail of inscription</desc>
+            <graphic url="IL.Chi.AIC.L.#2024.07.01-mdn-det.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/>
+                <expan><abbr>D</abbr><ex>is</ex></expan>
+                <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                <lb n="2"/>
+                <persName>
+                    <name type="praenomen" key="Marcus">
+                        <expan><abbr>M</abbr><ex>arcus</ex></expan>
+                    </name>
+                    <name type="gentilicium" key="Ulpius">Ulpius</name>
+                    <name type="cognomen" key="Cerdo">Cerdo</name>
+                </persName>
+                <lb n="3"/>titulum posuit
+                <persName>
+                    <name type="gentilicium" key="Claudia">Claudiae</name>
+                    <name type="cognomen" key="Tyche">Tycheni</name>
+                </persName>,
+                <lb n="4"/>coniugi
+                <choice><corr>c</corr><sic>k</sic></choice>arissimae,
+                <lb n="5"/>cum qua
+                <expan><abbr>vix</abbr><ex>it</ex></expan> annos
+                <num value="4">IV</num>,
+                <expan><abbr>mens</abbr><ex>es</ex></expan>
+                <num value="6">VI</num>,
+                die<choice><corr>s</corr><sic><expan><abbr>b</abbr><ex>us</ex></expan></sic></choice>
+                <num value="3">III</num>,
+                <expan><abbr>hor</abbr><ex>as</ex></expan>
+                <num value="10">X</num>.
+                <lb n="6"/>in
+                <expan><abbr>die</abbr><ex>m</ex></expan> mortis gratias maximas egi
+                <lb n="7"/>
+                apu<choice><corr>d</corr><sic>t</sic></choice> deos et
+                apu<choice><corr>d</corr><sic>t</sic></choice> homines.
+            </ab></div>
+            
+            <div type="translation">
+            <p>To the divine shades. Marcus Ulpius Cerdo placed this epitaph for Claudia Tyche, his dearest wife, with whom he lived for 4 years, 6 months, 3 days, 10 hours. On the day of (my) death I gave great thanks in the presence of the gods and men.</p></div>
+
+            <div type="commentary">
+                <p>Line 5: annos (sarcophagus). The carver mistakenly changed from the ablative to the accusative (annis on the cippus), as indicated by the following ablative dieb(us).</p>
+                <p>The epitaph inscribed on the third century sarcophagus is an eighteenth century copy of an epitaph on a second century CE cippus currently in the British Museum (acc. no. 1805,0703.204).</p>
+                <p>Basis of verification: photograph</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
