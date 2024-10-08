@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>NY.NY.MLM.L.#22.03.01</title>
+                <author>Advaith Rege</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.MLM.L.Tmp22.03.01">NY.NY.MLM.L.#22.03.01</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>MLM</institution>
+                        <repository></repository>
+                        <idno>22.03.01</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>epitaphs to Annia Secunda and Lollia Staphyle</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p> marble stele</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="2" writtenLines="11">
+                                    <p>seven lines on side a; four lines on side b</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>bird (peacock?) facing left towards branch (side A); urceus and
+                                    patera on either side of inscription (side B)</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#formulae #paleography" notBefore="0070" notAfter="0200"
+                                >second century CE</date>
+                            <placeName ref="europe.italy.rome">Curli vineyard near via
+                                Latina</placeName>
+                        </origin>
+                        <provenance type="found" subtype="discovered">
+                            <p>Discovered at the Curli vineyard near <placeName>via Latina, Rome</placeName> in <date when="1734">1734</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="moved">
+                            <p>Moved to the Ruspoli vineyard.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Bought by <persName role="buyer">Pierpont Morgan</persName> sometime before <date when="1913">1913</date>.</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">11821</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">35714</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR188339&amp;fo_antik=&amp;fo_modern=&amp;fundstelle%5B%5D=&amp;boolfundstelle=AND&amp;fundstelle%5B%5D=&amp;aufbewahrung%5B%5D=&amp;boolaufbewahrung=AND&amp;aufbewahrung%5B%5D=&amp;denkmaltyp=&amp;booldenkmaltyp=OR&amp;denkmaltyp2=&amp;ope_mis_alto=%3C%3D&amp;mis_alto=&amp;ope_mis_largo=%3C%3D&amp;mis_largo=&amp;ope_mis_spesso=%3C%3D&amp;mis_spesso=&amp;boollivelloSocialeTot=OR&amp;Bibliografia%5B%5D=&amp;boolBibliografia=AND&amp;Bibliografia%5B%5D=&amp;Testo=&amp;boolTesto=AND&amp;Testo2=&amp;Apparato%5B%5D=&amp;boolApparato=AND&amp;Apparato%5B%5D=&amp;dat_tag=&amp;dat_monat=&amp;ope_dat_jahr_a=%3D&amp;dat_jahr_a=&amp;ope_dat_jahr_e=%3D&amp;dat_jahr_e=&amp;periodizzazione=&amp;bool=AND&amp;ordinamento=id_nr&amp;javasi=javascriptsi&amp;se_foto=tutte&amp;lang=en">EDR188339</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.themorgan.org/exhibitions/online/guide/stop-58-grave-marker-annia-secunda">MLM web entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-10-06" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url=""/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <div type="textpart" subtype="side" n="a">
+                    <ab>
+                        <lb n="1"/>
+                        <expan><abbr>D</abbr><ex>is</ex></expan>
+                        <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                        <lb n="2"/>
+                        <persName><name key="Annia" type="gentilicium">Anniae</name>
+                        <lb n="3"/>
+                        <name key="Secunda" type="cognomen">Secundae</name>
+                        </persName>
+                        <lb n="4"/>
+                        <persName><name key="Lucius" type="praenomen">
+                            <expan><abbr>L</abbr><ex>ucius</ex></expan>
+                        </name>
+                        <name key="Sempronius" type="gentilicium">Sempronius</name>
+                        <lb n="5"/>
+                        <name key="Elatus" type="cognomen">Elatus</name>
+                        </persName>
+                        <lb n="6"/>coniugi
+                        <lb n="7"/>sanctissimae.
+                    </ab>
+                </div>
+                <div type="textpart" subtype="side" n="b">
+                    <ab>
+                        <lb n="8"/>Dis
+                        <lb n="9"/>Manibus
+                        <lb n="10"/>
+                        <persName><name key="Lollia" type="gentilicium">Lolliae</name>
+                        <lb n="11"/>
+                        <name key="Staphyle" type="cognomen">Staphyles</name>
+                        </persName>.
+                    </ab>
+                </div>
+            </div>
+            
+            <div type="translation">
+            <p>(side A) To the divine shades. Lucius Sempronius Elatus (made this) for his most pious wife, Annia Secunda.</p>
+            <p>(side B) To the divine shades of Lollia Staphyle.</p></div>
+
+            <div type="commentary">
+            <p>Basis of verification: photograph</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
