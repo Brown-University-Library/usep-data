@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>NY.NY.JM.H.U9115 </title>
+                <author>Ronnie Hirsch</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Ronnie Hirsch</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Ronnie Hirsch</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.JM.H.U9115">NY.NY.JM.H.U9115</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>JM</institution>
+                        <repository></repository>
+                        <idno>U 9115</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="he" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of an unknown man.</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p>stone slab</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>23.5</height>
+                                        <width>30.5</width>
+                                        <depth>12.7</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>an irregular fragment of a limestone slab, broken off at the top,
+                                        where traces of lettering can be seen, as well as on the right and
+                                        bottom edges, with a natural downward slant of the stone on the left
+                                        bottom edge; the stone is slightly damaged by the weathering,
+                                        and has two pits in the middle of the text on the front side</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="5">
+                                    <p>The campus is set off to the left on the unbroken right
+                                        side. On the back side of the stone is a partial carving of a
+                                        menorah or a palm</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"/>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Menorah or palm carved on the back</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#unknown" notBefore="0400" notAfter="0900">fifth to ninth century CE</date>
+                            <placeName ref="unknown"/>
+                        </origin>
+                        <provenance type="acquired" subtype="">Now in the <orgName>Jewish Museum in New
+                                York</orgName><p> </p></provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#unpub"/>
+                        <biblScope unit="page" type="item"></biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://thejewishmuseum.org/collection/25628-tombstone-fragment">Jewish Museum Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="Ronnie Hirsch">Initial Encoding</change>
+            <change when="2024-10-03" who="Scott J. DiGiulio">updated bibliography, fixed transcription, cleaned up metadata (distributed synthetic description to correct places in file) and tidied commentary</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic
+                url="https://res.cloudinary.com/the-jewish-museum/image/fetch/q_auto,f_auto/v1/https%3A%2F%2Fthejm.netx.net%2Ffile%2Fasset%2F48227%2Fview%2F89455%2Fview_89455%3Ftoken%3D921831d3-ee56-4e60-a489-5c285b802e1e"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="2"/> בן מ<gap reason="illegible" quantity="3"/> <gap reason="illegible" quantity="2"/> <gap reason="lost" extent="unknown"
+                    unit="character"/>
+                <lb n="3"/>שלם <space quantity="1" unit="character"/> נפש <unclear>מ</unclear>
+                <lb n="4"/>ושלש שנה <unclear>ש</unclear><gap reason="lost" extent="unknown"
+                    unit="character"/>
+                <lb n="5"/><gap reason="illegible" quantity="5"/> יש </ab></div>
+            
+            <div type="translation">
+            <p>Son of M… whole… tombstone… And three year(s)</p></div>
+
+            <div type="commentary">
+                <p>The text records an epitaph of an unknown person, possibly male (based on the
+                    masculine word בן on the second line). This might be the beginning of a
+                    filiation, as appears in other tombstones.</p>
+                <p>line 3: The word נפש can be translated either as “soul” or as “tombstone” - both meanings can be found on other Jewish tombstones.</p>
+                <p>line 4: The number ושלש might be a record of the deceased’s age at death, which would make him at least 23 years
+                    old. Alternatively it may be part of the date of his death as is common in other
+                    Jewish tombstones.</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

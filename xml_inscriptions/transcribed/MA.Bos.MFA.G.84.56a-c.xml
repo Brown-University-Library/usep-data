@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.MFA.G.84.56a-c</title>
+                <author>Ronnie Hirsch</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.84.56a-c">MA.Bos.MFA.G.84.56a-c</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>MFA</institution>
+                        <repository></repository>
+                        <idno>84.56a-c</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#honorific">
+                            <!-- short summary of the content of an inscription -->
+                            <p>inscription commemorating the crowning of (the son of?) Apollonios</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p>fragments of a stone slab</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>64</height>
+                                        <width>37</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragments.contig">
+                                    <p>three contiguous fragments, missing fragments on the top left
+                                        and on the middle and bottom right</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="6">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed">writing is somewhat uneven in size
+                                throughout the text; the letters have serifs, and the α have a
+                                broken bar</handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>traces of a carved frame on top of the slab</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#palaeography" notBefore="-0050" notAfter="0050">mid-first century BCE to mid-first century CE</date>
+                            <placeName ref="asia.asia_minor https://pleiades.stoa.org/places/550463">Asia Minor, Assos</placeName>
+                        </origin>
+                        <provenance type="acquired" subtype="given"><p>Given to the <orgName>Boston Museum of Fine
+                                Arts</orgName> by the <orgName>Archaeological Institute of America</orgName> on <date when="1884-01-15">January 15, 1884</date></p>
+                        </provenance>
+                        <provenance type="found" subtype="discovered"> <p>excavated by the <orgName>Archaeological
+                            Institute of America</orgName> in <date notBefore="1881" notAfter="1882">1881-1882</date> in <placeName ref="https://pleiades.stoa.org/places/550463">Assos</placeName>, in the western Street of
+                                Tombs</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#IGRR_IV"/>
+                        <biblScope unit="item">254</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Papers_Am_School_Ath_1_Sterrett"/>
+                        <biblScope unit="page">46, no. 21</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Assos"/>
+                        <biblScope unit="page">45, no. 21</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://collections.mfa.org/objects/199440/fragments-of-an-honorary-decree-from-a-tomb?ctx=72ceb12b-3eb1-4a41-a9a9-dc83a7e153ff&amp;idx=0">MFA Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="Ronnie Hirsch">Initial Encoding</change>
+            <change when="2024-10-03" who="Scott J. DiGiulio">Reworked and corrected bibliography, cleaned metadata, revised numerous errors in transcription and provided supplements largely in line with Merkelbach (rather than Sterrett or IGR), revised translation to align with the rewritten transcription</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url=""/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <div type="textpart" subtype="front">
+                    <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">ὁ δῆμος καὶ οἱ πρ</supplied><unclear>α</unclear>γματ<supplied reason="lost">ευόμενοι</supplied> <supplied reason="lost" cert="low">παρ' ἡμῖν Ῥωμαῖοι</supplied> <gap reason="lost" extent ="unknown"/>
+                        <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost" cert="low">στεφανοῦσιν χρυσῷ</supplied> στεφ<unclear cert="low">ά</unclear><supplied reason="lost">νωι</supplied> <gap reason="lost" extent ="unknown" unit="character"/>
+                        <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><persName><name key="Apollonios Ἀπολλώνιος"><supplied reason="lost">Ἀπολλ</supplied>ωνίο<unclear>υ</unclear></name></persName> <gap reason="lost" extent="unknown" unit="character"/> 
+                        <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>ν βασι<unclear>λ</unclear><supplied reason="lost">έα</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">σωφρ</supplied><unclear>ω</unclear>σύ<hi rend="ligature">νη</hi>ς <unclear>κ</unclear><supplied reason="lost">αὶ</supplied><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">π</supplied>ατρίδι<gap reason="lost" extent="unknown" unit="character"/>
+                    </ab>
+                </div>
+                <div type="textpart" subtype="back">
+                    <ab>
+                        <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="2"/>αι<unclear>ο</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+                        <lb n="3"/><unclear>κ</unclear>α<gap reason="lost" extent="unknown" unit="character"/>
+                   </ab>
+                </div>
+            </div>
+                        <div type="translation">
+            <p>Front: The people and the Roman merchants... crown with a golden crown... son of Apollonios... king... moderation and… to the fatherland</p></div>
+
+            <div type="commentary">
+            <p>The text is an honorific inscription commemorating the crowning of a man, possibly
+                    Apollonios, or the son of an Apollonios. The crown might be made of gold, and it is possibly the city and the
+                    Roman merchants who crown him. If Sterrett’s fuller transcription is accurate,
+                    then it is a local king who received the honor. If not, then he is at the very
+                    least an aristocrat, as the honor is prestigious. The word πατρίδι implies
+                    Apollonius was local. Crowns were made of a variety of materials, and golden
+                    crowns were the most expensive, and therefore most prized. It stands to reason
+                    then that Apollonius was honored for some outstanding service to the city. The
+                    inscription can be dated between the late first century BCE and the early first
+                    century CE or the early first century CE based on paleography: the elongated
+                    alphas with the broken cross-bar, the cursive omega and rho, and the use of
+                    serifs are all indicators of this time period.</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

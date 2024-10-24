@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.MFA.G.84.53 </title>
+                <author>Ronnie Hirsch</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.84.53">MA.Bos.MFA.G.84.53</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>MFA</institution>
+                        <repository></repository>
+                        <idno>84.53</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#honorific">
+                        <!-- short summary of the content of an inscription -->
+                            <p>Honorary inscription for Lanthes, son of Prodikos</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p>stone stele</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>49</height>
+                                        <width>45.6</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>inscription broken in its bottom half</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="4" writtenLines="5">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed">serifs appear throughout the text; he first
+                                two lines are written between lines of ordination, possibly to
+                                achieve symmetry; no lines appear around the texts in the wreaths,
+                                although a partial circular line can be seen around the text in the
+                                top left wreath</handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>a triangular gable on top, decorated with a shield in the middle
+                                    of the gable and three ornaments on top of it, on each side and
+                                    on in the middle. Underneath the gable is the name of the
+                                    honorand, and underneath the name are four identical squares
+                                    forming a quadrant, each containing a wreath.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#palaeography" notBefore="-0299" notAfter="-0001">third to first century BCE</date>
+                            <placeName ref="asia.asia_minor"><placeName ref="https://pleiades.stoa.org/places/550463">Assos</placeName></placeName>
+                        </origin>
+                        <provenance type="donated" subtype="given"> The inscription was donated by the
+                            Archaeological Institute of America to the Boston Museum of Fine Arts in
+                            January 1884. <p> </p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Papers_Am_School_Ath_1_Sterrett"/>
+                        <biblScope unit="page">26, no. 9</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Berard_1894"/>
+                        <biblScope unit="page">93, 104</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Tod_1913"/>
+                        <biblScope unit="page">48, no. lxxii; 93</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://collections.mfa.org/objects/151278/stele-documenting-mylasa-and-alabanda-honoring-the-judge-lan?">MFA Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="Ronnie Hirsch">Initial Encoding</change>
+            <change when="2024-10-24" who="Scott J. DiGiulio">Cleaned all metadata, edited down free text; finished bibliography and added link to MFA; rewrote transcription to correct formatting and other issues; added keys and Pleiades refs throughout</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url=""/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <div type="textpart" subtype="above_wreaths"> 
+                    <ab>
+                        <lb n="1"/><persName><name key="Lanthes Λάνθης">Λάνθην</name> <persName><name key="Prodikos Πρόδικος">Προδίκου</name></persName></persName> 
+                        <lb n="2"/>δικάσαντα.
+                    </ab>
+                </div> 
+                <div type="textpart" subtype="in_corona_sinistra">
+                   <ab>
+                       <lb n="3"/><orgName type="ethnic">Μυλα
+                       <lb n="4" break="no"/>σεῖς.</orgName>               
+                   </ab>
+               </div>
+                <div type="textpart" subtype="in_corona_dextra">
+                    <ab>
+                 <lb n="5"/><orgName type="ethnic">Ἀλα
+                    <lb n="6" break="no"/>βαν
+                    <lb n="7" break="no"/>δεῖς.</orgName>
+                    <lb n="8"/></ab></div>
+            <div type="textpart" subtype="below">
+                <ab>
+                    <lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+                </ab>
+            </div>
+            
+            <div type="translation">
+                <p>The people of <placeName ref="https://pleiades.stoa.org/places/599810">Mylasa</placeName>, the people of <placeName ref="https://pleiades.stoa.org/places/599479">Alabanda</placeName>, [the people of -, the people of-]
+                    (honor) Lanthes, son of Prodikos, for judging.</p></div>
+
+            <div type="commentary">
+            <p>The inscription is an honorary stele dedicated to a man named Lanthes, son of
+                    Prodikos, possibly from Assos, as this is where the stele was found. While no
+                    other information about him exists, it is safe to assume he was of high social
+                    rank which allowed him to serve as a judge. The context in which he served as
+                    judge is uncertain: he might have been a judge in an athletic competition or
+                    some form of arbitration. The stele can be dated to 1st century BCE based on
+                    paleography: the serifs used came into use in the 3rds century BCE, broken-bar
+                    alpha was in use between the 3rd and 1st centuries BCE, and the full π started
+                    replacing the partial π in the 1st century BCE. </p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
