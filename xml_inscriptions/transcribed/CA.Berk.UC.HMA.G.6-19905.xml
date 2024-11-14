@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>CA.Berk.UC.HMA.G.6-19905</title>
+                <author>Jean Wanlass</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="CA.Berk.UC.HMA.G.6-19905">CA.Berk.UC.HMA.G.6-19905</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>CA</region>
+                        <settlement>Berk</settlement>
+                        <institution>UC</institution>
+                        <repository/>
+                        <idno>6-19905</idno>
+                    </msIdentifier>
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#text_unknown">
+                            <!-- short summary of the content of an inscription -->
+                            <p>inscription on a stele from a Coptic cemetery </p>
+                        </msItem>
+                    </msContents>
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p>fragment of a stone stele </p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragment.single">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="1">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <!--  *************************************  <handDesc>  ********************************* -->
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>inscribed wreath, above text</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    <!--  *************************************  <history>  *********************************  -->
+                    <history>
+                        <summary>
+                            <rs/>
+                            <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+                        <origin>
+                            <date evidence="#unspecified" notBefore="-0031" notAfter="0641">31 BC to
+                                641 AD</date>
+                            <placeName ref="africa.egypt">Deir el-Ballas</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="donated">
+                            <p>Donated by <persName role="donor">P. A. Hearst</persName> to <persName role="recipient">Hearst Museum</persName></p>
+                        </provenance>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Collected by <persName>George Andrew Reisner</persName></p>
+                        </provenance>
+                        <provenance type="found" subtype="discovered">
+                            <p>Found in Room 171, Northern Kom (Northern Palace), <placeName>Deir el-Ballas, Egypt</placeName></p>
+                        </provenance>
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl"/>
+                        <biblScope unit="page">00</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://portal.hearstmuseum.berkeley.edu/catalog/e011a0db-e3bd-404c-89d2-2714b6a60faa"
+                            >Hearst Museum web entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+        <encodingDesc>
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
+        </encodingDesc>
+        <profileDesc><!-- not used --></profileDesc>
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+        <!-- Record all changes here -->
+        <revisionDesc>
+            <change when="2024-10-20" who="Jean Wanlass">Initial Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <!--  *************************************  <facsimile>  *********************************  -->
+    <!-- Used to record images of an inscription.   -->
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url=""/>
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition">
+                <ab>
+                         <lb n="1"/> ΤΗΣΕΝΟΜΑΚΑ 
+                         <lb n="2"/> ΗΝΙΤΥΒΙΖΤΗΣΑΒΤ</ab>
+            </div>
+            <div type="translation">
+                <p/>
+            </div>
+            <div type="commentary">
+                <p/>
+            </div>
+            <div type="bibliography">
+                <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml">
+                    <xi:fallback>
+                        <p>US Ep bibliography</p>
+                    </xi:fallback>
+                </xi:include>
+            </div>
+        </body>
+    </text>
+</TEI>
