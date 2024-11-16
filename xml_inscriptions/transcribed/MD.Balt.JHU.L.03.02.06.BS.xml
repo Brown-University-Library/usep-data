@@ -56,7 +56,7 @@
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                   <msItem class="#label">
                         <!-- short summary of the content of an inscription -->
-                     <p>Lunate brick stamp of Lucius Iulius Rufus</p>
+                     <p>brickstamp of Lucius Iulius Rufus</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
@@ -68,7 +68,8 @@
                      <supportDesc ana="#clay.terracotta">
                         <support>
                                     <!-- short summary of the material and support of an inscription -->
-                           <p>Lunate brick stamp</p>
+                           <p></p>
+                           
                            <dimensions type="surface" unit="cm">
                               <height>14 cm</height>
                               <width>31.2 cm</width>
@@ -127,7 +128,7 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CIL_XV"/>
-                  <biblScope unit="item">663</biblScope>
+                  <biblScope unit="item">663*</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Bloch_Bolli"/>
@@ -162,6 +163,8 @@
          <change when="2015-09-14" who="Scott J. DiGiulio">Cleaned metadata, cleaned bibl, added MNR to bibl, updated location of origin, proofed transcription (added palm and second ligature), added translation div.</change>
          <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
+         <change when="2024-11-16" who="Sasha Floru">Added diplomatic transcription, commentary, and changed CIL</change>
+         
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -175,17 +178,53 @@
    <text>
       <body>
          <div type="edition"><!-- transcription goes here -->
-            <ab>
-               <lb n="1"/>
-               <g type="palma"/> Vic<supplied reason="omitted">c</supplied>iana <expan><abbr>L</abbr><ex>uci</ex></expan> I<hi rend="ligature">ul</hi>i R<hi rend="ligature">uf</hi>i.
-                </ab>
+            
+            
+            
+            <!--Diplomatic transcription goes here, surrounded by <ab> </ab> elements-->
+            
+            <div type="textpart" subtype="diplomatic">
+               
+               <ab>              
+                  <lb n="1"/> ramus palmae ss. VICIANA&#183;L&#183;I<hi rend="ligature">VL</hi>I R<hi rend="ligature">UF</hi>I   ramus palmae ds.  
+                       
+               </ab>
+               
+            </div>  
+            
+            
+            <div type="textpart" subtype="interpretive">
+               
+               <ab>                              
+                  
+                     <lb n="1"/>                 
+                     <g type="palma"/> Vic<supplied reason="omitted">c</supplied>iana (sc. tegula) <expan><abbr>L</abbr><ex>uci</ex></expan> I<hi rend="ligature">ul</hi>i R<hi rend="ligature">uf</hi>i.
+                                                                 
+               </ab>
+               
+            </div>
+            
          </div>
+                                        
+         
          <div type="translation">
-            <p>“Brick from the Vicciana estate of Lucius Iulius Rufus.”</p>
+            
+            <p>“(roof tile) from the Vicciana brickyards of Lucius Iulius Rufus.”</p>
+            
          </div>
-         <div type="commentary"><!-- notes go here -->
+         <div type="commentary"><!-- notes go here -->          
+            
+            <p> form: BDRCO 520 (Center of the orbiculus is inside the stamp; the orbiculus extends beyond the center of the stamp) </p>                    
+            <p> dating: Steinby, Cronologia p. 97</p>               
+            <p> signum: ramus palmae ss. and ramus palmae ds. (BDRCO) </p>
+            <p> verification: photo</p>   
+            
             <p>Line 1: Bloch identified this dominus as L. Iulius Rufus, consul in the year 67 CE. Dressel dated this brick to the time of Vespasian, therefore the dating supports Bloch's interpretation; about Iulius Rufus we know nothing more than the date of his consulship. The figlinae Viccianae were already open during the reign of Claudius.</p>
-         </div>
+                 
+         
+         </div>        
+         
+         
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                          href="http://library.brown.edu/usep_data/resources/titles.xml">
