@@ -130,11 +130,18 @@
             <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
                       Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
                 -->
-            <listBibl>
+            <listBibl>              
+               
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CIL_XV"/>
+                  <biblScope unit="item">477/8</biblScope>
+               </bibl>
+               
                <bibl>
                   <ptr type="rest-of-bibl" target="#Peachin_2014_GLINYU"/>
                   <biblScope unit="page">122, no. 48</biblScope>
-               </bibl>
+               </bibl>                         
+               
             </listBibl>
          </sourceDesc>
       </fileDesc>
@@ -158,10 +165,13 @@
          <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
          <change when="2023-10-24" who="Advaith Rege">Added images</change>
+         <change when="2024-11-16" who="Sasha Floru">Diplomatic transcription, CIL number, additional commentary</change>
+
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
    <!-- Used to record images of an inscription.   -->
+   
    <facsimile>
       <surface>
          <desc/>
@@ -169,27 +179,55 @@
       </surface>
       <surface>
          <desc></desc>
+
          <graphic url="NY.NY.NYU.L.48 (det.1).jpg"/>
+
       </surface>
    </facsimile>
    <text>
+      
       <body>
+         
+         
+         
          <div type="edition"><!-- transcription goes here -->
-            <ab>
+               
+         <div type="textpart" subtype="diplomatic">
+               
+               <ab>              
+                  <lb n="1"/> C&#183;CVLPI&#183;SVLPIC F SAE              
+                  
+               </ab>
+               
+          </div>          
+              
+         <div type="textpart" subtype="interpretive">  
+               <ab>
                <lb n="1"/>
                <persName>
                   <name type="praenomen" key="Caius">
                 <expan><abbr>C</abbr><ex>aii</ex></expan>
                   </name>
                   <name type="gentilicium" key="Culpius">Culpi</name>
-                  <name type="cognomen" key="Sulpicianus">Sulpic(iani ?)</name></persName>, <expan><abbr>f</abbr><ex>iglinis</ex></expan> <expan><abbr>Sae</abbr><ex>nianis?</ex></expan>.
+                  <name type="cognomen" key="Sulpicianus">Sulpic(iani ?)</name></persName>, <expan><abbr><damage>f</damage></abbr><ex>iglinis</ex></expan> <expan><abbr>Sae</abbr><ex>nianis?</ex></expan>.
                 </ab>
+            
+         </div>   
+                                
          </div>
+                                                    
          <div type="translation">
             <p>(Brickwork) of Gaius Culpius Sulpic(ianus?) (from) the Sae(nian?) brickyards. </p>
          </div>
          <div type="commentary"><!-- notes go here -->
+            
+            <p> form: BDRCO 540 (Orbiculus as tall as two lines of text) </p>                    
+            <p> dating: </p>               
+            <p> signum: nux pinea inter duos ramos palmae (BDRCO) </p>
+            <p> verification: previous edition</p>             
+            
             <p>At the center of the rooftile is a well-preserved example of a new stamp that can be fit into the context of similar stamps of the early second century CE from the figlinae Sulpicianae (Sulpician brickyards), notably the various versions of CIL XV 585, which record an officinator C. Cul(pius) Dia(dumenus?) at the figlinae Sulpicianae, one with the same form of stamp and signum. This new stamp confirms the gentilicium of the officinator as Culpius and perhaps identifies the eponymous owner of the brickyards. For this reading and interpetation we follow the entry for "Novum CIL XV 477/8" at the website Bolli Doliari Romani dell'Italia Centro-Occidentale (BDRCO): http://www.bollidoliari.org/index.php/cil-xv-400-599?start=7/. Note also AE 2014, 200. </p>
+         
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
