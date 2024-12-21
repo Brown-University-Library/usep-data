@@ -5,10 +5,10 @@
       <fileDesc>
          <titleStmt>
             <title>NY.NY.CU.Butl.L.36</title>
-            <author>Author</author>
+            <author>Norah Mezey-McMahon</author>
             <respStmt>
                <resp>Translation</resp>
-               <name>Translator</name>
+               <name>Norah Mezey-McMahon</name>
             </respStmt>
             <respStmt>
                <resp>Commentary</resp>
@@ -35,20 +35,57 @@
                </msIdentifier>
                <msContents>
                   <textLang mainLang="lat" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#funerary.epitaph">
+                     <p>Epitaph for Publius Pomponius Philositus</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
+               <physDesc>
+                  <objectDesc ana="#tablet">
+                     <supportDesc ana="#stone.marble">
+                        <support>                      
+                           <p>White marble loculus tablet</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>unknown</height>
+                              <width>unknown</width>
+                              <depth>unknown</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>                 
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="3">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>                 
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>         
+                  </handDesc>                 
+                  <decoDesc>
+                     <decoNote>
+                        <p>The lettering is surrounded by an inscribed decorative border</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
                <history>
                   <summary>
                      <note/>
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0100">First century CE</date>
-                     <placeName ref="europe.italy.rome">Italy, Rome, Via Salaria</placeName>
+                     <date evidence="#archaeology #onomastics #palaeography" notBefore="0001" notAfter="0100">First century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome, in a tomb between Via Salaria and Via Pinciana</placeName>
                   </origin>
-                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+                  <provenance type="transferred" subtype="sold">
+                     <p>Purchased by <persName type="buyer">George N. Olcott</persName> in
+                        <placeName ref="europe.italy.rome">Rome</placeName>
+                        <date when="1897">ca. 1897</date>
+                     </p>
+                  </provenance>
+                  <provenance type="observed" subtype="reported">
+                     <p>Currently housed in the Rare Books and Manuscript Library in the <placeName>Columbia University Butler Library</placeName></p>
+                  </provenance>
                </history>
             </msDesc>
             <listBibl>
@@ -79,13 +116,29 @@
       <revisionDesc>
          <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2024-10-29" who="Norah Mezey-McMahon">Updated metadata, added transcription and translation</change>
       </revisionDesc>
    </teiHeader>
    <!--facsimile element goes here-->
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <lb n="1"/>
+               <persName>
+                  <name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublio</ex></expan></name>
+                  <name type="gentilicium" key="Pomponius">Pomponio</name>
+            <lb n="2"/>
+                  <persName>
+                     <name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name>
+                  </persName>
+                  <expan><abbr>l</abbr><ex>iberto</ex></expan>
+                  <name type="cognomen" key="Philositus">Philosito</name>
+               </persName>,
+            <lb n="3"/>
+               <expan><abbr>nomenclat</abbr><ex>ori</ex></expan>            
+         </div>
+         <div type="translation">
+            <p>For Publius Pomponius Philositus, freedman of Publius, a nomenclator.</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
