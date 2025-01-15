@@ -11,14 +11,14 @@ changes: correct handling of provenance information -->
      updated link to stoa schema -->
 
           <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
                 <title>CT.NH.YU.YUAG.L.2015.123.1</title>
-                <author>Author</author>
+                <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -42,7 +42,7 @@ changes: correct handling of provenance information -->
                         <institution>YU</institution>
                         <repository>YUAG</repository>
                         <idno>2015.123.1</idno>
-                    <altIdentifier type="TM_number"><idno></idno></altIdentifier></msIdentifier>
+                    </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
@@ -50,7 +50,7 @@ changes: correct handling of provenance information -->
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaph of M. Fulvius Lamyrus</p>
+                            <p>epitaph to Marcus Fulvius Lamyrus</p>
                         </msItem>
                     </msContents>
 
@@ -59,10 +59,11 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#sarcophagus">
-                            <supportDesc ana="#stone.marble #stone.other">
+                        <objectDesc ana="#object_other">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> marble and porphyry sarcophagus</p>
+                                    <p>two rectangular blocks of marble with porphyry inlays joined
+                                        in the style of Cosmati opus sectile on the front</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>136</height>
                                         <width>111</width>
@@ -83,14 +84,27 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <handDesc>  ********************************* -->
 
-                        <handDesc hands="1">
-                            <handNote ana="#inscribed"/>
+                        <handDesc hands="2">
+                            <handNote ana="#inscribed"> lines 9-10 were inscribed after the first 8
+                                lines</handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>Cosmati opus sectile inlays</p>
+                                <p>opus sectile patterning shows a red and green border along top,
+                                    sides, and bottom, although noticeably thicker on right side of
+                                    bottom block and along bottom; the left border also does not
+                                    meet bottom border; centered is a diamond shape bordered by red,
+                                    white, and green pattern; this is enclosed by a green-and-white
+                                    diamond shape with four spirals which enclose red and green
+                                    circular inlays; the rest is filled in with red-and-white small
+                                    triangular pattern; campus on the back, square, is set off
+                                    by a simple molded cornice; top block is from top left corner of
+                                    striligilated sarcophagus, with ‘strigil-shaped’ fluting across,
+                                    top corniced border (with one circular hole), and inscription on
+                                    back; bottom block is plain with slightly indented border along
+                                    sides and bottom, also on back</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -104,26 +118,31 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="0150" notAfter="1200"
-                                >mid-second century and twelfth century</date>
-                            <placeName ref="europe.italy">Italy</placeName>
+                            <date evidence="#formulae #onomastics" notBefore="0101" notAfter="0200"
+                                >second century CE</date>
+                            <placeName ref="unknown"/>
                         </origin>
-                        <provenance type="observed" subtype="recorded">
-                            <p>Owned by the <orgName>Church of San Gregorio Magno al Celio</orgName> before <date when="1574">1574</date>.</p>
+                        <provenance type="observed" subtype="reported">
+                            <p>Seen at the <placeName>San Gregorio Magno al Celio</placeName> in <placeName ref="https://pleiades.stoa.org/places/423025">Rome</placeName> as reported in the itinerary of an anonymous Gaul in <date when="1576">1576</date>.</p>
+                        </provenance>
+                        <provenance type="observed" subtype="reported">
+                            <p>Reported in the compluvium outside the <placeName>San Gregorio Magno al Celio</placeName> in an ancient marble sepulcher by an anonymous author, <persName>Hispanus Chisianus</persName>.</p>
                         </provenance>
                         <provenance type="transferred" subtype="sold">
-                            <p>Sold by <persName role="seller">Pino Donati</persName> to <persName role="buyer">Edith Hafter</persName> around <date when="1960">1960</date>.</p>
-                        </provenance>
-                        <provenance type="transferred" subtype="given">
-                            <p>Transferred by descent to <orgName role="recipient">Donati Arte Classica</orgName> by <persName role="donor">Edith Hafter</persName>.</p>
-                        </provenance>
-                        <provenance type="observed" subtype="recorded">
-                            <p>Owned by the <orgName>Galerie Chenel</orgName>.</p>
+                            <p>Sold by <persName role="seller">Pino Donati</persName> in <placeName>Switzerland</placeName> in <date when="1960">1960</date>.</p>
                         </provenance>
                         <provenance type="transferred" subtype="acquired">
-                            <p>Acquired by the <orgName role="recipient">Yale University Art Gallery</orgName> from the <orgName role="donor">Galerie Chenel</orgName> in <date when="2015">2015</date>.</p>
+                            <p>Acquired by the collection of <persName role="recipient">Edith Hafter</persName> in <placeName>Switzerland</placeName>.</p>
                         </provenance>
-
+                        <provenance type="transferred" subtype="donated">
+                            <p>Given by descent to <orgName role="recipient">Donati Arte Classica</orgName> in <placeName>Switzerland</placeName>.</p>
+                        </provenance>
+                        <provenance type="observed" subtype="reported">
+                            <p>Owned by <orgName>Galerie Chenel</orgName> in <placeName>Paris</placeName>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Acquired by the <orgName role="recipient">Yale University Art Gallery</orgName> in <date when="2015">2015</date>.</p>
+                        </provenance>
 
                     </history>
                 </msDesc>
@@ -134,12 +153,10 @@ changes: correct handling of provenance information -->
                         <biblScope unit="item">18677a</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR185091&amp;fo_antik=&amp;fo_modern=&amp;Bibliografia%5B%5D=&amp;Testo=&amp;boolTesto=AND&amp;Testo2=&amp;bool=AND&amp;ordinamento=id_nr&amp;javasi=javascriptsi&amp;se_foto=tutte&amp;lang=en">EDR185091</ref>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR185091&amp;fo_antik=&amp;fo_modern=&amp;Bibliografia%5B%5D=&amp;Testo=&amp;boolTesto=AND&amp;Testo2=&amp;bool=AND&amp;ordinamento=id_nr&amp;javasi=javascriptsi&amp;se_foto=tutte&amp;lang=en">EDR185091</ref>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="https://artgallery.yale.edu/collections/objects/210417">Yale University Art Gallery website</ref>
+                        <ref type="external" target="https://artgallery.yale.edu/collections/objects/210417">Yale University Art Gallery web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -149,7 +166,8 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -164,8 +182,8 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2023-10-31" who="Advaith Rege">Initial Encoding</change>
-            <change when="2023-11-08" who="Scott J. DiGiulio">added punctuation to transcription</change>
+            <change when="2024-05-07" who="Advaith Rege">Initial Encoding</change>
+            <change when="2025-01-15" who="Scott J. DiGiulio">General proofing and prepartion for publication</change>
         </revisionDesc>
 
     </teiHeader>
@@ -176,11 +194,7 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="CT.NH.YU.YUAG.L.2015.123.1.jpg"/>
-        </surface>
-        <surface>
-            <desc>detail of inscription</desc>
-            <graphic url="CT.NH.YU.YUAG.L.2015.123.1-det.jpg"/>
+            <graphic url=""/>
         </surface>
     </facsimile>
 
@@ -190,7 +204,7 @@ changes: correct handling of provenance information -->
             <ab>
                 <lb n="1"/>
                 <expan><abbr>D</abbr><ex>is</ex></expan>
-                <expan><abbr>M</abbr><ex>anibus</ex></expan>
+                <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/>
                 <persName>
                     <name type="praenomen" key="Marcus">
@@ -200,34 +214,36 @@ changes: correct handling of provenance information -->
                     <name type="cognomen" key="Lamyrus">Lamyrus</name>
                 </persName>
                 <lb n="3"/>hic conditus est. H<supplied reason="omitted">a</supplied>ec
-                <lb n="4"/>mi domus aeternalis
-                <lb n="5"/>erit meis inpendi<supplied reason="omitted">i</supplied>s.
+                <lb n="4"/>mi<supplied reason="omitted">hi</supplied> domus aeternalis
+                <lb n="5"/>erit meis i<choice><corr>m</corr><sic>n</sic></choice>pendi<supplied reason="omitted">i</supplied>s.
                 <lb n="6"/>Gratias amico
                 <persName>
                     <name type="praenomen" key="Marcus">
                         <expan><abbr>M</abbr><ex>arcus</ex></expan>
                     </name>
-                <lb n="7"/>
+                    <lb n="7"/>
                     <name type="gentilicium" key="Ulpius">Ulpius</name>
-                    <name type="cognomen" key="Eutychus">Eutychus</name>
-                </persName>
+                    <name type="cognomen" key="Eutychus">Eutychus</name></persName>
                 <lb n="8"/>amicus
-                <lb n="9"/>et
+                <lb n="9"/>
+                <add>et
                 <persName>
-                    <name type="gentilicium" key="Fulvia">Fulvia</name>
-                    <name type="cognomen" key="Charitatus">Charit<choice><corr>a</corr><sic>u</sic></choice></name>
-                </persName>
-                <lb n="10"/>coniugi.
+                    <name type="gentilicium" key="Fulvia">Fulviae</name>
+                    <name type="cognomen" key="Charitas">Charit<choice><corr>a</corr><sic>u</sic></choice>ti</name>
+                </persName></add>
+                <lb n="10"/>
+                <add>coniugi</add>.
             </ab></div>
             
             <div type="translation">
-            <p>To the souls of the deceased, Marcus Fulvius Lamyrus was buried here, this will be an eternal home for me from my expenses. Marcus Ulpius Eutychus, a friend, (gives) thanks to (his) friend and his wife, Fulvia Charitatus.</p></div>
+            <p>To the divine shades. Marcus Fulvius Lamyrus is buried here. This will be an eternal home for me from my own expense. Marcus Ulpius Eutychus, a friend, (gives) thanks to his friend and to Fulvia Charitas, his wife.</p></div>
 
             <div type="commentary">
-            <p>Line 3: haec (EDR), hec (YUAG)</p>
-            <p>Line 5: inpendiis (EDR), inpendis (YUAG)</p>
-            <p>Line 9: Charitati (EDR), Charituti (YUAG)</p>
-            <p>Basis of verification: previous edition and photo</p></div>
+                <p>Other bibliography: E. Engström, Carmina Latina Epigraphica Post Editam Collectionem Büchelerianam In Lucem Prolata (Gothenburg-Leipzig 1912) 16; I. Cholodniak, Carmina Sepulcralia Latina (St. Petersburg 1897) 361. Brief mention in E. Wölfflin, Archiv Für Lateinische Lexikographie und Grammatik (Leipzig 1893) 169.</p>
+                <p>Line 3: hec, attested archaic form of haec, used. haec in CIL, Engström, Cholodniak; line 4: mi, attested alternative, poetic form of mihi, used. mi in CIL, Engström, Cholodniak; line 5: inpendis, alternate form of impendiis, used. impendiis, in CIL, Engström, Cholodniak; line 9: Charituti, corrected to Charitati in CIL, Engström; lines 9-10: dedication to Fulvia Charitati added by a second hand, possibly at a later date, to the bottom of the epitaph; line 10 is not centered in campus, while rest of lines maintain close to center alignment. Inconsistent interpuncts - interpuncts visible between words D(is) M(anibus) (line 1), M(arcus) Fulvius (line 2), est h⌜a⌝ec (line 3), at end of line 5, et Fulviae (line 9). CIL only notes interpuncts between M(arcus) Fulvius Lamyrus (line 1), amico M(arcus) and end of line (line 6), but interpuncts between Fulvius and Lamyrus, and amico and M(arcus) are not visible in photograph.</p>
+                <p>The specification of Fulvia Charitas as a wife does not make it clear to whom Fulvia is married to. However, since M. Fulvius Lamyrus and Fulvia Charitas share the same gentilicium, it may be presumed that they might be siblings. This is also assuming that they were not slaves (thereby sharing the gentilicium of the master), despite Lamyrus being a Greek cognomen and found among other freedmen/freedwomen, due to the lack of identification as a freedman. There is a possibility that M. Fulvius Lamyrus and Fulvia Charitas were freed individuals, or that Lamyrus perhaps freed Fulvia Charitas and married her, however this relationship is not clear. Additionally, the Fulvii are attested in places in Etruria, such as Luna, Blera, and Sutrium, which contradicts a Greek cognomen. M. Ulpius Eutychus also has a Greek cognomen, and individuals of the same name are attested in other inscriptions, but with different wives or masters, thus pointing to distinct M. Ulpius Eutychus’s. M. Ulpius Eutychus’s role beyond a “friend” is unknown, as is his contribution to the epitaph (with M. Lamyrus specifying that he paid for the epitaph). Most discussion on this inscription relates to the metrical structure that lines 3-5 try to create. I. Cholodniak suggests that a senarius would be formed if the wording of the lines was changed to haec mi domus aeterna est meis impendiis instead.</p>
+                <p>Transcription from photo and previous edition of I. Cholodniak.</p>
+            </div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
