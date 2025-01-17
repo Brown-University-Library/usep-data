@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.MFA.G.2010.39</title>
+                <author>Nicholas Trcalek</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.2010.39">MA.Bos.MFA.G.2010.39</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>MFA</institution>
+                        <repository></repository>
+                        <idno>2010.39</idno>
+                        <altIdentifier type="TM_number"><idno></idno></altIdentifier>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph #verse">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Funerary verse epitaph of Dionysios</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#cippus">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p> Marble cippus/block</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>23.5</height>
+                                        <width>27.0</width>
+                                        <depth>15.9</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p>Complete, but campus has suffered weathering and damage</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="7">
+                                    <p></p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> 
+                            <dimensions type="letter" unit="cm">
+                               <height>1.5</height>
+                            </dimensions></handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>two hederae and possible apex</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#palaeography" notBefore="0100" notAfter="-0399">Before
+                                fourth century CE</date>
+                            <placeName ref="asia.near_east">Possibly ancient Sidon (modern
+                                Saida)</placeName>
+                        </origin>
+                        <provenance type="recorded" subtype="reported">
+                            <p>Before his death in <date when="1923">1923</date>, in the possession of <persName role="collector">Choukri Abela</persName>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Acquired along with other items from <persName role="collector">Choukri Abela</persName>'s collections by <persName role="acquirer">Capdegelle</persName> in Saida in <date when="1924">1924</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Sold by <orgName role="dealer">Folio Fine Art, Ltd.</orgName> in <placeName>London</placeName> to <persName role="buyer">Colin McFadyean</persName> in <date when="1968">1968</date>.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Sold by <orgName role="dealer">Charles Ede, Ltd.</orgName> to the <orgName role="buyer">Museum of Fine Arts</orgName> in <date when="2010">2010</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Syria_5_Haussoullier"/>
+                        <biblScope unit="page">337, no. 9</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Peek"/>
+                        <biblScope unit="item">no. 558</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://collections.mfa.org/objects/533415/funerary-stele-of-dionysion-a-singer">MFA Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="Nick Trcalek">Initial Entry</change>
+            <change when="2025-01-16" who="Scott J. DiGiulio">Cleaned and proofed metadata; rewrote bibliography into USEP format; put writing dimensions in correct place; added provenance information; proofed transcription and added verse markup</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MA.Bos.MFA.G.2010.39.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                 <lg met="elegiacs">
+                     <l><lb n="1"/>Τὸν λιγυρὸν κόλποις <persName><name key="Διονύσιος">Διονύσι
+                     <lb n="2" break="no"/>ον</name></persName> ἐ<unclear>ν</unclear>θαδ’ ἔχ<unclear>ο</unclear><supplied reason= "lost">υ</supplied><unclear>σ</unclear>α</l> <l>γαῖα τὸν
+                     <lb n="3"/>ἐν ζωοῖς ἤθεσι πραύτατον</l>
+                     <lb n="4"/><l>δάκρυσον νεότητα καὶ εὐ
+                     <lb n="5" break="no"/>στομίην <supplied reason= "lost">π</supplied><unclear>α</unclear><unclear>ρ</unclear>οδεῖτα,</l> <g type="hedera"/>
+                     <lb n="6"/><l>μεμψάμενος Μοιρῶν
+                     <lb n="7"/>τὴν ἄδικον <persName><name type="divine" key="Λάχεσις">Λά<supplied reason="lost">χ</supplied>εσιν</name></persName></l>. <g type="apex"/>
+                     <lb n="8"/><g type="hedera"/>     
+                  </lg>
+            </div>
+            <div type="translation">
+            <p> "Here in (her)
+                    hollows the earth holds clear-voiced Dionysios, who in life was the gentlest in
+                    character; shed a tear for (his) youth and eloquence, passerby, (and) blame the
+                    unjust Lachesis of the Fates."</p></div>
+
+            <div type="commentary">
+            <p>Line 2: Haussoullier and Ingholt (1924: 337) noted that the participle (ἔχουσα)
+                    rather than the expected indicative (ἔχει) is used here for metrical reasons,
+                    but we should probably understand ἐστί, though a form of ἔχω make sense to me;
+                    Peek also provides ἔχευσα or ἔχωσα as options. Line 7: there is either an apex
+                    present as a punctuation mark at the end of the line or it is simply damage. The
+                    lettering is uniform in style and consistent in height throughout, though the
+                    last three lines have some space remaining.</p>
+                <p> An epitaph for an eloquent youth, Dionysios—though the MFA refers to him mistakenly as Dionysion—praising his
+                    virtue and lamenting his (early?) death in a pair of elegiac couplets (Τὸν
+                    λιγυρὸν… πραύτατον, δάκρυσον… Λά[χ]εσιν). Dionysios is a common enough name
+                    throughout antiquity (Solin noted 282 occurrences, making it the 15th most
+                    common Greek name in his survey). The objects provenance makes an exact date
+                    hard to ascertain, but the presence of the traditional Σ and Ω, rather than the
+                    later lunate sigma (Ϲ) and double horseshoe omega (Ꞷ), suggest a date before the
+                    fourth century C.E. </p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
