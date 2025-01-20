@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.MFA.L.1994.1</title>
+                <author>J. Leite</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.MFA.L.1994.1">MA.Bos.MFA.L.1994.1</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>MFA</institution>
+                        <repository></repository>
+                        <idno>1994.1</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#text_other">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Terracotta roundel with a paired portrait and inscription</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#arch_element #object_other">
+                            <supportDesc ana="#clay.terracotta">
+                                <support>
+                                    <p>Unpainted terracotta roundel</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width>16.2</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>crack across the entire roundel at chest height</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="1">
+                                    <p>three distinct pieces of writing, one to the left,
+                                        one above, and one to the right, of the two figures. </p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#molded"></handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>The center of the campus is filled by two figures in profile
+                                    facing towards each other, identifiable as a male (right) and a
+                                    female (left) based on clothing and hairstyle. The male figure
+                                    is clean-shaven and in military clothing, particularly
+                                    noticeable by the cloak pinned at his right shoulder by a spiral
+                                    pin. The female figure has earrings and a necklace, as well as a
+                                    hair covering.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#unspecified" notBefore="0320" notAfter="0400"
+                                >320-400</date>
+                            <placeName ref="unknown">Unknown (Rome?)</placeName>
+                        </origin>
+                        <provenance type="observed" subtype="reported">
+                            <p>In the possession of <orgName role="dealer">Fritz Bürki &amp; Son</orgName> in Zurich, Switzerland by an unknown date</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="purchased">
+                            <p>In the posession of <persName role="collector">Robert E. Hecht, Jr.</persName>; unknown date</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Purchased by the <orgName role="buyer">Boston Museum of Fine Arts</orgName> from <persName role="seller">Robert E. Hecht, Jr.</persName> on <date when="1994-01-26">January 26, 1994</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://collections.mfa.org/objects/155355/roundel-with-busts-of-a-married-couple">MFA Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="J. Leite">Initial Encoding</change>
+            <change when="2025-01-20" who="Scott J. DiGiulio">Proofed and corrected metadata and control vocabulary; added bibliography section; added detail to provenance; proofed transcription against photo.</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MA.Bos.MFA.L.1994.1.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/>In 
+                <lb n="2"/>se senes
+                <lb n="3" break="no"/>cat<choice><corr>i</corr><sic>e</sic></choice>s </ab></div>
+            
+            <div type="translation">
+            <p>“May you grow old in yourselves.”</p></div>
+
+            <div type="commentary">
+            <p>Line 3: The original spelling of cates makes no sense, and thus was corrected to
+                    cat´i`s. This object has no interpuncts or clear demarcation between words.
+                    However, it makes the most sense to construe senes as being completed by
+                    cat´i`s, and thereby creating a 2nd person plural subjunctive. This then allows
+                    for se to be read with in and interpreted as a plural accusative. This, when
+                    combined with the verb, is still an unusual formulation, but it can be construed
+                    as “in yourselves.” The Boston MFA chose to translate this as “together.”</p>
+                <p>The
+                    words are placed running along the roundel, at the leftmost, uppermost, and
+                    rightmost points. There is space at the bottom for another word, since the
+                    torsos of the figures are cut off before the bottom.</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
