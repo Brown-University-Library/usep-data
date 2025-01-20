@@ -14,15 +14,19 @@ changes: correct handling of provenance information
       <fileDesc>
          <titleStmt>
             <title>NY.NY.MMA.L.X.248.1</title>
-            <author>Author</author>
+            <author>Itamar Levin</author>
             <respStmt>
                <resp>Translation</resp>
-               <name>Translator</name>
+               <name>Itamar Levin</name>
             </respStmt>
             <respStmt>
                <resp>Commentary</resp>
-               <name>Commenter</name>
+               <name>J. Leite</name>
             </respStmt>
+             <respStmt>
+                 <resp>Editor</resp>
+                 <name>Scott J. DiGiulio</name>
+             </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
@@ -55,7 +59,7 @@ changes: correct handling of provenance information
                  <objectDesc ana="#tablet">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> marble plaque</p>
+                                    <p>Rectangular marble columbarium slab</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>21.4</height>
                                         <width>37</width>
@@ -98,15 +102,24 @@ changes: correct handling of provenance information
 
                         <origin>
                             <date evidence="#palaeography #formula" notBefore="0100" notAfter="0250">second to mid-third c. CE</date>
-                            <placeName ref="europe.italy.puteoli">Puteoli (Naples)</placeName>
+                            <placeName ref="europe.italy.puteoli https://pleiades.stoa.org/places/432815">Puteoli (Naples)</placeName>
                         </origin>
-                       
+                        <provenance type="transferred" subtype="sold"> <p>
+                            Entered collection of the <orgName>Metropolitan Museum of Art</orgName> at an uncertain date</p>
+                        </provenance>
+                        <provenance type="found" subtype="first-recorded">
+                            <p>Entered collection of <persName role="collector">Giuseppe De Criscio</persName> in ca. <date when="1861">1861</date>.</p>
+                        </provenance>
 
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Puteoli_Cumae_Misenum_1_Soldovieri"/>
+                        <biblScope unit="page">44</biblScope>
+                    </bibl>
                     <bibl>
                         <ref type="external" target="https://www.metmuseum.org/art/collection/search/256771">Metropolitan Museum Web Entry</ref>
                     </bibl>
@@ -144,6 +157,7 @@ changes: correct handling of provenance information
                 metadata</change>
                  <change when="2021-03-10" who="Scott J. DiGiulio">Revisions to transcription and translation; added hi elements to transcription</change>
             <change when="2023-03-24" who="Sophia Papandonatou">added EDR link</change>
+            <change when="2025-01-20" who="Scott J. DiGiulio">Corrected errors in transcription; added provenance, commentary, additional bibliography and refined some metadata following work of J. Leite</change>
         </revisionDesc>
 
     </teiHeader>
@@ -167,7 +181,7 @@ changes: correct handling of provenance information
                <expan><abbr>M</abbr><ex>anibus</ex></expan>.
                 <lb n="2"/>
                <persName>
-                  <name key="Gaius" type="praenomen">Caio</name>
+                   <name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aio</ex></expan></name>
                   <name key="Porcius" type="gentilicium">Porc<hi rend="tall">i</hi>
                      <hi rend="apex">o</hi>
                   </name>
@@ -179,7 +193,7 @@ changes: correct handling of provenance information
                      <lb n="4"/>diebus <num type="cardinal" value="13">XIII</num>.
                 <lb n="5"/>
                <persName>
-                  <name key="Gaius" type="praenomen">Caius</name>
+                   <name type="praenomen" key="Gaius"><expan><abbr>C</abbr><ex>aius</ex></expan></name>
                   <name key="Porcius" type="gentilicium">Porcius</name>
                   <name key="Dionysius" type="cognomen">Dionysius</name>
                </persName>
@@ -191,7 +205,12 @@ changes: correct handling of provenance information
             <p>To the divine shades. To Gaius Porcius Dionysius; he lived 8 years, 10 months, and 13 days. Gaius Porcius Dionysius made this for his sweetest son.</p>
          </div>
          <div type="commentary">
-            <p/>
+             <p>Line 2: missing interpunct after Porcio; contrast with interpunct in line 5 following
+                 Porcius.</p>
+             <p>Line 3: significant crack down the center of M.</p>
+             <p>All letters in first
+                 four lines have orange staining around the carving; line 5 retains this staining
+                 until the "n"; line 6 until the "l" in dulcissimo; line 7 has no staining.</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
