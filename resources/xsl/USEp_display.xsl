@@ -153,7 +153,7 @@
                                 <tr>
                                     <td class="label">Material</td>
                                     <td class="value">
-                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/">
+                                        <xsl:for-each select="$material">
                                             <xsl:for-each select="tokenize($material, '\s+')[normalize-space()]">
                                                 <xsl:value-of select="id(substring-after($material, '#'))/t:catDesc"/>
                                                 <xsl:if test="position() != last()">
