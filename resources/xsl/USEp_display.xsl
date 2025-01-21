@@ -42,6 +42,7 @@
         2020-10-22 SJD commented out display of decoNote/@ana
         2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
         2021-07-29 EM added bibliography processing.
+        2025-01-21 SJD improved display of campus dimensions as separate area, turned on Pleiades links, enabled display of multiple dating criteria
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -166,7 +167,7 @@
                                 <tr>
                                     <td class="label">Object Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions/[@type = 'surface']>
                                             
                                                 <xsl:if test="t:width/text()">w: 
                                                     <xsl:value-of select="t:width"/>
@@ -185,7 +186,34 @@
                                         </xsl:for-each>
                                     </td>
                                 </tr>
-        
+                                
+                                <!-- Add campus dimensions -->
+                                <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions/[@type = 'campus']">
+                                    <tr>
+                                    <td class="label">Campus Dimensions</td>
+                                    <td class="value">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions/[@type = 'surface']">
+                                            
+                                            <xsl:if test="t:width/text()">w: 
+                                                <xsl:value-of select="t:width"/>
+                                                <xsl:if test="t:height/text()"> x
+                                                </xsl:if>
+                                            </xsl:if>
+                                            <xsl:if test="t:height/text()">h:
+                                                <xsl:value-of select="t:height"/>
+                                            </xsl:if>
+                                            <xsl:if test="t:depth/text()"> x d:
+                                                <xsl:value-of select="t:depth"/>
+                                            </xsl:if>
+                                            <xsl:if test="t:dim[@type='diameter']/text()">x diam.:
+                                                <xsl:value-of select="t:dim[@type='diameter']"/>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </td>
+                                </tr>
+                                </xsl:if>
+                                
+                                       
                                 <!-- check for existence of controlled and full text values here. -->
                                 <tr>
                                     <td class="label">Writing</td>
@@ -328,7 +356,13 @@
                                 <tr>
                                     <td class="label">Dating Criteria</td>
                                      <td class="value">
-                                            <xsl:value-of select="id(substring-after($dateOfOrigin/@evidence,'#'))/t:catDesc"/>
+                                         <xsl:for-each select="$dateOfOrigin/@evidence">
+                                             <xsl:value-of
+                                                 select="id(substring-after($dateOfOrigin/@evidence, '#'))/t:catDesc"/>
+                                             <xsl:if test="position() != last()">
+                                                 <xsl:text>, </xsl:text>
+                                             </xsl:if>
+                                         </xsl:for-each>
                                     </td>
                                 </tr>
                                 
@@ -366,7 +400,7 @@
                     </xsl:if>
 
 
-<!-- Print links to Pleiades when they appear in texts or metadata 
+<!-- Print links to Pleiades when they appear in texts or metadata -->
                    
                     <xsl:for-each select="t:placeName">
                         <xsl:choose>
@@ -382,7 +416,7 @@
                                 <xsl:apply-templates/>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </xsl:for-each>-->
+                    </xsl:for-each>
                 
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
