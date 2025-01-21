@@ -158,8 +158,6 @@
                                                 select="id(substring-after($material, '#'))/t:catDesc"/>
                                             <xsl:if test="position() != last()">
                                                 <xsl:text>, </xsl:text>
-                                                <xsl:value-of
-                                                    select="id(substring-after($material, '#'))/t:catDesc"/>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </td>
