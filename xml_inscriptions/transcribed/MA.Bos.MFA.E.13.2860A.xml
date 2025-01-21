@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.MFA.E.13.2860A</title>
+                <author>Max Meyer</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.MFA.E.13.2860A">MA.Bos.MFA.E.13.2860A</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>MFA</institution>
+                        <repository/>
+                        <idno>13.2860A</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="ett"></textLang>
+                        <msItem class="#label">
+                            <p>cinerary urn lid</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#ash_urn">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <material>limestone, maybe travertine, urn lid</material>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>52.5</height>
+                                        <width>75.7</width>
+                                        <depth>34.7</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p>some damage to the front and left lateral faces, damaging several letters</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="1">
+                                    <p>inscription runs in a single line along the base, beginning 
+                                        on the front face and continuing onto the left lateral face</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed #painted"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>On top of a flat rectangular base a woman is sculpted, reclining on her left side and supporting herself 
+                                    with her left arm on two stacked pillows. Pigment is preserved on the woman, especially a red-brown pigment her hair.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="-0300" notAfter="-0201" precision="medium">third century BCE</date>
+                            <placeName type="ancient" ref="https://pleiades.stoa.org/places/413096">Chiusi</placeName>
+                        </origin>
+                        
+                        <provenance type="found" subtype="discovered">
+                            <p>Reportedly found in <date when="1879">1879</date>during the excavation of a tomb on the <placeName>Colle Lucioli</placeName>, a hill near 
+                                <placeName ref="https://pleiades.stoa.org/places/413096">Chiusi</placeName> in Tuscany.</p>
+                        </provenance>
+                        
+                        <provenance type="transferred" subtype="sold">
+                            <p> Purchased by the <orgName role="buyer">Museum of Fine Arts, Boston</orgName> on <date when="1913-11-06">November 6, 1913</date>
+                                from antiquities dealer <persName role="seller">Raoul Tolentino</persName> at his shop at <placeName>57 Via Sistina, Rome</placeName>.</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#EtrStud_11_DePuma"/>
+                        <biblScope unit="page">135-149</biblScope>
+                    </bibl>                    
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="AJA_22_Eldridge"/>
+                        <biblScope unit="page">251-7</biblScope>
+                    </bibl>
+                    
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SE_3_Hammarström"/>
+                        <biblScope unit="page">333-6</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CVS"/>
+                        <biblScope unit="item">385</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CVAdd"/>
+                        <biblScope unit="page">116</biblScope>
+                    </bibl>
+                    
+                    <bibl>
+                        <ref type="external" target="https://collections.mfa.org/objects/151379/cinerary-urn-with-cover">Museum of Fine Arts Web Entry</ref>                    
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+
+        <revisionDesc>
+            <change when="2024-05-14" who="Max Meyer">Initial Encoding</change>
+            <change when="2025-01-20" who="Scott J. DiGiulio">General proofing and editing of metadata; added bibliography, and edited into USEP formatting; proofed commentary.</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MA.Bos.MFA.E.13.2860A.jpg"/>
+        </surface>
+        <surface>
+            <desc>Image hosted by the Museum of Fine Arts, Boston.</desc>
+            <graphic url="https://collections.mfa.org/internal/media/dispatcher/1052064/preview"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab>
+                    <lb style="text-direction:r-to-l" n="1"/> 𐌚𐌀𐌔𐌕𐌉𐌀 <unclear>𐌅𐌄</unclear>𐌋𐌔𐌉 𐌋𐌀𐌓𐌆𐌋 𐌅<unclear>𐌄𐌋𐌖</unclear>𐌑 <unclear>𐌓</unclear>𐌖𐌠𐌀
+                </ab>
+            </div>
+            
+            <div type="translation">
+                <p>Fastia Velsi, wife of Larza Velu.</p>
+            </div>
+
+            <div type="commentary">
+                <p>The text labels the lid with the feminine name Fastia Velsi and identifies her as the wife of a man named Larza Velu. 
+                    The initial translation published by Eldridge was erroneous, yet often republished.  A correct translation and 
+                    summary of previous errors was published by Richard De Puma in 2008 and matches the translation provided by the MFA. 
+                    The woman sculpted in repose on the lid may be Fastia Velsi, for whom the inscription likely indicates the urn was made.  
+                    The urn with which this lid is paired may be the original, but the lack of provenance between its excavation and the sale 
+                    to the MFA makes this uncertain. In either case, the size and quality of the lid indicates that the person who commissioned 
+                    it and the deceased were wealthy. If the excavation information Tolentino provided to the MFA is accurate, which research 
+                    by Hammarström in 1928 indicates it is, the urn lid dates to the third century BCE. 
+                </p>
+            </div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+        <!-- I believe my bibliography above suffices and does not need to be repeated here --> 
+            
+        </body>
+    </text>
+</TEI>

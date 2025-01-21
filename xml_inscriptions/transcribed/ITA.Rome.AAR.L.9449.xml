@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>ITA.Rome.AAR.L.9449</title>
+                <author>Max Meyer</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9449">ITA.Rome.AAR.L.9449</idno>
+                    <!-- It seems that = isn't a valid character for XML IDs, and trying to escape it didn't work either. Thus, I've gone with the one ID here, since this is the only one that is noted on the object listing on the AAR's site --> 
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>Italy</region>
+                        <settlement>Rome</settlement>
+                        <institution>AAR</institution>
+                        <repository></repository>
+                        <idno>9449</idno>
+                        <altIdentifier type="old_accession">
+                            <idno>33</idno>
+                        </altIdentifier>
+                        <altIdentifier type="old_accession">
+                            <idno>8949</idno>
+                        </altIdentifier>
+                        <altIdentifier type="TM_number"><idno></idno></altIdentifier>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#dedicatory">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Dedication of a hydraeum to Isis and Serapis</p> 
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#altar">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p>Marble altar</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>21.5</height>
+                                        <width>19.5</width>
+                                        <depth>18.5</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragment.single">
+                                    <p>Upper portion of a marble altar with a rough horizontal break forming its base. 
+                                        The raised molded cornice forming upper edge of front face is chipped on the right-hand side, where the cornice face is completely removed, 
+                                        and the damage extends horizontally left, where the cornice face is partially removed. 
+                                        This damage does not extend to the campus. There is a small chip halfway down the 
+                                        right edge of the front face. Damage on the bottom edges of the left and right lateral faces
+                                        extending above the break. </p>
+                                </condition>
+                            </supportDesc>
+
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="9">
+                                    <p></p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>A raised molded cornice with an olive branch motif forms the upper edge of the front face. 
+                                    A raised line runs along the bottom edge of the left and right faces of the object, just 
+                                    above the horizontal break, creating a single register on either face. On both the left 
+                                    and right lateral face there is an Egyptian priest, sculpted in bas-relief in a composite 
+                                    pose with one extended arm. The priest on the left, holding a branch in his extended arm, 
+                                    is a dendrophoros, of which there was a collegium in Ostia. The figure on the right lateral 
+                                    face holds a <objectType ref="http://vocab.getty.edu/page/aat/300042642">sistrum</objectType>, 
+                                    a commonly used instrument in Isis cults.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#prosopography" notBefore="0001" notAfter="0200" precision="medium">first to second century CE</date>
+                            <placeName type="ancient" ref="https://pleiades.stoa.org/places/422986">Nomentum</placeName>
+                        </origin>
+                        
+                        <provenance type="found" subtype="discovered">
+                            <p> Excavated near <placeName>Vigna Santucci</placeName> in the modern
+                                town of <placeName type="modern"
+                                    ref="http://vocab.getty.edu/page/tgn/7006979"
+                                    >Mentana</placeName> in <date when="1823">1823</date> during
+                                    <orgName type="excavator">Borghese excavations</orgName> in the
+                                area (Colazilli, 1).</p>
+                        </provenance>
+                        
+                        <provenance type="transferred" subtype="moved">
+                            <p>After excavation, the altar fragment became part of the <orgName type="owner">Borghese collection</orgName> in <placeName>Rome</placeName>.</p>
+                        </provenance>
+                        
+                        <provenance type="transferred" subtype="sold" when="1893">
+                            <p>In <date when="1893">1893</date> the altar was sold at a Borghese antiquities auction (ILS 4378; SIRIS 531).</p>
+                        </provenance>
+                        
+                        <provenance type="transferred" subtype="given">
+                            <p>The buyer’s name is not identified, but the altar fragment was likely sold to <persName role="donor">William Wetmore Story</persName>, who donated 
+                                it to the <orgName role="recipient">American Academy in Rome</orgName> sometime before his death in <date when="1895">1895</date>.</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_XIV"/>
+                        <biblScope unit="item">3941</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#ILS"/>
+                        <biblScope unit="item">4378</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#EphEp_IX"/>
+                        <biblScope unit="page">485</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SIRIS"/>
+                        <biblScope unit="item">531</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#SupItal"/>
+                        <biblScope unit="item">Imagines - Latium 1.1022</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#RICIS"/>
+                        <biblScope unit="item">503/0801</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Wild_1981"/>
+                        <biblScope type="item"></biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#JAEI_6_Colazilli"/>
+                        <biblScope type="page">1-9</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="Lecci_Herrero_Petraccia_2020_Ricci"/>
+                        <biblScope type="page">93-100</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Taylor_1912"/>
+                        <biblScope unit="page"></biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
+                        <biblScope unit="item>170</biblScope>
+                    </bibl>
+                    
+                    <bibl>
+                        <ref type="external"
+                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR129073">EDR129073</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://dhc.aarome.org/islandora/object/INSCRIPTIONS%3A222?solr_nav%5Bid%5D=b345d3cdb05f6083744d&amp;solr_nav%5Bpage%5D=9&amp;solr_nav%5Boffset%5D=6">AAR Catalog Entry</ref>
+                    </bibl>
+                    
+                    
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+
+        <revisionDesc>
+            <change when="2024-05-14" who="Max Meyer">Initial Encoding</change>
+            <change when="2025-01-20" who="Scott J. DiGiulio">General proofing of metadata; some light fixing of the provenance; extensive reworking and additions to bibliography; proofed transcription from photo and enhanced markup; formatted commentary</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="ITA.Rome.AAR.L.9449.jpg"/>
+        </surface>
+        <surface>
+            <desc>Image hosted by the American Academy in Rome Digital Humanities Center.</desc>
+            <graphic url="https://manifest.aarome.org/api/manifests/inscriptions%2FINSCRIPTIONS_222.json"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab> 
+                    <lb n="1"/><persName><name type="praenomen" key="Decimus"><expan><abbr>D</abbr><ex>ecimus</ex></expan></name> <name key="Valerius" type="gentilicium">Valerius</name>
+                        <persName><name type="praenomen" key="Decimus"><expan><abbr>D</abbr><ex>ecimi</ex></expan></name></persName>
+                        <expan><abbr>f</abbr><ex>ilius</ex></expan> 
+                        <expan><abbr>Cor</abbr><ex>nelia</ex></expan> <supplied reason="subaudible">tribu</supplied>
+                    <lb n="2"/><name type="cognomen" key="Proculus">Proculus</name></persName>, 
+                        <expan><abbr>aedil</abbr><ex>is</ex></expan>, dictator, 
+                    <lb n="3"/><expan><abbr>quaest</abbr><ex>or</ex></expan> alimentorum, 
+                    <lb n="4"/>hydraeum <choice><sic>c</sic><corr>g</corr></choice>emmis ex
+                    <lb n="5" break="no"/>ornatum et auratum 
+                    <lb n="6"/>una cum 
+                        <persName>
+                            <name type="gentilicium" key="Valeria">Valeria</name> 
+                            <name type="cognomen" key="Fortunata">Fortu
+                    <lb 
+                        n="7" break="no"/>nata</name>
+                        </persName> et 
+                        <persName>
+                            <name type="gentilicium" key="Valeria">Valeria</name> 
+                            <name type="cognomen" key="Procula">Procula</name>
+                        </persName> 
+                    <lb n="8"/>
+                    <persName type="divinity"><name key="Isis">Isidi</name></persName> 
+                    et <persName type="divinity"><name key="Serapis">Serapi</name></persName> 
+                    <lb n="9"/> <expan><abbr>d</abbr><ex>ono</ex></expan> <expan><abbr>d</abbr><ex>edit</ex></expan>.
+                </ab>
+            </div>
+            
+            <div type="translation">
+                <p>Decimus Valerius Proculus, son of Decimus, of the Cornelia tribe, aedile, dictator, quaestor of the food supply, 
+                    with Valeria Fortunata and Valeria Procila, gave a hydraeum adorned with gems and gilded to Isis and Serapis as a gift.</p>
+            </div>
+
+            <div type="commentary">
+                <p>The dedicatory inscription on the front face of this marble object, originally from a votive altar, records the gift of a hydraeum 
+                    to Isis and Serapis by Decimus Valerius Proculus, along with Valeria Fortunata and Valeria Procila, who lived in the second century CE. 
+                    The gift, a hydraeum that the inscription states was decorated with gems and gilded, was a water vessel that is known to have been used 
+                    by some Isis and Serapis cults, among many other uses.</p>
+                <p>The inscription states that Decimus Valerius Proculus served as aedile, dictator, and quaestor of the food supply, and archaeological 
+                    context tells us that he held these positions in Nomentum. In Latium, towns had dictators who acted in different roles; the term did not have 
+                    a single definition, as dictators in different towns throughout Latium held different roles and powers. In documenting the three offices of 
+                    Decimus Valerius Proculus, this inscription indicates that in Nomentum at the time the altar was produced, local governance and public administration 
+                    power had been consolidated. The American Academy proposes a dating of the first century CE and Ricci proposes the second century CE.
+                    Colazilli, without explanation, suggests the first century BCE, which seems unlikely based on the names and titles in the inscription,
+                    as well as the form of the letters.
+                </p>
+            </div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
