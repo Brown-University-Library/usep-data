@@ -17,7 +17,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>ITA.Rome.AAR.L.8949.a</title>
+                <title>ITA.Rome.AAR.9452.b</title>
                 <author>Mason Shrader</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -34,7 +34,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.8949.a">ITA.Rome.AAR.L.8949.a</idno>
+                <idno type="USEpigraphy" xml:id="ITA.Rome.AAR.L.9452.b">ITA.Rome.AAR.L.9452.b</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -45,20 +45,26 @@ changes: correct handling of provenance information -->
                         <settlement>Rome</settlement>
                         <institution>AAR</institution>
                         <repository/>
-                        <idno>8949</idno>
+                        <idno>9452</idno>
                         <altIdentifier type="old_accession">
                             <idno>173</idno>
                         </altIdentifier>
-                        <altIdentifier type="TM_number"><idno>598422</idno></altIdentifier>
+                        <altIdentifier type="old_accession">
+                            <idno>8949</idno>
+                        </altIdentifier>
+                        <altIdentifier type="alt_object">
+                            <idno>9993</idno>
+                        </altIdentifier>
+                        <altIdentifier type="TM_number"><idno>598423</idno></altIdentifier>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.epitaph">
+                        <msItem class="#text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p>Opisthographic epitaph constructed by Malli[us?]</p>
+                            <p>Fragment of opisthographic epitaph for Rufus</p>
                         </msItem>
                     </msContents>
 
@@ -86,7 +92,7 @@ changes: correct handling of provenance information -->
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="2">
+                                <layout columns="1" writtenLines="2">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -95,7 +101,10 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
+                            <handNote ana="#inscribed"> Tri-point interpuncts are used between the
+                                two words on line 1 and before Rufo on line 2. Line 2: Rufo has an
+                                apex to the side of the O, functioning as an indicator of the long
+                                O, but also possibly an interpunct before fecit.</handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -126,26 +135,16 @@ changes: correct handling of provenance information -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#CIL_VI"/>
-                        <biblScope unit="item">38592a</biblScope>
+                        <biblScope unit="page" type="item">38592b</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#MAAR_Ohl"/>
                         <biblScope unit="page">128, no. 173</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Tyche_4_Solin"/>
-                        <biblScope unit="page">159 n. 148</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#ZPE_91_Solin"/>
-                        <biblScope unit="page">183 n. 5</biblScope>
-                    </bibl>
-                    <bibl>
                         <ref type="external"
-                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146603"
-                            >EDR146603</ref>
+                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR146604">EDR146604</ref>
                     </bibl>
-                    
                     <bibl>
                         <ref type="external" target="https://dhc.aarome.org/islandora/object/INSCRIPTIONS%3A116?solr_nav%5Bid%5D=71e96398c8b65101afc6&amp;solr_nav%5Bpage%5D=8&amp;solr_nav%5Boffset%5D=21">AAR Web Entry</ref>
                     </bibl>
@@ -186,26 +185,26 @@ changes: correct handling of provenance information -->
         <surface>
             <desc/>
             <graphic
-                url="ITA.Rome.AAR.L.8949.a.jpg"/>
+                url="ITA.Rome.AAR.L.9452.b.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-                <ab> <lb n="1"/><persName><name type="gentilicium" key="Mallius">Malli<supplied reason="lost" cert="low">us</supplied></name></persName><gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/>Musa<gap reason="illegible" extent="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
-            </ab></div>
+                <ab> 
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><persName><name>mia</name> <name type="cognomen" key="Tertia">Tertia</name></persName> 
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><persName><name>o</name> <name type="cognomen" key="Rufus">Rufo</name></persName> fecit.
+            </ab>
+            </div>
             
             <div type="translation">
-                <p>"Malli[us?] (made this?)…(for?) Musa[lena?]…"</p></div>
+                <p>"[---]mia Tertia…made this for…Rufus"</p></div>
 
             <div type="commentary">
-            <p>Line 1: Mallius is a possible reading. Line 2: Musanius/a, Musalenus/a, Musaetius/a
-                    are all possible readings. </p>
                 <p>The AAR identifies the piece as a <hi rend="italic">columbarium</hi> fragment. While this is perhaps
                     generous given the limited preservation of the text, the orthography certainly
-                    points to an imperial dating. If it is indeed from a <hi rend="italic">columbarium</hi>, then the date would
+                    points to an imperial dating. If it is indeed <hi rend="italic">columbarium</hi>, then the date would
                     most likely be no later than the 120s CE. Side B is possibly the verso, given
                     the fact that it seems to be the more rounded side, and marble workers often
                     rounded the new side which would be flush to the wall. Additionally, Di Stefano
