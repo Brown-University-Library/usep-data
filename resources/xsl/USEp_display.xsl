@@ -129,7 +129,7 @@
                             <xsl:variable name="writing"
                                 select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/>
                             <xsl:variable name="material"
-                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc"/>
+                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/@ana"/>
 
                             <!-- end variables -->
 
@@ -154,8 +154,8 @@
                                     <td class="label">Material</td>
                                     <td class="value">
                                 
-                                            <xsl:for-each select="tokenize(normalize-space($material/@ana), '\s+')">
-                                                <xsl:value-of select="id(substring-after(./@ana, '#'))/t:catDesc"/>
+                                            <xsl:for-each select="tokenize(normalize-space($material), '\s+')">
+                                                <xsl:value-of select="."/>
                                                 <xsl:if test="position() != last()">
                                                     <xsl:text>, </xsl:text>
                                                 </xsl:if>
