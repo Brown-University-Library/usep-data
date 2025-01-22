@@ -155,8 +155,8 @@
                                     <td class="label">Material</td>
                                     <td class="value">
                                 
-                                            <xsl:for-each select="tokenize(normalize-space($material/@ana), '\s+')">
-                                                <xsl:for-each select="$material[contains(@ana, '#')]">
+                                            <xsl:for-each select="$material[contains(@ana, '#')]">
+                                                <xsl:for-each select="tokenize(normalize-space($material/@ana), '\s+')">                                                
                                                     <xsl:value-of select="id(substring-after(./@ana, '#'))/t:catDesc"/>
                                                 <xsl:if test="position() != last()">
                                                     <xsl:text>, </xsl:text>
