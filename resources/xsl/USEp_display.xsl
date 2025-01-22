@@ -155,7 +155,7 @@
                                     <td class="value">
                                         <xsl:for-each select="$material">
                                             <xsl:value-of
-                                                select="id(substring-after($material, '#'))/t:catDesc"/>
+                                                select="$material"/>
                                             <xsl:if test="position() != last()">
                                                 <xsl:text>, </xsl:text>
                                             </xsl:if>
