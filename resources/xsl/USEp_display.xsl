@@ -155,9 +155,9 @@
                                     <td class="value">
                                 
                                         <xsl:choose>
-                                            <xsl:when test="contains($material,' ')">
+                                            <xsl:when test="$material[contains(@ana,' ')]">
                                                 <xsl:for-each
-                                                    select="tokenize(normalize-space($material), '\s+')">
+                                                    select="tokenize(normalize-space($material/@ana), '\s+')">
                                                     <xsl:value-of select="id(substring-after(., '#'))/t:catDesc"/>
                                                     <xsl:if test="position() != last()">
                                                         <xsl:text>, </xsl:text>
@@ -165,7 +165,7 @@
                                                 </xsl:for-each>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:value-of select="id(substring-after(., '#'))/t:catDesc"/>
+                                                <xsl:value-of select="id(substring-after($material/@ana, '#'))/t:catDesc"/>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                         
