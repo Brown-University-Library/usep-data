@@ -156,9 +156,10 @@
                                 
                                         <xsl:choose>
                                             <xsl:when test="contains($material,' ')">
+                                                <xsl:variable name="context" select="."/>
                                                 <xsl:for-each select="tokenize(normalize-space($material), '\s+')">
                                                     <xsl:value-of select="substring-after(., '#')"/>
-                                                    <!--<xsl:value-of select="/id(substring-after(., '#'))/t:catDesc"/>-->
+                                                    <xsl:value-of select="$context/id(substring-after(., '#'))/t:catDesc"/>
                                                     <xsl:if test="position() != last()">
                                                         <xsl:text>, </xsl:text>
                                                     </xsl:if>
