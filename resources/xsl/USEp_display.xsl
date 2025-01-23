@@ -166,8 +166,8 @@
                                                 </xsl:for-each>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:value-of select="substring-after(., '#')"/>
-                                                <!--<xsl:value-of select="id(substring-after($material, '#'))/t:catDesc"/>-->
+                                                <!--<xsl:value-of select="substring-after($material, '#')"/>-->
+                                                <xsl:value-of select="id(substring-after($material, '#'))/t:catDesc"/>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                         
