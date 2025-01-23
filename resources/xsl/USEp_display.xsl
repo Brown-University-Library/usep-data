@@ -154,12 +154,20 @@
                                     <td class="label">Material</td>
                                     <td class="value">
                                 
-                                            <xsl:for-each select="tokenize(normalize-space($material), '\s+')">
+                                        <xsl:choose>
+                                            <xsl:when test="contains($material,' ')">
+                                                <xsl:for-each
+                                                    select="tokenize(normalize-space($material), '\s+')">
+                                                    <xsl:value-of select="id(substring-after(., '#'))/t:catDesc"/>
+                                                    <xsl:if test="position() != last()">
+                                                        <xsl:text>, </xsl:text>
+                                                    </xsl:if>
+                                                </xsl:for-each>
+                                            </xsl:when>
+                                            <xsl:otherwise>
                                                 <xsl:value-of select="id(substring-after(., '#'))/t:catDesc"/>
-                                                <xsl:if test="position() != last()">
-                                                    <xsl:text>, </xsl:text>
-                                                </xsl:if>
-                                            </xsl:for-each>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
                                         
                                     </td>
                                 </tr>
