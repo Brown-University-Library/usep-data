@@ -161,8 +161,10 @@
                                         </xsl:for-each>-->
                                         <xsl:choose>
                                             <xsl:when test="$material[contains(@ana,' ')]">
+                                                <xsl:value-of select="$material/@ana"/>
                                                 <xsl:for-each
                                                     select="tokenize(normalize-space($material/@ana), '\s+')">
+                                                    <xsl:value-of select="."/>
                                                     <xsl:value-of select="id(substring-after(., '#'))/t:catDesc"/>
                                                     <xsl:if test="position() != last()">
                                                         <xsl:text>, </xsl:text>
