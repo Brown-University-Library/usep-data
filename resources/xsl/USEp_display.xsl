@@ -129,7 +129,7 @@
                             <xsl:variable name="writing"
                                 select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:handDesc/t:handNote"/>
                             <xsl:variable name="material"
-                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/@ana"/>
+                                select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc"/>
 
                             <!-- end variables -->
 
@@ -154,20 +154,20 @@
                                     <td class="label">Material</td>
                                     <td class="value">
                                 
-                                        <xsl:choose>
-                                            <xsl:when test="contains($material,' ')">
+                                        <xsl:for-each select="$material">
+                                            <xsl:choose>
+                                            <xsl:when test="contains(./@ana,' ')">
                                                 <xsl:for-each
-                                                    select="tokenize(normalize-space($material), '\s+')">
+                                                    select="tokenize(normalize-space(./@ana), '\s+')"/>
                                                     <xsl:value-of select="id(substring-after(., '#'))/t:catDesc"/>
                                                     <xsl:if test="position() != last()">
                                                         <xsl:text>, </xsl:text>
                                                     </xsl:if>
-                                                </xsl:for-each>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:value-of select="id(substring-after(., '#'))/t:catDesc"/>
+                                                <xsl:value-of select="id(substring-after(./@ana, '#'))/t:catDesc"/>
                                             </xsl:otherwise>
-                                        </xsl:choose>
+                                        </xsl:choose></xsl:for-each>
                                         
                                     </td>
                                 </tr>
