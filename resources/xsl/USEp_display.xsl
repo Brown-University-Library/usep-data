@@ -475,7 +475,7 @@
                 <!-- This should output authorship, as assigned at the top of each file. Tests whether the values are empty/in default, and only prints each piece when credit is given -->
                 
                 <div class="credit">
-                    <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author != 'Author'))">
+                    <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author != 'Author'">
                         <h3>Credit</h3>
                         <p>
                             <xsl:text>Author: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author"/> <br/>
