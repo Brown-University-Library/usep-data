@@ -367,13 +367,22 @@
                                 <tr>
                                     <td class="label">Dating Criteria</td>
                                      <td class="value">
-                                         <xsl:for-each select="$dateOfOrigin/@evidence">
-                                             <xsl:value-of
-                                                 select="id(substring-after($dateOfOrigin/@evidence, '#'))/t:catDesc"/>
-                                             <xsl:if test="position() != last()">
-                                                 <xsl:text>, </xsl:text>
-                                             </xsl:if>
-                                         </xsl:for-each>
+                                         <xsl:choose>
+                                             <xsl:when test="contains($dateOfOrigin/@evidence,' ')">
+                                                 <xsl:variable name="context" select="."/>
+                                                 <xsl:for-each select="tokenize(normalize-space($dateOfOrigin/@evidence), '\s+')">
+                                                     <xsl:variable name="contextID" select="substring-after(., '#')"/>
+                                                     <xsl:value-of select="$context/id($contextID)/t:catDesc"/>
+                                                     <xsl:if test="position() != last()">
+                                                         <xsl:text>, </xsl:text>
+                                                     </xsl:if>
+                                                 </xsl:for-each>
+                                             </xsl:when>
+                                             <xsl:otherwise>
+                                                 <!--<xsl:value-of select="substring-after($material, '#')"/>-->
+                                                 <xsl:value-of select="id(substring-after($dateOfOrigin/@evidence, '#'))/t:catDesc"/>
+                                             </xsl:otherwise>
+                                         </xsl:choose>
                                     </td>
                                 </tr>
                                 
