@@ -425,12 +425,12 @@
                     <xsl:for-each select="t:placeName">
                         <xsl:choose>
                             <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
-                               <p> <a>
+                                <a>
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="@ref"/>
                                     </xsl:attribute>
                                     <xsl:apply-templates/>
-                                </a></p>
+                                </a>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:apply-templates/>
