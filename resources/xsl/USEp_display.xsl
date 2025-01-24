@@ -429,7 +429,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="@ref"/>
                                     </xsl:attribute>
-                                    <xsl:apply-templates/>
+                                    <xsl:value-of select="t:placeName"/>
                                 </a>
                             </xsl:when>
                             <xsl:otherwise>
