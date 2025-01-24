@@ -479,14 +479,14 @@
                         <h3>Credit</h3>
                         <p>
                             <xsl:text>Author: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author"/> <br/>
-                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1] and not(contains(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:name, 'Translator'))">
-                                <xsl:text>Translation: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:name"/> <br/>
+                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1]/t:name != 'Translator'))">
+                                <xsl:text>Translation: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1]/t:name"/> <br/>
                             </xsl:if>
-                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2] and not(contains(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:resp, 'Commenter'))">
-                                <xsl:text>Commentary: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:name"/><br/>
+                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2]/t:name != 'Commenter'))">
+                                <xsl:text>Commentary: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2]/t:name"/><br/>
                             </xsl:if>
-                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3] and not(contains(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:resp, 'Editor'))">
-                                <xsl:text>Editor: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:name"/><br/>
+                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3] and not(contains(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3]/t:name != 'Editor'))">
+                                <xsl:text>Editor: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3]/t:name"/><br/>
                             </xsl:if> 
                         </p>
                     </xsl:if>
