@@ -81,6 +81,8 @@
                         </p>
                     </xsl:if>
                 </div>
+                
+                
 
                 <!-- enclosing div so that metadata and images can be side by side -->
                 <div class="topDivs">
