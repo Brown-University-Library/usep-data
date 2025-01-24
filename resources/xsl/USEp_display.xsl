@@ -490,6 +490,7 @@
                             </xsl:if> 
                         </p>
                     </xsl:if>
+                </div>
 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->
                 <div class="bibl">
