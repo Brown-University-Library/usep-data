@@ -427,7 +427,26 @@
                         </div>
                     </xsl:if>
 
-
+                    <!-- This should output authorship, as assigned at the top of each file. Tests whether the values are empty/in default, and only prints each piece when credit is given -->
+                    
+                    <div class="credit">
+                        <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author != 'Author'">
+                            <h3>Credit</h3>
+                            <p>
+                                <xsl:text>Author: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author"/> <br/>
+                                <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1]/t:name != 'Translator'">
+                                    <xsl:text>Translation: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1]/t:name"/> <br/>
+                                </xsl:if>
+                                <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2]/t:name != 'Commenter'">
+                                    <xsl:text>Commentary: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2]/t:name"/><br/>
+                                </xsl:if>
+                                <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3]/t:name != 'Editor'">
+                                    <xsl:text>Editor: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3]/t:name"/><br/>
+                                </xsl:if> 
+                            </p>
+                        </xsl:if>
+                    </div>
+                    
 <!-- Print links to Pleiades when they appear in texts or metadata 
                    
                     <xsl:for-each select="t:placeName">
@@ -472,25 +491,7 @@
                     </xsl:result-document>
                 </div>
                 
-                <!-- This should output authorship, as assigned at the top of each file. Tests whether the values are empty/in default, and only prints each piece when credit is given -->
                 
-                <div class="credit">
-                    <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author != 'Author'">
-                        <h3>Credit</h3>
-                        <p>
-                            <xsl:text>Author: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author"/> <br/>
-                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1]/t:name != 'Translator'">
-                                <xsl:text>Translation: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1]/t:name"/> <br/>
-                            </xsl:if>
-                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2]/t:name != 'Commenter'">
-                                <xsl:text>Commentary: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2]/t:name"/><br/>
-                            </xsl:if>
-                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3]/t:name != 'Editor'">
-                                <xsl:text>Editor: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3]/t:name"/><br/>
-                            </xsl:if> 
-                        </p>
-                    </xsl:if>
-                </div>
 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->
                 <div class="bibl">
