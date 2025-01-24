@@ -43,6 +43,7 @@
         2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
         2021-07-29 EM added bibliography processing.
         2025-01-21 SJD improved display of campus dimensions as separate area, turned on Pleiades links, enabled display of multiple dating criteria
+        2025-01-24 SJD added display code for TM numbers
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -58,7 +59,7 @@
         <xsl:result-document href="#container">
             <div>
 
-                <!-- This outputs the full text description at the top of the page, after checking that there are descriptions to output. -->
+                <!-- This outputs the full text description at the top of the page, after checking that there are descriptions to output; also checks for TM number and prints a link. -->
                 <div class="titleBlurb">
                     <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/*">
                         <h3>Summary</h3>
@@ -72,9 +73,13 @@
                             </xsl:if>
                         </p>
                     </xsl:if>
+                    <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number'] and string-length(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno) != 0">
+                        <h3>TM Number</h3>
+                        <p><a href="{concat('https://wwww.trismegistos.org/text/', /t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno)>
+                            <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno"/>
+                        </a></p>
+                    </xsl:if>
                 </div>
-
-
 
                 <!-- enclosing div so that metadata and images can be side by side -->
                 <div class="topDivs">
