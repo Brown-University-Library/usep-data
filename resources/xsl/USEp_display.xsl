@@ -43,7 +43,7 @@
         2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
         2021-07-29 EM added bibliography processing.
         2025-01-21 SJD improved display of campus dimensions as separate area, turned on Pleiades links, enabled display of multiple dating criteria
-        2025-01-24 SJD added display code for TM numbers
+        2025-01-24 SJD added display code for TM numbers; turned off Pleiades for now; 
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -428,7 +428,7 @@
                     </xsl:if>
 
 
-<!-- Print links to Pleiades when they appear in texts or metadata -->
+<!-- Print links to Pleiades when they appear in texts or metadata 
                    
                     <xsl:for-each select="t:placeName">
                         <xsl:choose>
@@ -442,6 +442,8 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:for-each>
+                    
+                    -->
                 
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
@@ -470,6 +472,24 @@
                     </xsl:result-document>
                 </div>
                 
+                <!-- This should output authorship, as assigned at the top of each file. Tests whether the values are empty/in default, and only prints each piece when credit is given -->
+                
+                <div class="credit">
+                    <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author and string-length(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author) !=0 and not(contains(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author, 'Author'))">
+                        <h3>Credit</h3>
+                        <p>
+                            <xsl:text>Author: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author"/> <br/>
+                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1] and not(contains(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:name, 'Translator'))">
+                                <xsl:text>Translation: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:name"/> <br/>
+                            </xsl:if>
+                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2] and not(contains(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:resp, 'Commenter'))">
+                                <xsl:text>Commentary: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:name"/><br/>
+                            </xsl:if>
+                            <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3] and not(contains(/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:resp, 'Editor'))">
+                                <xsl:text>Editor: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt/t:name"/><br/>
+                            </xsl:if> 
+                        </p>
+                    </xsl:if>
 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->
                 <div class="bibl">
