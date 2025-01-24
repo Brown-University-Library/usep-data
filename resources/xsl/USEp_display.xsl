@@ -75,9 +75,10 @@
                     </xsl:if>
                     <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number'] and string-length(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno) != 0">
                         <h3>TM Number</h3>
-                        <p><a href="{concat('https://wwww.trismegistos.org/text/', /t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno)>
+                        <p><a href="{concat('https://wwww.trismegistos.org/text/', /t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno)}">
                             <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno"/>
-                        </a></p>
+                        </a>
+                        </p>
                     </xsl:if>
                 </div>
 
