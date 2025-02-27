@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -135,12 +128,10 @@ changes: correct handling of provenance information -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page"></biblScope>
+                        <biblScope unit="page"/>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="https://www.spurlock.illinois.edu/collections/search-collection/details.php?a=1921.01.0021"
-                            >Spurlock Museum External Reference</ref>
+                        <ref type="external" target="https://www.spurlock.illinois.edu/collections/search-collection/details.php?a=1921.01.0021">Spurlock Museum External Reference</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -150,8 +141,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -178,8 +168,7 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic
-                url="https://www.spurlock.illinois.edu/img-DB/orig-digi/1921/1921.01/1921.01.0021.01.jpg"/>
+            <graphic url="https://www.spurlock.illinois.edu/img-DB/orig-digi/1921/1921.01/1921.01.0021.01.jpg"/>
         </surface>
     </facsimile>
 
@@ -189,8 +178,7 @@ changes: correct handling of provenance information -->
                 <ab>
                     <lb n="1"/><persName><name type="praenomen" key="Tiberius"><expan><abbr>Ti</abbr><ex>berius</ex></expan></name> <name type="gentilicium" key="Claudius">Claudius</name> 
                     <lb n="2"/><name type="cognomen" key="Cissonius">Cissonius</name></persName> <expan><abbr>v</abbr><ex>ixit</ex></expan> <expan><abbr>a</abbr><ex>nnis</ex></expan> <num type="cardinal" value="20">XX</num>. 
-                    <lb n="3"/><persName><name type="cognomen" key="Thallusa">Thallusa</name></persName> <supplied
-                        reason="subaudible">fecit</supplied> coniugi 
+                    <lb n="3"/><persName><name type="cognomen" key="Thallusa">Thallusa</name></persName> <supplied reason="subaudible">fecit</supplied> coniugi 
                     <lb n="4"/>bene merenti. 
                 </ab>
             </div>
@@ -207,7 +195,7 @@ changes: correct handling of provenance information -->
                     120, because <hi rend="italic">columbaria</hi> burials ceased to be used after that period. </p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

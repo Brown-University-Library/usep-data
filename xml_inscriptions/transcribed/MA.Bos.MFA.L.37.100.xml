@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -44,7 +37,7 @@ changes: correct handling of provenance information -->
                         <region>MA</region>
                         <settlement>Bos</settlement>
                         <institution>MFA</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>37.100</idno>
                     </msIdentifier>
 
@@ -163,8 +156,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -212,21 +204,21 @@ changes: correct handling of provenance information -->
                 </div>
                 <div type="textpart" subtype="column" n="2">
                     <ab>
-                        <lb n="4"/><persName><name type="gentilicium" key="Gessia">Gessia</name> <persName><name type="praenomen" key ="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Fausta">Fausta</name></persName>, <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name><name type="gentilicium" key="Gessius">Gessius</name> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName>
+                        <lb n="4"/><persName><name type="gentilicium" key="Gessia">Gessia</name> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName> <expan><abbr>l</abbr><ex>iberta</ex></expan> <name type="cognomen" key="Fausta">Fausta</name></persName>, <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name><name type="gentilicium" key="Gessius">Gessius</name> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ubli</ex></expan></name></persName>
                             <expan><abbr>f</abbr><ex>ilius</ex></expan>
                             <name type="tribe"><expan><abbr>Rom</abbr><ex>ilia</ex></expan> <supplied reason="subaudible" cert="high">tribu</supplied></name></persName>,
                         <persName>
                             <name type="praenomen" key="Publius">
                                 <expan><abbr><hi rend="tall">P</hi></abbr><ex>ublius</ex></expan>
                             </name>
-                            <name type="gentilicium" key ="Gessius">
+                            <name type="gentilicium" key="Gessius">
                                 Gessius
                             </name>
                             <persName><name type="praenomen" key="Publius">
                                 <expan><abbr>P</abbr><ex>ubli</ex></expan>
                             </name></persName>
                             <expan><abbr>l</abbr><ex>ibertus</ex></expan>
-                            <name type="cognomen" key= "Primus">Primus</name>
+                            <name type="cognomen" key="Primus">Primus</name>
                         </persName>.
                     </ab>
                 </div>
@@ -266,7 +258,7 @@ changes: correct handling of provenance information -->
             </div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

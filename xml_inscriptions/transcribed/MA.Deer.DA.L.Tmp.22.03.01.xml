@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -46,7 +39,7 @@ changes: correct handling of provenance information -->
                         <institution>DA</institution>
                         <repository>Tmp</repository>
                         <idno>22.03.01</idno>
-                        <altIdentifier type="TM_number"><idno></idno></altIdentifier>
+                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -69,9 +62,9 @@ changes: correct handling of provenance information -->
                                 <support>
                                     <p>Marble tablet</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height></height>
-                                        <width></width>
-                                        <depth></depth>
+                                        <height/>
+                                        <width/>
+                                        <depth/>
                                     </dimensions>
                                 </support>
                                 <condition ana="#fragments.contig">
@@ -81,7 +74,7 @@ changes: correct handling of provenance information -->
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="6">
-                                    <p></p>
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -109,8 +102,7 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#prosopography" notBefore="0146" notAfter="0235"
-                                >146/173/200/212/235 C.E.</date>
+                            <date evidence="#prosopography" notBefore="0146" notAfter="0235">146/173/200/212/235 C.E.</date>
                             <placeName ref="europe.italy.misenum https://pleiades.stoa.org/places/432941">Misenum (modern Miseno)</placeName>
                         </origin>
 
@@ -140,8 +132,7 @@ changes: correct handling of provenance information -->
                     </bibl>
                     
                     <bibl>
-                        <ref type="external"
-                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR162137">EDR162137</ref>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR162137">EDR162137</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -151,8 +142,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -187,9 +177,7 @@ changes: correct handling of provenance information -->
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied
-                        reason="lost">pro</supplied> reditu et Vict<supplied reason="lost"
-                        >oria</supplied>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">pro</supplied> reditu et Vict<supplied reason="lost">oria</supplied>
                     <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ae
                             <expan><abbr>Aug</abbr><ex>ustae</ex></expan>
@@ -197,31 +185,22 @@ changes: correct handling of provenance information -->
                     <expan><abbr>c</abbr><ex>astrorum</ex></expan> totiusq<supplied reason="lost">ue
                         domus divinae</supplied>
                     <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"
-                            /><expan><abbr>decur</abbr><ex>io</ex></expan> Misenis et Te<supplied
-                        reason="lost" cert="low">ani</supplied>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><expan><abbr>decur</abbr><ex>io</ex></expan> Misenis et Te<supplied reason="lost" cert="low">ani</supplied>
                     <gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
                     <supplied reason="lost">decurio
                             <abbr>e</abbr></supplied><expan><abbr><unclear>q</unclear>uit</abbr><ex>um</ex></expan>,
-                            <expan><abbr>trierarc</abbr><ex>hus</ex></expan> pris<supplied
-                        reason="lost" cert="low">tis, <g type="centurio"/>
-                        <expan><abbr>leg</abbr><ex>ionis</ex></expan> <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num></supplied><gap reason="lost"
-                        extent="unknown" unit="character"/>
+                            <expan><abbr>trierarc</abbr><ex>hus</ex></expan> pris<supplied reason="lost" cert="low">tis, <g type="centurio"/>
+                        <expan><abbr>leg</abbr><ex>ionis</ex></expan> <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num></supplied><gap reason="lost" extent="unknown" unit="character"/>
                     <lb n="5"/><supplied reason="lost"><expan><abbr>p</abbr><ex>rimus</ex></expan>
                         <expan><abbr>p</abbr><ex>ilus</ex></expan>
                         <expan><abbr>leg</abbr><ex>ionis</ex></expan> <num><gap reason="lost" atMost="5" atLeast="1" unit="character"/></num>,
                             <abbr>pra</abbr></supplied><expan><abbr>ef</abbr><ex>ectus</ex></expan>
                     <orgName><expan><abbr>leg</abbr><ex>ionis</ex></expan>
                     <num value="3" type="ordinal">III</num>
-                    <expan><abbr>Gallic</abbr><ex>ae</ex></expan></orgName>, <abbr>pra</abbr><supplied reason="lost"
-                                ><expan><abbr>ef</abbr><ex>ectus</ex></expan></supplied>
+                    <expan><abbr>Gallic</abbr><ex>ae</ex></expan></orgName>, <abbr>pra</abbr><supplied reason="lost"><expan><abbr>ef</abbr><ex>ectus</ex></expan></supplied>
                     <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"
-                            /><persName><name type="gentilicum" key="Claudius"><expan><abbr>Cl</abbr><ex>audio</ex></expan></name> <name type="cognomen" key="Severus">Severo</name></persName> et <gap reason="lost" extent="unknown" unit="character"/><supplied
-                        reason="lost"
-                            ><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan></supplied><gap
-                        reason="lost" extent="unknown" unit="character"/>
+                    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><persName><name type="gentilicum" key="Claudius"><expan><abbr>Cl</abbr><ex>audio</ex></expan></name> <name type="cognomen" key="Severus">Severo</name></persName> et <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan></supplied><gap reason="lost" extent="unknown" unit="character"/>
                 </ab></div>
             
             <div type="translation">
@@ -273,7 +252,7 @@ changes: correct handling of provenance information -->
                     has to be expanded to 146/173/200/212/235 C.E.</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

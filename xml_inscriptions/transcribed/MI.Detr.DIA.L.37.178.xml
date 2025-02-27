@@ -1,20 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-
-
-     
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     
     <teiHeader>
 
@@ -48,9 +38,9 @@ changes: correct handling of provenance information -->
                         <region>MI</region>
                         <settlement>Detr</settlement>
                         <institution>DIA</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>37.178</idno>
-                        <altIdentifier type="TM_number"><idno></idno></altIdentifier>
+                        <altIdentifier type="TM_number"><idno>EDR Mismatch</idno></altIdentifier>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -149,9 +139,7 @@ changes: correct handling of provenance information -->
                         <biblScope unit="page">129</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external"
-                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143173"
-                            >EDR143173, with further bibliography</ref>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143173">EDR143173, with further bibliography</ref>
                     </bibl>
                     <bibl>
                         <ref type="external" target="https://dia.org/collection/funerary-monument-m-manneius-amphio-58905">Detroit Institute of Arts Web Entry</ref>
@@ -164,8 +152,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -204,12 +191,12 @@ changes: correct handling of provenance information -->
             <div type="edition">
             <ab>
                 <lb n="1"/>D<hi rend="tall">i</hi>s Manibus
-                <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <name type="gentilicium" key ="Manneius">Mannei</name> <name type="cognomen" key="Amphion">Amphioni<unclear>s</unclear>.</name></persName>
+                <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <name type="gentilicium" key="Manneius">Mannei</name> <name type="cognomen" key="Amphion">Amphioni<unclear>s</unclear>.</name></persName>
                 <lb n="3"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Manneius">Manneius</name> <name type="cognomen" key="Zethus">Zethu<supplied reason="lost">s</supplied></name></persName>
                 <lb n="4"/>frater gemin<unclear>o</unclear>
                 <lb n="5"/>carissimo
                 <lb n="6"/>bene merenti <supplied reason="undefined" evidence="previouseditor">et</supplied>
-                <lb n="7"/><persName><name type="gentilicium" key ="Manneia">Manneia</name> <name type="cognomen" key="Lamyra">Lamyr<supplied reason="lost">a</supplied></name></persName>
+                <lb n="7"/><persName><name type="gentilicium" key="Manneia">Manneia</name> <name type="cognomen" key="Lamyra">Lamyr<supplied reason="lost">a</supplied></name></persName>
                 <lb n="8"/>patrono optimo et
                 <lb n="9"/>dignissimo
                 <lb n="10"/>fecerunt. 
@@ -229,7 +216,7 @@ changes: correct handling of provenance information -->
                 <p>Interpuncts between words, excluding <hi rend="italic">bene merenti</hi> line 6 and <hi rend="italic">patrono optimo</hi> line 8.</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

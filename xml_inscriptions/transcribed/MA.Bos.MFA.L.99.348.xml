@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -44,7 +37,7 @@ changes: correct handling of provenance information -->
                         <region>MA</region>
                         <settlement>Bos</settlement>
                         <institution>MFA</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>99.348</idno>
                         <altIdentifier type="TM_number">
                             <idno>281129</idno>
@@ -78,11 +71,11 @@ changes: correct handling of provenance information -->
                                     <dimensions type="campus" unit="cm">
                                         <height>10.16</height>
                                         <width>41.91</width>
-                                        <depth></depth>
+                                        <depth/>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
-                                    <p></p>
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -97,7 +90,7 @@ changes: correct handling of provenance information -->
 
                         <handDesc hands="1">
                             <handNote ana="#inscribed"> 
-                                <dimensions type="hand" unit="cm" >
+                                <dimensions type="hand" unit="cm">
                                     <height atLeast="1.27" atMost="2.0">1.27-2.0</height>
                                 </dimensions>
                             </handNote>
@@ -177,8 +170,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -254,7 +246,7 @@ changes: correct handling of provenance information -->
                     Companion to Roman Religion, J. Rüpke (Ed.). Oxford: Wiley, pp. 263-272. </p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

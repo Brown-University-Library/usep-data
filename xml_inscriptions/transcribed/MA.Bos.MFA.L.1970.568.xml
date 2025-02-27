@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -40,7 +33,7 @@ changes: correct handling of provenance information -->
                         <region>MA</region>
                         <settlement>Bos</settlement>
                         <institution>MFA</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>1970.568</idno>
                     </msIdentifier>
 
@@ -66,7 +59,7 @@ changes: correct handling of provenance information -->
                                     <dimensions type="surface" unit="cm">
                                         <height>3.8</height>
                                         <width>16.5</width>
-                                        <depth></depth>
+                                        <depth/>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
@@ -119,7 +112,7 @@ changes: correct handling of provenance information -->
                             <placeName ref="europe.serbia.nis https://pleiades.stoa.org/places/207303">Naissus (modern Nis)</placeName>
                         </origin>
                         <provenance type="transferred" subtype="sold">
-                            <p>Purchased by the <orgName role="buyer">Museum of Fine Arts</orgName> from <persName role="seller">Ernst E. Kofler</persName>, of <placeName>Gesegnetmattstrasse 14, 6000 Lucerne, Switzerland</placeName>, on <date when="1970-12-16">December 16, 1970></date></p>
+                            <p>Purchased by the <orgName role="buyer">Museum of Fine Arts</orgName> from <persName role="seller">Ernst E. Kofler</persName>, of <placeName>Gesegnetmattstrasse 14, 6000 Lucerne, Switzerland</placeName>, on <date when="1970-12-16">December 16, 1970&gt;</date></p>
                         </provenance>
                         <provenance type="observed" subtype="recorded">
                             <p>By <date when="1964">1964</date>, in the <orgName role="dealer">E. and M. Kofler-Truniger Collection</orgName> and displayed as part of the Kunsthaus Zurich exhibition, June 7-August 2, 1964, no. 375</p>
@@ -150,8 +143,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -220,7 +212,7 @@ changes: correct handling of provenance information -->
                     several such dishes which were produced in honor of this anniversary</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -44,9 +37,9 @@ changes: correct handling of provenance information -->
                         <region>MA</region>
                         <settlement>Bos</settlement>
                         <institution>MFA</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>2010.39</idno>
-                        <altIdentifier type="TM_number"><idno></idno></altIdentifier>
+                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -81,7 +74,7 @@ changes: correct handling of provenance information -->
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="1" writtenLines="7">
-                                    <p></p>
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -154,8 +147,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -191,10 +183,10 @@ changes: correct handling of provenance information -->
             <div type="edition">
                  <lg met="elegiacs">
                      <l><lb n="1"/>Τὸν λιγυρὸν κόλποις <persName><name key="Διονύσιος">Διονύσι
-                     <lb n="2" break="no"/>ον</name></persName> ἐ<unclear>ν</unclear>θαδ’ ἔχ<unclear>ο</unclear><supplied reason= "lost">υ</supplied><unclear>σ</unclear>α</l> <l>γαῖα τὸν
+                     <lb n="2" break="no"/>ον</name></persName> ἐ<unclear>ν</unclear>θαδ’ ἔχ<unclear>ο</unclear><supplied reason="lost">υ</supplied><unclear>σ</unclear>α</l> <l>γαῖα τὸν
                      <lb n="3"/>ἐν ζωοῖς ἤθεσι πραύτατον</l>
                      <lb n="4"/><l>δάκρυσον νεότητα καὶ εὐ
-                     <lb n="5" break="no"/>στομίην <supplied reason= "lost">π</supplied><unclear>α</unclear><unclear>ρ</unclear>οδεῖτα,</l> <g type="hedera"/>
+                     <lb n="5" break="no"/>στομίην <supplied reason="lost">π</supplied><unclear>α</unclear><unclear>ρ</unclear>οδεῖτα,</l> <g type="hedera"/>
                      <lb n="6"/><l>μεμψάμενος Μοιρῶν
                      <lb n="7"/>τὴν ἄδικον <persName><name type="divine" key="Λάχεσις">Λά<supplied reason="lost">χ</supplied>εσιν</name></persName></l>. <g type="apex"/>
                      <lb n="8"/><g type="hedera"/>     
@@ -224,7 +216,7 @@ changes: correct handling of provenance information -->
                     fourth century C.E. </p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
