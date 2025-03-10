@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.MFA.G.84.55a-b</title>
+                <author>Nicholas Trcalek</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.84.55a-b">MA.Bos.MFA.G.84.55a-b</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>MFA</institution>
+                        <repository/>
+                        <idno>84.55a-b</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#honorific">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Honorary inscription for C. Caesar</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#base">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p>perhaps a marble statue base or otherwise large
+                                        inscription</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>27.5</height>
+                                        <width>57.2</width>
+                                        <depth>22.0</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragments.contig">
+                                    <p>two contiguous fragments of a larger inscription</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="3">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed">
+                                <p>attempted erasure in antiquity</p>
+                                <dimensions type="letter" unit="cm">
+                                    <height>3.0</height>
+                                </dimensions>
+                            </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#history" notBefore="-0001" notAfter="0004">1 BCE-4 CE</date>
+                            <placeName ref="asia.asia_minor_Assos https://pleiades.stoa.org/places/550463">Assos (modern Behramkale,
+                                Türkiye)</placeName>
+                        </origin>
+                        <provenance type="recorded" subtype="found">
+                            <p>Excavated in <date notBefore="1881" notAfter="1882">1881-1882</date> by the <orgName role="excavator">Archaeological Institute of America</orgName> at <placeName ref="https://pleiades.stoa.org/places/550463">Assos</placeName>; found walled into the masonry of the northeast corner of the Bouleterion</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="given">
+                            <p>Given by the <orgName role="donor">Archaeological Institute of America</orgName> to the <orgName role="recipient">Musuem of Fine Arts</orgName> on <date when="1884-01-15">January 15, 1884</date>.</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#InvAssos_1902"/>
+                        <biblScope page="page">69, no. 23</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Assos"/>
+                        <biblScope unit="page">29-30, no. 13</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#IGRR_IV"/>
+                        <biblScope unit="item">248</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://epigraphy.packhum.org/text/288083">PH288083</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://collections.mfa.org/objects/199442/honorary-inscription-for-gaius-caesar-princeps-iuventutis">MFA Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="Nick Trcalek">Initial Encoding</change>
+            <change when="2025-01-17" who="Scott J. DiGiulio">Smoothed and corrected metadata, wrote bibliogrpahy into USEP format, added Pleiades links, added provenance info, proofed transcription against photo</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MA.Bos.MFA.G.84.55a-b.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab>
+                    <lb n="1"/>ὁ δῆμος καὶ οἱ πραγματε<supplied reason="lost">υόμενοι Ῥωμαῖοι</supplied>
+                    <lb n="2"/><persName type="imperial"><name type="praenomen" key="Gaius Γαῖος">Γαῖον</name> <name type="cognomen" key="Caesar Καίσαρ">Καίσαρα</name></persName> τὸν τοῦ <persName type="imperial"><name type="cognomen" key="Sebastos Augustus Σεβαστός">Σεβα<supplied reason="lost">στοῦ</supplied></name></persName> <supplied reason="lost">υἱόν, ἡγεμό</supplied>
+                    <lb n="3" break="no"/>να τῆς νεότητος, ὕπατο<supplied reason="lost">ν Ἀσίας ἀνέθηκαν</supplied>.
+                </ab></div>
+            
+            <div type="translation">
+            <p>“The People (of Assos) and the Roman merchants [set this up for] Gaius Caesar, the
+                    son of Augustus, Leader of the Youth, consul [of Asia]”</p></div>
+
+            <div type="commentary">
+            <p>Line 1: the nominative forms of demos and “Roman merchants” indicated that they are
+                    the active subjects; Bacon et al. restore παρ’ ἡμῖν before Ῥωμαῖοι, thus “the
+                    Roman merchants among us”, but Bacon et al. p. 185 ~ IGRR 4.250 ~ Merkelbach no.
+                    19 has οἱ πραγματευόμενοι Ῥω[μαῖοι], so this restoration of παρ’ ἡμῖν is
+                    unlikely.</p>
+                <p>Line 2: the accusative form of C. Caesar and his titles make it clear
+                    that he is the direct object and receiving some honor from the aforementioned
+                    subjects, despite there being no verb, but the accusative, rather than dative,
+                    is a curious choice; Bacon et al. restore καὶ before ἡγεμό=; the IGRR restores
+                    πάτρω= instead of ἡγεμό=.</p>
+                <p>Line 3: Bacon et al. suggest ὕπατο[ν τῆς Ἀσίας,
+                    ἀνέθηκαν] “(for the) consul of Asia, (subjects from line 1) set up (this
+                    inscription/statue)”, while Merkelbach thinks ὕπατο[ν ἀποδεδειγμένον]
+                    “designated consul” should be restored, both seem reasonable for the context,
+                    and the omission of the verb for ‘setting up/erecting’ an inscription or statue
+                    is commonly omitted in both Greek and Latin; while very uncommon, a form of
+                    ἀνατίθημι and the accusative rather than the usual dative is not unknown, e.g.
+                    IG II2 3558: Χολλείδης τὴν ἑαυτοῦ μη[τέρα] | ἀνέθηκαν ἀρετῆς ἕνεκεν | καὶ τῆς
+                    πρὸς τὰς θεὰς εὐσεβ[είας]. From the largely secure restoration of the first two
+                    lines, there is space for approximately 13-15 letters in the third, I have
+                    decided to restore the 13 letter phrase Ἀσίας ἀνέθηκαν, dropping Bacon et al.’s
+                    τῆς for spatial reasons. Overall, the lettering is neither excellent nor very
+                    poor, but the serifs are more stylized than the letters themselves. 
+                    </p> 
+                <p>
+                    In 5 BCE C. Caesar was appointed princeps iuventutis (here translated into Greek as
+                    ἡγεμόνα τῆς νεότητος), “Leader of the Youth”, and consul by Augustus (cf. Suet.
+                    Aug. 64; Tac. Ann. 1.3.2), but the latter office was not to be held by him until
+                    1 C.E. Leaving for Syria in 1 B.C.E., he assumed the consulship in 1 C.E. (when
+                    his name appears in the fasti) while he was in Syria, not arriving in Asia until
+                    4 C.E., three years later, shortly before his death. He likely never visited
+                    Assos. Merkelbach links this honorific inscription with his nos. 19 and 20,
+                    similar dedicatory inscriptions for Livia and Dea Roma, respectively, also set
+                    up by the same “People and Roman merchants (of Assos)”. Given the ‘consular’
+                    date and Gaius’ death in 4 C.E. the inscription is securely dated from 1 BCE
+                    to 4 CE </p></div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

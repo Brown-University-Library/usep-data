@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MI.Detr.DIA.L.37.194</title>
+                <author>Max Meyer</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MI.Detr.DIA.L.37.194">MI.Detr.DIA.L.37.194</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MI</region>
+                        <settlement>Detr</settlement>
+                        <institution>DIA</institution>
+                        <repository/>
+                        <idno>37.194</idno>
+                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <msItem class="#funerary.other">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Cinerary urn with funerary inscription</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#ash_urn">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p>marble cylindrical cinerary urn</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>37.8</height>
+                                        <dim type="diameter" unit="cm" quantity="44.5">44.5</dim>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="9">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>A molded tabula ansata delimits the campus. In the first line of the inscription, there is 
+                                    a hedera distinguens centrally placed between the D and M. The hedera is shorter and carved
+                                    less deeply than the letters of the inscription.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology #paleography" notBefore="0200" notAfter="0250" precision="medium">early third century CE</date>
+                            <placeName ref="https://pleiades.stoa.org/places/390205932">Disturbed
+                                context along Via Ostiensis, Rome</placeName>
+                        </origin>
+                        
+                        <provenance type="transferred" subtype="sold" when="1937">
+                            <p>Purchased by the <orgName role="buyer">Detroit Institute of Art</orgName> in <date when="1937">1937</date> from a member of the <persName role="seller">Jandolo family</persName> with the <persName role="funder">Laura H. Murphy</persName> Fund.</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">25170a</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#ZPE_52_Visona"/>
+                        <biblScope unit="page">79-86</biblScope>
+                    </bibl>
+                    
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#BMCR_2023_Thompson"/>
+                        <biblScope/>
+                    </bibl>
+                    
+                    <bibl>
+                        <ref type="external" target="https://dia.org/collection/cinerary-urn-59187">Detroit Institute of Art Web Entry</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143175">EDR143175</ref>
+                    </bibl>
+                    
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+
+        <revisionDesc>
+            <change when="2024-05-16" who="Max Meyer">Initial Encoding</change>
+            <change when="2025-01-20" who="Scott J. DiGiulio">Proofed and corrected metadata and controlled vocabulary; tinkered with provenance markup; corrected bibliography to USEP format; proofed and corrected transcription from EDR photo</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- I couldn't find a photo of the urn hosted online (including at the DIA), and I'm not sure if I'm able to 
+            insert an image hosted locally on my computer, rather than on the USEP site.   -->
+
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab> 
+                    <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan>.
+                    <lb n="2"/><persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublio</ex></expan></name> <name type="gentilicium" key="Publilius">Publ<supplied reason="omitted">il</supplied>io</name> <name type="cognomen" key="Daus">Dao</name></persName>
+                    <lb n="3"/> <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Publilius">Publilius</name> <name type="cognomen" key="Hilarus">Hilarus</name></persName>
+                    <lb n="4"/>et <persName><name type="praenomen" key="Publius"><expan><abbr>P</abbr><ex>ublius</ex></expan></name> <name type="gentilicium" key="Publilius">Publilius</name> <name type="cognomen" key="Agathon">Agathon</name></persName> 
+                    <lb n="5"/>patrono et fratri
+                    <lb n="6"/>optimo et <persName><name type="gentilicium" key="Iunia">Iunia</name>
+                    <lb n="7"/><name type="cognomen" key="Cosmias">Cosmias</name></persName> coniugi
+                    <lb n="8"/>bene merenti
+                    <lb n="9"/>fecerunt.
+                </ab>
+            </div>
+            
+            <div type="translation">
+                <p>
+                    <lb n="1"/>To the Divine Spirits. For Publius Publilius Daus. Publius Publilius Hilarus and Publius Publilius Agathon for their patron and best brother, Iunia Cosmias for her husband well deserving, made (this).
+                </p>
+            </div>
+
+            <div type="commentary">
+                <p>The inscription on the marble urn records that it was made for Publius Publilius Daus by Publius Publilius Hilarus, Publius Publilius Agathon, and Iunia Cosmias. 
+                    Publius Publilius Hilarus and Publius Publilius Agathon refer to the deceased as their patrono et fratri. Since they both have the same praenomen and gentilicium 
+                    as the deceased, and Hilarus is a Roman cognomen whereas Agathon is of Greek origin, these two men may have been ex-slaves freed by Publius Publilius Daus. The 
+                    quality of the craftmanship, the material, and the well-executed inscription suggest that the urn was of a high quality and expensive, indicating that the three 
+                    living individuals who commissioned it were of a higher economic status.</p>
+            </div>
+            
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

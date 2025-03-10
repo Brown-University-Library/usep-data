@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Deer.DA.L.Tmp.22.03.01</title>
+                <author>Nicholas Trcalek</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Deer.DA.L.Tmp.22.03.01">MA.Deer.DA.L.Tmp.22.03.01</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Deer</settlement>
+                        <institution>DA</institution>
+                        <repository>Tmp</repository>
+                        <idno>22.03.01</idno>
+                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#honorific">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Honorific tablet for a female member of the imperial family</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#tablet">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p>Marble tablet</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragments.contig">
+                                    <p>Four contiguous pieces of a larger tablet</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="6">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#prosopography" notBefore="0146" notAfter="0235">146/173/200/212/235 C.E.</date>
+                            <placeName ref="europe.italy.misenum https://pleiades.stoa.org/places/432941">Misenum (modern Miseno)</placeName>
+                        </origin>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_X"/>
+                        <biblScope unit="item">3342a</biblScope>
+                    </bibl>
+                    <bibl><ptr type="rest-of-bibl" target="#Domaszewski1967"/>
+                        <biblScope unit="page">105, 120, 242</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Dobson_1978"/>
+                        <biblScope unit="item">203</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Reddé_1986"/>
+                        <biblScope unit="page">545</biblScope>
+                    </bibl>
+                    <bibl> 
+                        <ptr type="rest-of-bibl" target="#DeCarlo_2015"/>
+                        <biblScope unit="page">111</biblScope>
+                    </bibl>
+                    
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR162137">EDR162137</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="Nick Trcalek">Initial Encoding</change>
+            <change when="2025-01-16" who="Scott J. DiGiulio">Smoothed and corrected metadata; added bibliography in USEP format; proofed and lightly edited transcription (mostly EpiDoc)</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MA.Deer.DA.L.Tmp.22.03.01.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">pro</supplied> reditu et Vict<supplied reason="lost">oria</supplied>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ae
+                            <expan><abbr>Aug</abbr><ex>ustae</ex></expan>
+                    <expan><abbr>m</abbr><ex>atris</ex></expan>
+                    <expan><abbr>c</abbr><ex>astrorum</ex></expan> totiusq<supplied reason="lost">ue
+                        domus divinae</supplied>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><expan><abbr>decur</abbr><ex>io</ex></expan> Misenis et Te<supplied reason="lost" cert="low">ani</supplied>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
+                    <supplied reason="lost">decurio
+                            <abbr>e</abbr></supplied><expan><abbr><unclear>q</unclear>uit</abbr><ex>um</ex></expan>,
+                            <expan><abbr>trierarc</abbr><ex>hus</ex></expan> pris<supplied reason="lost" cert="low">tis, <g type="centurio"/>
+                        <expan><abbr>leg</abbr><ex>ionis</ex></expan> <num><gap reason="lost" atLeast="1" atMost="4" unit="character"/></num></supplied><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="5"/><supplied reason="lost"><expan><abbr>p</abbr><ex>rimus</ex></expan>
+                        <expan><abbr>p</abbr><ex>ilus</ex></expan>
+                        <expan><abbr>leg</abbr><ex>ionis</ex></expan> <num><gap reason="lost" atMost="5" atLeast="1" unit="character"/></num>,
+                            <abbr>pra</abbr></supplied><expan><abbr>ef</abbr><ex>ectus</ex></expan>
+                    <orgName><expan><abbr>leg</abbr><ex>ionis</ex></expan>
+                    <num value="3" type="ordinal">III</num>
+                    <expan><abbr>Gallic</abbr><ex>ae</ex></expan></orgName>, <abbr>pra</abbr><supplied reason="lost"><expan><abbr>ef</abbr><ex>ectus</ex></expan></supplied>
+                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><persName><name type="gentilicum" key="Claudius"><expan><abbr>Cl</abbr><ex>audio</ex></expan></name> <name type="cognomen" key="Severus">Severo</name></persName> et <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ulibus</ex></expan></supplied><gap reason="lost" extent="unknown" unit="character"/>
+                </ab></div>
+            
+            <div type="translation">
+            <p>"For the return and victory…[---]-a Aug[usta], mother of the camp and the entire
+                    imperial family, (set up by?) Decurion of Misenum and Te[anum?]…Decurion of the
+                    Knights, Trierarch [of a light ship?, Centurion of the --- legion], [Primus
+                    Pilus of the --- legion, Pra]efect of the Third Gallic Legion, Pra[efect ---].
+                    (When) Cl(audius) Severus and [--- were consuls]"</p></div>
+
+            <div type="commentary">
+            <p>Line 2: depending on the reconstruction of consular date at the end (line 6) either
+                    Domn]ae, Mamae]ae, or the name of another Augusta should be restored, see
+                    discussion below.</p>
+                <p>Line 4: Dobson (1978: 300) disagrees with Domaszewski’s
+                    supplement decurio e]q̣uit(um), but others have no qualms (cf. Reddé and De
+                    Carlo); if pris[tis is the correct restoration, then it must either be a type of
+                    small but fast ship (doubtful to Reddé), or the name of his ship in ‘apposition’
+                    to trierarchus (perhaps a loanword from ancient Greek, πρίστις, meaning
+                    “sawtooth fish”, my own conjecture, so it should be interpreted as Pris[tis),
+                    the closest parallel I have been able to find is EDR126016 ~ CIL 10.3391:
+                    adiutor t̅r̅(ierarchi) ((quadriere)) Venere, the name of the ship in the
+                    ablative being in apposition to the ablative quadriere or depending on an
+                    understood de; but here too Dobson (1978: 300) deems Domaszewski’s
+                    reconstruction of pris[tis as ‘incomprehensible’ (“unverständlich”), and Reddé
+                    and De Carlo agree. </p>
+                    <p>Line 6: Cl. Severo is usually understood as either Ti.
+                    Claudius Severus Proculus (cos. 200) or Cn. Claudius Severus (cos. 235), the
+                    correct restoration of the co-consul as well as the Augusta of line 2 depends on
+                    this interpretation, see discussion below. </p>
+                    
+                    <p>A full commentary of the inscription
+                    is hampered by its obscure provenance and purpose, making interpretation
+                    difficult. It is likely an honorific tablet to the imperial household set up by
+                    an experienced and high-ranking soldier who had been made honorary decurion at
+                    Misenum and Teanum (most probably Teanum Sidicinum in Campania rather than
+                    Teanum Apulum in Apulia). His military posts are given in ascending order after
+                    his position as a decurion of the two cities. The most common restorations of
+                    the consuls are Ti. Claudius Severus Proculus (cos. 200) and Cn. Claudius
+                    Severus (cos. 235), if the former is chosen then his co-consul is C. Aufidius
+                    Victorinus and Augusta is Iulia Domna (the wife of Septimius Severus), if the
+                    latter is preferred (as Dobson does) then the co-consul is L. Ti. Claudius
+                    Quintianus and the Augusta is Iulia Avita Mamaea. But there are three other
+                    possible Claudii Severi: Cn. Claudius Severus Arabianus (cos. 146 with Sex.
+                    Erucius Clarus), Cn. Claudius Severus (cos. 173 with Ti. Claudius Pompeianus),
+                    and (Cn. Claudius?) Severus (suff. cos. in 212 with (Ti. Claudius?) Pompeianus);
+                    the Augusta in these cases would be Annia Galeria Faustina (Antoninus Pius),
+                    Annia Galeria Faustina the Younger (Marcus Aurelius), or Fulvia Plautilla
+                    (Caracalla), respectively. Thus the once secure date of either 200 or 235 now
+                    has to be expanded to 146/173/200/212/235 C.E.</p></div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

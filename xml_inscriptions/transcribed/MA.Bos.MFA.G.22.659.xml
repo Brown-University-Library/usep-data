@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
@@ -12,12 +10,15 @@
             </respStmt>
             <respStmt>
                <resp>Commentary</resp>
-               <name>Commenter</name>
+               <name>Joseph Carrino</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editor</resp>
+               <name>Scott J. DiGiulio</name>
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -32,7 +33,7 @@
                   <institution>MFA</institution>
                   <repository/>
                   <idno>22.659</idno>
-               </msIdentifier>
+               <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
                   <msItem class="#funerary.epitaph">
@@ -47,12 +48,12 @@
                            <p>limestone funerary portrait</p>
                            <dimensions type="surface" unit="cm">
                               <height>55</height>
-                              <width/>
+                              <width>42</width>
                               <depth/>
                            </dimensions>
                         </support>
                         <condition ana="#complete.broken">
-                           <p/>
+                           <p>upper left side is broken</p>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -83,28 +84,37 @@
                         the second century CE</date>
                      <placeName ref="asia.syria.palmyra https://pleiades.stoa.org/places/668331">Palmyra, Syria</placeName>
                   </origin>
-                  <provenance type="transferred" subtype="given">
-                     <p>
-                           Gifted to the <orgName type="recipient">Museum of Fine Arts</orgName> by <persName type="donor">Edward Perry Warren</persName> in memory of his sister.
-                        </p>
+                  <provenance type="recorded" subtype="recorded"> 
+                     <p> First reported in <date when="1909-12-01">December 1909</date> as for sale in Beirut, Lebanon before
+                        becoming part of the collection of <persName role="collector">Amy Curtis</persName>.</p>
+                  </provenance>
+                  <provenance type="transferred" subtype="sold"> <p>On <date when="1922-08-24">August 24,
+                     1922</date>, purchased from <persName role="seller">Amy Curtis</persName> by the <persName role="buyer">Museum of Fine Arts</persName> through funds donated by <persName role="donor">Edward
+                        Perry Warren</persName></p>
                   </provenance>
                </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CVS"/>
-                  <biblScope unit="item">no. 401</biblScope>
+                  <biblScope unit="page">116-117, no. 401</biblScope>
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#RomansandBarbarians"/>
                   <biblScope unit="item">61, p. 45</biblScope>
                </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Kondoleon_Grossman_Heuser_2008"/>
+                  <biblScope>106</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="https://collections.mfa.org/objects/151395/funerary-monument-of-aththaia-daughter-of-malchos">MFA Web Entry</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -117,6 +127,7 @@
          <change when="2022-07-10" who="Sophia Papandonatou">added metadata, transcription,
             translation</change>
          <change when="2023-10-12" who="Scott J. DiGiulio">Added Pleiades ref</change>
+         <change when="2025-01-16" who="Scott J. DiGiulio">Added material based upon seminar work conducted by Joseph Carrino (folded in my own edits to that work in provenance, added the commentary from that work, other small additions); marked dittography in the name of the deceased</change>
       </revisionDesc>
    </teiHeader>
       <!--  *************************************  <facsimile>  *********************************  -->
@@ -136,7 +147,7 @@
             <ab>
                <lb n="1"/>
                <persName>
-                  <name key="Ἀθθαία Aththaia">Ἀθθαία</name>
+                  <name key="Ἀθαία Aththaia">Ἀθ<surplus>θ</surplus>αία</name>
                   <lb n="2"/>
                   <name key="Malchos Μάλχος">Μάλχου</name>
                </persName>
@@ -147,10 +158,22 @@
          <div type="translation">
             <p>Aththaia, daughter of Malchos, free from pain, farewell.</p>
          </div>
-         <div type="commentary"/>
+         <div type="commentary"><p>Line 3: may be read as ἄλυπε, which as an adjective is modifying Ἀθθαῖα. No interpuncts
+            between words or at the end of lines. Aththaia wears various necklaces,
+            including a crescent and sun pendant necklace, bracelets, rings, and a headband
+            (diadem). The headband (diadem) was typical of the eastern Mediterranean.
+            Aththaia wears a himation, which covers her body and head, over a chiton
+            (tunic) Aththaia appears to grasp either a bunch of her himation or a fibula,
+            which has its origins as jewelry in Britain before becoming popular in the
+            western Mediterranean, but rare in the eastern Mediterranean. The abundance of
+            jewelry on the figure is perhaps unsurprising given Palymra’s history as a
+            center of jewelry production. The use of Greek rather than Aramaic is noteworthy
+            and perhaps represents Greek influence in the region.</p>
+            <p>The name Ἀθθαῖα is unattested in the online Lexicon of Greek Personal Names; additionally, the two thetas are likely dittography.</p>
+               <p>Dating should be placed at about 150-200 CE, based
+            on dress </p></div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>

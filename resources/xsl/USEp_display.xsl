@@ -42,6 +42,8 @@
         2020-10-22 SJD commented out display of decoNote/@ana
         2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
         2021-07-29 EM added bibliography processing.
+        2025-01-21 SJD improved display of campus dimensions as separate area, turned on Pleiades links, enabled display of multiple dating criteria
+        2025-01-24 SJD added display code for TM numbers; turned off Pleiades for now; 
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -57,7 +59,7 @@
         <xsl:result-document href="#container">
             <div>
 
-                <!-- This outputs the full text description at the top of the page, after checking that there are descriptions to output. -->
+                <!-- This outputs the full text description at the top of the page, after checking that there are descriptions to output; also checks for TM number and prints a link. -->
                 <div class="titleBlurb">
                     <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/*">
                         <h3>Summary</h3>
@@ -71,9 +73,16 @@
                             </xsl:if>
                         </p>
                     </xsl:if>
+                    <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number'] and string-length(/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno) != 0">
+                        <h3>TM Number</h3>
+                        <p><a href="{concat('https://www.trismegistos.org/text/', /t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno)}">
+                            <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msIdentifier/t:altIdentifier[@type='TM_number']/t:idno"/>
+                        </a><br/>
+                        </p>
+                    </xsl:if>
                 </div>
-
-
+                
+                
 
                 <!-- enclosing div so that metadata and images can be side by side -->
                 <div class="topDivs">
@@ -152,13 +161,24 @@
                                 <tr>
                                     <td class="label">Material</td>
                                     <td class="value">
-                                        <xsl:for-each select="$material">
-                                            <xsl:value-of
-                                                select="id(substring-after($material, '#'))/t:catDesc"/>
-                                            <xsl:if test="position() != last()">
-                                                <xsl:text>, </xsl:text>
-                                            </xsl:if>
-                                        </xsl:for-each>
+                                
+                                        <xsl:choose>
+                                            <xsl:when test="contains($material,' ')">
+                                                <xsl:variable name="context" select="."/>
+                                                <xsl:for-each select="tokenize(normalize-space($material), '\s+')">
+                                                    <xsl:variable name="contextID" select="substring-after(., '#')"/>
+                                                    <xsl:value-of select="$context/id($contextID)/t:catDesc"/>
+                                                    <xsl:if test="position() != last()">
+                                                        <xsl:text>, </xsl:text>
+                                                    </xsl:if>
+                                                </xsl:for-each>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <!--<xsl:value-of select="substring-after($material, '#')"/>-->
+                                                <xsl:value-of select="id(substring-after($material, '#'))/t:catDesc"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        
                                     </td>
                                 </tr>
 
@@ -166,7 +186,7 @@
                                 <tr>
                                     <td class="label">Object Dimensions</td>
                                     <td class="value">
-                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions[@type = 'surface']">
                                             
                                                 <xsl:if test="t:width/text()">w: 
                                                     <xsl:value-of select="t:width"/>
@@ -185,7 +205,34 @@
                                         </xsl:for-each>
                                     </td>
                                 </tr>
-        
+                                
+                                <!-- Add campus dimensions -->
+                                <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions[@type = 'campus']">
+                                    <tr>
+                                    <td class="label">Campus Dimensions</td>
+                                    <td class="value">
+                                        <xsl:for-each select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:physDesc/t:objectDesc/t:supportDesc/t:support/t:dimensions[@type = 'campus']">
+                                            
+                                            <xsl:if test="t:width/text()">w: 
+                                                <xsl:value-of select="t:width"/>
+                                                <xsl:if test="t:height/text()"> x
+                                                </xsl:if>
+                                            </xsl:if>
+                                            <xsl:if test="t:height/text()">h:
+                                                <xsl:value-of select="t:height"/>
+                                            </xsl:if>
+                                            <xsl:if test="t:depth/text()"> x d:
+                                                <xsl:value-of select="t:depth"/>
+                                            </xsl:if>
+                                            <xsl:if test="t:dim[@type='diameter']/text()">x diam.:
+                                                <xsl:value-of select="t:dim[@type='diameter']"/>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </td>
+                                </tr>
+                                </xsl:if>
+                                
+                                       
                                 <!-- check for existence of controlled and full text values here. -->
                                 <tr>
                                     <td class="label">Writing</td>
@@ -328,7 +375,22 @@
                                 <tr>
                                     <td class="label">Dating Criteria</td>
                                      <td class="value">
-                                            <xsl:value-of select="id(substring-after($dateOfOrigin/@evidence,'#'))/t:catDesc"/>
+                                         <xsl:choose>
+                                             <xsl:when test="contains($dateOfOrigin/@evidence,' ')">
+                                                 <xsl:variable name="context" select="."/>
+                                                 <xsl:for-each select="tokenize(normalize-space($dateOfOrigin/@evidence), '\s+')">
+                                                     <xsl:variable name="contextID" select="substring-after(., '#')"/>
+                                                     <xsl:value-of select="$context/id($contextID)/t:catDesc"/>
+                                                     <xsl:if test="position() != last()">
+                                                         <xsl:text>, </xsl:text>
+                                                     </xsl:if>
+                                                 </xsl:for-each>
+                                             </xsl:when>
+                                             <xsl:otherwise>
+                                                 <!--<xsl:value-of select="substring-after($material, '#')"/>-->
+                                                 <xsl:value-of select="id(substring-after($dateOfOrigin/@evidence, '#'))/t:catDesc"/>
+                                             </xsl:otherwise>
+                                         </xsl:choose>
                                     </td>
                                 </tr>
                                 
@@ -365,24 +427,42 @@
                         </div>
                     </xsl:if>
 
-
+                    <!-- This should output authorship, as assigned at the top of each file. Tests whether the values are empty/in default, and only prints each piece when credit is given -->
+                    
+                    <div class="credit">
+                        <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author != 'Author'">
+                            <h3>Credit</h3>
+                            <p>
+                                <xsl:text>Author: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:author"/> <br/>
+                                <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1]/t:name != 'Translator'">
+                                    <xsl:text>Translation: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[1]/t:name"/> <br/>
+                                </xsl:if>
+                                <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2]/t:name != 'Commenter'">
+                                    <xsl:text>Commentary: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[2]/t:name"/><br/>
+                                </xsl:if>
+                                <xsl:if test="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3] and /t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3]/t:name != 'Editor'">
+                                    <xsl:text>Editor: </xsl:text><xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:respStmt[3]/t:name"/><br/>
+                                </xsl:if> 
+                            </p>
+                        </xsl:if>
+                    </div>
+                    
 <!-- Print links to Pleiades when they appear in texts or metadata 
                    
                     <xsl:for-each select="t:placeName">
                         <xsl:choose>
                             <xsl:when test="contains(@ref,'pleiades.stoa.org') or contains(@ref,'geonames.org') or contains(@ref,'slsgazetteer.org')">
-                                <a>
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="@ref"/>
-                                    </xsl:attribute>
-                                    <xsl:apply-templates/>
+                                <a href="{t:placeName/@ref}">                                    
+                                    <xsl:value-of select="t:placeName"/>
                                 </a>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:apply-templates/>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </xsl:for-each>-->
+                    </xsl:for-each>
+                    
+                    -->
                 
                     <!-- Output the images (hope to format these at upper  right perhaps?), again, first checking to see if there are any. -->
                     <xsl:result-document href="#images">
@@ -410,6 +490,7 @@
                         </xsl:for-each>
                     </xsl:result-document>
                 </div>
+                
                 
 
                 <!-- This outputs the bibliography. No need to check, there is always bibliography. -->

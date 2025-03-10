@@ -1,24 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
                 <title>MA.Wor.WAM.L.1915.75</title>
-                <author>Author</author>
+                <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -40,9 +33,9 @@ changes: correct handling of provenance information -->
                         <region>MA</region>
                         <settlement>Wor</settlement>
                         <institution>WAM</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>1915.75</idno>
-                    </msIdentifier>
+                    <altIdentifier type="TM_number"><idno>585537</idno></altIdentifier></msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
@@ -62,7 +55,7 @@ changes: correct handling of provenance information -->
                         <objectDesc ana="#ash_urn">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> marble cinerary urn</p>
+                                    <p>marble cinerary urn</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>35.6</height>
                                         <width>33.6</width>
@@ -105,7 +98,7 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#unspecified" notBefore="0050" notAfter="0100">mid first
+                            <date evidence="#archaeology" "#formula" notBefore="0050" notAfter="0100">second half of first
                                 century CE</date>
                             <placeName ref="unknown"/>
                         </origin>
@@ -132,8 +125,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -171,7 +163,7 @@ changes: correct handling of provenance information -->
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr>S</abbr><ex>acrum</ex></expan>
+                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr>S</abbr><ex>acrum</ex></expan>.
                 <lb n="2"/>
                     <persName>
                         <name key="Nicanor">Nicanori</name>
@@ -188,7 +180,7 @@ changes: correct handling of provenance information -->
                     </persName>
                     <expan><abbr>cons</abbr><ex>ervo</ex></expan>
                 <lb n="5"/>
-                    <expan><abbr>B</abbr><ex>ene</ex></expan> <expan><abbr>M</abbr><ex>erenti</ex></expan>.
+                    <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>.
             </ab></div>
             
             <div type="translation">
@@ -198,7 +190,7 @@ changes: correct handling of provenance information -->
             <p>Basis of verification: previous edition and photo</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

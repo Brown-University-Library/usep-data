@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.MFA.L.1970.568</title>
+                <author>Mason Shrader</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.MFA.L.1970.568">MA.Bos.MFA.L.1970.568</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>MFA</institution>
+                        <repository/>
+                        <idno>1970.568</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#dedicatory">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Dedication for the tenth anniversary of the emperor Licinius I's rule</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#instrumentum.tableware">
+                            <supportDesc ana="#metal.silver">
+                                <support>
+                                    <p>Small cast silver dish</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>3.8</height>
+                                        <width>16.5</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="5">
+                                    <p>Clockwise inscription on the outer edge of the dish
+                                        concluding with a small blacksmith stamp; in the center of
+                                        the dish there is an additional brief inscription set within
+                                        a garland</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#molded">The text is generally without many noteworthy
+                                features. There appears to be an interpunct between the two lines
+                                set in the middle of the dish, though this may be a feature of the
+                                casting. The letters are generally evenly spaced apart, with the
+                                exception of the first L of Licinius, which could potentially be set
+                                further apart to draw the eye to the beginning of the circular
+                                inscription. The N of Naissus does have a slight blemish, possibly a
+                                complication of casting </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>The garland has ribbons extending from the bottom of the garland
+                                </p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#history" notBefore="0317" notAfter="0319">317 CE</date>
+                            <placeName ref="europe.serbia.nis https://pleiades.stoa.org/places/207303">Naissus (modern Nis)</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Purchased by the <orgName role="buyer">Museum of Fine Arts</orgName> from <persName role="seller">Ernst E. Kofler</persName>, of <placeName>Gesegnetmattstrasse 14, 6000 Lucerne, Switzerland</placeName>, on <date when="1970-12-16">December 16, 1970&gt;</date></p>
+                        </provenance>
+                        <provenance type="observed" subtype="recorded">
+                            <p>By <date when="1964">1964</date>, in the <orgName role="dealer">E. and M. Kofler-Truniger Collection</orgName> and displayed as part of the Kunsthaus Zurich exhibition, June 7-August 2, 1964, no. 375</p>
+                        </provenance>
+                        <provenance type="found" subtype="first-recorded">
+                            <p>supposedly found at <placeName ref="https://pleiades.stoa.org/places/207303">Naissus</placeName> in the former Yugoslavia in <date when="1903">1903</date></p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl><ptr type="rest-of-bibl" target="#CIL_3"/>
+                        <biblScope unit="item">14595</biblScope>
+                    </bibl>
+                    <bibl><ptr type="rest-of-bibl" target="#AE_1903"/>
+                        <biblScope unit="item">0179-0188</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://collections.mfa.org/objects/262169/dish">MFA Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-16" who="Mason Shrader">Initial Encoding</change>
+            <change when="2025-01-16" who="Scott J. DiGiulio">Corrected and streamlined metadata and controlled vocabulary; added provenance details and markup; added external link to MFA; corrected transcription and expanded markup (added div structure, etc.)</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MA.Bos.MFA.L.1970.568.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="https://collections.mfa.org/internal/media/dispatcher/631922/preview"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <div type="textpart" subtype="outer_circle">
+                    <ab> 
+                        <lb n="1"/><persName type="imperial"><name type="gentilicium" key="Licinius">Licini</name> <name type="cognomen" key="Augustus">Auguste</name></persName>, semper vincas!
+                    </ab>
+                </div>                    
+                <div type="textpart" subtype="in_corona">
+                    <ab>
+                        <lb n="2"/>Sic <num type="cardinal" value="10">X</num> <supplied reason="subaudible">annis</supplied>,
+                    <lb n="3"/>sic <num type="cardinal" value="20">XX</num>.
+                </ab>
+                </div>
+                <div type="textpart" subtype="stamp">
+                    <ab>
+                        <lb n="4"/><placeName><expan><abbr>Na
+                        <lb n="5" break="no"/>iss</abbr><ex>us</ex></expan></placeName> <supplied reason="subaudible">fecit</supplied>.
+                    </ab>
+                </div>
+                
+            </div>
+            
+            
+            <div type="translation">
+            <p>“Licinius Augustus, may you always be victorious! As for 10 (years), so for 20.
+                    Naissus (dedicated this).”</p></div>
+
+            <div type="commentary">
+                <p>The text notes the commemoration made in Naissus of the emperor Licinius’ 10th
+                    year of reign, which allows for a precise dating of 317 CE. This is one of
+                    several such dishes which were produced in honor of this anniversary</p></div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

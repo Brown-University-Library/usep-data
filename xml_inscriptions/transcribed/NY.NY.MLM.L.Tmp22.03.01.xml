@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -40,9 +33,9 @@ changes: correct handling of provenance information -->
                         <region>NY</region>
                         <settlement>NY</settlement>
                         <institution>MLM</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>22.03.01</idno>
-                    </msIdentifier>
+                    <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
@@ -50,7 +43,7 @@ changes: correct handling of provenance information -->
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaphs to Annia Secunda and Lollia Staphyle</p>
+                            <p>epitaphs of Annia Secunda and Lollia Staphyle</p>
                         </msItem>
                     </msContents>
 
@@ -62,7 +55,7 @@ changes: correct handling of provenance information -->
                         <objectDesc ana="#stele">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> marble stele</p>
+                                    <p>marble ash urn</p>
                                     <dimensions type="surface" unit="cm">
                                         <height/>
                                         <width/>
@@ -105,19 +98,18 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#formulae #paleography" notBefore="0070" notAfter="0200"
-                                >second century CE</date>
+                            <date evidence="#formulae #paleography" notBefore="0070" notAfter="0200">second century CE</date>
                             <placeName ref="europe.italy.rome">Curli vineyard near via
                                 Latina</placeName>
                         </origin>
                         <provenance type="found" subtype="discovered">
-                            <p>Discovered at the Curli vineyard near <placeName>via Latina, Rome</placeName> in <date when="1734">1734</date>.</p>
+                            <p>discovered at the Curli vineyard near <placeName>via Latina, Rome</placeName> in <date when="1734">1734</date>.</p>
                         </provenance>
                         <provenance type="transferred" subtype="moved">
-                            <p>Moved to the Ruspoli vineyard.</p>
+                            <p>moved to the Ruspoli vineyard.</p>
                         </provenance>
                         <provenance type="transferred" subtype="sold">
-                            <p>Bought by <persName role="buyer">Pierpont Morgan</persName> sometime before <date when="1913">1913</date>.</p>
+                            <p>bought by <persName role="buyer">John Pierpont Morgan</persName> sometime before <date when="1913">1913</date>.</p>
                         </provenance>
 
                     </history>
@@ -146,8 +138,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -227,7 +218,7 @@ changes: correct handling of provenance information -->
             <p>Basis of verification: photograph</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

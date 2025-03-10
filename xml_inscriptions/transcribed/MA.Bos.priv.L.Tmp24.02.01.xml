@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.priv.L.#24.02.01</title>
+                <author>J. Leite</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.priv.L.Tmp24.02.01">MA.Bos.priv.L.#24.02.01</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>priv</institution>
+                        <repository/>
+                        <idno>24.02.01</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#magic">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Inscription on the sides of a fibula</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#instrumentum.jewelry">
+                            <supportDesc ana="#metal.silver">
+                                <support>
+                                    <p>Silver crossbow fibula with bronze knobs and niello
+                                        detailing</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height/>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="2">
+                                    <p>One line per side of the curved fibula</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> Carved into the silver; clearly done as part
+                                of the production of the object rather than a later
+                                addition</handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>The object as a whole is decorative: the piece is made of silver,
+                                    with details added in the form of bronze knobs and niello
+                                    accents. The knobs are bowling-pin shaped, and the fibula as a
+                                    whole is well-made. There is what appears to be a cross on the
+                                    handle.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="0350" notAfter="0450">350-450
+                                CE</date>
+                            <placeName ref="unknown">Unknown</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="loaned">
+                            <p>Loaned to the <orgName role="loanee">Boston Museum of Fine Arts</orgName> by <persName role="lender">John Herrmann</persName> in <date when="2024">2024</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <!--   Encode external links, for example to digital corpora as a <ref> inside a <bibl>. 
+                      Ex:  <ref type="external" target="(the url)">EDH nr. HD0000000</ref>
+                -->
+                <listBibl/>              
+                
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="J. Leite">Initial Encoding</change>
+            <change when="2025-01-20" who="Scott J. DiGiulio">General proofing and cleaning of the metadata/controlled vocab; fixed filename; restored listBibl; proofed EpiDoc of transcription (but not transcription itself)</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MA.Bos.priv.L.Tmp24.02.01-01.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="MA.Bos.priv.L.Tmp24.02.01-02.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab><lb n="1"/><persName><name type="cognomen" key="Castorinus">Castorinus</name></persName> <expan><abbr>mi<choice><corr>l</corr><sic>t</sic></choice></abbr><ex>es</ex></expan>;
+                <lb n="2"/>utere felix.</ab></div>
+            
+            <div type="translation">
+            <p>Castorinus the soldier; may you use [it] well.</p></div>
+
+            <div type="commentary">
+            <p>The individual who presumably owned the pin, Castorinus, is noted by only one name.
+                    He is further described as a miles, or a soldier. The inscription, utere felix,
+                    is attested on a number of personal objects from across the empire, but
+                    especially in Britain. The inscription, particularly the imperative nature of
+                    utere, indicates that this was likely a gift rather than being inscribed, or
+                    paid for, by Castorinus himself. The double-sided nature
+                    of the pin allows for only one half of the message to be visible while the pin
+                    is being worn: this might suggest the inscription was private in nature.</p></div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

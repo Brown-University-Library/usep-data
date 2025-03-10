@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
@@ -49,7 +47,7 @@
                   <institution>priv</institution>
                   <repository/>
                   <idno>99.6.1</idno>
-               </msIdentifier>
+               <altIdentifier type="TM_number"><idno>no TM</idno></altIdentifier></msIdentifier>
                <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
                   <textLang mainLang="lat"/>
@@ -144,14 +142,16 @@
                   <ptr type="rest-of-bibl" target="#JRA_11_Flower"/>
                   <biblScope unit="pp">224-232</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR189806">EDR189806</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <!--  *************************************  <encodingDesc>  ********************************* -->
       <!-- information about the encoding and controlled vocabularies. Do not edit -->
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -164,6 +164,7 @@
          <change when="2015-12-09" who="Scott J. DiGiulio">Initial Encoding</change>
          <change when="2017-03-16" who="Scott J. DiGiulio">Removed NoImage.jpg placeholder</change>
          <change when="2020-05-19" who="Scott J. DiGiulio">Fixed provenance markup</change>
+         <change when="2024-12-11" who="Advaith Rege">Added EDR citation</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -213,8 +214,7 @@
             <p/>
          </div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>

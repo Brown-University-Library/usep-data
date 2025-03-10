@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MA.Bos.MFA.L.1972.650</title>
+                <author>Max Meyer</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MA.Bos.MFA.L.1972.650">MA.Bos.MFA.L.1972.650</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MA</region>
+                        <settlement>Bos</settlement>
+                        <institution>MFA</institution>
+                        <repository/>
+                        <idno>1972.650</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat"/>
+                        <msItem class="#dedicatory">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Inscription dedicating a sarcophagus to Marcus Vibius Liberalis</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#sarcophagus">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p>marble sarcophagus</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>59</height>
+                                        <width>208</width>
+                                        <depth>77.5</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p>sarcophagus is generally well-preserved, but several areas of the lid have been lost</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="1">
+                                    <p>Inscription runs in a single line along the bottom edge of the front face of the sarcophagus</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Sarcophagus bears the triumph of Dionysus in high relief sculpture which is well-preserved.
+                                    Most of the front face is filled with a procession of figures and animals, carved in relief high 
+                                    enough that some figures’ limbs lift off the ground.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#prosopography" notBefore="0215" notAfter="0225">215-225
+                                CE</date>
+                            <placeName ref="unknown">Unknown; maybe Caria</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Purchased by the <orgName role="buyer">Museum of Fine Arts</orgName> from antiquities dealer <persName role="seller">Jeannette Brun</persName> 
+                                in <date when="197">1972</date></p>
+                        </provenance>
+                        <provenance type="transferred" subtype="sold">
+                            <p>Purchased by antiquities dealer <persName role="buyer">Jeannette Brun</persName> in <placeName>Zurich</placeName> 
+                                before <date notAfter="1971">1972</date> from an "<persName role="seller">international banker in northwest Europe</persName>."</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Allen_2022"/>
+                        <biblScope unit="page"/>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CVS"/>
+                        <biblScope unit="item">244</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CVAdd"/>
+                        <biblScope unit="page">113</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Kondoleon_Grossman_Heuser_2008"/>
+                        <biblScope unit="page">108-9</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://collections.mfa.org/objects/151242/sarcophagus-with-triumph-of-dionysos">MFA Web Entry</ref>
+                    </bibl>
+                    
+                    <!-- <bibl xml:id="colazilli">
+                        <author>John <surname>Bodel</surname>
+                        </author>,
+                        <date>1997</date>, <title level="a">Monumental villas and villa monuments</title>, <title level="j">JRA</title>
+                        <biblScope unit="issue">10</biblScope>, <biblScope unit="page">5-35</biblScope>
+                    </bibl> -->
+                    
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+
+        <revisionDesc>
+            <change when="2024-05-15" who="Max Meyer">Initial Encoding</change>
+            <change when="2025-01-20" who="Scott J. DiGiulio">General proofing and correction of metadata; cleaned and formatted bibl, adding various references; proofed transcription against photo; formatted translation and commentary</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc>Image hosted by the Museum of Fine Arts, Boston.</desc>
+            <graphic url="https://collections.mfa.org/internal/media/dispatcher/889076/preview"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab>
+                    <lb n="1"/> 
+                    <persName>
+                        <name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name> 
+                        <name type="gentilicium" key="Vibius">Vibio</name> 
+                        <persName>
+                            <name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name>
+                        </persName> <expan><abbr>fil</abbr><ex>io</ex></expan> 
+                        <name type="cognomen" key="Liberalis">Li<supplied reason="lost">b</supplied>erali</name>
+                    </persName> 
+                    <expan><abbr>praet</abbr><ex>ori</ex></expan> 
+                    <persName>
+                        <name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> 
+                        <name type="gentilicium" key="Vibius">Vibius</name> 
+                        <name type="cognomen" key="Agesilaus">Agesilaus</name>
+                    </persName> iunior nutricio suo <expan><abbr>fec</abbr><ex>it</ex></expan>.
+                </ab>
+            </div>
+            
+            <div type="translation">
+                <p>Marcus Vibius Agesilaus the younger made this for his guardian Marcus Vibius Liberalis, son of Marcus, praetor.</p>
+            </div>
+
+            <div type="commentary">
+                <p>The letters of the inscription are evenly sized and evenly spaced, with a tilde-shaped interpunct between each word. 
+                    The only exception to this rule is in the space following Vibio, where there is a single dot placed between the last letter of the 
+                    word and the tilde-shaped interpunct. The diameter of the dot is approximately even with the width of the tilde-shaped interpunct, 
+                    and its edges are smooth, indicating that it is original to the inscription rather than subsequent damage. The letters of the inscription are wide and have serifs.</p>
+                <p>The inscription running along the bottom of the front face names Marcus Vibius Liberalis as the deceased, for whom the younger 
+                    Marcus Vibius Agesilaus made the sarcophagus. The relationship between the two men is explained by the word nutricio, indicating guardianship; 
+                    the translation provided by the MFA translates nutricio as foster-father. Prosopographic evidence suggests that nutricius describes a close 
+                    relationship between a younger individual and an adult individual who is playing a protective and parental role, but where biological relation 
+                    is not implied. This type of relationship is illustrated by the case of Gnaeus Cornelius Atimetus, a freedman whose epitaph states that 
+                    he was the nutricius of the son of Cossus Cornelius Lentulus Gaetulicus, Gnaeus Cornelius Lentulus Gaetulicus (described in PIR2 1392; Bodel, 23). 
+                    </p>
+                <p>A military diploma from 166 CE (CIL 16, 121) states that Marcus Vibius Liberalis was consul that year. This would suggest that the sarcophagus 
+                    dates to the late second century or early third century CE. The MFA dates the sarcophagus to ca. 215-225 CE, which is plausible based on the consular 
+                    dating from the diploma.</p>
+                    <p>The Marble of the sarcophagus appears to have been quarried in Proconnesus.
+                </p>
+            </div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

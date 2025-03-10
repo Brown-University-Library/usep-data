@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -40,9 +33,9 @@ changes: correct handling of provenance information -->
                         <region>NY</region>
                         <settlement>NY</settlement>
                         <institution>JM</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>U 9115</idno>
-                    </msIdentifier>
+                    <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
@@ -123,7 +116,7 @@ changes: correct handling of provenance information -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#unpub"/>
-                        <biblScope unit="page" type="item"></biblScope>
+                        <biblScope unit="page" type="item"/>
                     </bibl>
                     <bibl>
                         <ref type="external" target="https://thejewishmuseum.org/collection/25628-tombstone-fragment">Jewish Museum Web Entry</ref>
@@ -136,8 +129,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -164,8 +156,7 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic
-                url="https://res.cloudinary.com/the-jewish-museum/image/fetch/q_auto,f_auto/v1/https%3A%2F%2Fthejm.netx.net%2Ffile%2Fasset%2F48227%2Fview%2F89455%2Fview_89455%3Ftoken%3D921831d3-ee56-4e60-a489-5c285b802e1e"/>
+            <graphic url="https://res.cloudinary.com/the-jewish-museum/image/fetch/q_auto,f_auto/v1/https%3A%2F%2Fthejm.netx.net%2Ffile%2Fasset%2F48227%2Fview%2F89455%2Fview_89455%3Ftoken%3D921831d3-ee56-4e60-a489-5c285b802e1e"/>
         </surface>
     </facsimile>
 
@@ -174,11 +165,9 @@ changes: correct handling of provenance information -->
             <div type="edition">
             <ab>
                 <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="2"/> בן מ<gap reason="illegible" quantity="3"/> <gap reason="illegible" quantity="2"/> <gap reason="lost" extent="unknown"
-                    unit="character"/>
+                <lb n="2"/> בן מ<gap reason="illegible" quantity="3"/> <gap reason="illegible" quantity="2"/> <gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="3"/>שלם <space quantity="1" unit="character"/> נפש <unclear>מ</unclear>
-                <lb n="4"/>ושלש שנה <unclear>ש</unclear><gap reason="lost" extent="unknown"
-                    unit="character"/>
+                <lb n="4"/>ושלש שנה <unclear>ש</unclear><gap reason="lost" extent="unknown" unit="character"/>
                 <lb n="5"/><gap reason="illegible" quantity="5"/> יש </ab></div>
             
             <div type="translation">
@@ -194,7 +183,7 @@ changes: correct handling of provenance information -->
                     Jewish tombstones.</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
