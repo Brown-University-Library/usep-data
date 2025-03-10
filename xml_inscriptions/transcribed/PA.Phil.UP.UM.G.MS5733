@@ -1,23 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.80-2-14</title>
+                <title>PA.Phil.UP.UM.G.MS5733</title>
                 <author>Mac Carley</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,7 +23,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.80-2-14">PA.Phil.UP.UM.G.80-2-14</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.MS5733">PA.Phil.UP.UM.G.MS5733</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -41,7 +34,7 @@ changes: correct handling of provenance information -->
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>80-2-14</idno>
+                        <idno>MS5733</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -59,24 +52,26 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#object_unknown">
+                        <objectDesc ana="#slab">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p>Fragmentary marble slab</p>
+                                    <p> Fragmentary marble slab</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>7.7</height>
-                                        <width>6.3</width>
-                                        <depth>1.6</depth>
+                                        <height/>
+                                        <width/>
+                                        <depth>2.5+</depth>
+                                        <dim type="diameter">9.5+</dim>
                                     </dimensions>
                                 </support>
                                 <condition ana="#fragment.single">
-                                    <p/>
+                                    <p>Triangular shape, broken on all three sides with a smooth
+                                        front and rough back</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p>Part of one line, a lambda and a tau</p>
+                                <layout columns="0" writtenLines="2">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -104,27 +99,19 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-118" notAfter="-10">ca. 118 -
-                                late 1st century BCE</date>
-                            <placeName ref="africa">Leptis Magna</placeName>
+                            <date evidence="" notBefore="0001" notAfter="0002">Unknown</date>
+                            <placeName ref="unknown">Unknown</placeName>
                         </origin>
 
-                        <provenance type="transferred" when="1980">
-                            <p>Acquired by the <orgName role="acquirer"> University of Pennsylvania Museum of Archaeology and Anthropology</orgName> via gift of <persName role="donor">Theresa Howard Carter</persName> in <date>1980</date></p>
-                        </provenance>
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/140425"> Penn Museum web entry</ref>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA"/>
-                        <biblScope unit="item">vol. 69, no.2, pp.123-132</biblScope>
-                    </bibl>
-                    <bibl>
+                        <ref type="external" target="https://www.penn.museum/collections/object/152650">Penn Museum web entry</ref>
+</bibl>
+<bibl>
                         <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
                         <biblScope unit="page">pp.211-212</biblScope>
                     </bibl>
@@ -136,8 +123,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -152,7 +138,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-21" who="Mac Carley">Initial Encoding</change>
+            <change when="2024-11-22" who="Mac Carley">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -163,23 +149,27 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="PA.Phil.UP.UM.G.MS5733.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>T L</ab></div>
+            <ab>
+                <lb n="1"/>ΟΧΟ
+                <lb n="2"/>ΤΗ
+            </ab>
+            </div>
             
             <div type="translation">
-            <p></p></div>
+            <p/></div>
 
             <div type="commentary">
-            <p>Carter (1965) includes discussion of the stratigraphy of the site.</p></div>
+            <p/></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
