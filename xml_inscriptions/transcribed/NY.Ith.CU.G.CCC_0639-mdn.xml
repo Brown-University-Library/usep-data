@@ -17,8 +17,8 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.80-2-14</title>
-                <author>Mac Carley</author>
+                <title>NY.Ith.CU.G.CCC_0639-mdn</title>
+                <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -30,27 +30,27 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.80-2-14">PA.Phil.UP.UM.G.80-2-14</idno>
+                <idno type="USEpigraphy" xml:id="NY.Ith.CU.G.CCC_0639-mdn">NY.Ith.CU.G.CCC_0639-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>PA</region>
-                        <settlement>Phil</settlement>
-                        <institution>UP</institution>
-                        <repository>UM</repository>
-                        <idno>80-2-14</idno><altIdentifier  type="TM_number"><idno/></altIdentifier>
+                        <region>NY</region>
+                        <settlement>Ith</settlement>
+                        <institution>CU</institution>
+                        <repository></repository>
+                        <idno>639</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#document">
                             <!-- short summary of the content of an inscription -->
-                            <p/>
+                            <p>directions to recast metal objects</p>
                         </msItem>
                     </msContents>
 
@@ -59,24 +59,24 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#object_unknown">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <p>Fragmentary marble slab</p>
+                                    <p> plaster cast of original stele</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>7.7</height>
-                                        <width>6.3</width>
-                                        <depth>1.6</depth>
+                                        <height>76</height>
+                                        <width>35.5</width>
+                                        <depth>2.8</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p>Part of one line, a lambda and a tau</p>
+                                <layout columns="1" writtenLines="51">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -100,34 +100,36 @@ changes: correct handling of provenance information -->
                     <history>
 
                         <summary>
-                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-118" notAfter="-10">ca. 118 -
-                                late 1st century BCE</date>
-                            <placeName ref="africa">Leptis Magna</placeName>
+                            <date evidence="#unspecified" notBefore="-0250" notAfter="-0201">late
+                                third century BCE</date>
+                            <placeName ref="europe.greece.attica">Oropos</placeName>
                         </origin>
-
-                        <provenance type="transferred" when="1980">
-                            <p>Acquired by the <orgName role="acquirer"> University of Pennsylvania Museum of Archaeology and Anthropology</orgName> via gift of <persName role="donor">Theresa Howard Carter</persName> in <date>1980</date></p>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Plaster cast was made between <date when="1890">1890</date> and <date when="1900">1900</date>.</p>
                         </provenance>
+
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/140425"> Penn Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target="#IG_VII"/>
+                        <biblScope unit="item">303</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA"/>
-                        <biblScope unit="item">vol. 69, no.2, pp.123-132</biblScope>
+                        <ref type="external"
+                            target="https://digital.library.cornell.edu/catalog/ss:173122">Cornell web entry</ref>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">pp.211-212</biblScope>
+                        <ref type="external"
+                            target="https://usepigraphy.brown.edu/projects/usep/inscription/NY.Ith.CU.G.CCC_0396-mdn/">USEP entry for side A</ref>
                     </bibl>
+                    
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -152,7 +154,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-21" who="Mac Carley">Initial Encoding</change>
+            <change when="2025-02-22" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -163,20 +165,20 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="NY.Ith.CU.G.CCC_0639-mdn.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>T L</ab></div>
+            <ab></ab></div>
             
             <div type="translation">
             <p></p></div>
 
             <div type="commentary">
-            <p>Carter (1965) includes discussion of the stratigraphy of the site.</p></div>
+                <p>Inscription is from side B of stele. The IG reference is corresponding to the original inscription found in the British Museum.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>

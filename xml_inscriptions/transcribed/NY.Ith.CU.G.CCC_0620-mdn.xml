@@ -1,16 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          --><!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>MA.Wor.WAM.L.1915.75</title>
+                <title>NY.Ith.CU.G.CCC_0620-mdn</title>
                 <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -23,27 +30,27 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="MA.Wor.WAM.L.1915.75">MA.Wor.WAM.L.1915.75</idno>
+                <idno type="USEpigraphy" xml:id="NY.Ith.CU.G.CCC_0620-mdn">NY.Ith.CU.G.CCC_0620-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>MA</region>
-                        <settlement>Wor</settlement>
-                        <institution>WAM</institution>
-                        <repository/>
-                        <idno>1915.75</idno>
-                    <altIdentifier type="TM_number"><idno>585537</idno></altIdentifier></msIdentifier>
+                        <region>NY</region>
+                        <settlement>Ith</settlement>
+                        <institution>CU</institution>
+                        <repository></repository>
+                        <idno>435</idno>
+                    </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
+                        <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>epitaph of Nicanor</p>
+                            <p>epitaph to Pyrrias and Thettale</p>
                         </msItem>
                     </msContents>
 
@@ -52,14 +59,14 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#ash_urn">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#stele">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <p>marble cinerary urn</p>
+                                    <p> plaster cast of original</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>35.6</height>
-                                        <width>33.6</width>
-                                        <depth>27.3</depth>
+                                        <height>66.5</height>
+                                        <width>37</width>
+                                        <depth>5</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
@@ -68,7 +75,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="5">
+                                <layout columns="1" writtenLines="3">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -83,8 +90,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>birds eat fruits from garland; two heads of Jupiter Ammon on each
-                                    side of front; serpent in eagle's mouth in center</p>
+                                <p/>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -94,16 +100,16 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                     <history>
 
                         <summary>
-                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" "#formula" notBefore="0050" notAfter="0100">second half of first
-                                century CE</date>
-                            <placeName ref="unknown"/>
+                            <date evidence="#unspecified" notBefore="-0360" notAfter="-0360">c. 360
+                                BCE</date>
+                            <placeName ref="europe.greece.athens">Piraeus</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="sold">
-                            <p>Sold by <persName role="seller">Alfredo Barsanti</persName> to the <orgName role="buyer">Worcester Art Museum</orgName> in <date when="1915">1915</date>.</p>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Plaster cast was made between <date when="1890">1890</date> and <date when="1900">1900</date>.</p>
                         </provenance>
 
 
@@ -112,10 +118,12 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://worcester.emuseum.com/objects/9957/cinerary-urn-of-nicanor?ctx=d7a5fc7522be297a550ebe86f3a2cb9c7944915b&amp;idx=179">Worcester Art Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target="#IG_II2"/>
+                        <biblScope unit="item">12562</biblScope>
                     </bibl>
                     <bibl>
-                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143228&amp;fo_antik=&amp;fo_modern=&amp;Bibliografia%5B%5D=&amp;Testo=&amp;boolTesto=AND&amp;Testo2=&amp;bool=AND&amp;ordinamento=id_nr&amp;javasi=javascriptsi&amp;se_foto=tutte&amp;lang=en">EDR143228</ref>
+                        <ref type="external"
+                            target="https://digital.library.cornell.edu/catalog/ss:173248">Cornell web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -125,7 +133,8 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
         <encodingDesc>
 
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -140,7 +149,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2023-12-14" who="Advaith Rege">Initial Encoding</change>
+            <change when="2025-02-22" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -151,11 +160,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="MA.Wor.WAM.L.1915.75-LeftSide-sml.jpg"/>
-        </surface>
-        <surface>
-            <desc>detail of inscription</desc>
-            <graphic url="MA.Wor.WAM.L.1915.75-sml.jpg"/>
+            <graphic url="NY.Ith.CU.G.CCC_0620-mdn.jpg"/>
         </surface>
     </facsimile>
 
@@ -163,34 +168,22 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex>is</ex></expan> <expan><abbr>M</abbr><ex>anibus</ex></expan> <expan><abbr>S</abbr><ex>acrum</ex></expan>.
+                <lb n="1"/>
+                <persName key="Pyrrias">Πυρρίας</persName>.
                 <lb n="2"/>
-                    <persName>
-                        <name key="Nicanor">Nicanori</name>
-                    </persName>
-                    <expan><abbr>fec</abbr><ex>erunt</ex></expan>
+                <persName key="Thettale">Θε<supplied reason="lost">τ</supplied>ταλὴ</persName>
                 <lb n="3"/>
-                    <persName>
-                        <name type="gentilicium" key="Cincia">Cincia</name>
-                        <name type="cognomen" key="Trophime">Trophime</name>
-                    </persName>
-                <lb n="4"/>et 
-                    <persName>
-                        <name key="Hermes">Hermes</name>
-                    </persName>
-                    <expan><abbr>cons</abbr><ex>ervo</ex></expan>
-                <lb n="5"/>
-                    <expan><abbr>b</abbr><ex>ene</ex></expan> <expan><abbr>m</abbr><ex>erenti</ex></expan>.
+                <persName key="Pyrrias">Πυρρίου</persName> γυνή.
             </ab></div>
             
             <div type="translation">
-            <p>Sacred to the Divine Spirits. Cincia Trophime and Hermes made (this) for their fellow slave, Nicanor, well-deserving.</p></div>
+                <p>Pyrrias. Thettale, wife of Pyrrias.</p></div>
 
             <div type="commentary">
-            <p>Basis of verification: previous edition and photo</p></div>
+                <p>The IG reference is corresponding to the original inscription found in the National Museum in Athens.</p></div>
             
 
-            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

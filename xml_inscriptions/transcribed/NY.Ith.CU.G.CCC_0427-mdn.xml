@@ -17,8 +17,8 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.80-2-14</title>
-                <author>Mac Carley</author>
+                <title>NY.Ith.CU.G.CCC_0427-mdn</title>
+                <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -30,27 +30,28 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.80-2-14">PA.Phil.UP.UM.G.80-2-14</idno>
+                <idno type="USEpigraphy" xml:id="NY.Ith.CU.G.CCC_0427-mdn"
+                    >NY.Ith.CU.G.CCC_0427-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>PA</region>
-                        <settlement>Phil</settlement>
-                        <institution>UP</institution>
-                        <repository>UM</repository>
-                        <idno>80-2-14</idno><altIdentifier  type="TM_number"><idno/></altIdentifier>
+                        <region>NY</region>
+                        <settlement>Ith</settlement>
+                        <institution>CU</institution>
+                        <repository></repository>
+                        <idno>427</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#list">
                             <!-- short summary of the content of an inscription -->
-                            <p/>
+                            <p>list of casualties at Corinth and Koroneia</p>
                         </msItem>
                     </msContents>
 
@@ -59,24 +60,24 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#object_unknown">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#arch_element">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <p>Fragmentary marble slab</p>
+                                    <p> plaster cast of anthemion</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>7.7</height>
-                                        <width>6.3</width>
-                                        <depth>1.6</depth>
+                                        <height>41</height>
+                                        <width>96</width>
+                                        <depth>5</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p/>
+                                <condition ana="#fragments.contig">
+                                    <p>other fragment is acc. no. 307</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p>Part of one line, a lambda and a tau</p>
+                                <layout columns="7" writtenLines="14">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -100,33 +101,30 @@ changes: correct handling of provenance information -->
                     <history>
 
                         <summary>
-                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-118" notAfter="-10">ca. 118 -
-                                late 1st century BCE</date>
-                            <placeName ref="africa">Leptis Magna</placeName>
+                            <date evidence="#history" notBefore="-0394" notAfter="-0393">394/3
+                                BCE</date>
+                            <placeName ref="europe.greece.athens">Kerameikos</placeName>
                         </origin>
-
-                        <provenance type="transferred" when="1980">
-                            <p>Acquired by the <orgName role="acquirer"> University of Pennsylvania Museum of Archaeology and Anthropology</orgName> via gift of <persName role="donor">Theresa Howard Carter</persName> in <date>1980</date></p>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Plaster cast was made between <date when="1890">1890</date> and <date when="1900">1900</date>.</p>
                         </provenance>
+
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/140425"> Penn Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target="#IG_II2"/>
+                        <biblScope unit="item">5222</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA"/>
-                        <biblScope unit="item">vol. 69, no.2, pp.123-132</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">pp.211-212</biblScope>
+                        <ref type="external"
+                            target="https://digital.library.cornell.edu/catalog/ss:946289">Cornell web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -152,7 +150,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-21" who="Mac Carley">Initial Encoding</change>
+            <change when="2025-02-22" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -163,20 +161,20 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="NY.Ith.CU.G.CCC_0427-mdn.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>T L</ab></div>
+            <ab></ab></div>
             
             <div type="translation">
             <p></p></div>
 
             <div type="commentary">
-            <p>Carter (1965) includes discussion of the stratigraphy of the site.</p></div>
+                <p>Another plaster cast fragment is acc. no. 307 of the Cornell Cast Collection. The IG reference is corresponding to the original inscription found in the National Museum in Athens.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>

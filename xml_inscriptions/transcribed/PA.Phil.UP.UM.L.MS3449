@@ -17,8 +17,8 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.80-2-14</title>
-                <author>Mac Carley</author>
+                <title>PA.Phil.UP.UM.L.MS3449</title>
+                <author>Author</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -30,7 +30,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.80-2-14">PA.Phil.UP.UM.G.80-2-14</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.MS3449">PA.Phil.UP.UM.L.MS3449</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -41,16 +41,16 @@ changes: correct handling of provenance information -->
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>80-2-14</idno><altIdentifier  type="TM_number"><idno/></altIdentifier>
+                        <idno>MS3449</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
+                        <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p/>
+                            <p>dedication by Chio</p>
                         </msItem>
                     </msContents>
 
@@ -59,24 +59,24 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#object_unknown">
+                        <objectDesc ana="#instrumentum.vase">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p>Fragmentary marble slab</p>
+                                    <p> Carrara marble cauldron with lid</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>7.7</height>
-                                        <width>6.3</width>
-                                        <depth>1.6</depth>
+                                        <height>63.5</height>
+                                        <width/>
+                                        <depth>46.5</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
+                                <condition ana="#complete.broken">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
                                 <layout columns="0" writtenLines="1">
-                                    <p>Part of one line, a lambda and a tau</p>
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -90,7 +90,12 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>Three griffin protomes extend from the shoulder. There is an
+                                    acanthus motif in high relief stretching around the center of
+                                    the object, below which there is vertical fluting. The lid is in
+                                    a conical shape with a knob on top and was likely carved in one
+                                    piece with the body. The cauldron sits on a square plinth which
+                                    may be modern.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -104,13 +109,19 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-118" notAfter="-10">ca. 118 -
-                                late 1st century BCE</date>
-                            <placeName ref="africa">Leptis Magna</placeName>
+                            <date evidence="#archaeology" notBefore="-99" notAfter="1">Late 1st
+                                century BCE</date>
+                            <placeName ref="europe.italy">Lake Nemi</placeName>
                         </origin>
-
-                        <provenance type="transferred" when="1980">
-                            <p>Acquired by the <orgName role="acquirer"> University of Pennsylvania Museum of Archaeology and Anthropology</orgName> via gift of <persName role="donor">Theresa Howard Carter</persName> in <date>1980</date></p>
+                        <provenance type="found" subtype="discovered">
+                            <p>in the sanctuary at <placeName ref="europe.italy">Lake
+                                Nemi</placeName> in <date when="1895">1895</date></p>
+                        </provenance>
+                        <provenance type="transferred" subtype="purchased"> 
+                            <p>Purchased by <persName role="buyer">Arthur Frothingham</persName> on behalf
+                                of <orgName role="acquirer">the University of Pennsylvania
+                                    Museum</orgName> in <date when="1897">1897</date> with funds
+                                from <persName role="donor">Lucy Wharton Drexel</persName></p>
                         </provenance>
 
                     </history>
@@ -118,15 +129,22 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/140425"> Penn Museum web entry</ref>
+                        <ref type="external" target="https://www.penn.museum/collections/object/127016">Penn Museum entry</ref>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA"/>
-                        <biblScope unit="item">vol. 69, no.2, pp.123-132</biblScope>
+                        <ref type="external" target="www.trismegistos.org/text/547798">TM547798</ref>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#EphEp_IX"/>
+                        <biblScope unit="entry">649</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">pp.211-212</biblScope>
+                        <biblScope unit="page">212</biblScope>
+                    </bibl>
+                    <bibl> 
+                        <ptr type="rest-of-bibl" target="#AE_1999"/>
+                        <biblScope unit="entry">416</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -152,7 +170,8 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-21" who="Mac Carley">Initial Encoding</change>
+            <change when="2025-03-08" who="Mac Carley">Initial Encoding</change>
+<change when="2025-03-19" who="Scott J. DiGiulio">Reworked transcription</change>
         </revisionDesc>
 
     </teiHeader>
@@ -163,20 +182,49 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="PA.Phil.UP.UM.L.MS3449_a.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="PA.Phil.UP.UM.L.MS3449_b.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>T L</ab></div>
+                  <div type="textpart" subtype="face" n="a">
+                           <ab>
+                                    <lb n="1"><persName><name type="cognomen" key="Chio">Chio</name></persName>
+</ab>
+</div>
+<div type="textpart" subtype="face" n="b">
+<ab>
+<lb n="2"/><expan><abbr>d</abbr><ex>onum</ex></expan>
+</ab>
+</div>
+<div type="textpart" subtype="face" n="c">
+<ab><expan><abbr>d</abbr><ex>edit</ex></expan>.</ab></div></div>
             
             <div type="translation">
-            <p></p></div>
+            <p>Chio gave this as a gift.</p></div>
 
             <div type="commentary">
-            <p>Carter (1965) includes discussion of the stratigraphy of the site.</p></div>
+                <p>One of eight marble vessels dedicated by Chio at the Sanctuary of Diana
+                    Nemorensis. It is missing the head and neck of one griffin and the beak of
+                    another. There are repair holes drilled in the neck of one griffin and in the
+                    beak of another, both likely ancient repairs. The plinth may be modern. It is
+                    one of a pair with PA.Phil.UP.UM.L.MS3448. The shape of the cauldron imitates
+                    the Greek bronze wine-mixing bowls of the archaic period. The vessel is solid
+                    and so could not have been used as a container. As for the inscription, the
+                    precise meaning of 'Chio' is unclear: Guldager Bilde argues that the name Chio
+                    is a Latinized form of Χίων, 'from Chios', and therefore he must have been a
+                    wealthy freedman. Steinbauer (in Bentz 1998/99) is not as certain of the
+                    dedicant's social status, but agrees with Guldager Bilde on the derivation of
+                    the name. Guldager Bilde also suggests that the vessel was used in a hero-cult
+                    context in honor of Hippolytos, given the funerary associations of the griffin
+                    decoration. Bentz argues instead that the group was dedicated in honor of a
+                    victory at the ludi Apollinares.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
