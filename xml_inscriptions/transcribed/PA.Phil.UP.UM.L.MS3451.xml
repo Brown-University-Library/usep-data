@@ -1,23 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.L.MS3449</title>
+                <title>PA.Phil.UP.UM.L.MS3451</title>
                 <author>Author</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,7 +23,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.MS3449">PA.Phil.UP.UM.L.MS3449</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.MS3451">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -41,15 +34,16 @@ changes: correct handling of provenance information -->
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>MS3449</idno>
+                        <idno>3451</idno>
+                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
-                            <!-- short summary of the content of an inscription -->
+                        <msItem class="">
+                        <!-- short summary of the content of an inscription -->
                             <p>dedication by Chio</p>
                         </msItem>
                     </msContents>
@@ -64,9 +58,9 @@ changes: correct handling of provenance information -->
                                 <support>
                                     <p> Carrara marble cauldron with lid</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>63.5</height>
-                                        <width/>
-                                        <depth>46.5</depth>
+                                        <height>66</height>
+                                        <width>23</width>
+                                        <depth>21.6</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.broken">
@@ -90,12 +84,10 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>Three griffin protomes extend from the shoulder. There is an
-                                    acanthus motif in high relief stretching around the center of
-                                    the object, below which there is vertical fluting. The lid is in
-                                    a conical shape with a knob on top and was likely carved in one
-                                    piece with the body. The cauldron sits on a square plinth which
-                                    may be modern.</p>
+                                <p>A conical lid includes floral relief and a knob on top. Three
+                                    griffin protomes extend from the shoulder. There is an acanthus
+                                    scroll stretching around the belly of the vessel, under which
+                                    there is vertical fluting.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -109,19 +101,16 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-99" notAfter="1">Late 1st
+                            <date evidence="#archaeology" notBefore="-0099" notAfter="0001">Late 1st
                                 century BCE</date>
                             <placeName ref="europe.italy">Lake Nemi</placeName>
                         </origin>
-                        <provenance type="found" subtype="discovered">
-                            <p>in the sanctuary at <placeName ref="europe.italy">Lake
-                                Nemi</placeName> in <date when="1895">1895</date></p>
+                        <provenance type="discovered">
+                            <p> at <placeName>Lake Nemi</placeName> in <date when="1895">1895</date></p>
                         </provenance>
-                        <provenance type="transferred" subtype="purchased"> 
-                            <p>Purchased by <persName role="buyer">Arthur Frothingham</persName> on behalf
-                                of <orgName role="acquirer">the University of Pennsylvania
-                                    Museum</orgName> in <date when="1897">1897</date> with funds
-                                from <persName role="donor">Lucy Wharton Drexel</persName></p>
+                        <provenance type="acquired">
+                            <p>Purchased by <persName role="buyer">Arthur Frothingham</persName> on behalf of the <orgName role="acquirer">University of Pennsylvania Museum</orgName>
+                                via funds from <persName role="donor">Lucy Wharton Drexel</persName> in <date when="1897">1897</date></p>
                         </provenance>
 
                     </history>
@@ -129,7 +118,7 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/127016">Penn Museum entry</ref>
+                        <ref type="external" target="https://www.penn.museum/collections/object/119540">University of Pennsylvania Museum web entry</ref>
                     </bibl>
                     <bibl>
                         <ref type="external" target="www.trismegistos.org/text/547798">TM547798</ref>
@@ -154,8 +143,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -170,8 +158,8 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2025-03-08" who="Mac Carley">Initial Encoding</change>
-<change when="2025-03-19" who="Scott J. DiGiulio">Reworked transcription</change>
+            <change when="2025-03-13" who="Mac Carley">Initial Encoding</change>
+<change when="2025-03-19" who="Scott J. DiGiulio">rewrote transcription to conform with EpiDoc</change>
         </revisionDesc>
 
     </teiHeader>
@@ -182,11 +170,11 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="PA.Phil.UP.UM.L.MS3449_a.jpg"/>
+            <graphic url="PA.Phil.UP.UM.L.MS3451_a.jpg"/>
         </surface>
         <surface>
             <desc/>
-            <graphic url="PA.Phil.UP.UM.L.MS3449_b.jpg"/>
+            <graphic url="PA.Phil.UP.UM.L.MS3451_b.jpg"/>
         </surface>
     </facsimile>
 
@@ -195,7 +183,7 @@ changes: correct handling of provenance information -->
             <div type="edition">
                   <div type="textpart" subtype="face" n="a">
                            <ab>
-                                    <lb n="1"><persName><name type="cognomen" key="Chio">Chio</name></persName>
+                                    <lb n="1"/><persName><name type="cognomen" key="Chio">Chio</name></persName>
 </ab>
 </div>
 <div type="textpart" subtype="face" n="b">
@@ -210,24 +198,21 @@ changes: correct handling of provenance information -->
             <p>Chio gave this as a gift.</p></div>
 
             <div type="commentary">
-                <p>One of eight marble vessels dedicated by Chio at the Sanctuary of Diana
-                    Nemorensis. It is missing the head and neck of one griffin and the beak of
-                    another. There are repair holes drilled in the neck of one griffin and in the
-                    beak of another, both likely ancient repairs. The plinth may be modern. It is
-                    one of a pair with PA.Phil.UP.UM.L.MS3448. The shape of the cauldron imitates
-                    the Greek bronze wine-mixing bowls of the archaic period. The vessel is solid
-                    and so could not have been used as a container. As for the inscription, the
-                    precise meaning of 'Chio' is unclear: Guldager Bilde argues that the name Chio
-                    is a Latinized form of Χίων, 'from Chios', and therefore he must have been a
-                    wealthy freedman. Steinbauer (in Bentz 1998/99) is not as certain of the
-                    dedicant's social status, but agrees with Guldager Bilde on the derivation of
-                    the name. Guldager Bilde also suggests that the vessel was used in a hero-cult
-                    context in honor of Hippolytos, given the funerary associations of the griffin
-                    decoration. Bentz argues instead that the group was dedicated in honor of a
-                    victory at the ludi Apollinares.</p></div>
+            <p>One of eight marble vessels dedicated at the Sanctuary of Diana Nemorensis. One of
+                    the three griffin heads is badly worn down, as is the knob on top of the lid.
+                    The shape of the cauldron imitates the Greek bronze wine-mixing bowls of the
+                    archaic period. The vessel is solid and so could not have been used as a
+                    container. As for the inscription, the precise meaning of 'Chio' is unclear:
+                    Guldager Bilde argues that the name Chio is a Latinized form of Χίων, 'from
+                    Chios', and therefore he must have been a wealthy freedman. Steinbauer (in Bentz
+                    1998/99) is not as certain of the dedicant's social status, but agrees with
+                    Guldager Bilde on the derivation of the name. Guldager Bilde also suggests that
+                    the vessel was used in a hero-cult context in honor of Hippolytos, given the
+                    funerary associations of the griffin decoration. Bentz argues instead that the
+                    group was dedicated in honor of a victory at the ludi Apollinares.</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

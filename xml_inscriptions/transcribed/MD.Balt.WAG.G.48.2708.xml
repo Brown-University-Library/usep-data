@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -40,8 +33,8 @@ changes: correct handling of provenance information -->
                         <region>MD</region>
                         <settlement>Balt.</settlement>
                         <institution>WAG</institution>
-                        <repository></repository>
-                        <idno>48.2708</idno>
+                        <repository/>
+                        <idno>48.2708</idno><altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -123,7 +116,7 @@ changes: correct handling of provenance information -->
                         </provenance>
                         <provenance type="transferred" subtype="given"> Transferred to ownership of <persName role="recipient">Beatrice A. Kelekian</persName> in <date when="1982">1982</date> by bequest 
                         </provenance>
-                        <provenance type="transferred" subtype="acquired"> Acquired by the <orgName role="recipient">Walters Art Museum</orgName> by bequest of <persName role="donor"> Beatrice Kelekian></persName> in <date when="1992">1992</date></provenance>
+                        <provenance type="transferred" subtype="acquired"> Acquired by the <orgName role="recipient">Walters Art Museum</orgName> by bequest of <persName role="donor"> Beatrice Kelekian&gt;</persName> in <date when="1992">1992</date></provenance>
 
 
                     </history>
@@ -131,12 +124,9 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" 
-                            target="https://art.thewalters.org/detail/32070/kylix-with-grotesque-figure/">Walters Art Museum web entry</ref>
+                        <ref type="external" target="https://art.thewalters.org/detail/32070/kylix-with-grotesque-figure/">Walters Art Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target=""/>
                         <biblScope unit="page">00</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#JWalt_76_Anderson-Zhu"/>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -146,8 +136,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -163,7 +152,6 @@ changes: correct handling of provenance information -->
 
         <revisionDesc>
             <change when="2024-10-01" who="Mac Carley">Initial Encoding</change>
-            <change when="2025-01-27" who="Mac Carley">Edited bibliography</change>
         </revisionDesc>
 
     </teiHeader>
@@ -198,7 +186,7 @@ changes: correct handling of provenance information -->
                     exterior. No other extant Sam Wide Group vessels have an inscription.</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
