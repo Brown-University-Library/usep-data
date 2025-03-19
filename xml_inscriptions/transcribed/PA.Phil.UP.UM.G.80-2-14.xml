@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -41,7 +34,7 @@ changes: correct handling of provenance information -->
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>80-2-14</idno><altIdentifier  type="TM_number"><idno/></altIdentifier>
+                        <idno>80-2-14</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
@@ -121,8 +114,8 @@ changes: correct handling of provenance information -->
                         <ref type="external" target="https://www.penn.museum/collections/object/140425"> Penn Museum web entry</ref>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA"/>
-                        <biblScope unit="item">vol. 69, no.2, pp.123-132</biblScope>
+                        <ptr type="rest-of-bibl" target="#AJA_69_Carter"/>
+                        <biblScope unit="page">123-132</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
@@ -136,8 +129,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -173,13 +165,13 @@ changes: correct handling of provenance information -->
             <ab>T L</ab></div>
             
             <div type="translation">
-            <p></p></div>
+            <p/></div>
 
             <div type="commentary">
             <p>Carter (1965) includes discussion of the stratigraphy of the site.</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

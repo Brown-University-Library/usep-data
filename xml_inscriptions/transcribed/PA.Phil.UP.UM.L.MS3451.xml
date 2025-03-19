@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>PA.Phil.UP.UM.L.MS3451</title>
+                <author>Author</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.MS3451">Repeat USEP ID</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>PA</region>
+                        <settlement>Phil</settlement>
+                        <institution>UP</institution>
+                        <repository>UM</repository>
+                        <idno>3451</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="">
+                        <!-- short summary of the content of an inscription -->
+                            <p>dedication by Chio</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#instrumentum.vase">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p> Carrara marble cauldron with lid</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>66</height>
+                                        <width>23</width>
+                                        <depth>21.6</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="1">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>A conical lid includes floral relief and a knob on top. Three
+                                    griffin protomes extend from the shoulder. There is an acanthus
+                                    scroll stretching around the belly of the vessel, under which
+                                    there is vertical fluting.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="-0099" notAfter="0001">Late 1st
+                                century BCE</date>
+                            <placeName ref="europe.italy">Lake Nemi</placeName>
+                        </origin>
+                        <provenance type="discovered">
+                            <p> at <placeName>Lake Nemi</placeName> in <date when="1895">1895</date></p>
+                        </provenance>
+                        <provenance type="acquired">
+                            <p>Purchased by <persName role="buyer">Arthur Frothingham</persName> on behalf of the <orgName role="acquirer">University of Pennsylvania Museum</orgName>
+                                via funds from <persName role="donor">Lucy Wharton Drexel</persName> in <date when="1897">1897</date></p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ref type="external" target="https://www.penn.museum/collections/object/119540">University of Pennsylvania Museum web entry</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="www.trismegistos.org/text/547798">TM547798</ref>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#EphEp_IX"/>
+                        <biblScope unit="entry">649</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
+                        <biblScope unit="page">212</biblScope>
+                    </bibl>
+                    <bibl> 
+                        <ptr type="rest-of-bibl" target="#AE_1999"/>
+                        <biblScope unit="entry">416</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2025-03-13" who="Mac Carley">Initial Encoding</change>
+<change when="2025-03-19" who="Scott J. DiGiulio">rewrote transcription to conform with EpiDoc</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="PA.Phil.UP.UM.L.MS3451_a.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="PA.Phil.UP.UM.L.MS3451_b.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                  <div type="textpart" subtype="face" n="a">
+                           <ab>
+                                    <lb n="1"/><persName><name type="cognomen" key="Chio">Chio</name></persName>
+</ab>
+</div>
+<div type="textpart" subtype="face" n="b">
+<ab>
+<lb n="2"/><expan><abbr>d</abbr><ex>onum</ex></expan>
+</ab>
+</div>
+<div type="textpart" subtype="face" n="c">
+<ab><expan><abbr>d</abbr><ex>edit</ex></expan>.</ab></div></div>
+            
+            <div type="translation">
+            <p>Chio gave this as a gift.</p></div>
+
+            <div type="commentary">
+            <p>One of eight marble vessels dedicated at the Sanctuary of Diana Nemorensis. One of
+                    the three griffin heads is badly worn down, as is the knob on top of the lid.
+                    The shape of the cauldron imitates the Greek bronze wine-mixing bowls of the
+                    archaic period. The vessel is solid and so could not have been used as a
+                    container. As for the inscription, the precise meaning of 'Chio' is unclear:
+                    Guldager Bilde argues that the name Chio is a Latinized form of Χίων, 'from
+                    Chios', and therefore he must have been a wealthy freedman. Steinbauer (in Bentz
+                    1998/99) is not as certain of the dedicant's social status, but agrees with
+                    Guldager Bilde on the derivation of the name. Guldager Bilde also suggests that
+                    the vessel was used in a hero-cult context in honor of Hippolytos, given the
+                    funerary associations of the griffin decoration. Bentz argues instead that the
+                    group was dedicated in honor of a victory at the ludi Apollinares.</p></div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
