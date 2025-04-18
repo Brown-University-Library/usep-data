@@ -1,50 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          --><!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.MS5733</title>
-                <author>Mac Carley</author>
+                <title>MA.Camb.HU.L.2025.1.2-mdn</title>
+                <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
                 </respStmt>
                 <respStmt>
                     <resp>Commentary</resp>
-                    <name>John Bodel</name>
+                    <name>Commenter</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.MS5733">PA.Phil.UP.UM.G.MS5733</idno>
+                <idno type="USEpigraphy" xml:id="MA.Camb.HU.L.2025.1.2-mdn">MA.Camb.HU.L.2025.1.2-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>PA</region>
-                        <settlement>Phil</settlement>
-                        <institution>UP</institution>
-                        <repository>UM</repository>
-                        <idno>MS5733</idno>
-                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
+                        <region>MA</region>
+                        <settlement>Camb</settlement>
+                        <institution>HU</institution>
+                        <repository></repository>
+                        <idno></idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
+                        <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#building">
                             <!-- short summary of the content of an inscription -->
-                            <p>unknown content</p>
+                            <p>dedication commemorating reconstruction of temple of Isis</p>
                         </msItem>
                     </msContents>
 
@@ -54,24 +60,22 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
                         <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
+                            <supportDesc ana="#stone.other">
                                 <support>
-                                    <p>fragmentary marble slab</p>
+                                    <p> stone slab</p>
                                     <dimensions type="surface" unit="cm">
                                         <height/>
                                         <width/>
-                                        <depth>2.5+</depth>
-                                        <dim type="diameter">9.5+</dim>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>triangular fragment, broken on all three sides with a smooth
-                                        front and rough back</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="3">
+                                <layout columns="1" writtenLines="4">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -96,12 +100,13 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                     <history>
 
                         <summary>
-                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date notBefore="0001" notAfter="0002">Unknown</date>
-                            <placeName ref="unknown">Unknown</placeName>
+                            <date evidence="#history" notBefore="0062" notAfter="0100">late first
+                                century CE</date>
+                            <placeName ref="europe.italy">Pompeii</placeName>
                         </origin>
 
 
@@ -110,12 +115,16 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/152650">Penn Museum web entry</ref>
-</bibl>
-<bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">pp.211-212</biblScope>
+                        <ptr type="rest-of-bibl" target="#CIL_X"/>
+                        <biblScope unit="item">846</biblScope>
                     </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#ILS"/>
+                        <biblScope unit="item">6367</biblScope>
+                    </bibl>
+                          <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&id_nr=EDR150689">EDR150689</ref>
+               </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
@@ -124,7 +133,8 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
         <encodingDesc>
 
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -139,7 +149,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-22" who="Mac Carley">Initial Encoding</change>
+            <change when="2025-03-10" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -150,7 +160,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="PA.Phil.UP.UM.G.MS5733.jpg"/>
+            <graphic url="MA.Camb.HU.L.2025.1.2-mdn.jpg"/>
         </surface>
     </facsimile>
 
@@ -158,20 +168,32 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/>ΟΧΟ
-                <lb n="2"/>ΤΗ
-               <lb n="3"/>-
-            </ab>
-            </div>
+                <lb n="1"/>
+                <persName>
+                    <name type="praenomen" key="Numerius"><expan><abbr>N</abbr><ex>umerius</ex></expan></name>
+                    <name type="gentilicium" key="Popidius">Popidius</name>
+                    <persName>
+                        <name type="praenomen" key="Numerius"><expan><abbr>N</abbr><ex>umerii</ex></expan></name>
+                    </persName>
+                    <expan><abbr>f</abbr><ex>ilius</ex></expan>
+                    <name type="cognomen" key="Celsinus">Celsinus</name></persName>
+                <lb n="2"/>aedem
+                <persName type="divinity"><name key="Isis">Isidis</name></persName> terrae motu conlapsam
+                <lb n="3"/>a fundamento
+                <expan><abbr>p</abbr><ex>ecunia</ex></expan>
+                <expan><abbr>s</abbr><ex>ua</ex></expan> restituit. Hunc decuriones ob liberalitatem,
+                <lb n="4"/>cum esset annorum
+                <choice><corr>sex</corr><sic>sexs</sic></choice>, ordini suo gratis adlegerunt.
+            </ab></div>
             
             <div type="translation">
-            <p/></div>
+            <p>Numerius Popidius Celsinus, son of Numerius, restored the Temple of Isis from its foundations, having collapsed in the earthquake, at his own expense. Because of his generosity, although he was six years old, the decurions admitted him freely to their group.</p></div>
 
             <div type="commentary">
-            <p>The fragment preserves letters of three lines of text, of which the third line preserves only the serifed top horizontal stroke of a letter (T?).</p></div>
+            <p>The CIL and ILS references correspond to the original inscription.</p></div>
             
 
-            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
