@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>OH.Tol.TMA.G.2009.16</title>
+                <author>Advaith Rege</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="OH.Tol.TMA.G.2009.16">OH.Tol.TMA.G.2009.16</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>OH</region>
+                        <settlement>Tol</settlement>
+                        <institution>TMA</institution>
+                        <repository></repository>
+                        <idno>2009.16</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#dedicatory">
+                            <!-- short summary of the content of an inscription -->
+                            <p>dedication of Apollonides for the Great Gods</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#object_other">
+                            <supportDesc ana="#metal.silver">
+                                <support>
+                                    <p> silver plaque</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>14.9</height>
+                                        <width>12.4</width>
+                                        <depth>0.3</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="4">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>seated figure, surrounded by Corinthian columns; attendants flank
+                                    figure, one raising circular object; small animal (panther or
+                                    dog?) sits before the throne </p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#unspecified" notBefore="0101" notAfter="0400">second to
+                                fourth century CE</date>
+                            <placeName ref="africa.egypt"/>
+                        </origin>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Acquired in the 1970s.</p>
+                        </provenance>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Acquired by the <orgName role="buyer">Toledo Museum of Art</orgName> through <orgName role="seller">Bonhams</orgName> in <date when="2009">2009</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ref type="external" target="https://emuseum.toledomuseum.org/objects/65400/votive-plaque-of-apollonides-for-the-great-gods">TMA web entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2025-09-28" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="OH.Tol.TMA.G.2009.16.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/>Ἐπ’ ἱερέος
+                    <persName>
+                        <name key="Apollonides">Ἀπολλωνίδου</name>
+                    </persName>
+                    <persName>
+                        <name key="Philoxenos">Φιλο
+                <lb n="2" break="no"/>ξένου</name>
+                    </persName>τοῦ 
+                    <persName>
+                        <name key="Apollonides">Ἀπολλωνίδου</name>
+                    </persName>
+                <lb n="3"/>ἀπηρτίσθησαν Θεῶν
+                <lb n="4"/><supplied reason="lost">Μ</supplied>εγίστων πορπαί.
+            </ab></div>
+            
+            <div type="translation">
+                <p>Under the priest Apollonides, (son of) Philoxenos, (son of) Apollonides, were completed the dress-fasteners of the Greatest Gods.</p></div>
+
+            <div type="commentary">
+                <p>Basis of verification: TMA web entry, photo</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
