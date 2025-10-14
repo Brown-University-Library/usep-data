@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>OH.Tol.TMA.E.1978.22</title>
+                <author>Advaith Rege</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="OH.Tol.TMA.E.1978.22">OH.Tol.TMA.E.1978.22</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>OH</region>
+                        <settlement>Tol</settlement>
+                        <institution>TMA</institution>
+                        <repository></repository>
+                        <idno>1978.22</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="ett" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="">
+                        <!-- short summary of the content of an inscription -->
+                            <p>speaking inscription identifying Hercle</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#object_other">
+                            <supportDesc ana="#metal.bronze">
+                                <support>
+                                    <p> bronze statuette</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>24.1</height>
+                                        <width>12.7</width>
+                                        <depth>8.3</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>statuette missing both feet</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="1">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>holds club in right hand, holds bow in left hand; lion's head and
+                                    skin drape head and shoulders</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#unspecified" notBefore="-0425" notAfter="-0325">late
+                                fifth to late fourth century BCE</date>
+                            <placeName ref="europe.italy"/>
+                        </origin>
+                        <provenance type="transferred" subytype="acquired">
+                            <p>Acquired by the <orgName role="buyer">Toledo Museum of Art</orgName> from <orgName role="seller">Edward H. Merrin Gallery</orgName> in <date when="1978">1978</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ref type="external" target="https://emuseum.toledomuseum.org/objects/56506/inscribed-statuette-of-hercle">TMA web entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2025-09-19" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="OH.Tol.TMA.E.1978.22.jpg"/>
+        </surface>
+        <surface>
+            <desc>detail of inscription</desc>
+            <graphic url="OH.Tol.TMA.E.1978.22 (detail).jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition" subtype="transliteration_ltn">
+            <ab>
+                <lb n="1" style="text-direction:r-to-l"/>
+                    <persName type="divine">
+                        <name key="Hercle">Hercales</name>
+                    </persName> mi.
+            </ab></div>
+            
+            <div type="translation">
+            <p>I am Hercle.</p></div>
+
+            <div type="commentary">
+            <p>Basis of verification: TMA web entry, photo</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
