@@ -105,7 +105,7 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="" notBefore="0001" notAfter="0002">Date to be displayed</date>
+                            <date evidence="#palaeography">Date to be displayed</date>
                             <placeName ref="xx">Detailed place name</placeName>
                         </origin>
 
@@ -146,6 +146,8 @@ changes: correct handling of provenance information -->
 
         <revisionDesc>
             <change when="2025-03-13" who="Mac Carley">Initial Encoding</change>
+            <change when="2025-10-14" who="Davide Pironi">attempted a transcription and a
+                commentary</change>
         </revisionDesc>
 
     </teiHeader>
@@ -156,22 +158,32 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="PA.Phil.UP.UM.G.MS5735.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>Transcription goes here</ab></div>
+            <ab>
+                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>PILO<gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>TI<gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>NO<gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>MINO<gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
+            </div>
             
             <div type="translation">
             <p></p></div>
 
             <div type="commentary">
-            <p>Smoothly finished front and back but no finished edges preserved.</p></div>
-            
-
+                <p>The front and back are smoothly finished, but no original edges are preserved.
+                    The six-line inscription is fragmentary and difficult to read; however, the
+                    lettering style may point to a late or Christian date, with the last readable
+                    line bearing the formula 'domino.'</p>
+                <p/></div>
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
