@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>PA.Phil.UP.UM.A.B8906</title>
+                <author>Author</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.A.B8906">Repeat USEP ID</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>PA</region>
+                        <settlement>Phil</settlement>
+                        <institution>UP</institution>
+                        <repository>UM</repository>
+                        <idno>B8906</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="arc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.other">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Rectangular loculus relief with male bust and Palyrene
+                                inscription.</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p> Hard white limestone.</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>59</height>
+                                        <width>38</width>
+                                        <depth>13</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>Upper left, lower left, and upper right corners (as viewed)
+                                        are broken off.</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="4">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>The frontal bearded man wears two garments: a tunic and a mantle,
+                                    which envelops both arms. With his left arm's two middle fingers
+                                    he holds a flat object, likely a book roll or schedula. His eyes
+                                    are very large and almond-shaped; his nose is long and straight,
+                                    with flaring nostrils.</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#prosopography" notBefore="0149" notAfter="0201">150-200
+                                CE</date>
+                            <placeName ref="asia.near_east">Palmyra, Syria</placeName>
+                        </origin>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="Romano_2006"/>
+                        <biblScope unit="page" type="page">290-291, no. 136</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="Hillers-Cussini_1996"/>
+                        <biblScope type="page">250, no. 209</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2025-10-23" who="Davide Pironi">Initial Encoding: metadata, transcription,
+                translation, and commentary</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="PA.Phil.UP.UM.A.B8906.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <ab><lb n="1"/>m`n
+                    <lb n="2"/>br br`´
+                    <lb n="3"/>br zbd`th
+                    <lb n="4"/><unclear>h</unclear>bl</ab></div>
+            
+            <div type="translation">
+            <p>Ma`ân, son of Bar`â, son of Zabd`âteh. Alas! (Hillers &amp; Cussini 1996: 250, no.
+                    209)</p></div>
+
+            <div type="commentary">
+                <p>For the names, see J. K. Stark, Personal Names in Palmyrene Inscriptions (Oxford
+                    1971), pp. 96, 79, 86.</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
