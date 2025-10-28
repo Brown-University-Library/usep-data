@@ -1,27 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
+          --><!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
-          -->
-<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+          --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>NY.NY.MMA.G.L.1994.82</title>
-            <author>Author</author>
+            <author>Itamar Levin, John Bodel</author>
             <respStmt>
                <resp>Translation</resp>
                <name>Translator</name>
             </respStmt>
             <respStmt>
                <resp>Commentary</resp>
-               <name>Commenter</name>
+               <name>John Bodel</name>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -37,24 +32,24 @@ changes: correct handling of provenance information
                   <institution>MMA</institution>
                   <repository/>
                   <idno>L.1994.82</idno>
-               </msIdentifier>
+               <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
                <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                   <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                     <p>grave monument of Elpines and Eunicus</p>
+                     <p>epitaph of Elpines and Eunicus</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
                <physDesc>
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
-                  <objectDesc ana="#stele">
+                  <objectDesc ana="#cippus">
                      <supportDesc ana="#stone.marble">
                         <support>
-                           <p> marble funerary stele</p>
+                           <p> marble funerary cippus</p>
                            <dimensions type="surface" unit="cm">
                               <height>134.6 </height>
                               <width>76.2</width>
@@ -62,7 +57,7 @@ changes: correct handling of provenance information
                            </dimensions>
                         </support>
                         <condition ana="#complete.broken">
-                           <p>upper part of the stele; broken below; weathered</p>
+                           <p>broken across upper front face and bottom rear</p>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -129,16 +124,14 @@ changes: correct handling of provenance information
                   <biblScope unit="item">7292</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external"
-                        target="https://www.metmuseum.org/art/collection/search/256524">Metropolitan Museum Web Entry</ref>
+                  <ref type="external" target="https://www.metmuseum.org/art/collection/search/256524">Metropolitan Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <!--  *************************************  <encodingDesc>  ********************************* -->
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -198,21 +191,17 @@ changes: correct handling of provenance information
             </ab>
          </div>
          <div type="translation">
-            <p>Elpines, son of Elpinicus, from Probalinthus. Eunicus, son of Elpinicus, from Probalinthus.</p>
+            <p> [From Probalinthos.] Elpines, son of Elpinicus, from Probalinthus. Eunicus, son of Elpinicus, from Probalinthus.</p>
          </div>
          <div type="commentary">
             <p>The edition follows Camp (1996). The stele was named the “Marathon Stone” based on
-                    its provenance. The first three lines were inscribed with large and deep
-                    cutting; the letter form suggest dating the inscription to the mid. 4th century
-                    BCE. The three second lines were a later addition, and they commemorate the
-                    dedicatee’s brother who died later. This inscription was engraved less
-                    diligently and subsequently, it is not as visible when the stele was found. The
-                    first line above the rosettes is reported by previous editors but is no longer
-                    visible. </p>
+                    its provenance.  The first line of text above the rosettes reported by previous editors is no longer
+                    visible. The next three lines below the rosettes were inscribed in large deep lettering that suggests a dating near the middle of the fourth century
+                    BCE. The last three lines commemorating the dedicatee’s brother who died later were added subsequently. They are less deeply carved and so were
+                    not read initially when the stele was found.</p>
          </div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Ep bibliography</p>
                </xi:fallback>

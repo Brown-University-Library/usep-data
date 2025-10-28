@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information -->
-<!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema -->
-
-          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
@@ -40,9 +33,9 @@ changes: correct handling of provenance information -->
                         <region>CA</region>
                         <settlement>Malibu</settlement>
                         <institution>JPGM</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>75.AA.39</idno>
-                    </msIdentifier>
+                    <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
@@ -50,7 +43,7 @@ changes: correct handling of provenance information -->
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>Epitaph of Grani[us?]</p>
+                            <p>epitaph to a Granius or Grania</p>
                         </msItem>
                     </msContents>
 
@@ -59,23 +52,24 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#slab">
+                        <objectDesc ana="#fragment">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> marble slab</p>
+                                    <p>two, continguous marble fragments</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>15.5</height>
-                                        <width>13</width>
+                                        <height>15.5+</height>
+                                        <width>13+</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>fragment composed of two smaller joined pieces</p>
+                                <condition ana="#fragments.contig">
+                                    <p>rectangular fragment composed of two, contiguous, smaller
+                                        fragments corresponding to the top side of marble slab</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="3">
+                                <layout columns="1" writtenLines="4">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -104,22 +98,23 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#unspecified" notBefore="0101" notAfter="0125">early
+                            <date evidence="#formulae #palaeography" notBefore="0050" notAfter="0150">second half of first century CE to first half of
                                 second century CE</date>
-                            <placeName ref="unknown">unknown<placeName>
+                            <placeName ref="unknown">unknown</placeName>
                         </origin>
                         <provenance type="transferred" subtype="donated">
                             <p>Donated by <persName role="donor">Bruce McNall</persName> and <persName role="donor">Catherine Lorber</persName> to the <orgName role="recipient">J. Paul Getty Museum</orgName> in <date when="1975">1975</date>.</p>
                         </provenance>
-
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target=""/>
-                        <biblScope unit="page">00</biblScope>
+                        <ref type="external" target="https://www.getty.edu/art/collection/object/103T17">JPGM web entry</ref>
+                    </bibl>
+                    <bibl><ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
+                        <biblScope type="page">p.5</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -129,8 +124,7 @@ changes: correct handling of provenance information -->
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -145,7 +139,9 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2023-12-09" who="Advaith Rege">Initial Encoding</change>
+            <change when="2024-05-04" who="Advaith Rege">Initial Encoding</change>
+            <change when="2025-01-15" who="Scott J. DiGiulio">General proofing and preparation for publication</change>
+            <change when="2025-03-15" who="Mac Carley">Added photo and updated bibliography</change>
         </revisionDesc>
 
     </teiHeader>
@@ -164,22 +160,35 @@ changes: correct handling of provenance information -->
         <body>
             <div type="edition">
             <ab>
-                <lb n="1"/><expan><abbr>D</abbr><ex cert="low">is</ex></expan> <supplied reason="lost" cert="low"><expan><abbr>M</abbr><ex cert="low">anibus</ex></expan></supplied>
-                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="1"/>
+                <expan><abbr>D</abbr><ex>is</ex></expan>
+                <expan><abbr><unclear>M</unclear></abbr><ex>anibus</ex></expan>
+                <lb n="2"/>
+                <gap reason="lost" extent="unknown" unit="character"/>
                 <persName>
-                    <name type="gentilicium" key="Granius"><expan><abbr>Grani</abbr><ex cert="low">us</ex></expan></name>
+                    <name type="gentilicium" key="Granius/a">Gran<unclear>i</unclear><supplied reason="lost" cert="low">i/ae</supplied></name>
                 </persName>
-                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>oi m<gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="3"/>
+                <gap reason="lost" extent="unknown" unit="character"/>o<supplied reason="lost" cert="low">t/i</supplied>
+                <unclear>M</unclear><gap reason="lost" extent="unknown" unit="character"/>
+                <lb n="4"/>
+                <gap reason="illegible" quantity="1" unit="character"/>
             </ab></div>
             
             <div type="translation">
-            <p></p></div>
+            <p>To the divine shades of Grani[us/a?] [---]</p></div>
 
             <div type="commentary">
-            <p>Basis of verification: previous edition and photo</p></div>
+                <p>Line 1: right forward slash above D in Dis that appears like apex or virgula but cannot hold function by being above this consonant and not surrounded by letters. It could be a scratch to the marble fragment itself.</p>
+                <p>Line 2: serif of missing letter can be seen at end of line. As the serif sits between visible guidelines, the serif is not definitively part of either line. However, examining the lower left serif on letter M on line 3 suggests the serif belongs to the lower left serif of the M on Manibus</p>
+                <p>Line 3: [---]oi, Getty web entry. Examining top left horizontal serif of I on line 2 suggests that letter in line 3 is not an I, but possibly a T</p>
+                <p>Line 4: the top of a missing letter can be seen, however the exact letter cannot be discerned apart from a possible serif and backward slanting stroke (could be A, M, N, U/V, X, Y). Thin guidelines are visible below and above letters in each line.</p>
+                <p>The fragmented Granị is placed such that the spacing suggests room to its left for a praenomen. Therefore, it is more probable that this is an epitaph to a Granius than Grania. Due to only a fragment being extant, the full identity of this individual cannot be determined. The third line may provide more information about the individual through the abbreviated, fragmented letters OT (or OI, but the distinction between T and I here is not certain without examining the missing bottom serif of the I in line 2). Due to the proximity of the abbreviation, it could possibly stand for Vot(uria tribu), suggesting an Ostian origin. However, the gentilicium Granius is more common in Etruria (Perusia, Clusium, Luca) and is found associated with Quirina tribu. The individual could also possibly have the gentilicium Agranius, although only one inscription of an individual with the same gentilicium, located in Cureggio, Novara, and thus seems unlikely. Another possibility is an abbreviation of nepot(is) or variation (e.g. abnepot(is), pronepot(is)). Therefore, the M that follows in line 3 could be a cognomen, or continuation of lineage by mentioning the praenomen of an ancestor (possibly M(arci)). If one were to assume that the named individual was a male, the existence of an initial for the praenomen and an interpuncted space before Granius, as well as equal alignment of line 2 with Dis Manibus, it could be assumed that the entire fragment would be approximately 36 cm in width, including the space between campus and edge of fragment (assuming equal spacing between the campus and edge). However, the height cannot be discerned due to the unknown number of lines in the epitaph.</p>
+                <p>Transcription from photo.</p>
+            </div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

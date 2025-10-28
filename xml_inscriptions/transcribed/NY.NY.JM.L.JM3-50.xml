@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<!-- v. 20.3 2020-10-13 EM 
+          --><!-- v. 20.3 2020-10-13 EM 
 changes: correct handling of provenance information
-          -->
-          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          --><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>NY.NY.JM.L.JM3-50</title>
+                <title>NY.NY.JM.LH.JM3-50</title>
                 <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -23,12 +18,12 @@ changes: correct handling of provenance information
                 </respStmt>
                 <respStmt>
                     <resp>Commentary</resp>
-                    <name>Advaith Rege</name>
+                    <name>Advaith Rege, John Bodel</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.NY.JM.L.JM3-50">NY.NY.JM.L.JM3-50</idno>
+                <idno type="USEpigraphy" xml:id="NY.NY.JM.LH.JM3-50">NY.NY.JM.LH.JM3-50</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -38,9 +33,9 @@ changes: correct handling of provenance information
                         <region>NY</region>
                         <settlement>NY</settlement>
                         <institution>JM</institution>
-                        <repository></repository>
+                        <repository/>
                         <idno>JM3-50</idno>
-                    </msIdentifier>
+                    <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
@@ -60,7 +55,7 @@ changes: correct handling of provenance information
                         <objectDesc ana="#slab">
                             <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p> marble slab</p>
+                                    <p>rectangular marble slab</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>24.1</height>
                                         <width>28.2</width>
@@ -76,6 +71,9 @@ changes: correct handling of provenance information
                                 <layout columns="1" writtenLines="3">
                                     <p/>
                                 </layout>
+                                     <layout columns="1" writtenLines="1">
+                                    <p/>
+                                </layout>
                             </layoutDesc>
                         </objectDesc>
 
@@ -88,7 +86,7 @@ changes: correct handling of provenance information
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>inscribed shofar, menorah, and lulav</p>
+                                <p>a shofar, menorah, and lulav are carved into the top face of the slab</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -102,15 +100,14 @@ changes: correct handling of provenance information
                         </summary>
 
                         <origin>
-                            <date evidence="#unspecified" notBefore="0301" notAfter="0500"
-                                >fourth-fifth century CE</date>
+                            <date evidence="#unspecified" notBefore="0301" notAfter="0500">fourth-fifth century CE?</date>
                             <placeName ref="europe.italy">Venosa (?), Italy</placeName>
                         </origin>
                         <provenance type="transferred" subtype="donated">
-                            <p>Donated by <persName>Samuel Friedenberg</persName> to the <orgName role="recipient">Jewish Museum</orgName></p>
+                            <p>donated by <persName>Samuel Friedenberg</persName> to the <orgName role="recipient">Jewish Museum</orgName></p>
                         </provenance>
                         <provenance type="observed" subtype="recorded">
-                            <p>Exhibited by the <orgName>Jewish Museum</orgName> in <date when="1982">1982</date>.</p>
+                            <p>exhibited by the <orgName>Jewish Museum</orgName> in <date when="1982">1982</date>.</p>
                         </provenance>
 
                     </history>
@@ -118,8 +115,7 @@ changes: correct handling of provenance information
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external"
-                            target="https://thejewishmuseum.org/collection/18178-burial-plaque/">Jewish Museum web entry</ref>
+                        <ref type="external" target="https://thejewishmuseum.org/collection/18178-burial-plaque/">Jewish Museum web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -129,8 +125,7 @@ changes: correct handling of provenance information
 
         <encodingDesc>
 
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -175,14 +170,14 @@ changes: correct handling of provenance information
             </ab></div>
             
             <div type="translation">
-            <p>Peace.</p>
+            <p>Peace. //</p>
             <p>Here is buried Flaes the Jew.</p></div>
 
             <div type="commentary">
-            <p>Basis of verification: previous edition and photo</p></div>
+            <p>Basis of verification: previous edition and photo. The main Latin text is carved within a tabula ansata frame. The Hebrew invocation "peace" is carved to the right of the lulav at the right side of the slab.</p></div>
             
 
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

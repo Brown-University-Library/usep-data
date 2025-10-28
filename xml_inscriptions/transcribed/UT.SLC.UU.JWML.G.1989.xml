@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>UT.SLC.UU.JWML.G.1989</title>
+                <author>Ronnie Hirsch</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="UT.SLC.UU.JWML.G.1989">UT.SLC.UU.JWML.G.1989</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>UT</region>
+                        <settlement>SLC</settlement>
+                        <institution>UU</institution>
+                        <repository/>
+                        <idno>1989</idno>
+                    <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="grc" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Funerary epitaph of Helene</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p>polished limestone</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>18.7</height>
+                                        <width>22.5</width>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#fragments.contig">
+                                    <p>broken in two contiguous pieces down the middle and chipped at
+                                        the upper right corner</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="6">
+                                    <p>Another text on back - 1 line</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> The σ are lunate, the ω are cursive, the π
+                                are fully formed, and the α have ascending crossbars. The lettering
+                                is uneven and somewhat crude.</handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#palaeography" notBefore="200" notAfter="350">third to mid-fourth century</date>
+                            <placeName ref="unknown">unknown</placeName>
+                        </origin>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#JSJ_47_Blumell"/>
+                        <biblScope unit="pp">310–29</biblScope>
+                    </bibl>
+                    <!-- <bibl>
+                        <ptr type="rest-of-bibl" target="#xx"/>
+                        <biblScope type="page">Nathan, Geoffrey, “Orphanages,” in Roger S. Bagnall,
+                            Kai Brodersen, Craige B. Champion, Andrew Erskine, and Sabine R.
+                            Huebner, edd., The Encyclopedia of Ancient History , 1–4. </biblScope>
+                    </bibl> -->
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#JSJ_48_van_der_Horst"/>
+                        <biblScope unit="pp">261–65</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="Ronnie Hirsch">Initial Encoding</change>
+            <change when="2024-10-03" who="Scott J. DiGiulio">corrections to transcription markup; added translation for back; edited commentary down; cleaned metadata</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc>https://openbook.lib.utah.edu/wp-content/uploads/2016/09/Coptic_tablet.jpg</desc>
+            <graphic url="https://openbook.lib.utah.edu/wp-content/uploads/2016/09/Coptic_tablet.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+                <div type="textpart" subtype="front">
+                    <ab>
+                        <lb n="1"/>Ἐν εἰρήνῃ καὶ εὐλογ<supplied reason="lost">ίᾳ</supplied> 
+                        <lb n="2"/>Ἄμα <persName><name key="Helene Ἑλένη">Ἑλένη</name></persName> Ἰουδαία ἣ ἀ
+                        <lb n="3" break="no"/>γαποῦσα τοὺς ὀρφανούς· 
+                        <lb n="4"/>ὡς ἐτῶν <g ref="ἑξήκοντα">Ξ</g> ἔλεως καὶ εὐ
+                        <lb n="5" break="no"/>λογία ἡ ὁδὸς· ἡ ἐπορεύ
+                        <lb n="6" break="no"/>θῇ ἐν αὐτῇ.
+                    </ab>
+                </div>
+                <div type="textpart" subtype="back">
+                    <ab>
+                        <lb n="7"/>Ἐν εἰρήνῃ κὲ εὐλογίᾳ. 
+                    </ab>
+                </div>
+            </div>            
+            <div type="translation">
+            <p>Front: (Here lies) in peace and blessing mother Helene, a Jewess, who loved the
+                    orphans. (She lived for) about sixty years and compassion and blessing were the
+                    path on which she walked.</p>
+                <p> Back: In peace and blessing.</p>
+            </div>
+
+            <div type="commentary">
+                <p>An irregular slab of polished limestone, broken in two pieces down
+                    the middle and chipped at the upper right corner, with lines of
+                    ordination and traces of red paint inside the letters, although it
+                    is unclear if the paint is modern or ancient. The back side is
+                    polished with two lines of crudely inscribed text.</p>
+                <p>The text records an epitaph of a Jewish woman named Helene, which commemorates her
+                    care for orphans. Her identity and social status are unknown.</p>
+                <p>line 2: Helene is titled Ἄμα, a title that is usually given to Christian holy women and monastics, but
+                    is more likely an alternative spelling of ἄμμα or ἄμμας, which means
+                    “nurse”, “mother” or “foster mother.” This explanation is most probable as the
+                    epitaph describes a relationship with orphans, for whom Helene could have served
+                    the role of foster mother or guardian.</p>
+                <p>line 3: Helene is described as “having loved the
+                    orphans” (ἀγαποῦσα τοὺς ὀρφανούς). Orphans are usually mentioned in epitaphs in
+                    the contexts of their parents’ death, or as threats towards grave-robbers. The
+                    references to a relationship between orphans and a woman who is not their kin is
+                    therefore unique. The verb ἀγαπάω does appear in Jewish epitaphs, but nowhere else in the context of
+                    caring for orphans. This might imply that Helene’s care for the orphans was a
+                    voluntary act of charity.</p></div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

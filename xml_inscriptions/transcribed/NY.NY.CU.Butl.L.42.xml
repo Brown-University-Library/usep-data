@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -33,7 +31,7 @@
                   <institution>CU</institution>
                   <repository>Butl</repository>
                   <idno>42</idno>
-               </msIdentifier>
+               <altIdentifier type="TM_number"><idno>no TM</idno></altIdentifier></msIdentifier>
                <msContents>
                   <textLang mainLang="lat"/>
                   <msItem class="#funerary.epitaph">
@@ -96,12 +94,14 @@
                   <ptr type="rest-of-bibl" target="#unpub"/>
                   <biblScope unit="item"/>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR171721">EDR171721</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -116,11 +116,14 @@
          <change when="2020-03-22" who="Gaia Gianni">Deleted image filename</change>
          <change when="2020-05-19" who="Scott J. DiGiulio">Changed provenance information to match new USEP standards; added missing bibl div</change>
          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.chiseled to inscribed</change>
+         <change when="2024-10-03" who="Norah Mezey-McMahon">Linked image</change>
+         <change when="2024-12-11" who="Advaith Rege">Added EDR citation</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <surface>
          <desc/>
+         <graphic url="#NY.NY.CU.Butl.L.42.jpg"/>
       </surface>
    </facsimile>
    <text>
@@ -139,8 +142,7 @@
             <p>3) the small circle at the end of the first and last lines is confusing, because the cognomen Hilario is attested; on balance this seems more likely to be decorative (cf. the border) rather than implying Hilario(nis). This follows the reading by Bodel and Tracy (1997), p. 156, i.e. "epitaph of Au. Pompeius Au.l. Hilarus (et al.)".</p>
          </div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Ep bibliography</p>
                </xi:fallback>

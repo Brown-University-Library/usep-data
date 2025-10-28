@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
@@ -49,14 +47,14 @@
                   <institution>JHU</institution>
                   <repository/>
                   <idno>03.02.07.BS</idno>
-               </msIdentifier>
+               <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
                <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
                   <textLang mainLang="lat"/>
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                   <msItem class="#label">
                         <!-- short summary of the content of an inscription -->
-                     <p>Brick stamp of Titus Statilius Maximius Severus Hadrianus</p>
+                     <p>brickstamp of Titus Statilius Maximius Severus Hadrianus.</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
@@ -156,8 +154,7 @@
       <!--  *************************************  <encodingDesc>  ********************************* -->
       <!-- information about the encoding and controlled vocabularies. Do not edit -->
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -172,6 +169,7 @@
          <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2020-10-20" who="Scott J. DiGiulio">Relocated letter dimensions to proper place</change>
          <change when="2021-03-24" who="Elli Mylonas">Change clay.brick to clay.terracotta</change>
+         <change when="2024-03-18" who="Sasha Floru">Fixed interpretive transcription, added diplomatic transcription, brickstamp-specific commentary </change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -184,7 +182,25 @@
    </facsimile>
    <text>
       <body>
+         
+         
          <div type="edition"><!-- transcription goes here -->
+            
+            
+            <div type="textpart" subtype="diplomatic">
+               
+               <ab> &#x2028;            
+                  <lb n="1"/> EX·FIG·T·S·M SEVERI            
+                  <lb n="2" break="no"/> EX·PR NON·IVL·SER·III COS 
+                  <lb n="3" break="no"/> PONTI·VERI·
+                  
+               </ab>
+               
+            </div>  
+            
+            
+            <div type="textpart" subtype="interpretive">
+               
             <ab>
                <lb n="1"/> Ex <expan><abbr>fig</abbr><ex>linis</ex></expan>
                <persName>
@@ -201,17 +217,18 @@
                </persName>,
                 <lb n="2"/> ex <expan><abbr>pr</abbr><ex>aedis</ex></expan>
                <persName>
-                  <name type="gentilicium" key="Nonius">
-                     <expan><abbr>Non</abbr><ex>i</ex></expan>
-                  </name>
+                  
+                     <expan><abbr>Non</abbr><ex>ianis</ex></expan>
+                  
                   <name type="cognomen" key="Iulianus">
-                     <expan><abbr>Iul</abbr><ex cert="low">iani</ex></expan>
+                     <expan><abbr>Iul</abbr><ex cert="low">io</ex></expan>
                   </name>
                </persName>, <persName>
                   <name type="cognomen" key="Servianus">
                      <expan><abbr>Ser</abbr><ex>viano</ex></expan>
                   </name>
                </persName>
+               
                <expan><ex>tertium</ex></expan>
                <expan><abbr>co</abbr><ex>n</ex><abbr>s</abbr><ex>ule</ex></expan>,
                 <lb n="3"/>
@@ -220,20 +237,30 @@
                   <name type="cognomen" key="Verus">Veri</name>
                </persName>.
                 
-                
-                
-            </ab>
+                   </ab>
+            </div>
+            
          </div>
+         
          <div type="translation">
-            <p>“From the clay-yard of Titus Statilius Maximus Severus, from the estate of Nonus Iulianus, in the third consulship of  Servianus, made by Pontius Verus”.</p>
+            <p> </p>
          </div>
          <div type="commentary"><!-- notes go here -->
+            
+            <p> form: BDRCO 110 (Rectangular with raised letters) </p>                    
+            <p> dating: 134, Steinby Chronologia p. 000</p>               
+            <p> signum:  </p>
+            <p> verification: photo</p>   
+            
+            
             <p>Line 1: Titus Statilius Maximus Severus Hadrianus, consul suffectus in 115 CE, was the owner of the <hi rend="italic">figlinae Brutinianae</hi>. His name is impressed on bricks from the <hi rend="italic">figlinae Brutianae</hi> dating from 123 to 134 CE.</p>
+            <p>Line 2: The mention of the Noniana praedia shows that this stamp was manufactured at the figlinae Brutianae (Bloch commentary on S.18)</p>
             <p>Line 3: The name Pontius Verus is attested only once, on this brick stamp.</p>
+            
+            
          </div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>

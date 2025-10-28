@@ -1,12 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- v. 20. 2019-10-04 EM  -->
-<!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          -->
-<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+          --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -34,7 +30,7 @@ changes: Added @evidence to date
                   <institution>MMA</institution>
                   <repository/>
                   <idno>48.76.1</idno>
-               </msIdentifier>
+               <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
                <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
@@ -129,17 +125,19 @@ changes: Added @evidence to date
                   <ptr type="rest-of-bibl" target="#IG_XIV"/>
                   <biblScope unit="item">943</biblScope>
                </bibl>
+                     <bibl>
+                  <ptr type="rest-of-bibl" target="#Ulf_Mauritsch_2013_Harter"/>
+                  <biblScope unit="pp">177-91</biblScope>
+               </bibl>
                <bibl>
-                  <ref type="external"
-                        target="https://www.metmuseum.org/art/collection/search/468268">Metropolitan Museum Web Entry</ref>
+                  <ref type="external" target="https://www.metmuseum.org/art/collection/search/468268">Metropolitan Museum Web Entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <!--  *************************************  <encodingDesc>  ********************************* -->
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -157,6 +155,7 @@ changes: Added @evidence to date
          <change when="2021-01-27" who="Elli Mylonas">removed incorrect second facsimile
                 element</change>
          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2025-09-18" who="Scott J. DiGiulio">updated bibliography</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -226,8 +225,7 @@ changes: Added @evidence to date
             <p/>
          </div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Ep bibliography</p>
                </xi:fallback>

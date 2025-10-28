@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>MI.Detr.DIA.L.37.178</title>
+                <author>Jen McLish</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="MI.Detr.DIA.L.37.178">MI.Detr.DIA.L.37.178</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>MI</region>
+                        <settlement>Detr</settlement>
+                        <institution>DIA</institution>
+                        <repository/>
+                        <idno>37.178</idno>
+                        <altIdentifier type="TM_number"><idno>584751</idno></altIdentifier>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Epitaph of a man</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#base">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p>rectangular marble base in the shape of an altar</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>83.8</height>
+                                        <width>52.1</width>
+                                        <depth>30.5</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p>damaged on right front</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="10">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>Molding around the campus. Patera on upper right face and urceus
+                                    on upper left </p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#palaeography" notBefore="0079" notAfter="0091">80-90
+                                CE</date>
+                            <placeName ref="europe.italy"/>
+                        </origin>
+                        <provenance type="found" subtype="discovered">
+                            <p>Initially discovered near the Via Aurelia, Villa Carpinea </p>
+                        </provenance>
+                        <provenance type="transferred" subtype="sold">
+                            <p>At some point, sold by <persName role="seller">Arturo Grassi</persName></p>
+                        </provenance>
+                        <provenance type="transferred" subtype="given"> 
+                            <p>Given by <persName role="donor">Edsel B. Ford</persName> to <orgName role="recipient">Detroit Institute
+                            of Arts</orgName> </p>
+                        </provenance>
+                        <provenance type="observed" subtype="reported">
+                            <p>Seen, photographed, and discussed by <persName role="reporter">P. Visonà</persName> in <date when="1983">1983</date></p>
+                        </provenance>
+                        
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                  <bibl>
+                      <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                      <biblScope unit="item">21992</biblScope>
+                  </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#ZPE_52_Visona"/>
+                        <biblScope unit="page">82-84</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
+                        <biblScope unit="page">129</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143173">EDR143173</ref>, with further bibliography
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://dia.org/collection/funerary-monument-m-manneius-amphio-58905">Detroit Institute of Arts Web Entry</ref>
+                    </bibl>
+                    </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-16" who="Jen McLish">Initial Encoding</change>
+            <change when="2025-01-17" who="Scott J. DiGiulio">corections/general polishing to metadata, added items to bibliography (taking most salient items from EDR), proofed transcription against photo</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="MI.Detr.DIA.L.37.178.jpg"/>
+        </surface><surface>
+            <desc>Photograph of front of base</desc>
+            <graphic url="https://dia.widen.net/content/qqcpmbm8l3/webp/37.178.webp?quality=75"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/>D<hi rend="tall">i</hi>s Manibus
+                <lb n="2"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arci</ex></expan></name> <name type="gentilicium" key="Manneius">Mannei</name> <name type="cognomen" key="Amphion">Amphioni<unclear>s</unclear>.</name></persName>
+                <lb n="3"/><persName><name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arcus</ex></expan></name> <name type="gentilicium" key="Manneius">Manneius</name> <name type="cognomen" key="Zethus">Zethu<supplied reason="lost">s</supplied></name></persName>
+                <lb n="4"/>frater gemin<unclear>o</unclear>
+                <lb n="5"/>carissimo
+                <lb n="6"/>bene merenti <supplied reason="undefined" evidence="previouseditor">et</supplied>
+                <lb n="7"/><persName><name type="gentilicium" key="Manneia">Manneia</name> <name type="cognomen" key="Lamyra">Lamyr<supplied reason="lost">a</supplied></name></persName>
+                <lb n="8"/>patrono optimo et
+                <lb n="9"/>dignissimo
+                <lb n="10"/>fecerunt. 
+            </ab></div>
+            
+            <div type="translation">
+                <p>To the divine spirits of Marcus Manneius Amphion. His brother Marcus Manneius Zethus and Manneia Lamyra made (this) for his dearest and well-deserving twin and for her best and most worthy patron.</p>
+                </div>
+
+            <div type="commentary">
+                <p>Line 1: Long <hi rend="italic">I</hi> in <hi rend="italic">Dis</hi>. De Rossi does not record interpunct between these words.</p>
+                <p>Line 3: De Rossi records the symbols here, but reverses their correct sides, with patera on left and urceus on right.</p>
+                <p>Line 4: <hi rend="italic"><unclear>Z</unclear>ethus</hi> Visonà. De Rossi does not record interpunct between these words.</p>
+                <p>Line 6: <hi rend="italic">benemerenti et</hi> De Rossi.</p>
+                <p>Line 7: <hi rend="italic">Lamyra</hi> Visonà and De Rossi.</p>
+                <p>Line 10: Spacing inconsistent; it appears carver attempted to maintain centered position of <hi rend="italic">fecerunt</hi> by shrinking the spaces between later letters.</p>
+                <p>Interpuncts between words, excluding <hi rend="italic">bene merenti</hi> line 6 and <hi rend="italic">patrono optimo</hi> line 8.</p></div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>

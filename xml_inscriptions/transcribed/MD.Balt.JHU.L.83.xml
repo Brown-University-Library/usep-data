@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
             <!-- *************************************  <titleStmt>  *********************************
@@ -49,7 +47,7 @@
                   <institution>JHU</institution>
                   <repository/>
                   <idno>83</idno>
-               </msIdentifier>
+               <altIdentifier type="TM_number"><idno>598277</idno></altIdentifier></msIdentifier>
                <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
                   <textLang mainLang="lat"/>
@@ -140,14 +138,16 @@
                   <ptr type="rest-of-bibl" target="#CIL_VI"/>
                   <biblScope unit="item">38439</biblScope>
                </bibl>
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR144454">EDR144454</ref>
+               </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <!--  *************************************  <encodingDesc>  ********************************* -->
       <!-- information about the encoding and controlled vocabularies. Do not edit -->
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -160,6 +160,7 @@
          <change when="2014-10-01" who="Alvaro Pires">Initial Encoding</change>
          <change when="2015-09-07" who="Scott J. DiGiulio">Cleaned metadata and bibl, added image, proofed transcription, added AP's translation</change>
          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2024-12-11" who="Advaith Rege">Added EDR citation</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -195,8 +196,7 @@
                     two-thirds of stone bare of any writing.</p>
          </div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>

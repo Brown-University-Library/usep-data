@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader><!-- testing1 -->
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <!-- testing1 -->
       <fileDesc>
          <titleStmt>
             <title>MA.Bos.MFA.G.01.7478</title>
@@ -16,8 +15,7 @@
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
                <xi:fallback>
                   <p>The Publications Statement should appear here. (c) Brown University</p>
                </xi:fallback>
@@ -32,27 +30,98 @@
                   <institution>MFA</institution>
                   <repository/>
                   <idno>01.7478</idno>
-               </msIdentifier>
+               <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
                <msContents>
                   <textLang mainLang="grc" otherLangs=""/>
-                  <msItem>
-                     <p/>
+                  <msItem class="#label">
+                     <p>label suggesting ownership of strigil by Apollodoros</p>
                   </msItem>
                </msContents>
-               <physDesc><!--objectDesc, handDesc, decoDesc go here--></physDesc>
-               <history><!--summary, origin, provenance go here--></history>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  <objectDesc ana="#instrumentum.toiletries">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p> bronze strigil</p>
+                           <dimensions type="surface" unit="cm">
+                              <height/>
+                              <width>27 </width>
+                              <depth/>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  <handDesc hands="1">
+                     <handNote ana="#stamped"> </handNote>
+                  </handDesc>
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p> incised lines in a floral motif on front of handle</p>
+                     </decoNote>
+                     <decoNote>
+                        <p>incised lines in the form of a tree stem on back of handle</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <!--  *************************************  <history>  *********************************  -->
+               <history>
+                  <summary>
+                     <rs/>
+                     <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  <origin>
+                     <date evidence="#unspecified" notBefore="-0349" notAfter="-0289">about 350–290
+                        B.C.</date>
+                     <placeName ref="europe.italy">South Italy, Apulia or Campania</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p> purchased by the <orgName role="buyer">MFA</orgName> from <persName role="seller">Edward Perry Warren</persName> in December <date when="1901">1901</date>
+                     </p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p> by <persName role="buyer">Edward Perry Warren</persName> from <persName role="seller">Ready</persName></p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p> purchased by <persName role="buyer">Ready</persName> from <persName role="seller">Hoffman</persName></p>
+                  </provenance>
+                  <provenance type="transferred" subtype="purchased">
+                     <p>purchased by <persName role="buyer">Hoffman</persName> from <persName role="seller">Stevens of Naples</persName></p>
+                  </provenance>
+                  <provenance type="found" subtype="first-recorded">
+                     <p>found by <persName role="seller">Stevens of Naples</persName> from
+                           <placeName ref="europe.italy">Cumae</placeName></p>
+                  </provenance>
+               </history>
             </msDesc>
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#CVB"/>
-                  <biblScope unit="item">no. 612</biblScope>
+                  <biblScope unit="num" type="item">612</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CVAdd"/>
+                  <biblScope unit="pp" type="page">126</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external" target="https://collections.mfa.org/objects/153253/scraper-strigil;jsessionid=FD6E9423ECC625ABB5ACF107EDA3F80B">MFA web entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
                <p>Taxonomies for US Epigraphy controlled values</p>
             </xi:fallback>
@@ -60,19 +129,42 @@
       </encodingDesc>
       <profileDesc/>
       <revisionDesc>
-         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009
+            EpiDoc</change>
          <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-06-20" who="Jean Wanlass">added information to bib-only stub </change>
+         <change who="Jean Wanlass" when="2023-12-10">updated metadata and transcription that
+            weren't included in last update</change>
+         <change when="2024-03-11" who="Scott J. DiGiulio">tweaks/corrections to transcription</change>
       </revisionDesc>
    </teiHeader>
-   <!--facsimile element goes here-->
+  
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.01.7478.jpg"/>
+      </surface>
+   </facsimile>
+
    <text>
       <body>
          <div type="edition">
-         <!--The marked up transcription goes here, surrounded by <ab> </ab> elements-->
+            <ab>
+               <lb n="1"/><persName><name key="Apollodoros Ἀπολλόδωορς">Ἀπολλο<supplied reason="lost">δ</supplied>ώρω</name></persName>.</ab>
+         </div>
+         <div type="translation">
+            <p>of (or by) Apollodoros</p>
+         </div>
+         <div type="commentary">
+            <p>"in retrograde"; briefly mentioned mention in Blegen, Carl W., et al. “The North
+               Cemetery,” Corinth 13 (1964) 94 nt. 9. </p>
+            <p>verification: photo, MFA web entry; 2023</p>
          </div>
          <div type="bibliography">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
                   <p>US Epigraphybibliography</p>
                </xi:fallback>

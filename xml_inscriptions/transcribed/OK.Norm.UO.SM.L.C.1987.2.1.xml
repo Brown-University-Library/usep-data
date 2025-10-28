@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          --><!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>OK.Norm.UO.SM.L.C.1987.2.1</title>
+                <author>Joseph Carrino</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Scott J. DiGiulio</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="OK.Norm.UO.SM.L.C.1987.2.1">OK.Norm.UO.SM.L.C.1987.2.1</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>OK</region>
+                        <settlement>Norm</settlement>
+                        <institution>UO</institution>
+                        <repository>SM</repository>
+                        <idno>C.1987.2.1</idno><altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>Fragment of a funerary epitaph</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#slab #fragment">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p>Fragments of a marble slab</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>27</height>
+                                        <width>33</width>
+                                        <depth>2.5</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#broken">
+                                    <p>broken on top and left</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="4">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#formulae" notBefore="0001" notAfter="0100">mid-first century CE</date>
+                            <placeName ref="europe.italy.ostia https://pleiades.stoa.org/places/422995">Ostia Antica</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="given"> 
+                            <p> Given to the <orgName>Sam Noble Oklahoma Museum of Natural History, University of Oklahoma</orgName> in
+                                <date when="1987">1987</date> by <persName role="donor">Frank L. Dennis</persName></p>
+                        </provenance>
+                        <provenance type="found" subtype="rediscovered"><p>
+                            Picked up in a field at <placeName ref="https://pleiades.stoa.org/places/422995">Ostia Antica</placeName> in <date when="1954">1954</date> by <persName role="finder">Frank L. Dennis</persName></p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#unpub"/>
+                        <biblScope unit="page">00</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2024-05-17" who="Joseph Carrino">Initial Encoding</change>
+            <change when="2025-01-15" who="Scott J. DiGiulio">corrected errors in metadata and controlled vocab; added synthetic description; rewrote transcription from plaintext to EpiDoc</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="OK.Norm.UO.SM.L.C.1987.2.1.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+                <lb n="2"/><gap reason="lost" unit="character" extent="unknown"/> carissim<supplied reason="lost">o</supplied>
+                <lb n="3"/><gap reason="lost" unit="character" extent="unknown"/><supplied reason="lost">libertis lib</supplied>ertabusque
+                <lb n="4"/><gap reason="lost" unit="character" extent="unknown"/><supplied reason="lost">posteri</supplied>sque eorum.
+            </ab>
+            </div>
+            
+            <div type="translation">
+            <p>For the beloved. For freedmen and -women and their descendants.</p></div>
+
+            <div type="commentary">
+            <p>Line 2 is restored as carrissimo (dat. sing.) assuming it would modify an
+                    individual’s name that came after and before libertis. Based on the established formula, it is likely that there
+                    would have been an individual(s) named at the start of the epitaph. (c.f. CIL
+                    6.39654). Similar formulae also help to date this inscription to the 1st century
+                    CE (e.g., CIL 6. 19237). </p></div>
+            
+
+            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
