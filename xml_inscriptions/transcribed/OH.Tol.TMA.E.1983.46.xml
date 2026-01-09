@@ -17,7 +17,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>MA.Camb.HU.Sack.L.1977.2116.1992-mdn</title>
+                <title>OH.Tol.TMA.E.1983.46</title>
                 <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -25,32 +25,32 @@ changes: correct handling of provenance information -->
                 </respStmt>
                 <respStmt>
                     <resp>Commentary</resp>
-                    <name>John Bodel</name>
+                    <name>Commenter</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="MA.Camb.HU.Sack.L.1977.2116.1992-mdn">MA.Camb.HU.Sack.L.1977.2116.1992-mdn</idno>
+                <idno type="USEpigraphy" xml:id="OH.Tol.TMA.E.1983.46">OH.Tol.TMA.E.1983.46</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>MA</region>
-                        <settlement>Camb</settlement>
-                        <institution>HU</institution>
+                        <region>OH</region>
+                        <settlement>Tol</settlement>
+                        <institution>TMA</institution>
                         <repository></repository>
-                        <idno>1977.216.1992</idno>
+                        <idno>1983.46</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
+                        <textLang mainLang="ett" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>'speaking' inscription identifying maker and recipient</p>
+                            <p>dedication by Laris Rathmsnas</p>
                         </msItem>
                     </msContents>
 
@@ -59,23 +59,22 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.jewelry">
-                            <supportDesc ana="#metal.bronze">
+                        <objectDesc ana="#object_other">
+                            <supportDesc ana="#stone.other">
                                 <support>
-                                    <p>gilded copper alloy fibula</p>
+                                    <p> stone statuette base</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>11</height>
-                                        <width/>
-                                        <depth/>
+                                        <height>15</height>
+                                        <dim unit="cm" type="diameter">11.8</dim>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.intact">
-                                    <p/>
+                                <condition ana="#complete.broken">
+                                    <p>missing statuette</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
+                                <layout columns="1" writtenLines="3">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -84,8 +83,7 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#writing.other"> inscription part of replica's
-                                casting</handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -101,26 +99,28 @@ changes: correct handling of provenance information -->
                     <history>
 
                         <summary>
-                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="1900" notAfter="1977">first half of the twentieth century?</date>
-                            <placeName ref="europe.italy">Praeneste</placeName>
+                            <date evidence="#archaeology" notBefore="-0400" notAfter="-0200">fourth
+                                to third century BCE</date>
+                            <placeName ref="europe.italy">Etruria</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="purchased">
-                            <p>replica purchased in <placeName>Rome (?)</placeName> by the <orgName>Department of Classics, Harvard University</orgName>.</p>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Appeared on the art market in <date when="1982">1982</date> with <persName role="seller">Robin Symes</persName>.</p>
                         </provenance>
-                        <provenance type="transferred" subtype="moved">
-                            <p>moved to the Arthur M. Sackler Museum.</p>
+                        <provenance type="transferred" subytype="given">
+                            <p>Given by <persName role="donor">Christo Michaelides</persName> to the <orgName role="recipient">Toledo Museum of Art</orgName> in <date when="1983">1983</date>.</p>
                         </provenance>
+
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://harvardartmuseums.org/collections/object/286341">Sackler Museum web entry</ref>
+                        <ref type="external" target="https://emuseum.toledomuseum.org/objects/65970/inscribed-statuette-base-dedicated-by-laris-rathmsnas">TMA web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -146,7 +146,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2025-04-05" who="Advaith Rege">Initial Encoding</change>
+            <change when="2025-09-19" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -157,23 +157,33 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="MA.Camb.HU.Sack.L.1977.2116.1992-mdn.jpg"/>
+            <graphic url="OH.Tol.TMA.E.1983.46.jpg"/>
+        </surface>
+        <surface>
+            <desc/>
+            <graphic url="OH.Tol.TMA.E.1983.46 (back).jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
-            <div type="edition">
-                <ab>
-                    <lb n="1"/><name key="Manius">Manios</name> med fhefhaked <name key="Numasius">Numasioi</name>.
-                </ab>
-            </div>
+            <div type="edition" subtype="transliteration_ltn">
+            <ab>
+                <lb n="1" style="text-direction:r-to-l"/>
+                    <persName>
+                        <name key="Laris">Laris</name>
+                    
+                <lb n="2"/>
+                        <name type="gentilicium" key="Rathmsnas">Rathmsnas</name>
+                    </persName>
+                <lb n="3"/>turce.
+            </ab></div>
             
             <div type="translation">
-            <p>Manios made me for Numasios.</p></div>
+            <p>Laris Rathmsnas dedicated (this).</p></div>
 
             <div type="commentary">
-            <p>The letter forms of the replica are cast, whereas the original incription is incised, and differ slightly from those of the original. The replica lacks the pin itself and one of the cylindrical elements of the bow.</p></div>
+            <p>Basis of verification: TMA web entry, photo</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>

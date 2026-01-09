@@ -17,7 +17,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>MA.Camb.HU.Sack.L.1977.2116.1992-mdn</title>
+                <title>OH.Tol.TMA.L.1924.62</title>
                 <author>Advaith Rege</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -25,32 +25,32 @@ changes: correct handling of provenance information -->
                 </respStmt>
                 <respStmt>
                     <resp>Commentary</resp>
-                    <name>John Bodel</name>
+                    <name>Commenter</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="MA.Camb.HU.Sack.L.1977.2116.1992-mdn">MA.Camb.HU.Sack.L.1977.2116.1992-mdn</idno>
+                <idno type="USEpigraphy" xml:id="OH.Tol.TMA.L.1924.62">OH.Tol.TMA.L.1924.62</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>MA</region>
-                        <settlement>Camb</settlement>
-                        <institution>HU</institution>
+                        <region>OH</region>
+                        <settlement>Tol</settlement>
+                        <institution>TMA</institution>
                         <repository></repository>
-                        <idno>1977.216.1992</idno>
+                        <idno>1924.62</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+                        <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                            <p>'speaking' inscription identifying maker and recipient</p>
+                            <p>epitaph for family of Julia Modesta</p>
                         </msItem>
                     </msContents>
 
@@ -59,14 +59,14 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#instrumentum.jewelry">
-                            <supportDesc ana="#metal.bronze">
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.marble">
                                 <support>
-                                    <p>gilded copper alloy fibula</p>
+                                    <p> marble slab</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>11</height>
-                                        <width/>
-                                        <depth/>
+                                        <height>36.8</height>
+                                        <width>69.2</width>
+                                        <depth>4.4</depth>
                                     </dimensions>
                                 </support>
                                 <condition ana="#complete.intact">
@@ -75,7 +75,7 @@ changes: correct handling of provenance information -->
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="1">
+                                <layout columns="1" writtenLines="6">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -84,8 +84,7 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#writing.other"> inscription part of replica's
-                                casting</handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -101,26 +100,35 @@ changes: correct handling of provenance information -->
                     <history>
 
                         <summary>
-                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="1900" notAfter="1977">first half of the twentieth century?</date>
-                            <placeName ref="europe.italy">Praeneste</placeName>
+                            <date evidence="#palaeography" notBefore="0001" notAfter="0200">first to
+                                second century CE</date>
+                            <placeName ref="europe.italy.rome">Via Casilina</placeName>
                         </origin>
-                        <provenance type="transferred" subtype="purchased">
-                            <p>replica purchased in <placeName>Rome (?)</placeName> by the <orgName>Department of Classics, Harvard University</orgName>.</p>
+                        <provenance type="found" subtype="discovered">
+                            <p>Found in <date when="1912">1912</date> in a tomb in <placeName>Via Labicana, Rome</placeName>.</p>
                         </provenance>
-                        <provenance type="transferred" subtype="moved">
-                            <p>moved to the Arthur M. Sackler Museum.</p>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Acquired by the <orgName role="recipient">Toledo Museum of Art</orgName> from <persName role="seller">Harold Woodbury Parsons</persName> through the mediation of the <orgName>American Academy in Rome</orgName> in <date when="1924">1924</date>.</p>
                         </provenance>
+
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://harvardartmuseums.org/collections/object/286341">Sackler Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">37613</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://emuseum.toledomuseum.org/objects/65980/funerary-inscription-for-julia-prima">TMA web entry</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?visua=si&amp;id_nr=EDR168453">EDR168453</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -146,7 +154,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2025-04-05" who="Advaith Rege">Initial Encoding</change>
+            <change when="2025-09-12" who="Advaith Rege">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -157,23 +165,40 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="MA.Camb.HU.Sack.L.1977.2116.1992-mdn.jpg"/>
+            <graphic url="OH.Tol.TMA.L.1924.62.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-                <ab>
-                    <lb n="1"/><name key="Manius">Manios</name> med fhefhaked <name key="Numasius">Numasioi</name>.
-                </ab>
-            </div>
+            <ab>
+                <lb n="1"/>
+                    <persName>
+                        <name type="gentilicium" key="Iulia">Iulia</name>
+                        <name type="cognomen" key="Modesta">Modesta</name>
+                    </persName> fecit
+                    <persName>
+                        <name type="gentilicium" key="Iulia">Iuliae</name>
+                <lb n="2"/>
+                        <name type="cognomen" key="Prima">Primae</name>
+                    </persName> matri suae dul
+                <lb n="3" break="no"/>cissimae cum
+                    <persName>
+                        <name type="praenomen" key="Marcus"><expan><abbr>M</abbr><ex>arco</ex></expan></name>
+                        <name type="gentilicium" key="Iunius">Iunio</name>
+                <lb n="4"/>
+                        <name type="cognomen" key="Eutychus">Eutycho</name>
+                    </persName> coniuge suo et
+                <lb n="5"/>libertis libertabusque <expan><abbr>posterisq</abbr><ex>ue</ex></expan>
+                <lb n="6"/>suorum. In <expan><abbr>fr</abbr><ex>onte</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="5">V</num>, in <expan><abbr>agr</abbr><ex>o</ex></expan> <expan><abbr>p</abbr><ex>edes</ex></expan> <num value="10">X</num>.
+            </ab></div>
             
             <div type="translation">
-            <p>Manios made me for Numasios.</p></div>
+                <p>Julia Modesta made (this) for her sweetest mother, Julia Prima, with her husband Marcus Junius Eutychus and their freedmen, freedwomen, and their descendants. In width, five feet, in depth, ten feet.</p></div>
 
             <div type="commentary">
-            <p>The letter forms of the replica are cast, whereas the original incription is incised, and differ slightly from those of the original. The replica lacks the pin itself and one of the cylindrical elements of the bow.</p></div>
+            <p>Basis of verification: TMA web entry, photo</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
