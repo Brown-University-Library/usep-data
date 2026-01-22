@@ -17,7 +17,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.L.MS5735</title>
+                <title>PA.Phil.UP.UM.G.E13376</title>
                 <author>Author</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,7 +30,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.MS5735">PA.Phil.UP.UM.L.MS5735</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.E13376">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -41,16 +41,16 @@ changes: correct handling of provenance information -->
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>MS5735</idno>
+                        <idno>E13376</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
+                        <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p/>
+                            <p>Foundation-deposit with Greek inscription on five faces.</p>
                         </msItem>
                     </msContents>
 
@@ -59,25 +59,25 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#slab #object_other">
+                            <supportDesc ana="#stone.other">
                                 <support>
-                                    <p> </p>
+                                    <p>Inscribed foundation-deposit in gilded limestone.</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>16.5</height>
-                                        <width>14.1</width>
-                                        <depth>2.4</depth>
+                                        <height>5.4</height>
+                                        <width>5.4</width>
+                                        <depth>10.5</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#condition.unknown">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="6">
-                                    <p>Four contiguous lines, a space, and then two more contiguous
-                                        lines</p>
+                                <layout columns="5" writtenLines="10">
+                                    <p>The inscription consists of ten lines of text distributed
+                                        across five faces of the object.</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -105,8 +105,9 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#palaeography">Date to be displayed</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#archaeology" notBefore="-0223" notAfter="-0203">222-204
+                                BCE</date>
+                            <placeName ref="africa.egypt">Abydos</placeName>
                         </origin>
 
 
@@ -115,11 +116,12 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/242271">University of Pennsylvania Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target=""/>
+                        <biblScope unit="page">00</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">211</biblScope>
+                        <ptr type="rest-of-bibl" target="#xx"/>
+                        <biblScope type="item">reference here</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -145,9 +147,8 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2025-03-13" who="Mac Carley">Initial Encoding</change>
-            <change when="2025-10-14" who="Davide Pironi">attempted a transcription and a
-                commentary</change>
+            <change when="2025-11-11" who="Davide Pironi">Initial Encoding: metadata, transcription,
+                translation, and commentary.</change>
         </revisionDesc>
 
     </teiHeader>
@@ -157,33 +158,65 @@ changes: correct handling of provenance information -->
 
     <facsimile>
         <surface>
-            <desc/>
-            <graphic url="PA.Phil.UP.UM.G.MS5735.jpg"/>
+            <desc>side a</desc>
+            <graphic url="PA.Phil.UP.UM.G.E13376-a.jpg"/>
+        </surface>
+        <surface>
+            <desc>side b</desc>
+            <graphic url="PA.Phil.UP.UM.G.E13376-b.jpg"/>
+        </surface>
+        <surface>
+            <desc>side c</desc>
+            <graphic url="PA.Phil.UP.UM.G.E13376-c.jpg"/>
+        </surface>
+        <surface>
+            <desc>side d</desc>
+            <graphic url="PA.Phil.UP.UM.G.E13376-d.jpg"/>
+        </surface>
+        <surface>
+            <desc>side e</desc>
+            <graphic url="PA.Phil.UP.UM.G.E13376-e.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>
-                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>PILO<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>TI<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>NO<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>MINO<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>
-            </ab>
+                <ab>
+                    <div type="textpart" subtype="face" n="a">
+                        <lb n="1"/>Σαράπιδι Ὀσείριδι
+                        <lb n="2"/>Μεγίστωι
+                        <lb n="3"/>Σωτῆρι
+                    </div>
+                    <div type="textpart" subtype="face" n="b">
+                        <lb n="1"/>Διόσκορος
+                    </div>
+                    <div type="textpart" subtype="face" n="c">
+                        <lb n="1"/>ἐγλογι
+                        <lb n="2" break="no"/>στὴς
+                    </div>
+                    <div type="textpart" subtype="face" n="d">
+                        <lb n="1"/>τοῦ νομου
+                    </div>
+                    <div type="textpart" subtype="face" n="e">
+                        <lb n="1"/>ᾠκοδό
+                        <lb n="2" break="no"/>μησεν ἐπ’ 
+                        <lb n="3"/><expan>ἐπ’ ἀγαθ<ex>ῶι</ex></expan>
+                    </div>
+                </ab>
             </div>
             
             <div type="translation">
-            <p></p></div>
+            <p>To Serapis-Osiris, Greatest Savior, Dioskos, accountant of the law, built (this) for the good.</p></div>
 
             <div type="commentary">
-                <p>The front and back are smoothly finished, but no original edges are preserved.
-                    The six-line inscription is fragmentary and difficult to read; however, the
-                    lettering style may point to a late or Christian date, with the last readable
-                    line bearing the formula 'domino.'</p>
-                <p/></div>
+            <p>Petrie 1902 provides information on the discovery of the object, which was located in
+                    the temenos wall of the Temple of Sety I at Abydos. This block, probably part of
+                    a foundation-deposit, was found near the stone pylon and thus attests to the
+                    rebuilding of the temple by Ptolemy IV Philopator, reflecting a Ptolemaic
+                    interest in the site of Abydos.</p></div>
+            
+
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
