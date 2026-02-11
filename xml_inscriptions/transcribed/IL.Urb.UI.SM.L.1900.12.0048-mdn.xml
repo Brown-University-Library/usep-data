@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>IL.Urb.UI.SM.L.1900.12.0048-mdn</title>
+                <author>Advaith Rege</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="IL.Urb.UI.SM.L.1900.12.0048-mdn">IL.Urb.UI.SM.L.1900.12.0048-mdn</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>IL</region>
+                        <settlement>Urb</settlement>
+                        <institution>UI</institution>
+                        <repository>SM</repository>
+                        <idno>1900.12.0048</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.other">
+                            <!-- short summary of the content of an inscription -->
+                            <p>epitaph of Lucius Abuccius Pothus and Abuccia Arescusa</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#ash_urn">
+                            <supportDesc ana="#plaster">
+                                <support>
+                                    <p> plaster cast of ash urn</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>46.1</height>
+                                        <width>21.4</width>
+                                        <depth>32.8</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.intact">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="3">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>column at each end; leaves around campus</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#archaeology" notBefore="0050" notAfter="0069">third
+                                quarter of the first century CE</date>
+                            <placeName ref="europe.italy.rome">Tomb of the Abuccii, Via
+                                Latina</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="moved">
+                            <p>Original urn brought from <placeName>Rome</placeName> to <placeName>Paris</placeName> by <persName>Melchior Cardinal de Polignac</persName> in <date when="1732">1732</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.spurlock.illinois.edu/collections/search-collection/details.php?a=1900.12.0048">SM web entry</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR105965">EDR105965</ref>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_VI"/>
+                        <biblScope unit="item">8171</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2025-10-26" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="IL.Urb.UI.SM.L.1900.12.0048-mdn.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/>Manibus.
+                <lb n="2"/>
+                    <persName>
+                        <name type="praenomen" key="Lucius"><expan><abbr>L</abbr><ex>uci</ex></expan></name>
+                        <name type="gentilicium" key="Abuccius">Abucci</name>
+                        <name type="cognomen" key="Pothus">Pothi</name>
+                    </persName> vernae,
+                <lb n="3"/>
+                    <persName>
+                        <name type="gentilicium" key="Abuccia">Abucciae</name>
+                        <name type="cognomen" key="Arescusa">Arescusae</name>
+                    </persName><expan><abbr>l</abbr><ex>ibertae</ex></expan>.
+            </ab></div>
+            
+            <div type="translation">
+            <p>To the divine spirits. Of Lucius Abuccius Pothus, a homeborn slave, of Abuccia Arescusa, a freedwoman.</p></div>
+
+            <div type="commentary">
+                <p>Basis of verification: photo and web entry. Original urn at the Berlin Museum (acc. no. SK 1124).</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
