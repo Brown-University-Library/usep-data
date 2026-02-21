@@ -49,9 +49,9 @@ changes: correct handling of provenance information -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="">
-                        <!-- short summary of the content of an inscription -->
-                            <p>Rectangular tablet with inscription.</p>
+                        <msItem class="#funerary.other">
+                            <!-- short summary of the content of an inscription -->
+                            <p>rectangular tablet with inscription</p>
                         </msItem>
                     </msContents>
 
@@ -85,13 +85,13 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana=""> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>Double border around the outside.</p>
+                                <p>double border around the outside</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -105,8 +105,8 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="" notBefore="0001" notAfter="0002">Date to be displayed</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#unknown">unknown</date>
+                            <placeName ref="europe.italy.rome">Italy, Rome</placeName>
                         </origin>
 
 
@@ -116,7 +116,12 @@ changes: correct handling of provenance information -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target=""/>
-                        <biblScope unit="page">00</biblScope>
+                        <biblScope unit="page"/>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/92721">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
