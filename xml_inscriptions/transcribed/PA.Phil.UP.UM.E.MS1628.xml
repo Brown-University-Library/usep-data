@@ -18,7 +18,7 @@ changes: correct handling of provenance information -->
             
             <titleStmt>
                 <title>PA.Phil.UP.UM.E.MS1628</title>
-                <author>Author</author>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -46,11 +46,11 @@ changes: correct handling of provenance information -->
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="" otherLangs=""/>
+                        <textLang mainLang="ett" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p>Sherd with incised Etruscan inscriptions.</p>
+                            <p>sherd with Etruscan inscriptions</p>
                         </msItem>
                     </msContents>
 
@@ -60,7 +60,7 @@ changes: correct handling of provenance information -->
                         <objectDesc ana="#instrumentum.vase">
                             <supportDesc ana="#clay.ceramic">
                                 <support>
-                                    <p> Bucchero</p>
+                                    <p> bucchero</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>6.7</height>
                                         <width>2.4</width>
@@ -80,7 +80,7 @@ changes: correct handling of provenance information -->
                         </objectDesc>
                         <!--  *************************************  <handDesc>  ********************************* -->
                         <handDesc hands="1">
-                            <handNote ana=""> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
@@ -100,9 +100,9 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#palaeography" notBefore="-600" notAfter="-549">Early
+                            <date evidence="#palaeography" notBefore="-0601" notAfter="-0549">early
                                 sixth century BCE</date>
-                            <placeName ref="europe.italy">Orvieto</placeName>
+                            <placeName ref="https://pleiades.stoa.org/places/413373">Italy, Orvieto</placeName>
                         </origin>
 
 
@@ -111,8 +111,13 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="Turfa_2005"/>
-                        <biblScope unit="page" type="page">137-138, no. 100</biblScope>
+                        <ptr type="rest-of-bibl" target="#Turfa_2005"/>
+                        <biblScope unit="page">pp. 137-138, no. 100</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/274306">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -140,6 +145,7 @@ changes: correct handling of provenance information -->
         <revisionDesc>
             <change when="2025-11-25" who="Davide Pironi">Initial Encoding: transcription,
                 commentary</change>
+            <change when="2026-02-22" who="Davide Pironi">Requested changes</change>
         </revisionDesc>
 
     </teiHeader>
@@ -159,13 +165,16 @@ changes: correct handling of provenance information -->
             <div type="edition">
                 <div type="textpart" subtype="face" n="a">
                     <ab>
-                        <lb style="text-direction:l-to-r"/>asu
+                        <lb n="1" rend="left-to-right"/>
+                        <persName>
+                            <name>asu</name>
+                        </persName>
                     </ab>
                 </div>
                 
-                <div type="textpart" subtype="face" n="b" scriptDirection="r-to-l">
+                <div type="textpart" subtype="face" n="b">
                     <ab>
-                        <lb style="text-direction:l-to-r"/>
+                        <lb n="1" rend="right-to-left"/>
                         <persName>
                             <name type="gentilicium">thanaqvilus</name>
                             <name type="matronymic">sucisnaia</name>

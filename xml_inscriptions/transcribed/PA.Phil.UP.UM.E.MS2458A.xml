@@ -18,7 +18,7 @@ changes: correct handling of provenance information -->
             
             <titleStmt>
                 <title>PA.Phil.UP.UM.E.MS2458A</title>
-                <author>Author</author>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -46,11 +46,11 @@ changes: correct handling of provenance information -->
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="" otherLangs=""/>
+                        <textLang mainLang="ett" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.other">
                             <!-- short summary of the content of an inscription -->
-                            <p>Cinerary urn for Arnth Remza with Etruscan inscription.</p>
+                            <p>cinerary urn for Arnth Remza with Etruscan inscription</p>
                         </msItem>
                     </msContents>
 
@@ -80,7 +80,7 @@ changes: correct handling of provenance information -->
                         </objectDesc>
                         <!--  *************************************  <handDesc>  ********************************* -->
                         <handDesc hands="1">
-                            <handNote ana=""> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
@@ -105,10 +105,9 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-299" notAfter="-200">Late
+                            <date evidence="#archaeology" notBefore="-0251" notAfter="-0199">late
                                 third century BCE</date>
-                            <placeName ref="europe.italy">Said to be from Colle, near
-                                Chiusi</placeName>
+                            <placeName ref="https://pleiades.stoa.org/places/413096">Italy, Chiusi (Colle)</placeName>
                         </origin>
 
 
@@ -117,12 +116,17 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="Turfa_2005"/>
-                        <biblScope unit="page" type="page">263-265, no. 295</biblScope>
+                        <ptr type="rest-of-bibl" target="#Turfa_2005"/>
+                        <biblScope unit="page">pp. 263-265, no. 295</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="White_B_T_2002"/>
-                        <biblScope type="page">38, no. 56</biblScope>
+                        <ptr type="rest-of-bibl" target="#White_B_T_2002"/>
+                        <biblScope unit="page">p. 38, no. 56</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/191188">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -150,6 +154,7 @@ changes: correct handling of provenance information -->
         <revisionDesc>
             <change when="2025-11-28" who="Davide Pironi">Initial Encoding: transcription,
                 translation, and commentary</change>
+            <change when="2026-02-22" who="Davide Pironi">Requested changes</change>
         </revisionDesc>
 
     </teiHeader>
@@ -167,11 +172,17 @@ changes: correct handling of provenance information -->
     <text>
         <body>
             <div type="edition">
-                        <ab>
-                            <lb style="text-direction:l-to-r"/>arnth : remzna : arnthal : zilat : <hi rend="apex">s</hi>cupitnue<hi rend="apex">s</hi>
-                        </ab>
-                    </div>
-            
+                <ab>
+                    <lb n="1" rend="left-to-right"/>
+                    <persName>
+                        <name type="praenomen">arnth</name> : 
+                        <name type="nomen">remzna</name> : 
+                        <name type="patronymic">arnthal</name>
+                    </persName> : 
+                    <roleName>zilat</roleName> : 
+                    <hi rend="apex">s</hi>cupitnue<hi rend="apex">s</hi>
+                </ab>
+            </div>
             <div type="translation">
             <p>Arnth Remzna, son of Arnth, zilath of the scupitnues.</p></div>
 

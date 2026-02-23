@@ -18,7 +18,7 @@ changes: correct handling of provenance information -->
             
             <titleStmt>
                 <title>PA.Phil.UP.UM.E.MS1124</title>
-                <author>Author</author>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -46,11 +46,11 @@ changes: correct handling of provenance information -->
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="" otherLangs=""/>
+                        <textLang mainLang="ett" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#funerary.other">
                             <!-- short summary of the content of an inscription -->
-                            <p>Ash urn for Petrui with Etruscan inscription.</p>
+                            <p>ash urn for Petrui with Etruscan inscription</p>
                         </msItem>
                     </msContents>
 
@@ -60,14 +60,14 @@ changes: correct handling of provenance information -->
                         <objectDesc ana="#ash_urn">
                             <supportDesc ana="#clay.ceramic">
                                 <support>
-                                    <p> Coarse, gritty, red ware.</p>
+                                    <p> coarse, gritty, red ware</p>
                                     <dimensions type="surface" unit="cm">
                                         <height>32</height>
                                         <dim unit="cm" type="diameter">24</dim>
                                     </dimensions>
                                 </support>
-                                <condition ana="">
-                                    <p>Large ovoid urn with a short flaring rim.</p>
+                                <condition ana="#complete.broken">
+                                    <p>large ovoid urn with a short flaring rim</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -79,7 +79,7 @@ changes: correct handling of provenance information -->
                         </objectDesc>
                         <!--  *************************************  <handDesc>  ********************************* -->
                         <handDesc hands="1">
-                            <handNote ana=""> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
@@ -98,9 +98,9 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-0199" notAfter="0000">Second
+                            <date evidence="#archaeology" notBefore="-0199" notAfter="0001">second
                                 to first century BCE</date>
-                            <placeName ref="europe.italy">Tarquinia</placeName>
+                            <placeName ref="https://pleiades.stoa.org/places/413332">Italy, Tarquinia</placeName>
                         </origin>
 
 
@@ -109,8 +109,13 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target=""/>
-                        <biblScope unit="page">00</biblScope>
+                        <ptr type="rest-of-bibl" target="#Expedition_53_Turfa"/>
+                        <biblScope unit="page">pp. 7-8</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/92723">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -138,6 +143,7 @@ changes: correct handling of provenance information -->
         <revisionDesc>
             <change when="2025-11-24" who="Davide Pironi">Initial Encoding: trascription,
                 translation, and commentary</change>
+            <change when="2026-02-22" who="Davide Pironi">Requested changes</change>
         </revisionDesc>
 
     </teiHeader>
@@ -155,10 +161,15 @@ changes: correct handling of provenance information -->
     <text>
         <body>
             <div type="edition">
-                <ab><lb style="text-direction:l-to-r"/>petrui telmus</ab></div>
-            
+                <ab>
+                    <lb n="1" rend="left-to-right"/>
+                    <persName>
+                        <name>petrui</name> <name>telmus</name>
+                    </persName>
+                </ab>
+            </div>
             <div type="translation">
-            <p>Petrui [wife] of Telmu</p></div>
+            <p> Petrui [wife] of Telmu</p></div>
 
             <div type="commentary">
             <p>A nearly identical urn for Telmu can be found at PA.Phil.UP.UM.E.MS3428. In our case,
