@@ -1,17 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          --><!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.80-2-14</title>
-                <author>Mac Carley</author>
+                <title>PA.Phil.UP.UM.A.B8906</title>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -23,7 +30,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.80-2-14">PA.Phil.UP.UM.G.80-2-14</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.A.B8906">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -34,17 +41,17 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>80-2-14</idno>
-                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
+                        <idno>B8906</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
+                        <textLang mainLang="arc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#funerary.other">
                             <!-- short summary of the content of an inscription -->
-                            <p/>
+                            <p>rectangular loculus relief with male bust and Palyrene
+                                inscription</p>
                         </msItem>
                     </msContents>
 
@@ -53,24 +60,25 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#object_unknown">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#stone.other">
                                 <support>
-                                    <p>fragmentary marble slab</p>
+                                    <p> hard white limestone</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>7.7</height>
-                                        <width>6.3</width>
-                                        <depth>1.6</depth>
+                                        <height>59</height>
+                                        <width>38</width>
+                                        <depth>13</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p/>
+                                <condition ana="#complete.broken">
+                                    <p>upper left, lower left, and upper right corners (as viewed)
+                                        are broken off</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p>part of one line, a lambda and a tau</p>
+                                <layout columns="1" writtenLines="4">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -84,7 +92,11 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>The frontal bearded man wears two garments: a tunic and a mantle,
+                                    which envelops both arms. With his left arm's two middle fingers
+                                    he holds a flat object, likely a book roll or schedula. His eyes
+                                    are very large and almond-shaped; his nose is long and straight,
+                                    with flaring nostrils.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -98,30 +110,32 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-0119" notAfter="0001">118 -
-                                late first century BCE</date>
-                            <placeName ref="https://pleiades.stoa.org/places/344448">Africa, Leptis
-                                Magna</placeName>
+                            <date evidence="#prosopography" notBefore="0149" notAfter="0201">150-200
+                                CE</date>
+                            <placeName ref="https://pleiades.stoa.org/places/668331">Syria, Palmyra</placeName>
                         </origin>
 
-                        <provenance type="transferred" when="1980">
-                            <p>Acquired by the <orgName role="acquirer"> University of Pennsylvania Museum of Archaeology and Anthropology</orgName> via gift of <persName role="donor">Theresa Howard Carter</persName> in <date>1980</date></p>
-                        </provenance>
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/140425"> Penn Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target="#Romano_2006"/>
+                        <biblScope unit="page">pp. 290-291, no. 136</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_69_Carter"/>
-                        <biblScope unit="page">123-132</biblScope>
+                        <ptr type="rest-of-bibl" target="#Hillers-Cussini_1996"/>
+                        <biblScope unit="page">p. 250, no. 209</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">pp.211-212</biblScope>
+                        <ptr type="rest-of-bibl" target="#PennMusJ_18-4_Legr"/>
+                        <biblScope unit="page">p. 333, no. 4</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/88987">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -131,7 +145,8 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
         <encodingDesc>
 
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -146,10 +161,9 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-21" who="Mac Carley">Initial Encoding</change>
-            <change when="2025-10-12" who="Davide Pironi">corrected the transcription, added the
-                image.</change>
-            <change when="2026-02-23" who="Davide Pironi">Requested changes</change>
+            <change when="2025-10-23" who="Davide Pironi">Initial Encoding: metadata, transcription,
+                translation, and commentary</change>
+            <change when="2026-02-22" who="Davide Pironi">Requested changes</change>
         </revisionDesc>
 
     </teiHeader>
@@ -160,24 +174,28 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="PA.Phil.UP.UM.G.80-2-14.jpg"/>
+            <graphic url="PA.Phil.UP.UM.A.B8906.jpg"/>
         </surface>
     </facsimile>
+
     <text>
         <body>
             <div type="edition">
-                <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>λτ<gap reason="lost" extent="unknown" unit="character"/>
-                </ab>
-            </div>
+                <ab><lb n="1"/>m`n
+                    <lb n="2"/>br br`´
+                    <lb n="3"/>br zbd`th
+                    <lb n="4"/><unclear>h</unclear>bl</ab></div>
+            
             <div type="translation">
-            <p/></div>
+            <p>Ma`ân, son of Bar`â, son of Zabd`âteh. Alas! (Hillers and Cussini 1996: 250, no.
+                    209)</p></div>
 
             <div type="commentary">
-            <p>Carter (1965) includes discussion of the stratigraphy of the site.</p></div>
+                <p>For the names, see J. K. Stark, Personal Names in Palmyrene Inscriptions (Oxford
+                    1971), pp. 96, 79, 86.</p></div>
             
 
-            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>

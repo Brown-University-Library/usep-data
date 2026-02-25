@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader>
+   <teiHeader><!-- testing1 -->
       <fileDesc>
          <titleStmt>
-            <title>PA.Phil.UP.UM.E.MS34200</title>
-            <author>Author</author>
+            <title>PA.Phil.UP.UM.G.29-108-254</title>
+            <author>Davide Pironi</author>
             <respStmt>
                <resp>Translation</resp>
                <name>Translator</name>
@@ -15,50 +15,44 @@
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.E.MS3200">PA.Phil.UP.UM.E.MS34200</idno>
+            <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.29-108-254"
+               >PA.Phil.UP.UM.G.29-108-254</idno>
          </publicationStmt>
          <sourceDesc>
-                <!--  *************************************  <msDesc>  ********************************* -->
             <msDesc>
                <msIdentifier>
                   <region>PA</region>
-                  <settlement>Phil.</settlement>
+                  <settlement>Phil</settlement>
                   <institution>UP</institution>
                   <repository>UM</repository>
-                  <idno>MS3200</idno>
+                  <idno>29-108-254</idno>
                <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
-               <!--  *************************************  <msContents>  *********************************    -->
                <msContents>
-                  <textLang mainLang="ett" otherLangs=""/>
-                  <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                  <msItem class="#text_unknown">
-                            <!-- short summary of the content of an inscription -->
-                     <p>Etruscan inscription on stone lintel.</p>
+                  <textLang mainLang="grc" otherLangs=""/>
+                  <msItem class="#magic">
+                     <p>amulet with Greek inscription</p>
                   </msItem>
                </msContents>
-               <!--  *************************************  <physDesc>  ********************************* -->
                <physDesc>
 
-                        <!--  *************************************  <objectDesc>  *********************************  -->
-                  <objectDesc ana="#object_other">
-                     <supportDesc ana="#stone">
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  <objectDesc ana="#instrumentum.other">
+                     <supportDesc ana="#metal.bronze">
                         <support>
                            <p> </p>
                            <dimensions type="surface" unit="cm">
-                              <height>53</height>
-                              <width>190</width>
+                              <height>4.5</height>
+                              <width>2.2</width>
                               <depth/>
                            </dimensions>
                         </support>
-                        <condition ana="#complete.broken">
+                        <condition ana="#complete.intact">
                            <p/>
                         </condition>
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="0" writtenLines="0">
-                           <p/>
-                        </layout>
+                        <p/>
                      </layoutDesc>
                   </objectDesc>
                   <!--  *************************************  <handDesc>  ********************************* -->
@@ -68,7 +62,9 @@
                   <!--  *************************************  <decoDesc>  *********************************     -->
                   <decoDesc>
                      <decoNote>
-                        <p/>
+                        <p>obv: rider design and inscription. Rev: long and narrow evil eye with
+                           what seems to be three pupils, pierced by short darts or nails; beneath
+                           the eye appear four animals, though the snake is missing.</p>
                      </decoNote>
                   </decoDesc>
                </physDesc>
@@ -79,28 +75,22 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="-0551" notAfter="-0549">550 BC</date>
-                     <placeName ref="europe.italy">Orvieto</placeName>
+                     <placeName ref="asia.near_east">Israel, Beit She'an</placeName>
                   </origin>
                </history>
             </msDesc>
-            <!--  *************************************  <listBibl>  *********************************  -->
             <listBibl>
                <bibl>
-                  <ptr type="rest-of-bibl" target="#"/>
-                  <biblScope unit="page">00</biblScope>
+                  <ptr type="rest-of-bibl" target="#Bonner"/>
+                  <biblScope unit="page">303, no. 303</biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.penn.museum/collections/object/259676">External
-                            Reference on the Penn Museum Collection</ref>
-               </bibl>
-               <bibl>
-                  <ref type="external" target="https://books.google.com/books?id=1_D8zqmCMWsC&amp;pg=PA165&amp;lpg=PA165&amp;dq=the+%22etruscan%22+museum+in+the+museum+bates&amp;source=bl&amp;ots=e_gF6ugH_V&amp;sig=ACfU3U2u10rPXmRI5EpfRlxx2k43Ie0kpg&amp;hl=en&amp;ppis=_e&amp;sa=X&amp;ved=2ahUKEwiF6cuHh4jmAhXmt1kKHdeIAC4Q6AEwAHoECAgQAQ#v=onepage&amp;q=the%20%22etruscan%22%20museum%20in%20the%20museum%20bates&amp;f=false">Bates "The Etruscan inscription in the Museum" on Google Books</ref>
+                  <ref type="external" target="https://www.penn.museum/collections/object/104091"
+                     >Penn Museum web entry</ref>
                </bibl>
             </listBibl>
          </sourceDesc>
       </fileDesc>
-      <!--  *************************************  <encodingDesc>  ********************************* -->
       <encodingDesc>
          <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
             <xi:fallback>
@@ -108,40 +98,42 @@
             </xi:fallback>
          </xi:include>
       </encodingDesc>
-      <profileDesc> <!-- not used --> </profileDesc>
-      <!--  *************************************  <revisionDesc>  ********************************* -->
-      <!-- Record all changes here -->
+      <profileDesc/>
       <revisionDesc>
-         <change when="2019-11-26" who="Gaia Gianni">Initial Encoding</change>
+         <change when="2010-09-29" who="CDS">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-13" who="EM">More tweaks for bib only inscriptions</change>
+         <change who="GG" when="2020-05-10">Added metadata, external reference and image</change>
          <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed to inscribed</change>
+         <change when="2021-02-24" who="Elli Mylonas">Change instrumentum to instrumentum.other</change>
+         <change when="2025-09-28" who="Davide Pironi">Edited</change>
+         <change when="2026-02-16" who="Davide Pironi">fixed the filename and made some minor
+            changes</change>
       </revisionDesc>
    </teiHeader>
-   <!--  *************************************  <facsimile>  *********************************  -->
-   <!-- Used to record images of an inscription.   -->
    <facsimile>
       <surface>
          <desc/>
-         <graphic url=""/>
+         <graphic url="PA.Phil.UP.UM.G.29-108-254.jpg"/>
+      </surface>
+      <surface>
+         <desc/>
+         <graphic url="PA.Phil.UP.UM.G.29-108-254.2.jpg"/>
       </surface>
    </facsimile>
    <text>
       <body>
          <div type="edition">
-            <ab>Transcription goes here</ab>
+            <ab>
+               <lb n="1"/>εἷς θεὸς ὁ νικ<supplied reason="omitted">ῶν τ</supplied>ὰ κα<unclear>κ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+            </ab>
          </div>
          <div type="translation">
-            <p/>
-         </div>
-         <div type="commentary">
-            <p>Notes here, </p>
-         </div>
-         <div type="apparatus">
-            <p/>
+            <p>One God, who conquers evil.</p>
          </div>
          <div type="bibliography">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
                <xi:fallback>
-                  <p>US Ep bibliography</p>
+                  <p>US Epigraphybibliography</p>
                </xi:fallback>
             </xi:include>
          </div>

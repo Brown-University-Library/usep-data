@@ -1,17 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          --><!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.80-2-14</title>
-                <author>Mac Carley</author>
+                <title>PA.Phil.UP.UM.E.MS3428</title>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -23,7 +30,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.80-2-14">PA.Phil.UP.UM.G.80-2-14</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.E.MS3428">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -34,53 +41,48 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>80-2-14</idno>
-                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
+                        <idno>MS3428</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
+                        <textLang mainLang="ett" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#funerary.other">
                             <!-- short summary of the content of an inscription -->
-                            <p/>
+                            <p>urn of Telmu with Etruscan inscription</p>
                         </msItem>
                     </msContents>
 
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#object_unknown">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#ash_urn">
+                            <supportDesc ana="#clay.ceramic">
                                 <support>
-                                    <p>fragmentary marble slab</p>
+                                    <p>coarse, light orange ware</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>7.7</height>
-                                        <width>6.3</width>
-                                        <depth>1.6</depth>
+                                        <height>37.6</height>
+                                        <dim unit="cm" type="diameter">24.7</dim>
+                                        <depth>25</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p/>
+                                <condition ana="#complete.intact">
+                                    <p>large and sturdy urn with ovoid body and convex upper
+                                        surface</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p>part of one line, a lambda and a tau</p>
+                                <layout columns="1" writtenLines="1">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-
                         <!--  *************************************  <handDesc>  ********************************* -->
-
                         <handDesc hands="1">
                             <handNote ana="#inscribed"> </handNote>
                         </handDesc>
-
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
@@ -98,30 +100,24 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-0119" notAfter="0001">118 -
-                                late first century BCE</date>
-                            <placeName ref="https://pleiades.stoa.org/places/344448">Africa, Leptis
-                                Magna</placeName>
+                            <date evidence="#archaeology" notBefore="-0201" notAfter="0001">second
+                                to first century BCE</date>
+                            <placeName ref="https://pleiades.stoa.org/places/668331">Italy, Tarquinia</placeName>
                         </origin>
 
-                        <provenance type="transferred" when="1980">
-                            <p>Acquired by the <orgName role="acquirer"> University of Pennsylvania Museum of Archaeology and Anthropology</orgName> via gift of <persName role="donor">Theresa Howard Carter</persName> in <date>1980</date></p>
-                        </provenance>
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/140425"> Penn Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target="#Turfa_2005"/>
+                        <biblScope unit="page">pp. 141-142, no. 103</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_69_Carter"/>
-                        <biblScope unit="page">123-132</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">pp.211-212</biblScope>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/282310">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -131,7 +127,8 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
         <encodingDesc>
 
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -146,10 +143,9 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-21" who="Mac Carley">Initial Encoding</change>
-            <change when="2025-10-12" who="Davide Pironi">corrected the transcription, added the
-                image.</change>
-            <change when="2026-02-23" who="Davide Pironi">Requested changes</change>
+            <change when="2025-11-24" who="Davide Pironi">Initial Encoding: transcription,
+                translation, and commentary</change>
+            <change when="2026-02-22" who="Davide Pironi">Requested changes</change>
         </revisionDesc>
 
     </teiHeader>
@@ -160,24 +156,42 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="PA.Phil.UP.UM.G.80-2-14.jpg"/>
+            <graphic url=""/>
         </surface>
     </facsimile>
+
     <text>
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>λτ<gap reason="lost" extent="unknown" unit="character"/>
+                    <p>
+                        <lb n="1" style="text-direction:l-to-r"/>
+                        <persName>
+                            <name type="nomen">caes</name><g type="interpunct"/>
+                            <name type="praenomen">v</name><g type="interpunct"/>
+                            <name type="patronymic">v</name><g type="interpunct"/>
+                            <name type="cognomen">telmu</name>
+                        </persName>
+                    </p>
                 </ab>
             </div>
             <div type="translation">
-            <p/></div>
+            <p>Vel Caes Telmu, freedman of Vel</p></div>
 
             <div type="commentary">
-            <p>Carter (1965) includes discussion of the stratigraphy of the site.</p></div>
+            <p>Well-made urn, similar to other types of containers used for storage, reflecting the
+                    econimic status of the deceased's family. This type of urn was common in the
+                    region of Tarquinia. The inscription runs retrograde around the widest part of
+                    the vessel; both the punctuation and the letter forms point to a late phase of
+                    Etruscan epigraphy (Turfa 2005: 141). De Simone (1965): 168 links the
+                    gentilicial Caes to the Latin preaenomen Gaius, perhaps Telmu's former master.
+                    The third name of the deceased, Telmu, derives from the Greek name Telamon.
+                    Considering the deceased's Greek name, he was likely enslaved as a prisoner of
+                    war. Cf. also the nearly identical urn for Petrui, wife of Telmu:
+                    PA.Phil.UP.UM.E.MS1124.</p></div>
             
 
-            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
