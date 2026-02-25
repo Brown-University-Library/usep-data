@@ -17,8 +17,8 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.L.MS5735</title>
-                <author>Author</author>
+                <title>PA.Phil.UP.UM.G.MS3441</title>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -30,7 +30,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.MS5735">PA.Phil.UP.UM.L.MS5735</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.MS3441">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -41,57 +41,58 @@ changes: correct handling of provenance information -->
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>MS5735</idno>
+                        <idno>MS3441</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="lat" otherLangs=""/>
+                        <textLang mainLang="grc" otherLangs="grc"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#text_unknown">
                             <!-- short summary of the content of an inscription -->
-                            <p/>
+                            <p>non-sense graffito on amphora</p>
                         </msItem>
                     </msContents>
 
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#slab">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#instrumentum.amphora">
+                            <supportDesc ana="#clay.ceramic">
                                 <support>
-                                    <p> </p>
+                                    <p>black figure amphora, type A</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>16.5</height>
-                                        <width>14.1</width>
-                                        <depth>2.4</depth>
+                                        <height>58</height>
+                                        <dim unit="cm" type="diameter">38</dim>
+                                        <width/>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#condition.unknown">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="1" writtenLines="6">
-                                    <p>Four contiguous lines, a space, and then two more contiguous
-                                        lines</p>
+                                <layout columns="0" writtenLines="7">
+                                    <p>each line follows a "float" freeform associated with
+                                        different divine figures</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-
                         <!--  *************************************  <handDesc>  ********************************* -->
-
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
+                            <handNote ana="#painted"> </handNote>
                         </handDesc>
-
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>A: birth of Athena, l. to r.: Apollo with kithara, Zeus with
+                                    Athena standing on his thigh, female figure (perhaps Eileithyia,
+                                    goddess of childbirth), Ares with dog, Nike, bird with female
+                                    head. B: Zeus and Hera, Poseidon, Amphitrite, Ares, Poseidon,
+                                    Zeus and Hera, Ares, other figures. Seated sphinx beneath Zeus
+                                    and Hera's throne.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -105,8 +106,9 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#palaeography">Date to be displayed</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#archaeology" notBefore="-0551" notAfter="-0539">550-540
+                                BCE</date>
+                            <placeName ref="https://pleiades.stoa.org/places/413373">Italy, Orvieto</placeName>
                         </origin>
 
 
@@ -115,11 +117,25 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/242271">University of Pennsylvania Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target="#Chiarini_2018"/>
+                        <biblScope unit="page">pp. 209-214, fig. 38</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">211</biblScope>
+                        <ptr type="rest-of-bibl" target="#Beazley_2"/>
+                        <biblScope unit="page">p. 128</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#Beazley"/>
+                        <biblScope unit="page">p. 296, no. 3</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#LIMC"/>
+                        <biblScope unit="page">p. 241</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/275918">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -145,9 +161,9 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2025-03-13" who="Mac Carley">Initial Encoding</change>
-            <change when="2025-10-14" who="Davide Pironi">attempted a transcription and a
-                commentary</change>
+            <change when="2025-11-24" who="Davide Pironi">Initial Encoding: transcription,
+                translation, and commentary</change>
+            <change when="2026-02-23" who="Davide Pironi">Requested changes</change>
         </revisionDesc>
 
     </teiHeader>
@@ -158,32 +174,60 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="PA.Phil.UP.UM.G.MS5735.jpg"/>
+            <graphic url=""/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>
-                <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>PILO<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>TI<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>NO<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>MINO<gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>
-                <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>
-            </ab>
+                <div type="textpart" subtype="face" n="A">
+                    <ab>
+                        <lb n="1"/>ΧΕΙΟΙΟΧΕΙΟΧΕΣ
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="B">
+                    <ab>
+                        <lb n="1"/>ΕΟΧΕΙΕΟΧΕΙΟ
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="C">
+                    <ab>
+                        <lb n="1"/>ΕΙΟΧΕΠ<gap reason="lost" extent="unknown" unit="character"/>Ι
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="D">
+                    <ab>
+                        <lb n="1"/>ΝΟΙΕΙΙΟΣΑ
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="E">
+                    <ab>
+                        <lb n="1"/>ΝΣΙΟ<gap reason="lost" extent="unknown" unit="character"/>Ο<gap reason="lost" quantity="1" unit="character"/>
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="F">
+                    <ab>
+                        <lb n="1"/><gap reason="lost" quantity="1" unit="character"/>ΟΕ<gap reason="lost" quantity="1" unit="character"/>ΙΔΙΟ<gap reason="lost" quantity="1" unit="character"/>
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="G">
+                    <ab>
+                        <lb n="1"/><gap reason="lost" quantity="1" unit="character"/>ΙΟΙΕΧΟΧΕ<gap reason="lost" quantity="1" unit="character"/>
+                    </ab>
+                </div>
             </div>
-            
             <div type="translation">
             <p></p></div>
 
             <div type="commentary">
-                <p>The front and back are smoothly finished, but no original edges are preserved.
-                    The six-line inscription is fragmentary and difficult to read; however, the
-                    lettering style may point to a late or Christian date, with the last readable
-                    line bearing the formula 'domino.'</p>
-                <p/></div>
+            <p>The amphora depicts a dense assembly of Olympians, with Zeus seated at the center on
+                    his throne and the other gods standing at his sides, turned toward him.
+                    According to Chiarini (2018), the nonsensical inscriptions may be associated
+                    with divine gatherings, functioning as possible divine conversations conducted
+                    in a superhuman language.</p></div>
+            
+
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>

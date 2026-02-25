@@ -1,17 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- v. 20. 2019-10-04 EM  --><!-- v. 20.1 2020-07-09 EM 
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          --><!-- v. 20.3 2020-10-13 EM 
-changes: correct handling of provenance information --><!-- For Framework v. 2.9 2023-06-27 
-     updated link to stoa schema --><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.G.80-2-14</title>
-                <author>Mac Carley</author>
+                <title>PA.Phil.UP.UM.G.MS5463</title>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -23,7 +30,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.80-2-14">PA.Phil.UP.UM.G.80-2-14</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.MS5463">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -34,15 +41,14 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>80-2-14</idno>
-                        <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier>
+                        <idno>MS5463</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="grc" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#text_unknown">
+                        <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
                             <p/>
                         </msItem>
@@ -50,41 +56,40 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#object_unknown">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#instrumentum.vase">
+                            <supportDesc ana="#clay.ceramic">
                                 <support>
-                                    <p>fragmentary marble slab</p>
+                                    <p> white lekythos with dipinto inscription</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>7.7</height>
-                                        <width>6.3</width>
-                                        <depth>1.6</depth>
+                                        <height>38.5</height>
+                                        <width/>
+                                        <depth/>
+                                        <dim unit="cm" type="diameter">12</dim>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="1">
-                                    <p>part of one line, a lambda and a tau</p>
+                                <layout columns="0" writtenLines="2">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-
                         <!--  *************************************  <handDesc>  ********************************* -->
-
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
+                            <handNote ana="#painted"> </handNote>
                         </handDesc>
-
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>Mistress seated in chair (left); maid standing at right looking
+                                    toward mistress; in the field above is a triangular object and a
+                                    mirror; in the field between mistress and maid is the dipinto
+                                    iscription. </p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -98,30 +103,28 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
                         </summary>
 
                         <origin>
-                            <date evidence="#archaeology" notBefore="-0119" notAfter="0001">118 -
-                                late first century BCE</date>
-                            <placeName ref="https://pleiades.stoa.org/places/344448">Africa, Leptis
-                                Magna</placeName>
+                            <date evidence="#archaeology" notBefore="-0461" notAfter="-0449">460-450
+                                BCE</date>
+                            <placeName ref="https://pleiades.stoa.org/places/579885">Attica, Athens</placeName>
                         </origin>
 
-                        <provenance type="transferred" when="1980">
-                            <p>Acquired by the <orgName role="acquirer"> University of Pennsylvania Museum of Archaeology and Anthropology</orgName> via gift of <persName role="donor">Theresa Howard Carter</persName> in <date>1980</date></p>
-                        </provenance>
 
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://www.penn.museum/collections/object/140425"> Penn Museum web entry</ref>
+                        <ptr type="rest-of-bibl" target="#Luce"/>
+                        <biblScope unit="page">pp. 78-79, no. 128</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#AJA_69_Carter"/>
-                        <biblScope unit="page">123-132</biblScope>
+                        <ptr type="rest-of-bibl" target="#Beazley_ARVP"/>
+                        <biblScope unit="page">p. 642, no. 118</biblScope>
                     </bibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
-                        <biblScope unit="page">pp.211-212</biblScope>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/275076">Penn Museum
+                            web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -131,7 +134,8 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
 
         <encodingDesc>
 
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
                     <xi:fallback>
                         <p>Taxonomies for US Epigraphy controlled values</p>
                     </xi:fallback>
@@ -146,9 +150,7 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2024-11-21" who="Mac Carley">Initial Encoding</change>
-            <change when="2025-10-12" who="Davide Pironi">corrected the transcription, added the
-                image.</change>
+            <change when="2025-12-01" who="Davide Pironi">Initial Encoding</change>
             <change when="2026-02-23" who="Davide Pironi">Requested changes</change>
         </revisionDesc>
 
@@ -160,24 +162,27 @@ changes: correct handling of provenance information --><!-- For Framework v. 2.9
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="PA.Phil.UP.UM.G.80-2-14.jpg"/>
+            <graphic url="PA.Phil.UP.UM.G.MS5463.jpg"/>
         </surface>
     </facsimile>
+
     <text>
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>λτ<gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/>Δίφιλος
+                    <lb n="2"/>καλὸς
                 </ab>
             </div>
             <div type="translation">
-            <p/></div>
+            <p>Diphilos is fair</p></div>
 
             <div type="commentary">
-            <p>Carter (1965) includes discussion of the stratigraphy of the site.</p></div>
+            <p>The dedicatory inscription to Diphilos is found in other vases, nearly all of which
+                    are white lekythoi (cf. Luce 1921). </p></div>
             
 
-            <div type="bibliography"> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
 
         </body>
     </text>
