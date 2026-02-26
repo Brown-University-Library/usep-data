@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader><!-- testing1 -->
+      <fileDesc>
+         <titleStmt>
+            <title>MA.Glouc.HCM.L.HM-380</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.HM-380">MA.Glouc.HCM.L.HM-380</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                        <!-- same info, parsed out: -->
+                        <!-- alternatively, we could just use <msName>, but that isn't as machine -->
+                        <!-- accessible (or human, for that matter). -->
+                  <region>MA</region>
+                  <settlement>Glouc</settlement>
+                  <institution>HCM</institution>
+                  <repository/>
+                  <!--required.-->
+                  <!--  accession number, last part of USEP number -->
+                  <idno>HM-380</idno>
+                  <!-- optionally some <altIdentifier>s or <msName>s here -->
+               <altIdentifier type="TM_number"><idno>673563</idno></altIdentifier></msIdentifier>
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
+                     <p>epitaph of L. Precilius Epitynchanus</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc ana="#altar">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p>marble altar</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>76.2</height>
+                              <width>43</width>
+                              <depth>32</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.intact">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <layoutDesc>
+                                <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="4">
+                                    <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote ana="figured_scene">
+                        <p>arched pediment with infant Dionysos; four protome masks at the corners</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <summary>
+                     <rs/>
+                  </summary>
+                  <origin>
+                     <date evidence="#nomenclature #formulae #archaeology #palaeography" notBefore="0050" notAfter="0125">second half of the first-early second century CE</date>
+                     <placeName ref="europe.italy.rome">Italy, Rome</placeName>
+                  </origin>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
+            </msDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Mastia_5_Yebenes"/>
+                  <biblScope unit="page">137-138</biblScope>
+               </bibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+               <bibl>
+                  <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR143443">EDR143443</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc/>
+      <revisionDesc>
+         <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
+         <change when="2015-10-13" who="Scott J. DiGiulio">Added new bibl entry for publication of
+            inscription</change>
+         <change when="2020-03-24" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2020-06-24" who="Sophia Papandonatou">minor metadata revisions, added name
+            tags</change>
+         <change when="2021-02-18" who="Sophia Papandonatou">added translation</change>
+         <change when="2021-02-23" who="Elli Mylonas">Change impressed.inscribed.carved to inscribed</change>
+         <change when="2026-02-08" who="Advaith Rege">updated ID number and metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+            <!-- Caption in desc element -->
+         <desc/>
+         <graphic url="MA.Glouc.HCM.L.HM-380.jpg"/>
+         <!-- URL will actually only have the file name, which is the machine readable USEP number followed by ".jpg" . -->
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>Dis Manibus.
+                <lb n="2"/>
+               <persName>
+                  <name type="praenomen" key="Lucius">
+                     <expan><abbr>L</abbr><ex>ucio</ex></expan>
+                  </name>
+                  <name type="gentilicium" key="Precilius">Precilio</name>
+                  <lb n="3"/>
+                  <name type="cognomen" key="Epitynchanus">Epitynchano</name>
+               </persName>
+               <lb n="4"/>
+               <persName>
+                  <name key="Laius">Laius</name>
+               </persName> verna.
+            </ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>To the Divine Spirits. Laius, a homeborn slave, (made this) for Lucius
+               Precilius Epitynchanus.</p>
+         </div>
+         <div type="commentary">
+            <p>The altar was deaccessioned in 1992 by vote of the Hammond Castle Museum board of Directors and is no longer in the HCM collection. Its current whereabouts are unknown. The dimensions of the altar are reported from HCM records.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
+</TEI>

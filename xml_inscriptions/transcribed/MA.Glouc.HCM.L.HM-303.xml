@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader><!-- testing1 -->
+      <fileDesc>
+         <titleStmt>
+            <title>MA.Glouc.HCM.L.HM-303</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MA.Glouc.HCM.L.HM-303">MA.Glouc.HCM.L.HM-303</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                        <!-- same info, parsed out: -->
+                        <!-- alternatively, we could just use <msName>, but that isn't as machine -->
+                        <!-- accessible (or human, for that matter). -->
+                  <region>MA</region>
+                  <settlement>Glouc</settlement>
+                  <institution>HCM</institution>
+                  <repository/>
+                  <!--required.-->
+                  <!--  accession number, last part of USEP number -->
+                  <idno>HM-303</idno>
+                  <!-- optionally some <altIdentifier>s or <msName>s here -->
+               <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
+               <msContents>
+                  <textLang mainLang="lat"/>
+                  <msItem class="#funerary.epitaph">
+                     <p>Epitaph of Largennius Dubius</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc ana="#altar">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p>Marble altar ?</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>80</height>
+                              <width>25</width>
+                              <depth>22.5</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete">
+                           <!--Add ana attribute with controlled value for condition-->
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <!-- Note to EM: need to figure out what goes here and what goes in extent. -->
+                        <layout columns="1" writtenLines="3">
+                           <!-- use a <locus> to narrow down part of inscription being discussed, i.e. campus -->
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"/>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote ana="figured_scene">
+                        <p>sculpted relief of figure set in decorated aedicula; animal on right
+                           side, disc and vegetation on left side</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <summary>
+                     <rs/>
+                  </summary>
+                  <origin>
+                     <date evidence="#nomenclature" notBefore="0100" notAfter="0200">second century CE</date>
+                     <placeName ref="unknown">unknown</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="sold">
+                     <p>Sold in <date when="1944">1944</date>.</p>
+                  </provenance>
+                  <!--Add provenance element(s) for locations at later dates - same content as origin-->
+               </history>
+            </msDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#unpub"/>
+                  <biblScope unit="item"/>
+               </bibl>
+               <!-- Note to EM: think about using 2 separate <blblScope>s, one for pp one for item. John B. recommends this. -->
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc/>
+      <revisionDesc>
+         <change when="2011-11-01" who="Elli Mylonas">Early version Epidoc converted to 2009 Epidoc</change>
+         <change when="2015-07-06" who="Scott J. DiGiulio">Updated bibl tag to unpub</change>
+         <change when="2020-03-24" who="Gaia Gianni">Deleted image filename</change>
+         <change when="2020-06-24" who="Sophia Papandonatou">changed note to rs, metadata revisions added
+            name tags</change>
+         <change when="2020-07-31" who="Sophia Papandonatou">added commentary</change>
+         <change when="2021-02-18" who="Sophia Papandonatou">added translation</change>
+         <change when="2026-02-08" who="Advaith Rege">updated ID number and metadata</change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Glouc.HCM.L.HM-303.jpg"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>
+               <persName>
+                  <name type="gentilicium" key="Largennius">Largennius</name>
+                  <lb n="2"/>
+                  <expan><abbr>Ouf</abbr><ex>entina</ex></expan>
+                  <name type="cognomen" key="Dubius">Dubius</name>
+               </persName>
+               <lb n="3"/>
+               <expan><abbr>Mediolan</abbr><ex>i</ex></expan>
+               <expan><abbr>mil</abbr><ex>es</ex></expan>.
+            </ab>
+            <!-- The marked up transcription goes here, surrounded by <ab> </ab> elements -->
+         </div>
+         <div type="translation">
+            <p>Largennius Dubius of Mediolanum from the Oufentina (tribe), soldier. </p>
+         </div>
+         <div type="commentary">
+            <p>McWilliams reported line 1 as “L. Argennius” and “Dudius” in line 2. However,
+               these were probably errors for “Largennius” and “Dubius.” “Largennius” is attested
+               elsewhere in the region around Milan and “Dubius” is fairly common cognomen. In fact,
+               this inscription is well paralleled by CIL 13.8071, an epitaph to a Lucius Magius Dubius.</p>
+         </div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
+</TEI>
