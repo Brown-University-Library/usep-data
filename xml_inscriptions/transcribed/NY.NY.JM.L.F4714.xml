@@ -6,9 +6,7 @@ changes: Added @evidence to date
 changes: correct handling of provenance information
           --><?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
-
         <fileDesc>
-            
             <titleStmt>
                 <title>NY.NY.JM.L.F4714</title>
                 <author>Author</author>
@@ -25,7 +23,6 @@ changes: correct handling of provenance information
                 <authority>Brown University</authority>
                 <idno type="USEpigraphy" xml:id="NY.NY.JM.L.F4714">NY.NY.JM.L.F4714</idno>
             </publicationStmt>
-
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
@@ -35,8 +32,8 @@ changes: correct handling of provenance information
                         <institution>JM</institution>
                         <repository/>
                         <idno>F4714</idno>
-                    <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
-
+                        <altIdentifier type="TM_number"><idno>Unknown
+                        TM</idno></altIdentifier></msIdentifier>
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
@@ -46,12 +43,9 @@ changes: correct handling of provenance information
                             <p>epitaph of Aelia Septima</p>
                         </msItem>
                     </msContents>
-
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
                         <objectDesc ana="#slab">
                             <supportDesc ana="#stone.marble">
                                 <support>
@@ -73,13 +67,10 @@ changes: correct handling of provenance information
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-
                         <!--  *************************************  <handDesc>  ********************************* -->
-
                         <handDesc hands="1">
                             <handNote ana="#inscribed"> </handNote>
                         </handDesc>
-
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
@@ -87,59 +78,56 @@ changes: correct handling of provenance information
                             </decoNote>
                         </decoDesc>
                     </physDesc>
-
                     <!--  *************************************  <history>  *********************************  -->
-
                     <history>
-
                         <summary>
-                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                            <rs/>
+                            <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
-
                         <origin>
-                            <date evidence="#unspecified" notBefore="0201" notAfter="0400">third-fourth century CE</date>
-                            <placeName ref="europe.italy.rome">Rome, Italy</placeName>
+                            <date evidence="#unspecified" notBefore="0201" notAfter="0400"
+                                >third-fourth century CE</date>
+                            <placeName ref="https://pleiades.stoa.org/places/356966898">Italy, Rome, Via Appia, Catacomb of
+                                the Vigna Randanini</placeName>
                         </origin>
                         <provenance type="transferred" subtype="donated">
-                            <p>Donated by <persName>Dr. Harry G. Friedman</persName> to the <orgName role="recipient">Jewish Museum</orgName></p>
+                            <p>Donated by <persName>Dr. Harry G. Friedman</persName> to the <orgName
+                                    role="recipient">Jewish Museum</orgName></p>
                         </provenance>
                         <provenance type="observed" subtype="recorded">
-                            <p>Exhibited by the <orgName>Jewish Museum</orgName> in <date when="1982">1982</date>.</p>
+                            <p>Exhibited by the <orgName>Jewish Museum</orgName> in <date
+                                    when="1982">1982</date>.</p>
                         </provenance>
-
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ref type="external" target="https://thejewishmuseum.org/collection/10201-burial-plaque/">Jewish Museum web entry</ref>
+                        <ref type="external"
+                            target="https://collections.thejewishmuseum.org/collection/10201-burial-plaque"
+                            >Jewish Museum web entry</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
-
         <!--  *************************************  <encodingDesc>  ********************************* -->
-
         <encodingDesc>
-
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
         </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-
-
+        <profileDesc>
+            <!-- not used -->
+        </profileDesc>
         <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-
+        <!-- Record all changes here -->
         <revisionDesc>
             <change when="2023-08-15" who="Advaith Rege">Initial Encoding</change>
+            <change when="2026-03-09" who="Davide Pironi">tweaks to origin; fixed URI</change>
         </revisionDesc>
-
     </teiHeader>
 
     <!--  *************************************  <facsimile>  *********************************  -->
