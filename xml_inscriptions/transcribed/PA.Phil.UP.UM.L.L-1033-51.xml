@@ -33,7 +33,7 @@
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                   <msItem class="#funerary.epitaph">
                             <!-- short summary of the content of an inscription -->
-                     <p>epitaph of a freedman Marcus Perperna </p>
+                     <p>epitaph of a freedman Marcus Perperna</p>
                   </msItem>
                </msContents>
                <!--  *************************************  <physDesc>  ********************************* -->
@@ -79,8 +79,9 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="0001" notAfter="0050">early 1st century CE</date>
-                     <placeName ref="europe.italy.rome">Rome</placeName>
+                     <date evidence="unspecified" notBefore="0001" notAfter="0050">early first
+                        century CE</date>
+                     <placeName ref="https://pleiades.stoa.org/places/423025">Italy, Rome</placeName>
                   </origin>
                </history>
             </msDesc>
@@ -91,11 +92,15 @@
                   <biblScope unit="item">37374a </biblScope>
                </bibl>
                <bibl>
-                  <ref type="external" target="https://www.penn.museum/collections/object/27965">Museum
-                            External Reference</ref>
+                  <ref type="external" target="https://www.penn.museum/collections/object/27965"
+                     >Penn Museum web entry</ref>
                </bibl>
                <bibl>
                   <ref type="external" target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR072101&amp;partId=1">EDR072101</ref>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Cupito_2007"/>
+                  <biblScope unit="page">p. 101, no. 42</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -117,6 +122,8 @@
          <change when="2021-06-17" who="Colin Olson">added "freedman" distinction in inscription
                 summary, added the presence of two unclear letters at the end of lines 1 and
                 3 (N(?) and d respectively), changed "L" abbreviation in line 3 from l(iberti) to l(ibertus), added translation, spoke in commentary about the supposition of "N(?)" at the end of line 1 and the decision to make "politor" and "eborarius" two distinct epithets.</change>
+         <change when="2025-09-30" who="Davide Pironi">Edited</change>
+         <change when="2026-02-23" who="Davide Pironi">Requested changes</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -133,41 +140,33 @@
             <ab>
                <lb n="1"/>
                <persName>
-                  <supplied reason="lost">
-                     <name type="praenomen" key="Marcus">
-                        <expan><abbr>M</abbr><ex>arci</ex></expan>
-                     </name>
-                  </supplied>
-                  <name type="gentilicium" key="Perperna">
-                     <supplied reason="lost">P</supplied>erpernae</name>
-               </persName>
-               <persName>
                   <name type="praenomen" key="Marcus">
+                     <supplied reason="lost"><expan><abbr>M</abbr><ex>arci</ex></expan></supplied>
+                  </name>
+                  <name type="gentilicium" key="Perperna">
+                     <supplied reason="lost">P</supplied>erpernae
+                  </name>
+                  <name type="praenomen" role="patron" key="Marcus">
                      <expan><abbr>M</abbr><ex>arci</ex></expan>
                   </name>
+                  <expan><abbr>l</abbr><ex>iberti</ex></expan>
                </persName>
-               <expan><abbr>l</abbr><ex>iberti</ex></expan>
                <unclear cert="low">N</unclear>
-               <gap reason="lost" unit="character" extent="unknown"/>
+               <gap reason="lost" extent="unknown" unit="character"/>
                <lb n="2"/> ossa hic sita su<supplied reason="lost">nt</supplied>.
-                <lb n="3"/>
+               <lb n="3"/>
                <persName>
-                  <supplied reason="lost">
-                     <name type="praenomen" key="Marcus">
-                        <expan><abbr>M</abbr><ex>arcus</ex></expan>
-                     </name>
-                  </supplied>
-                  <name type="gentilicium" key="Perperna">
-                     <supplied reason="lost">P</supplied>erperna</name>
-                  <persName>
-                     <name type="praenomen" key="Marcus">
-                        <expan><abbr>M</abbr><ex>arci</ex></expan>
-                     </name>
-                  </persName>
-                  <expan><abbr>l</abbr><ex>ibertus</ex></expan>
-                  <name type="cognomen">Phila<unclear>d</unclear>
-                     <gap reason="lost" unit="character" extent="unknown"/>
+                  <name type="praenomen" key="Marcus">
+                     <supplied reason="lost"><expan><abbr>M</abbr><ex>arcus</ex></expan></supplied>
                   </name>
+                  <name type="gentilicium" key="Perperna">
+                     <supplied reason="lost">P</supplied>erperna
+                  </name>
+                  <name type="praenomen" role="patron" key="Marcus">
+                     <expan><abbr>M</abbr><ex>arci</ex></expan>
+                  </name>
+                  <expan><abbr>l</abbr><ex>ibertus</ex></expan>
+                  <name type="cognomen">Phila<unclear>d</unclear><gap reason="lost" extent="unknown" unit="character"/></name>
                </persName>
                <lb n="4"/> politor eborariu<supplied reason="lost">s</supplied>.
             </ab>

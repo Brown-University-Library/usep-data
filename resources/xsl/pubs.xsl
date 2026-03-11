@@ -29,8 +29,8 @@
             <h2 style="text-align:center;" id="corpus">Corpora</h2>
             
             
-            <xsl:for-each-group select="t:bibl[@type='v-c']" group-by="t:title[@level='c']/@ref">
-                <p xsl:exclude-result-prefixes="t"><a href="/../{concat($url, substring-after(current-grouping-key(),'#'))}"><xsl:value-of select="t:title[@level='c']"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
+            <xsl:for-each-group select="t:bibl[@type='v-c']" group-by="t:title[@level='s']/@ref">
+                <p xsl:exclude-result-prefixes="t"><a href="/../{concat($url, substring-after(current-grouping-key(),'#'))}"><xsl:value-of select="t:title[@level='s']"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
               <ul>
                   <xsl:for-each select="current-group()">
                   <li>
