@@ -30,7 +30,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.E.MS3428">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.E.MS3428">PA.Phil.UP.UM.E.MS3428</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -112,7 +112,7 @@ changes: correct handling of provenance information -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Turfa_2005"/>
-                        <biblScope unit="page">pp. 141-142, no. 103</biblScope>
+                        <biblScope unit="page">141-142, no. 103</biblScope>
                     </bibl>
                     <bibl>
                         <ref type="external"
@@ -146,6 +146,7 @@ changes: correct handling of provenance information -->
             <change when="2025-11-24" who="Davide Pironi">Initial Encoding: transcription,
                 translation, and commentary</change>
             <change when="2026-02-22" who="Davide Pironi">Requested changes</change>
+            <change when="2026-03-23" who="Davide Pironi">tweaks to markup</change>
         </revisionDesc>
 
     </teiHeader>
@@ -164,19 +165,19 @@ changes: correct handling of provenance information -->
         <body>
             <div type="edition">
                 <ab>
-                    <p>
-                        <lb n="1" style="text-direction:l-to-r"/>
-                        <persName>
-                            <name type="nomen">caes</name><g type="interpunct"/>
-                            <name type="praenomen">v</name><g type="interpunct"/>
-                            <name type="patronymic">v</name><g type="interpunct"/>
-                            <name type="cognomen">telmu</name>
-                        </persName>
-                    </p>
+                    <lb n="1" rend="right-to-left"/>
+                    <persName>
+                        <name type="praenomen" key="Vel">v</name><g type="interpunct"/>
+                        <name type="gentilicium" key="Caes">Caes</name><g type="interpunct"/>
+                        <persName type="patronymic">
+                            <name type="praenomen" key="Vel">v</name>
+                        </persName><g type="interpunct"/>
+                        <name type="cognomen" key="Telmu">Telmu</name>
+                    </persName>
                 </ab>
             </div>
             <div type="translation">
-            <p>Vel Caes Telmu, freedman of Vel</p></div>
+            <p>Vel Caes Telmu, freedman of Vel.</p></div>
 
             <div type="commentary">
             <p>Well-made urn, similar to other types of containers used for storage, reflecting the
