@@ -30,7 +30,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.E13376">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.G.E13376">PA.Phil.UP.UM.G.E13376</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -117,7 +117,7 @@ changes: correct handling of provenance information -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#JHS_22_Petrie"/>
-                        <biblScope unit="page">no. 377</biblScope>
+                        <biblScope unit="item">377</biblScope>
                     </bibl>
                     <bibl>
                         <ref type="external"
@@ -151,6 +151,7 @@ changes: correct handling of provenance information -->
             <change when="2025-11-11" who="Davide Pironi">Initial Encoding: metadata, transcription,
                 translation, and commentary.</change>
             <change when="2026-02-23" who="Davide Pironi">Requested changes</change>
+            <change when="2026-03-23" who="Davide Pironi">tweaks to the name markup</change>
         </revisionDesc>
 
     </teiHeader>
@@ -184,28 +185,36 @@ changes: correct handling of provenance information -->
     <text>
         <body>
             <div type="edition">
-                <ab>
-                    <div type="textpart" subtype="face" n="a">
-                        <lb n="1"/>Σαράπιδι Ὀσείριδι
-                        <lb n="2"/>Μεγίστωι
-                        <lb n="3"/>Σωτῆρι
-                    </div>
-                    <div type="textpart" subtype="face" n="b">
-                        <lb n="1"/>Διόσκορος
-                    </div>
-                    <div type="textpart" subtype="face" n="c">
+                <div type="textpart" subtype="face" n="a">
+                    <ab>
+                        <lb n="1"/><persName type="divine"><name type="cognomen" key="Sarapis">Σαράπιδι</name> <name type="cognomen" key="Osiris">Ὀσείριδι</name>
+                            <lb n="2"/><name type="cognomen">Μεγίστωι</name>
+                            <lb n="3"/><name type="cognomen">Σωτῆρι</name></persName>
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="b">
+                    <ab>
+                        <lb n="1"/><persName><name type="cognomen" key="Dioskoros">Διόσκορος</name></persName>
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="c">
+                    <ab>
                         <lb n="1"/>ἐγλογι
                         <lb n="2" break="no"/>στὴς
-                    </div>
-                    <div type="textpart" subtype="face" n="d">
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="d">
+                    <ab>
                         <lb n="1"/>τοῦ νομου
-                    </div>
-                    <div type="textpart" subtype="face" n="e">
+                    </ab>
+                </div>
+                <div type="textpart" subtype="face" n="e">
+                    <ab>
                         <lb n="1"/>ᾠκοδό
-                        <lb n="2" break="no"/>μησεν ἐπ’ 
-                        <lb n="3"/><expan>ἐπ’ ἀγαθ<ex>ῶι</ex></expan>
-                    </div>
-                </ab>
+                        <lb n="2" break="no"/>μησεν ἐπ'
+                        <lb n="3"/><expan>ἐπ' ἀγαθ<ex>ῶι</ex></expan>
+                    </ab>
+                </div>
             </div>
             
             <div type="translation">

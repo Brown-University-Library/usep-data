@@ -17,8 +17,8 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>PA.Phil.UP.UM.L.L-1033-52</title>
-                <author>Author</author>
+                <title>PA.Phil.UP.UM.L.L-1033-60</title>
+                <author>Davide Pironi</author>
                 <respStmt>
                     <resp>Translation</resp>
                     <name>Translator</name>
@@ -30,7 +30,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.L-1033-52">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.L-1033-60">Repeat USEP ID</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -41,16 +41,16 @@ changes: correct handling of provenance information -->
                         <settlement>Phil</settlement>
                         <institution>UP</institution>
                         <repository>UM</repository>
-                        <idno>L-1033-52</idno>
+                        <idno>L-1033-60</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
                         <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#funerary.other">
+                        <msItem class="#label">
                             <!-- short summary of the content of an inscription -->
-                            <p/>
+                            <p>lead fistula with Latin inscription</p>
                         </msItem>
                     </msContents>
 
@@ -59,23 +59,23 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#tablet">
-                            <supportDesc ana="#stone.marble">
+                        <objectDesc ana="#instrumentum.other">
+                            <supportDesc ana="#metal.lead">
                                 <support>
-                                    <p> </p>
+                                    <p> mould-made</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>18.5</height>
-                                        <width>25.1</width>
-                                        <depth>3.6</depth>
+                                        <height>14.5</height>
+                                        <width>37.5</width>
+                                        <depth>7</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.broken">
-                                    <p>Broken on proper left.</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="0">
+                                <layout columns="0" writtenLines="2">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -84,7 +84,7 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana=""> </handNote>
+                            <handNote ana="#molded"/>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -104,8 +104,9 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="" notBefore="0001" notAfter="0002">Date to be displayed</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#history #institutions" notBefore="0068" notAfter="0080"
+                                >69-79 CE</date>
+                            <placeName ref="https://pleiades.stoa.org/places/423025">Italy, Rome, via Veneto</placeName>
                         </origin>
 
 
@@ -114,8 +115,30 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target=""/>
-                        <biblScope unit="page">00</biblScope>
+                        <ptr type="rest-of-bibl" target="#AE_1902"/>
+                        <biblScope unit="item">183</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#ILS"/>
+                        <biblScope unit="item">8678</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#OPWR_13_Rolfe"/>
+                        <biblScope unit="page">877, no. 19</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#White_B_T_2002"/>
+                        <biblScope unit="page">71, no. 104</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://www.penn.museum/collections/object/225822">Penn Museum
+                            Web Entry</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="http://www.edr-edr.it/edr_programmi/res_complex_comune.php?do=book&amp;id_nr=EDR071844"
+                            >EDR071844</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -141,7 +164,8 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2025-10-28" who="Davide Pironi">Initial Encoding: metadata</change>
+            <change when="2026-03-18" who="Davide Pironi">Initial Encoding: transcription,
+                translation, and commentary</change>
         </revisionDesc>
 
     </teiHeader>
@@ -152,17 +176,40 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="PA.Phil.UP.UM.L.L-1033-60.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>Transcription goes here</ab></div>
-            
+                <div type="textpart" subtype="recto">
+                    <lb n="1"/>
+                        <persName type="emperor">
+                            <name type="title"><expan><abbr>Imp</abbr><ex>eratoris</ex></expan></name> 
+                            <name type="praenomen" key="Caesar"><expan><abbr>Caes</abbr><ex>aris</ex></expan></name> 
+                            <name type="cognomen" key="Augustus"><expan><abbr>Aug</abbr><ex>usti</ex></expan></name> 
+                            <name type="cognomen" key="Vespasianus">Vespasiani</name>
+                        </persName>
+                    
+                    <lb n="2"/>sub cura
+                        <persName>
+                            <name type="cognomen" key="Callistus">Callisti</name> 
+                            <name type="status" key="Augusti_libertus">
+                                <expan><abbr>Aug</abbr><ex>usti</ex></expan> 
+                                <expan><abbr>l</abbr><ex>iberti</ex></expan>
+                            </name>
+                        </persName> 
+                        <name type="role" key="procurator"><expan><abbr>proc</abbr><ex>uratoris</ex></expan></name>
+                </div>
+                
+                <div type="textpart" subtype="verso">
+                    <lb n="3"/>IIIXX
+                </div>
+            </div>
             <div type="translation">
-            <p></p></div>
+            <p>(This is the pipe of) Imperator Caesar Augustus Vespasianus, (made) under the
+                    supervision of the procurator Callistus, libertus of Augustus.</p></div>
 
             <div type="commentary">
             <p></p></div>

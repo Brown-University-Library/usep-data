@@ -30,7 +30,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.MS4916A">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.L.MS4916A">PA.Phil.UP.UM.L.MS4916A</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -50,9 +50,9 @@ changes: correct handling of provenance information -->
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#honorific">
                             <!-- short summary of the content of an inscription -->
-                            <p>Large marble block, originally the base of a statue, bearing an
+                            <p>large marble block, originally the base of a statue, bearing an
                                 erased Domitianic inscription on one side and Trajanic reliefs on
-                                the other.</p>
+                                the other</p>
                         </msItem>
                     </msContents>
 
@@ -73,9 +73,10 @@ changes: correct handling of provenance information -->
                                     </dimensions>
                                 </support>
                                 <condition ana="#fragment.single">
-                                    <p>The block is complemented by another relief from Puteoli, now
-                                        in the Pergamon Museum in Berlin, which originally formed the corner of a public
-                                        monument, probably a Trajanic monumental altar or arch.</p>
+                                    <p>the block is complemented by another relief from Puteoli, now
+                                        in the Pergamon Museum in Berlin, which originally formed
+                                        the corner of a public monument, probably a Trajanic
+                                        monumental altar or arch</p>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
@@ -97,12 +98,10 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>In the relief, three soldiers (perhaps Praetorian Guardsmen) are
-                                    depicted. The one to the viewer's right is separated by a
-                                    vertical molding from the two figures to the left, one carved in
-                                    low relief and the other in high relief. The soldiers are shown
-                                    standing or advancing, wearing elements of their military
-                                    attire.</p>
+                                <p>Three soldiers, likely Praetorian Guardsmen. A
+                                    vertical molding separates the figure on the right from the two
+                                    on the left, which are rendered in varying depths of relief. All
+                                    three are shown in military attire.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -128,15 +127,15 @@ changes: correct handling of provenance information -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Romano_2006"/>
-                        <biblScope unit="page">pp. 255-266, no. 123</biblScope>
+                        <biblScope unit="page">255-266, no. 123</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#White_B_T_2002"/>
-                        <biblScope unit="page">p. 46, no. 67; p. 47, no. 68</biblScope>
+                        <biblScope unit="page">46, no. 67;47, no. 68</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#AJA_01_Flower"/>
-                        <biblScope unit="page">pp. 625-648</biblScope>
+                        <biblScope unit="page">625-648</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Bodel_Tracy"/>
@@ -144,12 +143,15 @@ changes: correct handling of provenance information -->
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#AE_1973"/>
-                        <biblScope unit="page">no. 137</biblScope>
+                        <biblScope unit="page">137</biblScope>
                     </bibl>
                     <bibl>
                         <ref type="external"
                             target="https://www.penn.museum/collections/object/115536">Penn Museum
                             web entry</ref>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="xx">Title of Reference</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -177,6 +179,8 @@ changes: correct handling of provenance information -->
         <revisionDesc>
             <change when="2025-10-20" who="Davide Pironi">Initial Encoding: metadata, transcription,
                 translation, and commentary</change>
+            <change when="2026-03-01" who="Davide Pironi">Requested changes</change>
+            <change when="2026-03-23" who="Davide Pironi">more tweaks to the name markup</change>
         </revisionDesc>
 
     </teiHeader>
@@ -194,10 +198,11 @@ changes: correct handling of provenance information -->
     <text>
         <body>
             <div type="edition">
-                <ab><lb n="1"/><expan><abbr>Imp</abbr><ex>eratori</ex></expan> Caesari
-                    <lb n="2"/>divi Vespasiani <expan><abbr>f</abbr><ex>ilio</ex></expan>
-                    <lb n="3"/>Domiti<hi rend="apex">a</hi>n<hi rend="apex">o</hi> <expan><abbr>Aug</abbr><ex>usto</ex></expan>
-                    <lb n="4"/><expan><abbr>Germ<hi rend="apex">a</hi>n</abbr><ex>ico</ex></expan> <expan><abbr>pont</abbr><ex>ifici</ex></expan> <expan><abbr>max</abbr><ex>imo</ex></expan>
+                <ab>
+                    <lb n="1"/><persName type="emperor"><name type="title" key="Imperator"><expan><abbr>Imp</abbr><ex>eratori</ex></expan></name> <name type="cognomen" key="Caesar">Caesari</name>
+                    <lb n="2"/>Divi <persName type="emperor"><name type="cognomen" key="Vespasianus">Vespasiani</name></persName> <expan><abbr>f</abbr><ex>ilio</ex></expan>
+                    <lb n="3"/><name type="cognomen" key="Domitianus">Domiti<hi rend="apex">a</hi>n<hi rend="apex">o</hi></name> <name type="title" key="Augustus"><expan><abbr>Aug</abbr><ex>usto</ex></expan></name>
+                    <lb n="4"/><name type="cognomen" key="Germanicus"><expan><abbr>Germ<hi rend="apex">a</hi>n</abbr><ex>ico</ex></expan></name></persName> <expan><abbr>pont</abbr><ex>ifici</ex></expan> <expan><abbr>max</abbr><ex>imo</ex></expan>
                     <lb n="5"/><expan><abbr>trib</abbr><ex>unicia</ex></expan> <expan><abbr>potest</abbr><ex>ate</ex></expan> <num value="15">XV</num> <expan><abbr>imp</abbr><ex>eratori</ex></expan> <num value="12">XII</num>
                     <lb n="6"/><expan><abbr>c<hi rend="apex">o</hi></abbr><ex>n</ex></expan><expan><abbr>s</abbr><ex>uli</ex></expan> <num value="17">XVII</num> <expan><abbr>c<hi rend="apex">e</hi>ns</abbr><ex>ori</ex></expan> <expan><abbr>perpet</abbr><ex>uo</ex></expan> <expan><abbr>p</abbr><ex>atri</ex></expan> <expan><abbr>p</abbr><ex>atriae</ex></expan>
                     <lb n="7"/>col<hi rend="apex">o</hi>nia Fl<hi rend="apex">a</hi>via <expan><abbr>Aug</abbr><ex>usta</ex></expan>
@@ -207,7 +212,6 @@ changes: correct handling of provenance information -->
                     <lb n="11"/>urbi eius adm<hi rend="apex">o</hi>ta.
                 </ab>
             </div>
-            
             <div type="translation">
             <p>To Imperator Caesar Domitian Augustus Germanicus, son of the deified Vespasian, high
                     priest, in the fifteenth year of his tribunician power, imperator for the

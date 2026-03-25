@@ -3,7 +3,7 @@
       <fileDesc>
          <titleStmt>
             <title>PA.Phil.UP.UM.E.MS3200</title>
-            <author>Davide Pironi</author>
+            <author>Author</author>
             <respStmt>
                <resp>Translation</resp>
                <name>Translator</name>
@@ -15,7 +15,7 @@
          </titleStmt>
          <publicationStmt>
             <authority>Brown University</authority>
-            <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.E.MS3200">PA.Phil.UP.UM.E.MS34200</idno>
+            <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.E.MS3200">PA.Phil.UP.UM.E.MS3200</idno>
          </publicationStmt>
          <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
@@ -31,7 +31,7 @@
                <msContents>
                   <textLang mainLang="ett" otherLangs=""/>
                   <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                  <msItem class="#text_unknown">
+                  <msItem class="#building">
                      <!-- short summary of the content of an inscription -->
                      <p>stone lintel with Etruscan inscription</p>
                   </msItem>
@@ -41,7 +41,7 @@
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
                   <objectDesc ana="#object_other">
-                     <supportDesc ana="#stone">
+                     <supportDesc ana="#stone.other">
                         <support>
                            <p> </p>
                            <dimensions type="surface" unit="cm">
@@ -56,7 +56,7 @@
                      </supportDesc>
                      <!--  *************************************  <layoutDesc>  ********************************* -->
                      <layoutDesc>
-                        <layout columns="0" writtenLines="0">
+                        <layout columns="0" writtenLines="1">
                            <p/>
                         </layout>
                      </layoutDesc>
@@ -79,8 +79,9 @@
                      <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                   </summary>
                   <origin>
-                     <date evidence="unspecified" notBefore="-0551" notAfter="-0549">550 BCE</date>
-                     <placeName ref="https://pleiades.stoa.org/places/413373">Italy, Orvieto</placeName>
+                     <date evidence="#archaeology" notBefore="-0551" notAfter="-0549">550 BCE</date>
+                     <placeName ref="https://pleiades.stoa.org/places/413373">Italy,
+                        Orvieto</placeName>
                   </origin>
                </history>
             </msDesc>
@@ -88,7 +89,7 @@
             <listBibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#Turfa_2005"/>
-                  <biblScope unit="page">pp. 136-137, no. 99</biblScope>
+                  <biblScope unit="page">136-137, no. 99</biblScope>
                </bibl>
                <bibl>
                   <ref type="external" target="https://www.penn.museum/collections/object/259676">Penn Museum web entry</ref>
@@ -98,7 +99,7 @@
                </bibl>
                <bibl>
                   <ptr type="rest-of-bibl" target="#White_B_T_2002"/>
-                  <biblScope unit="page">p. 23, no. 35</biblScope>
+                  <biblScope unit="page">23, no. 35</biblScope>
                </bibl>
             </listBibl>
          </sourceDesc>
@@ -120,6 +121,7 @@
          <change when="2025-10-07" who="Davide Pironi">transcription, translation, and
             commentary</change>
          <change when="2026-02-22" who="Davide Pironi">Requested changes</change>
+         <change when="2026-03-23" who="Davide Pironi">more tweaks to the markup</change>
       </revisionDesc>
    </teiHeader>
    <!--  *************************************  <facsimile>  *********************************  -->
@@ -134,17 +136,19 @@
       <body>
          <div type="edition">
             <ab>
-               <lb n="1" rend="right-to-left"/>
-               mi 
+               <lb n="1" style="text-direction:r-to-l"/>
+               mi
                <persName>
-                  <name type="praenomen">Velthurus</name> 
-                  <name type="nomen">Hulchenas</name> 
-                  <name type="patronymic">Kav<supplied reason="lost">ies</supplied></name>
+               <name type="praenomen" key="Velthur">Velthurus</name>
+               <name type="gentilicium" key="Hulchenas">Hulchenas</name>
+                  <persName type="patronymic">
+                  <name key="Kavies">Kav<supplied reason="lost">ies</supplied></name>
+                  </persName>
                </persName>
             </ab>
          </div>
          <div type="translation">
-            <p>I am [the tomb] of Velthur Hulchenas Kavies</p>
+            <p>I am [the tomb] of Velthur Hulchenas Kavies.</p>
          </div>
          <div type="commentary">
             <p>Retrograde inscription. The letter forms are common of sixth century Orvieto. The

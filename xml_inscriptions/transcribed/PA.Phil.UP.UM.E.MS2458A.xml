@@ -30,7 +30,7 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.E.MS2458A">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="PA.Phil.UP.UM.E.MS2458A">PA.Phil.UP.UM.E.MS2458A</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -85,13 +85,10 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p>The lid, on which the inscription is placed, is carved in relief as a reclining
-                                    man. He rests on his left side, with his head turned slightly to
-                                    the right; his left leg lies flat against the mattress. Remzna
-                                    wears a mantle draped across the lower part of his body. The jaw
-                                    is emphasized, with a broad, prominent chin. His left hand lies
-                                    in a relaxed pose on the cushions. The face is short and square
-                                    in shape.</p>
+                                <p>The lid, on which the inscription is placed, is carved in relief
+                                    as a reclining man. He rests on his left side, with his head
+                                    turned slightly to the right; his left leg lies flat against the
+                                    mattress.</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -107,7 +104,8 @@ changes: correct handling of provenance information -->
                         <origin>
                             <date evidence="#archaeology" notBefore="-0251" notAfter="-0199">late
                                 third century BCE</date>
-                            <placeName ref="https://pleiades.stoa.org/places/413096">Italy, Chiusi (Colle)</placeName>
+                            <placeName ref="https://pleiades.stoa.org/places/413096">Italy, Chiusi,
+                                Colle</placeName>
                         </origin>
 
 
@@ -117,11 +115,11 @@ changes: correct handling of provenance information -->
                 <listBibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#Turfa_2005"/>
-                        <biblScope unit="page">pp. 263-265, no. 295</biblScope>
+                        <biblScope unit="page">263-265, no. 295</biblScope>
                     </bibl>
                     <bibl>
                         <ptr type="rest-of-bibl" target="#White_B_T_2002"/>
-                        <biblScope unit="page">p. 38, no. 56</biblScope>
+                        <biblScope unit="page">38, no. 56</biblScope>
                     </bibl>
                     <bibl>
                         <ref type="external"
@@ -173,13 +171,19 @@ changes: correct handling of provenance information -->
         <body>
             <div type="edition">
                 <ab>
-                    <lb n="1" rend="left-to-right"/>
+                    <lb n="1" style="text-direction:r-to-l"/>
                     <persName>
-                        <name type="praenomen">arnth</name> : 
-                        <name type="nomen">remzna</name> : 
-                        <name type="patronymic">arnthal</name>
-                    </persName> : 
-                    <roleName>zilat</roleName> : 
+                    <name type="praenomen" key="Arnth">Arnth</name>
+                    <g ref="interpunct">:</g>
+                    <name type="gentilicium" key="Remzna">Remzna</name>
+                    <g ref="interpunct">:</g>
+                        <persName type="patronymic">
+                        <name key="Arnth">Arnthal</name>
+                        </persName>
+                    </persName>
+                    <g ref="interpunct">:</g>
+                    <roleName>zilat</roleName>
+                    <g ref="interpunct">:</g>
                     <hi rend="apex">s</hi>cupitnue<hi rend="apex">s</hi>
                 </ab>
             </div>
