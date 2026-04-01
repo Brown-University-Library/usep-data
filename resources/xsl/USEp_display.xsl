@@ -43,7 +43,8 @@
         2021-03-31 SJD added date-sorting to bibl handling, fixed dating display issues
         2021-07-29 EM added bibliography processing.
         2025-01-21 SJD improved display of campus dimensions as separate area, turned on Pleiades links, enabled display of multiple dating criteria
-        2025-01-24 SJD added display code for TM numbers; turned off Pleiades for now; 
+        2025-01-24 SJD added display code for TM numbers; turned off Pleiades for now
+        2026-04-91 SJD attempted to remove highslide display for accessibility purposes and added open in new tab
         ******************************************************************************   -->
 
     <xsl:output indent="yes" encoding="UTF-8" method="xml"/>
@@ -471,15 +472,14 @@
                             <xsl:for-each select="t:graphic">
                                 <xsl:choose>
                                     <xsl:when test="starts-with(@url, 'http')">
-                                        <a class="highslide" href="{@url}"
-                                            onclick="return hs.expand(this)">
+                                        <a href="{@url} target="_blank"
                                             <img src="{@url}" alt="" width="200"/>
                                         </a>
                                         <xsl:value-of select="preceding-sibling::t:desc"/>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <a class="highslide" href="{concat($imageDir, '/',@url)}"
-                                            onclick="return hs.expand(this)">
+                                        <a href="{concat($imageDir, '/',@url)}"
+                                            target="_blank">
                                             <img src="{concat($imageDir, '/',@url)}" alt=""
                                                 width="200"/>
                                         </a>
