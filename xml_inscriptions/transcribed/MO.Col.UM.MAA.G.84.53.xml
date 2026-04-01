@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            <title>MO.Col.UM.MAA.G.84.53</title>
+            <author>Advaith Rege</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Brown University</authority>
+            <idno type="USEpigraphy" xml:id="MO.Col.UM.MAA.G.84.53">MO.Col.UM.MAA.G.84.53</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <region>MO</region>
+                  <settlement>Col</settlement>
+                  <institution>UM</institution>
+                  <repository>MAA</repository>
+                  <idno>84.53</idno>
+               <altIdentifier type="TM_number"><idno>Unknown TM</idno></altIdentifier></msIdentifier>
+               <msContents>
+                  <textLang mainLang="grc" otherLangs=""/>
+                  <msItem class="#dedicatory">
+                     <p>dedication by Mombogeos and Korenkanos</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#instrumentum.other">
+                     <supportDesc ana="#metal.bronze">
+                        <support>
+                           <p>bronze base and omphalos</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>11.20</height>
+                              <width>10</width>
+                              <depth>10</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p>top of omphalos broken off</p>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="5">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> </handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>facia running along the top of the base insiced with an egg-and-dart motif; front face of the base decorated with incised frontal busts of the moon (right), with two horns projecting from her head, and the sun (left), with his radiate crown; six irregulary spaced rosettes around the field, and an egg-and-dart motif along the vertical edges; back and left faces are plain; right face bears a punctate inscription in Greek; omphalos is decorated with a net pattern of triple incised lines, intended for fillets, with rosettes in between; roughly crescent-shaped broken area on top of the omphalos indicates where Victory once stood; the edges of the break are jagged, with a small ridge of bronze along the left rear edge; placement of the feet is apparent at each end of the break: proper left foot of Victory was set lower than the right and was slightly advanced</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#unspecified" notBefore="0200" notAfter="0300">200-300
+                        CE</date>
+                     <placeName ref="unknown"/>
+                  </origin>
+                  
+                  
+               </history>
+            </msDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#Muse_Biers"/>
+                  <biblScope unit="item">74-81</biblScope>
+               </bibl>
+                     <bibl>
+                              <ptr type="rest-of-bibl" target="#SEG_39"/>
+                              <biblScope unit="item">1611</biblScope>
+                     </bibl>
+               <bibl>
+                  <ref type="external" target="https://maacollections.missouri.edu/ArgusNET/Portal.aspx?lang=en-US&amp;g_AAEM=84.53&amp;d=d">MAA web entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc/>
+      <revisionDesc>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2026-03-14" who="Advaith Rege">Initial Encoding</change>
+               <change when="2026-04-01" who="Scott J. DiGiulio">added SEG to bibl, corrected diacritics, name markup, and other errors in transcription</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--facsimile element goes here-->
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MO.Col.UM.MAA.G.84.53.jpg"/>
+      </surface>
+   </facsimile>
+   
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/><persName>
+                  <name key="Mombogeos Μομβογέος">Μομβογέος</name>
+               </persName>
+               <lb n="2"/>
+               <persName>
+                  <name key="Herophilos Ἡρόφιλος">Ἡροφίλου</name>
+               </persName>
+               <lb n="3"/>κὲ 
+               <persName>
+                  <name key="Korenkanos">Κορενκανὸ
+                 <lb n="4" break="no"/>ς</name>
+               </persName>
+               ἀδελφὸς
+               <lb n="5"/>ἀνέθηκαν.
+            </ab></div>
+         
+         <div type="translation">
+            <p>Mombogeos, son of Herophilos, and his brother Korenkanos dedicated this.
+            </p></div>
+         
+         <div type="commentary">
+            <p>Basis of verification: photo</p></div>
+         
+         
+         <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+         
+      </body>
+   </text>
+</TEI>
