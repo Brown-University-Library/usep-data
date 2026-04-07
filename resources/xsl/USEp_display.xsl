@@ -471,18 +471,21 @@
                             <xsl:for-each select="t:graphic">
                                 <xsl:choose>
                                     <xsl:when test="starts-with(@url, 'http')">
-                                        <a class="highslide" href="{@url}"
+                                        <!--<a class="highslide" href="{@url}"
                                             onclick="return hs.expand(this)">
                                             <img src="{@url}" alt="" width="200"/>
-                                        </a>
+                                        </a>-->
+                                        <img src="{@url}" alt="" width="200"/>
                                         <xsl:value-of select="preceding-sibling::t:desc"/>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <a class="highslide" href="{concat($imageDir, '/',@url)}"
+                                        <!--<a class="highslide" href="{concat($imageDir, '/',@url)}"
                                             onclick="return hs.expand(this)">
                                             <img src="{concat($imageDir, '/',@url)}" alt=""
                                                 width="200"/>
-                                        </a>
+                                        </a>-->
+                                        <img src="{concat($imageDir, '/',@url)}" alt=""
+                                            width="200"/>
                                         <xsl:value-of select="preceding-sibling::t:desc"/>
                                     </xsl:otherwise>
                                 </xsl:choose>

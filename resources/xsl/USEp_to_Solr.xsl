@@ -318,11 +318,14 @@ bib_ids 		string multiValued
 	<!-- condition
 	/TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc/objectDesc/supportDesc/condition
 	-->
+	
 	<xsl:call-template name="fieldval">
 		<xsl:with-param name="field">condition</xsl:with-param>
 		<xsl:with-param name="value" select="tei:supportDesc/tei:condition/@ana"/>
 		<xsl:with-param name="desc" select="tei:supportDesc/tei:condition/tei:p" />
 	</xsl:call-template>
+	
+	
 
 	<!-- material
 	/TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc/objectDesc/supportDesc
