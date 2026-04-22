@@ -507,11 +507,12 @@
                     <xsl:when
                         test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
                         <!-- transcribed folder -->
-                        <pc class="XMLsource">
+                        <p class="XMLsource">
                             <a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}" alt="XML icon thumb"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}" alt="XML icon thumbnail"/>
+                                View XML Source
                             </a>
-                        </pc>
+                        </p>
                     </xsl:when>
                     <xsl:when
                         test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem[@class]">
@@ -519,7 +520,7 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}" alt="XML icon thumbnail"/>
                                 View XML Source
                             </a>
                         </p>
@@ -529,7 +530,8 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}" alt="XML icon thumbnail"/>
+                                View XML Source
                             </a>
                         </p>
                     </xsl:otherwise>
