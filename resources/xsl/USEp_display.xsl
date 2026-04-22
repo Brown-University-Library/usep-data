@@ -509,7 +509,7 @@
                         <!-- transcribed folder -->
                         <pc class="XMLsource">
                             <a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}" alt="XML icon thumb"/>
                             </a>
                         </pc>
                     </xsl:when>
@@ -520,6 +520,7 @@
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
                                 <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
+                                View XML Source
                             </a>
                         </p>
                     </xsl:when>
