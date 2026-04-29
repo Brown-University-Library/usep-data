@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+            
+            <titleStmt>
+                <title>IL.Evans.GETS.SL.L.20</title>
+                <author>Advaith Rege</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="IL.Evans.GETS.SL.L.20">IL.Evans.GETS.SL.L.20</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>IL</region>
+                        <settlement>Evans</settlement>
+                        <institution>GETS</institution>
+                        <repository>SL</repository>
+                        <idno>20</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>epitaph to Usaunnias</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#object_other">
+                            <supportDesc ana="#stone.other">
+                                <support>
+                                    <p> stone disk</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>8</height>
+                                        <width>7</width>
+                                        <depth>0.75</depth>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete.broken">
+                                    <p>top of disk missing</p>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="1" writtenLines="6">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p>tau-rho monograms in lines 4 and 5</p>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#unknown"/>
+                            <placeName ref="unknown"/>
+                        </origin>
+                        <provenance type="observed" subtype="recorded">
+                            <p>Recorded in the <orgName role="recipient">Bennett Museum</orgName> by <date when="1915">1915</date>.</p>
+                        </provenance>
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target=""/>
+                        <biblScope unit="page">00</biblScope>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2026-04-06" who="Advaith Rege">Initial Encoding</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="IL.Evans.GETS.SL.L.20.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/><expan><abbr>R</abbr><ex>equiescat</ex></expan> <expan><abbr>i</abbr><ex>n</ex></expan> <expan><abbr>p</abbr><ex>ace</ex></expan> <expan><abbr>a</abbr><ex>nimae</ex></expan>
+                    <persName>
+                        <name key="Usaunnias">Usau<choice><corr>n</corr><sic>ii</sic></choice>
+                <lb n="2" break="no"/>nias</name></persName> qui vi<choice><corr>xit</corr><sic>n</sic></choice> <num value="3">III</num>
+                <lb n="3"/><expan><abbr>k</abbr><ex>a</ex><abbr>l</abbr><ex>endas</ex></expan> <choice><reg>Augusti</reg><orig>Augustis</orig></choice>
+                <lb n="4"/><g type="taurho"/> <choice><reg>dies</reg><orig>die</orig></choice> <choice><reg>lunae</reg><orig>lunis</orig></choice>
+                <lb n="5"/><choice><reg>Chris<g type="taurho"/>tus</reg><orig>Cris<g type="taurho"/>tus</orig></choice>
+                <lb n="6"/><expan><abbr>S</abbr><ex>alvator</ex></expan>
+            </ab></div>
+            
+            <div type="translation">
+            <p>May he rest in peace of soul, Usaunnius who lived the third kalends of August on the day of the moon. Christ the Savior.</p></div>
+
+            <div type="commentary">
+            <p>Basis of verification: photo</p>
+                <p>Patten, Amos Williams. Early Christian Inscriptions in the Bennett Museum of Christian Archaeology, vol. 3, no. 5, Mar. 1915.</p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
