@@ -30,14 +30,24 @@
             
             
             <xsl:for-each-group select="t:bibl[@type='v-c']" group-by="t:title[@level='s']/@ref">
-                <p xsl:exclude-result-prefixes="t"><a href="/../{concat($url, substring-after(current-grouping-key(),'#'))}"><xsl:value-of select="t:title[@level='s']"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
+               <!-- <p xsl:exclude-result-prefixes="t"><a href="/../{concat($url, substring-after(current-grouping-key(),'#'))}"><xsl:value-of select="t:title[@level='s']"/></a> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
               <ul>
                   <xsl:for-each select="current-group()">
                   <li>
                       <a href="/../{concat($url, @xml:id)}"><xsl:value-of select="t:biblScope"/></a><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if></li>
                 </xsl:for-each>
               </ul>
-             </p>
+             </p>-->
+                
+                <p xsl:exclude-result-prefixes="t"><xsl:value-of select="t:title[@level='s']"/> <span  class="bibID"><xsl:text> [</xsl:text><xsl:value-of select="substring-after(current-grouping-key(),'#')"/><xsl:text>]</xsl:text></span>
+                    <ul>
+                        <xsl:for-each select="current-group()">
+                            <li>
+                                <a href="/../{concat($url, @xml:id)}"><xsl:value-of select="t:biblScope"/></a><xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if></li>
+                        </xsl:for-each>
+                    </ul>
+                </p>
+                
             </xsl:for-each-group>
             
             

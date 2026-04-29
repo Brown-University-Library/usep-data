@@ -471,17 +471,17 @@
                             <xsl:for-each select="t:graphic">
                                 <xsl:choose>
                                     <xsl:when test="starts-with(@url, 'http')">
-                                        <a class="highslide" href="{@url}"
-                                            onclick="return hs.expand(this)">
-                                            <img src="{@url}" alt="" width="200"/>
+                                        <a href="{@url}" target="_blank" alt=""><!-- class="highslide" 
+                                            onclick="return hs.expand(this)"-->
+                                            <img src="{@url}" alt="image of inscription described on this page" width="200"/>
                                         </a>
                                         <xsl:value-of select="preceding-sibling::t:desc"/>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <a class="highslide" href="{concat($imageDir, '/',@url)}"
-                                            onclick="return hs.expand(this)">
-                                            <img src="{concat($imageDir, '/',@url)}" alt=""
-                                                width="200"/>
+                                        <a href="{concat($imageDir, '/',@url)}" target="_blank"><!--class="highslide" 
+                                            onclick="return hs.expand(this)"-->
+                                            <img src="{concat($imageDir, '/',@url)}" alt="Image of inscription described on this page"
+                                                width="200" />
                                         </a>
                                         <xsl:value-of select="preceding-sibling::t:desc"/>
                                     </xsl:otherwise>
@@ -507,11 +507,12 @@
                     <xsl:when
                         test="/t:TEI/t:text/t:body/t:div[@type = 'edition']/t:ab/t:lb or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:lg or /t:TEI/t:text/t:body/t:div[@type = 'edition']/t:div[@type = 'textpart']">
                         <!-- transcribed folder -->
-                        <pc class="XMLsource">
+                        <p class="XMLsource">
                             <a href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/transcribed/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}" alt="XML icon thumbnail"/>
+                                View XML Source
                             </a>
-                        </pc>
+                        </p>
                     </xsl:when>
                     <xsl:when
                         test="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc/t:msDesc/t:msContents/t:msItem[@class]">
@@ -519,7 +520,8 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/metadata_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}" alt="XML icon thumbnail"/>
+                                View XML Source
                             </a>
                         </p>
                     </xsl:when>
@@ -528,7 +530,8 @@
                         <p class="XMLsource">
                             <a
                                 href="{concat('https://github.com/Brown-University-Library/usep-data/blob/master/xml_inscriptions/bib_only/',/t:TEI/t:teiHeader/t:fileDesc/t:publicationStmt/t:idno/@xml:id,'.xml')}">
-                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}"/>
+                                <img style="height:50px;" src="{concat($imageDir, '/xmlIcon.png')}" alt="XML icon thumbnail"/>
+                                View XML Source
                             </a>
                         </p>
                     </xsl:otherwise>
