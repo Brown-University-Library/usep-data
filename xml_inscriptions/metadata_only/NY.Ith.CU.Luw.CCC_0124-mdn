@@ -11,17 +11,15 @@ changes: correct handling of provenance information -->
      updated link to stoa schema -->
 
           <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
-
         <fileDesc>
-            
             <titleStmt>
-                <title>NY.Ith.CU.E.CCC_0800-mdn</title>
+                <title>NY.Ith.CU.Luw.CCC_0124-mdn</title>
                 <author>Nora Grisolia</author>
                 <respStmt>
                     <resp>Translation</resp>
-                    <name>Larissa Bonfante</name>
+                    <name>Translator</name>
                 </respStmt>
                 <respStmt>
                     <resp>Commentary</resp>
@@ -30,10 +28,9 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.Ith.CU.E.CCC_0800-mdn"
-                    >NY.Ith.CU.E.CCC_0800-mdn</idno>
+                <idno type="USEpigraphy" xml:id="NY.Ith.CU.Luw.CCC_0124-mdn"
+                    >NY.Ith.CU.Luw.CCC_0124-mdn</idno>
             </publicationStmt>
-
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
@@ -41,55 +38,48 @@ changes: correct handling of provenance information -->
                         <region>NY</region>
                         <settlement>Ith</settlement>
                         <institution>CU</institution>
-                        <repository></repository>
-                        <idno>CCC_0800</idno>
+                        <repository/>
+                        <idno>CCC_0124</idno>
                     </msIdentifier>
-
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="ett" otherLangs=""/>
+                        <textLang mainLang="hlu" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+                        <msItem class="#document #building">
                             <!-- short summary of the content of an inscription -->
-                            <p>cast of a statuette with dedication to Artemis Spulare</p>
+                            <p>cast of Luwian inscription on the construction of a temple of
+                                Ba'alat</p>
                         </msItem>
                     </msContents>
-
                     <!--  *************************************  <physDesc>  ********************************* -->
                     <physDesc>
-
                         <!--  *************************************  <objectDesc>  *********************************  -->
-
-                        <objectDesc ana="#sculpture">
+                        <objectDesc ana="#slab">
                             <supportDesc ana="#plaster">
                                 <support>
-                                    <p>cast of a statuette of naked youth, possibly Apollo (Aplu),
-                                        painted a black-green to approximate the appearance of the
-                                        original bronze</p>
+                                    <p>the cast is filled in around the edges to form a
+                                        rectangle</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>28.5</height>
-                                        <width>7.5</width>
-                                        <depth>9</depth>
+                                        <height>65</height>
+                                        <width>55</width>
+                                        <depth>6</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.broken">
+                                <condition ana="#complete.intact">
                                     <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="2">
-                                    <p>inscription follows the lenght of the left leg</p>
+                                <layout columns="0" writtenLines="4">
+                                    <p/>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
-
                         <!--  *************************************  <handDesc>  ********************************* -->
-
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
+                            <handNote ana="#inscribed">hieroglyphic </handNote>
                         </handDesc>
-
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
@@ -97,22 +87,21 @@ changes: correct handling of provenance information -->
                             </decoNote>
                         </decoDesc>
                     </physDesc>
-
                     <!--  *************************************  <history>  *********************************  -->
-
                     <history>
-
                         <summary>
-                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                            <rs>modern</rs>
+                            <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
-
                         <origin>
-                            <date evidence="#history" notBefore="1890" notAfter="1900"
-                                >1890-1900</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#history" notBefore="1872" notAfter="1877"
+                                >1872-1877</date>
+                            <placeName ref="xx">the Saray</placeName>
                         </origin>
-
-
+                        <provenance type="transferred" subtype="">
+                            <p>on wooden box: sent from University Museum of Penn to Cornell,to Mr.
+                                Durham, Dept. of Classics</p>
+                        </provenance>
                     </history>
                 </msDesc>
                 <!--  *************************************  <listBibl>  *********************************  -->
@@ -121,67 +110,56 @@ changes: correct handling of provenance information -->
                         <ptr type="rest-of-bibl" target=""/>
                         <biblScope unit="page">00</biblScope>
                     </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://digital.library.cornell.edu/catalog/ss:945965">Cornell
+                            Digital Collection</ref>
+                    </bibl>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
-
         <!--  *************************************  <encodingDesc>  ********************************* -->
-
         <encodingDesc>
-
-                <xi:include
-                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
-                    <xi:fallback>
-                        <p>Taxonomies for US Epigraphy controlled values</p>
-                    </xi:fallback>
-                </xi:include>
-
+            <xi:include href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                <xi:fallback>
+                    <p>Taxonomies for US Epigraphy controlled values</p>
+                </xi:fallback>
+            </xi:include>
         </encodingDesc>
-
-        <profileDesc> <!-- not used --> </profileDesc>
-
-
+        <profileDesc><!-- not used --></profileDesc>
         <!--  *************************************  <revisionDesc>  ********************************* -->
-    	<!-- Record all changes here -->
-
+        <!-- Record all changes here -->
         <revisionDesc>
-            <change when="2026-09-27" who="Nora Grisolia">Initial Encoding</change>
+            <change when="2026-09-29" who="Nora Grisolia">Initial Encoding</change>
         </revisionDesc>
-
     </teiHeader>
-
     <!--  *************************************  <facsimile>  *********************************  -->
-        <!-- Used to record images of an inscription.   -->
-
+    <!-- Used to record images of an inscription.   -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.Ith.CU.E.CCC_0800-mdn"/>
+            <graphic url="NY.Ith.CU.Luw.CCC_0124-mdn.jpg"/>
         </surface>
     </facsimile>
-
     <text>
         <body>
-            <div type="edition"><p>mi fleres spulare aritimi fasti rufris trce clen cecha</p></div>
-                       
+            <div type="edition">
+                <ab>Transcription goes here</ab>
+            </div>
             <div type="translation">
-            <p>I am the statue, or votive offering, (which) Fasti Rufris gave according to ritual to
-                    Artemis Spulare on behalf of her son.</p></div>
-
+                <p/>
+            </div>
             <div type="commentary">
-            <p>Cast of a small Etruscan votive bronze of a standing, naked youth, possibly Apollo
-                    (Aplu), housed in the Bibliothèque Nationale in Paris. The figure stands in
-                    contrapposto placing his weight on his left leg. He rests his right hand on his
-                    hip and there is a short chlamys slung over his forearm. The braceleted left arm
-                    of the original is missing from above the elbow here the arm is broken from just
-                    below the shoulder. He wears a wreath in his curly hair, a necklace with bullae,
-                    and mid-length boots. Of unknown provenience, the statuette has been known since
-                    at least the 16th century, when it was in the collection of Alfonso d’Este in
-                    the library of the Dukes of Ferrara.</p></div>
-            
-
-            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
-
+                <p>The cast represents the left block of two which bore the inscription, "a building
+                    inscription of Urhilina, king of Hamath, recording the construction and
+                    endowment of the temple of the goddess Ba'alat." In 1872 the inscriptions were
+                    moved from their original location to "the saray, where plaster casts were made
+                    for the British Museum and Palestine Exploration Fund. Inscriptions had reached
+                    Istanbul Museum by 1877." 
+                    Written in pencil on cast: cast of inscription on the
+                    end of a stone in the bridge of the Shkeikh, North at Hamath Syria, now in the
+                    Ottoman museum Constantinople on wooden box: sent from University Museum of Penn
+                    to Cornell,to Mr. Durham, Dept. Of Classics </p></div>
         </body>
     </text>
 </TEI>

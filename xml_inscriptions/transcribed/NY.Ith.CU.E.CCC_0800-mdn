@@ -4,40 +4,54 @@
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          ->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
-
+            
             <titleStmt>
-                <title>US Epigraphy ID</title>
+                <title>NY.Ith.CU.E.CCC_0800-mdn</title>
+                <author>Nora Grisolia</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Larissa Bonfante</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
             </titleStmt>
-
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="clean_id">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="NY.Ith.CU.E.CCC_0800-mdn"
+                    >NY.Ith.CU.E.CCC_0800-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region></region>
-                        <settlement></settlement>
-                        <institution></institution>
+                        <region>NY</region>
+                        <settlement>Ith</settlement>
+                        <institution>CU</institution>
                         <repository></repository>
-                        <idno></idno>
+                        <idno>CCC_0800</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="" otherLangs=""/>
+                        <textLang mainLang="ett" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="">
-                        <!-- short summary of the content of an inscription -->
-                            <p/>
+                        <msItem class="#dedicatory">
+                            <!-- short summary of the content of an inscription -->
+                            <p>cast of a statuette with dedication to Artemis Spulare</p>
                         </msItem>
                     </msContents>
 
@@ -46,26 +60,26 @@ changes: Added @evidence to date
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="">
-                            <supportDesc ana="">
+                        <objectDesc ana="#sculpture">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <p>
-                                    </p>
+                                    <p>cast of a statuette of naked youth, possibly Apollo (Aplu),
+                                        painted a black-green to approximate the appearance of the
+                                        original bronze</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
+                                        <height>28.5</height>
+                                        <width>7.5</width>
+                                        <depth>9</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="">
+                                <condition ana="#complete.broken">
                                     <p/>
                                 </condition>
                             </supportDesc>
-
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="0">
-                                    <p/>
+                                <layout columns="0" writtenLines="2">
+                                    <p>inscription follows the lenght of the left leg</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -73,7 +87,7 @@ changes: Added @evidence to date
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana=""> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -89,11 +103,12 @@ changes: Added @evidence to date
                     <history>
 
                         <summary>
-                            <rs>modern</rs>  <!-- content can be "modern" or blank -->
+                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="0001" notAfter="0002">Date to be displayed</date>
+                            <date evidence="#history" notBefore="1890" notAfter="1900"
+                                >1890-1900</date>
                             <placeName ref="xx">Detailed place name</placeName>
                         </origin>
 
@@ -130,7 +145,7 @@ changes: Added @evidence to date
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="" who="">Initial Encoding</change>
+            <change when="2026-09-27" who="Nora Grisolia">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -141,23 +156,28 @@ changes: Added @evidence to date
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="NY.Ith.CU.E.CCC_0800-mdn.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
-            <div type="edition">
-            <ab>Transcription goes here</ab></div>
-            
+            <div type="edition"><p>mi fleres spulare aritimi fasti rufris trce clen cecha</p></div>
+                       
             <div type="translation">
-            <p></p></div>
+            <p>I am the statue, or votive offering, (which) Fasti Rufris gave according to ritual to
+                    Artemis Spulare on behalf of her son.</p></div>
 
             <div type="commentary">
-            <p></p></div>
-            
-            <div type="apparatus">
-            <p></p></div>
+            <p>Cast of a small Etruscan votive bronze of a standing, naked youth, possibly Apollo
+                    (Aplu), housed in the Bibliothèque Nationale in Paris. The figure stands in
+                    contrapposto placing his weight on his left leg. He rests his right hand on his
+                    hip and there is a short chlamys slung over his forearm. The braceleted left arm
+                    of the original is missing from above the elbow here the arm is broken from just
+                    below the shoulder. He wears a wreath in his curly hair, a necklace with bullae,
+                    and mid-length boots. Of unknown provenience, the statuette has been known since
+                    at least the 16th century, when it was in the collection of Alfonso d’Este in
+                    the library of the Dukes of Ferrara.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
