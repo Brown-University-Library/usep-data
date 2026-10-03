@@ -4,40 +4,53 @@
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          ->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
-
+            
             <titleStmt>
-                <title>US Epigraphy ID</title>
+                <title>NY.Ith.CU.AG.CCC_0463-mdn</title>
+                <author>Nora Grisolia</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
             </titleStmt>
-
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="clean_id">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="NY.Ith.CU.AG.CCC_0463-mdn">NY.Ith.CU.AG.CCC_0463-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region></region>
-                        <settlement></settlement>
-                        <institution></institution>
+                        <region>NY</region>
+                        <settlement>Ith</settlement>
+                        <institution>CU</institution>
                         <repository></repository>
-                        <idno></idno>
+                        <idno>CCC_0463</idno>
                     </msIdentifier>
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="" otherLangs=""/>
+                        <textLang mainLang="arc" otherLangs="grc"/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="">
-                        <!-- short summary of the content of an inscription -->
-                            <p/>
+                        <msItem class="#dedicatory">
+                            <!-- short summary of the content of an inscription -->
+                            <p>cast of bilingual dedication to Zeus</p>
                         </msItem>
                     </msContents>
 
@@ -46,25 +59,23 @@ changes: Added @evidence to date
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="">
-                            <supportDesc ana="">
+                        <objectDesc ana="#tablet">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <p>
-                                    </p>
+                                    <p> </p>
                                     <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
-                                        <depth/>
+                                        <height>42.5</height>
+                                        <width>42</width>
+                                        <depth>5</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="">
-                                    <p/>
+                                <condition ana="#complete.broken">
+                                    <p>mild surface damage that does not impact the text</p>
                                 </condition>
                             </supportDesc>
-
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="0">
+                                <layout columns="0" writtenLines="11">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -73,7 +84,7 @@ changes: Added @evidence to date
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana=""> </handNote>
+                            <handNote ana="#inscribed"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -89,11 +100,12 @@ changes: Added @evidence to date
                     <history>
 
                         <summary>
-                            <rs>modern</rs>  <!-- content can be "modern" or blank -->
+                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="0001" notAfter="0002">Date to be displayed</date>
+                            <date evidence="#history" notBefore="1890" notAfter="1900"
+                                >1890-1900</date>
                             <placeName ref="xx">Detailed place name</placeName>
                         </origin>
 
@@ -130,7 +142,7 @@ changes: Added @evidence to date
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="" who="">Initial Encoding</change>
+            <change when="2026-09-26" who="Nora Grisolia">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -141,7 +153,7 @@ changes: Added @evidence to date
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="NY.Ith.CU.AG.CCC_0463-mdn.jpg"/>
         </surface>
     </facsimile>
 
@@ -154,10 +166,9 @@ changes: Added @evidence to date
             <p></p></div>
 
             <div type="commentary">
-            <p></p></div>
-            
-            <div type="apparatus">
-            <p></p></div>
+            <p>cast of an inscription in Palmyrene and Greek, recording the dedication of an arch
+                    and a couch by Agathangelos of Abila to Zeus Keraunios for the safety or safe
+                    passage of the Emperor Hadrian.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
