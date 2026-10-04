@@ -4,40 +4,61 @@
 changes: Added @evidence to date
          Added translation and apparatus <div>s
          changed "fake" to "modern" in history <rs>
-          ->
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
---><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information -->
+<!-- For Framework v. 2.9 2023-06-27 
+     updated link to stoa schema -->
+<!-- For Framework v. 2.9.1 2026-09-25 
+     added markup for TM numbers -->
+
+
+          <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <teiHeader>
 
         <fileDesc>
-
+            
             <titleStmt>
-                <title>US Epigraphy ID</title>
+                <title>NY.Ith.CU.Luw.CCC_0155-mdn</title>
+                <author>Nora Grisolia</author>
+                <respStmt>
+                    <resp>Translation</resp>
+                    <name>Translator</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Commentary</resp>
+                    <name>Commenter</name>
+                </respStmt>
             </titleStmt>
-
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="clean_id">Repeat USEP ID</idno>
+                <idno type="USEpigraphy" xml:id="NY.Ith.CU.Luw.CCC_0155-mdn"
+                    >NY.Ith.CU.Luw.CCC_0155-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region></region>
-                        <settlement></settlement>
-                        <institution></institution>
+                        <region>NY</region>
+                        <settlement>Ith</settlement>
+                        <institution>CU</institution>
                         <repository></repository>
-                        <idno></idno>
+                        <idno>CCC_0155</idno>
                     </msIdentifier>
+                    <altIdentifier type="TM_number">
+                        <idno>unknown</idno>
+                    </altIdentifier>
+
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="" otherLangs=""/>
+                        <textLang mainLang="hlu" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="">
-                        <!-- short summary of the content of an inscription -->
-                            <p/>
+                        <msItem class="#building">
+                            <!-- short summary of the content of an inscription -->
+                            <p>cast of building inscription of Uratmis, king of Hamath</p>
                         </msItem>
                     </msContents>
 
@@ -46,25 +67,24 @@ changes: Added @evidence to date
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="">
-                            <supportDesc ana="">
+                        <objectDesc ana="#slab">
+                            <supportDesc ana="#plaster">
                                 <support>
-                                    <p>
-                                    </p>
+                                    <p>the cast is filled in around the edges to form a
+                                        rectangle</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height/>
-                                        <width/>
+                                        <height>44</height>
+                                        <width>50</width>
                                         <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="">
+                                <condition ana="#complete.broken">
                                     <p/>
                                 </condition>
                             </supportDesc>
-
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="0">
+                                <layout columns="0" writtenLines="3">
                                     <p/>
                                 </layout>
                             </layoutDesc>
@@ -73,7 +93,7 @@ changes: Added @evidence to date
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana=""> </handNote>
+                            <handNote ana="#inscribed">hieroglyphic</handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -89,12 +109,13 @@ changes: Added @evidence to date
                     <history>
 
                         <summary>
-                            <rs>modern</rs>  <!-- content can be "modern" or blank -->
+                            <rs>modern</rs>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
                         </summary>
 
                         <origin>
-                            <date evidence="unspecified" notBefore="0001" notAfter="0002">Date to be displayed</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#history #unknown" notBefore="0000" notAfter="0000"
+                                >unknown</date>
+                            <placeName ref="unknown">unknown</placeName>
                         </origin>
 
 
@@ -105,6 +126,11 @@ changes: Added @evidence to date
                     <bibl>
                         <ptr type="rest-of-bibl" target=""/>
                         <biblScope unit="page">00</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external"
+                            target="https://digital.library.cornell.edu/catalog/ss:946009">Cornell
+                            Digital Collection</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -130,7 +156,7 @@ changes: Added @evidence to date
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="" who="">Initial Encoding</change>
+            <change when="2026-10-02" who="Nora Grisolia">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -141,7 +167,7 @@ changes: Added @evidence to date
     <facsimile>
         <surface>
             <desc/>
-            <graphic url=""/>
+            <graphic url="NY.Ith.CU.Luw.CCC_0155-mdn.jpg"/>
         </surface>
     </facsimile>
 
@@ -154,10 +180,9 @@ changes: Added @evidence to date
             <p></p></div>
 
             <div type="commentary">
-            <p></p></div>
-            
-            <div type="apparatus">
-            <p></p></div>
+            <p>Building inscription of Uratmis son of Urhilina, king of Hamath. On cast, in pencil:
+                    cast of a stone taken from the house of Dahan near the house of Shiman at Killas
+                    in Hamath Syria, now in the Ottoman Museum Constantinople.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
