@@ -9,6 +9,9 @@ changes: Added @evidence to date
 changes: correct handling of provenance information -->
 <!-- For Framework v. 2.9 2023-06-27 
      updated link to stoa schema -->
+<!-- For Framework v. 2.9.1 2026-09-25 
+     added markup for TM numbers -->
+
 
           <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
@@ -17,7 +20,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>NY.Ith.CU.AG.CCC_0463-mdn</title>
+                <title>NY.Ith.CU.OP.CCC_0146-mdn</title>
                 <author>Nora Grisolia</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,7 +33,8 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.Ith.CU.AG.CCC_0463-mdn">NY.Ith.CU.AG.CCC_0463-mdn</idno>
+                <idno type="USEpigraphy" xml:id="NY.Ith.CU.OP.CCC_0146-mdn"
+                    >NY.Ith.CU.OP.CCC_0146-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
@@ -41,16 +45,20 @@ changes: correct handling of provenance information -->
                         <settlement>Ith</settlement>
                         <institution>CU</institution>
                         <repository></repository>
-                        <idno>CCC_0463</idno>
+                        <idno>CCC_0146</idno>
                     </msIdentifier>
+                    <altIdentifier type="TM_number">
+                        <idno></idno>
+                    </altIdentifier>
+
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="arc" otherLangs="grc"/>
+                        <textLang mainLang="peo" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
                         <msItem class="#dedicatory">
                             <!-- short summary of the content of an inscription -->
-                            <p>cast of bilingual dedication to Zeus</p>
+                            <p>cast of inscription dedicated to Ahuramazda by Xerxes I</p>
                         </msItem>
                     </msContents>
 
@@ -59,24 +67,24 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#tablet">
+                        <objectDesc ana="#slab">
                             <supportDesc ana="#plaster">
                                 <support>
-                                    <p>plaster cast of tablet</p>
+                                    <p>cast of fragment</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>42.5</height>
-                                        <width>42</width>
-                                        <depth>5</depth>
+                                        <height>33</height>
+                                        <width>43.5</width>
+                                        <depth>3</depth>
                                     </dimensions>
                                 </support>
-                                <condition ana="#complete.broken">
-                                    <p>mild surface damage that does not impact the text</p>
+                                <condition ana="#fragment.single">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="11">
-                                    <p/>
+                                <layout columns="0" writtenLines="5">
+                                    <p>of the fifth line, only the top is legible</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -84,7 +92,7 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
+                            <handNote ana="#inscribed">cuneiform</handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
@@ -104,8 +112,8 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#history" notBefore="1890" notAfter="1900"
-                                >1890-1900</date>
+                            <date evidence="#history" notBefore="1890" notAfter="1900">end of 19th
+                                Century</date>
                             <placeName ref="unknown">unknown</placeName>
                         </origin>
 
@@ -115,8 +123,13 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target=""/>
-                        <biblScope unit="page">00</biblScope>
+                        <ptr type="rest-of-bibl" target="#Iraq_19.1"/>
+                        <biblScope unit="page" type="page">62</biblScope>
+                        <biblScope unit="page" type="item">16</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.jstor.org/stable/4199617?seq=8">R.
+                            D. Barnett, Persepolis, in Iraq 19.1 (1957), pp. 55-77</ref>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -142,7 +155,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2026-09-26" who="Nora Grisolia">Initial Encoding</change>
+            <change when="2026-10-06" who="Nora Grisolia">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -153,7 +166,7 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.Ith.CU.AG.CCC_0463-mdn.jpg"/>
+            <graphic url="NY.Ith.CU.OP.CCC_0146-mdn.jpg"/>
         </surface>
     </facsimile>
 
@@ -166,9 +179,15 @@ changes: correct handling of provenance information -->
             <p></p></div>
 
             <div type="commentary">
-            <p>cast of an inscription in Palmyrene and Greek, recording the dedication of an arch
-                    and a couch by Agathangelos of Abila to Zeus Keraunios for the safety or safe
-                    passage of the Emperor Hadrian.</p></div>
+            <p>Cornell digital collection: This is a cast of a fragment of a cuneiform inscription
+                    in Old Persian from the Apadana at Persepolis housed in the British Museum. It
+                    includes four lines of text written horizontally, with each line separated by a
+                    thin inscribed line. The top of a fifth line of writing is also preserved along
+                    the bottom of the block. Sculpted borders at the top and right edges indicate
+                    that it is from the top right corner of a larger inscription. The inscription
+                    originally ran for thirty lines and was a dedication by Xerxes I to Ahuramazda
+                    intended to glorify both the god and the king and also to legitimate the king's
+                    rule.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
