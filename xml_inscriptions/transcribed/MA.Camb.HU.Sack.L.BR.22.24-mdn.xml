@@ -9,6 +9,9 @@ changes: Added @evidence to date
 changes: correct handling of provenance information -->
 <!-- For Framework v. 2.9 2023-06-27 
      updated link to stoa schema -->
+<!-- For Framework v. 2.9.1 2026-09-25 
+     added markup for TM numbers -->
+
 
           <?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
@@ -17,7 +20,7 @@ changes: correct handling of provenance information -->
         <fileDesc>
             
             <titleStmt>
-                <title>NY.Ith.CU.G.CCC_0485-mdn</title>
+                <title>MA.Camb.HU.Sack.L.BR.22.24-mdn</title>
                 <author>Nora Grisolia</author>
                 <respStmt>
                     <resp>Translation</resp>
@@ -30,28 +33,33 @@ changes: correct handling of provenance information -->
             </titleStmt>
             <publicationStmt>
                 <authority>Brown University</authority>
-                <idno type="USEpigraphy" xml:id="NY.Ith.CU.G.CCC_0485-mdn"
-                    >NY.Ith.CU.G.CCC_0485-mdn</idno>
+                <idno type="USEpigraphy" xml:id="MA.Camb.HU.Sack.L.BR.22.24-mdn"
+                    >MA.Camb.HU.Sack.L.BR.22.24-mdn</idno>
             </publicationStmt>
 
             <sourceDesc>
                 <!--  *************************************  <msDesc>  ********************************* -->
                 <msDesc>
                     <msIdentifier>
-                        <region>NY</region>
-                        <settlement>Ith</settlement>
-                        <institution>CU</institution>
-                        <repository></repository>
-                        <idno>CCC_0485</idno>
+                        <region>MA</region>
+                        <settlement>Camb</settlement>
+                        <institution>HU</institution>
+                        <repository>Sack</repository>
+                        <idno>BR.22.24</idno>
                     </msIdentifier>
+                    <altIdentifier type="TM_number">
+                        <idno>unknown</idno>
+                    </altIdentifier>
+
 
                     <!--  *************************************  <msContents>  *********************************    -->
                     <msContents>
-                        <textLang mainLang="grc" otherLangs=""/>
+                        <textLang mainLang="lat" otherLangs=""/>
                         <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
-                        <msItem class="#dedicatory">
+                        <msItem class="#honorific">
                             <!-- short summary of the content of an inscription -->
-                            <p>cast of an inscription dedicated to Zeus by Philonides</p>
+                            <p>leaf of consular diptych of Flavius Anastasius Probus (consul 517
+                                CE)</p>
                         </msItem>
                     </msContents>
 
@@ -60,24 +68,24 @@ changes: correct handling of provenance information -->
 
                         <!--  *************************************  <objectDesc>  *********************************  -->
 
-                        <objectDesc ana="#slab">
+                        <objectDesc ana="#arch_element">
                             <supportDesc ana="#plaster">
                                 <support>
-                                    <p>plaster cast of a slab on the base of a statue</p>
+                                    <p>plaster cast of leaf of diptych</p>
                                     <dimensions type="surface" unit="cm">
-                                        <height>31</height>
-                                        <width>40</width>
-                                        <depth>5</depth>
+                                        <height/>
+                                        <width/>
+                                        <depth/>
                                     </dimensions>
                                 </support>
-                                <condition ana="#fragment.single">
-                                    <p>the cast is split into two large fragments</p>
+                                <condition ana="#complete.intact">
+                                    <p/>
                                 </condition>
                             </supportDesc>
                             <!--  *************************************  <layoutDesc>  ********************************* -->
                             <layoutDesc>
-                                <layout columns="0" writtenLines="6">
-                                    <p/>
+                                <layout columns="0" writtenLines="2">
+                                    <p>tabula ansata at the top of the slab</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
@@ -85,13 +93,14 @@ changes: correct handling of provenance information -->
                         <!--  *************************************  <handDesc>  ********************************* -->
 
                         <handDesc hands="1">
-                            <handNote ana="#inscribed"> </handNote>
+                            <handNote ana="#molded"> </handNote>
                         </handDesc>
 
                         <!--  *************************************  <decoDesc>  *********************************     -->
                         <decoDesc>
                             <decoNote>
-                                <p/>
+                                <p>a relief of the consul on the curule chair. On the top: three
+                                    medallions; underneath: a circus scene</p>
                             </decoNote>
                         </decoDesc>
                     </physDesc>
@@ -105,13 +114,10 @@ changes: correct handling of provenance information -->
                         </summary>
 
                         <origin>
-                            <date evidence="#history" notBefore="1890" notAfter="1900">end of the
-                                19th century</date>
-                            <placeName ref="xx">Detailed place name</placeName>
+                            <date evidence="#history" notBefore="1900" notAfter="1922">early 20th
+                                century</date>
+                            <placeName ref="unknown">unknown</placeName>
                         </origin>
-                        <provenance type="not-observed" subtype="">
-                            <p>currently housed in a warehouse for the <orgName>Cornell University</orgName> Cast Collection </p>
-                        </provenance>
 
 
                     </history>
@@ -119,12 +125,8 @@ changes: correct handling of provenance information -->
                 <!--  *************************************  <listBibl>  *********************************  -->
                 <listBibl>
                     <bibl>
-                        <ptr type="rest-of-bibl" target="#IvO"/>
-                        <biblScope unit="page" type="item">276</biblScope>
-                    </bibl>
-                    <bibl>
-                        <ptr type="rest-of-bibl" target="#Frazer_Pausanias"/>
-                        <biblScope type="page">48-49</biblScope>
+                        <ptr type="rest-of-bibl" target=""/>
+                        <biblScope unit="page">00</biblScope>
                     </bibl>
                 </listBibl>
             </sourceDesc>
@@ -150,7 +152,7 @@ changes: correct handling of provenance information -->
     	<!-- Record all changes here -->
 
         <revisionDesc>
-            <change when="2026-09-25" who="Nora Grisolia">Initial Encoding</change>
+            <change when="2026-10-22" who="Nora Grisolia">Initial Encoding</change>
         </revisionDesc>
 
     </teiHeader>
@@ -161,21 +163,26 @@ changes: correct handling of provenance information -->
     <facsimile>
         <surface>
             <desc/>
-            <graphic url="NY.Ith.CU.G.CCC_0485-mdn.jpg"/>
+            <graphic url="MA.Camb.HU.Sack.L.BR.22.24-mdn.jpg"/>
         </surface>
     </facsimile>
 
     <text>
         <body>
             <div type="edition">
-            <ab>Transcription goes here</ab></div>
+                <ab><lb n="1"/><persName type="attested"><name type="praenomen"><expan><abbr>Fl</abbr><ex>avius</ex></expan></name><name type="gentilicium">Anastasius</name><name type=""><expan><abbr>Paul</abbr><ex>us</ex></expan></name><name type="">Prov<supplied reason="omitted">u</supplied>s</name>               
+                        <lb n="2"/><name>Savinianus</name><name><expan><abbr>Pomp</abbr><ex>eius</ex></expan></name><name><expan><abbr>Anas</abbr><ex>tasius</ex></expan></name></persName></ab></div>
             
             <div type="translation">
             <p></p></div>
 
             <div type="commentary">
-            <p>this is the left half of the cast of the statue base, and should be read with its
-                    right half NY.Ith.CU.G.CCC_0146-mdn.</p></div>
+            <p>cast of right leaf of a consular diptych of Flavius Anastasius (consul 517 CE).  The
+                    original, known by the name of Diptychon Leodiense, was preserved for centuries
+                    in the cathedral of Saint Lambert in Liège, until it was transferred to Germany
+                    in order to be protected during the French Revolution. During the 19th Century,
+                    the left leaf was aquired by the Victoria and Albert Museum, while the right one
+                    by the Berlin Museum, before it disappeared during World War II.</p></div>
             
 
             <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
